@@ -196,11 +196,7 @@ export default function SearchModule({
 
   const getFichaUrl = (opportunity: Oportunidad) => {
     const code = (opportunity.codigo || '').toUpperCase();
-    const isCompraAgil = opportunity.modalidad === 'Compra Ágil' || code.includes('-COT') || code.includes('-CO');
-    if (isCompraAgil) {
-      return 'https://www.mercadopublico.cl/CompraAgil';
-    }
-    return `https://www.mercadopublico.cl/FichaLicitacion/Html/FichaLicitacion.aspx?codLicitacion=${opportunity.codigo}`;
+    return `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${code}`;
   };
   const handleDownloadDoc = (doc: any, opportunity: Oportunidad) => {
     const docName = doc.nombre;
