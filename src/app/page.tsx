@@ -35,7 +35,20 @@ export default function Home() {
   const [globalSearchText, setGlobalSearchText] = useState<string>('');
 
   // Core Data Lists in state to allow dynamic reactivity across components
-  const [oportunidades, setOportunidades] = useState<Oportunidad[]>(mockOportunidades);
+  const [oportunidades, setOportunidades] = useState<Oportunidad[]>(() => {
+    const d = new Date();
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    const todayStr = `${year}-${month}-${day}`;
+    
+    return mockOportunidades.map(o => {
+      if (o.estado === 'Publicada' && o.fechaCierre && o.fechaCierre < todayStr) {
+        return { ...o, estado: 'Cerrada' };
+      }
+      return o;
+    });
+  });
   const [postulaciones, setPostulaciones] = useState<Postulacion[]>([]);
   const [ordenesCompra, setOrdenesCompra] = useState(mockOrdenesCompra);
   const [teamMembers, setTeamMembers] = useState<MiembroEquipo[]>(mockMiembrosEquipo);
@@ -393,7 +406,20 @@ export default function Home() {
         const existingApiCodes = new Set(mappedList.map(o => o.codigo));
         // Retain previous opportunities that do not have the same code as the fresh sync items
         const previousOps = prev.filter(o => !existingApiCodes.has(o.codigo));
-        return [...mappedList, ...previousOps];
+        
+        const d = new Date();
+        const year = d.getFullYear();
+        const month = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        const todayStr = `${year}-${month}-${day}`;
+        
+        const merged = [...mappedList, ...previousOps];
+        return merged.map(o => {
+          if (o.estado === 'Publicada' && o.fechaCierre && o.fechaCierre < todayStr) {
+            return { ...o, estado: 'Cerrada' };
+          }
+          return o;
+        });
       });
 
       const nowStr = new Date().toLocaleTimeString('es-CL', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
@@ -520,7 +546,20 @@ export default function Home() {
 
         setOportunidades(prev => {
           const exists = prev.some(l => l.codigo === newLic.codigo);
-          return exists ? prev : [newLic, ...prev];
+          const updatedList = exists ? prev : [newLic, ...prev];
+          
+          const d = new Date();
+          const year = d.getFullYear();
+          const month = String(d.getMonth() + 1).padStart(2, '0');
+          const day = String(d.getDate()).padStart(2, '0');
+          const todayStr = `${year}-${month}-${day}`;
+          
+          return updatedList.map(o => {
+            if (o.estado === 'Publicada' && o.fechaCierre && o.fechaCierre < todayStr) {
+              return { ...o, estado: 'Cerrada' };
+            }
+            return o;
+          });
         });
         
         setSelectedOpportunity(newLic);

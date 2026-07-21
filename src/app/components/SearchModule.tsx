@@ -133,7 +133,7 @@ export default function SearchModule({
   const [filterMontoMin, setFilterMontoMin] = useState(0);
   const [filterMontoMax, setFilterMontoMax] = useState(1000000000);
   const [filterModalidad, setFilterModalidad] = useState('Todos');
-  const [filterEstado, setFilterEstado] = useState('Todos');
+  const [filterEstado, setFilterEstado] = useState('Publicada');
 
   // Column visibility
   const [visibleColumns, setVisibleColumns] = useState({

@@ -71,14 +71,15 @@ export default function DashboardModule({
     };
   }, [oportunidades, rangeMultiplier]);
 
-  // Suggested opportunities filtering
+  // Suggested opportunities filtering (only active ones)
   const suggestedOpportunities = useMemo(() => {
+    const activeOps = oportunidades.filter(o => o.estado === 'Publicada');
     if (suggestedTab === 'match') {
-      return [...oportunidades].sort((a, b) => b.matchScore - a.matchScore).slice(0, 4);
+      return [...activeOps].sort((a, b) => b.matchScore - a.matchScore).slice(0, 4);
     } else if (suggestedTab === 'recientes') {
-      return [...oportunidades].sort((a, b) => new Date(b.fechaPublicacion).getTime() - new Date(a.fechaPublicacion).getTime()).slice(0, 4);
+      return [...activeOps].sort((a, b) => new Date(b.fechaPublicacion).getTime() - new Date(a.fechaPublicacion).getTime()).slice(0, 4);
     } else {
-      return [...oportunidades].sort((a, b) => b.monto - a.monto).slice(0, 4);
+      return [...activeOps].sort((a, b) => b.monto - a.monto).slice(0, 4);
     }
   }, [oportunidades, suggestedTab]);
 
