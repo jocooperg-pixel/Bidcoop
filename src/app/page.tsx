@@ -113,11 +113,8 @@ export default function Home() {
     }
   }, []);
 
-  // Auto-sincronizar con Mercado Público al ingresar y programar actualización cada 3 horas
+  // Programar actualización automática cada 3 horas
   useEffect(() => {
-    // Sincronización silenciosa inicial al cargar
-    handleSyncRealTime(true);
-
     // Configurar intervalo de 3 horas (3 * 60 * 60 * 1000 ms)
     const intervalId = setInterval(() => {
       console.log('Actualización automática de licitaciones (cada 3 horas)...');

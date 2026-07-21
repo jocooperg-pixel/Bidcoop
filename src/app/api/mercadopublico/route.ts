@@ -1,7 +1,22 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextResponse } from 'next/server';
 
 const TICKET = 'F8537A18-6766-4DEF-9E59-426B4FEE2844';
 const BASE_URL = 'https://api.mercadopublico.cl/servicios/v1/publico';
+
+// System-wide in-memory cache definitions
+interface CacheEnvelope {
+  data: any;
+  timestamp: number;
+}
+
+// Global cache for the complete synced list
+let syncCache: CacheEnvelope | null = null;
+const SYNC_CACHE_TTL = 30 * 60 * 1000; // 30 minutes
+
+// Cache for individual licitación details by code (lasts 24 hours)
+const detailCache = new Map<string, CacheEnvelope>();
+const DETAIL_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
 
 async function safeFetch(url: string, timeout = 15000, maxRetries = 4, baseDelay = 600): Promise<any> {
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
@@ -47,6 +62,12 @@ export async function GET(request: Request) {
   // MODE: detail — Fetch full detail of a single licitación by code (includes items, fechas, comprador)
   // =============================================
   if (codigo && mode === 'detail') {
+    const cached = detailCache.get(codigo);
+    const now = Date.now();
+    if (cached && now - cached.timestamp < DETAIL_CACHE_TTL) {
+      return NextResponse.json(cached.data);
+    }
+
     const targetUrl = endpoint === 'ordenes'
       ? `${BASE_URL}/OrdenCompra.json?codigo=${codigo}&ticket=${TICKET}`
       : `${BASE_URL}/licitaciones.json?codigo=${codigo}&ticket=${TICKET}`;
@@ -64,6 +85,8 @@ export async function GET(request: Request) {
         { status: 429 }
       );
     }
+
+    detailCache.set(codigo, { data, timestamp: now });
     return NextResponse.json(data);
   }
 
@@ -71,6 +94,12 @@ export async function GET(request: Request) {
   // MODE: legacy single code lookup (backward compat)
   // =============================================
   if (codigo) {
+    const cached = detailCache.get(codigo);
+    const now = Date.now();
+    if (cached && now - cached.timestamp < DETAIL_CACHE_TTL) {
+      return NextResponse.json(cached.data);
+    }
+
     const targetUrl = endpoint === 'ordenes'
       ? `${BASE_URL}/OrdenCompra.json?codigo=${codigo}&ticket=${TICKET}`
       : `${BASE_URL}/licitaciones.json?codigo=${codigo}&ticket=${TICKET}`;
@@ -88,6 +117,8 @@ export async function GET(request: Request) {
         { status: 429 }
       );
     }
+
+    detailCache.set(codigo, { data, timestamp: now });
     return NextResponse.json(data);
   }
 
@@ -96,6 +127,12 @@ export async function GET(request: Request) {
   // And fetch details for candidates in batches to prevent rate limit.
   // =============================================
   try {
+    const now = Date.now();
+    if (syncCache && now - syncCache.timestamp < SYNC_CACHE_TTL) {
+      console.log('Returning cached sync data');
+      return NextResponse.json(syncCache.data);
+    }
+
     // 1. Fetch lightweight active list
     const data = await safeFetch(
       `${BASE_URL}/licitaciones.json?estado=activas&ticket=${TICKET}`,
@@ -120,9 +157,20 @@ export async function GET(request: Request) {
       return isCo || matchesKw;
     });
 
+    // Sort candidates by FechaCierre ascending (soonest first)
+    candidates.sort((a, b) => {
+      const dateA = a.FechaCierre ? new Date(a.FechaCierre).getTime() : Infinity;
+      const dateB = b.FechaCierre ? new Date(b.FechaCierre).getTime() : Infinity;
+      return dateA - dateB;
+    });
+
+    // Limit detailed enrichment to top 25 to avoid overwhelming rate limits & CPU
+    const LIMIT = 25;
+    const candidatesToFetch = candidates.slice(0, LIMIT);
+
     // 3. Pre-populate map with basic data
     const enrichedMap = new Map<string, any>();
-    for (const item of candidates) {
+    for (const item of candidatesToFetch) {
       enrichedMap.set(item.CodigoExterno, {
         CodigoExterno: item.CodigoExterno,
         Nombre: item.Nombre,
@@ -137,14 +185,22 @@ export async function GET(request: Request) {
       });
     }
 
-    // 4. Batch query details to get Rubro, Descripcion, Items, Fechas, Comprador
-    // Use smaller batch size (12) to stay safely within ChileCompra API thresholds
+    // 4. Batch query details for candidatesToFetch, using detailCache if available
     const batchSize = 12;
-    for (let i = 0; i < candidates.length; i += batchSize) {
-      const batch = candidates.slice(i, i + batchSize);
-      const promises = batch.map(item =>
-        safeFetch(`${BASE_URL}/licitaciones.json?codigo=${item.CodigoExterno}&ticket=${TICKET}`, 4000)
-      );
+    for (let i = 0; i < candidatesToFetch.length; i += batchSize) {
+      const batch = candidatesToFetch.slice(i, i + batchSize);
+      const promises = batch.map(async (item) => {
+        const cached = detailCache.get(item.CodigoExterno);
+        if (cached && now - cached.timestamp < DETAIL_CACHE_TTL) {
+          return cached.data;
+        }
+        
+        const fetched = await safeFetch(`${BASE_URL}/licitaciones.json?codigo=${item.CodigoExterno}&ticket=${TICKET}`, 4000);
+        if (fetched?.Listado && Array.isArray(fetched.Listado) && fetched.Listado.length > 0) {
+          detailCache.set(item.CodigoExterno, { data: fetched, timestamp: Date.now() });
+        }
+        return fetched;
+      });
       
       const results = await Promise.all(promises);
       results.forEach((res, index) => {
@@ -156,23 +212,30 @@ export async function GET(request: Request) {
       });
 
       // Brief delay between batches
-      if (i + batchSize < candidates.length) {
+      if (i + batchSize < candidatesToFetch.length) {
         await new Promise(resolve => setTimeout(resolve, 80));
       }
     }
 
     const finalEnrichedList = Array.from(enrichedMap.values());
 
-    return NextResponse.json({
+    const resultPayload = {
       Listado: finalEnrichedList,
       Meta: {
         totalFromApi,
         candidatesFiltered: candidates.length,
         totalReturned: finalEnrichedList.length,
-        source: 'estado=activas + batch enrichment',
+        source: 'estado=activas + cache-friendly batch enrichment',
         timestamp: new Date().toISOString()
       }
-    });
+    };
+
+    syncCache = {
+      data: resultPayload,
+      timestamp: Date.now()
+    };
+
+    return NextResponse.json(resultPayload);
   } catch (error: any) {
     console.error('Error syncing Mercado Público:', error);
     return NextResponse.json(
@@ -181,3 +244,4 @@ export async function GET(request: Request) {
     );
   }
 }
+

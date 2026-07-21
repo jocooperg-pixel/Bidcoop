@@ -127,6 +127,7 @@ export default function SearchModule({
 
   const [searchText, setSearchText] = useState('');
   const [filterRubro, setFilterRubro] = useState('Todos');
+  const [localSyncing, setLocalSyncing] = useState(false);
   const [filterRegion, setFilterRegion] = useState('Todos');
   const [filterRiesgo, setFilterRiesgo] = useState('Todos');
   const [filterMontoMin, setFilterMontoMin] = useState(0);
@@ -458,10 +459,9 @@ export default function SearchModule({
 
   // Filtered opportunities
   const filteredOportunidades = useMemo(() => {
-    return oportunidades.filter((op) => {
-      const cleanSearch = searchText.toLowerCase().trim();
-      if (!cleanSearch) {
-        // Standard filters apply when search query is empty
+    const cleanSearch = searchText.toLowerCase().trim();
+    if (!cleanSearch) {
+      return oportunidades.filter((op) => {
         const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
         const matchRegion = filterRegion === 'Todos' || op.region === filterRegion;
         const matchRiesgo = filterRiesgo === 'Todos' || op.riesgo === filterRiesgo;
@@ -469,12 +469,17 @@ export default function SearchModule({
         const matchModalidad = filterModalidad === 'Todos' || op.modalidad === filterModalidad;
         const matchEstado = filterEstado === 'Todos' || op.estado === filterEstado;
         return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchEstado;
-      }
+      });
+    }
 
+    const cleanSearchAlphanum = cleanSearch.replace(/[^a-z0-9]/g, '');
+
+    return oportunidades.filter((op) => {
       // 1. Direct code prefix/contains check (both with/without special characters like dashes)
+      const opCodigoLower = op.codigo.toLowerCase();
       const matchesCode =
-        op.codigo.toLowerCase().includes(cleanSearch) ||
-        op.codigo.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanSearch.replace(/[^a-z0-9]/g, ''));
+        opCodigoLower.includes(cleanSearch) ||
+        opCodigoLower.replace(/[^a-z0-9]/g, '').includes(cleanSearchAlphanum);
 
       // If there is an explicit code search match, BYPASS all other filters (region, rubro, etc.)
       // so the user can ALWAYS locate the bid by typing its code.
@@ -2016,13 +2021,25 @@ export default function SearchModule({
 
                 {onSyncRealTime && (
                   <button
-                    onClick={() => {
-                      onSyncRealTime();
+                    onClick={async () => {
+                      setLocalSyncing(true);
+                      try {
+                        await onSyncRealTime();
+                      } catch (err) {
+                        console.error(err);
+                      } finally {
+                        setLocalSyncing(false);
+                      }
                     }}
-                    className="p-2 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-[10px] transition flex items-center gap-1 shadow-md shadow-blue-500/10 cursor-pointer"
+                    disabled={localSyncing}
+                    className={`p-2 px-3 rounded-xl font-bold text-[10px] transition flex items-center gap-1 shadow-md shadow-blue-500/10 cursor-pointer text-white ${
+                      localSyncing 
+                        ? 'bg-blue-400 cursor-not-allowed opacity-75' 
+                        : 'bg-blue-600 hover:bg-blue-700'
+                    }`}
                     title="Cargar licitaciones reales de hoy"
                   >
-                    🔄 Sincronizar API
+                    {localSyncing ? '🔄 Sincronizando...' : '🔄 Sincronizar API'}
                   </button>
                 )}
               </div>
