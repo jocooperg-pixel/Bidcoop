@@ -1,0 +1,145 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// SaaS User account information
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  alerts    Alert[]
+}
+
+// Supplier company profile (Inderquim or competitors)
+model Provider {
+  id             String   @id @default(uuid())
+  rut            String   @unique
+  razonSocial    String
+  tamano         String   // Grande, Mediana, Pequeña, Micro
+  rubro          String
+  emailContacto  String?
+  telefono       String?
+  
+  // Sales by modality in past 36 mobile months (in CLP)
+  ventasConvenio   Decimal @default(0)
+  ventasLicitacion Decimal @default(0)
+  ventasTratoDirecto Decimal @default(0)
+  ventasCompraAgil Decimal @default(0)
+  total36Meses     Decimal @default(0)
+
+  transactions   Transaction[]
+  contracts      Contract[]
+
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+// Buyer public institution profile
+model Buyer {
+  id               String   @id @default(uuid())
+  rut              String   @unique
+  nombre           String
+  responsablePago  String?
+  contactoEmail    String?
+  contactoTelefono String?
+  plazoPagoPromedio Int     @default(30) // average payment days
+
+  // Purchase volume past 36 mobile months (in CLP)
+  comprasConvenio   Decimal @default(0)
+  comprasLicitacion Decimal @default(0)
+  comprasTratoDirecto Decimal @default(0)
+  comprasCompraAgil Decimal @default(0)
+  total36Meses      Decimal @default(0)
+
+  transactions     Transaction[]
+  contracts        Contract[]
+
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+// Purchase Transaction (Orders or Adjudications)
+model Transaction {
+  id                 String   @id @default(uuid())
+  codigoAdjudicacion String   @unique // e.g. OC-XXXX-XX or LIC-XXXX-XX
+  modalidad          String   // Convenio Marco, Licitacion Publica, Compra Agil, Trato Directo
+  monto              Decimal
+  fecha              DateTime
+  sku                String?
+  items              String?  // JSON string containing detailed items metadata
+
+  buyerId            String
+  buyer              Buyer    @relation(fields: [buyerId], references: [id])
+
+  providerId         String
+  provider           Provider @relation(fields: [providerId], references: [id])
+
+  createdAt          DateTime @default(now())
+}
+
+// Active Biddings and Opportunities for IA parsing
+model Licitacion {
+  id                String   @id @default(uuid())
+  codigo            String   @unique // e.g. 3047-23-LE26
+  titulo            String
+  estado            String   // Publicada, Evaluacion, Adjudicada, Desierta
+  rubro             String
+  region            String
+  montoEstimado     Decimal?
+  fechaCierre       DateTime
+  basesUrl          String?
+  
+  // AI analysis fields
+  resumenIa         String?  // Executive summary
+  plazosClave       String?  // JSON string containing key milestones
+  requisitosAdmisibles String? // JSON list of requirements
+  riesgosExclusion   String?  // JSON text with traffic light indicators
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+// User-defined Alerts configurations
+model Alert {
+  id        String   @id @default(uuid())
+  rubro     String
+  region    String
+  montoMin  Decimal  @default(0)
+  
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+// Supply Contract or CM allocation
+model Contract {
+  id            String   @id @default(uuid())
+  codigo        String   @unique
+  objeto        String
+  monto         Decimal
+  fechaInicio   DateTime
+  fechaVence    DateTime
+  estadoEntrega Float    @default(0.0) // Deliveries completion progress rate
+  status        String   // Activo, Critico, Vencido
+  rolUsuario    String   // Proveedor, Comprador
+
+  providerId    String
+  provider      Provider @relation(fields: [providerId], references: [id])
+
+  buyerId       String
+  buyer         Buyer    @relation(fields: [buyerId], references: [id])
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
