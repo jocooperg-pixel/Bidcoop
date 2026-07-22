@@ -469,28 +469,34 @@ export default function Home() {
     }
   };
 
-
   const handleQueryApiBidding = async (code: string) => {
     if (!code.trim()) return;
+    const cleanCode = code.trim();
+    
+    // Check if code exists in local opportunities first
+    const existingLocal = oportunidades.find(
+      o => o.codigo.toLowerCase() === cleanCode.toLowerCase() || o.id.toLowerCase() === cleanCode.toLowerCase()
+    );
+
+    if (existingLocal) {
+      setSelectedOpportunity(existingLocal);
+      setActiveModule('search');
+      setActiveSubSection('buscador');
+      return;
+    }
+
     try {
-      const response = await fetch(`/api/mercadopublico?codigo=${code}`);
-      if (!response.ok) {
-        let errMsg = `Servidor de Mercado Público respondió con status ${response.status}`;
-        try {
-          const errData = await response.json();
-          if (errData && errData.error) {
-            errMsg = errData.error;
-          }
-        } catch {}
-        throw new Error(errMsg);
+      const response = await fetch(`/api/mercadopublico?codigo=${encodeURIComponent(cleanCode)}`);
+      let data: any = null;
+      if (response.ok) {
+        data = await response.json();
       }
-      const data = await response.json();
-      
+
       if (data && data.Listado && data.Listado.length > 0) {
         const item = data.Listado[0];
         
-        const rubroName = item.Rubro || 'Insumos Generales';
-        const title = item.Nombre || '';
+        const rubroName = item.Rubro || 'Artículos de Escritorio y Oficina';
+        const title = item.Nombre || item.Descripcion || `Proceso ${item.CodigoExterno}`;
         
         const isAseo = 
           rubroName.toLowerCase().includes('aseo') || 
@@ -498,20 +504,19 @@ export default function Home() {
           rubroName.toLowerCase().includes('limpieza') ||
           title.toLowerCase().includes('cloro') ||
           title.toLowerCase().includes('jabón') ||
-          title.toLowerCase().includes('papel');
+          title.toLowerCase().includes('papel hig');
           
         const companyMatch = isAseo ? 'Inder-Roll' : 'Aminorte';
 
-        const codeUpper = item.CodigoExterno.toUpperCase();
+        const codeUpper = (item.CodigoExterno || cleanCode).toUpperCase();
         const titleLower = title.toLowerCase();
         let modality: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' = 'Licitación';
-        if (codeUpper.includes('-CO')) {
+        if (codeUpper.includes('-CO') || codeUpper.includes('COT')) {
           modality = 'Compra Ágil';
         } else if (codeUpper.includes('-CM') || titleLower.includes('convenio marco')) {
           modality = 'Convenio Marco';
         }
 
-        // Calculate realistic amount based on procurement modality if MontoEstimado is not populated
         let realisticMonto = item.MontoEstimado || 0;
         if (!realisticMonto) {
           if (modality === 'Compra Ágil') {
@@ -524,9 +529,9 @@ export default function Home() {
         }
 
         const newLic: Oportunidad = {
-          id: `op-${item.CodigoExterno}`,
-          codigo: item.CodigoExterno,
-          titulo: item.Nombre,
+          id: `op-${item.CodigoExterno || cleanCode}`,
+          codigo: item.CodigoExterno || cleanCode,
+          titulo: title,
           organismo: item.Comprador?.NombreOrganismo || item.Organismo || 'ORGANISMO PÚBLICO',
           organismoRut: item.Comprador?.RutUnico || '12.345.678-9',
           organismoPagoDias: 30,
@@ -534,7 +539,7 @@ export default function Home() {
           rubro: rubroName,
           region: item.Region || 'Metropolitana',
           monto: realisticMonto,
-          fechaPublicacion: item.FechaPublicacion ? item.FechaPublicacion.split('T')[0] : '2026-07-15',
+          fechaPublicacion: item.FechaPublicacion ? item.FechaPublicacion.split('T')[0] : '2026-07-22',
           fechaCierre: item.FechaCierre ? item.FechaCierre.split('T')[0] : '2026-07-28',
           matchScore: 92,
           riesgo: 'Bajo',
@@ -543,15 +548,15 @@ export default function Home() {
           descripcion: item.Descripcion || 'Licitación pública importada desde Mercado Público en tiempo real.',
           estado: 'Publicada',
           cronograma: [
-            { hito: 'Publicación de bases', fecha: item.FechaPublicacion?.replace('T', ' ').slice(0, 16) || '2026-07-15 12:00' },
+            { hito: 'Publicación de bases', fecha: item.FechaPublicacion?.replace('T', ' ').slice(0, 16) || '2026-07-22 12:00' },
             { hito: 'Cierre de ofertas', fecha: item.FechaCierre?.replace('T', ' ').slice(0, 16) || '2026-07-28 14:00' }
           ],
           documentos: [
-            { nombre: `Bases_Oficiales_${item.CodigoExterno}.pdf`, tipo: 'pdf', tamanho: '2.1 MB' },
-            { nombre: `Anexo_Oferta_${item.CodigoExterno}.xlsx`, tipo: 'xlsx', tamanho: '250 KB' }
+            { nombre: `Bases_Oficiales_${item.CodigoExterno || cleanCode}.pdf`, tipo: 'pdf', tamanho: '2.1 MB' },
+            { nombre: `Anexo_Oferta_${item.CodigoExterno || cleanCode}.xlsx`, tipo: 'xlsx', tamanho: '250 KB' }
           ],
           items: [
-            { sku: `IN-GEN-01`, producto: item.Nombre, cantidad: 1, precioUnitario: realisticMonto }
+            { sku: `IN-GEN-01`, producto: title, cantidad: 1, precioUnitario: realisticMonto }
           ],
           criteriosEvaluacion: [
             { aspecto: 'Oferta Económica', ponderacion: 70, descripcion: 'Menor costo' },
@@ -563,21 +568,8 @@ export default function Home() {
         };
 
         setOportunidades(prev => {
-          const exists = prev.some(l => l.codigo === newLic.codigo);
-          const updatedList = exists ? prev : [newLic, ...prev];
-          
-          const d = new Date();
-          const year = d.getFullYear();
-          const month = String(d.getMonth() + 1).padStart(2, '0');
-          const day = String(d.getDate()).padStart(2, '0');
-          const todayStr = `${year}-${month}-${day}`;
-          
-          return updatedList.map(o => {
-            if (o.estado === 'Publicada' && o.fechaCierre && o.fechaCierre < todayStr) {
-              return { ...o, estado: 'Cerrada' };
-            }
-            return o;
-          });
+          const exists = prev.some(l => l.codigo.toLowerCase() === newLic.codigo.toLowerCase());
+          return exists ? prev : [newLic, ...prev];
         });
         
         setSelectedOpportunity(newLic);
@@ -590,15 +582,48 @@ export default function Home() {
           tipo: 'sistema',
           fecha: new Date().toISOString().replace('T', ' ').slice(0, 16),
           titulo: 'Licitación Importada',
-          descripcion: `Se importó la licitación real ${item.CodigoExterno} desde la API.`,
+          descripcion: `Se sincronizó el proceso ${newLic.codigo} exitosamente.`,
           oportunidadId: newLic.id
         };
         setNotifications(prev => [newAlert, ...prev]);
-      } else {
-        alert(`Búsqueda: No se encontró la licitación ${code} en Mercado Público.`);
+        return;
       }
+
+      // Check in mockOportunidades if not returned by API
+      const fallbackMock = mockOportunidades.find(
+        o => o.codigo.toLowerCase() === cleanCode.toLowerCase() || o.id.toLowerCase() === cleanCode.toLowerCase()
+      );
+
+      if (fallbackMock) {
+        setOportunidades(prev => {
+          const exists = prev.some(l => l.codigo.toLowerCase() === fallbackMock.codigo.toLowerCase());
+          return exists ? prev : [fallbackMock, ...prev];
+        });
+        setSelectedOpportunity(fallbackMock);
+        setActiveModule('search');
+        setActiveSubSection('buscador');
+        return;
+      }
+
+      alert(`No se encontró la licitación o compra ágil ${cleanCode} en Mercado Público.`);
     } catch (err: any) {
       console.error(err);
+      // Try local fallback as last resort before alerting error
+      const fallbackMock = mockOportunidades.find(
+        o => o.codigo.toLowerCase() === cleanCode.toLowerCase() || o.id.toLowerCase() === cleanCode.toLowerCase()
+      );
+
+      if (fallbackMock) {
+        setOportunidades(prev => {
+          const exists = prev.some(l => l.codigo.toLowerCase() === fallbackMock.codigo.toLowerCase());
+          return exists ? prev : [fallbackMock, ...prev];
+        });
+        setSelectedOpportunity(fallbackMock);
+        setActiveModule('search');
+        setActiveSubSection('buscador');
+        return;
+      }
+
       alert(`Error al buscar licitación: ${err.message || err}`);
     }
   };

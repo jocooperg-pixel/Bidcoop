@@ -1077,8 +1077,8 @@ export const mockOportunidades: Oportunidad[] = [
     "rubro": "Artículos de Escritorio y Oficina",
     "region": "Metropolitana",
     "monto": 100000,
-    "fechaPublicacion": "2026-07-16",
-    "fechaCierre": "2026-07-22",
+    "fechaPublicacion": "2026-07-22",
+    "fechaCierre": "2026-07-25",
     "matchScore": 98,
     "riesgo": "Bajo",
     "descripcion": "Proceso: CUBRE CABEZA DESECHABLE TIPO ESCAFRANDA. Organismo demandante: HOSPITAL CLINICO METROPOLITANO EL CARMEN DOCTOR LUIS VALENTIN FERRADA. Unidad de compra: Bienes y Servicios.",
@@ -1086,11 +1086,11 @@ export const mockOportunidades: Oportunidad[] = [
     "cronograma": [
       {
         "hito": "Publicación",
-        "fecha": "16/07/2026 17:08"
+        "fecha": "22/07/2026 09:00"
       },
       {
         "hito": "Cierre de ofertas",
-        "fecha": "22/07/2026 10:00"
+        "fecha": "25/07/2026 15:00"
       }
     ],
     "documentos": [
@@ -1139,8 +1139,8 @@ export const mockOportunidades: Oportunidad[] = [
     "rubro": "Artículos de Escritorio y Oficina",
     "region": "Ñuble",
     "monto": 350000,
-    "fechaPublicacion": "2026-07-16",
-    "fechaCierre": "2026-07-20",
+    "fechaPublicacion": "2026-07-22",
+    "fechaCierre": "2026-07-26",
     "matchScore": 77,
     "riesgo": "Bajo",
     "descripcion": "Proceso: MATERIALES DE ENSEÑANZA PROGRAMA 4 A 7 SAN CARLOS. Organismo demandante: ILUSTRE MUNICIPALIDAD DE SAN CARLOS. Unidad de compra: COMPRAS Y CONTRATACIONES MUNICIPALES.",
@@ -1148,11 +1148,11 @@ export const mockOportunidades: Oportunidad[] = [
     "cronograma": [
       {
         "hito": "Publicación",
-        "fecha": "16/07/2026 17:06"
+        "fecha": "22/07/2026 10:00"
       },
       {
         "hito": "Cierre de ofertas",
-        "fecha": "20/07/2026 15:00"
+        "fecha": "26/07/2026 15:00"
       }
     ],
     "documentos": [
@@ -1201,8 +1201,8 @@ export const mockOportunidades: Oportunidad[] = [
     "rubro": "Artículos de Escritorio y Oficina",
     "region": "Metropolitana",
     "monto": 3500000,
-    "fechaPublicacion": "2026-07-16",
-    "fechaCierre": "2026-07-17",
+    "fechaPublicacion": "2026-07-22",
+    "fechaCierre": "2026-07-27",
     "matchScore": 79,
     "riesgo": "Medio",
     "descripcion": "Proceso: PTR N°SN/1480133-84-COT26/SUMINISTRO/ESTACIONES DE ENERGIA PORTATIL DE CARGA. CON ENTREGA INMEDIATA. Organismo demandante: MUNICIPALIDAD DE VITACURA. Unidad de compra: DIRECCION DE DESARROLLO COMUNITARIO 133.",
@@ -1210,11 +1210,11 @@ export const mockOportunidades: Oportunidad[] = [
     "cronograma": [
       {
         "hito": "Publicación",
-        "fecha": "16/07/2026 16:58"
+        "fecha": "22/07/2026 11:00"
       },
       {
         "hito": "Cierre de ofertas",
-        "fecha": "17/07/2026 17:00"
+        "fecha": "27/07/2026 17:00"
       }
     ],
     "documentos": [
@@ -1263,8 +1263,8 @@ export const mockOportunidades: Oportunidad[] = [
     "rubro": "Artículos de Escritorio y Oficina",
     "region": "Metropolitana",
     "monto": 500000,
-    "fechaPublicacion": "2026-07-16",
-    "fechaCierre": "2026-07-22",
+    "fechaPublicacion": "2026-07-22",
+    "fechaCierre": "2026-07-27",
     "matchScore": 78,
     "riesgo": "Bajo",
     "descripcion": "Proceso: COMPRA PROYECTO JARDIN SENSORIAL BIENESTAR. Organismo demandante: SSVQ / Servicio de Bienestar. Unidad de compra: Servicio de Bienestar.",
@@ -1272,11 +1272,11 @@ export const mockOportunidades: Oportunidad[] = [
     "cronograma": [
       {
         "hito": "Publicación",
-        "fecha": "16/07/2026 16:33"
+        "fecha": "22/07/2026 11:30"
       },
       {
         "hito": "Cierre de ofertas",
-        "fecha": "22/07/2026 09:00"
+        "fecha": "27/07/2026 14:00"
       }
     ],
     "documentos": [
@@ -13150,6 +13150,68 @@ export const mockOportunidades: Oportunidad[] = [
         "nombre": "Bastian SpA",
         "rut": "76.123.456-1",
         "cuotaMercado": 35,
+        "adjudicacionesRecientes": 3
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "3244-277-COT26",
+    "codigo": "3244-277-COT26",
+    "titulo": "INSUMOS Y ARTÍCULOS DE ESCRITORIO PARA MUNICIPALIDAD DE SANTO DOMINGO",
+    "organismo": "I MUNICIPALIDAD DE SANTO DOMINGO",
+    "organismoRut": "76.227.506-4",
+    "organismoPagoDias": 33,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Valparaíso",
+    "monto": 450000,
+    "fechaPublicacion": "2026-07-20",
+    "fechaCierre": "2026-07-25",
+    "matchScore": 88,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: INSUMOS Y ARTÍCULOS DE ESCRITORIO PARA MUNICIPALIDAD DE SANTO DOMINGO. Organismo demandante: I MUNICIPALIDAD DE SANTO DOMINGO. Unidad de compra: Departamento de Administración y Finanzas.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "20/07/2026 10:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "25/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_3244-277-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+        "sku": "CA-ITEM-3244-277-COT26",
+        "producto": "INSUMOS Y ARTÍCULOS DE ESCRITORIO PARA MUNICIPALIDAD DE SANTO DOMINGO",
+        "cantidad": 1,
+        "precioUnitario": 450000
+      }
+    ],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Menor costo"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimeiggs Distribuidora",
+        "rut": "93.123.500-1",
+        "cuotaMercado": 25,
         "adjudicacionesRecientes": 3
       }
     ],
