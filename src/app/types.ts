@@ -10,6 +10,9 @@ export interface Item {
   producto: string;
   cantidad: number;
   precioUnitario: number;
+  precioMercadoReferencial?: number;
+  especificacionTecnica?: string;
+  unidadMedida?: string;
 }
 
 export type OpportunityState = 'Publicada' | 'Cerrada' | 'Proveedor seleccionado' | 'Cancelada' | 'Adjudicada' | 'Desierta' | 'En Evaluación' | 'Postulada';

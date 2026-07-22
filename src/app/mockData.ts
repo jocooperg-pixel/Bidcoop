@@ -13192,10 +13192,40 @@ export const mockOportunidades: Oportunidad[] = [
     ],
     "items": [
       {
-        "sku": "CA-ITEM-3244-277-COT26",
-        "producto": "INSUMOS Y ARTÍCULOS DE ESCRITORIO PARA MUNICIPALIDAD DE SANTO DOMINGO",
-        "cantidad": 1,
-        "precioUnitario": 1750000
+        "sku": "CA-ITEM-3244-277-01",
+        "producto": "Resma Papel Fotocopia Carta 75g (Caja de 5 Resmas)",
+        "especificacionTecnica": "Papel multipropósito 75g/m², blancura 98% ISO, apto para fotocopia e impresión láser.",
+        "unidadMedida": "Caja x 5 Resmas",
+        "cantidad": 30,
+        "precioUnitario": 22500,
+        "precioMercadoReferencial": 19800
+      },
+      {
+        "sku": "CA-ITEM-3244-277-02",
+        "producto": "Archivador Jaspeado Tamaño Oficio Lomo Ancho (Caja 50 unidades)",
+        "especificacionTecnica": "Mecanismo niquelado de palanca con raddo, lomo 8 cm, cartón prensado con lomo reforzado.",
+        "unidadMedida": "Caja x 50 un",
+        "cantidad": 4,
+        "precioUnitario": 95000,
+        "precioMercadoReferencial": 84000
+      },
+      {
+        "sku": "CA-ITEM-3244-277-03",
+        "producto": "Caja Lápiz Pasta Azul/Negro Punta Fina 0.7mm (Caja 50 unidades)",
+        "especificacionTecnica": "Tinta gel/secado rápido, cuerpo transparente con tapa ventilada antitragamiento.",
+        "unidadMedida": "Caja x 50 un",
+        "cantidad": 15,
+        "precioUnitario": 18000,
+        "precioMercadoReferencial": 15500
+      },
+      {
+        "sku": "CA-ITEM-3244-277-04",
+        "producto": "Tóner Negro Alta Capacidad Compatible HP 85A / 83A",
+        "especificacionTecnica": "Rendimiento 1.600 páginas al 5% cobertura, certificación de calidad ISO 9001 / STMC.",
+        "unidadMedida": "Unidad",
+        "cantidad": 15,
+        "precioUnitario": 28333,
+        "precioMercadoReferencial": 24900
       }
     ],
     "criteriosEvaluacion": [

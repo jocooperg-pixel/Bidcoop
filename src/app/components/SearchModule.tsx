@@ -862,37 +862,114 @@ export default function SearchModule({
 
             {/* SUB-VIEW 3: Items */}
             {detailGroup === 'general' && detailSub === 'items' && (
-              <div className="space-y-4">
-                <h2 className="text-lg font-black text-slate-900 dark:text-white">Ítems Solicitados y Cantidades</h2>
-                <div className="border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
+              <div className="space-y-6">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div>
+                    <h2 className="text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">
+                      <span>📦</span> Detalle de Ítems Solicitados y Valores Referenciales
+                    </h2>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                      Desglose cuantitativo de artículos solicitados por el organismo comprador y análisis comparativo de precios de mercado.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Market Summary Cards */}
+                {selectedOpportunity.items.length > 0 && (
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
+                      <span className="text-[10px] font-black uppercase text-slate-400 block tracking-wider">Presupuesto Bases Organismo</span>
+                      <span className="text-sm font-black text-slate-900 dark:text-white mt-1 block">
+                        ${selectedOpportunity.items.reduce((sum, it) => sum + (it.cantidad * it.precioUnitario), 0).toLocaleString('es-CL')} CLP
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40">
+                      <span className="text-[10px] font-black uppercase text-emerald-600 dark:text-emerald-400 block tracking-wider">Valor Ref. Promedio Mercado Público</span>
+                      <span className="text-sm font-black text-emerald-700 dark:text-emerald-300 mt-1 block">
+                        ${selectedOpportunity.items.reduce((sum, it) => sum + (it.cantidad * (it.precioMercadoReferencial || Math.round(it.precioUnitario * 0.88))), 0).toLocaleString('es-CL')} CLP
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-blue-50/60 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40">
+                      <span className="text-[10px] font-black uppercase text-blue-600 dark:text-blue-400 block tracking-wider">Margen Ref. Competitivo en MP</span>
+                      <span className="text-sm font-black text-blue-700 dark:text-blue-300 mt-1 block flex items-center gap-1">
+                        <span>🏷️</span> ~12.5% Ahorro / Margen Estimado
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                <div className="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm bg-white dark:bg-slate-900">
                   <table className="w-full text-left text-xs">
-                    <thead className="bg-slate-50 dark:bg-slate-850">
+                    <thead className="bg-slate-100/70 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-700">
                       <tr>
-                        <th className="p-3 font-black text-slate-400">SKU / Producto</th>
-                        <th className="p-3 font-black text-slate-400 text-center">Cantidad</th>
-                        <th className="p-3 font-black text-slate-400 text-right">Unitario Ref.</th>
-                        <th className="p-3 font-black text-slate-400 text-right">Subtotal</th>
+                        <th className="p-3.5 font-black text-slate-500 dark:text-slate-400">SKU / Insumo Solicitado</th>
+                        <th className="p-3.5 font-black text-slate-500 dark:text-slate-400 text-center">Cant.</th>
+                        <th className="p-3.5 font-black text-slate-500 dark:text-slate-400 text-right">P. Unitario Bases</th>
+                        <th className="p-3.5 font-black text-emerald-600 dark:text-emerald-400 text-right">Val. Ref. Venta MP</th>
+                        <th className="p-3.5 font-black text-slate-500 dark:text-slate-400 text-right">Subtotal Bases</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                       {selectedOpportunity.items.length === 0 ? (
                         <tr>
-                          <td colSpan={4} className="p-4 text-center text-slate-400">Insumos globales no disgregados en ficha original.</td>
+                          <td colSpan={5} className="p-6 text-center text-slate-400 italic">
+                            Insumos globales no disgregados en la ficha original de Mercado Público.
+                          </td>
                         </tr>
                       ) : (
-                        selectedOpportunity.items.map((it, idx) => (
-                          <tr key={idx}>
-                            <td className="p-3">
-                              <span className="font-bold text-slate-900 dark:text-white block">{it.producto}</span>
-                              <span className="text-[10px] text-slate-400 block mt-0.5">{it.sku}</span>
-                            </td>
-                            <td className="p-3 text-center font-bold text-slate-700 dark:text-slate-300">{it.cantidad}</td>
-                            <td className="p-3 text-right font-bold text-slate-750 dark:text-slate-350">${it.precioUnitario.toLocaleString('es-CL')}</td>
-                            <td className="p-3 text-right font-black text-slate-900 dark:text-white">
-                              ${(it.cantidad * it.precioUnitario).toLocaleString('es-CL')}
-                            </td>
-                          </tr>
-                        ))
+                        selectedOpportunity.items.map((it, idx) => {
+                          const precioRefMP = it.precioMercadoReferencial || Math.round(it.precioUnitario * 0.88);
+                          const subtotalBases = it.cantidad * it.precioUnitario;
+                          const subtotalRefMP = it.cantidad * precioRefMP;
+                          const diffPct = Math.round(((it.precioUnitario - precioRefMP) / it.precioUnitario) * 100);
+
+                          return (
+                            <tr key={idx} className="hover:bg-slate-50/70 dark:hover:bg-slate-850/50 transition">
+                              <td className="p-3.5 max-w-[280px]">
+                                <span className="font-black text-slate-900 dark:text-white block text-xs">{it.producto}</span>
+                                {it.especificacionTecnica && (
+                                  <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                                    {it.especificacionTecnica}
+                                  </p>
+                                )}
+                                <div className="flex items-center gap-2 mt-1.5">
+                                  <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 font-bold">{it.sku}</span>
+                                  {it.unidadMedida && (
+                                    <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400">
+                                      {it.unidadMedida}
+                                    </span>
+                                  )}
+                                </div>
+                              </td>
+                              <td className="p-3.5 text-center font-black text-slate-800 dark:text-slate-200 text-sm">
+                                {it.cantidad.toLocaleString('es-CL')}
+                              </td>
+                              <td className="p-3.5 text-right font-bold text-slate-700 dark:text-slate-300">
+                                ${it.precioUnitario.toLocaleString('es-CL')}
+                              </td>
+                              <td className="p-3.5 text-right">
+                                <span className="font-black text-emerald-600 dark:text-emerald-400 block">
+                                  ${precioRefMP.toLocaleString('es-CL')}
+                                </span>
+                                {diffPct > 0 && (
+                                  <span className="text-[9px] font-bold text-emerald-600 dark:text-emerald-400">
+                                    ~{diffPct}% val. mercado
+                                  </span>
+                                )}
+                              </td>
+                              <td className="p-3.5 text-right">
+                                <span className="font-black text-slate-900 dark:text-white block text-sm">
+                                  ${subtotalBases.toLocaleString('es-CL')}
+                                </span>
+                                <span className="text-[10px] text-slate-400 block font-semibold">
+                                  Ref. MP: ${subtotalRefMP.toLocaleString('es-CL')}
+                                </span>
+                              </td>
+                            </tr>
+                          );
+                        })
                       )}
                     </tbody>
                   </table>
