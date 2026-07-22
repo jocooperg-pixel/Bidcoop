@@ -220,21 +220,24 @@ export default function Topbar({
                       className={`p-2.5 rounded-xl border transition-all flex flex-col gap-1 relative ${
                         n.leida
                           ? 'bg-white border-slate-100 dark:bg-slate-900 dark:border-slate-800 opacity-60'
+                          : n.esGrandesCompras || n.tipo === 'invitacion'
+                          ? 'bg-purple-50/80 border-purple-300 dark:bg-purple-950/30 dark:border-purple-800 shadow-sm shadow-purple-500/10'
                           : 'bg-slate-50 border-blue-100 dark:bg-slate-850/30 dark:border-blue-900/30'
                       }`}
                     >
                       <div className="flex items-start justify-between gap-4">
-                        <span className={`text-[10px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded ${
+                        <span className={`text-[10px] font-extrabold uppercase tracking-wide px-1.5 py-0.5 rounded ${
+                          n.esGrandesCompras || n.tipo === 'invitacion' ? 'bg-purple-600 text-white shadow-xs' :
                           n.tipo === 'alerta' ? 'bg-red-100 text-red-700 dark:bg-red-950/30 dark:text-red-400' :
                           n.tipo === 'sistema' ? 'bg-green-100 text-green-700 dark:bg-green-950/30 dark:text-green-400' :
                           'bg-blue-100 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400'
                         }`}>
-                          {n.tipo}
+                          {n.esGrandesCompras || n.tipo === 'invitacion' ? '🛍️ Grande Compra (CM)' : n.tipo}
                         </span>
-                        <span className="text-[9px] text-slate-400">{n.fecha}</span>
+                        <span className="text-[9px] text-slate-400 font-medium">{n.fecha}</span>
                       </div>
                       <h4 className="text-xs font-black text-slate-900 dark:text-slate-100">{n.titulo}</h4>
-                      <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">{n.descripcion}</p>
+                      <p className="text-[11px] text-slate-600 dark:text-slate-350 leading-relaxed font-medium">{n.descripcion}</p>
                       
                       <div className="flex items-center gap-2 mt-1.5 pt-1.5 border-t border-slate-100 dark:border-slate-800/80">
                         {!n.leida && (
@@ -255,9 +258,13 @@ export default function Topbar({
                                 setShowNotifications(false);
                               }
                             }}
-                            className="text-[10px] font-black text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                            className={`text-[10px] font-black transition ${
+                              n.esGrandesCompras || n.tipo === 'invitacion'
+                                ? 'text-purple-600 dark:text-purple-400 hover:text-purple-800 font-extrabold underline'
+                                : 'text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400'
+                            }`}
                           >
-                            Ver Oportunidad
+                            {n.esGrandesCompras || n.tipo === 'invitacion' ? '✨ Ver Invitación Grande Compra' : 'Ver Oportunidad'}
                           </button>
                         )}
                       </div>

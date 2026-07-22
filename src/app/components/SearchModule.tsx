@@ -785,6 +785,35 @@ export default function SearchModule({
           {/* COLUMN 2: CENTRAL CONTENT PANEL (DYNAMICAL ACCORDING TO NAVIGATION) */}
           <div className="flex-1 p-6 overflow-y-auto max-h-[700px] space-y-6">
             
+            {/* SPECIAL GRANDES COMPRAS NOTICE BANNER */}
+            {(selectedOpportunity.esInvitacionGrandesCompras || selectedOpportunity.modalidad === 'Grandes Compras') && (
+              <div className="bg-gradient-to-r from-purple-950 via-indigo-900 to-slate-900 border border-purple-500/40 rounded-2xl p-4 text-white shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4 animate-in fade-in duration-200">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="px-2 py-0.5 rounded text-[9px] font-black uppercase tracking-wider bg-purple-600 text-white shadow-xs">
+                      🛍️ INVITACIÓN A GRANDE COMPRA
+                    </span>
+                    <span className="text-[10px] font-bold text-amber-300">
+                      Convenio Marco &gt; 1.000 UTM
+                    </span>
+                  </div>
+                  <h3 className="text-sm font-black text-white">
+                    Intención de Compra emitida por {selectedOpportunity.organismo}
+                  </h3>
+                  <p className="text-[11px] text-purple-200 mt-0.5">
+                    {selectedOpportunity.convenioMarcoNombre || 'Convenio Marco Mercado Público'} &bull; Empresa convocada: <strong className="text-white">{selectedOpportunity.empresaMatch}</strong>
+                  </p>
+                </div>
+                
+                <div className="text-left md:text-right shrink-0">
+                  <span className="text-[9px] uppercase font-bold text-purple-300 block">Monto Solicitado</span>
+                  <span className="text-base font-black text-emerald-400">
+                    ${selectedOpportunity.monto.toLocaleString('es-CL')} CLP {selectedOpportunity.montoUtm ? `(~${selectedOpportunity.montoUtm} UTM)` : ''}
+                  </span>
+                </div>
+              </div>
+            )}
+
             {/* SUB-VIEW 1: Resumen */}
             {detailGroup === 'general' && detailSub === 'resumen' && (
               <div className="space-y-4">
@@ -1741,7 +1770,9 @@ export default function SearchModule({
                   <div>
                     <span className="text-[9px] uppercase font-black text-slate-400 block">Modalidad</span>
                     <span className={`text-[10px] font-black mt-0.5 px-1.5 py-0.5 rounded uppercase block w-fit text-center ${
-                      selectedOpportunity.modalidad === 'Compra Ágil'
+                      selectedOpportunity.modalidad === 'Grandes Compras' || selectedOpportunity.esInvitacionGrandesCompras
+                        ? 'bg-purple-600 text-white font-black'
+                        : selectedOpportunity.modalidad === 'Compra Ágil'
                         ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/30 dark:text-orange-400'
                         : selectedOpportunity.modalidad === 'Convenio Marco'
                         ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400'
@@ -1904,6 +1935,7 @@ export default function SearchModule({
                   className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white cursor-pointer"
                 >
                   <option value="Todos">Todas las Modalidades</option>
+                  <option value="Grandes Compras">🛍️ Grandes Compras (Convenio Marco)</option>
                   <option value="Compra Ágil">Compra Ágil</option>
                   <option value="Licitación">Licitaciones Públicas</option>
                   <option value="Convenio Marco">Convenio Marco</option>
@@ -2105,13 +2137,15 @@ export default function SearchModule({
                               )}
                               {op.modalidad && (
                                 <span className={`text-[8px] font-black px-1.5 py-0.2 rounded uppercase ${
-                                  op.modalidad === 'Compra Ágil'
+                                  op.modalidad === 'Grandes Compras' || op.esInvitacionGrandesCompras
+                                    ? 'bg-purple-600 text-white font-extrabold shadow-xs'
+                                    : op.modalidad === 'Compra Ágil'
                                     ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/30 dark:text-orange-400'
                                     : op.modalidad === 'Convenio Marco'
                                     ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400'
                                     : 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400'
                                 }`}>
-                                  {op.modalidad}
+                                  {op.modalidad === 'Grandes Compras' ? '🛍️ Grande Compra' : op.modalidad}
                                 </span>
                               )}
                               {op.estado && (

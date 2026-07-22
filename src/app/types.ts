@@ -40,7 +40,10 @@ export interface Oportunidad {
   competidoresPropuestos: Array<{ nombre: string; rut: string; cuotaMercado: number; adjudicacionesRecientes: number }>;
   historialPrecios?: Array<{ fecha: string; precioUnitarioPromedio: number }>;
   empresaMatch?: 'Inder-Roll' | 'Aminorte';
-  modalidad: 'Compra Ágil' | 'Licitación' | 'Convenio Marco';
+  modalidad: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras';
+  esInvitacionGrandesCompras?: boolean;
+  convenioMarcoNombre?: string;
+  montoUtm?: number;
 }
 
 export interface Postulacion {
@@ -68,11 +71,14 @@ export interface MiembroEquipo {
 export interface Notificacion {
   id: string;
   leida: boolean;
-  tipo: 'alerta' | 'info' | 'sistema';
+  tipo: 'alerta' | 'info' | 'sistema' | 'invitacion';
   fecha: string;
   titulo: string;
   descripcion: string;
   oportunidadId?: string;
+  empresaMatch?: 'Inder-Roll' | 'Aminorte';
+  esGrandesCompras?: boolean;
+  montoUtm?: number;
 }
 
 export interface VistaGuardada {

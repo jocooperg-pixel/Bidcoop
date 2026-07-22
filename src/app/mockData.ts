@@ -11,7 +11,55 @@ export const mockVistasGuardadas: VistaGuardada[] = [
 ];
 
 export const mockNotificaciones: Notificacion[] = [
-  { id: 'nt-1', leida: false, tipo: 'alerta', fecha: '2026-07-15 08:30', titulo: 'Nueva Oportunidad Detectada', descripcion: 'Suministro de alcohol gel y desinfectantes para la I. Municipalidad de Santiago (Match: 96%)', oportunidadId: '3047-1042-LE26' }
+  {
+    id: 'nt-gc-1',
+    leida: false,
+    tipo: 'invitacion',
+    fecha: '2026-07-22 08:15',
+    titulo: '✨ INVITACIÓN A GRANDE COMPRA (INDER-ROLL)',
+    descripcion: 'El Servicio de Salud Metropolitano Central te ha invitado a la Grande Compra ID GC-3047-881-CM26 por $88.500.000 CLP (1.350 UTM) en Convenio Marco de Aseo.',
+    oportunidadId: 'GC-3047-881-CM26',
+    empresaMatch: 'Inder-Roll',
+    esGrandesCompras: true,
+    montoUtm: 1350
+  },
+  {
+    id: 'nt-gc-2',
+    leida: false,
+    tipo: 'invitacion',
+    fecha: '2026-07-22 08:20',
+    titulo: '✨ INVITACIÓN A GRANDE COMPRA (AMINORTE)',
+    descripcion: 'La Subsecretaría de Educación (MINEDUC) te ha invitado a la Grande Compra ID GC-6012-310-CM26 por $74.200.000 CLP (1.135 UTM) en Convenio Marco de Escritorio.',
+    oportunidadId: 'GC-6012-310-CM26',
+    empresaMatch: 'Aminorte',
+    esGrandesCompras: true,
+    montoUtm: 1135
+  },
+  {
+    id: 'nt-gc-3',
+    leida: false,
+    tipo: 'invitacion',
+    fecha: '2026-07-21 16:45',
+    titulo: '✨ INVITACIÓN A GRANDE COMPRA (INDER-ROLL)',
+    descripcion: 'JUNJI te ha invitado a la Grande Compra ID GC-2241-502-CM26 por $125.000.000 CLP (1.910 UTM) en Convenio Marco de Papelería Institucional.',
+    oportunidadId: 'GC-2241-502-CM26',
+    empresaMatch: 'Inder-Roll',
+    esGrandesCompras: true,
+    montoUtm: 1910
+  },
+  {
+    id: 'nt-gc-4',
+    leida: false,
+    tipo: 'invitacion',
+    fecha: '2026-07-22 07:50',
+    titulo: '✨ INVITACIÓN A GRANDE COMPRA (AMINORTE)',
+    descripcion: 'La Corporación Administrativa del Poder Judicial te ha invitado a la Grande Compra ID GC-1105-774-CM26 por $148.000.000 CLP (2.260 UTM) en Convenio Marco.',
+    oportunidadId: 'GC-1105-774-CM26',
+    empresaMatch: 'Aminorte',
+    esGrandesCompras: true,
+    montoUtm: 2260
+  },
+  { id: 'nt-1', leida: false, tipo: 'alerta', fecha: '2026-07-15 08:30', titulo: 'Nueva Oportunidad Detectada', descripcion: 'Suministro de alcohol gel y desinfectantes para la I. Municipalidad de Santiago (Match: 96%)', oportunidadId: '3047-1042-LE26', empresaMatch: 'Inder-Roll' }
 ];
 
 export const mockOrdenesCompra: OrdenCompra[] = [
@@ -19,6 +67,184 @@ export const mockOrdenesCompra: OrdenCompra[] = [
 ];
 
 export const mockOportunidades: Oportunidad[] = [
+  {
+    "id": "GC-3047-881-CM26",
+    "codigo": "GC-3047-881-CM26",
+    "titulo": "Invitación a Grande Compra: Suministro Masivo Insumos de Aseo e Higiene Hospitalaria",
+    "organismo": "SERVICIO DE SALUD METROPOLITANO CENTRAL",
+    "organismoRut": "61.602.100-0",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Aseo e Higiene",
+    "region": "Metropolitana",
+    "monto": 88500000,
+    "montoUtm": 1350,
+    "convenioMarcoNombre": "Convenio Marco de Insumos de Aseo, Limpieza e Higiene Hospitalaria",
+    "fechaPublicacion": "2026-07-20",
+    "fechaCierre": "2026-07-31",
+    "matchScore": 98,
+    "riesgo": "Bajo",
+    "empresaMatch": "Inder-Roll",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Intención de Compra en Convenio Marco (Grande Compra > 1.000 UTM). El Servicio de Salud Metropolitano Central requiere cotización directa quincenal para suministro masivo de cloro concentrado, amonio cuaternario, alcohol gel 70%, jabón desinfectante e insumos de papel Inder-Roll para la red hospitalaria y CESFAM.",
+    "estado": "Publicada",
+    "cronograma": [
+      { "hito": "Emisión Intención de Compra CM", "fecha": "2026-07-20 09:00" },
+      { "hito": "Plazo Límite Cotizaciones", "fecha": "2026-07-31 15:00" },
+      { "hito": "Adjudicación u Orden de Compra", "fecha": "2026-08-05 17:00" }
+    ],
+    "documentos": [
+      { "nombre": "📄 Términos de Referencia Grande Compra SSMC.pdf", "tipo": "pdf", "tamanho": "2.1 MB" }
+    ],
+    "items": [
+      { "sku": "PAP001-001", "producto": "Cloro Concentrado Químico 5L", "cantidad": 3500, "precioUnitario": 4200 },
+      { "sku": "PAP001-008", "producto": "Toalla de Papel Inder-Roll 200 Mts DH", "cantidad": 4800, "precioUnitario": 10500 },
+      { "sku": "PAP001-003", "producto": "Papel Higiénico Inder-Roll SH 500x6", "cantidad": 3200, "precioUnitario": 10500 }
+    ],
+    "criteriosEvaluacion": [
+      { "aspecto": "Precio Convenio Marco", "ponderacion": 70, "descripcion": "Menor precio según catálogo CM vigente" },
+      { "aspecto": "Plazo de Entrega Directo", "ponderacion": 30, "descripcion": "Despacho a bodegas hospitalarias en < 48 horas" }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [],
+    "historialPrecios": [
+      { "fecha": "Jul 2026", "precioUnitarioPromedio": 88500000 }
+    ]
+  },
+  {
+    "id": "GC-6012-310-CM26",
+    "codigo": "GC-6012-310-CM26",
+    "titulo": "Invitación a Grande Compra: Adquisición Semestral de Artículos de Escritorio y Papelería de Oficina",
+    "organismo": "SUBSECRETARÍA DE EDUCACIÓN",
+    "organismoRut": "60.501.000-6",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 74200000,
+    "montoUtm": 1135,
+    "convenioMarcoNombre": "Convenio Marco de Escritorio, Papelería y Utiles de Oficina",
+    "fechaPublicacion": "2026-07-19",
+    "fechaCierre": "2026-07-30",
+    "matchScore": 99,
+    "riesgo": "Bajo",
+    "empresaMatch": "Aminorte",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Intención de Compra en Convenio Marco (Grande Compra > 1.000 UTM). Adquisición centralizada de resmas de papel Carta y Oficio 75g, archivadores tamaño oficio, bolígrafos, corcheteras y carpetas corporativas para oficinas nivel central MINEDUC.",
+    "estado": "Publicada",
+    "cronograma": [
+      { "hito": "Publicación Intención de Compra CM", "fecha": "2026-07-19 10:00" },
+      { "hito": "Cierre Recepción Ofertas", "fecha": "2026-07-30 14:00" }
+    ],
+    "documentos": [
+      { "nombre": "📄 Especificaciones Técnicas Papelería MINEDUC.pdf", "tipo": "pdf", "tamanho": "1.8 MB" }
+    ],
+    "items": [
+      { "sku": "ESC-RES-01", "producto": "Resma Papel Carta 75g Alcalino", "cantidad": 12000, "precioUnitario": 3800 },
+      { "sku": "ESC-ARC-02", "producto": "Archivador Lomo Ancho Oficio", "cantidad": 4500, "precioUnitario": 2900 },
+      { "sku": "ESC-BOL-03", "producto": "Bolígrafo Azul Ciento por Caja", "cantidad": 800, "precioUnitario": 19500 }
+    ],
+    "criteriosEvaluacion": [
+      { "aspecto": "Precio Convenio", "ponderacion": 80, "descripcion": "Oferta más económica dentro de catálogo CM" },
+      { "aspecto": "Disponibilidad Stock", "ponderacion": 20, "descripcion": "Entrega total inmediata" }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [],
+    "historialPrecios": [
+      { "fecha": "Jul 2026", "precioUnitarioPromedio": 74200000 }
+    ]
+  },
+  {
+    "id": "GC-2241-502-CM26",
+    "codigo": "GC-2241-502-CM26",
+    "titulo": "Invitación a Grande Compra: Suministro Anual Papel Higiénico Inder-Roll y Toallas Interfoliadas",
+    "organismo": "JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)",
+    "organismoRut": "60.908.000-9",
+    "organismoPagoDias": 20,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Aseo e Higiene",
+    "region": "Metropolitana",
+    "monto": 125000000,
+    "montoUtm": 1910,
+    "convenioMarcoNombre": "Convenio Marco de Artículos de Aseo y Papelería Institucional",
+    "fechaPublicacion": "2026-07-21",
+    "fechaCierre": "2026-08-05",
+    "matchScore": 97,
+    "riesgo": "Bajo",
+    "empresaMatch": "Inder-Roll",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Intención de Compra en Convenio Marco (>1.000 UTM) para abastecimiento de más de 450 salas cuna y jardines infantiles de la Región Metropolitana con toallas interfoliadas de celulosa pura y papel higiénico Inder-Roll.",
+    "estado": "Publicada",
+    "cronograma": [
+      { "hito": "Convocatoria Intención de Compra", "fecha": "2026-07-21 11:30" },
+      { "hito": "Cierre de Cotizaciones CM", "fecha": "2026-08-05 16:00" }
+    ],
+    "documentos": [
+      { "nombre": "📄 Requerimientos Técnicos JUNJI.pdf", "tipo": "pdf", "tamanho": "3.4 MB" }
+    ],
+    "items": [
+      { "sku": "PAP001-010", "producto": "Toalla de Papel Inder-Roll 250 HJ C/20", "cantidad": 5500, "precioUnitario": 17000 },
+      { "sku": "PAP001-007", "producto": "Papel Higiénico Inder-Roll DH 450x6", "cantidad": 2000, "precioUnitario": 16000 }
+    ],
+    "criteriosEvaluacion": [
+      { "aspecto": "Precio", "ponderacion": 100, "descripcion": "Menor precio según catálogo CM" }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [],
+    "historialPrecios": [
+      { "fecha": "Jul 2026", "precioUnitarioPromedio": 125000000 }
+    ]
+  },
+  {
+    "id": "GC-1105-774-CM26",
+    "codigo": "GC-1105-774-CM26",
+    "titulo": "Invitación a Grande Compra: Dotación Nacional de Resmas, Carpetas y Suministros para Red Judicial",
+    "organismo": "CORPORACIÓN ADMINISTRATIVA DEL PODER JUDICIAL (CAPJ)",
+    "organismoRut": "60.301.000-0",
+    "organismoPagoDias": 15,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 148000000,
+    "montoUtm": 2260,
+    "convenioMarcoNombre": "Convenio Marco de Escritorio, Papelería y Utiles de Oficina",
+    "fechaPublicacion": "2026-07-22",
+    "fechaCierre": "2026-08-08",
+    "matchScore": 96,
+    "riesgo": "Bajo",
+    "empresaMatch": "Aminorte",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Intención de Compra en Convenio Marco (>1.000 UTM) solicitada por el Poder Judicial para la distribución nacional de suministros de escritorio, resmas, tinta y papelería legal a Tribunales y Cortes de Apelaciones.",
+    "estado": "Publicada",
+    "cronograma": [
+      { "hito": "Publicación Grande Compra CAPJ", "fecha": "2026-07-22 07:30" },
+      { "hito": "Cierre de Respuesta", "fecha": "2026-08-08 17:00" }
+    ],
+    "documentos": [
+      { "nombre": "📄 Bases Grande Compra Poder Judicial.pdf", "tipo": "pdf", "tamanho": "4.2 MB" }
+    ],
+    "items": [
+      { "sku": "ESC-RES-02", "producto": "Resma Papel Oficio 75g Alcalino", "cantidad": 25000, "precioUnitario": 4600 },
+      { "sku": "ESC-CAR-01", "producto": "Carpetas Colgantes Legajadoras C/100", "cantidad": 1200, "precioUnitario": 27500 }
+    ],
+    "criteriosEvaluacion": [
+      { "aspecto": "Precio Convenio", "ponderacion": 90, "descripcion": "Evaluación económica" },
+      { "aspecto": "Garantía", "ponderacion": 10, "descripcion": "Calidad certificada" }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [],
+    "historialPrecios": [
+      { "fecha": "Jul 2026", "precioUnitarioPromedio": 148000000 }
+    ]
+  },
   {
     "id": "3047-1042-LE26",
     "codigo": "3047-1042-LE26",

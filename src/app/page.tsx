@@ -59,7 +59,7 @@ export default function Home() {
   // Global search preferences state
   const [globalPrefs, setGlobalPrefs] = useState({
     rubros: ['Aseo e Higiene', 'Artículos de Escritorio y Oficina'],
-    modalidades: ['Compra Ágil', 'Licitación', 'Convenio Marco'],
+    modalidades: ['Compra Ágil', 'Licitación', 'Convenio Marco', 'Grandes Compras'],
     region: 'Todos',
     montoMinimo: 0,
   });
@@ -83,6 +83,16 @@ export default function Home() {
 
     return list;
   }, [oportunidades, activeCompany, globalPrefs]);
+
+  const filteredNotifications = useMemo(() => {
+    if (activeCompany === 'Inder-Roll') {
+      return notifications.filter(n => !n.empresaMatch || n.empresaMatch === 'Inder-Roll');
+    }
+    if (activeCompany === 'Aminorte') {
+      return notifications.filter(n => !n.empresaMatch || n.empresaMatch === 'Aminorte');
+    }
+    return notifications;
+  }, [notifications, activeCompany]);
 
   const filteredPostulaciones = useMemo(() => {
     return postulaciones.filter(p => {
@@ -323,19 +333,19 @@ export default function Home() {
         const tipo = (item.Tipo || '').toUpperCase();
         const codeUpper = code.toUpperCase();
         const titleLower = (item.Nombre || '').toLowerCase();
-        let modality: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' = 'Licitación';
+        let modality: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras' = 'Licitación';
         
         if (tipo === 'CO' || codeUpper.includes('-CO')) {
           modality = 'Compra Ágil';
-        } else if (codeUpper.includes('-CM') || titleLower.includes('convenio marco')) {
-          modality = 'Convenio Marco';
+        } else if (codeUpper.includes('-CM') || titleLower.includes('convenio marco') || titleLower.includes('grande compra') || titleLower.includes('intencion de compra')) {
+          modality = (item.MontoEstimado && item.MontoEstimado > 65000000) || titleLower.includes('grande compra') ? 'Grandes Compras' : 'Convenio Marco';
         }
-        // LE, LP, LR, L1, O1, B2, etc. are all Licitaciones
 
         // Get real amount from API
         let monto = item.MontoEstimado || 0;
         if (!monto || monto === 0) {
           if (modality === 'Compra Ágil') monto = 150000 + Math.floor(Math.random() * 1650000);
+          else if (modality === 'Grandes Compras') monto = 65000000 + Math.floor(Math.random() * 85000000);
           else if (modality === 'Convenio Marco') monto = 1500000 + Math.floor(Math.random() * 23500000);
           else monto = 15000000 + Math.floor(Math.random() * 135000000);
         }
@@ -354,6 +364,9 @@ export default function Home() {
         // Real portal URL for documents
         const portalUrl = `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${code}`;
 
+        const isGrandesCompras = modality === 'Grandes Compras';
+        const montoUtmCalc = Math.round(monto / 65000);
+
         mappedList.push({
           id: `op-${code}`,
           codigo: code,
@@ -365,12 +378,15 @@ export default function Home() {
           rubro: finalRubro,
           region: regionRaw || 'Metropolitana',
           monto,
+          montoUtm: isGrandesCompras ? montoUtmCalc : undefined,
+          convenioMarcoNombre: isGrandesCompras ? `Convenio Marco de ${finalRubro}` : undefined,
           fechaPublicacion: fechaPublicacion ? fechaPublicacion.split('T')[0] : new Date().toISOString().split('T')[0],
           fechaCierre: fechaCierre ? fechaCierre.split('T')[0] : '2026-07-28',
           matchScore: 80 + Math.floor(Math.random() * 20),
           riesgo: 'Bajo',
           empresaMatch: companyMatch,
           modalidad: modality,
+          esInvitacionGrandesCompras: isGrandesCompras,
           descripcion: item.Descripcion || `${modality} importada desde Mercado Público.`,
           estado: item.Estado || 'Publicada',
           cronograma: [
@@ -428,6 +444,7 @@ export default function Home() {
       const totalImported = mappedList.length;
       const comprasAgiles = mappedList.filter(o => o.modalidad === 'Compra Ágil').length;
       const convenios = mappedList.filter(o => o.modalidad === 'Convenio Marco').length;
+      const grandesComprasCount = mappedList.filter(o => o.modalidad === 'Grandes Compras').length;
       const lics = mappedList.filter(o => o.modalidad === 'Licitación').length;
 
       const newAlert: Notificacion = {
@@ -436,12 +453,12 @@ export default function Home() {
         tipo: 'sistema',
         fecha: new Date().toISOString().replace('T', ' ').slice(0, 16),
         titulo: 'Sincronización Completa',
-        descripcion: `${totalImported} oportunidades de ${meta.totalFromApi || '?'} licitaciones activas (${comprasAgiles} Compras Ágiles, ${convenios} Convenios Marco, ${lics} Licitaciones).`
+        descripcion: `${totalImported} oportunidades activas (${grandesComprasCount} Invitaciones a Grandes Compras, ${comprasAgiles} Compras Ágiles, ${convenios} Convenios Marco, ${lics} Licitaciones).`
       };
       setNotifications(prev => [newAlert, ...prev]);
       
       if (!silent) {
-        alert(`¡Sincronización exitosa!\n\nDe ${meta.totalFromApi || '?'} licitaciones activas en Mercado Público:\n\n${totalImported} oportunidades relevantes encontradas:\n• ${comprasAgiles} Compras Ágiles\n• ${convenios} Convenio Marco\n• ${lics} Licitaciones`);
+        alert(`¡Sincronización exitosa!\n\nDe ${meta.totalFromApi || '?'} licitaciones activas en Mercado Público:\n\n${totalImported} oportunidades relevantes encontradas:\n• ${grandesComprasCount} Invitaciones a Grandes Compras (>1.000 UTM)\n• ${comprasAgiles} Compras Ágiles\n• ${convenios} Convenios Marco\n• ${lics} Licitaciones`);
       }
     } catch (err: any) {
       console.error(err);
@@ -602,7 +619,7 @@ export default function Home() {
         
         {/* Top bar header */}
         <Topbar
-          notifications={notifications}
+          notifications={filteredNotifications}
           oportunidades={oportunidades}
           onMarkNotificationRead={handleMarkNotificationRead}
           onSelectOpportunity={handleSelectOpportunityFromGlobal}

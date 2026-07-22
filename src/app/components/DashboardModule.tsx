@@ -64,12 +64,19 @@ export default function DashboardModule({
     const totalOps = Math.round(oportunidades.length * rangeMultiplier);
     const alerts = Math.round(oportunidades.filter(o => o.matchScore >= 90).length * rangeMultiplier);
     const closeCount = oportunidades.filter(o => o.estado === 'Publicada').slice(0, 3).length; // hardcoded count for urgency
+    const gcCount = oportunidades.filter(o => o.esInvitacionGrandesCompras || o.modalidad === 'Grandes Compras').length;
     return {
       available: totalOps,
       alerts: alerts,
-      closingSoon: closeCount
+      closingSoon: closeCount,
+      grandesCompras: gcCount
     };
   }, [oportunidades, rangeMultiplier]);
+
+  // Active Grandes Compras Invitations
+  const grandesComprasInvitaciones = useMemo(() => {
+    return oportunidades.filter(o => (o.esInvitacionGrandesCompras || o.modalidad === 'Grandes Compras') && o.estado === 'Publicada');
+  }, [oportunidades]);
 
   // Suggested opportunities filtering (only active ones)
   const suggestedOpportunities = useMemo(() => {
@@ -150,6 +157,87 @@ export default function DashboardModule({
           ))}
         </div>
       </div>
+
+      {/* GRANDES COMPRAS BANNER WIDGET */}
+      {grandesComprasInvitaciones.length > 0 && (
+        <div className="bg-gradient-to-r from-purple-950 via-indigo-900 to-slate-900 rounded-2xl p-5 text-white shadow-xl border border-purple-500/30 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 relative z-10">
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-widest bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-md">
+                  ✨ CONVENIO MARCO - MERCADO PÚBLICO
+                </span>
+                <span className="text-[10px] font-bold text-purple-200">
+                  Intenciones de Compra &gt; 1.000 UTM
+                </span>
+              </div>
+              <h2 className="text-lg font-black tracking-tight text-white flex items-center gap-2">
+                🛍️ Invitaciones a Grandes Compras ({grandesComprasInvitaciones.length} Activas)
+              </h2>
+              <p className="text-xs text-purple-200/90 mt-0.5">
+                Organismos compradores han emitido solicitudes directas de cotización a tus catálogos adjudicados.
+              </p>
+            </div>
+            
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-purple-950/60 border border-purple-700/50 text-purple-200">
+                Total en Juego: ${(grandesComprasInvitaciones.reduce((acc, curr) => acc + curr.monto, 0)).toLocaleString('es-CL')} CLP
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 relative z-10">
+            {grandesComprasInvitaciones.map(gc => (
+              <div 
+                key={gc.id} 
+                className="bg-slate-900/90 backdrop-blur border border-purple-500/30 hover:border-purple-400 rounded-xl p-3.5 transition-all flex flex-col justify-between hover:shadow-lg hover:shadow-purple-900/20 group"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-1.5">
+                    <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded ${
+                      gc.empresaMatch === 'Inder-Roll' 
+                        ? 'bg-emerald-950/90 text-emerald-300 border border-emerald-700/50' 
+                        : 'bg-blue-950/90 text-blue-300 border border-blue-700/50'
+                    }`}>
+                      🏢 {gc.empresaMatch || 'Empresa'}
+                    </span>
+                    <span className="text-[10px] font-extrabold text-amber-400">
+                      Match Score: {gc.matchScore}%
+                    </span>
+                  </div>
+                  <h4 className="text-xs font-black text-white group-hover:text-purple-200 transition line-clamp-2">
+                    {gc.titulo}
+                  </h4>
+                  <p className="text-[10px] text-slate-300 font-medium mt-1">
+                    🏛️ {gc.organismo}
+                  </p>
+                </div>
+
+                <div className="mt-3 pt-2.5 border-t border-slate-800/90 flex items-center justify-between">
+                  <div>
+                    <span className="text-[9px] font-bold text-slate-400 block uppercase">Monto Estimado</span>
+                    <span className="text-sm font-black text-emerald-400">
+                      ${gc.monto.toLocaleString('es-CL')} CLP {gc.montoUtm ? `(~${gc.montoUtm} UTM)` : ''}
+                    </span>
+                  </div>
+                  
+                  <button
+                    onClick={() => onSelectOpportunity(gc)}
+                    className="px-3 py-1.5 rounded-lg text-[10px] font-black uppercase bg-purple-600 hover:bg-purple-500 text-white transition cursor-pointer flex items-center gap-1 shadow-md shadow-purple-600/30"
+                  >
+                    <span>Ingresar Oferta CM</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* 2. KPI CARDS */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -292,6 +380,7 @@ export default function DashboardModule({
                   {[
                     { id: 'Compra Ágil', label: '⚡ Compra Ágil' },
                     { id: 'Convenio Marco', label: '📦 Convenio' },
+                    { id: 'Grandes Compras', label: '🛍️ Grandes Compras' },
                     { id: 'Licitación', label: '🏛️ Licitación' }
                   ].map((mod) => {
                     const isChecked = selectedModalidades.includes(mod.id);
