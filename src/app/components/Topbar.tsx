@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Notificacion, Oportunidad } from '../types';
+import { Notificacion, Oportunidad, Empresa } from '../types';
 
 interface TopbarProps {
   notifications: Notificacion[];
@@ -8,8 +8,8 @@ interface TopbarProps {
   onSelectOpportunity: (op: Oportunidad) => void;
   onSearchQuery: (query: string) => void;
   currentUser: { nombre: string; email: string; avatar: string; rol: string };
-  activeCompany: 'Consolidado' | 'Inder-Roll' | 'Aminorte';
-  onChangeCompany: (company: 'Consolidado' | 'Inder-Roll' | 'Aminorte') => void;
+  activeCompany: Empresa;
+  onChangeCompany: (company: Empresa) => void;
   lastSyncTime?: string;
 }
 
@@ -161,8 +161,8 @@ export default function Topbar({
           </button>
           
           {showCompanyMenu && (
-            <div className="absolute right-0 top-9 w-48 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl z-50 p-1.5 space-y-1 animate-in fade-in slide-in-from-top-2 duration-150">
-              {(['Consolidado', 'Inder-Roll', 'Aminorte'] as const).map((company) => (
+            <div className="absolute right-0 top-9 w-52 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl z-50 p-1.5 space-y-1 animate-in fade-in slide-in-from-top-2 duration-150">
+              {(['Consolidado', 'Inder-Roll', 'Aminorte', 'V-MOCCS'] as const).map((company) => (
                 <button
                   key={company}
                   onClick={() => {

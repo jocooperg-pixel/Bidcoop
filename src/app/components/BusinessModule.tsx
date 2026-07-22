@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Oportunidad, Postulacion, OrdenCompra } from '../types';
+import { Oportunidad, Postulacion, OrdenCompra, Empresa } from '../types';
 import { FLETES_REGIONALES_CHILE } from '../mockData';
 
 // We import productCatalogRaw from catalog.ts to parse it
@@ -13,7 +13,7 @@ interface BusinessModuleProps {
   ordenesCompra: OrdenCompra[];
   onSelectOpportunity: (op: Oportunidad) => void;
   onNavigateToTab: (module: string, subSection: string) => void;
-  activeCompany?: 'Consolidado' | 'Inder-Roll' | 'Aminorte';
+  activeCompany?: Empresa;
 }
 
 export default function BusinessModule({
@@ -48,12 +48,13 @@ export default function BusinessModule({
     if (activeCompany === 'Inder-Roll') {
       return parsed.filter(p => p.proveedor === 'Inderquim').slice(0, 100);
     }
-    return parsed.filter(p => p.proveedor === 'Aminorte').slice(0, 100);
+    // Aminorte and V-MOCCS share the Convenio Marco Escritorio catalog
+    return parsed.filter(p => p.proveedor === 'Aminorte' || p.proveedor === 'V-MOCCS').slice(0, 100);
   }, [activeCompany]);
 
   // Postulaciones Filters State
   const [filterModality, setFilterModality] = useState<'Todas' | 'Compra Ágil' | 'Grandes Compras'>('Todas');
-  const [filterCompany, setFilterCompany] = useState<'Todas' | 'Inder-Roll' | 'Aminorte'>('Todas');
+  const [filterCompany, setFilterCompany] = useState<'Todas' | 'Inder-Roll' | 'Aminorte' | 'V-MOCCS'>('Todas');
 
   // Logistics & Margin Simulator State
   const [selectedRegionLog, setSelectedRegionLog] = useState<string>('Valparaíso');
@@ -309,7 +310,7 @@ export default function BusinessModule({
             <div className="flex items-center gap-2">
               <span className="text-xs font-bold text-slate-400">Filtrar Empresa:</span>
               <span className="px-3 py-1 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 rounded-xl text-xs font-black">
-                {activeCompany === 'Consolidado' ? '🏢 Consolidado (Inder-Roll + Aminorte)' : `🏢 ${activeCompany}`}
+                {activeCompany === 'Consolidado' ? '🏢 Consolidado (Inder-Roll + Aminorte + V-MOCCS)' : `🏢 ${activeCompany}`}
               </span>
             </div>
           </div>
@@ -484,7 +485,8 @@ export default function BusinessModule({
                   className="px-2.5 py-1.5 text-xs font-bold rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 cursor-pointer"
                 >
                   <option value="Todas">🏢 Todas las Empresas</option>
-                  <option value="Aminorte">Aminorte (Escritorio)</option>
+                  <option value="Aminorte">Aminorte (Escritorio / Convenio Marco)</option>
+                  <option value="V-MOCCS">V-MOCCS SpA (Escritorio / Convenio Marco)</option>
                   <option value="Inder-Roll">Inder-Roll (Aseo)</option>
                 </select>
 

@@ -1,3 +1,6 @@
+export type Empresa = 'Consolidado' | 'Inder-Roll' | 'Aminorte' | 'V-MOCCS';
+export type EmpresaMatch = 'Inder-Roll' | 'Aminorte' | 'V-MOCCS';
+
 export interface DocumentoAdjunto {
   nombre: string;
   tipo: 'pdf' | 'docx' | 'xlsx' | 'link';
@@ -42,7 +45,7 @@ export interface Oportunidad {
   comentarios: Array<{ id: string; usuario: string; rol: string; fecha: string; texto: string }>;
   competidoresPropuestos: Array<{ nombre: string; rut: string; cuotaMercado: number; adjudicacionesRecientes: number }>;
   historialPrecios?: Array<{ fecha: string; precioUnitarioPromedio: number }>;
-  empresaMatch?: 'Inder-Roll' | 'Aminorte';
+  empresaMatch?: EmpresaMatch;
   modalidad: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras';
   esInvitacionGrandesCompras?: boolean;
   convenioMarcoNombre?: string;
@@ -82,7 +85,7 @@ export interface Postulacion {
   documentosAdjuntos: string[];
   itemsOfertados: Array<{ sku: string; precioOferta: number; cantidad: number }>;
   fechaActualizacion: string;
-  empresaMatch?: 'Inder-Roll' | 'Aminorte';
+  empresaMatch?: EmpresaMatch;
   modalidad?: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras';
   organismo?: string;
 }
@@ -104,7 +107,7 @@ export interface Notificacion {
   titulo: string;
   descripcion: string;
   oportunidadId?: string;
-  empresaMatch?: 'Inder-Roll' | 'Aminorte';
+  empresaMatch?: EmpresaMatch;
   esGrandesCompras?: boolean;
   montoUtm?: number;
 }

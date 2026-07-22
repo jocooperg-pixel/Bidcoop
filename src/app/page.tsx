@@ -10,7 +10,7 @@ import AnalyticsModule from './components/AnalyticsModule';
 import ConfigModule from './components/ConfigModule';
 import ProvidersModule from './components/ProvidersModule';
 
-import { Oportunidad, Postulacion, MiembroEquipo, Notificacion, VistaGuardada } from './types';
+import { Oportunidad, Postulacion, MiembroEquipo, Notificacion, VistaGuardada, Empresa } from './types';
 import {
   mockOportunidades,
   mockMiembrosEquipo,
@@ -26,8 +26,8 @@ export default function Home() {
   const [activeSubSection, setActiveSubSection] = useState<string>('resumen');
   const [darkMode, setDarkMode] = useState<boolean>(false);
   
-  // Profile Context Toggle: Consolidado, Inder-Roll (Aseo), Aminorte (Escritorio)
-  const [activeCompany, setActiveCompany] = useState<'Consolidado' | 'Inder-Roll' | 'Aminorte'>('Consolidado');
+  // Profile Context Toggle: Consolidado, Inder-Roll (Aseo), Aminorte (Escritorio), V-MOCCS (Escritorio / Convenio Marco)
+  const [activeCompany, setActiveCompany] = useState<Empresa>('Consolidado');
   
   // Last sync timestamp state
   const [lastSyncTime, setLastSyncTime] = useState<string>('Pendiente');
@@ -72,6 +72,8 @@ export default function Home() {
       list = oportunidades.filter(o => o.empresaMatch === 'Inder-Roll');
     } else if (activeCompany === 'Aminorte') {
       list = oportunidades.filter(o => o.empresaMatch === 'Aminorte');
+    } else if (activeCompany === 'V-MOCCS') {
+      list = oportunidades.filter(o => o.empresaMatch === 'V-MOCCS' || o.empresaMatch === 'Aminorte');
     }
 
     // Apply global preferences
@@ -91,6 +93,9 @@ export default function Home() {
     }
     if (activeCompany === 'Aminorte') {
       return notifications.filter(n => !n.empresaMatch || n.empresaMatch === 'Aminorte');
+    }
+    if (activeCompany === 'V-MOCCS') {
+      return notifications.filter(n => !n.empresaMatch || n.empresaMatch === 'V-MOCCS' || n.empresaMatch === 'Aminorte');
     }
     return notifications;
   }, [notifications, activeCompany]);

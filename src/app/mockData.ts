@@ -156,6 +156,24 @@ export const mockPostulaciones: Postulacion[] = [
 
   // --- AMINORTE (ESCRITORIO Y OFICINA - COMPRAS ÁGILES POSTULADAS) ---
   {
+    id: 'post-vmoccs-101',
+    oportunidadId: '5188-312-COT26',
+    oportunidadCodigo: '5188-312-COT26',
+    oportunidadTitulo: 'Compra Ágil: Adquisición de Artículos de Escritorio y Papelería para Municipalidad de Macul',
+    estado: 'Enviada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 1848400,
+    empresaMatch: 'V-MOCCS',
+    modalidad: 'Compra Ágil',
+    organismo: 'I MUNICIPALIDAD DE MACUL',
+    documentosAdjuntos: ['Cotizacion_Oficial_VMoccs_Macul.pdf'],
+    itemsOfertados: [
+      { sku: '40001383', precioOferta: 1800, cantidad: 500 },
+      { sku: '40001384', precioOferta: 48000, cantidad: 11 }
+    ],
+    fechaActualizacion: '2026-07-22'
+  },
+  {
     id: 'post-ca-201',
     oportunidadId: 'COT-6012-401-COT26',
     oportunidadCodigo: 'COT-6012-401-COT26',

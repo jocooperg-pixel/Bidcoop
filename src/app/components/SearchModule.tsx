@@ -198,7 +198,7 @@ export default function SearchModule({
 
   // Official Quote Generator Modal State
   const [showQuoteModal, setShowQuoteModal] = useState<boolean>(false);
-  const [quoteCompany, setQuoteCompany] = useState<'Inder-Roll' | 'Aminorte'>('Aminorte');
+  const [quoteCompany, setQuoteCompany] = useState<'Inder-Roll' | 'Aminorte' | 'V-MOCCS'>('Aminorte');
 
   // Edit Items Modal State
   const [showEditItemsModal, setShowEditItemsModal] = useState<boolean>(false);
@@ -2585,18 +2585,26 @@ export default function SearchModule({
 
               <div className="flex items-center gap-3">
                 {/* Company Selector Toggle */}
-                <div className="flex items-center gap-1 bg-slate-200 dark:bg-slate-800 p-1 rounded-xl">
+                <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
                   <button
                     onClick={() => setQuoteCompany('Aminorte')}
-                    className={`px-3 py-1 text-xs font-black rounded-lg transition ${
+                    className={`px-3 py-1 text-xs font-black rounded-lg transition cursor-pointer ${
                       quoteCompany === 'Aminorte' ? 'bg-blue-600 text-white shadow-xs' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400'
                     }`}
                   >
                     Aminorte SpA
                   </button>
                   <button
+                    onClick={() => setQuoteCompany('V-MOCCS')}
+                    className={`px-3 py-1 text-xs font-black rounded-lg transition cursor-pointer ${
+                      quoteCompany === 'V-MOCCS' ? 'bg-purple-600 text-white shadow-xs' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400'
+                    }`}
+                  >
+                    V-MOCCS SpA
+                  </button>
+                  <button
                     onClick={() => setQuoteCompany('Inder-Roll')}
-                    className={`px-3 py-1 text-xs font-black rounded-lg transition ${
+                    className={`px-3 py-1 text-xs font-black rounded-lg transition cursor-pointer ${
                       quoteCompany === 'Inder-Roll' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400'
                     }`}
                   >
@@ -2627,17 +2635,19 @@ export default function SearchModule({
                 <div className="flex justify-between items-start border-b-2 border-slate-900 pb-6">
                   <div>
                     <h1 className="text-xl font-black tracking-tight text-blue-900">
-                      {quoteCompany === 'Aminorte' ? 'AMINORTE SpA' : 'INDER-ROLL SpA'}
+                      {quoteCompany === 'Aminorte' ? 'AMINORTE SpA' : quoteCompany === 'V-MOCCS' ? 'V-MOCCS SpA' : 'INDER-ROLL SpA'}
                     </h1>
                     <p className="text-xs font-bold text-slate-600 mt-0.5">
                       {quoteCompany === 'Aminorte'
                         ? 'Distribución e Importación de Papelería, Resmas y Artículos de Oficina'
+                        : quoteCompany === 'V-MOCCS'
+                        ? 'Comercializadora e Importadora de Papelería, Convenio Marco y Escritorio'
                         : 'Fabricación y Distribución de Insumos Sanitarios, Aseo Químico e Higiene Hospitalaria'}
                     </p>
                     <div className="text-[11px] text-slate-500 mt-2 space-y-0.5">
-                      <p>RUT: {quoteCompany === 'Aminorte' ? '76.123.500-1' : '76.854.912-K'}</p>
-                      <p>Dirección: Av. Providencia 1234, Of. 602, Santiago, Chile</p>
-                      <p>Contacto Comercial: contacto@{quoteCompany === 'Aminorte' ? 'aminorte.cl' : 'inderroll.cl'} | +56 2 2940 8800</p>
+                      <p>RUT: {quoteCompany === 'Aminorte' ? '76.123.500-1' : quoteCompany === 'V-MOCCS' ? '77.235.702-8' : '76.854.912-K'}</p>
+                      <p>Dirección: {quoteCompany === 'V-MOCCS' ? 'Av. Apoquindo 4700, Las Condes, Santiago, Chile' : 'Av. Providencia 1234, Of. 602, Santiago, Chile'}</p>
+                      <p>Contacto Comercial: contacto@{quoteCompany === 'Aminorte' ? 'aminorte.cl' : quoteCompany === 'V-MOCCS' ? 'v-moccs.cl' : 'inderroll.cl'} | {quoteCompany === 'V-MOCCS' ? '+56 2 2950 1800' : '+56 2 2940 8800'}</p>
                     </div>
                   </div>
 
@@ -2756,7 +2766,7 @@ export default function SearchModule({
                 <div className="pt-8 flex justify-between items-end text-xs border-t border-slate-200">
                   <div>
                     <span className="text-[10px] text-slate-400 block font-mono">Firma Certificada Digitalmente</span>
-                    <span className="font-bold text-slate-800">Departamento Comercial — {quoteCompany === 'Aminorte' ? 'Aminorte SpA' : 'Inder-Roll SpA'}</span>
+                    <span className="font-bold text-slate-800">Departamento Comercial — {quoteCompany === 'Aminorte' ? 'Aminorte SpA' : quoteCompany === 'V-MOCCS' ? 'V-MOCCS SpA' : 'Inder-Roll SpA'}</span>
                   </div>
                   <div className="text-right">
                     <span className="text-[9px] font-mono text-slate-400 block">HASH: SHA256-COT-{selectedOpportunity.codigo}</span>
