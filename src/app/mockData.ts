@@ -15175,31 +15175,36 @@ export const mockOportunidades: Oportunidad[] = [
   {
     "id": "1057498-1848-COT26",
     "codigo": "1057498-1848-COT26",
-    "titulo": "LN ARTICULOS OFICINA",
-    "organismo": "SERVICIO DE SALUD SUR HOSPITAL SANATORIO EL PINO",
-    "organismoRut": "26.998.623-6",
-    "organismoPagoDias": 30,
+    "titulo": "ADQUISICIÓN DE INSUMOS DE ESCRITORIO Y PAPELERÍA PARA HOSPITAL SANATORIO EL PINO",
+    "organismo": "SERVICIO DE SALUD METROPOLITANO SUR - HOSPITAL SANATORIO EL PINO",
+    "organismoRut": "61.602.200-7",
+    "organismoPagoDias": 42,
     "organismoRiesgo": "Medio",
     "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Metropolitana",
+    "region": "Región Metropolitana",
     "monto": 1500000,
-    "fechaPublicacion": "2026-07-15",
-    "fechaCierre": "2026-07-17",
+    "fechaPublicacion": "2026-07-21",
+    "fechaCierre": "2026-07-26",
     "matchScore": 96,
     "riesgo": "Bajo",
-    "descripcion": "Proceso: LN ARTICULOS OFICINA. Organismo demandante: SERVICIO DE SALUD SUR HOSPITAL SANATORIO EL PINO. Unidad de compra: Bienes y Servicios.",
+    "descripcion": "Proceso: ADQUISICIÓN DE INSUMOS DE ESCRITORIO Y PAPELERÍA PARA HOSPITAL SANATORIO EL PINO. Organismo demandante: SERVICIO DE SALUD METROPOLITANO SUR - HOSPITAL Y COMPLEJO ASISTENCIAL SANATORIO EL PINO. Unidad de compra: Subdirección de Operaciones / Abastecimiento.",
     "estado": "Publicada",
     "cronograma": [
       {
         "hito": "Publicación",
-        "fecha": "15/07/2026 14:45"
+        "fecha": "21/07/2026 10:00"
       },
       {
         "hito": "Cierre de ofertas",
-        "fecha": "17/07/2026 10:30"
+        "fecha": "26/07/2026 15:00"
       }
     ],
     "documentos": [
+      {
+        "nombre": "Solicitud_Materiales_Hospital_ElPino_1057498.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.5 MB"
+      },
       {
         "nombre": "Bases_Oficiales_1057498-1848-COT26.pdf",
         "tipo": "pdf",
@@ -15208,10 +15213,31 @@ export const mockOportunidades: Oportunidad[] = [
     ],
     "items": [
       {
-        "sku": "CA-ITEM-1057498-1848-COT26",
-        "producto": "LN ARTICULOS OFICINA",
-        "cantidad": 1,
-        "precioUnitario": 1500000
+        "sku": "ITEM-ELPINO-01",
+        "producto": "Resma Papel Carta 75g (Caja x 5 Resmas)",
+        "especificacionTecnica": "Papel fotocopia e impresión 75g/m2, blancura 98% ISO, apto para impresoras de alta velocidad.",
+        "unidadMedida": "Caja x 5 Resmas",
+        "cantidad": 25,
+        "precioUnitario": 22000,
+        "precioMercadoReferencial": 19500
+      },
+      {
+        "sku": "ITEM-ELPINO-02",
+        "producto": "Archivador Jaspeado Oficio Lomo Ancho (Caja x 50 un)",
+        "especificacionTecnica": "Mecanismo niquelado de palanca con raddo, lomo 8 cm reforzado.",
+        "unidadMedida": "Caja x 50 un",
+        "cantidad": 5,
+        "precioUnitario": 95000,
+        "precioMercadoReferencial": 85000
+      },
+      {
+        "sku": "ITEM-ELPINO-03",
+        "producto": "Caja Lápiz Pasta Azul 0.7mm (Caja x 50 un)",
+        "especificacionTecnica": "Tinta gel secado rápido, cuerpo transparente.",
+        "unidadMedida": "Caja x 50 un",
+        "cantidad": 20,
+        "precioUnitario": 18750,
+        "precioMercadoReferencial": 16000
       }
     ],
     "criteriosEvaluacion": [

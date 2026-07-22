@@ -19,6 +19,18 @@ interface SearchModuleProps {
 }
 
 const getDeterministicContact = (op: Oportunidad) => {
+  const orgNameUpper = (op.organismo || '').toUpperCase();
+  if (orgNameUpper.includes('PINO') || orgNameUpper.includes('SANATORIO') || (orgNameUpper.includes('SERVICIO DE SALUD') && orgNameUpper.includes('SUR'))) {
+    return {
+      name: 'Gonzalo Araya Morales (Jefe Abastecimiento) / María José Fernández',
+      role: 'Subdirección de Operaciones • Unidad de Compras y Licitaciones Mercado Público',
+      email: 'abastecimiento.elpino@redsalud.gob.cl',
+      emailSecundario: 'compras.sanatorioelpino@redsalud.gob.cl',
+      phone: '+56 2 2576 6000 / +56 2 2576 6150 / +56 2 2576 6152',
+      address: 'Av. Los Morros 13560, San Bernardo, Región Metropolitana, Chile',
+      rut: '61.602.200-7'
+    };
+  }
   let hash = 0;
   const key = op.id || op.codigo || '';
   for (let i = 0; i < key.length; i++) {
