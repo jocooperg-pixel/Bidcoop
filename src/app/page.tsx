@@ -520,11 +520,14 @@ export default function Home() {
         let realisticMonto = item.MontoEstimado || 0;
         if (!realisticMonto) {
           if (modality === 'Compra Ágil') {
-            realisticMonto = 150000 + Math.floor(Math.random() * 1650000);
+            // Compra Ágil por normativa es hasta 60 UTM (máximo ~$3.950.000 CLP)
+            realisticMonto = 250000 + Math.floor(Math.random() * 3600000);
           } else if (modality === 'Convenio Marco') {
-            realisticMonto = 1500000 + Math.floor(Math.random() * 23500000);
+            // Convenio Marco directo es hasta 1.000 UTM (máximo ~$67.000.000 CLP)
+            realisticMonto = 3500000 + Math.floor(Math.random() * 61000000);
           } else {
-            realisticMonto = 15000000 + Math.floor(Math.random() * 135000000);
+            // Licitaciones Públicas / Grandes Compras (> 1.000 UTM)
+            realisticMonto = 72000000 + Math.floor(Math.random() * 78000000);
           }
         }
 
