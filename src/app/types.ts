@@ -44,6 +44,8 @@ export interface Oportunidad {
   esInvitacionGrandesCompras?: boolean;
   convenioMarcoNombre?: string;
   montoUtm?: number;
+  subestadoEvaluacion?: 'Sin oferta seleccionada' | 'En comisión evaluadora' | 'Adjudicada' | 'Desierta';
+  fechaAdjudicacionEstimada?: string;
 }
 
 export interface Postulacion {

@@ -791,10 +791,12 @@ export default function SearchModule({
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="px-2 py-0.5 rounded text-[9px] font-black uppercase tracking-wider bg-purple-600 text-white shadow-xs">
-                      🛍️ INVITACIÓN A GRANDE COMPRA
+                      🛍️ GRANDE COMPRA (CONVENIO MARCO &gt; 1.000 UTM)
                     </span>
-                    <span className="text-[10px] font-bold text-amber-300">
-                      Convenio Marco &gt; 1.000 UTM
+                    <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded ${
+                      selectedOpportunity.estado === 'Adjudicada' ? 'bg-emerald-600 text-white' : 'bg-amber-500 text-white animate-pulse'
+                    }`}>
+                      {selectedOpportunity.estado === 'Adjudicada' ? '🏆 Adjudicada' : '⏳ CERRADA - EN EVALUACIÓN (SIN OFERTA SELECCIONADA)'}
                     </span>
                   </div>
                   <h3 className="text-sm font-black text-white">
@@ -802,6 +804,7 @@ export default function SearchModule({
                   </h3>
                   <p className="text-[11px] text-purple-200 mt-0.5">
                     {selectedOpportunity.convenioMarcoNombre || 'Convenio Marco Mercado Público'} &bull; Empresa convocada: <strong className="text-white">{selectedOpportunity.empresaMatch}</strong>
+                    {selectedOpportunity.fechaAdjudicacionEstimada && ` • Adjudicación estimada: ${selectedOpportunity.fechaAdjudicacionEstimada}`}
                   </p>
                 </div>
                 
