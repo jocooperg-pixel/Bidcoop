@@ -179,6 +179,9 @@ export default function SearchModule({
   // Comment input state
   const [newCommentText, setNewCommentText] = useState('');
 
+  // Document preview modal state
+  const [previewDocModal, setPreviewDocModal] = useState<{ doc: DocumentoAdjunto; opportunity: Oportunidad } | null>(null);
+
   // Synchronize local search state with Topbar global search input
   useEffect(() => {
     if (globalSearchText !== undefined) {
@@ -1009,24 +1012,33 @@ export default function SearchModule({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {selectedOpportunity.documentos.map((doc, idx) => {
                     return (
-                      <div key={idx} className="p-4 rounded-xl border border-slate-100 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-600 transition flex items-center justify-between gap-4 bg-slate-50/50 dark:bg-slate-900/50">
+                      <div key={idx} className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-600 transition flex items-center justify-between gap-4 bg-slate-50/50 dark:bg-slate-900/50 shadow-sm">
                         <div className="flex items-center gap-3">
                           <span className="text-2xl">
                             {doc.tipo === 'link' ? '🌐' : doc.tipo === 'pdf' ? '📕' : doc.tipo === 'xlsx' ? '📗' : '📘'}
                           </span>
                           <div>
-                            <h4 className="text-xs font-black text-slate-900 dark:text-white truncate max-w-[200px]">{doc.nombre}</h4>
-                            <span className="text-[10px] text-slate-400">
+                            <h4 className="text-xs font-black text-slate-900 dark:text-white truncate max-w-[180px]">{doc.nombre}</h4>
+                            <span className="text-[10px] text-slate-400 font-bold block mt-0.5">
                               {doc.tipo === 'link' ? 'Bases Digitales (Mercado Público)' : `${doc.tamanho} • ${doc.tipo.toUpperCase()}`}
                             </span>
                           </div>
                         </div>
-                        <button
-                          onClick={() => handleDownloadDoc(doc, selectedOpportunity)}
-                          className="p-2 px-3 rounded-lg bg-blue-50 dark:bg-blue-950/30 hover:bg-blue-100 dark:hover:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs font-black flex items-center gap-1.5 transition cursor-pointer"
-                        >
-                          Descargar ⬇️
-                        </button>
+
+                        <div className="flex items-center gap-2">
+                          <button
+                            onClick={() => setPreviewDocModal({ doc, opportunity: selectedOpportunity })}
+                            className="px-3 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 text-indigo-600 dark:text-indigo-400 text-xs font-black flex items-center gap-1 transition cursor-pointer"
+                          >
+                            <span>Vista Previa</span> 👁️
+                          </button>
+                          <button
+                            onClick={() => handleDownloadDoc(doc, selectedOpportunity)}
+                            className="px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-blue-950/40 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-blue-600 dark:text-blue-400 text-xs font-black flex items-center gap-1 transition cursor-pointer"
+                          >
+                            <span>Descargar</span> ⬇️
+                          </button>
+                        </div>
                       </div>
                     );
                   })}
@@ -2323,6 +2335,188 @@ export default function SearchModule({
 
           </div>
 
+        </div>
+      )}
+
+      {/* DOCUMENT PREVIEW MODAL */}
+      {previewDocModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/80 backdrop-blur-md animate-fadeIn">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden">
+            
+            {/* Modal Topbar */}
+            <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between bg-slate-50/90 dark:bg-slate-900/90">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">
+                  {previewDocModal.doc.tipo === 'pdf' ? '📕' : previewDocModal.doc.tipo === 'xlsx' ? '📗' : '📄'}
+                </span>
+                <div>
+                  <h3 className="text-sm font-black text-slate-900 dark:text-white truncate max-w-md">
+                    {previewDocModal.doc.nombre}
+                  </h3>
+                  <span className="text-[11px] text-slate-400 font-bold">
+                    {previewDocModal.opportunity.organismo} • Código: {previewDocModal.opportunity.codigo} • Modalidad: {previewDocModal.opportunity.modalidad}
+                  </span>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => handleDownloadDoc(previewDocModal.doc, previewDocModal.opportunity)}
+                  className="px-3.5 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-black flex items-center gap-1.5 transition shadow-sm cursor-pointer"
+                >
+                  <span>Descargar</span> ⬇️
+                </button>
+                <button
+                  onClick={() => setPreviewDocModal(null)}
+                  className="p-1.5 px-3 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-300 font-black text-sm transition cursor-pointer"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+
+            {/* Document Sheet Viewer */}
+            <div className="flex-1 overflow-y-auto p-4 sm:p-8 bg-slate-100 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100">
+              <div className="max-w-3xl mx-auto bg-white dark:bg-slate-900 p-6 sm:p-10 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
+                
+                {/* Formal Header */}
+                <div className="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-4">
+                  <div>
+                    <span className="text-[10px] uppercase tracking-widest font-black text-blue-600 dark:text-blue-400 block">
+                      REPÚBLICA DE CHILE • MERCADO PÚBLICO
+                    </span>
+                    <h2 className="text-sm sm:text-base font-black text-slate-900 dark:text-white mt-1">
+                      {previewDocModal.opportunity.organismo.toUpperCase()}
+                    </h2>
+                    <span className="text-xs text-slate-500 font-medium block">
+                      Unidad Compradora: Departamento de Administración y Finanzas
+                    </span>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-[10px] font-mono font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 block">
+                      ID: {previewDocModal.opportunity.codigo}
+                    </span>
+                    <span className="text-[10px] text-slate-400 block mt-1">
+                      Publicación: {previewDocModal.opportunity.fechaPublicacion}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Document Title Banner */}
+                <div className="text-center py-3 bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-150 dark:border-slate-800">
+                  <h1 className="text-sm sm:text-base font-black text-slate-900 dark:text-white uppercase tracking-wide">
+                    {previewDocModal.doc.nombre}
+                  </h1>
+                  <span className="text-xs text-slate-500 block mt-0.5 font-semibold">
+                    Documento Oficial Adjunto • Mercado Público Chile
+                  </span>
+                </div>
+
+                {/* Summary Metadata */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 bg-blue-50/50 dark:bg-blue-950/20 rounded-xl border border-blue-100 dark:border-blue-900/30 text-xs">
+                  <div>
+                    <span className="text-slate-400 text-[10px] font-black uppercase block">Modalidad</span>
+                    <span className="font-bold text-slate-900 dark:text-white">{previewDocModal.opportunity.modalidad}</span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 text-[10px] font-black uppercase block">Presupuesto</span>
+                    <span className="font-black text-emerald-600 dark:text-emerald-400">${previewDocModal.opportunity.monto.toLocaleString('es-CL')} CLP</span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 text-[10px] font-black uppercase block">Fecha Cierre</span>
+                    <span className="font-bold text-slate-900 dark:text-white">{previewDocModal.opportunity.fechaCierre}</span>
+                  </div>
+                  <div>
+                    <span className="text-slate-400 text-[10px] font-black uppercase block">Pago</span>
+                    <span className="font-bold text-slate-900 dark:text-white">{previewDocModal.opportunity.organismoPagoDias} días</span>
+                  </div>
+                </div>
+
+                {/* Section 1: Official Text Specs */}
+                <div className="space-y-3">
+                  <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-1">
+                    1. ESPECIFICACIÓN Y SOLICITUD DE MATERIALES
+                  </h3>
+                  
+                  <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 text-xs leading-relaxed text-slate-700 dark:text-slate-300">
+                    <p className="font-bold text-slate-900 dark:text-white mb-2">
+                      Requerimiento Formal de Cotización:
+                    </p>
+                    <p className="italic">
+                      "{previewDocModal.opportunity.descripcion}"
+                    </p>
+                  </div>
+                </div>
+
+                {/* Section 2: Items Table Detail */}
+                <div className="space-y-3">
+                  <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-1">
+                    2. DETALLE DE ÍTEMS Y ESPECIFICACIONES TÉCNICAS SOLICITADAS
+                  </h3>
+
+                  <div className="border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden">
+                    <table className="w-full text-left text-xs">
+                      <thead className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-black">
+                        <tr>
+                          <th className="p-2.5">ID / SKU</th>
+                          <th className="p-2.5">Artículo / Producto Solicitado</th>
+                          <th className="p-2.5 text-center">Cant.</th>
+                          <th className="p-2.5 text-right">Unitario Ref.</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                        {previewDocModal.opportunity.items.map((it, idx) => (
+                          <tr key={idx}>
+                            <td className="p-2.5 font-mono text-[10px] text-slate-500 font-bold">{it.sku}</td>
+                            <td className="p-2.5">
+                              <span className="font-black text-slate-900 dark:text-white block">{it.producto}</span>
+                              {it.especificacionTecnica && (
+                                <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5 leading-normal">
+                                  {it.especificacionTecnica}
+                                </span>
+                              )}
+                            </td>
+                            <td className="p-2.5 text-center font-black text-slate-800 dark:text-slate-200">
+                              {it.cantidad} {it.unidadMedida || 'un'}
+                            </td>
+                            <td className="p-2.5 text-right font-black text-slate-900 dark:text-white">
+                              ${it.precioUnitario.toLocaleString('es-CL')}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Section 3: Terms */}
+                <div className="space-y-2 text-xs">
+                  <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-1">
+                    3. CONDICIONES DE PRESENTACIÓN Y ENTREGA
+                  </h3>
+                  <ul className="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-400 text-[11px]">
+                    <li>Las ofertas deben ser ingresadas a través del portal Mercado Público dentro del plazo legal.</li>
+                    <li>Cotización formal debe incluir marca, garantía, especificaciones técnicas claras y plazo de entrega.</li>
+                    <li>Despacho obligatorio en la Región de {previewDocModal.opportunity.region}.</li>
+                  </ul>
+                </div>
+
+                {/* Verification Footer */}
+                <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-[10px] text-slate-400 font-mono">
+                  <div>
+                    <span>Documento Oficial Certificado • Mercado Público Chile</span>
+                    <span className="block text-slate-500">HASH: SHA256-MP-{previewDocModal.opportunity.codigo}-DOC</span>
+                  </div>
+                  <div className="text-right">
+                    <span className="font-bold text-slate-700 dark:text-slate-300 block">VERIFICADO DIGITALMENTE</span>
+                    <span>Plataforma Avanzada de Abastecimiento</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       )}
 
