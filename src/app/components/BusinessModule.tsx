@@ -105,20 +105,109 @@ export default function BusinessModule({
   const [newDocFile, setNewDocFile] = useState<string>('');
 
   // Kanban Board Columns
+  // Kanban Board Columns matching exact Mercado Público participation pipeline
   const kanbanColumns = useMemo(() => {
-    // We categorize the opportunities depending on their states in memory
-    const followed = oportunidades.filter(o => o.estado === 'Publicada' && o.matchScore >= 95);
-    const inEvaluation = oportunidades.filter(o => o.estado === 'En Evaluación');
-    const submitted = oportunidades.filter(o => o.estado === 'Postulada');
-    const won = oportunidades.filter(o => o.estado === 'Adjudicada');
+    // Filter base list by activeCompany
+    const companyOps = oportunidades.filter(o => {
+      if (activeCompany === 'Consolidado') return true;
+      return o.empresaMatch === activeCompany;
+    });
+
+    const companyPosts = postulaciones.filter(p => {
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
+      const pCompany = op ? op.empresaMatch : (p.empresaMatch || (p.oportunidadCodigo?.includes('6012') || p.oportunidadCodigo?.includes('1105') ? 'Aminorte' : 'Inder-Roll'));
+      if (activeCompany === 'Consolidado') return true;
+      return pCompany === activeCompany;
+    });
+
+    // 1. Borrador / Siguiendo
+    const borradorPosts = companyPosts.filter(p => p.estado === 'Borrador');
+    const borradorItems = borradorPosts.map(p => {
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo);
+      return op || {
+        id: p.id,
+        codigo: p.oportunidadCodigo,
+        titulo: p.oportunidadTitulo,
+        organismo: 'Mercado Público',
+        monto: p.montoOferta,
+        matchScore: 90,
+        estado: 'Borrador'
+      };
+    });
+
+    // 2. Abiertos con oferta enviada
+    const enviadasPosts = companyPosts.filter(p => p.estado === 'Enviada');
+    const abiertasItems = enviadasPosts.map(p => {
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo);
+      return op || {
+        id: p.id,
+        codigo: p.oportunidadCodigo,
+        titulo: p.oportunidadTitulo,
+        organismo: 'Mercado Público',
+        monto: p.montoOferta,
+        matchScore: 92,
+        estado: 'Postulada'
+      };
+    });
+
+    // 3. Cerradas esperando resultados
+    const cerradasItems = companyOps.filter(o => o.estado === 'En Evaluación' || o.estado === 'Cerrada');
+
+    // 4. Resultados Publicados / Adjudicados
+    const adjudicadasPosts = companyPosts.filter(p => p.estado === 'Adjudicada');
+    const adjudicadasOps = companyOps.filter(o => o.estado === 'Adjudicada');
+    const publicadosMap = new Map();
+    [...adjudicadasOps, ...adjudicadasPosts.map(p => {
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo);
+      return op || {
+        id: p.id,
+        codigo: p.oportunidadCodigo,
+        titulo: p.oportunidadTitulo,
+        organismo: 'Mercado Público',
+        monto: p.montoOferta,
+        matchScore: 95,
+        estado: 'Adjudicada'
+      };
+    })].forEach(item => {
+      if (item && item.codigo) publicadosMap.set(item.codigo, item);
+    });
+    const publicadosItems = Array.from(publicadosMap.values());
 
     return [
-      { id: 'followed', label: 'Invitaciones Abiertas CM', items: followed, color: 'border-purple-500 bg-purple-500/5' },
-      { id: 'inEvaluation', label: 'Cerrados (A Espera Adjudicación)', items: inEvaluation, color: 'border-amber-400 bg-amber-500/5' },
-      { id: 'submitted', label: 'Postulaciones Enviadas', items: submitted, color: 'border-indigo-400 bg-indigo-500/5' },
-      { id: 'won', label: 'Grandes Compras Adjudicadas', items: won, color: 'border-emerald-500 bg-emerald-500/5' }
+      {
+        id: 'borrador',
+        label: 'Procesos seguidos o con oferta pendiente de envío',
+        sublabel: 'Siguiendo, con oferta guardada',
+        items: borradorItems,
+        color: 'border-amber-500 bg-amber-500/5',
+        badgeBg: 'bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300'
+      },
+      {
+        id: 'abiertos',
+        label: 'Procesos en los que participaste que siguen abiertos',
+        sublabel: 'Publicadas, con oferta enviada',
+        items: abiertasItems,
+        color: 'border-emerald-500 bg-emerald-500/5',
+        badgeBg: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-300'
+      },
+      {
+        id: 'cerrados',
+        label: 'Procesos en los que participaste ya cerrados',
+        sublabel: 'Cerradas, esperando resultados',
+        items: cerradasItems,
+        color: 'border-slate-400 bg-slate-500/5',
+        badgeBg: 'bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+      },
+      {
+        id: 'publicados',
+        label: 'Procesos en los que participaste con resultados publicados',
+        sublabel: 'Resultados publicados',
+        items: publicadosItems,
+        color: 'border-blue-600 bg-blue-500/5',
+        badgeBg: 'bg-blue-100 text-blue-800 dark:bg-blue-950/40 dark:text-blue-300'
+      }
     ];
-  }, [oportunidades]);
+  }, [oportunidades, postulaciones, activeCompany]);
 
   // Calendar parameters
   const [currentMonth, setCurrentMonth] = useState('Julio 2026');
@@ -192,50 +281,87 @@ export default function BusinessModule({
       </div>
 
       {/* =======================================================================
-          TAB 1: KANBAN BOARD
+          TAB 1: KANBAN BOARD (Procesos en los que participaste)
           ======================================================================= */}
       {currentSub === 'mis-negocios' && (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 items-start">
-          {kanbanColumns.map((col) => (
-            <div key={col.id} className={`rounded-2xl border-t-4 p-4 shadow-sm space-y-4 border ${col.color}`}>
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">{col.label}</h3>
-                <span className="text-[10px] font-black bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 px-2 py-0.5 rounded-full">
-                  {col.items.length}
-                </span>
-              </div>
-
-              <div className="space-y-3 max-h-[500px] overflow-y-auto pr-1">
-                {col.items.length === 0 ? (
-                  <div className="text-center py-8 text-slate-400 text-[10px] border border-dashed border-slate-200 dark:border-slate-800 rounded-xl">Sin negocios en esta etapa</div>
-                ) : (
-                  col.items.map((item) => (
-                    <div
-                      key={item.id}
-                      onClick={() => onSelectOpportunity(item)}
-                      className="p-3.5 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-850 hover:border-blue-400 dark:hover:border-blue-500 rounded-xl shadow-sm cursor-pointer transition text-xs space-y-3"
-                    >
-                      <div>
-                        <span className="text-[9px] font-black text-slate-400 uppercase tracking-tight block">{item.codigo}</span>
-                        <h4 className="font-extrabold text-slate-900 dark:text-slate-250 mt-1 line-clamp-2">{item.titulo}</h4>
-                      </div>
-                      <div className="text-[10px] text-slate-400">
-                        {item.organismo}
-                      </div>
-                      <div className="flex justify-between items-center pt-2 border-t border-slate-50 dark:border-slate-800">
-                        <span className="font-black text-slate-900 dark:text-white">
-                          ${item.monto.toLocaleString('es-CL')}
-                        </span>
-                        <span className="text-[9px] font-black text-amber-500 bg-amber-50 dark:bg-amber-950/20 px-2 py-0.5 rounded">
-                          {item.matchScore}% Match
-                        </span>
-                      </div>
-                    </div>
-                  ))
-                )}
-              </div>
+        <div className="space-y-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-200 dark:border-slate-800">
+            <div>
+              <h2 className="text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
+                <span>📋</span> Procesos en los que participaste
+              </h2>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                Seguimiento en tiempo real de licitaciones, compras ágiles y grandes compras según registro de Mercado Público.
+              </p>
             </div>
-          ))}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold text-slate-400">Filtrar Empresa:</span>
+              <span className="px-3 py-1 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 rounded-xl text-xs font-black">
+                {activeCompany === 'Consolidado' ? '🏢 Consolidado (Inder-Roll + Aminorte)' : `🏢 ${activeCompany}`}
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 items-start">
+            {kanbanColumns.map((col) => (
+              <div key={col.id} className={`rounded-2xl border-t-4 p-4 shadow-sm space-y-4 border bg-white dark:bg-slate-900/90 ${col.color}`}>
+                <div className="flex items-start justify-between gap-2 min-h-[48px]">
+                  <div>
+                    <h3 className="text-xs font-black text-slate-900 dark:text-white leading-snug">{col.label}</h3>
+                    <span className="text-[10px] text-slate-400 block mt-0.5 font-bold">{col.sublabel}</span>
+                  </div>
+                  <span className={`text-[11px] font-black px-2.5 py-0.5 rounded-full shrink-0 ${col.badgeBg}`}>
+                    {col.items.length}
+                  </span>
+                </div>
+
+                <div className="space-y-3 min-h-[300px] max-h-[580px] overflow-y-auto pr-1">
+                  {col.items.length === 0 ? (
+                    <div className="text-center py-16 px-4 text-slate-400 text-xs space-y-2 border border-dashed border-slate-200 dark:border-slate-800 rounded-2xl bg-slate-50/50 dark:bg-slate-950/20">
+                      <div className="text-2xl opacity-60">👁️‍🗨️</div>
+                      <p className="text-[11px] font-bold text-slate-400">No hay procesos para visualizar</p>
+                    </div>
+                  ) : (
+                    col.items.map((item: any) => (
+                      <div
+                        key={item.id || item.codigo}
+                        onClick={() => onSelectOpportunity && onSelectOpportunity(item)}
+                        className="p-3.5 bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-750 hover:border-blue-500 dark:hover:border-blue-400 rounded-xl shadow-sm cursor-pointer transition text-xs space-y-2.5 group"
+                      >
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] font-black text-blue-600 dark:text-blue-400 font-mono">
+                            {item.codigo}
+                          </span>
+                          {item.empresaMatch && (
+                            <span className="text-[9px] font-black px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">
+                              {item.empresaMatch}
+                            </span>
+                          )}
+                        </div>
+
+                        <h4 className="font-bold text-slate-900 dark:text-white line-clamp-2 leading-snug group-hover:text-blue-600 transition">
+                          {item.titulo}
+                        </h4>
+
+                        <p className="text-[10px] text-slate-500 dark:text-slate-400 truncate font-medium">
+                          {item.organismo}
+                        </p>
+
+                        <div className="flex justify-between items-center pt-2 border-t border-slate-100 dark:border-slate-800">
+                          <span className="font-black text-slate-900 dark:text-white text-xs">
+                            ${(item.monto || 0).toLocaleString('es-CL')} CLP
+                          </span>
+                          <span className="text-[9px] font-black text-slate-400 bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">
+                            {item.fechaCierre ? `Cierre: ${item.fechaCierre}` : item.estado || 'Activo'}
+                          </span>
+                        </div>
+                      </div>
+                    ))
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
