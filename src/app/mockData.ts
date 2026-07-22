@@ -13297,40 +13297,40 @@ export const mockOportunidades: Oportunidad[] = [
     ],
     "items": [
       {
-        "sku": "5188-ITEM-01",
-        "producto": "Resma Papel Fotocopia Carta 75g (Caja x 5 Resmas)",
-        "especificacionTecnica": "Papel multipropósito 75g/m2, blancura 98% ISO, apto para fotocopias e impresión láser.",
-        "unidadMedida": "Caja x 5 Resmas",
-        "cantidad": 35,
-        "precioUnitario": 22000,
-        "precioMercadoReferencial": 19500
-      },
-      {
-        "sku": "5188-ITEM-02",
-        "producto": "Archivador Jaspeado Oficio Lomo Ancho (Caja x 50 un)",
-        "especificacionTecnica": "Mecanismo niquelado de palanca con raddo, lomo 8 cm reforzado.",
-        "unidadMedida": "Caja x 50 un",
-        "cantidad": 4,
-        "precioUnitario": 95000,
-        "precioMercadoReferencial": 84000
-      },
-      {
-        "sku": "5188-ITEM-03",
-        "producto": "Carpeta Colgante Tamaño Oficio (Caja x 25 un)",
-        "especificacionTecnica": "Cartulina kraft 240g con visor de plástico y varilla metálica reforzada.",
-        "unidadMedida": "Caja x 25 un",
-        "cantidad": 15,
-        "precioUnitario": 18000,
-        "precioMercadoReferencial": 15800
-      },
-      {
-        "sku": "5188-ITEM-04",
-        "producto": "Tóner Negro Compatible HP 85A",
-        "especificacionTecnica": "Rendimiento 1.600 páginas al 5% cobertura, certificación ISO 9001.",
+        "sku": "40001383",
+        "producto": "Portarrollos de cinta adhesiva - 1000375 ROLLOS TERMICOS IMPRESORA ETIQUETAS ADHESIVAS MINI IMPRESORA 57 X 25 MM",
+        "especificacionTecnica": "1000375 ROLLOS TERMICOS IMPRESORA ETIQUETAS ADHESIVAS MINI IMPRESORA 57 X 25 MM",
         "unidadMedida": "Unidad",
-        "cantidad": 15,
-        "precioUnitario": 28333,
-        "precioMercadoReferencial": 24900
+        "cantidad": 500,
+        "precioUnitario": 1800,
+        "precioMercadoReferencial": 1650
+      },
+      {
+        "sku": "40001384",
+        "producto": "Portaobjetos - 10012115 PORTA FOLLETOS PLEGABLE TIPO ACORDEON DIMENSIONES LARGO 135CM BASE 28X39CM PORTA FOLLETO 23X37",
+        "especificacionTecnica": "10012115 PORTA FOLLETOS PLEGABLE TIPO ACORDEON DIMENSIONES LARGO 135CM BASE 28X39CM PORTA FOLLETO 23X37",
+        "unidadMedida": "Unidad",
+        "cantidad": 11,
+        "precioUnitario": 48000,
+        "precioMercadoReferencial": 44000
+      },
+      {
+        "sku": "40001385",
+        "producto": "Sobres especiales - 0010040150 SOBRE SACO OFICIO BLANCO 90GR",
+        "especificacionTecnica": "0010040150 SOBRE SACO OFICIO BLANCO 90GR",
+        "unidadMedida": "Unidad",
+        "cantidad": 120,
+        "precioUnitario": 850,
+        "precioMercadoReferencial": 780
+      },
+      {
+        "sku": "40001386",
+        "producto": "Hojas o Folletos de Instrucciones - 10012116 PORTA FOLLETO SOBREMESA 3 NIVELES, CARTA VERTICAL 21,6 X 28 DIMENSIONES: 24,5 ANCHO X 36,5 CM ALTO X 14,6 CM FONDO FABRICADO EN ACRILICO CLEAR DE 4MM",
+        "especificacionTecnica": "10012116 PORTA FOLLETO SOBREMESA 3 NIVELES, CARTA VERTICAL 21,6 X 28 DIMENSIONES: 24,5 ANCHO X 36,5 CM ALTO X 14,6 CM FONDO FABRICADO EN ACRILICO CLEAR DE 4MM",
+        "unidadMedida": "Unidad",
+        "cantidad": 16,
+        "precioUnitario": 19900,
+        "precioMercadoReferencial": 18500
       }
     ],
     "criteriosEvaluacion": [
