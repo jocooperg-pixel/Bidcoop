@@ -11,7 +11,7 @@ export const mockVistasGuardadas: VistaGuardada[] = [
 ];
 
 export const mockPostulaciones: Postulacion[] = [
-  // --- INDER-ROLL (ASEO E HIGIENE) --- 3 Adjudicadas, 1 En Evaluación
+  // --- INDER-ROLL (ASEO E HIGIENE - GRANDES COMPRAS) ---
   {
     id: 'post-gc-101',
     oportunidadId: 'GC-3047-901-CM26',
@@ -20,6 +20,9 @@ export const mockPostulaciones: Postulacion[] = [
     estado: 'Adjudicada',
     responsable: 'Jonathan Cooper',
     montoOferta: 91800000,
+    empresaMatch: 'Inder-Roll',
+    modalidad: 'Grandes Compras',
+    organismo: 'HOSPITAL CLÍNICO SAN BORJA ARRIARÁN',
     documentosAdjuntos: ['Oferta_Tecnica_Inderquim_SanBorja.pdf', 'Catalogo_Aseo_InderRoll_2026.pdf'],
     itemsOfertados: [
       { sku: 'PAP001-001', precioOferta: 4200, cantidad: 5000 },
@@ -35,6 +38,9 @@ export const mockPostulaciones: Postulacion[] = [
     estado: 'Adjudicada',
     responsable: 'Jonathan Cooper',
     montoOferta: 67500000,
+    empresaMatch: 'Inder-Roll',
+    modalidad: 'Grandes Compras',
+    organismo: 'SERVICIO DE SALUD BIOBÍO',
     documentosAdjuntos: ['Oferta_Economica_BioBio_InderRoll.pdf'],
     itemsOfertados: [
       { sku: 'PAP001-010', precioOferta: 17000, cantidad: 3500 }
@@ -49,6 +55,9 @@ export const mockPostulaciones: Postulacion[] = [
     estado: 'Adjudicada',
     responsable: 'Jonathan Cooper',
     montoOferta: 114200000,
+    empresaMatch: 'Inder-Roll',
+    modalidad: 'Grandes Compras',
+    organismo: 'ILUSTRE MUNICIPALIDAD DE VALPARAÍSO',
     documentosAdjuntos: ['Postulacion_MuniValparaiso_InderRoll.pdf'],
     itemsOfertados: [
       { sku: 'PAP001-003', precioOferta: 10500, cantidad: 10000 }
@@ -63,6 +72,9 @@ export const mockPostulaciones: Postulacion[] = [
     estado: 'Enviada',
     responsable: 'Jonathan Cooper',
     montoOferta: 77900000,
+    empresaMatch: 'Inder-Roll',
+    modalidad: 'Grandes Compras',
+    organismo: 'HOSPITAL DR. LUIS TISNÉ BROUSSE',
     documentosAdjuntos: ['Cotizacion_CM_Tisne_InderRoll.pdf'],
     itemsOfertados: [
       { sku: 'PAP001-002', precioOferta: 12000, cantidad: 4500 }
@@ -70,7 +82,7 @@ export const mockPostulaciones: Postulacion[] = [
     fechaActualizacion: '2026-07-16'
   },
 
-  // --- AMINORTE (ESCRITORIO Y OFICINA) --- 2 Adjudicadas, 1 En Evaluación
+  // --- AMINORTE (ESCRITORIO Y OFICINA - GRANDES COMPRAS) ---
   {
     id: 'post-gc-201',
     oportunidadId: 'GC-6012-280-CM26',
@@ -79,6 +91,9 @@ export const mockPostulaciones: Postulacion[] = [
     estado: 'Adjudicada',
     responsable: 'Jonathan Cooper',
     montoOferta: 83400000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Grandes Compras',
+    organismo: 'SEREMI DE SALUD REGIÓN METROPOLITANA',
     documentosAdjuntos: ['Oferta_Aminorte_SeremiSalud.pdf'],
     itemsOfertados: [
       { sku: 'ESC-RES-01', precioOferta: 3800, cantidad: 15000 }
@@ -93,6 +108,9 @@ export const mockPostulaciones: Postulacion[] = [
     estado: 'Adjudicada',
     responsable: 'Jonathan Cooper',
     montoOferta: 130800000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Grandes Compras',
+    organismo: 'DIRECCIÓN GENERAL DE OBRAS PÚBLICAS (MOP)',
     documentosAdjuntos: ['Propuesta_TecnicoEconomica_MOP_Aminorte.pdf'],
     itemsOfertados: [
       { sku: 'ESC-ARC-02', precioOferta: 2900, cantidad: 20000 }
@@ -107,11 +125,119 @@ export const mockPostulaciones: Postulacion[] = [
     estado: 'Enviada',
     responsable: 'Jonathan Cooper',
     montoOferta: 104500000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Grandes Compras',
+    organismo: 'SERVICIO DE IMPUESTOS INTERNOS (SII)',
     documentosAdjuntos: ['Cotizacion_SII_Papeleria_Aminorte.pdf'],
     itemsOfertados: [
       { sku: 'ESC-RES-02', precioOferta: 4600, cantidad: 18000 }
     ],
     fechaActualizacion: '2026-07-15'
+  },
+
+  // --- AMINORTE (ESCRITORIO Y OFICINA - COMPRAS ÁGILES POSTULADAS) ---
+  {
+    id: 'post-ca-201',
+    oportunidadId: 'COT-6012-401-COT26',
+    oportunidadCodigo: 'COT-6012-401-COT26',
+    oportunidadTitulo: 'Compra Ágil: Adquisición Urgente de Resmas Carta/Oficio y Tintas de Impresión',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 2450000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Compra Ágil',
+    organismo: 'SUBSECRETARÍA DE EDUCACIÓN (MINEDUC)',
+    documentosAdjuntos: ['Cotizacion_Agil_Resmas_MINEDUC_Aminorte.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-RES-01', precioOferta: 3900, cantidad: 500 },
+      { sku: 'ESC-TIN-03', precioOferta: 12500, cantidad: 40 }
+    ],
+    fechaActualizacion: '2026-07-10'
+  },
+  {
+    id: 'post-ca-202',
+    oportunidadId: 'COT-4080-105-COT26',
+    oportunidadCodigo: 'COT-4080-105-COT26',
+    oportunidadTitulo: 'Compra Ágil: Suministro Urgencia Archivadores y Carpetas Colgantes',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 1890000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Compra Ágil',
+    organismo: 'GOBIERNO REGIONAL DE ANTOFAGASTA',
+    documentosAdjuntos: ['Cotizacion_Agil_Archivadores_GORE.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-ARC-02', precioOferta: 3150, cantidad: 600 }
+    ],
+    fechaActualizacion: '2026-07-14'
+  },
+  {
+    id: 'post-ca-203',
+    oportunidadId: 'COT-1105-330-COT26',
+    oportunidadCodigo: 'COT-1105-330-COT26',
+    oportunidadTitulo: 'Compra Ágil: Artículos de Escritorio, Lápices y Tijeras Institucionales',
+    estado: 'Enviada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 3200000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Compra Ágil',
+    organismo: 'CORPORACIÓN ADMINISTRATIVA DEL PODER JUDICIAL (CAPJ)',
+    documentosAdjuntos: ['Cotizacion_Agil_PoderJudicial_Aminorte.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-UTI-05', precioOferta: 8000, cantidad: 400 }
+    ],
+    fechaActualizacion: '2026-07-18'
+  },
+  {
+    id: 'post-ca-204',
+    oportunidadId: 'COT-6050-210-COT26',
+    oportunidadCodigo: 'COT-6050-210-COT26',
+    oportunidadTitulo: 'Compra Ágil: Papelería, Plumones y Cuadernos de Registro Operativo',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 2150000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Compra Ágil',
+    organismo: 'SEREMI DE SALUD REGIÓN DE ANTOFAGASTA',
+    documentosAdjuntos: ['Oferta_Agil_SeremiSaludAntofagasta.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-PAP-08', precioOferta: 4300, cantidad: 500 }
+    ],
+    fechaActualizacion: '2026-07-02'
+  },
+  {
+    id: 'post-ca-205',
+    oportunidadId: 'COT-1088-912-COT26',
+    oportunidadCodigo: 'COT-1088-912-COT26',
+    oportunidadTitulo: 'Compra Ágil: Suministro de Bloques de Notas y Carpetas Institucionales',
+    estado: 'Enviada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 1650000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Compra Ágil',
+    organismo: 'ILUSTRE MUNICIPALIDAD DE CALAMA',
+    documentosAdjuntos: ['Cotizacion_MuniCalama_Aminorte.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-CAR-04', precioOferta: 3300, cantidad: 500 }
+    ],
+    fechaActualizacion: '2026-07-19'
+  },
+  {
+    id: 'post-ca-206',
+    oportunidadId: 'COT-6012-512-COT26',
+    oportunidadCodigo: 'COT-6012-512-COT26',
+    oportunidadTitulo: 'Compra Ágil: Tóners de Impresión y Papelería de Oficina',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 4120000,
+    empresaMatch: 'Aminorte',
+    modalidad: 'Compra Ágil',
+    organismo: 'DIRECCIÓN REGIONAL DE VIALIDAD ANTOFAGASTA',
+    documentosAdjuntos: ['Oferta_Agil_Vialidad_MOP_Aminorte.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-TON-01', precioOferta: 41200, cantidad: 100 }
+    ],
+    fechaActualizacion: '2026-06-25'
   }
 ];
 

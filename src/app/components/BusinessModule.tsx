@@ -50,6 +50,51 @@ export default function BusinessModule({
     return parsed.filter(p => p.proveedor === 'Aminorte').slice(0, 100);
   }, [activeCompany]);
 
+  // Postulaciones Filters State
+  const [filterModality, setFilterModality] = useState<'Todas' | 'Compra Ágil' | 'Grandes Compras'>('Todas');
+  const [filterCompany, setFilterCompany] = useState<'Todas' | 'Inder-Roll' | 'Aminorte'>('Todas');
+
+  // Filtered Postulaciones
+  const filteredPostulaciones = useMemo(() => {
+    return postulaciones.filter(p => {
+      // Company match
+      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'Inder-Roll');
+      if (activeCompany !== 'Consolidado' && pCompany !== activeCompany) {
+        return false;
+      }
+      if (filterCompany !== 'Todas' && pCompany !== filterCompany) {
+        return false;
+      }
+
+      // Modality match
+      const pModality = p.modalidad || (p.oportunidadCodigo?.startsWith('COT-') ? 'Compra Ágil' : 'Grandes Compras');
+      if (filterModality !== 'Todas' && pModality !== filterModality) {
+        return false;
+      }
+
+      return true;
+    });
+  }, [postulaciones, activeCompany, filterCompany, filterModality]);
+
+  // Statistics for Compras Ágiles Aminorte
+  const statsAgilAminorte = useMemo(() => {
+    const list = postulaciones.filter(p => {
+      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') ? 'Aminorte' : 'Inder-Roll');
+      const pModality = p.modalidad || (p.oportunidadCodigo?.startsWith('COT-') ? 'Compra Ágil' : 'Grandes Compras');
+      return pCompany === 'Aminorte' && pModality === 'Compra Ágil';
+    });
+    const totalMonto = list.reduce((acc, curr) => acc + curr.montoOferta, 0);
+    const adjudicadas = list.filter(p => p.estado === 'Adjudicada').length;
+    const enEvaluacion = list.filter(p => p.estado === 'Enviada' || p.estado === 'Borrador').length;
+    return {
+      list,
+      count: list.length,
+      totalMonto,
+      adjudicadas,
+      enEvaluacion
+    };
+  }, [postulaciones]);
+
   // Documents Repo State
   const [internalDocs, setInternalDocs] = useState([
     { nombre: 'Estatuto_Social_Inderquim_Firmado.pdf', categoria: 'Legal', fecha: '2026-01-10', tamanho: '4.5 MB' },
@@ -198,62 +243,223 @@ export default function BusinessModule({
           TAB 2: POSTULACIONES
           ======================================================================= */}
       {currentSub === 'postulaciones' && (
-        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
-          <div>
-            <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Historial de Ofertas Enviadas</h3>
-            <p className="text-[10px] text-slate-400 mt-0.5">Listado de postulaciones oficiales vigentes ingresadas a Mercado Público.</p>
+        <div className="space-y-5">
+          {/* AMINORTE COMPRAS ÁGILES SUMMARY HERO CARD */}
+          <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 border border-blue-500/40 rounded-2xl p-5 text-white shadow-xl relative overflow-hidden space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 relative z-10 border-b border-blue-500/30 pb-3">
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-500 text-white shadow-sm">
+                    ⚡ COMPRAS ÁGILES - AMINORTE
+                  </span>
+                  <span className="text-xs font-bold text-blue-200">
+                    {statsAgilAminorte.count} Postulaciones Ingresadas
+                  </span>
+                </div>
+                <h3 className="text-lg font-black text-white mt-1">
+                  Resumen de Cotizaciones en Compra Ágiles (Escritorio y Oficina)
+                </h3>
+              </div>
+
+              <div className="flex items-center gap-2 shrink-0">
+                <div className="bg-emerald-950/60 border border-emerald-700/50 px-3 py-1.5 rounded-xl text-right">
+                  <span className="text-[9px] font-bold uppercase text-emerald-300 block">🏆 Adjudicado Ágil</span>
+                  <span className="text-xs font-black text-emerald-200">
+                    {statsAgilAminorte.adjudicadas} Procesos (${statsAgilAminorte.list.filter(p=>p.estado==='Adjudicada').reduce((a,c)=>a+c.montoOferta,0).toLocaleString('es-CL')} CLP)
+                  </span>
+                </div>
+                <div className="bg-amber-950/60 border border-amber-700/50 px-3 py-1.5 rounded-xl text-right">
+                  <span className="text-[9px] font-bold uppercase text-amber-300 block">⏳ En Evaluación</span>
+                  <span className="text-xs font-black text-amber-200">
+                    {statsAgilAminorte.enEvaluacion} Procesos (${statsAgilAminorte.list.filter(p=>p.estado!=='Adjudicada').reduce((a,c)=>a+c.montoOferta,0).toLocaleString('es-CL')} CLP)
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Action Filter Buttons */}
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              <button
+                onClick={() => { setFilterCompany('Aminorte'); setFilterModality('Compra Ágil'); }}
+                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold uppercase transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
+                  filterCompany === 'Aminorte' && filterModality === 'Compra Ágil'
+                    ? 'bg-blue-600 text-white ring-2 ring-blue-300'
+                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
+                }`}
+              >
+                <span>⚡ Compras Ágiles (Aminorte)</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-white/20">{statsAgilAminorte.count}</span>
+              </button>
+
+              <button
+                onClick={() => { setFilterCompany('Aminorte'); setFilterModality('Grandes Compras'); }}
+                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold uppercase transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
+                  filterCompany === 'Aminorte' && filterModality === 'Grandes Compras'
+                    ? 'bg-purple-600 text-white ring-2 ring-purple-300'
+                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
+                }`}
+              >
+                <span>🛍️ Grandes Compras (Aminorte)</span>
+              </button>
+
+              <button
+                onClick={() => { setFilterCompany('Inder-Roll'); setFilterModality('Todas'); }}
+                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold uppercase transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
+                  filterCompany === 'Inder-Roll'
+                    ? 'bg-emerald-600 text-white ring-2 ring-emerald-300'
+                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
+                }`}
+              >
+                <span>🧽 Inder-Roll (Aseo)</span>
+              </button>
+
+              <button
+                onClick={() => { setFilterCompany('Todas'); setFilterModality('Todas'); }}
+                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold uppercase transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
+                  filterCompany === 'Todas' && filterModality === 'Todas'
+                    ? 'bg-white text-slate-900 font-black'
+                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
+                }`}
+              >
+                <span>📋 Ver Todas</span>
+              </button>
+            </div>
           </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs border-collapse">
-              <thead>
-                <tr className="border-b border-slate-100 dark:border-slate-850">
-                  <th className="py-2.5 font-black text-slate-400">Código / ID Oportunidad</th>
-                  <th className="py-2.5 font-black text-slate-400">Título</th>
-                  <th className="py-2.5 font-black text-slate-400">Responsable</th>
-                  <th className="py-2.5 font-black text-slate-400 text-right">Monto Oferta</th>
-                  <th className="py-2.5 font-black text-slate-400 text-center">Estado</th>
-                  <th className="py-2.5 font-black text-slate-400 text-center">Detalles</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
-                {postulaciones.length === 0 ? (
-                  <tr>
-                    <td colSpan={6} className="py-8 text-center text-slate-400">Ninguna postulación enviada aún. Utilice la búsqueda para iniciar una.</td>
+          {/* MAIN TABLE CARD */}
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
+                  Historial de Postulaciones Enviadas ({filteredPostulaciones.length})
+                </h3>
+                <p className="text-[10px] text-slate-400 mt-0.5">
+                  Registro detallado de ofertas ingresadas a la plataforma de Mercado Público.
+                </p>
+              </div>
+
+              {/* Select Controls */}
+              <div className="flex items-center gap-2">
+                <select
+                  value={filterCompany}
+                  onChange={(e) => setFilterCompany(e.target.value as any)}
+                  className="px-2.5 py-1.5 text-xs font-bold rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 cursor-pointer"
+                >
+                  <option value="Todas">🏢 Todas las Empresas</option>
+                  <option value="Aminorte">Aminorte (Escritorio)</option>
+                  <option value="Inder-Roll">Inder-Roll (Aseo)</option>
+                </select>
+
+                <select
+                  value={filterModality}
+                  onChange={(e) => setFilterModality(e.target.value as any)}
+                  className="px-2.5 py-1.5 text-xs font-bold rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 cursor-pointer"
+                >
+                  <option value="Todas">📦 Todas las Modalidades</option>
+                  <option value="Compra Ágil">⚡ Compra Ágil</option>
+                  <option value="Grandes Compras">🛍️ Grandes Compras</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead>
+                  <tr className="border-b border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-850/30">
+                    <th className="p-3 font-black text-slate-400">Modalidad / ID</th>
+                    <th className="p-3 font-black text-slate-400">Empresa</th>
+                    <th className="p-3 font-black text-slate-400">Título & Organismo</th>
+                    <th className="p-3 font-black text-slate-400">Responsable</th>
+                    <th className="p-3 font-black text-slate-400 text-right">Monto Oferta</th>
+                    <th className="p-3 font-black text-slate-400 text-center">Estado</th>
+                    <th className="p-3 font-black text-slate-400 text-center">Acciones</th>
                   </tr>
-                ) : (
-                  postulaciones.map((p) => (
-                    <tr key={p.id} className="hover:bg-slate-50/50 dark:hover:bg-slate-850/15">
-                      <td className="py-3">
-                        <span className="font-black text-slate-900 dark:text-white block">{p.oportunidadCodigo}</span>
-                        <span className="text-[9px] text-slate-400 block mt-0.5">{p.fechaActualizacion}</span>
-                      </td>
-                      <td className="py-3 font-bold text-slate-700 dark:text-slate-350">{p.oportunidadTitulo}</td>
-                      <td className="py-3 font-semibold text-slate-500">{p.responsable}</td>
-                      <td className="py-3 text-right font-black text-slate-950 dark:text-white">
-                        ${p.montoOferta.toLocaleString('es-CL')}
-                      </td>
-                      <td className="py-3 text-center">
-                        <span className="px-2 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
-                          {p.estado}
-                        </span>
-                      </td>
-                      <td className="py-3 text-center">
-                        <button
-                          onClick={() => {
-                            const op = oportunidades.find(o => o.id === p.oportunidadId);
-                            if (op) onSelectOpportunity(op);
-                          }}
-                          className="px-2.5 py-1 bg-slate-100 hover:bg-blue-600 hover:text-white dark:bg-slate-800 dark:hover:bg-blue-600 rounded text-[10px] font-bold transition"
-                        >
-                          Inspeccionar
-                        </button>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
+                  {filteredPostulaciones.length === 0 ? (
+                    <tr>
+                      <td colSpan={7} className="py-8 text-center text-slate-400 font-medium">
+                        No se encontraron postulaciones con los filtros seleccionados.
                       </td>
                     </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
+                  ) : (
+                    filteredPostulaciones.map((p) => {
+                      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'Inder-Roll');
+                      const pModality = p.modalidad || (p.oportunidadCodigo?.startsWith('COT-') ? 'Compra Ágil' : 'Grandes Compras');
+
+                      return (
+                        <tr key={p.id} className="hover:bg-slate-50/50 dark:hover:bg-slate-850/15">
+                          <td className="p-3">
+                            <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase inline-block mb-1 ${
+                              pModality === 'Compra Ágil'
+                                ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
+                                : 'bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300'
+                            }`}>
+                              {pModality === 'Compra Ágil' ? '⚡ Compra Ágil' : '🛍️ Grande Compra'}
+                            </span>
+                            <span className="font-mono font-bold text-slate-900 dark:text-white block text-[11px]">
+                              {p.oportunidadCodigo}
+                            </span>
+                            <span className="text-[9px] text-slate-400 block mt-0.5">📅 {p.fechaActualizacion}</span>
+                          </td>
+
+                          <td className="p-3">
+                            <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase ${
+                              pCompany === 'Inder-Roll'
+                                ? 'bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300'
+                                : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+                            }`}>
+                              {pCompany}
+                            </span>
+                          </td>
+
+                          <td className="p-3 max-w-xs">
+                            <span className="font-bold text-slate-900 dark:text-slate-100 block line-clamp-1">
+                              {p.oportunidadTitulo}
+                            </span>
+                            {p.organismo && (
+                              <span className="text-[10px] text-slate-500 block truncate mt-0.5">
+                                🏛️ {p.organismo}
+                              </span>
+                            )}
+                          </td>
+
+                          <td className="p-3 font-semibold text-slate-600 dark:text-slate-400">
+                            {p.responsable}
+                          </td>
+
+                          <td className="p-3 text-right font-black text-slate-900 dark:text-white">
+                            ${p.montoOferta.toLocaleString('es-CL')}
+                          </td>
+
+                          <td className="p-3 text-center">
+                            <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase ${
+                              p.estado === 'Adjudicada'
+                                ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300'
+                                : 'bg-amber-100 text-amber-700 dark:bg-amber-950/80 dark:text-amber-300'
+                            }`}>
+                              {p.estado === 'Adjudicada' ? '🏆 Adjudicada' : '⏳ En Evaluación'}
+                            </span>
+                          </td>
+
+                          <td className="p-3 text-center">
+                            <button
+                              onClick={() => {
+                                const op = oportunidades.find(o => o.id === p.oportunidadId);
+                                if (op) onSelectOpportunity(op);
+                              }}
+                              className="px-2.5 py-1 bg-slate-100 hover:bg-blue-600 hover:text-white dark:bg-slate-800 dark:hover:bg-blue-600 rounded text-[10px] font-bold transition cursor-pointer"
+                            >
+                              Inspeccionar
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })
+                  )}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       )}

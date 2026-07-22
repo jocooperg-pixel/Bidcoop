@@ -59,6 +59,9 @@ export interface Postulacion {
   documentosAdjuntos: string[];
   itemsOfertados: Array<{ sku: string; precioOferta: number; cantidad: number }>;
   fechaActualizacion: string;
+  empresaMatch?: 'Inder-Roll' | 'Aminorte';
+  modalidad?: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras';
+  organismo?: string;
 }
 
 export interface MiembroEquipo {
