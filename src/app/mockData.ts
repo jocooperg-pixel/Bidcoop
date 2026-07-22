@@ -13251,6 +13251,109 @@ export const mockOportunidades: Oportunidad[] = [
     "modalidad": "Compra Ágil"
   },
   {
+    "id": "5188-312-COT26",
+    "codigo": "5188-312-COT26",
+    "titulo": "ADQUISICIÓN DE ARTÍCULOS DE ESCRITORIO Y PAPELERÍA PARA MUNICIPALIDAD DE MACUL",
+    "organismo": "I MUNICIPALIDAD DE MACUL",
+    "organismoRut": "69.070.300-9",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Región Metropolitana",
+    "monto": 1850000,
+    "montoUtm": 28,
+    "fechaPublicacion": "2026-07-21",
+    "fechaCierre": "2026-07-26",
+    "matchScore": 94,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: ADQUISICIÓN DE ARTÍCULOS DE ESCRITORIO Y PAPELERÍA PARA MUNICIPALIDAD DE MACUL. Organismo demandante: I MUNICIPALIDAD DE MACUL. Unidad de compra: Dirección de Administración y Finanzas / Departamento de Operaciones.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "21/07/2026 11:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "26/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Solicitud_Materiales_Macul_5188-312-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.6 MB"
+      },
+      {
+        "nombre": "Bases_Oficiales_5188-312-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.3 MB"
+      },
+      {
+        "nombre": "Anexo_Cotizacion_5188-312-COT26.xlsx",
+        "tipo": "xlsx",
+        "tamanho": "280 KB"
+      }
+    ],
+    "items": [
+      {
+        "sku": "5188-ITEM-01",
+        "producto": "Resma Papel Fotocopia Carta 75g (Caja x 5 Resmas)",
+        "especificacionTecnica": "Papel multipropósito 75g/m2, blancura 98% ISO, apto para fotocopias e impresión láser.",
+        "unidadMedida": "Caja x 5 Resmas",
+        "cantidad": 35,
+        "precioUnitario": 22000,
+        "precioMercadoReferencial": 19500
+      },
+      {
+        "sku": "5188-ITEM-02",
+        "producto": "Archivador Jaspeado Oficio Lomo Ancho (Caja x 50 un)",
+        "especificacionTecnica": "Mecanismo niquelado de palanca con raddo, lomo 8 cm reforzado.",
+        "unidadMedida": "Caja x 50 un",
+        "cantidad": 4,
+        "precioUnitario": 95000,
+        "precioMercadoReferencial": 84000
+      },
+      {
+        "sku": "5188-ITEM-03",
+        "producto": "Carpeta Colgante Tamaño Oficio (Caja x 25 un)",
+        "especificacionTecnica": "Cartulina kraft 240g con visor de plástico y varilla metálica reforzada.",
+        "unidadMedida": "Caja x 25 un",
+        "cantidad": 15,
+        "precioUnitario": 18000,
+        "precioMercadoReferencial": 15800
+      },
+      {
+        "sku": "5188-ITEM-04",
+        "producto": "Tóner Negro Compatible HP 85A",
+        "especificacionTecnica": "Rendimiento 1.600 páginas al 5% cobertura, certificación ISO 9001.",
+        "unidadMedida": "Unidad",
+        "cantidad": 15,
+        "precioUnitario": 28333,
+        "precioMercadoReferencial": 24900
+      }
+    ],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Menor costo ofertado"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Prisa S.A.",
+        "rut": "96.520.100-2",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 4
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
     "id": "2450-653-COT26",
     "codigo": "2450-653-COT26",
     "titulo": "ADQUISICIÓN DE MATERIALES DE OFICINA. I. MUNICIPALIDAD DE LA SERENA",
