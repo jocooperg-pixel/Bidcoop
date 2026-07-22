@@ -576,9 +576,15 @@ export default function BusinessModule({
                             <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase ${
                               p.estado === 'Adjudicada'
                                 ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300'
+                                : p.estado === 'Rechazada'
+                                ? 'bg-rose-100 text-rose-700 dark:bg-rose-950/80 dark:text-rose-300'
                                 : 'bg-amber-100 text-amber-700 dark:bg-amber-950/80 dark:text-amber-300'
                             }`}>
-                              {p.estado === 'Adjudicada' ? '🏆 Adjudicada' : '⏳ En Evaluación'}
+                              {p.estado === 'Adjudicada'
+                                ? '🏆 Adjudicada'
+                                : p.estado === 'Rechazada'
+                                ? '❌ Adjudicada a Competidor'
+                                : '⏳ Cerrada (Pendiente Selección Proveedor)'}
                             </span>
                           </td>
 
