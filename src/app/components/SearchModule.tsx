@@ -14,6 +14,7 @@ interface SearchModuleProps {
   onAddComment: (opId: string, texto: string) => void;
   onImportFromApi?: (code: string) => Promise<void>;
   onSyncRealTime?: () => Promise<void>;
+  onUpdateOpportunityItems?: (opId: string, items: Item[]) => void;
   globalSearchText?: string;
   onGlobalSearchTextChange?: (text: string) => void;
 }
@@ -132,6 +133,7 @@ export default function SearchModule({
   onAddComment,
   onImportFromApi,
   onSyncRealTime,
+  onUpdateOpportunityItems,
   globalSearchText = '',
   onGlobalSearchTextChange
 }: SearchModuleProps) {
@@ -197,6 +199,10 @@ export default function SearchModule({
   // Official Quote Generator Modal State
   const [showQuoteModal, setShowQuoteModal] = useState<boolean>(false);
   const [quoteCompany, setQuoteCompany] = useState<'Inder-Roll' | 'Aminorte'>('Aminorte');
+
+  // Edit Items Modal State
+  const [showEditItemsModal, setShowEditItemsModal] = useState<boolean>(false);
+  const [editableItems, setEditableItems] = useState<Item[]>([]);
 
   // Synchronize local search state with Topbar global search input
   useEffect(() => {
@@ -892,15 +898,27 @@ export default function SearchModule({
                     </p>
                   </div>
 
-                  <button
-                    onClick={() => {
-                      setQuoteCompany(selectedOpportunity.empresaMatch || 'Aminorte');
-                      setShowQuoteModal(true);
-                    }}
-                    className="px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-650 hover:from-emerald-700 hover:to-teal-700 text-white rounded-xl text-xs font-black shadow-md shadow-emerald-500/20 flex items-center gap-2 transition cursor-pointer shrink-0"
-                  >
-                    <span>Generar Cotización PDF Formal</span> 📄
-                  </button>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <button
+                      onClick={() => {
+                        setEditableItems(JSON.parse(JSON.stringify(selectedOpportunity.items)));
+                        setShowEditItemsModal(true);
+                      }}
+                      className="px-3.5 py-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-xl text-xs font-black border border-slate-300 dark:border-slate-700 flex items-center gap-1.5 transition cursor-pointer shrink-0"
+                    >
+                      <span>Editar / Ajustar Ítems MP</span> ✏️
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        setQuoteCompany(selectedOpportunity.empresaMatch || 'Aminorte');
+                        setShowQuoteModal(true);
+                      }}
+                      className="px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-650 hover:from-emerald-700 hover:to-teal-700 text-white rounded-xl text-xs font-black shadow-md shadow-emerald-500/20 flex items-center gap-2 transition cursor-pointer shrink-0"
+                    >
+                      <span>Generar Cotización PDF Formal</span> 📄
+                    </button>
+                  </div>
                 </div>
 
                 {/* Market Summary Cards */}
@@ -2749,6 +2767,174 @@ export default function SearchModule({
               </div>
             </div>
 
+          </div>
+        </div>
+      )}
+
+      {/* =======================================================================
+          MODAL: EDITAR / AJUSTAR ÍTEMS SOLICITADOS MERCADO PÚBLICO
+          ======================================================================= */}
+      {showEditItemsModal && selectedOpportunity && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md animate-fadeIn">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col">
+            {/* Modal Header */}
+            <div className="p-5 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/60 flex items-center justify-between">
+              <div>
+                <h3 className="text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
+                  <span>✏️</span> Editar / Ajustar Ítems Solicitados (Mercado Público)
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                  Modifica los artículos, cantidades o precios de la orden/licitación <strong className="text-slate-900 dark:text-white">{selectedOpportunity.codigo}</strong>.
+                </p>
+              </div>
+              <button
+                onClick={() => setShowEditItemsModal(false)}
+                className="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold hover:bg-slate-300 transition flex items-center justify-center text-sm"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6 overflow-y-auto space-y-4 flex-1">
+              <div className="space-y-3">
+                {editableItems.map((item, idx) => (
+                  <div key={idx} className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 space-y-3">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="px-2.5 py-1 bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 rounded-lg text-[10px] font-black font-mono">
+                        Ítem #{idx + 1}
+                      </span>
+                      <button
+                        onClick={() => {
+                          const updated = editableItems.filter((_, i) => i !== idx);
+                          setEditableItems(updated);
+                        }}
+                        className="text-xs text-red-500 font-bold hover:underline"
+                      >
+                        Eliminar Ítem 🗑️
+                      </button>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div>
+                        <label className="text-[10px] font-black uppercase text-slate-400 block mb-1">Nombre / Descripción del Producto</label>
+                        <input
+                          type="text"
+                          value={item.producto}
+                          onChange={(e) => {
+                            const updated = [...editableItems];
+                            updated[idx].producto = e.target.value;
+                            setEditableItems(updated);
+                          }}
+                          className="w-full px-3 py-2 text-xs rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-900 dark:text-white font-bold"
+                          placeholder="Ej: Papel Fotocopia Carta 75g"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="text-[10px] font-black uppercase text-slate-400 block mb-1">SKU / ID Producto</label>
+                        <input
+                          type="text"
+                          value={item.sku}
+                          onChange={(e) => {
+                            const updated = [...editableItems];
+                            updated[idx].sku = e.target.value;
+                            setEditableItems(updated);
+                          }}
+                          className="w-full px-3 py-2 text-xs rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-900 dark:text-white font-mono"
+                          placeholder="Ej: 39985469"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                      <div>
+                        <label className="text-[10px] font-black uppercase text-slate-400 block mb-1">Cantidad</label>
+                        <input
+                          type="number"
+                          value={item.cantidad}
+                          onChange={(e) => {
+                            const updated = [...editableItems];
+                            updated[idx].cantidad = parseInt(e.target.value) || 1;
+                            setEditableItems(updated);
+                          }}
+                          className="w-full px-3 py-2 text-xs rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-900 dark:text-white font-black"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="text-[10px] font-black uppercase text-slate-400 block mb-1">Precio Unitario (Bases)</label>
+                        <input
+                          type="number"
+                          value={item.precioUnitario}
+                          onChange={(e) => {
+                            const updated = [...editableItems];
+                            updated[idx].precioUnitario = parseInt(e.target.value) || 0;
+                            setEditableItems(updated);
+                          }}
+                          className="w-full px-3 py-2 text-xs rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-900 dark:text-white font-black"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="text-[10px] font-black uppercase text-slate-400 block mb-1">Val. Ref. Mercado Público</label>
+                        <input
+                          type="number"
+                          value={item.precioMercadoReferencial || item.precioUnitario}
+                          onChange={(e) => {
+                            const updated = [...editableItems];
+                            updated[idx].precioMercadoReferencial = parseInt(e.target.value) || 0;
+                            setEditableItems(updated);
+                          }}
+                          className="w-full px-3 py-2 text-xs rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-900 dark:text-white font-black text-emerald-600"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <button
+                onClick={() => {
+                  setEditableItems([
+                    ...editableItems,
+                    {
+                      sku: `ITEM-${Date.now().toString().slice(-4)}`,
+                      producto: 'Nuevo Artículo Solicitado',
+                      cantidad: 1,
+                      precioUnitario: 10000,
+                      precioMercadoReferencial: 9000
+                    }
+                  ]);
+                }}
+                className="w-full py-3 rounded-2xl border-2 border-dashed border-slate-300 dark:border-slate-700 hover:border-blue-500 text-slate-600 dark:text-slate-400 hover:text-blue-600 text-xs font-black transition flex items-center justify-center gap-2"
+              >
+                <span>➕ Agregar Nuevo Ítem</span>
+              </button>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex items-center justify-end gap-3">
+              <button
+                onClick={() => setShowEditItemsModal(false)}
+                className="px-4 py-2 text-xs font-bold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={() => {
+                  selectedOpportunity.items = editableItems;
+                  selectedOpportunity.monto = editableItems.reduce((acc, it) => acc + (it.cantidad * it.precioUnitario), 0);
+                  if (onUpdateOpportunityItems) {
+                    onUpdateOpportunityItems(selectedOpportunity.id, editableItems);
+                  }
+                  setShowEditItemsModal(false);
+                }}
+                className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-black shadow-lg shadow-blue-500/20 transition"
+              >
+                Guardar e Inyectar en Mercado Público 💾
+              </button>
+            </div>
           </div>
         </div>
       )}

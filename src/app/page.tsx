@@ -687,6 +687,19 @@ export default function Home() {
               onAddComment={handleAddComment}
               onImportFromApi={handleQueryApiBidding}
               onSyncRealTime={handleSyncRealTime}
+              onUpdateOpportunityItems={(opId, newItems) => {
+                setOportunidades(prev => prev.map(op => {
+                  if (op.id === opId || op.codigo === opId) {
+                    const total = newItems.reduce((sum, it) => sum + (it.cantidad * it.precioUnitario), 0);
+                    return {
+                      ...op,
+                      items: newItems,
+                      monto: total
+                    };
+                  }
+                  return op;
+                }));
+              }}
               globalSearchText={globalSearchText}
               onGlobalSearchTextChange={setGlobalSearchText}
             />
