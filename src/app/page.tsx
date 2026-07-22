@@ -16,7 +16,8 @@ import {
   mockMiembrosEquipo,
   mockNotificaciones,
   mockVistasGuardadas,
-  mockOrdenesCompra
+  mockOrdenesCompra,
+  mockPostulaciones
 } from './mockData';
 
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
       return o;
     });
   });
-  const [postulaciones, setPostulaciones] = useState<Postulacion[]>([]);
+  const [postulaciones, setPostulaciones] = useState<Postulacion[]>(mockPostulaciones);
   const [ordenesCompra, setOrdenesCompra] = useState(mockOrdenesCompra);
   const [teamMembers, setTeamMembers] = useState<MiembroEquipo[]>(mockMiembrosEquipo);
   const [notifications, setNotifications] = useState<Notificacion[]>(mockNotificaciones);

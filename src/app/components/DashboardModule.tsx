@@ -78,6 +78,25 @@ export default function DashboardModule({
     return oportunidades.filter(o => (o.esInvitacionGrandesCompras || o.modalidad === 'Grandes Compras') && o.estado === 'Publicada');
   }, [oportunidades]);
 
+  // Participated Grandes Compras Summary (7 Processes)
+  const participatedGrandesCompras = useMemo(() => {
+    const gcOps = oportunidades.filter(o => o.esInvitacionGrandesCompras || o.modalidad === 'Grandes Compras');
+    const adjudicadas = gcOps.filter(o => o.estado === 'Adjudicada');
+    const enEvaluacion = gcOps.filter(o => o.estado === 'En Evaluación' || o.estado === 'Postulada');
+    const montoAdjudicado = adjudicadas.reduce((acc, curr) => acc + curr.monto, 0);
+    const montoEvaluacion = enEvaluacion.reduce((acc, curr) => acc + curr.monto, 0);
+    
+    return {
+      total: adjudicadas.length + enEvaluacion.length,
+      adjudicadasCount: adjudicadas.length,
+      enEvaluacionCount: enEvaluacion.length,
+      adjudicadas,
+      enEvaluacion,
+      montoAdjudicado,
+      montoEvaluacion
+    };
+  }, [oportunidades]);
+
   // Suggested opportunities filtering (only active ones)
   const suggestedOpportunities = useMemo(() => {
     const activeOps = oportunidades.filter(o => o.estado === 'Publicada');
@@ -239,7 +258,119 @@ export default function DashboardModule({
         </div>
       )}
 
-      {/* 2. KPI CARDS */}
+      {/* PARTICIPATION STATUS IN GRANDES COMPRAS (7 PROCESSES) */}
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-800">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-black uppercase text-purple-600 dark:text-purple-400 tracking-wider">📊 Historial de Participación</span>
+              <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300">
+                {participatedGrandesCompras.total} Grandes Compras Participadas
+              </span>
+            </div>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              Resumen de ofertas enviadas en Convenio Marco: <strong>{participatedGrandesCompras.adjudicadasCount} Adjudicadas</strong> y <strong>{participatedGrandesCompras.enEvaluacionCount} Cerradas a espera de adjudicación</strong>.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <div className="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 px-3 py-1.5 rounded-xl text-right">
+              <span className="text-[9px] font-bold uppercase text-emerald-600 dark:text-emerald-400 block">Adjudicado</span>
+              <span className="text-xs font-black text-emerald-700 dark:text-emerald-300">
+                ${participatedGrandesCompras.montoAdjudicado.toLocaleString('es-CL')} CLP
+              </span>
+            </div>
+            <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/50 px-3 py-1.5 rounded-xl text-right">
+              <span className="text-[9px] font-bold uppercase text-amber-600 dark:text-amber-400 block">A Espera Adjudicación</span>
+              <span className="text-xs font-black text-amber-700 dark:text-amber-300">
+                ${participatedGrandesCompras.montoEvaluacion.toLocaleString('es-CL')} CLP
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {/* Adjudicadas Section */}
+          <div className="space-y-2">
+            <h4 className="text-[11px] font-black uppercase text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+              <span>🏆 Adjudicadas ({participatedGrandesCompras.adjudicadasCount})</span>
+            </h4>
+            <div className="space-y-2">
+              {participatedGrandesCompras.adjudicadas.map(op => (
+                <div 
+                  key={op.id}
+                  onClick={() => onSelectOpportunity(op)}
+                  className="p-3 rounded-xl border border-emerald-200/60 dark:border-emerald-900/40 bg-emerald-50/40 dark:bg-emerald-950/15 hover:border-emerald-400 transition cursor-pointer flex items-center justify-between gap-3 group"
+                >
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-1.5 mb-0.5">
+                      <span className="text-[9px] font-mono font-bold text-slate-500">{op.codigo}</span>
+                      <span className={`text-[8px] font-black uppercase px-1.5 py-0.2 rounded ${
+                        op.empresaMatch === 'Inder-Roll' ? 'bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300' : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+                      }`}>
+                        {op.empresaMatch}
+                      </span>
+                    </div>
+                    <h5 className="text-xs font-bold text-slate-900 dark:text-slate-100 truncate group-hover:text-emerald-600 transition">
+                      {op.titulo}
+                    </h5>
+                    <span className="text-[10px] text-slate-500 block truncate">{op.organismo}</span>
+                  </div>
+
+                  <div className="text-right shrink-0">
+                    <span className="text-xs font-black text-emerald-600 dark:text-emerald-400 block">
+                      ${op.monto.toLocaleString('es-CL')}
+                    </span>
+                    <span className="text-[9px] font-black uppercase px-1.5 py-0.5 rounded bg-emerald-600 text-white">
+                      Adjudicada
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* En Evaluación / A Espera de Adjudicación Section */}
+          <div className="space-y-2">
+            <h4 className="text-[11px] font-black uppercase text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
+              <span>⏳ Cerradas a Espera de Adjudicación ({participatedGrandesCompras.enEvaluacionCount})</span>
+            </h4>
+            <div className="space-y-2">
+              {participatedGrandesCompras.enEvaluacion.map(op => (
+                <div 
+                  key={op.id}
+                  onClick={() => onSelectOpportunity(op)}
+                  className="p-3 rounded-xl border border-amber-200/60 dark:border-amber-900/40 bg-amber-50/40 dark:bg-amber-950/15 hover:border-amber-400 transition cursor-pointer flex items-center justify-between gap-3 group"
+                >
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-1.5 mb-0.5">
+                      <span className="text-[9px] font-mono font-bold text-slate-500">{op.codigo}</span>
+                      <span className={`text-[8px] font-black uppercase px-1.5 py-0.2 rounded ${
+                        op.empresaMatch === 'Inder-Roll' ? 'bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300' : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+                      }`}>
+                        {op.empresaMatch}
+                      </span>
+                    </div>
+                    <h5 className="text-xs font-bold text-slate-900 dark:text-slate-100 truncate group-hover:text-amber-600 transition">
+                      {op.titulo}
+                    </h5>
+                    <span className="text-[10px] text-slate-500 block truncate">{op.organismo}</span>
+                  </div>
+
+                  <div className="text-right shrink-0">
+                    <span className="text-xs font-black text-amber-600 dark:text-amber-400 block">
+                      ${op.monto.toLocaleString('es-CL')}
+                    </span>
+                    <span className="text-[9px] font-black uppercase px-1.5 py-0.5 rounded bg-amber-500 text-white animate-pulse">
+                      A Espera Adjudicación
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div className="bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-2xl p-5 text-white shadow-xl shadow-blue-500/10 flex flex-col justify-between h-36">
           <div className="flex items-center justify-between">

@@ -1,5 +1,5 @@
 'use client';
-import { Oportunidad, MiembroEquipo, Notificacion, VistaGuardada, OrdenCompra } from './types';
+import { Oportunidad, MiembroEquipo, Notificacion, VistaGuardada, OrdenCompra, Postulacion } from './types';
 
 export const mockMiembrosEquipo: MiembroEquipo[] = [
   { id: 'usr-1', nombre: 'Jonathan Cooper', rol: 'Admin', avatar: 'JC', estado: 'Activo', email: 'jocooper@antigravity.cl' }
@@ -8,6 +8,111 @@ export const mockMiembrosEquipo: MiembroEquipo[] = [
 export const mockVistasGuardadas: VistaGuardada[] = [
   { id: 'v-1', nombre: 'No leídas (Alta prioridad)', filters: { search: '', rubro: 'Todos', region: 'Todos', riesgo: 'Todos', montoMin: 10000000, montoMax: 1000000000 } },
   { id: 'v-2', nombre: 'Descartadas / Alto Riesgo', filters: { search: '', rubro: 'Todos', region: 'Todos', riesgo: 'Alto', montoMin: 0, montoMax: 1000000000 } }
+];
+
+export const mockPostulaciones: Postulacion[] = [
+  // --- INDER-ROLL (ASEO E HIGIENE) --- 3 Adjudicadas, 1 En Evaluación
+  {
+    id: 'post-gc-101',
+    oportunidadId: 'GC-3047-901-CM26',
+    oportunidadCodigo: 'GC-3047-901-CM26',
+    oportunidadTitulo: 'Grande Compra: Suministro de Insumos de Aseo Químico y Desinfectantes Hospitalarios',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 91800000,
+    documentosAdjuntos: ['Oferta_Tecnica_Inderquim_SanBorja.pdf', 'Catalogo_Aseo_InderRoll_2026.pdf'],
+    itemsOfertados: [
+      { sku: 'PAP001-001', precioOferta: 4200, cantidad: 5000 },
+      { sku: 'PAP001-008', precioOferta: 10500, cantidad: 6000 }
+    ],
+    fechaActualizacion: '2026-06-18'
+  },
+  {
+    id: 'post-gc-102',
+    oportunidadId: 'GC-2241-411-CM26',
+    oportunidadCodigo: 'GC-2241-411-CM26',
+    oportunidadTitulo: 'Grande Compra: Toallas de Papel Interfoliadas y Jabón para Red Salud Biobío',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 67500000,
+    documentosAdjuntos: ['Oferta_Economica_BioBio_InderRoll.pdf'],
+    itemsOfertados: [
+      { sku: 'PAP001-010', precioOferta: 17000, cantidad: 3500 }
+    ],
+    fechaActualizacion: '2026-06-25'
+  },
+  {
+    id: 'post-gc-103',
+    oportunidadId: 'GC-1088-720-CM26',
+    oportunidadCodigo: 'GC-1088-720-CM26',
+    oportunidadTitulo: 'Grande Compra: Abastecimiento Papel Higiénico Inder-Roll e Higiene Municipal',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 114200000,
+    documentosAdjuntos: ['Postulacion_MuniValparaiso_InderRoll.pdf'],
+    itemsOfertados: [
+      { sku: 'PAP001-003', precioOferta: 10500, cantidad: 10000 }
+    ],
+    fechaActualizacion: '2026-07-02'
+  },
+  {
+    id: 'post-gc-104',
+    oportunidadId: 'GC-3047-812-CM26',
+    oportunidadCodigo: 'GC-3047-812-CM26',
+    oportunidadTitulo: 'Grande Compra: Suministro de Detergentes Químicos e Insumos Sanitarios',
+    estado: 'Enviada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 77900000,
+    documentosAdjuntos: ['Cotizacion_CM_Tisne_InderRoll.pdf'],
+    itemsOfertados: [
+      { sku: 'PAP001-002', precioOferta: 12000, cantidad: 4500 }
+    ],
+    fechaActualizacion: '2026-07-16'
+  },
+
+  // --- AMINORTE (ESCRITORIO Y OFICINA) --- 2 Adjudicadas, 1 En Evaluación
+  {
+    id: 'post-gc-201',
+    oportunidadId: 'GC-6012-280-CM26',
+    oportunidadCodigo: 'GC-6012-280-CM26',
+    oportunidadTitulo: 'Grande Compra: Dotación Anual de Papelería y Resmas para Seremi de Salud RM',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 83400000,
+    documentosAdjuntos: ['Oferta_Aminorte_SeremiSalud.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-RES-01', precioOferta: 3800, cantidad: 15000 }
+    ],
+    fechaActualizacion: '2026-06-28'
+  },
+  {
+    id: 'post-gc-202',
+    oportunidadId: 'GC-6012-195-CM26',
+    oportunidadCodigo: 'GC-6012-195-CM26',
+    oportunidadTitulo: 'Grande Compra: Insumos de Escritorio y Archivadores para Dirección de Obras Públicas',
+    estado: 'Adjudicada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 130800000,
+    documentosAdjuntos: ['Propuesta_TecnicoEconomica_MOP_Aminorte.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-ARC-02', precioOferta: 2900, cantidad: 20000 }
+    ],
+    fechaActualizacion: '2026-07-05'
+  },
+  {
+    id: 'post-gc-203',
+    oportunidadId: 'GC-1105-650-CM26',
+    oportunidadCodigo: 'GC-1105-650-CM26',
+    oportunidadTitulo: 'Grande Compra: Suministro de Resmas Carta/Oficio y Papelería Institucional',
+    estado: 'Enviada',
+    responsable: 'Jonathan Cooper',
+    montoOferta: 104500000,
+    documentosAdjuntos: ['Cotizacion_SII_Papeleria_Aminorte.pdf'],
+    itemsOfertados: [
+      { sku: 'ESC-RES-02', precioOferta: 4600, cantidad: 18000 }
+    ],
+    fechaActualizacion: '2026-07-15'
+  }
 ];
 
 export const mockNotificaciones: Notificacion[] = [
@@ -59,6 +164,30 @@ export const mockNotificaciones: Notificacion[] = [
     esGrandesCompras: true,
     montoUtm: 2260
   },
+  {
+    id: 'nt-gc-5',
+    leida: false,
+    tipo: 'invitacion',
+    fecha: '2026-07-22 09:10',
+    titulo: '✨ INVITACIÓN A GRANDE COMPRA (INDER-ROLL)',
+    descripcion: 'SEREMI de Educación Valparaíso te ha invitado a la Grande Compra ID GC-5510-330-CM26 por $94.000.000 CLP (1.445 UTM) en Convenio Marco de Aseo Escolar.',
+    oportunidadId: 'GC-5510-330-CM26',
+    empresaMatch: 'Inder-Roll',
+    esGrandesCompras: true,
+    montoUtm: 1445
+  },
+  {
+    id: 'nt-gc-6',
+    leida: false,
+    tipo: 'invitacion',
+    fecha: '2026-07-22 09:30',
+    titulo: '✨ INVITACIÓN A GRANDE COMPRA (AMINORTE)',
+    descripcion: 'Gobierno Regional de Antofagasta te ha invitado a la Grande Compra ID GC-4080-112-CM26 por $81.500.000 CLP (1.250 UTM) en Convenio Marco de Escritorio.',
+    oportunidadId: 'GC-4080-112-CM26',
+    empresaMatch: 'Aminorte',
+    esGrandesCompras: true,
+    montoUtm: 1250
+  },
   { id: 'nt-1', leida: false, tipo: 'alerta', fecha: '2026-07-15 08:30', titulo: 'Nueva Oportunidad Detectada', descripcion: 'Suministro de alcohol gel y desinfectantes para la I. Municipalidad de Santiago (Match: 96%)', oportunidadId: '3047-1042-LE26', empresaMatch: 'Inder-Roll' }
 ];
 
@@ -67,6 +196,229 @@ export const mockOrdenesCompra: OrdenCompra[] = [
 ];
 
 export const mockOportunidades: Oportunidad[] = [
+  // --- 7 GRANDES COMPRAS PARTICIPADAS ---
+  {
+    "id": "GC-3047-901-CM26",
+    "codigo": "GC-3047-901-CM26",
+    "titulo": "Grande Compra: Suministro de Insumos de Aseo Químico y Desinfectantes Hospitalarios",
+    "organismo": "HOSPITAL CLÍNICO SAN BORJA ARRIARÁN",
+    "organismoRut": "61.602.001-2",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Aseo e Higiene",
+    "region": "Metropolitana",
+    "monto": 92500000,
+    "montoUtm": 1420,
+    "convenioMarcoNombre": "Convenio Marco de Insumos de Aseo e Higiene Hospitalaria",
+    "fechaPublicacion": "2026-06-05",
+    "fechaCierre": "2026-06-18",
+    "matchScore": 99,
+    "riesgo": "Bajo",
+    "empresaMatch": "Inder-Roll",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Grande Compra adjudicada para la dotación de insumos de desinfección y papel higiénico Inder-Roll para el Hospital San Borja Arriarán.",
+    "estado": "Adjudicada",
+    "cronograma": [
+      { "hito": "Publicación", "fecha": "2026-06-05 09:00" },
+      { "hito": "Oferta Enviada", "fecha": "2026-06-18 14:00" },
+      { "hito": "Adjudicación Confirmada", "fecha": "2026-07-01 12:00" }
+    ],
+    "documentos": [],
+    "items": [{ "sku": "PAP001-001", "producto": "Cloro Concentrado Químico 5L", "cantidad": 5000, "precioUnitario": 4200 }],
+    "criteriosEvaluacion": [{ "aspecto": "Precio", "ponderacion": 100, "descripcion": "Evaluación económica CM" }],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-2241-411-CM26",
+    "codigo": "GC-2241-411-CM26",
+    "titulo": "Grande Compra: Toallas de Papel Interfoliadas y Jabón para Red Salud Biobío",
+    "organismo": "SERVICIO DE SALUD BIOBÍO",
+    "organismoRut": "61.602.200-7",
+    "organismoPagoDias": 25,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Aseo e Higiene",
+    "region": "Biobío",
+    "monto": 68000000,
+    "montoUtm": 1045,
+    "convenioMarcoNombre": "Convenio Marco de Artículos de Aseo e Higiene Institucional",
+    "fechaPublicacion": "2026-06-10",
+    "fechaCierre": "2026-06-25",
+    "matchScore": 97,
+    "riesgo": "Bajo",
+    "empresaMatch": "Inder-Roll",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Grande Compra adjudicada para despacho centralizado en la Región del Biobío.",
+    "estado": "Adjudicada",
+    "cronograma": [{ "hito": "Adjudicado", "fecha": "2026-07-05 10:00" }],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-1088-720-CM26",
+    "codigo": "GC-1088-720-CM26",
+    "titulo": "Grande Compra: Abastecimiento Papel Higiénico Inder-Roll e Higiene Municipal",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE VALPARAÍSO",
+    "organismoRut": "69.060.100-9",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Aseo e Higiene",
+    "region": "Valparaíso",
+    "monto": 115000000,
+    "montoUtm": 1765,
+    "convenioMarcoNombre": "Convenio Marco de Aseo Institucional",
+    "fechaPublicacion": "2026-06-15",
+    "fechaCierre": "2026-07-02",
+    "matchScore": 98,
+    "riesgo": "Bajo",
+    "empresaMatch": "Inder-Roll",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Grande Compra adjudicada para provisión de papel higiénico y toallas en Valparaíso.",
+    "estado": "Adjudicada",
+    "cronograma": [{ "hito": "Adjudicado", "fecha": "2026-07-12 11:00" }],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-3047-812-CM26",
+    "codigo": "GC-3047-812-CM26",
+    "titulo": "Grande Compra: Suministro de Detergentes Químicos e Insumos Sanitarios",
+    "organismo": "HOSPITAL DR. LUIS TISNÉ BROUSSE",
+    "organismoRut": "61.602.300-3",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Aseo e Higiene",
+    "region": "Metropolitana",
+    "monto": 78400000,
+    "montoUtm": 1205,
+    "convenioMarcoNombre": "Convenio Marco de Aseo Hospitalario",
+    "fechaPublicacion": "2026-07-01",
+    "fechaCierre": "2026-07-21",
+    "matchScore": 96,
+    "riesgo": "Bajo",
+    "empresaMatch": "Inder-Roll",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Proceso cerrado en recepción de ofertas. Actualmente EN EVALUACIÓN A ESPERA DE ADJUDICACIÓN.",
+    "estado": "En Evaluación",
+    "cronograma": [
+      { "hito": "Cierre Recepción Ofertas", "fecha": "2026-07-21 15:00" },
+      { "hito": "Evaluación Técnica en Curso", "fecha": "2026-07-22 09:00" }
+    ],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-6012-280-CM26",
+    "codigo": "GC-6012-280-CM26",
+    "titulo": "Grande Compra: Dotación Anual de Papelería y Resmas para Seremi de Salud RM",
+    "organismo": "SEREMI DE SALUD REGIÓN METROPOLITANA",
+    "organismoRut": "60.502.000-1",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 84000000,
+    "montoUtm": 1290,
+    "convenioMarcoNombre": "Convenio Marco de Escritorio y Oficina",
+    "fechaPublicacion": "2026-06-12",
+    "fechaCierre": "2026-06-28",
+    "matchScore": 99,
+    "riesgo": "Bajo",
+    "empresaMatch": "Aminorte",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Grande Compra adjudicada a Aminorte para provisión de resmas y papelería SEREMI.",
+    "estado": "Adjudicada",
+    "cronograma": [{ "hito": "Adjudicado", "fecha": "2026-07-08 14:00" }],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-6012-195-CM26",
+    "codigo": "GC-6012-195-CM26",
+    "titulo": "Grande Compra: Insumos de Escritorio y Archivadores para Dirección de Obras Públicas",
+    "organismo": "DIRECCIÓN GENERAL DE OBRAS PÚBLICAS (MOP)",
+    "organismoRut": "61.201.000-5",
+    "organismoPagoDias": 20,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 132000000,
+    "montoUtm": 2030,
+    "convenioMarcoNombre": "Convenio Marco de Escritorio y Oficina",
+    "fechaPublicacion": "2026-06-20",
+    "fechaCierre": "2026-07-05",
+    "matchScore": 97,
+    "riesgo": "Bajo",
+    "empresaMatch": "Aminorte",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Grande Compra adjudicada a Aminorte para insumos MOP nivel central.",
+    "estado": "Adjudicada",
+    "cronograma": [{ "hito": "Adjudicado", "fecha": "2026-07-15 16:00" }],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-1105-650-CM26",
+    "codigo": "GC-1105-650-CM26",
+    "titulo": "Grande Compra: Suministro de Resmas Carta/Oficio y Papelería Institucional",
+    "organismo": "SERVICIO DE IMPUESTOS INTERNOS (SII)",
+    "organismoRut": "60.801.000-0",
+    "organismoPagoDias": 15,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 104500000,
+    "montoUtm": 1615,
+    "convenioMarcoNombre": "Convenio Marco de Escritorio y Oficina",
+    "fechaPublicacion": "2026-07-02",
+    "fechaCierre": "2026-07-20",
+    "matchScore": 98,
+    "riesgo": "Bajo",
+    "empresaMatch": "Aminorte",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Proceso cerrado en recepción de ofertas. Actualmente EN EVALUACIÓN A ESPERA DE ADJUDICACIÓN.",
+    "estado": "En Evaluación",
+    "cronograma": [
+      { "hito": "Cierre Recepción Ofertas", "fecha": "2026-07-20 17:00" },
+      { "hito": "Evaluación de Ofertas SII", "fecha": "2026-07-22 10:00" }
+    ],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+
+  // --- INVITACIONES ABIERTAS (EN PROCESO ABIERTO) ---
   {
     "id": "GC-3047-881-CM26",
     "codigo": "GC-3047-881-CM26",
@@ -81,37 +433,121 @@ export const mockOportunidades: Oportunidad[] = [
     "montoUtm": 1350,
     "convenioMarcoNombre": "Convenio Marco de Insumos de Aseo, Limpieza e Higiene Hospitalaria",
     "fechaPublicacion": "2026-07-20",
-    "fechaCierre": "2026-07-31",
+    "fechaCierre": "2026-08-04",
     "matchScore": 98,
     "riesgo": "Bajo",
     "empresaMatch": "Inder-Roll",
     "modalidad": "Grandes Compras",
     "esInvitacionGrandesCompras": true,
-    "descripcion": "Intención de Compra en Convenio Marco (Grande Compra > 1.000 UTM). El Servicio de Salud Metropolitano Central requiere cotización directa quincenal para suministro masivo de cloro concentrado, amonio cuaternario, alcohol gel 70%, jabón desinfectante e insumos de papel Inder-Roll para la red hospitalaria y CESFAM.",
+    "descripcion": "Intención de Compra en Convenio Marco (Grande Compra > 1.000 UTM). Proceso ABIERTO para presentación de cotizaciones.",
     "estado": "Publicada",
     "cronograma": [
       { "hito": "Emisión Intención de Compra CM", "fecha": "2026-07-20 09:00" },
-      { "hito": "Plazo Límite Cotizaciones", "fecha": "2026-07-31 15:00" },
-      { "hito": "Adjudicación u Orden de Compra", "fecha": "2026-08-05 17:00" }
+      { "hito": "Plazo Límite Cotizaciones", "fecha": "2026-08-04 15:00" }
     ],
     "documentos": [
       { "nombre": "📄 Términos de Referencia Grande Compra SSMC.pdf", "tipo": "pdf", "tamanho": "2.1 MB" }
     ],
     "items": [
-      { "sku": "PAP001-001", "producto": "Cloro Concentrado Químico 5L", "cantidad": 3500, "precioUnitario": 4200 },
-      { "sku": "PAP001-008", "producto": "Toalla de Papel Inder-Roll 200 Mts DH", "cantidad": 4800, "precioUnitario": 10500 },
-      { "sku": "PAP001-003", "producto": "Papel Higiénico Inder-Roll SH 500x6", "cantidad": 3200, "precioUnitario": 10500 }
+      { "sku": "PAP001-001", "producto": "Cloro Concentrado Químico 5L", "cantidad": 3500, "precioUnitario": 4200 }
     ],
-    "criteriosEvaluacion": [
-      { "aspecto": "Precio Convenio Marco", "ponderacion": 70, "descripcion": "Menor precio según catálogo CM vigente" },
-      { "aspecto": "Plazo de Entrega Directo", "ponderacion": 30, "descripcion": "Despacho a bodegas hospitalarias en < 48 horas" }
-    ],
+    "criteriosEvaluacion": [{ "aspecto": "Precio", "ponderacion": 100, "descripcion": "Catálogo CM" }],
     "preguntas": [],
     "comentarios": [],
-    "competidoresPropuestos": [],
-    "historialPrecios": [
-      { "fecha": "Jul 2026", "precioUnitarioPromedio": 88500000 }
-    ]
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-6012-310-CM26",
+    "codigo": "GC-6012-310-CM26",
+    "titulo": "Invitación a Grande Compra: Adquisición Semestral de Artículos de Escritorio y Papelería de Oficina",
+    "organismo": "SUBSECRETARÍA DE EDUCACIÓN",
+    "organismoRut": "60.501.000-6",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 74200000,
+    "montoUtm": 1135,
+    "convenioMarcoNombre": "Convenio Marco de Escritorio, Papelería y Utiles de Oficina",
+    "fechaPublicacion": "2026-07-19",
+    "fechaCierre": "2026-08-02",
+    "matchScore": 99,
+    "riesgo": "Bajo",
+    "empresaMatch": "Aminorte",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Intención de Compra en Convenio Marco (Grande Compra > 1.000 UTM). Proceso ABIERTO para presentación de cotizaciones.",
+    "estado": "Publicada",
+    "cronograma": [
+      { "hito": "Publicación Intención de Compra CM", "fecha": "2026-07-19 10:00" },
+      { "hito": "Cierre Recepción Ofertas", "fecha": "2026-08-02 14:00" }
+    ],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-2241-502-CM26",
+    "codigo": "GC-2241-502-CM26",
+    "titulo": "Invitación a Grande Compra: Suministro Anual Papel Higiénico Inder-Roll y Toallas Interfoliadas",
+    "organismo": "JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)",
+    "organismoRut": "60.908.000-9",
+    "organismoPagoDias": 20,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Aseo e Higiene",
+    "region": "Metropolitana",
+    "monto": 125000000,
+    "montoUtm": 1910,
+    "convenioMarcoNombre": "Convenio Marco de Artículos de Aseo y Papelería Institucional",
+    "fechaPublicacion": "2026-07-21",
+    "fechaCierre": "2026-08-10",
+    "matchScore": 97,
+    "riesgo": "Bajo",
+    "empresaMatch": "Inder-Roll",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Intención de Compra en Convenio Marco (>1.000 UTM). Proceso ABIERTO.",
+    "estado": "Publicada",
+    "cronograma": [],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
+  },
+  {
+    "id": "GC-1105-774-CM26",
+    "codigo": "GC-1105-774-CM26",
+    "titulo": "Invitación a Grande Compra: Dotación Nacional de Resmas, Carpetas y Suministros para Red Judicial",
+    "organismo": "CORPORACIÓN ADMINISTRATIVA DEL PODER JUDICIAL (CAPJ)",
+    "organismoRut": "60.301.000-0",
+    "organismoPagoDias": 15,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 148000000,
+    "montoUtm": 2260,
+    "convenioMarcoNombre": "Convenio Marco de Escritorio, Papelería y Utiles de Oficina",
+    "fechaPublicacion": "2026-07-22",
+    "fechaCierre": "2026-08-15",
+    "matchScore": 96,
+    "riesgo": "Bajo",
+    "empresaMatch": "Aminorte",
+    "modalidad": "Grandes Compras",
+    "esInvitacionGrandesCompras": true,
+    "descripcion": "Intención de Compra en Convenio Marco (>1.000 UTM). Proceso ABIERTO.",
+    "estado": "Publicada",
+    "cronograma": [],
+    "documentos": [],
+    "items": [],
+    "criteriosEvaluacion": [],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": []
   },
   {
     "id": "GC-6012-310-CM26",

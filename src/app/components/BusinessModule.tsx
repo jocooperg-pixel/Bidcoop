@@ -62,16 +62,16 @@ export default function BusinessModule({
   // Kanban Board Columns
   const kanbanColumns = useMemo(() => {
     // We categorize the opportunities depending on their states in memory
-    const followed = oportunidades.filter(o => o.estado === 'Publicada' && o.matchScore > 90); // simulated follow list
-    const draft = oportunidades.filter(o => o.estado === 'En Evaluación').slice(0, 2); // simulated drafts
+    const followed = oportunidades.filter(o => o.estado === 'Publicada' && o.matchScore >= 95);
+    const inEvaluation = oportunidades.filter(o => o.estado === 'En Evaluación');
     const submitted = oportunidades.filter(o => o.estado === 'Postulada');
     const won = oportunidades.filter(o => o.estado === 'Adjudicada');
 
     return [
-      { id: 'followed', label: 'Seguidos (Alta Prioridad)', items: followed, color: 'border-amber-400 bg-amber-500/5' },
-      { id: 'draft', label: 'En Borrador', items: draft, color: 'border-blue-400 bg-blue-500/5' },
-      { id: 'submitted', label: 'Postulados', items: submitted, color: 'border-indigo-400 bg-indigo-500/5' },
-      { id: 'won', label: 'Adjudicados', items: won, color: 'border-green-400 bg-green-500/5' }
+      { id: 'followed', label: 'Invitaciones Abiertas CM', items: followed, color: 'border-purple-500 bg-purple-500/5' },
+      { id: 'inEvaluation', label: 'Cerrados (A Espera Adjudicación)', items: inEvaluation, color: 'border-amber-400 bg-amber-500/5' },
+      { id: 'submitted', label: 'Postulaciones Enviadas', items: submitted, color: 'border-indigo-400 bg-indigo-500/5' },
+      { id: 'won', label: 'Grandes Compras Adjudicadas', items: won, color: 'border-emerald-500 bg-emerald-500/5' }
     ];
   }, [oportunidades]);
 
