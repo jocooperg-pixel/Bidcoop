@@ -32,24 +32,6 @@ export const FLETES_REGIONALES_CHILE: Record<string, { fleteBase: number; diasEn
 export const mockPostulaciones: Postulacion[] = [
   // --- INDER-ROLL (ASEO E HIGIENE - GRANDES COMPRAS) ---
   {
-    id: 'post-gc-101',
-    oportunidadId: 'GC-3047-901-CM26',
-    oportunidadCodigo: 'GC-3047-901-CM26',
-    oportunidadTitulo: 'Grande Compra: Suministro de Insumos de Aseo Químico y Desinfectantes Hospitalarios',
-    estado: 'Adjudicada',
-    responsable: 'Jonathan Cooper',
-    montoOferta: 91800000,
-    empresaMatch: 'Inder-Roll',
-    modalidad: 'Grandes Compras',
-    organismo: 'HOSPITAL CLÍNICO SAN BORJA ARRIARÁN',
-    documentosAdjuntos: ['Oferta_Tecnica_Inderquim_SanBorja.pdf', 'Catalogo_Aseo_InderRoll_2026.pdf'],
-    itemsOfertados: [
-      { sku: 'PAP001-001', precioOferta: 4200, cantidad: 5000 },
-      { sku: 'PAP001-008', precioOferta: 10500, cantidad: 6000 }
-    ],
-    fechaActualizacion: '2026-06-18'
-  },
-  {
     id: 'post-gc-102',
     oportunidadId: 'GC-2241-411-CM26',
     oportunidadCodigo: 'GC-2241-411-CM26',
