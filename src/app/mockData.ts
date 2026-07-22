@@ -13166,7 +13166,7 @@ export const mockOportunidades: Oportunidad[] = [
     "organismoRiesgo": "Bajo",
     "rubro": "Artículos de Escritorio y Oficina",
     "region": "Valparaíso",
-    "monto": 450000,
+    "monto": 1750000,
     "fechaPublicacion": "2026-07-20",
     "fechaCierre": "2026-07-25",
     "matchScore": 88,
@@ -13195,7 +13195,7 @@ export const mockOportunidades: Oportunidad[] = [
         "sku": "CA-ITEM-3244-277-COT26",
         "producto": "INSUMOS Y ARTÍCULOS DE ESCRITORIO PARA MUNICIPALIDAD DE SANTO DOMINGO",
         "cantidad": 1,
-        "precioUnitario": 450000
+        "precioUnitario": 1750000
       }
     ],
     "criteriosEvaluacion": [
