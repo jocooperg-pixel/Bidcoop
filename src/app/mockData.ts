@@ -10,6 +10,25 @@ export const mockVistasGuardadas: VistaGuardada[] = [
   { id: 'v-2', nombre: 'Descartadas / Alto Riesgo', filters: { search: '', rubro: 'Todos', region: 'Todos', riesgo: 'Alto', montoMin: 0, montoMax: 1000000000 } }
 ];
 
+export const FLETES_REGIONALES_CHILE: Record<string, { fleteBase: number; diasEntrega: string; zona: string }> = {
+  'Región Metropolitana': { fleteBase: 15000, diasEntrega: '24-48 hrs', zona: 'Centro' },
+  'Valparaíso': { fleteBase: 25000, diasEntrega: '48 hrs', zona: 'Centro' },
+  "O'Higgins": { fleteBase: 25000, diasEntrega: '48 hrs', zona: 'Centro' },
+  'Maule': { fleteBase: 32000, diasEntrega: '48-72 hrs', zona: 'Centro-Sur' },
+  'Ñuble': { fleteBase: 35000, diasEntrega: '48-72 hrs', zona: 'Sur' },
+  'Biobío': { fleteBase: 38000, diasEntrega: '48-72 hrs', zona: 'Sur' },
+  'Coquimbo': { fleteBase: 42000, diasEntrega: '72 hrs', zona: 'Norte Chico' },
+  'La Araucanía': { fleteBase: 45000, diasEntrega: '72 hrs', zona: 'Sur' },
+  'Los Ríos': { fleteBase: 48000, diasEntrega: '72-96 hrs', zona: 'Sur' },
+  'Los Lagos': { fleteBase: 55000, diasEntrega: '96 hrs', zona: 'Sur-Austral' },
+  'Atacama': { fleteBase: 58000, diasEntrega: '96 hrs', zona: 'Norte' },
+  'Antofagasta': { fleteBase: 65000, diasEntrega: '4-5 días', zona: 'Norte Grande' },
+  'Tarapacá': { fleteBase: 78000, diasEntrega: '5-6 días', zona: 'Norte Grande' },
+  'Arica y Parinacota': { fleteBase: 88000, diasEntrega: '5-7 días', zona: 'Norte Extremo' },
+  'Aysén': { fleteBase: 98000, diasEntrega: '6-8 días', zona: 'Austral' },
+  'Magallanes': { fleteBase: 120000, diasEntrega: '7-10 días', zona: 'Austral Extremo' }
+};
+
 export const mockPostulaciones: Postulacion[] = [
   // --- INDER-ROLL (ASEO E HIGIENE - GRANDES COMPRAS) ---
   {

@@ -49,6 +49,26 @@ export interface Oportunidad {
   montoUtm?: number;
   subestadoEvaluacion?: 'Sin oferta seleccionada' | 'En comisión evaluadora' | 'Adjudicada' | 'Desierta';
   fechaAdjudicacionEstimada?: string;
+  admisibilidadIA?: {
+    checklist: Array<{ requisito: string; estado: 'Cumple' | 'Atención' | 'Riesgo'; detalle: string }>;
+    riesgoGlobal: 'Bajo' | 'Medio' | 'Alto';
+    resumenRiesgo: string;
+  };
+  precioHistoricoMP?: {
+    promedioAdjudicado: number;
+    ultimoAdjudicado: number;
+    proveedorGanador?: string;
+    fechaUltimaAdjudicacion?: string;
+    ahorroEstimadoPct?: number;
+  };
+  fleteEstimadoRegion?: number;
+  alertasActivas?: Array<{
+    id: string;
+    tipo: 'cierre' | 'preguntas' | 'match';
+    titulo: string;
+    canal: 'WhatsApp' | 'Email';
+    fechaHora: string;
+  }>;
 }
 
 export interface Postulacion {

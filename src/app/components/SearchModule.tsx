@@ -182,6 +182,10 @@ export default function SearchModule({
   // Document preview modal state
   const [previewDocModal, setPreviewDocModal] = useState<{ doc: DocumentoAdjunto; opportunity: Oportunidad } | null>(null);
 
+  // Official Quote Generator Modal State
+  const [showQuoteModal, setShowQuoteModal] = useState<boolean>(false);
+  const [quoteCompany, setQuoteCompany] = useState<'Inder-Roll' | 'Aminorte'>('Aminorte');
+
   // Synchronize local search state with Topbar global search input
   useEffect(() => {
     if (globalSearchText !== undefined) {
@@ -875,6 +879,16 @@ export default function SearchModule({
                       Desglose cuantitativo de artículos solicitados por el organismo comprador y análisis comparativo de precios de mercado.
                     </p>
                   </div>
+
+                  <button
+                    onClick={() => {
+                      setQuoteCompany(selectedOpportunity.empresaMatch || 'Aminorte');
+                      setShowQuoteModal(true);
+                    }}
+                    className="px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-650 hover:from-emerald-700 hover:to-teal-700 text-white rounded-xl text-xs font-black shadow-md shadow-emerald-500/20 flex items-center gap-2 transition cursor-pointer shrink-0"
+                  >
+                    <span>Generar Cotización PDF Formal</span> 📄
+                  </button>
                 </div>
 
                 {/* Market Summary Cards */}
@@ -2510,6 +2524,213 @@ export default function SearchModule({
                   <div className="text-right">
                     <span className="font-bold text-slate-700 dark:text-slate-300 block">VERIFICADO DIGITALMENTE</span>
                     <span>Plataforma Avanzada de Abastecimiento</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      )}
+
+      {/* OFFICIAL B2G QUOTE GENERATOR MODAL */}
+      {showQuoteModal && selectedOpportunity && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/80 backdrop-blur-md animate-fadeIn">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl max-w-4xl w-full max-h-[92vh] flex flex-col overflow-hidden">
+            
+            {/* Modal Header Bar */}
+            <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between bg-slate-50/90 dark:bg-slate-900/90">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">📄</span>
+                <div>
+                  <h3 className="text-sm font-black text-slate-900 dark:text-white">
+                    Generador de Cotización Formal B2G — Mercado Público
+                  </h3>
+                  <span className="text-[11px] text-slate-400 font-bold">
+                    Proceso ID: {selectedOpportunity.codigo} • Organismo: {selectedOpportunity.organismo}
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                {/* Company Selector Toggle */}
+                <div className="flex items-center gap-1 bg-slate-200 dark:bg-slate-800 p-1 rounded-xl">
+                  <button
+                    onClick={() => setQuoteCompany('Aminorte')}
+                    className={`px-3 py-1 text-xs font-black rounded-lg transition ${
+                      quoteCompany === 'Aminorte' ? 'bg-blue-600 text-white shadow-xs' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400'
+                    }`}
+                  >
+                    Aminorte SpA
+                  </button>
+                  <button
+                    onClick={() => setQuoteCompany('Inder-Roll')}
+                    className={`px-3 py-1 text-xs font-black rounded-lg transition ${
+                      quoteCompany === 'Inder-Roll' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400'
+                    }`}
+                  >
+                    Inder-Roll SpA
+                  </button>
+                </div>
+
+                <button
+                  onClick={() => window.print()}
+                  className="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-900 text-white text-xs font-black flex items-center gap-1.5 transition shadow-sm cursor-pointer"
+                >
+                  <span>Imprimir / PDF</span> 🖨️
+                </button>
+                <button
+                  onClick={() => setShowQuoteModal(false)}
+                  className="p-1.5 px-3 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-500 font-black text-sm transition cursor-pointer"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+
+            {/* Printable Document Preview Area */}
+            <div className="flex-1 overflow-y-auto p-4 sm:p-8 bg-slate-100 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100">
+              <div className="max-w-3xl mx-auto bg-white p-8 sm:p-12 rounded-2xl border border-slate-200 shadow-xl space-y-6 text-slate-900 font-sans">
+                
+                {/* Official Company Header */}
+                <div className="flex justify-between items-start border-b-2 border-slate-900 pb-6">
+                  <div>
+                    <h1 className="text-xl font-black tracking-tight text-blue-900">
+                      {quoteCompany === 'Aminorte' ? 'AMINORTE SpA' : 'INDER-ROLL SpA'}
+                    </h1>
+                    <p className="text-xs font-bold text-slate-600 mt-0.5">
+                      {quoteCompany === 'Aminorte'
+                        ? 'Distribución e Importación de Papelería, Resmas y Artículos de Oficina'
+                        : 'Fabricación y Distribución de Insumos Sanitarios, Aseo Químico e Higiene Hospitalaria'}
+                    </p>
+                    <div className="text-[11px] text-slate-500 mt-2 space-y-0.5">
+                      <p>RUT: {quoteCompany === 'Aminorte' ? '76.123.500-1' : '76.854.912-K'}</p>
+                      <p>Dirección: Av. Providencia 1234, Of. 602, Santiago, Chile</p>
+                      <p>Contacto Comercial: contacto@{quoteCompany === 'Aminorte' ? 'aminorte.cl' : 'inderroll.cl'} | +56 2 2940 8800</p>
+                    </div>
+                  </div>
+
+                  <div className="text-right border-l-2 border-slate-200 pl-6">
+                    <span className="text-xs font-mono font-black text-blue-700 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200 block">
+                      COTIZACIÓN N° COT-2026-{selectedOpportunity.codigo.replace(/[^0-9]/g, '').slice(-6) || '99201'}
+                    </span>
+                    <span className="text-[11px] text-slate-500 block mt-2 font-bold">
+                      Fecha: {new Date().toLocaleDateString('es-CL')}
+                    </span>
+                    <span className="text-[11px] text-emerald-600 block font-black mt-0.5">
+                      Validez: 30 Días Corridos
+                    </span>
+                  </div>
+                </div>
+
+                {/* Recipient Details */}
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-2">
+                  <h3 className="font-black text-slate-900 uppercase tracking-wider text-[11px] border-b border-slate-200 pb-1">
+                    DATOS DEL COMPRADOR Y PROCESO MERCADO PÚBLICO
+                  </h3>
+                  <div className="grid grid-cols-2 gap-3 text-slate-700">
+                    <div>
+                      <span className="text-[10px] text-slate-400 uppercase font-black block">Organismo Demandante</span>
+                      <strong className="text-slate-900 font-bold">{selectedOpportunity.organismo}</strong>
+                    </div>
+                    <div>
+                      <span className="text-[10px] text-slate-400 uppercase font-black block">RUT Organismo</span>
+                      <strong className="text-slate-900 font-bold">{selectedOpportunity.organismoRut}</strong>
+                    </div>
+                    <div>
+                      <span className="text-[10px] text-slate-400 uppercase font-black block">Código de Proceso MP</span>
+                      <strong className="text-blue-700 font-mono font-bold">{selectedOpportunity.codigo}</strong>
+                    </div>
+                    <div>
+                      <span className="text-[10px] text-slate-400 uppercase font-black block">Modalidad de Compra</span>
+                      <strong className="text-slate-900 font-bold">{selectedOpportunity.modalidad}</strong>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Quote Table */}
+                <div className="space-y-2">
+                  <h3 className="font-black text-slate-900 uppercase tracking-wider text-xs border-b border-slate-200 pb-1">
+                    DETALLE DE PRODUCTOS Y VALORES OFERTADOS
+                  </h3>
+
+                  <table className="w-full text-left text-xs border border-slate-200 rounded-xl overflow-hidden">
+                    <thead className="bg-slate-100 text-slate-700 font-black border-b border-slate-200">
+                      <tr>
+                        <th className="p-3">SKU / Requerimiento</th>
+                        <th className="p-3 text-center">Cant.</th>
+                        <th className="p-3 text-right">P. Unitario Neto</th>
+                        <th className="p-3 text-right">Total Neto</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-200">
+                      {selectedOpportunity.items.map((it, idx) => {
+                        const unitPrice = offerPrices[it.sku] || it.precioUnitario;
+                        const netSubtotal = Math.round((unitPrice * it.cantidad) / 1.19);
+                        return (
+                          <tr key={idx}>
+                            <td className="p-3">
+                              <span className="font-black text-slate-900 block">{it.producto}</span>
+                              {it.especificacionTecnica && (
+                                <span className="text-[11px] text-slate-500 block mt-0.5">{it.especificacionTecnica}</span>
+                              )}
+                              <span className="text-[9px] font-mono text-slate-400 block mt-1">SKU: {it.sku}</span>
+                            </td>
+                            <td className="p-3 text-center font-bold">{it.cantidad} {it.unidadMedida || 'un'}</td>
+                            <td className="p-3 text-right font-bold">${Math.round(unitPrice / 1.19).toLocaleString('es-CL')} CLP</td>
+                            <td className="p-3 text-right font-black">${netSubtotal.toLocaleString('es-CL')} CLP</td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Totals Summary */}
+                <div className="flex justify-end pt-2">
+                  <div className="w-64 space-y-2 text-xs border border-slate-200 rounded-xl p-4 bg-slate-50">
+                    <div className="flex justify-between text-slate-600">
+                      <span>Subtotal Neto:</span>
+                      <strong className="font-bold">
+                        ${Math.round((totalPostuladoMonto || selectedOpportunity.monto) / 1.19).toLocaleString('es-CL')} CLP
+                      </strong>
+                    </div>
+                    <div className="flex justify-between text-slate-600">
+                      <span>IVA (19%):</span>
+                      <strong className="font-bold">
+                        ${((totalPostuladoMonto || selectedOpportunity.monto) - Math.round((totalPostuladoMonto || selectedOpportunity.monto) / 1.19)).toLocaleString('es-CL')} CLP
+                      </strong>
+                    </div>
+                    <div className="flex justify-between border-t border-slate-300 pt-2 text-sm font-black text-slate-900">
+                      <span>TOTAL FINAL CLP:</span>
+                      <strong className="text-blue-700">
+                        ${(totalPostuladoMonto || selectedOpportunity.monto).toLocaleString('es-CL')} CLP
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Conditions */}
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-[11px] space-y-1.5 text-slate-700">
+                  <h4 className="font-black text-slate-900 uppercase">CLÁUSULAS COMERCIALES Y DE DESPACHO</h4>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li><strong>Plazo de Entrega:</strong> Máximo 3 a 5 días hábiles contados desde la recepción conforme de la Orden de Compra.</li>
+                    <li><strong>Lugar de Despacho:</strong> Dependencias del organismo en la Región de {selectedOpportunity.region}.</li>
+                    <li><strong>Condición de Pago:</strong> {selectedOpportunity.organismoPagoDias} días vista factura según normativa de Mercado Público.</li>
+                    <li><strong>Garantía Comercial:</strong> 12 meses contra defectos de fábrica.</li>
+                  </ul>
+                </div>
+
+                {/* Signature */}
+                <div className="pt-8 flex justify-between items-end text-xs border-t border-slate-200">
+                  <div>
+                    <span className="text-[10px] text-slate-400 block font-mono">Firma Certificada Digitalmente</span>
+                    <span className="font-bold text-slate-800">Departamento Comercial — {quoteCompany === 'Aminorte' ? 'Aminorte SpA' : 'Inder-Roll SpA'}</span>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-[9px] font-mono text-slate-400 block">HASH: SHA256-COT-{selectedOpportunity.codigo}</span>
+                    <span className="font-bold text-emerald-600">Documento Válido para Mercado Público</span>
                   </div>
                 </div>
 
