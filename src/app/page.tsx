@@ -9,6 +9,7 @@ import BusinessModule from './components/BusinessModule';
 import AnalyticsModule from './components/AnalyticsModule';
 import ConfigModule from './components/ConfigModule';
 import ProvidersModule from './components/ProvidersModule';
+import ReportsNotificationsModule from './components/ReportsNotificationsModule';
 
 import { Oportunidad, Postulacion, MiembroEquipo, Notificacion, VistaGuardada, Empresa } from './types';
 import {
@@ -739,7 +740,15 @@ export default function Home() {
             />
           )}
 
-          {activeModule === 'analytics' && (
+          {activeModule === 'analytics' && activeSubSection === 'reportes-8am' && (
+            <ReportsNotificationsModule
+              oportunidades={oportunidades}
+              empresaActiva={activeCompany}
+              darkMode={darkMode}
+            />
+          )}
+
+          {activeModule === 'analytics' && activeSubSection !== 'reportes-8am' && (
             <AnalyticsModule
               activeSubSection={activeSubSection}
               oportunidades={filteredOportunidades}

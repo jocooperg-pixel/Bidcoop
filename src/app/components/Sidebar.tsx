@@ -68,7 +68,8 @@ export default function Sidebar({
       ),
       subSections: [
         { id: 'inteligencia-mercado', label: 'Inteligencia de Mercado' },
-        { id: 'desempeno-equipo', label: 'Desempeño y Reportes' }
+        { id: 'desempeno-equipo', label: 'Desempeño y Reportes' },
+        { id: 'reportes-8am', label: 'Reportes y Alertas 8 AM' }
       ]
     },
     {

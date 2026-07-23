@@ -39,10 +39,11 @@ export async function POST(request: Request) {
 
     const excelContent = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="UTF-8"><style>th{background-color:#1e3a5f;color:white;font-weight:bold;padding:8px}td{padding:6px;border:1px solid #ddd}tr:nth-child(even){background-color:#f2f6fa}</style></head><body>${tableHtml}</body></html>`;
 
+    const today = new Date().toISOString().split('T')[0];
     return new NextResponse(excelContent, {
       headers: {
         'Content-Type': 'application/vnd.ms-excel',
-        'Content-Disposition': 'attachment; filename="BidCoop_Oportunidades.xls"',
+        'Content-Disposition': `attachment; filename="BidCoop_Reporte_Diario_Compras_Agiles_${today}.xls"`,
       },
     });
   } catch (error) {

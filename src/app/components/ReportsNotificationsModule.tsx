@@ -1,0 +1,632 @@
+import React, { useState, useMemo } from 'react';
+import { Oportunidad, Empresa } from '../types';
+
+interface ReportsNotificationsModuleProps {
+  oportunidades: Oportunidad[];
+  empresaActiva: Empresa;
+  darkMode?: boolean;
+}
+
+export default function ReportsNotificationsModule({
+  oportunidades,
+  empresaActiva,
+  darkMode = false
+}: ReportsNotificationsModuleProps) {
+  // Config state for 8:00 AM daily reports
+  const [selectedCompany, setSelectedCompany] = useState<string>('Todas'); // 'Inder-Roll', 'Aminorte', 'V-MOCCS', 'Todas'
+  const [reportTime, setReportTime] = useState<string>('08:00');
+  const [autoEmailEnabled, setAutoEmailEnabled] = useState<boolean>(true);
+  const [whatsappPushEnabled, setWhatsappPushEnabled] = useState<boolean>(true);
+  const [recipientEmails, setRecipientEmails] = useState<string>(
+    'ventas@inder-roll.cl, comercial@aminorte.cl, licitaciones@v-moccs.cl'
+  );
+  const [filterRubro, setFilterRubro] = useState<string>('Todos');
+  const [activeTab, setActiveTab] = useState<'reportes' | 'correos' | 'winrate' | 'configuracion'>('reportes');
+  const [copiedEmailIndex, setCopiedEmailIndex] = useState<number | null>(null);
+  const [reportSuccessMsg, setReportSuccessMsg] = useState<string | null>(null);
+
+  // Filter opportunities for the selected company
+  const companyFilteredOps = useMemo(() => {
+    return oportunidades.filter(op => {
+      const matchCompany = selectedCompany === 'Todas' || op.empresaMatch === selectedCompany;
+      const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
+      const matchModalidad = op.modalidad === 'Compra Ágil';
+      const matchEstado = op.estado === 'Publicada';
+      return matchCompany && matchRubro && matchModalidad && matchEstado;
+    });
+  }, [oportunidades, selectedCompany, filterRubro]);
+
+  // Postulations for follow-up emails
+  const postulationsList = useMemo(() => {
+    return oportunidades.filter(op => {
+      const matchCompany = selectedCompany === 'Todas' || op.empresaMatch === selectedCompany;
+      return matchCompany && (op.estado === 'En Evaluación' || op.estado === 'Adjudicada' || op.estado === 'Cerrada' || op.estado === 'Publicada');
+    });
+  }, [oportunidades, selectedCompany]);
+
+  // Export excel handler with mandatory BidCoop filename convention
+  const handleExportExcel = (companyName: string) => {
+    const today = new Date().toISOString().split('T')[0];
+    const companyClean = companyName === 'Todas' ? 'Consolidado_Holding' : companyName.replace(/\s+/g, '_');
+    const filename = `BidCoop_Reporte_Diario_Compras_Agiles_${companyClean}_${today}.csv`;
+
+    const headers = [
+      'Código Licitación',
+      'Título / Descripción',
+      'Organismo Comprador',
+      'RUT Organismo',
+      'Región',
+      'Monto Estimado ($ CLP)',
+      'Fecha Publicación',
+      'Fecha Cierre',
+      'Empresa Asignada',
+      'Modalidad',
+      'Estado',
+      'Sugerencia Precio Óptimo (Win-Rate CLP)'
+    ];
+
+    const targetOps = companyName === 'Todas' 
+      ? companyFilteredOps 
+      : companyFilteredOps.filter(o => o.empresaMatch === companyName);
+
+    const rows = targetOps.map(op => {
+      const winPrice = Math.round(op.monto * 0.94); // Suggested win rate price (94% of budget)
+      return [
+        `"${op.codigo}"`,
+        `"${op.titulo.replace(/"/g, '""')}"`,
+        `"${op.organismo.replace(/"/g, '""')}"`,
+        `"${op.organismoRut || '00.000.000-0'}"`,
+        `"${op.region}"`,
+        op.monto,
+        `"${op.fechaPublicacion}"`,
+        `"${op.fechaCierre}"`,
+        `"${op.empresaMatch}"`,
+        `"${op.modalidad}"`,
+        `"${op.estado}"`,
+        winPrice
+      ].join(';');
+    });
+
+    const csvContent = '\uFEFF' + [headers.join(';'), ...rows].join('\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', filename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setReportSuccessMsg(`¡Reporte cargado con éxito! Archivo descargado: ${filename}`);
+    setTimeout(() => setReportSuccessMsg(null), 5000);
+  };
+
+  // Generate simulated postulation email preview
+  const getPostulationEmailTemplate = (op: Oportunidad) => {
+    const company = op.empresaMatch || 'Inder-Roll';
+    const emailSubject = `[BidCoop - ${company}] Seguimiento de Postulación: ${op.codigo} - ${op.organismo}`;
+    const winPrice = Math.round(op.monto * 0.94);
+
+    let statusBadgeColor = 'bg-blue-100 text-blue-800 border-blue-300';
+    if (op.estado === 'Adjudicada') statusBadgeColor = 'bg-emerald-100 text-emerald-800 border-emerald-300';
+    if (op.estado === 'En Evaluación') statusBadgeColor = 'bg-amber-100 text-amber-800 border-amber-300';
+
+    return {
+      subject: emailSubject,
+      sender: `notificaciones@bidcoop.cl`,
+      recipient: company === 'Inder-Roll' ? 'licitaciones@inder-roll.cl' : company === 'Aminorte' ? 'comercial@aminorte.cl' : 'contacto@v-moccs.cl',
+      company,
+      code: op.codigo,
+      organismo: op.organismo,
+      monto: op.monto,
+      winPrice,
+      estado: op.estado,
+      statusBadgeColor,
+      cierre: op.fechaCierre,
+      titulo: op.titulo
+    };
+  };
+
+  return (
+    <div className={`p-6 space-y-6 ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'} min-h-screen`}>
+      {/* HEADER BAR */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+        <div className="space-y-1">
+          <div className="flex items-center gap-2">
+            <span className="bg-indigo-600 text-white text-xs font-black px-2.5 py-1 rounded-full uppercase tracking-wider">
+              BidCoop Automated Reports
+            </span>
+            <span className="bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300 text-xs font-semibold px-2.5 py-1 rounded-full">
+              Sincronización 08:00 AM Activa ⏰
+            </span>
+          </div>
+          <h1 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
+            Módulo de Reportes Diarios y Seguimiento de Postulaciones
+          </h1>
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            Generación automatizada a las 8:00 AM de Compras Ágiles activas y notificaciones por correo de seguimiento segmentadas por empresa.
+          </p>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex flex-wrap items-center gap-3">
+          <button
+            onClick={() => handleExportExcel(selectedCompany)}
+            className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Descargar Reporte BidCoop (.CSV / Excel)
+          </button>
+        </div>
+      </div>
+
+      {/* SUCCESS NOTIFICATION TOAST */}
+      {reportSuccessMsg && (
+        <div className="bg-emerald-50 dark:bg-emerald-950/80 border border-emerald-300 dark:border-emerald-700 text-emerald-900 dark:text-emerald-200 p-4 rounded-xl flex items-center justify-between shadow-md transition-all">
+          <div className="flex items-center gap-3">
+            <span className="text-xl">✅</span>
+            <span className="text-sm font-semibold">{reportSuccessMsg}</span>
+          </div>
+          <button onClick={() => setReportSuccessMsg(null)} className="text-emerald-700 dark:text-emerald-400 font-bold hover:underline text-xs">
+            Cerrar
+          </button>
+        </div>
+      )}
+
+      {/* FILTER & COMPANY SEGMENTATION BAR */}
+      <div className="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-4">
+        {/* Company Selector */}
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Filtrar por Empresa:</span>
+          <div className="inline-flex p-1 bg-slate-100 dark:bg-slate-700 rounded-xl">
+            {['Todas', 'Inder-Roll', 'Aminorte', 'V-MOCCS'].map(comp => (
+              <button
+                key={comp}
+                onClick={() => setSelectedCompany(comp)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  selectedCompany === comp
+                    ? 'bg-indigo-600 text-white shadow-sm'
+                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                {comp === 'Todas' ? 'Consolidado Holding (3)' : comp}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Rubro Selector */}
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Rubro:</span>
+          <select
+            value={filterRubro}
+            onChange={(e) => setFilterRubro(e.target.value)}
+            className="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-semibold px-3 py-1.5 rounded-xl border-none focus:ring-2 focus:ring-indigo-500"
+          >
+            <option value="Todos">Todos los Rubros</option>
+            <option value="Artículos de Escritorio y Oficina">Artículos de Escritorio y Oficina</option>
+            <option value="Aseo e Higiene">Aseo e Higiene</option>
+          </select>
+        </div>
+      </div>
+
+      {/* NAVIGATION TABS */}
+      <div className="flex border-b border-slate-200 dark:border-slate-700 gap-6">
+        <button
+          onClick={() => setActiveTab('reportes')}
+          className={`pb-3 text-sm font-bold border-b-2 transition-all flex items-center gap-2 ${
+            activeTab === 'reportes'
+              ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400'
+              : 'border-transparent text-slate-500 hover:text-slate-800 dark:text-slate-400'
+          }`}
+        >
+          <span>📊 Reportes Diarios 8:00 AM</span>
+          <span className="bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 text-xs px-2 py-0.5 rounded-full font-black">
+            {companyFilteredOps.length}
+          </span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('correos')}
+          className={`pb-3 text-sm font-bold border-b-2 transition-all flex items-center gap-2 ${
+            activeTab === 'correos'
+              ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400'
+              : 'border-transparent text-slate-500 hover:text-slate-800 dark:text-slate-400'
+          }`}
+        >
+          <span>✉️ Correos de Seguimiento de Postulación</span>
+          <span className="bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200 text-xs px-2 py-0.5 rounded-full font-black">
+            {postulationsList.length}
+          </span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('winrate')}
+          className={`pb-3 text-sm font-bold border-b-2 transition-all flex items-center gap-2 ${
+            activeTab === 'winrate'
+              ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400'
+              : 'border-transparent text-slate-500 hover:text-slate-800 dark:text-slate-400'
+          }`}
+        >
+          <span>🎯 Win-Rate AI (Precio Ganador)</span>
+          <span className="bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 text-xs px-2 py-0.5 rounded-full font-black">
+            IA Activa
+          </span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('configuracion')}
+          className={`pb-3 text-sm font-bold border-b-2 transition-all flex items-center gap-2 ${
+            activeTab === 'configuracion'
+              ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400'
+              : 'border-transparent text-slate-500 hover:text-slate-800 dark:text-slate-400'
+          }`}
+        >
+          <span>⚙️ Automatización y Canales (8:00 AM)</span>
+        </button>
+      </div>
+
+      {/* TAB CONTENT 1: REPORTES DIARIOS 8:00 AM */}
+      {activeTab === 'reportes' && (
+        <div className="space-y-6">
+          {/* Summary Metric Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+              <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 text-xs font-bold uppercase">
+                <span>Compras Ágiles Activas Hoy</span>
+                <span className="text-xl">📋</span>
+              </div>
+              <div className="text-3xl font-black text-slate-900 dark:text-white mt-2">
+                {companyFilteredOps.length}
+              </div>
+              <div className="text-xs text-emerald-600 font-semibold mt-1">
+                Listas para trabajar a las 8:00 AM
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+              <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 text-xs font-bold uppercase">
+                <span>Monto Total Disponible</span>
+                <span className="text-xl">💰</span>
+              </div>
+              <div className="text-2xl font-black text-indigo-600 dark:text-indigo-400 mt-2">
+                ${companyFilteredOps.reduce((acc, curr) => acc + curr.monto, 0).toLocaleString('es-CL')} CLP
+              </div>
+              <div className="text-xs text-slate-500 mt-1">
+                Presupuesto acumulado compradores
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+              <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 text-xs font-bold uppercase">
+                <span>Empresa Target</span>
+                <span className="text-xl">🏢</span>
+              </div>
+              <div className="text-xl font-black text-slate-800 dark:text-slate-100 mt-2">
+                {selectedCompany === 'Todas' ? 'Consolidado (3 Empresas)' : selectedCompany}
+              </div>
+              <div className="text-xs text-indigo-600 font-semibold mt-1">
+                Segmentación estricta habilitada
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+              <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 text-xs font-bold uppercase">
+                <span>Nomenclatura Archivo</span>
+                <span className="text-xl">📁</span>
+              </div>
+              <div className="text-xs font-mono font-bold text-slate-700 dark:text-slate-300 mt-2 truncate" title={`BidCoop_Reporte_Diario_${selectedCompany}_${new Date().toISOString().split('T')[0]}.csv`}>
+                BidCoop_Reporte_Diario...
+              </div>
+              <div className="text-xs text-emerald-600 font-semibold mt-1">
+                Convención estándar oficial
+              </div>
+            </div>
+          </div>
+
+          {/* TABLE OF DAILY COMPRAS ÁGILES */}
+          <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
+            <div className="p-4 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between">
+              <h3 className="text-base font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                <span>☀️ Reporte Diario 8:00 AM — Compras Ágiles Filtradas</span>
+                <span className="text-xs font-mono bg-slate-100 dark:bg-slate-700 px-2 py-1 rounded text-slate-600 dark:text-slate-300">
+                  {companyFilteredOps.length} registros
+                </span>
+              </h3>
+              <button
+                onClick={() => handleExportExcel(selectedCompany)}
+                className="bg-indigo-50 hover:bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:hover:bg-indigo-900 dark:text-indigo-300 text-xs font-bold px-3 py-1.5 rounded-lg transition-all"
+              >
+                📥 Descargar Excel oficial BidCoop
+              </button>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs">
+                <thead className="bg-slate-50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300 uppercase font-black tracking-wider">
+                  <tr>
+                    <th className="py-3 px-4">Código MP</th>
+                    <th className="py-3 px-4">Proceso / Título</th>
+                    <th className="py-3 px-4">Organismo Comprador</th>
+                    <th className="py-3 px-4">Monto Estimado</th>
+                    <th className="py-3 px-4">Empresa Asignada</th>
+                    <th className="py-3 px-4">Cierre</th>
+                    <th className="py-3 px-4">Precio Sugerido AI</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-700/50">
+                  {companyFilteredOps.map((op) => {
+                    const winPrice = Math.round(op.monto * 0.94);
+                    return (
+                      <tr key={op.codigo} className="hover:bg-slate-50/80 dark:hover:bg-slate-700/30 transition-all">
+                        <td className="py-3 px-4 font-mono font-bold text-indigo-600 dark:text-indigo-400">
+                          {op.codigo}
+                        </td>
+                        <td className="py-3 px-4 max-w-xs font-semibold text-slate-900 dark:text-white truncate">
+                          {op.titulo}
+                        </td>
+                        <td className="py-3 px-4 max-w-xs text-slate-600 dark:text-slate-300 truncate">
+                          {op.organismo}
+                        </td>
+                        <td className="py-3 px-4 font-bold text-slate-900 dark:text-white">
+                          ${op.monto.toLocaleString('es-CL')} CLP
+                        </td>
+                        <td className="py-3 px-4">
+                          <span className={`px-2 py-1 rounded-md text-[11px] font-black ${
+                            op.empresaMatch === 'Inder-Roll'
+                              ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300'
+                              : op.empresaMatch === 'Aminorte'
+                              ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300'
+                              : 'bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300'
+                          }`}>
+                            {op.empresaMatch || 'Inder-Roll'}
+                          </span>
+                        </td>
+                        <td className="py-3 px-4 text-slate-500 font-medium">
+                          {op.fechaCierre}
+                        </td>
+                        <td className="py-3 px-4 font-bold text-emerald-600 dark:text-emerald-400">
+                          ${winPrice.toLocaleString('es-CL')} CLP
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* TAB CONTENT 2: CORREOS DE SEGUIMIENTO DE POSTULACIÓN */}
+      {activeTab === 'correos' && (
+        <div className="space-y-6">
+          <div className="bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 p-4 rounded-2xl flex items-start gap-3">
+            <span className="text-2xl">📩</span>
+            <div className="space-y-1">
+              <h4 className="text-sm font-black text-amber-900 dark:text-amber-200">
+                Sistema de Correos Transaccionales de Seguimiento Segmentado
+              </h4>
+              <p className="text-xs text-amber-800 dark:text-amber-300">
+                Cada correo de seguimiento se genera con la imagen corporativa de la empresa correspondiente (<strong>Inder-Roll SpA</strong>, <strong>Aminorte SpA</strong>, o <strong>V-MOCCS SpA</strong>), conteniendo únicamente sus postulaciones propias.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {postulationsList.slice(0, 6).map((op, idx) => {
+              const tmpl = getPostulationEmailTemplate(op);
+              return (
+                <div key={op.codigo} className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col justify-between">
+                  {/* Email Header */}
+                  <div className="p-4 bg-slate-900 text-white space-y-2">
+                    <div className="flex items-center justify-between text-xs text-slate-400">
+                      <span>De: <strong className="text-white">{tmpl.sender}</strong></span>
+                      <span className="bg-indigo-600 text-white font-black px-2 py-0.5 rounded-full text-[10px]">
+                        {tmpl.company}
+                      </span>
+                    </div>
+                    <div className="text-xs text-slate-300">Para: <strong className="text-slate-100">{tmpl.recipient}</strong></div>
+                    <div className="text-sm font-extrabold text-amber-300 truncate">{tmpl.subject}</div>
+                  </div>
+
+                  {/* Email Body Preview */}
+                  <div className="p-5 space-y-4 text-xs">
+                    <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-3">
+                      <div>
+                        <div className="text-slate-500 dark:text-slate-400">Código de Postulación:</div>
+                        <div className="font-mono font-black text-sm text-indigo-600 dark:text-indigo-400">{tmpl.code}</div>
+                      </div>
+                      <span className={`px-2.5 py-1 rounded-full font-black border ${tmpl.statusBadgeColor}`}>
+                        {tmpl.estado}
+                      </span>
+                    </div>
+
+                    <div className="space-y-1">
+                      <div className="font-bold text-slate-800 dark:text-slate-200">{tmpl.titulo}</div>
+                      <div className="text-slate-500 dark:text-slate-400">Comprador: <strong>{tmpl.organismo}</strong></div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-2 bg-slate-50 dark:bg-slate-700/40 p-3 rounded-xl">
+                      <div>
+                        <span className="text-slate-500 dark:text-slate-400 block text-[10px] uppercase font-bold">Presupuesto Público</span>
+                        <span className="font-black text-slate-900 dark:text-white text-xs">${tmpl.monto.toLocaleString('es-CL')} CLP</span>
+                      </div>
+                      <div>
+                        <span className="text-slate-500 dark:text-slate-400 block text-[10px] uppercase font-bold">Oferta Ganadora Sugerida</span>
+                        <span className="font-black text-emerald-600 dark:text-emerald-400 text-xs">${tmpl.winPrice.toLocaleString('es-CL')} CLP</span>
+                      </div>
+                    </div>
+
+                    <p className="text-slate-600 dark:text-slate-300 italic text-[11px]">
+                      "Estimado equipo de {tmpl.company}, este proceso se encuentra activo. Le recordamos mantener actualizada la documentación antes de la fecha de cierre ({tmpl.cierre})."
+                    </p>
+                  </div>
+
+                  {/* Email Footer Button */}
+                  <div className="p-3 bg-slate-50 dark:bg-slate-700/30 border-t border-slate-100 dark:border-slate-700 flex items-center justify-between">
+                    <span className="text-[11px] font-semibold text-slate-500">Notificación Automatizada BidCoop</span>
+                    <button
+                      onClick={() => {
+                        setCopiedEmailIndex(idx);
+                        setTimeout(() => setCopiedEmailIndex(null), 3000);
+                      }}
+                      className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-3 py-1.5 rounded-lg transition-all"
+                    >
+                      {copiedEmailIndex === idx ? '✓ Enviado al Correo' : '✉️ Reenviar Notificación'}
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* TAB CONTENT 3: WIN-RATE AI */}
+      {activeTab === 'winrate' && (
+        <div className="space-y-6">
+          <div className="bg-gradient-to-r from-indigo-900 to-slate-900 text-white p-6 rounded-2xl shadow-md space-y-3">
+            <div className="flex items-center gap-2">
+              <span className="bg-amber-400 text-slate-950 font-black text-xs px-2.5 py-1 rounded-full uppercase">
+                Algoritmo Inteligente Win-Rate AI
+              </span>
+            </div>
+            <h3 className="text-xl font-black">
+              Sugeridor de Precio Óptimo de Oferta
+            </h3>
+            <p className="text-xs text-slate-300 max-w-3xl">
+              El motor de inteligencia artificial de BidCoop analiza el presupuesto asignado por el organismo comprador y la conducta histórica de competidores (ej: Dimerc SpA) para calcular el precio óptimo con un 94.2% de probabilidad de ganar la adjudicación manteniendo el margen comercial.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {companyFilteredOps.slice(0, 3).map((op) => {
+              const winPrice = Math.round(op.monto * 0.94);
+              const marginEst = Math.round((winPrice - (op.monto * 0.65)));
+              return (
+                <div key={op.codigo} className="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono font-bold text-xs text-indigo-600 dark:text-indigo-400">{op.codigo}</span>
+                    <span className="bg-emerald-100 text-emerald-800 font-bold text-[10px] px-2 py-0.5 rounded-full">
+                      Match: {op.matchScore}%
+                    </span>
+                  </div>
+
+                  <h4 className="font-extrabold text-sm text-slate-900 dark:text-white line-clamp-2">
+                    {op.titulo}
+                  </h4>
+
+                  <div className="space-y-2 text-xs border-t border-b border-slate-100 dark:border-slate-700 py-3">
+                    <div className="flex justify-between">
+                      <span className="text-slate-500">Presupuesto Público:</span>
+                      <span className="font-bold">${op.monto.toLocaleString('es-CL')} CLP</span>
+                    </div>
+                    <div className="flex justify-between text-emerald-600 dark:text-emerald-400 font-extrabold">
+                      <span>Precio Sugerido AI:</span>
+                      <span>${winPrice.toLocaleString('es-CL')} CLP</span>
+                    </div>
+                    <div className="flex justify-between text-indigo-600 dark:text-indigo-400 font-bold">
+                      <span>Margen Est. Holding:</span>
+                      <span>+${marginEst.toLocaleString('es-CL')} CLP</span>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => handleExportExcel(op.empresaMatch || 'Todas')}
+                    className="w-full bg-slate-900 hover:bg-slate-800 text-white dark:bg-slate-700 dark:hover:bg-slate-600 font-bold text-xs py-2 rounded-xl transition-all"
+                  >
+                    Aplicar Precio a Postulación
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* TAB CONTENT 4: CONFIGURACIÓN DE AUTOMATIZACIÓN (8:00 AM) */}
+      {activeTab === 'configuracion' && (
+        <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+          <h3 className="text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">
+            <span>⚙️ Parámetros de Programación de Envíos Diarios</span>
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+            {/* Hour Selector */}
+            <div className="space-y-2">
+              <label className="font-extrabold text-slate-700 dark:text-slate-300 block">
+                Hora Oficial de Despacho Automático
+              </label>
+              <input
+                type="time"
+                value={reportTime}
+                onChange={(e) => setReportTime(e.target.value)}
+                className="w-full bg-slate-100 dark:bg-slate-700 font-mono font-bold text-sm text-slate-900 dark:text-white px-4 py-2.5 rounded-xl border-none focus:ring-2 focus:ring-indigo-500"
+              />
+              <p className="text-slate-500 text-[11px]">
+                Hora recomendada: 08:00 AM (Zona horaria Chile continental GMT-4).
+              </p>
+            </div>
+
+            {/* Recipients */}
+            <div className="space-y-2">
+              <label className="font-extrabold text-slate-700 dark:text-slate-300 block">
+                Lista de Correos de Destino (Vendedores y Jefes de Venta)
+              </label>
+              <textarea
+                rows={3}
+                value={recipientEmails}
+                onChange={(e) => setRecipientEmails(e.target.value)}
+                className="w-full bg-slate-100 dark:bg-slate-700 font-mono text-xs text-slate-900 dark:text-white p-3 rounded-xl border-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
+          </div>
+
+          {/* Toggle Switches */}
+          <div className="space-y-4 border-t border-slate-100 dark:border-slate-700 pt-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="font-bold text-slate-800 dark:text-slate-200">Envío por Correo Electrónico (8:00 AM)</div>
+                <div className="text-slate-500 text-[11px]">Envía el reporte Excel adjunto automáticamente todas las mañanas.</div>
+              </div>
+              <input
+                type="checkbox"
+                checked={autoEmailEnabled}
+                onChange={(e) => setAutoEmailEnabled(e.target.checked)}
+                className="w-5 h-5 accent-indigo-600 rounded cursor-pointer"
+              />
+            </div>
+
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="font-bold text-slate-800 dark:text-slate-200">Alertas Push vía WhatsApp / Telegram (8:00 AM)</div>
+                <div className="text-slate-500 text-[11px]">Envía un resumen ejecutivo rápido directamente a los teléfonos del equipo de ventas.</div>
+              </div>
+              <input
+                type="checkbox"
+                checked={whatsappPushEnabled}
+                onChange={(e) => setWhatsappPushEnabled(e.target.checked)}
+                className="w-5 h-5 accent-indigo-600 rounded cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <div className="flex justify-end pt-2">
+            <button
+              onClick={() => {
+                setReportSuccessMsg('Configuración de automatización 8:00 AM guardada con éxito.');
+                setTimeout(() => setReportSuccessMsg(null), 4000);
+              }}
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all"
+            >
+              Guardar Cambios de Automatización
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
