@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import nodemailer from 'nodemailer';
 
+const DEFAULT_RESEND_KEY = 're_ZD3GD3bZ_KNXLZSyLWoARVjmhStY2hjSu';
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -16,7 +18,6 @@ export async function POST(request: Request) {
       smtpPort = 465
     } = body;
 
-    const activeResendKey = (apiKey && apiKey.trim()) || process.env.RESEND_API_KEY || 're_ZD3GD3bZ_KNXLZSyLWoARVjmhStY2hjSu';
     const today = new Date().toISOString().split('T')[0];
     const companyClean = empresa === 'Todas' ? 'Consolidado_Holding' : empresa.replace(/\s+/g, '_');
     const filename = `BidCoop_Reporte_Diario_Compras_Agiles_${companyClean}_${today}.csv`;
@@ -147,70 +148,81 @@ export async function POST(request: Request) {
     let emailStatus = '';
     let messageId = `bidcoop-${Date.now()}`;
 
-    // 1. Priority 1: User-supplied or ENV Resend API Key
-    if (activeResendKey) {
-      const resend = new Resend(activeResendKey);
-      const data = await resend.emails.send({
-        from: 'onboarding@resend.dev',
-        to: [email],
-        subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${empresa} (${today})`,
-        html: htmlBody,
-        attachments: [
-          {
-            filename,
-            content: Buffer.from(csvString).toString('base64'),
-          },
-        ],
-      });
+    // Determine candidate keys to try (user key first, then env key, then default verified key)
+    const keysToTry = [
+      apiKey && apiKey.trim(),
+      process.env.RESEND_API_KEY,
+      DEFAULT_RESEND_KEY
+    ].filter(Boolean);
 
-      if (data.error) {
-        throw new Error(`Resend API Error: ${data.error.message}. Por favor verifica que tu cuenta en Resend.com haya confirmado el correo o genera una nueva API key en resend.com/api-keys.`);
+    let sendSuccess = false;
+    let lastError = '';
+
+    for (const resendKey of keysToTry) {
+      try {
+        const resend = new Resend(resendKey as string);
+        const data = await resend.emails.send({
+          from: 'BidCoop Alertas <onboarding@resend.dev>',
+          to: [email],
+          subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${empresa} (${today})`,
+          html: htmlBody,
+          attachments: [
+            {
+              filename,
+              content: Buffer.from(csvString).toString('base64'),
+            },
+          ],
+        });
+
+        if (data.error) {
+          lastError = data.error.message;
+          continue;
+        }
+
+        emailStatus = `¡Correo entregado con éxito a ${email} vía Resend Cloud API! (ID: ${data.data?.id})`;
+        messageId = data.data?.id || messageId;
+        sendSuccess = true;
+        break;
+      } catch (err: any) {
+        lastError = err.message;
       }
+    }
 
-      emailStatus = `¡Correo entregado con éxito a ${email} vía Resend API! (ID: ${data.data?.id})`;
-      messageId = data.data?.id || messageId;
-    } 
-    // 2. Priority 2: User-supplied SMTP (e.g. Gmail / Outlook / Office365 credentials)
-    else if (smtpUser && smtpPass) {
-      const transporter = nodemailer.createTransport({
-        host: smtpHost,
-        port: Number(smtpPort) || 465,
-        secure: Number(smtpPort) === 465,
-        auth: {
-          user: smtpUser,
-          pass: smtpPass,
-        },
-      });
-
-      const info = await transporter.sendMail({
-        from: `"BidCoop Notificaciones" <${smtpUser}>`,
-        to: email,
-        subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${empresa} (${today})`,
-        html: htmlBody,
-        attachments: [
-          {
-            filename,
-            content: csvString,
+    if (!sendSuccess && smtpUser && smtpPass) {
+      try {
+        const transporter = nodemailer.createTransport({
+          host: smtpHost,
+          port: Number(smtpPort) || 465,
+          secure: Number(smtpPort) === 465,
+          auth: {
+            user: smtpUser,
+            pass: smtpPass,
           },
-        ],
-      });
+        });
 
-      emailStatus = `¡Correo entregado con éxito a ${email} vía SMTP de ${smtpUser}!`;
-      messageId = info.messageId;
-    } 
-    // 3. Fallback: Return missing credentials instruction
-    else {
-      return NextResponse.json({
-        success: false,
-        requiresCredentials: true,
-        email,
-        empresa,
-        filename,
-        totalOps,
-        totalMonto,
-        message: 'Por favor ingresa una Resend API Key válida de resend.com/api-keys para realizar el envío de correo.',
-        timestamp: new Date().toISOString()
-      }, { status: 400 });
+        const info = await transporter.sendMail({
+          from: `"BidCoop Notificaciones" <${smtpUser}>`,
+          to: email,
+          subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${empresa} (${today})`,
+          html: htmlBody,
+          attachments: [
+            {
+              filename,
+              content: csvString,
+            },
+          ],
+        });
+
+        emailStatus = `¡Correo entregado con éxito a ${email} vía SMTP de ${smtpUser}!`;
+        messageId = info.messageId;
+        sendSuccess = true;
+      } catch (err: any) {
+        lastError = err.message;
+      }
+    }
+
+    if (!sendSuccess) {
+      throw new Error(`Resend Error: ${lastError || 'API key invalid'}`);
     }
 
     return NextResponse.json({
