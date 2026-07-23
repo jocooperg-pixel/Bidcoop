@@ -25663,6 +25663,3241 @@ export const mockOportunidades: Oportunidad[] = [
     "empresaMatch": "Aminorte",
     "modalidad": "Compra Ágil"
   }
+,
+  {
+    "id": "COT-3244-501-COT26",
+    "codigo": "COT-3244-501-COT26",
+    "titulo": "Compra Ágil: Adquisición de Resmas Carta y Oficio para Departamento de Educación",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE SANTO DOMINGO",
+    "organismoRut": "69.060.700-7",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Valparaíso",
+    "monto": 2450000,
+    "montoUtm": 38,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 88,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Resmas Carta y Oficio para Departamento de Educación. Organismo demandante: ILUSTRE MUNICIPALIDAD DE SANTO DOMINGO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-3244-501-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-RES-01",
+            "producto": "Resma Papel Fotocopia Carta 75g (Caja 5 resmas)",
+            "cantidad": 100,
+            "precioUnitario": 18500
+      },
+      {
+            "sku": "ESC-RES-02",
+            "producto": "Resma Papel Fotocopia Oficio 75g (Caja 5 resmas)",
+            "cantidad": 25,
+            "precioUnitario": 24000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-5188-502-COT26",
+    "codigo": "COT-5188-502-COT26",
+    "titulo": "Compra Ágil: Suministro Urgente de Tintas y Tóneres de Impresión para Oficina de Partes",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE MACUL",
+    "organismoRut": "69.070.600-5",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 3850000,
+    "montoUtm": 59,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 89,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Suministro Urgente de Tintas y Tóneres de Impresión para Oficina de Partes. Organismo demandante: ILUSTRE MUNICIPALIDAD DE MACUL. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-5188-502-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-TIN-01",
+            "producto": "Tóner Impresora HP LaserJet Pro Black High Yield 26A",
+            "cantidad": 20,
+            "precioUnitario": 115000
+      },
+      {
+            "sku": "ESC-TIN-02",
+            "producto": "Kit Tintas Continuas Epson T664 (Negro, Cyan, Magenta, Yellow)",
+            "cantidad": 31,
+            "precioUnitario": 50000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-6012-503-COT26",
+    "codigo": "COT-6012-503-COT26",
+    "titulo": "Compra Ágil: Adquisición de Archivadores Lomo Ancho y Carpetas Colgantes",
+    "organismo": "SEREMI DE SALUD REGIÓN METROPOLITANA",
+    "organismoRut": "61.602.100-0",
+    "organismoPagoDias": 25,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1890000,
+    "montoUtm": 29,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 90,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Archivadores Lomo Ancho y Carpetas Colgantes. Organismo demandante: SEREMI DE SALUD REGIÓN METROPOLITANA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-6012-503-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-ARC-01",
+            "producto": "Archivador Lomo Ancho Oficio Cartón Prensado",
+            "cantidad": 450,
+            "precioUnitario": 3200
+      },
+      {
+            "sku": "ESC-CAR-01",
+            "producto": "Carpetas Colgantes Visor Plástico (Caja 50 un)",
+            "cantidad": 18,
+            "precioUnitario": 25000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-1105-504-COT26",
+    "codigo": "COT-1105-504-COT26",
+    "titulo": "Compra Ágil: Útiles de Escritorio, Cuadernos y Plumones para Programa Social",
+    "organismo": "SERVICIO DE IMPUESTOS INTERNOS",
+    "organismoRut": "60.805.000-0",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1420000,
+    "montoUtm": 22,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 91,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Útiles de Escritorio, Cuadernos y Plumones para Programa Social. Organismo demandante: SERVICIO DE IMPUESTOS INTERNOS. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-1105-504-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-MAR-01",
+            "producto": "Plumones para Pizarra Acrílica (Set 4 colores Recargable)",
+            "cantidad": 120,
+            "precioUnitario": 6500
+      },
+      {
+            "sku": "ESC-CUA-01",
+            "producto": "Cuaderno Universitario 100 Hojas Matemática 7mm",
+            "cantidad": 320,
+            "precioUnitario": 2000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4080-505-COT26",
+    "codigo": "COT-4080-505-COT26",
+    "titulo": "Compra Ágil: Adquisición de Papelería Institucional y Sobres Saco para Tesorería",
+    "organismo": "GOBIERNO REGIONAL DE ANTOFAGASTA",
+    "organismoRut": "69.020.100-5",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Antofagasta",
+    "monto": 980000,
+    "montoUtm": 15,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 92,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Papelería Institucional y Sobres Saco para Tesorería. Organismo demandante: GOBIERNO REGIONAL DE ANTOFAGASTA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4080-505-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-SOB-01",
+            "producto": "Sobre Saco Oficio Blanco 90g (Caja 250 un)",
+            "cantidad": 20,
+            "precioUnitario": 29000
+      },
+      {
+            "sku": "ESC-SOB-02",
+            "producto": "Sobre Manila Extra Oficio (Caja 100 un)",
+            "cantidad": 20,
+            "precioUnitario": 20000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-2241-506-COT26",
+    "codigo": "COT-2241-506-COT26",
+    "titulo": "Compra Ágil: Suministro de Cintas Adhesivas, Corcheteras y Tijeras de Oficina",
+    "organismo": "SERVICIO DE SALUD BIOBÍO",
+    "organismoRut": "61.602.200-7",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Biobío",
+    "monto": 1250000,
+    "montoUtm": 19,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 93,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Suministro de Cintas Adhesivas, Corcheteras y Tijeras de Oficina. Organismo demandante: SERVICIO DE SALUD BIOBÍO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-2241-506-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-CIN-01",
+            "producto": "Cinta Adhesiva Embalaje Marrón 48mm x 40m (Pack 6 un)",
+            "cantidad": 80,
+            "precioUnitario": 9500
+      },
+      {
+            "sku": "ESC-COR-01",
+            "producto": "Corchetera Ergonómica de Mesa 26/6 (Metálica)",
+            "cantidad": 70,
+            "precioUnitario": 7000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-1627-507-COT26",
+    "codigo": "COT-1627-507-COT26",
+    "titulo": "Compra Ágil: Insumos de Escritorio y Artículos de Papelería para Juzgado de Policía Local",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE VALPARAÍSO",
+    "organismoRut": "69.060.100-9",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Valparaíso",
+    "monto": 2150000,
+    "montoUtm": 33,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 94,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Insumos de Escritorio y Artículos de Papelería para Juzgado de Policía Local. Organismo demandante: ILUSTRE MUNICIPALIDAD DE VALPARAÍSO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-1627-507-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-RES-01",
+            "producto": "Resma Papel Fotocopia Carta 75g",
+            "cantidad": 400,
+            "precioUnitario": 3900
+      },
+      {
+            "sku": "ESC-COR-02",
+            "producto": "Caja de Corchetes 26/6 (5000 un)",
+            "cantidad": 118,
+            "precioUnitario": 5000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-3047-508-COT26",
+    "codigo": "COT-3047-508-COT26",
+    "titulo": "Compra Ágil: Adquisición de Blocks de Notas, Post-it y Portaminas para Dirección Administrativa",
+    "organismo": "HOSPITAL DR. LUIS TISNÉ BROUSSE",
+    "organismoRut": "61.602.300-3",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 890000,
+    "montoUtm": 14,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 95,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Blocks de Notas, Post-it y Portaminas para Dirección Administrativa. Organismo demandante: HOSPITAL DR. LUIS TISNÉ BROUSSE. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-3047-508-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-NOT-01",
+            "producto": "Bloque de Notas Adhesivas 3x3 Amortiguado (Pack 12 un)",
+            "cantidad": 100,
+            "precioUnitario": 6500
+      },
+      {
+            "sku": "ESC-POR-01",
+            "producto": "Portaminas Ergonómico 0.5mm + Mina HB (Caja 12 un)",
+            "cantidad": 30,
+            "precioUnitario": 8000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4102-509-COT26",
+    "codigo": "COT-4102-509-COT26",
+    "titulo": "Compra Ágil: Bolígrafos Pasta Azul, Negra y Roja para Dirección de Tránsito",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE CONCEPCIÓN",
+    "organismoRut": "69.120.100-4",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Biobío",
+    "monto": 1650000,
+    "montoUtm": 25,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 96,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Bolígrafos Pasta Azul, Negra y Roja para Dirección de Tránsito. Organismo demandante: ILUSTRE MUNICIPALIDAD DE CONCEPCIÓN. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4102-509-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-BOL-01",
+            "producto": "Bolígrafo Pasta Azul 1.0mm (Caja 50 un)",
+            "cantidad": 150,
+            "precioUnitario": 7000
+      },
+      {
+            "sku": "ESC-BOL-02",
+            "producto": "Bolígrafo Pasta Negra 1.0mm (Caja 50 un)",
+            "cantidad": 85,
+            "precioUnitario": 7000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4103-510-COT26",
+    "codigo": "COT-4103-510-COT26",
+    "titulo": "Compra Ágil: Libretas de Notas Institucionales y Cuadernos Universitarios",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE LA SERENA",
+    "organismoRut": "69.040.100-K",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Coquimbo",
+    "monto": 1120000,
+    "montoUtm": 17,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 97,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Libretas de Notas Institucionales y Cuadernos Universitarios. Organismo demandante: ILUSTRE MUNICIPALIDAD DE LA SERENA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4103-510-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-LIB-01",
+            "producto": "Libreta de Notas Anillada Tapa Dura Institucional 100h",
+            "cantidad": 280,
+            "precioUnitario": 4000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4104-511-COT26",
+    "codigo": "COT-4104-511-COT26",
+    "titulo": "Compra Ágil: Guillotinadoras de Papel A3/A4 y Plastificadoras Térmicas de Oficina",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE TEMUCO",
+    "organismoRut": "69.190.100-6",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "La Araucanía",
+    "monto": 2750000,
+    "montoUtm": 42,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 98,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Guillotinadoras de Papel A3/A4 y Plastificadoras Térmicas de Oficina. Organismo demandante: ILUSTRE MUNICIPALIDAD DE TEMUCO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4104-511-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-GUI-01",
+            "producto": "Guillotinadora de Papel Profesional Palanca A3 Base Metálica",
+            "cantidad": 15,
+            "precioUnitario": 110000
+      },
+      {
+            "sku": "ESC-PLA-01",
+            "producto": "Plastificadora Térmica Formato A4 125 micras",
+            "cantidad": 22,
+            "precioUnitario": 50000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4105-512-COT26",
+    "codigo": "COT-4105-512-COT26",
+    "titulo": "Compra Ágil: Cajas de Clips Mariposa, Cebra y Perforadoras de 2 y 3 Orificios",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE RANCAGUA",
+    "organismoRut": "69.080.100-3",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "O'Higgins",
+    "monto": 740000,
+    "montoUtm": 11,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 99,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Cajas de Clips Mariposa, Cebra y Perforadoras de 2 y 3 Orificios. Organismo demandante: ILUSTRE MUNICIPALIDAD DE RANCAGUA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4105-512-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-CLI-01",
+            "producto": "Caja de Clips Mariposa Nº 2 (Caja 100 un)",
+            "cantidad": 120,
+            "precioUnitario": 2500
+      },
+      {
+            "sku": "ESC-PER-01",
+            "producto": "Perforadora Metálica de 2 Orificios 30 Hojas",
+            "cantidad": 44,
+            "precioUnitario": 10000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4106-513-COT26",
+    "codigo": "COT-4106-513-COT26",
+    "titulo": "Compra Ágil: Correctores en Cinta 5mm x 12m y Dispensadores de Cinta Sobremesa",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE PUERTO MONTT",
+    "organismoRut": "69.230.100-2",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Los Lagos",
+    "monto": 1380000,
+    "montoUtm": 21,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 88,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Correctores en Cinta 5mm x 12m y Dispensadores de Cinta Sobremesa. Organismo demandante: ILUSTRE MUNICIPALIDAD DE PUERTO MONTT. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4106-513-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-COR-03",
+            "producto": "Corrector en Cinta Ergonómico 5mm x 12m (Pack 10 un)",
+            "cantidad": 100,
+            "precioUnitario": 9800
+      },
+      {
+            "sku": "ESC-DIS-01",
+            "producto": "Dispensador de Cinta Sobremesa Pesado Antideslizante",
+            "cantidad": 80,
+            "precioUnitario": 5000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4107-514-COT26",
+    "codigo": "COT-4107-514-COT26",
+    "titulo": "Compra Ágil: Reglas Metálicas 30cm, Escalímetros y Cúteres Profesionales",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE ANTOFAGASTA",
+    "organismoRut": "69.020.200-1",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Antofagasta",
+    "monto": 690000,
+    "montoUtm": 11,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 89,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Reglas Metálicas 30cm, Escalímetros y Cúteres Profesionales. Organismo demandante: ILUSTRE MUNICIPALIDAD DE ANTOFAGASTA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4107-514-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-REG-01",
+            "producto": "Regla Metálica Acero Inoxidable 30cm Graduada",
+            "cantidad": 150,
+            "precioUnitario": 3000
+      },
+      {
+            "sku": "ESC-CUT-01",
+            "producto": "Cúter Profesional Mango Antideslizante 18mm",
+            "cantidad": 80,
+            "precioUnitario": 3000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4108-515-COT26",
+    "codigo": "COT-4108-515-COT26",
+    "titulo": "Compra Ágil: Papel Continuo 1 y 2 Copias para Impresoras de Impacto Tesorería",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE IQUIQUE",
+    "organismoRut": "69.010.100-0",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Tarapacá",
+    "monto": 3100000,
+    "montoUtm": 48,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 90,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Papel Continuo 1 y 2 Copias para Impresoras de Impacto Tesorería. Organismo demandante: ILUSTRE MUNICIPALIDAD DE IQUIQUE. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4108-515-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-PAP-01",
+            "producto": "Papel Continuo 241x280mm 1 Copia 70g (Caja 2000 h)",
+            "cantidad": 50,
+            "precioUnitario": 38000
+      },
+      {
+            "sku": "ESC-PAP-02",
+            "producto": "Papel Continuo 241x280mm 2 Copias Químico (Caja 1000 h)",
+            "cantidad": 30,
+            "precioUnitario": 40000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4109-516-COT26",
+    "codigo": "COT-4109-516-COT26",
+    "titulo": "Compra Ágil: Almohadillas para Timbres y Tinta Institucional para Secretaría Municipal",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE TALCA",
+    "organismoRut": "69.090.100-8",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Maule",
+    "monto": 520000,
+    "montoUtm": 8,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 91,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Almohadillas para Timbres y Tinta Institucional para Secretaría Municipal. Organismo demandante: ILUSTRE MUNICIPALIDAD DE TALCA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4109-516-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-TIM-01",
+            "producto": "Almohadilla para Timbre Automático / Manual Nº 2 Azul",
+            "cantidad": 80,
+            "precioUnitario": 3500
+      },
+      {
+            "sku": "ESC-TIM-02",
+            "producto": "Tinta para Timbre de Goma Azul 30ml",
+            "cantidad": 80,
+            "precioUnitario": 3000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4110-517-COT26",
+    "codigo": "COT-4110-517-COT26",
+    "titulo": "Compra Ágil: Plumones Pizarra Magnética, Destacadores Fluo y Borradores para Capacitación",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE CHILLÁN",
+    "organismoRut": "69.110.100-5",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Ñuble",
+    "monto": 1590000,
+    "montoUtm": 24,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 92,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Plumones Pizarra Magnética, Destacadores Fluo y Borradores para Capacitación. Organismo demandante: ILUSTRE MUNICIPALIDAD DE CHILLÁN. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4110-517-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-MAR-02",
+            "producto": "Plumón Pizarra Recargable Negro/Azul/Rojo (Pack 12 un)",
+            "cantidad": 80,
+            "precioUnitario": 14000
+      },
+      {
+            "sku": "ESC-DES-01",
+            "producto": "Destacador Fluorescente Amarillo/Verde/Naranja (Set 4 un)",
+            "cantidad": 100,
+            "precioUnitario": 4700
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4111-518-COT26",
+    "codigo": "COT-4111-518-COT26",
+    "titulo": "Compra Ágil: Carpetas de Presentación Transparente y Fundas Plásticas Oficio",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE VALDIVIA",
+    "organismoRut": "69.200.100-2",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Los Ríos",
+    "monto": 1840000,
+    "montoUtm": 28,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 93,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Carpetas de Presentación Transparente y Fundas Plásticas Oficio. Organismo demandante: ILUSTRE MUNICIPALIDAD DE VALDIVIA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4111-518-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-FUN-01",
+            "producto": "Fundas Plásticas Multiperforadas Oficio 80 micras (Caja 100 un)",
+            "cantidad": 120,
+            "precioUnitario": 12000
+      },
+      {
+            "sku": "ESC-CAR-02",
+            "producto": "Carpeta de Presentación Transparente Clip Lateral A4",
+            "cantidad": 200,
+            "precioUnitario": 2000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4112-519-COT26",
+    "codigo": "COT-4112-519-COT26",
+    "titulo": "Compra Ágil: Talonarios de Recepción Autocopiativo Duplicado y Triplicado",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE OSORNO",
+    "organismoRut": "69.220.100-6",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Los Lagos",
+    "monto": 960000,
+    "montoUtm": 15,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 94,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Talonarios de Recepción Autocopiativo Duplicado y Triplicado. Organismo demandante: ILUSTRE MUNICIPALIDAD DE OSORNO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4112-519-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-TAL-01",
+            "producto": "Talonario Guía de Despacho Autocopiativo 1/2 Oficio (50 juegos)",
+            "cantidad": 160,
+            "precioUnitario": 6000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4113-520-COT26",
+    "codigo": "COT-4113-520-COT26",
+    "titulo": "Compra Ágil: Papel Fotográfico Brillante A4 200g y Cintas para Etiquetadoras Dymo/Brother",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE COPIAPÓ",
+    "organismoRut": "69.030.100-8",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Atacama",
+    "monto": 1480000,
+    "montoUtm": 23,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 95,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Papel Fotográfico Brillante A4 200g y Cintas para Etiquetadoras Dymo/Brother. Organismo demandante: ILUSTRE MUNICIPALIDAD DE COPIAPÓ. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4113-520-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-FOT-01",
+            "producto": "Papel Fotográfico Glossy A4 200g (Paquete 100 hojas)",
+            "cantidad": 40,
+            "precioUnitario": 17000
+      },
+      {
+            "sku": "ESC-ETI-01",
+            "producto": "Cinta para Rotuladora Brother TZe-231 12mm Negro/Blanco",
+            "cantidad": 50,
+            "precioUnitario": 16000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4114-521-COT26",
+    "codigo": "COT-4114-521-COT26",
+    "titulo": "Compra Ágil: Papel Térmico 80mm x 40m para Cajas de Tesorería Municipal",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE LA FLORIDA",
+    "organismoRut": "69.070.300-6",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 2680000,
+    "montoUtm": 41,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 96,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Papel Térmico 80mm x 40m para Cajas de Tesorería Municipal. Organismo demandante: ILUSTRE MUNICIPALIDAD DE LA FLORIDA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4114-521-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-TER-01",
+            "producto": "Rollo Papel Térmico 80mm x 40m Impresora Boletas (Caja 50 un)",
+            "cantidad": 80,
+            "precioUnitario": 33500
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4115-522-COT26",
+    "codigo": "COT-4115-522-COT26",
+    "titulo": "Compra Ágil: Pizarras Blancas Magnéticas 90x60 cm para Salón de Protocolo",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE PROVIDENCIA",
+    "organismoRut": "69.070.100-3",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1950000,
+    "montoUtm": 30,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 97,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Pizarras Blancas Magnéticas 90x60 cm para Salón de Protocolo. Organismo demandante: ILUSTRE MUNICIPALIDAD DE PROVIDENCIA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4115-522-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-PIZ-01",
+            "producto": "Pizarra Blanca Magnética Marco de Aluminio 90x60 cm",
+            "cantidad": 30,
+            "precioUnitario": 65000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4116-523-COT26",
+    "codigo": "COT-4116-523-COT26",
+    "titulo": "Compra Ágil: Presentadores Inalámbricos Láser y Punteros para Salón Auditórium",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE PUDAHUEL",
+    "organismoRut": "69.070.700-3",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 850000,
+    "montoUtm": 13,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 98,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Presentadores Inalámbricos Láser y Punteros para Salón Auditórium. Organismo demandante: ILUSTRE MUNICIPALIDAD DE PUDAHUEL. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4116-523-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-PRE-01",
+            "producto": "Presentador Inalámbrico USB Láser Rojo Control Diapositivas",
+            "cantidad": 25,
+            "precioUnitario": 34000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4117-524-COT26",
+    "codigo": "COT-4117-524-COT26",
+    "titulo": "Compra Ágil: Organizadores de Archivos de Mesa 3 Niveles Acrílico Clear",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE QUILICURA",
+    "organismoRut": "69.070.800-K",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1290000,
+    "montoUtm": 20,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 99,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Organizadores de Archivos de Mesa 3 Niveles Acrílico Clear. Organismo demandante: ILUSTRE MUNICIPALIDAD DE QUILICURA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4117-524-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-ORG-01",
+            "producto": "Organizador de Documentos 3 Niveles Acrílico Clear Carta/Oficio",
+            "cantidad": 60,
+            "precioUnitario": 21500
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4118-525-COT26",
+    "codigo": "COT-4118-525-COT26",
+    "titulo": "Compra Ágil: Adquisición de Carpetas Tipo Acordeón y Carpetas Anilladas 3 Argollas",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE PEÑALOLÉN",
+    "organismoRut": "69.071.200-7",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1780000,
+    "montoUtm": 27,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 88,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Carpetas Tipo Acordeón y Carpetas Anilladas 3 Argollas. Organismo demandante: ILUSTRE MUNICIPALIDAD DE PEÑALOLÉN. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4118-525-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-CAR-03",
+            "producto": "Carpeta Acordeón 13 Divisiones Plastificada Oficio",
+            "cantidad": 120,
+            "precioUnitario": 9000
+      },
+      {
+            "sku": "ESC-CAR-04",
+            "producto": "Carpeta 3 Argollas 2 Pulgadas Lomo Vinilado",
+            "cantidad": 100,
+            "precioUnitario": 7000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4119-526-COT26",
+    "codigo": "COT-4119-526-COT26",
+    "titulo": "Compra Ágil: Cinta de Enmascarar Masking Tape y Sacacorchetes Ergonómicos",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE SAN BERNARDO",
+    "organismoRut": "69.071.500-6",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 620000,
+    "montoUtm": 10,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 89,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Cinta de Enmascarar Masking Tape y Sacacorchetes Ergonómicos. Organismo demandante: ILUSTRE MUNICIPALIDAD DE SAN BERNARDO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4119-526-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-MAS-01",
+            "producto": "Cinta de Enmascarar Masking Tape 24mm x 40m (Pack 6 un)",
+            "cantidad": 50,
+            "precioUnitario": 8000
+      },
+      {
+            "sku": "ESC-SAC-01",
+            "producto": "Sacacorchetes Ergonómico Tipo Tenaza Metálico",
+            "cantidad": 110,
+            "precioUnitario": 2000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4120-527-COT26",
+    "codigo": "COT-4120-527-COT26",
+    "titulo": "Compra Ágil: Kits de Limpieza de Pantallas y Teclados de Oficina para Informática",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE MAIPÚ",
+    "organismoRut": "69.070.500-9",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1450000,
+    "montoUtm": 22,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 90,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Kits de Limpieza de Pantallas y Teclados de Oficina para Informática. Organismo demandante: ILUSTRE MUNICIPALIDAD DE MAIPÚ. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4120-527-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-LIM-01",
+            "producto": "Kit Limpieza Pantallas LCD + Paño Microfibra + Aire Comprimido",
+            "cantidad": 100,
+            "precioUnitario": 14500
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4121-528-COT26",
+    "codigo": "COT-4121-528-COT26",
+    "titulo": "Compra Ágil: Pad Mouse Ergonómico Gel y Apoyamuñecas de Gel para Estaciones de Trabajo",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE LAS CONDES",
+    "organismoRut": "69.070.200-K",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 2100000,
+    "montoUtm": 32,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 91,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Pad Mouse Ergonómico Gel y Apoyamuñecas de Gel para Estaciones de Trabajo. Organismo demandante: ILUSTRE MUNICIPALIDAD DE LAS CONDES. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4121-528-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-PAD-01",
+            "producto": "Pad Mouse con Apoyo Ergonómico de Gel Antideslizante",
+            "cantidad": 150,
+            "precioUnitario": 14000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4122-529-COT26",
+    "codigo": "COT-4122-529-COT26",
+    "titulo": "Compra Ágil: Rollos Papel Kraft 80g y Sobres Acolchados con Burbuja para Envíos",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE PUENTE ALTO",
+    "organismoRut": "69.071.400-K",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1890000,
+    "montoUtm": 29,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 92,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Rollos Papel Kraft 80g y Sobres Acolchados con Burbuja para Envíos. Organismo demandante: ILUSTRE MUNICIPALIDAD DE PUENTE ALTO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4122-529-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-KRA-01",
+            "producto": "Rollo Papel Kraft 80g 1m x 100m Envoltorio Envíos",
+            "cantidad": 20,
+            "precioUnitario": 42500
+      },
+      {
+            "sku": "ESC-BUR-01",
+            "producto": "Sobre Acolchado Burbuja 25x35 cm (Caja 100 un)",
+            "cantidad": 20,
+            "precioUnitario": 52000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4123-530-COT26",
+    "codigo": "COT-4123-530-COT26",
+    "titulo": "Compra Ágil: Banderitas Marcadoras de Registro y Subrayadores Pastel",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE ÑUÑOA",
+    "organismoRut": "69.070.400-2",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 940000,
+    "montoUtm": 14,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 93,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Banderitas Marcadoras de Registro y Subrayadores Pastel. Organismo demandante: ILUSTRE MUNICIPALIDAD DE ÑUÑOA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4123-530-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-BAN-01",
+            "producto": "Banderitas Marcadoras de Registro Plásticas Neón (Pack 5 colores)",
+            "cantidad": 160,
+            "precioUnitario": 3500
+      },
+      {
+            "sku": "ESC-PAS-01",
+            "producto": "Set Subrayadores Tonos Pastel (Set 6 colores)",
+            "cantidad": 80,
+            "precioUnitario": 4750
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4124-531-COT26",
+    "codigo": "COT-4124-531-COT26",
+    "titulo": "Compra Ágil: Portacredenciales Transparentes y Lanyards Institucionales con Clip",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE RECOLETA",
+    "organismoRut": "69.070.900-6",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1150000,
+    "montoUtm": 18,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 94,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Portacredenciales Transparentes y Lanyards Institucionales con Clip. Organismo demandante: ILUSTRE MUNICIPALIDAD DE RECOLETA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4124-531-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-LAN-01",
+            "producto": "Lanyard Poliéster 20mm con Mosquetón Metálico + Portacredencial PVC",
+            "cantidad": 500,
+            "precioUnitario": 2300
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4125-532-COT26",
+    "codigo": "COT-4125-532-COT26",
+    "titulo": "Compra Ágil: Calculadoras de Mesa 12 Dígitos Pantalla Inclinada para Contabilidad",
+    "organismo": "ILUSTRE MUNICIPALIDAD DE SANTIAGO",
+    "organismoRut": "69.070.000-7",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1680000,
+    "montoUtm": 26,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 95,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Calculadoras de Mesa 12 Dígitos Pantalla Inclinada para Contabilidad. Organismo demandante: ILUSTRE MUNICIPALIDAD DE SANTIAGO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4125-532-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-CAL-01",
+            "producto": "Calculadora de Mesa 12 Dígitos Solar / Batería Pantalla Grande",
+            "cantidad": 120,
+            "precioUnitario": 14000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4126-533-COT26",
+    "codigo": "COT-4126-533-COT26",
+    "titulo": "Compra Ágil: Cajas de Archivo Definitivo Cartón Microcorrugado Autoarmable",
+    "organismo": "SUBSECRETARÍA DEL INTERIOR",
+    "organismoRut": "60.101.000-2",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 3450000,
+    "montoUtm": 53,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 96,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Cajas de Archivo Definitivo Cartón Microcorrugado Autoarmable. Organismo demandante: SUBSECRETARÍA DEL INTERIOR. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4126-533-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-CAJ-01",
+            "producto": "Caja de Archivo Definitivo Cartón Oficio (Pack 25 un)",
+            "cantidad": 100,
+            "precioUnitario": 34500
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4127-534-COT26",
+    "codigo": "COT-4127-534-COT26",
+    "titulo": "Compra Ágil: Adquisición de Papel Continuo Carta y Oficio para Tesorería General",
+    "organismo": "TESORERÍA GENERAL DE LA REPÚBLICA",
+    "organismoRut": "60.803.000-K",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 4120000,
+    "montoUtm": 63,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 97,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Papel Continuo Carta y Oficio para Tesorería General. Organismo demandante: TESORERÍA GENERAL DE LA REPÚBLICA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4127-534-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-PAP-03",
+            "producto": "Papel Continuo Carta 1 Copia 75g (Caja 2500 h)",
+            "cantidad": 80,
+            "precioUnitario": 39000
+      },
+      {
+            "sku": "ESC-PAP-04",
+            "producto": "Papel Continuo Oficio 2 Copias Químico (Caja 1000 h)",
+            "cantidad": 25,
+            "precioUnitario": 40000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4128-535-COT26",
+    "codigo": "COT-4128-535-COT26",
+    "titulo": "Compra Ágil: Adquisición de Tintas Originales Canon y Brother para Unidades Regionales",
+    "organismo": "DIRECCIÓN DEL TRABAJO",
+    "organismoRut": "60.801.000-9",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 2890000,
+    "montoUtm": 44,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 98,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Tintas Originales Canon y Brother para Unidades Regionales. Organismo demandante: DIRECCIÓN DEL TRABAJO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4128-535-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-TIN-03",
+            "producto": "Botella de Tinta Brother BTD60BK Negro High Yield",
+            "cantidad": 100,
+            "precioUnitario": 18900
+      },
+      {
+            "sku": "ESC-TIN-04",
+            "producto": "Botella de Tinta Canon GI-190 (Set C,M,Y)",
+            "cantidad": 40,
+            "precioUnitario": 25000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4129-536-COT26",
+    "codigo": "COT-4129-536-COT26",
+    "titulo": "Compra Ágil: Suministro de Resmas Oficio 80g y Carpetas Plastificadas con Fastener",
+    "organismo": "SERVICIO NACIONAL DEL CONSUMIDOR - SERNAC",
+    "organismoRut": "60.809.000-2",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1950000,
+    "montoUtm": 30,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 99,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Suministro de Resmas Oficio 80g y Carpetas Plastificadas con Fastener. Organismo demandante: SERVICIO NACIONAL DEL CONSUMIDOR - SERNAC. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4129-536-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-RES-03",
+            "producto": "Resma Papel Fotocopia Oficio 80g Alto Blanco",
+            "cantidad": 300,
+            "precioUnitario": 4900
+      },
+      {
+            "sku": "ESC-CAR-05",
+            "producto": "Carpeta Plastificada con Fastener Metálico Oficio",
+            "cantidad": 300,
+            "precioUnitario": 1600
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4130-537-COT26",
+    "codigo": "COT-4130-537-COT26",
+    "titulo": "Compra Ágil: Adquisición de Plumones de Registro Permanente Sharpie y Edding",
+    "organismo": "CARABINEROS DE CHILE - DIRECCIÓN LOGÍSTICA",
+    "organismoRut": "61.101.000-9",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 2350000,
+    "montoUtm": 36,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 88,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Plumones de Registro Permanente Sharpie y Edding. Organismo demandante: CARABINEROS DE CHILE - DIRECCIÓN LOGÍSTICA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4130-537-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-MAR-03",
+            "producto": "Marcador Permanente Punta Fina Negro (Caja 12 un)",
+            "cantidad": 120,
+            "precioUnitario": 14500
+      },
+      {
+            "sku": "ESC-MAR-04",
+            "producto": "Marcador Permanente Biselado Rojo/Azul (Caja 12 un)",
+            "cantidad": 42,
+            "precioUnitario": 14500
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4131-538-COT26",
+    "codigo": "COT-4131-538-COT26",
+    "titulo": "Compra Ágil: Insumos de Escritorio y Archivadores para Policía de Investigaciones",
+    "organismo": "POLICÍA DE INVESTIGACIONES DE CHILE - PDI",
+    "organismoRut": "61.102.000-4",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 3100000,
+    "montoUtm": 48,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 89,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Insumos de Escritorio y Archivadores para Policía de Investigaciones. Organismo demandante: POLICÍA DE INVESTIGACIONES DE CHILE - PDI. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4131-538-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-ARC-03",
+            "producto": "Archivador Lomo Ancho Carta Plastificado Heavy Duty",
+            "cantidad": 600,
+            "precioUnitario": 3500
+      },
+      {
+            "sku": "ESC-COR-04",
+            "producto": "Corchetera de Abrochar Industrial 100 Hojas",
+            "cantidad": 20,
+            "precioUnitario": 50000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4132-539-COT26",
+    "codigo": "COT-4132-539-COT26",
+    "titulo": "Compra Ágil: Adquisición de Papelería Institucional y Sobres Carta Membretados",
+    "organismo": "MINISTERIO DE HACIENDA",
+    "organismoRut": "60.102.000-8",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1640000,
+    "montoUtm": 25,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 90,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Papelería Institucional y Sobres Carta Membretados. Organismo demandante: MINISTERIO DE HACIENDA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4132-539-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-SOB-03",
+            "producto": "Sobre Carta Blanco Membretado Autoadhesivo (Caja 500 un)",
+            "cantidad": 40,
+            "precioUnitario": 41000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4133-540-COT26",
+    "codigo": "COT-4133-540-COT26",
+    "titulo": "Compra Ágil: Suministro de Cintas y Láminas para Termolaminadoras de Secretaría",
+    "organismo": "MINISTERIO DE EDUCACIÓN - SUBSECRETARÍA",
+    "organismoRut": "60.501.000-0",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 1280000,
+    "montoUtm": 20,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 91,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Suministro de Cintas y Láminas para Termolaminadoras de Secretaría. Organismo demandante: MINISTERIO DE EDUCACIÓN - SUBSECRETARÍA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4133-540-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-LAM-01",
+            "producto": "Lámina Termolaminado A4 125 micras Glossy (Caja 100 un)",
+            "cantidad": 80,
+            "precioUnitario": 16000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4134-541-COT26",
+    "codigo": "COT-4134-541-COT26",
+    "titulo": "Compra Ágil: Adquisición de Resmas Carta y Artículos de Oficina para Hospital Fricke",
+    "organismo": "HOSPITAL DR. GUSTAVO FRICKE",
+    "organismoRut": "61.602.400-K",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Valparaíso",
+    "monto": 4250000,
+    "montoUtm": 65,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 92,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Resmas Carta y Artículos de Oficina para Hospital Fricke. Organismo demandante: HOSPITAL DR. GUSTAVO FRICKE. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4134-541-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-RES-01",
+            "producto": "Resma Papel Fotocopia Carta 75g",
+            "cantidad": 800,
+            "precioUnitario": 3900
+      },
+      {
+            "sku": "ESC-CLI-02",
+            "producto": "Clips Cebra Nº 3 (Caja 100 un)",
+            "cantidad": 452,
+            "precioUnitario": 2500
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4135-542-COT26",
+    "codigo": "COT-4135-542-COT26",
+    "titulo": "Compra Ágil: Insumos de Escritorio y Archivadores para Hospital Regional Antofagasta",
+    "organismo": "HOSPITAL REGIONAL DE ANTOFAGASTA",
+    "organismoRut": "61.602.500-6",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Antofagasta",
+    "monto": 3890000,
+    "montoUtm": 60,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 93,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Insumos de Escritorio y Archivadores para Hospital Regional Antofagasta. Organismo demandante: HOSPITAL REGIONAL DE ANTOFAGASTA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4135-542-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-ARC-01",
+            "producto": "Archivador Lomo Ancho Oficio Cartón Prensado",
+            "cantidad": 800,
+            "precioUnitario": 3300
+      },
+      {
+            "sku": "ESC-TIN-01",
+            "producto": "Tóner Impresora HP 26A Black",
+            "cantidad": 10,
+            "precioUnitario": 125000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4136-543-COT26",
+    "codigo": "COT-4136-543-COT26",
+    "titulo": "Compra Ágil: Papelería, Blocks de Notas y Bolígrafos para Servicio de Salud Chiloé",
+    "organismo": "SERVICIO DE SALUD CHILOÉ",
+    "organismoRut": "61.602.600-2",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Los Lagos",
+    "monto": 2450000,
+    "montoUtm": 38,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 94,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Papelería, Blocks de Notas y Bolígrafos para Servicio de Salud Chiloé. Organismo demandante: SERVICIO DE SALUD CHILOÉ. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4136-543-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-RES-02",
+            "producto": "Resma Papel Fotocopia Oficio 75g",
+            "cantidad": 350,
+            "precioUnitario": 4600
+      },
+      {
+            "sku": "ESC-BOL-01",
+            "producto": "Bolígrafo Pasta Azul 1.0mm (Caja 50 un)",
+            "cantidad": 120,
+            "precioUnitario": 7000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4137-544-COT26",
+    "codigo": "COT-4137-544-COT26",
+    "titulo": "Compra Ágil: Adquisición de Útiles de Escritorio y Marcadores para Servicio de Salud Coquimbo",
+    "organismo": "SERVICIO DE SALUD COQUIMBO",
+    "organismoRut": "61.602.700-9",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Coquimbo",
+    "monto": 1980000,
+    "montoUtm": 30,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 95,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Útiles de Escritorio y Marcadores para Servicio de Salud Coquimbo. Organismo demandante: SERVICIO DE SALUD COQUIMBO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4137-544-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-MAR-01",
+            "producto": "Plumones Pizarra Acrílica (Set 4 colores)",
+            "cantidad": 180,
+            "precioUnitario": 6500
+      },
+      {
+            "sku": "ESC-NOT-01",
+            "producto": "Notas Adhesivas 3x3 (Pack 12 un)",
+            "cantidad": 124,
+            "precioUnitario": 6500
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4138-545-COT26",
+    "codigo": "COT-4138-545-COT26",
+    "titulo": "Compra Ágil: Suministro de Resmas Carta y Tintas para Universidad de Chile",
+    "organismo": "UNIVERSIDAD DE CHILE - VICERRECTORÍA ADMINISTRATIVA",
+    "organismoRut": "60.910.000-1",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 3650000,
+    "montoUtm": 56,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 96,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Suministro de Resmas Carta y Tintas para Universidad de Chile. Organismo demandante: UNIVERSIDAD DE CHILE - VICERRECTORÍA ADMINISTRATIVA. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4138-545-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-RES-01",
+            "producto": "Resma Papel Fotocopia Carta 75g",
+            "cantidad": 600,
+            "precioUnitario": 3900
+      },
+      {
+            "sku": "ESC-TIN-02",
+            "producto": "Kit Tintas Continuas Epson T664",
+            "cantidad": 26,
+            "precioUnitario": 50000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4139-546-COT26",
+    "codigo": "COT-4139-546-COT26",
+    "titulo": "Compra Ágil: Adquisición de Papelería e Insumos de Oficina para Universidad de Santiago",
+    "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
+    "organismoRut": "60.911.000-7",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 2980000,
+    "montoUtm": 46,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 97,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Papelería e Insumos de Oficina para Universidad de Santiago. Organismo demandante: UNIVERSIDAD DE SANTIAGO DE CHILE. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4139-546-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-ARC-02",
+            "producto": "Archivador Lomo Ancho Oficio",
+            "cantidad": 500,
+            "precioUnitario": 3100
+      },
+      {
+            "sku": "ESC-RES-02",
+            "producto": "Resma Papel Fotocopia Oficio 75g",
+            "cantidad": 310,
+            "precioUnitario": 4600
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4140-547-COT26",
+    "codigo": "COT-4140-547-COT26",
+    "titulo": "Compra Ágil: Suministro Urgente de Tintas y Papel Carta para Armada de Chile",
+    "organismo": "ARMADA DE CHILE - DIRECCIÓN DE ABASTECIMIENTO",
+    "organismoRut": "61.103.000-K",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Valparaíso",
+    "monto": 4500000,
+    "montoUtm": 69,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 98,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Suministro Urgente de Tintas y Papel Carta para Armada de Chile. Organismo demandante: ARMADA DE CHILE - DIRECCIÓN DE ABASTECIMIENTO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4140-547-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-RES-01",
+            "producto": "Resma Papel Fotocopia Carta 75g (Caja 5 resmas)",
+            "cantidad": 150,
+            "precioUnitario": 18500
+      },
+      {
+            "sku": "ESC-TIN-01",
+            "producto": "Tóner Impresora HP 26A Black",
+            "cantidad": 15,
+            "precioUnitario": 115000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Compra Ágil"
+  },
+  {
+    "id": "COT-4141-548-COT26",
+    "codigo": "COT-4141-548-COT26",
+    "titulo": "Compra Ágil: Adquisición de Artículos de Escritorio y Papelería para Fuerza Aérea",
+    "organismo": "FUERZA AÉREA DE CHILE - COMANDO LOGÍSTICO",
+    "organismoRut": "61.104.000-5",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Metropolitana",
+    "monto": 3800000,
+    "montoUtm": 58,
+    "fechaPublicacion": "2026-07-23",
+    "fechaCierre": "2026-07-27",
+    "matchScore": 99,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso: Compra Ágil: Adquisición de Artículos de Escritorio y Papelería para Fuerza Aérea. Organismo demandante: FUERZA AÉREA DE CHILE - COMANDO LOGÍSTICO. Unidad de Compra y Abastecimiento Institucional con despacho centralizado.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "23/07/2026 09:00"
+      },
+      {
+        "hito": "Cierre de ofertas",
+        "fecha": "27/07/2026 15:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Bases_Oficiales_COT-4141-548-COT26.pdf",
+        "tipo": "pdf",
+        "tamanho": "1.4 MB"
+      }
+    ],
+    "items": [
+      {
+            "sku": "ESC-ARC-01",
+            "producto": "Archivador Lomo Ancho Oficio Cartón Prensado",
+            "cantidad": 600,
+            "precioUnitario": 3200
+      },
+      {
+            "sku": "ESC-COR-01",
+            "producto": "Corchetera Ergonómica de Mesa 26/6",
+            "cantidad": 268,
+            "precioUnitario": 7000
+      }
+],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio",
+        "ponderacion": 100,
+        "descripcion": "Evaluación Económica Mercado Público"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [
+      {
+        "nombre": "Dimerc SpA",
+        "rut": "96.543.210-K",
+        "cuotaMercado": 30,
+        "adjudicacionesRecientes": 5
+      }
+    ],
+    "empresaMatch": "V-MOCCS",
+    "modalidad": "Compra Ágil"
+  }
 ];
 
 export function parseProductCatalog(raw: string) {
