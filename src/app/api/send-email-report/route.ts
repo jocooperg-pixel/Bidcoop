@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import nodemailer from 'nodemailer';
 
-const DEFAULT_RESEND_KEY = 're_ZD3GD3bZ_KNXLZSyLWoARVjmhStY2hjSu';
+const DEFAULT_RESEND_KEY = 're_VfcDcNUV_NxGciAGhCdAE5msy18GmHfoy';
 
 export async function POST(request: Request) {
   try {
