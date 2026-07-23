@@ -4,7 +4,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const {
-      phone = '56977222179',
+      phone = '56977222179, 56984093057, 56947479588, 56963084062',
       empresa = 'Consolidado Holding',
       oportunidades = [],
       instanceId = process.env.ULTRAMSG_INSTANCE_ID || 'instance185972',

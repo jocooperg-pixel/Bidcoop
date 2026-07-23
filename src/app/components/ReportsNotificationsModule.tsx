@@ -18,7 +18,7 @@ export default function ReportsNotificationsModule({
   const [autoEmailEnabled, setAutoEmailEnabled] = useState<boolean>(true);
   const [whatsappPushEnabled, setWhatsappPushEnabled] = useState<boolean>(true);
   const [recipientEmails, setRecipientEmails] = useState<string>('jocooperg@gmail.com');
-  const [recipientPhones, setRecipientPhones] = useState<string>('+56977222179');
+  const [recipientPhones, setRecipientPhones] = useState<string>('+56 9 7722 2179, +56 9 8409 3057, +56 9 4747 9588, +56 9 6308 4062');
   const [filterRubro, setFilterRubro] = useState<string>('Todos');
   const [activeTab, setActiveTab] = useState<'reportes' | 'correos' | 'winrate' | 'configuracion'>('reportes');
   const [copiedEmailIndex, setCopiedEmailIndex] = useState<number | null>(null);
@@ -238,7 +238,7 @@ export default function ReportsNotificationsModule({
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-3">
           <button
-            onClick={() => handleSendWhatsappTest('56977222179')}
+            onClick={() => handleSendWhatsappTest()}
             disabled={sendingWhatsapp}
             className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95 cursor-pointer"
           >
@@ -248,12 +248,12 @@ export default function ReportsNotificationsModule({
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                 </svg>
-                Enviando Push a +56 9 7722 2179...
+                Enviando Push a 4 Números...
               </>
             ) : (
               <>
                 <span>📱</span>
-                Disparar Push WhatsApp (+56 9 7722 2179)
+                Disparar Push WhatsApp (4 Destinos)
               </>
             )}
           </button>
