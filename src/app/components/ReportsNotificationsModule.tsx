@@ -28,6 +28,9 @@ export default function ReportsNotificationsModule({
   const [userResendKey, setUserResendKey] = useState<string>('');
   const [userSmtpUser, setUserSmtpUser] = useState<string>('');
   const [userSmtpPass, setUserSmtpPass] = useState<string>('');
+  const [userTwilioSid, setUserTwilioSid] = useState<string>('');
+  const [userTwilioToken, setUserTwilioToken] = useState<string>('');
+  const [userTwilioFrom, setUserTwilioFrom] = useState<string>('');
 
   // Filter opportunities for the selected company
   const companyFilteredOps = useMemo(() => {
@@ -199,7 +202,10 @@ export default function ReportsNotificationsModule({
         body: JSON.stringify({
           phone: activePhones,
           empresa: selectedCompany,
-          oportunidades: companyFilteredOps
+          oportunidades: companyFilteredOps,
+          twilioSid: userTwilioSid,
+          twilioToken: userTwilioToken,
+          twilioFrom: userTwilioFrom
         })
       });
 
@@ -737,7 +743,49 @@ export default function ReportsNotificationsModule({
             </div>
           </div>
 
-          {/* Toggle Switches */}
+          {/* Twilio WhatsApp Business API Credentials */}
+          <div className="bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-black text-slate-900 dark:text-white flex items-center gap-2">
+                <span>📲</span> Conector Oficial Twilio WhatsApp Business API (Opcional)
+              </span>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200">
+                Remitente Dedicado Nube
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+              <div>
+                <label className="text-[11px] font-bold text-slate-700 dark:text-slate-300 block mb-1">Twilio Account SID (AC...):</label>
+                <input
+                  type="text"
+                  placeholder="AC1234567890..."
+                  value={userTwilioSid}
+                  onChange={(e) => setUserTwilioSid(e.target.value)}
+                  className="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white font-mono"
+                />
+              </div>
+              <div>
+                <label className="text-[11px] font-bold text-slate-700 dark:text-slate-300 block mb-1">Twilio Auth Token:</label>
+                <input
+                  type="password"
+                  placeholder="a1b2c3d4e5f6..."
+                  value={userTwilioToken}
+                  onChange={(e) => setUserTwilioToken(e.target.value)}
+                  className="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white font-mono"
+                />
+              </div>
+              <div>
+                <label className="text-[11px] font-bold text-slate-700 dark:text-slate-300 block mb-1">Twilio WhatsApp Number:</label>
+                <input
+                  type="text"
+                  placeholder="whatsapp:+14155238886"
+                  value={userTwilioFrom}
+                  onChange={(e) => setUserTwilioFrom(e.target.value)}
+                  className="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white font-mono"
+                />
+              </div>
+            </div>
+          </div>
           <div className="space-y-4 border-t border-slate-100 dark:border-slate-700 pt-4">
             <div className="flex items-center justify-between">
               <div>

@@ -9,8 +9,8 @@ export async function POST(request: Request) {
       oportunidades = [],
       instanceId = process.env.ULTRAMSG_INSTANCE_ID || 'instance185972',
       token = process.env.ULTRAMSG_TOKEN || 'j5tw4912zijm9wg6',
-      twilioSid = process.env.TWILIO_ACCOUNT_SID,
-      twilioToken = process.env.TWILIO_AUTH_TOKEN,
+      twilioSid = process.env.TWILIO_ACCOUNT_SID || '',
+      twilioToken = process.env.TWILIO_AUTH_TOKEN || '',
       twilioFrom = process.env.TWILIO_WHATSAPP_NUMBER || 'whatsapp:+14155238886'
     } = body;
 
@@ -46,12 +46,32 @@ export async function POST(request: Request) {
     }
 
     let pushStatus = '';
-    let provider = 'UltraMsg WhatsApp Cloud API';
+    let provider = twilioSid && twilioToken ? 'Twilio WhatsApp Cloud API' : 'UltraMsg WhatsApp Cloud API';
     const results: string[] = [];
 
     // Loop through each destination phone number
     for (const cleanPhone of phonesList) {
-      if (instanceId && token) {
+      if (twilioSid && twilioToken) {
+        const authHeader = 'Basic ' + Buffer.from(`${twilioSid}:${twilioToken}`).toString('base64');
+        const twilioRes = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${twilioSid}/Messages.json`, {
+          method: 'POST',
+          headers: {
+            'Authorization': authHeader,
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: new URLSearchParams({
+            From: twilioFrom.startsWith('whatsapp:') ? twilioFrom : `whatsapp:${twilioFrom}`,
+            To: `whatsapp:+${cleanPhone}`,
+            Body: messageText
+          })
+        });
+        const data = await twilioRes.json();
+        if (data.sid) {
+          results.push(`+${cleanPhone} (Twilio OK)`);
+        } else {
+          results.push(`+${cleanPhone} (Error: ${data.message || 'Twilio Fail'})`);
+        }
+      } else if (instanceId && token) {
         const ultramsgRes = await fetch(`https://api.ultramsg.com/${instanceId}/messages/chat`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -63,37 +83,18 @@ export async function POST(request: Request) {
         });
         const data = await ultramsgRes.json();
         if (data.sent === 'true' || data.id) {
-          results.push(`+${cleanPhone} (OK)`);
+          results.push(`+${cleanPhone} (UltraMsg OK)`);
         } else {
           results.push(`+${cleanPhone} (Error: ${data.error || 'Fail'})`);
-        }
-      } else if (twilioSid && twilioToken) {
-        provider = 'Twilio WhatsApp Business API';
-        const authHeader = 'Basic ' + Buffer.from(`${twilioSid}:${twilioToken}`).toString('base64');
-        const twilioRes = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${twilioSid}/Messages.json`, {
-          method: 'POST',
-          headers: {
-            'Authorization': authHeader,
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: new URLSearchParams({
-            From: twilioFrom,
-            To: `whatsapp:+${cleanPhone}`,
-            Body: messageText
-          })
-        });
-        const data = await twilioRes.json();
-        if (data.sid) {
-          results.push(`+${cleanPhone} (OK)`);
         }
       }
     }
 
-    pushStatus = `¡Notificación Push enviada con éxito desde BidCoop Bot a ${results.length} números: ${results.join(', ')}!`;
+    pushStatus = `¡Notificación Push enviada con éxito vía ${provider} a ${results.length} números: ${results.join(', ')}!`;
 
     return NextResponse.json({
       success: true,
-      sender: 'BidCoop Reports Bot',
+      sender: 'BidCoop Reports Bot (Twilio Cloud)',
       destination: results.join(', '),
       totalDestinations: results.length,
       provider,
