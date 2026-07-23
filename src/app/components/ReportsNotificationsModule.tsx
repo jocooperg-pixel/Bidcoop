@@ -17,13 +17,13 @@ export default function ReportsNotificationsModule({
   const [reportTime, setReportTime] = useState<string>('08:00');
   const [autoEmailEnabled, setAutoEmailEnabled] = useState<boolean>(true);
   const [whatsappPushEnabled, setWhatsappPushEnabled] = useState<boolean>(true);
-  const [recipientEmails, setRecipientEmails] = useState<string>(
-    'ventas@inder-roll.cl, comercial@aminorte.cl, licitaciones@v-moccs.cl'
-  );
+  const [recipientEmails, setRecipientEmails] = useState<string>('jocooperg@gmail.com');
   const [filterRubro, setFilterRubro] = useState<string>('Todos');
   const [activeTab, setActiveTab] = useState<'reportes' | 'correos' | 'winrate' | 'configuracion'>('reportes');
   const [copiedEmailIndex, setCopiedEmailIndex] = useState<number | null>(null);
   const [reportSuccessMsg, setReportSuccessMsg] = useState<string | null>(null);
+  const [showEmailPreviewModal, setShowEmailPreviewModal] = useState<boolean>(false);
+  const [sendingEmail, setSendingEmail] = useState<boolean>(false);
 
   // Filter opportunities for the selected company
   const companyFilteredOps = useMemo(() => {
@@ -70,7 +70,7 @@ export default function ReportsNotificationsModule({
       : companyFilteredOps.filter(o => o.empresaMatch === companyName);
 
     const rows = targetOps.map(op => {
-      const winPrice = Math.round(op.monto * 0.94); // Suggested win rate price (94% of budget)
+      const winPrice = Math.round(op.monto * 0.94);
       return [
         `"${op.codigo}"`,
         `"${op.titulo.replace(/"/g, '""')}"`,
@@ -97,8 +97,55 @@ export default function ReportsNotificationsModule({
     link.click();
     document.body.removeChild(link);
 
-    setReportSuccessMsg(`¡Reporte cargado con éxito! Archivo descargado: ${filename}`);
+    setReportSuccessMsg(`¡Reporte descargado exitosamente: ${filename}`);
     setTimeout(() => setReportSuccessMsg(null), 5000);
+  };
+
+  const handleSendTestEmail = async (targetEmail: string = 'jocooperg@gmail.com') => {
+    try {
+      setSendingEmail(true);
+      const res = await fetch('/api/send-email-report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: targetEmail,
+          empresa: selectedCompany,
+          oportunidades: companyFilteredOps
+        })
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error enviando el correo');
+
+      setShowEmailPreviewModal(true);
+      setReportSuccessMsg(`Reporte procesado para ${targetEmail}. Haz clic en "Ver Vista Previa / Enviar con Mail Client" para revisar la prueba.`);
+    } catch (err: any) {
+      alert(`Error procesando reporte: ${err.message}`);
+    } finally {
+      setSendingEmail(false);
+    }
+  };
+
+  const handleOpenMailClient = () => {
+    const today = new Date().toISOString().split('T')[0];
+    const totalOps = companyFilteredOps.length;
+    const totalMonto = companyFilteredOps.reduce((acc, curr) => acc + curr.monto, 0);
+
+    const subject = encodeURIComponent(`[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${selectedCompany} (${today})`);
+    
+    let bodyText = `Estimado equipo comercial de ${selectedCompany},\n\n`;
+    bodyText += `Se adjunta el resumen de las Compras Ágiles activas del día de hoy (${today}):\n`;
+    bodyText += `- Compras Ágiles Activas: ${totalOps}\n`;
+    bodyText += `- Presupuesto Total CLP: $${totalMonto.toLocaleString('es-CL')} CLP\n\n`;
+    bodyText += `Listado de Procesos Destacados:\n`;
+
+    companyFilteredOps.slice(0, 8).forEach(op => {
+      bodyText += `• [${op.codigo}] ${op.titulo} - ${op.organismo} ($${op.monto.toLocaleString('es-CL')} CLP) - Cierre: ${op.fechaCierre}\n`;
+    });
+
+    bodyText += `\nDescargue el reporte oficial .CSV adjunto desde la plataforma BidCoop.\n\nAtentamente,\nPlataforma Avanzada de Abastecimiento BidCoop © 2026`;
+
+    window.open(`mailto:jocooperg@gmail.com?subject=${subject}&body=${encodeURIComponent(bodyText)}`, '_blank');
   };
 
   // Generate simulated postulation email preview
@@ -125,32 +172,6 @@ export default function ReportsNotificationsModule({
       cierre: op.fechaCierre,
       titulo: op.titulo
     };
-  };
-
-  const [sendingEmail, setSendingEmail] = useState<boolean>(false);
-
-  const handleSendTestEmail = async (targetEmail: string = 'jocooperg@gmail.com') => {
-    try {
-      setSendingEmail(true);
-      const res = await fetch('/api/send-email-report', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: targetEmail,
-          empresa: selectedCompany,
-          oportunidades: companyFilteredOps
-        })
-      });
-
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Error enviando el correo');
-
-      setReportSuccessMsg(`¡Prueba enviada con éxito a ${targetEmail}! Adjunto: ${data.filename} (${data.totalOps} Compras Ágiles)`);
-    } catch (err: any) {
-      alert(`Error enviando correo: ${err.message}`);
-    } finally {
-      setSendingEmail(false);
-    }
   };
 
   return (
@@ -187,7 +208,7 @@ export default function ReportsNotificationsModule({
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                 </svg>
-                Enviando a jocooperg@gmail.com...
+                Procesando reporte...
               </>
             ) : (
               <>
@@ -197,6 +218,13 @@ export default function ReportsNotificationsModule({
                 Enviar Prueba a jocooperg@gmail.com ✉️
               </>
             )}
+          </button>
+
+          <button
+            onClick={() => setShowEmailPreviewModal(true)}
+            className="flex items-center gap-2 bg-slate-800 hover:bg-slate-900 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all"
+          >
+            🔍 Ver Vista Previa del Correo Real
           </button>
 
           <button
@@ -673,6 +701,109 @@ export default function ReportsNotificationsModule({
             >
               Guardar Cambios de Automatización
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* MODAL DE VISTA PREVIA Y ENVÍO DE CORREO REAL */}
+      {showEmailPreviewModal && (
+        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col shadow-2xl border border-slate-200 dark:border-slate-800">
+            
+            {/* Modal Header */}
+            <div className="p-6 bg-slate-900 text-white flex items-center justify-between">
+              <div>
+                <span className="bg-indigo-600 text-white font-black text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">
+                  Vista Previa del Correo Oficial 08:00 AM
+                </span>
+                <h3 className="text-xl font-black mt-1">
+                  Reporte Diario de Compras Ágiles — jocooperg@gmail.com
+                </h3>
+              </div>
+              <button
+                onClick={() => setShowEmailPreviewModal(false)}
+                className="text-slate-400 hover:text-white font-black text-xl px-3 py-1 rounded-lg"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Email Render Preview */}
+            <div className="p-6 overflow-y-auto space-y-6 text-xs bg-slate-50 dark:bg-slate-950 flex-1">
+              
+              {/* Technical explanation alert */}
+              <div className="bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 p-4 rounded-2xl text-blue-900 dark:text-blue-200 space-y-1">
+                <div className="font-extrabold flex items-center gap-2">
+                  <span>ℹ️ Información Técnica del Envío de Correos:</span>
+                </div>
+                <p className="text-[11px] leading-relaxed">
+                  Para que los servidores de <strong>Gmail</strong> acepten envíos automáticos masivos desde el servidor de Vercel en la nube, se debe vincular la clave API del dominio (ej: <code>RESEND_API_KEY</code> o credenciales SMTP). Mientras tanto, puedes usar la opción <strong>"Enviar con mi Cliente de Correo (`mailto:`)"</strong> para abrir el correo pre-redactado o descargar el archivo adjunto oficial.
+                </p>
+              </div>
+
+              {/* Formatted HTML Email Canvas */}
+              <div className="bg-white text-slate-900 rounded-2xl p-6 border border-slate-200 shadow-md space-y-4">
+                <div className="border-b border-slate-200 pb-3 space-y-1 text-xs">
+                  <div><strong>De:</strong> notificaciones@bidcoop.cl</div>
+                  <div><strong>Para:</strong> jocooperg@gmail.com</div>
+                  <div><strong>Asunto:</strong> <span className="font-extrabold text-indigo-700">[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - {selectedCompany} ({new Date().toISOString().split('T')[0]})</span></div>
+                  <div><strong>Adjunto:</strong> <span className="font-mono font-bold text-emerald-700">BidCoop_Reporte_Diario_Compras_Agiles_{selectedCompany}_{new Date().toISOString().split('T')[0]}.csv</span></div>
+                </div>
+
+                {/* Email Body HTML render */}
+                <div className="space-y-4">
+                  <div className="bg-gradient-to-r from-indigo-900 to-slate-900 text-white p-4 rounded-xl">
+                    <h4 className="font-black text-base">Reporte Diario de Compras Ágiles Activas</h4>
+                    <p className="text-[11px] text-indigo-200">Segmento: {selectedCompany} | Presupuesto Total: ${companyFilteredOps.reduce((a,c) => a + c.monto, 0).toLocaleString('es-CL')} CLP</p>
+                  </div>
+
+                  <p className="text-slate-700 leading-relaxed">
+                    Estimado equipo comercial de <strong>{selectedCompany}</strong>,<br/>
+                    Se adjunta a este correo electrónico el informe completo en formato <code>.CSV / Excel</code> con las <strong>{companyFilteredOps.length} Compras Ágiles activas</strong> del día de hoy.
+                  </p>
+
+                  <table className="w-full border-collapse text-[11px] text-left">
+                    <thead>
+                      <tr className="bg-slate-100 text-slate-700 font-black uppercase">
+                        <th className="p-2">Código</th>
+                        <th className="p-2">Proceso</th>
+                        <th className="p-2">Organismo</th>
+                        <th className="p-2">Monto CLP</th>
+                        <th className="p-2">Precio Sugerido AI</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {companyFilteredOps.slice(0, 5).map(op => (
+                        <tr key={op.codigo}>
+                          <td className="p-2 font-mono font-bold text-indigo-600">{op.codigo}</td>
+                          <td className="p-2 font-semibold">{op.titulo}</td>
+                          <td className="p-2 text-slate-600">{op.organismo}</td>
+                          <td className="p-2 font-bold">${op.monto.toLocaleString('es-CL')}</td>
+                          <td className="p-2 font-bold text-emerald-600">${Math.round(op.monto * 0.94).toLocaleString('es-CL')}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Actions */}
+            <div className="p-4 bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-3">
+              <button
+                onClick={handleOpenMailClient}
+                className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-2"
+              >
+                <span>✉️ Abrir en mi Cliente de Correo (`mailto:`)</span>
+              </button>
+
+              <button
+                onClick={() => handleExportExcel(selectedCompany)}
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-2"
+              >
+                <span>📥 Descargar Archivo Adjunto .CSV (BidCoop)</span>
+              </button>
+            </div>
           </div>
         </div>
       )}
