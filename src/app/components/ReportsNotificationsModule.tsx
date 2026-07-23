@@ -186,33 +186,30 @@ export default function ReportsNotificationsModule({
     };
   };
 
-  const handleSendWhatsappTest = (targetPhone: string = '56977222179') => {
-    const today = new Date().toISOString().split('T')[0];
-    const totalOps = companyFilteredOps.length;
-    const totalMonto = companyFilteredOps.reduce((acc, curr) => acc + curr.monto, 0);
+  const [sendingWhatsapp, setSendingWhatsapp] = useState<boolean>(false);
 
-    let message = `🚨 *BidCoop Alerta Diaria 08:00 AM* 🇨🇱\n\n`;
-    message += `Hola *Jonathan Cooper*, aquí tienes la actualización de *Compras Ágiles activas* para *${selectedCompany}* (${today}):\n\n`;
-    message += `📊 *Resumen Ejecutivo*:\n`;
-    message += `• Compras Ágiles Activas: *${totalOps} procesos*\n`;
-    message += `• Presupuesto Total: *$${totalMonto.toLocaleString('es-CL')} CLP*\n\n`;
-    message += `📋 *Procesos Destacados*:\n`;
+  const handleSendWhatsappTest = async (targetPhone: string = '56977222179') => {
+    try {
+      setSendingWhatsapp(true);
+      const res = await fetch('/api/send-whatsapp-report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          phone: targetPhone,
+          empresa: selectedCompany,
+          oportunidades: companyFilteredOps
+        })
+      });
 
-    companyFilteredOps.slice(0, 5).forEach((op, i) => {
-      const winPrice = Math.round(op.monto * 0.94);
-      message += `${i + 1}. *[${op.codigo}]* ${op.titulo.slice(0, 40)}...\n   🏛️ ${op.organismo}\n   💰 Presupuesto: $${op.monto.toLocaleString('es-CL')} CLP\n   🎯 Precio Sugerido AI: $${winPrice.toLocaleString('es-CL')} CLP\n   ⏰ Cierre: ${op.fechaCierre}\n\n`;
-    });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error enviando WhatsApp Push');
 
-    message += `💡 *Nota Win-Rate AI*: Cotizar al 94% para asegurar la adjudicación.\n\n`;
-    message += `🔗 Ver reporte completo: https://bidcoop.vercel.app\n`;
-    message += `_Plataforma Avanzada de Abastecimiento BidCoop © 2026_`;
-
-    const encodedText = encodeURIComponent(message);
-    const cleanPhone = targetPhone.replace(/[^0-9]/g, '');
-    window.open(`https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodedText}`, '_blank');
-    
-    setReportSuccessMsg(`¡Abriendo WhatsApp para enviar alerta de prueba a +56 9 7722 2179!`);
-    setTimeout(() => setReportSuccessMsg(null), 5000);
+      setReportSuccessMsg(`¡${data.pushStatus}! Remitente: ${data.sender} ➔ Destino: ${data.destination}`);
+    } catch (err: any) {
+      alert(`Error en Push WhatsApp: ${err.message}`);
+    } finally {
+      setSendingWhatsapp(false);
+    }
   };
 
   return (
@@ -240,10 +237,23 @@ export default function ReportsNotificationsModule({
         <div className="flex flex-wrap items-center gap-3">
           <button
             onClick={() => handleSendWhatsappTest('56977222179')}
-            className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95 cursor-pointer"
+            disabled={sendingWhatsapp}
+            className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95 cursor-pointer"
           >
-            <span>📱</span>
-            Probar Alerta WhatsApp (+56 9 7722 2179)
+            {sendingWhatsapp ? (
+              <>
+                <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                </svg>
+                Enviando Push a +56 9 7722 2179...
+              </>
+            ) : (
+              <>
+                <span>📱</span>
+                Disparar Push WhatsApp (+56 9 7722 2179)
+              </>
+            )}
           </button>
 
           <button
