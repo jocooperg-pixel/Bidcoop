@@ -25,7 +25,7 @@ export default function ReportsNotificationsModule({
   const [reportSuccessMsg, setReportSuccessMsg] = useState<string | null>(null);
   const [showEmailPreviewModal, setShowEmailPreviewModal] = useState<boolean>(false);
   const [sendingEmail, setSendingEmail] = useState<boolean>(false);
-  const [userResendKey, setUserResendKey] = useState<string>('');
+  const [userResendKey, setUserResendKey] = useState<string>('re_F8gv1ia4_4zJMuvRaGcipc8bGPuuRVxYF');
   const [userSmtpUser, setUserSmtpUser] = useState<string>('');
   const [userSmtpPass, setUserSmtpPass] = useState<string>('');
   const [userTwilioSid, setUserTwilioSid] = useState<string>('');
