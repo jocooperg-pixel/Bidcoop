@@ -18,6 +18,7 @@ export default function ReportsNotificationsModule({
   const [autoEmailEnabled, setAutoEmailEnabled] = useState<boolean>(true);
   const [whatsappPushEnabled, setWhatsappPushEnabled] = useState<boolean>(true);
   const [recipientEmails, setRecipientEmails] = useState<string>('jocooperg@gmail.com');
+  const [recipientPhones, setRecipientPhones] = useState<string>('+56977222179');
   const [filterRubro, setFilterRubro] = useState<string>('Todos');
   const [activeTab, setActiveTab] = useState<'reportes' | 'correos' | 'winrate' | 'configuracion'>('reportes');
   const [copiedEmailIndex, setCopiedEmailIndex] = useState<number | null>(null);
@@ -188,14 +189,15 @@ export default function ReportsNotificationsModule({
 
   const [sendingWhatsapp, setSendingWhatsapp] = useState<boolean>(false);
 
-  const handleSendWhatsappTest = async (targetPhone: string = '56977222179') => {
+  const handleSendWhatsappTest = async (targetPhone?: string) => {
     try {
       setSendingWhatsapp(true);
+      const activePhones = targetPhone || recipientPhones || '56977222179';
       const res = await fetch('/api/send-whatsapp-report', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          phone: targetPhone,
+          phone: activePhones,
           empresa: selectedCompany,
           oportunidades: companyFilteredOps
         })
@@ -690,7 +692,7 @@ export default function ReportsNotificationsModule({
             <span>⚙️ Parámetros de Programación de Envíos Diarios</span>
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
             {/* Hour Selector */}
             <div className="space-y-2">
               <label className="font-extrabold text-slate-700 dark:text-slate-300 block">
@@ -703,14 +705,28 @@ export default function ReportsNotificationsModule({
                 className="w-full bg-slate-100 dark:bg-slate-700 font-mono font-bold text-sm text-slate-900 dark:text-white px-4 py-2.5 rounded-xl border-none focus:ring-2 focus:ring-indigo-500"
               />
               <p className="text-slate-500 text-[11px]">
-                Hora recomendada: 08:00 AM (Zona horaria Chile continental GMT-4).
+                Hora recomendada: 08:00 AM (Chile GMT-4).
               </p>
             </div>
 
-            {/* Recipients */}
+            {/* WhatsApp Recipients */}
             <div className="space-y-2">
               <label className="font-extrabold text-slate-700 dark:text-slate-300 block">
-                Lista de Correos de Destino (Vendedores y Jefes de Venta)
+                📱 Números WhatsApp Push de Destino (Separados por coma)
+              </label>
+              <textarea
+                rows={3}
+                placeholder="+56977222179, +56912345678"
+                value={recipientPhones}
+                onChange={(e) => setRecipientPhones(e.target.value)}
+                className="w-full bg-slate-100 dark:bg-slate-700 font-mono text-xs text-slate-900 dark:text-white p-3 rounded-xl border-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
+
+            {/* Email Recipients */}
+            <div className="space-y-2">
+              <label className="font-extrabold text-slate-700 dark:text-slate-300 block">
+                ✉️ Lista de Correos de Destino (Vendedores y Jefes de Venta)
               </label>
               <textarea
                 rows={3}

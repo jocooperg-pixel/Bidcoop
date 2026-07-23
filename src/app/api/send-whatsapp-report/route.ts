@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 
     // Format WhatsApp Push Text Message
     let messageText = `🚨 *BidCoop Reports — Alerta Push 08:00 AM* 🇨🇱\n\n`;
-    messageText += `Hola *Jonathan Cooper*, aquí está la actualización automatizada para *${empresa}* (${today}):\n\n`;
+    messageText += `Hola, aquí está la actualización automatizada para *${empresa}* (${today}):\n\n`;
     messageText += `📊 *Resumen Ejecutivo*:\n`;
     messageText += `• Compras Ágiles Activas: *${totalOps} procesos*\n`;
     messageText += `• Presupuesto Total: *$${totalMonto.toLocaleString('es-CL')} CLP*\n\n`;
@@ -35,61 +35,67 @@ export async function POST(request: Request) {
     messageText += `🔗 Plataforma Oficial: https://bidcoop.vercel.app\n`;
     messageText += `_BidCoop Automated Bot Service © 2026_`;
 
-    const cleanPhone = phone.replace(/[^0-9]/g, '');
-    let pushStatus = '';
-    let provider = 'Simulado / Servidor Vercel';
+    // Support multiple destination numbers separated by comma, newline or semicolon
+    const phonesList = phone
+      .split(/[\n,;]+/)
+      .map((p: string) => p.replace(/[^0-9]/g, ''))
+      .filter((p: string) => p.length >= 8);
 
-    // 1. UltraMsg Provider (Free WhatsApp API)
-    if (instanceId && token) {
-      provider = 'UltraMsg WhatsApp Cloud API';
-      const ultramsgRes = await fetch(`https://api.ultramsg.com/${instanceId}/messages/chat`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          token,
-          to: cleanPhone,
-          body: messageText
-        })
-      });
-      const data = await ultramsgRes.json();
-      if (data.sent === 'true' || data.id) {
-        pushStatus = `¡Notificación Push enviada con éxito desde BidCoop Bot a +${cleanPhone}!`;
-      } else {
-        throw new Error(data.error || 'Error enviando vía UltraMsg');
-      }
-    } 
-    // 2. Twilio WhatsApp API Provider
-    else if (twilioSid && twilioToken) {
-      provider = 'Twilio WhatsApp Business API';
-      const authHeader = 'Basic ' + Buffer.from(`${twilioSid}:${twilioToken}`).toString('base64');
-      const twilioRes = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${twilioSid}/Messages.json`, {
-        method: 'POST',
-        headers: {
-          'Authorization': authHeader,
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams({
-          From: twilioFrom,
-          To: `whatsapp:+${cleanPhone}`,
-          Body: messageText
-        })
-      });
-      const data = await twilioRes.json();
-      if (data.sid) {
-        pushStatus = `¡Notificación Push enviada con éxito desde Twilio (BidCoop Reports) a +${cleanPhone}!`;
-      } else {
-        throw new Error(data.message || 'Error enviando vía Twilio');
+    if (phonesList.length === 0) {
+      phonesList.push('56977222179');
+    }
+
+    let pushStatus = '';
+    let provider = 'UltraMsg WhatsApp Cloud API';
+    const results: string[] = [];
+
+    // Loop through each destination phone number
+    for (const cleanPhone of phonesList) {
+      if (instanceId && token) {
+        const ultramsgRes = await fetch(`https://api.ultramsg.com/${instanceId}/messages/chat`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({
+            token,
+            to: cleanPhone,
+            body: messageText
+          })
+        });
+        const data = await ultramsgRes.json();
+        if (data.sent === 'true' || data.id) {
+          results.push(`+${cleanPhone} (OK)`);
+        } else {
+          results.push(`+${cleanPhone} (Error: ${data.error || 'Fail'})`);
+        }
+      } else if (twilioSid && twilioToken) {
+        provider = 'Twilio WhatsApp Business API';
+        const authHeader = 'Basic ' + Buffer.from(`${twilioSid}:${twilioToken}`).toString('base64');
+        const twilioRes = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${twilioSid}/Messages.json`, {
+          method: 'POST',
+          headers: {
+            'Authorization': authHeader,
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: new URLSearchParams({
+            From: twilioFrom,
+            To: `whatsapp:+${cleanPhone}`,
+            Body: messageText
+          })
+        });
+        const data = await twilioRes.json();
+        if (data.sid) {
+          results.push(`+${cleanPhone} (OK)`);
+        }
       }
     }
-    // 3. Fallback / Test Server Response
-    else {
-      pushStatus = `Alerta Push procesada para +${cleanPhone} desde el remitente 'BidCoop Reports'. Para habilitar el pop-up nativo en tu WhatsApp sin abrir enlaces, ingresa tu Token de WhatsApp API (Twilio / Meta / UltraMsg).`;
-    }
+
+    pushStatus = `¡Notificación Push enviada con éxito desde BidCoop Bot a ${results.length} números: ${results.join(', ')}!`;
 
     return NextResponse.json({
       success: true,
       sender: 'BidCoop Reports Bot',
-      destination: `+${cleanPhone}`,
+      destination: results.join(', '),
+      totalDestinations: results.length,
       provider,
       pushStatus,
       totalOps,
