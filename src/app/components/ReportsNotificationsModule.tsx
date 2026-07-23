@@ -692,7 +692,7 @@ export default function ReportsNotificationsModule({
             <div className="flex items-center justify-between">
               <div>
                 <div className="font-bold text-slate-800 dark:text-slate-200">Alertas Push vía WhatsApp / Telegram (8:00 AM)</div>
-                <div className="text-slate-500 text-[11px]">Envía un resumen ejecutivo rápido directamente a los teléfonos del equipo de ventas.</div>
+                <div className="text-slate-500 text-[11px]">Envía un resumen ejecutivo rápido a <strong className="text-indigo-600 dark:text-indigo-400 font-mono">+56 9 7722 2179 (Jonathan Cooper)</strong> y al equipo de ventas.</div>
               </div>
               <input
                 type="checkbox"

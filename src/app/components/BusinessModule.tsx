@@ -755,7 +755,7 @@ export default function BusinessModule({
                   <span className="text-2xl">📱</span>
                   <div>
                     <h4 className="text-xs font-black text-slate-900 dark:text-white">Canal WhatsApp Business</h4>
-                    <p className="text-[11px] text-slate-500 font-medium mt-0.5">Destino: +56 9 8492 1020 (Jonathan Cooper)</p>
+                    <p className="text-[11px] text-slate-500 font-semibold mt-0.5">Destino: <span className="font-mono text-indigo-600 dark:text-indigo-400 font-extrabold">+56 9 7722 2179</span> (Jonathan Cooper)</p>
                   </div>
                 </div>
                 <button
