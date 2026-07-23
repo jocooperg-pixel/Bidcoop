@@ -127,6 +127,32 @@ export default function ReportsNotificationsModule({
     };
   };
 
+  const [sendingEmail, setSendingEmail] = useState<boolean>(false);
+
+  const handleSendTestEmail = async (targetEmail: string = 'jocooperg@gmail.com') => {
+    try {
+      setSendingEmail(true);
+      const res = await fetch('/api/send-email-report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: targetEmail,
+          empresa: selectedCompany,
+          oportunidades: companyFilteredOps
+        })
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error enviando el correo');
+
+      setReportSuccessMsg(`¡Prueba enviada con éxito a ${targetEmail}! Adjunto: ${data.filename} (${data.totalOps} Compras Ágiles)`);
+    } catch (err: any) {
+      alert(`Error enviando correo: ${err.message}`);
+    } finally {
+      setSendingEmail(false);
+    }
+  };
+
   return (
     <div className={`p-6 space-y-6 ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'} min-h-screen`}>
       {/* HEADER BAR */}
@@ -150,6 +176,29 @@ export default function ReportsNotificationsModule({
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-3">
+          <button
+            onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
+            disabled={sendingEmail}
+            className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95 cursor-pointer"
+          >
+            {sendingEmail ? (
+              <>
+                <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                </svg>
+                Enviando a jocooperg@gmail.com...
+              </>
+            ) : (
+              <>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Enviar Prueba a jocooperg@gmail.com ✉️
+              </>
+            )}
+          </button>
+
           <button
             onClick={() => handleExportExcel(selectedCompany)}
             className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95"
