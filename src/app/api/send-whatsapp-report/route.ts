@@ -15,24 +15,47 @@ export async function POST(request: Request) {
     } = body;
 
     const today = new Date().toISOString().split('T')[0];
-    const totalOps = oportunidades.length;
-    const totalMonto = oportunidades.reduce((acc: number, curr: any) => acc + (curr.monto || 0), 0);
+    
+    // Filter active published opportunities
+    const activeOps = oportunidades.filter((op: any) => {
+      const matchCompany = empresa === 'Consolidado Holding' || empresa === 'Todas' || op.empresaMatch === empresa;
+      const matchEstado = op.estado === 'Publicada' || !op.estado;
+      return matchCompany && matchEstado;
+    });
+
+    const totalOps = activeOps.length;
+    const totalMonto = activeOps.reduce((acc: number, curr: any) => acc + (curr.monto || 0), 0);
+
+    // Group active opportunities by Rubro
+    const opsByRubro: Record<string, any[]> = {};
+    activeOps.forEach((op: any) => {
+      const rubroName = op.rubro || 'Aseo e Higiene';
+      if (!opsByRubro[rubroName]) opsByRubro[rubroName] = [];
+      opsByRubro[rubroName].push(op);
+    });
 
     // Format WhatsApp Push Text Message
     let messageText = `🚨 *BidCoop Reports — Alerta Push 08:00 AM* 🇨🇱\n\n`;
-    messageText += `Hola, aquí está la actualización automatizada para *${empresa}* (${today}):\n\n`;
+    messageText += `Hola, aquí está el consolidado de *Compras Ágiles Vigentes por Rubro* para *${empresa}* (${today}):\n\n`;
     messageText += `📊 *Resumen Ejecutivo*:\n`;
-    messageText += `• Compras Ágiles Activas: *${totalOps} procesos*\n`;
+    messageText += `• Total Procesos Vigentes: *${totalOps} Compras Ágiles*\n`;
     messageText += `• Presupuesto Total: *$${totalMonto.toLocaleString('es-CL')} CLP*\n\n`;
-    messageText += `📋 *Top Compras Ágiles Destacadas*:\n`;
 
-    oportunidades.slice(0, 5).forEach((op: any, idx: number) => {
-      const winPrice = Math.round((op.monto || 0) * 0.94);
-      messageText += `${idx + 1}. *[${op.codigo}]* ${(op.titulo || '').slice(0, 45)}...\n   🏛️ ${op.organismo}\n   💰 Presupuesto: $${(op.monto || 0).toLocaleString('es-CL')} CLP\n   🎯 Precio Sugerido AI: $${winPrice.toLocaleString('es-CL')} CLP\n   ⏰ Cierre: ${op.fechaCierre}\n\n`;
+    // Grouped details by Rubro
+    Object.keys(opsByRubro).forEach((rubro) => {
+      const ops = opsByRubro[rubro];
+      const rubroTotal = ops.reduce((acc, curr) => acc + (curr.monto || 0), 0);
+      messageText += `📂 *RUBRO: ${rubro.toUpperCase()}* (${ops.length} procesos - $${rubroTotal.toLocaleString('es-CL')} CLP):\n`;
+
+      ops.slice(0, 3).forEach((op: any, idx: number) => {
+        const winPrice = Math.round((op.monto || 0) * 0.94);
+        messageText += ` ${idx + 1}. *[${op.codigo}]* ${(op.titulo || '').slice(0, 40)}...\n    🏛️ ${op.organismo}\n    💰 Presupuesto: $${(op.monto || 0).toLocaleString('es-CL')} CLP\n    🎯 Precio AI: $${winPrice.toLocaleString('es-CL')} CLP | Cierre: ${op.fechaCierre}\n`;
+      });
+      messageText += `\n`;
     });
 
-    messageText += `💡 *Win-Rate AI*: Se recomienda ofertar al 94% para maximizar adjudicación.\n\n`;
-    messageText += `🔗 Plataforma Oficial: https://bidcoop.vercel.app\n`;
+    messageText += `💡 *Win-Rate AI*: Ofertar al 94% del presupuesto estimado para maximizar adjudicación.\n\n`;
+    messageText += `🔗 Descarga el reporte Excel completo en: https://bidcoop.vercel.app\n`;
     messageText += `_BidCoop Automated Bot Service © 2026_`;
 
     // Support multiple destination numbers separated by comma, newline or semicolon
@@ -94,7 +117,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       success: true,
-      sender: 'BidCoop Reports Bot (Twilio Cloud)',
+      sender: 'BidCoop Reports Bot',
       destination: results.join(', '),
       totalDestinations: results.length,
       provider,
