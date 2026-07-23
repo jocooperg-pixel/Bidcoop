@@ -186,6 +186,35 @@ export default function ReportsNotificationsModule({
     };
   };
 
+  const handleSendWhatsappTest = (targetPhone: string = '56977222179') => {
+    const today = new Date().toISOString().split('T')[0];
+    const totalOps = companyFilteredOps.length;
+    const totalMonto = companyFilteredOps.reduce((acc, curr) => acc + curr.monto, 0);
+
+    let message = `🚨 *BidCoop Alerta Diaria 08:00 AM* 🇨🇱\n\n`;
+    message += `Hola *Jonathan Cooper*, aquí tienes la actualización de *Compras Ágiles activas* para *${selectedCompany}* (${today}):\n\n`;
+    message += `📊 *Resumen Ejecutivo*:\n`;
+    message += `• Compras Ágiles Activas: *${totalOps} procesos*\n`;
+    message += `• Presupuesto Total: *$${totalMonto.toLocaleString('es-CL')} CLP*\n\n`;
+    message += `📋 *Procesos Destacados*:\n`;
+
+    companyFilteredOps.slice(0, 5).forEach((op, i) => {
+      const winPrice = Math.round(op.monto * 0.94);
+      message += `${i + 1}. *[${op.codigo}]* ${op.titulo.slice(0, 40)}...\n   🏛️ ${op.organismo}\n   💰 Presupuesto: $${op.monto.toLocaleString('es-CL')} CLP\n   🎯 Precio Sugerido AI: $${winPrice.toLocaleString('es-CL')} CLP\n   ⏰ Cierre: ${op.fechaCierre}\n\n`;
+    });
+
+    message += `💡 *Nota Win-Rate AI*: Cotizar al 94% para asegurar la adjudicación.\n\n`;
+    message += `🔗 Ver reporte completo: https://bidcoop.vercel.app\n`;
+    message += `_Plataforma Avanzada de Abastecimiento BidCoop © 2026_`;
+
+    const encodedText = encodeURIComponent(message);
+    const cleanPhone = targetPhone.replace(/[^0-9]/g, '');
+    window.open(`https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodedText}`, '_blank');
+    
+    setReportSuccessMsg(`¡Abriendo WhatsApp para enviar alerta de prueba a +56 9 7722 2179!`);
+    setTimeout(() => setReportSuccessMsg(null), 5000);
+  };
+
   return (
     <div className={`p-6 space-y-6 ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'} min-h-screen`}>
       {/* HEADER BAR */}
@@ -209,6 +238,14 @@ export default function ReportsNotificationsModule({
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-3">
+          <button
+            onClick={() => handleSendWhatsappTest('56977222179')}
+            className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95 cursor-pointer"
+          >
+            <span>📱</span>
+            Probar Alerta WhatsApp (+56 9 7722 2179)
+          </button>
+
           <button
             onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
             disabled={sendingEmail}
