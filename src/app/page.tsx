@@ -283,8 +283,8 @@ export default function Home() {
 
   const handleSyncRealTime = async (silent = false) => {
     try {
-      // Query ALL active licitaciones (estado=activas returns 4000+ results)
-      const res = await fetch('/api/mercadopublico');
+      // Query ALL active licitaciones with force refresh to clear cache
+      const res = await fetch('/api/mercadopublico?refresh=true&force=true');
       if (!res.ok) throw new Error('Error al conectar con la API de Mercado Público');
       const data = await res.json();
       
@@ -332,19 +332,21 @@ export default function Home() {
         if (!isAseo && !isEscritorio) continue;
 
         const code = item.CodigoExterno || '';
-        const companyMatch = isAseo ? 'Inder-Roll' : 'Aminorte';
+        const companyMatch = item.EmpresaMatch || (isAseo ? 'Inder-Roll' : 'Aminorte');
         const finalRubro = isAseo ? 'Aseo e Higiene' : 'Artículos de Escritorio y Oficina';
 
-        // Determine modality using the API Tipo field + code suffix
+        // Determine modality using item.Modalidad or API Tipo field + code suffix
         const tipo = (item.Tipo || '').toUpperCase();
         const codeUpper = code.toUpperCase();
         const titleLower = (item.Nombre || '').toLowerCase();
-        let modality: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras' = 'Licitación';
+        let modality: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras' = item.Modalidad || 'Licitación';
         
-        if (tipo === 'CO' || codeUpper.includes('-CO')) {
-          modality = 'Compra Ágil';
-        } else if (codeUpper.includes('-CM') || titleLower.includes('convenio marco') || titleLower.includes('grande compra') || titleLower.includes('intencion de compra')) {
-          modality = (item.MontoEstimado && item.MontoEstimado > 65000000) || titleLower.includes('grande compra') ? 'Grandes Compras' : 'Convenio Marco';
+        if (!item.Modalidad) {
+          if (tipo === 'CO' || codeUpper.includes('-CO') || codeUpper.includes('COT')) {
+            modality = 'Compra Ágil';
+          } else if (codeUpper.includes('-CM') || titleLower.includes('convenio marco') || titleLower.includes('grande compra') || titleLower.includes('intencion de compra')) {
+            modality = (item.MontoEstimado && item.MontoEstimado > 65000000) || titleLower.includes('grande compra') ? 'Grandes Compras' : 'Convenio Marco';
+          }
         }
 
         // Get real amount from API
@@ -407,7 +409,7 @@ export default function Home() {
             sku: `ITEM-${it.Correlativo || idx + 1}`,
             producto: it.Descripcion || it.NombreProducto || 'Producto',
             cantidad: it.Cantidad || 1,
-            precioUnitario: 0
+            precioUnitario: it.PrecioUnitario || 0
           })) || [
             { sku: 'ITEM-GEN', producto: item.Nombre || finalRubro, cantidad: 1, precioUnitario: monto }
           ],
@@ -425,9 +427,10 @@ export default function Home() {
 
       // Merge and update opportunities, keeping all static mock data and previous syncs
       setOportunidades(prev => {
+        const mockMap = new Map(mockOportunidades.map(op => [op.codigo, op]));
         const existingApiCodes = new Set(mappedList.map(o => o.codigo));
-        // Retain previous opportunities that do not have the same code as the fresh sync items
         const previousOps = prev.filter(o => !existingApiCodes.has(o.codigo));
+        const missingMock = mockOportunidades.filter(m => !existingApiCodes.has(m.codigo) && !previousOps.some(p => p.codigo === m.codigo));
         
         const d = new Date();
         const year = d.getFullYear();
@@ -435,8 +438,22 @@ export default function Home() {
         const day = String(d.getDate()).padStart(2, '0');
         const todayStr = `${year}-${month}-${day}`;
         
-        const merged = [...mappedList, ...previousOps];
+        const merged = [...mappedList, ...previousOps, ...missingMock];
         return merged.map(o => {
+          const staticMatch = mockMap.get(o.codigo);
+          if (staticMatch) {
+            return {
+              ...o,
+              empresaMatch: staticMatch.empresaMatch || o.empresaMatch,
+              modalidad: staticMatch.modalidad || o.modalidad,
+              rubro: staticMatch.rubro || o.rubro,
+              items: staticMatch.items && staticMatch.items.length > 0 ? staticMatch.items : o.items,
+              monto: staticMatch.monto || o.monto,
+              organismo: staticMatch.organismo || o.organismo,
+              region: staticMatch.region || o.region,
+              documentos: staticMatch.documentos && staticMatch.documentos.length > 0 ? staticMatch.documentos : o.documentos
+            };
+          }
           if (o.estado === 'Publicada' && o.fechaCierre && o.fechaCierre < todayStr) {
             return { ...o, estado: 'Cerrada' };
           }

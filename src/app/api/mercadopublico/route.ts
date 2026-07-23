@@ -177,36 +177,36 @@ export async function GET(request: Request) {
       return isCo || matchesKw;
     });
 
-    // If live API returns no candidate items (due to rate limit or API downtime), augment with local mockOportunidades
-    if (candidates.length === 0 && mockOportunidades.length > 0) {
-      const mappedMock = mockOportunidades.slice(0, 50).map(op => ({
-        CodigoExterno: op.codigo,
-        Nombre: op.titulo,
-        Estado: op.estado || 'Publicada',
-        CodigoEstado: 5,
-        FechaCierre: op.fechaCierre ? `${op.fechaCierre}T15:00:00` : '2026-07-28T15:00:00',
-        FechaPublicacion: op.fechaPublicacion ? `${op.fechaPublicacion}T09:00:00` : '2026-07-22T09:00:00',
-        Descripcion: op.descripcion,
-        MontoEstimado: op.monto,
-        Rubro: op.rubro,
-        Comprador: { NombreOrganismo: op.organismo }
-      }));
+    // Convert all mockOportunidades into API-compatible objects so that all static opportunities (including the 48 new Compras Ágiles) are always present
+    const mappedMock = mockOportunidades.map(op => ({
+      CodigoExterno: op.codigo,
+      Nombre: op.titulo,
+      Estado: op.estado || 'Publicada',
+      CodigoEstado: 5,
+      FechaCierre: op.fechaCierre ? `${op.fechaCierre}T15:00:00` : '2026-07-28T15:00:00',
+      FechaPublicacion: op.fechaPublicacion ? `${op.fechaPublicacion}T09:00:00` : '2026-07-22T09:00:00',
+      Descripcion: op.descripcion,
+      MontoEstimado: op.monto,
+      Rubro: op.rubro,
+      EmpresaMatch: op.empresaMatch,
+      Modalidad: op.modalidad,
+      Items: { Listado: (op.items || []).map(it => ({ Correlativo: 1, Descripcion: it.producto, Cantidad: it.cantidad, PrecioUnitario: it.precioUnitario })) },
+      Comprador: { NombreOrganismo: op.organismo, RutUnidad: op.organismoRut, RegionUnidad: op.region }
+    }));
 
-      totalFromApi = mockOportunidades.length;
-      candidates = mappedMock;
-    }
+    const existingMockCodes = new Set(mappedMock.map(m => m.CodigoExterno));
+    const newApiCandidates = candidates.filter(item => item.CodigoExterno && !existingMockCodes.has(item.CodigoExterno));
 
-    candidates.sort((a, b) => {
+    const combinedList = [...mappedMock, ...newApiCandidates];
+
+    combinedList.sort((a, b) => {
       const dateA = a.FechaCierre ? new Date(a.FechaCierre).getTime() : Infinity;
       const dateB = b.FechaCierre ? new Date(b.FechaCierre).getTime() : Infinity;
       return dateA - dateB;
     });
 
-    const LIMIT = 30;
-    const candidatesToFetch = candidates.slice(0, LIMIT);
-
     const enrichedMap = new Map<string, any>();
-    for (const item of candidatesToFetch) {
+    for (const item of combinedList) {
       enrichedMap.set(item.CodigoExterno, {
         CodigoExterno: item.CodigoExterno,
         Nombre: item.Nombre,
@@ -217,7 +217,9 @@ export async function GET(request: Request) {
         Descripcion: item.Descripcion || '',
         MontoEstimado: item.MontoEstimado || null,
         Rubro: item.Rubro || 'Artículos de Escritorio y Oficina',
-        Items: { Listado: [] },
+        EmpresaMatch: item.EmpresaMatch,
+        Modalidad: item.Modalidad,
+        Items: item.Items || { Listado: [] },
         Fechas: { FechaPublicacion: item.FechaPublicacion || new Date().toISOString(), FechaCierre: item.FechaCierre },
         Comprador: item.Comprador || { NombreOrganismo: 'Organismo Público' }
       });
@@ -231,7 +233,7 @@ export async function GET(request: Request) {
         totalFromApi,
         candidatesFiltered: candidates.length,
         totalReturned: finalEnrichedList.length,
-        source: 'Mercado Público API + Local Fallback Sync',
+        source: 'Mercado Público API + Full Local Sync',
         timestamp: new Date().toISOString()
       }
     };
