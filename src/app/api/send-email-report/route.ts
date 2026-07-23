@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       smtpPort = 465
     } = body;
 
-    const activeResendKey = (apiKey && apiKey.trim()) || process.env.RESEND_API_KEY;
+    const activeResendKey = (apiKey && apiKey.trim()) || process.env.RESEND_API_KEY || 're_ZD3GD3bZ_KNXLZSyLWoARVjmhStY2hjSu';
     const today = new Date().toISOString().split('T')[0];
     const companyClean = empresa === 'Todas' ? 'Consolidado_Holding' : empresa.replace(/\s+/g, '_');
     const filename = `BidCoop_Reporte_Diario_Compras_Agiles_${companyClean}_${today}.csv`;
