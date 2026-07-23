@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       smtpPort = 465
     } = body;
 
-    const activeResendKey = apiKey || process.env.RESEND_API_KEY || 're_F8gv1ia4_4zJMuvRaGcipc8bGPuuRVxYF';
+    const activeResendKey = (apiKey && apiKey.trim()) || process.env.RESEND_API_KEY;
     const today = new Date().toISOString().split('T')[0];
     const companyClean = empresa === 'Todas' ? 'Consolidado_Holding' : empresa.replace(/\s+/g, '_');
     const filename = `BidCoop_Reporte_Diario_Compras_Agiles_${companyClean}_${today}.csv`;
@@ -98,22 +98,8 @@ export async function POST(request: Request) {
                   BidCoop Reporte Oficial 08:00 AM
                 </div>
                 <h1 style="margin: 0; font-size: 24px; font-weight: 900; color: #ffffff;">BidCoop — Tu Plataforma en Mercado Público</h1>
-                <p style="margin: 6px 0 0 0; font-size: 13px; color: #5eead4;">
-                  Segmento: <strong>${empresa === 'Todas' ? 'Consolidado Holding (Inder-Roll / Aminorte / V-MOCCS)' : empresa}</strong> | Fecha: ${today}
-                </p>
+                <p style="margin: 6px 0 0 0; font-size: 13px; color: #93c5fd;">Resumen Automatizado de Compras Ágiles para ${empresa}</p>
               </div>
-            </div>
-          </div>
-
-          <!-- Summary Bar -->
-          <div style="background: #f1f5f9; padding: 20px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-around;">
-            <div style="text-align: center;">
-              <span style="font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase;">Compras Ágiles Activas</span>
-              <div style="font-size: 24px; font-weight: 900; color: #1e1b4b;">${totalOps}</div>
-            </div>
-            <div style="text-align: center;">
-              <span style="font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase;">Presupuesto Total CLP</span>
-              <div style="font-size: 24px; font-weight: 900; color: #059669;">$${totalMonto.toLocaleString('es-CL')} CLP</div>
             </div>
           </div>
 
@@ -178,7 +164,7 @@ export async function POST(request: Request) {
       });
 
       if (data.error) {
-        throw new Error(`Resend Error: ${data.error.message}`);
+        throw new Error(`Resend API Error: ${data.error.message}. Por favor verifica que tu cuenta en Resend.com haya confirmado el correo o genera una nueva API key en resend.com/api-keys.`);
       }
 
       emailStatus = `¡Correo entregado con éxito a ${email} vía Resend API! (ID: ${data.data?.id})`;
@@ -222,7 +208,7 @@ export async function POST(request: Request) {
         filename,
         totalOps,
         totalMonto,
-        message: 'Para enviar correos reales a Gmail se requiere ingresar una Resend API Key o credenciales SMTP de Gmail/Outlook.',
+        message: 'Por favor ingresa una Resend API Key válida de resend.com/api-keys para realizar el envío de correo.',
         timestamp: new Date().toISOString()
       }, { status: 400 });
     }
