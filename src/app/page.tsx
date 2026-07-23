@@ -753,6 +753,7 @@ export default function Home() {
               activeSubSection={activeSubSection}
               oportunidades={filteredOportunidades}
               postulaciones={filteredPostulaciones}
+              onNavigateView={handleNavigateView}
             />
           )}
 

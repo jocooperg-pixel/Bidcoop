@@ -9,6 +9,7 @@ interface AnalyticsModuleProps {
   activeSubSection: string;
   oportunidades: Oportunidad[];
   postulaciones: Postulacion[];
+  onNavigateView?: (module: string, subSection: string) => void;
 }
 
 const COLORS = ['#2563EB', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6'];
@@ -16,7 +17,8 @@ const COLORS = ['#2563EB', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6'];
 export default function AnalyticsModule({
   activeSubSection,
   oportunidades,
-  postulaciones
+  postulaciones,
+  onNavigateView
 }: AnalyticsModuleProps) {
   const [currentTab, setCurrentTab] = useState(activeSubSection || 'inteligencia-mercado');
 
@@ -52,8 +54,9 @@ export default function AnalyticsModule({
   // Team Leaderboard performance
   const teamLeaderboard = [
     { name: 'Jonathan Cooper', postuladas: 8, ganadas: 4, efectividad: 50 },
-    { name: 'María Leonor Orellana', postuladas: 12, ganadas: 5, efectividad: 41 },
-    { name: 'Patricio Díaz', postuladas: 4, ganadas: 1, efectividad: 25 }
+    { name: 'Carlos Mendoza', postuladas: 6, ganadas: 3, efectividad: 50 },
+    { name: 'Valentina Silva', postuladas: 5, ganadas: 2, efectividad: 40 },
+    { name: 'Felipe Torres', postuladas: 4, ganadas: 1, efectividad: 25 }
   ];
 
   const handleRawExport = () => {
@@ -74,19 +77,83 @@ export default function AnalyticsModule({
     alert('Reporte bruto de inteligencia comercial descargado.');
   };
 
+  const handleSendWhatsappDirect = async () => {
+    try {
+      const res = await fetch('/api/send-whatsapp-report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          phone: '56977222179',
+          empresa: 'Consolidado Holding',
+          oportunidades
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error enviando WhatsApp');
+      alert(`¡${data.pushStatus}! Remitente: ${data.sender} ➔ Destino: ${data.destination}`);
+    } catch (err: any) {
+      alert(`Error enviando WhatsApp Push: ${err.message}`);
+    }
+  };
+
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       
+      {/* ALERT ACTIONS QUICK BANNER */}
+      <div className="bg-gradient-to-r from-emerald-950 via-slate-900 to-indigo-950 p-4 rounded-2xl border border-emerald-500/30 text-white flex flex-wrap items-center justify-between gap-3 shadow-md">
+        <div className="flex items-center gap-3">
+          <span className="text-2xl">🔔</span>
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-black text-emerald-400 uppercase tracking-wider">Servicio de Alertas Activo</span>
+              <span className="text-[10px] bg-emerald-900/60 text-emerald-200 px-2 py-0.5 rounded-full border border-emerald-700/50">
+                8:00 AM • UltraMsg Bot
+              </span>
+            </div>
+            <p className="text-xs text-slate-300">
+              Notificaciones de Compras Ágiles en tiempo real a <strong className="text-emerald-300 font-mono">+56 9 7722 2179 (Jonathan Cooper)</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <button
+            onClick={handleSendWhatsappDirect}
+            className="bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs px-3.5 py-2 rounded-xl transition shadow-sm cursor-pointer flex items-center gap-1.5"
+          >
+            <span>📱</span>
+            Disparar Push WhatsApp (+56 9 7722 2179)
+          </button>
+
+          {onNavigateView && (
+            <button
+              onClick={() => onNavigateView('analytics', 'reportes-8am')}
+              className="bg-indigo-600 hover:bg-indigo-500 text-white font-black text-xs px-3.5 py-2 rounded-xl transition shadow-sm cursor-pointer flex items-center gap-1.5"
+            >
+              <span>⏰</span>
+              Ver Módulo de Reportes 8 AM
+            </button>
+          )}
+        </div>
+      </div>
+
       {/* TABS CONTROLLER */}
       <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-2">
         <div className="flex items-center gap-1.5">
           {[
             { id: 'inteligencia-mercado', label: 'Inteligencia de Mercado' },
-            { id: 'desempeno-equipo', label: 'Desempeño Comercial Interno' }
+            { id: 'desempeno-equipo', label: 'Desempeño Comercial Interno' },
+            { id: 'reportes-8am', label: '⏰ Reportes y Alertas 8 AM' }
           ].map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setCurrentTab(tab.id)}
+              onClick={() => {
+                if (tab.id === 'reportes-8am' && onNavigateView) {
+                  onNavigateView('analytics', 'reportes-8am');
+                } else {
+                  setCurrentTab(tab.id);
+                }
+              }}
               className={`px-4 py-2 rounded-xl text-xs font-black transition ${
                 currentTab === tab.id
                   ? 'bg-blue-600 text-white shadow-sm shadow-blue-500/10'

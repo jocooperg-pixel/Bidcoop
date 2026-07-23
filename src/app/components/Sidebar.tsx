@@ -67,9 +67,9 @@ export default function Sidebar({
         </svg>
       ),
       subSections: [
+        { id: 'reportes-8am', label: 'Reportes y Alertas 8 AM' },
         { id: 'inteligencia-mercado', label: 'Inteligencia de Mercado' },
-        { id: 'desempeno-equipo', label: 'Desempeño y Reportes' },
-        { id: 'reportes-8am', label: 'Reportes y Alertas 8 AM' }
+        { id: 'desempeno-equipo', label: 'Desempeño y Reportes' }
       ]
     },
     {
