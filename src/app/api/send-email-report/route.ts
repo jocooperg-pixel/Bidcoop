@@ -91,14 +91,18 @@ export async function POST(request: Request) {
         <div style="max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
           
           <!-- Header -->
-          <div style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); padding: 30px; color: #ffffff; text-align: left;">
-            <div style="display: inline-block; background: #4f46e5; color: #ffffff; font-size: 10px; font-weight: 900; padding: 4px 12px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">
-              BidCoop Reporte Oficial 08:00 AM
+          <div style="background: linear-gradient(135deg, #0f2952 0%, #1e1b4b 100%); padding: 30px; color: #ffffff; text-align: left; border-bottom: 4px solid #00bfa5;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <div style="display: inline-block; background: #00bfa5; color: #0f2952; font-size: 10px; font-weight: 900; padding: 4px 12px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">
+                  BidCoop Reporte Oficial 08:00 AM
+                </div>
+                <h1 style="margin: 0; font-size: 24px; font-weight: 900; color: #ffffff;">BidCoop — Tu Plataforma en Mercado Público</h1>
+                <p style="margin: 6px 0 0 0; font-size: 13px; color: #5eead4;">
+                  Segmento: <strong>${empresa === 'Todas' ? 'Consolidado Holding (Inder-Roll / Aminorte / V-MOCCS)' : empresa}</strong> | Fecha: ${today}
+                </p>
+              </div>
             </div>
-            <h1 style="margin: 0; font-size: 22px; font-weight: 900;">Reporte Diario de Compras Ágiles Activas</h1>
-            <p style="margin: 6px 0 0 0; font-size: 13px; color: #c7d2fe;">
-              Segmento: <strong>${empresa === 'Todas' ? 'Consolidado Holding (Inder-Roll / Aminorte / V-MOCCS)' : empresa}</strong> | Fecha: ${today}
-            </p>
           </div>
 
           <!-- Summary Bar -->

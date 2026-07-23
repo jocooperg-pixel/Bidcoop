@@ -86,10 +86,29 @@ export default function Topbar({
   const unreadCount = notifications.filter(n => !n.leida).length;
 
   return (
-    <header className="h-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 flex items-center justify-between z-40 relative">
+    <header className="h-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 flex items-center justify-between z-40 relative shadow-sm">
       
+      {/* BRANDING LOGO & SLOGAN */}
+      <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <img 
+            src="/bidcoop-logo.png" 
+            alt="BidCoop Logo" 
+            className="h-9 w-auto object-contain" 
+          />
+        </div>
+        <div className="hidden xl:block border-l border-slate-200 dark:border-slate-800 pl-4 py-0.5">
+          <span className="text-[10px] font-black tracking-widest uppercase text-teal-600 dark:text-teal-400 block">
+            TU PLATAFORMA EN MERCADO PÚBLICO
+          </span>
+          <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400">
+            Convenios Marco • Compras Ágiles • Licitaciones
+          </span>
+        </div>
+      </div>
+
       {/* GLOBAL SEARCH */}
-      <div ref={searchRef} className="w-1/3 relative">
+      <div ref={searchRef} className="w-1/3 min-w-[280px] relative">
         <form onSubmit={handleSearchSubmit}>
           <div className="relative">
             <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400 dark:text-slate-500">

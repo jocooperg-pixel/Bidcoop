@@ -148,6 +148,41 @@ export default function DashboardModule({
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       
+      {/* BRAND BANNER WITH LOGO */}
+      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 rounded-3xl border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+        <div className="flex items-center gap-5 relative z-10">
+          <div className="bg-white p-3 rounded-2xl shadow-lg border border-slate-700/50 shrink-0">
+            <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="h-12 w-auto object-contain" />
+          </div>
+          <div className="space-y-1">
+            <div className="flex items-center gap-2">
+              <span className="bg-teal-500/20 text-teal-300 border border-teal-500/30 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                Plataforma Oficial B2B
+              </span>
+              <span className="bg-blue-500/20 text-blue-300 border border-blue-500/30 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                Sincronizado con Mercado Público 🇨🇱
+              </span>
+            </div>
+            <h2 className="text-xl font-black tracking-tight text-white">
+              BidCoop — Tu Plataforma en Mercado Público
+            </h2>
+            <p className="text-xs text-slate-300 max-w-xl">
+              Monitoreo inteligente en tiempo real de Convenios Marco, Compras Ágiles y Licitaciones Públicas segmentado por holding.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3 shrink-0 relative z-10">
+          <div className="text-right bg-slate-950/60 p-3 rounded-2xl border border-slate-800/80">
+            <span className="text-[10px] font-extrabold uppercase text-slate-400 block">Status Holding</span>
+            <span className="text-xs font-black text-emerald-400 flex items-center gap-1.5 justify-end">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              3 Empresas Activas
+            </span>
+          </div>
+        </div>
+      </div>
+
       {/* 1. WELCOME SCREEN & DATE PICKER */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>

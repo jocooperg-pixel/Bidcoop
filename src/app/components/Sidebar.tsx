@@ -105,12 +105,12 @@ export default function Sidebar({
   return (
     <aside className="w-[72px] bg-slate-900 border-r border-slate-800 flex flex-col justify-between items-center py-6 shrink-0 relative z-50">
       <div className="flex flex-col items-center gap-10 w-full">
-        {/* LOGO */}
-        <div className="flex flex-col items-center gap-1 group cursor-pointer">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-all">
-            B
+        {/* OFFICIAL BIDCOOP LOGO */}
+        <div className="flex flex-col items-center gap-1 group cursor-pointer" title="BidCoop - Tu Plataforma en Mercado Público">
+          <div className="w-12 h-12 rounded-2xl bg-white p-1.5 shadow-xl shadow-slate-950/50 group-hover:scale-105 transition-all flex items-center justify-center border border-slate-700">
+            <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain" />
           </div>
-          <span className="text-[9px] font-bold text-slate-500 tracking-widest mt-1 opacity-0 group-hover:opacity-100 transition-opacity">COOP</span>
+          <span className="text-[8px] font-black text-teal-400 tracking-widest uppercase mt-0.5 opacity-90 group-hover:opacity-100">BidCoop</span>
         </div>
 
         {/* NAVIGATION ITEMS */}

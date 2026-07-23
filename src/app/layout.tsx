@@ -13,8 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BidCoop - Inteligencia B2B de Mercado",
-  description: "Plataforma SaaS B2B de inteligencia de mercado y gestión de licitaciones públicas",
+  title: "BidCoop - Tu Plataforma en Mercado Público",
+  description: "Plataforma de inteligencia de mercado, licitaciones públicas, convenios marco y compras ágiles.",
+  icons: {
+    icon: "/bidcoop-logo.png",
+    shortcut: "/bidcoop-logo.png",
+    apple: "/bidcoop-logo.png"
+  }
 };
 
 export default function RootLayout({
