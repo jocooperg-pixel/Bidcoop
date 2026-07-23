@@ -10,7 +10,7 @@ export async function POST(request: Request) {
       empresa = 'Todas',
       oportunidades = [],
       apiKey = '',
-      smtpUser = process.env.SMTP_USER || 'notificaciones.bidcoop@gmail.com',
+      smtpUser = process.env.SMTP_USER || 'alertas.bidcoop@gmail.com',
       smtpPass = process.env.SMTP_PASS || '',
       smtpHost = 'smtp.gmail.com',
       smtpPort = 465
