@@ -743,6 +743,42 @@ export default function ReportsNotificationsModule({
             </div>
           </div>
 
+          {/* Resend.com Cloud Email API Credentials */}
+          <div className="bg-indigo-50 dark:bg-indigo-950/40 p-4 rounded-2xl border border-indigo-200 dark:border-indigo-800 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-black text-slate-900 dark:text-white flex items-center gap-2">
+                <span>✉️</span> Conector Resend.com Cloud Email (Recomendado — Opción B)
+              </span>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200">
+                Sin Configuración de Gmail
+              </span>
+            </div>
+            <div className="space-y-2 text-xs">
+              <label className="text-[11px] font-bold text-slate-700 dark:text-slate-300 block">
+                Resend API Key (`re_...`):
+              </label>
+              <div className="flex gap-2">
+                <input
+                  type="password"
+                  placeholder="re_123456789..."
+                  value={userResendKey}
+                  onChange={(e) => setUserResendKey(e.target.value)}
+                  className="w-full bg-white dark:bg-slate-800 border border-indigo-300 dark:border-indigo-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white font-mono"
+                />
+                <button
+                  onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
+                  disabled={sendingEmail}
+                  className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2 rounded-xl shrink-0 transition cursor-pointer"
+                >
+                  {sendingEmail ? 'Enviando...' : 'Probar Correo Resend'}
+                </button>
+              </div>
+              <p className="text-[10px] text-slate-500">
+                Resend.com entrega 3.000 correos al mes 100% gratis a tu casilla <strong>jocooperg@gmail.com</strong> sin necesidad de claves ni verificaciones de Google.
+              </p>
+            </div>
+          </div>
+
           {/* Twilio WhatsApp Business API Credentials */}
           <div className="bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3">
             <div className="flex items-center justify-between">
