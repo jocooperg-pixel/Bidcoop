@@ -24,6 +24,9 @@ export default function ReportsNotificationsModule({
   const [reportSuccessMsg, setReportSuccessMsg] = useState<string | null>(null);
   const [showEmailPreviewModal, setShowEmailPreviewModal] = useState<boolean>(false);
   const [sendingEmail, setSendingEmail] = useState<boolean>(false);
+  const [userResendKey, setUserResendKey] = useState<string>('');
+  const [userSmtpUser, setUserSmtpUser] = useState<string>('');
+  const [userSmtpPass, setUserSmtpPass] = useState<string>('');
 
   // Filter opportunities for the selected company
   const companyFilteredOps = useMemo(() => {
@@ -110,17 +113,26 @@ export default function ReportsNotificationsModule({
         body: JSON.stringify({
           email: targetEmail,
           empresa: selectedCompany,
-          oportunidades: companyFilteredOps
+          oportunidades: companyFilteredOps,
+          apiKey: userResendKey,
+          smtpUser: userSmtpUser,
+          smtpPass: userSmtpPass
         })
       });
 
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Error enviando el correo');
+      if (!res.ok) {
+        if (data.requiresCredentials) {
+          setShowEmailPreviewModal(true);
+          setReportSuccessMsg('Para la entrega directa en tu bandeja de Gmail, ingresa tu Resend API Key o contraseña de aplicación SMTP.');
+          return;
+        }
+        throw new Error(data.error || 'Error enviando el correo');
+      }
 
-      setShowEmailPreviewModal(true);
-      setReportSuccessMsg(`Reporte procesado para ${targetEmail}. Haz clic en "Ver Vista Previa / Enviar con Mail Client" para revisar la prueba.`);
+      setReportSuccessMsg(`¡${data.emailStatus}! Archivo adjunto: ${data.filename} (${data.totalOps} Compras Ágiles)`);
     } catch (err: any) {
-      alert(`Error procesando reporte: ${err.message}`);
+      alert(`Error enviando correo: ${err.message}`);
     } finally {
       setSendingEmail(false);
     }
@@ -731,14 +743,56 @@ export default function ReportsNotificationsModule({
             {/* Email Render Preview */}
             <div className="p-6 overflow-y-auto space-y-6 text-xs bg-slate-50 dark:bg-slate-950 flex-1">
               
-              {/* Technical explanation alert */}
-              <div className="bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 p-4 rounded-2xl text-blue-900 dark:text-blue-200 space-y-1">
-                <div className="font-extrabold flex items-center gap-2">
-                  <span>ℹ️ Información Técnica del Envío de Correos:</span>
+              {/* Technical explanation alert & Credentials Config */}
+              <div className="bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 p-5 rounded-2xl text-blue-900 dark:text-blue-200 space-y-3">
+                <div className="font-extrabold flex items-center justify-between">
+                  <span className="text-sm">🔑 Conector para Entrega Directa en Gmail (jocooperg@gmail.com)</span>
+                  <span className="bg-blue-200 dark:bg-blue-900 text-blue-900 dark:text-blue-100 text-[10px] font-bold px-2 py-0.5 rounded">Requisito Antispam Gmail</span>
                 </div>
                 <p className="text-[11px] leading-relaxed">
-                  Para que los servidores de <strong>Gmail</strong> acepten envíos automáticos masivos desde el servidor de Vercel en la nube, se debe vincular la clave API del dominio (ej: <code>RESEND_API_KEY</code> o credenciales SMTP). Mientras tanto, puedes usar la opción <strong>"Enviar con mi Cliente de Correo (`mailto:`)"</strong> para abrir el correo pre-redactado o descargar el archivo adjunto oficial.
+                  Para que los servidores de <strong>Gmail</strong> acepten envíos automáticos desde Vercel en la nube, ingresa abajo una <strong>Resend API Key (gratuita)</strong> o tus credenciales <strong>Gmail SMTP (Contraseña de Aplicación)</strong>:
                 </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+                  <div>
+                    <label className="text-[11px] font-bold block mb-1">Opción A: Resend API Key (`re_...`):</label>
+                    <input
+                      type="password"
+                      placeholder="re_123456789..."
+                      value={userResendKey}
+                      onChange={(e) => setUserResendKey(e.target.value)}
+                      className="w-full bg-white dark:bg-slate-800 border border-blue-300 dark:border-blue-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-[11px] font-bold block mb-1">Opción B: Gmail App Password:</label>
+                    <div className="grid grid-cols-2 gap-2">
+                      <input
+                        type="text"
+                        placeholder="tu-correo@gmail.com"
+                        value={userSmtpUser}
+                        onChange={(e) => setUserSmtpUser(e.target.value)}
+                        className="w-full bg-white dark:bg-slate-800 border border-blue-300 dark:border-blue-700 text-[11px] px-2.5 py-2 rounded-xl text-slate-900 dark:text-white"
+                      />
+                      <input
+                        type="password"
+                        placeholder="xxxx xxxx xxxx xxxx"
+                        value={userSmtpPass}
+                        onChange={(e) => setUserSmtpPass(e.target.value)}
+                        className="w-full bg-white dark:bg-slate-800 border border-blue-300 dark:border-blue-700 text-[11px] px-2.5 py-2 rounded-xl text-slate-900 dark:text-white"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-2 flex justify-end">
+                  <button
+                    onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
+                    disabled={sendingEmail}
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all shadow-sm"
+                  >
+                    {sendingEmail ? 'Enviando...' : '🚀 Disparar Envío Real a jocooperg@gmail.com'}
+                  </button>
+                </div>
               </div>
 
               {/* Formatted HTML Email Canvas */}

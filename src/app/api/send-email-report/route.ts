@@ -2,13 +2,21 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import nodemailer from 'nodemailer';
 
-const resendApiKey = process.env.RESEND_API_KEY;
-
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { email = 'jocooperg@gmail.com', empresa = 'Todas', oportunidades = [] } = body;
+    const {
+      email = 'jocooperg@gmail.com',
+      empresa = 'Todas',
+      oportunidades = [],
+      apiKey = '',
+      smtpUser = '',
+      smtpPass = '',
+      smtpHost = 'smtp.gmail.com',
+      smtpPort = 465
+    } = body;
 
+    const activeResendKey = apiKey || process.env.RESEND_API_KEY;
     const today = new Date().toISOString().split('T')[0];
     const companyClean = empresa === 'Todas' ? 'Consolidado_Holding' : empresa.replace(/\s+/g, '_');
     const filename = `BidCoop_Reporte_Diario_Compras_Agiles_${companyClean}_${today}.csv`;
@@ -146,14 +154,14 @@ export async function POST(request: Request) {
       </html>
     `;
 
-    // Attempt sending email with Resend API if API key exists, or Nodemailer test account
-    let emailStatus = 'Simulado / Log Exitoso';
+    let emailStatus = '';
     let messageId = `bidcoop-${Date.now()}`;
 
-    if (resendApiKey) {
-      const resend = new Resend(resendApiKey);
+    // 1. Priority 1: User-supplied or ENV Resend API Key
+    if (activeResendKey) {
+      const resend = new Resend(activeResendKey);
       const data = await resend.emails.send({
-        from: 'BidCoop Reportes <notificaciones@bidcoop.cl>',
+        from: 'onboarding@resend.dev',
         to: [email],
         subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${empresa} (${today})`,
         html: htmlBody,
@@ -164,42 +172,55 @@ export async function POST(request: Request) {
           },
         ],
       });
-      emailStatus = 'Enviado vía Resend API';
-      messageId = data.data?.id || messageId;
-    } else {
-      // Test transporter using Nodemailer or test log
-      try {
-        const testAccount = await nodemailer.createTestAccount();
-        const transporter = nodemailer.createTransport({
-          host: testAccount.smtp.host,
-          port: testAccount.smtp.port,
-          secure: testAccount.smtp.secure,
-          auth: {
-            user: testAccount.user,
-            pass: testAccount.pass,
-          },
-        });
 
-        const info = await transporter.sendMail({
-          from: '"BidCoop Notificaciones" <notificaciones@bidcoop.cl>',
-          to: email,
-          subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${empresa} (${today})`,
-          html: htmlBody,
-          attachments: [
-            {
-              filename,
-              content: csvString,
-            },
-          ],
-        });
-
-        const previewUrl = nodemailer.getTestMessageUrl(info);
-        emailStatus = `Enviado con éxito a ${email} (Preview: ${previewUrl || 'OK'})`;
-        messageId = info.messageId;
-      } catch (err: any) {
-        console.log('Nodemailer test send log:', err.message);
-        emailStatus = `Reporte procesado exitosamente para ${email}`;
+      if (data.error) {
+        throw new Error(`Resend Error: ${data.error.message}`);
       }
+
+      emailStatus = `¡Correo entregado con éxito a ${email} vía Resend API! (ID: ${data.data?.id})`;
+      messageId = data.data?.id || messageId;
+    } 
+    // 2. Priority 2: User-supplied SMTP (e.g. Gmail / Outlook / Office365 credentials)
+    else if (smtpUser && smtpPass) {
+      const transporter = nodemailer.createTransport({
+        host: smtpHost,
+        port: Number(smtpPort) || 465,
+        secure: Number(smtpPort) === 465,
+        auth: {
+          user: smtpUser,
+          pass: smtpPass,
+        },
+      });
+
+      const info = await transporter.sendMail({
+        from: `"BidCoop Notificaciones" <${smtpUser}>`,
+        to: email,
+        subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${empresa} (${today})`,
+        html: htmlBody,
+        attachments: [
+          {
+            filename,
+            content: csvString,
+          },
+        ],
+      });
+
+      emailStatus = `¡Correo entregado con éxito a ${email} vía SMTP de ${smtpUser}!`;
+      messageId = info.messageId;
+    } 
+    // 3. Fallback: Return missing credentials instruction
+    else {
+      return NextResponse.json({
+        success: false,
+        requiresCredentials: true,
+        email,
+        empresa,
+        filename,
+        totalOps,
+        totalMonto,
+        message: 'Para enviar correos reales a Gmail se requiere ingresar una Resend API Key o credenciales SMTP de Gmail/Outlook.',
+        timestamp: new Date().toISOString()
+      }, { status: 400 });
     }
 
     return NextResponse.json({
