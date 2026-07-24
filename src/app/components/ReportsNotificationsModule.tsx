@@ -266,7 +266,7 @@ export default function ReportsNotificationsModule({
           <button
             onClick={() => handleSendWhatsappTest()}
             disabled={sendingWhatsapp}
-            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-blue-600 via-sky-600 to-cyan-500 hover:from-blue-500 hover:to-sky-400 text-white font-bold text-xs shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
@@ -274,7 +274,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-sm leading-snug">Disparar Alertas WhatsApp</div>
-                <div className="text-[10px] text-emerald-100 font-medium">Alertas Push Instantáneas</div>
+                <div className="text-[10px] text-sky-100 font-medium">Alertas Push Instantáneas</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2.5 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -285,10 +285,10 @@ export default function ReportsNotificationsModule({
           {/* Button 3: Download Excel / CSV */}
           <button
             onClick={() => handleExportExcel(selectedCompany)}
-            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs border border-slate-700/80 hover:border-cyan-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs border border-slate-700/80 hover:border-sky-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-9 h-9 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
                 📥
               </div>
               <div className="text-left">
@@ -296,7 +296,7 @@ export default function ReportsNotificationsModule({
                 <div className="text-[10px] text-slate-400 font-medium">Formato .CSV Consolidado</div>
               </div>
             </div>
-            <span className="bg-slate-800 text-emerald-400 border border-emerald-500/30 font-bold text-[10px] px-2.5 py-1 rounded-full shrink-0">
+            <span className="bg-slate-800 text-sky-400 border border-sky-500/30 font-bold text-[10px] px-2.5 py-1 rounded-full shrink-0">
               .CSV UTF-8
             </span>
           </button>
@@ -305,12 +305,12 @@ export default function ReportsNotificationsModule({
 
       {/* SUCCESS NOTIFICATION TOAST */}
       {reportSuccessMsg && (
-        <div className="bg-emerald-50 dark:bg-emerald-950/80 border border-emerald-300 dark:border-emerald-700 text-emerald-900 dark:text-emerald-200 p-4 rounded-xl flex items-center justify-between shadow-md transition-all">
+        <div className="bg-sky-50 dark:bg-sky-950/80 border border-sky-300 dark:border-sky-700 text-sky-900 dark:text-sky-200 p-4 rounded-xl flex items-center justify-between shadow-md transition-all">
           <div className="flex items-center gap-3">
             <span className="text-xl">✅</span>
             <span className="text-sm font-semibold">{reportSuccessMsg}</span>
           </div>
-          <button onClick={() => setReportSuccessMsg(null)} className="text-emerald-700 dark:text-emerald-400 font-bold hover:underline text-xs">
+          <button onClick={() => setReportSuccessMsg(null)} className="text-sky-700 dark:text-sky-400 font-bold hover:underline text-xs">
             Cerrar
           </button>
         </div>

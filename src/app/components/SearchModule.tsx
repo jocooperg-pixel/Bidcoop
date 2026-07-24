@@ -914,7 +914,7 @@ export default function SearchModule({
                         setQuoteCompany(selectedOpportunity.empresaMatch || 'Aminorte');
                         setShowQuoteModal(true);
                       }}
-                      className="px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-650 hover:from-emerald-700 hover:to-teal-700 text-white rounded-xl text-xs font-black shadow-md shadow-emerald-500/20 flex items-center gap-2 transition cursor-pointer shrink-0"
+                      className="px-4 py-2.5 bg-gradient-to-r from-blue-600 via-sky-600 to-cyan-500 hover:from-blue-500 hover:to-sky-400 text-white rounded-xl text-xs font-black shadow-md shadow-sky-500/20 flex items-center gap-2 transition cursor-pointer shrink-0"
                     >
                       <span>Generar Cotización PDF Formal</span> 📄
                     </button>
@@ -931,9 +931,9 @@ export default function SearchModule({
                       </span>
                     </div>
 
-                    <div className="p-3.5 rounded-xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40">
-                      <span className="text-[10px] font-black uppercase text-emerald-600 dark:text-emerald-400 block tracking-wider">Valor Ref. Promedio Mercado Público</span>
-                      <span className="text-sm font-black text-emerald-700 dark:text-emerald-300 mt-1 block">
+                    <div className="p-3.5 rounded-xl bg-sky-50/60 dark:bg-sky-950/20 border border-sky-100 dark:border-sky-900/40">
+                      <span className="text-[10px] font-black uppercase text-sky-600 dark:text-sky-400 block tracking-wider">Valor Ref. Promedio Mercado Público</span>
+                      <span className="text-sm font-black text-sky-700 dark:text-sky-300 mt-1 block">
                         ${selectedOpportunity.items.reduce((sum, it) => sum + (it.cantidad * (it.precioMercadoReferencial || Math.round(it.precioUnitario * 0.88))), 0).toLocaleString('es-CL')} CLP
                       </span>
                     </div>

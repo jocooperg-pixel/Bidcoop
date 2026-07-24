@@ -148,15 +148,17 @@ export default function DashboardModule({
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       
-      {/* BRAND BANNER WITH LOGO */}
-      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 rounded-3xl border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+      {/* BRAND BANNER WITH FLOATING ROUND LOGO */}
+      <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-6 rounded-3xl border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
         <div className="flex items-center gap-5 relative z-10">
-          <div className="bg-white p-3 rounded-2xl shadow-lg border border-slate-700/50 shrink-0">
-            <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="h-12 w-auto object-contain" />
+          <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-400 p-0.5 shadow-xl shadow-sky-500/30 shrink-0 border-2 border-white">
+            <div className="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
+              <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain rounded-full" />
+            </div>
           </div>
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="bg-teal-500/20 text-teal-300 border border-teal-500/30 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              <span className="bg-sky-500/20 text-sky-300 border border-sky-500/30 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                 Plataforma Oficial B2B
               </span>
               <span className="bg-blue-500/20 text-blue-300 border border-blue-500/30 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
@@ -175,8 +177,8 @@ export default function DashboardModule({
         <div className="flex items-center gap-3 shrink-0 relative z-10">
           <div className="text-right bg-slate-950/60 p-3 rounded-2xl border border-slate-800/80">
             <span className="text-[10px] font-extrabold uppercase text-slate-400 block">Status Holding</span>
-            <span className="text-xs font-black text-emerald-400 flex items-center gap-1.5 justify-end">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span className="text-xs font-black text-sky-400 flex items-center gap-1.5 justify-end">
+              <span className="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
               3 Empresas Activas
             </span>
           </div>
