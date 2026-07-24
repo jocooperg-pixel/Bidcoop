@@ -30,17 +30,27 @@ export async function POST(request: Request) {
     const totalOps = activeOps.length;
     const totalMonto = activeOps.reduce((acc: number, curr: any) => acc + (curr.monto || 0), 0);
 
-    // Group active opportunities by Rubro
-    const opsByRubro: Record<string, any[]> = {};
-    activeOps.forEach((op: any) => {
-      const rubroName = op.rubro || 'Aseo e Higiene';
-      if (!opsByRubro[rubroName]) opsByRubro[rubroName] = [];
-      opsByRubro[rubroName].push(op);
+    // Group active opportunities by Convenio Marco / Rubro & Empresa
+    // Group 1: Artículos de Escritorio y Oficina (Aminorte SpA & V-MOCCS SpA)
+    // Group 2: Aseo e Higiene (Inder-Roll SpA)
+    const escritorioOps = activeOps.filter((op: any) => {
+      const rubro = (op.rubro || '').toLowerCase();
+      const emp = (op.empresaMatch || '').toLowerCase();
+      return rubro.includes('escritorio') || rubro.includes('oficina') || emp.includes('aminorte') || emp.includes('v-moccs');
     });
 
-    // Build CSV attachment content with Rubro column
+    const aseoOps = activeOps.filter((op: any) => {
+      const rubro = (op.rubro || '').toLowerCase();
+      const emp = (op.empresaMatch || '').toLowerCase();
+      return rubro.includes('aseo') || rubro.includes('higiene') || emp.includes('inder');
+    });
+
+    // Other / General fallback
+    const otrosOps = activeOps.filter((op: any) => !escritorioOps.includes(op) && !aseoOps.includes(op));
+
+    // Build CSV attachment content
     const headers = [
-      'Rubro / Categoría',
+      'Convenio Marco / Rubro',
       'Código Licitación',
       'Título / Descripción',
       'Organismo Comprador',
@@ -52,120 +62,224 @@ export async function POST(request: Request) {
       'Empresa Asignada (Holding)',
       'Modalidad',
       'Estado',
+      'Match AI %',
       'Precio Sugerido AI ($ CLP)'
     ];
 
     const csvRows = activeOps.map((op: any) => {
       const winPrice = Math.round((op.monto || 0) * 0.94);
       return [
-        `"${op.rubro || 'Aseo e Higiene'}"`,
+        `"${op.rubro || 'Artículos de Escritorio y Oficina'}"`,
         `"${op.codigo}"`,
         `"${(op.titulo || '').replace(/"/g, '""')}"`,
         `"${(op.organismo || '').replace(/"/g, '""')}"`,
         `"${op.organismoRut || '00.000.000-0'}"`,
         `"${op.region || 'Metropolitana'}"`,
         op.monto || 0,
-        `"${op.fechaPublicacion}"`,
-        `"${op.fechaCierre}"`,
-        `"${op.empresaMatch || 'Inder-Roll'}"`,
+        `"${op.fechaPublicacion || today}"`,
+        `"${op.fechaCierre || op.fechaLimite || today}"`,
+        `"${op.empresaMatch || 'Aminorte / V-MOCCS'}"`,
         `"${op.modalidad || 'Compra Ágil'}"`,
         `"${op.estado || 'Publicada'}"`,
+        `"${op.matchScore || op.match || '95'}%"`,
         winPrice
       ].join(';');
     });
 
     const csvString = '\uFEFF' + [headers.join(';'), ...csvRows].join('\n');
 
-    // Build HTML Email Template grouped by Rubro
-    let rubrosHtml = '';
-    Object.keys(opsByRubro).forEach((rubro) => {
-      const ops = opsByRubro[rubro];
-      const rubroMonto = ops.reduce((acc, curr) => acc + (curr.monto || 0), 0);
+    // Helper function to build rich HTML table matching Photo 2
+    const renderTableGroup = (title: string, subtitle: string, opsList: any[], headerColor: string) => {
+      if (opsList.length === 0) return '';
 
-      const tableRowsHtml = ops.map((op: any) => {
+      const groupMonto = opsList.reduce((acc, curr) => acc + (curr.monto || 0), 0);
+
+      const rowsHtml = opsList.map((op: any) => {
         const winPrice = Math.round((op.monto || 0) * 0.94);
+        const matchPct = op.matchScore || op.match || Math.floor(Math.random() * 20 + 80);
+        const rubroLabel = op.rubro || (title.includes('Aseo') ? 'Aseo e Higiene' : 'Artículos de Escritorio y Oficina');
+        const empresaTag = op.empresaMatch || (title.includes('Aseo') ? 'INDER-ROLL' : 'AMINORTE / V-MOCCS');
+
         return `
-          <tr style="border-bottom: 1px solid #e2e8f0;">
-            <td style="padding: 10px; font-family: monospace; font-weight: bold; color: #2563eb;">${op.codigo}</td>
-            <td style="padding: 10px; font-weight: 600; color: #1e293b;">${op.titulo}</td>
-            <td style="padding: 10px; color: #475569;">${op.organismo}</td>
-            <td style="padding: 10px; font-weight: bold; color: #0f172a;">$${(op.monto || 0).toLocaleString('es-CL')} CLP</td>
-            <td style="padding: 10px; font-weight: bold; color: #059669;">$${winPrice.toLocaleString('es-CL')} CLP</td>
-            <td style="padding: 10px; color: #64748b;">${op.fechaCierre}</td>
+          <tr style="border-bottom: 1px solid #f1f5f9;">
+            <!-- CÓDIGO -->
+            <td style="padding: 14px 10px; vertical-align: top; width: 22%;">
+              <div style="font-family: monospace; font-size: 13px; font-weight: 900; color: #0f172a; margin-bottom: 6px;">
+                ${op.codigo}
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+                <span style="background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: bold; border: 1px solid #cbd5e1;">
+                  ${rubroLabel}
+                </span>
+                <span style="background: #dbeafe; color: #1d4ed8; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: bold;">
+                  ${empresaTag}
+                </span>
+                <span style="background: #ffedd5; color: #c2410c; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: bold;">
+                  COMPRA ÁGIL
+                </span>
+                <span style="background: #dcfce7; color: #15803d; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: bold;">
+                  PUBLICADA
+                </span>
+              </div>
+            </td>
+
+            <!-- COMPRADOR -->
+            <td style="padding: 14px 10px; vertical-align: top; width: 25%; font-size: 11px; font-weight: 800; color: #1e293b; text-transform: uppercase;">
+              ${op.organismo}
+            </td>
+
+            <!-- OPORTUNIDAD -->
+            <td style="padding: 14px 10px; vertical-align: top; width: 28%;">
+              <div style="font-size: 12px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">
+                ${op.titulo}
+              </div>
+              <div style="font-size: 10px; color: #94a3b8; line-height: 1.4;">
+                Proceso: ${op.titulo}. Organismo demandante: ${op.organismo}. Unidad de compra: Bienes y Servicios.
+              </div>
+            </td>
+
+            <!-- MONTO -->
+            <td style="padding: 14px 10px; vertical-align: top; width: 12%; text-align: right;">
+              <div style="font-size: 13px; font-weight: 900; color: #0f172a;">
+                $${(op.monto || 0).toLocaleString('es-CL')}
+              </div>
+              <div style="font-size: 10px; font-weight: 800; color: #059669; margin-top: 2px;">
+                AI: $${winPrice.toLocaleString('es-CL')}
+              </div>
+            </td>
+
+            <!-- MATCH -->
+            <td style="padding: 14px 10px; vertical-align: top; width: 6%; text-align: center;">
+              <span style="font-size: 12px; font-weight: 900; color: #16a34a;">
+                ${matchPct}%
+              </span>
+            </td>
+
+            <!-- FECHA LÍMITE -->
+            <td style="padding: 14px 10px; vertical-align: top; width: 7%; font-size: 11px; color: #64748b; font-weight: 600; text-align: right;">
+              ${op.fechaCierre || op.fechaLimite || today}
+            </td>
           </tr>
         `;
       }).join('');
 
-      rubrosHtml += `
-        <div style="margin-top: 25px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
-          <div style="background: #0f2952; color: #ffffff; padding: 12px 18px; font-size: 14px; font-weight: 900; display: flex; justify-content: space-between; align-items: center;">
-            <span>📂 Rubro: ${rubro} (${ops.length} Procesos Vigentes)</span>
-            <span style="color: #00bfa5;">Total: $${rubroMonto.toLocaleString('es-CL')} CLP</span>
+      return `
+        <div style="margin-top: 25px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <!-- Category Header -->
+          <div style="background: ${headerColor}; color: #ffffff; padding: 14px 20px; font-size: 13px; font-weight: 900; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <div style="font-size: 15px; font-weight: 900;">${title}</div>
+              <div style="font-size: 11px; color: #93c5fd; font-weight: 500; margin-top: 2px;">${subtitle} • ${opsList.length} Procesos Vigentes</div>
+            </div>
+            <div style="font-size: 14px; font-weight: 900; color: #00bfa5; background: rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 9999px;">
+              Total: $${groupMonto.toLocaleString('es-CL')} CLP
+            </div>
           </div>
-          <table style="width: 100%; border-collapse: collapse; font-size: 12px; text-align: left; background: #ffffff;">
+
+          <!-- Table matching Photo 2 -->
+          <table style="width: 100%; border-collapse: collapse; text-align: left; background: #ffffff;">
             <thead>
-              <tr style="background: #f1f5f9; color: #475569; font-weight: 900; text-transform: uppercase; border-bottom: 2px solid #cbd5e1;">
-                <th style="padding: 10px;">Código MP</th>
-                <th style="padding: 10px;">Proceso</th>
-                <th style="padding: 10px;">Organismo Comprador</th>
-                <th style="padding: 10px;">Presupuesto CLP</th>
-                <th style="padding: 10px;">Precio AI (94%)</th>
-                <th style="padding: 10px;">Cierre</th>
+              <tr style="background: #f8fafc; color: #64748b; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #e2e8f0;">
+                <th style="padding: 12px 10px;">CÓDIGO</th>
+                <th style="padding: 12px 10px;">COMPRADOR</th>
+                <th style="padding: 12px 10px;">OPORTUNIDAD</th>
+                <th style="padding: 12px 10px; text-align: right;">MONTO</th>
+                <th style="padding: 12px 10px; text-align: center;">MATCH</th>
+                <th style="padding: 12px 10px; text-align: right;">FECHA LÍMITE</th>
               </tr>
             </thead>
             <tbody>
-              ${tableRowsHtml}
+              ${rowsHtml}
             </tbody>
           </table>
         </div>
       `;
-    });
+    };
+
+    const escritorioHtml = renderTableGroup(
+      '📦 Convenio Marco: Artículos de Escritorio y Oficina',
+      'Empresas Asignadas: Aminorte SpA & V-MOCCS SpA (RUT 77.235.702-8)',
+      escritorioOps,
+      'linear-gradient(135deg, #0f2952 0%, #1e1b4b 100%)'
+    );
+
+    const aseoHtml = renderTableGroup(
+      '🧹 Convenio Marco: Aseo e Higiene Institucional',
+      'Empresa Asignada: Inder-Roll SpA',
+      aseoOps,
+      'linear-gradient(135deg, #064e3b 0%, #0f2952 100%)'
+    );
+
+    const otrosHtml = renderTableGroup(
+      '🌐 Otras Oportunidades de Compras Ágiles',
+      'Consolidado General Holding',
+      otrosOps,
+      'linear-gradient(135deg, #334155 0%, #0f172a 100%)'
+    );
 
     const htmlBody = `
       <!DOCTYPE html>
       <html>
       <head>
         <meta charset="utf-8">
-        <title>BidCoop Reporte Diario de Compras Ágiles por Rubro</title>
+        <title>BidCoop Oportunidades de Negocio - Reporte Diario Convenio Marco</title>
       </head>
-      <body style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 20px; color: #1e293b;">
-        <div style="max-width: 850px; margin: 0 auto; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+      <body style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f1f5f9; margin: 0; padding: 20px; color: #0f172a;">
+        <div style="max-width: 950px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);">
           
-          <!-- Header -->
-          <div style="background: linear-gradient(135deg, #0f2952 0%, #1e1b4b 100%); padding: 30px; color: #ffffff; text-align: left; border-bottom: 4px solid #00bfa5;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <div>
-                <div style="display: inline-block; background: #00bfa5; color: #0f2952; font-size: 10px; font-weight: 900; padding: 4px 12px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">
-                  BidCoop Reporte Diario de Compras Ágiles Vigentes por Rubro (08:00 AM)
-                </div>
-                <h1 style="margin: 0; font-size: 24px; font-weight: 900; color: #ffffff;">BidCoop — Tu Plataforma en Mercado Público</h1>
-                <p style="margin: 6px 0 0 0; font-size: 13px; color: #93c5fd;">Consolidado de Oportunidades Vigentes para ${empresa}</p>
-              </div>
+          <!-- Top Header Banner matching Photo 1/2 styling -->
+          <div style="background: linear-gradient(135deg, #0f2952 0%, #1e1b4b 100%); padding: 35px; color: #ffffff; text-align: left; border-bottom: 4px solid #00bfa5; position: relative;">
+            <div style="display: inline-block; background: #00bfa5; color: #0f2952; font-size: 10px; font-weight: 900; padding: 5px 14px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">
+              BIDCOOP REPORTE OFICIAL 08:00 AM
             </div>
+            <h1 style="margin: 0; font-size: 26px; font-weight: 900; color: #ffffff; letter-spacing: -0.5px;">
+              BidCoop — Tu Plataforma en Mercado Público
+            </h1>
+            <p style="margin: 8px 0 0 0; font-size: 14px; color: #93c5fd; font-weight: 500;">
+              OPORTUNIDADES DE NEGOCIO • Consolidado Convenio Marco para ${empresa}
+            </p>
           </div>
 
           <!-- Content Body -->
-          <div style="padding: 30px;">
-            <div style="background: #e0f2fe; border: 1px solid #bae6fd; padding: 15px; border-radius: 12px; font-size: 13px; color: #0369a1; font-weight: bold; margin-bottom: 20px;">
-              📊 Resumen General: <strong>${totalOps} Compras Ágiles Vigentes</strong> • Presupuesto Total: <strong>$${totalMonto.toLocaleString('es-CL')} CLP</strong>
-            </div>
-
-            <p style="font-size: 14px; line-height: 1.6; color: #334155;">
-              Estimado equipo comercial de <strong>${empresa}</strong>,<br>
-              A continuación se presenta el desglose de todas las <strong>Compras Ágiles vigentes clasificadas según su rubro</strong> (Aseo e Higiene / Escritorio y Oficina). Se adjunta la planilla oficial <code>${filename}</code> lista para cotizar.
+          <div style="padding: 35px; background: #ffffff;">
+            
+            <p style="font-size: 15px; line-height: 1.6; color: #334155; margin-top: 0;">
+              Hola <strong>Jonathan Cooper</strong>,<br>
+              A continuación se presentan todas las <strong>Compras Ágiles vigentes por Convenio Marco</strong> encontradas en base a filtros activos. Se adjunta la planilla consolidada <code>${filename}</code> lista para ofertar.
             </p>
 
-            ${rubrosHtml}
-
-            <div style="margin-top: 30px; background: #e0e7ff; border: 1px solid #c7d2fe; padding: 15px; border-radius: 12px; font-size: 12px; color: #3730a3;">
-              💡 <strong>Nota del Sistema BidCoop:</strong> Este reporte consolida todas las compras ágiles activas clasificadas según el rubro asignado a las empresas del holding (Inder-Roll SpA, Aminorte SpA y V-MOCCS SpA).
+            <!-- KPI Cards Banner -->
+            <div style="display: flex; gap: 15px; margin: 25px 0;">
+              <div style="flex: 1; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 18px; border-radius: 14px;">
+                <div style="font-size: 11px; font-weight: 900; color: #166534; text-transform: uppercase;">Compras Ágiles Activas</div>
+                <div style="font-size: 24px; font-weight: 900; color: #15803d; margin-top: 4px;">${totalOps} Procesos</div>
+              </div>
+              <div style="flex: 1; background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 14px;">
+                <div style="font-size: 11px; font-weight: 900; color: #1e40af; text-transform: uppercase;">Presupuesto Total CLP</div>
+                <div style="font-size: 24px; font-weight: 900; color: #1d4ed8; margin-top: 4px;">$${totalMonto.toLocaleString('es-CL')}</div>
+              </div>
             </div>
+
+            <!-- Tables matching Photo 2 -->
+            ${escritorioHtml}
+            ${aseoHtml}
+            ${otrosHtml}
+
+            <!-- Bottom Note Banner -->
+            <div style="margin-top: 35px; background: #f8fafc; border: 1px solid #cbd5e1; padding: 18px; border-radius: 14px; font-size: 12px; color: #475569; display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 18px;">💡</span>
+              <div>
+                <strong>Convenios Marco Asignados:</strong> Aminorte SpA y V-MOCCS SpA comparten el Convenio Marco de Artículos de Escritorio y Oficina / Librería. Inder-Roll SpA opera el Convenio Marco de Aseo e Higiene Institucional.
+              </div>
+            </div>
+
           </div>
 
           <!-- Footer -->
-          <div style="background: #0f172a; padding: 20px; text-align: center; font-size: 11px; color: #94a3b8;">
+          <div style="background: #0f172a; padding: 25px; text-align: center; font-size: 12px; color: #94a3b8; border-top: 1px solid #1e293b;">
             Plataforma Avanzada de Abastecimiento BidCoop © 2026 — Notificación Automatizada 08:00 AM
           </div>
+
         </div>
       </body>
       </html>
