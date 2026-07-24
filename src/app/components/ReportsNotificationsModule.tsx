@@ -239,67 +239,66 @@ export default function ReportsNotificationsModule({
           </p>
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex flex-wrap items-center gap-3">
-          <button
-            onClick={() => handleSendWhatsappTest()}
-            disabled={sendingWhatsapp}
-            className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95 cursor-pointer"
-          >
-            {sendingWhatsapp ? (
-              <>
-                <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
-                </svg>
-                Enviando Push a 4 Números...
-              </>
-            ) : (
-              <>
-                <span>📱</span>
-                Disparar Push WhatsApp (4 Destinos)
-              </>
-            )}
-          </button>
-
+        {/* Action Buttons Container — Ultra Premium & Intuitive Design */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          
+          {/* Button 1: Dispatch Email Report */}
           <button
             onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
             disabled={sendingEmail}
-            className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95 cursor-pointer"
+            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-bold text-xs shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
-            {sendingEmail ? (
-              <>
-                <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
-                </svg>
-                Procesando reporte...
-              </>
-            ) : (
-              <>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                Enviar Prueba a jocooperg@gmail.com ✉️
-              </>
-            )}
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
+                ✉️
+              </div>
+              <div className="text-left">
+                <div className="font-extrabold text-sm leading-snug">Enviar Reporte por Correo</div>
+                <div className="text-[10px] text-indigo-100 font-medium">08:00 AM • jocooperg@gmail.com</div>
+              </div>
+            </div>
+            <span className="bg-white/20 text-white font-black text-[10px] px-2.5 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
+              {sendingEmail ? 'Enviando...' : `${companyFilteredOps.length} Procesos`}
+            </span>
           </button>
 
+          {/* Button 2: Dispatch Push WhatsApp */}
           <button
-            onClick={() => setShowEmailPreviewModal(true)}
-            className="flex items-center gap-2 bg-slate-800 hover:bg-slate-900 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all"
+            onClick={() => handleSendWhatsappTest()}
+            disabled={sendingWhatsapp}
+            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
-            🔍 Ver Vista Previa del Correo Real
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
+                📲
+              </div>
+              <div className="text-left">
+                <div className="font-extrabold text-sm leading-snug">Disparar Alertas WhatsApp</div>
+                <div className="text-[10px] text-emerald-100 font-medium">Alertas Push Instantáneas</div>
+              </div>
+            </div>
+            <span className="bg-white/20 text-white font-black text-[10px] px-2.5 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
+              {sendingWhatsapp ? 'Enviando...' : '4 Destinos'}
+            </span>
           </button>
 
+          {/* Button 3: Download Excel / CSV */}
           <button
             onClick={() => handleExportExcel(selectedCompany)}
-            className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition-all transform active:scale-95"
+            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs border border-slate-700/80 hover:border-cyan-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            Descargar Reporte BidCoop (.CSV / Excel)
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
+                📥
+              </div>
+              <div className="text-left">
+                <div className="font-extrabold text-sm leading-snug">Descargar Planilla Excel</div>
+                <div className="text-[10px] text-slate-400 font-medium">Formato .CSV Consolidado</div>
+              </div>
+            </div>
+            <span className="bg-slate-800 text-emerald-400 border border-emerald-500/30 font-bold text-[10px] px-2.5 py-1 rounded-full shrink-0">
+              .CSV UTF-8
+            </span>
           </button>
         </div>
       </div>
