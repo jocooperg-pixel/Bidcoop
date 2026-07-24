@@ -255,7 +255,7 @@ export default function ReportsNotificationsModule({
   return (
     <div className={`p-6 space-y-6 ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'} min-h-screen`}>
       {/* HEADER BAR */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+      <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <span className="bg-indigo-600 text-white text-xs font-black px-2.5 py-1 rounded-full uppercase tracking-wider">
@@ -272,9 +272,12 @@ export default function ReportsNotificationsModule({
             Generación automatizada a las 8:00 AM de Compras Ágiles activas y notificaciones por correo de seguimiento segmentadas por empresa.
           </p>
         </div>
+      </div>
 
-        {/* Instant Rocket Mailbox Trigger Banner — 1-Click Immediate Solution */}
-        <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white p-4 rounded-2xl border border-sky-500/40 shadow-lg flex flex-col md:flex-row items-center justify-between gap-3">
+      {/* QUICK ACTIONS & DISPATCH CONTAINER */}
+      <div className="space-y-4">
+        {/* Instant Mailbox Trigger Banner — 1-Click Outlook / Mail */}
+        <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white p-4 rounded-2xl border border-sky-500/40 shadow-lg flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 font-black flex items-center justify-center text-xl shrink-0">
               🚀
@@ -284,29 +287,29 @@ export default function ReportsNotificationsModule({
               <div className="text-xs text-sky-200">Abre tu cliente de correo con la lista exacta de destinatarios regionales y datos cargados.</div>
             </div>
           </div>
-          <div className="flex flex-wrap items-center gap-2 shrink-0">
+          <div className="flex flex-wrap items-center gap-2 shrink-0 w-full lg:w-auto">
             <button
               onClick={() => handleOpenMailClientRegional('SurCentro')}
-              className="bg-sky-400 hover:bg-sky-300 text-slate-950 font-black text-xs px-3.5 py-2 rounded-xl transition-all shadow-md cursor-pointer flex items-center gap-1.5"
+              className="flex-1 lg:flex-none bg-sky-400 hover:bg-sky-300 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl transition-all shadow-md cursor-pointer flex items-center justify-center gap-1.5"
             >
               <span>🏔️ Enviar Zona Sur-Centro (IV-X)</span>
             </button>
             <button
               onClick={() => handleOpenMailClientRegional('Metropolitana')}
-              className="bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-black text-xs px-3.5 py-2 rounded-xl transition-all shadow-md cursor-pointer flex items-center gap-1.5"
+              className="flex-1 lg:flex-none bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl transition-all shadow-md cursor-pointer flex items-center justify-center gap-1.5"
             >
               <span>🏛️ Enviar Región Metropolitana</span>
             </button>
           </div>
         </div>
 
-        {/* Action Buttons Container — Ultra Premium & Intuitive Design */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        {/* Action Buttons Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
           
           {/* Button 1: Live Email Preview Button */}
           <button
             onClick={() => setShowEmailPreviewModal(true)}
-            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold text-xs shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 transition-all transform active:scale-95 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold text-xs shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 transition-all transform active:scale-95 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
@@ -326,7 +329,7 @@ export default function ReportsNotificationsModule({
           <button
             onClick={() => handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jocooperg@gmail.com')}
             disabled={sendingEmail}
-            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-bold text-xs shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-bold text-xs shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
@@ -346,7 +349,7 @@ export default function ReportsNotificationsModule({
           <button
             onClick={() => handleSendWhatsappTest()}
             disabled={sendingWhatsapp}
-            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-blue-600 via-sky-600 to-cyan-500 hover:from-blue-500 hover:to-sky-400 text-white font-bold text-xs shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-blue-600 via-sky-600 to-cyan-500 hover:from-blue-500 hover:to-sky-400 text-white font-bold text-xs shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
@@ -365,7 +368,7 @@ export default function ReportsNotificationsModule({
           {/* Button 4: Download Excel / CSV */}
           <button
             onClick={() => handleExportExcel(selectedCompany)}
-            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs border border-slate-700/80 hover:border-sky-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs border border-slate-700/80 hover:border-sky-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
