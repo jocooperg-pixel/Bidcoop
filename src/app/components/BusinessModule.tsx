@@ -269,12 +269,12 @@ export default function BusinessModule({
     <div className="space-y-6 animate-in fade-in duration-200">
       
       {/* INTERNAL NAVIGATION TABS */}
-      <div className="flex items-center gap-1.5 border-b border-slate-200 dark:border-slate-800 pb-2">
+      <div className="flex items-center gap-1.5 border-b border-slate-200 dark:border-slate-800 pb-2 overflow-x-auto">
         {[
           { id: 'mis-negocios', label: 'Mis Negocios' },
           { id: 'postulaciones', label: 'Postulaciones Realizadas' },
           { id: 'logistica', label: '🚚 Flete y Márgenes Regionales' },
-          { id: 'alertas', label: '🔔 Centro de Alertas' },
+          { id: 'alertas', label: '🚨 Centro de Alertas' },
           { id: 'calendario', label: 'Calendario Clave' },
           { id: 'catalogo', label: 'Catálogo de Insumos' },
           { id: 'documentos', label: 'Repositorio Legal' }
@@ -282,10 +282,10 @@ export default function BusinessModule({
           <button
             key={tab.id}
             onClick={() => setCurrentSub(tab.id)}
-            className={`px-4 py-2 rounded-xl text-xs font-black transition ${
+            className={`px-4 py-2 rounded-xl text-xs font-black transition-all ${
               currentSub === tab.id
-                ? 'bg-blue-600 text-white shadow-sm shadow-blue-500/10'
-                : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white'
+                ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30 border border-sky-400/40'
+                : 'text-slate-600 hover:text-blue-600 hover:bg-sky-50 dark:text-slate-400 dark:hover:text-sky-300 dark:hover:bg-slate-800/60'
             }`}
           >
             {tab.label}
@@ -532,8 +532,8 @@ export default function BusinessModule({
                           <td className="p-3">
                             <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase inline-block mb-1 ${
                               pModality === 'Compra Ágil'
-                                ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
-                                : 'bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300'
+                                ? 'bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-300 border border-orange-300'
+                                : 'bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300 border border-sky-300'
                             }`}>
                               {pModality === 'Compra Ágil' ? '⚡ Compra Ágil' : '🛍️ Grande Compra'}
                             </span>
@@ -546,8 +546,8 @@ export default function BusinessModule({
                           <td className="p-3">
                             <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase ${
                               pCompany === 'Inder-Roll'
-                                ? 'bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300'
-                                : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+                                ? 'bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300 border border-sky-300'
+                                : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 border border-blue-300'
                             }`}>
                               {pCompany}
                             </span>
@@ -575,10 +575,10 @@ export default function BusinessModule({
                           <td className="p-3 text-center">
                             <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase ${
                               p.estado === 'Adjudicada'
-                                ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300'
+                                ? 'bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-300'
                                 : p.estado === 'Rechazada'
-                                ? 'bg-rose-100 text-rose-700 dark:bg-rose-950/80 dark:text-rose-300'
-                                : 'bg-amber-100 text-amber-700 dark:bg-amber-950/80 dark:text-amber-300'
+                                ? 'bg-red-100 text-red-700 dark:bg-red-950/80 dark:text-red-300 border border-red-300'
+                                : 'bg-orange-100 text-orange-700 dark:bg-orange-950/80 dark:text-orange-300 border border-orange-300'
                             }`}>
                               {p.estado === 'Adjudicada'
                                 ? '🏆 Adjudicada'

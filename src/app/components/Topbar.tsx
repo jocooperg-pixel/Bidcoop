@@ -90,18 +90,22 @@ export default function Topbar({
       
       {/* BRANDING LOGO & SLOGAN */}
       <div className="flex items-center gap-4">
-        <div className="flex items-center gap-2">
-          <img 
-            src="/bidcoop-logo.png" 
-            alt="BidCoop Logo" 
-            className="h-9 w-auto object-contain" 
-          />
+        <div className="flex items-center gap-2 group cursor-pointer">
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-400 p-0.5 shadow-md shadow-sky-500/20 group-hover:scale-105 transition-all duration-300 flex items-center justify-center border-2 border-white dark:border-slate-800">
+            <div className="w-full h-full rounded-full bg-white p-0.5 flex items-center justify-center overflow-hidden">
+              <img 
+                src="/bidcoop-logo.png" 
+                alt="BidCoop Logo" 
+                className="w-full h-full object-contain rounded-full" 
+              />
+            </div>
+          </div>
         </div>
         <div className="hidden xl:block border-l border-slate-200 dark:border-slate-800 pl-4 py-0.5">
-          <span className="text-[10px] font-black tracking-widest uppercase text-teal-600 dark:text-teal-400 block">
+          <span className="text-[10px] font-black tracking-widest uppercase text-sky-600 dark:text-sky-400 block">
             TU PLATAFORMA EN MERCADO PÚBLICO
           </span>
-          <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400">
+          <span className="text-[11px] font-bold text-slate-600 dark:text-slate-300">
             Convenios Marco • Compras Ágiles • Licitaciones
           </span>
         </div>

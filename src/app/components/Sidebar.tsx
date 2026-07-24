@@ -103,14 +103,16 @@ export default function Sidebar({
   ];
 
   return (
-    <aside className="w-[72px] bg-slate-900 border-r border-slate-800 flex flex-col justify-between items-center py-6 shrink-0 relative z-50">
+    <aside className="w-[72px] bg-slate-900 border-r border-slate-800/80 flex flex-col justify-between items-center py-6 shrink-0 relative z-50">
       <div className="flex flex-col items-center gap-10 w-full">
-        {/* OFFICIAL BIDCOOP LOGO */}
+        {/* OFFICIAL FLOATING ROUND BIDCOOP LOGO */}
         <div className="flex flex-col items-center gap-1 group cursor-pointer" title="BidCoop - Tu Plataforma en Mercado Público">
-          <div className="w-12 h-12 rounded-2xl bg-white p-1.5 shadow-xl shadow-slate-950/50 group-hover:scale-105 transition-all flex items-center justify-center border border-slate-700">
-            <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain" />
+          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-400 p-0.5 shadow-xl shadow-sky-500/30 group-hover:scale-110 transition-all duration-300 flex items-center justify-center border-2 border-white/90">
+            <div className="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
+              <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain rounded-full" />
+            </div>
           </div>
-          <span className="text-[8px] font-black text-teal-400 tracking-widest uppercase mt-0.5 opacity-90 group-hover:opacity-100">BidCoop</span>
+          <span className="text-[8px] font-black text-sky-400 tracking-widest uppercase mt-0.5 opacity-90 group-hover:opacity-100">BidCoop</span>
         </div>
 
         {/* NAVIGATION ITEMS */}
@@ -129,17 +131,17 @@ export default function Sidebar({
                 {/* Main Icon Button */}
                 <button
                   onClick={() => onChangeView(m.id, m.subSections[0].id)}
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 mx-auto relative group ${
+                  className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-200 mx-auto relative group ${
                     isModuleActive
-                      ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
-                      : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                      ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/40 border border-sky-400/40'
+                      : 'text-slate-400 hover:text-white hover:bg-slate-800/80'
                   }`}
                   aria-label={m.label}
                 >
                   {m.icon}
                   {/* Active dot */}
                   {isModuleActive && (
-                    <span className="absolute right-1 top-1 w-2.5 h-2.5 bg-green-400 border border-slate-900 rounded-full animate-pulse" />
+                    <span className="absolute right-1 top-1 w-2.5 h-2.5 bg-sky-400 border border-slate-900 rounded-full animate-pulse shadow-sm shadow-sky-400" />
                   )}
                   {/* Tooltip on hover (fallback if submenu disabled) */}
                   <div className="absolute left-[70px] bg-slate-950 text-white text-[10px] uppercase font-bold py-1 px-2.5 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap hidden border border-slate-800">
