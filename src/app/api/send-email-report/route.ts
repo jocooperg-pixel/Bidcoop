@@ -304,7 +304,7 @@ export async function POST(request: Request) {
         });
 
         const info = await transporter.sendMail({
-          from: `"BidCoop Alertas" <${activeUser}>`,
+          from: `"Alertas BidCoop" <${activeUser}>`,
           to: targetEmails,
           subject,
           html: htmlBody,
