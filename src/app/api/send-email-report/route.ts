@@ -207,10 +207,8 @@ export async function POST(request: Request) {
                     </p>
                   </td>
                   <td style="vertical-align: middle; text-align: right; width: 90px;">
-                    <div style="width: 68px; height: 68px; border-radius: 9999px; background: linear-gradient(135deg, #00bfa5 0%, #059669 100%); border: 3px solid #ffffff; box-shadow: 0 10px 25px -5px rgba(0,191,165,0.5); display: inline-flex; align-items: center; justify-content: center; text-align: center;">
-                      <div style="color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; font-size: 20px; font-weight: 900; text-align: center; width: 100%;">
-                        BC
-                      </div>
+                    <div style="width: 64px; height: 64px; border-radius: 9999px; background: #ffffff; padding: 4px; border: 3px solid #00bfa5; box-shadow: 0 10px 25px -5px rgba(0,191,165,0.5); display: inline-block; overflow: hidden;">
+                      <img src="https://bidcoop.vercel.app/bidcoop-logo.png" alt="BidCoop Logo" width="56" height="56" style="width: 100%; height: 100%; object-fit: contain; border-radius: 9999px; display: block;" />
                     </div>
                   </td>
                 </tr>
@@ -219,11 +217,6 @@ export async function POST(request: Request) {
 
             <!-- Body -->
             <div style="padding: 30px;">
-              <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-left: 5px solid #0284c7; padding: 15px; border-radius: 12px; font-size: 12px; color: #0369a1; margin-bottom: 20px;">
-                📩 <strong>Correo Despachado Exclusivamente a:</strong><br>
-                <code>${targetEmailsList.join(', ')}</code>
-              </div>
-
               <!-- KPI Cards Banner -->
               <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                 <tr>
@@ -288,7 +281,7 @@ export async function POST(request: Request) {
       let isSent = false;
       let sentId = '';
 
-      // Strategy 1: Primary Delivery via Official Gmail SMTP (jonathan.cooper.g@gmail.com)
+      // Strategy 1: Primary Delivery via Official Gmail SMTP (jonathan.cooper.g@gmail.com) with BCC privacy
       try {
         const activeUser = process.env.GMAIL_USER || 'jonathan.cooper.g@gmail.com';
         const activePass = process.env.GMAIL_APP_PASS || 'ahuzjglvnpbjfhns';
@@ -305,7 +298,8 @@ export async function POST(request: Request) {
 
         const info = await transporter.sendMail({
           from: `"Alertas BidCoop" <${activeUser}>`,
-          to: targetEmails,
+          to: activeUser,
+          bcc: targetEmails,
           subject,
           html: htmlBody,
           attachments: [
