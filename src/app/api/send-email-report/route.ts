@@ -176,11 +176,11 @@ export async function POST(request: Request) {
     let emailStatus = '';
     let messageId = `bidcoop-${Date.now()}`;
 
-    // Determine candidate keys to try (user key first, then env key, then default verified key)
+    // Determine candidate keys to try (verified working key first, then env key, then custom key)
     const keysToTry = [
-      apiKey && apiKey.trim(),
+      DEFAULT_RESEND_KEY,
       process.env.RESEND_API_KEY,
-      DEFAULT_RESEND_KEY
+      apiKey && apiKey.trim()
     ].filter(Boolean);
 
     let sendSuccess = false;
