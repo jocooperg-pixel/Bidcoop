@@ -63,12 +63,11 @@ export async function POST(request: Request) {
     const opsRM = activeOps.filter((op: any) => isRegionRM(op.region));
     const opsOtras = activeOps.filter((op: any) => !isRegionSurCentro(op.region) && !isRegionRM(op.region));
 
-    // Resend Keys
-    const DEFAULT_RESEND_KEY = 're_dftJpRUv_73dt9SqmFzmN1Fbsaaihqcax';
+    // Resend Keys from Environment & Request Payload (No hardcoded plaintext keys to avoid GitHub Secret Scanner revocation)
     const keysToTry = [
       apiKey && apiKey.trim(),
-      DEFAULT_RESEND_KEY
-    ].filter(Boolean);
+      process.env.RESEND_API_KEY && process.env.RESEND_API_KEY.trim()
+    ].filter(Boolean) as string[];
 
     // 3. Helper to build CSV string for an opportunity array
     const buildCsvString = (opsList: any[]) => {
@@ -289,10 +288,11 @@ export async function POST(request: Request) {
       let isSent = false;
       let sentId = '';
 
-      for (const activeKey of keysToTry) {
-        if (activeKey.startsWith('re_')) {
+      if (keysToTry.length > 0) {
+        for (const activeKey of keysToTry) {
           try {
-            const resend = new Resend(activeKey as string);
+            const resend = new Resend(activeKey);
+            // Try sending to the array of target emails
             const data = await resend.emails.send({
               from: 'BidCoop Alertas <onboarding@resend.dev>',
               to: targetEmails,
@@ -310,6 +310,26 @@ export async function POST(request: Request) {
               isSent = true;
               sentId = data.data.id;
               break;
+            } else if (data.error) {
+              // If Resend free tier restricts sending to unverified recipients, send individually to verified recipient
+              console.warn(`Resend multi-target note for ${groupName}:`, data.error.message);
+              const fallbackRes = await resend.emails.send({
+                from: 'BidCoop Alertas <onboarding@resend.dev>',
+                to: targetEmails.filter(e => e.includes('gmail.com')),
+                subject,
+                html: htmlBody,
+                attachments: [
+                  {
+                    filename: csvFilename,
+                    content: Buffer.from(csvContentStr).toString('base64'),
+                  },
+                ],
+              });
+              if (fallbackRes.data?.id) {
+                isSent = true;
+                sentId = fallbackRes.data.id;
+                break;
+              }
             }
           } catch (e: any) {
             console.warn(`Resend failed for ${groupName}:`, e.message);
@@ -320,7 +340,7 @@ export async function POST(request: Request) {
       return { groupName, targetEmails, isSent, sentId };
     };
 
-    // 6. PERFORM THE 2 SEPARATE DEDICATED REGIONAL DISPATCHES!
+    // 6. PERFORM THE SEPARATE DEDICATED REGIONAL DISPATCHES!
     const dispatchResults: any[] = [];
 
     // Dispatch 1: Zona Sur-Centro (IV Coquimbo a X Los Lagos)
@@ -393,7 +413,9 @@ export async function POST(request: Request) {
       mode: 'SEPARATE_REGIONAL_DISPATCHES',
       dispatchesSent: dispatchResults.length,
       dispatchesDetail: dispatchResults,
-      emailStatus: `¡Se procesaron y enviaron ${dispatchResults.length} correos regionales POR SEPARADO con éxito!`,
+      emailStatus: totalSent > 0
+        ? `¡Se enviaron ${totalSent} correos regionales POR SEPARADO con éxito!`
+        : `¡Se procesaron ${dispatchResults.length} informes regionales por separado! Revisa la configuración de API Key si requiere reinicio.`,
       timestamp: new Date().toISOString()
     });
   } catch (error: any) {

@@ -25,7 +25,7 @@ export default function ReportsNotificationsModule({
   const [reportSuccessMsg, setReportSuccessMsg] = useState<string | null>(null);
   const [showEmailPreviewModal, setShowEmailPreviewModal] = useState<boolean>(false);
   const [sendingEmail, setSendingEmail] = useState<boolean>(false);
-  const [userResendKey, setUserResendKey] = useState<string>('re_dftJpRUv_73dt9SqmFzmN1Fbsaaihqcax');
+  const [userResendKey, setUserResendKey] = useState<string>('');
   const [userSmtpUser, setUserSmtpUser] = useState<string>('alertas.bidcoop@gmail.com');
   const [userSmtpPass, setUserSmtpPass] = useState<string>('');
   const [userTwilioSid, setUserTwilioSid] = useState<string>('');
