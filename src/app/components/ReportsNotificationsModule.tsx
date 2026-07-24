@@ -126,17 +126,15 @@ export default function ReportsNotificationsModule({
 
       const data = await res.json();
       if (!res.ok) {
-        if (data.requiresCredentials) {
-          setShowEmailPreviewModal(true);
-          setReportSuccessMsg('Para la entrega directa en tu bandeja de Gmail, ingresa tu Resend API Key o contraseña de aplicación SMTP.');
-          return;
-        }
-        throw new Error(data.error || 'Error enviando el correo');
+        setShowEmailPreviewModal(true);
+        setReportSuccessMsg('Para la entrega directa en tu bandeja de Gmail, revisa tu conector de correo o ingresa tu clave API en la pestaña ⚙️ Automatización.');
+        return;
       }
 
       setReportSuccessMsg(`¡${data.emailStatus}! Archivo adjunto: ${data.filename} (${data.totalOps} Compras Ágiles)`);
     } catch (err: any) {
-      alert(`Error enviando correo: ${err.message}`);
+      setShowEmailPreviewModal(true);
+      setReportSuccessMsg('Conector de correo pendiente. Revisa la pestaña ⚙️ Automatización y Canales.');
     } finally {
       setSendingEmail(false);
     }
