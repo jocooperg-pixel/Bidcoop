@@ -64,7 +64,7 @@ export async function POST(request: Request) {
     const opsOtras = activeOps.filter((op: any) => !isRegionSurCentro(op.region) && !isRegionRM(op.region));
 
     // Resend Keys
-    const DEFAULT_RESEND_KEY = 're_aGVZc3NC_96Uo8Src5YKNeNHs2u55p8LN';
+    const DEFAULT_RESEND_KEY = 're_dftJpRUv_73dt9SqmFzmN1Fbsaaihqcax';
     const keysToTry = [
       apiKey && apiKey.trim(),
       DEFAULT_RESEND_KEY
