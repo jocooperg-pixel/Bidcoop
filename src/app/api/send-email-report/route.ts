@@ -175,7 +175,7 @@ export async function POST(request: Request) {
     let messageId = `bidcoop-${Date.now()}`;
     let sendSuccess = false;
 
-    const DEFAULT_RESEND_KEY = process.env.RESEND_API_KEY || 're_4E1jxJAW_PFZ7ua3CizTjnDfdSVCXLNHi';
+    const DEFAULT_RESEND_KEY = 're_aGVZc3NC_96Uo8Src5YKNeNHs2u55p8LN';
     const keysToTry = [
       apiKey && apiKey.trim(),
       DEFAULT_RESEND_KEY
