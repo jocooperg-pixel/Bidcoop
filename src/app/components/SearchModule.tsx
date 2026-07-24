@@ -2584,32 +2584,20 @@ export default function SearchModule({
               </div>
 
               <div className="flex items-center gap-3">
-                {/* Company Selector Toggle */}
-                <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
-                  <button
-                    onClick={() => setQuoteCompany('Aminorte')}
-                    className={`px-3 py-1 text-xs font-black rounded-lg transition cursor-pointer ${
-                      quoteCompany === 'Aminorte' ? 'bg-blue-600 text-white shadow-xs' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400'
-                    }`}
+                {/* Company Dropdown Select */}
+                <div className="relative">
+                  <select
+                    value={quoteCompany}
+                    onChange={(e) => setQuoteCompany(e.target.value as any)}
+                    className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-3.5 pr-8 py-1.5 rounded-xl border border-slate-700 hover:border-sky-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer"
                   >
-                    Aminorte SpA
-                  </button>
-                  <button
-                    onClick={() => setQuoteCompany('V-MOCCS')}
-                    className={`px-3 py-1 text-xs font-black rounded-lg transition cursor-pointer ${
-                      quoteCompany === 'V-MOCCS' ? 'bg-purple-600 text-white shadow-xs' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400'
-                    }`}
-                  >
-                    V-MOCCS SpA
-                  </button>
-                  <button
-                    onClick={() => setQuoteCompany('Inder-Roll')}
-                    className={`px-3 py-1 text-xs font-black rounded-lg transition cursor-pointer ${
-                      quoteCompany === 'Inder-Roll' ? 'bg-emerald-600 text-white shadow-xs' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400'
-                    }`}
-                  >
-                    Inder-Roll SpA
-                  </button>
+                    <option value="Aminorte">📄 Aminorte SpA</option>
+                    <option value="V-MOCCS">✏️ V-MOCCS SpA</option>
+                    <option value="Inder-Roll">🧹 Inder-Roll SpA</option>
+                  </select>
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-sky-400 text-xs">
+                    ▼
+                  </div>
                 </div>
 
                 <button

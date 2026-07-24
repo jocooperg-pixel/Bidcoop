@@ -416,52 +416,26 @@ export default function BusinessModule({
               </div>
             </div>
 
-            {/* Quick Action Filter Buttons */}
-            <div className="flex flex-wrap items-center gap-2 pt-1">
-              <button
-                onClick={() => { setFilterCompany('Aminorte'); setFilterModality('Compra Ágil'); }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold uppercase transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
-                  filterCompany === 'Aminorte' && filterModality === 'Compra Ágil'
-                    ? 'bg-blue-600 text-white ring-2 ring-blue-300'
-                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
-                }`}
-              >
-                <span>⚡ Compras Ágiles (Aminorte)</span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-white/20">{statsAgilAminorte.count}</span>
-              </button>
-
-              <button
-                onClick={() => { setFilterCompany('Aminorte'); setFilterModality('Grandes Compras'); }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold uppercase transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
-                  filterCompany === 'Aminorte' && filterModality === 'Grandes Compras'
-                    ? 'bg-purple-600 text-white ring-2 ring-purple-300'
-                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
-                }`}
-              >
-                <span>🛍️ Grandes Compras (Aminorte)</span>
-              </button>
-
-              <button
-                onClick={() => { setFilterCompany('Inder-Roll'); setFilterModality('Todas'); }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold uppercase transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
-                  filterCompany === 'Inder-Roll'
-                    ? 'bg-emerald-600 text-white ring-2 ring-emerald-300'
-                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
-                }`}
-              >
-                <span>🧽 Inder-Roll (Aseo)</span>
-              </button>
-
-              <button
-                onClick={() => { setFilterCompany('Todas'); setFilterModality('Todas'); }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold uppercase transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
-                  filterCompany === 'Todas' && filterModality === 'Todas'
-                    ? 'bg-white text-slate-900 font-black'
-                    : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
-                }`}
-              >
-                <span>📋 Ver Todas</span>
-              </button>
+            {/* Corporate Company Filter Dropdown Select */}
+            <div className="flex flex-wrap items-center gap-3 pt-1">
+              <span className="text-xs font-black text-sky-200 uppercase tracking-wider flex items-center gap-1.5">
+                <span>🏢</span> Filtrar por Empresa:
+              </span>
+              <div className="relative">
+                <select
+                  value={filterCompany}
+                  onChange={(e) => setFilterCompany(e.target.value as any)}
+                  className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-4 pr-10 py-2 rounded-xl border border-sky-400/40 hover:border-sky-300 shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 cursor-pointer"
+                >
+                  <option value="Todas">📊 Consolidado Holding (Todas las Empresas)</option>
+                  <option value="Inder-Roll">🧹 Inder-Roll SpA (Aseo e Higiene)</option>
+                  <option value="Aminorte">📄 Aminorte SpA (Oficina & Librería)</option>
+                  <option value="V-MOCCS">✏️ V-MOCCS SpA (Oficina & Librería)</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-sky-300">
+                  ▼
+                </div>
+              </div>
             </div>
           </div>
 
