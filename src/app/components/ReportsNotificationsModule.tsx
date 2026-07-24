@@ -240,9 +240,28 @@ export default function ReportsNotificationsModule({
         </div>
 
         {/* Action Buttons Container — Ultra Premium & Intuitive Design */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           
-          {/* Button 1: Dispatch Email Report */}
+          {/* Button 1: Live Email Preview Button */}
+          <button
+            onClick={() => setShowEmailPreviewModal(true)}
+            className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold text-xs shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 transition-all transform active:scale-95 cursor-pointer overflow-hidden"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
+                👁️
+              </div>
+              <div className="text-left">
+                <div className="font-extrabold text-sm leading-snug">Vista Previa del Correo</div>
+                <div className="text-[10px] text-sky-100 font-medium">Inspeccionar Formato Oficial</div>
+              </div>
+            </div>
+            <span className="bg-white/20 text-white font-black text-[10px] px-2.5 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
+              Ver HTML
+            </span>
+          </button>
+
+          {/* Button 2: Dispatch Email Report */}
           <button
             onClick={() => handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jocooperg@gmail.com')}
             disabled={sendingEmail}
@@ -262,7 +281,7 @@ export default function ReportsNotificationsModule({
             </span>
           </button>
 
-          {/* Button 2: Dispatch Push WhatsApp */}
+          {/* Button 3: Dispatch Push WhatsApp */}
           <button
             onClick={() => handleSendWhatsappTest()}
             disabled={sendingWhatsapp}
@@ -282,7 +301,7 @@ export default function ReportsNotificationsModule({
             </span>
           </button>
 
-          {/* Button 3: Download Excel / CSV */}
+          {/* Button 4: Download Excel / CSV */}
           <button
             onClick={() => handleExportExcel(selectedCompany)}
             className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs border border-slate-700/80 hover:border-sky-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
@@ -990,48 +1009,106 @@ export default function ReportsNotificationsModule({
               </div>
 
               {/* Formatted HTML Email Canvas */}
-              <div className="bg-white text-slate-900 rounded-2xl p-6 border border-slate-200 shadow-md space-y-4">
-                <div className="border-b border-slate-200 pb-3 space-y-1 text-xs">
-                  <div><strong>De:</strong> notificaciones@bidcoop.cl</div>
-                  <div><strong>Para:</strong> jocooperg@gmail.com</div>
-                  <div><strong>Asunto:</strong> <span className="font-extrabold text-indigo-700">[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - {selectedCompany} ({new Date().toISOString().split('T')[0]})</span></div>
-                  <div><strong>Adjunto:</strong> <span className="font-mono font-bold text-emerald-700">BidCoop_Reporte_Diario_Compras_Agiles_{selectedCompany}_{new Date().toISOString().split('T')[0]}.csv</span></div>
+              <div className="bg-white text-slate-900 rounded-2xl p-6 border border-slate-200 shadow-md space-y-4 max-h-[600px] overflow-y-auto">
+                <div className="border-b border-slate-200 pb-3 space-y-2 text-xs">
+                  <div><strong>De:</strong> <span className="font-semibold text-slate-800">BidCoop Alertas &lt;alertas@bidcoop.cl&gt;</span></div>
+                  <div><strong>Para:</strong> <span className="font-mono text-blue-700 font-bold">jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jocooperg@gmail.com</span></div>
+                  <div><strong>Asunto:</strong> <span className="font-extrabold text-slate-900">[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles por Región - {selectedCompany} ({new Date().toISOString().split('T')[0]})</span></div>
+                  <div><strong>Adjunto:</strong> <span className="font-mono font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">BidCoop_Reporte_Diario_Compras_Agiles_{selectedCompany}_{new Date().toISOString().split('T')[0]}.csv</span></div>
                 </div>
 
-                {/* Email Body HTML render */}
-                <div className="space-y-4">
-                  <div className="bg-gradient-to-r from-indigo-900 to-slate-900 text-white p-4 rounded-xl">
-                    <h4 className="font-black text-base">Reporte Diario de Compras Ágiles Activas</h4>
-                    <p className="text-[11px] text-indigo-200">Segmento: {selectedCompany} | Presupuesto Total: ${companyFilteredOps.reduce((a,c) => a + c.monto, 0).toLocaleString('es-CL')} CLP</p>
+                {/* Email Body Live HTML Canvas */}
+                <div className="space-y-6 border rounded-2xl p-5 bg-slate-50 border-slate-200">
+                  {/* Canvas Header */}
+                  <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-6 rounded-2xl border-b-4 border-cyan-400 relative flex justify-between items-center">
+                    <div>
+                      <span className="bg-cyan-400 text-slate-950 text-[9px] font-black px-3 py-1 rounded-full uppercase tracking-widest block w-fit mb-2">
+                        BIDCOOP REPORTE REGIONAL ENRUTADO (08:00 AM)
+                      </span>
+                      <h3 className="text-xl font-black text-white">BidCoop — Tu Plataforma en Mercado Público</h3>
+                      <p className="text-xs text-sky-200 mt-1">OPORTUNIDADES DE NEGOCIO • Enrutamiento Regional para {selectedCompany}</p>
+                    </div>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-400 p-0.5 shadow-xl border-2 border-white flex items-center justify-center shrink-0">
+                      <div className="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
+                        <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain rounded-full" />
+                      </div>
+                    </div>
                   </div>
 
-                  <p className="text-slate-700 leading-relaxed">
-                    Estimado equipo comercial de <strong>{selectedCompany}</strong>,<br/>
-                    Se adjunta a este correo electrónico el informe completo en formato <code>.CSV / Excel</code> con las <strong>{companyFilteredOps.length} Compras Ágiles activas</strong> del día de hoy.
-                  </p>
+                  {/* Summary Box */}
+                  <div className="bg-sky-50 border border-sky-200 border-l-4 border-l-sky-600 p-4 rounded-xl text-xs text-sky-900 space-y-1">
+                    <strong className="text-sky-950 block text-sm font-black">📍 Protocolo de Destinatarios Activo por Zona:</strong>
+                    <p>• <strong>Regiones IV Coquimbo a X Los Lagos:</strong> <code>jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</code></p>
+                    <p>• <strong>Región Metropolitana:</strong> <code>mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</code></p>
+                  </div>
 
-                  <table className="w-full border-collapse text-[11px] text-left">
-                    <thead>
-                      <tr className="bg-slate-100 text-slate-700 font-black uppercase">
-                        <th className="p-2">Código</th>
-                        <th className="p-2">Proceso</th>
-                        <th className="p-2">Organismo</th>
-                        <th className="p-2">Monto CLP</th>
-                        <th className="p-2">Precio Sugerido AI</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-slate-100">
-                      {companyFilteredOps.slice(0, 5).map(op => (
-                        <tr key={op.codigo}>
-                          <td className="p-2 font-mono font-bold text-indigo-600">{op.codigo}</td>
-                          <td className="p-2 font-semibold">{op.titulo}</td>
-                          <td className="p-2 text-slate-600">{op.organismo}</td>
-                          <td className="p-2 font-bold">${op.monto.toLocaleString('es-CL')}</td>
-                          <td className="p-2 font-bold text-emerald-600">${Math.round(op.monto * 0.94).toLocaleString('es-CL')}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                  {/* KPI Summary */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="p-4 bg-white rounded-xl border border-slate-200 border-l-4 border-l-emerald-600">
+                      <span className="text-[10px] font-black uppercase text-emerald-700 block">Compras Ágiles Activas</span>
+                      <span className="text-xl font-black text-slate-900 mt-1 block">{companyFilteredOps.length} Procesos</span>
+                    </div>
+                    <div className="p-4 bg-white rounded-xl border border-slate-200 border-l-4 border-l-sky-600">
+                      <span className="text-[10px] font-black uppercase text-sky-700 block">Presupuesto Total CLP</span>
+                      <span className="text-xl font-black text-slate-900 mt-1 block">${companyFilteredOps.reduce((a,c) => a + c.monto, 0).toLocaleString('es-CL')}</span>
+                    </div>
+                  </div>
+
+                  {/* Opportunities Table Preview */}
+                  <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                    <div className="bg-slate-900 text-white px-4 py-3 text-xs font-black flex justify-between items-center">
+                      <span>📊 Desglose Completo de Compras Ágiles ({companyFilteredOps.length} Procesos)</span>
+                      <span className="text-sky-400">Total: ${companyFilteredOps.reduce((a,c) => a + c.monto, 0).toLocaleString('es-CL')} CLP</span>
+                    </div>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-left text-xs border-collapse">
+                        <thead>
+                          <tr className="bg-slate-100 text-slate-600 font-black uppercase text-[10px] border-b border-slate-200">
+                            <th className="p-2.5">Código</th>
+                            <th className="p-2.5">Comprador & Región</th>
+                            <th className="p-2.5">Oportunidad / Proceso</th>
+                            <th className="p-2.5 text-right">Monto CLP</th>
+                            <th className="p-2.5 text-right">AI (94%)</th>
+                            <th className="p-2.5 text-center">Match %</th>
+                            <th className="p-2.5 text-right">Cierre</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-100">
+                          {companyFilteredOps.slice(0, 10).map((op) => (
+                            <tr key={op.codigo} className="hover:bg-slate-50">
+                              <td className="p-2.5 vertical-top">
+                                <span className="font-mono font-bold text-slate-900 block text-xs">{op.codigo}</span>
+                                <div className="flex flex-wrap gap-1 mt-1">
+                                  <span className="px-1.5 py-0.5 rounded text-[8px] font-black bg-orange-100 text-orange-800 border border-orange-200">⚡ COMPRA ÁGIL</span>
+                                  <span className="px-1.5 py-0.5 rounded text-[8px] font-black bg-sky-100 text-sky-800 border border-sky-200">{op.empresaMatch || 'Aminorte / V-MOCCS'}</span>
+                                </div>
+                              </td>
+                              <td className="p-2.5 vertical-top font-bold text-[11px] text-slate-800 uppercase">
+                                {op.organismo}
+                                <span className="text-[9px] font-bold text-sky-600 block mt-0.5">📍 {op.region || 'Región Metropolitana'}</span>
+                              </td>
+                              <td className="p-2.5 vertical-top">
+                                <span className="font-bold text-slate-900 block">{op.titulo}</span>
+                                <span className="text-[10px] text-slate-500 block truncate">Proceso: {op.titulo}. Demandante: {op.organismo}</span>
+                              </td>
+                              <td className="p-2.5 vertical-top text-right font-black text-slate-900">
+                                ${op.monto.toLocaleString('es-CL')}
+                              </td>
+                              <td className="p-2.5 vertical-top text-right font-black text-emerald-600">
+                                ${Math.round(op.monto * 0.94).toLocaleString('es-CL')}
+                              </td>
+                              <td className="p-2.5 vertical-top text-center font-black text-emerald-600">
+                                {op.matchScore}%
+                              </td>
+                              <td className="p-2.5 vertical-top text-right font-semibold text-slate-600 text-[11px]">
+                                {op.fechaCierre}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1039,18 +1116,30 @@ export default function ReportsNotificationsModule({
             {/* Modal Actions */}
             <div className="p-4 bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-3">
               <button
-                onClick={handleOpenMailClient}
-                className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-2"
+                onClick={() => {
+                  setShowEmailPreviewModal(false);
+                  handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jocooperg@gmail.com');
+                }}
+                disabled={sendingEmail}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-md flex items-center gap-2 cursor-pointer"
               >
-                <span>✉️ Abrir en mi Cliente de Correo (`mailto:`)</span>
+                <span>🚀 Confirmar y Enviar Correo Oficial Ahora</span>
               </button>
 
-              <button
-                onClick={() => handleExportExcel(selectedCompany)}
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-2"
-              >
-                <span>📥 Descargar Archivo Adjunto .CSV (BidCoop)</span>
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => handleExportExcel(selectedCompany)}
+                  className="bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 cursor-pointer"
+                >
+                  <span>📥 Descargar Copia .CSV / Excel</span>
+                </button>
+                <button
+                  onClick={() => setShowEmailPreviewModal(false)}
+                  className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 text-slate-800 dark:text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all cursor-pointer"
+                >
+                  Cerrar
+                </button>
+              </div>
             </div>
           </div>
         </div>
