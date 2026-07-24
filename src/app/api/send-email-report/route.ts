@@ -371,6 +371,7 @@ export async function POST(request: Request) {
 
     // Dispatch 2: Región Metropolitana
     if (opsRM.length > 0) {
+      await new Promise(resolve => setTimeout(resolve, 1200));
       const targetListRM = Array.from(new Set([...METROPOLITANA_EMAILS, email])).filter(e => e.includes('@'));
       const htmlRM = buildRegionalHtmlReport(
         '📍 Compras Ágiles Región Metropolitana (Santiago)',
@@ -392,6 +393,7 @@ export async function POST(request: Request) {
 
     // Dispatch 3: Otras Regiones (Si aplican)
     if (opsOtras.length > 0) {
+      await new Promise(resolve => setTimeout(resolve, 1200));
       const targetListOtras = Array.from(new Set([...SUR_CENTRO_EMAILS, email])).filter(e => e.includes('@'));
       const htmlOtras = buildRegionalHtmlReport(
         '📍 Compras Ágiles Otras Regiones',
