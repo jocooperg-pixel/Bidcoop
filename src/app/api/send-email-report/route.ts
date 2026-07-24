@@ -190,7 +190,7 @@ export async function POST(request: Request) {
       try {
         const resend = new Resend(resendKey as string);
         const data = await resend.emails.send({
-          from: 'BidCoop Alertas <onboarding@resend.dev>',
+          from: 'BidCoop Alertas — Mercado Público <onboarding@resend.dev>',
           to: [email],
           subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
           html: htmlBody,
