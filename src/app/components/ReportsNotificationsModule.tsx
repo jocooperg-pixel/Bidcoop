@@ -276,8 +276,8 @@ export default function ReportsNotificationsModule({
 
       {/* QUICK ACTIONS & TWO DISPATCH BUTTONS CONTAINER */}
       <div className="space-y-4">
-        {/* Action Buttons Grid — EXACTLY 2 REGIONAL EMAIL DISPATCH BUTTONS + PREVIEW & EXCEL */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+        {/* Action Buttons Grid — 2 REGIONAL EMAIL DISPATCH BUTTONS + PREVIEW */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-3.5">
           
           {/* Dispatch Button 1: Región Metropolitana */}
           <button
@@ -335,25 +335,6 @@ export default function ReportsNotificationsModule({
             </div>
             <span className="bg-slate-700 text-sky-400 border border-sky-500/30 font-bold text-[10px] px-2.5 py-1 rounded-full shrink-0">
               Ver HTML
-            </span>
-          </button>
-
-          {/* Auxiliary Button 4: Download Excel / CSV */}
-          <button
-            onClick={() => handleExportExcel(selectedCompany)}
-            className="group relative flex items-center justify-between p-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs border border-slate-700/80 hover:border-sky-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
-                📥
-              </div>
-              <div className="text-left">
-                <div className="font-extrabold text-sm leading-snug">Descargar Planilla Excel</div>
-                <div className="text-[10px] text-slate-400 font-medium">Formato .CSV Consolidado</div>
-              </div>
-            </div>
-            <span className="bg-slate-800 text-sky-400 border border-sky-500/30 font-bold text-[10px] px-2.5 py-1 rounded-full shrink-0">
-              .CSV UTF-8
             </span>
           </button>
         </div>
