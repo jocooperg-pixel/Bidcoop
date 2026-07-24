@@ -175,12 +175,19 @@ export async function POST(request: Request) {
     let messageId = `bidcoop-${Date.now()}`;
     let sendSuccess = false;
 
-    // 1. Try Custom Resend Key if provided
-    if (apiKey && apiKey.trim()) {
+    const DEFAULT_RESEND_KEY = 're_4E1jxJAW_PFZ7ua3CizTjnDfdSVCXLNHi';
+    const keysToTry = [
+      apiKey && apiKey.trim(),
+      process.env.RESEND_API_KEY,
+      DEFAULT_RESEND_KEY
+    ].filter(Boolean);
+
+    // 1. Try Resend Keys
+    for (const activeKey of keysToTry) {
       try {
-        const resend = new Resend(apiKey.trim());
+        const resend = new Resend(activeKey as string);
         const data = await resend.emails.send({
-          from: 'BidCoop Alertas <onboarding@resend.dev>',
+          from: 'BidCoop Alertas — Mercado Público <onboarding@resend.dev>',
           to: [email],
           subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
           html: htmlBody,
@@ -196,6 +203,7 @@ export async function POST(request: Request) {
           emailStatus = `¡Correo entregado con éxito a ${email} vía Resend Cloud API! (ID: ${data.data.id})`;
           messageId = data.data.id;
           sendSuccess = true;
+          break;
         }
       } catch (err: any) {
         console.warn('Resend key failed:', err.message);
