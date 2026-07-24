@@ -26,7 +26,7 @@ export default function ReportsNotificationsModule({
   const [showEmailPreviewModal, setShowEmailPreviewModal] = useState<boolean>(false);
   const [sendingEmail, setSendingEmail] = useState<boolean>(false);
   const [userResendKey, setUserResendKey] = useState<string>('re_VfcDcNUV_NxGciAGhCdAE5msy18GmHfoy');
-  const [userSmtpUser, setUserSmtpUser] = useState<string>('');
+  const [userSmtpUser, setUserSmtpUser] = useState<string>('alertas.bidcoop@gmail.com');
   const [userSmtpPass, setUserSmtpPass] = useState<string>('');
   const [userTwilioSid, setUserTwilioSid] = useState<string>('');
   const [userTwilioToken, setUserTwilioToken] = useState<string>('');
@@ -741,6 +741,56 @@ export default function ReportsNotificationsModule({
                 className="w-full bg-slate-100 dark:bg-slate-700 font-mono text-xs text-slate-900 dark:text-white p-3 rounded-xl border-none focus:ring-2 focus:ring-indigo-500"
               />
             </div>
+          </div>
+
+          {/* Gmail SMTP Direct Connector */}
+          <div className="bg-emerald-50 dark:bg-emerald-950/40 p-4 rounded-2xl border border-emerald-200 dark:border-emerald-800 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-black text-slate-900 dark:text-white flex items-center gap-2">
+                <span>📧</span> Conector Directo Gmail SMTP (alertas.bidcoop@gmail.com)
+              </span>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200">
+                Correo Propio Gmail
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+              <div>
+                <label className="text-[11px] font-bold text-slate-700 dark:text-slate-300 block mb-1">
+                  Correo Gmail Emisor:
+                </label>
+                <input
+                  type="email"
+                  placeholder="alertas.bidcoop@gmail.com"
+                  value={userSmtpUser}
+                  onChange={(e) => setUserSmtpUser(e.target.value)}
+                  className="w-full bg-white dark:bg-slate-800 border border-emerald-300 dark:border-emerald-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white font-mono"
+                />
+              </div>
+              <div>
+                <label className="text-[11px] font-bold text-slate-700 dark:text-slate-300 block mb-1">
+                  Contraseña de Aplicación (16 letras):
+                </label>
+                <div className="flex gap-2">
+                  <input
+                    type="password"
+                    placeholder="xxxx xxxx xxxx xxxx"
+                    value={userSmtpPass}
+                    onChange={(e) => setUserSmtpPass(e.target.value)}
+                    className="w-full bg-white dark:bg-slate-800 border border-emerald-300 dark:border-emerald-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white font-mono"
+                  />
+                  <button
+                    onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
+                    disabled={sendingEmail}
+                    className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2 rounded-xl shrink-0 transition cursor-pointer"
+                  >
+                    {sendingEmail ? 'Enviando...' : 'Probar Gmail'}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <p className="text-[10px] text-slate-500">
+              Para obtener la clave de 16 letras: Abre <a href="https://myaccount.google.com/apppasswords" target="_blank" rel="noreferrer" className="text-emerald-600 underline font-bold">myaccount.google.com/apppasswords</a> logueado en <strong>alertas.bidcoop@gmail.com</strong>, escribe BidCoop y presiona Crear.
+            </p>
           </div>
 
           {/* Resend.com Cloud Email API Credentials */}
