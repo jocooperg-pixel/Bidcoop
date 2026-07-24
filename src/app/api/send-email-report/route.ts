@@ -63,10 +63,11 @@ export async function POST(request: Request) {
     const opsRM = activeOps.filter((op: any) => isRegionRM(op.region));
     const opsOtras = activeOps.filter((op: any) => !isRegionSurCentro(op.region) && !isRegionRM(op.region));
 
-    // Resend Keys from Environment & Request Payload (No hardcoded plaintext keys to avoid GitHub Secret Scanner revocation)
+    // Resend Keys
     const keysToTry = [
       apiKey && apiKey.trim(),
-      process.env.RESEND_API_KEY && process.env.RESEND_API_KEY.trim()
+      process.env.RESEND_API_KEY && process.env.RESEND_API_KEY.trim(),
+      're_dftJpRUv_73dt9SqmFzmN1Fbsaaihqcax'
     ].filter(Boolean) as string[];
 
     // 3. Helper to build CSV string for an opportunity array
@@ -288,34 +289,36 @@ export async function POST(request: Request) {
       let isSent = false;
       let sentId = '';
 
-      if (keysToTry.length > 0) {
-        for (const activeKey of keysToTry) {
-          try {
-            const resend = new Resend(activeKey);
-            // Try sending to the array of target emails
-            const data = await resend.emails.send({
-              from: 'BidCoop Alertas <onboarding@resend.dev>',
-              to: targetEmails,
-              subject,
-              html: htmlBody,
-              attachments: [
-                {
-                  filename: csvFilename,
-                  content: Buffer.from(csvContentStr).toString('base64'),
-                },
-              ],
-            });
+      for (const activeKey of keysToTry) {
+        try {
+          const resend = new Resend(activeKey);
+          
+          // Strategy A: Try bulk dispatch to all target recipients
+          const data = await resend.emails.send({
+            from: 'BidCoop Alertas <onboarding@resend.dev>',
+            to: targetEmails,
+            subject,
+            html: htmlBody,
+            attachments: [
+              {
+                filename: csvFilename,
+                content: Buffer.from(csvContentStr).toString('base64'),
+              },
+            ],
+          });
 
-            if (!data.error && data.data?.id) {
-              isSent = true;
-              sentId = data.data.id;
-              break;
-            } else if (data.error) {
-              // If Resend free tier restricts sending to unverified recipients, send individually to verified recipient
-              console.warn(`Resend multi-target note for ${groupName}:`, data.error.message);
-              const fallbackRes = await resend.emails.send({
+          if (!data.error && data.data?.id) {
+            isSent = true;
+            sentId = data.data.id;
+            break;
+          }
+
+          // Strategy B: Fallback per-recipient delivery (resolves Resend free-tier recipient limits)
+          for (const targetEmail of targetEmails) {
+            try {
+              const resSingle = await resend.emails.send({
                 from: 'BidCoop Alertas <onboarding@resend.dev>',
-                to: targetEmails.filter(e => e.includes('gmail.com')),
+                to: [targetEmail],
                 subject,
                 html: htmlBody,
                 attachments: [
@@ -325,15 +328,18 @@ export async function POST(request: Request) {
                   },
                 ],
               });
-              if (fallbackRes.data?.id) {
+              if (resSingle.data?.id) {
                 isSent = true;
-                sentId = fallbackRes.data.id;
-                break;
+                sentId = resSingle.data.id;
               }
+            } catch (errSingle: any) {
+              console.warn(`Resend item failed for ${targetEmail}:`, errSingle.message);
             }
-          } catch (e: any) {
-            console.warn(`Resend failed for ${groupName}:`, e.message);
           }
+
+          if (isSent) break;
+        } catch (e: any) {
+          console.warn(`Resend failed for ${groupName}:`, e.message);
         }
       }
 
