@@ -140,26 +140,60 @@ export default function ReportsNotificationsModule({
     }
   };
 
-  const handleOpenMailClient = () => {
+  const handleOpenMailClientRegional = (zona: 'SurCentro' | 'Metropolitana' | 'Todas' = 'Todas') => {
     const today = new Date().toISOString().split('T')[0];
-    const totalOps = companyFilteredOps.length;
-    const totalMonto = companyFilteredOps.reduce((acc, curr) => acc + curr.monto, 0);
-
-    const subject = encodeURIComponent(`[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles - ${selectedCompany} (${today})`);
     
-    let bodyText = `Estimado equipo comercial de ${selectedCompany},\n\n`;
-    bodyText += `Se adjunta el resumen de las Compras Ágiles activas del día de hoy (${today}):\n`;
-    bodyText += `- Compras Ágiles Activas: ${totalOps}\n`;
-    bodyText += `- Presupuesto Total CLP: $${totalMonto.toLocaleString('es-CL')} CLP\n\n`;
-    bodyText += `Listado de Procesos Destacados:\n`;
+    // Recipients by region
+    let targetEmails = 'jsanmartin@aminorte.cl,mviguera@aminorte.cl,jorge.alvarado@discoverymerch.cl,jonathan.cooper@discoverymerch.cl';
+    if (zona === 'Metropolitana') {
+      targetEmails = 'mviguera@aminorte.cl,jorge.alvarado@discoverymerch.cl,jonathan.cooper@discoverymerch.cl';
+    }
 
-    companyFilteredOps.slice(0, 8).forEach(op => {
-      bodyText += `• [${op.codigo}] ${op.titulo} - ${op.organismo} ($${op.monto.toLocaleString('es-CL')} CLP) - Cierre: ${op.fechaCierre}\n`;
+    // Filter opportunities
+    const isSurCentro = (reg: string = '') => {
+      const r = reg.toUpperCase();
+      return r.includes('COQUIMBO') || r.includes('IV') || r.includes('VALPARAÍSO') || r.includes('VALPARAISO') || r.includes('V ') || r.includes('O\'HIGGINS') || r.includes('VI') || r.includes('MAULE') || r.includes('VII') || r.includes('BIO') || r.includes('BÍO') || r.includes('VIII') || r.includes('ARAUCANÍA') || r.includes('ARAUCANIA') || r.includes('IX') || r.includes('LOS LAGOS') || r.includes('X ');
+    };
+
+    const isRM = (reg: string = '') => {
+      const r = reg.toUpperCase();
+      return r.includes('METROPOLITANA') || r.includes('SANTIAGO') || r.includes('RM');
+    };
+
+    let targetOps = companyFilteredOps;
+    if (zona === 'SurCentro') targetOps = companyFilteredOps.filter(o => isSurCentro(o.region));
+    if (zona === 'Metropolitana') targetOps = companyFilteredOps.filter(o => isRM(o.region));
+
+    const totalOps = targetOps.length;
+    const totalMonto = targetOps.reduce((acc, curr) => acc + curr.monto, 0);
+
+    const zonaName = zona === 'SurCentro' ? 'Zona Sur-Centro (Coquimbo a Los Lagos)' : (zona === 'Metropolitana' ? 'Región Metropolitana' : 'Consolidado Holding');
+    const subject = encodeURIComponent(`[BidCoop 08:00 AM] Compras Ágiles ${zonaName} - (${today})`);
+
+    let bodyText = `Estimado equipo comercial,\n\n`;
+    bodyText += `Se presenta el reporte de Compras Ágiles activas para ${zonaName} (${today}):\n`;
+    bodyText += `- Compras Ágiles Activas: ${totalOps} Procesos\n`;
+    bodyText += `- Presupuesto Total CLP: $${totalMonto.toLocaleString('es-CL')} CLP\n\n`;
+    bodyText += `=========================================================\n`;
+    bodyText += `DESGLOSE DE PROCESOS:\n`;
+    bodyText += `=========================================================\n\n`;
+
+    targetOps.forEach(op => {
+      const winPrice = Math.round(op.monto * 0.94);
+      bodyText += `• CÓDIGO: ${op.codigo}\n`;
+      bodyText += `  ORGANISMO: ${op.organismo} (${op.region})\n`;
+      bodyText += `  PROCESO: ${op.titulo}\n`;
+      bodyText += `  MONTO: $${op.monto.toLocaleString('es-CL')} CLP | PRECIO AI (94%): $${winPrice.toLocaleString('es-CL')} CLP\n`;
+      bodyText += `  CIERRE: ${op.fechaCierre}\n\n`;
     });
 
-    bodyText += `\nDescargue el reporte oficial .CSV adjunto desde la plataforma BidCoop.\n\nAtentamente,\nPlataforma Avanzada de Abastecimiento BidCoop © 2026`;
+    bodyText += `\n* Adjunte la planilla official .CSV descargada desde BidCoop.\n\nAtentamente,\nPlataforma Avanzada de Abastecimiento BidCoop © 2026`;
 
-    window.open(`mailto:jocooperg@gmail.com?subject=${subject}&body=${encodeURIComponent(bodyText)}`, '_blank');
+    window.open(`mailto:${targetEmails}?subject=${subject}&body=${encodeURIComponent(bodyText)}`, '_blank');
+  };
+
+  const handleOpenMailClient = () => {
+    handleOpenMailClientRegional('Todas');
   };
 
   // Generate simulated postulation email preview
@@ -237,6 +271,33 @@ export default function ReportsNotificationsModule({
           <p className="text-sm text-slate-500 dark:text-slate-400">
             Generación automatizada a las 8:00 AM de Compras Ágiles activas y notificaciones por correo de seguimiento segmentadas por empresa.
           </p>
+        </div>
+
+        {/* Instant Rocket Mailbox Trigger Banner — 1-Click Immediate Solution */}
+        <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white p-4 rounded-2xl border border-sky-500/40 shadow-lg flex flex-col md:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 font-black flex items-center justify-center text-xl shrink-0">
+              🚀
+            </div>
+            <div>
+              <div className="font-extrabold text-sm text-white">Despacho Inmediato por Correo (1-Clic Outlook / Gmail)</div>
+              <div className="text-xs text-sky-200">Abre tu cliente de correo con la lista exacta de destinatarios regionales y datos cargados.</div>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center gap-2 shrink-0">
+            <button
+              onClick={() => handleOpenMailClientRegional('SurCentro')}
+              className="bg-sky-400 hover:bg-sky-300 text-slate-950 font-black text-xs px-3.5 py-2 rounded-xl transition-all shadow-md cursor-pointer flex items-center gap-1.5"
+            >
+              <span>🏔️ Enviar Zona Sur-Centro (IV-X)</span>
+            </button>
+            <button
+              onClick={() => handleOpenMailClientRegional('Metropolitana')}
+              className="bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-black text-xs px-3.5 py-2 rounded-xl transition-all shadow-md cursor-pointer flex items-center gap-1.5"
+            >
+              <span>🏛️ Enviar Región Metropolitana</span>
+            </button>
+          </div>
         </div>
 
         {/* Action Buttons Container — Ultra Premium & Intuitive Design */}
