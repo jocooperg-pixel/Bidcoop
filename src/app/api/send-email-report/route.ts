@@ -12,8 +12,8 @@ export async function POST(request: Request) {
       apiKey = '',
       smtpUser = '',
       smtpPass = '',
-      smtpHost = 'smtp-mail.outlook.com',
-      smtpPort = 587
+      smtpHost = 'smtp.gmail.com',
+      smtpPort = 465
     } = body;
 
     const today = new Date().toISOString().split('T')[0];
@@ -175,54 +175,94 @@ export async function POST(request: Request) {
     let messageId = `bidcoop-${Date.now()}`;
     let sendSuccess = false;
 
-    const DEFAULT_RESEND_KEY = 're_4E1jxJAW_PFZ7ua3CizTjnDfdSVCXLNHi';
+    const DEFAULT_RESEND_KEY = process.env.RESEND_API_KEY || 're_4E1jxJAW_PFZ7ua3CizTjnDfdSVCXLNHi';
     const keysToTry = [
       apiKey && apiKey.trim(),
-      process.env.RESEND_API_KEY,
       DEFAULT_RESEND_KEY
     ].filter(Boolean);
 
-    // 1. Try Resend Keys
+    // 1. Try Brevo API Key if key starts with xkeysib-
     for (const activeKey of keysToTry) {
-      try {
-        const resend = new Resend(activeKey as string);
-        const data = await resend.emails.send({
-          from: 'BidCoop Alertas — Mercado Público <onboarding@resend.dev>',
-          to: [email],
-          subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
-          html: htmlBody,
-          attachments: [
-            {
-              filename,
-              content: Buffer.from(csvString).toString('base64'),
+      if (activeKey.startsWith('xkeysib-')) {
+        try {
+          const brevoRes = await fetch('https://api.brevo.com/v3/smtp/email', {
+            method: 'POST',
+            headers: {
+              'accept': 'application/json',
+              'api-key': activeKey,
+              'content-type': 'application/json'
             },
-          ],
-        });
-
-        if (!data.error && data.data?.id) {
-          emailStatus = `¡Correo entregado con éxito a ${email} vía Resend Cloud API! (ID: ${data.data.id})`;
-          messageId = data.data.id;
-          sendSuccess = true;
-          break;
+            body: JSON.stringify({
+              sender: { name: 'BidCoop Alertas', email: 'alertas.bidcoop@gmail.com' },
+              to: [{ email }],
+              subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
+              htmlContent: htmlBody,
+              attachment: [
+                {
+                  name: filename,
+                  content: Buffer.from(csvString).toString('base64')
+                }
+              ]
+            })
+          });
+          const brevoData = await brevoRes.json();
+          if (brevoData.messageId) {
+            emailStatus = `¡Correo entregado con éxito a ${email} vía Brevo Cloud API! (ID: ${brevoData.messageId})`;
+            messageId = brevoData.messageId;
+            sendSuccess = true;
+            break;
+          }
+        } catch (err: any) {
+          console.warn('Brevo API key failed:', err.message);
         }
-      } catch (err: any) {
-        console.warn('Resend key failed:', err.message);
       }
     }
 
-    // 2. Try User SMTP Credentials if provided
+    // 2. Try Resend API Keys
+    if (!sendSuccess) {
+      for (const activeKey of keysToTry) {
+        if (activeKey.startsWith('re_')) {
+          try {
+            const resend = new Resend(activeKey as string);
+            const data = await resend.emails.send({
+              from: 'BidCoop Alertas <onboarding@resend.dev>',
+              to: [email],
+              subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
+              html: htmlBody,
+              attachments: [
+                {
+                  filename,
+                  content: Buffer.from(csvString).toString('base64'),
+                },
+              ],
+            });
+
+            if (!data.error && data.data?.id) {
+              emailStatus = `¡Correo entregado con éxito a ${email} vía Resend Cloud API! (ID: ${data.data.id})`;
+              messageId = data.data.id;
+              sendSuccess = true;
+              break;
+            }
+          } catch (err: any) {
+            console.warn('Resend key failed:', err.message);
+          }
+        }
+      }
+    }
+
+    // 3. Try User SMTP Credentials if provided
     if (!sendSuccess && smtpUser && smtpPass) {
       try {
         const transporter = nodemailer.createTransport({
           host: smtpHost,
-          port: Number(smtpPort) || 587,
+          port: Number(smtpPort) || 465,
           secure: Number(smtpPort) === 465,
           auth: { user: smtpUser, pass: smtpPass },
           tls: { rejectUnauthorized: false }
         });
 
         const info = await transporter.sendMail({
-          from: `"BidCoop Alertas — Mercado Público" <${smtpUser}>`,
+          from: `"BidCoop Alertas" <${smtpUser}>`,
           to: email,
           subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
           html: htmlBody,
@@ -237,7 +277,7 @@ export async function POST(request: Request) {
       }
     }
 
-    // 3. High-availability Fail-Safe Engine via Ethereal Cloud SMTP
+    // 4. High-availability Fail-Safe Engine via Ethereal Cloud SMTP
     if (!sendSuccess) {
       try {
         const testAccount = await nodemailer.createTestAccount();
@@ -252,7 +292,7 @@ export async function POST(request: Request) {
         });
 
         const info = await testTransporter.sendMail({
-          from: '"BidCoop Alertas — Mercado Público" <alertas@bidcoop.cl>',
+          from: '"BidCoop Alertas" <alertas@bidcoop.cl>',
           to: email,
           subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
           html: htmlBody,
