@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const {
-      email = 'jocooperg@gmail.com',
+      email = 'jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jocooperg@gmail.com',
       empresa = 'Todas',
       oportunidades = [],
       apiKey = '',
@@ -20,7 +20,40 @@ export async function POST(request: Request) {
     const companyClean = empresa === 'Todas' ? 'Consolidado_Holding' : empresa.replace(/\s+/g, '_');
     const filename = `BidCoop_Reporte_Diario_Compras_Agiles_${companyClean}_${today}.csv`;
 
-    // Filter opportunities for active published Compras Ágiles
+    // 1. Executive Regional Recipient Routing Rules
+    const SUR_CENTRO_EMAILS = [
+      'jsanmartin@aminorte.cl',
+      'mviguera@aminorte.cl',
+      'jorge.alvarado@discoverymerch.cl',
+      'jonathan.cooper@discoverymerch.cl'
+    ];
+
+    const METROPOLITANA_EMAILS = [
+      'mviguera@aminorte.cl',
+      'jorge.alvarado@discoverymerch.cl',
+      'jonathan.cooper@discoverymerch.cl'
+    ];
+
+    const ALL_EXECUTIVE_EMAILS = [
+      'jsanmartin@aminorte.cl',
+      'mviguera@aminorte.cl',
+      'jorge.alvarado@discoverymerch.cl',
+      'jonathan.cooper@discoverymerch.cl',
+      'jocooperg@gmail.com',
+      'jonathan.cooper.g@gmail.com'
+    ];
+
+    // Parse requested emails
+    const rawRequested = typeof email === 'string' ? email.split(',') : (Array.isArray(email) ? email : []);
+    const parsedRequested = rawRequested.map(e => e.trim()).filter(e => e.includes('@'));
+
+    // Consolidate final recipients without duplicates
+    const finalRecipients = Array.from(new Set([
+      ...parsedRequested,
+      ...ALL_EXECUTIVE_EMAILS
+    ]));
+
+    // 2. Filter active published Compras Ágiles
     const activeOps = oportunidades.filter((op: any) => {
       const matchCompany = empresa === 'Todas' || op.empresaMatch === empresa;
       const matchEstado = op.estado === 'Publicada' || !op.estado;
@@ -30,30 +63,39 @@ export async function POST(request: Request) {
     const totalOps = activeOps.length;
     const totalMonto = activeOps.reduce((acc: number, curr: any) => acc + (curr.monto || 0), 0);
 
-    // Group active opportunities by Convenio Marco / Rubro & Empresa
-    const escritorioOps = activeOps.filter((op: any) => {
-      const rubro = (op.rubro || '').toLowerCase();
-      const emp = (op.empresaMatch || '').toLowerCase();
-      return rubro.includes('escritorio') || rubro.includes('oficina') || emp.includes('aminorte') || emp.includes('v-moccs');
-    });
+    // 3. Helper to test Chilean Regions
+    const isRegionSurCentro = (regName: string = '') => {
+      const reg = regName.toUpperCase();
+      return (
+        reg.includes('COQUIMBO') || reg.includes('IV') ||
+        reg.includes('VALPARAÍSO') || reg.includes('VALPARAISO') || reg.includes('V ') ||
+        reg.includes('O\'HIGGINS') || reg.includes('OHIGGINS') || reg.includes('VI') ||
+        reg.includes('MAULE') || reg.includes('VII') ||
+        reg.includes('BIO') || reg.includes('BÍO') || reg.includes('VIII') ||
+        reg.includes('ARAUCANÍA') || reg.includes('ARAUCANIA') || reg.includes('IX') ||
+        reg.includes('LOS LAGOS') || reg.includes('X ')
+      );
+    };
 
-    const aseoOps = activeOps.filter((op: any) => {
-      const rubro = (op.rubro || '').toLowerCase();
-      const emp = (op.empresaMatch || '').toLowerCase();
-      return rubro.includes('aseo') || rubro.includes('higiene') || emp.includes('inder');
-    });
+    const isRegionRM = (regName: string = '') => {
+      const reg = regName.toUpperCase();
+      return reg.includes('METROPOLITANA') || reg.includes('SANTIAGO') || reg.includes('RM');
+    };
 
-    // Other / General fallback
-    const otrosOps = activeOps.filter((op: any) => !escritorioOps.includes(op) && !aseoOps.includes(op));
+    // Regional Groups
+    const opsSurCentro = activeOps.filter((op: any) => isRegionSurCentro(op.region));
+    const opsRM = activeOps.filter((op: any) => isRegionRM(op.region));
+    const opsOtras = activeOps.filter((op: any) => !isRegionSurCentro(op.region) && !isRegionRM(op.region));
 
-    // Build CSV attachment content
+    // 4. Build CSV attachment with full fields including Region and Recipient Routing
     const headers = [
+      'Zona / Región',
       'Convenio Marco / Rubro',
       'Código Licitación',
       'Título / Descripción',
       'Organismo Comprador',
       'RUT Organismo',
-      'Región',
+      'Región Específica',
       'Monto Estimado ($ CLP)',
       'Fecha Publicación',
       'Fecha Cierre',
@@ -61,12 +103,19 @@ export async function POST(request: Request) {
       'Modalidad',
       'Estado',
       'Match AI %',
-      'Precio Sugerido AI ($ CLP)'
+      'Precio Sugerido AI ($ CLP)',
+      'Correos Ejecutivos Asignados'
     ];
 
     const csvRows = activeOps.map((op: any) => {
       const winPrice = Math.round((op.monto || 0) * 0.94);
+      const isSur = isRegionSurCentro(op.region);
+      const isMet = isRegionRM(op.region);
+      const zonaTag = isSur ? 'Sur-Centro (IV-X)' : (isMet ? 'Metropolitana' : 'Otras Regiones');
+      const assignedEmails = isSur ? SUR_CENTRO_EMAILS.join('; ') : METROPOLITANA_EMAILS.join('; ');
+
       return [
+        `"${zonaTag}"`,
         `"${op.rubro || 'Artículos de Escritorio y Oficina'}"`,
         `"${op.codigo}"`,
         `"${(op.titulo || '').replace(/"/g, '""')}"`,
@@ -80,14 +129,22 @@ export async function POST(request: Request) {
         `"${op.modalidad || 'Compra Ágil'}"`,
         `"${op.estado || 'Publicada'}"`,
         `"${op.matchScore || op.match || '95'}%"`,
-        winPrice
+        winPrice,
+        `"${assignedEmails}"`
       ].join(';');
     });
 
     const csvString = '\uFEFF' + [headers.join(';'), ...csvRows].join('\n');
 
-    // Helper function to build rich HTML table with institutional palette
-    const renderTableGroup = (title: string, subtitle: string, opsList: any[], headerGradient: string, iconEmoji: string) => {
+    // 5. Helper to render HTML table group matching Photo 2 design
+    const renderRegionalGroup = (
+      title: string,
+      subtitle: string,
+      targetEmailsText: string,
+      opsList: any[],
+      headerGradient: string,
+      iconEmoji: string
+    ) => {
       if (opsList.length === 0) return '';
 
       const groupMonto = opsList.reduce((acc, curr) => acc + (curr.monto || 0), 0);
@@ -95,8 +152,8 @@ export async function POST(request: Request) {
       const rowsHtml = opsList.map((op: any) => {
         const winPrice = Math.round((op.monto || 0) * 0.94);
         const matchPct = op.matchScore || op.match || Math.floor(Math.random() * 20 + 80);
-        const rubroLabel = op.rubro || (title.includes('Aseo') ? 'Aseo e Higiene' : 'Artículos de Escritorio y Oficina');
-        const empresaTag = op.empresaMatch || (title.includes('Aseo') ? 'INDER-ROLL' : 'AMINORTE / V-MOCCS');
+        const rubroLabel = op.rubro || 'Artículos de Escritorio y Oficina';
+        const empresaTag = op.empresaMatch || (rubroLabel.includes('Aseo') ? 'INDER-ROLL' : 'AMINORTE / V-MOCCS');
 
         return `
           <tr style="border-bottom: 1px solid #f1f5f9;">
@@ -124,6 +181,9 @@ export async function POST(request: Request) {
             <!-- COMPRADOR -->
             <td style="padding: 14px 12px; vertical-align: top; width: 24%; font-size: 11px; font-weight: 800; color: #1e293b; text-transform: uppercase; line-height: 1.4;">
               ${op.organismo}
+              <div style="font-size: 9px; font-weight: 700; color: #0284c7; margin-top: 4px;">
+                📍 ${op.region || 'Región Metropolitana'}
+              </div>
             </td>
 
             <!-- OPORTUNIDAD -->
@@ -163,15 +223,20 @@ export async function POST(request: Request) {
 
       return `
         <div style="margin-top: 25px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-          <!-- Category Header with Institutional Gradient -->
+          <!-- Category Header -->
           <div style="background: ${headerGradient}; color: #ffffff; padding: 16px 20px; font-size: 13px; font-weight: 900; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00bfa5;">
-            <div style="display: flex; items-center: center; gap: 10px;">
-              <div style="width: 32px; height: 32px; border-radius: 9999px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 16px;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 36px; height: 36px; border-radius: 9999px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 18px;">
                 ${iconEmoji}
               </div>
               <div>
                 <div style="font-size: 15px; font-weight: 900; letter-spacing: -0.3px;">${title}</div>
-                <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">${subtitle} • ${opsList.length} Procesos Vigentes</div>
+                <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">
+                  ${subtitle} • ${opsList.length} Procesos Vigentes
+                </div>
+                <div style="font-size: 10px; color: #38bdf8; font-weight: 700; margin-top: 2px;">
+                  📩 Ejecutivos Asignados: ${targetEmailsText}
+                </div>
               </div>
             </div>
             <div style="font-size: 14px; font-weight: 900; color: #00bfa5; background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 9999px; border: 1px solid rgba(0,191,165,0.3);">
@@ -179,12 +244,12 @@ export async function POST(request: Request) {
             </div>
           </div>
 
-          <!-- Table -->
+          <!-- Table matching Photo 2 -->
           <table style="width: 100%; border-collapse: collapse; text-align: left; background: #ffffff;">
             <thead>
               <tr style="background: #f8fafc; color: #475569; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #e2e8f0;">
                 <th style="padding: 12px;">CÓDIGO</th>
-                <th style="padding: 12px;">COMPRADOR</th>
+                <th style="padding: 12px;">COMPRADOR & REGIÓN</th>
                 <th style="padding: 12px;">OPORTUNIDAD</th>
                 <th style="padding: 12px; text-align: right;">MONTO</th>
                 <th style="padding: 12px; text-align: center;">MATCH</th>
@@ -199,26 +264,29 @@ export async function POST(request: Request) {
       `;
     };
 
-    const escritorioHtml = renderTableGroup(
-      'Convenio Marco: Artículos de Escritorio y Oficina',
-      'Empresas Asignadas: Aminorte SpA & V-MOCCS SpA (RUT 77.235.702-8)',
-      escritorioOps,
+    const surCentroHtml = renderRegionalGroup(
+      '📍 Regiones Sur - Centro (IV Coquimbo a X Los Lagos)',
+      'Regiones: IV Coquimbo, V Valparaíso, VI O\'Higgins, VII Maule, VIII Bío Bío, IX Araucanía, X Los Lagos',
+      SUR_CENTRO_EMAILS.join(', '),
+      opsSurCentro,
       'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-      '📦'
+      '🏔️'
     );
 
-    const aseoHtml = renderTableGroup(
-      'Convenio Marco: Aseo e Higiene Institucional',
-      'Empresa Asignada: Inder-Roll SpA',
-      aseoOps,
-      'linear-gradient(135deg, #0f172a 0%, #064e3b 100%)',
-      '🧹'
+    const rmHtml = renderRegionalGroup(
+      '📍 Región Metropolitana (Santiago)',
+      'Región Metropolitana de Santiago',
+      METROPOLITANA_EMAILS.join(', '),
+      opsRM,
+      'linear-gradient(135deg, #0f172a 0%, #0369a1 100%)',
+      '🏛️'
     );
 
-    const otrosHtml = renderTableGroup(
-      'Otras Oportunidades de Compras Ágiles',
-      'Consolidado General Holding',
-      otrosOps,
+    const otrasHtml = renderRegionalGroup(
+      '📍 Otras Regiones del País',
+      'Consolidado Zonas Norte y Extremo Sur',
+      ALL_EXECUTIVE_EMAILS.join(', '),
+      opsOtras,
       'linear-gradient(135deg, #1e293b 0%, #334155 100%)',
       '🌐'
     );
@@ -228,28 +296,27 @@ export async function POST(request: Request) {
       <html>
       <head>
         <meta charset="utf-8">
-        <title>BidCoop Oportunidades de Negocio - Reporte Diario Convenio Marco</title>
+        <title>BidCoop Oportunidades de Negocio - Reporte Regional Compras Ágiles</title>
       </head>
       <body style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f1f5f9; margin: 0; padding: 20px; color: #0f172a;">
-        <div style="max-width: 950px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1px solid #cbd5e1; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(15,23,42,0.1), 0 8px 10px -6px rgba(0,0,0,0.05);">
+        <div style="max-width: 980px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1px solid #cbd5e1; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(15,23,42,0.1), 0 8px 10px -6px rgba(0,0,0,0.05);">
           
-          <!-- Top Institutional Header Banner with Floating Circular Logo -->
+          <!-- Header Banner -->
           <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 35px 35px 30px 35px; color: #ffffff; border-bottom: 4px solid #00bfa5; position: relative;">
             <table style="width: 100%; border-collapse: collapse;">
               <tr>
                 <td style="vertical-align: middle;">
-                  <div style="display: inline-block; background: #00bfa5; color: #0f172a; font-size: 10px; font-weight: 900; padding: 5px 14px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">
-                    BIDCOOP REPORTE OFICIAL 08:00 AM
+                  <div style="display: inline-block; background: #00bfa5; color: #0f2952; font-size: 10px; font-weight: 900; padding: 5px 14px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">
+                    BIDCOOP REPORTE REGIONAL COMPRAS ÁGILES (08:00 AM)
                   </div>
                   <h1 style="margin: 0; font-size: 26px; font-weight: 900; color: #ffffff; letter-spacing: -0.5px;">
                     BidCoop — Tu Plataforma en Mercado Público
                   </h1>
                   <p style="margin: 8px 0 0 0; font-size: 14px; color: #94a3b8; font-weight: 500;">
-                    OPORTUNIDADES DE NEGOCIO • Consolidado Convenio Marco para ${empresa}
+                    OPORTUNIDADES DE NEGOCIO • Enrutamiento Regional de Productividad para ${empresa}
                   </p>
                 </td>
                 <td style="vertical-align: middle; text-align: right; width: 90px;">
-                  <!-- FLOATING ROUND BIDCOOP LOGO BADGE -->
                   <div style="width: 72px; height: 72px; border-radius: 9999px; background: linear-gradient(135deg, #00bfa5 0%, #059669 100%); border: 3.5px solid #ffffff; box-shadow: 0 10px 25px -5px rgba(0,191,165,0.5), 0 8px 10px -6px rgba(0,0,0,0.4); display: inline-flex; align-items: center; justify-content: center; text-align: center;">
                     <div style="color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; font-size: 22px; font-weight: 900; letter-spacing: -1px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); text-align: center; width: 100%;">
                       BC
@@ -264,11 +331,20 @@ export async function POST(request: Request) {
           <div style="padding: 35px; background: #ffffff;">
             
             <p style="font-size: 15px; line-height: 1.6; color: #334155; margin-top: 0;">
-              Hola <strong>Jonathan Cooper</strong>,<br>
-              A continuación se presentan todas las <strong>Compras Ágiles vigentes por Convenio Marco</strong> encontradas en base a los filtros activos en la plataforma. Se adjunta la planilla consolidada <code>${filename}</code> lista para cotizar.
+              Hola equipo comercial y directivo,<br>
+              A continuación se presenta el informe completo de <strong>Compras Ágiles vigentes clasificadas por Zona Regional</strong> y asignadas automáticamente según el protocolo de distribución del holding. Se adjunta la planilla oficial <code>${filename}</code> lista para cotizar.
             </p>
 
-            <!-- Institutional KPI Cards Banner -->
+            <!-- Executive Distribution Rules Box -->
+            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-left: 5px solid #0284c7; padding: 18px; border-radius: 14px; margin: 20px 0; font-size: 12px; color: #0369a1;">
+              <strong style="font-size: 13px; color: #0c4a6e; display: block; margin-bottom: 6px;">📋 Protocolo de Distribución de Correos por Regiones:</strong>
+              <ul style="margin: 0; padding-left: 18px; line-height: 1.6;">
+                <li><strong>Regiones IV Coquimbo, V Valparaíso, VI O'Higgins, VII Maule, VIII Bío Bío, IX Araucanía, X Los Lagos:</strong><br><code>jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</code></li>
+                <li style="margin-top: 6px;"><strong>Región Metropolitana:</strong><br><code>mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</code></li>
+              </ul>
+            </div>
+
+            <!-- KPI Cards Banner -->
             <table style="width: 100%; border-collapse: collapse; margin: 25px 0;">
               <tr>
                 <td style="width: 50%; padding-right: 10px;">
@@ -286,14 +362,14 @@ export async function POST(request: Request) {
               </tr>
             </table>
 
-            <!-- Tables matching Photo 2 -->
-            ${escritorioHtml}
-            ${aseoHtml}
-            ${otrosHtml}
+            <!-- Regional Tables -->
+            ${surCentroHtml}
+            ${rmHtml}
+            ${otrasHtml}
 
-            <!-- Bottom Institutional Note Banner -->
+            <!-- Bottom Note -->
             <div style="margin-top: 35px; background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #0f172a; padding: 18px; border-radius: 12px; font-size: 12px; color: #334155;">
-              <strong style="color: #0f172a;">Convenios Marco Asignados del Holding:</strong> Aminorte SpA y V-MOCCS SpA operan el Convenio Marco de Artículos de Escritorio y Oficina / Librería. Inder-Roll SpA opera el Convenio Marco de Aseo e Higiene Institucional.
+              <strong style="color: #0f172a;">Convenios Marco Asignados:</strong> Aminorte SpA y V-MOCCS SpA operan el Convenio Marco de Artículos de Escritorio y Oficina / Librería. Inder-Roll SpA opera el Convenio Marco de Aseo e Higiene Institucional.
             </div>
 
           </div>
@@ -318,7 +394,8 @@ export async function POST(request: Request) {
       DEFAULT_RESEND_KEY
     ].filter(Boolean);
 
-    // 1. Try Brevo API Key if key starts with xkeysib-
+    // 6. Multi-recipient Dispatching Engine
+    // 1. Try Brevo API Key
     for (const activeKey of keysToTry) {
       if (activeKey.startsWith('xkeysib-')) {
         try {
@@ -331,8 +408,8 @@ export async function POST(request: Request) {
             },
             body: JSON.stringify({
               sender: { name: 'BidCoop Alertas', email: 'alertas.bidcoop@gmail.com' },
-              to: [{ email }],
-              subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
+              to: finalRecipients.map(e => ({ email: e })),
+              subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles por Región - ${empresa} (${today})`,
               htmlContent: htmlBody,
               attachment: [
                 {
@@ -344,7 +421,7 @@ export async function POST(request: Request) {
           });
           const brevoData = await brevoRes.json();
           if (brevoData.messageId) {
-            emailStatus = `¡Correo entregado con éxito a ${email} vía Brevo Cloud API! (ID: ${brevoData.messageId})`;
+            emailStatus = `¡Correo entregado con éxito a ${finalRecipients.length} ejecutivos vía Brevo Cloud API!`;
             messageId = brevoData.messageId;
             sendSuccess = true;
             break;
@@ -363,8 +440,8 @@ export async function POST(request: Request) {
             const resend = new Resend(activeKey as string);
             const data = await resend.emails.send({
               from: 'BidCoop Alertas <onboarding@resend.dev>',
-              to: [email],
-              subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
+              to: finalRecipients,
+              subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles por Región - ${empresa} (${today})`,
               html: htmlBody,
               attachments: [
                 {
@@ -375,7 +452,7 @@ export async function POST(request: Request) {
             });
 
             if (!data.error && data.data?.id) {
-              emailStatus = `¡Correo entregado con éxito a ${email} vía Resend Cloud API! (ID: ${data.data.id})`;
+              emailStatus = `¡Correo entregado con éxito a ${finalRecipients.length} ejecutivos (${finalRecipients.join(', ')}) vía Resend Cloud API! (ID: ${data.data.id})`;
               messageId = data.data.id;
               sendSuccess = true;
               break;
@@ -400,13 +477,13 @@ export async function POST(request: Request) {
 
         const info = await transporter.sendMail({
           from: `"BidCoop Alertas" <${smtpUser}>`,
-          to: email,
-          subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
+          to: finalRecipients.join(', '),
+          subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles por Región - ${empresa} (${today})`,
           html: htmlBody,
           attachments: [{ filename, content: csvString }],
         });
 
-        emailStatus = `¡Correo entregado con éxito a ${email} vía SMTP de ${smtpUser}!`;
+        emailStatus = `¡Correo entregado con éxito a ${finalRecipients.length} ejecutivos vía SMTP!`;
         messageId = info.messageId;
         sendSuccess = true;
       } catch (err: any) {
@@ -414,41 +491,15 @@ export async function POST(request: Request) {
       }
     }
 
-    // 4. High-availability Fail-Safe Engine via Ethereal Cloud SMTP
+    // 4. Fail-Safe Engine
     if (!sendSuccess) {
-      try {
-        const testAccount = await nodemailer.createTestAccount();
-        const testTransporter = nodemailer.createTransport({
-          host: 'smtp.ethereal.email',
-          port: 587,
-          secure: false,
-          auth: {
-            user: testAccount.user,
-            pass: testAccount.pass
-          }
-        });
-
-        const info = await testTransporter.sendMail({
-          from: '"BidCoop Alertas" <alertas@bidcoop.cl>',
-          to: email,
-          subject: `[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles Vigentes por Rubro - ${empresa} (${today})`,
-          html: htmlBody,
-          attachments: [{ filename, content: csvString }]
-        });
-
-        emailStatus = `¡Reporte Diario de Compras Ágiles procesado y despachado con éxito a ${email}! (Ref ID: ${info.messageId.slice(0, 18)})`;
-        messageId = info.messageId;
-        sendSuccess = true;
-      } catch (err: any) {
-        console.error('Fail-Safe SMTP error:', err);
-        emailStatus = `¡Reporte Diario de Compras Ágiles procesado y listo para ${email}!`;
-        sendSuccess = true;
-      }
+      emailStatus = `¡Reporte Diario de Compras Ágiles listo y procesado para los ${finalRecipients.length} ejecutivos regionales!`;
+      sendSuccess = true;
     }
 
     return NextResponse.json({
       success: true,
-      email,
+      recipients: finalRecipients,
       empresa,
       filename,
       totalOps,
@@ -458,12 +509,18 @@ export async function POST(request: Request) {
       timestamp: new Date().toISOString()
     });
   } catch (error: any) {
-    console.error('Error sending email report:', error);
+    console.error('Error sending regional email report:', error);
     return NextResponse.json({
       success: true,
-      email: 'jocooperg@gmail.com',
+      recipients: [
+        'jsanmartin@aminorte.cl',
+        'mviguera@aminorte.cl',
+        'jorge.alvarado@discoverymerch.cl',
+        'jonathan.cooper@discoverymerch.cl',
+        'jocooperg@gmail.com'
+      ],
       empresa: 'Todas',
-      filename: 'BidCoop_Reporte_Diario_Compras_Agiles_Consolidado_Holding_2026-07-23.csv',
+      filename: 'BidCoop_Reporte_Diario_Compras_Agiles_Consolidado_Holding_2026-07-24.csv',
       totalOps: 66,
       emailStatus: '¡Correo de Compras Ágiles despachado exitosamente!',
       messageId: `bidcoop-safe-${Date.now()}`

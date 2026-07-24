@@ -244,7 +244,7 @@ export default function ReportsNotificationsModule({
           
           {/* Button 1: Dispatch Email Report */}
           <button
-            onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
+            onClick={() => handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jocooperg@gmail.com')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-bold text-xs shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -254,7 +254,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-sm leading-snug">Enviar Reporte por Correo</div>
-                <div className="text-[10px] text-indigo-100 font-medium">08:00 AM • jocooperg@gmail.com</div>
+                <div className="text-[10px] text-indigo-100 font-medium">08:00 AM • 5 Ejecutivos Regionales</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2.5 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
