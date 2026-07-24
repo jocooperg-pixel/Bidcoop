@@ -288,11 +288,48 @@ export async function POST(request: Request) {
       let isSent = false;
       let sentId = '';
 
+      // Strategy 1: Primary Delivery via Official Gmail SMTP (jonathan.cooper.g@gmail.com)
+      try {
+        const activeUser = process.env.GMAIL_USER || 'jonathan.cooper.g@gmail.com';
+        const activePass = process.env.GMAIL_APP_PASS || 'ahuzjglvnpbjfhns';
+
+        const transporter = nodemailer.createTransport({
+          host: 'smtp.gmail.com',
+          port: 465,
+          secure: true,
+          auth: {
+            user: activeUser,
+            pass: activePass
+          }
+        });
+
+        const info = await transporter.sendMail({
+          from: `"BidCoop Alertas" <${activeUser}>`,
+          to: targetEmails,
+          subject,
+          html: htmlBody,
+          attachments: [
+            {
+              filename: csvFilename,
+              content: csvContentStr
+            }
+          ]
+        });
+
+        if (info && info.messageId) {
+          isSent = true;
+          sentId = info.messageId;
+          return { groupName, targetEmails, isSent, sentId };
+        }
+      } catch (errG: any) {
+        console.warn(`Gmail SMTP dispatch failed for ${groupName}, falling back to Resend:`, errG.message);
+      }
+
+      // Strategy 2: Fallback Delivery via Resend Cloud API
       for (const activeKey of keysToTry) {
         try {
           const resend = new Resend(activeKey);
           
-          // Strategy A: Try bulk dispatch to all target recipients
           const data = await resend.emails.send({
             from: 'BidCoop Alertas <onboarding@resend.dev>',
             to: targetEmails,
@@ -312,7 +349,6 @@ export async function POST(request: Request) {
             break;
           }
 
-          // Strategy B: Fallback per-recipient delivery (resolves Resend free-tier recipient limits)
           for (const targetEmail of targetEmails) {
             try {
               const resSingle = await resend.emails.send({
