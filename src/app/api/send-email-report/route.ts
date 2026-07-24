@@ -63,11 +63,10 @@ export async function POST(request: Request) {
     const opsRM = activeOps.filter((op: any) => isRegionRM(op.region));
     const opsOtras = activeOps.filter((op: any) => !isRegionSurCentro(op.region) && !isRegionRM(op.region));
 
-    // Resend Keys
+    // Resend Keys (Read securely from UI payload or Vercel Environment Variables)
     const keysToTry = [
       apiKey && apiKey.trim(),
-      process.env.RESEND_API_KEY && process.env.RESEND_API_KEY.trim(),
-      're_dftJpRUv_73dt9SqmFzmN1Fbsaaihqcax'
+      process.env.RESEND_API_KEY && process.env.RESEND_API_KEY.trim()
     ].filter(Boolean) as string[];
 
     // 3. Helper to build CSV string for an opportunity array
