@@ -31,8 +31,6 @@ export async function POST(request: Request) {
     const totalMonto = activeOps.reduce((acc: number, curr: any) => acc + (curr.monto || 0), 0);
 
     // Group active opportunities by Convenio Marco / Rubro & Empresa
-    // Group 1: Artículos de Escritorio y Oficina (Aminorte SpA & V-MOCCS SpA)
-    // Group 2: Aseo e Higiene (Inder-Roll SpA)
     const escritorioOps = activeOps.filter((op: any) => {
       const rubro = (op.rubro || '').toLowerCase();
       const emp = (op.empresaMatch || '').toLowerCase();
@@ -88,8 +86,8 @@ export async function POST(request: Request) {
 
     const csvString = '\uFEFF' + [headers.join(';'), ...csvRows].join('\n');
 
-    // Helper function to build rich HTML table matching Photo 2
-    const renderTableGroup = (title: string, subtitle: string, opsList: any[], headerColor: string) => {
+    // Helper function to build rich HTML table with institutional palette
+    const renderTableGroup = (title: string, subtitle: string, opsList: any[], headerGradient: string, iconEmoji: string) => {
       if (opsList.length === 0) return '';
 
       const groupMonto = opsList.reduce((acc, curr) => acc + (curr.monto || 0), 0);
@@ -103,60 +101,60 @@ export async function POST(request: Request) {
         return `
           <tr style="border-bottom: 1px solid #f1f5f9;">
             <!-- CÓDIGO -->
-            <td style="padding: 14px 10px; vertical-align: top; width: 22%;">
+            <td style="padding: 14px 12px; vertical-align: top; width: 23%;">
               <div style="font-family: monospace; font-size: 13px; font-weight: 900; color: #0f172a; margin-bottom: 6px;">
                 ${op.codigo}
               </div>
               <div style="display: flex; flex-wrap: wrap; gap: 4px;">
-                <span style="background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: bold; border: 1px solid #cbd5e1;">
+                <span style="background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: 800; border: 1px solid #cbd5e1;">
                   ${rubroLabel}
                 </span>
-                <span style="background: #dbeafe; color: #1d4ed8; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: bold;">
+                <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: 800; border: 1px solid #bae6fd;">
                   ${empresaTag}
                 </span>
-                <span style="background: #ffedd5; color: #c2410c; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: bold;">
+                <span style="background: #ffedd5; color: #c2410c; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: 800;">
                   COMPRA ÁGIL
                 </span>
-                <span style="background: #dcfce7; color: #15803d; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: bold;">
+                <span style="background: #dcfce7; color: #15803d; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: 800;">
                   PUBLICADA
                 </span>
               </div>
             </td>
 
             <!-- COMPRADOR -->
-            <td style="padding: 14px 10px; vertical-align: top; width: 25%; font-size: 11px; font-weight: 800; color: #1e293b; text-transform: uppercase;">
+            <td style="padding: 14px 12px; vertical-align: top; width: 24%; font-size: 11px; font-weight: 800; color: #1e293b; text-transform: uppercase; line-height: 1.4;">
               ${op.organismo}
             </td>
 
             <!-- OPORTUNIDAD -->
-            <td style="padding: 14px 10px; vertical-align: top; width: 28%;">
-              <div style="font-size: 12px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">
+            <td style="padding: 14px 12px; vertical-align: top; width: 27%;">
+              <div style="font-size: 12px; font-weight: 800; color: #0f172a; margin-bottom: 4px; line-height: 1.3;">
                 ${op.titulo}
               </div>
-              <div style="font-size: 10px; color: #94a3b8; line-height: 1.4;">
+              <div style="font-size: 10px; color: #64748b; line-height: 1.4;">
                 Proceso: ${op.titulo}. Organismo demandante: ${op.organismo}. Unidad de compra: Bienes y Servicios.
               </div>
             </td>
 
             <!-- MONTO -->
-            <td style="padding: 14px 10px; vertical-align: top; width: 12%; text-align: right;">
+            <td style="padding: 14px 12px; vertical-align: top; width: 13%; text-align: right;">
               <div style="font-size: 13px; font-weight: 900; color: #0f172a;">
                 $${(op.monto || 0).toLocaleString('es-CL')}
               </div>
               <div style="font-size: 10px; font-weight: 800; color: #059669; margin-top: 2px;">
-                AI: $${winPrice.toLocaleString('es-CL')}
+                AI (94%): $${winPrice.toLocaleString('es-CL')}
               </div>
             </td>
 
             <!-- MATCH -->
-            <td style="padding: 14px 10px; vertical-align: top; width: 6%; text-align: center;">
-              <span style="font-size: 12px; font-weight: 900; color: #16a34a;">
+            <td style="padding: 14px 12px; vertical-align: top; width: 6%; text-align: center;">
+              <span style="font-size: 12px; font-weight: 900; color: #16a34a; background: #dcfce7; padding: 2px 6px; border-radius: 6px;">
                 ${matchPct}%
               </span>
             </td>
 
             <!-- FECHA LÍMITE -->
-            <td style="padding: 14px 10px; vertical-align: top; width: 7%; font-size: 11px; color: #64748b; font-weight: 600; text-align: right;">
+            <td style="padding: 14px 12px; vertical-align: top; width: 7%; font-size: 11px; color: #475569; font-weight: 700; text-align: right;">
               ${op.fechaCierre || op.fechaLimite || today}
             </td>
           </tr>
@@ -164,28 +162,33 @@ export async function POST(request: Request) {
       }).join('');
 
       return `
-        <div style="margin-top: 25px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-          <!-- Category Header -->
-          <div style="background: ${headerColor}; color: #ffffff; padding: 14px 20px; font-size: 13px; font-weight: 900; display: flex; justify-content: space-between; align-items: center;">
-            <div>
-              <div style="font-size: 15px; font-weight: 900;">${title}</div>
-              <div style="font-size: 11px; color: #93c5fd; font-weight: 500; margin-top: 2px;">${subtitle} • ${opsList.length} Procesos Vigentes</div>
+        <div style="margin-top: 25px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <!-- Category Header with Institutional Gradient -->
+          <div style="background: ${headerGradient}; color: #ffffff; padding: 16px 20px; font-size: 13px; font-weight: 900; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00bfa5;">
+            <div style="display: flex; items-center: center; gap: 10px;">
+              <div style="width: 32px; height: 32px; border-radius: 9999px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 16px;">
+                ${iconEmoji}
+              </div>
+              <div>
+                <div style="font-size: 15px; font-weight: 900; letter-spacing: -0.3px;">${title}</div>
+                <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">${subtitle} • ${opsList.length} Procesos Vigentes</div>
+              </div>
             </div>
-            <div style="font-size: 14px; font-weight: 900; color: #00bfa5; background: rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 9999px;">
+            <div style="font-size: 14px; font-weight: 900; color: #00bfa5; background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 9999px; border: 1px solid rgba(0,191,165,0.3);">
               Total: $${groupMonto.toLocaleString('es-CL')} CLP
             </div>
           </div>
 
-          <!-- Table matching Photo 2 -->
+          <!-- Table -->
           <table style="width: 100%; border-collapse: collapse; text-align: left; background: #ffffff;">
             <thead>
-              <tr style="background: #f8fafc; color: #64748b; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #e2e8f0;">
-                <th style="padding: 12px 10px;">CÓDIGO</th>
-                <th style="padding: 12px 10px;">COMPRADOR</th>
-                <th style="padding: 12px 10px;">OPORTUNIDAD</th>
-                <th style="padding: 12px 10px; text-align: right;">MONTO</th>
-                <th style="padding: 12px 10px; text-align: center;">MATCH</th>
-                <th style="padding: 12px 10px; text-align: right;">FECHA LÍMITE</th>
+              <tr style="background: #f8fafc; color: #475569; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #e2e8f0;">
+                <th style="padding: 12px;">CÓDIGO</th>
+                <th style="padding: 12px;">COMPRADOR</th>
+                <th style="padding: 12px;">OPORTUNIDAD</th>
+                <th style="padding: 12px; text-align: right;">MONTO</th>
+                <th style="padding: 12px; text-align: center;">MATCH</th>
+                <th style="padding: 12px; text-align: right;">FECHA LÍMITE</th>
               </tr>
             </thead>
             <tbody>
@@ -197,24 +200,27 @@ export async function POST(request: Request) {
     };
 
     const escritorioHtml = renderTableGroup(
-      '📦 Convenio Marco: Artículos de Escritorio y Oficina',
+      'Convenio Marco: Artículos de Escritorio y Oficina',
       'Empresas Asignadas: Aminorte SpA & V-MOCCS SpA (RUT 77.235.702-8)',
       escritorioOps,
-      'linear-gradient(135deg, #0f2952 0%, #1e1b4b 100%)'
+      'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+      '📦'
     );
 
     const aseoHtml = renderTableGroup(
-      '🧹 Convenio Marco: Aseo e Higiene Institucional',
+      'Convenio Marco: Aseo e Higiene Institucional',
       'Empresa Asignada: Inder-Roll SpA',
       aseoOps,
-      'linear-gradient(135deg, #064e3b 0%, #0f2952 100%)'
+      'linear-gradient(135deg, #0f172a 0%, #064e3b 100%)',
+      '🧹'
     );
 
     const otrosHtml = renderTableGroup(
-      '🌐 Otras Oportunidades de Compras Ágiles',
+      'Otras Oportunidades de Compras Ágiles',
       'Consolidado General Holding',
       otrosOps,
-      'linear-gradient(135deg, #334155 0%, #0f172a 100%)'
+      'linear-gradient(135deg, #1e293b 0%, #334155 100%)',
+      '🌐'
     );
 
     const htmlBody = `
@@ -225,19 +231,33 @@ export async function POST(request: Request) {
         <title>BidCoop Oportunidades de Negocio - Reporte Diario Convenio Marco</title>
       </head>
       <body style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f1f5f9; margin: 0; padding: 20px; color: #0f172a;">
-        <div style="max-width: 950px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);">
+        <div style="max-width: 950px; margin: 0 auto; background: #ffffff; border-radius: 20px; border: 1px solid #cbd5e1; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(15,23,42,0.1), 0 8px 10px -6px rgba(0,0,0,0.05);">
           
-          <!-- Top Header Banner matching Photo 1/2 styling -->
-          <div style="background: linear-gradient(135deg, #0f2952 0%, #1e1b4b 100%); padding: 35px; color: #ffffff; text-align: left; border-bottom: 4px solid #00bfa5; position: relative;">
-            <div style="display: inline-block; background: #00bfa5; color: #0f2952; font-size: 10px; font-weight: 900; padding: 5px 14px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">
-              BIDCOOP REPORTE OFICIAL 08:00 AM
-            </div>
-            <h1 style="margin: 0; font-size: 26px; font-weight: 900; color: #ffffff; letter-spacing: -0.5px;">
-              BidCoop — Tu Plataforma en Mercado Público
-            </h1>
-            <p style="margin: 8px 0 0 0; font-size: 14px; color: #93c5fd; font-weight: 500;">
-              OPORTUNIDADES DE NEGOCIO • Consolidado Convenio Marco para ${empresa}
-            </p>
+          <!-- Top Institutional Header Banner with Floating Circular Logo -->
+          <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 35px 35px 30px 35px; color: #ffffff; border-bottom: 4px solid #00bfa5; position: relative;">
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="vertical-align: middle;">
+                  <div style="display: inline-block; background: #00bfa5; color: #0f172a; font-size: 10px; font-weight: 900; padding: 5px 14px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">
+                    BIDCOOP REPORTE OFICIAL 08:00 AM
+                  </div>
+                  <h1 style="margin: 0; font-size: 26px; font-weight: 900; color: #ffffff; letter-spacing: -0.5px;">
+                    BidCoop — Tu Plataforma en Mercado Público
+                  </h1>
+                  <p style="margin: 8px 0 0 0; font-size: 14px; color: #94a3b8; font-weight: 500;">
+                    OPORTUNIDADES DE NEGOCIO • Consolidado Convenio Marco para ${empresa}
+                  </p>
+                </td>
+                <td style="vertical-align: middle; text-align: right; width: 90px;">
+                  <!-- FLOATING ROUND BIDCOOP LOGO BADGE -->
+                  <div style="width: 72px; height: 72px; border-radius: 9999px; background: linear-gradient(135deg, #00bfa5 0%, #059669 100%); border: 3.5px solid #ffffff; box-shadow: 0 10px 25px -5px rgba(0,191,165,0.5), 0 8px 10px -6px rgba(0,0,0,0.4); display: inline-flex; align-items: center; justify-content: center; text-align: center;">
+                    <div style="color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; font-size: 22px; font-weight: 900; letter-spacing: -1px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); text-align: center; width: 100%;">
+                      BC
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
           </div>
 
           <!-- Content Body -->
@@ -245,32 +265,35 @@ export async function POST(request: Request) {
             
             <p style="font-size: 15px; line-height: 1.6; color: #334155; margin-top: 0;">
               Hola <strong>Jonathan Cooper</strong>,<br>
-              A continuación se presentan todas las <strong>Compras Ágiles vigentes por Convenio Marco</strong> encontradas en base a filtros activos. Se adjunta la planilla consolidada <code>${filename}</code> lista para ofertar.
+              A continuación se presentan todas las <strong>Compras Ágiles vigentes por Convenio Marco</strong> encontradas en base a los filtros activos en la plataforma. Se adjunta la planilla consolidada <code>${filename}</code> lista para cotizar.
             </p>
 
-            <!-- KPI Cards Banner -->
-            <div style="display: flex; gap: 15px; margin: 25px 0;">
-              <div style="flex: 1; background: #f0fdf4; border: 1px solid #bbf7d0; padding: 18px; border-radius: 14px;">
-                <div style="font-size: 11px; font-weight: 900; color: #166534; text-transform: uppercase;">Compras Ágiles Activas</div>
-                <div style="font-size: 24px; font-weight: 900; color: #15803d; margin-top: 4px;">${totalOps} Procesos</div>
-              </div>
-              <div style="flex: 1; background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; border-radius: 14px;">
-                <div style="font-size: 11px; font-weight: 900; color: #1e40af; text-transform: uppercase;">Presupuesto Total CLP</div>
-                <div style="font-size: 24px; font-weight: 900; color: #1d4ed8; margin-top: 4px;">$${totalMonto.toLocaleString('es-CL')}</div>
-              </div>
-            </div>
+            <!-- Institutional KPI Cards Banner -->
+            <table style="width: 100%; border-collapse: collapse; margin: 25px 0;">
+              <tr>
+                <td style="width: 50%; padding-right: 10px;">
+                  <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #059669; padding: 18px; border-radius: 12px;">
+                    <div style="font-size: 11px; font-weight: 900; color: #059669; text-transform: uppercase; letter-spacing: 0.5px;">Compras Ágiles Activas</div>
+                    <div style="font-size: 24px; font-weight: 900; color: #0f172a; margin-top: 4px;">${totalOps} Procesos</div>
+                  </div>
+                </td>
+                <td style="width: 50%; padding-left: 10px;">
+                  <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #0284c7; padding: 18px; border-radius: 12px;">
+                    <div style="font-size: 11px; font-weight: 900; color: #0284c7; text-transform: uppercase; letter-spacing: 0.5px;">Presupuesto Total CLP</div>
+                    <div style="font-size: 24px; font-weight: 900; color: #0f172a; margin-top: 4px;">$${totalMonto.toLocaleString('es-CL')}</div>
+                  </div>
+                </td>
+              </tr>
+            </table>
 
             <!-- Tables matching Photo 2 -->
             ${escritorioHtml}
             ${aseoHtml}
             ${otrosHtml}
 
-            <!-- Bottom Note Banner -->
-            <div style="margin-top: 35px; background: #f8fafc; border: 1px solid #cbd5e1; padding: 18px; border-radius: 14px; font-size: 12px; color: #475569; display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 18px;">💡</span>
-              <div>
-                <strong>Convenios Marco Asignados:</strong> Aminorte SpA y V-MOCCS SpA comparten el Convenio Marco de Artículos de Escritorio y Oficina / Librería. Inder-Roll SpA opera el Convenio Marco de Aseo e Higiene Institucional.
-              </div>
+            <!-- Bottom Institutional Note Banner -->
+            <div style="margin-top: 35px; background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #0f172a; padding: 18px; border-radius: 12px; font-size: 12px; color: #334155;">
+              <strong style="color: #0f172a;">Convenios Marco Asignados del Holding:</strong> Aminorte SpA y V-MOCCS SpA operan el Convenio Marco de Artículos de Escritorio y Oficina / Librería. Inder-Roll SpA opera el Convenio Marco de Aseo e Higiene Institucional.
             </div>
 
           </div>
