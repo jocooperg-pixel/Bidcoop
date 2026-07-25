@@ -142,16 +142,6 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
           </button>
         </form>
 
-        {/* Footer info */}
-        <div className="pt-4 border-t border-slate-800/80 text-center space-y-1">
-          <p className="text-[11px] text-slate-500 font-medium">
-            Holding Corporativo: Inder-Roll SpA • Aminorte SpA • V-MOCCS SpA
-          </p>
-          <p className="text-[10px] text-slate-600">
-            BidCoop Engine © 2026 — Sistema Protegido
-          </p>
-        </div>
-
       </div>
     </div>
   );
