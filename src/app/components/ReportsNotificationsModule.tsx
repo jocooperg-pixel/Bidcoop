@@ -1031,8 +1031,8 @@ export default function ReportsNotificationsModule({
               {/* Formatted HTML Email Canvas */}
               <div className="bg-white text-slate-900 rounded-2xl p-6 border border-slate-200 shadow-md space-y-4 max-h-[600px] overflow-y-auto">
                 <div className="border-b border-slate-200 pb-3 space-y-2 text-xs">
-                  <div><strong>De:</strong> <span className="font-semibold text-slate-800">BidCoop Alertas &lt;alertas@bidcoop.cl&gt;</span></div>
-                  <div><strong>Para:</strong> <span className="font-mono text-blue-700 font-bold">jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jocooperg@gmail.com</span></div>
+                  <div><strong>De:</strong> <span className="font-semibold text-slate-800">Alertas BidCoop &lt;jonathan.cooper.g@gmail.com&gt;</span></div>
+                  <div><strong>Para:</strong> <span className="font-semibold text-emerald-700 font-bold">Destinatarios Regionales Asignados (BCC - Copia Oculta Confidencial)</span></div>
                   <div><strong>Asunto:</strong> <span className="font-extrabold text-slate-900">[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles por Región - {selectedCompany} ({new Date().toISOString().split('T')[0]})</span></div>
                   <div><strong>Adjunto:</strong> <span className="font-mono font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">BidCoop_Reporte_Diario_Compras_Agiles_{selectedCompany}_{new Date().toISOString().split('T')[0]}.csv</span></div>
                 </div>
@@ -1053,13 +1053,6 @@ export default function ReportsNotificationsModule({
                         <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain rounded-full" />
                       </div>
                     </div>
-                  </div>
-
-                  {/* Summary Box */}
-                  <div className="bg-sky-50 border border-sky-200 border-l-4 border-l-sky-600 p-4 rounded-xl text-xs text-sky-900 space-y-1">
-                    <strong className="text-sky-950 block text-sm font-black">📍 Protocolo de Destinatarios Activo por Zona:</strong>
-                    <p>• <strong>Regiones IV Coquimbo a X Los Lagos:</strong> <code>jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</code></p>
-                    <p>• <strong>Región Metropolitana:</strong> <code>mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</code></p>
                   </div>
 
                   {/* KPI Summary */}
@@ -1138,7 +1131,7 @@ export default function ReportsNotificationsModule({
               <button
                 onClick={() => {
                   setShowEmailPreviewModal(false);
-                  handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jocooperg@gmail.com');
+                  handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl');
                 }}
                 disabled={sendingEmail}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-md flex items-center gap-2 cursor-pointer"
@@ -1147,12 +1140,6 @@ export default function ReportsNotificationsModule({
               </button>
 
               <div className="flex items-center gap-2">
-                <button
-                  onClick={() => handleExportExcel(selectedCompany)}
-                  className="bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 cursor-pointer"
-                >
-                  <span>📥 Descargar Copia .CSV / Excel</span>
-                </button>
                 <button
                   onClick={() => setShowEmailPreviewModal(false)}
                   className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 text-slate-800 dark:text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all cursor-pointer"
