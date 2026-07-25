@@ -10,6 +10,7 @@ import AnalyticsModule from './components/AnalyticsModule';
 import ConfigModule from './components/ConfigModule';
 import ProvidersModule from './components/ProvidersModule';
 import ReportsNotificationsModule from './components/ReportsNotificationsModule';
+import LoginScreen from './components/LoginScreen';
 
 import { Oportunidad, Postulacion, MiembroEquipo, Notificacion, VistaGuardada, Empresa } from './types';
 import {
@@ -22,6 +23,19 @@ import {
 } from './mockData';
 
 export default function Home() {
+  // --- AUTHENTICATION STATE ---
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [isAuthChecked, setIsAuthChecked] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (sessionStorage.getItem('bidcoop_authenticated') === 'true') {
+        setIsAuthenticated(true);
+      }
+      setIsAuthChecked(true);
+    }
+  }, []);
+
   // --- GLOBAL STATES ---
   const [activeModule, setActiveModule] = useState<string>('dashboard');
   const [activeSubSection, setActiveSubSection] = useState<string>('resumen');
@@ -654,6 +668,21 @@ export default function Home() {
     }
   };
 
+  const handleLogout = () => {
+    if (typeof window !== 'undefined') {
+      sessionStorage.removeItem('bidcoop_authenticated');
+    }
+    setIsAuthenticated(false);
+  };
+
+  if (!isAuthChecked) {
+    return <div className="min-h-screen bg-slate-950" />;
+  }
+
+  if (!isAuthenticated) {
+    return <LoginScreen onLoginSuccess={() => setIsAuthenticated(true)} />;
+  }
+
   return (
     <div className={`min-h-screen flex bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-300`}>
       
@@ -680,6 +709,7 @@ export default function Home() {
           activeCompany={activeCompany}
           onChangeCompany={setActiveCompany}
           lastSyncTime={lastSyncTime}
+          onLogout={handleLogout}
         />
 
         {/* Core dynamic content container */}

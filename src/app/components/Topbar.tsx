@@ -11,6 +11,7 @@ interface TopbarProps {
   activeCompany: Empresa;
   onChangeCompany: (company: Empresa) => void;
   lastSyncTime?: string;
+  onLogout?: () => void;
 }
 
 export default function Topbar({
@@ -22,7 +23,8 @@ export default function Topbar({
   currentUser,
   activeCompany,
   onChangeCompany,
-  lastSyncTime = 'Pendiente'
+  lastSyncTime = 'Pendiente',
+  onLogout
 }: TopbarProps) {
   const [showNotifications, setShowNotifications] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
@@ -338,7 +340,11 @@ export default function Topbar({
               </button>
               <div className="border-t border-slate-100 dark:border-slate-800 my-1" />
               <button
-                className="w-full text-left text-xs font-black px-3 py-2 rounded-xl text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20 transition"
+                onClick={() => {
+                  setShowProfile(false);
+                  if (onLogout) onLogout();
+                }}
+                className="w-full text-left text-xs font-black px-3 py-2 rounded-xl text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20 transition cursor-pointer"
               >
                 Cerrar Sesión
               </button>
