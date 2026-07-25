@@ -42,11 +42,11 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
         
         {/* Brand Header */}
         <div className="text-center space-y-3">
-          <div className="mx-auto w-20 h-20 rounded-3xl bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 border-2 border-cyan-400/50 p-2 shadow-xl shadow-cyan-500/20 flex items-center justify-center">
+          <div className="mx-auto w-20 h-20 rounded-full bg-slate-900 border-2 border-cyan-400/50 p-1.5 shadow-xl shadow-cyan-500/20 flex items-center justify-center overflow-hidden">
             <img 
               src="/bidcoop-logo.png" 
               alt="BidCoop Logo" 
-              className="w-full h-full object-contain rounded-2xl"
+              className="w-full h-full object-contain rounded-full"
             />
           </div>
           <div>
