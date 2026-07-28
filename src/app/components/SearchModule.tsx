@@ -1,5 +1,8 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Oportunidad, Postulacion, MiembroEquipo, VistaGuardada, DocumentoAdjunto, Item } from '../types';
+import { calculateSmartCatalogMatch, getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
+import { getCompetitorsForOpportunity } from '../utils/competitorEngine';
+import { mockPostulaciones } from '../mockData';
 
 interface SearchModuleProps {
   oportunidades: Oportunidad[];
@@ -203,6 +206,7 @@ export default function SearchModule({
   // Edit Items Modal State
   const [showEditItemsModal, setShowEditItemsModal] = useState<boolean>(false);
   const [editableItems, setEditableItems] = useState<Item[]>([]);
+  const [adjudicacionAlerts, setAdjudicacionAlerts] = useState<Record<string, boolean>>({});
 
   // Synchronize local search state with Topbar global search input
   useEffect(() => {
@@ -210,6 +214,26 @@ export default function SearchModule({
       setSearchText(globalSearchText);
     }
   }, [globalSearchText]);
+
+  // Synchronize activeSubSection navigation from Sidebar search items
+  useEffect(() => {
+    if (activeSubSection === 'compra-agil') {
+      setFilterModalidad('Compra Ágil');
+      onSelectOpportunity(null);
+      setCurrentPage(1);
+    } else if (activeSubSection === 'grandes-compras') {
+      setFilterModalidad('Grandes Compras');
+      onSelectOpportunity(null);
+      setCurrentPage(1);
+    } else if (activeSubSection === 'licitaciones') {
+      setFilterModalidad('Licitación');
+      onSelectOpportunity(null);
+      setCurrentPage(1);
+    } else if (activeSubSection === 'buscador') {
+      setFilterModalidad('Todos');
+      setCurrentPage(1);
+    }
+  }, [activeSubSection]);
 
   const handleLocalSearchChange = (val: string) => {
     setSearchText(val);
@@ -853,15 +877,42 @@ export default function SearchModule({
                 </div>
                 <div className="bg-slate-50 dark:bg-slate-850 p-4 rounded-2xl border border-slate-100 dark:border-slate-800 text-xs leading-relaxed space-y-3.5 text-slate-700 dark:text-slate-300">
                   <p>{selectedOpportunity.descripcion}</p>
-                  <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/40 p-3.5 rounded-xl flex items-start gap-2.5">
-                    <span className="text-lg shrink-0">💡</span>
-                    <div>
-                      <h4 className="font-extrabold text-blue-800 dark:text-blue-400">Recomendación Estratégica</h4>
-                      <p className="text-[11px] text-blue-700/80 dark:text-blue-400/80 mt-0.5">
-                        El match es de un <strong>{selectedOpportunity.matchScore}%</strong>. Dado que poseemos un catálogo completo de {selectedOpportunity.rubro} con stock activo, se sugiere realizar una oferta agresiva (5% menor al precio unitario referencial) para asegurar puntaje máximo en el criterio económico.
-                      </p>
-                    </div>
-                  </div>
+                  {/* Smart Catalog Match Card */}
+                  {(() => {
+                    const matchInfo = calculateSmartCatalogMatch(selectedOpportunity);
+                    return (
+                      <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/30 dark:to-teal-950/30 border border-emerald-200 dark:border-emerald-800/60 p-4 rounded-xl space-y-2.5">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <span className="text-base">🎯</span>
+                            <h4 className="font-black text-xs text-emerald-900 dark:text-emerald-300 uppercase tracking-wider">
+                              Matching por Catálogo — {selectedOpportunity.empresaMatch || matchInfo.companyMatch}
+                            </h4>
+                          </div>
+                          <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-emerald-600 text-white shadow-sm">
+                            {selectedOpportunity.matchScore}% Match
+                          </span>
+                        </div>
+                        <p className="text-[11px] text-emerald-800 dark:text-emerald-300/90 leading-normal">
+                          {matchInfo.explanation}
+                        </p>
+                        {matchInfo.matchedProducts.length > 0 && (
+                          <div className="pt-2 border-t border-emerald-200/80 dark:border-emerald-800/50">
+                            <span className="text-[10px] font-bold text-slate-600 dark:text-slate-400 uppercase block mb-1.5">
+                              Productos del Convenio Coincidentes ({matchInfo.matchedProducts.length}):
+                            </span>
+                            <div className="flex flex-wrap gap-1.5">
+                              {matchInfo.matchedProducts.map((prod, pIdx) => (
+                                <span key={pIdx} className="text-[10px] font-semibold px-2.5 py-1 rounded-lg bg-white dark:bg-slate-900 text-emerald-900 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700/60 shadow-xs">
+                                  ✓ {prod}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             )}
@@ -1369,25 +1420,157 @@ export default function SearchModule({
                   </p>
                 </div>
 
-                <div className="space-y-3.5">
-                  <h4 className="text-[10px] uppercase font-black text-slate-400 tracking-wider">Principales Competidores Detectados</h4>
-                  {selectedOpportunity.competidoresPropuestos.length === 0 ? (
-                    <div className="text-center py-6 text-slate-400 text-xs">No hay competidores históricos registrados en este rubro.</div>
-                  ) : (
-                    selectedOpportunity.competidoresPropuestos.map((comp, idx) => (
-                      <div key={idx} className="p-4 rounded-xl border border-slate-100 dark:border-slate-850 bg-white dark:bg-slate-900/50 shadow-sm flex items-center justify-between gap-4">
+                {/* COMPETITORS & AWARD BREAKDOWN TABLE */}
+                {(() => {
+                  const compAnalysis = getCompetitorsForOpportunity(selectedOpportunity, mockPostulaciones);
+                  const isAdjudicada = selectedOpportunity.estado === 'Adjudicada';
+                  const isAlertActive = !!adjudicacionAlerts[selectedOpportunity.id];
+
+                  return (
+                    <div className="space-y-4 pt-2 border-t border-slate-100 dark:border-slate-800">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-50 dark:bg-slate-900/80 p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800">
                         <div>
-                          <h4 className="text-xs font-black text-slate-900 dark:text-white">{comp.nombre}</h4>
-                          <span className="text-[10px] text-slate-400 mt-0.5 block">{comp.rut} • {comp.adjudicacionesRecientes} Adjudicaciones</span>
+                          <h4 className="text-xs font-black text-slate-900 dark:text-white flex items-center gap-2">
+                            <span>👥</span> Proveedores Participantes y Cuadro Comparativo
+                          </h4>
+                          <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                            {isAdjudicada
+                              ? 'Resultado oficial de adjudicación y desglose de proveedores postulantes.'
+                              : 'Proceso cerrado en evaluación. Listado de proveedores competidores presentados.'}
+                          </p>
                         </div>
-                        <div className="text-right">
-                          <span className="text-[10px] uppercase font-black text-slate-400 block">Cuota Rubro</span>
-                          <span className="text-sm font-black text-blue-600 dark:text-blue-400">{comp.cuotaMercado}%</span>
+
+                        {!isAdjudicada && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setAdjudicacionAlerts(prev => ({ ...prev, [selectedOpportunity.id]: !isAlertActive }));
+                              alert(!isAlertActive
+                                ? '🔔 Alerta activada: Recibirás una notificación inmediata por correo y en plataforma en cuanto la Comisión de Evaluación publique el resultado de adjudicación.'
+                                : 'Alerta desactivada.');
+                            }}
+                            className={`px-3 py-1.5 rounded-xl text-[11px] font-black transition cursor-pointer flex items-center gap-1.5 border shadow-xs shrink-0 ${
+                              isAlertActive
+                                ? 'bg-amber-500 text-white border-amber-600 shadow-amber-500/20'
+                                : 'bg-white hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700'
+                            }`}
+                          >
+                            <span>{isAlertActive ? '🔔 Alerta Activada' : '🔕 Activar Alerta de Adjudicación'}</span>
+                          </button>
+                        )}
+                      </div>
+
+                      {/* WINNER / AWARD STATUS BANNER */}
+                      {isAdjudicada && compAnalysis.ganador && (
+                        <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white border border-emerald-500/40 shadow-md space-y-2">
+                          <div className="flex items-center justify-between">
+                            <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-emerald-500 text-white">
+                              🏆 PROVEEDOR ADJUDICADO Y ADJUDICACIÓN FINALIZADA
+                            </span>
+                            <span className="text-xs font-bold text-emerald-200 font-mono">
+                              Monto: ${compAnalysis.ganador.montoOfertado.toLocaleString('es-CL')} CLP
+                            </span>
+                          </div>
+                          <h4 className="text-sm font-black text-white">
+                            {compAnalysis.ganador.nombre}
+                          </h4>
+                          <div className="text-[11px] text-slate-200 flex flex-wrap gap-4 pt-1">
+                            <span>RUT: <strong>{compAnalysis.ganador.rut}</strong></span>
+                            <span>Puntaje de Evaluación: <strong className="text-emerald-300">{compAnalysis.ganador.puntajeEvaluacion}/100 pts</strong></span>
+                            <span>Puntos Diferenciales: <strong>{compAnalysis.ganador.observacion || 'Cumplimiento 100% de bases'}</strong></span>
+                          </div>
+                        </div>
+                      )}
+
+                      {!isAdjudicada && (
+                        <div className="p-3.5 rounded-2xl bg-gradient-to-r from-amber-950 via-slate-900 to-slate-950 text-white border border-amber-500/30 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                          <div>
+                            <div className="flex items-center gap-2">
+                              <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-amber-500 text-white">
+                                ⏳ EN EVALUACIÓN - PENDIENTE DE ADJUDICAR
+                              </span>
+                              <span className="text-[11px] font-bold text-amber-200">
+                                Fecha estimada resolución: {compAnalysis.fechaEstimadaAdjudicacion}
+                              </span>
+                            </div>
+                            <p className="text-[11px] text-slate-300 mt-1">
+                              Existen <strong>{compAnalysis.competidores.length} ofertas ingresadas</strong> en comisión evaluadora. El sistema monitorea Mercado Público cada hora para avisarte de inmediato al momento del acta de adjudicación.
+                            </p>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* COMPARATIVE SUPPLIERS TABLE */}
+                      <div className="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-xs bg-white dark:bg-slate-900">
+                        <div className="p-3 bg-slate-100/70 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
+                          <h5 className="text-[11px] font-black text-slate-800 dark:text-slate-200 uppercase tracking-wider">
+                            Cuadro Comparativo de Proveedores Postulantes ({compAnalysis.competidores.length})
+                          </h5>
+                          <span className="text-[10px] text-slate-400 font-bold">Ordenado por Puntaje Técnico-Económico</span>
+                        </div>
+
+                        <div className="overflow-x-auto">
+                          <table className="w-full text-left text-xs">
+                            <thead className="bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+                              <tr>
+                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400">Proveedor / Razón Social</th>
+                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400">RUT</th>
+                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400 text-right">Monto Oferta CLP</th>
+                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400 text-center">Puntaje Evaluation</th>
+                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400 text-center">Estado Oferta</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                              {compAnalysis.competidores.map((comp, idx) => (
+                                <tr
+                                  key={idx}
+                                  className={`transition ${
+                                    comp.esNuestraEmpresa
+                                      ? 'bg-blue-50/60 dark:bg-blue-950/30 font-bold'
+                                      : comp.estadoOferta === 'Adjudicado'
+                                      ? 'bg-emerald-50/50 dark:bg-emerald-950/20'
+                                      : 'hover:bg-slate-50/60 dark:hover:bg-slate-850/40'
+                                  }`}
+                                >
+                                  <td className="p-2.5">
+                                    <span className={`block font-black text-xs ${comp.esNuestraEmpresa ? 'text-blue-700 dark:text-blue-300' : 'text-slate-900 dark:text-white'}`}>
+                                      {comp.nombre}
+                                    </span>
+                                    {comp.observacion && (
+                                      <span className="text-[10px] text-slate-400 font-medium block mt-0.5">
+                                        {comp.observacion}
+                                      </span>
+                                    )}
+                                  </td>
+                                  <td className="p-2.5 text-slate-500 dark:text-slate-400 font-mono text-[10px]">
+                                    {comp.rut}
+                                  </td>
+                                  <td className="p-2.5 text-right font-black text-slate-900 dark:text-white text-xs">
+                                    ${comp.montoOfertado.toLocaleString('es-CL')} CLP
+                                  </td>
+                                  <td className="p-2.5 text-center">
+                                    <span className="font-black px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-[10px]">
+                                      {comp.puntajeEvaluacion} pts
+                                    </span>
+                                  </td>
+                                  <td className="p-2.5 text-center">
+                                    <span className={`px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider ${
+                                      comp.estadoOferta === 'Adjudicado' ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300' :
+                                      comp.estadoOferta === 'En Evaluación' ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' :
+                                      'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
+                                    }`}>
+                                      {comp.estadoOferta}
+                                    </span>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
                         </div>
                       </div>
-                    ))
-                  )}
-                </div>
+                    </div>
+                  );
+                })()}
               </div>
             )}
 
@@ -2324,11 +2507,7 @@ export default function SearchModule({
                         )}
                         {visibleColumns.match && (
                           <td className="py-3.5 text-center">
-                            <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${
-                              op.matchScore >= 90
-                                ? 'bg-green-50 text-green-700 dark:bg-green-950/40 dark:text-green-400'
-                                : 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400'
-                            }`}>
+                            <span className={`text-[10px] font-black px-2 py-0.5 rounded-full border ${getMatchScoreBadgeStyle(op.matchScore).badgeBg}`}>
                               {op.matchScore}%
                             </span>
                           </td>

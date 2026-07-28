@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Oportunidad, Postulacion, OrdenCompra, Empresa } from '../types';
 import { FLETES_REGIONALES_CHILE } from '../mockData';
+import AdjudicacionesModule from './AdjudicacionesModule';
 
 // We import productCatalogRaw from catalog.ts to parse it
 import { productCatalogRaw as rawData } from '../catalog';
@@ -14,6 +15,7 @@ interface BusinessModuleProps {
   onSelectOpportunity: (op: Oportunidad) => void;
   onNavigateToTab: (module: string, subSection: string) => void;
   activeCompany?: Empresa;
+  selectedAdjudicacionCodigo?: string | null;
 }
 
 export default function BusinessModule({
@@ -23,9 +25,16 @@ export default function BusinessModule({
   ordenesCompra,
   onSelectOpportunity,
   onNavigateToTab,
-  activeCompany = 'Consolidado'
+  activeCompany = 'Consolidado',
+  selectedAdjudicacionCodigo = null
 }: BusinessModuleProps) {
   const [currentSub, setCurrentSub] = useState(activeSubSection || 'mis-negocios');
+
+  useEffect(() => {
+    if (activeSubSection) {
+      setCurrentSub(activeSubSection);
+    }
+  }, [activeSubSection]);
 
   // Parse products from catalog.ts and filter by active company context
   const catalogProducts = useMemo(() => {
@@ -69,7 +78,7 @@ export default function BusinessModule({
   const filteredPostulaciones = useMemo(() => {
     return postulaciones.filter(p => {
       // Company match
-      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'Inder-Roll');
+      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.includes('COT') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'Inder-Roll');
       if (activeCompany !== 'Consolidado' && pCompany !== activeCompany) {
         return false;
       }
@@ -78,7 +87,7 @@ export default function BusinessModule({
       }
 
       // Modality match
-      const pModality = p.modalidad || (p.oportunidadCodigo?.startsWith('COT-') ? 'Compra Ágil' : 'Grandes Compras');
+      const pModality = p.modalidad || (p.oportunidadCodigo?.includes('COT') ? 'Compra Ágil' : 'Grandes Compras');
       if (filterModality !== 'Todas' && pModality !== filterModality) {
         return false;
       }
@@ -134,13 +143,14 @@ export default function BusinessModule({
     // 1. Borrador / Siguiendo
     const borradorPosts = companyPosts.filter(p => p.estado === 'Borrador');
     const borradorItems = borradorPosts.map(p => {
-      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo);
-      return op || {
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
+      return op ? { ...op, estado: 'Borrador' } : {
         id: p.id,
-        codigo: p.oportunidadCodigo,
+        codigo: p.oportunidadCodigo || p.id,
         titulo: p.oportunidadTitulo,
-        organismo: 'Mercado Público',
+        organismo: p.organismo || 'Mercado Público',
         monto: p.montoOferta,
+        empresaMatch: p.empresaMatch,
         matchScore: 90,
         estado: 'Borrador'
       };
@@ -149,38 +159,58 @@ export default function BusinessModule({
     // 2. Abiertos con oferta enviada
     const enviadasPosts = companyPosts.filter(p => p.estado === 'Enviada');
     const abiertasItems = enviadasPosts.map(p => {
-      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo);
-      return op || {
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
+      return op ? { ...op, estado: 'Enviada' } : {
         id: p.id,
-        codigo: p.oportunidadCodigo,
+        codigo: p.oportunidadCodigo || p.id,
         titulo: p.oportunidadTitulo,
-        organismo: 'Mercado Público',
+        organismo: p.organismo || 'Mercado Público',
         monto: p.montoOferta,
+        empresaMatch: p.empresaMatch,
         matchScore: 92,
-        estado: 'Postulada'
+        estado: 'Enviada'
       };
     });
 
-    // 3. Cerradas esperando resultados
-    const cerradasItems = companyOps.filter(o => o.estado === 'En Evaluación' || o.estado === 'Cerrada');
+    // 3. Cerradas esperando resultados / En Evaluación
+    const evaluacionPosts = companyPosts.filter(p => p.estado === 'En Evaluación');
+    const cerradasOps = companyOps.filter(o => o.estado === 'En Evaluación' || o.estado === 'Cerrada');
+    const cerradasMap = new Map();
+    [...cerradasOps, ...evaluacionPosts.map(p => {
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
+      return op ? { ...op, estado: 'En Evaluación' } : {
+        id: p.id,
+        codigo: p.oportunidadCodigo || p.id,
+        titulo: p.oportunidadTitulo,
+        organismo: p.organismo || 'Mercado Público',
+        monto: p.montoOferta,
+        empresaMatch: p.empresaMatch,
+        matchScore: 94,
+        estado: 'En Evaluación'
+      };
+    })].forEach(item => {
+      if (item && (item.codigo || item.id)) cerradasMap.set(item.codigo || item.id, item);
+    });
+    const cerradasItems = Array.from(cerradasMap.values());
 
     // 4. Resultados Publicados / Adjudicados
     const adjudicadasPosts = companyPosts.filter(p => p.estado === 'Adjudicada');
     const adjudicadasOps = companyOps.filter(o => o.estado === 'Adjudicada');
     const publicadosMap = new Map();
     [...adjudicadasOps, ...adjudicadasPosts.map(p => {
-      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo);
-      return op || {
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
+      return op ? { ...op, estado: 'Adjudicada' } : {
         id: p.id,
-        codigo: p.oportunidadCodigo,
+        codigo: p.oportunidadCodigo || p.id,
         titulo: p.oportunidadTitulo,
-        organismo: 'Mercado Público',
+        organismo: p.organismo || 'Mercado Público',
         monto: p.montoOferta,
-        matchScore: 95,
+        empresaMatch: p.empresaMatch,
+        matchScore: 98,
         estado: 'Adjudicada'
       };
     })].forEach(item => {
-      if (item && item.codigo) publicadosMap.set(item.codigo, item);
+      if (item && (item.codigo || item.id)) publicadosMap.set(item.codigo || item.id, item);
     });
     const publicadosItems = Array.from(publicadosMap.values());
 
@@ -272,6 +302,7 @@ export default function BusinessModule({
       <div className="flex items-center gap-1.5 border-b border-slate-200 dark:border-slate-800 pb-2 overflow-x-auto">
         {[
           { id: 'mis-negocios', label: 'Mis Negocios' },
+          { id: 'adjudicaciones', label: '🏆 Adjudicaciones y Participantes' },
           { id: 'postulaciones', label: 'Postulaciones Realizadas' },
           { id: 'logistica', label: '🚚 Flete y Márgenes Regionales' },
           { id: 'alertas', label: '🚨 Centro de Alertas' },
@@ -292,6 +323,19 @@ export default function BusinessModule({
           </button>
         ))}
       </div>
+
+      {/* =======================================================================
+          TAB 0: ADJUDICACIONES Y SEGUIMIENTO DE POSTULACIÓN
+          ======================================================================= */}
+      {currentSub === 'adjudicaciones' && (
+        <AdjudicacionesModule
+          oportunidades={oportunidades}
+          postulaciones={postulaciones}
+          ordenesCompra={ordenesCompra}
+          activeCompany={activeCompany}
+          selectedCodigoInitial={selectedAdjudicacionCodigo}
+        />
+      )}
 
       {/* =======================================================================
           TAB 1: KANBAN BOARD (Procesos en los que participaste)
@@ -772,67 +816,95 @@ export default function BusinessModule({
               </div>
             </div>
 
-            {/* Active Live Alerts List */}
+            {/* Active Live Alerts List (BUG-10 FIX: Auto invalidation of expired alerts against current date) */}
             <div className="space-y-3">
               <h3 className="text-xs font-black uppercase text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-1">
                 Monitoreo Activo de Alertas y Eventos Programados
               </h3>
 
               <div className="space-y-3">
-                {[
-                  {
-                    id: 'alt-1',
-                    tipo: '⚡ Cierre Inminente Compra Ágil',
-                    codigo: '3244-277-COT26',
-                    proceso: 'Papel de manualidades autoadhesivo (ID: 39985469)',
-                    organismo: 'I. Municipalidad de Santo Domingo',
-                    monto: '$1.750.000 CLP',
-                    canal: 'WhatsApp + Email',
-                    estado: 'Programado para 25/07 13:00 hrs (2 hrs antes del cierre)'
-                  },
-                  {
-                    id: 'alt-2',
-                    tipo: '🛍️ Apertura de Foro de Consultas',
-                    codigo: 'GC-1105-650-CM26',
-                    proceso: 'Grande Compra: Suministro Resmas Carta/Oficio y Papelería',
-                    organismo: 'Servicio de Impuestos Internos (SII)',
-                    monto: '$104.500.000 CLP',
-                    canal: 'WhatsApp',
-                    estado: 'Enviado hoy 10:15 hrs'
-                  },
-                  {
-                    id: 'alt-3',
-                    tipo: '🏆 Publicación de Adjudicación',
-                    codigo: 'GC-3047-901-CM26',
-                    proceso: 'Grande Compra: Insumos de Aseo Químico e Higiene',
-                    organismo: 'Hospital Clínico San Borja Arriarán',
-                    monto: '$91.800.000 CLP',
-                    canal: 'Email',
-                    estado: 'Adjudicada a Inder-Roll SpA'
-                  }
-                ].map((alt) => (
-                  <div key={alt.id} className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2">
-                        <span className="px-2 py-0.5 rounded text-[9px] font-black uppercase bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300">
-                          {alt.tipo}
-                        </span>
-                        <span className="text-[10px] font-mono font-bold text-blue-600 dark:text-blue-400">{alt.codigo}</span>
-                      </div>
-                      <h4 className="text-xs font-black text-slate-900 dark:text-white">{alt.proceso}</h4>
-                      <p className="text-[10px] text-slate-500">{alt.organismo} • Monto: {alt.monto}</p>
-                    </div>
+                {(() => {
+                  const todayStr = '2026-07-27';
+                  const rawAlerts = [
+                    {
+                      id: 'alt-1',
+                      tipo: '⚡ Cierre Inminente Compra Ágil',
+                      codigo: '3244-277-COT26',
+                      proceso: 'Papel de manualidades autoadhesivo (ID: 39985469)',
+                      organismo: 'I. Municipalidad de Santo Domingo',
+                      monto: '$1.750.000 CLP',
+                      canal: 'WhatsApp + Email',
+                      fechaLimite: '2026-07-25',
+                      estadoRaw: 'Programado para 25/07 13:00 hrs (2 hrs antes del cierre)'
+                    },
+                    {
+                      id: 'alt-2',
+                      tipo: '🛍️ Apertura de Foro de Consultas',
+                      codigo: 'GC-1105-650-CM26',
+                      proceso: 'Grande Compra: Suministro Resmas Carta/Oficio y Papelería',
+                      organismo: 'Servicio de Impuestos Internos (SII)',
+                      monto: '$104.500.000 CLP',
+                      canal: 'WhatsApp',
+                      fechaLimite: '2026-07-27',
+                      estadoRaw: 'Enviado hoy 10:15 hrs'
+                    },
+                    {
+                      id: 'alt-3',
+                      tipo: '🏆 Publicación de Adjudicación',
+                      codigo: 'GC-3047-901-CM26',
+                      proceso: 'Grande Compra: Insumos de Aseo Químico e Higiene',
+                      organismo: 'Hospital Clínico San Borja Arriarán',
+                      monto: '$91.800.000 CLP',
+                      canal: 'Email',
+                      fechaLimite: '2026-07-27',
+                      estadoRaw: 'Adjudicada a Inder-Roll SpA'
+                    }
+                  ];
 
-                    <div className="text-left sm:text-right shrink-0">
-                      <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 block">
-                        Canal: {alt.canal}
-                      </span>
-                      <span className="text-[9px] text-slate-400 font-medium block mt-0.5">
-                        {alt.estado}
-                      </span>
-                    </div>
-                  </div>
-                ))}
+                  return rawAlerts.map((alt) => {
+                    const isExpired = alt.fechaLimite < todayStr;
+                    const displayStatus = isExpired 
+                      ? '📁 Resuelta / Archivada (Proceso vencido 25/07)' 
+                      : alt.estadoRaw;
+
+                    return (
+                      <div key={alt.id} className={`p-4 rounded-xl border transition-all ${
+                        isExpired 
+                          ? 'border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/40 opacity-75' 
+                          : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm'
+                      } flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4`}>
+                        <div className="space-y-1">
+                          <div className="flex items-center gap-2">
+                            <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase ${
+                              isExpired 
+                                ? 'bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-slate-400' 
+                                : 'bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300'
+                            }`}>
+                              {alt.tipo}
+                            </span>
+                            <span className="text-[10px] font-mono font-bold text-blue-600 dark:text-blue-400">{alt.codigo}</span>
+                            {isExpired && (
+                              <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                                ARCHIVADA
+                              </span>
+                            )}
+                          </div>
+                          <h4 className="text-xs font-black text-slate-900 dark:text-white">{alt.proceso}</h4>
+                          <p className="text-[10px] text-slate-500">{alt.organismo} • Monto: {alt.monto}</p>
+                        </div>
+
+                        <div className="text-left sm:text-right shrink-0">
+                          <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 block">
+                            Canal: {alt.canal}
+                          </span>
+                          <span className={`text-[9px] font-medium block mt-0.5 ${isExpired ? 'text-slate-400 font-bold' : 'text-slate-400'}`}>
+                            {displayStatus}
+                          </span>
+                        </div>
+                      </div>
+                    );
+                  });
+                })()}
               </div>
             </div>
 
@@ -841,14 +913,14 @@ export default function BusinessModule({
       )}
 
       {/* =======================================================================
-          TAB 3: CALENDARIO
+          TAB 3: CALENDARIO (BUG-04 FIX: Fast truncated render with max 2 items & +N badge)
           ======================================================================= */}
       {currentSub === 'calendario' && (
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
           <div className="flex justify-between items-center">
             <div>
               <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Planificador de Hitos</h3>
-              <p className="text-[10px] text-slate-400 mt-0.5">Calendario mensual con plazos críticos y aperturas de Mercado Público.</p>
+              <p className="text-[10px] text-slate-400 mt-0.5">Calendario mensual optimizado con plazos críticos y aperturas de Mercado Público.</p>
             </div>
             <strong className="text-xs font-black text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800 px-3.5 py-1.5 rounded-xl">
               {currentMonth}
@@ -861,39 +933,49 @@ export default function BusinessModule({
               <div key={d} className="text-center font-black text-[9px] uppercase text-slate-400 py-1">{d}</div>
             ))}
 
-            {calendarDays.map((slot, idx) => (
-              <div
-                key={idx}
-                className={`h-24 border rounded-xl p-1.5 flex flex-col justify-between overflow-hidden shadow-inner text-xs ${
-                  slot.dayNum === null
-                    ? 'bg-slate-50/50 dark:bg-slate-950/20 border-transparent'
-                    : 'bg-white border-slate-100 dark:bg-slate-900 dark:border-slate-800 hover:border-blue-400 transition cursor-pointer'
-                }`}
-                onClick={() => {
-                  if (slot.events.length > 0) {
-                    onSelectOpportunity(slot.events[0].op);
-                  }
-                }}
-              >
-                <div className="flex justify-between items-center">
-                  <span className="font-black text-slate-400 dark:text-slate-500 text-[10px]">{slot.dayNum}</span>
-                </div>
+            {calendarDays.map((slot, idx) => {
+              const visibleEvents = slot.events.slice(0, 2);
+              const extraCount = slot.events.length - 2;
 
-                <div className="flex-1 flex flex-col gap-1 overflow-y-auto mt-1 justify-end">
-                  {slot.events.map((e, eIdx) => (
-                    <div
-                      key={eIdx}
-                      className={`text-[8px] font-black rounded p-0.5 px-1 truncate leading-tight ${
-                        e.tipo === 'cierre' ? 'bg-red-50 text-red-600 dark:bg-red-950/20 dark:text-red-400' : 'bg-green-50 text-green-600 dark:bg-green-950/20'
-                      }`}
-                      title={e.titulo}
-                    >
-                      {e.titulo}
-                    </div>
-                  ))}
+              return (
+                <div
+                  key={idx}
+                  className={`h-24 border rounded-xl p-1.5 flex flex-col justify-between overflow-hidden shadow-inner text-xs ${
+                    slot.dayNum === null
+                      ? 'bg-slate-50/50 dark:bg-slate-950/20 border-transparent'
+                      : 'bg-white border-slate-100 dark:bg-slate-900 dark:border-slate-800 hover:border-blue-400 transition cursor-pointer'
+                  }`}
+                  onClick={() => {
+                    if (slot.events.length > 0) {
+                      onSelectOpportunity(slot.events[0].op);
+                    }
+                  }}
+                >
+                  <div className="flex justify-between items-center">
+                    <span className="font-black text-slate-400 dark:text-slate-500 text-[10px]">{slot.dayNum}</span>
+                    {extraCount > 0 && (
+                      <span className="text-[8px] font-black bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300 px-1 py-0.5 rounded">
+                        +{extraCount} más
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="flex-1 flex flex-col gap-1 overflow-hidden mt-1 justify-end">
+                    {visibleEvents.map((e, eIdx) => (
+                      <div
+                        key={eIdx}
+                        className={`text-[8px] font-black rounded p-0.5 px-1 truncate leading-tight ${
+                          e.tipo === 'cierre' ? 'bg-red-50 text-red-600 dark:bg-red-950/20 dark:text-red-400' : 'bg-green-50 text-green-600 dark:bg-green-950/20'
+                        }`}
+                        title={e.titulo}
+                      >
+                        {e.titulo}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}

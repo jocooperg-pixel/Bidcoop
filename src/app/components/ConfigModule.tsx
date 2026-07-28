@@ -24,15 +24,17 @@ export default function ConfigModule({
   const [profNotificationEmail, setProfNotificationEmail] = useState(true);
   const [profNotificationBrowser, setProfNotificationBrowser] = useState(true);
 
-  // Search parameters states
+  // Search parameters states (BUG-07 FIX: Render literal > instead of &gt;)
   const [synonyms, setSynonyms] = useState('cloro = cloro gel = amonio cuaternario, toalla = papel higienico');
-  const [exclusions, setExclusions] = useState('importación directa, plazos &gt; 90');
+  const [exclusions, setExclusions] = useState('importación directa, plazos > 90');
   const [tagInput, setTagInput] = useState('');
   const [activeTags, setActiveTags] = useState(['Alta Rentabilidad', 'Bajo Riesgo', 'Frecuente', 'Urgente']);
 
-  // Integrations states
+  // Integrations states (BUG-08 FIX: Mask sensitive credentials with toggle)
   const [chileCompraKey, setChileCompraKey] = useState('cc-sandbox-99238-x7');
   const [elasticSearchUrl, setElasticSearchUrl] = useState('https://elastic.inderquim.internal:9200');
+  const [showChileCompraKey, setShowChileCompraKey] = useState(false);
+  const [showElasticUrl, setShowElasticUrl] = useState(false);
 
   // AI Prompt templates states
   const [aiBiddingPrompt, setAiBiddingPrompt] = useState(
@@ -206,27 +208,47 @@ export default function ConfigModule({
               </div>
             </div>
 
-            {/* Integrations */}
+            {/* Integrations (BUG-08 FIX: Mask sensitive credentials with password type and toggle) */}
             <div className="space-y-4 pt-4 border-t border-slate-100 dark:border-slate-800">
-              <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Integraciones y API Keys</h3>
+              <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Integraciones y API Keys (Protegidas)</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="text-[10px] uppercase font-black text-slate-400 block mb-1">ChileCompra API Key</label>
-                  <input
-                    type="text"
-                    value={chileCompraKey}
-                    onChange={(e) => setChileCompraKey(e.target.value)}
-                    className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white focus:border-blue-500"
-                  />
+                  <div className="relative flex items-center">
+                    <input
+                      type={showChileCompraKey ? "text" : "password"}
+                      value={chileCompraKey}
+                      onChange={(e) => setChileCompraKey(e.target.value)}
+                      className="w-full text-xs p-2 pr-8 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white focus:border-blue-500 font-mono"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowChileCompraKey(!showChileCompraKey)}
+                      className="absolute right-2 text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                      title={showChileCompraKey ? "Ocultar" : "Mostrar"}
+                    >
+                      {showChileCompraKey ? "🙈" : "👁️"}
+                    </button>
+                  </div>
                 </div>
                 <div>
                   <label className="text-[10px] uppercase font-black text-slate-400 block mb-1">Elasticsearch Cluster Node</label>
-                  <input
-                    type="text"
-                    value={elasticSearchUrl}
-                    onChange={(e) => setElasticSearchUrl(e.target.value)}
-                    className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white focus:border-blue-500"
-                  />
+                  <div className="relative flex items-center">
+                    <input
+                      type={showElasticUrl ? "text" : "password"}
+                      value={elasticSearchUrl}
+                      onChange={(e) => setElasticSearchUrl(e.target.value)}
+                      className="w-full text-xs p-2 pr-8 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white focus:border-blue-500 font-mono"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowElasticUrl(!showElasticUrl)}
+                      className="absolute right-2 text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                      title={showElasticUrl ? "Ocultar" : "Mostrar"}
+                    >
+                      {showElasticUrl ? "🙈" : "👁️"}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

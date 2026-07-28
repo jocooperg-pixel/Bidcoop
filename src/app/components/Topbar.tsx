@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Notificacion, Oportunidad, Empresa } from '../types';
+import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 
 interface TopbarProps {
   notifications: Notificacion[];
@@ -12,6 +13,8 @@ interface TopbarProps {
   onChangeCompany: (company: Empresa) => void;
   lastSyncTime?: string;
   onLogout?: () => void;
+  onNavigateView?: (module: string, subSection: string) => void;
+  onSelectAdjudicacionCode?: (codigo: string) => void;
 }
 
 export default function Topbar({
@@ -24,7 +27,9 @@ export default function Topbar({
   activeCompany,
   onChangeCompany,
   lastSyncTime = 'Pendiente',
-  onLogout
+  onLogout,
+  onNavigateView,
+  onSelectAdjudicacionCode
 }: TopbarProps) {
   const [showNotifications, setShowNotifications] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
@@ -132,8 +137,8 @@ export default function Topbar({
           </div>
         </form>
 
-        {/* Search Results Dropdown */}
-        {searchResults.length > 0 && (
+        {/* Search Results Dropdown (BUG-06 FIX: Never render when search input is empty) */}
+        {searchVal.trim() !== '' && searchResults.length > 0 && (
           <div className="absolute top-12 left-0 right-0 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-2xl z-50 p-2 flex flex-col gap-1">
             <div className="px-3 py-1 border-b border-slate-100 dark:border-slate-800 mb-1">
               <span className="text-[10px] uppercase font-black text-slate-400">Sugerencias de Búsqueda</span>
@@ -152,7 +157,7 @@ export default function Topbar({
                   <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
                     {op.rubro}
                   </span>
-                  <span className="text-[10px] font-bold text-green-600 dark:text-green-400">
+                  <span className={`text-[9px] font-black px-2 py-0.5 rounded-full border ${getMatchScoreBadgeStyle(op.matchScore).badgeBg}`}>
                     {op.matchScore}% Match
                   </span>
                 </div>
@@ -273,7 +278,24 @@ export default function Topbar({
                             Marcar como leído
                           </button>
                         )}
-                        {n.oportunidadId && (
+                        {(n.tipo === 'adjudicacion' || n.codigoProceso) && (
+                          <button
+                            onClick={() => {
+                              onMarkNotificationRead(n.id);
+                              setShowNotifications(false);
+                              if (n.codigoProceso && onSelectAdjudicacionCode) {
+                                onSelectAdjudicacionCode(n.codigoProceso);
+                              }
+                              if (onNavigateView) {
+                                onNavigateView('business', 'adjudicaciones');
+                              }
+                            }}
+                            className="text-[10px] font-black text-emerald-600 dark:text-emerald-400 hover:underline"
+                          >
+                            🏆 Ver Adjudicación y Participantes
+                          </button>
+                        )}
+                        {n.oportunidadId && !n.codigoProceso && (
                           <button
                             onClick={() => {
                               const op = oportunidades.find(o => o.id === n.oportunidadId);

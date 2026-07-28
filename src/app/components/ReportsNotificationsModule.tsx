@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Oportunidad, Empresa } from '../types';
+import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 
 interface ReportsNotificationsModuleProps {
   oportunidades: Oportunidad[];
@@ -108,7 +109,7 @@ export default function ReportsNotificationsModule({
     setTimeout(() => setReportSuccessMsg(null), 5000);
   };
 
-  const handleSendTestEmail = async (targetEmail: string = 'jocooperg@gmail.com') => {
+  const handleSendTestEmail = async (targetEmail: string = 'jocooper@inder-roll.cl', groupType: 'InderRoll' | 'SurCentro' | 'Metropolitana' | 'Todas' = 'Todas') => {
     try {
       setSendingEmail(true);
       const res = await fetch('/api/send-email-report', {
@@ -119,25 +120,65 @@ export default function ReportsNotificationsModule({
           empresa: selectedCompany,
           oportunidades: companyFilteredOps,
           apiKey: userResendKey,
-          smtpUser: userSmtpUser,
+          smtpUser: userSmtpUser || 'jonathan.cooper.g@gmail.com',
           smtpPass: userSmtpPass
         })
       });
 
       const data = await res.json();
-      if (!res.ok) {
-        setShowEmailPreviewModal(true);
-        setReportSuccessMsg('Para la entrega directa en tu bandeja de Gmail, revisa tu conector de correo o ingresa tu clave API en la pestaña ⚙️ Automatización.');
-        return;
-      }
+      const anySent = data.dispatchesDetail?.some((d: any) => d.isSent);
 
-      setReportSuccessMsg(`¡${data.emailStatus}! Archivo adjunto: ${data.filename} (${data.totalOps} Compras Ágiles)`);
+      if (anySent) {
+        setReportSuccessMsg(`¡✅ Correos despachados automáticamente desde jonathan.cooper.g@gmail.com a las casillas oficiales! (${companyFilteredOps.length} Compras Ágiles)`);
+      } else {
+        // Prompt user to enter Gmail App Password or API Key in UI config without opening Safari
+        setShowEmailPreviewModal(true);
+        setActiveTab('configuracion');
+        setReportSuccessMsg('⚙️ Conector Gmail (jonathan.cooper.g@gmail.com): Ingrese la clave de aplicación o API Key en la pestaña Automatización para realizar el despacho.');
+      }
     } catch (err: any) {
       setShowEmailPreviewModal(true);
-      setReportSuccessMsg('Conector de correo pendiente. Revisa la pestaña ⚙️ Automatización y Canales.');
+      setActiveTab('configuracion');
+      setReportSuccessMsg('⚙️ Conector Gmail: Ingrese la clave de aplicación en la pestaña Automatización.');
     } finally {
       setSendingEmail(false);
     }
+  };
+
+  const handleOpenMailClientInderRoll = () => {
+    const today = new Date().toISOString().split('T')[0];
+    const targetEmails = 'jcooper@inder-roll.cl';
+    const targetOps = companyFilteredOps.filter(o => o.empresaMatch === 'Inder-Roll' || o.rubro === 'Aseo e Higiene');
+    
+    const totalOps = targetOps.length > 0 ? targetOps.length : companyFilteredOps.length;
+    const opsToUse = targetOps.length > 0 ? targetOps : companyFilteredOps;
+    const totalMonto = opsToUse.reduce((acc, curr) => acc + curr.monto, 0);
+    const subject = encodeURIComponent(`[BidCoop 08:00 AM] Compras Ágiles Inder-Roll - (${today})`);
+
+    let bodyText = `Estimado Jonathan Cooper (Inder-Roll),\n\n`;
+    bodyText += `Se presenta el reporte de Compras Ágiles activas para Inder-Roll (${today}):\n`;
+    bodyText += `- Compras Ágiles Activas: ${totalOps} Procesos\n`;
+    bodyText += `- Presupuesto Total CLP: $${totalMonto.toLocaleString('es-CL')} CLP\n\n`;
+    bodyText += `=========================================================\n`;
+    bodyText += `DESGLOSE DE PROCESOS INDER-ROLL (MUESTRA DESTACADA):\n`;
+    bodyText += `=========================================================\n\n`;
+
+    // Safely limit to top 12 items to stay under 2000 chars mailto limit
+    opsToUse.slice(0, 12).forEach(op => {
+      const winPrice = Math.round(op.monto * 0.94);
+      bodyText += `• CÓDIGO: ${op.codigo}\n`;
+      bodyText += `  ORGANISMO: ${op.organismo} (${op.region})\n`;
+      bodyText += `  PROCESO: ${op.titulo}\n`;
+      bodyText += `  MONTO: $${op.monto.toLocaleString('es-CL')} CLP | PRECIO AI (94%): $${winPrice.toLocaleString('es-CL')} CLP\n`;
+      bodyText += `  CIERRE: ${op.fechaCierre}\n\n`;
+    });
+
+    if (totalOps > 12) {
+      bodyText += `\n* (Consulte los ${totalOps} procesos completos ingresando a la plataforma BidCoop).\n\n`;
+    }
+
+    bodyText += `Atentamente,\nPlataforma Avanzada de Abastecimiento BidCoop © 2026`;
+    window.open(`mailto:${targetEmails}?subject=${subject}&body=${encodeURIComponent(bodyText)}`, '_blank');
   };
 
   const handleOpenMailClientRegional = (zona: 'SurCentro' | 'Metropolitana' | 'Todas' = 'Todas') => {
@@ -175,10 +216,11 @@ export default function ReportsNotificationsModule({
     bodyText += `- Compras Ágiles Activas: ${totalOps} Procesos\n`;
     bodyText += `- Presupuesto Total CLP: $${totalMonto.toLocaleString('es-CL')} CLP\n\n`;
     bodyText += `=========================================================\n`;
-    bodyText += `DESGLOSE DE PROCESOS:\n`;
+    bodyText += `DESGLOSE DE PROCESOS DESTACADOS:\n`;
     bodyText += `=========================================================\n\n`;
 
-    targetOps.forEach(op => {
+    // SAFELY LIMIT TO TOP 10 ITEMS TO PREVENT BROWSER MAILTO URI TOO LONG ERROR (MAX 2000 CHARS)
+    targetOps.slice(0, 10).forEach(op => {
       const winPrice = Math.round(op.monto * 0.94);
       bodyText += `• CÓDIGO: ${op.codigo}\n`;
       bodyText += `  ORGANISMO: ${op.organismo} (${op.region})\n`;
@@ -187,9 +229,17 @@ export default function ReportsNotificationsModule({
       bodyText += `  CIERRE: ${op.fechaCierre}\n\n`;
     });
 
-    bodyText += `\n* Adjunte la planilla official .CSV descargada desde BidCoop.\n\nAtentamente,\nPlataforma Avanzada de Abastecimiento BidCoop © 2026`;
+    if (totalOps > 10) {
+      bodyText += `* Note: Hay ${totalOps - 10} Compras Ágiles adicionales activas hoy. Ingrese a la plataforma BidCoop para ver la totalidad.\n\n`;
+    }
 
-    window.open(`mailto:${targetEmails}?subject=${subject}&body=${encodeURIComponent(bodyText)}`, '_blank');
+    bodyText += `Atentamente,\nPlataforma Avanzada de Abastecimiento BidCoop © 2026`;
+
+    try {
+      window.open(`mailto:${targetEmails}?subject=${subject}&body=${encodeURIComponent(bodyText)}`, '_blank');
+    } catch (e) {
+      console.error('Mailto trigger error:', e);
+    }
   };
 
   const handleOpenMailClient = () => {
@@ -206,10 +256,15 @@ export default function ReportsNotificationsModule({
     if (op.estado === 'Adjudicada') statusBadgeColor = 'bg-emerald-100 text-emerald-800 border-emerald-300';
     if (op.estado === 'En Evaluación') statusBadgeColor = 'bg-amber-100 text-amber-800 border-amber-300';
 
+    const recipient = company === 'Inder-Roll' 
+      ? 'jcooper@inder-roll.cl' 
+      : 'mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl';
+
     return {
       subject: emailSubject,
-      sender: `notificaciones@bidcoop.cl`,
-      recipient: company === 'Inder-Roll' ? 'licitaciones@inder-roll.cl' : company === 'Aminorte' ? 'comercial@aminorte.cl' : 'contacto@v-moccs.cl',
+      sender: 'notificaciones@bidcoop.cl',
+      recipient,
+      recipients: recipient,
       company,
       code: op.codigo,
       organismo: op.organismo,
@@ -218,7 +273,8 @@ export default function ReportsNotificationsModule({
       estado: op.estado,
       statusBadgeColor,
       cierre: op.fechaCierre,
-      titulo: op.titulo
+      titulo: op.titulo,
+      body: `Estimado Equipo de ${company},\n\nLe notificamos la actualización de la cotización enviada:\n\nProceso: ${op.codigo} - ${op.titulo}\nOrganismo: ${op.organismo}\nMonto Estimado: $${op.monto.toLocaleString('es-CL')} CLP\nPrecio Sugerido Win-Rate (IA): $${winPrice.toLocaleString('es-CL')} CLP\nEstado Actual: ${op.estado}\n\nPor favor revise el panel de BidCoop para adjuntar documentos definitivos.`
     };
   };
 
@@ -255,7 +311,7 @@ export default function ReportsNotificationsModule({
   return (
     <div className={`p-6 space-y-6 ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'} min-h-screen`}>
       {/* HEADER BAR */}
-      <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div className="bg-white dark:bg-slate-800 p-6 rounded-3xl border border-slate-200 dark:border-slate-700/80 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <span className="bg-indigo-600 text-white text-xs font-black px-2.5 py-1 rounded-full uppercase tracking-wider">
@@ -274,14 +330,33 @@ export default function ReportsNotificationsModule({
         </div>
       </div>
 
-      {/* QUICK ACTIONS & TWO DISPATCH BUTTONS CONTAINER */}
+      {/* QUICK ACTIONS & DISPATCH BUTTONS CONTAINER */}
       <div className="space-y-4">
-        {/* Action Buttons Grid — 2 REGIONAL EMAIL DISPATCH BUTTONS + PREVIEW */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
           
-          {/* Dispatch Button 1: Región Metropolitana */}
+          {/* Dispatch Button 1: Inder-Roll */}
           <button
-            onClick={() => handleSendTestEmail('mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl')}
+            onClick={() => handleSendTestEmail('jcooper@inder-roll.cl', 'InderRoll')}
+            disabled={sendingEmail}
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
+                🧹
+              </div>
+              <div className="text-left">
+                <div className="font-extrabold text-xs leading-snug">Enviar Correo Inder-Roll</div>
+                <div className="text-[10px] text-emerald-100 font-medium">jcooper@inder-roll.cl</div>
+              </div>
+            </div>
+            <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
+              {sendingEmail ? 'Enviando...' : 'Enviar Inder'}
+            </span>
+          </button>
+
+          {/* Dispatch Button 2: RM */}
+          <button
+            onClick={() => handleSendTestEmail('mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl', 'Metropolitana')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 text-white font-bold text-xs shadow-lg shadow-blue-500/20 hover:shadow-blue-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -290,36 +365,36 @@ export default function ReportsNotificationsModule({
                 🏛️
               </div>
               <div className="text-left">
-                <div className="font-extrabold text-sm leading-snug">Enviar Correo Región Metropolitana</div>
-                <div className="text-[10px] text-sky-100 font-medium">3 Destinatarios (RM)</div>
+                <div className="font-extrabold text-xs leading-snug">Enviar Correo RM</div>
+                <div className="text-[10px] text-sky-100 font-medium">3 Destinatarios RM</div>
               </div>
             </div>
-            <span className="bg-white/20 text-white font-black text-[10px] px-2.5 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
+            <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
               {sendingEmail ? 'Enviando...' : 'Enviar RM'}
             </span>
           </button>
 
-          {/* Dispatch Button 2: Regiones (IV Coquimbo a X Los Lagos) */}
+          {/* Dispatch Button 3: Regiones IV-X */}
           <button
-            onClick={() => handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl')}
+            onClick={() => handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl', 'SurCentro')}
             disabled={sendingEmail}
-            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white font-bold text-xs shadow-lg shadow-teal-500/20 hover:shadow-teal-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
                 🏔️
               </div>
               <div className="text-left">
-                <div className="font-extrabold text-sm leading-snug">Enviar Correo Regiones (IV-X)</div>
-                <div className="text-[10px] text-emerald-100 font-medium">4 Destinatarios (IV a X)</div>
+                <div className="font-extrabold text-xs leading-snug">Enviar Regiones (IV-X)</div>
+                <div className="text-[10px] text-teal-100 font-medium">4 Destinatarios IV-X</div>
               </div>
             </div>
-            <span className="bg-white/20 text-white font-black text-[10px] px-2.5 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
+            <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
               {sendingEmail ? 'Enviando...' : 'Enviar IV-X'}
             </span>
           </button>
 
-          {/* Auxiliary Button 3: Live Email Preview */}
+          {/* Auxiliary Button 4: Live Email Preview */}
           <button
             onClick={() => setShowEmailPreviewModal(true)}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700/80 hover:border-sky-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
@@ -329,11 +404,11 @@ export default function ReportsNotificationsModule({
                 👁️
               </div>
               <div className="text-left">
-                <div className="font-extrabold text-sm leading-snug">Vista Previa del Correo</div>
-                <div className="text-[10px] text-slate-400 font-medium">Formato Oficial HTML</div>
+                <div className="font-extrabold text-xs leading-snug">Vista Previa Correo</div>
+                <div className="text-[10px] text-slate-400 font-medium">Formato HTML</div>
               </div>
             </div>
-            <span className="bg-slate-700 text-sky-400 border border-sky-500/30 font-bold text-[10px] px-2.5 py-1 rounded-full shrink-0">
+            <span className="bg-slate-700 text-sky-400 border border-sky-500/30 font-bold text-[10px] px-2 py-1 rounded-full shrink-0">
               Ver HTML
             </span>
           </button>
@@ -1031,10 +1106,12 @@ export default function ReportsNotificationsModule({
               {/* Formatted HTML Email Canvas */}
               <div className="bg-white text-slate-900 rounded-2xl p-6 border border-slate-200 shadow-md space-y-4 max-h-[600px] overflow-y-auto">
                 <div className="border-b border-slate-200 pb-3 space-y-2 text-xs">
-                  <div><strong>De:</strong> <span className="font-semibold text-slate-800">Alertas BidCoop &lt;jonathan.cooper.g@gmail.com&gt;</span></div>
-                  <div><strong>Para:</strong> <span className="font-semibold text-emerald-700 font-bold">Destinatarios Regionales Asignados (BCC - Copia Oculta Confidencial)</span></div>
-                  <div><strong>Asunto:</strong> <span className="font-extrabold text-slate-900">[BidCoop 08:00 AM] Reporte Diario de Compras Ágiles por Región - {selectedCompany} ({new Date().toISOString().split('T')[0]})</span></div>
-                  <div><strong>Adjunto:</strong> <span className="font-mono font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">BidCoop_Reporte_Diario_Compras_Agiles_{selectedCompany}_{new Date().toISOString().split('T')[0]}.csv</span></div>
+                  <div><strong>De:</strong> <span className="font-semibold text-slate-800">Alertas BidCoop &lt;alertas.bidcoop@gmail.com&gt;</span></div>
+                  <div><strong>Para Inder-Roll:</strong> <span className="font-mono font-bold text-emerald-700">jcooper@inder-roll.cl</span></div>
+                  <div><strong>Para Aminorte & V-MOCCS (Sur-Centro):</strong> <span className="font-mono text-slate-700">jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</span></div>
+                  <div><strong>Para Aminorte & V-MOCCS (RM Santiago):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</span></div>
+                  <div><strong>Asunto:</strong> <span className="font-extrabold text-slate-900">[BidCoop 08:00 AM] Reporte Exclusivo de Compras Ágiles ({new Date().toISOString().split('T')[0]})</span></div>
+                  <div><strong>Modalidad Envío:</strong> <span className="font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">📧 Informe Exclusivo en Cuerpo de Correo (Sin Adjuntos)</span></div>
                 </div>
 
                 {/* Email Body Live HTML Canvas */}
@@ -1110,8 +1187,10 @@ export default function ReportsNotificationsModule({
                               <td className="p-2.5 vertical-top text-right font-black text-emerald-600">
                                 ${Math.round(op.monto * 0.94).toLocaleString('es-CL')}
                               </td>
-                              <td className="p-2.5 vertical-top text-center font-black text-emerald-600">
-                                {op.matchScore}%
+                              <td className="p-2.5 vertical-top text-center font-black">
+                                <span className={`text-[10px] font-black px-2 py-0.5 rounded-full border ${getMatchScoreBadgeStyle(op.matchScore).badgeBg}`}>
+                                  {op.matchScore}%
+                                </span>
                               </td>
                               <td className="p-2.5 vertical-top text-right font-semibold text-slate-600 text-[11px]">
                                 {op.fechaCierre}

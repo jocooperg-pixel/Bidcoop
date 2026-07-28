@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 interface SidebarProps {
   activeModule: string;
@@ -16,6 +16,36 @@ export default function Sidebar({
   setDarkMode
 }: SidebarProps) {
   const [hoveredModule, setHoveredModule] = useState<string | null>(null);
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const sidebarRef = useRef<HTMLElement>(null);
+
+  // BUG-05 FIX: Close dropdown submenus when clicking outside sidebar
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
+        setHoveredModule(null);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleMouseEnter = (id: string) => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+    setHoveredModule(id);
+  };
+
+  const handleMouseLeave = () => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+    }
+    hoverTimeoutRef.current = setTimeout(() => {
+      setHoveredModule(null);
+    }, 350); // 350ms grace delay to give ample time when moving mouse to submenu
+  };
 
   const modules = [
     {
@@ -39,8 +69,10 @@ export default function Sidebar({
         </svg>
       ),
       subSections: [
-        { id: 'buscador', label: 'Buscador de Negocios' },
-        { id: 'vistas', label: 'Vistas Guardadas' }
+        { id: 'compra-agil', label: '⚡ Compra Ágil' },
+        { id: 'grandes-compras', label: '🛍️ Grandes Compras' },
+        { id: 'licitaciones', label: '🏛️ Licitaciones' },
+        { id: 'vistas', label: '💾 Vistas Guardadas' }
       ]
     },
     {
@@ -53,6 +85,7 @@ export default function Sidebar({
       ),
       subSections: [
         { id: 'mis-negocios', label: 'Mis Negocios' },
+        { id: 'adjudicaciones', label: 'Seguimiento de Adjudicaciones' },
         { id: 'calendario', label: 'Calendario de Fechas' },
         { id: 'catalogo', label: 'Catálogo de Productos' },
         { id: 'documentos', label: 'Repositorio Documental' }
@@ -103,7 +136,7 @@ export default function Sidebar({
   ];
 
   return (
-    <aside className="w-[72px] bg-slate-900 border-r border-slate-800/80 flex flex-col justify-between items-center py-6 shrink-0 relative z-50">
+    <aside ref={sidebarRef} className="w-[72px] bg-slate-900 border-r border-slate-800/80 flex flex-col justify-between items-center py-6 shrink-0 relative z-50">
       <div className="flex flex-col items-center gap-10 w-full">
         {/* OFFICIAL FLOATING ROUND BIDCOOP LOGO */}
         <div className="flex flex-col items-center gap-1 group cursor-pointer" title="BidCoop - Tu Plataforma en Mercado Público">
@@ -125,13 +158,16 @@ export default function Sidebar({
               <div
                 key={m.id}
                 className="relative"
-                onMouseEnter={() => setHoveredModule(m.id)}
-                onMouseLeave={() => setHoveredModule(null)}
+                onMouseEnter={() => handleMouseEnter(m.id)}
+                onMouseLeave={handleMouseLeave}
               >
                 {/* Main Icon Button */}
                 <button
-                  onClick={() => onChangeView(m.id, m.subSections[0].id)}
-                  className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-200 mx-auto relative group ${
+                  onClick={() => {
+                    onChangeView(m.id, m.subSections[0].id);
+                    setHoveredModule(m.id);
+                  }}
+                  className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-200 mx-auto relative group cursor-pointer ${
                     isModuleActive
                       ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/40 border border-sky-400/40'
                       : 'text-slate-400 hover:text-white hover:bg-slate-800/80'
@@ -143,39 +179,43 @@ export default function Sidebar({
                   {isModuleActive && (
                     <span className="absolute right-1 top-1 w-2.5 h-2.5 bg-sky-400 border border-slate-900 rounded-full animate-pulse shadow-sm shadow-sky-400" />
                   )}
-                  {/* Tooltip on hover (fallback if submenu disabled) */}
-                  <div className="absolute left-[70px] bg-slate-950 text-white text-[10px] uppercase font-bold py-1 px-2.5 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap hidden border border-slate-800">
-                    {m.label}
-                  </div>
                 </button>
 
-                {/* FLOATING SUBMENU (Hover state) */}
+                {/* FLOATING SUBMENU (Seamless hover bridge + grace delay) */}
                 {isHovered && (
-                  <div className="absolute left-[56px] top-0 ml-1.5 w-60 bg-slate-950/95 backdrop-blur-md border border-slate-800 rounded-2xl shadow-2xl p-3 flex flex-col gap-1 transition-all duration-200 animate-in fade-in slide-in-from-left-2 duration-150">
-                    <div className="px-3 py-1.5 border-b border-slate-800 mb-2">
-                      <span className="text-[10px] uppercase font-black text-slate-500 tracking-wider">
-                        {m.label}
-                      </span>
+                  <div
+                    onMouseEnter={() => handleMouseEnter(m.id)}
+                    onMouseLeave={handleMouseLeave}
+                    className="absolute left-[48px] top-0 pl-5 -ml-1 w-64 z-50 transition-all duration-200 animate-in fade-in slide-in-from-left-2 duration-150"
+                  >
+                    <div className="bg-slate-950/95 backdrop-blur-md border border-slate-800 rounded-2xl shadow-2xl p-3 flex flex-col gap-1 border-l-2 border-l-blue-500">
+                      <div className="px-3 py-1.5 border-b border-slate-800 mb-1 flex items-center justify-between">
+                        <span className="text-[10px] uppercase font-black text-sky-400 tracking-wider">
+                          {m.label}
+                        </span>
+                        <span className="text-[9px] text-slate-500 font-bold">Opciones</span>
+                      </div>
+                      {m.subSections.map((sub) => {
+                        const isSubActive = activeModule === m.id && activeSubSection === sub.id;
+                        return (
+                          <button
+                            key={sub.id}
+                            onClick={() => {
+                              onChangeView(m.id, sub.id);
+                              setHoveredModule(null);
+                              if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+                            }}
+                            className={`w-full text-left text-xs font-bold px-3 py-2 rounded-xl transition cursor-pointer ${
+                              isSubActive
+                                ? 'bg-blue-600/25 text-sky-300 border-l-2 border-sky-400 pl-2.5 shadow-sm'
+                                : 'text-slate-300 hover:bg-slate-800/80 hover:text-white pl-3'
+                            }`}
+                          >
+                            {sub.label}
+                          </button>
+                        );
+                      })}
                     </div>
-                    {m.subSections.map((sub) => {
-                      const isSubActive = activeModule === m.id && activeSubSection === sub.id;
-                      return (
-                        <button
-                          key={sub.id}
-                          onClick={() => {
-                            onChangeView(m.id, sub.id);
-                            setHoveredModule(null);
-                          }}
-                          className={`w-full text-left text-xs font-bold px-3 py-2 rounded-xl transition ${
-                            isSubActive
-                              ? 'bg-blue-600/20 text-blue-400 border-l-2 border-blue-500 pl-2.5'
-                              : 'text-slate-400 hover:bg-slate-800/50 hover:text-white pl-3'
-                          }`}
-                        >
-                          {sub.label}
-                        </button>
-                      );
-                    })}
                   </div>
                 )}
               </div>

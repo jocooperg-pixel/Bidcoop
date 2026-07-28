@@ -13,6 +13,7 @@ import ReportsNotificationsModule from './components/ReportsNotificationsModule'
 import LoginScreen from './components/LoginScreen';
 
 import { Oportunidad, Postulacion, MiembroEquipo, Notificacion, VistaGuardada, Empresa } from './types';
+import { calculateSmartCatalogMatch } from './utils/smartMatchEngine';
 import {
   mockOportunidades,
   mockMiembrosEquipo,
@@ -50,6 +51,9 @@ export default function Home() {
   // Global search input state
   const [globalSearchText, setGlobalSearchText] = useState<string>('');
 
+  // Selected Adjudicacion process code
+  const [selectedAdjudicacionCodigo, setSelectedAdjudicacionCodigo] = useState<string | null>(null);
+
   // Core Data Lists in state to allow dynamic reactivity across components
   const [oportunidades, setOportunidades] = useState<Oportunidad[]>(() => {
     const d = new Date();
@@ -74,7 +78,16 @@ export default function Home() {
 
   // Global search preferences state
   const [globalPrefs, setGlobalPrefs] = useState({
-    rubros: ['Aseo e Higiene', 'Artículos de Escritorio y Oficina'],
+    rubros: [
+      'Aseo e Higiene',
+      'Artículos de Escritorio y Oficina',
+      'Tecnología y Hardware',
+      'Insumos Médicos y Salud',
+      'Ferretería y Materiales',
+      'Alimentos y Catering',
+      'Servicios Generales',
+      'Todos'
+    ],
     modalidades: ['Compra Ágil', 'Licitación', 'Convenio Marco', 'Grandes Compras'],
     region: 'Todos',
     montoMinimo: 0,
@@ -93,7 +106,7 @@ export default function Home() {
 
     // Apply global preferences
     list = list.filter(o => 
-      globalPrefs.rubros.includes(o.rubro) &&
+      (globalPrefs.rubros.includes('Todos') || globalPrefs.rubros.includes(o.rubro)) &&
       globalPrefs.modalidades.includes(o.modalidad) &&
       (globalPrefs.region === 'Todos' || o.region === globalPrefs.region) &&
       o.monto >= globalPrefs.montoMinimo
@@ -157,9 +170,11 @@ export default function Home() {
     }
   }, []);
 
-  // Programar actualización automática cada 3 horas
+  // Sincronizar en vivo inmediatamente al cargar la plataforma y luego cada 3 horas
   useEffect(() => {
-    // Configurar intervalo de 3 horas (3 * 60 * 60 * 1000 ms)
+    // Sync immediately on mount with live API
+    handleSyncRealTime(true);
+
     const intervalId = setInterval(() => {
       console.log('Actualización automática de licitaciones (cada 3 horas)...');
       handleSyncRealTime(true);
@@ -308,64 +323,57 @@ export default function Home() {
       
       const mappedList: Oportunidad[] = [];
 
-      // --- Helper: check if an item belongs to our convenios ---
-      const classifyRubro = (item: any): { isAseo: boolean; isEscritorio: boolean } => {
-        const nombre = (item.Nombre || '').toLowerCase();
-        const desc = (item.Descripcion || '').toLowerCase();
-        const all = `${nombre} ${desc}`;
+      // --- Helper: check if an item belongs to our convenios via Smart Catalog Engine ---
+      const getRubroAndCompany = (item: any): { finalRubro: string; companyMatch: 'Inder-Roll' | 'Aminorte' | 'V-MOCCS'; matchScore: number } => {
+        const smart = calculateSmartCatalogMatch({
+          titulo: item.Nombre || item.titulo || '',
+          descripcion: item.Descripcion || item.descripcion || '',
+          rubro: item.Rubro || item.rubro,
+          items: item.Items?.Listado ? item.Items.Listado.map((it: any) => ({ producto: it.Descripcion || it.producto || '', especificacionTecnica: it.Especificacion || '' })) : []
+        });
 
-        const isAseo = 
-          all.includes('aseo') || all.includes('higiene') || all.includes('limpieza') ||
-          all.includes('desinfect') || all.includes('sanitiz') ||
-          all.includes('cloro') || all.includes('jabón') || all.includes('jabon') ||
-          all.includes('detergente') || all.includes('alcohol gel') || 
-          all.includes('limpiador') || all.includes('lavaloza') ||
-          all.includes('toalla') || all.includes('papel higiénico') || all.includes('papel higienico') ||
-          all.includes('escoba') || all.includes('trapeador') || all.includes('guantes de aseo') ||
-          all.includes('bolsa basura') || all.includes('amonio cuaternario') ||
-          all.includes('desodorante ambiental') || all.includes('cera para pisos') ||
-          all.includes('hipoclorito') || all.includes('sapolio') || all.includes('lustramuebles');
-          
-        const isEscritorio = 
-          all.includes('escritorio') || all.includes('papelería') || all.includes('papeleria') ||
-          all.includes('librería') || all.includes('libreria') || all.includes('útiles de oficina') ||
-          all.includes('resma') || all.includes('cuaderno') || all.includes('lápiz') || all.includes('lapiz') ||
-          all.includes('bolígrafo') || all.includes('boligrafo') || all.includes('archivador') ||
-          all.includes('carpeta') || all.includes('papel carta') || all.includes('papel oficio') ||
-          all.includes('tinta impresora') || all.includes('toner') || all.includes('tóner') ||
-          all.includes('grapadora') || all.includes('corchete') || all.includes('tijera') ||
-          all.includes('cinta adhesiva') || all.includes('pegamento') || all.includes('post-it') ||
-          all.includes('artículos de oficina') || all.includes('articulos de oficina') ||
-          all.includes('insumos de oficina');
-
-        return { isAseo, isEscritorio };
+        return {
+          finalRubro: smart.rubroRecomendado,
+          companyMatch: smart.companyMatch,
+          matchScore: smart.matchScore
+        };
       };
 
-      // --- Process all licitaciones from the API ---
+      // --- Process all licitaciones from the API with 100% LIVE API PRECEDENCE ---
       for (const item of allLicitaciones) {
-        const { isAseo, isEscritorio } = classifyRubro(item);
-        if (!isAseo && !isEscritorio) continue;
-
-        const code = item.CodigoExterno || '';
-        const companyMatch = item.EmpresaMatch || (isAseo ? 'Inder-Roll' : 'Aminorte');
-        const finalRubro = isAseo ? 'Aseo e Higiene' : 'Artículos de Escritorio y Oficina';
+        const code = item.CodigoExterno || item.codigo || '';
+        const staticMatch = mockOportunidades.find(m => m.codigo.toLowerCase() === code.toLowerCase());
+        
+        const { finalRubro: calcRubro, companyMatch: defaultCompanyMatch, matchScore: calcMatchScore } = getRubroAndCompany(item);
+        
+        // Live API properties have ABSOLUTE PRIORITY over static fallback
+        const titulo = item.Nombre || item.titulo || staticMatch?.titulo || `Proceso ${code}`;
+        const finalRubro = item.Rubro || item.rubro || calcRubro;
+        const companyMatch = item.EmpresaMatch || item.empresaMatch || defaultCompanyMatch;
+        const descripcion = item.Descripcion || item.descripcion || staticMatch?.descripcion || `Proceso de contratación pública oficial (${code}) importado en vivo desde Mercado Público.`;
+        const estadoReal = item.Estado || item.estado || staticMatch?.estado || 'Publicada';
 
         // Determine modality using item.Modalidad or API Tipo field + code suffix
         const tipo = (item.Tipo || '').toUpperCase();
         const codeUpper = code.toUpperCase();
-        const titleLower = (item.Nombre || '').toLowerCase();
-        let modality: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras' = item.Modalidad || 'Licitación';
+        const titleLower = titulo.toLowerCase();
+        let modality: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras' = item.Modalidad || item.modalidad || 'Licitación';
         
-        if (!item.Modalidad) {
-          if (tipo === 'CO' || codeUpper.includes('-CO') || codeUpper.includes('COT')) {
+        if (!item.Modalidad && !item.modalidad) {
+          if (tipo === 'CO' || codeUpper.includes('-CO') || codeUpper.includes('COT') || titleLower.includes('compra ágil') || titleLower.includes('compra agil')) {
             modality = 'Compra Ágil';
           } else if (codeUpper.includes('-CM') || titleLower.includes('convenio marco') || titleLower.includes('grande compra') || titleLower.includes('intencion de compra')) {
             modality = (item.MontoEstimado && item.MontoEstimado > 65000000) || titleLower.includes('grande compra') ? 'Grandes Compras' : 'Convenio Marco';
+          } else {
+            modality = staticMatch?.modalidad || 'Licitación';
           }
         }
 
-        // Get real amount from API
-        let monto = item.MontoEstimado || 0;
+        // Get real amount from live API
+        let monto = (typeof item.MontoEstimado === 'number' && item.MontoEstimado > 0) 
+          ? item.MontoEstimado 
+          : (item.monto || staticMatch?.monto || 0);
+
         if (!monto || monto === 0) {
           if (modality === 'Compra Ágil') monto = 150000 + Math.floor(Math.random() * 1650000);
           else if (modality === 'Grandes Compras') monto = 65000000 + Math.floor(Math.random() * 85000000);
@@ -375,14 +383,14 @@ export default function Home() {
 
         // Extract real data from Comprador field
         const comprador = item.Comprador || {};
-        const organismo = comprador.NombreOrganismo || item.Organismo || 'ORGANISMO PÚBLICO';
-        const rutOrganismo = comprador.RutUnidad || '00.000.000-0';
-        const regionRaw = comprador.RegionUnidad || '';
+        const organismo = comprador.NombreOrganismo || item.Organismo || item.organismo || staticMatch?.organismo || 'ORGANISMO PÚBLICO';
+        const rutOrganismo = comprador.RutUnidad || item.organismoRut || staticMatch?.organismoRut || '60.000.000-0';
+        const regionRaw = comprador.RegionUnidad || item.region || staticMatch?.region || 'Metropolitana';
 
         // Real dates from Fechas field
         const fechas = item.Fechas || {};
-        const fechaPublicacion = fechas.FechaPublicacion || fechas.FechaCreacion || '';
-        const fechaCierre = fechas.FechaCierre || item.FechaCierre || '';
+        const fechaPublicacion = fechas.FechaPublicacion || fechas.FechaCreacion || item.fechaPublicacion || staticMatch?.fechaPublicacion || '';
+        const fechaCierre = fechas.FechaCierre || item.FechaCierre || item.fechaCierre || staticMatch?.fechaCierre || '';
 
         // Real portal URL for documents
         const portalUrl = `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${code}`;
@@ -393,25 +401,25 @@ export default function Home() {
         mappedList.push({
           id: `op-${code}`,
           codigo: code,
-          titulo: item.Nombre || `${modality} - ${finalRubro}`,
+          titulo,
           organismo,
           organismoRut: rutOrganismo,
           organismoPagoDias: 30,
           organismoRiesgo: 'Bajo',
           rubro: finalRubro,
-          region: regionRaw || 'Metropolitana',
+          region: regionRaw,
           monto,
           montoUtm: isGrandesCompras ? montoUtmCalc : undefined,
           convenioMarcoNombre: isGrandesCompras ? `Convenio Marco de ${finalRubro}` : undefined,
           fechaPublicacion: fechaPublicacion ? fechaPublicacion.split('T')[0] : new Date().toISOString().split('T')[0],
           fechaCierre: fechaCierre ? fechaCierre.split('T')[0] : '2026-07-28',
-          matchScore: 80 + Math.floor(Math.random() * 20),
+          matchScore: item.matchScore || item.MatchScore || calcMatchScore || staticMatch?.matchScore || 85,
           riesgo: 'Bajo',
           empresaMatch: companyMatch,
           modalidad: modality,
           esInvitacionGrandesCompras: isGrandesCompras,
-          descripcion: item.Descripcion || `${modality} importada desde Mercado Público.`,
-          estado: item.Estado || 'Publicada',
+          descripcion,
+          estado: estadoReal,
           cronograma: [
             { hito: 'Publicación', fecha: fechaPublicacion ? fechaPublicacion.replace('T', ' ').slice(0, 16) : '' },
             { hito: 'Cierre', fecha: fechaCierre ? fechaCierre.replace('T', ' ').slice(0, 16) : '' },
@@ -710,13 +718,15 @@ export default function Home() {
           onChangeCompany={setActiveCompany}
           lastSyncTime={lastSyncTime}
           onLogout={handleLogout}
+          onNavigateView={handleNavigateView}
+          onSelectAdjudicacionCode={setSelectedAdjudicacionCodigo}
         />
 
         {/* Core dynamic content container */}
         <main className="flex-1 p-6 overflow-y-auto">
           {activeModule === 'dashboard' && (
             <DashboardModule
-              oportunidades={filteredOportunidades}
+              oportunidades={oportunidades}
               teamMembers={teamMembers}
               onInviteMember={handleInviteMember}
               onSelectOpportunity={handleSelectOpportunityFromGlobal}
@@ -767,6 +777,7 @@ export default function Home() {
               onSelectOpportunity={handleSelectOpportunityFromGlobal}
               onNavigateToTab={handleNavigateView}
               activeCompany={activeCompany}
+              selectedAdjudicacionCodigo={selectedAdjudicacionCodigo}
             />
           )}
 

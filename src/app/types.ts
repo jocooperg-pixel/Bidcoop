@@ -50,7 +50,7 @@ export interface Oportunidad {
   esInvitacionGrandesCompras?: boolean;
   convenioMarcoNombre?: string;
   montoUtm?: number;
-  subestadoEvaluacion?: 'Sin oferta seleccionada' | 'En comisión evaluadora' | 'Adjudicada' | 'Desierta';
+  subestadoEvaluacion?: string;
   fechaAdjudicacionEstimada?: string;
   admisibilidadIA?: {
     checklist: Array<{ requisito: string; estado: 'Cumple' | 'Atención' | 'Riesgo'; detalle: string }>;
@@ -79,7 +79,7 @@ export interface Postulacion {
   oportunidadId: string;
   oportunidadTitulo: string;
   oportunidadCodigo: string;
-  estado: 'Borrador' | 'Enviada' | 'Adjudicada' | 'Rechazada';
+  estado: 'Borrador' | 'Enviada' | 'En Evaluación' | 'Adjudicada' | 'Rechazada';
   responsable: string;
   montoOferta: number;
   documentosAdjuntos: string[];
@@ -99,14 +99,46 @@ export interface MiembroEquipo {
   email: string;
 }
 
+export interface ParticipanteAdjudicacion {
+  posicion: number;
+  nombre: string;
+  rut: string;
+  montoNeto: number;
+  montoIvaInc: number;
+  resultado: 'ADJUDICADO' | 'No adjudicado' | 'Descalificado';
+  esNuestraEmpresa?: boolean;
+}
+
+export interface AdjudicacionDetalle {
+  id: string;
+  codigo: string;
+  modalidad: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras' | 'Orden de Compra CM';
+  titulo: string;
+  institucion: string;
+  institucionRut: string;
+  presupuestoEstimado: number;
+  fechaInicioPostulaciones: string;
+  fechaCierrePostulaciones: string;
+  fechaResultado: string;
+  direccionEntrega: string;
+  region: string;
+  plazoEntrega: string;
+  observaciones: string;
+  postuladoPor: string;
+  empresaMatch?: EmpresaMatch;
+  codigoOC?: string;
+  participantes: ParticipanteAdjudicacion[];
+}
+
 export interface Notificacion {
   id: string;
   leida: boolean;
-  tipo: 'alerta' | 'info' | 'sistema' | 'invitacion';
+  tipo: 'alerta' | 'info' | 'sistema' | 'invitacion' | 'adjudicacion';
   fecha: string;
   titulo: string;
   descripcion: string;
   oportunidadId?: string;
+  codigoProceso?: string;
   empresaMatch?: EmpresaMatch;
   esGrandesCompras?: boolean;
   montoUtm?: number;

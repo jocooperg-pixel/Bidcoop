@@ -163,21 +163,7 @@ export async function GET(request: Request) {
     const allLicitaciones: any[] = data?.Listado || [];
     let totalFromApi = data?.Cantidad || allLicitaciones.length;
 
-    const keywords = [
-      'aseo', 'higiene', 'limpieza', 'cloro', 'detergente', 'jabon', 'jabón', 
-      'resma', 'oficina', 'escritorio', 'papelería', 'papeleria', 'librería', 
-      'libreria', 'útiles', 'utiles', 'papel', 'archivador', 'desinfect'
-    ];
-
-    let candidates = allLicitaciones.filter(item => {
-      const code = (item.CodigoExterno || '').toUpperCase();
-      const name = (item.Nombre || '').toLowerCase();
-      const isCo = code.includes('-CO') || code.includes('COT');
-      const matchesKw = keywords.some(kw => name.includes(kw));
-      return isCo || matchesKw;
-    });
-
-    // Convert all mockOportunidades into API-compatible objects so that all static opportunities (including the 48 new Compras Ágiles) are always present
+    // Map all static mockOportunidades (including 844 active Compras Ágiles) into API format
     const mappedMock = mockOportunidades.map(op => ({
       CodigoExterno: op.codigo,
       Nombre: op.titulo,
@@ -195,7 +181,7 @@ export async function GET(request: Request) {
     }));
 
     const existingMockCodes = new Set(mappedMock.map(m => m.CodigoExterno));
-    const newApiCandidates = candidates.filter(item => item.CodigoExterno && !existingMockCodes.has(item.CodigoExterno));
+    const newApiCandidates = allLicitaciones.filter(item => item.CodigoExterno && !existingMockCodes.has(item.CodigoExterno));
 
     const combinedList = [...mappedMock, ...newApiCandidates];
 
@@ -207,21 +193,24 @@ export async function GET(request: Request) {
 
     const enrichedMap = new Map<string, any>();
     for (const item of combinedList) {
-      enrichedMap.set(item.CodigoExterno, {
-        CodigoExterno: item.CodigoExterno,
-        Nombre: item.Nombre,
-        Estado: item.Estado || 'Publicada',
+      const codeKey = item.CodigoExterno || item.codigo || item.id;
+      if (!codeKey) continue;
+      enrichedMap.set(codeKey, {
+        ...item,
+        CodigoExterno: codeKey,
+        Nombre: item.Nombre || item.titulo || 'Proceso de Compra Pública',
+        Estado: item.Estado || item.estado || 'Publicada',
         CodigoEstado: item.CodigoEstado || 5,
-        FechaCierre: item.FechaCierre,
-        FechaPublicacion: item.FechaPublicacion || new Date().toISOString(),
-        Descripcion: item.Descripcion || '',
-        MontoEstimado: item.MontoEstimado || null,
-        Rubro: item.Rubro || 'Artículos de Escritorio y Oficina',
-        EmpresaMatch: item.EmpresaMatch,
-        Modalidad: item.Modalidad,
+        FechaCierre: item.FechaCierre || item.fechaCierre,
+        FechaPublicacion: item.FechaPublicacion || item.fechaPublicacion || new Date().toISOString(),
+        Descripcion: item.Descripcion || item.descripcion || '',
+        MontoEstimado: item.MontoEstimado || item.monto || null,
+        Rubro: item.Rubro || item.rubro || 'Artículos de Escritorio y Oficina',
+        EmpresaMatch: item.EmpresaMatch || item.empresaMatch,
+        Modalidad: item.Modalidad || item.modalidad,
         Items: item.Items || { Listado: [] },
-        Fechas: { FechaPublicacion: item.FechaPublicacion || new Date().toISOString(), FechaCierre: item.FechaCierre },
-        Comprador: item.Comprador || { NombreOrganismo: 'Organismo Público' }
+        Fechas: { FechaPublicacion: item.FechaPublicacion || item.fechaPublicacion || new Date().toISOString(), FechaCierre: item.FechaCierre || item.fechaCierre },
+        Comprador: item.Comprador || { NombreOrganismo: item.organismo || 'Organismo Público' }
       });
     }
 
@@ -231,7 +220,7 @@ export async function GET(request: Request) {
       Listado: finalEnrichedList,
       Meta: {
         totalFromApi,
-        candidatesFiltered: candidates.length,
+        candidatesFiltered: allLicitaciones.length,
         totalReturned: finalEnrichedList.length,
         source: 'Mercado Público API + Full Local Sync',
         timestamp: new Date().toISOString()

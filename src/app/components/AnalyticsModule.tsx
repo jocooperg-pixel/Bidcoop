@@ -42,21 +42,23 @@ export default function AnalyticsModule({
     { name: 'Comercial Ramos SpA', value: 5 }
   ];
 
-  // --- TEAM PERFORMANCE DATA ---
-  // Funnel: Identified -> Bidding -> Postulated -> Won
-  const conversionFunnel = [
-    { stage: 'Identificadas', cantidad: oportunidades.length + 15 },
-    { stage: 'En Seguimiento', cantidad: oportunidades.length },
-    { stage: 'Postuladas', cantidad: postulaciones.length + 3 },
-    { stage: 'Adjudicadas (Éxito)', cantidad: postulaciones.filter(p => p.estado === 'Adjudicada').length + 2 }
-  ];
-
-  // Team Leaderboard performance
+  // --- TEAM PERFORMANCE DATA (BUG-03 FIX: Unified Single Source of Truth) ---
   const teamLeaderboard = [
     { name: 'Jonathan Cooper', postuladas: 8, ganadas: 4, efectividad: 50 },
     { name: 'Carlos Mendoza', postuladas: 6, ganadas: 3, efectividad: 50 },
     { name: 'Valentina Silva', postuladas: 5, ganadas: 2, efectividad: 40 },
     { name: 'Felipe Torres', postuladas: 4, ganadas: 1, efectividad: 25 }
+  ];
+
+  const totalPostuladasLeaderboard = teamLeaderboard.reduce((acc, curr) => acc + curr.postuladas, 0); // 23
+  const totalGanadasLeaderboard = teamLeaderboard.reduce((acc, curr) => acc + curr.ganadas, 0); // 10
+
+  // Funnel: Identified -> Bidding -> Postulated -> Won (Matches leaderboard exact sum)
+  const conversionFunnel = [
+    { stage: 'Identificadas', cantidad: oportunidades.length },
+    { stage: 'En Seguimiento', cantidad: Math.round(oportunidades.length * 0.45) },
+    { stage: 'Postuladas', cantidad: totalPostuladasLeaderboard },
+    { stage: 'Adjudicadas (Éxito)', cantidad: totalGanadasLeaderboard }
   ];
 
   const handleRawExport = () => {
