@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================================
-# BidCoop — Runner Diario Maestro v4
-# Ejecuta Ingesta de Planillas Excel de Cotizaciones -> Actualiza mockData.ts -> Git Push a Vercel
+# BidCoop — Runner Diario Maestro v4.1
+# Ejecuta Ingesta de Planillas Excel de Cotizaciones -> Actualiza mockData.ts -> Git Pull/Push a Vercel
 # ============================================================
 
 PROJECT_PATH="/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento"
@@ -14,7 +14,7 @@ PYTHON3="/usr/bin/python3"
 
 echo "" >> "$LOG_PATH"
 echo "======================================" >> "$LOG_PATH"
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] BidCoop Runner v4 Iniciado" >> "$LOG_PATH"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] BidCoop Runner v4.1 Iniciado" >> "$LOG_PATH"
 echo "======================================" >> "$LOG_PATH"
 
 # ── PASO 1: Ingesta de Excels con Regiones y Fechas Corregidas ─
@@ -31,7 +31,7 @@ else
   cp "$TARGET_FILE" "$STAGING_FILE" 2>/dev/null
 fi
 
-# ── PASO 2: Git Commit & Push para Desplegar en Vercel ────────
+# ── PASO 2: Git Commit & Push con Rebase Seguro para Vercel ──
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 2 — Desplegando cambios en GitHub / Vercel..." >> "$LOG_PATH"
 
 cd "$PROJECT_PATH" || exit 1
@@ -42,6 +42,7 @@ HAS_CHANGES=$?
 
 if [ $HAS_CHANGES -ne 0 ]; then
   git commit -m "sync: Actualización automática $(date '+%Y-%m-%d %H:%M') — Compras Ágiles oficiales" >> "$LOG_PATH" 2>&1
+  git pull --rebase origin main >> "$LOG_PATH" 2>&1
   git push origin main >> "$LOG_PATH" 2>&1
   PUSH_EXIT=$?
   if [ $PUSH_EXIT -eq 0 ]; then
@@ -67,5 +68,5 @@ else
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 3 — Ejecución silenciosa (${HOUR}h)." >> "$LOG_PATH"
 fi
 
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] BidCoop Runner v4 Finalizado." >> "$LOG_PATH"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] BidCoop Runner v4.1 Finalizado." >> "$LOG_PATH"
 echo "======================================" >> "$LOG_PATH"
