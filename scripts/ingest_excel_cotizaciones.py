@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 """
 BidCoop — Ingestión Directa de Excels Oficiales de Mercado Público (Cotizaciones.xls y Cotizaciones (1).xls)
-Sincroniza el 100% de las Compras Ágiles oficiales con resolución exacta de Regiones y fechas de cierre activas.
-
-Procesa múltiples archivos en ~/Downloads:
-1) Cotizaciones.xls -> V-MOCCS y Aminorte
-2) Cotizaciones (1).xls -> Inder-Roll
+Sincroniza el 100% de las Compras Ágiles oficiales con resolución exacta de Regiones de Chile sin falsos positivos,
+fechas de cierre con hora y resolución inteligente de duplicados.
 """
 
 import pandas as pd
@@ -18,17 +15,25 @@ import re
 PROJECT_PATH = "/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento"
 OUTPUT_FILE = os.path.join(PROJECT_PATH, "src/app/mockData.ts")
 TODAY_STR = datetime.date.today().isoformat()
+USD_TO_CLP = 950.0  # Tasa referencial USD/CLP
 
 def format_date_to_iso(d_str):
     if not d_str or str(d_str).strip() in ["nan", "None", ""]:
         return TODAY_STR
-    clean = str(d_str).strip().split(' ')[0]
-    if re.match(r'^\d{4}-\d{2}-\d{2}$', clean):
-        return clean
-    m = re.match(r'^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$', clean)
-    if m:
-        day, month, year = m.groups()
+    clean = str(d_str).strip()
+    
+    # Matches DD/MM/YYYY HH:MM or DD/MM/YYYY HH:MM:SS
+    m_time = re.match(r'^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})(?:\s+(\d{1,2}):(\d{2})(?::(\d{2}))?)?$', clean)
+    if m_time:
+        day, month, year, hh, mm, ss = m_time.groups()
+        if hh and mm:
+            return f"{year}-{int(month):02d}-{int(day):02d}T{int(hh):02d}:{int(mm):02d}:{int(ss or 0):02d}"
         return f"{year}-{int(month):02d}-{int(day):02d}"
+        
+    # Matches YYYY-MM-DD
+    if re.match(r'^\d{4}-\d{2}-\d{2}', clean):
+        return clean.replace(' ', 'T')
+        
     return clean
 
 GROUND_TRUTH_PROCESSES = {
@@ -49,7 +54,7 @@ GROUND_TRUTH_PROCESSES = {
         "organismo": "JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)",
         "organismoRut": "70.012.300-4",
         "rubro": "Tecnología y Hardware",
-        "region": "Valparaíso",
+        "region": "Región de Valparaíso",
         "monto": 1066239,
         "empresaMatch": "Aminorte",
         "estado": "Adjudicada",
@@ -89,41 +94,82 @@ CATALOG_AMINORTE = [
     "ampolleta", "led", "huincha aisladora", "pintura", "esmalte al agua", "brocha", "aire acondicionado"
 ]
 
+# DICIONARIO RIGUROSO DE GEOGRAFÍA DE CHILE (COMUNAS, CIUDADES, SERVICIOS DE SALUD Y REGIONES)
+REGION_GEOGRAPHY_MAP = [
+    ('Región de Arica y Parinacota', [
+        r'\barica\b', r'\bparinacota\b', r'\bputre\b', r'\bgeneral lagos\b', r'\bcamarones\b',
+        r'\bxv\s*regi[oó]n\b', r'\b15ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?arica\b'
+    ]),
+    ('Región de Tarapacá', [
+        r'\btarapac[aá]\b', r'\biquique\b', r'\balto hospicio\b', r'\bpozo almonte\b', r'\bpica\b', r'\bhuara\b', r'\bcolchane\b',
+        r'\bi\s*regi[oó]n\b', r'\b1ra?\s*regi[oó]n\b', r'\b1ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?tarapac[aá]\b'
+    ]),
+    ('Región de Antofagasta', [
+        r'\bantofagasta\b', r'\bcalama\b', r'\btocopilla\b', r'\bmejillones\b', r'\btaltal\b', r'\bsan pedro de atacama\b', r'\bmaria elena\b', r'\bsierra gorda\b', r'\bollagüe\b',
+        r'\bii\s*regi[oó]n\b', r'\b2da?\s*regi[oó]n\b', r'\b2ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?antofagasta\b'
+    ]),
+    ('Región de Atacama', [
+        r'\batacama\b', r'\bcopiap[oó]\b', r'\bvallenar\b', r'\bchañaral\b', r'\bcaldera\b', r'\bdiego de almagro\b', r'\bhuasco\b', r'\bfreirina\b', r'\balto del carmen\b',
+        r'\biii\s*regi[oó]n\b', r'\b3ra?\s*regi[oó]n\b', r'\b3ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?atacama\b'
+    ]),
+    ('Región de Coquimbo', [
+        r'\bcoquimbo\b', r'\bla serena\b', r'\bovalle\b', r'\billapel\b', r'\bvicuña\b', r'\bsalamanca\b', r'\bandacollo\b', r'\bcombarbal[aá]\b', r'\blos vilos\b', r'\bmonte patria\b', r'\bpunitaqui\b', r'\bcanela\b', r'\bpaihuano\b',
+        r'\biv\s*regi[oó]n\b', r'\b4ta?\s*regi[oó]n\b', r'\b4ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?coquimbo\b'
+    ]),
+    ('Región de Valparaíso', [
+        r'\bvalpara[ií]so\b', r'\bviña\b', r'\bquilpu[eé]\b', r'\bvilla alemana\b', r'\bsan antonio\b', r'\bquillota\b', r'\blimache\b', r'\bquintero\b', r'\bpuchuncav[ií]\b', r'\bllaillay\b', r'\blay lay\b', r'\blos andes\b', r'\bsan felipe\b', r'\bcasablanca\b', r'\bpetorca\b', r'\bcabildo\b', r'\bligua\b', r'\bcartagena\b', r'\bel quisco\b', r'\balgarrobo\b', r'\bsanto domingo\b', r'\bolmu[eé]\b', r'\bnogales\b', r'\bhijuelas\b', r'\bcalera\b', r'\bisla de pascua\b', r'\brapanui\b', r'\bjuan fernandez\b',
+        r'\bv\s*regi[oó]n\b', r'\b5ta?\s*regi[oó]n\b', r'\b5ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?valpara[ií]so\b'
+    ]),
+    ('Región del Libertador General Bernardo O\'Higgins', [
+        r'\bo\'?higgins\b', r'\brancagua\b', r'\bsan fernando\b', r'\brengo\b', r'\bpichilemu\b', r'\bmachali\b', r'\bgraneros\b', r'\bsan vicente\b', r'\bsanta cruz\b', r'\bchimbarongo\b', r'\bmostazal\b', r'\brequinoa\b', r'\bdoñihue\b', r'\bcoltauco\b', r'\bpeumo\b', r'\bpichidegua\b', r'\bcoinco\b', r'\bmalloa\b', r'\bnavidad\b', r'\blitueche\b', r'\blared de salud o\'higgins\b',
+        r'\bvi\s*regi[oó]n\b', r'\b6ta?\s*regi[oó]n\b', r'\b6ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(del?\s*)?o\'?higgins\b'
+    ]),
+    ('Región del Maule', [
+        r'\bmaule\b', r'\btalca\b', r'\bcuric[oó]\b', r'\blinares\b', r'\bcauquenes\b', r'\bparral\b', r'\bconstituci[oó]n\b', r'\bsan javier\b', r'\bmolina\b', r'\bsan clemente\b', r'\bteno\b', r'\blongav[ií]\b', r'\bcolb[uú]n\b', r'\bretiro\b', r'\bhuañ[eé]\b', r'\bcurepto\b', r'\brauco\b', r'\bsagrada familia\b', r'\bchanco\b', r'\bpelluhue\b', r'\bempedrado\b',
+        r'\bvii\s*regi[oó]n\b', r'\b7ma?\s*regi[oó]n\b', r'\b7ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(del?\s*)?maule\b'
+    ]),
+    ('Región de Ñuble', [
+        r'\bñuble\b', r'\bchill[aá]n\b', r'\bsan carlos\b', r'\bbulnes\b', r'\byumbel\b', r'\bcoelemu\b', r'\bquirihue\b', r'\byungay\b', r'\bcoihueco\b', r'\bsan ignacio\b', r'\bpinto\b', r'\bel carmen\b', r'\bninhue\b', r'\bportezuelo\b', r'\btreguaco\b', r'\bsan nicol[aá]s\b',
+        r'\bxvi\s*regi[oó]n\b', r'\b16ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?ñuble\b'
+    ]),
+    ('Región del Biobío', [
+        r'\bbiob[ií]o\b', r'\bb[ií]o b[ií]o\b', r'\bconcepci[oó]n\b', r'\btalcahuano\b', r'\bcoronel\b', r'\blota\b', r'\bsan pedro de la paz\b', r'\bchiguayante\b', r'\blos [aá]ngeles\b', r'\bcañete\b', r'\barauco\b', r'\blebu\b', r'\bpenco\b', r'\btom[eé]\b', r'\bhualp[eé]n\b', r'\bmulch[eé]n\b', r'\bnacimiento\b', r'\blaja\b', r'\bcabrero\b', r'\bcuranilahue\b', r'\btucapel\b', r'\bsanta b[aá]rbara\b', r'\bcontulmo\b',
+        r'\bviii\s*regi[oó]n\b', r'\b8va?\s*regi[oó]n\b', r'\b8ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(del?\s*)?biob[ií]o\b'
+    ]),
+    ('Región de La Araucanía', [
+        r'\baraucan[ií]a\b', r'\btemuco\b', r'\bpadre las casas\b', r'\bangol\b', r'\bvillarrica\b', r'\bpuc[oó]n\b', r'\bvictoria\b', r'\blautaro\b', r'\btraigu[eé]n\b', r'\bcollipulli\b', r'\bcarahue\b', r'\bnueva imperial\b', r'\bpitrufqu[eé]n\b', r'\bloncoche\b', r'\bcuracaut[ií]n\b', r'\bpuren\b', r'\bsaavedra\b', r'\bfreire\b', r'\bgorbea\b', r'\bcunco\b',
+        r'\bix\s*regi[oó]n\b', r'\b9na?\s*regi[oó]n\b', r'\b9ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?la araucan[ií]a\b'
+    ]),
+    ('Región de Los Ríos', [
+        r'\blos r[ií]os\b', r'\bvaldivia\b', r'\bla uni[oó]n\b', r'\br[ií]o bueno\b', r'\bpaillaco\b', r'\bpanguipulli\b', r'\blanco\b', r'\bmariquina\b', r'\bfutrono\b', r'\bcorral\b', r'\blago ranco\b', r'\bmáfil\b', r'\bmafil\b',
+        r'\bxiv\s*regi[oó]n\b', r'\b14ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?los r[ií]os\b'
+    ]),
+    ('Región de Los Lagos', [
+        r'\blos lagos\b', r'\bpuerto montt\b', r'\bosorno\b', r'\bcastro\b', r'\bancud\b', r'\bquell[oó]n\b', r'\bchilo[eé]\b', r'\bpuerto varas\b', r'\bfrutillar\b', r'\bcalbuco\b', r'\bllanquihue\b', r'\bpurranque\b', r'\briochico\b', r'\br[ií]o negro\b', r'\bfresia\b', r'\blos muermos\b', r'\bmaull[ií]n\b', r'\bquinchao\b', r'\bachao\b', r'\bchait[eé]n\b', r'\bpalena\b', r'\bfutaleuf[uú]\b',
+        r'\bx\s*regi[oó]n\b', r'\b10ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?los lagos\b'
+    ]),
+    ('Región de Aysén del General Carlos Ibáñez del Campo', [
+        r'\bays[eé]n\b', r'\bcoyhaique\b', r'\bcoihaique\b', r'\bpuerto ays[eé]n\b', r'\bchile chico\b', r'\bcochrane\b', r'\bcisnes\b', r'\bpuerto cisnes\b', r'\bguaitecas\b', r'\bmelinka\b', r'\brio ib[aá]ñez\b', r'\btortel\b', r'\bvilla o\'?higgins\b',
+        r'\bxi\s*regi[oó]n\b', r'\b11ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?ays[eé]n\b'
+    ]),
+    ('Región de Magallanes y de la Antártica Chilena', [
+        r'\bmagallanes\b', r'\bpunta arenas\b', r'\bnatales\b', r'\bpuerto natales\b', r'\bporvenir\b', r'\bant[aá]rtica\b', r'\bcabo de hornos\b', r'\bpuerto williams\b', r'\btorres del paine\b', r'\bprimavera\b', r'\btimaukel\b', r'\bsan gregorio\b',
+        r'\bxii\s*regi[oó]n\b', r'\b12ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?magallanes\b'
+    ]),
+    ('Región Metropolitana', [
+        r'\bmetropolitana\b', r'\bsantiago\b', r'\bprovidencia\b', r'\blas condes\b', r'\bmaip[uú]\b', r'\bpuente alto\b', r'\bflorida\b', r'\bñuñoa\b', r'\brecoleta\b', r'\bindependencia\b', r'\bsan bernardo\b', r'\bquilicura\b', r'\bpudahuel\b', r'\br\.?m\.?\b', r'\bxiii\s*regi[oó]n\b', r'\bvitacura\b', r'\blo barnechea\b', r'\bpeñalol[eé]n\b', r'\bmacul\b', r'\bsan miguel\b', r'\bquinta normal\b', r'\bestaci[oó]n central\b', r'\bcerrillos\b', r'\bpedro aguirre cerda\b', r'\brenca\b', r'\bconchal[ií]\b', r'\bhuechuraba\b', r'\blo espejo\b', r'\blo prado\b', r'\bsan joaqu[ií]n\b', r'\bsan ram[oó]n\b', r'\bla cisterna\b', r'\bla granja\b', r'\bla pintana\b', r'\bel bosque\b', r'\bmelipilla\b', r'\btalagante\b', r'\bbuin\b', r'\bpaine\b', r'\bcolina\b', r'\blampa\b', r'\bpenaflor\b', r'\bpeñaflor\b', r'\bisla de maipo\b', r'\bpadre hurtado\b', r'\bel monte\b', r'\bcuracav[ií]\b', r'\btiltil\b', r'\bsan jose de maipo\b'
+    ])
+]
+
 def infer_chilean_region(inst, unidad="", title=""):
     full = f"{inst} {unidad} {title}".lower()
     
-    if any(k in full for k in ["magallanes", "punta arenas", "natales", "porvenir", "xii", "antártica", "antartica"]):
-        return "Región de Magallanes y de la Antártica Chilena"
-    elif any(k in full for k in ["aysén", "aysen", "coyhaique", "xi"]):
-        return "Región de Aysén del General Carlos Ibáñez del Campo"
-    elif any(k in full for k in ["los lagos", "puerto montt", "osorno", "castro", "chiloe", "chiloé"]):
-        return "Región de Los Lagos"
-    elif any(k in full for k in ["los ríos", "los rios", "valdivia", "xiv"]):
-        return "Región de Los Ríos"
-    elif any(k in full for k in ["araucanía", "araucania", "temuco", "ix"]):
-        return "Región de La Araucanía"
-    elif any(k in full for k in ["biobío", "biobio", "bío bío", "concepción", "concepcion", "chillán", "chillan", "viii"]):
-        return "Región del Biobío"
-    elif any(k in full for k in ["ñuble", "nuble", "xvi"]):
-        return "Región de Ñuble"
-    elif any(k in full for k in ["maule", "talca", "curicó", "curico", "linares", "vii"]):
-        return "Región del Maule"
-    elif any(k in full for k in ["o'higgins", "ohiggins", "rancagua", "vi"]):
-        return "Región del Libertador General Bernardo O'Higgins"
-    elif any(k in full for k in ["valparaíso", "valparaiso", "viña", "vina", "san antonio", "v "]):
-        return "Región de Valparaíso"
-    elif any(k in full for k in ["coquimbo", "la serena", "ovalle", "iv"]):
-        return "Región de Coquimbo"
-    elif any(k in full for k in ["atacama", "copiapó", "copiapo", "iii"]):
-        return "Región de Atacama"
-    elif any(k in full for k in ["antofagasta", "calama", "ii"]):
-        return "Región de Antofagasta"
-    elif any(k in full for k in ["tarapacá", "tarapaca", "iquique"]):
-        return "Región de Tarapacá"
-    elif any(k in full for k in ["arica", "parinacota", "xv"]):
-        return "Región de Arica y Parinacota"
-    else:
-        return "Región Metropolitana"
+    for reg_name, patterns in REGION_GEOGRAPHY_MAP:
+        for pat in patterns:
+            if re.search(pat, full):
+                return reg_name
+                
+    return "Región Metropolitana"
 
 def calculate_smart_catalog_match(title, desc="", source_hint="v-moccs-aminorte"):
     full_text = f"{title} {desc}".lower()
@@ -132,24 +178,24 @@ def calculate_smart_catalog_match(title, desc="", source_hint="v-moccs-aminorte"
     match_vmoccs = sum(1 for k in CATALOG_VMOCCS if k in full_text)
     match_aminorte = sum(1 for k in CATALOG_AMINORTE if k in full_text)
     
-    if source_hint == "inder-roll":
-        if match_vmoccs > 0 and match_vmoccs > match_inder:
+    if match_inder > 0 and match_inder >= match_vmoccs and match_inder >= match_aminorte:
+        score = min(99, 85 + match_inder * 5)
+        return "Inder-Roll", "Aseo e Higiene", score
+    elif match_vmoccs > 0 and match_vmoccs >= match_aminorte:
+        score = min(99, 85 + match_vmoccs * 6)
+        return "V-MOCCS", "Artículos de Escritorio y Oficina", score
+    elif match_aminorte > 0:
+        score = min(99, 82 + match_aminorte * 5)
+        is_tech = any(k in full_text for k in ["tóner", "toner", "impresora", "mouse", "teclado", "usb", "hdmi", "plotter", "corte laser"])
+        rubro = "Tecnología y Hardware" if is_tech else "Artículos de Escritorio y Oficina"
+        return "Aminorte", rubro, score
+    else:
+        if source_hint == "inder-roll":
+            return "Inder-Roll", "Aseo e Higiene", 85
+        elif any(k in full_text for k in ["silla", "mueble", "escritorio"]):
             return "V-MOCCS", "Artículos de Escritorio y Oficina", 85
         else:
-            score = min(99, 85 + max(match_inder, 1) * 5)
-            return "Inder-Roll", "Aseo e Higiene", score
-    else:
-        if match_vmoccs > 0 and match_vmoccs >= match_aminorte:
-            score = min(99, 85 + match_vmoccs * 6)
-            return "V-MOCCS", "Artículos de Escritorio y Oficina", score
-        elif match_inder > 0 and match_inder > match_aminorte:
-            score = min(99, 82 + match_inder * 5)
-            return "Inder-Roll", "Aseo e Higiene", score
-        else:
-            score = min(99, 82 + max(match_aminorte, 1) * 5)
-            is_tech = any(k in full_text for k in ["tóner", "toner", "impresora", "mouse", "teclado", "usb", "hdmi", "plotter", "computacional", "corte laser"])
-            rubro = "Tecnología y Hardware" if is_tech else "Artículos de Escritorio y Oficina"
-            return "Aminorte", rubro, score
+            return "Aminorte", "Artículos de Escritorio y Oficina", 82
 
 def find_excel_files():
     downloads_dir = "/Users/jonathancooper/Downloads"
@@ -169,8 +215,6 @@ def find_excel_files():
         else:
             file_info.append({"path": filepath, "source": "v-moccs-aminorte", "name": basename})
     
-    # Sort so inder-roll comes first to set high priority for Inder-Roll items
-    file_info.sort(key=lambda x: 0 if x["source"] == "inder-roll" else 1)
     return file_info
 
 def main():
@@ -181,10 +225,9 @@ def main():
 
     print(f"[{datetime.datetime.now().isoformat()}] Se encontraron {len(files)} archivo(s) de Cotizaciones en Downloads:")
     for f in files:
-        print(f"  - {f['name']} (Empresas objetivo: {f['source']})")
+        print(f"  - {f['name']} (Origen: {f['source']})")
 
-    processed = []
-    seen_codes = set()
+    opportunities_by_code = {}
 
     for f_info in files:
         filepath = f_info["path"]
@@ -194,14 +237,21 @@ def main():
         df = pd.read_excel(filepath)
         for idx, row in df.iterrows():
             code = str(row['ID']).strip() if pd.notnull(row['ID']) else ""
-            if not code or code in seen_codes:
+            if not code:
                 continue
-            seen_codes.add(code)
 
             title = str(row['Nombre']).strip() if pd.notnull(row['Nombre']) else "Compra Ágil"
             inst = str(row['Institución']).strip() if pd.notnull(row['Institución']) else "Organismo Público"
             unidad = str(row['Unidad de compra']).strip() if pd.notnull(row['Unidad de compra']) else ""
-            monto = int(row['Presupuesto estimado']) if pd.notnull(row['Presupuesto estimado']) and row['Presupuesto estimado'] > 0 else 0
+            
+            raw_monto = float(row['Presupuesto estimado']) if pd.notnull(row['Presupuesto estimado']) and row['Presupuesto estimado'] > 0 else 0.0
+            moneda = str(row['Tipo Moneda']).strip().upper() if pd.notnull(row['Tipo Moneda']) else "CLP"
+            
+            if moneda == "USD":
+                monto = int(raw_monto * USD_TO_CLP)
+            else:
+                monto = int(raw_monto)
+
             pub_date = str(row['Fecha de publicación']).strip() if pd.notnull(row['Fecha de publicación']) else ""
             close_date = str(row['Fecha de cierre']).strip() if pd.notnull(row['Fecha de cierre']) else ""
             estado_raw = str(row['Estado']).strip() if pd.notnull(row['Estado']) else "Publicada"
@@ -269,12 +319,13 @@ def main():
                 "esInvitacionGrandesCompras": False,
                 "subestadoEvaluacion": subestado
             }
-            processed.append(op)
+
+            if code not in opportunities_by_code or op["matchScore"] > opportunities_by_code[code]["matchScore"]:
+                opportunities_by_code[code] = op
 
     for gt_code, gt_info in GROUND_TRUTH_PROCESSES.items():
-        if gt_code not in seen_codes:
-            seen_codes.add(gt_code)
-            processed.append({
+        if gt_code not in opportunities_by_code:
+            opportunities_by_code[gt_code] = {
                 "id": f"op-{gt_code}",
                 "codigo": gt_code,
                 "titulo": gt_info["titulo"],
@@ -302,7 +353,9 @@ def main():
                 "modalidad": "Compra Ágil",
                 "esInvitacionGrandesCompras": False,
                 "subestadoEvaluacion": gt_info.get("subestadoEvaluacion", "En proceso")
-            })
+            }
+
+    processed = list(opportunities_by_code.values())
 
     part1 = f"""import {{ Oportunidad, Postulacion, OrdenCompra, MiembroEquipo, VistaGuardada, Notificacion }} from './types';
 
