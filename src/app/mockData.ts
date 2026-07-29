@@ -119360,6 +119360,63 @@ export const mockOportunidades: Oportunidad[] = [
     "subestadoEvaluacion": "Sin oferta seleccionada"
   },
   {
+    "id": "op-2424-63-LE26",
+    "codigo": "2424-63-LE26",
+    "titulo": "SEÑAL Y SENALÉTICA CON KIT INSTALACIÓN 56-57 JFO",
+    "organismo": "ORGANISMO PÚBLICO",
+    "organismoRut": "60.000.000-0",
+    "organismoPagoDias": 30,
+    "organismoRiesgo": "Bajo",
+    "rubro": "Artículos de Escritorio y Oficina",
+    "region": "Región Metropolitana",
+    "monto": 0,
+    "fechaPublicacion": "2026-07-29",
+    "fechaCierre": "2026-08-10T15:30:00",
+    "matchScore": 82,
+    "riesgo": "Bajo",
+    "descripcion": "Proceso de contratación pública (Licitación) para ORGANISMO PÚBLICO.",
+    "estado": "Publicada",
+    "cronograma": [
+      {
+        "hito": "Publicación",
+        "fecha": "2026-07-29"
+      },
+      {
+        "hito": "Cierre de Ofertas",
+        "fecha": "2026-08-10T15:30:00"
+      }
+    ],
+    "documentos": [
+      {
+        "nombre": "Ver en Mercado Público (2424-63-LE26)",
+        "tipo": "link",
+        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=2424-63-LE26"
+      }
+    ],
+    "items": [
+      {
+        "sku": "ITEM-1",
+        "producto": "SEÑAL Y SENALÉTICA CON KIT INSTALACIÓN 56-57 JFO",
+        "cantidad": 1,
+        "precioUnitario": 0
+      }
+    ],
+    "criteriosEvaluacion": [
+      {
+        "aspecto": "Precio Ofertado",
+        "ponderacion": 100,
+        "descripcion": "Menor costo"
+      }
+    ],
+    "preguntas": [],
+    "comentarios": [],
+    "competidoresPropuestos": [],
+    "empresaMatch": "Aminorte",
+    "modalidad": "Licitación",
+    "esInvitacionGrandesCompras": false,
+    "subestadoEvaluacion": "Sin oferta seleccionada"
+  },
+  {
     "id": "op-2424-66-CO26",
     "codigo": "2424-66-CO26",
     "titulo": "SERVICIO DE CAPACITACION - QUIERO MI BARRIO - BARRIO OLIVAR NORTE - 58 - 1846 - N.F.",
