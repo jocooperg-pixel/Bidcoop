@@ -110,6 +110,18 @@ export async function POST(request: Request) {
       return reg.includes('METROPOLITANA') || reg.includes('SANTIAGO') || reg.includes('RM');
     };
 
+    const parseToIsoDate = (dStr: string): string => {
+      if (!dStr) return today;
+      const clean = dStr.trim().split(' ')[0];
+      if (/^\d{4}-\d{2}-\d{2}$/.test(clean)) return clean;
+      const match = clean.match(/^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$/);
+      if (match) {
+        const [, day, month, year] = match;
+        return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+      }
+      return clean;
+    };
+
     // 2. Obtain ALL published Compras Ágiles with STRICT DATE AND STATE VALIDATION
     const sourceOps = (Array.isArray(oportunidades) && oportunidades.length >= 10) 
       ? oportunidades 
@@ -123,8 +135,8 @@ export async function POST(request: Request) {
       const isStatePublicada = op.estado === 'Publicada';
       
       // Strict Date Check: Fecha de cierre MUST be today or in the future!
-      const closeDateStr = (op.fechaCierre || op.fechaLimite || '').split(' ')[0];
-      const isNotClosedByDate = !closeDateStr || closeDateStr >= today;
+      const closeIso = parseToIsoDate(op.fechaCierre || op.fechaLimite || '');
+      const isNotClosedByDate = !closeIso || closeIso >= today;
 
       return isCompraAgil && isStatePublicada && isNotClosedByDate;
     });

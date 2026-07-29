@@ -13,10 +13,23 @@ import json
 import os
 import glob
 import datetime
+import re
 
 PROJECT_PATH = "/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento"
 OUTPUT_FILE = os.path.join(PROJECT_PATH, "src/app/mockData.ts")
 TODAY_STR = datetime.date.today().isoformat()
+
+def format_date_to_iso(d_str):
+    if not d_str or str(d_str).strip() in ["nan", "None", ""]:
+        return TODAY_STR
+    clean = str(d_str).strip().split(' ')[0]
+    if re.match(r'^\d{4}-\d{2}-\d{2}$', clean):
+        return clean
+    m = re.match(r'^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$', clean)
+    if m:
+        day, month, year = m.groups()
+        return f"{year}-{int(month):02d}-{int(day):02d}"
+    return clean
 
 GROUND_TRUTH_PROCESSES = {
     "1001-11-COT26": {
@@ -196,8 +209,8 @@ def main():
             company_match, rubro, match_score = calculate_smart_catalog_match(title, unidad, source_hint=source_hint)
             real_region = infer_chilean_region(inst, unidad, title)
             
-            pub_str = pub_date.split(' ')[0] if ' ' in pub_date else pub_date
-            close_str = close_date.split(' ')[0] if ' ' in close_date else close_date
+            pub_str = format_date_to_iso(pub_date)
+            close_str = format_date_to_iso(close_date)
 
             subestado = "Sin oferta seleccionada"
             desc = f"Compra Ágil oficial publicada en Mercado Público ({code}) para {inst} ({unidad})."
