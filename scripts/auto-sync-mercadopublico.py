@@ -13,7 +13,7 @@ import re
 
 TICKET = "F8537A18-6766-4DEF-9E59-426B4FEE2844"
 BASE_URL = "https://api.mercadopublico.cl/servicios/v1/publico"
-PROJECT_PATH = "/Users/jonathancooper/Desktop/ANTIGRAVITY/Plataforma Avanzada de Abastecimiento"
+PROJECT_PATH = "/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento"
 OUTPUT_FILE = os.path.join(PROJECT_PATH, "src/app/mockData.ts")
 
 # REGISTRO MATRIZ GROUND-TRUTH (DATOS EXACTOS MERCADO PÚBLICO)
@@ -47,12 +47,15 @@ GROUND_TRUTH_PROCESSES = {
 
 CATALOG_INDER_ROLL = [
     "papel higienico", "papel higiénico", "toalla de papel", "toalla papel", "interfoliada",
-    "jumbo", "hoja simple", "hoja doble", "rollo 300m", "rollo 200m", "inder-roll",
+    "jumbo", "hoja simple", "hoja doble", "rollo 300m", "rollo 200m", "inder-roll", "tork",
     "cloro", "cloro gel", "cloro concentrado", "desinfectante", "amonio cuaternario",
     "alcohol gel", "detergente", "detergente líquido", "desengrasante", "lavaloza",
     "limpiador de pisos", "limpiador superficies", "lustramuebles", "cera", "cera autobrillo",
     "suavizante", "quitamanchas", "jabón", "jabon", "jabón líquido", "dispensador",
-    "bolsa basura", "escoba", "escobillón", "mopa", "paño microfibra", "guante nitrilo", "mascarilla"
+    "bolsa basura", "escoba", "escobillón", "mopa", "paño microfibra", "guante nitrilo", "mascarilla", "bolsa",
+    "aseo", "higiene", "limpieza", "desechable", "desechables", "servilleta", "servilletas",
+    "sabana", "sábanas", "sabanilla", "sabanillas", "cafetería", "cafeteria", "alimentos", "snack",
+    "vasos", "platos", "mascarillas", "guantes", "funda", "fundas", "albergue", "insumos hospitalarios", "esterilización"
 ]
 
 CATALOG_AMINORTE = [
@@ -60,24 +63,24 @@ CATALOG_AMINORTE = [
     "archivador", "lomo ancho", "carpeta", "nepaco", "fastener", "separador",
     "bolígrafo", "boligrafo", "lápiz", "lapiz", "destacador", "corchetera", "corchete",
     "saca corchete", "clip", "clip mariposa", "post-it", "nota adhesiva", "cinta adhesiva",
-    "cinta embalaje", "tijera", "regla", "guillotina", "chinche",
+    "cinta embalaje", "tijera", "regla", "guillotina", "chinche", "utiles de oficina", "útiles de oficina",
     "tóner", "toner", "tinta", "cartucho", "impresora", "mouse", "teclado", "mouse pad",
-    "cable hdmi", "displayport", "pendrive", "usb", "aire acondicionado", "climatización",
-    "ampolleta", "led", "huincha aisladora", "pintura", "esmalte al agua", "brocha"
+    "cable hdmi", "displayport", "pendrive", "usb", "plotter", "impresión", "impresion",
+    "ampolleta", "led", "huincha aisladora", "pintura", "esmalte al agua", "brocha", "aire acondicionado"
 ]
 
 CATALOG_VMOCCS = [
     "silla", "silla ejecutiva", "silla operativa", "silla ergonómica", "silla visita",
     "escritorio", "escritorio modular", "mesa de reunión", "mesa reunion",
-    "estante", "librero", "cajonera", "archivo metálico", "kardex", "locker", "panel divisorio"
+    "estante", "librero", "cajonera", "archivo metálico", "kardex", "locker", "panel divisorio", "mueble", "mobiliario"
 ]
 
 def calculate_smart_catalog_match(title, desc=""):
     full_text = f"{title} {desc}".lower()
     
     match_inder = sum(1 for k in CATALOG_INDER_ROLL if k in full_text)
-    match_aminorte = sum(1 for k in CATALOG_AMINORTE if k in full_text)
     match_vmoccs = sum(1 for k in CATALOG_VMOCCS if k in full_text)
+    match_aminorte = sum(1 for k in CATALOG_AMINORTE if k in full_text)
     
     if match_inder > 0 and match_inder >= match_aminorte and match_inder >= match_vmoccs:
         score = min(99, 82 + match_inder * 5)

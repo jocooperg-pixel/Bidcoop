@@ -9,7 +9,7 @@ import random
 import os
 import datetime
 
-PROJECT_PATH = "/Users/jonathancooper/Desktop/ANTIGRAVITY/Plataforma Avanzada de Abastecimiento"
+PROJECT_PATH = "/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento"
 OUTPUT_FILE = os.path.join(PROJECT_PATH, "src/app/mockData.ts")
 
 # GROUND-TRUTH PROCESS REGISTRY (DATOS REALES VERIFICADOS CON MERCADO PÚBLICO)

@@ -14,7 +14,7 @@ import re
 def validate():
     print("🔍 Iniciando Validador de Integridad de Datos de BidCoop...")
     
-    file_path = "/Users/jonathancooper/Desktop/ANTIGRAVITY/Plataforma Avanzada de Abastecimiento/src/app/mockData.ts"
+    file_path = "/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento/src/app/mockData.ts"
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 

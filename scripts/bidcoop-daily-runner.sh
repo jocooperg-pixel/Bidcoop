@@ -1,11 +1,11 @@
 #!/bin/bash
 # ============================================================
 # BidCoop — Runner Diario Maestro
-# Ejecuta: Sync API Mercado Público + Correos + Git Push
+# Ejecuta: Sync Excel/API Mercado Público + Correos + Git Push
 # Autor: BidCoop / Jonathan Cooper
 # ============================================================
 
-PROJECT_PATH="/Users/jonathancooper/Desktop/ANTIGRAVITY/Plataforma Avanzada de Abastecimiento"
+PROJECT_PATH="/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento"
 LOG_PATH="$PROJECT_PATH/scripts/sync.log"
 PYTHON3=$(which python3)
 NODE=$(which node)
@@ -16,22 +16,22 @@ echo "======================================" >> "$LOG_PATH"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] BidCoop Runner Iniciado" >> "$LOG_PATH"
 echo "======================================" >> "$LOG_PATH"
 
-# ── PASO 1: Sync desde API de Mercado Público ──────────────
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 1 — Sincronizando desde API Mercado Público..." >> "$LOG_PATH"
-"$PYTHON3" "$PROJECT_PATH/scripts/auto-sync-mercadopublico.py" >> "$LOG_PATH" 2>&1
-SYNC_EXIT=$?
+# ── PASO 1: Ingesta de Excels de Cotizaciones (Cotizaciones.xls y Cotizaciones (1).xls) ──
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 1 — Ingestando Excels de Cotizaciones desde Downloads..." >> "$LOG_PATH"
+"$PYTHON3" "$PROJECT_PATH/scripts/ingest_excel_cotizaciones.py" >> "$LOG_PATH" 2>&1
+INGEST_EXIT=$?
 
-if [ $SYNC_EXIT -ne 0 ]; then
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARNING] Sync API falló (exit $SYNC_EXIT). Usando datos previos." >> "$LOG_PATH"
+if [ $INGEST_EXIT -ne 0 ]; then
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARNING] Ingesta de Excel falló (exit $INGEST_EXIT). Usando datos previos." >> "$LOG_PATH"
 else
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [OK] Sync API completado exitosamente." >> "$LOG_PATH"
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [OK] Ingesta de Excel completada exitosamente." >> "$LOG_PATH"
 fi
 
 # ── PASO 2: Git commit + push (activa Vercel deploy) ───────
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 2 — Publicando en GitHub/Vercel..." >> "$LOG_PATH"
 cd "$PROJECT_PATH"
 git add -A >> "$LOG_PATH" 2>&1
-git commit -m "sync: Actualización automática $(date '+%Y-%m-%d %H:%M') — API Mercado Público" >> "$LOG_PATH" 2>&1
+git commit -m "sync: Actualización automática $(date '+%Y-%m-%d %H:%M') — Compras Ágiles oficiales" >> "$LOG_PATH" 2>&1
 git push origin main >> "$LOG_PATH" 2>&1
 PUSH_EXIT=$?
 
