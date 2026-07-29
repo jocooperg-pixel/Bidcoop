@@ -339,21 +339,24 @@ export default function Home() {
         };
       };
 
-      // --- Process all licitaciones from the API with 100% LIVE API PRECEDENCE ---
+      // --- Process all licitaciones from the API with 100% PRESERVATION OF PRE-PROCESSED GROUND TRUTH ---
       for (const item of allLicitaciones) {
         const code = item.CodigoExterno || item.codigo || '';
         const staticMatch = mockOportunidades.find(m => m.codigo.toLowerCase() === code.toLowerCase());
         
+        if (staticMatch) {
+          mappedList.push(staticMatch);
+          continue;
+        }
+
         const { finalRubro: calcRubro, companyMatch: defaultCompanyMatch, matchScore: calcMatchScore } = getRubroAndCompany(item);
         
-        // Live API properties have ABSOLUTE PRIORITY over static fallback
-        const titulo = item.Nombre || item.titulo || staticMatch?.titulo || `Proceso ${code}`;
+        const titulo = item.Nombre || item.titulo || `Proceso ${code}`;
         const finalRubro = item.Rubro || item.rubro || calcRubro;
         const companyMatch = item.EmpresaMatch || item.empresaMatch || defaultCompanyMatch;
-        const descripcion = item.Descripcion || item.descripcion || staticMatch?.descripcion || `Proceso de contratación pública oficial (${code}) importado en vivo desde Mercado Público.`;
-        const estadoReal = item.Estado || item.estado || staticMatch?.estado || 'Publicada';
+        const descripcion = item.Descripcion || item.descripcion || `Proceso de contratación pública oficial (${code}) importado en vivo desde Mercado Público.`;
+        const estadoReal = item.Estado || item.estado || 'Publicada';
 
-        // Determine modality using item.Modalidad or API Tipo field + code suffix
         const tipo = (item.Tipo || '').toUpperCase();
         const codeUpper = code.toUpperCase();
         const titleLower = titulo.toLowerCase();
@@ -365,38 +368,22 @@ export default function Home() {
           } else if (codeUpper.includes('-CM') || titleLower.includes('convenio marco') || titleLower.includes('grande compra') || titleLower.includes('intencion de compra')) {
             modality = (item.MontoEstimado && item.MontoEstimado > 65000000) || titleLower.includes('grande compra') ? 'Grandes Compras' : 'Convenio Marco';
           } else {
-            modality = staticMatch?.modalidad || 'Licitación';
+            modality = 'Licitación';
           }
         }
 
-        // Get real amount from live API
-        let monto = (typeof item.MontoEstimado === 'number' && item.MontoEstimado > 0) 
-          ? item.MontoEstimado 
-          : (item.monto || staticMatch?.monto || 0);
-
-        if (!monto || monto === 0) {
-          if (modality === 'Compra Ágil') monto = 150000 + Math.floor(Math.random() * 1650000);
-          else if (modality === 'Grandes Compras') monto = 65000000 + Math.floor(Math.random() * 85000000);
-          else if (modality === 'Convenio Marco') monto = 1500000 + Math.floor(Math.random() * 23500000);
-          else monto = 15000000 + Math.floor(Math.random() * 135000000);
-        }
-
-        // Extract real data from Comprador field
+        const monto = (typeof item.MontoEstimado === 'number' && item.MontoEstimado > 0) ? item.MontoEstimado : 0;
         const comprador = item.Comprador || {};
-        const organismo = comprador.NombreOrganismo || item.Organismo || item.organismo || staticMatch?.organismo || 'ORGANISMO PÚBLICO';
-        const rutOrganismo = comprador.RutUnidad || item.organismoRut || staticMatch?.organismoRut || '60.000.000-0';
-        const regionRaw = comprador.RegionUnidad || item.region || staticMatch?.region || 'Metropolitana';
+        const organismo = comprador.NombreOrganismo || item.Organismo || item.organismo || 'ORGANISMO PÚBLICO';
+        const rutOrganismo = comprador.RutUnidad || item.organismoRut || '60.000.000-0';
+        const regionRaw = comprador.RegionUnidad || item.region || 'Región Metropolitana';
 
-        // Real dates from Fechas field
         const fechas = item.Fechas || {};
-        const fechaPublicacion = fechas.FechaPublicacion || fechas.FechaCreacion || item.fechaPublicacion || staticMatch?.fechaPublicacion || '';
-        const fechaCierre = fechas.FechaCierre || item.FechaCierre || item.fechaCierre || staticMatch?.fechaCierre || '';
+        const fechaPublicacion = fechas.FechaPublicacion || fechas.FechaCreacion || item.fechaPublicacion || new Date().toISOString();
+        const fechaCierre = fechas.FechaCierre || item.FechaCierre || item.fechaCierre || new Date().toISOString();
 
-        // Real portal URL for documents
         const portalUrl = `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${code}`;
-
         const isGrandesCompras = modality === 'Grandes Compras';
-        const montoUtmCalc = Math.round(monto / 65000);
 
         mappedList.push({
           id: `op-${code}`,
@@ -409,11 +396,9 @@ export default function Home() {
           rubro: finalRubro,
           region: regionRaw,
           monto,
-          montoUtm: isGrandesCompras ? montoUtmCalc : undefined,
-          convenioMarcoNombre: isGrandesCompras ? `Convenio Marco de ${finalRubro}` : undefined,
-          fechaPublicacion: fechaPublicacion ? fechaPublicacion.split('T')[0] : new Date().toISOString().split('T')[0],
-          fechaCierre: fechaCierre ? fechaCierre.split('T')[0] : '2026-07-28',
-          matchScore: item.matchScore || item.MatchScore || calcMatchScore || staticMatch?.matchScore || 85,
+          fechaPublicacion,
+          fechaCierre,
+          matchScore: item.matchScore || item.MatchScore || calcMatchScore || 85,
           riesgo: 'Bajo',
           empresaMatch: companyMatch,
           modalidad: modality,
@@ -421,9 +406,8 @@ export default function Home() {
           descripcion,
           estado: estadoReal,
           cronograma: [
-            { hito: 'Publicación', fecha: fechaPublicacion ? fechaPublicacion.replace('T', ' ').slice(0, 16) : '' },
-            { hito: 'Cierre', fecha: fechaCierre ? fechaCierre.replace('T', ' ').slice(0, 16) : '' },
-            ...(fechas.FechaAdjudicacion ? [{ hito: 'Adjudicación Estimada', fecha: fechas.FechaAdjudicacion.replace('T', ' ').slice(0, 16) }] : [])
+            { hito: 'Publicación', fecha: fechaPublicacion },
+            { hito: 'Cierre', fecha: fechaCierre }
           ],
           documentos: [
             { nombre: `📄 Ver Bases y Documentos en Mercado Público`, tipo: 'link', tamanho: portalUrl }
