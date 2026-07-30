@@ -462,7 +462,7 @@ def main():
 
     part1 = f"""import {{ Oportunidad, Postulacion, OrdenCompra, MiembroEquipo, VistaGuardada, Notificacion }} from './types';
 
-export const mockOportunidades: Oportunidad[] = {json.dumps(processed, indent=2, ensure_ascii=False)};
+export const mockOportunidades: Oportunidad[] = ({json.dumps(processed, indent=2, ensure_ascii=False)} as unknown as Oportunidad[]);
 
 export const mockPostulaciones: Postulacion[] = [
   {{
