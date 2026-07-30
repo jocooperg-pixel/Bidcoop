@@ -27,8 +27,8 @@ export default function ReportsNotificationsModule({
   const [showEmailPreviewModal, setShowEmailPreviewModal] = useState<boolean>(false);
   const [sendingEmail, setSendingEmail] = useState<boolean>(false);
   const [userResendKey, setUserResendKey] = useState<string>('');
-  const [userSmtpUser, setUserSmtpUser] = useState<string>('alertas.bidcoop@gmail.com');
-  const [userSmtpPass, setUserSmtpPass] = useState<string>('');
+  const [userSmtpUser, setUserSmtpUser] = useState<string>('jonathan.cooper.g@gmail.com');
+  const [userSmtpPass, setUserSmtpPass] = useState<string>('stutlzydxqefmptu');
   const [userTwilioSid, setUserTwilioSid] = useState<string>('');
   const [userTwilioToken, setUserTwilioToken] = useState<string>('');
   const [userTwilioFrom, setUserTwilioFrom] = useState<string>('');
