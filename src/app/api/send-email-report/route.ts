@@ -138,21 +138,24 @@ export async function POST(request: Request) {
       return isCompraAgil && isStatePublicada && isNotClosedByDate;
     });
 
-    // 3. SEGREGATE OPPORTUNITIES BY HOLDING COMPANY & RUBRO
-    // A. INDER-ROLL (ÚNICAMENTE Aseo e Higiene, Papelería Higiénica, Desinfección)
-    const opsInderRoll = activeOps.filter((op: any) => 
-      op.empresaMatch === 'Inder-Roll' || op.rubro === 'Aseo e Higiene'
-    );
+    // 3. SEGREGATE OPPORTUNITIES STRICTLY INTO 2 GEOGRAPHIC GROUPS
+    const opsRegiones = activeOps.filter((op: any) => op.region !== 'Región Metropolitana');
+    const opsRM = activeOps.filter((op: any) => op.region === 'Región Metropolitana');
 
-    // B. AMINORTE & V-MOCCS (ÚNICAMENTE Escritorio, Oficina, Tecnología, Mobiliario - NUNCA ASEO)
-    const opsAminorteVMoccs = activeOps.filter((op: any) => 
-      (op.empresaMatch === 'Aminorte' || op.empresaMatch === 'V-MOCCS' || op.empresaMatch !== 'Inder-Roll') &&
-      op.rubro !== 'Aseo e Higiene'
-    );
+    const EMAILS_REGIONES = [
+      'jsanmartin@aminorte.cl',
+      'mviguera@aminorte.cl',
+      'jorge.alvarado@discoverymerch.cl',
+      'jonathan.cooper@discoverymerch.cl',
+      'jcooper@inder-roll.cl'
+    ];
 
-    const opsAminorteSurCentro = opsAminorteVMoccs.filter((op: any) => isRegionSurCentro(op.region));
-    const opsAminorteRM = opsAminorteVMoccs.filter((op: any) => isRegionRM(op.region));
-    const opsAminorteOtras = opsAminorteVMoccs.filter((op: any) => !isRegionSurCentro(op.region) && !isRegionRM(op.region));
+    const EMAILS_RM = [
+      'mviguera@aminorte.cl',
+      'jorge.alvarado@discoverymerch.cl',
+      'jonathan.cooper@discoverymerch.cl',
+      'jcooper@inder-roll.cl'
+    ];
 
     // Keys for Resend / SMTP
     const keysToTry = [
@@ -388,11 +391,10 @@ export async function POST(request: Request) {
           socketTimeout: 15000
         });
 
-        // FIX 2: Send via BCC (CCO) so recipient addresses are NEVER visible to each other!
         const info = await transporter.sendMail({
           from: `"Jonathan Cooper - BidCoop Intelligence" <${activeUser}>`,
-          to: activeUser, // Primary sender address in "To"
-          bcc: targetEmails, // Recipients placed strictly in BCC (Copia Oculta / CCO!)
+          to: activeUser, 
+          bcc: targetEmails, 
           subject,
           html: htmlBody,
           attachments: [
@@ -450,7 +452,7 @@ export async function POST(request: Request) {
           const data = await resend.emails.send({
             from: 'BidCoop Alertas <onboarding@resend.dev>',
             to: [activeUser],
-            bcc: targetEmails, // FIX 2: Recipients in BCC / CCO!
+            bcc: targetEmails, 
             subject,
             html: htmlBody,
             attachments: [
@@ -474,69 +476,40 @@ export async function POST(request: Request) {
       return { groupName, targetEmails, isSent, sentId, filename, totalOps: opsList.length };
     };
 
-    // 6. EXECUTE THE DEDICATED DISPATCHES (FIX 3: SEGMENTACIÓN ESTRICTA POR EMPRESA / RUBRO)
     const dispatchResults: any[] = [];
 
-    // DISPATCH 1: INDER-ROLL (SOLO COMPRAS ÁGILES DE ASEO E HIGIENE A jcooper@inder-roll.cl EN BCC)
-    if (opsInderRoll.length > 0) {
-      const resInder = await dispatchSingleGroup(
-        'Inder-Roll SpA (Aseo e Higiene)',
-        'InderRoll',
-        INDER_ROLL_EMAILS,
-        `[BidCoop 08:00 AM] Reporte Exclusivo Compras Ágiles Inder-Roll - ${today}`,
-        opsInderRoll
+    // DISPATCH 1: REGIONES DE CHILE (FUERA DE LA RM)
+    if (opsRegiones.length > 0) {
+      const resRegiones = await dispatchSingleGroup(
+        'Regiones de Chile',
+        'Regiones',
+        EMAILS_REGIONES,
+        `[BidCoop 08:00 AM] Reporte Compras Ágiles — Regiones de Chile - ${today}`,
+        opsRegiones
       );
-      dispatchResults.push(resInder);
+      dispatchResults.push(resRegiones);
     }
 
-    // DISPATCH 2: AMINORTE & V-MOCCS — ZONA SUR-CENTRO (COQUIMBO A LOS LAGOS) EN BCC
-    if (opsAminorteSurCentro.length > 0) {
-      await new Promise(resolve => setTimeout(resolve, 800));
-
-      const resSur = await dispatchSingleGroup(
-        'Aminorte & V-MOCCS (Zona Sur-Centro)',
-        'Aminorte_VMOCCS_SurCentro',
-        AMINORTE_VMOCCS_SUR_CENTRO_EMAILS,
-        `[BidCoop 08:00 AM] Compras Ágiles Zona Sur-Centro - Aminorte & V-MOCCS - ${today}`,
-        opsAminorteSurCentro
-      );
-      dispatchResults.push(resSur);
-    }
-
-    // DISPATCH 3: AMINORTE & V-MOCCS — REGIÓN METROPOLITANA (SANTIAGO) EN BCC
-    if (opsAminorteRM.length > 0) {
-      await new Promise(resolve => setTimeout(resolve, 800));
+    // DISPATCH 2: REGIÓN METROPOLITANA (SANTIAGO)
+    if (opsRM.length > 0) {
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
       const resRM = await dispatchSingleGroup(
-        'Aminorte & V-MOCCS (Región Metropolitana)',
-        'Aminorte_VMOCCS_RM',
-        AMINORTE_VMOCCS_METROPOLITANA_EMAILS,
-        `[BidCoop 08:00 AM] Compras Ágiles Región Metropolitana - Aminorte & V-MOCCS - ${today}`,
-        opsAminorteRM
+        'Región Metropolitana',
+        'RM',
+        EMAILS_RM,
+        `[BidCoop 08:00 AM] Reporte Compras Ágiles — Región Metropolitana - ${today}`,
+        opsRM
       );
       dispatchResults.push(resRM);
     }
 
-    // DISPATCH 4: AMINORTE & V-MOCCS — OTRAS REGIONES EN BCC
-    if (opsAminorteOtras.length > 0) {
-      await new Promise(resolve => setTimeout(resolve, 800));
-
-      const resOtras = await dispatchSingleGroup(
-        'Aminorte & V-MOCCS (Otras Regiones)',
-        'Aminorte_VMOCCS_Otras',
-        AMINORTE_VMOCCS_SUR_CENTRO_EMAILS,
-        `[BidCoop 08:00 AM] Compras Ágiles Otras Regiones - Aminorte & V-MOCCS - ${today}`,
-        opsAminorteOtras
-      );
-      dispatchResults.push(resOtras);
-    }
-
     return NextResponse.json({
       success: true,
-      mode: 'FULL_REPORT_WITH_CSV_DESGLOSE_ATTACHMENT_AND_BCC',
+      mode: 'STRICT_TWO_EMAIL_DISPATCHES_REGIONES_AND_RM',
       dispatchesSent: dispatchResults.length,
       dispatchesDetail: dispatchResults,
-      emailStatus: `¡Se despacharon los ${dispatchResults.length} reportes con adjunto .CSV (desglose completo) y envío en CCO / BCC a los destinatarios correspondientes!`,
+      emailStatus: `¡Se completó el despacho estricto de los 2 correos oficiales (Regiones y RM) con adjuntos .CSV!`,
       timestamp: new Date().toISOString()
     });
   } catch (error: any) {
