@@ -100,7 +100,7 @@ CATALOG_AMINORTE = [
 
 REGION_GEOGRAPHY_MAP = [
     ('Región de Arica y Parinacota', [
-        r'\barica\b', r'\bparinacota\b', r'\bputre\b', r'\bgeneral lagos\b', r'\bcamarones\b',
+        r'\barica\b', r'\bparinacota\b', r'\bputre\b', r'\bgeneral lagos\b', r'\bcamarones\b', r'\bhuamachuco\b',
         r'\bxv\s*regi[oó]n\b', r'\b15ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?arica\b'
     ]),
     ('Región de Tarapacá', [
@@ -120,7 +120,7 @@ REGION_GEOGRAPHY_MAP = [
         r'\biv\s*regi[oó]n\b', r'\b4ta?\s*regi[oó]n\b', r'\b4ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?coquimbo\b'
     ]),
     ('Región de Valparaíso', [
-        r'\bvalpara[ií]so\b', r'\bviña\b', r'\bquilpu[eé]\b', r'\bvilla alemana\b', r'\bsan antonio\b', r'\bquillota\b', r'\blimache\b', r'\bquintero\b', r'\bpuchuncav[ií]\b', r'\bllaillay\b', r'\blay lay\b', r'\blos andes\b', r'\bsan felipe\b', r'\bcasablanca\b', r'\bpetorca\b', r'\bcabildo\b', r'\bligua\b', r'\bcartagena\b', r'\bel quisco\b', r'\balgarrobo\b', r'\bsanto domingo\b', r'\bolmu[eé]\b', r'\bnogales\b', r'\bhijuelas\b', r'\bcalera\b', r'\bisla de pascua\b', r'\brapanui\b', r'\bjuan fernandez\b',
+        r'\bvalpara[ií]so\b', r'\bviña\b', r'\bquilpu[eé]\b', r'\bvilla alemana\b', r'\bsan antonio\b', r'\bquillota\b', r'\blimache\b', r'\bquintero\b', r'\bpuchuncav[ií]\b', r'\bllaillay\b', r'\blay lay\b', r'\blos andes\b', r'\bsan felipe\b', r'\bcasablanca\b', r'\bpetorca\b', r'\bcabildo\b', r'\bligua\b', r'\bcartagena\b', r'\bel quisco\b', r'\balgarrobo\b', r'\bsanto domingo\b', r'\bolmu[eé]\b', r'\bnogales\b', r'\bhijuelas\b', r'\bcalera\b', r'\bisla de pascua\b', r'\brapanui\b', r'\bjuan fernandez\b', r'\bsanta mar[ií]a\b', r'\bsanta maria\b', r'\bcatemu\b', r'\bpanquehue\b', r'\bputaendo\b', r'\brinconada\b', r'\bcalle larga\b', r'\bsan esteban\b', r'\bzapallar\b', r'\bpapudo\b', r'\bel tabo\b', r'\barmada\b',
         r'\bv\s*regi[oó]n\b', r'\b5ta?\s*regi[oó]n\b', r'\b5ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?valpara[ií]so\b'
     ]),
     ('Región del Libertador General Bernardo O\'Higgins', [
@@ -128,35 +128,35 @@ REGION_GEOGRAPHY_MAP = [
         r'\bvi\s*regi[oó]n\b', r'\b6ta?\s*regi[oó]n\b', r'\b6ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(del?\s*)?o\'?higgins\b'
     ]),
     ('Región del Maule', [
-        r'\bmaule\b', r'\btalca\b', r'\bcuric[oó]\b', r'\blinares\b', r'\bcauquenes\b', r'\bparral\b', r'\bconstituci[oó]n\b', r'\bsan javier\b', r'\bmolina\b', r'\bsan clemente\b', r'\bteno\b', r'\blongav[ií]\b', r'\bcolb[uú]n\b', r'\bretiro\b', r'\bhuañ[eé]\b', r'\bcurepto\b', r'\brauco\b', r'\bsagrada familia\b', r'\bchanco\b', r'\bpelluhue\b', r'\bempedrado\b',
+        r'\bmaule\b', r'\btalca\b', r'\bcuric[oó]\b', r'\blinares\b', r'\bcauquenes\b', r'\bparral\b', r'\bconstituci[oó]n\b', r'\bsan javier\b', r'\bmolina\b', r'\bsan clemente\b', r'\bteno\b', r'\blongav[ií]\b', r'\bcolb[uú]n\b', r'\bretiro\b', r'\bhuañ[eé]\b', r'\bhualañ[eé]\b', r'\bhualane\b', r'\byerbas buenas\b', r'\bcurepto\b', r'\brauco\b', r'\bsagrada familia\b', r'\bchanco\b', r'\bpelluhue\b', r'\bempedrado\b', r'\bromeral\b', r'\blicant[eé]n\b', r'\bvichuqu[eé]n\b', r'\bpencahue\b', r'\bpelarco\b', r'\bsan rafael\b', r'\br[ií]o claro\b', r'\bvilla alegre\b',
         r'\bvii\s*regi[oó]n\b', r'\b7ma?\s*regi[oó]n\b', r'\b7ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(del?\s*)?maule\b'
     ]),
     ('Región de Ñuble', [
-        r'\bñuble\b', r'\bchill[aá]n\b', r'\bsan carlos\b', r'\bbulnes\b', r'\byumbel\b', r'\bcoelemu\b', r'\bquirihue\b', r'\byungay\b', r'\bcoihueco\b', r'\bsan ignacio\b', r'\bpinto\b', r'\bel carmen\b', r'\bninhue\b', r'\bportezuelo\b', r'\btreguaco\b', r'\bsan nicol[aá]s\b',
+        r'\bñuble\b', r'\bchill[aá]n\b', r'\bsan carlos\b', r'\bbulnes\b', r'\byumbel\b', r'\bcoelemu\b', r'\bquirihue\b', r'\byungay\b', r'\bcoihueco\b', r'\bsan ignacio\b', r'\bpinto\b', r'\bel carmen\b', r'\bninhue\b', r'\bportezuelo\b', r'\btreguaco\b', r'\btrehuaco\b', r'\bsan nicol[aá]s\b', r'\br[aá]nquil\b', r'\bquill[oó]n\b', r'\bpemuco\b',
         r'\bxvi\s*regi[oó]n\b', r'\b16ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?ñuble\b'
     ]),
     ('Región del Biobío', [
-        r'\bbiob[ií]o\b', r'\bb[ií]o b[ií]o\b', r'\bconcepci[oó]n\b', r'\btalcahuano\b', r'\bcoronel\b', r'\blota\b', r'\bsan pedro de la paz\b', r'\bchiguayante\b', r'\blos [aá]ngeles\b', r'\bcañete\b', r'\barauco\b', r'\blebu\b', r'\bpenco\b', r'\btom[eé]\b', r'\bhualp[eé]n\b', r'\bmulch[eé]n\b', r'\bnacimiento\b', r'\blaja\b', r'\bcabrero\b', r'\bcuranilahue\b', r'\btucapel\b', r'\bsanta b[aá]rbara\b', r'\bcontulmo\b',
+        r'\bbiob[ií]o\b', r'\bb[ií]o b[ií]o\b', r'\bconcepci[oó]n\b', r'\btalcahuano\b', r'\bcoronel\b', r'\blota\b', r'\bsan pedro de la paz\b', r'\bchiguayante\b', r'\blos [aá]ngeles\b', r'\blos alamos\b', r'\blos [aá]lamos\b', r'\bcañete\b', r'\barauco\b', r'\blebu\b', r'\bpenco\b', r'\btom[eé]\b', r'\bhualp[eé]n\b', r'\bmulch[eé]n\b', r'\bnacimiento\b', r'\blaja\b', r'\bcabrero\b', r'\bcuranilahue\b', r'\btucapel\b', r'\bsanta b[aá]rbara\b', r'\bcontulmo\b', r'\btir[uú]a\b', r'\bquilleco\b', r'\bsan rosendo\b', r'\balto biobio\b',
         r'\bviii\s*regi[oó]n\b', r'\b8va?\s*regi[oó]n\b', r'\b8ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(del?\s*)?biob[ií]o\b'
     ]),
     ('Región de La Araucanía', [
-        r'\baraucan[ií]a\b', r'\btemuco\b', r'\bpadre las casas\b', r'\bangol\b', r'\bvillarrica\b', r'\bpuc[oó]n\b', r'\bvictoria\b', r'\blautaro\b', r'\btraigu[eé]n\b', r'\bcollipulli\b', r'\bcarahue\b', r'\bnueva imperial\b', r'\bpitrufqu[eé]n\b', r'\bloncoche\b', r'\bcuracaut[ií]n\b', r'\bpuren\b', r'\bsaavedra\b', r'\bfreire\b', r'\bgorbea\b', r'\bcunco\b',
+        r'\baraucan[ií]a\b', r'\btemuco\b', r'\bpadre las casas\b', r'\bangol\b', r'\bvillarrica\b', r'\bpuc[oó]n\b', r'\bvictoria\b', r'\blautaro\b', r'\btraigu[eé]n\b', r'\bcollipulli\b', r'\bcarahue\b', r'\bnueva imperial\b', r'\bpitrufqu[eé]n\b', r'\bloncoche\b', r'\bcuracaut[ií]n\b', r'\bpur[eé]n\b', r'\bsaavedra\b', r'\bfreire\b', r'\bgorbea\b', r'\bcunco\b', r'\bvilc[uú]n\b', r'\blumaco\b', r'\bercilla\b', r'\brenaico\b', r'\bteodoro schmidt\b', r'\btolt[eé]n\b', r'\bmelipeuco\b', r'\bcurarrehue\b', r'\bcholchol\b', r'\bperquenco\b', r'\bgalvarino\b',
         r'\bix\s*regi[oó]n\b', r'\b9na?\s*regi[oó]n\b', r'\b9ª\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?la araucan[ií]a\b'
     ]),
     ('Región de Los Ríos', [
-        r'\blos r[ií]os\b', r'\bvaldivia\b', r'\bla uni[oó]n\b', r'\br[ií]o bueno\b', r'\bpaillaco\b', r'\bpanguipulli\b', r'\blanco\b', r'\bmariquina\b', r'\bfutrono\b', r'\bcorral\b', r'\blago ranco\b', r'\bmáfil\b', r'\bmafil\b',
+        r'\blos r[ií]os\b', r'\bvaldivia\b', r'\bla uni[oó]n\b', r'\br[ií]o bueno\b', r'\bpaillaco\b', r'\bpanguipulli\b', r'\blanco\b', r'\bmariquina\b', r'\bfutrono\b', r'\bcorral\b', r'\blago ranco\b', r'\bm[aá]fil\b', r'\branco\b',
         r'\bxiv\s*regi[oó]n\b', r'\b14ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?los r[ií]os\b'
     ]),
     ('Región de Los Lagos', [
-        r'\blos lagos\b', r'\bpuerto montt\b', r'\bosorno\b', r'\bcastro\b', r'\bancud\b', r'\bquell[oó]n\b', r'\bchilo[eé]\b', r'\bpuerto varas\b', r'\bfrutillar\b', r'\bcalbuco\b', r'\bllanquihue\b', r'\bpurranque\b', r'\briochico\b', r'\br[ií]o negro\b', r'\bfresia\b', r'\blos muermos\b', r'\bmaull[ií]n\b', r'\bquinchao\b', r'\bachao\b', r'\bchait[eé]n\b', r'\bpalena\b', r'\bfutaleuf[uú]\b',
+        r'\blos lagos\b', r'\bpuerto montt\b', r'\bosorno\b', r'\bcastro\b', r'\bancud\b', r'\bquell[oó]n\b', r'\bchilo[eé]\b', r'\bpuerto varas\b', r'\bfrutillar\b', r'\bcalbuco\b', r'\bllanquihue\b', r'\bpurranque\b', r'\briochico\b', r'\br[ií]o negro\b', r'\bfresia\b', r'\blos muermos\b', r'\bmaull[ií]n\b', r'\bquinchao\b', r'\bachao\b', r'\bchait[eé]n\b', r'\bpalena\b', r'\bfutaleuf[uú]\b', r'\bcuraco de velez\b', r'\bchonchi\b', r'\bdalcahue\b', r'\bpuqueldon\b', r'\bqueilen\b', r'\bquemchi\b',
         r'\bx\s*regi[oó]n\b', r'\b10ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?los lagos\b'
     ]),
     ('Región de Aysén del General Carlos Ibáñez del Campo', [
-        r'\bays[eé]n\b', r'\bcoyhaique\b', r'\bcoihaique\b', r'\bpuerto ays[eé]n\b', r'\bchile chico\b', r'\bcochrane\b', r'\bcisnes\b', r'\bpuerto cisnes\b', r'\bguaitecas\b', r'\bmelinka\b', r'\brio ib[aá]ñez\b', r'\btortel\b', r'\bvilla o\'?higgins\b',
+        r'\bays[eé]n\b', r'\bcoyhaique\b', r'\bcoihaique\b', r'\bpuerto ays[eé]n\b', r'\bchile chico\b', r'\bcochrane\b', r'\bcisnes\b', r'\bpuerto cisnes\b', r'\bguaitecas\b', r'\bmelinka\b', r'\br[ií]o ib[aá]ñez\b', r'\btortel\b', r'\bvilla o\'?higgins\b', r'\blago verde\b', r'\bcapit[aá]n prat\b',
         r'\bxi\s*regi[oó]n\b', r'\b11ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?ays[eé]n\b'
     ]),
     ('Región de Magallanes y de la Antártica Chilena', [
-        r'\bmagallanes\b', r'\bpunta arenas\b', r'\bnatales\b', r'\bpuerto natales\b', r'\bporvenir\b', r'\bant[aá]rtica\b', r'\bcabo de hornos\b', r'\bpuerto williams\b', r'\btorres del paine\b', r'\bprimavera\b', r'\btimaukel\b', r'\bsan gregorio\b',
+        r'\bmagallanes\b', r'\bpunta arenas\b', r'\bnatales\b', r'\bpuerto natales\b', r'\bporvenir\b', r'\bant[aá]rtica\b', r'\bcabo de hornos\b', r'\bpuerto williams\b', r'\btorres del paine\b', r'\bprimavera\b', r'\btimaukel\b', r'\bsan gregorio\b', r'\bcampo militar austral\b', r'\blaguna blanca\b', r'\br[ií]o verde\b',
         r'\bxii\s*regi[oó]n\b', r'\b12ª?\s*regi[oó]n\b', r'\bregi[oó]n\s*(de\s*)?magallanes\b'
     ]),
     ('Región Metropolitana', [

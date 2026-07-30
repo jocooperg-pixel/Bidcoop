@@ -127,10 +127,7 @@ export async function POST(request: Request) {
       ? oportunidades 
       : mockOportunidades;
 
-    const activeOps = sourceOps.map(op => ({
-      ...op,
-      region: resolveRealRegion(op)
-    })).filter((op: any) => {
+    const activeOps = sourceOps.filter((op: any) => {
       const isCompraAgil = op.modalidad === 'Compra Ágil';
       const isStatePublicada = op.estado === 'Publicada';
       
