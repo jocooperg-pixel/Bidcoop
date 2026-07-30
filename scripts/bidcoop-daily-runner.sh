@@ -54,18 +54,14 @@ else
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Sin cambios detectados en mockData.ts." >> "$LOG_PATH"
 fi
 
-# ── PASO 3: Envío de Reportes por Correo (Solo a las 08:00 AM) ──
-HOUR=$(date +%H)
-if [ "$HOUR" = "08" ]; then
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 3 — Enviando reportes de correo 8 AM..." >> "$LOG_PATH"
-  sleep 30
-  RESPONSE=$(curl -s -X POST "https://bidcoop.vercel.app/api/send-email-report" \
-    -H "Content-Type: application/json" \
-    -d '{}' \
-    --max-time 120)
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [CORREO] Respuesta API: $RESPONSE" >> "$LOG_PATH"
+# ── PASO 3: Envío de Reportes por Correo ──
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 3 — Enviando reporte consolidado por correo..." >> "$LOG_PATH"
+"$PYTHON3" "$PROJECT_PATH/scripts/send_daily_email_report.py" >> "$LOG_PATH" 2>&1
+EMAIL_EXIT=$?
+if [ $EMAIL_EXIT -eq 0 ]; then
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [OK] Correo de reporte enviado exitosamente." >> "$LOG_PATH"
 else
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 3 — Ejecución silenciosa (${HOUR}h)." >> "$LOG_PATH"
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARNING] Envío de correo falló (exit $EMAIL_EXIT)." >> "$LOG_PATH"
 fi
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] BidCoop Runner v4.1 Finalizado." >> "$LOG_PATH"
