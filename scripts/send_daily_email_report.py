@@ -224,6 +224,8 @@ def main():
     def parse_iso(d_str):
         if not d_str: return today
         clean = str(d_str).strip().split(' ')[0]
+        if 'T' in clean:
+            clean = clean.split('T')[0]
         if re.match(r'^\d{4}-\d{2}-\d{2}$', clean): return clean
         m = re.match(r'^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$', clean)
         if m: return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}"
