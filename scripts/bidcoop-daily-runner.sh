@@ -54,15 +54,9 @@ else
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Sin cambios detectados en mockData.ts." >> "$LOG_PATH"
 fi
 
-# ── PASO 3: Envío de Reportes por Correo ──
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 3 — Enviando reporte consolidado por correo..." >> "$LOG_PATH"
-"$PYTHON3" "$PROJECT_PATH/scripts/send_daily_email_report.py" >> "$LOG_PATH" 2>&1
-EMAIL_EXIT=$?
-if [ $EMAIL_EXIT -eq 0 ]; then
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [OK] Correo de reporte enviado exitosamente." >> "$LOG_PATH"
-else
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] [WARNING] Envío de correo falló (exit $EMAIL_EXIT)." >> "$LOG_PATH"
-fi
+# ── PASO 3: Política de Despacho de Correos (Manual desde Plataforma) ──
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] PASO 3 — Envío automático desactivado por norma de seguridad." >> "$LOG_PATH"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Los reportes por correo son despachados exclusivamente de forma manual por el usuario desde la plataforma web BidCoop." >> "$LOG_PATH"
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] BidCoop Runner v4.1 Finalizado." >> "$LOG_PATH"
 echo "======================================" >> "$LOG_PATH"
