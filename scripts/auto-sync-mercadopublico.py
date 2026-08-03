@@ -81,8 +81,10 @@ CATALOG_AMINORTE = [
     "escritorio", "artículos de escritorio", "utiles de escritorio", "papelería de escritorio",
     "resma", "papel carta", "papel oficio", "archivador", "lomo ancho", "carpeta", "fastener",
     "bolígrafo", "lápiz", "destacador", "corchetera", "corchete", "clip", "post-it", "nota adhesiva",
-    "cinta adhesiva", "tijera", "regla", "tóner", "toner", "tinta", "cartucho", "impresora", "librería", "libreria"
+    "cinta adhesiva", "tijera", "regla", "tóner", "toner", "tinta", "cartucho", "impresora", "librería", "libreria",
+    "materiales", "oficina", "insumos", "suministros", "paquetería", "paqueteria", "timbres", "sellos", "formularios"
 ]
+
 
 def strip_accents(text):
     if not text: return ""
@@ -182,7 +184,8 @@ def main():
                 close_str = format_date_to_iso(close_date)
                 
                 real_region = infer_chilean_region(inst, unidad, title)
-                company_match, rubro, match_score = calculate_smart_catalog_match(title, unidad)
+                company_match, rubro, match_score = calculate_smart_catalog_match(title, f"{inst} {unidad}")
+
                 
                 desc = f"Compra Ágil ingresada directamente desde plataforma oficial de Mercado Público ({unidad})."
                 

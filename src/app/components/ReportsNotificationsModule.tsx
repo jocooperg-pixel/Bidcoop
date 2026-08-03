@@ -36,21 +36,21 @@ export default function ReportsNotificationsModule({
 
   // Filter opportunities for the selected company
   const companyFilteredOps = useMemo(() => {
-    return oportunidades.filter(op => {
+    const list = oportunidades.filter(op => {
       const matchCompany = selectedCompany === 'Todas' || op.empresaMatch === selectedCompany;
       const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
       const matchModalidad = op.modalidad === 'Compra Ágil';
       const matchEstado = op.estado === 'Publicada';
-      
-      // Strict Filter for Aminorte Compra Ágil: Must contain "escritorio"
-      if (op.empresaMatch === 'Aminorte' || selectedCompany === 'Aminorte') {
-        const fullText = (op.titulo + ' ' + op.descripcion + ' ' + op.rubro).toLowerCase();
-        if (!fullText.includes('escritorio')) return false;
-      }
-
       return matchCompany && matchRubro && matchModalidad && matchEstado;
     });
+
+    return [...list].sort((a, b) => {
+      const dateA = a.fechaPublicacion || a.fechaCierre || '';
+      const dateB = b.fechaPublicacion || b.fechaCierre || '';
+      return dateB.localeCompare(dateA);
+    });
   }, [oportunidades, selectedCompany, filterRubro]);
+
 
 
   // Postulations for follow-up emails

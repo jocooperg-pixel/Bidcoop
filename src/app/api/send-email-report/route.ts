@@ -137,14 +137,9 @@ export async function POST(request: Request) {
       const closeIso = parseToIsoDate(op.fechaCierre || op.fechaLimite || '');
       const isNotClosedByDate = !closeIso || closeIso >= today;
 
-      // Strict Filter for Aminorte Compra Ágil: Must contain "escritorio"
-      if (op.empresaMatch === 'Aminorte' || empresa === 'Aminorte') {
-        const fullText = (op.titulo + ' ' + op.descripcion + ' ' + op.rubro).toLowerCase();
-        if (!fullText.includes('escritorio')) return false;
-      }
-
       return isCompraAgil && isStatePublicada && isNotClosedByDate;
     });
+
 
 
     // 3. SEGREGATE OPPORTUNITIES STRICTLY INTO 2 GEOGRAPHIC GROUPS

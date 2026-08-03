@@ -506,52 +506,52 @@ export default function SearchModule({
   // Filtered opportunities
   const filteredOportunidades = useMemo(() => {
     const cleanSearch = searchText.toLowerCase().trim();
-    if (!cleanSearch) {
-      return oportunidades.filter((op) => {
-        const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
-        const matchRegion = filterRegion === 'Todos' || op.region === filterRegion;
-        const matchRiesgo = filterRiesgo === 'Todos' || op.riesgo === filterRiesgo;
-        const matchMonto = op.monto >= filterMontoMin && op.monto <= filterMontoMax;
-        const matchModalidad = filterModalidad === 'Todos' || op.modalidad === filterModalidad;
-        const matchEstado = filterEstado === 'Todos' || op.estado === filterEstado;
-        return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchEstado;
-      });
-    }
+    const list = !cleanSearch
 
-    const cleanSearchAlphanum = cleanSearch.replace(/[^a-z0-9]/g, '');
+      ? oportunidades.filter((op) => {
+          const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
+          const matchRegion = filterRegion === 'Todos' || op.region === filterRegion;
+          const matchRiesgo = filterRiesgo === 'Todos' || op.riesgo === filterRiesgo;
+          const matchMonto = op.monto >= filterMontoMin && op.monto <= filterMontoMax;
+          const matchModalidad = filterModalidad === 'Todos' || op.modalidad === filterModalidad;
+          const matchEstado = filterEstado === 'Todos' || op.estado === filterEstado;
+          return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchEstado;
+        })
+      : oportunidades.filter((op) => {
+          const cleanSearchAlphanum = cleanSearch.replace(/[^a-z0-9]/g, '');
+          const opCodigoLower = op.codigo.toLowerCase();
+          const matchesCode =
+            opCodigoLower.includes(cleanSearch) ||
+            opCodigoLower.replace(/[^a-z0-9]/g, '').includes(cleanSearchAlphanum);
 
-    return oportunidades.filter((op) => {
-      // 1. Direct code prefix/contains check (both with/without special characters like dashes)
-      const opCodigoLower = op.codigo.toLowerCase();
-      const matchesCode =
-        opCodigoLower.includes(cleanSearch) ||
-        opCodigoLower.replace(/[^a-z0-9]/g, '').includes(cleanSearchAlphanum);
+          if (matchesCode) {
+            return true;
+          }
 
-      // If there is an explicit code search match, BYPASS all other filters (region, rubro, etc.)
-      // so the user can ALWAYS locate the bid by typing its code.
-      if (matchesCode) {
-        return true;
-      }
+          const matchesText =
+            op.titulo.toLowerCase().includes(cleanSearch) ||
+            op.organismo.toLowerCase().includes(cleanSearch) ||
+            (op.descripcion && op.descripcion.toLowerCase().includes(cleanSearch));
 
-      // 2. Keyword check on Title, Organismo, or Description
-      const matchesText =
-        op.titulo.toLowerCase().includes(cleanSearch) ||
-        op.organismo.toLowerCase().includes(cleanSearch) ||
-        (op.descripcion && op.descripcion.toLowerCase().includes(cleanSearch));
+          if (matchesText) {
+            const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
+            const matchRegion = filterRegion === 'Todos' || op.region === filterRegion;
+            const matchRiesgo = filterRiesgo === 'Todos' || op.riesgo === filterRiesgo;
+            const matchMonto = op.monto >= filterMontoMin && op.monto <= filterMontoMax;
+            const matchModalidad = filterModalidad === 'Todos' || op.modalidad === filterModalidad;
+            const matchEstado = filterEstado === 'Todos' || op.estado === filterEstado;
+            return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchEstado;
+          }
 
-      if (matchesText) {
-        // Text keyword search still respects standard filters
-        const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
-        const matchRegion = filterRegion === 'Todos' || op.region === filterRegion;
-        const matchRiesgo = filterRiesgo === 'Todos' || op.riesgo === filterRiesgo;
-        const matchMonto = op.monto >= filterMontoMin && op.monto <= filterMontoMax;
-        const matchModalidad = filterModalidad === 'Todos' || op.modalidad === filterModalidad;
-        const matchEstado = filterEstado === 'Todos' || op.estado === filterEstado;
-        return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchEstado;
-      }
+          return false;
+        });
 
-      return false;
+    return [...list].sort((a, b) => {
+      const dateA = a.fechaPublicacion || a.fechaCierre || '';
+      const dateB = b.fechaPublicacion || b.fechaCierre || '';
+      return dateB.localeCompare(dateA);
     });
+
   }, [oportunidades, searchText, filterRubro, filterRegion, filterRiesgo, filterMontoMin, filterMontoMax, filterModalidad, filterEstado]);
 
   // Paginated opportunities

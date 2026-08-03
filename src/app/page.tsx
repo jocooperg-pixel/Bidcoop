@@ -98,19 +98,10 @@ export default function Home() {
   const filteredOportunidades = useMemo(() => {
     let list = oportunidades;
     if (activeCompany === 'Aminorte') {
-      list = oportunidades.filter(o => {
-        if (o.empresaMatch !== 'Aminorte') return false;
-        if (o.modalidad === 'Compra Ágil') {
-          const fullText = (o.titulo + ' ' + o.descripcion + ' ' + o.rubro).toLowerCase();
-          return fullText.includes('escritorio');
-        }
-        return true;
-      });
+      list = oportunidades.filter(o => o.empresaMatch === 'Aminorte');
     } else if (activeCompany === 'V-MOCCS') {
       list = oportunidades.filter(o => o.empresaMatch === 'V-MOCCS' || o.empresaMatch === 'Aminorte');
     }
-
-
 
     // Apply global preferences
     list = list.filter(o => 
@@ -120,7 +111,13 @@ export default function Home() {
       o.monto >= globalPrefs.montoMinimo
     );
 
-    return list;
+    // Sort newest processes first (by publication or closing date descending)
+    return [...list].sort((a, b) => {
+      const dateA = a.fechaPublicacion || a.fechaCierre || '';
+      const dateB = b.fechaPublicacion || b.fechaCierre || '';
+      return dateB.localeCompare(dateA);
+    });
+
   }, [oportunidades, activeCompany, globalPrefs]);
 
   const filteredNotifications = useMemo(() => {
