@@ -306,7 +306,8 @@ export default function DashboardModule({
                       <span className="text-[10px] font-mono font-bold text-slate-600 dark:text-slate-400">{op.codigo}</span>
                       <div className="flex items-center gap-1">
                         <span className={`text-[8px] font-black uppercase px-1.5 py-0.2 rounded ${
-                          op.empresaMatch === 'Inder-Roll' ? 'bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300' : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+                          op.empresaMatch === 'Aminorte' ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300' : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+
                         }`}>
                           {op.empresaMatch}
                         </span>
@@ -356,7 +357,8 @@ export default function DashboardModule({
                     <div className="flex items-center justify-between gap-1.5 mb-1">
                       <span className="text-[10px] font-mono font-bold text-slate-500">{op.codigo}</span>
                       <span className={`text-[8px] font-black uppercase px-1.5 py-0.2 rounded ${
-                        op.empresaMatch === 'Inder-Roll' ? 'bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300' : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+                        op.empresaMatch === 'Aminorte' ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300' : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+
                       }`}>
                         {op.empresaMatch}
                       </span>
@@ -504,10 +506,13 @@ export default function DashboardModule({
               <div>
                 <label className="text-[10px] uppercase font-black text-slate-400 block mb-1.5">Rubros de Convenio</label>
                 <div className="space-y-1.5">
+
                   {[
-                    { id: 'Aseo e Higiene', label: '🧼 Aseo e Higiene (Inder-Roll)' },
-                    { id: 'Artículos de Escritorio y Oficina', label: '✏️ Artículos de Escritorio (Aminorte)' }
+                    { id: 'Artículos de Escritorio y Oficina', label: '✏️ Artículos de Escritorio y Oficina (Aminorte / V-MOCCS)' },
+                    { id: 'Tecnología y Hardware', label: '💻 Tecnología y Hardware (Aminorte)' }
                   ].map((rubro) => {
+
+
                     const isChecked = selectedRubros.includes(rubro.id);
                     return (
                       <label key={rubro.id} className="flex items-center gap-2 text-xs font-bold text-slate-700 dark:text-slate-350 cursor-pointer select-none">

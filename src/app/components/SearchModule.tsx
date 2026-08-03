@@ -201,7 +201,8 @@ export default function SearchModule({
 
   // Official Quote Generator Modal State
   const [showQuoteModal, setShowQuoteModal] = useState<boolean>(false);
-  const [quoteCompany, setQuoteCompany] = useState<'Inder-Roll' | 'Aminorte' | 'V-MOCCS'>('Aminorte');
+  const [quoteCompany, setQuoteCompany] = useState<'Aminorte' | 'V-MOCCS'>('Aminorte');
+
 
   // Edit Items Modal State
   const [showEditItemsModal, setShowEditItemsModal] = useState<boolean>(false);
@@ -2103,9 +2104,10 @@ export default function SearchModule({
                   <div>
                     <span className="text-[9px] uppercase font-black text-slate-400 block">Empresa Match</span>
                     <span className={`text-[10px] font-black mt-0.5 px-1.5 py-0.5 rounded uppercase block w-fit text-center ${
-                      selectedOpportunity.empresaMatch === 'Inder-Roll'
-                        ? 'bg-green-50 text-green-700 dark:bg-green-950/40 dark:text-green-400'
-                        : 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400'
+                      selectedOpportunity.empresaMatch === 'Aminorte'
+                        ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400'
+                        : 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-400'
+
                     }`}>
                       {selectedOpportunity.empresaMatch || 'General'}
                     </span>
@@ -2447,9 +2449,10 @@ export default function SearchModule({
                               <span className="text-[9px] font-black px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 block w-fit">{op.rubro}</span>
                               {op.empresaMatch && (
                                 <span className={`text-[8px] font-black px-1.5 py-0.2 rounded uppercase ${
-                                  op.empresaMatch === 'Inder-Roll'
-                                    ? 'bg-green-50 text-green-700 dark:bg-green-950/40 dark:text-green-400'
-                                    : 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400'
+                                  op.empresaMatch === 'Aminorte'
+                                    ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400'
+                                    : 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-400'
+
                                 }`}>
                                   {op.empresaMatch}
                                 </span>
@@ -2772,7 +2775,6 @@ export default function SearchModule({
                   >
                     <option value="Aminorte">📄 Aminorte SpA</option>
                     <option value="V-MOCCS">✏️ V-MOCCS SpA</option>
-                    <option value="Inder-Roll">🧹 Inder-Roll SpA</option>
                   </select>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2.5 text-sky-400 text-xs">
                     ▼
@@ -2802,7 +2804,8 @@ export default function SearchModule({
                 <div className="flex justify-between items-start border-b-2 border-slate-900 pb-6">
                   <div>
                     <h1 className="text-xl font-black tracking-tight text-blue-900">
-                      {quoteCompany === 'Aminorte' ? 'AMINORTE SpA' : quoteCompany === 'V-MOCCS' ? 'V-MOCCS SpA' : 'INDER-ROLL SpA'}
+                      {quoteCompany === 'V-MOCCS' ? 'V-MOCCS SpA' : 'AMINORTE SpA'}
+
                     </h1>
                     <p className="text-xs font-bold text-slate-600 mt-0.5">
                       {quoteCompany === 'Aminorte'
@@ -2814,7 +2817,8 @@ export default function SearchModule({
                     <div className="text-[11px] text-slate-500 mt-2 space-y-0.5">
                       <p>RUT: {quoteCompany === 'Aminorte' ? '76.123.500-1' : quoteCompany === 'V-MOCCS' ? '77.235.702-8' : '76.854.912-K'}</p>
                       <p>Dirección: {quoteCompany === 'V-MOCCS' ? 'Av. Apoquindo 4700, Las Condes, Santiago, Chile' : 'Av. Providencia 1234, Of. 602, Santiago, Chile'}</p>
-                      <p>Contacto Comercial: contacto@{quoteCompany === 'Aminorte' ? 'aminorte.cl' : quoteCompany === 'V-MOCCS' ? 'v-moccs.cl' : 'inderroll.cl'} | {quoteCompany === 'V-MOCCS' ? '+56 2 2950 1800' : '+56 2 2940 8800'}</p>
+                      <p>Contacto Comercial: contacto@{quoteCompany === 'V-MOCCS' ? 'v-moccs.cl' : 'aminorte.cl'} | {quoteCompany === 'V-MOCCS' ? '+56 2 2950 1800' : '+56 2 2940 8800'}</p>
+
                     </div>
                   </div>
 
@@ -2933,7 +2937,8 @@ export default function SearchModule({
                 <div className="pt-8 flex justify-between items-end text-xs border-t border-slate-200">
                   <div>
                     <span className="text-[10px] text-slate-400 block font-mono">Firma Certificada Digitalmente</span>
-                    <span className="font-bold text-slate-800">Departamento Comercial — {quoteCompany === 'Aminorte' ? 'Aminorte SpA' : quoteCompany === 'V-MOCCS' ? 'V-MOCCS SpA' : 'Inder-Roll SpA'}</span>
+                    <span className="font-bold text-slate-800">Departamento Comercial — {quoteCompany === 'V-MOCCS' ? 'V-MOCCS SpA' : 'Aminorte SpA'}</span>
+
                   </div>
                   <div className="text-right">
                     <span className="text-[9px] font-mono text-slate-400 block">HASH: SHA256-COT-{selectedOpportunity.codigo}</span>

@@ -30,70 +30,7 @@ export interface ArticuloMasVendido {
 }
 
 export const listadoProveedores: Proveedor[] = [
-  {
-    "rut": "76.073.022-K",
-    "razonSocial": "INDERQUIM LTDA.",
-    "tipoEmpresa": "PYME",
-    "comuna": "Santiago",
-    "region": "Metropolitana",
-    "rubro": "Aseo e Higiene",
-    "email": "contacto@inderquim.cl",
-    "telefono": "+56 2 2732 1436",
-    "representante": "Carlos Valenzuela",
-    "web": "www.inder-roll.cl",
-    "file": "Productos Adjudicados.xlsx",
-    "isAdjudicadosFile": true,
-    "ventas": [
-      {
-        "articulo": "DETERGENTE LIQUIDO DOYPACK 3 LITROS OP1 ATACAMA",
-        "precio": 4420,
-        "compradorRegion": "OP1 ATACAMA",
-        "modalidad": "Convenio Marco (Adjudicado)"
-      },
-      {
-        "articulo": "LIQUIDO LIMPIAVIDRIOS BIDON 5000 CC UNIDAD OP1 ARICA Y PARINACOTA",
-        "precio": 3894,
-        "compradorRegion": "OP1 ARICA Y PARINACOTA",
-        "modalidad": "Convenio Marco (Adjudicado)"
-      },
-      {
-        "articulo": "DESENGRASANTE COCINA C/PULVERIZADOR 500 ML OP1 ANTOFAGASTA",
-        "precio": 1170,
-        "compradorRegion": "OP1 ANTOFAGASTA",
-        "modalidad": "Convenio Marco (Adjudicado)"
-      },
-      {
-        "articulo": "DESENGRASANTE COCINA C/PULVERIZADOR 500 ML OP1 DEL ÑUBLE",
-        "precio": 1080,
-        "compradorRegion": "OP1 DEL ÑUBLE",
-        "modalidad": "Convenio Marco (Adjudicado)"
-      },
-      {
-        "articulo": "LIQUIDO LIMPIAVIDRIOS BIDON 5000 CC UNIDAD OP1 MAGALLANES",
-        "precio": 3894,
-        "compradorRegion": "OP1 MAGALLANES",
-        "modalidad": "Convenio Marco (Adjudicado)"
-      },
-      {
-        "articulo": "DESENGRASANTE COCINA RECARGA DOYPACK 500 ML OP1 AYSEN",
-        "precio": 1040,
-        "compradorRegion": "OP1 AYSEN",
-        "modalidad": "Convenio Marco (Adjudicado)"
-      },
-      {
-        "articulo": "DESENGRASANTE COCINA C/PULVERIZADOR 500 ML OP1 DE LOS LAGOS",
-        "precio": 1170,
-        "compradorRegion": "OP1 DE LOS LAGOS",
-        "modalidad": "Convenio Marco (Adjudicado)"
-      },
-      {
-        "articulo": "DESENGRASANTE COCINA C/PULVERIZADOR 500 ML OP1 ARICA Y PARINACOTA",
-        "precio": 1215,
-        "compradorRegion": "OP1 ARICA Y PARINACOTA",
-        "modalidad": "Convenio Marco (Adjudicado)"
-      }
-    ]
-  },
+
   {
     "rut": "76.123.456-1",
     "razonSocial": "Bastian SpA",

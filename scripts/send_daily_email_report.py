@@ -27,14 +27,16 @@ EMAILS_REGIONES = [
     "mviguera@aminorte.cl",
     "jorge.alvarado@discoverymerch.cl",
     "jonathan.cooper@discoverymerch.cl",
-    "jcooper@inder-roll.cl"
+    "jonathan.cooper@discoverymerch.cl"
+
 ]
 
 EMAILS_RM = [
     "mviguera@aminorte.cl",
     "jorge.alvarado@discoverymerch.cl",
     "jonathan.cooper@discoverymerch.cl",
-    "jcooper@inder-roll.cl"
+    "jonathan.cooper@discoverymerch.cl"
+
 ]
 
 MOCK_PATH = "/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento/src/app/mockData.ts"
@@ -90,26 +92,69 @@ def generate_csv_attachment(ops):
         
     return output.getvalue().encode('utf-8-sig')
 
-def build_email_body(title, subtitle, ops):
-    today_str = datetime.date.today().strftime("%d/%m/%Y")
+def build_email_body(zone_title, zone_subtitle, ops):
+    today_str = datetime.date.today().strftime("%Y-%m-%d")
     total_monto = sum(o.get("monto", 0) for o in ops)
     
-    top_ops = sorted(ops, key=lambda x: x.get("monto", 0), reverse=True)[:15]
-    
     rows_html = ""
-    for op in top_ops:
-        monto_fmt = f"${op.get('monto', 0):,.0f} CLP".replace(",", ".")
-        win_price = f"${round(op.get('monto', 0) * 0.94):,.0f} CLP".replace(",", ".")
+    for idx, op in enumerate(ops):
+        monto_val = op.get('monto', 0)
+        win_price = round(monto_val * 0.94)
+        monto_fmt = f"${monto_val:,.0f} CLP".replace(",", ".")
+        win_fmt = f"${win_price:,.0f} CLP".replace(",", ".")
         code = op.get("codigo", "")
         url = f"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion={code}"
+        bg_color = "#ffffff" if idx % 2 == 0 else "#f8fafc"
+        empresa_tag = op.get("empresaMatch", "HOLDING")
+        rubro_tag = op.get("rubro", "Artículos de Escritorio y Oficina")
+        match_pct = op.get("matchScore", 92)
+        close_date = op.get("fechaCierre", today_str).split("T")[0]
+
         rows_html += f"""
-        <tr style="border-bottom: 1px solid #e2e8f0; background-color: #ffffff;">
-            <td style="padding: 10px; font-weight: bold; color: #1e40af;"><a href="{url}" target="_blank" style="color: #1d4ed8; text-decoration: underline;">{code}</a></td>
-            <td style="padding: 10px; font-size: 12px;">{op.get('titulo', '')[:70]}</td>
-            <td style="padding: 10px; font-size: 11px;">{op.get('organismo', '')[:40]}</td>
-            <td style="padding: 10px; font-size: 11px; font-weight: 600; color: #047857;">{op.get('region', 'Metropolitana')}</td>
-            <td style="padding: 10px; font-weight: bold; text-align: right;">{monto_fmt}</td>
-            <td style="padding: 10px; font-weight: 600; color: #059669; text-align: right;">{win_price}</td>
+        <tr style="border-bottom: 1px solid #e2e8f0; background-color: {bg_color};">
+          <td style="padding: 12px 10px; vertical-align: top;">
+            <div style="font-family: monospace; font-size: 13px; font-weight: 900; color: #0f172a; margin-bottom: 4px;">
+              <a href="{url}" target="_blank" style="color: #0f172a; text-decoration: underline;">{code}</a>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: 900; border: 1px solid #bae6fd;">
+                {empresa_tag}
+              </span>
+              <span style="background: #f1f5f9; color: #475569; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: 800;">
+                {rubro_tag}
+              </span>
+            </div>
+          </td>
+          <td style="padding: 12px 10px; vertical-align: top; font-size: 11px; font-weight: 800; color: #1e293b; text-transform: uppercase; line-height: 1.4;">
+            {op.get('organismo', '')}
+            <div style="font-size: 10px; font-weight: 800; color: #0284c7; margin-top: 3px;">
+              📍 {op.get('region', 'Región Metropolitana')}
+            </div>
+          </td>
+          <td style="padding: 12px 10px; vertical-align: top;">
+            <div style="font-size: 12px; font-weight: 800; color: #0f172a; margin-bottom: 3px; line-height: 1.3;">
+              {op.get('titulo', '')}
+            </div>
+            <div style="font-size: 10px; color: #64748b;">
+              {op.get('descripcion', 'Compra Ágil publicada en Mercado Público.')[:120]}
+            </div>
+          </td>
+          <td style="padding: 12px 10px; vertical-align: top; text-align: right;">
+            <div style="font-size: 13px; font-weight: 900; color: #0f172a;">
+              {monto_fmt}
+            </div>
+            <div style="font-size: 10px; font-weight: 800; color: #059669; margin-top: 2px;">
+              Precio Óptimo: {win_fmt}
+            </div>
+          </td>
+          <td style="padding: 12px 10px; vertical-align: top; text-align: center;">
+            <span style="font-size: 11px; font-weight: 900; color: #16a34a; background: #dcfce7; padding: 3px 8px; border-radius: 6px; border: 1px solid #bbf7d0;">
+              {match_pct}%
+            </span>
+          </td>
+          <td style="padding: 12px 10px; vertical-align: top; font-size: 11px; color: #334155; font-weight: 800; text-align: right;">
+            {close_date}
+          </td>
         </tr>
         """
 
@@ -117,96 +162,106 @@ def build_email_body(title, subtitle, ops):
     <!DOCTYPE html>
     <html>
     <head>
-        <meta charset="utf-8">
-        <style>
-            body {{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; margin: 0; padding: 20px; color: #0f172a; }}
-            .container {{ max-width: 900px; background: #ffffff; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #cbd5e1; }}
-            .header {{ background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #ffffff; padding: 25px 30px; text-align: left; }}
-            .header h1 {{ margin: 0; font-size: 22px; font-weight: 800; }}
-            .header p {{ margin: 6px 0 0; opacity: 0.85; font-size: 13px; }}
-            .content {{ padding: 25px; }}
-            .kpi-box {{ display: inline-block; width: 48%; background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 8px; padding: 15px; margin-bottom: 20px; box-sizing: border-box; }}
-            .kpi-num {{ font-size: 24px; font-weight: 900; color: #1e3a8a; }}
-            .kpi-label {{ font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; margin-top: 2px; }}
-            table {{ width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 12px; }}
-            th {{ background-color: #f1f5f9; color: #334155; padding: 10px; text-align: left; font-size: 11px; text-transform: uppercase; font-weight: 800; border-bottom: 2px solid #cbd5e1; }}
-            .footer {{ background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 18px; text-align: center; font-size: 12px; color: #64748b; }}
-            .btn {{ display: inline-block; background-color: #2563eb; color: #ffffff !important; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 13px; margin-top: 20px; }}
-        </style>
+      <meta charset="utf-8">
+      <title>{zone_title} - BidCoop</title>
     </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>⚡ {title}</h1>
-                <p>{subtitle} — Fecha: {today_str}</p>
-            </div>
-            <div class="content">
-                <div style="margin-bottom: 20px;">
-                    <div class="kpi-box" style="margin-right: 2%;">
-                        <div class="kpi-num">{len(ops):,}</div>
-                        <div class="label kpi-label">Compras Ágiles Activas</div>
-                    </div>
-                    <div class="kpi-box">
-                        <div class="kpi-num" style="color: #059669;">${total_monto:,.0f} CLP</div>
-                        <div class="label kpi-label">Presupuesto Consolidado</div>
-                    </div>
+    <body style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f1f5f9; margin: 0; padding: 20px; color: #0f172a;">
+      <div style="max-width: 980px; margin: 0 auto; background: #ffffff; border-radius: 16px; border: 1px solid #cbd5e1; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(15,23,42,0.1);">
+        
+        <!-- Header Banner -->
+        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 30px 30px 25px 30px; color: #ffffff; border-bottom: 4px solid #00bfa5;">
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="vertical-align: middle;">
+                <div style="display: inline-block; background: #00bfa5; color: #0f2952; font-size: 10px; font-weight: 900; padding: 4px 12px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+                  BIDCOOP REPORTE DIARIO CON ADJUNTO CSV DESGLOSE COMPLETO (08:00 AM)
                 </div>
-
-                <div style="font-size: 13px; color: #334155; margin-bottom: 15px;">
-                    📎 <strong>Adjunto Oficial:</strong> Se incluye el archivo <strong>.CSV</strong> con el desglose completo de los {len(ops):,} procesos correspondientes a esta zona geográfica.
+                <h1 style="margin: 0; font-size: 22px; font-weight: 900; color: #ffffff;">
+                  {zone_title}
+                </h1>
+                <p style="margin: 5px 0 0 0; font-size: 12px; color: #94a3b8;">
+                  {zone_subtitle} — Fecha: {today_str}
+                </p>
+              </td>
+              <td style="vertical-align: middle; text-align: right; width: 80px;">
+                <div style="width: 56px; height: 56px; border-radius: 9999px; background: #ffffff; padding: 3px; border: 2px solid #00bfa5; display: inline-block; overflow: hidden;">
+                  <img src="https://bidcoop.vercel.app/bidcoop-logo.png" alt="BidCoop" width="50" height="50" style="width: 100%; height: 100%; object-fit: contain; border-radius: 9999px;" />
                 </div>
-
-                <div style="font-size: 14px; font-weight: 800; color: #0f172a; margin-top: 20px;">📋 Muestra Destacada de Mayor Presupuesto:</div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Código</th>
-                            <th>Título</th>
-                            <th>Organismo</th>
-                            <th>Región</th>
-                            <th style="text-align: right;">Monto Estimado</th>
-                            <th style="text-align: right;">Precio Óptimo AI</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {rows_html}
-                    </tbody>
-                </table>
-
-                <div style="text-align: center; margin-top: 25px;">
-                    <a href="https://bidcoop.vercel.app" class="btn" target="_blank">🚀 Abrir Plataforma BidCoop en Vivo</a>
-                </div>
-            </div>
-            <div class="footer">
-                BidCoop Intelligence — Plataforma Avanzada de Abastecimiento & Licitaciones B2B<br>
-                Reporte diario oficial generado el {today_str} a las {datetime.datetime.now().strftime('%H:%M')} hrs.
-            </div>
+              </td>
+            </tr>
+          </table>
         </div>
+
+        <!-- Body Content -->
+        <div style="padding: 25px;">
+          <!-- KPI Summary Box -->
+          <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <tr>
+              <td style="width: 50%; padding-right: 8px;">
+                <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #059669; padding: 14px; border-radius: 10px;">
+                  <div style="font-size: 10px; font-weight: 900; color: #059669; text-transform: uppercase;">Total Compras Ágiles Activas</div>
+                  <div style="font-size: 24px; font-weight: 900; color: #0f172a; margin-top: 2px;">{len(ops):,} Oportunidades</div>
+                </div>
+              </td>
+              <td style="width: 50%; padding-left: 8px;">
+                <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-left: 4px solid #0284c7; padding: 14px; border-radius: 10px;">
+                  <div style="font-size: 10px; font-weight: 900; color: #0284c7; text-transform: uppercase;">Presupuesto Consolidado CLP</div>
+                  <div style="font-size: 24px; font-weight: 900; color: #0f172a; margin-top: 2px;">${total_monto:,.0f} CLP</div>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Main Interactive Table -->
+          <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; overflow: hidden;">
+            <div style="background: #0f172a; color: #ffffff; padding: 12px 16px; font-size: 12px; font-weight: 900; display: flex; justify-content: space-between;">
+              <span>📋 INFORME COMPLETO ({len(ops):,} COMPRAS ÁGILES DISPONIBLES)</span>
+            </div>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; background: #ffffff;">
+              <thead>
+                <tr style="background: #f1f5f9; color: #475569; font-size: 10px; font-weight: 900; text-transform: uppercase; border-bottom: 2px solid #cbd5e1;">
+                  <th style="padding: 10px; width: 22%;">CÓDIGO / EMPRESA</th>
+                  <th style="padding: 10px; width: 24%;">ORGANISMO & REGIÓN</th>
+                  <th style="padding: 10px; width: 28%;">OPORTUNIDAD</th>
+                  <th style="padding: 10px; text-align: right; width: 14%;">MONTO ESTIMADO</th>
+                  <th style="padding: 10px; text-align: center; width: 6%;">MATCH</th>
+                  <th style="padding: 10px; text-align: right; width: 6%;">CIERRE</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows_html}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Footer info -->
+          <div style="margin-top: 25px; padding: 15px; background: #f8fafc; border-radius: 10px; font-size: 11px; color: #64748b; border: 1px solid #e2e8f0; text-align: center;">
+            📎 Se adjunta la planilla <strong>.CSV</strong> con el desglose completo de compras ágiles respetando la misma estructura y formato de la plataforma.
+          </div>
+        </div>
+      </div>
     </body>
     </html>
     """
     return html
 
 def dispatch_email(subject, recipients, ops, csv_filename):
-    today_str = datetime.date.today().strftime("%d/%m/%Y")
+    today_str = datetime.date.today().strftime("%Y-%m-%d")
     csv_data = generate_csv_attachment(ops)
-    html_body = build_email_body(subject, f"{len(ops):,} Procesos de Compra Ágil", ops)
+    html_body = build_email_body(subject, f"Reporte Exclusivo {subject}", ops)
 
     msg = MIMEMultipart("mixed")
-    msg["Subject"] = f"⚡ [BidCoop 08:00 AM] {subject} ({today_str})"
-    msg["From"] = f"BidCoop Intelligence <{SMTP_USER}>"
-    msg["To"] = SMTP_USER  # Sender address in TO
+    msg["Subject"] = f"⚡ [BidCoop 08:00 AM] BIDCOOP REPORTE DIARIO CON ADJUNTO CSV DESGLOSE COMPLETO — {subject} ({today_str})"
+    msg["From"] = f"Jonathan Cooper - BidCoop Intelligence <{SMTP_USER}>"
+    msg["To"] = SMTP_USER
 
-    # Body part
     body_part = MIMEText(html_body, "html", "utf-8")
     msg.attach(body_part)
 
-    # Attachment part
     att = MIMEApplication(csv_data, _subtype="csv")
     att.add_header("Content-Disposition", "attachment", filename=csv_filename)
     msg.attach(att)
 
-    # Connect SMTP and send strictly via BCC (CCO) to recipients
     with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT) as server:
         server.login(SMTP_USER, SMTP_PASS)
         server.sendmail(SMTP_USER, recipients, msg.as_string())

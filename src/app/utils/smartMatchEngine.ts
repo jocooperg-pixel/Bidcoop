@@ -8,41 +8,7 @@ export interface SmartMatchResult {
   rubroRecomendado: string;
 }
 
-// 1. INDER-ROLL CATALOG (Inderquim) - Convenio Marco Aseo & Higiene
-const CATALOG_INDER_ROLL = [
-  { keyword: 'papel higienico', name: 'Papel Higiénico Inder-Roll (Jumbo 300m / Hoja Simple / Hoja Doble)' },
-  { keyword: 'papel higiénico', name: 'Papel Higiénico Inder-Roll (Jumbo 300m / Hoja Simple / Hoja Doble)' },
-  { keyword: 'toalla de papel', name: 'Toalla de Papel Inder-Roll (200m / 150m / Interfoliada 250h)' },
-  { keyword: 'toalla papel', name: 'Toalla de Papel Inder-Roll (200m / 150m / Interfoliada 250h)' },
-  { keyword: 'interfoliada', name: 'Toalla Interfoliada Inder-Roll 250 hojas' },
-  { keyword: 'jumbo', name: 'Papel Higiénico Jumbo Inder-Roll 300m' },
-  { keyword: 'cloro', name: 'Cloro Concentrado 10% / 5% Inderquim' },
-  { keyword: 'cloro gel', name: 'Cloro Gel Multiuso Inderquim' },
-  { keyword: 'desinfectante', name: 'Desinfectante Multiuso Lavanda / Cítrico Inderquim' },
-  { keyword: 'amonio cuaternario', name: 'Amonio Cuaternario 5ta Generación 0.5% Inderquim' },
-  { keyword: 'alcohol gel', name: 'Alcohol Gel 70% con dosificador Inderquim' },
-  { keyword: 'detergente', name: 'Detergente Líquido Concentrado Ropa/Pisos Inderquim' },
-  { keyword: 'desengrasante', name: 'Desengrasante Industrial / Cocina Inderquim' },
-  { keyword: 'lavaloza', name: 'Lavaloza Concentrado Inderquim' },
-  { keyword: 'limpiador de pisos', name: 'Limpiador de Pisos y Superficies Inderquim' },
-  { keyword: 'limpiador superficies', name: 'Limpiador de Pisos y Superficies Inderquim' },
-  { keyword: 'lustramuebles', name: 'Lustramuebles Aerosol 400ml Inderquim' },
-  { keyword: 'cera', name: 'Cera Autobrillo Incolora Inderquim' },
-  { keyword: 'suavizante', name: 'Suavizante Textil Concentrado Inderquim' },
-  { keyword: 'quitamanchas', name: 'Quitamanchas Industrial Inderquim' },
-  { keyword: 'jabón', name: 'Jabón Gel Lavamanos con Glicerina Inderquim' },
-  { keyword: 'jabon', name: 'Jabón Gel Lavamanos con Glicerina Inderquim' },
-  { keyword: 'dispensador', name: 'Dispensador Rellenable 1000ml Jabón / Alcohol Gel' },
-  { keyword: 'bolsa basura', name: 'Bolsas de Basura Pesadas 80x100cm' },
-  { keyword: 'escoba', name: 'Escobillón Plástico Industrial 40cm' },
-  { keyword: 'escobillón', name: 'Escobillón Plástico Industrial 40cm' },
-  { keyword: 'mopa', name: 'Mopa Completa Algodón 400g' },
-  { keyword: 'paño microfibra', name: 'Paño Microfibra Multiuso 40x40cm' },
-  { keyword: 'guante nitrilo', name: 'Guantes Nitrilo Azul Sin Polvo (Certificado ISP)' },
-  { keyword: 'mascarilla', name: 'Mascarillas Quirúrgicas 3 Pliegues BFE >98%' }
-];
-
-// 2. AMINORTE CATALOG - Convenio Marco Escritorio, Oficina & Computación
+// 1. AMINORTE CATALOG - Convenio Marco Escritorio, Oficina & Computación
 const CATALOG_AMINORTE = [
   { keyword: 'resma', name: 'Resma Papel Fotocopia Carta / Oficio 75g' },
   { keyword: 'papel carta', name: 'Resma Papel Carta 75g (Caja 5 resmas)' },
@@ -80,7 +46,7 @@ const CATALOG_AMINORTE = [
   { keyword: 'pintura', name: 'Pintura Esmalte al Agua Blanco Galón' }
 ];
 
-// 3. V-MOCCS CATALOG - Convenio Marco Muebles Institucionales
+// 2. V-MOCCS CATALOG - Convenio Marco Muebles Institucionales
 const CATALOG_VMOCCS = [
   { keyword: 'silla', name: 'Silla Ergonómica Operativa / Ejecutiva con Apoyo Lumbar' },
   { keyword: 'silla ergonómica', name: 'Silla Ergonómica Ejecutiva con Apoyo Lumbar y Malla' },
@@ -108,16 +74,8 @@ export function calculateSmartCatalogMatch(op: {
     (op.items || []).map(it => `${it.producto} ${it.especificacionTecnica || ''}`).join(' ')
   ).toLowerCase();
 
-  const matchedInder: string[] = [];
   const matchedAminorte: string[] = [];
   const matchedVmoccs: string[] = [];
-
-  // Match Inder-Roll
-  for (const item of CATALOG_INDER_ROLL) {
-    if (fullText.includes(item.keyword) && !matchedInder.includes(item.name)) {
-      matchedInder.push(item.name);
-    }
-  }
 
   // Match Aminorte
   for (const item of CATALOG_AMINORTE) {
@@ -133,7 +91,6 @@ export function calculateSmartCatalogMatch(op: {
     }
   }
 
-  const countInder = matchedInder.length;
   const countAminorte = matchedAminorte.length;
   const countVmoccs = matchedVmoccs.length;
 
@@ -142,12 +99,7 @@ export function calculateSmartCatalogMatch(op: {
   let bestMatchedProducts: string[] = [];
   let rubroRecomendado = 'Artículos de Escritorio y Oficina';
 
-  if (countInder > 0 && countInder >= countAminorte && countInder >= countVmoccs) {
-    bestCompany = 'Inder-Roll';
-    bestMatchedProducts = matchedInder;
-    rubroRecomendado = 'Aseo e Higiene';
-    bestScore = Math.min(99, 82 + countInder * 5);
-  } else if (countVmoccs > 0 && countVmoccs >= countAminorte) {
+  if (countVmoccs > 0 && countVmoccs >= countAminorte) {
     bestCompany = 'V-MOCCS';
     bestMatchedProducts = matchedVmoccs;
     rubroRecomendado = 'Artículos de Escritorio y Oficina';
@@ -160,11 +112,7 @@ export function calculateSmartCatalogMatch(op: {
     bestScore = Math.min(99, 82 + countAminorte * 5);
   } else {
     // Fallback classification if no explicit product match
-    if (fullText.includes('aseo') || fullText.includes('higiene') || fullText.includes('limpieza') || fullText.includes('cloro')) {
-      bestCompany = 'Inder-Roll';
-      rubroRecomendado = 'Aseo e Higiene';
-      bestScore = 80;
-    } else if (fullText.includes('mueble') || fullText.includes('silla')) {
+    if (fullText.includes('mueble') || fullText.includes('silla') || fullText.includes('estante')) {
       bestCompany = 'V-MOCCS';
       rubroRecomendado = 'Artículos de Escritorio y Oficina';
       bestScore = 82;
@@ -191,13 +139,6 @@ export function calculateSmartCatalogMatch(op: {
   };
 }
 
-/**
- * Helper function for match score badge styling based on corporate rules:
- * - >= 90%: Vivid Green (Excelente Match)
- * - 80% - 89%: Corporate Blue (Buen Match)
- * - 70% - 79%: Warm Amber (Match Moderado)
- * - < 70%: Muted Red / Slate (Bajo Match)
- */
 export function getMatchScoreBadgeStyle(score: number): {
   badgeBg: string;
   badgeText: string;
@@ -239,4 +180,3 @@ export function getMatchScoreBadgeStyle(score: number): {
     };
   }
 }
-

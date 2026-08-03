@@ -42,8 +42,9 @@ export default function Home() {
   const [activeSubSection, setActiveSubSection] = useState<string>('resumen');
   const [darkMode, setDarkMode] = useState<boolean>(false);
   
-  // Profile Context Toggle: Consolidado, Inder-Roll (Aseo), Aminorte (Escritorio), V-MOCCS (Escritorio / Convenio Marco)
+  // Profile Context Toggle: Consolidado, Aminorte (Escritorio), V-MOCCS (Escritorio / Convenio Marco)
   const [activeCompany, setActiveCompany] = useState<Empresa>('Consolidado');
+
   
   // Last sync timestamp state
   const [lastSyncTime, setLastSyncTime] = useState<string>('Pendiente');
@@ -96,13 +97,20 @@ export default function Home() {
   // Filtered lists based on active company context and setup preferences
   const filteredOportunidades = useMemo(() => {
     let list = oportunidades;
-    if (activeCompany === 'Inder-Roll') {
-      list = oportunidades.filter(o => o.empresaMatch === 'Inder-Roll');
-    } else if (activeCompany === 'Aminorte') {
-      list = oportunidades.filter(o => o.empresaMatch === 'Aminorte');
+    if (activeCompany === 'Aminorte') {
+      list = oportunidades.filter(o => {
+        if (o.empresaMatch !== 'Aminorte') return false;
+        if (o.modalidad === 'Compra Ágil') {
+          const fullText = (o.titulo + ' ' + o.descripcion + ' ' + o.rubro).toLowerCase();
+          return fullText.includes('escritorio');
+        }
+        return true;
+      });
     } else if (activeCompany === 'V-MOCCS') {
       list = oportunidades.filter(o => o.empresaMatch === 'V-MOCCS' || o.empresaMatch === 'Aminorte');
     }
+
+
 
     // Apply global preferences
     list = list.filter(o => 
@@ -116,12 +124,10 @@ export default function Home() {
   }, [oportunidades, activeCompany, globalPrefs]);
 
   const filteredNotifications = useMemo(() => {
-    if (activeCompany === 'Inder-Roll') {
-      return notifications.filter(n => !n.empresaMatch || n.empresaMatch === 'Inder-Roll');
-    }
     if (activeCompany === 'Aminorte') {
       return notifications.filter(n => !n.empresaMatch || n.empresaMatch === 'Aminorte');
     }
+
     if (activeCompany === 'V-MOCCS') {
       return notifications.filter(n => !n.empresaMatch || n.empresaMatch === 'V-MOCCS' || n.empresaMatch === 'Aminorte');
     }
@@ -535,7 +541,8 @@ export default function Home() {
           title.toLowerCase().includes('jabón') ||
           title.toLowerCase().includes('papel hig');
           
-        const companyMatch = isAseo ? 'Inder-Roll' : 'Aminorte';
+        const companyMatch = 'Aminorte';
+
 
         const codeUpper = (item.CodigoExterno || cleanCode).toUpperCase();
         const titleLower = title.toLowerCase();

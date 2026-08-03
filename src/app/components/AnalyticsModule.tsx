@@ -36,7 +36,8 @@ export default function AnalyticsModule({
   // Competitors market share
   const competitorsShare = [
     { name: 'Prisa S.A. Logística', value: 38 },
-    { name: 'Inderquim S.A. (Nosotros)', value: 25 },
+    { name: 'Aminorte SpA (Nosotros)', value: 25 },
+
     { name: 'Dimeiggs Distribuidora', value: 20 },
     { name: 'Distribuidora del Sur', value: 12 },
     { name: 'Comercial Ramos SpA', value: 5 }

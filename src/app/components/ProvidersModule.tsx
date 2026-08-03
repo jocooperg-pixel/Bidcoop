@@ -187,8 +187,8 @@ export default function ProvidersModule() {
                 className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-xl text-xs focus:ring-2 focus:ring-blue-500 outline-none text-slate-800 dark:text-white"
               >
                 <option value="Todos">Todos los Convenios</option>
-                <option value="Aseo e Higiene">Aseo e Higiene (Inder-Roll)</option>
-                <option value="Artículos de Escritorio y Oficina">Artículos de Escritorio y Oficina (Aminorte)</option>
+                <option value="Artículos de Escritorio y Oficina">Artículos de Escritorio y Oficina (Aminorte / V-MOCCS)</option>
+
               </select>
             </div>
 
@@ -408,9 +408,10 @@ export default function ProvidersModule() {
                 <span className="text-xl p-1.5 rounded-lg bg-blue-50 dark:bg-blue-950/40">🧼</span>
                 <div>
                   <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
-                    Convenio Aseo e Higiene
+                    Convenio Artículos de Escritorio y Oficina
                   </h3>
-                  <p className="text-[10px] text-slate-450 dark:text-slate-500 font-medium">INDER-ROLL / Winkler e Inderquim</p>
+                  <p className="text-[10px] text-slate-450 dark:text-slate-500 font-medium">Aminorte & V-MOCCS</p>
+
                 </div>
               </div>
               <span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 text-[9px] font-black">

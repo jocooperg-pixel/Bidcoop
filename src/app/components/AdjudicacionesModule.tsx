@@ -103,11 +103,12 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     direccionEntrega: 'ALVAREZ N°1532, VIÑA DEL MAR',
     region: 'Región de Valparaíso',
     plazoEntrega: '4 dias',
-    observaciones: 'ADJUDICACIÓN A INDER-ROLL PRODUCTOS DE ASEO SPA POR CUMPLIR TOTALMENTE ESPECIFICACIONES TÉCNICAS SANITARIAS.',
-    postuladoPor: '[JCOOPER] (INDER-ROLL)',
-    empresaMatch: 'Inder-Roll',
+    observaciones: 'ADJUDICACIÓN A AMINORTE DISTRIBUIDORA SPA POR CUMPLIR TOTALMENTE ESPECIFICACIONES TÉCNICAS.',
+    postuladoPor: '[JCOOPER] (AMINORTE)',
+    empresaMatch: 'Aminorte',
     participantes: [
-      { posicion: 1, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 2621848, montoIvaInc: 3120000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
+
+      { posicion: 1, nombre: 'AMINORTE DISTRIBUIDORA SPA', rut: '76.882.110-3', montoNeto: 2621848, montoIvaInc: 3120000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
       { posicion: 2, nombre: 'DIVERSEY CHILE S.A.', rut: '96.882.900-1', montoNeto: 2850000, montoIvaInc: 3391500, resultado: 'No adjudicado' },
       { posicion: 3, nombre: 'QUÍMICA INDUSTRIAL ANTOFAGASTA LTDA', rut: '77.201.880-9', montoNeto: 2990000, montoIvaInc: 3558100, resultado: 'No adjudicado' }
     ]
@@ -153,7 +154,8 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     plazoEntrega: '7 dias',
     observaciones: 'OFERTA ADJUDICADA A INDER-ROLL PRODUCTOS DE ASEO SPA POR CUMPLIMIENTO TOTAL Y MENOR EVALUACIÓN ECONÓMICA.',
     postuladoPor: '[JCOOPER] (INDER-ROLL)',
-    empresaMatch: 'Inder-Roll',
+    empresaMatch: 'Aminorte',
+
     participantes: [
       { posicion: 1, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 15546218, montoIvaInc: 18500000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
       { posicion: 2, nombre: 'CLEAN CHILE S.A.', rut: '96.771.200-4', montoNeto: 16800000, montoIvaInc: 19992000, resultado: 'No adjudicado' },
@@ -176,7 +178,8 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     plazoEntrega: '10 dias',
     observaciones: 'PROCESO FINALIZADO. EVALUACIÓN DE OFERTAS TÉCNICAS COMPLETADA.',
     postuladoPor: '[JCOOPER] (INDER-ROLL)',
-    empresaMatch: 'Inder-Roll',
+    empresaMatch: 'Aminorte',
+
     participantes: [
       { posicion: 1, nombre: 'QUÍMICA VIRUTEX ILKO S.A.', rut: '96.510.200-7', montoNeto: 27500000, montoIvaInc: 32725000, resultado: 'ADJUDICADO' },
       { posicion: 2, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 28991596, montoIvaInc: 34500000, resultado: 'No adjudicado', esNuestraEmpresa: true },
@@ -247,7 +250,8 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     plazoEntrega: '7 dias',
     observaciones: 'GRANDE COMPRA RESUELTA. OFERTA GANADORA CORRESPONDE A CMPC TISSUE S.A.',
     postuladoPor: '[JCOOPER] (INDER-ROLL)',
-    empresaMatch: 'Inder-Roll',
+    empresaMatch: 'Aminorte',
+
     participantes: [
       { posicion: 1, nombre: 'CMPC TISSUE S.A.', rut: '96.520.110-2', montoNeto: 54000000, montoIvaInc: 64260000, resultado: 'ADJUDICADO' },
       { posicion: 2, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 56722689, montoIvaInc: 67500000, resultado: 'No adjudicado', esNuestraEmpresa: true },
@@ -273,7 +277,8 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     plazoEntrega: '5 dias',
     observaciones: 'ORDEN DE COMPRA EMITIDA DIRECTAMENTE DESDE LA TIENDA DE CONVENIO MARCO DE MERCADO PÚBLICO. ACEPTADA Y EN DESPACHO.',
     postuladoPor: '[JCOOPER] (INDER-ROLL)',
-    empresaMatch: 'Inder-Roll',
+    empresaMatch: 'Aminorte',
+
     participantes: [
       { posicion: 1, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 15546218, montoIvaInc: 18500000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
       { posicion: 2, nombre: 'TIENDA CONVENIO MARCO ASEO S.A.', rut: '96.881.000-4', montoNeto: 16500000, montoIvaInc: 19635000, resultado: 'No adjudicado' }
@@ -342,7 +347,8 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     plazoEntrega: '7 dias',
     observaciones: 'ORDEN DE COMPRA ACEPTADA EN CATÁLOGO MARCO VIGENTE DE PRODUCTOS DE ASEO.',
     postuladoPor: '[JCOOPER] (INDER-ROLL)',
-    empresaMatch: 'Inder-Roll',
+    empresaMatch: 'Aminorte',
+
     participantes: [
       { posicion: 1, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 36500000, montoIvaInc: 43435000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
       { posicion: 2, nombre: 'INSUQUIM CHILE S.A.', rut: '77.301.990-2', montoNeto: 39500000, montoIvaInc: 47005000, resultado: 'No adjudicado' }
@@ -376,9 +382,9 @@ export default function AdjudicacionesModule({
       if (!p.oportunidadCodigo) return;
       if (!map.has(p.oportunidadCodigo)) {
         const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
-        const company = p.empresaMatch || op?.empresaMatch || 'Inder-Roll';
-        const companyFullName = company === 'Inder-Roll' ? 'INDER-ROLL PRODUCTOS DE ASEO SPA' : (company === 'Aminorte' ? 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA' : 'V-MOCCS SPA');
-        const companyRut = company === 'Inder-Roll' ? '76.123.456-7' : (company === 'Aminorte' ? '76.882.110-3' : '77.235.702-8');
+        const company = p.empresaMatch || op?.empresaMatch || 'Aminorte';
+        const companyFullName = company === 'Aminorte' ? 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA' : 'V-MOCCS SPA';
+        const companyRut = company === 'Aminorte' ? '76.882.110-3' : '77.235.702-8';
         const isWinner = p.estado === 'Adjudicada';
         const mod: AdjudicacionDetalle['modalidad'] = p.modalidad || op?.modalidad || (p.oportunidadCodigo.includes('COT') ? 'Compra Ágil' : (p.oportunidadCodigo.includes('GC') ? 'Grandes Compras' : 'Licitación'));
 
@@ -437,9 +443,9 @@ export default function AdjudicacionesModule({
       if (!oc.codigoOC) return;
       if (!map.has(oc.codigoOC)) {
         const op = oportunidades.find(o => o.id === oc.oportunidadId || o.codigo === oc.oportunidadId);
-        const company = op?.empresaMatch || 'Inder-Roll';
-        const companyFullName = company === 'Inder-Roll' ? 'INDER-ROLL PRODUCTOS DE ASEO SPA' : (company === 'Aminorte' ? 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA' : 'V-MOCCS SPA');
-        const companyRut = company === 'Inder-Roll' ? '76.123.456-7' : (company === 'Aminorte' ? '76.882.110-3' : '77.235.702-8');
+        const company = op?.empresaMatch || 'Aminorte';
+        const companyFullName = company === 'Aminorte' ? 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA' : 'V-MOCCS SPA';
+        const companyRut = company === 'Aminorte' ? '76.882.110-3' : '77.235.702-8';
         const netAmount = Math.round(oc.monto / 1.19);
 
         map.set(oc.codigoOC, {
@@ -536,7 +542,8 @@ export default function AdjudicacionesModule({
           },
           {
             posicion: 2,
-            nombre: op.empresaMatch === 'Inder-Roll' ? 'INDER-ROLL SPA' : 'AMINORTE SPA',
+            nombre: op.empresaMatch === 'V-MOCCS' ? 'V-MOCCS SPA' : 'AMINORTE SPA',
+
             rut: '76.882.110-3',
             montoNeto: Math.round(op.monto * 0.92),
             montoIvaInc: Math.round(op.monto * 0.92 * 1.19),
@@ -587,7 +594,8 @@ export default function AdjudicacionesModule({
       participantes: [
         {
           posicion: 1,
-          nombre: activeCompany === 'Inder-Roll' ? 'INDER-ROLL PRODUCTOS DE ASEO SPA' : 'AMINORTE DISTRIBUIDORA SPA',
+          nombre: activeCompany === 'V-MOCCS' ? 'V-MOCCS SPA' : 'AMINORTE DISTRIBUIDORA SPA',
+
           rut: '76.882.110-3',
           montoNeto: 3950000,
           montoIvaInc: 4700500,
@@ -628,7 +636,7 @@ export default function AdjudicacionesModule({
     window.print();
   };
 
-  const activePortalName = activeCompany === 'Consolidado' ? 'AMINORTE / INDER-ROLL / V-MOCCS / BIDCOOP' : activeCompany;
+  const activePortalName = activeCompany === 'Consolidado' ? 'AMINORTE / V-MOCCS / BIDCOOP' : activeCompany;
   const activeDomain = activeCompany === 'Consolidado' ? 'WWW.BIDCOOP.CL' : `WWW.${activeCompany.toLowerCase()}.CL`;
 
   return (

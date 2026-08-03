@@ -1,13 +1,8 @@
 name: BidCoop — Sync Automático Mercado Público
 
 on:
-  schedule:
-    # Chile UTC-4 → 08:00 AM = 12:00 UTC, 11:00 AM = 15:00 UTC, 14:00 PM = 18:00 UTC, 17:00 PM = 21:00 UTC
-    - cron: '0 12 * * *'   # 08:00 AM Chile → Sync + CORREOS
-    - cron: '0 15 * * *'   # 11:00 AM Chile → Sync silencioso
-    - cron: '0 18 * * *'   # 14:00 PM Chile → Sync silencioso
-    - cron: '0 21 * * *'   # 17:00 PM Chile → Sync silencioso
-  workflow_dispatch:        # También permite ejecutar manualmente desde GitHub
+  workflow_dispatch:        # Permite ejecutar manualmente desde GitHub cuando el usuario lo solicite
+
 
 jobs:
   sync-and-deploy:
@@ -214,16 +209,5 @@ jobs:
           git diff --cached --quiet || git commit -m "sync: Auto $(date '+%Y-%m-%d %H:%M UTC') — API Mercado Público"
           git push
 
-      - name: Enviar correos 8 AM Chile (solo a las 12:00 UTC)
-        if: github.event.schedule == '0 12 * * *' || github.event_name == 'workflow_dispatch'
-        run: |
-          echo "Esperando 60s para que Vercel complete el deploy..."
-          sleep 60
-          echo "Enviando reportes de correo..."
-          RESPONSE=$(curl -s -X POST "https://bidcoop.vercel.app/api/send-email-report" \
-            -H "Content-Type: application/json" \
-            -d '{}' \
-            --max-time 180)
-          echo "Respuesta: $RESPONSE"
-          SENT=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('dispatchesSent',0))" 2>/dev/null || echo "?")
-          echo "✅ $SENT reportes de correo enviados."
+      # Pasos de envío automático de correos desactivados por instrucción explícita del usuario
+

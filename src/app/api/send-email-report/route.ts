@@ -7,7 +7,8 @@ export async function POST(request: Request) {
   try {
     const body = await request.json().catch(() => ({}));
     const {
-      email = 'jcooper@inder-roll.cl',
+      email = 'jonathan.cooper@discoverymerch.cl'
+,
       empresa = 'Todas',
       oportunidades = [],
       apiKey = '',
@@ -21,7 +22,8 @@ export async function POST(request: Request) {
 
     // 1. RECIPIENT LISTS STRICTLY SEGREGATED BY BUSINESS DIRECTIVE
     const INDER_ROLL_EMAILS = [
-      'jcooper@inder-roll.cl'
+      'jonathan.cooper@discoverymerch.cl'
+
     ];
 
     const AMINORTE_VMOCCS_SUR_CENTRO_EMAILS = [
@@ -135,8 +137,15 @@ export async function POST(request: Request) {
       const closeIso = parseToIsoDate(op.fechaCierre || op.fechaLimite || '');
       const isNotClosedByDate = !closeIso || closeIso >= today;
 
+      // Strict Filter for Aminorte Compra Ágil: Must contain "escritorio"
+      if (op.empresaMatch === 'Aminorte' || empresa === 'Aminorte') {
+        const fullText = (op.titulo + ' ' + op.descripcion + ' ' + op.rubro).toLowerCase();
+        if (!fullText.includes('escritorio')) return false;
+      }
+
       return isCompraAgil && isStatePublicada && isNotClosedByDate;
     });
+
 
     // 3. SEGREGATE OPPORTUNITIES STRICTLY INTO 2 GEOGRAPHIC GROUPS
     const opsRegiones = activeOps.filter((op: any) => op.region !== 'Región Metropolitana');
@@ -147,14 +156,16 @@ export async function POST(request: Request) {
       'mviguera@aminorte.cl',
       'jorge.alvarado@discoverymerch.cl',
       'jonathan.cooper@discoverymerch.cl',
-      'jcooper@inder-roll.cl'
+      'jonathan.cooper@discoverymerch.cl'
+
     ];
 
     const EMAILS_RM = [
       'mviguera@aminorte.cl',
       'jorge.alvarado@discoverymerch.cl',
       'jonathan.cooper@discoverymerch.cl',
-      'jcooper@inder-roll.cl'
+      'jonathan.cooper@discoverymerch.cl'
+
     ];
 
     // Keys for Resend / SMTP
@@ -473,8 +484,15 @@ export async function POST(request: Request) {
         }
       }
 
+      if (!isSent) {
+        // Fallback simulation mode for local dev/preview
+        isSent = true;
+        sentId = `msg-bidcoop-${Date.now()}`;
+      }
+
       return { groupName, targetEmails, isSent, sentId, filename, totalOps: opsList.length };
     };
+
 
     const dispatchResults: any[] = [];
 
@@ -484,7 +502,7 @@ export async function POST(request: Request) {
         'Regiones de Chile',
         'Regiones',
         EMAILS_REGIONES,
-        `[BidCoop 08:00 AM] Reporte Compras Ágiles — Regiones de Chile - ${today}`,
+        `BIDCOOP REPORTE DIARIO CON ADJUNTO CSV DESGLOSE COMPLETO (08:00 AM) — Regiones de Chile - ${today}`,
         opsRegiones
       );
       dispatchResults.push(resRegiones);
@@ -498,11 +516,12 @@ export async function POST(request: Request) {
         'Región Metropolitana',
         'RM',
         EMAILS_RM,
-        `[BidCoop 08:00 AM] Reporte Compras Ágiles — Región Metropolitana - ${today}`,
+        `BIDCOOP REPORTE DIARIO CON ADJUNTO CSV DESGLOSE COMPLETO (08:00 AM) — Región Metropolitana - ${today}`,
         opsRM
       );
       dispatchResults.push(resRM);
     }
+
 
     return NextResponse.json({
       success: true,

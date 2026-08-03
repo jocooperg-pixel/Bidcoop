@@ -14,7 +14,8 @@ export default function ReportsNotificationsModule({
   darkMode = false
 }: ReportsNotificationsModuleProps) {
   // Config state for 8:00 AM daily reports
-  const [selectedCompany, setSelectedCompany] = useState<string>('Todas'); // 'Inder-Roll', 'Aminorte', 'V-MOCCS', 'Todas'
+  const [selectedCompany, setSelectedCompany] = useState<string>('Todas'); // 'Aminorte', 'V-MOCCS', 'Todas'
+
   const [reportTime, setReportTime] = useState<string>('08:00');
   const [autoEmailEnabled, setAutoEmailEnabled] = useState<boolean>(true);
   const [whatsappPushEnabled, setWhatsappPushEnabled] = useState<boolean>(true);
@@ -40,9 +41,17 @@ export default function ReportsNotificationsModule({
       const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
       const matchModalidad = op.modalidad === 'Compra Ágil';
       const matchEstado = op.estado === 'Publicada';
+      
+      // Strict Filter for Aminorte Compra Ágil: Must contain "escritorio"
+      if (op.empresaMatch === 'Aminorte' || selectedCompany === 'Aminorte') {
+        const fullText = (op.titulo + ' ' + op.descripcion + ' ' + op.rubro).toLowerCase();
+        if (!fullText.includes('escritorio')) return false;
+      }
+
       return matchCompany && matchRubro && matchModalidad && matchEstado;
     });
   }, [oportunidades, selectedCompany, filterRubro]);
+
 
   // Postulations for follow-up emails
   const postulationsList = useMemo(() => {
@@ -109,7 +118,7 @@ export default function ReportsNotificationsModule({
     setTimeout(() => setReportSuccessMsg(null), 5000);
   };
 
-  const handleSendTestEmail = async (targetEmail: string = 'jocooper@inder-roll.cl', groupType: 'InderRoll' | 'SurCentro' | 'Metropolitana' | 'Todas' = 'Todas') => {
+  const handleSendTestEmail = async (targetEmail: string = 'jonathan.cooper@discoverymerch.cl', groupType: 'SurCentro' | 'Metropolitana' | 'Todas' = 'Todas') => {
     try {
       setSendingEmail(true);
       const res = await fetch('/api/send-email-report', {
@@ -145,40 +154,8 @@ export default function ReportsNotificationsModule({
     }
   };
 
-  const handleOpenMailClientInderRoll = () => {
-    const today = new Date().toISOString().split('T')[0];
-    const targetEmails = 'jcooper@inder-roll.cl';
-    const targetOps = companyFilteredOps.filter(o => o.empresaMatch === 'Inder-Roll' || o.rubro === 'Aseo e Higiene');
-    
-    const totalOps = targetOps.length > 0 ? targetOps.length : companyFilteredOps.length;
-    const opsToUse = targetOps.length > 0 ? targetOps : companyFilteredOps;
-    const totalMonto = opsToUse.reduce((acc, curr) => acc + curr.monto, 0);
-    const subject = encodeURIComponent(`[BidCoop 08:00 AM] Compras Ágiles Inder-Roll - (${today})`);
-
-    let bodyText = `Estimado Jonathan Cooper (Inder-Roll),\n\n`;
-    bodyText += `Se presenta el reporte de Compras Ágiles activas para Inder-Roll (${today}):\n`;
-    bodyText += `- Compras Ágiles Activas: ${totalOps} Procesos\n`;
-    bodyText += `- Presupuesto Total CLP: $${totalMonto.toLocaleString('es-CL')} CLP\n\n`;
-    bodyText += `=========================================================\n`;
-    bodyText += `DESGLOSE DE PROCESOS INDER-ROLL (MUESTRA DESTACADA):\n`;
-    bodyText += `=========================================================\n\n`;
-
-    // Safely limit to top 12 items to stay under 2000 chars mailto limit
-    opsToUse.slice(0, 12).forEach(op => {
-      const winPrice = Math.round(op.monto * 0.94);
-      bodyText += `• CÓDIGO: ${op.codigo}\n`;
-      bodyText += `  ORGANISMO: ${op.organismo} (${op.region})\n`;
-      bodyText += `  PROCESO: ${op.titulo}\n`;
-      bodyText += `  MONTO: $${op.monto.toLocaleString('es-CL')} CLP | PRECIO AI (94%): $${winPrice.toLocaleString('es-CL')} CLP\n`;
-      bodyText += `  CIERRE: ${op.fechaCierre}\n\n`;
-    });
-
-    if (totalOps > 12) {
-      bodyText += `\n* (Consulte los ${totalOps} procesos completos ingresando a la plataforma BidCoop).\n\n`;
-    }
-
-    bodyText += `Atentamente,\nPlataforma Avanzada de Abastecimiento BidCoop © 2026`;
-    window.open(`mailto:${targetEmails}?subject=${subject}&body=${encodeURIComponent(bodyText)}`, '_blank');
+  const handleOpenMailClient = () => {
+    handleOpenMailClientRegional('Todas');
   };
 
   const handleOpenMailClientRegional = (zona: 'SurCentro' | 'Metropolitana' | 'Todas' = 'Todas') => {
@@ -242,13 +219,9 @@ export default function ReportsNotificationsModule({
     }
   };
 
-  const handleOpenMailClient = () => {
-    handleOpenMailClientRegional('Todas');
-  };
-
   // Generate simulated postulation email preview
   const getPostulationEmailTemplate = (op: Oportunidad) => {
-    const company = op.empresaMatch || 'Inder-Roll';
+    const company = op.empresaMatch || 'Aminorte';
     const emailSubject = `[BidCoop - ${company}] Seguimiento de Postulación: ${op.codigo} - ${op.organismo}`;
     const winPrice = Math.round(op.monto * 0.94);
 
@@ -256,9 +229,7 @@ export default function ReportsNotificationsModule({
     if (op.estado === 'Adjudicada') statusBadgeColor = 'bg-emerald-100 text-emerald-800 border-emerald-300';
     if (op.estado === 'En Evaluación') statusBadgeColor = 'bg-amber-100 text-amber-800 border-amber-300';
 
-    const recipient = company === 'Inder-Roll' 
-      ? 'jcooper@inder-roll.cl' 
-      : 'mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl';
+    const recipient = 'jonathan.cooper@discoverymerch.cl';
 
     return {
       subject: emailSubject,
@@ -336,7 +307,7 @@ export default function ReportsNotificationsModule({
           
           {/* Dispatch Button 1: Inder-Roll */}
           <button
-            onClick={() => handleSendTestEmail('jcooper@inder-roll.cl', 'InderRoll')}
+            onClick={() => handleSendTestEmail('jonathan.cooper@discoverymerch.cl', 'Todas')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -345,12 +316,12 @@ export default function ReportsNotificationsModule({
                 🧹
               </div>
               <div className="text-left">
-                <div className="font-extrabold text-xs leading-snug">Enviar Correo Inder-Roll</div>
-                <div className="text-[10px] text-emerald-100 font-medium">jcooper@inder-roll.cl</div>
+                <div className="font-extrabold text-xs leading-snug">Enviar Correo Principal</div>
+                <div className="text-[10px] text-emerald-100 font-medium">jonathan.cooper@discoverymerch.cl</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
-              {sendingEmail ? 'Enviando...' : 'Enviar Inder'}
+              {sendingEmail ? 'Enviando...' : 'Enviar'}
             </span>
           </button>
 
@@ -441,10 +412,9 @@ export default function ReportsNotificationsModule({
               onChange={(e) => setSelectedCompany(e.target.value)}
               className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-4 pr-10 py-2.5 rounded-xl border border-slate-700 hover:border-sky-500 shadow-md focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer"
             >
-              <option value="Todas">📊 Consolidado Holding (Todas las Empresas)</option>
-              <option value="Inder-Roll">🧹 Inder-Roll SpA (Aseo e Higiene)</option>
-              <option value="Aminorte">📄 Aminorte SpA (Oficina & Librería)</option>
-              <option value="V-MOCCS">✏️ V-MOCCS SpA (Oficina & Librería)</option>
+              <option value="Todas">Todas las Empresas (Consolidado)</option>
+              <option value="Aminorte">📄 Aminorte SpA (Artículos de Escritorio / Tecnología)</option>
+              <option value="V-MOCCS">🪑 V-MOCCS SpA (Mobiliario)</option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-sky-400">
               ▼
@@ -630,13 +600,13 @@ export default function ReportsNotificationsModule({
                         </td>
                         <td className="py-3 px-4">
                           <span className={`px-2 py-1 rounded-md text-[11px] font-black ${
-                            op.empresaMatch === 'Inder-Roll'
-                              ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300'
-                              : op.empresaMatch === 'Aminorte'
+                            op.empresaMatch === 'Aminorte'
                               ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300'
                               : 'bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300'
                           }`}>
-                            {op.empresaMatch || 'Inder-Roll'}
+
+                            {op.empresaMatch || 'Aminorte'}
+
                           </span>
                         </td>
                         <td className="py-3 px-4 text-slate-500 font-medium">
@@ -665,7 +635,8 @@ export default function ReportsNotificationsModule({
                 Sistema de Correos Transaccionales de Seguimiento Segmentado
               </h4>
               <p className="text-xs text-amber-800 dark:text-amber-300">
-                Cada correo de seguimiento se genera con la imagen corporativa de la empresa correspondiente (<strong>Inder-Roll SpA</strong>, <strong>Aminorte SpA</strong>, o <strong>V-MOCCS SpA</strong>), conteniendo únicamente sus postulaciones propias.
+                Cada correo de seguimiento se genera con la imagen corporativa de la empresa correspondiente (<strong>Aminorte SpA</strong> o <strong>V-MOCCS SpA</strong>), conteniendo únicamente sus postulaciones propias.
+
               </p>
             </div>
           </div>

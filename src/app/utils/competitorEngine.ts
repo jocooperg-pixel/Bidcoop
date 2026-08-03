@@ -29,13 +29,13 @@ export function getCompetitorsForOpportunity(
   const isAseo = op.rubro === 'Aseo e Higiene';
   const isMueble = (op.rubro === 'Artículos de Escritorio y Oficina' && (op.titulo || '').toLowerCase().includes('silla')) || (op.titulo || '').toLowerCase().includes('mueble');
   
-  const ourCompany = op.empresaMatch || 'Inder-Roll';
+  const ourCompany = op.empresaMatch || 'Aminorte';
   const ourAmount = op.monto || 3500000;
   
   // RUTs oficiales Holding
-  let ourRut = '76.990.100-K'; // Inder-Roll
-  if (ourCompany === 'Aminorte') ourRut = '77.410.820-3';
+  let ourRut = '77.410.820-3'; // Aminorte
   if (ourCompany === 'V-MOCCS') ourRut = '76.105.940-8';
+
 
   // 1. REGLA ESTRICTA DE PARTICIPACIÓN: Solo participamos si existe postulación en el tablero del Holding
   const postulaciónLocal = mockPostulaciones.find(p => 

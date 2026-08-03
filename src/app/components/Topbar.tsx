@@ -192,7 +192,8 @@ export default function Topbar({
           
           {showCompanyMenu && (
             <div className="absolute right-0 top-9 w-52 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl z-50 p-1.5 space-y-1 animate-in fade-in slide-in-from-top-2 duration-150">
-              {(['Consolidado', 'Inder-Roll', 'Aminorte', 'V-MOCCS'] as const).map((company) => (
+              {(['Consolidado', 'Aminorte', 'V-MOCCS'] as const).map((company) => (
+
                 <button
                   key={company}
                   onClick={() => {
@@ -346,7 +347,8 @@ export default function Topbar({
             <div className="absolute right-0 top-12 w-52 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl z-50 p-2 animate-in fade-in slide-in-from-top-2 duration-150">
               <div className="px-3 py-2 border-b border-slate-100 dark:border-slate-800 mb-1.5 text-slate-500 dark:text-slate-400">
                 <span className="text-[10px] font-bold block">{currentUser.email}</span>
-                <span className="text-[9px] text-slate-400 uppercase font-black tracking-wider mt-0.5">Espacio: Inderquim S.A.</span>
+                <span className="text-[9px] text-slate-400 uppercase font-black tracking-wider mt-0.5">Espacio: BidCoop Holding</span>
+
               </div>
               <button
                 onClick={() => { setShowProfile(false); }}

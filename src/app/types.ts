@@ -1,5 +1,6 @@
-export type Empresa = 'Consolidado' | 'Inder-Roll' | 'Aminorte' | 'V-MOCCS';
-export type EmpresaMatch = 'Inder-Roll' | 'Aminorte' | 'V-MOCCS';
+export type Empresa = 'Consolidado' | 'Aminorte' | 'V-MOCCS';
+export type EmpresaMatch = 'Aminorte' | 'V-MOCCS';
+
 
 export interface DocumentoAdjunto {
   nombre: string;
@@ -30,7 +31,9 @@ export interface Oportunidad {
   organismoRiesgo: 'Bajo' | 'Medio' | 'Alto';
   rubro: string;
   region: string;
+  ciudad?: string;
   monto: number;
+
   fechaPublicacion: string;
   fechaCierre: string;
   matchScore: number;

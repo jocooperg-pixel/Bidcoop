@@ -32,7 +32,8 @@ export default function ConfigModule({
 
   // Integrations states (BUG-08 FIX: Mask sensitive credentials with toggle)
   const [chileCompraKey, setChileCompraKey] = useState('cc-sandbox-99238-x7');
-  const [elasticSearchUrl, setElasticSearchUrl] = useState('https://elastic.inderquim.internal:9200');
+  const [elasticSearchUrl, setElasticSearchUrl] = useState('https://elastic.bidcoop.internal:9200');
+
   const [showChileCompraKey, setShowChileCompraKey] = useState(false);
   const [showElasticUrl, setShowElasticUrl] = useState(false);
 
