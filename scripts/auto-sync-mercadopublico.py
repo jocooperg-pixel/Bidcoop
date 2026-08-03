@@ -90,32 +90,236 @@ def strip_accents(text):
     if not text: return ""
     return ''.join(c for c in unicodedata.normalize('NFD', str(text)) if unicodedata.category(c) != 'Mn')
 
-REGION_RULES = [
-    ('Región de Arica y Parinacota', [r'\barica\b', r'\bparinacota\b', r'\bputre\b', r'\b15a?\s*region\b']),
-    ('Región de Tarapacá', [r'\btarapaca\b', r'\biquique\b', r'\balto hospicio\b', r'\b1ra?\s*region\b']),
-    ('Región de Antofagasta', [r'\bantofagasta\b', r'\bcalama\b', r'\btocopilla\b', r'\b2da?\s*region\b']),
-    ('Región de Atacama', [r'\batacama\b', r'\bcopiapo\b', r'\bvallenar\b', r'\b3ra?\s*region\b']),
-    ('Región de Coquimbo', [r'\bcoquimbo\b', r'\bla serena\b', r'\bovalle\b', r'\b4ta?\s*region\b']),
-    ('Región de Valparaíso', [r'\bvalparaiso\b', r'\bvina\b', r'\bquilpue\b', r'\bsan antonio\b', r'\bquillota\b', r'\b5ta?\s*region\b']),
-    ('Región del Libertador General Bernardo O\'Higgins', [r'\bohiggins\b', r'\brancagua\b', r'\bsan fernando\b', r'\b6ta?\s*region\b']),
-    ('Región del Maule', [r'\bmaule\b', r'\btalca\b', r'\bcurico\b', r'\blinares\b', r'\b7ma?\s*region\b']),
-    ('Región de Ñuble', [r'\bnuble\b', r'\bchillan\b', r'\bsan carlos\b', r'\b16a?\s*region\b']),
-    ('Región del Biobío', [r'\bbiobio\b', r'\bconcepcion\b', r'\btalcahuano\b', r'\blos angeles\b', r'\b8va?\s*region\b']),
-    ('Región de La Araucanía', [r'\baraucania\b', r'\btemuco\b', r'\bangol\b', r'\bvillarrica\b', r'\b9na?\s*region\b']),
-    ('Región de Los Ríos', [r'\blos rios\b', r'\bvaldivia\b', r'\bla union\b', r'\b14a?\s*region\b']),
-    ('Región de Los Lagos', [r'\blos lagos\b', r'\bpuerto montt\b', r'\bosorno\b', r'\bcastro\b', r'\b10a?\s*region\b']),
-    ('Región de Aysén del General Carlos Ibáñez del Campo', [r'\baysen\b', r'\bcoyhaique\b', r'\bpuerto aysen\b', r'\b11a?\s*region\b']),
-    ('Región de Magallanes y de la Antártica Chilena', [r'\bmagallanes\b', r'\bpunta arenas\b', r'\bnatales\b', r'\b12a?\s*region\b']),
-    ('Región Metropolitana', [r'\bmetropolitana\b', r'\bsantiago\b', r'\bprovidencia\b', r'\blas condes\b', r'\bmaipu\b', r'\bpuente alto\b', r'\brm\b'])
-]
+CHILE_COMMUNA_TO_REGION = {
+    'arica': ('Región de Arica y Parinacota', 'Arica'),
+    'parinacota': ('Región de Arica y Parinacota', 'Putre'),
+    'putre': ('Región de Arica y Parinacota', 'Putre'),
+    'general lagos': ('Región de Arica y Parinacota', 'General Lagos'),
+    'camarones': ('Región de Arica y Parinacota', 'Camarones'),
+    'iquique': ('Región de Tarapacá', 'Iquique'),
+    'alto hospicio': ('Región de Tarapacá', 'Alto Hospicio'),
+    'pozo almonte': ('Región de Tarapacá', 'Pozo Almonte'),
+    'pica': ('Región de Tarapacá', 'Pica'),
+    'huara': ('Región de Tarapacá', 'Huara'),
+    'camiña': ('Región de Tarapacá', 'Camiña'),
+    'colchane': ('Región de Tarapacá', 'Colchane'),
+    'antofagasta': ('Región de Antofagasta', 'Antofagasta'),
+    'calama': ('Región de Antofagasta', 'Calama'),
+    'tocopilla': ('Región de Antofagasta', 'Tocopilla'),
+    'mejillones': ('Región de Antofagasta', 'Mejillones'),
+    'taltal': ('Región de Antofagasta', 'Taltal'),
+    'san pedro de atacama': ('Región de Antofagasta', 'San Pedro de Atacama'),
+    'maria elena': ('Región de Antofagasta', 'María Elena'),
+    'sierra gorda': ('Región de Antofagasta', 'Sierra Gorda'),
+    'ollague': ('Región de Antofagasta', 'Ollagüe'),
+    'copiapo': ('Región de Atacama', 'Copiapó'),
+    'vallenar': ('Región de Atacama', 'Vallenar'),
+    'caldera': ('Región de Atacama', 'Caldera'),
+    'chañaral': ('Región de Atacama', 'Chañaral'),
+    'diego de almagro': ('Región de Atacama', 'Diego de Almagro'),
+    'huasco': ('Región de Atacama', 'Huasco'),
+    'freirina': ('Región de Atacama', 'Freirina'),
+    'tierra amarilla': ('Región de Atacama', 'Tierra Amarilla'),
+    'alto del carmen': ('Región de Atacama', 'Alto del Carmen'),
+    'coquimbo': ('Región de Coquimbo', 'Coquimbo'),
+    'la serena': ('Región de Coquimbo', 'La Serena'),
+    'ovalle': ('Región de Coquimbo', 'Ovalle'),
+    'illapel': ('Región de Coquimbo', 'Illapel'),
+    'vicuna': ('Región de Coquimbo', 'Vicuña'),
+    'salamanca': ('Región de Coquimbo', 'Salamanca'),
+    'los vilos': ('Región de Coquimbo', 'Los Vilos'),
+    'andacollo': ('Región de Coquimbo', 'Andacollo'),
+    'combarbala': ('Región de Coquimbo', 'Combarbalá'),
+    'monte patria': ('Región de Coquimbo', 'Monte Patria'),
+    'punitaqui': ('Región de Coquimbo', 'Punitaqui'),
+    'valparaiso': ('Región de Valparaíso', 'Valparaíso'),
+    'vina del mar': ('Región de Valparaíso', 'Viña del Mar'),
+    'vina': ('Región de Valparaíso', 'Viña del Mar'),
+    'quilpue': ('Región de Valparaíso', 'Quilpué'),
+    'villa alemana': ('Región de Valparaíso', 'Villa Alemana'),
+    'quillota': ('Región de Valparaíso', 'Quillota'),
+    'san antonio': ('Región de Valparaíso', 'San Antonio'),
+    'san felipe': ('Región de Valparaíso', 'San Felipe'),
+    'los andes': ('Región de Valparaíso', 'Los Andes'),
+    'puchuncavi': ('Región de Valparaíso', 'Puchuncaví'),
+    'quintero': ('Región de Valparaíso', 'Quintero'),
+    'limache': ('Región de Valparaíso', 'Limache'),
+    'olmue': ('Región de Valparaíso', 'Olmué'),
+    'la calera': ('Región de Valparaíso', 'La Calera'),
+    'la cruz': ('Región de Valparaíso', 'La Cruz'),
+    'nogales': ('Región de Valparaíso', 'Nogales'),
+    'hijuelas': ('Región de Valparaíso', 'Hijuelas'),
+    'putaendo': ('Región de Valparaíso', 'Putaendo'),
+    'catemu': ('Región de Valparaíso', 'Catemu'),
+    'llay llay': ('Región de Valparaíso', 'Llaillay'),
+    'casablanca': ('Región de Valparaíso', 'Casablanca'),
+    'cartagena': ('Región de Valparaíso', 'Cartagena'),
+    'el quisco': ('Región de Valparaíso', 'El Quisco'),
+    'el tabo': ('Región de Valparaíso', 'El Tabo'),
+    'algarrobo': ('Región de Valparaíso', 'Algarrobo'),
+    'santo domingo': ('Región de Valparaíso', 'Santo Domingo'),
+    'isla de pascua': ('Región de Valparaíso', 'Isla de Pascua'),
+    'juan fernandez': ('Región de Valparaíso', 'Juan Fernández'),
+    'rancagua': ('Región del Libertador General Bernardo O\'Higgins', 'Rancagua'),
+    'san fernando': ('Región del Libertador General Bernardo O\'Higgins', 'San Fernando'),
+    'pichilemu': ('Región del Libertador General Bernardo O\'Higgins', 'Pichilemu'),
+    'machali': ('Región del Libertador General Bernardo O\'Higgins', 'Machalí'),
+    'graneros': ('Región del Libertador General Bernardo O\'Higgins', 'Graneros'),
+    'rengo': ('Región del Libertador General Bernardo O\'Higgins', 'Rengo'),
+    'san vicente': ('Región del Libertador General Bernardo O\'Higgins', 'San Vicente'),
+    'santa cruz': ('Región del Libertador General Bernardo O\'Higgins', 'Santa Cruz'),
+    'chimbarongo': ('Región del Libertador General Bernardo O\'Higgins', 'Chimbarongo'),
+    'mostazal': ('Región del Libertador General Bernardo O\'Higgins', 'Mostazal'),
+    'codegua': ('Región del Libertador General Bernardo O\'Higgins', 'Codegua'),
+    'donihue': ('Región del Libertador General Bernardo O\'Higgins', 'Doñihue'),
+    'coltauco': ('Región del Libertador General Bernardo O\'Higgins', 'Coltauco'),
+    'talca': ('Región del Maule', 'Talca'),
+    'curico': ('Región del Maule', 'Curicó'),
+    'linares': ('Región del Maule', 'Linares'),
+    'cauquenes': ('Región del Maule', 'Cauquenes'),
+    'constitucion': ('Región del Maule', 'Constitución'),
+    'parral': ('Región del Maule', 'Parral'),
+    'san javier': ('Región del Maule', 'San Javier'),
+    'molina': ('Región del Maule', 'Molina'),
+    'san clemente': ('Región del Maule', 'San Clemente'),
+    'longavi': ('Región del Maule', 'Longaví'),
+    'teno': ('Región del Maule', 'Teno'),
+    'chanco': ('Región del Maule', 'Chanco'),
+    'pelluhue': ('Región del Maule', 'Pelluhue'),
+    'colbun': ('Región del Maule', 'Colbún'),
+    'chillan': ('Región de Ñuble', 'Chillán'),
+    'chillan viejo': ('Región de Ñuble', 'Chillán Viejo'),
+    'san carlos': ('Región de Ñuble', 'San Carlos'),
+    'bulnes': ('Región de Ñuble', 'Bulnes'),
+    'coelemu': ('Región de Ñuble', 'Coelemu'),
+    'yungay': ('Región de Ñuble', 'Yungay'),
+    'quillon': ('Región de Ñuble', 'Quillón'),
+    'san ignacio': ('Región de Ñuble', 'San Ignacio'),
+    'el carmen': ('Región de Ñuble', 'El Carmen'),
+    'concepcion': ('Región del Biobío', 'Concepción'),
+    'talcahuano': ('Región del Biobío', 'Talcahuano'),
+    'los angeles': ('Región del Biobío', 'Los Ángeles'),
+    'coronel': ('Región del Biobío', 'Coronel'),
+    'san pedro de la paz': ('Región del Biobío', 'San Pedro de la Paz'),
+    'chiguayante': ('Región del Biobío', 'Chiguayante'),
+    'hualpen': ('Región del Biobío', 'Hualpén'),
+    'lota': ('Región del Biobío', 'Lota'),
+    'penco': ('Región del Biobío', 'Penco'),
+    'tome': ('Región del Biobío', 'Tomé'),
+    'arauco': ('Región del Biobío', 'Arauco'),
+    'canete': ('Región del Biobío', 'Cañete'),
+    'curanilahue': ('Región del Biobío', 'Curanilahue'),
+    'mulchen': ('Región del Biobío', 'Mulchén'),
+    'nacimiento': ('Región del Biobío', 'Nacimiento'),
+    'cabrero': ('Región del Biobío', 'Cabrero'),
+    'laja': ('Región del Biobío', 'Laja'),
+    'tucapel': ('Región del Biobío', 'Tucapel'),
+    'san rosendo': ('Región del Biobío', 'San Rosendo'),
+    'yumbel': ('Región del Biobío', 'Yumbel'),
+    'temuco': ('Región de La Araucanía', 'Temuco'),
+    'padre las casas': ('Región de La Araucanía', 'Padre Las Casas'),
+    'villarrica': ('Región de La Araucanía', 'Villarrica'),
+    'pucon': ('Región de La Araucanía', 'Pucón'),
+    'angol': ('Región de La Araucanía', 'Angol'),
+    'victoria': ('Región de La Araucanía', 'Victoria'),
+    'lautaro': ('Región de La Araucanía', 'Lautaro'),
+    'nueva imperial': ('Región de La Araucanía', 'Nueva Imperial'),
+    'traiguen': ('Región de La Araucanía', 'Traiguén'),
+    'pitrufquen': ('Región de La Araucanía', 'Pitrufquén'),
+    'loncoche': ('Región de La Araucanía', 'Loncoche'),
+    'collipulli': ('Región de La Araucanía', 'Collipulli'),
+    'carahue': ('Región de La Araucanía', 'Carahue'),
+    'valdivia': ('Región de Los Ríos', 'Valdivia'),
+    'la union': ('Región de Los Ríos', 'La Unión'),
+    'rio bueno': ('Región de Los Ríos', 'Río Bueno'),
+    'panguipulli': ('Región de Los Ríos', 'Panguipulli'),
+    'paillaco': ('Región de Los Ríos', 'Paillaco'),
+    'lanco': ('Región de Los Ríos', 'Lanco'),
+    'mariquina': ('Región de Los Ríos', 'Mariquina'),
+    'futrono': ('Región de Los Ríos', 'Futrono'),
+    'puerto montt': ('Región de Los Lagos', 'Puerto Montt'),
+    'osorno': ('Región de Los Lagos', 'Osorno'),
+    'castro': ('Región de Los Lagos', 'Castro'),
+    'ancud': ('Región de Los Lagos', 'Ancud'),
+    'puerto varas': ('Región de Los Lagos', 'Puerto Varas'),
+    'quellon': ('Región de Los Lagos', 'Quellón'),
+    'calbuco': ('Región de Los Lagos', 'Calbuco'),
+    'frutillar': ('Región de Los Lagos', 'Frutillar'),
+    'llanquihue': ('Región de Los Lagos', 'Llanquihue'),
+    'los muermos': ('Región de Los Lagos', 'Los Muermos'),
+    'purranque': ('Región de Los Lagos', 'Purranque'),
+    'rio negro': ('Región de Los Lagos', 'Río Negro'),
+    'reloncavi': ('Región de Los Lagos', 'Puerto Montt'),
+    'coyhaique': ('Región de Aysén del General Carlos Ibáñez del Campo', 'Coyhaique'),
+    'coihaique': ('Región de Aysén del General Carlos Ibáñez del Campo', 'Coyhaique'),
+    'puerto aysen': ('Región de Aysén del General Carlos Ibáñez del Campo', 'Puerto Aysén'),
+    'aysen': ('Región de Aysén del General Carlos Ibáñez del Campo', 'Puerto Aysén'),
+    'chile chico': ('Región de Aysén del General Carlos Ibáñez del Campo', 'Chile Chico'),
+    'cochrane': ('Región de Aysén del General Carlos Ibáñez del Campo', 'Cochrane'),
+    'punta arenas': ('Región de Magallanes y de la Antártica Chilena', 'Punta Arenas'),
+    'puerto natales': ('Región de Magallanes y de la Antártica Chilena', 'Puerto Natales'),
+    'natales': ('Región de Magallanes y de la Antártica Chilena', 'Puerto Natales'),
+    'porvenir': ('Región de Magallanes y de la Antártica Chilena', 'Porvenir'),
+    'puerto williams': ('Región de Magallanes y de la Antártica Chilena', 'Puerto Williams'),
+    'santiago': ('Región Metropolitana', 'Santiago'),
+    'providencia': ('Región Metropolitana', 'Providencia'),
+    'las condes': ('Región Metropolitana', 'Las Condes'),
+    'vitacura': ('Región Metropolitana', 'Vitacura'),
+    'lo barnechea': ('Región Metropolitana', 'Lo Barnechea'),
+    'nunoa': ('Región Metropolitana', 'Ñuñoa'),
+    'la reina': ('Región Metropolitana', 'La Reina'),
+    'macul': ('Región Metropolitana', 'Macul'),
+    'penalolen': ('Región Metropolitana', 'Peñalolén'),
+    'la florida': ('Región Metropolitana', 'La Florida'),
+    'puente alto': ('Región Metropolitana', 'Puente Alto'),
+    'san bernardo': ('Región Metropolitana', 'San Bernardo'),
+    'maipu': ('Región Metropolitana', 'Maipú'),
+    'pudahuel': ('Región Metropolitana', 'Pudahuel'),
+    'quilicura': ('Región Metropolitana', 'Quilicura'),
+    'renca': ('Región Metropolitana', 'Renca'),
+    'conchali': ('Región Metropolitana', 'Conchalí'),
+    'huechuraba': ('Región Metropolitana', 'Huechuraba'),
+    'recoleta': ('Región Metropolitana', 'Recoleta'),
+    'independencia': ('Región Metropolitana', 'Independencia'),
+    'quinta normal': ('Región Metropolitana', 'Quinta Normal'),
+    'estacion central': ('Región Metropolitana', 'Estación Central'),
+    'pedro aguirre cerda': ('Región Metropolitana', 'Pedro Aguirre Cerda'),
+    'san miguel': ('Región Metropolitana', 'San Miguel'),
+    'san joaquin': ('Región Metropolitana', 'San Joaquín'),
+    'la cisterna': ('Región Metropolitana', 'La Cisterna'),
+    'el bosque': ('Región Metropolitana', 'El Bosque'),
+    'la granja': ('Región Metropolitana', 'La Granja'),
+    'san ramon': ('Región Metropolitana', 'San Ramón'),
+    'la pintana': ('Región Metropolitana', 'La Pintana'),
+    'lo espejo': ('Región Metropolitana', 'Lo Espejo'),
+    'cerrillos': ('Región Metropolitana', 'Cerrillos'),
+    'lo prado': ('Región Metropolitana', 'Lo Prado'),
+    'melipilla': ('Región Metropolitana', 'Melipilla'),
+    'talagante': ('Región Metropolitana', 'Talagante'),
+    'buin': ('Región Metropolitana', 'Buin'),
+    'paine': ('Región Metropolitana', 'Paine'),
+    'colina': ('Región Metropolitana', 'Colina'),
+    'lampa': ('Región Metropolitana', 'Lampa'),
+    'tiltil': ('Región Metropolitana', 'Til Til'),
+    'san jose de maipo': ('Región Metropolitana', 'San José de Maipo'),
+    'pirque': ('Región Metropolitana', 'Pirque'),
+    'isla de maipo': ('Región Metropolitana', 'Isla de Maipo'),
+    'el monte': ('Región Metropolitana', 'El Monte'),
+    'padre hurtado': ('Región Metropolitana', 'Padre Hurtado'),
+    'penaflor': ('Región Metropolitana', 'Peñaflor'),
+    'curacavi': ('Región Metropolitana', 'Curacaví'),
+    'maria pinto': ('Región Metropolitana', 'María Pinto'),
+    'san pedro': ('Región Metropolitana', 'San Pedro')
+}
 
-def infer_chilean_region(inst, unidad="", title=""):
-    full = strip_accents(f"{inst} {unidad} {title}".lower())
-    for reg_name, patterns in REGION_RULES:
-        for pat in patterns:
-            if re.search(pat, full):
-                return reg_name
-    return "Región Metropolitana"
+def resolve_exact_region_and_city(inst, unidad="", title=""):
+    full_clean = strip_accents(f"{inst} {unidad} {title}".lower())
+    for key, (reg, city) in CHILE_COMMUNA_TO_REGION.items():
+        pattern = r'\b' + re.escape(key) + r'\b'
+        if re.search(pattern, full_clean):
+            return reg, city
+    return "Región Metropolitana", "Santiago"
+
 
 def calculate_smart_catalog_match(title, desc=""):
     full_text = f"{title} {desc}".lower()
@@ -183,10 +387,9 @@ def main():
                 pub_str = format_date_to_iso(pub_date)
                 close_str = format_date_to_iso(close_date)
                 
-                real_region = infer_chilean_region(inst, unidad, title)
+                real_region, real_ciudad = resolve_exact_region_and_city(inst, unidad, title)
                 company_match, rubro, match_score = calculate_smart_catalog_match(title, f"{inst} {unidad}")
 
-                
                 desc = f"Compra Ágil ingresada directamente desde plataforma oficial de Mercado Público ({unidad})."
                 
                 op = {
@@ -199,7 +402,8 @@ def main():
                     "organismoRiesgo": "Bajo",
                     "rubro": rubro,
                     "region": real_region,
-                    "ciudad": unidad or "Santiago",
+                    "ciudad": real_ciudad,
+
                     "monto": monto,
                     "fechaPublicacion": pub_str,
                     "fechaCierre": close_str,
@@ -264,13 +468,17 @@ def main():
             comprador = item.get("Comprador") or {}
             org_name = comprador.get("NombreOrganismo") or item.get("Organismo") or "ORGANISMO PÚBLICO"
             org_unidad = comprador.get("NombreUnidad") or item.get("Unidad") or ""
-            ciudad = comprador.get("ComunaUnidad") or org_unidad or "Santiago"
 
             raw_desc = item.get("Descripcion") or f"Proceso de contratación pública ({modality}) para {org_name}."
             desc = str(raw_desc).replace("\n", " ").replace("\r", " ").replace("\t", " ").strip()
 
             company_match, rubro, match_score = calculate_smart_catalog_match(title, desc)
-            real_region = comprador.get("RegionUnidad") or infer_chilean_region(org_name, org_unidad, title)
+
+            real_region_inferred, real_ciudad_inferred = resolve_exact_region_and_city(org_name, org_unidad, title)
+            real_region = comprador.get("RegionUnidad") or real_region_inferred
+            ciudad = comprador.get("ComunaUnidad") or real_ciudad_inferred
+
+
 
             fechas = item.get("Fechas") or {}
             pub_date = fechas.get("FechaPublicacion") or item.get("FechaPublicacion") or TODAY_STR
