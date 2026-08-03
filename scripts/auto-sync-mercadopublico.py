@@ -133,23 +133,32 @@ def calculate_smart_catalog_match(title, desc=""):
         return "Aminorte", "Artículos de Escritorio y Oficina", 82
 
 def fetch_json(url, timeout=30):
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return json.loads(resp.read().decode('utf-8'))
-    except Exception as e:
-        print(f"[WARNING] Error al consultar API Mercado Público: {e}")
-        return None
+    import time
+    for attempt in range(3):
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'})
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode('utf-8'))
+        except Exception as e:
+            print(f"[WARNING] Intento {attempt+1}/3 al consultar API Mercado Público ({e})...")
+            time.sleep(2.5 * (attempt + 1))
+    return None
+
 
 def main():
     opportunities_by_code = {}
 
-    # 1. INGESTIÓN DE ARCHIVOS DE DESCARGA EN DOWNLOADS (Cotizaciones.xls)
+    # 1. INGESTIÓN DE ARCHIVOS DE DESCARGA EN DOWNLOADS Y REPOSITORIO (Cotizaciones.xls)
     downloads_file = "/Users/jonathancooper/Downloads/Cotizaciones.xls"
-    if os.path.exists(downloads_file):
-        print(f"[{datetime.datetime.now().isoformat()}] Ingestando planilla de descargas oficial {downloads_file}...")
+    repo_file = os.path.join(PROJECT_PATH, "data/Cotizaciones.xls")
+    
+    target_excel = downloads_file if os.path.exists(downloads_file) else (repo_file if os.path.exists(repo_file) else None)
+    
+    if target_excel and os.path.exists(target_excel):
+        print(f"[{datetime.datetime.now().isoformat()}] Ingestando planilla de descargas oficial {target_excel}...")
         try:
-            df = pd.read_excel(downloads_file)
+            df = pd.read_excel(target_excel)
+
             print(f"[{datetime.datetime.now().isoformat()}] Filas leídas de Cotizaciones.xls: {len(df)}")
             for idx, row in df.iterrows():
                 code = str(row.get('ID', '')).strip()
