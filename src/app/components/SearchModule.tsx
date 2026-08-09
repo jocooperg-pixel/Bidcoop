@@ -220,9 +220,10 @@ export default function SearchModule({
     const recCot = coAuditList.filter(op => op.estado_validacion_monto === 'RECUPERADO_DESDE_COTIZACION').length;
     const sumOrig = coAuditList.reduce((acc, op) => acc + (op.monto_original || 0), 0);
     const sumFinal = coAuditList.reduce((acc, op) => acc + (op.monto_final !== undefined ? op.monto_final : (op.monto || 0)), 0);
+    const sumRec = coAuditList.filter(op => op.estado_validacion_monto && op.estado_validacion_monto !== 'MONTO_NO_ENCONTRADO').reduce((acc, op) => acc + (op.monto_final !== undefined ? op.monto_final : (op.monto || 0)), 0);
     const pctValid = total > 0 ? (valid / total * 100).toFixed(1) : '0';
 
-    return { total, valid, noFound, recOC, recAdj, recCot, sumOrig, sumFinal, sumRec: sumFinal - sumOrig, pctValid };
+    return { total, valid, noFound, recOC, recAdj, recCot, sumOrig, sumFinal, sumRec, pctValid };
   }, [coAuditList]);
 
   // Pagination
