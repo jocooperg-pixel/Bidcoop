@@ -72,6 +72,9 @@ export interface Oportunidad {
   montoUtm?: number;
 
 
+  tipoOficial?: string;
+  tipoNombre?: string;
+
   // --- TRAZABILIDAD OFICIAL Y ESTADO DE VALIDACIÓN ---
   sourceSystem?: 'mercadopublico_api' | 'mercadopublico_excel' | 'manual';
   sourceType?: 'licitacion' | 'compra_agil' | 'convenio_marco' | 'grandes_compras';
@@ -84,6 +87,29 @@ export interface Oportunidad {
   currency?: 'CLP' | 'USD' | 'UF' | 'UTM';
   amountType?: 'monto_estimado' | 'presupuesto_disponible' | 'monto_reservado' | 'no_informado';
   validationStatus?: 'confirmado' | 'requiere_verificacion' | 'rechazado';
+
+  // --- RECONCILIACIÓN Y TRAZABILIDAD DE MONTOS (v7.5) ---
+  id_compra_agil?: string;
+  id_proceso?: string;
+  id_cotizacion?: string;
+  id_orden_compra?: string;
+  codigoOrdenCompra?: string;
+  rutOrganismo?: string;
+  proveedorAdjudicado?: string;
+  rutProveedor?: string;
+  fechaAdjudicacion?: string;
+  fechaEmisionOC?: string;
+  monto_informado?: number | null;
+  monto_adjudicado?: number | null;
+  monto_oc?: number | null;
+  monto_neto?: number | null;
+  iva?: number | null;
+  monto_original?: number;
+  monto_final?: number;
+  fuente_monto?: string;
+  id_fuente_monto?: string;
+  estado_validacion_monto?: 'VALIDADO' | 'RECUPERADO_DESDE_OC' | 'RECUPERADO_DESDE_ADJUDICACION' | 'RECUPERADO_DESDE_COTIZACION' | 'MONTO_NO_ENCONTRADO';
+  estadoOC?: string;
 
   fechaAdjudicacionEstimada?: string;
   admisibilidadIA?: {

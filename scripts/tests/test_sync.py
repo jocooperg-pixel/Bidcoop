@@ -299,16 +299,36 @@ if os.path.isfile(META_FILE):
         meta = json.load(f)
     sync_date = meta.get("ultimaSincronizacionExitosa", "")
     version = meta.get("syncVersion", "")
-    if version == "7.0":
+    if version in ("7.0", "7.5"):
         ok(f"sync_meta.json versión v{version}, última sync: {sync_date[:19]}")
     else:
-        warn(f"sync_meta.json versión {version} (esperado: 7.0)")
+        warn(f"sync_meta.json versión {version} (esperado: 7.5)")
     if meta.get("exitosa"):
         ok(f"Última sincronización reportada como exitosa")
     else:
         fail("Última sincronización marcada como fallida")
 else:
     fail("sync_meta.json no encontrado")
+
+# ─── T11: RECONCILIACIÓN COMPRAS ÁGILES v7.5 ──────────────
+print("\n[T11] Trazabilidad y Reconciliación de Compras Ágiles (REGLA 1-18)")
+co_ops = [op for op in opps if op.get("modalidad") == "Compra Ágil" or op.get("tipoOficial") in ("CO", "COT")]
+if co_ops:
+    audit_fields = ["monto_original", "monto_final", "fuente_monto", "estado_validacion_monto"]
+    valid_audit = [op for op in co_ops if all(f in op for f in audit_fields)]
+    if len(valid_audit) == len(co_ops):
+        ok(f"Todas las {len(co_ops)} Compras Ágiles contienen los 4 campos obligatorios de trazabilidad de monto")
+    else:
+        fail(f"{len(co_ops) - len(valid_audit)} Compras Ágiles sin campos completos de trazabilidad de monto")
+
+    with_monto = [op for op in co_ops if (op.get("monto_final") or op.get("monto") or 0) > 0]
+    pct = (len(with_monto) / len(co_ops)) * 100
+    if pct >= 80.0:
+        ok(f"Porcentaje de Compras Ágiles con monto validado: {pct:.1f}% ({len(with_monto)}/{len(co_ops)} con presupuesto)")
+    else:
+        fail(f"Porcentaje de Compras Ágiles con monto validado por debajo del 80%: {pct:.1f}%")
+else:
+    warn("No se encontraron Compras Ágiles en mockData.ts para verificar T11")
 
 # ─── RESUMEN ──────────────────────────────────────────────
 print()

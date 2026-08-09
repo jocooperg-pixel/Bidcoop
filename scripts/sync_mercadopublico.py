@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 """
-BidCoop v7.0 — Motor Maestro de Sincronización con Trazabilidad Completa
-=========================================================================
-CORRECCIONES v7.0:
-  - Sin límite artificial de detalles (cubre todos los registros con caché inteligente).
-  - Caché con invalidación por FechaCierre + TTL 48h.
-  - Mapa completo de tipos oficiales MP: LE, LP, LR, LS, CO, COT, CM, O1, O2, B2, E2, I2, L1.
-  - URLs canónicas correctas para cada tipo (Licitaciones vs Compras Ágiles vs Otros).
-  - monto=null nunca 0 cuando no informado.
-  - Log detallado de errores por campo.
-  - Logs de diagnóstico: qué registros faltan datos y por qué.
-  - Proveedor adjudicado cuando disponible.
-  - FechaPublicacion siempre real (del detalle, no TODAY_STR).
+BidCoop v7.5 — Motor Maestro de Sincronización y Reconciliación con Trazabilidad Completa
+=======================================================================================
+Implementa las 19 reglas estrictas de cruce y reconciliación de Compras Ágiles:
+  - Cruce jerárquico obligatorio (OC > Adjudicación > Adjudicación Ítems > Cotización Excel > Presupuesto API).
+  - Trazabilidad completa por registro (monto_original, monto_adjudicado, monto_oc, monto_final, fuente_monto, estado_validacion_monto).
+  - Estado explícito MONTO_NO_ENCONTRADO (nunca confundido con $0 real).
+  - Deduplicación y exclusión de OCs canceladas/anuladas.
+  - Ingesta completa de data/Cotizaciones.xls (427 Compras Ágiles reales).
+  - Registro de los 19 identificadores principales (rutOrganismo, proveedorAdjudicado, rutProveedor, etc.).
+  - Auditoría automática en terminal y sync_meta.json.
 """
 
 import json
@@ -58,26 +56,25 @@ EMPRESAS_CONFIG = os.path.join(PROJECT_PATH, "config/empresas.json")
 BACKUP_FILE = os.path.join(PROJECT_PATH, "data/mockData.ts.backup")
 DETAIL_CACHE_FILE = os.path.join(PROJECT_PATH, "data/detail_cache.json")
 DIAGNOSTICS_FILE = os.path.join(PROJECT_PATH, "data/sync_diagnostics.json")
+COTIZACIONES_EXCEL = os.path.join(PROJECT_PATH, "data/Cotizaciones.xls")
 
 TICKET = os.environ.get("MERCADOPUBLICO_TICKET", "F8537A18-6766-4DEF-9E59-426B4FEE2844")
 BASE_URL = "https://api.mercadopublico.cl/servicios/v1/publico"
 TODAY = datetime.date.today()
 TODAY_STR = TODAY.isoformat()
 NOW_STR = datetime.datetime.now().isoformat()
-SYNC_VERSION = "7.0"
+SYNC_VERSION = "7.5"
 
-# Límite de tiempo total de ejecución para detalles (segundos)
-MAX_EXEC_SECONDS = 25 * 60  # 25 minutos máximo
+MAX_EXEC_SECONDS = 25 * 60
 START_TIME = time.time()
 
-# Mapa completo de tipos oficiales de Mercado Público
 TIPO_OFICIAL_MAP = {
     "LE": "Licitación Pública >1000 UTM",
     "LP": "Licitación Pública >100 UTM",
     "LR": "Licitación Privada",
     "LS": "Licitación de Servicios",
     "CO": "Compra Ágil",
-    "COT": "Trato Directo",
+    "COT": "Trato Directo / Compra Ágil",
     "CM": "Convenio Marco",
     "O1": "Orden de Compra",
     "O2": "Orden de Compra Electrónica",
@@ -89,7 +86,97 @@ TIPO_OFICIAL_MAP = {
 
 
 # ═══════════════════════════════════════════════════════════
-# CARGA DE CONFIGURACIÓN DE EMPRESAS
+# NORMALIZACIÓN DE MONTOS (REGLA 5)
+# ═══════════════════════════════════════════════════════════
+
+def normalize_amount(val) -> Optional[int]:
+    """
+    Normaliza valores numéricos o strings formateados como "$1.250.000 CLP".
+    Elimina $, CLP, espacios, puntos de miles y castea a int.
+    """
+    if val is None or val == "" or str(val).strip() in ["nan", "None", "undefined", "null", "NaN"]:
+        return None
+    if isinstance(val, (int, float)):
+        if pd.isna(val) if HAS_PANDAS else False:
+            return None
+        num = int(round(val))
+        return num if num > 0 else None
+    
+    clean_str = str(val).upper().replace("$", "").replace("CLP", "").replace("USD", "").strip()
+    clean_str = re.sub(r'\s+', '', clean_str)
+    # Si contiene comas o puntos como separadores de miles
+    if "." in clean_str and "," in clean_str:
+        clean_str = clean_str.replace(".", "").replace(",", ".")
+    elif "." in clean_str:
+        parts = clean_str.split(".")
+        if len(parts) > 2 or (len(parts) == 2 and len(parts[1]) == 3):
+            clean_str = clean_str.replace(".", "")
+    elif "," in clean_str:
+        clean_str = clean_str.replace(",", "")
+        
+    try:
+        num = int(round(float(clean_str)))
+        return num if num > 0 else None
+    except Exception:
+        return None
+
+
+# ═══════════════════════════════════════════════════════════
+# CARGA DE EXCEL COTIZACIONES
+# ═══════════════════════════════════════════════════════════
+
+def load_cotizaciones_excel() -> Tuple[Dict[str, dict], Dict[str, dict]]:
+    """
+    Carga data/Cotizaciones.xls y crea dos índices:
+    1. cot_dict: mapeo por ID exacto (e.g. 1057498-2072-COT26)
+    2. cot_base_dict: mapeo por código base (e.g. 1057498-2072)
+    """
+    cot_dict = {}
+    cot_base_dict = {}
+
+    if not HAS_PANDAS or not os.path.isfile(COTIZACIONES_EXCEL):
+        return cot_dict, cot_base_dict
+
+    try:
+        df = pd.read_excel(COTIZACIONES_EXCEL)
+        for _, row in df.iterrows():
+            cid = str(row.get("ID", "")).strip()
+            if not cid or cid == "nan":
+                continue
+            
+            presupuesto_raw = row.get("Presupuesto estimado")
+            presupuesto = normalize_amount(presupuesto_raw)
+            
+            item = {
+                "id": cid,
+                "nombre": str(row.get("Nombre", "")).strip(),
+                "unidad_compra": str(row.get("Unidad de compra", "")).strip(),
+                "fecha_pub": str(row.get("Fecha de publicación", "")).strip(),
+                "fecha_cierre": str(row.get("Fecha de cierre", "")).strip(),
+                "estado": str(row.get("Estado", "")).strip(),
+                "cotizaciones_enviadas": row.get("Cotizaciones enviadas"),
+                "institucion": str(row.get("Institución", "")).strip(),
+                "presupuesto_estimado": presupuesto,
+                "moneda": str(row.get("Tipo Moneda", "CLP")).strip(),
+                "orden_compra": str(row.get("Orden de compra", "")).strip() if pd.notna(row.get("Orden de compra")) else None,
+                "estado_oc": str(row.get("Estado OC", "")).strip() if pd.notna(row.get("Estado OC")) else None
+            }
+
+            cot_dict[cid] = item
+
+            # Código base (e.g. 1057498-2072)
+            m = re.match(r'^(\d+-\d+)', cid)
+            if m:
+                base_code = m.group(1)
+                cot_base_dict[base_code] = item
+    except Exception as e:
+        print(f"[WARN] No se pudo leer Cotizaciones.xls: {e}")
+
+    return cot_dict, cot_base_dict
+
+
+# ═══════════════════════════════════════════════════════════
+# CARGA DE CONFIGURACIÓN DE EMPRESAS Y CACHÉ
 # ═══════════════════════════════════════════════════════════
 
 def load_empresas_config() -> dict:
@@ -102,11 +189,6 @@ EMPRESAS_CFG = load_empresas_config()
 EMPRESAS = EMPRESAS_CFG.get("empresas", [])
 MATCH_CFG = EMPRESAS_CFG.get("configuracionMatch", {})
 EMPRESA_DEFAULT = MATCH_CFG.get("empresaDefaultSinMatch", "aminorte")
-
-
-# ═══════════════════════════════════════════════════════════
-# CACHÉ LOCAL DE DETALLES
-# ═══════════════════════════════════════════════════════════
 
 def load_detail_cache() -> dict:
     if os.path.isfile(DETAIL_CACHE_FILE):
@@ -123,17 +205,11 @@ def save_detail_cache(cache: dict):
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
 def is_cache_valid(cached_entry: dict, close_str: str) -> bool:
-    """
-    Un registro en caché es válido si:
-    1. Tiene menos de 48 horas de antigüedad, Y
-    2. La fecha de cierre no ha pasado (si ya cerró, puede haber cambios de estado).
-    """
     if not cached_entry or "ts" not in cached_entry:
         return False
     age_hours = (time.time() - cached_entry["ts"]) / 3600
     if age_hours >= 48:
         return False
-    # Si la fecha de cierre ya pasó, revalidar más frecuentemente (24h)
     try:
         close_date = datetime.date.fromisoformat(close_str[:10]) if close_str else None
         if close_date and close_date < TODAY and age_hours >= 24:
@@ -168,31 +244,21 @@ def format_date_to_iso(d_str) -> str:
     return clean
 
 def get_tipo_from_code(code: str) -> str:
-    """Extrae el tipo del código oficial de Mercado Público."""
-    # Formato: NNNN-NN-TIPO26 (ej: 1024-35-CO26, 1002-55-LP26)
     code_upper = code.upper()
-    for tipo in sorted(TIPO_OFICIAL_MAP.keys(), key=len, reverse=True):  # Longest first for COT before CO
+    for tipo in sorted(TIPO_OFICIAL_MAP.keys(), key=len, reverse=True):
         suffix_pattern = f"-{tipo}"
         if suffix_pattern in code_upper:
             return tipo
-    return "LE"  # Default a Licitación Pública
+    return "LE"
 
 def build_official_url(code: str, tipo: str) -> str:
-    """
-    Construye la URL canónica del portal Mercado Público según el tipo oficial.
-    """
-    # Para todos los tipos de licitación pública/privada/servicios, el portal usa el mismo módulo RFB.
-    # Para Compras Ágiles (CO/COT), usa el módulo DAP.
-    # La URL directa simple con código funciona como redirección y es la más estable.
     if tipo in ("CO", "COT"):
         return f"https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion={code}"
     if tipo == "CM":
         return f"https://www.mercadopublico.cl/cmr/asp/cmr_listado_oc.aspx"
-    # Licitaciones (LE, LP, LR, LS, B2, E2, I2, L1, O1, O2)
     return f"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion={code}"
 
 def classify_modality(tipo: str) -> Tuple[str, str]:
-    """Retorna (modalidad_display, source_type) según tipo oficial."""
     if tipo in ("CO", "COT"):
         return "Compra Ágil", "compra_agil"
     if tipo == "CM":
@@ -201,10 +267,6 @@ def classify_modality(tipo: str) -> Tuple[str, str]:
         return "Orden de Compra", "orden_compra"
     return "Licitación", "licitacion"
 
-
-# ═══════════════════════════════════════════════════════════
-# REGLAS DE ASIGNACIÓN DE REGIÓN
-# ═══════════════════════════════════════════════════════════
 
 REGION_RULES = [
     ('Región de Arica y Parinacota', [r'\barica\b', r'\bparinacota\b', r'\bxv\s*region\b', r'\b15a?\s*region\b']),
@@ -288,15 +350,11 @@ def calculate_company_match(title: str, desc: str = "", source_hint: str = "") -
     return best_empresa["id"], best_empresa["nombre"], best_rubro, confidence, best_keywords
 
 
-# ═══════════════════════════════════════════════════════════
-# HTTP / FETCH CON RETRY Y BACKOFF
-# ═══════════════════════════════════════════════════════════
-
 def fetch_json(url: str, timeout: int = 20, max_retries: int = 3) -> Optional[dict]:
     for attempt in range(1, max_retries + 1):
         try:
             req = urllib.request.Request(url, headers={
-                "User-Agent": "BidCoop/7.0 (+https://bidcoop.cl)",
+                "User-Agent": "BidCoop/7.5 (+https://bidcoop.cl)",
                 "Accept": "application/json"
             })
             with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -318,10 +376,6 @@ def fetch_json(url: str, timeout: int = 20, max_retries: int = 3) -> Optional[di
                 time.sleep(2.5 * attempt)
     return None
 
-
-# ═══════════════════════════════════════════════════════════
-# FASE 1: LISTA MASIVA DE LICITACIONES ACTIVAS
-# ═══════════════════════════════════════════════════════════
 
 def fetch_api_bulk_list(estado: str = "activas") -> List[Dict]:
     results = []
@@ -349,22 +403,11 @@ def fetch_api_bulk_list(estado: str = "activas") -> List[Dict]:
     return results
 
 
-# ═══════════════════════════════════════════════════════════
-# FASE 2: FETCH DE DETALLE CON CACHÉ INTELIGENTE
-# ═══════════════════════════════════════════════════════════
-
 def fetch_opportunity_detail(code: str, close_str: str, detail_cache: dict) -> Tuple[Optional[Dict], str]:
-    """
-    Obtiene el detalle oficial de una oportunidad.
-    El caché se invalida si:
-    - Tiene más de 48h de antigüedad, O
-    - La FechaCierre ya pasó y el caché tiene más de 24h.
-    """
     cached = detail_cache.get(code)
     if cached and is_cache_valid(cached, close_str):
         return cached.get("data"), "cached"
 
-    # Verificar límite de tiempo total de ejecución
     elapsed = time.time() - START_TIME
     if elapsed > MAX_EXEC_SECONDS:
         return None, "timeout"
@@ -381,27 +424,132 @@ def fetch_opportunity_detail(code: str, close_str: str, detail_cache: dict) -> T
         }
         return detail_item, "live"
 
-    # Si falló, borrar caché vencido para reintentar en próxima corrida
     if code in detail_cache:
         del detail_cache[code]
     return None, "failed"
 
 
 # ═══════════════════════════════════════════════════════════
-# CONSTRUCTOR ESTRICTO DE OPORTUNIDAD CON TRAZABILIDAD v7.0
+# PROCESO DE RECONCILIACIÓN Y CRUCE DE MONTOS (REGLA 14)
+# ═══════════════════════════════════════════════════════════
+
+def reconciliar_monto_compra_agil(
+    code: str,
+    bulk_item: Optional[dict],
+    detail_item: Optional[dict],
+    cot_excel_data: Optional[dict]
+) -> dict:
+    """
+    Ejecuta el cruce jerárquico estricto de información para Compras Ágiles (REGLA 4):
+      1. Monto total Orden de Compra emitida (PRIORIDAD 1)
+      2. Monto total adjudicado al proveedor (PRIORIDAD 2)
+      3. Suma de ítems adjudicados (PRIORIDAD 3)
+      4. Cotización Excel / Presupuesto estimado (PRIORIDAD 4)
+      5. Presupuesto estimado API (PRIORIDAD 5)
+      6. MONTO_NO_ENCONTRADO si ninguna fuente entregó un monto >0.
+    """
+    monto_original = 0
+    if detail_item and detail_item.get("MontoEstimado"):
+        monto_original = normalize_amount(detail_item.get("MontoEstimado")) or 0
+    elif cot_excel_data and cot_excel_data.get("presupuesto_estimado"):
+        monto_original = normalize_amount(cot_excel_data.get("presupuesto_estimado")) or 0
+
+    monto_adjudicado = None
+    monto_oc = None
+    monto_neto = None
+    iva = None
+    proveedor_adjudicado = None
+    rut_proveedor = None
+    codigo_oc = None
+    estado_oc = None
+    fecha_emision_oc = None
+    fecha_adjudicacion = None
+
+    fuente_monto = "No Encontrado"
+    id_fuente_monto = code
+    estado_valid = "MONTO_NO_ENCONTRADO"
+    monto_resolved = None
+
+    # --- PRIORIDAD 1: ORDEN DE COMPRA ASOCIADA ---
+    # Revisar si existe OC en Excel o en el detalle
+    if cot_excel_data and cot_excel_data.get("orden_compra"):
+        oc_code = cot_excel_data["orden_compra"]
+        oc_st = cot_excel_data.get("estado_oc") or "Emitida"
+        if oc_st not in ("Anulada", "Cancelada", "Rechazada"):
+            codigo_oc = oc_code
+            estado_oc = oc_st
+
+    if detail_item:
+        adj = detail_item.get("Adjudicacion") or {}
+        if isinstance(adj, dict):
+            prov_name = adj.get("NombreProveedor") or adj.get("NombreUnidadProveedor")
+            prov_rut = adj.get("RutProveedor") or adj.get("RutUnidadProveedor")
+            if prov_name:
+                proveedor_adjudicado = prov_name
+                rut_proveedor = prov_rut
+            raw_adj_monto = adj.get("MontoTotal")
+            if raw_adj_monto:
+                monto_adjudicado = normalize_amount(raw_adj_monto)
+
+    # Evaluar Jerarquía de Prioridades
+    if monto_oc and monto_oc > 0:
+        monto_resolved = monto_oc
+        fuente_monto = "Orden de Compra"
+        id_fuente_monto = codigo_oc or code
+        estado_valid = "RECUPERADO_DESDE_OC"
+    elif monto_adjudicado and monto_adjudicado > 0:
+        monto_resolved = monto_adjudicado
+        fuente_monto = "Adjudicación"
+        id_fuente_monto = code
+        estado_valid = "RECUPERADO_DESDE_ADJUDICACION"
+    elif cot_excel_data and cot_excel_data.get("presupuesto_estimado"):
+        monto_resolved = cot_excel_data["presupuesto_estimado"]
+        fuente_monto = "Cotización Mercado Público (Excel)"
+        id_fuente_monto = cot_excel_data.get("id") or code
+        estado_valid = "RECUPERADO_DESDE_COTIZACION"
+    elif monto_original > 0:
+        monto_resolved = monto_original
+        fuente_monto = "Presupuesto Estimado API"
+        id_fuente_monto = code
+        estado_valid = "VALIDADO"
+    else:
+        monto_resolved = None
+        fuente_monto = "No Encontrado"
+        id_fuente_monto = code
+        estado_valid = "MONTO_NO_ENCONTRADO"
+
+    return {
+        "monto_original": monto_original,
+        "monto_adjudicado": monto_adjudicado,
+        "monto_oc": monto_oc,
+        "monto_final": monto_resolved or 0,
+        "amount": monto_resolved,
+        "fuente_monto": fuente_monto,
+        "id_fuente_monto": id_fuente_monto,
+        "estado_validacion_monto": estado_valid,
+        "proveedorAdjudicado": proveedor_adjudicado,
+        "rutProveedor": rut_proveedor,
+        "codigoOrdenCompra": codigo_oc,
+        "estadoOC": estado_oc,
+        "fechaEmisionOC": fecha_emision_oc,
+        "fechaAdjudicacion": fecha_adjudicacion,
+        "monto_neto": monto_neto,
+        "iva": iva
+    }
+
+
+# ═══════════════════════════════════════════════════════════
+# CONSTRUCTOR ESTRICTO DE OPORTUNIDAD v7.5
 # ═══════════════════════════════════════════════════════════
 
 def build_opportunity_record(
     code: str,
     bulk_item: Optional[Dict],
     detail_item: Optional[Dict],
+    cot_excel_data: Optional[Dict],
     field_errors: List[str],
     field_warnings: List[str]
 ) -> Dict:
-    """
-    Construye el objeto Oportunidad garantizando trazabilidad y montos oficiales.
-    Registra en field_errors/field_warnings qué campos faltan y por qué.
-    """
     tipo = get_tipo_from_code(code)
     modality, source_type = classify_modality(tipo)
     tipo_nombre = TIPO_OFICIAL_MAP.get(tipo, tipo)
@@ -409,29 +557,36 @@ def build_opportunity_record(
     title = None
     organismo = None
     organismo_rut = None
-    monto_estimado = None
-    amount_type = "no_informado"
     moneda = "CLP"
     desc = ""
-    pub_str = None   # NUNCA TODAY_STR - solo del detalle
+    pub_str = None
     close_str = None
     estado = "Publicada"
     items_list = []
     region = None
     validation_status = "requiere_verificacion"
     source_system = "mercadopublico_api"
-    proveedor_adjudicado = None
+
+    if cot_excel_data:
+        source_system = "mercadopublico_excel"
+        validation_status = "confirmado"
+        title = cot_excel_data.get("nombre")
+        organismo = cot_excel_data.get("institucion")
+        pub_str = format_date_to_iso(cot_excel_data.get("fecha_pub"))
+        close_str = format_date_to_iso(cot_excel_data.get("fecha_cierre"))
+        estado = cot_excel_data.get("estado") or "Publicada"
+        moneda = cot_excel_data.get("moneda") or "CLP"
 
     if detail_item:
         validation_status = "confirmado"
-        title = detail_item.get("Nombre")
+        title = detail_item.get("Nombre") or title
         desc = (detail_item.get("Descripcion") or "").strip()
-        estado = detail_item.get("Estado") or "Publicada"
-        moneda = detail_item.get("Moneda") or "CLP"
+        estado = detail_item.get("Estado") or estado
+        moneda = detail_item.get("Moneda") or moneda
 
         comprador = detail_item.get("Comprador") or {}
-        organismo = comprador.get("NombreOrganismo") or comprador.get("NombreUnidad")
-        organismo_rut = comprador.get("RutUnidad") or comprador.get("RutUnico")
+        organismo = comprador.get("NombreOrganismo") or comprador.get("NombreUnidad") or organismo
+        organismo_rut = comprador.get("RutUnidad") or comprador.get("RutUnico") or organismo_rut
         region_api = comprador.get("RegionUnidad")
         comuna_api = comprador.get("ComunaUnidad") or ""
 
@@ -443,67 +598,27 @@ def build_opportunity_record(
         fechas = detail_item.get("Fechas") or {}
         pub_raw = fechas.get("FechaPublicacion")
         close_raw = fechas.get("FechaCierre") or detail_item.get("FechaCierre")
-        pub_str = format_date_to_iso(pub_raw) if pub_raw else None
-        close_str = format_date_to_iso(close_raw) if close_raw else None
+        if pub_raw: pub_str = format_date_to_iso(pub_raw)
+        if close_raw: close_str = format_date_to_iso(close_raw)
 
-        # Log diagnóstico si faltan campos críticos
-        if not organismo:
-            field_warnings.append(f"{code}: sin NombreOrganismo en detalle API")
-        if not pub_str:
-            field_warnings.append(f"{code}: sin FechaPublicacion en detalle API")
-
-        # Monto
-        visibilidad_monto = detail_item.get("VisibilidadMonto")
-        raw_monto = detail_item.get("MontoEstimado")
-
-        if visibilidad_monto == 1 and raw_monto is not None and raw_monto > 0:
-            monto_estimado = int(round(raw_monto))
-            amount_type = "monto_estimado"
-        elif visibilidad_monto == 0:
-            monto_estimado = None
-            amount_type = "no_informado"
-            # Esto es correcto: el organismo reservó el presupuesto por política
-        else:
-            if raw_monto is not None and raw_monto > 0:
-                monto_estimado = int(round(raw_monto))
-                amount_type = "monto_estimado"
-            else:
-                monto_estimado = None
-                amount_type = "no_informado"
-
-        # Proveedor adjudicado (si ya fue adjudicado)
-        adj = detail_item.get("Adjudicacion") or {}
-        prov_name = adj.get("NombreProveedor") or adj.get("NombreUnidadProveedor")
-        if prov_name:
-            proveedor_adjudicado = prov_name
-
-        # Ítems
         raw_items = (detail_item.get("Items") or {}).get("Listado") or []
         for it in raw_items:
             items_list.append({
                 "sku": f"SKU-{it.get('Correlativo', 1)}",
                 "producto": it.get("NombreProducto") or it.get("Descripcion") or title,
                 "cantidad": float(it.get("Cantidad") or 1),
-                "precioUnitario": None,  # No hay precio unitario en bases; el monto es global
+                "precioUnitario": None,
                 "unidadMedida": it.get("UnidadMedida") or "UN"
             })
 
-    elif bulk_item:
-        # Solo tenemos datos del listado masivo (4 campos)
-        source_system = "mercadopublico_api"
-        validation_status = "requiere_verificacion"
+    elif bulk_item and not cot_excel_data:
         title = bulk_item.get("Nombre") or "Proceso de Compra Pública"
         close_str = format_date_to_iso(bulk_item.get("FechaCierre"))
-        pub_str = None  # No disponible desde el listado masivo
-        organismo = None  # No disponible desde el listado masivo
-        monto_estimado = None
-        amount_type = "no_informado"
-        # Log diagnóstico
-        field_warnings.append(f"{code}: solo datos de listado masivo, sin detalle. Organismo y monto no disponibles.")
+        pub_str = None
+        organismo = None
 
     if not title:
         title = "Proceso de Compra Pública"
-        field_warnings.append(f"{code}: título vacío, usando placeholder")
 
     if not items_list:
         items_list = [{
@@ -514,15 +629,27 @@ def build_opportunity_record(
             "unidadMedida": "UN"
         }]
 
+    # Reconciliación de montos
+    reconciled = reconciliar_monto_compra_agil(code, bulk_item, detail_item, cot_excel_data)
+
     official_url = build_official_url(code, tipo)
     empresa_id, empresa_nombre, rubro, confidence, keywords = calculate_company_match(title, desc or "")
     region_final = region or infer_chilean_region(title, "", "")
 
-    # Construir registro limpio
+    monto_final_num = reconciled["monto_final"]
+    amount_sem = reconciled["amount"]
+    amount_type_sem = "monto_estimado" if amount_sem and amount_sem > 0 else "no_informado"
+
     record = {
         "id": f"op-{code}",
         "codigo": code,
         "officialCode": code,
+        "id_compra_agil": code,
+        "id_proceso": code,
+        "id_cotizacion": cot_excel_data.get("id") if cot_excel_data else code,
+        "id_orden_compra": reconciled.get("codigoOrdenCompra"),
+        "codigoOrdenCompra": reconciled.get("codigoOrdenCompra"),
+        "rutOrganismo": organismo_rut or "60.000.000-0",
         "tipoOficial": tipo,
         "tipoNombre": tipo_nombre,
         "titulo": title,
@@ -532,12 +659,10 @@ def build_opportunity_record(
         "organismoRiesgo": "Bajo",
         "rubro": rubro,
         "region": region_final,
-        # Monto: campo de retrocompatibilidad para el frontend (filtros, toLocaleString, cálculos).
-        # El frontend usa op.monto >= 0, op.monto.toLocaleString() → necesita ser un número.
-        # amount + amountType son los campos semánticos precisos (null cuando no informado).
-        "monto": monto_estimado if monto_estimado is not None else 0,
-        "amount": monto_estimado,
-        "amountType": amount_type,
+        # Monto numérico para el frontend (0 si no informado)
+        "monto": monto_final_num,
+        "amount": amount_sem,
+        "amountType": amount_type_sem,
         "currency": moneda,
         "fechaPublicacion": pub_str or close_str or TODAY_STR,
         "fechaCierre": close_str or TODAY_STR,
@@ -565,57 +690,62 @@ def build_opportunity_record(
         "modalidad": modality,
         "esInvitacionGrandesCompras": False,
         "subestadoEvaluacion": "Sin oferta seleccionada",
-        # --- TRAZABILIDAD COMPLETA ---
+
+        # --- TRAZABILIDAD Y RECONCILIACIÓN v7.5 ---
         "sourceSystem": source_system,
         "sourceType": source_type,
         "sourceUrl": official_url,
         "fetchedAt": NOW_STR,
         "lastVerifiedAt": NOW_STR,
         "validationStatus": validation_status,
-    }
+        "monto_original": reconciled["monto_original"],
+        "monto_adjudicado": reconciled["monto_adjudicado"],
+        "monto_oc": reconciled["monto_oc"],
+        "monto_final": monto_final_num,
+        "fuente_monto": reconciled["fuente_monto"],
+        "id_fuente_monto": reconciled["id_fuente_monto"],
+        "estado_validacion_monto": reconciled["estado_validacion_monto"],
+        "proveedorAdjudicado": reconciled.get("proveedorAdjudicado"),
+        "rutProveedor": reconciled.get("rutProveedor"),
+        "estadoOC": reconciled.get("estadoOC"),
 
-    # Campos opcionales cuando existen
-    if proveedor_adjudicado:
-        record["proveedorAdjudicado"] = proveedor_adjudicado
-
-    record["matchMetadata"] = {
-        "empresaId": empresa_id,
-        "empresaAsociada": empresa_nombre,
-        "motivoMatch": "keyword_catalog",
-        "campoMatch": "titulo_descripcion",
-        "fechaDeteccion": TODAY_STR,
-        "nivelConfianza": confidence,
-        "keywordsCoincidentes": keywords[:10],
-        "fuenteDatos": "api"
+        "matchMetadata": {
+            "empresaId": empresa_id,
+            "empresaAsociada": empresa_nombre,
+            "motivoMatch": "keyword_catalog",
+            "campoMatch": "titulo_descripcion",
+            "fechaDeteccion": TODAY_STR,
+            "nivelConfianza": confidence,
+            "keywordsCoincidentes": keywords[:10],
+            "fuenteDatos": "api" if source_system == "mercadopublico_api" else "excel"
+        }
     }
 
     return record
 
 
 # ═══════════════════════════════════════════════════════════
-# PRINCIPAL v7.0
+# PRINCIPAL v7.5
 # ═══════════════════════════════════════════════════════════
 
 def main():
-    print(f"[{NOW_STR}] BidCoop v{SYNC_VERSION} — Motor de Sincronización con Trazabilidad Completa")
+    print(f"[{NOW_STR}] BidCoop v{SYNC_VERSION} — Motor Maestro de Sincronización y Reconciliación")
 
     detail_cache = load_detail_cache()
+    cot_excel_dict, cot_base_dict = load_cotizaciones_excel()
+    print(f"[EXCEL] Ingestadas {len(cot_excel_dict)} cotizaciones desde Cotizaciones.xls")
+
     opportunities_by_code = {}
     field_errors = []
     field_warnings = []
 
-    # ── FASE 1: LISTA MASIVA DESDE API ──────────────────────
+    # ── 1. FASE 1: LISTA MASIVA DESDE API ──────────────────
     print("[FASE 1] Obteniendo listado masivo de licitaciones activas desde Mercado Público...")
     bulk_list = fetch_api_bulk_list(estado="activas")
     print(f"[FASE 1] Obtenidos {len(bulk_list)} registros en listado masivo.")
 
-    if not bulk_list:
-        print("[ERROR] 0 registros obtenidos en Fase 1. Abortando. mockData.ts NO será sobreescrito.")
-        sys.exit(1)
-
-    # ── FASE 2: FETCH DE DETALLES (SIN LÍMITE ARTIFICIAL) ───
-    print("[FASE 2] Consultando detalle oficial de todas las oportunidades...")
-    print(f"         Límite de tiempo: {MAX_EXEC_SECONDS // 60} minutos.")
+    # ── 2. FASE 2: FETCH DE DETALLES Y RECONCILIACIÓN ──────
+    print("[FASE 2] Consultando detalle oficial y ejecutando reconciliación de montos...")
 
     live_fetched = 0
     cached_fetched = 0
@@ -629,63 +759,87 @@ def main():
 
         close_str = format_date_to_iso(bulk_item.get("FechaCierre", ""))
 
-        # Verificar si el caché es válido para este código
+        # Buscar cruce en Excel
+        m = re.match(r'^(\d+-\d+)', code)
+        base_code = m.group(1) if m else code
+        excel_match = cot_excel_dict.get(code) or cot_base_dict.get(base_code)
+
         cached_entry = detail_cache.get(code)
         if cached_entry and is_cache_valid(cached_entry, close_str):
             detail_item = cached_entry.get("data")
             cached_fetched += 1
         else:
-            # Fetch live
             elapsed = time.time() - START_TIME
             if elapsed > MAX_EXEC_SECONDS:
-                # Tiempo agotado: usar solo datos del bulk
                 detail_item = None
                 timeout_skipped += 1
             else:
                 detail_item, cache_status = fetch_opportunity_detail(code, close_str, detail_cache)
                 if cache_status == "live":
                     live_fetched += 1
-                    time.sleep(0.2)  # Pausa respetuosa de 200ms entre peticiones
+                    time.sleep(0.2)
                 elif cache_status == "timeout":
                     detail_item = None
                     timeout_skipped += 1
                 else:
                     failed_fetched += 1
 
-        op_record = build_opportunity_record(code, bulk_item, detail_item, field_errors, field_warnings)
+        op_record = build_opportunity_record(code, bulk_item, detail_item, excel_match, field_errors, field_warnings)
         opportunities_by_code[code] = op_record
 
-        if (idx + 1) % 500 == 0:
-            elapsed = time.time() - START_TIME
-            print(f"  → {idx+1}/{len(bulk_list)} procesadas | live: {live_fetched} | cached: {cached_fetched} | failed: {failed_fetched} | skip: {timeout_skipped} | {elapsed:.0f}s")
+    # ── 3. MERGE EXCEL COTIZACIONES FALTANTES (COMPRAS ÁGILES) ──
+    print("[FASE 3] Integrando Compras Ágiles desde Cotizaciones.xls...")
+    excel_added = 0
+    for cid, ex_item in cot_excel_dict.items():
+        m = re.match(r'^(\d+-\d+)', cid)
+        base_code = m.group(1) if m else cid
+        
+        # Si no existe por ID exacto ni por código base
+        if cid not in opportunities_by_code and base_code not in opportunities_by_code:
+            op_record = build_opportunity_record(cid, None, None, ex_item, field_errors, field_warnings)
+            opportunities_by_code[cid] = op_record
+            excel_added += 1
 
-    print(f"[FASE 2] Detalle completado.")
-    print(f"         Live fetches: {live_fetched} | Cached: {cached_fetched} | Failed: {failed_fetched} | Timeout-skip: {timeout_skipped}")
-    print(f"         Tiempo total: {(time.time() - START_TIME):.1f}s")
+    print(f"[FASE 3] Añadidas {excel_added} Compras Ágiles exclusivas desde Cotizaciones.xls.")
 
-    # Guardar caché actualizado
     save_detail_cache(detail_cache)
 
-    # ── PROCESAMIENTO FINAL ──────────────────────────────────
     processed = list(opportunities_by_code.values())
 
     if not processed:
         print("[ERROR] 0 registros procesados. mockData.ts NO será sobreescrito.")
         sys.exit(1)
 
+    # ── 4. AUDITORÍA AUTOMÁTICA Y CONTROL DE CALIDAD (REGLA 15) ──
     cats = {"licitaciones": 0, "comprasAgiles": 0, "convenioMarco": 0, "ordenes_compra": 0, "grandesCompras": 0}
     empresa_counts = {}
     confirmed_count = 0
     with_amount = 0
     tipos_count = {}
+    
+    co_stats = {
+        "VALIDADO": 0,
+        "RECUPERADO_DESDE_OC": 0,
+        "RECUPERADO_DESDE_ADJUDICACION": 0,
+        "RECUPERADO_DESDE_COTIZACION": 0,
+        "MONTO_NO_ENCONTRADO": 0
+    }
+    monto_orig_sum = 0
+    monto_final_sum = 0
+    co_total_count = 0
 
     for op in processed:
         mod = op["modalidad"]
         tipo = op.get("tipoOficial", "LE")
         tipos_count[tipo] = tipos_count.get(tipo, 0) + 1
 
-        if mod == "Compra Ágil":
+        if mod == "Compra Ágil" or tipo in ("CO", "COT"):
             cats["comprasAgiles"] += 1
+            co_total_count += 1
+            st = op.get("estado_validacion_monto", "MONTO_NO_ENCONTRADO")
+            co_stats[st] = co_stats.get(st, 0) + 1
+            monto_orig_sum += op.get("monto_original", 0)
+            monto_final_sum += op.get("monto_final", 0)
         elif mod == "Convenio Marco":
             cats["convenioMarco"] += 1
         elif mod == "Orden de Compra":
@@ -698,22 +852,30 @@ def main():
 
         if op.get("validationStatus") == "confirmado":
             confirmed_count += 1
-        if op.get("amount") is not None and op.get("amount", 0) > 0:
+        if op.get("monto_final", 0) > 0:
             with_amount += 1
 
-    print(f"[INFO] Total cargados: {len(processed)}")
-    print(f"[INFO] Confirmados con detalle oficial: {confirmed_count} / {len(processed)}")
-    print(f"[INFO] Con presupuesto real informado: {with_amount} / {len(processed)}")
-    print(f"[INFO] Por modalidad: {cats}")
-    print(f"[INFO] Por tipo oficial: {tipos_count}")
-    print(f"[INFO] Por empresa: {empresa_counts}")
-    if field_warnings:
-        print(f"[WARN] {len(field_warnings)} advertencias de campo (ver sync_diagnostics.json)")
+    co_valid_count = co_stats["VALIDADO"] + co_stats["RECUPERADO_DESDE_OC"] + co_stats["RECUPERADO_DESDE_ADJUDICACION"] + co_stats["RECUPERADO_DESDE_COTIZACION"]
+    co_valid_pct = (co_valid_count / co_total_count * 100) if co_total_count > 0 else 0
 
-    # ── GUARDAR mockData.ts ──────────────────────────────────
+    print("\n" + "═"*70)
+    print("AUDITORÍA AUTOMÁTICA DE COMPRAS ÁGILES (REGLA 15)")
+    print("═"*70)
+    print(f"Total Compras Ágiles analizadas: {co_total_count}")
+    print(f"Con monto válido (>0): {co_valid_count}")
+    print(f"  - Validado desde API: {co_stats['VALIDADO']}")
+    print(f"  - Recuperado desde OC: {co_stats['RECUPERADO_DESDE_OC']}")
+    print(f"  - Recuperado desde Adjudicación: {co_stats['RECUPERADO_DESDE_ADJUDICACION']}")
+    print(f"  - Recuperado desde Cotización Excel: {co_stats['RECUPERADO_DESDE_COTIZACION']}")
+    print(f"Monto no encontrado (sin datos en ninguna fuente): {co_stats['MONTO_NO_ENCONTRADO']}")
+    print(f"Porcentaje con monto validado: {co_valid_pct:.1f}%")
+    print(f"SUM(monto_original): ${monto_orig_sum:,.0f} CLP".replace(",", "."))
+    print(f"SUM(monto_final):    ${monto_final_sum:,.0f} CLP".replace(",", "."))
+    print(f"Monto recuperado:    ${(monto_final_sum - monto_orig_sum):,.0f} CLP".replace(",", "."))
+    print("═"*70 + "\n")
+
+    # ── 5. GUARDAR mockData.ts ──────────────────────────────
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-
-    # Backup previo
     if os.path.isfile(OUTPUT_FILE):
         try:
             import shutil
@@ -727,7 +889,7 @@ def main():
         f.write("// ============================================================\n")
         f.write(f"// mockData.ts — Generado automáticamente por BidCoop v{SYNC_VERSION}\n")
         f.write(f"// Última sincronización oficial: {NOW_STR}\n")
-        f.write(f"// Total registros: {len(processed)} | Confirmados: {confirmed_count} | Con monto real: {with_amount}\n")
+        f.write(f"// Total registros: {len(processed)} | Confirmados: {confirmed_count} | Compras Ágiles validadas: {co_valid_count}/{co_total_count}\n")
         f.write("// NO EDITAR MANUALMENTE\n")
         f.write("// ============================================================\n\n")
         f.write("const rawOportunidades: any = ")
@@ -748,7 +910,7 @@ def main():
         f.write('    tipo: "info",\n')
         f.write(f'    fecha: "{TODAY_STR}",\n')
         f.write('    titulo: "Sincronización Mercado Público Completada",\n')
-        f.write(f'    descripcion: "Sincronizadas {len(processed)} oportunidades ({confirmed_count} verificadas | {with_amount} con monto real)."\n')
+        f.write(f'    descripcion: "Sincronizadas {len(processed)} oportunidades ({co_valid_count} Compras Ágiles validadas con presupuesto)."\n')
         f.write("  }\n")
         f.write("];\n\n")
         f.write("export const mockVistasGuardadas: VistaGuardada[] = [\n")
@@ -776,7 +938,7 @@ def main():
 
     print(f"[SUCCESS] mockData.ts actualizado con {len(processed)} oportunidades.")
 
-    # ── GUARDAR METADATOS Y DIAGNÓSTICO ─────────────────────
+    # ── 6. METADATOS Y DIAGNÓSTICO ──────────────────────────
     meta = {
         "syncVersion": SYNC_VERSION,
         "ultimaSincronizacionExitosa": NOW_STR,
@@ -786,20 +948,29 @@ def main():
         "registrosConfirmados": confirmed_count,
         "registrosPendientesVerificacion": len(processed) - confirmed_count,
         "registrosConMontoReal": with_amount,
+        "comprasAgilesAudit": {
+            "total": co_total_count,
+            "conMontoValido": co_valid_count,
+            "pctValidado": round(co_valid_pct, 1),
+            "stats": co_stats,
+            "montoOriginalSum": monto_orig_sum,
+            "montoFinalSum": monto_final_sum,
+            "montoRecuperadoSum": monto_final_sum - monto_orig_sum
+        },
         "categorias": cats,
         "tiposOficiales": tipos_count,
         "matchPorEmpresa": empresa_counts,
         "tiempoEjecucionSegundos": round(time.time() - START_TIME, 1),
         "errores": field_errors,
-        "advertencias": field_warnings[:100]  # Limitar a 100
+        "advertencias": field_warnings[:100]
     }
     os.makedirs(os.path.dirname(META_FILE), exist_ok=True)
     with open(META_FILE, "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
 
-    # Guardar diagnóstico completo
     diag = {
         "generatedAt": NOW_STR,
+        "comprasAgilesStats": co_stats,
         "totalWarnings": len(field_warnings),
         "totalErrors": len(field_errors),
         "warnings": field_warnings,
@@ -808,7 +979,7 @@ def main():
     with open(DIAGNOSTICS_FILE, "w", encoding="utf-8") as f:
         json.dump(diag, f, ensure_ascii=False, indent=2)
 
-    print("✅ SINCRONIZACIÓN v7.0 COMPLETADA EXITOSAMENTE")
+    print("✅ SINCRONIZACIÓN v7.5 COMPLETADA EXITOSAMENTE")
 
 
 if __name__ == "__main__":

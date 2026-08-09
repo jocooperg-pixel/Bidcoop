@@ -166,6 +166,64 @@ export default function SearchModule({
   // Saved view creation
   const [newViewName, setNewViewName] = useState('');
   const [showSaveViewModal, setShowSaveViewModal] = useState(false);
+  const [showAuditModal, setShowAuditModal] = useState(false);
+  const [auditSearchFilter, setAuditSearchFilter] = useState('');
+
+  // Audit Compras Ágiles memoized data and KPI calculations
+  const coAuditList = useMemo(() => {
+    const list = oportunidades.filter(op => op.modalidad === 'Compra Ágil' || op.tipoOficial === 'CO' || op.tipoOficial === 'COT' || (op.codigo || '').includes('-CO'));
+    
+    // Rule 17 sorting:
+    // 1. MONTO_NO_ENCONTRADO
+    // 2. monto_final = 0
+    // 3. diferencias entre monto original y monto final
+    // 4. correctamente validados
+    return [...list].sort((a, b) => {
+      const stA = a.estado_validacion_monto || 'MONTO_NO_ENCONTRADO';
+      const stB = b.estado_validacion_monto || 'MONTO_NO_ENCONTRADO';
+      const mFinA = a.monto_final !== undefined ? a.monto_final : (a.monto || 0);
+      const mFinB = b.monto_final !== undefined ? b.monto_final : (b.monto || 0);
+      const diffA = Math.abs(mFinA - (a.monto_original || 0));
+      const diffB = Math.abs(mFinB - (b.monto_original || 0));
+
+      if (stA === 'MONTO_NO_ENCONTRADO' && stB !== 'MONTO_NO_ENCONTRADO') return -1;
+      if (stA !== 'MONTO_NO_ENCONTRADO' && stB === 'MONTO_NO_ENCONTRADO') return 1;
+
+      if (mFinA === 0 && mFinB !== 0) return -1;
+      if (mFinA !== 0 && mFinB === 0) return 1;
+
+      if (diffA !== diffB) return diffB - diffA;
+
+      return 0;
+    });
+  }, [oportunidades]);
+
+  const filteredCoAuditList = useMemo(() => {
+    if (!auditSearchFilter.trim()) return coAuditList;
+    const q = auditSearchFilter.toLowerCase();
+    return coAuditList.filter(op => 
+      op.codigo.toLowerCase().includes(q) ||
+      op.organismo.toLowerCase().includes(q) ||
+      op.titulo.toLowerCase().includes(q) ||
+      (op.proveedorAdjudicado || '').toLowerCase().includes(q) ||
+      (op.fuente_monto || '').toLowerCase().includes(q) ||
+      (op.codigoOrdenCompra || '').toLowerCase().includes(q)
+    );
+  }, [coAuditList, auditSearchFilter]);
+
+  const auditKPIs = useMemo(() => {
+    const total = coAuditList.length;
+    const valid = coAuditList.filter(op => (op.monto_final !== undefined ? op.monto_final : (op.monto || 0)) > 0).length;
+    const noFound = coAuditList.filter(op => op.estado_validacion_monto === 'MONTO_NO_ENCONTRADO' || (op.monto_final !== undefined ? op.monto_final : (op.monto || 0)) === 0).length;
+    const recOC = coAuditList.filter(op => op.estado_validacion_monto === 'RECUPERADO_DESDE_OC').length;
+    const recAdj = coAuditList.filter(op => op.estado_validacion_monto === 'RECUPERADO_DESDE_ADJUDICACION').length;
+    const recCot = coAuditList.filter(op => op.estado_validacion_monto === 'RECUPERADO_DESDE_COTIZACION').length;
+    const sumOrig = coAuditList.reduce((acc, op) => acc + (op.monto_original || 0), 0);
+    const sumFinal = coAuditList.reduce((acc, op) => acc + (op.monto_final !== undefined ? op.monto_final : (op.monto || 0)), 0);
+    const pctValid = total > 0 ? (valid / total * 100).toFixed(1) : '0';
+
+    return { total, valid, noFound, recOC, recAdj, recCot, sumOrig, sumFinal, sumRec: sumFinal - sumOrig, pctValid };
+  }, [coAuditList]);
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -2368,6 +2426,14 @@ export default function SearchModule({
                   📊 Exportar Excel
                 </button>
 
+                <button
+                  onClick={() => setShowAuditModal(true)}
+                  className="p-2 px-3 rounded-xl border border-blue-250 dark:border-blue-800/80 bg-blue-50/10 dark:bg-blue-950/10 hover:bg-blue-50/50 dark:hover:bg-blue-950/20 text-blue-600 dark:text-blue-400 font-bold text-[10px] transition cursor-pointer flex items-center gap-1.5"
+                  title="Ver Auditoría y Trazabilidad de Montos para Compras Ágiles"
+                >
+                  📋 Auditoría Compras Ágiles
+                </button>
+
                 {onSyncRealTime && (
                   <button
                     onClick={async () => {
@@ -3131,6 +3197,169 @@ export default function SearchModule({
                 className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-black shadow-lg shadow-blue-500/20 transition"
               >
                 Guardar e Inyectar en Mercado Público 💾
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* MODAL AUDITORÍA MONTOS COMPRAS ÁGILES (REGLA 17) */}
+      {showAuditModal && (
+        <div className="fixed inset-0 z-[100] bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-6xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
+            
+            {/* Header */}
+            <div className="p-5 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between bg-slate-50 dark:bg-slate-950">
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">📊</span>
+                  <h2 className="text-lg font-black text-slate-900 dark:text-white">Auditoría y Reconciliación de Montos – Compras Ágiles</h2>
+                  <span className="bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 text-[10px] font-black px-2.5 py-0.5 rounded-full border border-blue-200 dark:border-blue-800">
+                    REGLA 17 & 18 COMPLIANT
+                  </span>
+                </div>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                  Cruce de trazabilidad jerárquica: Orden de Compra &gt; Adjudicación &gt; Cotización Excel &gt; Presupuesto Estimado
+                </p>
+              </div>
+              <button
+                onClick={() => setShowAuditModal(false)}
+                className="p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white bg-slate-200/50 dark:bg-slate-800/50 hover:bg-slate-200 transition"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* KPI Cards */}
+            <div className="p-4 bg-slate-100/50 dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800 grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="bg-white dark:bg-slate-850 p-3 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                <span className="text-[10px] font-bold text-slate-400 block uppercase">Total Compras Ágiles</span>
+                <span className="text-xl font-black text-slate-900 dark:text-white">{auditKPIs.total}</span>
+                <span className="text-[10px] text-slate-500 block mt-0.5">{auditKPIs.pctValid}% con monto validado</span>
+              </div>
+              <div className="bg-white dark:bg-slate-850 p-3 rounded-2xl border border-emerald-200 dark:border-emerald-900/50 shadow-sm">
+                <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 block uppercase">Con Monto Válido (&gt; $0)</span>
+                <span className="text-xl font-black text-emerald-600 dark:text-emerald-400">{auditKPIs.valid}</span>
+                <span className="text-[10px] text-emerald-600/80 block mt-0.5">Recuperados por cruce</span>
+              </div>
+              <div className="bg-white dark:bg-slate-850 p-3 rounded-2xl border border-amber-200 dark:border-amber-900/50 shadow-sm">
+                <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 block uppercase">Monto No Encontrado</span>
+                <span className="text-xl font-black text-amber-600 dark:text-amber-400">{auditKPIs.noFound}</span>
+                <span className="text-[10px] text-amber-600/80 block mt-0.5">Sin datos en ninguna fuente</span>
+              </div>
+              <div className="bg-white dark:bg-slate-850 p-3 rounded-2xl border border-blue-200 dark:border-blue-900/50 shadow-sm">
+                <span className="text-[10px] font-bold text-blue-600 dark:text-blue-400 block uppercase">Monto Total Recuperado</span>
+                <span className="text-lg font-black text-blue-600 dark:text-blue-400">${auditKPIs.sumRec.toLocaleString('es-CL')} CLP</span>
+                <span className="text-[10px] text-blue-600/80 block mt-0.5">Gracias al cruce jerárquico</span>
+              </div>
+            </div>
+
+            {/* Filter bar inside modal */}
+            <div className="p-3 px-4 border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center gap-3">
+              <input
+                type="text"
+                value={auditSearchFilter}
+                onChange={(e) => setAuditSearchFilter(e.target.value)}
+                placeholder="🔍 Filtrar auditoría por ID, Organismo, Proveedor, Fuente o Estado..."
+                className="flex-1 px-3 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-xs text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span className="text-xs text-slate-500 font-bold whitespace-nowrap">
+                Mostrando {filteredCoAuditList.length} de {coAuditList.length}
+              </span>
+            </div>
+
+            {/* Diagnostic Table (Regla 17 Columns) */}
+            <div className="flex-1 overflow-auto p-4">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-slate-200 dark:border-slate-800 text-[9px] uppercase font-black text-slate-400 bg-slate-50 dark:bg-slate-950">
+                    <th className="py-2.5 px-2">ID Compra Ágil</th>
+                    <th className="py-2.5 px-2">Organismo</th>
+                    <th className="py-2.5 px-2">Proveedor Adjudicado</th>
+                    <th className="py-2.5 px-2 text-right">Original</th>
+                    <th className="py-2.5 px-2 text-right">Adjudicado</th>
+                    <th className="py-2.5 px-2 text-right">Monto OC</th>
+                    <th className="py-2.5 px-2 text-right">Monto Final</th>
+                    <th className="py-2.5 px-2">Código OC</th>
+                    <th className="py-2.5 px-2">Fuente Monto</th>
+                    <th className="py-2.5 px-2">Estado OC</th>
+                    <th className="py-2.5 px-2 text-center">Estado Validación</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-xs">
+                  {filteredCoAuditList.length === 0 ? (
+                    <tr>
+                      <td colSpan={11} className="py-8 text-center text-slate-400 italic">
+                        No se encontraron Compras Ágiles que coincidan con la búsqueda.
+                      </td>
+                    </tr>
+                  ) : (
+                    filteredCoAuditList.map((op) => {
+                      const mFinal = op.monto_final !== undefined ? op.monto_final : (op.monto || 0);
+                      const st = op.estado_validacion_monto || (mFinal > 0 ? 'VALIDADO' : 'MONTO_NO_ENCONTRADO');
+                      const stBadges: Record<string, string> = {
+                        'RECUPERADO_DESDE_OC': 'bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300 border-purple-200',
+                        'RECUPERADO_DESDE_ADJUDICACION': 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 border-blue-200',
+                        'RECUPERADO_DESDE_COTIZACION': 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border-emerald-200',
+                        'VALIDADO': 'bg-teal-100 text-teal-800 dark:bg-teal-950 dark:text-teal-300 border-teal-200',
+                        'MONTO_NO_ENCONTRADO': 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 border-amber-200'
+                      };
+
+                      return (
+                        <tr key={op.id} className="hover:bg-slate-50 dark:hover:bg-slate-850/50 transition">
+                          <td className="py-2.5 px-2 font-mono font-bold text-blue-600 dark:text-blue-400 whitespace-nowrap">
+                            {op.codigo}
+                          </td>
+                          <td className="py-2.5 px-2 font-bold max-w-[140px] truncate text-slate-700 dark:text-slate-300" title={op.organismo}>
+                            {op.organismo}
+                          </td>
+                          <td className="py-2.5 px-2 max-w-[130px] truncate text-slate-600 dark:text-slate-400" title={op.proveedorAdjudicado || 'Sin adjudicar'}>
+                            {op.proveedorAdjudicado || '—'}
+                          </td>
+                          <td className="py-2.5 px-2 text-right font-mono text-slate-400">
+                            ${(op.monto_original || 0).toLocaleString('es-CL')}
+                          </td>
+                          <td className="py-2.5 px-2 text-right font-mono text-slate-500">
+                            {op.monto_adjudicado ? `$${op.monto_adjudicado.toLocaleString('es-CL')}` : '—'}
+                          </td>
+                          <td className="py-2.5 px-2 text-right font-mono text-purple-600 dark:text-purple-400">
+                            {op.monto_oc ? `$${op.monto_oc.toLocaleString('es-CL')}` : '—'}
+                          </td>
+                          <td className="py-2.5 px-2 text-right font-mono font-black text-slate-900 dark:text-white">
+                            {mFinal > 0 ? `$${mFinal.toLocaleString('es-CL')}` : <span className="text-amber-500 font-normal italic">$0</span>}
+                          </td>
+                          <td className="py-2.5 px-2 font-mono text-[10px] text-slate-500">
+                            {op.codigoOrdenCompra || '—'}
+                          </td>
+                          <td className="py-2.5 px-2 text-[10px] font-bold text-slate-600 dark:text-slate-400 max-w-[120px] truncate" title={op.fuente_monto || 'No Encontrado'}>
+                            {op.fuente_monto || 'No Encontrado'}
+                          </td>
+                          <td className="py-2.5 px-2 text-[10px] text-slate-500">
+                            {op.estadoOC || '—'}
+                          </td>
+                          <td className="py-2.5 px-2 text-center">
+                            <span className={`text-[9px] font-black px-2 py-0.5 rounded-full border ${stBadges[st] || stBadges['MONTO_NO_ENCONTRADO']}`}>
+                              {st}
+                            </span>
+                          </td>
+                        </tr>
+                      );
+                    })
+                  )}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Footer */}
+            <div className="p-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex items-center justify-between">
+              <span className="text-xs text-slate-500 font-medium">
+                BidCoop v7.5 &bull; Jerarquía: OC (P1) &gt; Adjudicación (P2) &gt; Cotización Excel (P4) &gt; API (P5)
+              </span>
+              <button
+                onClick={() => setShowAuditModal(false)}
+                className="px-5 py-2 bg-slate-900 dark:bg-slate-100 hover:bg-slate-800 text-white dark:text-slate-900 rounded-xl text-xs font-black transition"
+              >
+                Cerrar Auditoría
               </button>
             </div>
           </div>
