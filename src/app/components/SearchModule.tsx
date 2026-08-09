@@ -201,7 +201,7 @@ export default function SearchModule({
 
   // Official Quote Generator Modal State
   const [showQuoteModal, setShowQuoteModal] = useState<boolean>(false);
-  const [quoteCompany, setQuoteCompany] = useState<'Aminorte' | 'V-MOCCS'>('Aminorte');
+  const [quoteCompany, setQuoteCompany] = useState<'Aminorte' | 'V-MOCCS' | 'Inder-Roll'>('Aminorte');
 
 
   // Edit Items Modal State
@@ -2444,15 +2444,27 @@ export default function SearchModule({
                       >
                         {visibleColumns.codigo && (
                           <td className="py-3.5">
-                            <span className="text-[10px] font-black text-slate-900 dark:text-white">{op.codigo}</span>
+                            <div className="flex items-center gap-1.5">
+                              <span className="text-[10px] font-black text-slate-900 dark:text-white">{op.officialCode || op.codigo}</span>
+                              {op.validationStatus === 'confirmado' ? (
+                                <span className="text-[8px] font-extrabold px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 flex items-center gap-0.5" title="Verificado con API oficial de Mercado Público">
+                                  ✓ MP Verificado
+                                </span>
+                              ) : (
+                                <span className="text-[8px] font-semibold px-1.5 py-0.5 rounded bg-amber-50 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-900" title="En cola para verificación de detalle oficial">
+                                  ⚠️ En Verificación
+                                </span>
+                              )}
+                            </div>
                             <div className="flex gap-1.5 items-center mt-1.5 flex-wrap">
                               <span className="text-[9px] font-black px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 block w-fit">{op.rubro}</span>
                               {op.empresaMatch && (
                                 <span className={`text-[8px] font-black px-1.5 py-0.2 rounded uppercase ${
                                   op.empresaMatch === 'Aminorte'
                                     ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400'
-                                    : 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-400'
-
+                                    : op.empresaMatch === 'V-MOCCS'
+                                    ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-400'
+                                    : 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400'
                                 }`}>
                                   {op.empresaMatch}
                                 </span>
@@ -2505,7 +2517,11 @@ export default function SearchModule({
                         )}
                         {visibleColumns.monto && (
                           <td className="py-3.5 text-right font-black text-xs text-slate-900 dark:text-white">
-                            ${op.monto.toLocaleString('es-CL')}
+                            {op.amountType === 'no_informado' || op.amount === null || (!op.amount && op.monto === 0) ? (
+                              <span className="text-[10px] font-semibold italic text-slate-400 dark:text-slate-500">Monto no informado</span>
+                            ) : (
+                              <span>${(op.amount || op.monto).toLocaleString('es-CL')} <span className="text-[9px] text-slate-400 font-medium">{op.currency || 'CLP'}</span></span>
+                            )}
                           </td>
                         )}
                         {visibleColumns.match && (

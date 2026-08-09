@@ -1,0 +1,75 @@
+{
+  "_comentario": "Configuración centralizada de empresas para BidCoop. NO duplicar RUT, nombre ni keywords en scripts individuales.",
+  "_version": "1.0.0",
+  "_ultimaModificacion": "2026-08-07",
+  "empresas": [
+    {
+      "id": "aminorte",
+      "nombre": "Aminorte",
+      "nombreCompleto": "AMINORTE SPA",
+      "rut": "76.XXX.XXX-X",
+      "emailContacto": "mviguera@aminorte.cl",
+      "activa": true,
+      "catalogoKeywords": [
+        "resma", "papel carta", "papel oficio", "papel 75g", "papel 80g", "fotocopia",
+        "archivador", "lomo ancho", "carpeta", "nepaco", "fastener", "separador",
+        "bolígrafo", "boligrafo", "lápiz", "lapiz", "destacador", "corchetera", "corchete",
+        "saca corchete", "clip", "clip mariposa", "post-it", "nota adhesiva", "cinta adhesiva",
+        "cinta embalaje", "tijera", "regla", "guillotina", "chinche", "utiles de oficina",
+        "útiles de oficina", "materiales de oficina", "insumos de oficina",
+        "tóner", "toner", "tinta", "cartucho", "impresora", "mouse", "teclado", "mouse pad",
+        "cable hdmi", "displayport", "pendrive", "usb", "plotter", "impresión", "impresion",
+        "ampolleta", "led", "huincha aisladora", "pintura", "esmalte al agua", "brocha",
+        "aire acondicionado", "climatización", "aire"
+      ],
+      "rubros": ["Artículos de Escritorio y Oficina", "Tecnología y Hardware", "Servicios de Climatización y Maquinaria"]
+    },
+    {
+      "id": "vmoccs",
+      "nombre": "V-MOCCS",
+      "nombreCompleto": "V-MOCCS LTDA",
+      "rut": "XX.XXX.XXX-X",
+      "emailContacto": "jorge.alvarado@discoverymerch.cl",
+      "activa": true,
+      "catalogoKeywords": [
+        "silla", "silla ejecutiva", "silla operativa", "silla ergonómica", "silla ergo",
+        "silla visita", "silla de escritorio",
+        "escritorio", "escritorio modular", "escritorio individual",
+        "mesa de reunión", "mesa reunion", "mesa de trabajo",
+        "estante", "librero", "cajonera", "cajonerа rodante", "archivo metálico",
+        "kardex", "locker", "panel divisorio", "mueble", "mobiliario",
+        "pizarra", "mampara", "tabique", "biombo"
+      ],
+      "rubros": ["Mobiliario y Equipamiento de Oficina", "Artículos de Escritorio y Oficina"]
+    },
+    {
+      "id": "inder-roll",
+      "nombre": "Inder-Roll",
+      "nombreCompleto": "INDER-ROLL SPA",
+      "rut": "XX.XXX.XXX-X",
+      "emailContacto": "jcooper@inder-roll.cl",
+      "activa": true,
+      "catalogoKeywords": [
+        "papel higiénico", "papel higienico", "toalla de papel", "toalla papel", "interfoliada",
+        "jumbo", "hoja simple", "hoja doble", "rollo 300m", "rollo 200m",
+        "cloro", "cloro gel", "cloro concentrado", "desinfectante", "amonio cuaternario",
+        "alcohol gel", "detergente", "detergente líquido", "desengrasante", "lavaloza",
+        "limpiador de pisos", "limpiador superficies", "lustramuebles", "cera", "cera autobrillo",
+        "suavizante", "quitamanchas", "jabón", "jabon", "jabón líquido", "dispensador",
+        "bolsa basura", "escoba", "escobillón", "mopa", "paño microfibra",
+        "guante nitrilo", "mascarilla", "bolsa basura",
+        "aseo", "higiene", "limpieza", "desechable", "desechables",
+        "servilleta", "servilletas", "cafetería", "cafeteria",
+        "sabanilla", "sabanillas", "funda", "fundas", "albergue", "insumos hospitalarios",
+        "esterilización", "esterilizacion"
+      ],
+      "rubros": ["Aseo e Higiene", "Insumos Hospitalarios", "Artículos de Aseo"]
+    }
+  ],
+  "configuracionMatch": {
+    "nivelConfianzaMinimo": 70,
+    "usarMatchAproximado": false,
+    "empresaDefaultSinMatch": "aminorte",
+    "_comentario_default": "Si no hay match, asignar a aminorte como fallback. Cambiar a null para no asignar."
+  }
+}

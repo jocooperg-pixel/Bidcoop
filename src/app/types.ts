@@ -1,5 +1,20 @@
-export type Empresa = 'Consolidado' | 'Aminorte' | 'V-MOCCS';
-export type EmpresaMatch = 'Aminorte' | 'V-MOCCS';
+export type Empresa = 'Consolidado' | 'Aminorte' | 'V-MOCCS' | 'Inder-Roll';
+export type EmpresaMatch = 'Aminorte' | 'V-MOCCS' | 'Inder-Roll';
+
+/**
+ * Metadatos de trazabilidad del match empresa-oportunidad.
+ * Registra por qué y cómo se asoció una oportunidad a una empresa.
+ */
+export interface MatchMetadata {
+  empresaId: string;            // ID interno de la empresa (e.g. 'aminorte')
+  empresaAsociada: EmpresaMatch; // Nombre de la empresa
+  motivoMatch: 'keyword_catalog' | 'rut_directo' | 'source_hint' | 'fallback_default';
+  campoMatch: string;           // Campo que produjo la coincidencia
+  fechaDeteccion: string;       // Fecha ISO cuando se detectó el match
+  nivelConfianza: number;       // 0-99
+  keywordsCoincidentes: string[]; // Keywords que generaron el match
+  fuenteDatos: 'api' | 'excel' | 'manual'; // Origen del registro
+}
 
 
 export interface DocumentoAdjunto {
@@ -49,11 +64,27 @@ export interface Oportunidad {
   competidoresPropuestos: Array<{ nombre: string; rut: string; cuotaMercado: number; adjudicacionesRecientes: number }>;
   historialPrecios?: Array<{ fecha: string; precioUnitarioPromedio: number }>;
   empresaMatch?: EmpresaMatch;
+  matchMetadata?: MatchMetadata; // Trazabilidad del match empresa-oportunidad
   modalidad: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras';
   esInvitacionGrandesCompras?: boolean;
   convenioMarcoNombre?: string;
-  montoUtm?: number;
   subestadoEvaluacion?: string;
+  montoUtm?: number;
+
+
+  // --- TRAZABILIDAD OFICIAL Y ESTADO DE VALIDACIÓN ---
+  sourceSystem?: 'mercadopublico_api' | 'mercadopublico_excel' | 'manual';
+  sourceType?: 'licitacion' | 'compra_agil' | 'convenio_marco' | 'grandes_compras';
+  officialCode?: string;         // Código oficial de Mercado Público (igual a codigo)
+  sourceUrl?: string;            // URL oficial a la ficha en Mercado Público
+  sourceRecordId?: string;       // ID interno de origen
+  fetchedAt?: string;            // Fecha/hora ISO cuando se obtuvo el dato
+  lastVerifiedAt?: string;       // Fecha/hora ISO de última verificación con API de detalle
+  amount?: number | null;        // Monto numérico o null si no está informado
+  currency?: 'CLP' | 'USD' | 'UF' | 'UTM';
+  amountType?: 'monto_estimado' | 'presupuesto_disponible' | 'monto_reservado' | 'no_informado';
+  validationStatus?: 'confirmado' | 'requiere_verificacion' | 'rechazado';
+
   fechaAdjudicacionEstimada?: string;
   admisibilidadIA?: {
     checklist: Array<{ requisito: string; estado: 'Cumple' | 'Atención' | 'Riesgo'; detalle: string }>;
