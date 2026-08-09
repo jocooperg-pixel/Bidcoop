@@ -231,13 +231,18 @@ for op in opps:
     emp = op.get("empresaMatch", "Sin asignar")
     empresa_counts[emp] = empresa_counts.get(emp, 0) + 1
 
-target_empresas = ["Aminorte", "V-MOCCS", "Inder-Roll"]
-for emp in target_empresas:
+active_emp_names = ["Aminorte", "Inder-Roll"]
+if os.path.isfile(EMPRESAS_CONFIG):
+    with open(EMPRESAS_CONFIG) as f:
+        cfg = json.load(f)
+        active_emp_names = [e["nombre"] for e in cfg.get("empresas", []) if e.get("activa", True)]
+
+for emp in active_emp_names:
     count = empresa_counts.get(emp, 0)
     if count > 0:
-        ok(f"Empresa '{emp}': {count} oportunidades asignadas")
+        ok(f"Empresa activa '{emp}': {count} oportunidades asignadas")
     else:
-        fail(f"Empresa '{emp}': 0 oportunidades — posible error en config")
+        fail(f"Empresa activa '{emp}': 0 oportunidades — posible error en config")
 
 # ─── T08: NINGÚN ORGANISMO VACÍO EN CONFIRMADOS ───────────
 print("\n[T08] Calidad de campos en registros confirmados")
