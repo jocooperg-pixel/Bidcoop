@@ -2,9 +2,9 @@
 """
 BidCoop — Envío de Reportes por Correo Electrónico (Estrictamente 2 Envíos)
 1) Correo Regiones: Compras Ágiles activas fuera de la RM (I a XVI regiones)
-   Destinatarios BCC: mviguera@aminorte.cl, jcooper@inder-roll.cl
+   Destinatarios BCC: mviguera@aminorte.cl, jonathan.cooper.g@gmail.com
 2) Correo Región Metropolitana: Compras Ágiles activas de la RM
-   Destinatarios BCC: mviguera@aminorte.cl, jcooper@inder-roll.cl
+   Destinatarios BCC: mviguera@aminorte.cl, jonathan.cooper.g@gmail.com
 """
 
 import os
@@ -25,12 +25,12 @@ SMTP_PASS = "stutlzydxqefmptu"
 
 EMAILS_REGIONES = [
     "mviguera@aminorte.cl",
-    "jcooper@inder-roll.cl"
+    "jonathan.cooper.g@gmail.com"
 ]
 
 EMAILS_RM = [
     "mviguera@aminorte.cl",
-    "jcooper@inder-roll.cl"
+    "jonathan.cooper.g@gmail.com"
 ]
 
 MOCK_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src/app/mockData.ts")

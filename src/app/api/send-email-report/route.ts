@@ -21,17 +21,17 @@ export async function POST(request: Request) {
 
     // 1. RECIPIENT LISTS STRICTLY SEGREGATED BY BUSINESS DIRECTIVE
     const INDER_ROLL_EMAILS = [
-      'jcooper@inder-roll.cl'
+      'jonathan.cooper.g@gmail.com'
     ];
 
     const AMINORTE_VMOCCS_SUR_CENTRO_EMAILS = [
       'mviguera@aminorte.cl',
-      'jcooper@inder-roll.cl'
+      'jonathan.cooper.g@gmail.com'
     ];
 
     const AMINORTE_VMOCCS_METROPOLITANA_EMAILS = [
       'mviguera@aminorte.cl',
-      'jcooper@inder-roll.cl'
+      'jonathan.cooper.g@gmail.com'
     ];
 
     // Helper for exact Chilean region resolution from organism & description
@@ -143,12 +143,12 @@ export async function POST(request: Request) {
 
     const EMAILS_REGIONES = [
       'mviguera@aminorte.cl',
-      'jcooper@inder-roll.cl'
+      'jonathan.cooper.g@gmail.com'
     ];
 
     const EMAILS_RM = [
       'mviguera@aminorte.cl',
-      'jcooper@inder-roll.cl'
+      'jonathan.cooper.g@gmail.com'
     ];
 
     // Keys for Resend / SMTP
