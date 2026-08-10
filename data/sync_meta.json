@@ -1,16 +1,52 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-09T19:53:58.531992",
+  "ultimaSincronizacionExitosa": "2026-08-09T21:25:26.650754",
+  "ultimoIntentoRealizado": "2026-08-09T21:25:26.650754",
   "exitosa": true,
-  "registrosEnPlataforma": 5819,
-  "comprasAgilesTotal": 1221,
-  "comprasAgilesValidadas": 1161,
-  "empresasActivas": [
-    "Aminorte",
-    "Inder-Roll"
-  ],
+  "registrosEnPlataforma": 376,
+  "registrosConfirmados": 376,
+  "registrosPendientesVerificacion": 0,
+  "registrosConMontoReal": 299,
+  "excluidosPrefiltroIrrelevante": 4494,
+  "excluidosSinDatosReales": 2,
+  "excluidosSinMatchEmpresa": 520,
+  "comprasAgilesAudit": {
+    "total": 212,
+    "conMontoValido": 212,
+    "pctValidado": 100.0,
+    "stats": {
+      "VALIDADO": 1,
+      "RECUPERADO_DESDE_OC": 0,
+      "RECUPERADO_DESDE_ADJUDICACION": 0,
+      "RECUPERADO_DESDE_COTIZACION": 211,
+      "MONTO_NO_ENCONTRADO": 0
+    },
+    "montoOriginalSum": 326328150,
+    "montoFinalSum": 326328150,
+    "montoRecuperadoSum": 0
+  },
+  "categorias": {
+    "licitaciones": 164,
+    "comprasAgiles": 212,
+    "convenioMarco": 0,
+    "ordenes_compra": 0,
+    "grandesCompras": 0
+  },
+  "tiposOficiales": {
+    "LP": 28,
+    "LE": 99,
+    "LR": 13,
+    "L1": 22,
+    "CO": 1,
+    "I2": 1,
+    "E2": 1,
+    "COT": 211
+  },
   "matchPorEmpresa": {
-    "Aminorte": 5555,
-    "Inder-Roll": 264
-  }
+    "Aminorte": 289,
+    "V-MOCCS": 87
+  },
+  "tiempoEjecucionSegundos": 803.7,
+  "errores": [],
+  "advertencias": []
 }

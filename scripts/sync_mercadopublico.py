@@ -295,7 +295,13 @@ def infer_chilean_region(inst: str, unidad: str = "", title: str = "") -> str:
                 return reg_name
     return "Región Metropolitana"
 
-def calculate_company_match(title: str, desc: str = "", source_hint: str = "") -> Tuple[str, str, str, int, List[str]]:
+def calculate_company_match(title: str, desc: str = "", source_hint: str = "") -> Tuple[Optional[str], Optional[str], str, int, List[str]]:
+    """
+    Devuelve (empresa_id, empresa_nombre, rubro, confidence, keywords) SOLO si hay
+    un match real por keyword (o por source_hint explícito) contra una empresa activa.
+    Si no hay match real, retorna (None, None, ..., 0, []) — NO se asigna empresa por
+    defecto. El llamador debe excluir el registro en ese caso en vez de inventar un dueño.
+    """
     full_text = strip_accents(f"{title} {desc}".lower())
     best_empresa = None
     best_score = 0
@@ -327,27 +333,33 @@ def calculate_company_match(title: str, desc: str = "", source_hint: str = "") -
                 else:
                     best_rubro = rubros[0]
 
-    if best_score == 0 and source_hint:
+    if best_empresa is None and source_hint:
         for empresa in EMPRESAS:
+            if not empresa.get("activa", True):
+                continue
             if source_hint.lower() in empresa["id"].lower() or source_hint.lower() in empresa["nombre"].lower():
                 best_empresa = empresa
                 best_rubro = empresa.get("rubros", ["Artículos de Escritorio y Oficina"])[0]
                 break
 
     if best_empresa is None:
-        default_id = EMPRESA_DEFAULT
-        for empresa in EMPRESAS:
-            if empresa["id"] == default_id:
-                best_empresa = empresa
-                break
-        if best_empresa is None and EMPRESAS:
-            best_empresa = EMPRESAS[0]
-
-    if best_empresa is None:
-        return "aminorte", "Aminorte", "Artículos de Escritorio y Oficina", 50, []
+        return None, None, best_rubro, 0, []
 
     confidence = min(50 + (best_score * 10), 98)
     return best_empresa["id"], best_empresa["nombre"], best_rubro, confidence, best_keywords
+
+
+def title_matches_active_companies(title: str, desc: str = "") -> bool:
+    """Pre-filtro rápido (sin llamadas a la API) para descartar procesos irrelevantes
+    antes de gastar tiempo/llamadas pidiendo su detalle oficial."""
+    full_text = strip_accents(f"{title} {desc}".lower())
+    for empresa in EMPRESAS:
+        if not empresa.get("activa", True):
+            continue
+        for k in empresa.get("catalogoKeywords", []):
+            if strip_accents(k.lower()) in full_text:
+                return True
+    return False
 
 
 def fetch_json(url: str, timeout: int = 20, max_retries: int = 3) -> Optional[dict]:
@@ -636,6 +648,10 @@ def build_opportunity_record(
     empresa_id, empresa_nombre, rubro, confidence, keywords = calculate_company_match(title, desc or "")
     region_final = region or infer_chilean_region(title, "", "")
 
+    # Señales para que main() excluya el registro en vez de mostrar datos inventados:
+    sin_datos_reales = not detail_item and not cot_excel_data
+    sin_match_empresa = empresa_id is None
+
     monto_final_num = reconciled["monto_final"]
     amount_sem = reconciled["amount"]
     amount_type_sem = "monto_estimado" if amount_sem and amount_sem > 0 else "no_informado"
@@ -649,12 +665,12 @@ def build_opportunity_record(
         "id_cotizacion": cot_excel_data.get("id") if cot_excel_data else code,
         "id_orden_compra": reconciled.get("codigoOrdenCompra"),
         "codigoOrdenCompra": reconciled.get("codigoOrdenCompra"),
-        "rutOrganismo": organismo_rut or "60.000.000-0",
+        "rutOrganismo": organismo_rut or "No informado",
         "tipoOficial": tipo,
         "tipoNombre": tipo_nombre,
         "titulo": title,
-        "organismo": organismo or "Organismo Público (pendiente verificación)",
-        "organismoRut": organismo_rut or "60.000.000-0",
+        "organismo": organismo or "No informado",
+        "organismoRut": organismo_rut or "No informado",
         "organismoPagoDias": 30,
         "organismoRiesgo": "Bajo",
         "rubro": rubro,
@@ -690,6 +706,11 @@ def build_opportunity_record(
         "modalidad": modality,
         "esInvitacionGrandesCompras": False,
         "subestadoEvaluacion": "Sin oferta seleccionada",
+
+        # Flags internos de calidad de dato — main() los usa para excluir el registro
+        # de mockData.ts en vez de publicar valores inventados. Nunca llegan al frontend.
+        "_sinDatosReales": sin_datos_reales,
+        "_sinMatchEmpresa": sin_match_empresa,
 
         # --- TRAZABILIDAD Y RECONCILIACIÓN v7.5 ---
         "sourceSystem": source_system,
@@ -751,6 +772,9 @@ def main():
     cached_fetched = 0
     failed_fetched = 0
     timeout_skipped = 0
+    prefiltered_out = 0
+    excluded_no_real_data = 0
+    excluded_no_company_match = 0
 
     for idx, bulk_item in enumerate(bulk_list):
         code = bulk_item.get("CodigoExterno")
@@ -763,6 +787,14 @@ def main():
         m = re.match(r'^(\d+-\d+)', code)
         base_code = m.group(1) if m else code
         excel_match = cot_excel_dict.get(code) or cot_base_dict.get(base_code)
+
+        # Pre-filtro: si el título no calza con el catálogo de ninguna empresa activa
+        # y no hay cotización Excel que lo respalde, se descarta ANTES de gastar una
+        # llamada a la API de detalle. Esto evita pedir detalle de miles de licitaciones
+        # irrelevantes (y por eso antes se agotaba el tiempo antes de terminar).
+        if not excel_match and not title_matches_active_companies(bulk_item.get("Nombre") or ""):
+            prefiltered_out += 1
+            continue
 
         cached_entry = detail_cache.get(code)
         if cached_entry and is_cache_valid(cached_entry, close_str):
@@ -785,6 +817,16 @@ def main():
                     failed_fetched += 1
 
         op_record = build_opportunity_record(code, bulk_item, detail_item, excel_match, field_errors, field_warnings)
+
+        # No publicar registros sin datos reales (organismo/monto inventados) ni sin
+        # match real de empresa (nunca asignar por defecto a Aminorte/V-MOCCS).
+        if op_record.pop("_sinDatosReales", False):
+            excluded_no_real_data += 1
+            continue
+        if op_record.pop("_sinMatchEmpresa", False):
+            excluded_no_company_match += 1
+            continue
+
         opportunities_by_code[code] = op_record
 
     # ── 3. MERGE EXCEL COTIZACIONES FALTANTES (COMPRAS ÁGILES) ──
@@ -797,10 +839,17 @@ def main():
         # Si no existe por ID exacto ni por código base
         if cid not in opportunities_by_code and base_code not in opportunities_by_code:
             op_record = build_opportunity_record(cid, None, None, ex_item, field_errors, field_warnings)
+            op_record.pop("_sinDatosReales", False)
+            if op_record.pop("_sinMatchEmpresa", False):
+                excluded_no_company_match += 1
+                continue
             opportunities_by_code[cid] = op_record
             excel_added += 1
 
     print(f"[FASE 3] Añadidas {excel_added} Compras Ágiles exclusivas desde Cotizaciones.xls.")
+    print(f"[FASE 2] Pre-filtradas (irrelevantes, sin llamar API detalle): {prefiltered_out}")
+    print(f"[FASE 2] Excluidas por falta de datos reales (organismo/monto no verificable): {excluded_no_real_data}")
+    print(f"[FASE 2] Excluidas por no calzar con catálogo de ninguna empresa activa: {excluded_no_company_match}")
 
     save_detail_cache(detail_cache)
 
@@ -947,6 +996,9 @@ def main():
         "registrosConfirmados": confirmed_count,
         "registrosPendientesVerificacion": len(processed) - confirmed_count,
         "registrosConMontoReal": with_amount,
+        "excluidosPrefiltroIrrelevante": prefiltered_out,
+        "excluidosSinDatosReales": excluded_no_real_data,
+        "excluidosSinMatchEmpresa": excluded_no_company_match,
         "comprasAgilesAudit": {
             "total": co_total_count,
             "conMontoValido": co_valid_count,

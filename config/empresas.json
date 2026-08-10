@@ -30,7 +30,7 @@
       "nombreCompleto": "V-MOCCS LTDA",
       "rut": "XX.XXX.XXX-X",
       "emailContacto": "jorge.alvarado@discoverymerch.cl",
-      "activa": false,
+      "activa": true,
       "catalogoKeywords": [
         "silla", "silla ejecutiva", "silla operativa", "silla ergonómica", "silla ergo",
         "silla visita", "silla de escritorio",
@@ -48,7 +48,7 @@
       "nombreCompleto": "INDER-ROLL SPA",
       "rut": "XX.XXX.XXX-X",
       "emailContacto": "jcooper@inder-roll.cl",
-      "activa": true,
+      "activa": false,
       "catalogoKeywords": [
         "papel higiénico", "papel higienico", "toalla de papel", "toalla papel", "interfoliada",
         "jumbo", "hoja simple", "hoja doble", "rollo 300m", "rollo 200m",
@@ -69,7 +69,7 @@
   "configuracionMatch": {
     "nivelConfianzaMinimo": 70,
     "usarMatchAproximado": false,
-    "empresaDefaultSinMatch": "aminorte",
-    "_comentario_default": "Si no hay match, asignar a aminorte como fallback. Cambiar a null para no asignar."
+    "empresaDefaultSinMatch": null,
+    "_comentario_default": "Sin fallback: si un proceso no hace match real con el catálogo de una empresa activa, se excluye de la plataforma en vez de asignarse por defecto."
   }
 }
