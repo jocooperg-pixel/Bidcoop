@@ -16,6 +16,7 @@
     "@licitia/database": "file:packages/database",
     "@licitia/mp-client": "file:packages/mp-client",
     "@types/nodemailer": "^8.0.1",
+    "@vercel/blob": "^2.7.0",
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.7",
     "next": "16.2.1",

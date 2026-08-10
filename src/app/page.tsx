@@ -59,9 +59,11 @@ export default function Home() {
   // La plataforma no tiene backend/base de datos: mockOportunidades siempre viene
   // "fresco" del último sync real (se sobreescribe en cada deploy), pero las
   // postulaciones que el usuario crea son trabajo suyo — deben sobrevivir a un
-  // refresh o a un redeploy en vez de vivir solo en memoria de React.
-  // localStorage es el único almacenamiento disponible sin agregar infraestructura
-  // nueva: persiste por navegador, no entre dispositivos.
+  // refresh, un redeploy, O DESDE OTRO COMPUTADOR: se guardan en Vercel Blob
+  // (/api/postulaciones, store "bidcoop-data") — esa es la fuente de verdad
+  // compartida. localStorage solo se usa como caché instantánea local mientras
+  // se completa la primera carga desde el servidor (evita pantalla vacía un
+  // instante), nunca como reemplazo del servidor.
   const POSTULACIONES_STORAGE_KEY = 'bidcoop_postulaciones_v1';
 
   const loadStoredPostulaciones = (): Postulacion[] => {
@@ -78,6 +80,24 @@ export default function Home() {
 
   // Core Data Lists in state to allow dynamic reactivity across components
   const [postulaciones, setPostulaciones] = useState<Postulacion[]>(loadStoredPostulaciones);
+  // No persistir al servidor hasta que la carga inicial desde /api/postulaciones
+  // haya terminado — si no, el primer render (con la caché local, potencialmente
+  // vieja o vacía) alcanzaría a sobreescribir datos reales ya guardados por otro
+  // computador.
+  const [postulacionesHidratadas, setPostulacionesHidratadas] = useState(false);
+
+  const aplicarMarcadorPostulada = (ops: Oportunidad[], postuladasIds: Set<string>) =>
+    ops.map(op => {
+      if (postuladasIds.has(op.id)) {
+        return op.estado === 'Postulada' ? op : { ...op, estado: 'Postulada' as const };
+      }
+      // Si tenía el marcador local pero el servidor ya no lo confirma, revertir
+      // (evita quedar "atascado" en Postulada por una postulación borrada en otro computador).
+      if (op.estado === 'Postulada') {
+        return { ...op, estado: 'Publicada' as const };
+      }
+      return op;
+    });
 
   const [oportunidades, setOportunidades] = useState<Oportunidad[]>(() => {
     const d = new Date();
@@ -86,9 +106,10 @@ export default function Home() {
     const day = String(d.getDate()).padStart(2, '0');
     const todayStr = `${year}-${month}-${day}`;
 
-    // Reconstruir qué oportunidades ya fueron postuladas (postulaciones restauradas
-    // desde localStorage), ya que mockOportunidades siempre trae el estado real
-    // de Mercado Público, no el marcador local "Postulada".
+    // Reconstruir qué oportunidades ya fueron postuladas (según la caché local,
+    // de entrada — se corrige apenas llega la respuesta real del servidor),
+    // ya que mockOportunidades siempre trae el estado real de Mercado Público,
+    // no el marcador local "Postulada".
     const postuladasIds = new Set(loadStoredPostulaciones().map(p => p.oportunidadId));
 
     return mockOportunidades.map(o => {
@@ -102,7 +123,33 @@ export default function Home() {
     });
   });
 
-  // Persistir cada cambio real de postulaciones (crear una nueva, actualizar estado, etc.)
+  // Cargar la fuente de verdad real (servidor) apenas monta — sobrescribe la
+  // caché local con lo que realmente hay guardado, sin importar desde qué
+  // computador se abra la plataforma.
+  useEffect(() => {
+    let cancelado = false;
+    fetch('/api/postulaciones', { cache: 'no-store' })
+      .then(res => (res.ok ? res.json() : []))
+      .then((data: unknown) => {
+        if (cancelado) return;
+        const lista = Array.isArray(data) ? (data as Postulacion[]) : [];
+        setPostulaciones(lista);
+        const postuladasIds = new Set(lista.map(p => p.oportunidadId));
+        setOportunidades(prev => aplicarMarcadorPostulada(prev, postuladasIds));
+      })
+      .catch(err => console.warn('No se pudo cargar postulaciones desde el servidor:', err))
+      .finally(() => {
+        if (!cancelado) setPostulacionesHidratadas(true);
+      });
+    return () => {
+      cancelado = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Persistir cada cambio real de postulaciones: caché local instantánea +
+  // guardado real en el servidor (Vercel Blob) para que se vea en cualquier
+  // computador.
   useEffect(() => {
     if (typeof window === 'undefined') return;
     try {
@@ -110,7 +157,15 @@ export default function Home() {
     } catch (err) {
       console.warn('No se pudo guardar postulaciones en localStorage:', err);
     }
-  }, [postulaciones]);
+
+    if (!postulacionesHidratadas) return;
+
+    fetch('/api/postulaciones', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(postulaciones)
+    }).catch(err => console.warn('No se pudo guardar postulaciones en el servidor:', err));
+  }, [postulaciones, postulacionesHidratadas]);
   const [ordenesCompra, setOrdenesCompra] = useState(mockOrdenesCompra);
   const [teamMembers, setTeamMembers] = useState<MiembroEquipo[]>(mockMiembrosEquipo);
   const [notifications, setNotifications] = useState<Notificacion[]>(mockNotificaciones);
