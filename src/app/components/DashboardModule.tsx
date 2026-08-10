@@ -35,6 +35,11 @@ export default function DashboardModule({
   globalPrefs,
   onChangePrefs
 }: DashboardModuleProps) {
+  const empresasActivasCount = useMemo(
+    () => new Set(oportunidades.map(o => o.empresaMatch).filter(Boolean)).size,
+    [oportunidades]
+  );
+
   const [dateRange, setDateRange] = useState<'hoy' | '7d' | '1m' | '3m'>('1m');
   const [suggestedTab, setSuggestedTab] = useState<'match' | 'recientes' | 'monto'>('match');
   
@@ -186,7 +191,7 @@ export default function DashboardModule({
             <span className="text-[10px] font-extrabold uppercase text-slate-400 block">Status Holding</span>
             <span className="text-xs font-black text-sky-400 flex items-center gap-1.5 justify-end">
               <span className="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
-              3 Empresas Activas
+              {empresasActivasCount} {empresasActivasCount === 1 ? 'Empresa Activa' : 'Empresas Activas'}
             </span>
           </div>
         </div>

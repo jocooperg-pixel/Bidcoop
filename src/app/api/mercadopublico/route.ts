@@ -2,18 +2,24 @@
 import { NextResponse } from 'next/server';
 import { mockOportunidades } from '@/app/mockData';
 
+// ═══════════════════════════════════════════════════════════════════════════
+// Único motor de datos masivos: scripts/sync_mercadopublico.py -> mockData.ts.
+// Este endpoint NO vuelve a traer ni reclasificar el listado completo de
+// licitaciones activas (eso ya lo hace, una sola vez, el script Python con
+// pre-filtro por catálogo, reconciliación de montos y exclusión de registros
+// sin datos reales). Aquí solo se expone una consulta puntual por código
+// exacto, en modo passthrough: si Mercado Público tiene el dato, se devuelve
+// tal cual; si no, se responde honestamente que no fue encontrado — nunca se
+// inventan organismo/monto/empresa de relleno.
+// ═══════════════════════════════════════════════════════════════════════════
+
 const TICKET = 'F8537A18-6766-4DEF-9E59-426B4FEE2844';
 const BASE_URL = 'https://api.mercadopublico.cl/servicios/v1/publico';
 
-// System-wide in-memory cache definitions
 interface CacheEnvelope {
   data: any;
   timestamp: number;
 }
-
-// Global cache for the complete synced list
-let syncCache: CacheEnvelope | null = null;
-const SYNC_CACHE_TTL = 10 * 60 * 1000; // 10 minutes
 
 // Cache for individual licitación details by code (lasts 24 hours)
 const detailCache = new Map<string, CacheEnvelope>();
@@ -57,189 +63,93 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const codigo = searchParams.get('codigo');
   const endpoint = searchParams.get('endpoint') || 'licitaciones';
-  const mode = searchParams.get('mode') || 'sync'; // 'sync' | 'detail' | 'docs'
   const forceRefresh = searchParams.get('refresh') === 'true' || searchParams.get('force') === 'true';
 
-  if (forceRefresh) {
-    syncCache = null;
-  }
-
-  // =============================================
-  // MODE: Single code lookup (detail or direct query)
-  // =============================================
-  if (codigo) {
-    if (!forceRefresh) {
-      const cached = detailCache.get(codigo);
-      const now = Date.now();
-      if (cached && now - cached.timestamp < DETAIL_CACHE_TTL) {
-        return NextResponse.json(cached.data);
-      }
-    }
-
-    const targetUrl = endpoint === 'ordenes'
-      ? `${BASE_URL}/OrdenCompra.json?codigo=${codigo}&ticket=${TICKET}`
-      : `${BASE_URL}/licitaciones.json?codigo=${codigo}&ticket=${TICKET}`;
-    
-    const data = await safeFetch(targetUrl, 12000, 3);
-    
-    // If live API returned valid results, return & cache
-    if (data && data.Listado && Array.isArray(data.Listado) && data.Listado.length > 0) {
-      detailCache.set(codigo, { data, timestamp: Date.now() });
-      return NextResponse.json(data);
-    }
-
-    // Fallback: search in local mockOportunidades
-    const localMatch = mockOportunidades.find(
-      op => op.codigo.toLowerCase() === codigo.toLowerCase() || op.id.toLowerCase() === codigo.toLowerCase()
-    );
-
-    if (localMatch) {
-      const fallbackPayload = {
-        Cantidad: 1,
-        FechaCreacion: new Date().toISOString(),
-        Version: 'v1',
-        Listado: [{
-          CodigoExterno: localMatch.codigo,
-          Nombre: localMatch.titulo,
-          CodigoEstado: 5,
-          Estado: localMatch.estado || 'Publicada',
-          Comprador: {
-            CodigoOrganismo: '3244',
-            NombreOrganismo: localMatch.organismo,
-            RutUnico: localMatch.organismoRut || '76.123.456-7'
-          },
-          DiasMontoEstimado: localMatch.organismoPagoDias || 30,
-          MontoEstimado: localMatch.monto,
-          FechaPublicacion: `${localMatch.fechaPublicacion}T09:00:00`,
-          FechaCierre: localMatch.fechaCierre ? `${localMatch.fechaCierre}T15:00:00` : undefined,
-          Descripcion: localMatch.descripcion,
-          Rubro: localMatch.rubro,
-          Items: {
-            Listado: localMatch.items.map(it => ({
-              Correlativo: 1,
-              CodigoProducto: 44121500,
-              CodigoCategoria: 'Office Supplies',
-              Categoria: localMatch.rubro,
-              NombreProducto: it.producto,
-              Descripcion: it.producto,
-              Cantidad: it.cantidad,
-              UnidadMedida: 'UN'
-            }))
-          }
-        }]
-      };
-      detailCache.set(codigo, { data: fallbackPayload, timestamp: Date.now() });
-      return NextResponse.json(fallbackPayload);
-    }
-
-    if (data?.Codigo === 10500) {
-      return NextResponse.json(
-        { error: 'El servidor de Mercado Público está ocupado (peticiones simultáneas). Por favor, intenta de nuevo.' },
-        { status: 429 }
-      );
-    }
-
+  if (!codigo) {
     return NextResponse.json(
-      { error: `No se encontró la licitación o compra ágil con código ${codigo}.` },
-      { status: 444 }
+      {
+        error: 'Este endpoint solo soporta consulta por código exacto (?codigo=...). El listado masivo de oportunidades se genera únicamente vía scripts/sync_mercadopublico.py -> mockData.ts.'
+      },
+      { status: 400 }
     );
   }
 
-  // =============================================
-  // MODE: sync — Fetch active licitaciones
-  // =============================================
-  try {
+  if (!forceRefresh) {
+    const cached = detailCache.get(codigo);
     const now = Date.now();
-    if (!forceRefresh && syncCache && now - syncCache.timestamp < SYNC_CACHE_TTL) {
-      return NextResponse.json(syncCache.data);
+    if (cached && now - cached.timestamp < DETAIL_CACHE_TTL) {
+      return NextResponse.json(cached.data);
     }
+  }
 
-    // 1. Fetch live active list from Mercado Público API
-    const data = await safeFetch(
-      `${BASE_URL}/licitaciones.json?estado=activas&ticket=${TICKET}`,
-      15000
-    );
+  const targetUrl = endpoint === 'ordenes'
+    ? `${BASE_URL}/OrdenCompra.json?codigo=${codigo}&ticket=${TICKET}`
+    : `${BASE_URL}/licitaciones.json?codigo=${codigo}&ticket=${TICKET}`;
 
-    const allLicitaciones: any[] = data?.Listado || [];
-    let totalFromApi = data?.Cantidad || allLicitaciones.length;
+  const data = await safeFetch(targetUrl, 12000, 3);
 
-    // Map all static mockOportunidades (including 844 active Compras Ágiles) into API format
-    const mappedMock = mockOportunidades.map(op => ({
-      CodigoExterno: op.codigo,
-      Nombre: op.titulo,
-      Estado: op.estado || 'Publicada',
-      CodigoEstado: 5,
-      FechaCierre: op.fechaCierre ? (op.fechaCierre.includes('T') ? op.fechaCierre : `${op.fechaCierre}T15:00:00`) : '2026-07-28T15:00:00',
-      FechaPublicacion: op.fechaPublicacion ? (op.fechaPublicacion.includes('T') ? op.fechaPublicacion : `${op.fechaPublicacion}T09:00:00`) : '2026-07-22T09:00:00',
-      Descripcion: op.descripcion,
-      MontoEstimado: op.monto,
-      Rubro: op.rubro,
-      EmpresaMatch: op.empresaMatch,
-      Modalidad: op.modalidad,
-      Items: { Listado: (op.items || []).map(it => ({ Correlativo: 1, Descripcion: it.producto, Cantidad: it.cantidad, PrecioUnitario: it.precioUnitario })) },
-      Comprador: { NombreOrganismo: op.organismo, RutUnidad: op.organismoRut, RegionUnidad: op.region }
-    }));
+  // Passthrough: si la API oficial devolvió el proceso, se retorna tal cual.
+  if (data && data.Listado && Array.isArray(data.Listado) && data.Listado.length > 0) {
+    detailCache.set(codigo, { data, timestamp: Date.now() });
+    return NextResponse.json(data);
+  }
 
-    const existingMockCodes = new Set(mappedMock.map(m => m.CodigoExterno));
-    const newApiCandidates = allLicitaciones.filter(item => item.CodigoExterno && !existingMockCodes.has(item.CodigoExterno));
+  // Fallback: si ya lo teníamos verificado en mockData.ts (dato real, no inventado),
+  // se reconstruye el mismo payload con esos valores reales.
+  const localMatch = mockOportunidades.find(
+    op => op.codigo.toLowerCase() === codigo.toLowerCase() || op.id.toLowerCase() === codigo.toLowerCase()
+  );
 
-    const combinedList = [...mappedMock, ...newApiCandidates];
-
-    combinedList.sort((a, b) => {
-      const dateA = a.FechaCierre ? new Date(a.FechaCierre).getTime() : Infinity;
-      const dateB = b.FechaCierre ? new Date(b.FechaCierre).getTime() : Infinity;
-      return dateA - dateB;
-    });
-
-    const enrichedMap = new Map<string, any>();
-    for (const item of combinedList) {
-      const codeKey = item.CodigoExterno || item.codigo || item.id;
-      if (!codeKey) continue;
-      enrichedMap.set(codeKey, {
-        ...item,
-        CodigoExterno: codeKey,
-        Nombre: item.Nombre || item.titulo || 'Proceso de Compra Pública',
-        Estado: item.Estado || item.estado || 'Publicada',
-        CodigoEstado: item.CodigoEstado || 5,
-        FechaCierre: item.FechaCierre || item.fechaCierre,
-        FechaPublicacion: item.FechaPublicacion || item.fechaPublicacion || new Date().toISOString(),
-        Descripcion: item.Descripcion || item.descripcion || '',
-        MontoEstimado: item.MontoEstimado || item.monto || null,
-        Rubro: item.Rubro || item.rubro || 'Artículos de Escritorio y Oficina',
-        EmpresaMatch: item.EmpresaMatch || item.empresaMatch,
-        Modalidad: item.Modalidad || item.modalidad,
-        Items: item.Items || { Listado: [] },
-        Fechas: { FechaPublicacion: item.FechaPublicacion || item.fechaPublicacion || new Date().toISOString(), FechaCierre: item.FechaCierre || item.fechaCierre },
-        Comprador: item.Comprador || { NombreOrganismo: item.organismo || 'Organismo Público' }
-      });
-    }
-
-    const finalEnrichedList = Array.from(enrichedMap.values());
-
-    const resultPayload = {
-      Listado: finalEnrichedList,
-      Meta: {
-        totalFromApi,
-        candidatesFiltered: allLicitaciones.length,
-        totalReturned: finalEnrichedList.length,
-        source: 'Mercado Público API + Full Local Sync',
-        timestamp: new Date().toISOString()
-      }
+  if (localMatch) {
+    const fallbackPayload = {
+      Cantidad: 1,
+      FechaCreacion: new Date().toISOString(),
+      Version: 'v1',
+      Listado: [{
+        CodigoExterno: localMatch.codigo,
+        Nombre: localMatch.titulo,
+        CodigoEstado: 5,
+        Estado: localMatch.estado || 'Publicada',
+        Comprador: {
+          CodigoOrganismo: '3244',
+          NombreOrganismo: localMatch.organismo,
+          RutUnico: localMatch.organismoRut
+        },
+        DiasMontoEstimado: localMatch.organismoPagoDias || 30,
+        MontoEstimado: localMatch.monto,
+        FechaPublicacion: `${localMatch.fechaPublicacion}T09:00:00`,
+        FechaCierre: localMatch.fechaCierre ? `${localMatch.fechaCierre}T15:00:00` : undefined,
+        Descripcion: localMatch.descripcion,
+        Rubro: localMatch.rubro,
+        Items: {
+          Listado: localMatch.items.map(it => ({
+            Correlativo: 1,
+            CodigoProducto: 44121500,
+            CodigoCategoria: 'Office Supplies',
+            Categoria: localMatch.rubro,
+            NombreProducto: it.producto,
+            Descripcion: it.producto,
+            Cantidad: it.cantidad,
+            UnidadMedida: 'UN'
+          }))
+        }
+      }]
     };
+    detailCache.set(codigo, { data: fallbackPayload, timestamp: Date.now() });
+    return NextResponse.json(fallbackPayload);
+  }
 
-    syncCache = {
-      data: resultPayload,
-      timestamp: Date.now()
-    };
-
-    return NextResponse.json(resultPayload);
-  } catch (error: any) {
-    console.error('Error syncing Mercado Público:', error);
+  if (data?.Codigo === 10500) {
     return NextResponse.json(
-      { error: `Error de sincronización: ${error.message}` },
-      { status: 500 }
+      { error: 'El servidor de Mercado Público está ocupado (peticiones simultáneas). Por favor, intenta de nuevo.' },
+      { status: 429 }
     );
   }
+
+  return NextResponse.json(
+    { error: `No se encontró la licitación o compra ágil con código ${codigo}.` },
+    { status: 444 }
+  );
 }
 
 

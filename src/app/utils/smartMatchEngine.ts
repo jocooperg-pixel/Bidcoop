@@ -1,7 +1,9 @@
 import { EmpresaMatch, Oportunidad } from '../types';
 
 export interface SmartMatchResult {
-  companyMatch: EmpresaMatch;
+  // null = no hay match real por catálogo. El llamador NO debe inventar una empresa
+  // por defecto en ese caso: debe mostrarlo como "Sin match" o excluirlo.
+  companyMatch: EmpresaMatch | null;
   matchScore: number;
   matchedProducts: string[];
   explanation: string;
@@ -94,10 +96,10 @@ export function calculateSmartCatalogMatch(op: {
   const countAminorte = matchedAminorte.length;
   const countVmoccs = matchedVmoccs.length;
 
-  let bestCompany: EmpresaMatch = 'Aminorte';
+  let bestCompany: EmpresaMatch | null = null;
   let bestScore = 0;
   let bestMatchedProducts: string[] = [];
-  let rubroRecomendado = 'Artículos de Escritorio y Oficina';
+  let rubroRecomendado = op.rubro || 'Artículos de Escritorio y Oficina';
 
   if (countVmoccs > 0 && countVmoccs >= countAminorte) {
     bestCompany = 'V-MOCCS';
@@ -110,24 +112,15 @@ export function calculateSmartCatalogMatch(op: {
     const isTech = fullText.includes('tóner') || fullText.includes('toner') || fullText.includes('impresora') || fullText.includes('mouse') || fullText.includes('teclado') || fullText.includes('usb');
     rubroRecomendado = isTech ? 'Tecnología y Hardware' : 'Artículos de Escritorio y Oficina';
     bestScore = Math.min(99, 82 + countAminorte * 5);
-  } else {
-    // Fallback classification if no explicit product match
-    if (fullText.includes('mueble') || fullText.includes('silla') || fullText.includes('estante')) {
-      bestCompany = 'V-MOCCS';
-      rubroRecomendado = 'Artículos de Escritorio y Oficina';
-      bestScore = 82;
-    } else {
-      bestCompany = 'Aminorte';
-      rubroRecomendado = op.rubro || 'Artículos de Escritorio y Oficina';
-      bestScore = 78;
-    }
   }
+  // Sin match real por keyword: NO se asigna empresa por defecto. bestCompany queda null
+  // y el llamador debe tratarlo como "sin clasificar" en vez de inventar un dueño.
 
   let explanation = '';
-  if (bestMatchedProducts.length > 0) {
+  if (bestCompany && bestMatchedProducts.length > 0) {
     explanation = `Match del ${bestScore}% por catálogo: ${bestMatchedProducts.length} producto(s) coinciden exactamente con el Convenio Marco cargado de ${bestCompany} (${bestMatchedProducts.slice(0, 3).join(', ')}).`;
   } else {
-    explanation = `Match estimado del ${bestScore}% para la empresa ${bestCompany} según rubro y capacidad de abastecimiento en ${rubroRecomendado}.`;
+    explanation = 'Sin match real de catálogo — ningún producto/keyword coincide con Aminorte o V-MOCCS. Requiere clasificación manual.';
   }
 
   return {

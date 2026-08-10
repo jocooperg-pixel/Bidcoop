@@ -173,17 +173,12 @@ export default function Home() {
     }
   }, []);
 
-  // Sincronizar en vivo inmediatamente al cargar la plataforma y luego cada 3 horas
+  // Los datos de oportunidades vienen ÚNICAMENTE del motor de sync Python
+  // (scripts/sync_mercadopublico.py -> mockData.ts). Aquí solo se consulta el estado
+  // real de esa sincronización para mostrarlo en pantalla — no se vuelve a construir
+  // ni a inventar ninguna oportunidad en el navegador.
   useEffect(() => {
-    // Sync immediately on mount with live API
-    handleSyncRealTime(true);
-
-    const intervalId = setInterval(() => {
-      console.log('Actualización automática de licitaciones (cada 3 horas)...');
-      handleSyncRealTime(true);
-    }, 3 * 60 * 60 * 1000);
-
-    return () => clearInterval(intervalId);
+    handleCheckSyncStatus();
   }, []);
 
   const toggleDarkMode = (dark: boolean) => {
@@ -314,189 +309,39 @@ export default function Home() {
     );
   };
 
-  const handleSyncRealTime = async (silent = false) => {
+  // Único motor de datos: scripts/sync_mercadopublico.py -> mockData.ts.
+  // Esta función NO reconstruye ni reclasifica oportunidades — solo lee y muestra
+  // el estado REAL de esa sincronización (data/sync_meta.json vía /api/sync-status)
+  // para que el usuario pueda validar la información (última corrida, cobertura,
+  // % de montos validados, exclusiones por falta de datos reales).
+  const handleCheckSyncStatus = async (silent = false) => {
     try {
-      // Query ALL active licitaciones with force refresh to clear cache
-      const res = await fetch('/api/mercadopublico?refresh=true&force=true');
-      if (!res.ok) throw new Error('Error al conectar con la API de Mercado Público');
-      const data = await res.json();
-      
-      const allLicitaciones: any[] = data.Listado || [];
-      const meta = data.Meta || {};
-      
-      const mappedList: Oportunidad[] = [];
+      const res = await fetch('/api/sync-status');
+      if (!res.ok) throw new Error('No se pudo leer el estado de sincronización.');
+      const meta = await res.json();
 
-      // --- Helper: check if an item belongs to our convenios via Smart Catalog Engine ---
-      const getRubroAndCompany = (item: any): { finalRubro: string; companyMatch: 'Inder-Roll' | 'Aminorte' | 'V-MOCCS'; matchScore: number } => {
-        const smart = calculateSmartCatalogMatch({
-          titulo: item.Nombre || item.titulo || '',
-          descripcion: item.Descripcion || item.descripcion || '',
-          rubro: item.Rubro || item.rubro,
-          items: item.Items?.Listado ? item.Items.Listado.map((it: any) => ({ producto: it.Descripcion || it.producto || '', especificacionTecnica: it.Especificacion || '' })) : []
-        });
-
-        return {
-          finalRubro: smart.rubroRecomendado,
-          companyMatch: smart.companyMatch,
-          matchScore: smart.matchScore
-        };
-      };
-
-      // --- Process all licitaciones from the API with 100% PRESERVATION OF PRE-PROCESSED GROUND TRUTH ---
-      for (const item of allLicitaciones) {
-        const code = item.CodigoExterno || item.codigo || '';
-        const staticMatch = mockOportunidades.find(m => m.codigo.toLowerCase() === code.toLowerCase());
-        
-        if (staticMatch) {
-          mappedList.push(staticMatch);
-          continue;
-        }
-
-        const { finalRubro: calcRubro, companyMatch: defaultCompanyMatch, matchScore: calcMatchScore } = getRubroAndCompany(item);
-        
-        const titulo = item.Nombre || item.titulo || `Proceso ${code}`;
-        const finalRubro = item.Rubro || item.rubro || calcRubro;
-        const companyMatch = item.EmpresaMatch || item.empresaMatch || defaultCompanyMatch;
-        const descripcion = item.Descripcion || item.descripcion || `Proceso de contratación pública oficial (${code}) importado en vivo desde Mercado Público.`;
-        const estadoReal = item.Estado || item.estado || 'Publicada';
-
-        const tipo = (item.Tipo || '').toUpperCase();
-        const codeUpper = code.toUpperCase();
-        const titleLower = titulo.toLowerCase();
-        let modality: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras' = item.Modalidad || item.modalidad || 'Licitación';
-        
-        if (!item.Modalidad && !item.modalidad) {
-          if (tipo === 'CO' || codeUpper.includes('-CO') || codeUpper.includes('COT') || titleLower.includes('compra ágil') || titleLower.includes('compra agil')) {
-            modality = 'Compra Ágil';
-          } else if (codeUpper.includes('-CM') || titleLower.includes('convenio marco') || titleLower.includes('grande compra') || titleLower.includes('intencion de compra')) {
-            modality = (item.MontoEstimado && item.MontoEstimado > 65000000) || titleLower.includes('grande compra') ? 'Grandes Compras' : 'Convenio Marco';
-          } else {
-            modality = 'Licitación';
-          }
-        }
-
-        const monto = (typeof item.MontoEstimado === 'number' && item.MontoEstimado > 0) ? item.MontoEstimado : 0;
-        const comprador = item.Comprador || {};
-        const organismo = comprador.NombreOrganismo || item.Organismo || item.organismo || 'ORGANISMO PÚBLICO';
-        const rutOrganismo = comprador.RutUnidad || item.organismoRut || '60.000.000-0';
-        const regionRaw = comprador.RegionUnidad || item.region || 'Región Metropolitana';
-
-        const fechas = item.Fechas || {};
-        const fechaPublicacion = fechas.FechaPublicacion || fechas.FechaCreacion || item.fechaPublicacion || new Date().toISOString();
-        const fechaCierre = fechas.FechaCierre || item.FechaCierre || item.fechaCierre || new Date().toISOString();
-
-        const portalUrl = `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${code}`;
-        const isGrandesCompras = modality === 'Grandes Compras';
-
-        mappedList.push({
-          id: `op-${code}`,
-          codigo: code,
-          titulo,
-          organismo,
-          organismoRut: rutOrganismo,
-          organismoPagoDias: 30,
-          organismoRiesgo: 'Bajo',
-          rubro: finalRubro,
-          region: regionRaw,
-          monto,
-          fechaPublicacion,
-          fechaCierre,
-          matchScore: item.matchScore || item.MatchScore || calcMatchScore || 85,
-          riesgo: 'Bajo',
-          empresaMatch: companyMatch,
-          modalidad: modality,
-          esInvitacionGrandesCompras: isGrandesCompras,
-          descripcion,
-          estado: estadoReal,
-          cronograma: [
-            { hito: 'Publicación', fecha: fechaPublicacion },
-            { hito: 'Cierre', fecha: fechaCierre }
-          ],
-          documentos: [
-            { nombre: `📄 Ver Bases y Documentos en Mercado Público`, tipo: 'link', tamanho: portalUrl }
-          ],
-          items: item.Items?.Listado?.map((it: any, idx: number) => ({
-            sku: `ITEM-${it.Correlativo || idx + 1}`,
-            producto: it.Descripcion || it.NombreProducto || 'Producto',
-            cantidad: it.Cantidad || 1,
-            precioUnitario: it.PrecioUnitario || 0
-          })) || [
-            { sku: 'ITEM-GEN', producto: item.Nombre || finalRubro, cantidad: 1, precioUnitario: monto }
-          ],
-          criteriosEvaluacion: [
-            { aspecto: 'Precio', ponderacion: 100, descripcion: 'Menor costo' }
-          ],
-          preguntas: [],
-          comentarios: [],
-          competidoresPropuestos: [],
-          historialPrecios: [
-            { fecha: 'Jul 2026', precioUnitarioPromedio: monto }
-          ]
-        });
+      if (meta.ultimaSincronizacionExitosa) {
+        const d = new Date(meta.ultimaSincronizacionExitosa);
+        setLastSyncTime(d.toLocaleString('es-CL', { dateStyle: 'short', timeStyle: 'short' }));
       }
 
-      // Merge and update opportunities, keeping all static mock data and previous syncs
-      setOportunidades(prev => {
-        const mockMap = new Map(mockOportunidades.map(op => [op.codigo, op]));
-        const existingApiCodes = new Set(mappedList.map(o => o.codigo));
-        const previousOps = prev.filter(o => !existingApiCodes.has(o.codigo));
-        const missingMock = mockOportunidades.filter(m => !existingApiCodes.has(m.codigo) && !previousOps.some(p => p.codigo === m.codigo));
-        
-        const d = new Date();
-        const year = d.getFullYear();
-        const month = String(d.getMonth() + 1).padStart(2, '0');
-        const day = String(d.getDate()).padStart(2, '0');
-        const todayStr = `${year}-${month}-${day}`;
-        
-        const merged = [...mappedList, ...previousOps, ...missingMock];
-        return merged.map(o => {
-          const staticMatch = mockMap.get(o.codigo);
-          if (staticMatch) {
-            return {
-              ...o,
-              empresaMatch: staticMatch.empresaMatch || o.empresaMatch,
-              modalidad: staticMatch.modalidad || o.modalidad,
-              rubro: staticMatch.rubro || o.rubro,
-              items: staticMatch.items && staticMatch.items.length > 0 ? staticMatch.items : o.items,
-              monto: staticMatch.monto || o.monto,
-              organismo: staticMatch.organismo || o.organismo,
-              region: staticMatch.region || o.region,
-              documentos: staticMatch.documentos && staticMatch.documentos.length > 0 ? staticMatch.documentos : o.documentos
-            };
-          }
-          if (o.estado === 'Publicada' && o.fechaCierre && o.fechaCierre < todayStr) {
-            return { ...o, estado: 'Cerrada' };
-          }
-          return o;
-        });
-      });
-
-      const nowStr = new Date().toLocaleTimeString('es-CL', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-      setLastSyncTime(nowStr);
-
-      const totalImported = mappedList.length;
-      const comprasAgiles = mappedList.filter(o => o.modalidad === 'Compra Ágil').length;
-      const convenios = mappedList.filter(o => o.modalidad === 'Convenio Marco').length;
-      const grandesComprasCount = mappedList.filter(o => o.modalidad === 'Grandes Compras').length;
-      const lics = mappedList.filter(o => o.modalidad === 'Licitación').length;
-
-      const newAlert: Notificacion = {
-        id: `nt-${Date.now()}`,
-        leida: false,
-        tipo: 'sistema',
-        fecha: new Date().toISOString().replace('T', ' ').slice(0, 16),
-        titulo: 'Sincronización Completa',
-        descripcion: `${totalImported} oportunidades activas (${grandesComprasCount} Invitaciones a Grandes Compras, ${comprasAgiles} Compras Ágiles, ${convenios} Convenios Marco, ${lics} Licitaciones).`
-      };
-      setNotifications(prev => [newAlert, ...prev]);
-      
       if (!silent) {
-        alert(`¡Sincronización exitosa!\n\nDe ${meta.totalFromApi || '?'} licitaciones activas en Mercado Público:\n\n${totalImported} oportunidades relevantes encontradas:\n• ${grandesComprasCount} Invitaciones a Grandes Compras (>1.000 UTM)\n• ${comprasAgiles} Compras Ágiles\n• ${convenios} Convenios Marco\n• ${lics} Licitaciones`);
+        const audit = meta.comprasAgilesAudit || {};
+        alert(
+          `Estado real de sincronización (motor único: BidCoop v${meta.syncVersion || '?'})\n\n` +
+          `Última corrida: ${meta.ultimaSincronizacionExitosa ? new Date(meta.ultimaSincronizacionExitosa).toLocaleString('es-CL') : 'N/D'}\n` +
+          `Oportunidades en plataforma: ${meta.registrosEnPlataforma ?? '?'}\n` +
+          `Confirmadas con dato real: ${meta.registrosConfirmados ?? '?'}\n` +
+          `Compras Ágiles con monto validado: ${audit.conMontoValido ?? '?'} / ${audit.total ?? '?'} (${audit.pctValidado ?? '?'}%)\n` +
+          `Excluidas por falta de datos reales: ${meta.excluidosSinDatosReales ?? '?'}\n` +
+          `Excluidas por no calzar con ninguna empresa activa: ${meta.excluidosSinMatchEmpresa ?? '?'}\n\n` +
+          `Para traer datos nuevos de Mercado Público, corre scripts/sync_mercadopublico.py y sube el resultado — la plataforma nunca genera datos por su cuenta.`
+        );
       }
     } catch (err: any) {
       console.error(err);
       if (!silent) {
-        alert('Error en la sincronización: ' + err.message);
+        alert('Error al consultar el estado de sincronización: ' + err.message);
       }
     }
   };
@@ -526,20 +371,20 @@ export default function Home() {
 
       if (data && data.Listado && data.Listado.length > 0) {
         const item = data.Listado[0];
-        
-        const rubroName = item.Rubro || 'Artículos de Escritorio y Oficina';
-        const title = item.Nombre || item.Descripcion || `Proceso ${item.CodigoExterno}`;
-        
-        const isAseo = 
-          rubroName.toLowerCase().includes('aseo') || 
-          rubroName.toLowerCase().includes('higiene') || 
-          rubroName.toLowerCase().includes('limpieza') ||
-          title.toLowerCase().includes('cloro') ||
-          title.toLowerCase().includes('jabón') ||
-          title.toLowerCase().includes('papel hig');
-          
-        const companyMatch = 'Aminorte';
 
+        const title = item.Nombre || item.Descripcion || `Proceso ${item.CodigoExterno}`;
+        const descripcionReal: string = item.Descripcion || '';
+
+        // Match real por catálogo — si no hay keyword real, queda sin asignar
+        // (nunca se fuerza a Aminorte/V-MOCCS por defecto).
+        const smart = calculateSmartCatalogMatch({
+          titulo: title,
+          descripcion: descripcionReal,
+          rubro: item.Rubro,
+          items: item.Items?.Listado
+            ? item.Items.Listado.map((it: any) => ({ producto: it.Descripcion || it.NombreProducto || '', especificacionTecnica: '' }))
+            : []
+        });
 
         const codeUpper = (item.CodigoExterno || cleanCode).toUpperCase();
         const titleLower = title.toLowerCase();
@@ -550,53 +395,46 @@ export default function Home() {
           modality = 'Convenio Marco';
         }
 
-        let realisticMonto = item.MontoEstimado || 0;
-        if (!realisticMonto) {
-          if (modality === 'Compra Ágil') {
-            // Compra Ágil por normativa es hasta 60 UTM (máximo ~$3.950.000 CLP)
-            realisticMonto = 250000 + Math.floor(Math.random() * 3600000);
-          } else if (modality === 'Convenio Marco') {
-            // Convenio Marco directo es hasta 1.000 UTM (máximo ~$67.000.000 CLP)
-            realisticMonto = 3500000 + Math.floor(Math.random() * 61000000);
-          } else {
-            // Licitaciones Públicas / Grandes Compras (> 1.000 UTM)
-            realisticMonto = 72000000 + Math.floor(Math.random() * 78000000);
-          }
-        }
+        // Monto: solo el valor real informado por la API. Si no viene, se muestra
+        // 0 / "No informado" en la UI — nunca se inventa un número al azar.
+        const montoReal = (typeof item.MontoEstimado === 'number' && item.MontoEstimado > 0) ? item.MontoEstimado : 0;
 
         const newLic: Oportunidad = {
           id: `op-${item.CodigoExterno || cleanCode}`,
           codigo: item.CodigoExterno || cleanCode,
           titulo: title,
-          organismo: item.Comprador?.NombreOrganismo || item.Organismo || 'ORGANISMO PÚBLICO',
-          organismoRut: item.Comprador?.RutUnico || '12.345.678-9',
+          organismo: item.Comprador?.NombreOrganismo || item.Organismo || 'No informado',
+          organismoRut: item.Comprador?.RutUnico || item.Comprador?.RutUnidad || 'No informado',
           organismoPagoDias: 30,
           organismoRiesgo: 'Bajo',
-          rubro: rubroName,
-          region: item.Region || 'Metropolitana',
-          monto: realisticMonto,
-          fechaPublicacion: item.FechaPublicacion ? item.FechaPublicacion.split('T')[0] : '2026-07-22',
-          fechaCierre: item.FechaCierre ? item.FechaCierre.split('T')[0] : '2026-07-28',
-          matchScore: 92,
+          rubro: item.Rubro || smart.rubroRecomendado || 'Artículos de Escritorio y Oficina',
+          region: item.Region || item.Comprador?.RegionUnidad || 'No informado',
+          monto: montoReal,
+          fechaPublicacion: item.FechaPublicacion ? item.FechaPublicacion.split('T')[0] : 'No informado',
+          fechaCierre: item.FechaCierre ? item.FechaCierre.split('T')[0] : 'No informado',
+          matchScore: smart.matchScore,
           riesgo: 'Bajo',
-          empresaMatch: companyMatch,
+          empresaMatch: smart.companyMatch || undefined,
           modalidad: modality,
-          descripcion: item.Descripcion || 'Licitación pública importada desde Mercado Público en tiempo real.',
-          estado: 'Publicada',
+          descripcion: descripcionReal || 'Sin descripción informada por Mercado Público para este proceso.',
+          estado: item.Estado || 'Publicada',
           cronograma: [
-            { hito: 'Publicación de bases', fecha: item.FechaPublicacion?.replace('T', ' ').slice(0, 16) || '2026-07-22 12:00' },
-            { hito: 'Cierre de ofertas', fecha: item.FechaCierre?.replace('T', ' ').slice(0, 16) || '2026-07-28 14:00' }
+            { hito: 'Publicación de bases', fecha: item.FechaPublicacion?.replace('T', ' ').slice(0, 16) || 'No informado' },
+            { hito: 'Cierre de ofertas', fecha: item.FechaCierre?.replace('T', ' ').slice(0, 16) || 'No informado' }
           ],
           documentos: [
-            { nombre: `Bases_Oficiales_${item.CodigoExterno || cleanCode}.pdf`, tipo: 'pdf', tamanho: '2.1 MB' },
-            { nombre: `Anexo_Oferta_${item.CodigoExterno || cleanCode}.xlsx`, tipo: 'xlsx', tamanho: '250 KB' }
+            { nombre: `Ver Ficha Oficial en Mercado Público (${item.CodigoExterno || cleanCode})`, tipo: 'link', tamanho: `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${item.CodigoExterno || cleanCode}` }
           ],
-          items: [
-            { sku: `IN-GEN-01`, producto: title, cantidad: 1, precioUnitario: realisticMonto }
-          ],
+          items: item.Items?.Listado?.length
+            ? item.Items.Listado.map((it: any, idx: number) => ({
+                sku: `ITEM-${it.Correlativo || idx + 1}`,
+                producto: it.Descripcion || it.NombreProducto || title,
+                cantidad: it.Cantidad || 1,
+                precioUnitario: it.PrecioUnitario || 0
+              }))
+            : [{ sku: 'ITEM-1', producto: title, cantidad: 1, precioUnitario: montoReal }],
           criteriosEvaluacion: [
-            { aspecto: 'Oferta Económica', ponderacion: 70, descripcion: 'Menor costo' },
-            { aspecto: 'Cumplimiento Técnico', ponderacion: 30, descripcion: 'Especificaciones' }
+            { aspecto: 'Precio Ofertado', ponderacion: 100, descripcion: 'Menor costo' }
           ],
           preguntas: [],
           comentarios: [],
@@ -607,18 +445,18 @@ export default function Home() {
           const exists = prev.some(l => l.codigo.toLowerCase() === newLic.codigo.toLowerCase());
           return exists ? prev : [newLic, ...prev];
         });
-        
+
         setSelectedOpportunity(newLic);
         setActiveModule('search');
         setActiveSubSection('buscador');
-        
+
         const newAlert: Notificacion = {
           id: `nt-${Date.now()}`,
           leida: false,
           tipo: 'sistema',
           fecha: new Date().toISOString().replace('T', ' ').slice(0, 16),
-          titulo: 'Licitación Importada',
-          descripcion: `Se sincronizó el proceso ${newLic.codigo} exitosamente.`,
+          titulo: 'Licitación Consultada',
+          descripcion: `Se consultó el proceso ${newLic.codigo} directamente en Mercado Público.`,
           oportunidadId: newLic.id
         };
         setNotifications(prev => [newAlert, ...prev]);
@@ -737,7 +575,7 @@ export default function Home() {
               teamComments={teamComments}
               onAddComment={handleAddComment}
               onImportFromApi={handleQueryApiBidding}
-              onSyncRealTime={handleSyncRealTime}
+              onSyncRealTime={handleCheckSyncStatus}
               onUpdateOpportunityItems={(opId, newItems) => {
                 setOportunidades(prev => prev.map(op => {
                   if (op.id === opId || op.codigo === opId) {

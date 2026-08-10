@@ -946,7 +946,7 @@ export default function SearchModule({
                           <div className="flex items-center gap-2">
                             <span className="text-base">🎯</span>
                             <h4 className="font-black text-xs text-emerald-900 dark:text-emerald-300 uppercase tracking-wider">
-                              Matching por Catálogo — {selectedOpportunity.empresaMatch || matchInfo.companyMatch}
+                              Matching por Catálogo — {selectedOpportunity.empresaMatch || matchInfo.companyMatch || 'Sin match'}
                             </h4>
                           </div>
                           <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-emerald-600 text-white shadow-sm">
@@ -2449,13 +2449,13 @@ export default function SearchModule({
                     }}
                     disabled={localSyncing}
                     className={`p-2 px-3 rounded-xl font-bold text-[10px] transition flex items-center gap-1 shadow-md shadow-blue-500/10 cursor-pointer text-white ${
-                      localSyncing 
-                        ? 'bg-blue-400 cursor-not-allowed opacity-75' 
+                      localSyncing
+                        ? 'bg-blue-400 cursor-not-allowed opacity-75'
                         : 'bg-blue-600 hover:bg-blue-700'
                     }`}
-                    title="Cargar licitaciones reales de hoy"
+                    title="Ver el estado real de la última sincronización (BidCoop v7.5 / scripts/sync_mercadopublico.py)"
                   >
-                    {localSyncing ? '🔄 Sincronizando...' : '🔄 Sincronizar API'}
+                    {localSyncing ? '🔄 Consultando...' : '✅ Validar Sincronización'}
                   </button>
                 )}
               </div>
