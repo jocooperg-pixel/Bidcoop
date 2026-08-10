@@ -34,7 +34,10 @@ except ImportError:
 # CONFIGURACIÓN DE RUTAS Y ENTORNO
 # ═══════════════════════════════════════════════════════════
 
-PROJECT_PATH = "/Users/jonathancooper/Documents/ANTIGRAVITY/Plataforma Avanzada de Abastecimiento"
+# Raíz del repo derivada de la ubicación del propio script (scripts/../) — funciona
+# igual en tu Mac que en el runner de GitHub Actions, donde la ruta absoluta local
+# no existe.
+PROJECT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def _load_env_local():
     env_path = os.path.join(PROJECT_PATH, ".env.local")
@@ -619,7 +622,9 @@ def build_opportunity_record(
                 "sku": f"SKU-{it.get('Correlativo', 1)}",
                 "producto": it.get("NombreProducto") or it.get("Descripcion") or title,
                 "cantidad": float(it.get("Cantidad") or 1),
-                "precioUnitario": None,
+                # 0 = "no informado" (misma convención que 'monto'). NUNCA None: el
+                # frontend hace aritmética/.toLocaleString() directo sobre este campo.
+                "precioUnitario": normalize_amount(it.get("PrecioUnitario")) or 0,
                 "unidadMedida": it.get("UnidadMedida") or "UN"
             })
 
@@ -637,7 +642,7 @@ def build_opportunity_record(
             "sku": "ITEM-1",
             "producto": title,
             "cantidad": 1,
-            "precioUnitario": None,
+            "precioUnitario": 0,
             "unidadMedida": "UN"
         }]
 

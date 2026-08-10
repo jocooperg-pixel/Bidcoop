@@ -60,7 +60,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -158,7 +158,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión promocional o publicitaria",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -257,28 +257,28 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Escáner",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Trazadoras de gráficos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -377,7 +377,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       }
     ],
@@ -477,7 +477,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Colectores de aire",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -576,126 +576,126 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Protector solar",
         "cantidad": 400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Protector solar",
         "cantidad": 400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Preparados tópicos de urea",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Preparados tópicos de urea",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Tacrolimo",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Tacrolimo",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Aceite mineral",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Ácido salicílico",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Ivermectina",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Peróxido de benzoil",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Productos para el cuidado de la piel",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Productos para el cuidado de la piel",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Preparados tópicos de urea",
         "cantidad": 150.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Farmacias",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Cetirizina",
         "cantidad": 50.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Cetirizina",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Metronidazol",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Hidrocloruro de terbinafina",
         "cantidad": 400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -794,7 +794,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Catéteres o juegos vasculares intervencional o diagnósticos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -892,7 +892,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -992,14 +992,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Cilindros de gas médicos o dispositivos relacionados",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-2",
         "producto": "Cilindros de gas médicos o dispositivos relacionados",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -1097,7 +1097,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión digital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -1197,7 +1197,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión digital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -1296,56 +1296,56 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Comedor de oficiales",
         "cantidad": 15.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Sillas de terraza",
         "cantidad": 60.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Accesorios del ventilador",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Taca-Taca o futbolines",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Refrigerador y congelador combinado",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Refrigerador y congelador combinado",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Refrigerador y congelador combinado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Monitores de pantalla táctil",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -1443,56 +1443,56 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Protector solar",
         "cantidad": 150.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Frasco"
       },
       {
         "sku": "SKU-2",
         "producto": "Protector solar",
         "cantidad": 150.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Frasco"
       },
       {
         "sku": "SKU-3",
         "producto": "Ivermectina",
         "cantidad": 50.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Tubo"
       },
       {
         "sku": "SKU-4",
         "producto": "Antiparasitario tópico Permetrina",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Frasco"
       },
       {
         "sku": "SKU-5",
         "producto": "Ketoconazol",
         "cantidad": 80.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Frasco"
       },
       {
         "sku": "SKU-6",
         "producto": "Tacrolimo",
         "cantidad": 150.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Tubo"
       },
       {
         "sku": "SKU-7",
         "producto": "Tacrolimo",
         "cantidad": 150.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Tubo"
       },
       {
         "sku": "SKU-8",
         "producto": "Petrolatos",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Tubo"
       }
     ],
@@ -1590,7 +1590,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Pinturas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -1688,63 +1688,63 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Armarios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Sillas",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Escritorios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Sillas para trabajar",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Mesas móviles",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Carritos de mobiliario",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Estantes para libros",
         "cantidad": 52.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Sillas",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -1842,7 +1842,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Seguros de edificios o de su contenido",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -1945,154 +1945,154 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Camas",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Camas",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Clóset o armarios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Clóset o armarios",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Sillas de terraza",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Sillas de terraza",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Sillas de terraza",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Bancos exteriores",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Sillas para trabajar",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Asientos de living o sala de espera",
         "cantidad": 18.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Aparadores o servicios de comedor",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Sillas",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Aparadores o armarios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Armarios de almacenamiento",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Estantes, cajones o armarios industriales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Escritorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Mesas de conferencia",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Bibliotecas",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-19",
         "producto": "Estantes",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Mobiliario",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-21",
         "producto": "Gabinetes de archivos o accesorios",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-22",
         "producto": "Cajones y accesorios de almacenaje para estación de trabajo o mueble de computación",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -2190,91 +2190,91 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 14.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 9.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 7.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -2372,7 +2372,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Arriendo de casilleros",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -2470,7 +2470,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Trazadoras de gráficos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -2568,7 +2568,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -2666,7 +2666,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de autobuses regulares, recorridos fijos o servicios programados",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -2764,7 +2764,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Paredes acristaladas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -2862,84 +2862,84 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Toldos",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Toldos",
         "cantidad": 40.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Toldos",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Toldos",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Toldos",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Toldos",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Toldos",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Mesas",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Mesas",
         "cantidad": 15.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Mesas",
         "cantidad": 15.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Sillas",
         "cantidad": 50.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Sillas",
         "cantidad": 50.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -3037,49 +3037,49 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Filtros de aire",
         "cantidad": 32.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Filtros de aire",
         "cantidad": 948.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Filtros de aire",
         "cantidad": 450.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Filtros de aire",
         "cantidad": 36.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Filtros de aire",
         "cantidad": 128.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Filtros de aire",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Filtros de aire",
         "cantidad": 68.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -3178,7 +3178,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de cinta térmica",
         "cantidad": 37.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -3278,21 +3278,21 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Kits de compresor",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Kits de compresor",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Kits de compresor",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -3390,14 +3390,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de copias en blanco y negro",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Servicios de copias a color",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -3497,7 +3497,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -3598,70 +3598,70 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Muebles o escritorio no modular",
         "cantidad": 85.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Muebles o escritorio no modular",
         "cantidad": 85.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Sillas para trabajar",
         "cantidad": 154.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Sillas de uso especial, para auditorios o estadios",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Asientos de living o sala de espera",
         "cantidad": 48.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Sofás",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Sillas para trabajar",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Sillas para trabajar",
         "cantidad": 22.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Sillas para trabajar",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Sillones ejecutivos",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -3759,7 +3759,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       }
     ],
@@ -3857,14 +3857,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Soportes de impresora",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-2",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -3967,7 +3967,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de impresión industrial Offset",
         "cantidad": 1500.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -4066,7 +4066,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión digital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -4165,7 +4165,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Aires acondicionados",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -4263,42 +4263,42 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de chorro de tinta",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Tóner",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Impresoras de chorro de tinta",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Soportes de impresora",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Soportes de impresora",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -4396,28 +4396,28 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de chorro de tinta",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresoras de chorro de tinta",
         "cantidad": 26.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Kits para impresoras",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Kits para impresoras",
         "cantidad": 26.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -4516,63 +4516,63 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-2",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-3",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-4",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-5",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-6",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-7",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-8",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-9",
         "producto": "Cánulas o tubos de succión médicos o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -4670,7 +4670,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Sirolimus",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -4768,154 +4768,154 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Brochas",
         "cantidad": 1000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Tornillos para metales",
         "cantidad": 800.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Pernos de cabeza hexagonal",
         "cantidad": 359.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Brochas",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Enlaces de cables",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Brochas",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Papeles de lija",
         "cantidad": 70.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Papeles de lija",
         "cantidad": 60.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Niples de tubería",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Discos abrasivos",
         "cantidad": 150.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Barricadas",
         "cantidad": 35.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Rollo"
       },
       {
         "sku": "SKU-12",
         "producto": "Brochas",
         "cantidad": 15.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Hojas de sierra",
         "cantidad": 60.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Cintas métricas",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Cable galvanizado",
         "cantidad": 7.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "kilogramo"
       },
       {
         "sku": "SKU-16",
         "producto": "Cepillos de alambre",
         "cantidad": 29.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Cinta de sellado de hilo de politetrafluoretileno (PTFE)",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Rollo"
       },
       {
         "sku": "SKU-18",
         "producto": "Paños de limpieza",
         "cantidad": 8000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "kilogramo"
       },
       {
         "sku": "SKU-19",
         "producto": "Paños de limpieza absorbente",
         "cantidad": 1617.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Brochas",
         "cantidad": 38.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-21",
         "producto": "Cinta de sellado de hilo de politetrafluoretileno (PTFE)",
         "cantidad": 311.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Rollo"
       },
       {
         "sku": "SKU-22",
         "producto": "Hojas de sierra",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -5013,7 +5013,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Kits de pulseras de identificación de personal o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -5111,7 +5111,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de catering",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -5209,7 +5209,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -5307,7 +5307,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -5406,14 +5406,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -5512,140 +5512,140 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 17.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Persianas de aire acondicionado",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Persianas de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 52.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 40.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-19",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 22.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -5746,42 +5746,42 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de contratación de personal",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-2",
         "producto": "Servicios de contratación de personal",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-3",
         "producto": "Servicios de contratación de personal",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-4",
         "producto": "Servicios de contratación de personal",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-5",
         "producto": "Servicios de contratación de personal",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-6",
         "producto": "Servicios de contratación de personal",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -5879,7 +5879,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Producción de eventos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -5977,7 +5977,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Armarios de hospital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -6075,7 +6075,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Arriendo de vehículos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -6173,7 +6173,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Instalación, reparación o mantenimiento de sistemas de calefacción",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -6271,7 +6271,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -6370,14 +6370,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -6475,7 +6475,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Construcción de obras civiles",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -6573,7 +6573,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Grava",
         "cantidad": 2000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Metro Cúbico"
       }
     ],
@@ -6671,7 +6671,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión de manuales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -6770,84 +6770,84 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 48.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 36.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 24.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 13.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 13.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 13.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Dispositivos de sujeción protésica o accesorios",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -6945,7 +6945,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -7044,280 +7044,280 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-19",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-21",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-22",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-23",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-24",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-25",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-26",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-27",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-28",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-29",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-30",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-31",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-32",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-33",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-34",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-35",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-36",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-37",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-38",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-39",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-40",
         "producto": "Abrazaderas, pinzas o fórceps quirúrgicos, o accesorios",
         "cantidad": 16.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -7415,7 +7415,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Iluminación empotrada",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -7513,7 +7513,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Ingeniería eléctrica",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -7611,7 +7611,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -7709,7 +7709,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Construcción de obras civiles",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -7807,14 +7807,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de láser",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresoras de láser",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -7914,7 +7914,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -8012,14 +8012,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Pizarras blancas interactivas o accesorios",
         "cantidad": 14.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Pizarras blancas interactivas o accesorios",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -8117,7 +8117,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -8218,7 +8218,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -8316,7 +8316,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión promocional o publicitaria",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -8415,7 +8415,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Sillas para trabajar",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Paquete"
       }
     ],
@@ -8513,7 +8513,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Instalación de ventanas, puertas o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -8611,7 +8611,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Instalación, reparación o mantenimiento de sistemas de calefacción",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -8709,7 +8709,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Construcción de obras civiles",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -8808,7 +8808,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Persianas de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -8907,7 +8907,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Paquete"
       }
     ],
@@ -9005,14 +9005,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Construcción de obras civiles",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Construcción de obras civiles",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -9110,7 +9110,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Arriendo de instalaciones comerciales o industriales",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Mes"
       }
     ],
@@ -9208,21 +9208,21 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Fuentes de alimentación continua",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresoras de láser",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -9320,14 +9320,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Seguros de edificios o de su contenido",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       },
       {
         "sku": "SKU-2",
         "producto": "Seguro de equipo electrónico",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       }
     ],
@@ -9425,7 +9425,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Alumbrado público",
         "cantidad": 460.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -9523,7 +9523,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Brochas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -9621,28 +9621,28 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Joyas de premio",
         "cantidad": 113.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Balones o pelotas de juguete",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       },
       {
         "sku": "SKU-3",
         "producto": "Agua mineral",
         "cantidad": 470.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Servicios de impresión industrial Digital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -9741,7 +9741,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -9839,7 +9839,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       }
     ],
@@ -9938,7 +9938,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresora Inkjet para aplicaciones comerciales de imprimir",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -10037,7 +10037,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tarimas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -10135,147 +10135,147 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Estantes",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Estantes",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Sillas de examen clínico o accesorios",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Mobiliario",
         "cantidad": 19.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Mobiliario",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Mobiliario",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Mobiliario",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Mobiliario",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Mobiliario",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Mobiliario",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Mobiliario",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Mobiliario",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-19",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-21",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -10373,35 +10373,35 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -10500,21 +10500,21 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Pinturas al esmalte",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Tineta"
       },
       {
         "sku": "SKU-2",
         "producto": "Pinturas aceitosas",
         "cantidad": 34.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Tineta"
       },
       {
         "sku": "SKU-3",
         "producto": "Pintura al agua",
         "cantidad": 46.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Tineta"
       }
     ],
@@ -10612,77 +10612,77 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresora Inkjet para aplicaciones comerciales de imprimir",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Monitores de vídeo",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Soportes para monitor",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Cargadores de baterías",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Pinzas cerrador",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Probadores digitales",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Procesador de señal digital (DSP)",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Tarjeta madre posterior o paneles o conjuntos",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Tarjeta madre posterior o paneles o conjuntos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Memoria de acceso aleatorio (RAM)",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Fuentes de alimentación continua",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -10781,7 +10781,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Artículos de papelería",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -10880,7 +10880,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -10979,7 +10979,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Volteador de presillas",
         "cantidad": 750.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Par"
       }
     ],
@@ -11077,7 +11077,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -11175,14 +11175,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -11280,7 +11280,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Suministros de limpieza para impresoras, fax o fotocopiadoras",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -11378,7 +11378,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Casas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -11476,7 +11476,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -11575,7 +11575,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Artículos de papelería",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       }
     ],
@@ -11674,7 +11674,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -11772,119 +11772,119 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tóner",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Tóner",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Tóner",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Tóner",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Tóner",
         "cantidad": 25.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Tóner",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Tóner",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Tóner",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Tóner",
         "cantidad": 18.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Tóner",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Tóner",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Tóner",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Tóner",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Tóner",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Tóner",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Tóner",
         "cantidad": 9.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Tóner",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -11985,70 +11985,70 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Carros de resucitación de emergencia",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Camillas de paciente o accesorios de camilla",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Camillas de paciente o accesorios de camilla",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Contenedores, carros o accesorios para el desecho de agujas, cuchillas y otros objetos punzantes",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Mesas de examen o de procedimiento clínico para uso general",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Silla de examen dental",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Sillas de examen clínico o accesorios",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Escaleras de entrenamiento para rehabilitación o terapia",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Hardware de vías carriles de cortina o biombos o cortinas de cubículo del paciente",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Lámparas o luces instaladas de examen médico",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -12146,7 +12146,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de pintura de exteriores",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -12244,7 +12244,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Zona de juegos infantiles",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -12342,7 +12342,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de cinta térmica",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -12440,7 +12440,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Sillas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -12538,28 +12538,28 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de mantenimiento de ascensores",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Puertas automáticas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Instalación o servicio de sistemas de energía eléctrica",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -12658,14 +12658,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Seguros de edificios o de su contenido",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Seguro de automóviles o camiones",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -12763,7 +12763,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de chorro de tinta",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -12862,7 +12862,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -12961,7 +12961,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Inspección de edificios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       }
     ],
@@ -13059,7 +13059,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Ventilador",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -13157,42 +13157,42 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Marcadores",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Lino",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Galvanos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Calendarios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Muebles o escritorio no modular",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Audífonos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -13290,7 +13290,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -13391,35 +13391,35 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       },
       {
         "sku": "SKU-2",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       },
       {
         "sku": "SKU-3",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       },
       {
         "sku": "SKU-4",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       },
       {
         "sku": "SKU-5",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       }
     ],
@@ -13519,7 +13519,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Arriendo de viviendas",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Mes"
       }
     ],
@@ -13617,105 +13617,105 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -13813,7 +13813,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -13912,7 +13912,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Perfiles de montaje",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -14010,7 +14010,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de impresión industrial Digital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -14109,21 +14109,21 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Aires acondicionados",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Aires acondicionados",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Aires acondicionados",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -14222,14 +14222,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresoras multifunción o multifuncionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -14327,7 +14327,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 24.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Mes"
       }
     ],
@@ -14426,14 +14426,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión promocional o publicitaria",
         "cantidad": 26500.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresión promocional o publicitaria",
         "cantidad": 2500.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -14532,35 +14532,35 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de chorro de tinta",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresoras de chorro de tinta",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Proyector de pantalla de cristal líquido",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Parlantes",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Trazadoras de gráficos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -14659,7 +14659,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -14757,7 +14757,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -14855,14 +14855,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de fabricación de aparatos electrodomésticos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Servicios de fabricación de aparatos electrodomésticos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -14960,7 +14960,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión digital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -15059,7 +15059,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Hojas o Folletos de Instrucciones",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -15158,56 +15158,56 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -15306,56 +15306,56 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Fotocopiadoras",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -15453,343 +15453,343 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 2500.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 2700.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 3117.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 900.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 1000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Talones o talonarios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 1000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 60.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 9.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-19",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-21",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 818.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-22",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 15000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-23",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-24",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 500.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-25",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 500.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-26",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-27",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-28",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-29",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-30",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 165.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-31",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 1000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-32",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-33",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 500.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-34",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-35",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-36",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Block"
       },
       {
         "sku": "SKU-37",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-38",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Talonario"
       },
       {
         "sku": "SKU-39",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-40",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-41",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 11330.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-42",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 148.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-43",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-44",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-45",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-46",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 100.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-47",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 800.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-48",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-49",
         "producto": "Personalización de regalos o productos promocionales",
         "cantidad": 300.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -15888,7 +15888,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión promocional o publicitaria",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Global"
       }
     ],
@@ -15987,28 +15987,28 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Sillas para trabajar",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Muebles o escritorio no modular",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Sillas para trabajar",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Sillas para trabajar",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -16107,7 +16107,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Construcción de obras civiles",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -16205,7 +16205,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Textos vocacionales o educativos electrónicos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -16304,91 +16304,91 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión de manuales",
         "cantidad": 65000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Juguetes didácticos",
         "cantidad": 2400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Impresión de manuales",
         "cantidad": 65000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Impresión de manuales",
         "cantidad": 6000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Impresión de manuales",
         "cantidad": 6000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Impresión de manuales",
         "cantidad": 8000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Impresión de manuales",
         "cantidad": 2400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Impresión de manuales",
         "cantidad": 12000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Impresión de manuales",
         "cantidad": 65000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Impresión de manuales",
         "cantidad": 10000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Unidades de discos flexibles",
         "cantidad": 2400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Juguetes didácticos",
         "cantidad": 2400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Juguetes didácticos",
         "cantidad": 2400.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -16487,7 +16487,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión de manuales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -16586,315 +16586,315 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 13.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 3519.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 2987.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 80338.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 3193.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 13692.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 20327.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 25860.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 2385.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 700.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 177.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 309.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 210.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 41.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 462.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 35584.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 71.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 52.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-19",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 2327.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 93188.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-21",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1387.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-22",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 66395.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-23",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1280.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-24",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 57749.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-25",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 2467.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-26",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 8187.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-27",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1195.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-28",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1161.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-29",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 581.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-30",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 242.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-31",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 8174.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-32",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 52500.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-33",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 19.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-34",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 20000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-35",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 18000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-36",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-37",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-38",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 1200.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-39",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 795.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-40",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 90000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-41",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 83000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-42",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 409.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-43",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 5000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-44",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 127.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-45",
         "producto": "Impresión de papelería o formularios comerciales",
         "cantidad": 307.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -16993,35 +16993,35 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Mantenimiento o reparación de sistemas de fontanería, gasfitería",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -17120,7 +17120,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -17219,7 +17219,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de limpieza de edificios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -17317,189 +17317,189 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-19",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-21",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-22",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-23",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-24",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-25",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-26",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-27",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -17598,7 +17598,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -17696,7 +17696,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -17794,7 +17794,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Cartuchos de tinta",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -17894,7 +17894,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Fibras de asbesto",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -17992,7 +17992,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Folletos y catálogos publicitarios, servicios de publicidad y distribución",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad no definida"
       }
     ],
@@ -18092,7 +18092,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mantas de hospital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -18190,7 +18190,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Pantallas de proyección",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -18288,77 +18288,77 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Tintas",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Tóner",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -18458,21 +18458,21 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Mobiliario",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -18570,112 +18570,112 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tóner",
         "cantidad": 179.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Tóner",
         "cantidad": 40.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Tóner",
         "cantidad": 59.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Tóner",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Tóner",
         "cantidad": 5.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Tambores para impresora, fax o fotocopiadora",
         "cantidad": 90.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Tambores para impresora, fax o fotocopiadora",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Tambores para impresora, fax o fotocopiadora",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Cartuchos de tinta",
         "cantidad": 45.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Cartuchos de tinta",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Pack"
       },
       {
         "sku": "SKU-11",
         "producto": "Cartuchos de tinta",
         "cantidad": 45.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Cartuchos de tinta",
         "cantidad": 20.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Pack"
       },
       {
         "sku": "SKU-13",
         "producto": "Cartuchos de tinta",
         "cantidad": 24.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Cartuchos de tinta",
         "cantidad": 12.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Pack"
       },
       {
         "sku": "SKU-15",
         "producto": "Cartuchos de tinta",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Pack"
       },
       {
         "sku": "SKU-16",
         "producto": "Cartuchos de tinta",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -18779,140 +18779,140 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tóner",
         "cantidad": 170.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Tóner",
         "cantidad": 170.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Cable de alimentación",
         "cantidad": 15.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Discos duros",
         "cantidad": 29.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Discos duros",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Cable de alimentación",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-7",
         "producto": "Adaptador de batería o accesorios",
         "cantidad": 7.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-8",
         "producto": "Adaptador de batería o accesorios",
         "cantidad": 7.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-9",
         "producto": "Cartuchos de tinta",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-10",
         "producto": "Tóner",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-11",
         "producto": "Tóner",
         "cantidad": 8.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-12",
         "producto": "Caja",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-13",
         "producto": "Tóner",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-14",
         "producto": "Tóner",
         "cantidad": 6.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-15",
         "producto": "Cartuchos de tinta",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-16",
         "producto": "Cartuchos de tinta",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-17",
         "producto": "Cartuchos de tinta",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-18",
         "producto": "Cartuchos de tinta",
         "cantidad": 30.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-19",
         "producto": "Discos duros",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-20",
         "producto": "Discos duros",
         "cantidad": 3.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19012,14 +19012,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de impresión industrial Digital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Servicios de impresión industrial Digital",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19118,7 +19118,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19218,14 +19218,14 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de imágenes digitales",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Impresora de etiquetas de bolsa",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19323,42 +19323,42 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Sillas",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-2",
         "producto": "Superficies o estaciones de trabajo o mueble de computación",
         "cantidad": 2.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-3",
         "producto": "Balanzas electrónicas de carga superior",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-4",
         "producto": "Equipos de primer auxilio de servicios médicos de urgencia",
         "cantidad": 4.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-5",
         "producto": "Sillas de baño para hidroterapia",
         "cantidad": 10.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       },
       {
         "sku": "SKU-6",
         "producto": "Refrigerador y congelador combinado",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19456,7 +19456,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Instalación de ventanas, puertas o accesorios",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19554,7 +19554,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Diagramación",
         "cantidad": 4000.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19653,7 +19653,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Tasación de terrenos",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19751,7 +19751,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Servidores de impresora",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19849,7 +19849,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Aires acondicionados",
         "cantidad": 1.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -19947,7 +19947,7 @@ const rawOportunidades: any = [
         "sku": "SKU-1",
         "producto": "Impresoras de cinta térmica",
         "cantidad": 17.0,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "Unidad"
       }
     ],
@@ -20045,7 +20045,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADJUNTAR ANEXO N°1 SERVICIO DE DISEÑO- IMPRESION Y MATERIAL GRAFICO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20144,7 +20144,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "“ADQUISICIÓN DE MOBILIARIO Y EQUIPAMIENTO INFANTIL, DIDÁCTICO Y DE ESTIMULACIÓN PARA BENEFICIARIOS DEL PROGRAMA CUIDAR EN COMUNIDAD”.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20242,7 +20242,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "WD 4394 Servicio de Impresión",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20341,7 +20341,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "(ID: 2943)  MOBILIARIO PARA OFICINAS PROGRAMA RESIDENCIA FAMILIAR ADOLESCENTE AÑO 2026.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20439,7 +20439,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SP 634 Servicio de impresión y distribución",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20538,7 +20538,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TONER Y TINTAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20638,7 +20638,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de sillas y escritorios, Departamento de Logística.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20737,7 +20737,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION TONER IMPRESORA DIGITAL",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20837,7 +20837,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE IMPRESION DE MATERIAL EDUCATIVO - PADE",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -20936,7 +20936,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO ALMACENAJE DE MOBILIARIO Y BIENES PARA OFICINAS DE PROCHILE SANTIAGO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21034,7 +21034,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "“ADQUISICIÓN DE TINTAS PARA IMPRESORAS – SC 3121”",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21133,7 +21133,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE INSUMOS Y ACCESORIOS PARA REPARACIONES DE INMUEBLE",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21231,7 +21231,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "IMPRESORAS MULTIFUNCIONAL Y BÁSICA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21329,7 +21329,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION DE MOBILIARIO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21427,7 +21427,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Materiales de Oficina",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21525,7 +21525,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE OFICINA--STOCK BODEGA MUNICIPAL",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21623,7 +21623,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de Pinturas e Insumos",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21721,7 +21721,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Servicio de Producción e impresión de artículos institucionales",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21820,7 +21820,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE TÓNERES, TAMBORES Y TINTAS ORIGINALES PARA IMPRESORAS.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -21921,7 +21921,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "IMPRESION PERIODICO COMUNAL PARA DIFUSION ACTIVIDADES MUNICPALES",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22020,7 +22020,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de Insumos para impresoras, CESFAM El Quisco",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22118,7 +22118,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "compra de material de escritorio 2 semestre 2026",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22216,7 +22216,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQ. INSUMOS DE IMPRESIÓN, ORD N°3350, CONVENIO CALLE TERRITORIO 2, DIDECO, CBA, IMA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22315,7 +22315,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "INSUMOS BODEGA ESCRITORIO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22413,7 +22413,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTA PARA IMPRESORA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22512,7 +22512,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "REPARACION DE PLOTTER LICEO MARTA DONOSO ESPEJO FONDOS SEP",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22610,7 +22610,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de mobiliario clínico y administrativo",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22708,7 +22708,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN IMPRESORA DE TARJETAS PVC PARA COMUNICACIONES Y RR.PP. LA CISTERNA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22806,7 +22806,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "FAMEFA / SA 28-2026 / ADQUISICIÓN Y SUMINISTRO DE MATERIALES DE OFICINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -22904,7 +22904,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION DE MOBILIARIO UNIDADES PENALES",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23002,7 +23002,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Sillas ergonómicas para personal SCD y administrativos sub. SAMU Chiloé",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23100,7 +23100,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "INSUMOS DE OFICINA - LIC J.V. LASTARRIA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23198,7 +23198,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "AREA MUNICIPAL/SIC 19427/SECPLA/COMUNICACIONES/TONERS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23297,7 +23297,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Mobiliario para carrera Técnico de nivel superior en Podología Clínica / CFT de la región de la Araucania",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23395,7 +23395,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "CARTUCHOS DE TINTA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23494,7 +23494,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTAS Y TONERS PARA IMPRESORAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23595,7 +23595,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Generador a bencina y focos led",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23693,7 +23693,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MUEBLES PARA PROGRAMA RED LOCAL DE APOYO Y CUIDADOS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23791,7 +23791,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO REPARACIÓN DE MANTENCIÓN Y REPARACIÓN IMPRESORAS Y PLOTER.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23889,7 +23889,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Compra de servicio de Impresión de material educativo “Rotafolio educativo de escritorio Medicina del Estilo de Vida”.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -23988,7 +23988,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Materiales de Oficina para la Secretaría Comunal de Planificación.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24086,7 +24086,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de mobiliario y otros",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24184,7 +24184,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE IMPRESION DE MATERIAL GRÁFICO Y DE BRANDING VALPARAÍSO CIUDAD CREATIVA DE LA MUSICA UNESCO, DIRECCION DE DESARROLLO CULTURAL.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24283,7 +24283,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Servicio de edición e impresión de libro para bienestar SSAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24382,7 +24382,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Insumos Impresoras Viña del Mar y Limache",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24480,7 +24480,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Insumos de Impresión",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24579,7 +24579,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE IMPRESIÓN DE TEXTOS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24678,7 +24678,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE OFICINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24776,7 +24776,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQ DE MATERIALES DE PINTURA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24874,7 +24874,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SM 5469 - 7115 MATERIALES DE OFICINA DESAL Y ESPACIO AMIGABLE",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -24972,7 +24972,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION DE MOBILIARIO PARA HABILITACION DE OFICINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25070,7 +25070,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "INSUMOS TALLER DE IMPRESIONES ESCUELA DE CARABINEROS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25169,7 +25169,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "VARIOS ESCRITORIO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25267,7 +25267,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Mobiliario sala de lactancia",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25365,7 +25365,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Servicio de edición, diseño, diagramación e impresión | Region del Maule",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25464,7 +25464,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "CSF, RBD 6934 - ESCUELA NUEVA ESPAÑA DE LOS LAGOS, SC 3367, OTROS MOBILIARIOS. SEP, 29-04-999",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25562,7 +25562,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE TINTAS PARA LAS IMPRESORAS DE LA OFICINA REGISTRO CURRICULAR",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25661,7 +25661,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de insumos de papelería y artículos de escritorio para oficina",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25759,7 +25759,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TONER PARA IMPRESORAS DE LOS ESTABLECIMIENTOS DE SALUD. ADJUNTAR FICHA TECNICA E INDICAR PLAZO DE ENTREGA.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25859,7 +25859,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MANTENCION Y REPARACION IMPRESORA RISO EN LICEO CEI",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -25957,7 +25957,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "INSTALACIÓN DE PIZARRAS - LICEO SANTA MARÍA DE LAS CONDES",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26055,7 +26055,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "PROG APOYO ADM 08/2026 TONER Y TAMBOR",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26154,7 +26154,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE IMPRESIÓN DE GUIAS Y CUADERNILLOS DE TRABAJO A DISTINTOS EE DEL 10 AL 14 DE AGOSTO.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26253,7 +26253,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE OFICINA PARA PROGRAMA RED LOCAL DE APOYOS Y CUIDADOS, LOTA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26351,7 +26351,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Equipos Computacionales y Tintas para Impresoras para Unidad de Convenio dependiente de la Dirección de Salud Municipal de Chillán",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26450,7 +26450,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "17001 IMPRESION FORMULARIOS TRAZABILIDAD ANIMAL DR",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26549,7 +26549,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de materiales de oficina / pedido 972",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26647,7 +26647,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "INSUMOS DE OFICINA Y ESCOLARES PARA PROGRAMA OLN",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26745,7 +26745,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SC 42298 - ESC. N°674 - ADQUISICIÓN DE TINTAS Y TONER PARA USO ESCUELA ROSALINA PESCIO VARGAS.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26845,7 +26845,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Mobiliario Estrategia Telesalud",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -26943,7 +26943,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTAS ESC LAS CASCADAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27041,7 +27041,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Tóner",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27140,7 +27140,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de pinturas y materiales de ferretería para ser utilizados por la FT Húsares",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27238,7 +27238,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SOL. 945790, MATERIALES DE OFICINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27336,7 +27336,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ELEMENTOS DE ESCRITORIO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27434,7 +27434,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "err/ Cartuchos de papel",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27532,7 +27532,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISCION MATERIALES DE OFICINA (PROGRAMA REGISTRO SOCIAL)",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27630,7 +27630,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de materiales de oficina para la Dirección Regional de los rios",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27728,7 +27728,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Insumos de oficina.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27826,7 +27826,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "S/P 399, EXPEDIENTE 11762, DEPARTAMENTO DE GESTIÓN DE PERSONAS, ADQUISICION DE CINTA RIBBON 800 300-350 L A, PARA IMPRESORA ZEBRA.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -27924,7 +27924,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Materiales de Oficina M-1642",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28022,7 +28022,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "IMPRESIÓN DE CARPETAS INSTITUCIONALES",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28122,7 +28122,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "E102RT Adquisición de Mobiliario",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28220,7 +28220,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Útiles de oficina Red Diuto",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28319,7 +28319,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE IMPRESIÓN MATERIAL EDUCATIVO PARA 2° MEDIO.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28418,7 +28418,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MOBILIARIO PARA DESAM MARIQUINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28516,7 +28516,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE ADQUISICIÓN DE TINTAS Y TONERS PARA USO DEL DEPARTAMENTO DE SALUD MUNICIPAL DE PICHILEMU",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28616,7 +28616,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Reparacion Impresora Colegio Riachuelo (SP42)",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28714,7 +28714,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ESCRITORIOS Y CAJONERAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28813,7 +28813,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Fundación Integra requiere adquirir Discos de Estado Sólido (SSD) nuevos y Cargadores para Notebook tipo USB-C.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -28911,7 +28911,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Impresión de textos \"Cuadernillos de Lenguaje y Matemática 2do medio\"",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29010,7 +29010,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "PAPEL PLOTTER Y MATERIAL DE OFICINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29108,7 +29108,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTAS Y TONER PARA LA MZSSCN",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29208,7 +29208,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQ.  TINTA Y TONER  ORD. N°3510, DIDECO  CENTRO CALLE , IMA. MMR",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29308,7 +29308,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE PINTURA IMPERMEABILIZANTES, PARA LA SECCIÓN CRIMINALISTICA AFTA, D/E 257105240",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29406,7 +29406,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SUMINISTRO TINTAS CORPORACIÓN",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29504,7 +29504,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de pizarras blancas y pizarras de corcho – Programa Asuntos Indígenas",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29602,7 +29602,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE RESMAS PAPEL FOTOCOPIA Y TONER ORIGINAL BROTHER, PEDIDO 009280(VLN)",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29703,7 +29703,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ID: 2946  “ADQUISICIÓN DE TINTAS PARA DATACARD PARA CREDENCIALES DE FUNCIONARIOS “",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29801,7 +29801,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "IMPRESORA TINTA CONTINUA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29900,7 +29900,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "HAAV COMPRA DE TONER",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -29999,7 +29999,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TRANSITO - IMPRESION DE PASES UNIVERSITARIOS ESTUDIANTES DE LA COMUNA..",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30098,7 +30098,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Compra de materiales de oficina Juzgado Garantía Tocopilla.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30196,7 +30196,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Materiales de escritorio",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30294,7 +30294,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ITEM 1 DE 2 :ADQUISICIÓN DE MATERIALES DE OFICINA , PROGRAMA  4 A 7",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30392,7 +30392,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN TINTAS DEPARTAMENTO DE EDUCACIÓN/POSTÍTULO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30490,7 +30490,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SOL. DE ADQ. N° 945762, TONER",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30589,7 +30589,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Articulo de escritorio y educativos para talleres de formación educativos Chile Crece Contigo",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30687,7 +30687,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION MATERIALES PARA TALLER DE MUEBLERIA PROYECTO OFICIO 2026",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30785,7 +30785,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE ESCRITORIO PARA OFICINA DE LA MUJER",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30883,7 +30883,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "2000042940 Pizarras",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -30981,7 +30981,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE FÁRMACOS PARA TELEDERMATOLOGÍA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31079,7 +31079,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "RESMAS, CARTULINAS Y OTROS  - COL ABG",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31177,7 +31177,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SC 12519, Archivadores PVC, Dir de Salud",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31275,7 +31275,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "IMPRESION DE CARTAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31374,7 +31374,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE PINTURA BLANCA TALLER DE MURALISMO - LICEO ANDRÉS BELLO / 24091",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31472,7 +31472,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Juegos mobiliario y juguetes, para Oficina Local de La Niñez (Formulario N°6) solicitado por DIDECO.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31570,7 +31570,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición tóner para Unidad de Programación y Registro Académico del CFT.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31669,7 +31669,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SOL525-SEGURIDAD-TINTAS PARA IMPRESORAS.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31768,7 +31768,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ESMALTE AL AGUA, RODILLOS, BROCHAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31867,7 +31867,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "INSUMOS PLOTTER",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -31965,7 +31965,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Insumos de oficina DOM",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32063,7 +32063,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Insumos de Oficina  DAF",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32161,7 +32161,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "COMPRA DE TERMOLAMINADORA, LAMINAS PARA TERMOLAMINAR, GUILOTINA, ENCUADERNADORA, TINTAS COMPATIBLES CON IMPRESORA CANON PIXMA 190 M (100% COMPATIBLE) PARA PROGRAMA DE SALUD MENTAL DEL H.QUEILEN",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32260,7 +32260,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE OFICINA PROG. SALUD MENTAL Y BIENESTAR PSICOSOCIAL",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32358,7 +32358,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE OFICINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32456,7 +32456,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "HDS - COMPRA DE MATERIALES DE OFICINA, BODEGA AGOSTO 2026",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32554,7 +32554,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Insumos de Oficina SECPLA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32652,7 +32652,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "EXP 62472 Materiales de oficina y otros para funcionamiento. Continuidad / Administración y Funciones de Apoyo.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32750,7 +32750,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE OFICINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32848,7 +32848,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE 300 CARPETAS INSTITUCIONALES IMPRESAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -32946,7 +32946,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Servicio de impresión y anillado de cuadernillos para capacitación Gatekeepers (40 unidades)",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33045,7 +33045,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "adquisición materiales de oficina SENDA Previene 2026",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33143,7 +33143,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "PROYECTOR LED",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33241,7 +33241,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisicion Insumos para Impresoras de Centro de Salud Municipal.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33339,7 +33339,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "FLUORECENTES, FOCOS Y AMPOLLETAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33437,7 +33437,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "“ADQUISICION MATERIALES DE ESCRITORIO PARA EL DEPARTAMENTO DE SALUD QUEMCHI” SP N°213",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33535,7 +33535,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "COMPRA DE CARPETA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33633,7 +33633,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisiciones de Insumos Foco Led y Megáfono/Despacho Incluido",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33731,7 +33731,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Impresión de 8 señaléticas",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33830,7 +33830,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION DE CARPETAS INSTITUCIONALES PARA SECPLA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -33928,7 +33928,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "UTILES DE ESCRITORIO PARA EL HOSPITAL DE SAN VICENTE",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34026,7 +34026,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ESCRITORIO DE MADERA Y REPISA DE PARED",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34124,7 +34124,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTAS PARA IMPRESORA.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34223,7 +34223,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de artículos de escritorio para proyecto San Bernardo",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34321,7 +34321,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Compra insumos equipo plotter, rollos papel (02) y tintas (06, 02 ccolor SC 384",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34420,7 +34420,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "adquisición de insumos de escritorio y otros - FORMULARIO ÚNICO DE SOLICITUD DE COMPRA N° 475",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34518,7 +34518,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "COMPRA DE IMPRESIONES 3D PARA TERAPIA OCUPACIONAL PROGRAMA DE REHABILITACION INTEGRAL",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34617,7 +34617,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION INSUMOS DE ESCRITORIO SEGÚN CONVENIO CECOSF DE LA RED DE SALUD QUEMCHI” SP N°246",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34715,7 +34715,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE MANTENCION IMPRESORA RICOH 3003 LICEO CEI",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34813,7 +34813,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "1 Impresión tela Pvc e Instalación  para Campeonato Comunal de Cueca Alma y Corazon de Pelarco 2026,",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -34912,7 +34912,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTAS IMPRESORA MESÓN BIBLIOTECA , OFICINA DE ORGANIZACIONES COMUNITARIAS Y OFICINA DE SEGURIDAD PÚBLICA REQ. DIDECO N°243",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35011,7 +35011,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTAS ORIGINALES  PARA IMPRESORA EPSON",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35110,7 +35110,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTAS DE IMPRESORA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35209,7 +35209,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Servicio de impresión de tríptico para actividad de mediación",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35308,7 +35308,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TONER PROGRAMA ATENCION INICIAL FREIRINA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35407,7 +35407,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "HDS - COMPRA DE TONER ORIGINALES, BODEGA AGOSTO 2026",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35506,7 +35506,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION DE CORCHETERA ELECTRICA 60 HOJAS Y PERFORADORA 65 HOJAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35605,7 +35605,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Articulos de escritorio y de manualidades.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35703,7 +35703,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Materiales de oficina, Sol. N° 176, Jaime Rojas.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35801,7 +35801,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Materiales de escritorio - DIDECO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35899,7 +35899,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE IMPRESION PARA DEPTO. LABORAL",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -35998,7 +35998,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "IMPRESIONES Y LIENZOS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36097,7 +36097,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE TONER PARA LA JAL",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36196,7 +36196,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE ESCRITORIO PARA CAPACITACION",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36294,7 +36294,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE PAPEL DE IMPRESIÓN PARA EL DEPARTAMENTO DE SALUD MINICIPAL DE PICHILEMU",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36393,7 +36393,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de Tóners - Rectoría USACH",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36492,7 +36492,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Insumos electrónicos OLN (Cable HDMI, pendrives y micrófono inalámbrico",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36591,7 +36591,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE IMPRESION DE AFICHES",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36690,7 +36690,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "cámaras web y luces led",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36788,7 +36788,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "UTILES DE ESCRITORIO (otros anticipos) P/70",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36886,7 +36886,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ARCHIVADOR KARDEX 4 CAJONES CON LLEVE MUEBLES PARA ARCHIVADORES REQ 194",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -36985,7 +36985,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE OFICINA. RSH",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37083,7 +37083,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Ampolletas para laringoscopio",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37181,7 +37181,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "CAJONERA MOVIL 3 CAJONES",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37279,7 +37279,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Destacadores, almohadilla timbre, otros",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37377,7 +37377,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MANTENCION CORRECTIVA IMPRESORA SMART-31S",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37475,7 +37475,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "COMRA DE INSUMOS DE ESCRITORIO PROGRAMA MAS ADULTOS MAYORES AUTOVALENTES",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37573,7 +37573,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Tóner 90X impresora Brother L2360",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37673,7 +37673,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TÓNER NEGRO - COL B. V. MACKENNA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37772,7 +37772,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SERVICIO DE IMPRESION PARA PROGRAMA REGISTRO SOCIAL DE HOGARES",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37871,7 +37871,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION DE ARCHIVADORES TAMAÑO OFICIO, PÁRA CDT. PUDAHUEL NORTE DOE 259119478, C.D.P.307",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -37969,7 +37969,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de materiales de oficina - CEDAM / DIDECO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38067,7 +38067,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION DE MATERIALES DE OFICINA - COPIAPO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38165,7 +38165,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION DE TAMBOR COMPATIBLE CON IMPRESORA BROTHER MFC-L8900CDW, DE CARGO DE LA ZONA DE CARABINEROS BIOBIO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38263,7 +38263,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "RESMAS Y TONER (ATENCION DOMICILIARIAS)",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38363,7 +38363,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE MATERIALES DE OFICINA DOM-SECPLAN FRIL 2025",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38461,7 +38461,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SE REQUIERE CON URGENCIA IMPRESIONES DIGITALES EN SINTRA, PVC Y FOAM",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38560,7 +38560,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "MATERIALES DE OFICINA PARA EL JUZGADO DE GARANTIA DE PUENTE ALTO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38658,7 +38658,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN ÚTILES DE ESCRITORIO PARA LA AUTORIDAD FISCALIZADORA 004 2DA. COMISARÍA POZO ALMONTE",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38756,7 +38756,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Compra de Materiales de Oficina -Segun programa de Compras 2026-TOP Parenas",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38854,7 +38854,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "TINTAS MAIS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -38952,7 +38952,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de artículos de escritorio",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39050,7 +39050,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "COMPRA DE BOLIGRAFO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39149,7 +39149,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION MATERIALES DE OFICINA PARA EL CENTRO DE DOCTRINA Y ÉTICA DE CARABINEROS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39247,7 +39247,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Materiales de oficina, Taller de emprendimiento: Estructuración de costos y   definición de precios.(Inst N°255)Solicitado por Programa Mujeres Jefas de Hogar",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39345,7 +39345,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "COMPRA PROYECTO SAAT LICEO FRANCISCO TELLO (TINTAS) - DEPROV. 2026",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39443,7 +39443,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Adquisición de materiales de oficina programa Habitabilidad",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39541,7 +39541,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQ. MATERIALES DE OFICINA PROMOCION DE LA SALUD",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39639,7 +39639,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICIÓN DE FILAMENTO PLA PARA IMPRESORA 3D INSTITUCIONAL",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39737,7 +39737,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "NP/30 FINANZAS - ADQ. DE PIZARRA - PERFORADORA - CALCULADORA SEGUN ARCHIVO ADJUNTO",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39835,7 +39835,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "CARPETAS ECOCUERO, PERFORADORAS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -39933,7 +39933,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "CPF ARICA, COMPRA DE UTILES DE OFICINA; C.T.A. FEMENINO.",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -40032,7 +40032,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "CECIPU – Adquisición de materiales de oficina",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -40130,7 +40130,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ESCRITORIO/ASEO/SP 1063434 KS",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -40228,7 +40228,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "DAS REQUIERE COMPRA TINETAS DE PINTURA",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -40326,7 +40326,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "SOLICITUD DE TINTA EN POLVO PARA IMPRESORA RICOH OPERANDO EN CONTROL. SEGÚN CERTIFICADO N° 615",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -40425,7 +40425,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "INSUMOS DE OFICINA PARA CONVENIO PROMOCION DE LA SALUD 2026",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -40523,7 +40523,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQ DE MATERIALES DE OFICINA PARA CME",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -40621,7 +40621,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "Borrador de Pizarra",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],
@@ -40719,7 +40719,7 @@ const rawOportunidades: any = [
         "sku": "ITEM-1",
         "producto": "ADQUISICION IMPRESORA MULTIFUNCIONAL LASER MONOCROMATICA PARA UNIDAD DE ADQUISICIONES DEL DEPARTAMENTO DE SALUD QUEMCHI” SP N°252",
         "cantidad": 1,
-        "precioUnitario": null,
+        "precioUnitario": 0,
         "unidadMedida": "UN"
       }
     ],

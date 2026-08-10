@@ -1,8 +1,20 @@
 name: BidCoop — Sync Automático Mercado Público
 
-on:
-  workflow_dispatch:        # Permite ejecutar manualmente desde GitHub cuando el usuario lo solicite
+# Único motor de datos del proyecto: scripts/sync_mercadopublico.py (BidCoop v7.5).
+# Este workflow NO contiene lógica propia de sincronización — solo instala
+# dependencias y ejecuta ese script, que es el mismo que se corre localmente.
+# Nunca se debe reintroducir aquí un motor de datos paralelo (ver historial:
+# una versión anterior de este archivo generaba montos/organismos inventados
+# con random.randint cuando la API no traía el dato — no repetir ese patrón).
 
+on:
+  workflow_dispatch:   # Permite ejecutar manualmente desde GitHub cuando el usuario lo solicite
+  schedule:
+    # 11:00 UTC = 07:00 hora de Chile en horario estándar (UTC-4, vigente hoy).
+    # GitHub Actions solo agenda en UTC: durante horario de verano chileno
+    # (UTC-3, aprox. septiembre-abril) esto corre ~08:00 hora local en vez de
+    # 07:00 — ajustar el cron si eso deja de ser aceptable.
+    - cron: '0 11 * * *'
 
 jobs:
   sync-and-deploy:
@@ -21,193 +33,24 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Sincronizar API Mercado Público
-        run: |
-          python3 - << 'PYEOF'
-          import urllib.request
-          import json
-          import os
-          import datetime
-          import random
+      - name: Instalar dependencias
+        run: pip install pandas openpyxl
 
-          TICKET = "F8537A18-6766-4DEF-9E59-426B4FEE2844"
-          BASE_URL = "https://api.mercadopublico.cl/servicios/v1/publico"
-          OUTPUT_FILE = "src/app/mockData.ts"
-          TODAY = datetime.date.today().isoformat()
-
-          GROUND_TRUTH_PROCESSES = {
-              "1001-11-COT26": {
-                  "titulo": "Retiro, traslado e instalación de equipos de aire acondicionado",
-                  "organismo": "MINISTERIO DE SALUD - SERVICIO DE SALUD METROPOLITANO",
-                  "organismoRut": "61.601.000-4", "rubro": "Servicios de Climatización y Maquinaria",
-                  "region": "Región Metropolitana", "monto": 2450000, "empresaMatch": "Aminorte",
-                  "estado": "Publicada",
-                  "descripcion": "Servicios de retiro, traslado e instalación de equipos de aire acondicionado para recintos de atención pública del Servicio de Salud.",
-                  "items": [{"sku": "SKU-HVAC-01", "producto": "Retiro, traslado e instalación de aire acondicionado", "cantidad": 1, "precioUnitario": 2450000}]
-              },
-              "1006-16-COT26": {
-                  "titulo": "Adquisición de Insumos y Servicios de Impresión y Corte Laser",
-                  "organismo": "JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)",
-                  "organismoRut": "70.012.300-4", "rubro": "Tecnología y Hardware",
-                  "region": "Valparaíso", "monto": 1066239, "empresaMatch": "Aminorte",
-                  "estado": "Adjudicada", "subestadoEvaluacion": "Adjudicado a LASER CHILE SPA",
-                  "descripcion": "Compra Ágil adjudicada por JUNJI para insumos de impresión laser.",
-                  "items": [{"sku": "SKU-LASER-01", "producto": "Servicios e Insumos de Corte Laser", "cantidad": 1, "precioUnitario": 1066239}]
-              }
-          }
-
-          CATALOG_INDER = ["papel higienico","papel higiénico","toalla de papel","interfoliada","jumbo","cloro","cloro gel","desinfectante","amonio cuaternario","alcohol gel","detergente","desengrasante","lavaloza","limpiador","lustramuebles","cera","suavizante","jabón","jabon","jabón líquido","dispensador","bolsa basura","escoba","escobillón","mopa","paño microfibra","guante nitrilo","mascarilla"]
-          CATALOG_AMINORTE = ["resma","papel carta","papel oficio","papel 75g","papel 80g","archivador","carpeta","fastener","bolígrafo","boligrafo","lápiz","lapiz","destacador","corchetera","clip","post-it","cinta adhesiva","tijera","tóner","toner","tinta","cartucho","impresora","mouse","teclado","pendrive","usb","aire acondicionado","ampolleta","led","pintura","esmalte"]
-          CATALOG_VMOCCS = ["silla","silla ejecutiva","silla operativa","escritorio","mesa de reunión","estante","librero","cajonera","locker","panel divisorio"]
-
-          def match_catalog(title, desc=""):
-              full = f"{title} {desc}".lower()
-              mi = sum(1 for k in CATALOG_INDER if k in full)
-              ma = sum(1 for k in CATALOG_AMINORTE if k in full)
-              mv = sum(1 for k in CATALOG_VMOCCS if k in full)
-              if mi > 0 and mi >= ma and mi >= mv:
-                  return "Inder-Roll", "Aseo e Higiene", min(99, 82 + mi*5)
-              elif mv > 0 and mv >= ma:
-                  return "V-MOCCS", "Artículos de Escritorio y Oficina", min(99, 85 + mv*6)
-              elif ma > 0:
-                  is_tech = any(k in full for k in ["tóner","toner","impresora","mouse","teclado","usb","hdmi"])
-                  return "Aminorte", "Tecnología y Hardware" if is_tech else "Artículos de Escritorio y Oficina", min(99, 82 + ma*5)
-              return "Aminorte", "Artículos de Escritorio y Oficina", 78
-
-          def map_state(code, raw=""):
-              m = {5:"Publicada",6:"Cerrada",7:"Desierta",8:"Adjudicada",18:"Revocada",19:"Suspendida"}
-              return m.get(code, "Publicada")
-
-          def fetch(url):
-              req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
-              try:
-                  with urllib.request.urlopen(req, timeout=30) as r:
-                      return json.loads(r.read().decode("utf-8"))
-              except Exception as e:
-                  print(f"[WARNING] {e}")
-                  return None
-
-          print(f"[{datetime.datetime.now().isoformat()}] Iniciando sync desde API Mercado Público...")
-          data = fetch(f"{BASE_URL}/licitaciones.json?estado=activas&ticket={TICKET}")
-          raw_items = data.get("Listado", []) if data else []
-          print(f"[INFO] {len(raw_items)} licitaciones activas obtenidas.")
-
-          ops = []
-          seen = set()
-          for idx, item in enumerate(raw_items):
-              code = item.get("CodigoExterno", f"MP-{idx}")
-              if code in seen: continue
-              seen.add(code)
-              name = item.get("Nombre", "Proceso de Compra Pública")
-              monto = item.get("MontoEstimado") or 0
-              code_state = item.get("CodigoEstado")
-              estado = map_state(code_state)
-              code_up = code.upper(); name_low = name.lower()
-              if "-CO" in code_up or "COT" in code_up or "compra ágil" in name_low or (monto > 0 and monto <= 3950000):
-                  mod = "Compra Ágil"
-                  if not monto: monto = random.randint(180000, 3850000)
-              elif "-CM" in code_up:
-                  mod = "Convenio Marco"
-                  if not monto: monto = random.randint(2500000, 25000000)
-              elif monto > 65000000:
-                  mod = "Grandes Compras"
-              else:
-                  mod = "Licitación"
-                  if not monto: monto = random.randint(4500000, 48000000)
-              company, rubro, score = match_catalog(name, item.get("Descripcion",""))
-              comprador = item.get("Comprador") or {}
-              org = comprador.get("NombreOrganismo") or "ORGANISMO PÚBLICO"
-              org_rut = comprador.get("RutUnidad") or "60.000.000-0"
-              region = comprador.get("RegionUnidad") or "Región Metropolitana"
-              fechas = item.get("Fechas") or {}
-              pub = (fechas.get("FechaPublicacion") or item.get("FechaPublicacion") or TODAY).split("T")[0]
-              close = (fechas.get("FechaCierre") or item.get("FechaCierre") or TODAY).split("T")[0]
-              desc = item.get("Descripcion") or f"Proceso de contratación pública ({mod}) para {org}."
-              subestado = "Sin oferta seleccionada"
-              if code in GROUND_TRUTH_PROCESSES:
-                  gt = GROUND_TRUTH_PROCESSES[code]
-                  name,org,org_rut,region,rubro,monto = gt["titulo"],gt["organismo"],gt["organismoRut"],gt["region"],gt["rubro"],gt["monto"]
-                  company,desc,estado,subestado = gt.get("empresaMatch",company),gt.get("descripcion",desc),gt.get("estado",estado),gt.get("subestadoEvaluacion",subestado)
-              ops.append({
-                  "id": f"op-{code}", "codigo": code, "titulo": name, "organismo": org,
-                  "organismoRut": org_rut, "organismoPagoDias": 30, "organismoRiesgo": "Bajo",
-                  "rubro": rubro, "region": region, "monto": monto,
-                  "fechaPublicacion": pub, "fechaCierre": close,
-                  "matchScore": score, "riesgo": "Bajo", "descripcion": desc, "estado": estado,
-                  "cronograma": [{"hito":"Publicación","fecha":pub},{"hito":"Cierre de Ofertas","fecha":close}],
-                  "documentos": [{"nombre":f"Ver en Mercado Público ({code})","tipo":"link","tamanho":f"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion={code}"}],
-                  "items": [{"sku":"ITEM-1","producto":name,"cantidad":1,"precioUnitario":monto}],
-                  "criteriosEvaluacion": [{"aspecto":"Precio Ofertado","ponderacion":100,"descripcion":"Menor costo"}],
-                  "preguntas": [], "comentarios": [], "competidoresPropuestos": [],
-                  "empresaMatch": company, "modalidad": mod,
-                  "esInvitacionGrandesCompras": mod == "Grandes Compras",
-                  "subestadoEvaluacion": subestado
-              })
-
-          postulaciones = [
-            {"id":"post-b1","oportunidadId":"op-1001-11-COT26","oportunidadCodigo":"1001-11-COT26","oportunidadTitulo":"Retiro, traslado e instalación de equipos de aire acondicionado","organismo":"MINISTERIO DE SALUD - SERVICIO DE SALUD METROPOLITANO","empresaMatch":"Aminorte","modalidad":"Compra Ágil","responsable":"Jonathan Cooper","montoOferta":2450000,"fechaActualizacion":TODAY,"estado":"Borrador","documentosAdjuntos":["Cotizacion_AireAcondicionado_Aminorte.pdf"],"itemsOfertados":[{"sku":"SKU-HVAC-01","precioOferta":2450000,"cantidad":1}]}
-          ]
-
-          content = f"""// AUTO-GENERATED BY GitHub Actions — Sync Mercado Público {TODAY}
-          // DO NOT EDIT MANUALLY — Se sobreescribe automáticamente cada 3 horas
-          import {{ Oportunidad, Postulacion, MiembroEquipo, VistaGuardada, Notificacion, OrdenCompra }} from './types';
-
-          export const mockOportunidades: Oportunidad[] = {json.dumps(ops, indent=2, ensure_ascii=False)};
-
-          export const mockPostulaciones: Postulacion[] = {json.dumps(postulaciones, indent=2, ensure_ascii=False)};
-
-          export const mockMiembrosEquipo: MiembroEquipo[] = [
-            {{ id: 'usr-1', nombre: 'Jonathan Cooper', rol: 'Admin', avatar: 'JC', estado: 'Activo', email: 'jcooper@inder-roll.cl' }},
-            {{ id: 'usr-2', nombre: 'Manuel Viguera', rol: 'Gestor', avatar: 'MV', estado: 'Activo', email: 'mviguera@aminorte.cl' }},
-            {{ id: 'usr-3', nombre: 'Jorge Alvarado', rol: 'Gestor', avatar: 'JA', estado: 'Activo', email: 'jorge.alvarado@discoverymerch.cl' }},
-            {{ id: 'usr-4', nombre: 'José San Martín', rol: 'Gestor', avatar: 'JS', estado: 'Activo', email: 'jsanmartin@aminorte.cl' }}
-          ];
-
-          export const mockNotificaciones: Notificacion[] = [
-            {{ id: 'n-1', titulo: 'Sync Automático Activo', descripcion: 'Última sincronización: {TODAY} — {len(ops)} procesos desde API Mercado Público.', fecha: '{TODAY}', leida: false, tipo: 'info' }}
-          ];
-
-          export const mockVistasGuardadas: VistaGuardada[] = [
-            {{ id: 'v-1', nombre: 'Compras Ágiles Vigentes', filters: {{ search: '', rubro: 'Todos', region: 'Todos', riesgo: 'Todos', montoMin: 0, montoMax: 4000000 }} }}
-          ];
-
-          export const mockOrdenesCompra: OrdenCompra[] = [
-            {{ id: 'oc-1', oportunidadId: 'op-ca-5', codigoOC: 'OC-1005-26', organismo: 'HOSPITAL REGIONAL DR. JUAN NOÉ ARICA', monto: 3450000, fechaEmision: '2026-07-24', estado: 'Aceptada' }}
-          ];
-
-          export const FLETES_REGIONALES_CHILE: Record<string, {{ fleteBase: number; diasEntrega: string; zona: string }}> = {{
-            'Región Metropolitana': {{ fleteBase: 0, diasEntrega: '24 hrs', zona: 'Zona Central (RM)' }},
-            'Región de Valparaíso': {{ fleteBase: 15000, diasEntrega: '24-48 hrs', zona: 'Zona Centro' }},
-            'Región de Coquimbo': {{ fleteBase: 25000, diasEntrega: '48 hrs', zona: 'Zona Norte Chico' }},
-            'Región del Libertador General Bernardo O\\'Higgins': {{ fleteBase: 18000, diasEntrega: '24-48 hrs', zona: 'Zona Centro-Sur' }},
-            'Región del Maule': {{ fleteBase: 22000, diasEntrega: '48 hrs', zona: 'Zona Centro-Sur' }},
-            'Región de Ñuble': {{ fleteBase: 28000, diasEntrega: '48 hrs', zona: 'Zona Sur' }},
-            'Región del Biobío': {{ fleteBase: 32000, diasEntrega: '48-72 hrs', zona: 'Zona Sur' }},
-            'Región de La Araucanía': {{ fleteBase: 38000, diasEntrega: '72 hrs', zona: 'Zona Sur' }},
-            'Región de Los Ríos': {{ fleteBase: 42000, diasEntrega: '72 hrs', zona: 'Zona Sur' }},
-            'Región de Los Lagos': {{ fleteBase: 48000, diasEntrega: '72-96 hrs', zona: 'Zona Sur-Austral' }},
-            'Región de Aysén del General Carlos Ibáñez del Campo': {{ fleteBase: 85000, diasEntrega: '5-7 días', zona: 'Zona Austral' }},
-            'Región de Magallanes y de la Antártica Chilena': {{ fleteBase: 95000, diasEntrega: '5-7 días', zona: 'Zona Austral' }},
-            'Región de Atacama': {{ fleteBase: 45000, diasEntrega: '48-72 hrs', zona: 'Zona Norte' }},
-            'Región de Antofagasta': {{ fleteBase: 55000, diasEntrega: '72 hrs', zona: 'Zona Norte Grande' }},
-            'Región de Tarapacá': {{ fleteBase: 65000, diasEntrega: '72-96 hrs', zona: 'Zona Norte Grande' }},
-            'Región de Arica y Parinacota': {{ fleteBase: 75000, diasEntrega: '4-5 días', zona: 'Zona Norte Extrema' }}
-          }};
-          """
-
-          with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-              f.write(content)
-
-          print(f"[SUCCESS] {len(ops)} oportunidades escritas en {OUTPUT_FILE}")
-          PYEOF
+      - name: Sincronizar con API Mercado Público (motor v7.5)
+        run: python3 scripts/sync_mercadopublico.py
 
       - name: Commit y Push cambios
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "BidCoop Auto-Sync"
-          git add src/app/mockData.ts
-          git diff --cached --quiet || git commit -m "sync: Auto $(date '+%Y-%m-%d %H:%M UTC') — API Mercado Público"
+          git add src/app/mockData.ts data/sync_meta.json data/sync_diagnostics.json data/detail_cache.json data/mockData.ts.backup
+          git diff --cached --quiet || git commit -m "sync: Auto $(date '+%Y-%m-%d %H:%M UTC') — API Mercado Público (BidCoop v7.5)"
           git push
 
-      # Pasos de envío automático de correos desactivados por instrucción explícita del usuario
-
+      # El push a main dispara automáticamente el redeploy en Vercel vía la
+      # integración GitHub ya configurada en el proyecto — no se necesita un
+      # paso adicional aquí.
+      #
+      # Envío de correos: ESTRICTAMENTE MANUAL por instrucción explícita del
+      # usuario. Este workflow nunca debe agregar un paso de envío de reportes
+      # por correo.
