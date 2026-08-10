@@ -19,14 +19,17 @@ export async function GET() {
   try {
     const result = await get(PATHNAME, { access: 'private' });
     if (!result || result.statusCode !== 200) {
+      console.warn('[postulaciones] get() sin statusCode 200:', result?.statusCode);
       return NextResponse.json([]);
     }
     const text = await new Response(result.stream).text();
     const parsed = JSON.parse(text);
     return NextResponse.json(Array.isArray(parsed) ? parsed : []);
-  } catch {
-    // Aún no existe el blob (nunca se ha guardado ninguna postulación) —
-    // estado inicial honesto: lista vacía, no un error.
+  } catch (err: unknown) {
+    // Aún no existe el blob (nunca se ha guardado ninguna postulación) es un
+    // caso honesto (lista vacía) — pero cualquier OTRO error se loguea para
+    // poder diagnosticarlo en vez de esconderlo silenciosamente.
+    console.error('[postulaciones] GET falló:', err instanceof Error ? err.message : err);
     return NextResponse.json([]);
   }
 }
