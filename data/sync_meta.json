@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-09T21:25:26.650754",
-  "ultimoIntentoRealizado": "2026-08-09T21:25:26.650754",
+  "ultimaSincronizacionExitosa": "2026-08-10T11:47:10.347957",
+  "ultimoIntentoRealizado": "2026-08-10T11:47:10.347957",
   "exitosa": true,
-  "registrosEnPlataforma": 376,
-  "registrosConfirmados": 376,
+  "registrosEnPlataforma": 378,
+  "registrosConfirmados": 378,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 299,
+  "registrosConMontoReal": 300,
   "excluidosPrefiltroIrrelevante": 4494,
-  "excluidosSinDatosReales": 2,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 520,
   "comprasAgilesAudit": {
     "total": 212,
@@ -26,7 +26,7 @@
     "montoRecuperadoSum": 0
   },
   "categorias": {
-    "licitaciones": 164,
+    "licitaciones": 166,
     "comprasAgiles": 212,
     "convenioMarco": 0,
     "ordenes_compra": 0,
@@ -36,17 +36,17 @@
     "LP": 28,
     "LE": 99,
     "LR": 13,
-    "L1": 22,
+    "L1": 24,
     "CO": 1,
     "I2": 1,
     "E2": 1,
     "COT": 211
   },
   "matchPorEmpresa": {
-    "Aminorte": 289,
-    "V-MOCCS": 87
+    "Aminorte": 290,
+    "V-MOCCS": 88
   },
-  "tiempoEjecucionSegundos": 803.7,
+  "tiempoEjecucionSegundos": 6.3,
   "errores": [],
   "advertencias": []
 }
