@@ -55,22 +55,62 @@ export default function Home() {
   // Selected Adjudicacion process code
   const [selectedAdjudicacionCodigo, setSelectedAdjudicacionCodigo] = useState<string | null>(null);
 
+  // --- POSTULACIONES PERSISTENCE ---
+  // La plataforma no tiene backend/base de datos: mockOportunidades siempre viene
+  // "fresco" del último sync real (se sobreescribe en cada deploy), pero las
+  // postulaciones que el usuario crea son trabajo suyo — deben sobrevivir a un
+  // refresh o a un redeploy en vez de vivir solo en memoria de React.
+  // localStorage es el único almacenamiento disponible sin agregar infraestructura
+  // nueva: persiste por navegador, no entre dispositivos.
+  const POSTULACIONES_STORAGE_KEY = 'bidcoop_postulaciones_v1';
+
+  const loadStoredPostulaciones = (): Postulacion[] => {
+    if (typeof window === 'undefined') return mockPostulaciones;
+    try {
+      const raw = window.localStorage.getItem(POSTULACIONES_STORAGE_KEY);
+      if (!raw) return mockPostulaciones;
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : mockPostulaciones;
+    } catch {
+      return mockPostulaciones;
+    }
+  };
+
   // Core Data Lists in state to allow dynamic reactivity across components
+  const [postulaciones, setPostulaciones] = useState<Postulacion[]>(loadStoredPostulaciones);
+
   const [oportunidades, setOportunidades] = useState<Oportunidad[]>(() => {
     const d = new Date();
     const year = d.getFullYear();
     const month = String(d.getMonth() + 1).padStart(2, '0');
     const day = String(d.getDate()).padStart(2, '0');
     const todayStr = `${year}-${month}-${day}`;
-    
+
+    // Reconstruir qué oportunidades ya fueron postuladas (postulaciones restauradas
+    // desde localStorage), ya que mockOportunidades siempre trae el estado real
+    // de Mercado Público, no el marcador local "Postulada".
+    const postuladasIds = new Set(loadStoredPostulaciones().map(p => p.oportunidadId));
+
     return mockOportunidades.map(o => {
+      if (postuladasIds.has(o.id)) {
+        return { ...o, estado: 'Postulada' };
+      }
       if (o.estado === 'Publicada' && o.fechaCierre && o.fechaCierre < todayStr) {
         return { ...o, estado: 'Cerrada' };
       }
       return o;
     });
   });
-  const [postulaciones, setPostulaciones] = useState<Postulacion[]>(mockPostulaciones);
+
+  // Persistir cada cambio real de postulaciones (crear una nueva, actualizar estado, etc.)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      window.localStorage.setItem(POSTULACIONES_STORAGE_KEY, JSON.stringify(postulaciones));
+    } catch (err) {
+      console.warn('No se pudo guardar postulaciones en localStorage:', err);
+    }
+  }, [postulaciones]);
   const [ordenesCompra, setOrdenesCompra] = useState(mockOrdenesCompra);
   const [teamMembers, setTeamMembers] = useState<MiembroEquipo[]>(mockMiembrosEquipo);
   const [notifications, setNotifications] = useState<Notificacion[]>(mockNotificaciones);
