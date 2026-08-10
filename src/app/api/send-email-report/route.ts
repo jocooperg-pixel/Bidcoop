@@ -7,8 +7,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json().catch(() => ({}));
     const {
-      email = 'jonathan.cooper@discoverymerch.cl'
-,
+      email = 'mviguera@aminorte.cl',
       empresa = 'Todas',
       oportunidades = [],
       apiKey = '',
@@ -22,21 +21,17 @@ export async function POST(request: Request) {
 
     // 1. RECIPIENT LISTS STRICTLY SEGREGATED BY BUSINESS DIRECTIVE
     const INDER_ROLL_EMAILS = [
-      'jonathan.cooper@discoverymerch.cl'
-
+      'jcooper@inder-roll.cl'
     ];
 
     const AMINORTE_VMOCCS_SUR_CENTRO_EMAILS = [
-      'jsanmartin@aminorte.cl',
       'mviguera@aminorte.cl',
-      'jorge.alvarado@discoverymerch.cl',
-      'jonathan.cooper@discoverymerch.cl'
+      'jcooper@inder-roll.cl'
     ];
 
     const AMINORTE_VMOCCS_METROPOLITANA_EMAILS = [
       'mviguera@aminorte.cl',
-      'jorge.alvarado@discoverymerch.cl',
-      'jonathan.cooper@discoverymerch.cl'
+      'jcooper@inder-roll.cl'
     ];
 
     // Helper for exact Chilean region resolution from organism & description
@@ -147,20 +142,13 @@ export async function POST(request: Request) {
     const opsRM = activeOps.filter((op: any) => op.region === 'Región Metropolitana');
 
     const EMAILS_REGIONES = [
-      'jsanmartin@aminorte.cl',
       'mviguera@aminorte.cl',
-      'jorge.alvarado@discoverymerch.cl',
-      'jonathan.cooper@discoverymerch.cl',
-      'jonathan.cooper@discoverymerch.cl'
-
+      'jcooper@inder-roll.cl'
     ];
 
     const EMAILS_RM = [
       'mviguera@aminorte.cl',
-      'jorge.alvarado@discoverymerch.cl',
-      'jonathan.cooper@discoverymerch.cl',
-      'jonathan.cooper@discoverymerch.cl'
-
+      'jcooper@inder-roll.cl'
     ];
 
     // Keys for Resend / SMTP

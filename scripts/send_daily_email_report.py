@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
 BidCoop — Envío de Reportes por Correo Electrónico (Estrictamente 2 Envíos)
-1) Correo Regiones: 697 Compras Ágiles activas fuera de la RM (I a XVI regiones)
-   Destinatarios BCC: jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jcooper@inder-roll.cl
-2) Correo Región Metropolitana: 345 Compras Ágiles activas de la RM
-   Destinatarios BCC: mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl, jcooper@inder-roll.cl
+1) Correo Regiones: Compras Ágiles activas fuera de la RM (I a XVI regiones)
+   Destinatarios BCC: mviguera@aminorte.cl, jcooper@inder-roll.cl
+2) Correo Región Metropolitana: Compras Ágiles activas de la RM
+   Destinatarios BCC: mviguera@aminorte.cl, jcooper@inder-roll.cl
 """
 
+import os
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -23,23 +24,16 @@ SMTP_USER = "jonathan.cooper.g@gmail.com"
 SMTP_PASS = "stutlzydxqefmptu"
 
 EMAILS_REGIONES = [
-    "jsanmartin@aminorte.cl",
     "mviguera@aminorte.cl",
-    "jorge.alvarado@discoverymerch.cl",
-    "jonathan.cooper@discoverymerch.cl",
-    "jonathan.cooper@discoverymerch.cl"
-
+    "jcooper@inder-roll.cl"
 ]
 
 EMAILS_RM = [
     "mviguera@aminorte.cl",
-    "jorge.alvarado@discoverymerch.cl",
-    "jonathan.cooper@discoverymerch.cl",
-    "jonathan.cooper@discoverymerch.cl"
-
+    "jcooper@inder-roll.cl"
 ]
 
-MOCK_PATH = "/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento/src/app/mockData.ts"
+MOCK_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src/app/mockData.ts")
 
 def load_opportunities():
     with open(MOCK_PATH, "r", encoding="utf-8") as f:

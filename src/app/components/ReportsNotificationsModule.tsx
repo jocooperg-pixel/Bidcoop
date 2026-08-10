@@ -118,7 +118,7 @@ export default function ReportsNotificationsModule({
     setTimeout(() => setReportSuccessMsg(null), 5000);
   };
 
-  const handleSendTestEmail = async (targetEmail: string = 'jonathan.cooper@discoverymerch.cl', groupType: 'SurCentro' | 'Metropolitana' | 'Todas' = 'Todas') => {
+  const handleSendTestEmail = async (targetEmail: string = 'mviguera@aminorte.cl', groupType: 'SurCentro' | 'Metropolitana' | 'Todas' = 'Todas') => {
     try {
       setSendingEmail(true);
       const res = await fetch('/api/send-email-report', {
@@ -162,9 +162,9 @@ export default function ReportsNotificationsModule({
     const today = new Date().toISOString().split('T')[0];
     
     // Recipients by region
-    let targetEmails = 'jsanmartin@aminorte.cl,mviguera@aminorte.cl,jorge.alvarado@discoverymerch.cl,jonathan.cooper@discoverymerch.cl';
+    let targetEmails = 'mviguera@aminorte.cl,jcooper@inder-roll.cl';
     if (zona === 'Metropolitana') {
-      targetEmails = 'mviguera@aminorte.cl,jorge.alvarado@discoverymerch.cl,jonathan.cooper@discoverymerch.cl';
+      targetEmails = 'mviguera@aminorte.cl,jcooper@inder-roll.cl';
     }
 
     // Filter opportunities
@@ -229,7 +229,7 @@ export default function ReportsNotificationsModule({
     if (op.estado === 'Adjudicada') statusBadgeColor = 'bg-emerald-100 text-emerald-800 border-emerald-300';
     if (op.estado === 'En Evaluación') statusBadgeColor = 'bg-amber-100 text-amber-800 border-amber-300';
 
-    const recipient = 'jonathan.cooper@discoverymerch.cl';
+    const recipient = 'mviguera@aminorte.cl';
 
     return {
       subject: emailSubject,
@@ -307,7 +307,7 @@ export default function ReportsNotificationsModule({
           
           {/* Dispatch Button 1: Inder-Roll */}
           <button
-            onClick={() => handleSendTestEmail('jonathan.cooper@discoverymerch.cl', 'Todas')}
+            onClick={() => handleSendTestEmail('jcooper@inder-roll.cl', 'Todas')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -317,7 +317,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Correo Principal</div>
-                <div className="text-[10px] text-emerald-100 font-medium">jonathan.cooper@discoverymerch.cl</div>
+                <div className="text-[10px] text-emerald-100 font-medium">jcooper@inder-roll.cl</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -327,7 +327,7 @@ export default function ReportsNotificationsModule({
 
           {/* Dispatch Button 2: RM */}
           <button
-            onClick={() => handleSendTestEmail('mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl', 'Metropolitana')}
+            onClick={() => handleSendTestEmail('mviguera@aminorte.cl, jcooper@inder-roll.cl', 'Metropolitana')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 text-white font-bold text-xs shadow-lg shadow-blue-500/20 hover:shadow-blue-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -337,7 +337,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Correo RM</div>
-                <div className="text-[10px] text-sky-100 font-medium">3 Destinatarios RM</div>
+                <div className="text-[10px] text-sky-100 font-medium">2 Destinatarios RM</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -347,7 +347,7 @@ export default function ReportsNotificationsModule({
 
           {/* Dispatch Button 3: Regiones IV-X */}
           <button
-            onClick={() => handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl', 'SurCentro')}
+            onClick={() => handleSendTestEmail('mviguera@aminorte.cl, jcooper@inder-roll.cl', 'SurCentro')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white font-bold text-xs shadow-lg shadow-teal-500/20 hover:shadow-teal-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -357,7 +357,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Regiones (IV-X)</div>
-                <div className="text-[10px] text-teal-100 font-medium">4 Destinatarios IV-X</div>
+                <div className="text-[10px] text-teal-100 font-medium">2 Destinatarios IV-X</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -530,7 +530,7 @@ export default function ReportsNotificationsModule({
                 <span className="text-xl">🏢</span>
               </div>
               <div className="text-xl font-black text-slate-800 dark:text-slate-100 mt-2">
-                {selectedCompany === 'Todas' ? 'Consolidado (3 Empresas)' : selectedCompany}
+                {selectedCompany === 'Todas' ? 'Consolidado (2 Empresas)' : selectedCompany}
               </div>
               <div className="text-xs text-indigo-600 font-semibold mt-1">
                 Segmentación estricta habilitada
@@ -1079,8 +1079,8 @@ export default function ReportsNotificationsModule({
                 <div className="border-b border-slate-200 pb-3 space-y-2 text-xs">
                   <div><strong>De:</strong> <span className="font-semibold text-slate-800">Alertas BidCoop &lt;alertas.bidcoop@gmail.com&gt;</span></div>
                   <div><strong>Para Inder-Roll:</strong> <span className="font-mono font-bold text-emerald-700">jcooper@inder-roll.cl</span></div>
-                  <div><strong>Para Aminorte & V-MOCCS (Sur-Centro):</strong> <span className="font-mono text-slate-700">jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</span></div>
-                  <div><strong>Para Aminorte & V-MOCCS (RM Santiago):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl</span></div>
+                  <div><strong>Para Aminorte & V-MOCCS (Sur-Centro):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, jcooper@inder-roll.cl</span></div>
+                  <div><strong>Para Aminorte & V-MOCCS (RM Santiago):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, jcooper@inder-roll.cl</span></div>
                   <div><strong>Asunto:</strong> <span className="font-extrabold text-slate-900">[BidCoop 08:00 AM] Reporte Exclusivo de Compras Ágiles ({new Date().toISOString().split('T')[0]})</span></div>
                   <div><strong>Modalidad Envío:</strong> <span className="font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">📧 Informe Exclusivo en Cuerpo de Correo (Sin Adjuntos)</span></div>
                 </div>
@@ -1181,7 +1181,7 @@ export default function ReportsNotificationsModule({
               <button
                 onClick={() => {
                   setShowEmailPreviewModal(false);
-                  handleSendTestEmail('jsanmartin@aminorte.cl, mviguera@aminorte.cl, jorge.alvarado@discoverymerch.cl, jonathan.cooper@discoverymerch.cl');
+                  handleSendTestEmail('mviguera@aminorte.cl, jcooper@inder-roll.cl');
                 }}
                 disabled={sendingEmail}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-md flex items-center gap-2 cursor-pointer"
