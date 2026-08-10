@@ -65,7 +65,11 @@ TICKET = os.environ.get("MERCADOPUBLICO_TICKET", "F8537A18-6766-4DEF-9E59-426B4F
 BASE_URL = "https://api.mercadopublico.cl/servicios/v1/publico"
 TODAY = datetime.date.today()
 TODAY_STR = TODAY.isoformat()
-NOW_STR = datetime.datetime.now().isoformat()
+# Timestamp con offset UTC explícito (+00:00) — sin esto, el navegador del
+# usuario interpreta el ISO string como HORA LOCAL suya en vez de UTC, y
+# muestra la hora de sync desplazada por su propio huso horario (ej. un
+# usuario en Chile veía "11:47" en vez de la hora real "07:47" local).
+NOW_STR = datetime.datetime.now(datetime.timezone.utc).isoformat()
 SYNC_VERSION = "7.5"
 
 MAX_EXEC_SECONDS = 25 * 60
