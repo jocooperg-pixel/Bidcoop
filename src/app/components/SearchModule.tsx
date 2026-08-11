@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Oportunidad, Postulacion, MiembroEquipo, VistaGuardada, DocumentoAdjunto, Item } from '../types';
 import { calculateSmartCatalogMatch, getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
+import { getSemaforoBidCoop } from '../utils/semaforoEngine';
 import { mockPostulaciones } from '../mockData';
 
 interface SearchModuleProps {
@@ -57,6 +58,7 @@ export default function SearchModule({
     titulo: true,
     monto: true,
     match: true,
+    semaforo: true,
     cierre: true
   });
   const [showColumnSelector, setShowColumnSelector] = useState(false);
@@ -677,9 +679,22 @@ export default function SearchModule({
 
               {/* Opportunity Summary Card */}
               <div className="bg-slate-100/50 dark:bg-slate-800/40 border border-slate-200/50 dark:border-slate-800/80 rounded-xl p-3.5 space-y-2">
-                <span className="text-[9px] uppercase font-black px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 border border-blue-200/30 dark:border-blue-800/40 inline-block">
-                  {selectedOpportunity.modalidad}
-                </span>
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  <span className="text-[9px] uppercase font-black px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 border border-blue-200/30 dark:border-blue-800/40 inline-block">
+                    {selectedOpportunity.modalidad}
+                  </span>
+                  {(() => {
+                    const semaforo = getSemaforoBidCoop(selectedOpportunity);
+                    return (
+                      <span
+                        title={semaforo.reason}
+                        className={`text-[9px] uppercase font-black px-2 py-0.5 rounded border inline-flex items-center gap-1 ${semaforo.badgeBg}`}
+                      >
+                        <span>{semaforo.emoji}</span> {semaforo.label}
+                      </span>
+                    );
+                  })()}
+                </div>
                 <h3 className="text-xs font-black text-slate-900 dark:text-white line-clamp-2 leading-tight">
                   {selectedOpportunity.titulo}
                 </h3>
@@ -2123,6 +2138,7 @@ export default function SearchModule({
                     {visibleColumns.titulo && <th className="py-3 text-[9px] uppercase font-black text-slate-400">Oportunidad</th>}
                     {visibleColumns.monto && <th className="py-3 text-[9px] uppercase font-black text-slate-400 text-right">Monto</th>}
                     {visibleColumns.match && <th className="py-3 text-[9px] uppercase font-black text-slate-400 text-center">Match</th>}
+                    {visibleColumns.semaforo && <th className="py-3 text-[9px] uppercase font-black text-slate-400 text-center">Semáforo</th>}
                     {visibleColumns.cierre && <th className="py-3 text-[9px] uppercase font-black text-slate-400">Fecha Límite</th>}
                     <th className="py-3 text-[9px] uppercase font-black text-slate-400 text-center">Detalle</th>
                   </tr>
@@ -2228,6 +2244,18 @@ export default function SearchModule({
                             <span className={`text-[10px] font-black px-2 py-0.5 rounded-full border ${getMatchScoreBadgeStyle(op.matchScore).badgeBg}`}>
                               {op.matchScore}%
                             </span>
+                          </td>
+                        )}
+                        {visibleColumns.semaforo && (
+                          <td className="py-3.5 text-center">
+                            {(() => {
+                              const semaforo = getSemaforoBidCoop(op);
+                              return (
+                                <span title={semaforo.reason} className="text-base cursor-help">
+                                  {semaforo.emoji}
+                                </span>
+                              );
+                            })()}
                           </td>
                         )}
                         {visibleColumns.cierre && (
