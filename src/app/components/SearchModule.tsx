@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Oportunidad, Postulacion, MiembroEquipo, VistaGuardada, DocumentoAdjunto, Item } from '../types';
 import { calculateSmartCatalogMatch, getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
-import { getCompetitorsForOpportunity } from '../utils/competitorEngine';
 import { mockPostulaciones } from '../mockData';
 
 interface SearchModuleProps {
@@ -21,107 +20,6 @@ interface SearchModuleProps {
   globalSearchText?: string;
   onGlobalSearchTextChange?: (text: string) => void;
 }
-
-const getDeterministicContact = (op: Oportunidad) => {
-  const orgNameUpper = (op.organismo || '').toUpperCase();
-  if (orgNameUpper.includes('PINO') || orgNameUpper.includes('SANATORIO') || (orgNameUpper.includes('SERVICIO DE SALUD') && orgNameUpper.includes('SUR'))) {
-    return {
-      name: 'Gonzalo Araya Morales (Jefe Abastecimiento) / María José Fernández',
-      role: 'Subdirección de Operaciones • Unidad de Compras y Licitaciones Mercado Público',
-      email: 'abastecimiento.elpino@redsalud.gob.cl',
-      emailSecundario: 'compras.sanatorioelpino@redsalud.gob.cl',
-      phone: '+56 2 2576 6000 / +56 2 2576 6150 / +56 2 2576 6152',
-      address: 'Av. Los Morros 13560, San Bernardo, Región Metropolitana, Chile',
-      rut: '61.602.200-7'
-    };
-  }
-  let hash = 0;
-  const key = op.id || op.codigo || '';
-  for (let i = 0; i < key.length; i++) {
-    hash = key.charCodeAt(i) + ((hash << 5) - hash);
-  }
-  hash = Math.abs(hash);
-
-  const names = [
-    'Lorena Galdames Soto', 'Patricio Muñoz Venegas', 'Carlos Valenzuela Díaz', 'María Elena Silva',
-    'Juan Francisco Castro', 'Andrea Toledo Rojas', 'Ramón Morales Soto', 'Camila Paz Fuentes',
-    'Sebastián Jara Olivares', 'Natalia Cáceres Pinochet', 'Claudio Espinoza Ortiz', 'Daniela Vega Leyton'
-  ];
-  
-  const roles = op.rubro === 'Aseo e Higiene'
-    ? [
-        'Encargada de Higiene y Servicios',
-        'Jefe de Operaciones de Limpieza',
-        'Coordinadora de Adquisición de Aseo',
-        'Supervisor de Contratos de Higiene'
-      ]
-    : [
-        'Jefe de Abastecimiento',
-        'Encargado de Compras y Suministros',
-        'Coordinadora de Adquisiciones',
-        'Administrador de Suministros'
-      ];
-
-  const name = names[hash % names.length];
-  const role = roles[hash % roles.length];
-
-  // Generate email based on name
-  const nameParts = name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(' ');
-  const emailPrefix = `${nameParts[0].charAt(0)}.${nameParts[1]}`;
-
-  // Generate email domain based on organism name
-  let domain = 'chilecompra.cl';
-  const org = op.organismo.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  if (org.includes('municipalidad')) {
-    const match = org.match(/municipalidad (?:de )?([a-z\u00f1]+)/);
-    if (match && match[1]) {
-      domain = `muni${match[1]}.cl`;
-    } else {
-      domain = 'municipalidad.cl';
-    }
-  } else if (org.includes('hospital')) {
-    const match = org.match(/hospital (?:de )?([a-z\u00f1]+)/);
-    if (match && match[1]) {
-      domain = `hospital${match[1]}.cl`;
-    } else {
-      domain = 'redsalud.gov.cl';
-    }
-  } else if (org.includes('servicio de salud')) {
-    domain = 'ssalud.gov.cl';
-  }
-
-  const email = `${emailPrefix}@${domain}`;
-
-  // Generate phone
-  const basePhone = 24863000;
-  const phoneNum = (basePhone + (hash % 1000)).toString();
-  const phone = `+56 2 ${phoneNum.substring(0, 4)} ${phoneNum.substring(4)}`;
-
-
-  // Address based on region
-  const regionAddresses: Record<string, string> = {
-    'Arica y Parinacota': 'Av. 21 de Mayo 432, Arica',
-    'Tarapacá': 'Av. Arturo Prat 1020, Iquique',
-    'Antofagasta': 'Calle Prat 540, Antofagasta',
-    'Atacama': 'Copayapu 820, Copiapó',
-    'Coquimbo': 'Calle Prat 350, La Serena',
-    'Valparaíso': 'Calle Condell 1490, Valparaíso',
-    "O'Higgins": 'Plaza de los Héroes 445, Rancagua',
-    'Maule': 'Calle 1 Oriente 920, Talca',
-    'Ñuble': 'Calle 18 de Septiembre 590, Chillán',
-    'Biobío': 'Calle O\'Higgins 525, Concepción',
-    'La Araucanía': 'Calle Prat 650, Temuco',
-    'Los Ríos': 'Calle Bernardo O\'Higgins 780, Valdivia',
-    'Los Lagos': 'Calle San Felipe 80, Puerto Montt',
-    'Aysén': 'Calle Francisco Bilbao 357, Coyhaique',
-    'Magallanes': 'Plaza Muñoz Gamero 1020, Punta Arenas',
-    'Metropolitana': 'Av. Libertador Bernardo O\'Higgins 1302, Santiago Centro'
-  };
-
-  const address = regionAddresses[op.region] || 'Av. Libertador Bernardo O\'Higgins 1302, Santiago Centro';
-
-  return { name, role, email, phone, address };
-};
 
 export default function SearchModule({
   oportunidades,
@@ -266,7 +164,6 @@ export default function SearchModule({
   // Edit Items Modal State
   const [showEditItemsModal, setShowEditItemsModal] = useState<boolean>(false);
   const [editableItems, setEditableItems] = useState<Item[]>([]);
-  const [adjudicacionAlerts, setAdjudicacionAlerts] = useState<Record<string, boolean>>({});
 
   // Synchronize local search state with Topbar global search input
   useEffect(() => {
@@ -1322,335 +1219,111 @@ export default function SearchModule({
               </div>
             )}
 
-            {/* SUB-VIEW 8: Convocatorias Similares */}
-            {detailGroup === 'inteligencia' && detailSub === 'convocatorias' && analyzedOps[selectedOpportunity.id] && (
-              <div className="space-y-4">
-                <div>
-                  <h2 className="text-lg font-black text-slate-900 dark:text-white">Convocatorias Similares Históricas</h2>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">Oportunidades cerradas con bases y requerimientos análogos en el sistema.</p>
-                </div>
-                
-                <div className="space-y-3.5">
-                  {[
-                    selectedOpportunity.rubro === 'Aseo e Higiene'
-                      ? {
-                          codigo: '3047-502-LE25',
-                          titulo: 'Suministro de Desinfectantes y Cloro - Hosp. Barros Luco',
-                          organismo: 'SERVICIO DE SALUD METROPOLITANO SUR',
-                          monto: 32000000,
-                          match: 94,
-                          fecha: '2025-11-12',
-                          estado: 'Adjudicada'
-                        }
-                      : {
-                          codigo: '2210-102-CM25',
-                          titulo: 'Kits Escolares y Papelería - Servicio Local Valparaíso',
-                          organismo: 'SERVICIO LOCAL DE EDUCACIÓN VALPARAÍSO',
-                          monto: 65000000,
-                          match: 92,
-                          fecha: '2025-10-05',
-                          estado: 'Adjudicada'
-                        },
-                    selectedOpportunity.rubro === 'Aseo e Higiene'
-                      ? {
-                          codigo: '4092-120-CO25',
-                          titulo: 'Compra Ágil - Insumos Sanitizantes y Jabón - Muni. Providencia',
-                          organismo: 'I. MUNICIPALIDAD DE PROVIDENCIA',
-                          monto: 1800000,
-                          match: 88,
-                          fecha: '2025-12-01',
-                          estado: 'Cerrada'
-                        }
-                      : {
-                          codigo: '1052-110-LE25',
-                          titulo: 'Renovación de Servidores Core - Subsecretaría de Salud',
-                          organismo: 'SUBSECRETARÍA DE SALUD PÚBLICA',
-                          monto: 98000000,
-                          match: 86,
-                          fecha: '2025-08-20',
-                          estado: 'Adjudicada'
-                        }
-                  ].map((sim, i) => (
-                    <div key={i} className="p-4 rounded-xl border border-slate-150 dark:border-slate-800 bg-white dark:bg-slate-900/50 shadow-sm space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[10px] font-black text-blue-650 dark:text-blue-450">{sim.codigo}</span>
-                        <span className={`text-[9px] font-black px-1.5 py-0.2 rounded uppercase ${
-                          sim.estado === 'Adjudicada'
-                            ? 'bg-green-50 text-green-700 dark:bg-green-950/30 dark:text-green-400'
-                            : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-400'
-                        }`}>
-                          {sim.estado}
-                        </span>
-                      </div>
-                      
-                      <div>
-                        <h4 className="text-xs font-black text-slate-900 dark:text-white line-clamp-1">{sim.titulo}</h4>
-                        <span className="text-[10px] text-slate-400 mt-0.5 block">{sim.organismo}</span>
-                      </div>
-
-                      <div className="flex items-center justify-between text-xs pt-1.5 border-t border-slate-100 dark:border-slate-800/80">
-                        <div>
-                          <span className="text-[9px] uppercase font-black text-slate-400 block">Monto Neto</span>
-                          <strong className="font-black text-slate-900 dark:text-white">${sim.monto.toLocaleString('es-CL')}</strong>
+            {/* SUB-VIEW 8: Otras oportunidades del mismo rubro (real, sin histórico inventado) */}
+            {detailGroup === 'inteligencia' && detailSub === 'convocatorias' && analyzedOps[selectedOpportunity.id] && (() => {
+              const similares = oportunidades
+                .filter(o => o.id !== selectedOpportunity.id && o.rubro === selectedOpportunity.rubro && o.estado === 'Publicada')
+                .sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0))
+                .slice(0, 6);
+              return (
+                <div className="space-y-4">
+                  <div>
+                    <h2 className="text-lg font-black text-slate-900 dark:text-white">Otras Oportunidades del Mismo Rubro</h2>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                      Procesos activos reales en la plataforma con rubro <strong>{selectedOpportunity.rubro}</strong>. Mercado Público no expone un histórico público de licitaciones cerradas comparables, así que esta vista se limita a lo actualmente publicado.
+                    </p>
+                  </div>
+                  {similares.length === 0 ? (
+                    <div className="text-center py-6 text-slate-400 text-xs">No hay otras oportunidades activas en este rubro en este momento.</div>
+                  ) : (
+                    <div className="space-y-3.5">
+                      {similares.map(sim => (
+                        <div
+                          key={sim.id}
+                          onClick={() => onSelectOpportunity(sim)}
+                          className="p-4 rounded-xl border border-slate-150 dark:border-slate-800 bg-white dark:bg-slate-900/50 shadow-sm space-y-3 cursor-pointer hover:border-blue-300 dark:hover:border-blue-700 transition"
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="text-[10px] font-black text-blue-650 dark:text-blue-450">{sim.codigo}</span>
+                            <span className="text-[9px] font-black px-1.5 py-0.2 rounded uppercase bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400">
+                              {sim.estado}
+                            </span>
+                          </div>
+                          <div>
+                            <h4 className="text-xs font-black text-slate-900 dark:text-white line-clamp-1">{sim.titulo}</h4>
+                            <span className="text-[10px] text-slate-400 mt-0.5 block">{sim.organismo}</span>
+                          </div>
+                          <div className="flex items-center justify-between text-xs pt-1.5 border-t border-slate-100 dark:border-slate-800/80">
+                            <div>
+                              <span className="text-[9px] uppercase font-black text-slate-400 block">Monto</span>
+                              <strong className="font-black text-slate-900 dark:text-white">
+                                {sim.monto > 0 ? `$${sim.monto.toLocaleString('es-CL')}` : 'No informado'}
+                              </strong>
+                            </div>
+                            <div className="text-right">
+                              <span className="text-[9px] uppercase font-black text-slate-400 block">Match BidCoop</span>
+                              <span className="font-black text-blue-600 dark:text-blue-400">{sim.matchScore}%</span>
+                            </div>
+                          </div>
                         </div>
-                        <div className="text-right">
-                          <span className="text-[9px] uppercase font-black text-slate-400 block">Similitud AI</span>
-                          <span className="font-black text-blue-600 dark:text-blue-400">{sim.match}%</span>
-                        </div>
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                  )}
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
-            {/* SUB-VIEW 9: Competidores y Compradores */}
+            {/* SUB-VIEW 9: Competidores y Compradores — solo datos reales de Mercado Público */}
             {detailGroup === 'inteligencia' && detailSub === 'competidores' && analyzedOps[selectedOpportunity.id] && (
               <div className="space-y-4">
                 <div>
                   <h2 className="text-lg font-black text-slate-900 dark:text-white">Competidores y Compradores</h2>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">Monitoreo de comportamiento de mercado, adjudicaciones y cuota de rubro.</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">Información de adjudicación oficial cuando Mercado Público la publica.</p>
                 </div>
-                
-                {/* Visual Radar Summary */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {/* Score de Éxito BidCoop */}
-                  <div className="p-4 rounded-xl border border-slate-150 dark:border-slate-800 bg-gradient-to-br from-blue-50/40 to-indigo-50/20 dark:from-slate-900/50 dark:to-slate-850/30 flex items-center gap-4">
-                    <div className="relative w-20 h-20 flex-shrink-0">
-                      {/* Outer Circle ring */}
-                      <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-                        <path
-                          className="text-slate-200 dark:text-slate-700"
-                          strokeWidth="3"
-                          stroke="currentColor"
-                          fill="none"
-                          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                        <path
-                          className="text-blue-600 dark:text-blue-400 transition-all duration-1000"
-                          strokeWidth="3.2"
-                          strokeDasharray={`${selectedOpportunity.matchScore}, 100`}
-                          strokeLinecap="round"
-                          stroke="currentColor"
-                          fill="none"
-                          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                      </svg>
-                      <div className="absolute inset-0 flex flex-col items-center justify-center">
-                        <span className="text-base font-black text-slate-900 dark:text-white">{selectedOpportunity.matchScore}%</span>
-                        <span className="text-[7px] text-slate-400 uppercase font-black tracking-wider">Éxito</span>
-                      </div>
-                    </div>
-                    <div className="text-xs">
-                      <span className="text-[9px] uppercase font-black tracking-wider text-blue-600 dark:text-blue-450 block">Score BidCoop</span>
-                      <strong className="text-slate-800 dark:text-slate-100 block text-xs">Probabilidad de Adjudicación</strong>
-                      <p className="text-[10px] text-slate-500 dark:text-slate-450 mt-1 leading-normal">
-                        Favorable por alta cercanía ({selectedOpportunity.region}) y baja morosidad técnica del comprador.
-                      </p>
+
+                {selectedOpportunity.proveedorAdjudicado ? (
+                  <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white border border-emerald-500/40 shadow-md space-y-2">
+                    <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-emerald-500 text-white inline-block">
+                      🏆 Proveedor Adjudicado — Dato Oficial Mercado Público
+                    </span>
+                    <h4 className="text-sm font-black text-white">{selectedOpportunity.proveedorAdjudicado}</h4>
+                    <div className="text-[11px] text-slate-200 flex flex-wrap gap-4 pt-1">
+                      {selectedOpportunity.rutProveedor && <span>RUT: <strong>{selectedOpportunity.rutProveedor}</strong></span>}
+                      {selectedOpportunity.codigoOrdenCompra && <span>Orden de Compra: <strong>{selectedOpportunity.codigoOrdenCompra}</strong></span>}
                     </div>
                   </div>
-
-                  {/* Alertas del Radar Predictivo */}
-                  <div className="p-4 rounded-xl border border-slate-150 dark:border-slate-800 bg-amber-50/20 dark:bg-amber-950/10 flex flex-col justify-between text-xs">
-                    <div>
-                      <h4 className="font-black text-amber-700 dark:text-amber-450 flex items-center gap-1.5 text-[11px]">
-                        <span>🚨</span> Radar de Riesgo Predictivo
-                      </h4>
-                      <p className="text-[10px] text-slate-550 dark:text-slate-400 mt-1 leading-normal">
-                        {selectedOpportunity.rubro === 'Aseo e Higiene'
-                          ? 'Prisa S.A. y Distribuidora del Sur suelen competir fuertemente en esta zona. Se proyecta un descuento agresivo.'
-                          : 'Dimerc SpA tiene contratos activos con este organismo. Monitorear reajustes de precios de papel resma.'
-                        }
-                      </p>
-                    </div>
-                    <div className="mt-2 text-[10px] font-black text-amber-600 dark:text-amber-400">
-                      Nivel de Competencia Proyectado: {selectedOpportunity.monto > 25000000 ? 'ALTO' : 'MEDIO'}
-                    </div>
+                ) : (
+                  <div className="p-5 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 text-center">
+                    <span className="text-2xl block mb-2">⚫</span>
+                    <p className="text-xs font-black text-slate-600 dark:text-slate-300 uppercase">Información Insuficiente</p>
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1.5 max-w-md mx-auto leading-relaxed">
+                      Mercado Público no expone públicamente qué otros proveedores participaron ni sus puntajes de evaluación. {selectedOpportunity.estado === 'Publicada'
+                        ? 'Este dato solo se publica oficialmente una vez que el organismo adjudica el proceso — no lo inventamos mientras tanto.'
+                        : 'Este proceso aún no registra un proveedor adjudicado en la ficha oficial que tenemos sincronizada.'}
+                    </p>
+                    {selectedOpportunity.sourceUrl && (
+                      <a
+                        href={selectedOpportunity.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[11px] font-black text-blue-600 dark:text-blue-400 hover:underline mt-3 inline-block"
+                      >
+                        Ver ficha oficial en Mercado Público →
+                      </a>
+                    )}
                   </div>
-                </div>
-
-                {/* Comprador Loyalty Metric */}
-                <div className="p-4 rounded-xl border border-slate-150 dark:border-slate-800 bg-blue-50/20 dark:bg-blue-950/10 space-y-2 text-xs">
-                  <h4 className="font-black text-slate-900 dark:text-white flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                    Patrón de Adjudicación del Comprador
-                  </h4>
-                  <p className="text-slate-550 dark:text-slate-400 text-[10px] leading-relaxed">
-                    Este organismo adjudica al líder del rubro el <strong className="text-blue-600 dark:text-blue-400">45%</strong> de las veces. Se aconseja una estrategia de precios agresiva (-4% del precio promedio del catálogo).
-                  </p>
-                </div>
-
-                {/* COMPETITORS & AWARD BREAKDOWN TABLE */}
-                {(() => {
-                  const compAnalysis = getCompetitorsForOpportunity(selectedOpportunity, mockPostulaciones);
-                  const isAdjudicada = selectedOpportunity.estado === 'Adjudicada';
-                  const isAlertActive = !!adjudicacionAlerts[selectedOpportunity.id];
-
-                  return (
-                    <div className="space-y-4 pt-2 border-t border-slate-100 dark:border-slate-800">
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-50 dark:bg-slate-900/80 p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800">
-                        <div>
-                          <h4 className="text-xs font-black text-slate-900 dark:text-white flex items-center gap-2">
-                            <span>👥</span> Proveedores Participantes y Cuadro Comparativo
-                          </h4>
-                          <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
-                            {isAdjudicada
-                              ? 'Resultado oficial de adjudicación y desglose de proveedores postulantes.'
-                              : 'Proceso cerrado en evaluación. Listado de proveedores competidores presentados.'}
-                          </p>
-                        </div>
-
-                        {!isAdjudicada && (
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setAdjudicacionAlerts(prev => ({ ...prev, [selectedOpportunity.id]: !isAlertActive }));
-                              alert(!isAlertActive
-                                ? '🔔 Alerta activada: Recibirás una notificación inmediata por correo y en plataforma en cuanto la Comisión de Evaluación publique el resultado de adjudicación.'
-                                : 'Alerta desactivada.');
-                            }}
-                            className={`px-3 py-1.5 rounded-xl text-[11px] font-black transition cursor-pointer flex items-center gap-1.5 border shadow-xs shrink-0 ${
-                              isAlertActive
-                                ? 'bg-amber-500 text-white border-amber-600 shadow-amber-500/20'
-                                : 'bg-white hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border-slate-300 dark:border-slate-700'
-                            }`}
-                          >
-                            <span>{isAlertActive ? '🔔 Alerta Activada' : '🔕 Activar Alerta de Adjudicación'}</span>
-                          </button>
-                        )}
-                      </div>
-
-                      {/* WINNER / AWARD STATUS BANNER */}
-                      {isAdjudicada && compAnalysis.ganador && (
-                        <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white border border-emerald-500/40 shadow-md space-y-2">
-                          <div className="flex items-center justify-between">
-                            <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-emerald-500 text-white">
-                              🏆 PROVEEDOR ADJUDICADO Y ADJUDICACIÓN FINALIZADA
-                            </span>
-                            <span className="text-xs font-bold text-emerald-200 font-mono">
-                              Monto: ${compAnalysis.ganador.montoOfertado.toLocaleString('es-CL')} CLP
-                            </span>
-                          </div>
-                          <h4 className="text-sm font-black text-white">
-                            {compAnalysis.ganador.nombre}
-                          </h4>
-                          <div className="text-[11px] text-slate-200 flex flex-wrap gap-4 pt-1">
-                            <span>RUT: <strong>{compAnalysis.ganador.rut}</strong></span>
-                            <span>Puntaje de Evaluación: <strong className="text-emerald-300">{compAnalysis.ganador.puntajeEvaluacion}/100 pts</strong></span>
-                            <span>Puntos Diferenciales: <strong>{compAnalysis.ganador.observacion || 'Cumplimiento 100% de bases'}</strong></span>
-                          </div>
-                        </div>
-                      )}
-
-                      {!isAdjudicada && (
-                        <div className="p-3.5 rounded-2xl bg-gradient-to-r from-amber-950 via-slate-900 to-slate-950 text-white border border-amber-500/30 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-                          <div>
-                            <div className="flex items-center gap-2">
-                              <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-amber-500 text-white">
-                                ⏳ EN EVALUACIÓN - PENDIENTE DE ADJUDICAR
-                              </span>
-                              <span className="text-[11px] font-bold text-amber-200">
-                                Fecha estimada resolución: {compAnalysis.fechaEstimadaAdjudicacion}
-                              </span>
-                            </div>
-                            <p className="text-[11px] text-slate-300 mt-1">
-                              Existen <strong>{compAnalysis.competidores.length} ofertas ingresadas</strong> en comisión evaluadora. El sistema monitorea Mercado Público cada hora para avisarte de inmediato al momento del acta de adjudicación.
-                            </p>
-                          </div>
-                        </div>
-                      )}
-
-                      {/* COMPARATIVE SUPPLIERS TABLE */}
-                      <div className="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-xs bg-white dark:bg-slate-900">
-                        <div className="p-3 bg-slate-100/70 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
-                          <h5 className="text-[11px] font-black text-slate-800 dark:text-slate-200 uppercase tracking-wider">
-                            Cuadro Comparativo de Proveedores Postulantes ({compAnalysis.competidores.length})
-                          </h5>
-                          <span className="text-[10px] text-slate-400 font-bold">Ordenado por Puntaje Técnico-Económico</span>
-                        </div>
-
-                        <div className="overflow-x-auto">
-                          <table className="w-full text-left text-xs">
-                            <thead className="bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
-                              <tr>
-                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400">Proveedor / Razón Social</th>
-                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400">RUT</th>
-                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400 text-right">Monto Oferta CLP</th>
-                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400 text-center">Puntaje Evaluation</th>
-                                <th className="p-2.5 font-black text-slate-500 dark:text-slate-400 text-center">Estado Oferta</th>
-                              </tr>
-                            </thead>
-                            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
-                              {compAnalysis.competidores.map((comp, idx) => (
-                                <tr
-                                  key={idx}
-                                  className={`transition ${
-                                    comp.esNuestraEmpresa
-                                      ? 'bg-blue-50/60 dark:bg-blue-950/30 font-bold'
-                                      : comp.estadoOferta === 'Adjudicado'
-                                      ? 'bg-emerald-50/50 dark:bg-emerald-950/20'
-                                      : 'hover:bg-slate-50/60 dark:hover:bg-slate-850/40'
-                                  }`}
-                                >
-                                  <td className="p-2.5">
-                                    <span className={`block font-black text-xs ${comp.esNuestraEmpresa ? 'text-blue-700 dark:text-blue-300' : 'text-slate-900 dark:text-white'}`}>
-                                      {comp.nombre}
-                                    </span>
-                                    {comp.observacion && (
-                                      <span className="text-[10px] text-slate-400 font-medium block mt-0.5">
-                                        {comp.observacion}
-                                      </span>
-                                    )}
-                                  </td>
-                                  <td className="p-2.5 text-slate-500 dark:text-slate-400 font-mono text-[10px]">
-                                    {comp.rut}
-                                  </td>
-                                  <td className="p-2.5 text-right font-black text-slate-900 dark:text-white text-xs">
-                                    ${comp.montoOfertado.toLocaleString('es-CL')} CLP
-                                  </td>
-                                  <td className="p-2.5 text-center">
-                                    <span className="font-black px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-[10px]">
-                                      {comp.puntajeEvaluacion} pts
-                                    </span>
-                                  </td>
-                                  <td className="p-2.5 text-center">
-                                    <span className={`px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider ${
-                                      comp.estadoOferta === 'Adjudicado' ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300' :
-                                      comp.estadoOferta === 'En Evaluación' ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300' :
-                                      'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
-                                    }`}>
-                                      {comp.estadoOferta}
-                                    </span>
-                                  </td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })()}
+                )}
               </div>
             )}
 
-            {/* SUB-VIEW 10: Historial de precios */}
+            {/* SUB-VIEW 10: Historial de precios — sin tendencia inventada */}
             {detailGroup === 'inteligencia' && detailSub === 'precios' && analyzedOps[selectedOpportunity.id] && (
               <div className="space-y-4">
                 <div>
                   <h2 className="text-lg font-black text-slate-900 dark:text-white">Historial de Precios de Adjudicación</h2>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">Variación de precio promedio adjudicado para los ítems principales en licitaciones pasadas.</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">Variación de precio promedio adjudicado, cuando existen registros reales para este ítem.</p>
                 </div>
 
-                {/* Trend Alert Indicator */}
-                <div className="p-3.5 rounded-xl border border-green-200 dark:border-green-900/50 bg-green-50/30 dark:bg-green-950/10 flex items-center justify-between text-xs">
-                  <div>
-                    <span className="text-[9px] uppercase font-black text-green-700 dark:text-green-400 block">Tendencia AI</span>
-                    <strong className="text-green-600 dark:text-green-400">Precios Estables (+2.4% anual)</strong>
-                  </div>
-                  <span className="text-xl font-bold">📈</span>
-                </div>
-                
                 {selectedOpportunity.historialPrecios ? (
                   <div className="border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-slate-850/20 p-4">
                     <div className="space-y-3 text-xs">
@@ -1663,112 +1336,71 @@ export default function SearchModule({
                     </div>
                   </div>
                 ) : (
-                  <div className="text-center py-6 text-slate-400 text-xs">Sin registros de variación de precios para este SKU.</div>
+                  <div className="text-center py-6 text-slate-400 text-xs">
+                    Sin registros de variación de precios para este ítem — Mercado Público no publica un histórico de precios adjudicados consultable por SKU.
+                  </div>
                 )}
               </div>
             )}
 
-            {/* SUB-VIEW 11: Evaluación Comprador */}
+            {/* SUB-VIEW 11: Evaluación Comprador — removida: sin fuente de datos real todavía */}
             {detailGroup === 'inteligencia' && detailSub === 'comprador' && analyzedOps[selectedOpportunity.id] && (
               <div className="space-y-4">
                 <div>
                   <h2 className="text-lg font-black text-slate-900 dark:text-white">Evaluación y Comportamiento del Comprador</h2>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">Score financiero calculado según cumplimiento histórico en Mercado Público.</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">Historial de pagos, reclamos y cumplimiento por organismo.</p>
                 </div>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl border border-slate-150 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 text-xs">
-                    <span className="text-[10px] uppercase font-black text-slate-400 block mb-1">Días Promedio de Pago</span>
-                    <strong className="text-2xl font-black text-slate-900 dark:text-white">{selectedOpportunity.organismoPagoDias} días</strong>
-                    <span className="text-[9px] text-slate-400 block mt-1.5">
-                      {selectedOpportunity.organismoPagoDias <= 30 ? '✓ Excelente pagador (Rápido)' : '⚠️ Cuidado: Plazos de pago extendidos'}
-                    </span>
-                  </div>
-
-                  <div className="p-4 rounded-xl border border-slate-150 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 text-xs">
-                    <span className="text-[10px] uppercase font-black text-slate-400 block mb-1">Clasificación de Riesgo</span>
-                    <strong className={`text-xl font-black uppercase ${
-                      selectedOpportunity.organismoRiesgo === 'Bajo' ? 'text-green-500' : selectedOpportunity.organismoRiesgo === 'Medio' ? 'text-amber-500' : 'text-red-500'
-                    }`}>{selectedOpportunity.organismoRiesgo}</strong>
-                    <span className="text-[9px] text-slate-400 block mt-2">Cálculo en base a reclamos de proveedores vigentes.</span>
-                  </div>
-                </div>
-
-                <div className="p-4 rounded-xl border border-slate-100 dark:border-slate-850 bg-white dark:bg-slate-900/50 space-y-2 text-xs">
-                  <span className="text-[9px] uppercase font-black text-slate-400 block">Indicadores de Cumplimiento</span>
-                  <div className="space-y-2 pt-1">
-                    <div className="flex justify-between">
-                      <span className="text-slate-500 dark:text-slate-400">Adhesión a bases del llamado:</span>
-                      <strong className="text-slate-800 dark:text-slate-200">100%</strong>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-slate-500 dark:text-slate-400">Reclamos vigentes en ChileCompra:</span>
-                      <strong className="text-green-600">0 Reclamos</strong>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-slate-500 dark:text-slate-400">Nota Proveedores (Promedio):</span>
-                      <strong className="text-slate-850 dark:text-slate-200">4.8 / 5.0</strong>
-                    </div>
-                  </div>
+                <div className="p-5 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 text-center">
+                  <span className="text-2xl block mb-2">⚫</span>
+                  <p className="text-xs font-black text-slate-600 dark:text-slate-300 uppercase">Información Insuficiente</p>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1.5 max-w-md mx-auto leading-relaxed">
+                    No tenemos una fuente de datos real de días de pago, reclamos vigentes en ChileCompra ni notas de proveedores por organismo. Mercado Público no publica esto de forma consultable, así que no vamos a mostrar un puntaje inventado.
+                  </p>
                 </div>
               </div>
             )}
 
-            {/* SUB-VIEW 12: Datos de Contacto */}
-            {detailGroup === 'inteligencia' && detailSub === 'contacto' && analyzedOps[selectedOpportunity.id] && (() => {
-              const contacto = getDeterministicContact(selectedOpportunity);
-              return (
-                <div className="space-y-4">
-                  <div>
-                    <h2 className="text-lg font-black text-slate-900 dark:text-white">Datos de Contacto Comprador</h2>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">Información de contacto oficial de la unidad de abastecimiento encargada.</p>
-                  </div>
-                  
-                  <div className="p-5 rounded-2xl border border-slate-150 dark:border-slate-800 bg-white dark:bg-slate-900/50 shadow-sm space-y-4 text-xs">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 text-white flex items-center justify-center font-black text-sm uppercase">
-                        {selectedOpportunity.organismo.slice(0, 2)}
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-black text-slate-900 dark:text-white line-clamp-1">{selectedOpportunity.organismo}</h4>
-                        <span className="text-[10px] text-slate-400 mt-0.5 block">RUT: {selectedOpportunity.organismoRut || '12.345.678-9'}</span>
-                      </div>
+            {/* SUB-VIEW 12: Datos de Contacto — sin generar personas/emails/teléfonos falsos */}
+            {detailGroup === 'inteligencia' && detailSub === 'contacto' && analyzedOps[selectedOpportunity.id] && (
+              <div className="space-y-4">
+                <div>
+                  <h2 className="text-lg font-black text-slate-900 dark:text-white">Datos de Contacto Comprador</h2>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">Solo mostramos lo que Mercado Público confirma oficialmente.</p>
+                </div>
+
+                <div className="p-5 rounded-2xl border border-slate-150 dark:border-slate-800 bg-white dark:bg-slate-900/50 shadow-sm space-y-4 text-xs">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 text-white flex items-center justify-center font-black text-sm uppercase">
+                      {selectedOpportunity.organismo.slice(0, 2)}
                     </div>
+                    <div>
+                      <h4 className="text-sm font-black text-slate-900 dark:text-white line-clamp-1">{selectedOpportunity.organismo}</h4>
+                      <span className="text-[10px] text-slate-400 mt-0.5 block">RUT: {selectedOpportunity.organismoRut || 'No informado'}</span>
+                    </div>
+                  </div>
 
-                    <div className="border-t border-slate-100 dark:border-slate-800 pt-4 space-y-3">
-                      <div>
-                        <span className="text-[9px] uppercase font-black text-slate-400 block">Contacto Técnico</span>
-                        <span className="font-bold text-slate-900 dark:text-slate-100 mt-0.5 block">
-                          {contacto.name}
-                        </span>
-                        <span className="text-[10px] text-slate-400 mt-0.5 block">
-                          {contacto.role}
-                        </span>
-                      </div>
-
-                      <div>
-                        <span className="text-[9px] uppercase font-black text-slate-400 block">Correo Electrónico</span>
-                        <a href={`mailto:${contacto.email}`} className="text-blue-600 dark:text-blue-400 font-bold hover:underline mt-0.5 block">
-                          {contacto.email}
+                  <div className="border-t border-slate-100 dark:border-slate-800 pt-4">
+                    <span className="text-2xl block mb-2 text-center">⚫</span>
+                    <p className="text-xs font-black text-slate-600 dark:text-slate-300 uppercase text-center">Sin Contacto Directo Verificado</p>
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1.5 text-center leading-relaxed">
+                      No tenemos un nombre, correo o teléfono de contacto real para esta unidad de compras. Para consultas, la vía oficial es el módulo de "Preguntas Públicas" dentro de la ficha del proceso en Mercado Público.
+                    </p>
+                    {selectedOpportunity.sourceUrl && (
+                      <div className="text-center mt-3">
+                        <a
+                          href={selectedOpportunity.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[11px] font-black text-blue-600 dark:text-blue-400 hover:underline"
+                        >
+                          Ver ficha oficial en Mercado Público →
                         </a>
                       </div>
-
-                      <div>
-                        <span className="text-[9px] uppercase font-black text-slate-400 block">Teléfono de Oficina</span>
-                        <span className="font-bold text-slate-850 dark:text-slate-200 mt-0.5 block">{contacto.phone}</span>
-                      </div>
-
-                      <div>
-                        <span className="text-[9px] uppercase font-black text-slate-400 block">Dirección de Despacho</span>
-                        <span className="font-bold text-slate-700 dark:text-slate-300 mt-0.5 block leading-normal">
-                          {contacto.address}
-                        </span>
-                      </div>
-                    </div>
+                    )}
                   </div>
                 </div>
-              );
-            })()}
+              </div>
+            )}
 
             {/* SUB-VIEW 11: Formulario de postulación */}
             {detailGroup === 'postulacion' && (
