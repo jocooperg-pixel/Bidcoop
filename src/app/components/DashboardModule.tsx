@@ -139,6 +139,33 @@ export default function DashboardModule({
       .slice(0, 10);
   }, [oportunidades]);
 
+  // ═══════════════════════════════════════════════════════════════════════
+  // CENTRO DE ALERTAS — agrupa por severidad real (tiempo hasta cierre),
+  // no por visita ni por "cambios" del sync. Cada oportunidad aparece en un
+  // solo nivel (el más urgente que le corresponda) para evitar spam: mismo
+  // criterio anti-duplicado que pide el prompt maestro. Solo procesos
+  // 'Publicada' con fechaCierre real — nada estimado.
+  // ═══════════════════════════════════════════════════════════════════════
+  const centroAlertas = useMemo(() => {
+    const now = new Date();
+    const activas = oportunidades.filter(o => o.estado === 'Publicada' && o.fechaCierre);
+
+    const conHoras = activas
+      .map(o => {
+        const cierre = new Date(o.fechaCierre as string);
+        if (isNaN(cierre.getTime())) return null;
+        const horas = (cierre.getTime() - now.getTime()) / (1000 * 60 * 60);
+        return horas >= 0 ? { op: o, horas } : null;
+      })
+      .filter((x): x is { op: Oportunidad; horas: number } => x !== null);
+
+    const critico = conHoras.filter(x => x.horas <= 24).sort((a, b) => a.horas - b.horas);
+    const alto = conHoras.filter(x => x.horas > 24 && x.horas <= 72).sort((a, b) => a.horas - b.horas);
+    const medio = conHoras.filter(x => x.horas > 72 && x.horas <= 168).sort((a, b) => a.horas - b.horas);
+
+    return { critico, alto, medio, total: critico.length + alto.length + medio.length };
+  }, [oportunidades]);
+
   const [dateRange, setDateRange] = useState<'hoy' | '7d' | '1m' | '3m'>('1m');
   const [suggestedTab, setSuggestedTab] = useState<'match' | 'recientes' | 'monto'>('match');
   
@@ -402,6 +429,51 @@ export default function DashboardModule({
               <span className="text-lg font-black text-slate-700 dark:text-slate-300 block">{cambios.cerradosCount}</span>
               <span className="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">Cerrados / Expirados</span>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* CENTRO DE ALERTAS — severidad real por tiempo hasta cierre */}
+      {centroAlertas.total > 0 && (
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-xs font-black uppercase text-slate-700 dark:text-slate-300 tracking-wider flex items-center gap-1.5">
+              <span>🔔</span> Centro de Alertas
+            </h3>
+            <span className="text-[9px] text-slate-400 font-semibold">
+              {centroAlertas.total} proceso{centroAlertas.total !== 1 ? 's' : ''} con cierre dentro de 7 días
+            </span>
+          </div>
+          <div className="space-y-4">
+            {[
+              { key: 'critico', label: 'Crítico — cierra en menos de 24h', emoji: '🔴', items: centroAlertas.critico, bg: 'bg-red-50 dark:bg-red-950/20', border: 'border-red-200 dark:border-red-900/50', text: 'text-red-700 dark:text-red-400', chip: 'bg-red-100 dark:bg-red-950/50 text-red-700 dark:text-red-300' },
+              { key: 'alto', label: 'Alto — cierra en 1 a 3 días', emoji: '🟠', items: centroAlertas.alto, bg: 'bg-orange-50 dark:bg-orange-950/20', border: 'border-orange-200 dark:border-orange-900/50', text: 'text-orange-700 dark:text-orange-400', chip: 'bg-orange-100 dark:bg-orange-950/50 text-orange-700 dark:text-orange-300' },
+              { key: 'medio', label: 'Medio — cierra en 3 a 7 días', emoji: '🟡', items: centroAlertas.medio, bg: 'bg-amber-50 dark:bg-amber-950/20', border: 'border-amber-200 dark:border-amber-900/50', text: 'text-amber-700 dark:text-amber-400', chip: 'bg-amber-100 dark:bg-amber-950/50 text-amber-700 dark:text-amber-300' }
+            ].filter(tier => tier.items.length > 0).map(tier => (
+              <div key={tier.key} className={`rounded-xl border ${tier.border} ${tier.bg} p-3`}>
+                <div className="flex items-center justify-between mb-2">
+                  <span className={`text-[10px] font-black uppercase ${tier.text}`}>{tier.emoji} {tier.label}</span>
+                  <span className={`text-[9px] font-black px-2 py-0.5 rounded-full ${tier.chip}`}>{tier.items.length}</span>
+                </div>
+                <div className="space-y-1.5">
+                  {tier.items.slice(0, 5).map(({ op, horas }) => (
+                    <div
+                      key={op.id}
+                      onClick={() => onSelectOpportunity(op)}
+                      className="flex items-center justify-between gap-2 text-xs bg-white/70 dark:bg-slate-900/50 hover:bg-white dark:hover:bg-slate-900 border border-slate-200/60 dark:border-slate-800/60 rounded-lg px-3 py-2 cursor-pointer transition"
+                    >
+                      <span className="font-bold text-slate-800 dark:text-slate-200 truncate">{op.titulo}</span>
+                      <span className={`font-mono text-[10px] shrink-0 font-black ${tier.text}`}>
+                        {horas < 1 ? `${Math.round(horas * 60)} min` : horas < 24 ? `${Math.round(horas)} h` : `${Math.round(horas / 24)} días`}
+                      </span>
+                    </div>
+                  ))}
+                  {tier.items.length > 5 && (
+                    <span className="text-[9px] text-slate-400 font-semibold pl-1">+{tier.items.length - 5} más en esta categoría</span>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       )}
