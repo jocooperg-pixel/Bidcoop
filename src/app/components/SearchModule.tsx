@@ -20,6 +20,8 @@ interface SearchModuleProps {
   onUpdateOpportunityItems?: (opId: string, items: Item[]) => void;
   globalSearchText?: string;
   onGlobalSearchTextChange?: (text: string) => void;
+  followedOps: Record<string, boolean>;
+  onToggleFollow: (opId: string) => void;
 }
 
 export default function SearchModule({
@@ -37,7 +39,9 @@ export default function SearchModule({
   onSyncRealTime,
   onUpdateOpportunityItems,
   globalSearchText = '',
-  onGlobalSearchTextChange
+  onGlobalSearchTextChange,
+  followedOps,
+  onToggleFollow
 }: SearchModuleProps) {
   // --- LIST STATE ---
 
@@ -144,7 +148,6 @@ export default function SearchModule({
   const [formResponsable, setFormResponsable] = useState('');
   const [uploadedDocs, setUploadedDocs] = useState<string[]>([]);
   const [offerPrices, setOfferPrices] = useState<Record<string, number>>({});
-  const [followedOps, setFollowedOps] = useState<Record<string, boolean>>({});
 
   // Margin Simulator States
   const [showSimulator, setShowSimulator] = useState(false);
@@ -1732,11 +1735,7 @@ export default function SearchModule({
               {/* QUICK ACTIONS */}
               <div className="space-y-2">
                 <button
-                  onClick={() => {
-                    const isFollowed = !!followedOps[selectedOpportunity.id];
-                    setFollowedOps(prev => ({ ...prev, [selectedOpportunity.id]: !isFollowed }));
-                    alert(!isFollowed ? 'Añadida a oportunidades seguidas en Mis Negocios.' : 'Quitada de oportunidades seguidas.');
-                  }}
+                  onClick={() => onToggleFollow(selectedOpportunity.id)}
                   className={`w-full py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 border ${
                     followedOps[selectedOpportunity.id]
                       ? 'bg-amber-500/15 border-amber-400 text-amber-500'

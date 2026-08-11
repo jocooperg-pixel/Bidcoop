@@ -166,6 +166,77 @@ export default function Home() {
       body: JSON.stringify(postulaciones)
     }).catch(err => console.warn('No se pudo guardar postulaciones en el servidor:', err));
   }, [postulaciones, postulacionesHidratadas]);
+
+  // --- WATCHLIST PERSISTENCE ("Seguir Oportunidad") ---
+  // Mismo patrón que postulaciones: Vercel Blob (/api/watchlist) como fuente
+  // de verdad compartida entre computadores, localStorage solo como caché
+  // instantánea mientras se completa la primera carga desde el servidor.
+  const WATCHLIST_STORAGE_KEY = 'bidcoop_watchlist_v1';
+
+  const loadStoredWatchlist = (): { oportunidadId: string; fechaAgregada: string }[] => {
+    if (typeof window === 'undefined') return [];
+    try {
+      const raw = window.localStorage.getItem(WATCHLIST_STORAGE_KEY);
+      if (!raw) return [];
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  };
+
+  const [watchlist, setWatchlist] = useState<{ oportunidadId: string; fechaAgregada: string }[]>(loadStoredWatchlist);
+  const [watchlistHidratada, setWatchlistHidratada] = useState(false);
+
+  useEffect(() => {
+    let cancelado = false;
+    fetch('/api/watchlist', { cache: 'no-store' })
+      .then(res => (res.ok ? res.json() : []))
+      .then((data: unknown) => {
+        if (cancelado) return;
+        setWatchlist(Array.isArray(data) ? data : []);
+      })
+      .catch(err => console.warn('No se pudo cargar watchlist desde el servidor:', err))
+      .finally(() => {
+        if (!cancelado) setWatchlistHidratada(true);
+      });
+    return () => {
+      cancelado = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      window.localStorage.setItem(WATCHLIST_STORAGE_KEY, JSON.stringify(watchlist));
+    } catch (err) {
+      console.warn('No se pudo guardar watchlist en localStorage:', err);
+    }
+
+    if (!watchlistHidratada) return;
+
+    fetch('/api/watchlist', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(watchlist)
+    }).catch(err => console.warn('No se pudo guardar watchlist en el servidor:', err));
+  }, [watchlist, watchlistHidratada]);
+
+  const followedOps = useMemo(() => {
+    const map: Record<string, boolean> = {};
+    watchlist.forEach(w => { map[w.oportunidadId] = true; });
+    return map;
+  }, [watchlist]);
+
+  const handleToggleFollow = (opId: string) => {
+    setWatchlist(prev => {
+      const isFollowed = prev.some(w => w.oportunidadId === opId);
+      if (isFollowed) return prev.filter(w => w.oportunidadId !== opId);
+      return [...prev, { oportunidadId: opId, fechaAgregada: new Date().toISOString() }];
+    });
+  };
+
   const [ordenesCompra, setOrdenesCompra] = useState(mockOrdenesCompra);
   const [teamMembers, setTeamMembers] = useState<MiembroEquipo[]>(mockMiembrosEquipo);
   const [notifications, setNotifications] = useState<Notificacion[]>(mockNotificaciones);
@@ -686,6 +757,8 @@ export default function Home() {
               }}
               globalSearchText={globalSearchText}
               onGlobalSearchTextChange={setGlobalSearchText}
+              followedOps={followedOps}
+              onToggleFollow={handleToggleFollow}
             />
           )}
 
