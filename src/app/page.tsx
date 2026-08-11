@@ -725,6 +725,7 @@ export default function Home() {
               currentUser={currentUser}
               globalPrefs={globalPrefs}
               onChangePrefs={setGlobalPrefs}
+              followedOps={followedOps}
             />
           )}
 

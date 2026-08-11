@@ -24,6 +24,7 @@ interface DashboardModuleProps {
     region: string;
     montoMinimo: number;
   }) => void;
+  followedOps?: Record<string, boolean>;
 }
 
 export default function DashboardModule({
@@ -33,7 +34,8 @@ export default function DashboardModule({
   onSelectOpportunity,
   currentUser,
   globalPrefs,
-  onChangePrefs
+  onChangePrefs,
+  followedOps = {}
 }: DashboardModuleProps) {
   const empresasActivasCount = useMemo(
     () => new Set(oportunidades.map(o => o.empresaMatch).filter(Boolean)).size,
@@ -165,6 +167,64 @@ export default function DashboardModule({
 
     return { critico, alto, medio, total: critico.length + alto.length + medio.length };
   }, [oportunidades]);
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // PRIORIDAD DE HOY — máximo 3 acciones, ranking sobre datos 100% reales:
+  // urgencia de cierre real + matchScore real + si la sigues (watchlist real).
+  // No hay factor inventado (sin rentabilidad/competencia estimada). El
+  // motivo mostrado se arma solo con campos reales de la oportunidad.
+  // ═══════════════════════════════════════════════════════════════════════
+  const prioridadDeHoy = useMemo(() => {
+    const now = new Date();
+
+    const candidatas = oportunidades
+      .filter(o => o.estado === 'Publicada' || o.estado === 'Postulada')
+      .map(o => {
+        let horas: number | null = null;
+        if (o.fechaCierre) {
+          const cierre = new Date(o.fechaCierre);
+          if (!isNaN(cierre.getTime())) {
+            const diff = (cierre.getTime() - now.getTime()) / (1000 * 60 * 60);
+            if (diff >= 0) horas = diff;
+          }
+        }
+        const isFollowed = !!followedOps[o.id];
+
+        // Solo entra al ranking si hay una razón real para actuar hoy:
+        // cierre dentro de 7 días, o la sigue el usuario.
+        if (horas === null && !isFollowed) return null;
+        if (horas !== null && horas > 168 && !isFollowed) return null;
+
+        let urgencia = 0;
+        if (horas !== null) {
+          if (horas <= 24) urgencia = 100;
+          else if (horas <= 72) urgencia = 60;
+          else if (horas <= 168) urgencia = 30;
+        }
+        const score = urgencia + (o.matchScore || 0) / 2 + (isFollowed ? 20 : 0);
+
+        let motivo: string;
+        if (o.estado === 'Postulada') {
+          motivo = 'Ya postulaste — revisa el estado en Mis Negocios.';
+        } else if (horas !== null && horas <= 24) {
+          motivo = `Cierra en ${horas < 1 ? `${Math.round(horas * 60)} min` : `${Math.round(horas)} h`} — decide hoy.`;
+        } else if (isFollowed && horas !== null) {
+          motivo = `La sigues — cierra en ${Math.round(horas / 24)} día${Math.round(horas / 24) !== 1 ? 's' : ''}.`;
+        } else if (isFollowed) {
+          motivo = 'La sigues — sin fecha de cierre informada.';
+        } else if ((o.matchScore || 0) >= 70) {
+          motivo = `Match alto (${o.matchScore}%) — cierra en ${Math.round((horas || 0) / 24)} días.`;
+        } else {
+          motivo = `Cierra en ${Math.round((horas || 0) / 24)} días.`;
+        }
+
+        return { op: o, score, motivo };
+      })
+      .filter((x): x is { op: Oportunidad; score: number; motivo: string } => x !== null)
+      .sort((a, b) => b.score - a.score);
+
+    return candidatas.slice(0, 3);
+  }, [oportunidades, followedOps]);
 
   const [dateRange, setDateRange] = useState<'hoy' | '7d' | '1m' | '3m'>('1m');
   const [suggestedTab, setSuggestedTab] = useState<'match' | 'recientes' | 'monto'>('match');
@@ -351,6 +411,34 @@ export default function DashboardModule({
           ))}
         </div>
       </div>
+
+      {/* PRIORIDAD DE HOY — máx 3 acciones, ranking sobre datos reales */}
+      {prioridadDeHoy.length > 0 && (
+        <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950 border border-indigo-800/40 rounded-3xl p-5 shadow-xl">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-lg">🎯</span>
+            <h3 className="text-sm font-black uppercase tracking-wider text-indigo-300">Prioridad de Hoy</h3>
+          </div>
+          <div className="space-y-2">
+            {prioridadDeHoy.map(({ op, motivo }, idx) => (
+              <div
+                key={op.id}
+                onClick={() => onSelectOpportunity(op)}
+                className="flex items-center gap-3 bg-slate-950/50 hover:bg-slate-950/80 border border-slate-800 rounded-2xl px-4 py-3 cursor-pointer transition"
+              >
+                <span className="w-6 h-6 rounded-full bg-indigo-600 text-white text-[11px] font-black flex items-center justify-center shrink-0">
+                  {idx + 1}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <span className="text-xs font-bold text-white truncate block">{op.titulo}</span>
+                  <span className="text-[10px] text-indigo-300 font-semibold">{motivo}</span>
+                </div>
+                <span className="text-[9px] text-slate-500 font-mono shrink-0">{op.codigo}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* "BUENOS DÍAS" — DESDE TU ÚLTIMA VISITA (dato real, no estimado) */}
       {desdeUltimaVisita && (
