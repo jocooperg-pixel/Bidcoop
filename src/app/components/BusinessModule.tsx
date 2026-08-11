@@ -249,39 +249,52 @@ export default function BusinessModule({
     ];
   }, [oportunidades, postulaciones, activeCompany]);
 
-  // Calendar parameters
-  const [currentMonth, setCurrentMonth] = useState('Julio 2026');
+  // Calendar parameters — mes real (hoy), navegable, no fijo en un mes pasado
+  const [calendarMonth, setCalendarMonth] = useState(() => {
+    const now = new Date();
+    return new Date(now.getFullYear(), now.getMonth(), 1);
+  });
+  const currentMonthLabel = calendarMonth
+    .toLocaleDateString('es-CL', { month: 'long', year: 'numeric' })
+    .replace(/^\w/, c => c.toUpperCase());
   
   // Seed dates on calendar: 1 to 31
   const calendarDays = useMemo(() => {
-    const days = [];
-    // July 2026 starts on a Wednesday (index 3)
-    const emptySlots = 3;
-    for (let i = 0; i < emptySlots; i++) {
+    const year = calendarMonth.getFullYear();
+    const month = calendarMonth.getMonth(); // 0-indexed
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    // Días vacíos al inicio de la grilla, semana empezando en lunes.
+    const firstWeekday = new Date(year, month, 1).getDay(); // 0=Dom..6=Sáb
+    const leadingEmpty = (firstWeekday + 6) % 7;
+
+    const days: Array<{ dayNum: number | null; events: Array<{ titulo: string; tipo: 'cierre' | 'pregunta' | 'adjudicacion'; op: Oportunidad }> }> = [];
+    for (let i = 0; i < leadingEmpty; i++) {
       days.push({ dayNum: null, events: [] });
     }
 
-    // Bind event list to calendar days
-    // op-1 closes 28th, op-2 evaluation/closes 30th, op-4 CA closes 19th
-    for (let d = 1; d <= 31; d++) {
+    for (let d = 1; d <= daysInMonth; d++) {
       const events: Array<{ titulo: string; tipo: 'cierre' | 'pregunta' | 'adjudicacion'; op: Oportunidad }> = [];
-      
-      oportunidades.forEach(op => {
-        const closeDayNum = parseInt(op.fechaCierre.split('-')[2]);
-        const pubDayNum = parseInt(op.fechaPublicacion.split('-')[2]);
 
-        if (closeDayNum === d) {
-          events.push({ titulo: `Límite Cierre: ${op.codigo}`, tipo: 'cierre', op });
+      oportunidades.forEach(op => {
+        if (op.fechaCierre) {
+          const close = new Date(op.fechaCierre);
+          if (!isNaN(close.getTime()) && close.getFullYear() === year && close.getMonth() === month && close.getDate() === d) {
+            events.push({ titulo: `Cierre: ${op.codigo}`, tipo: 'cierre', op });
+          }
         }
-        if (pubDayNum === d) {
-          events.push({ titulo: `Publicada: ${op.codigo}`, tipo: 'adjudicacion', op });
+        if (op.fechaPublicacion) {
+          const pub = new Date(op.fechaPublicacion);
+          if (!isNaN(pub.getTime()) && pub.getFullYear() === year && pub.getMonth() === month && pub.getDate() === d) {
+            events.push({ titulo: `Publicada: ${op.codigo}`, tipo: 'adjudicacion', op });
+          }
         }
       });
 
       days.push({ dayNum: d, events });
     }
     return days;
-  }, [oportunidades]);
+  }, [oportunidades, calendarMonth]);
 
   const handleUploadDoc = (e: React.FormEvent) => {
     e.preventDefault();
@@ -922,14 +935,28 @@ export default function BusinessModule({
               <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Planificador de Hitos</h3>
               <p className="text-[10px] text-slate-400 mt-0.5">Calendario mensual optimizado con plazos críticos y aperturas de Mercado Público.</p>
             </div>
-            <strong className="text-xs font-black text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800 px-3.5 py-1.5 rounded-xl">
-              {currentMonth}
-            </strong>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setCalendarMonth(prev => new Date(prev.getFullYear(), prev.getMonth() - 1, 1))}
+                className="w-7 h-7 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 font-black text-xs transition cursor-pointer"
+              >
+                ‹
+              </button>
+              <strong className="text-xs font-black text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800 px-3.5 py-1.5 rounded-xl">
+                {currentMonthLabel}
+              </strong>
+              <button
+                onClick={() => setCalendarMonth(prev => new Date(prev.getFullYear(), prev.getMonth() + 1, 1))}
+                className="w-7 h-7 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 font-black text-xs transition cursor-pointer"
+              >
+                ›
+              </button>
+            </div>
           </div>
 
           {/* Calendar grid */}
           <div className="grid grid-cols-7 gap-2">
-            {['Mié', 'Jue', 'Vie', 'Sáb', 'Dom', 'Lun', 'Mar'].map((d) => (
+            {['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'].map((d) => (
               <div key={d} className="text-center font-black text-[9px] uppercase text-slate-400 py-1">{d}</div>
             ))}
 
