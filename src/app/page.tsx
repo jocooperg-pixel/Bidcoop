@@ -9,6 +9,7 @@ import BusinessModule from './components/BusinessModule';
 import AnalyticsModule from './components/AnalyticsModule';
 import ConfigModule from './components/ConfigModule';
 import ProvidersModule from './components/ProvidersModule';
+import AssistantWidget from './components/AssistantWidget';
 import ReportsNotificationsModule from './components/ReportsNotificationsModule';
 import LoginScreen from './components/LoginScreen';
 
@@ -809,6 +810,7 @@ export default function Home() {
         </main>
       </div>
 
+      <AssistantWidget />
     </div>
   );
 }
