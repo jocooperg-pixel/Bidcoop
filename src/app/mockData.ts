@@ -64,13 +64,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -162,13 +156,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -282,13 +270,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -381,13 +363,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad no definida"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -481,13 +457,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -699,13 +669,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -798,13 +762,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -896,13 +854,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -1003,13 +955,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -1101,13 +1047,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -1201,13 +1141,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -1349,13 +1283,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -1496,13 +1424,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Tubo"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -1594,13 +1516,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -1748,13 +1664,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -1846,13 +1756,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -2096,13 +2000,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -2278,13 +2176,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -2376,13 +2268,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -2474,13 +2360,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -2572,13 +2452,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -2670,13 +2544,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -2768,13 +2636,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -2943,13 +2805,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3083,13 +2939,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3182,13 +3032,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3296,13 +3140,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3401,13 +3239,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3501,13 +3333,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3665,13 +3491,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3763,13 +3583,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad no definida"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3868,13 +3682,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -3971,13 +3779,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -4070,13 +3872,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -4169,13 +3965,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -4302,13 +4092,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -4421,13 +4205,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -4576,13 +4354,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -4674,13 +4446,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -4919,13 +4685,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5017,13 +4777,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5115,13 +4869,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5213,13 +4961,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5311,13 +5053,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5417,13 +5153,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5649,13 +5379,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5785,13 +5509,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5883,13 +5601,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -5981,13 +5693,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6079,13 +5785,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6177,13 +5877,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6275,13 +5969,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6381,13 +6069,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6479,13 +6161,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6577,13 +6253,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Metro Cúbico"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6675,13 +6345,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6851,13 +6515,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -6949,13 +6607,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -7321,13 +6973,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -7419,13 +7065,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -7517,13 +7157,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -7615,13 +7249,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -7713,13 +7341,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -7818,13 +7440,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -7918,13 +7534,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8023,13 +7633,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8121,13 +7725,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8222,13 +7820,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8320,13 +7912,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8419,13 +8005,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Paquete"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8517,13 +8097,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8615,13 +8189,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8713,13 +8281,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8812,13 +8374,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -8911,13 +8467,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Paquete"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9016,13 +8566,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9114,13 +8658,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Mes"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9226,13 +8764,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9331,13 +8863,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad no definida"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9429,13 +8955,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9527,13 +9047,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9646,13 +9160,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9745,13 +9253,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9843,13 +9345,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad no definida"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -9942,13 +9438,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -10041,13 +9531,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -10279,13 +9763,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -10405,13 +9883,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -10518,13 +9990,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Tineta"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -10686,13 +10152,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -10785,13 +10245,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -10884,13 +10338,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -10983,13 +10431,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Par"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -11081,13 +10523,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -11186,13 +10622,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -11284,13 +10714,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -11382,13 +10806,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -11480,13 +10898,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -11628,13 +11040,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -11726,13 +11132,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad no definida"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -11825,13 +11225,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12035,13 +11429,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12199,13 +11587,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12297,13 +11679,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12395,13 +11771,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12493,13 +11863,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12591,13 +11955,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12710,13 +12068,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12816,13 +12168,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -12914,13 +12260,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13014,13 +12354,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13113,13 +12447,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13212,13 +12540,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad no definida"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13310,13 +12632,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13443,13 +12759,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13541,13 +12851,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13670,13 +12974,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad no definida"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13770,13 +13068,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Mes"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -13966,13 +13258,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14064,13 +13350,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14163,13 +13443,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14261,13 +13535,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14374,13 +13642,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14480,13 +13742,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14578,13 +13834,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Mes"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14684,13 +13934,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14811,13 +14055,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -14910,13 +14148,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -15008,13 +14240,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -15113,13 +14339,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -15211,13 +14431,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -15310,13 +14524,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -15458,13 +14666,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -15606,13 +14808,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -16040,13 +15236,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -16139,13 +15329,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Global"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -16259,13 +15443,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -16358,13 +15536,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -16456,13 +15628,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -16639,13 +15805,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -16738,13 +15898,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -17145,13 +16299,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -17272,13 +16420,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -17371,13 +16513,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -17470,13 +16606,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -17750,13 +16880,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -17849,13 +16973,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -17947,13 +17065,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -18045,13 +17157,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -18145,13 +17251,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -18243,13 +17343,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad no definida"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -18343,13 +17437,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -18441,13 +17529,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -18609,13 +17691,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -18723,13 +17799,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -18926,13 +17996,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -19163,13 +18227,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -19270,13 +18328,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -19369,13 +18421,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -19476,13 +18522,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -19609,13 +18649,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -19707,13 +18741,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -19805,13 +18833,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -19904,13 +18926,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20002,13 +19018,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20100,13 +19110,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20198,13 +19202,7 @@ const rawOportunidades: any = [
         "unidadMedida": "Unidad"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20296,13 +19294,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20395,13 +19387,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20493,13 +19479,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20592,13 +19572,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20690,13 +19664,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20789,13 +19757,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20889,13 +19851,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -20988,13 +19944,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21088,13 +20038,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21187,13 +20131,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21285,13 +20223,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21384,13 +20316,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21482,13 +20408,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21580,13 +20500,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21678,13 +20592,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21776,13 +20684,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21874,13 +20776,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -21972,13 +20868,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22071,13 +20961,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22172,13 +21056,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22271,13 +21149,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22369,13 +21241,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22467,13 +21333,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22566,13 +21426,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22664,13 +21518,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22763,13 +21611,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22861,13 +21703,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -22959,13 +21795,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23057,13 +21887,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23155,13 +21979,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23253,13 +22071,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23351,13 +22163,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23449,13 +22255,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23548,13 +22348,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23646,13 +22440,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23745,13 +22533,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23846,13 +22628,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -23944,13 +22720,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24042,13 +22812,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24140,13 +22904,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24239,13 +22997,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24337,13 +23089,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24435,13 +23181,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24534,13 +23274,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24633,13 +23367,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24731,13 +23459,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24830,13 +23552,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -24929,13 +23645,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25027,13 +23737,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25125,13 +23829,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25223,13 +23921,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25321,13 +24013,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25420,13 +24106,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25518,13 +24198,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25616,13 +24290,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25715,13 +24383,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25813,13 +24475,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -25912,13 +24568,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26010,13 +24660,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26110,13 +24754,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26208,13 +24846,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26306,13 +24938,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26405,13 +25031,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26504,13 +25124,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26602,13 +25216,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26701,13 +25309,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26800,13 +25402,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26898,13 +25494,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -26996,13 +25586,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27096,13 +25680,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27194,13 +25772,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27292,13 +25864,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27391,13 +25957,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27489,13 +26049,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27587,13 +26141,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27685,13 +26233,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27783,13 +26325,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27881,13 +26417,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -27979,13 +26509,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28077,13 +26601,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28175,13 +26693,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28273,13 +26785,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28373,13 +26879,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28471,13 +26971,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28570,13 +27064,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28669,13 +27157,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28767,13 +27249,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28867,13 +27343,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -28965,13 +27435,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29064,13 +27528,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29162,13 +27620,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29261,13 +27713,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29359,13 +27805,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29459,13 +27899,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29559,13 +27993,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29657,13 +28085,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29755,13 +28177,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29853,13 +28269,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -29954,13 +28364,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30052,13 +28456,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30151,13 +28549,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30250,13 +28642,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30349,13 +28735,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30447,13 +28827,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30545,13 +28919,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30643,13 +29011,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30741,13 +29103,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30840,13 +29196,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -30938,13 +29288,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31036,13 +29380,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31134,13 +29472,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31232,13 +29564,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31330,13 +29656,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31428,13 +29748,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31526,13 +29840,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31625,13 +29933,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31723,13 +30025,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31821,13 +30117,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -31920,13 +30210,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32019,13 +30303,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32118,13 +30396,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32216,13 +30488,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32314,13 +30580,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32412,13 +30672,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32511,13 +30765,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32609,13 +30857,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32707,13 +30949,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32805,13 +31041,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -32903,13 +31133,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33001,13 +31225,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33099,13 +31317,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33197,13 +31409,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33296,13 +31502,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33394,13 +31594,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33492,13 +31686,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33590,13 +31778,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33688,13 +31870,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33786,13 +31962,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33884,13 +32054,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -33982,13 +32146,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34081,13 +32239,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34179,13 +32331,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34277,13 +32423,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34375,13 +32515,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34474,13 +32608,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34572,13 +32700,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34671,13 +32793,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34769,13 +32885,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34868,13 +32978,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -34966,13 +33070,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35064,13 +33162,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35163,13 +33255,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35262,13 +33348,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35361,13 +33441,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35460,13 +33534,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35559,13 +33627,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35658,13 +33720,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35757,13 +33813,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35856,13 +33906,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -35954,13 +33998,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36052,13 +34090,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36150,13 +34182,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36249,13 +34275,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36348,13 +34368,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36447,13 +34461,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36545,13 +34553,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36644,13 +34646,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36743,13 +34739,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36842,13 +34832,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -36941,13 +34925,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37039,13 +35017,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37137,13 +35109,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37236,13 +35202,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37334,13 +35294,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37432,13 +35386,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37530,13 +35478,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37628,13 +35570,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37726,13 +35662,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37824,13 +35754,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -37924,13 +35848,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38023,13 +35941,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38122,13 +36034,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38220,13 +36126,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38318,13 +36218,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38416,13 +36310,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38514,13 +36402,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38614,13 +36496,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38712,13 +36588,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38811,13 +36681,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -38909,13 +36773,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39007,13 +36865,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39105,13 +36957,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39203,13 +37049,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39301,13 +37141,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39400,13 +37234,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39498,13 +37326,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39596,13 +37418,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39694,13 +37510,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39792,13 +37602,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39890,13 +37694,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -39988,13 +37786,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40086,13 +37878,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40184,13 +37970,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40283,13 +38063,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40381,13 +38155,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40479,13 +38247,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40577,13 +38339,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40676,13 +38432,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40774,13 +38524,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40872,13 +38616,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],
@@ -40970,13 +38708,7 @@ const rawOportunidades: any = [
         "unidadMedida": "UN"
       }
     ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio Ofertado",
-        "ponderacion": 100,
-        "descripcion": "Menor costo"
-      }
-    ],
+    "criteriosEvaluacion": [],
     "preguntas": [],
     "comentarios": [],
     "competidoresPropuestos": [],

@@ -811,7 +811,12 @@ def build_opportunity_record(
             }
         ],
         "items": items_list,
-        "criteriosEvaluacion": [{"aspecto": "Precio Ofertado", "ponderacion": 100, "descripcion": "Menor costo"}],
+        # La API pública de Mercado Público (endpoint de tickets usado aquí) no expone
+        # los criterios de evaluación reales de cada proceso — antes se rellenaba con
+        # un valor fijo ("Precio Ofertado" 100%) para las 378 oportunidades por igual,
+        # una fabricación silenciosa. Se deja vacío: el frontend muestra honestamente
+        # "información insuficiente" en vez de un dato inventado.
+        "criteriosEvaluacion": [],
         "preguntas": [],
         "comentarios": [],
         "competidoresPropuestos": [],

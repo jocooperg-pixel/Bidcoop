@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Oportunidad, Postulacion, MiembroEquipo, VistaGuardada, DocumentoAdjunto, Item } from '../types';
 import { calculateSmartCatalogMatch, getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 import { getSemaforoBidCoop } from '../utils/semaforoEngine';
+import { EMPRESAS } from '../utils/empresas';
 import { mockPostulaciones } from '../mockData';
 
 interface SearchModuleProps {
@@ -163,7 +164,7 @@ export default function SearchModule({
 
   // Official Quote Generator Modal State
   const [showQuoteModal, setShowQuoteModal] = useState<boolean>(false);
-  const [quoteCompany, setQuoteCompany] = useState<'Aminorte' | 'V-MOCCS' | 'Inder-Roll'>('Aminorte');
+  const [quoteCompany, setQuoteCompany] = useState<'Aminorte' | 'V-MOCCS'>('Aminorte');
 
 
   // Edit Items Modal State
@@ -209,29 +210,37 @@ export default function SearchModule({
     const code = (opportunity.codigo || '').toUpperCase();
     return `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${code}`;
   };
+  // Ojo: esta función NUNCA debe imitar un documento oficial de Mercado
+  // Público / Gobierno de Chile — lo que arma aquí es un resumen de trabajo
+  // interno de BidCoop, con lo real que tenemos (título, organismo, montos,
+  // ítems) y "No informado" explícito donde no tenemos dato real (nunca un
+  // relleno inventado tipo RUT 60.000.000-0 o precio $1.000).
   const handleDownloadDoc = (doc: any, opportunity: Oportunidad) => {
-    const docName = doc.nombre;
-    const isBasesTecnicas = docName.toLowerCase().includes('tecnica') || docName.toLowerCase().includes('técnica');
-    
-    let title = isBasesTecnicas ? 'Bases Técnicas y Especificaciones' : 'Bases Administrativas de Adquisición';
-    if (docName.includes('Ver Bases')) {
-      title = 'Ficha de Bases y Requerimientos';
+    // El único documento real que trae el sync es un link a la ficha oficial
+    // — para ese caso "descargar" no tiene sentido, así que abrimos el link
+    // real en vez de generar cualquier archivo.
+    if (doc.tipo === 'link') {
+      window.open(doc.tamanho || getFichaUrl(opportunity), '_blank', 'noopener,noreferrer');
+      return;
     }
+
+    const docName = doc.nombre;
+    const title = 'Resumen de Trabajo BidCoop';
 
     const itemsRows = opportunity.items.map(item => `
       <tr>
         <td><code>${item.sku}</code></td>
         <td>${item.producto}</td>
         <td>${item.cantidad}</td>
-        <td>$${(item.precioUnitario || 1000).toLocaleString('es-CL')} CLP</td>
+        <td>${item.precioUnitario ? `$${item.precioUnitario.toLocaleString('es-CL')} CLP` : 'No informado'}</td>
       </tr>
     `).join('');
 
-    const critList = (opportunity.criteriosEvaluacion || [
-      { aspecto: 'Oferta Económica', ponderacion: 100, descripcion: 'Menor costo total ofertado' }
-    ]).map(crit => `
-      <li><strong>${crit.aspecto} (${crit.ponderacion}%):</strong> ${crit.descripcion}</li>
-    `).join('');
+    const critList = opportunity.criteriosEvaluacion.length > 0
+      ? opportunity.criteriosEvaluacion.map(crit => `
+        <li><strong>${crit.aspecto} (${crit.ponderacion}%):</strong> ${crit.descripcion}</li>
+      `).join('')
+      : '<li>No informado por Mercado Público a través de la API pública — consulta las bases oficiales.</li>';
 
     const htmlContent = `
       <!DOCTYPE html>
@@ -262,17 +271,28 @@ export default function SearchModule({
             padding-bottom: 20px;
             margin-bottom: 30px;
           }
-          .gob-logo {
+          .bidcoop-logo {
             font-weight: 900;
             font-size: 14px;
-            color: #ef4444;
+            color: #2563eb;
             letter-spacing: 2px;
             text-transform: uppercase;
           }
-          .gob-sub {
+          .bidcoop-sub {
             font-size: 11px;
             color: #64748b;
             margin-top: 4px;
+          }
+          .not-official {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 10px;
+            font-weight: 800;
+            color: #b45309;
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            padding: 3px 10px;
+            border-radius: 999px;
           }
           h1 {
             font-size: 22px;
@@ -328,30 +348,34 @@ export default function SearchModule({
             border-top: 1px solid #e2e8f0;
             padding-top: 20px;
           }
+          .footer a {
+            color: #2563eb;
+          }
         </style>
       </head>
       <body>
         <div class="container">
           <div class="header">
-            <div class="gob-logo">GOBIERNO DE CHILE</div>
-            <div class="gob-sub">DIRECCIÓN DE COMPRAS Y CONTRATACIÓN PÚBLICA • PORTAL MERCADO PÚBLICO</div>
+            <div class="bidcoop-logo">BIDCOOP</div>
+            <div class="bidcoop-sub">Resumen de trabajo interno — no es un documento oficial de Mercado Público</div>
+            <div class="not-official">⚠ Documento no oficial — consulta las bases reales antes de postular</div>
             <h1>${title}</h1>
             <p style="font-size: 14px; color: #475569; font-weight: 600;">ID Licitación / Adquisición: ${opportunity.codigo}</p>
           </div>
-          
+
           <div class="meta-grid">
             <div class="meta-item"><strong>Organismo Comprador:</strong><br>${opportunity.organismo}</div>
-            <div class="meta-item"><strong>RUT Organismo:</strong><br>${opportunity.organismoRut || '60.000.000-0'}</div>
+            <div class="meta-item"><strong>RUT Organismo:</strong><br>${opportunity.organismoRut || 'No informado'}</div>
             <div class="meta-item"><strong>Fecha de Publicación:</strong><br>${opportunity.fechaPublicacion}</div>
             <div class="meta-item"><strong>Fecha de Cierre:</strong><br>${opportunity.fechaCierre}</div>
             <div class="meta-item"><strong>Modalidad:</strong><br>${opportunity.modalidad}</div>
-            <div class="meta-item"><strong>Monto Neto Estimado:</strong><br>$${opportunity.monto.toLocaleString('es-CL')} CLP</div>
+            <div class="meta-item"><strong>Monto Neto Estimado:</strong><br>${opportunity.monto > 0 ? `$${opportunity.monto.toLocaleString('es-CL')} CLP` : 'No informado'}</div>
           </div>
-          
+
           <h2>1. Objeto de la Contratación</h2>
           <p>${opportunity.descripcion}</p>
-          
-          <h2>2. Detalle de Items Requeridos</h2>
+
+          <h2>2. Detalle de Ítems Requeridos</h2>
           <table>
             <thead>
               <tr>
@@ -365,28 +389,25 @@ export default function SearchModule({
               ${itemsRows}
             </tbody>
           </table>
-          
+
           <h2>3. Criterios de Evaluación</h2>
           <ul>
             ${critList}
           </ul>
-          
-          <h2>4. Condiciones Administrativas</h2>
-          <p>La postulación de ofertas debe realizarse de manera electrónica a través del portal de Mercado Público. Se exige estricto cumplimiento de las fechas y plazos del cronograma oficial del proceso.</p>
-          
+
           <div class="footer">
-            Documento de bases generado por el sistema de inteligencia comercial para ${opportunity.empresaMatch}.<br>
-            © ChileCompra - Todos los derechos reservados.
+            Resumen generado por BidCoop a partir de los datos sincronizados de Mercado Público para ${opportunity.empresaMatch || 'tu empresa'}.<br>
+            No reemplaza las bases oficiales — verifica siempre en: <a href="${getFichaUrl(opportunity)}">${getFichaUrl(opportunity)}</a>
           </div>
         </div>
       </body>
       </html>
     `;
-    
+
     const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    
+
     const cleanName = docName.replace(/[^a-zA-Z0-9_\.-]/g, '_');
     link.href = url;
     link.download = cleanName.endsWith('.html') || cleanName.endsWith('.pdf') ? cleanName : `${cleanName}.html`;
@@ -937,7 +958,7 @@ export default function SearchModule({
 
                     <button
                       onClick={() => {
-                        setQuoteCompany(selectedOpportunity.empresaMatch || 'Aminorte');
+                        setQuoteCompany(selectedOpportunity.empresaMatch === 'V-MOCCS' ? 'V-MOCCS' : 'Aminorte');
                         setShowQuoteModal(true);
                       }}
                       className="px-4 py-2.5 bg-gradient-to-r from-blue-600 via-sky-600 to-cyan-500 hover:from-blue-500 hover:to-sky-400 text-white rounded-xl text-xs font-black shadow-md shadow-sky-500/20 flex items-center gap-2 transition cursor-pointer shrink-0"
@@ -1147,19 +1168,39 @@ export default function SearchModule({
             {detailGroup === 'general' && detailSub === 'criterios' && (
               <div className="space-y-4">
                 <h2 className="text-lg font-black text-slate-900 dark:text-white">Criterios de Evaluación</h2>
-                <div className="space-y-3">
-                  {selectedOpportunity.criteriosEvaluacion.map((crit, idx) => (
-                    <div key={idx} className="p-3.5 rounded-xl border border-slate-100 dark:border-slate-850 bg-white dark:bg-slate-900 flex justify-between items-center gap-4 shadow-sm">
-                      <div className="flex-1">
-                        <h4 className="text-xs font-black text-slate-900 dark:text-white">{crit.aspecto}</h4>
-                        <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5">{crit.descripcion}</p>
+                {selectedOpportunity.criteriosEvaluacion.length > 0 ? (
+                  <div className="space-y-3">
+                    {selectedOpportunity.criteriosEvaluacion.map((crit, idx) => (
+                      <div key={idx} className="p-3.5 rounded-xl border border-slate-100 dark:border-slate-850 bg-white dark:bg-slate-900 flex justify-between items-center gap-4 shadow-sm">
+                        <div className="flex-1">
+                          <h4 className="text-xs font-black text-slate-900 dark:text-white">{crit.aspecto}</h4>
+                          <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5">{crit.descripcion}</p>
+                        </div>
+                        <div className="w-16 text-right font-black text-xs text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 p-2 rounded-lg">
+                          {crit.ponderacion}%
+                        </div>
                       </div>
-                      <div className="w-16 text-right font-black text-xs text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 p-2 rounded-lg">
-                        {crit.ponderacion}%
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="p-5 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 text-center">
+                    <span className="text-2xl block mb-2">⚫</span>
+                    <p className="text-xs font-black text-slate-600 dark:text-slate-300 uppercase">Información Insuficiente</p>
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1.5 max-w-md mx-auto leading-relaxed">
+                      Mercado Público no expone las ponderaciones reales de evaluación a través de la API pública. No mostramos un porcentaje inventado — revisa las bases oficiales para conocer los criterios exactos de este proceso.
+                    </p>
+                    {selectedOpportunity.sourceUrl && (
+                      <a
+                        href={selectedOpportunity.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[11px] font-black text-blue-600 dark:text-blue-400 hover:underline mt-3 inline-block"
+                      >
+                        Ver bases oficiales en Mercado Público →
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             )}
 
@@ -2346,19 +2387,16 @@ export default function SearchModule({
             {/* Document Sheet Viewer */}
             <div className="flex-1 overflow-y-auto p-4 sm:p-8 bg-slate-100 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100">
               <div className="max-w-3xl mx-auto bg-white dark:bg-slate-900 p-6 sm:p-10 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
-                
-                {/* Formal Header */}
+
+                {/* Honest Header — BidCoop, not government */}
                 <div className="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-4">
                   <div>
                     <span className="text-[10px] uppercase tracking-widest font-black text-blue-600 dark:text-blue-400 block">
-                      REPÚBLICA DE CHILE • MERCADO PÚBLICO
+                      BIDCOOP • RESUMEN DE TRABAJO INTERNO
                     </span>
                     <h2 className="text-sm sm:text-base font-black text-slate-900 dark:text-white mt-1">
                       {previewDocModal.opportunity.organismo.toUpperCase()}
                     </h2>
-                    <span className="text-xs text-slate-500 font-medium block">
-                      Unidad Compradora: Departamento de Administración y Finanzas
-                    </span>
                   </div>
                   <div className="text-right">
                     <span className="text-[10px] font-mono font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 block">
@@ -2371,45 +2409,40 @@ export default function SearchModule({
                 </div>
 
                 {/* Document Title Banner */}
-                <div className="text-center py-3 bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-150 dark:border-slate-800">
+                <div className="text-center py-3 bg-amber-50 dark:bg-amber-950/20 rounded-xl border border-amber-200 dark:border-amber-900/50">
                   <h1 className="text-sm sm:text-base font-black text-slate-900 dark:text-white uppercase tracking-wide">
                     {previewDocModal.doc.nombre}
                   </h1>
-                  <span className="text-xs text-slate-500 block mt-0.5 font-semibold">
-                    Documento Oficial Adjunto • Mercado Público Chile
+                  <span className="text-[11px] text-amber-700 dark:text-amber-400 block mt-1 font-black">
+                    ⚠ No es un documento oficial — verifica siempre en Mercado Público
                   </span>
                 </div>
 
                 {/* Summary Metadata */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 bg-blue-50/50 dark:bg-blue-950/20 rounded-xl border border-blue-100 dark:border-blue-900/30 text-xs">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 p-4 bg-blue-50/50 dark:bg-blue-950/20 rounded-xl border border-blue-100 dark:border-blue-900/30 text-xs">
                   <div>
                     <span className="text-slate-400 text-[10px] font-black uppercase block">Modalidad</span>
                     <span className="font-bold text-slate-900 dark:text-white">{previewDocModal.opportunity.modalidad}</span>
                   </div>
                   <div>
-                    <span className="text-slate-400 text-[10px] font-black uppercase block">Presupuesto</span>
-                    <span className="font-black text-emerald-600 dark:text-emerald-400">${previewDocModal.opportunity.monto.toLocaleString('es-CL')} CLP</span>
+                    <span className="text-slate-400 text-[10px] font-black uppercase block">Monto Estimado</span>
+                    <span className="font-black text-emerald-600 dark:text-emerald-400">
+                      {previewDocModal.opportunity.monto > 0 ? `$${previewDocModal.opportunity.monto.toLocaleString('es-CL')} CLP` : 'No informado'}
+                    </span>
                   </div>
                   <div>
                     <span className="text-slate-400 text-[10px] font-black uppercase block">Fecha Cierre</span>
                     <span className="font-bold text-slate-900 dark:text-white">{previewDocModal.opportunity.fechaCierre}</span>
                   </div>
-                  <div>
-                    <span className="text-slate-400 text-[10px] font-black uppercase block">Pago</span>
-                    <span className="font-bold text-slate-900 dark:text-white">{previewDocModal.opportunity.organismoPagoDias} días</span>
-                  </div>
                 </div>
 
-                {/* Section 1: Official Text Specs */}
+                {/* Section 1: Description */}
                 <div className="space-y-3">
                   <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-1">
-                    1. ESPECIFICACIÓN Y SOLICITUD DE MATERIALES
+                    1. Objeto de la Contratación
                   </h3>
-                  
+
                   <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 text-xs leading-relaxed text-slate-700 dark:text-slate-300">
-                    <p className="font-bold text-slate-900 dark:text-white mb-2">
-                      Requerimiento Formal de Cotización:
-                    </p>
                     <p className="italic">
                       "{previewDocModal.opportunity.descripcion}"
                     </p>
@@ -2419,7 +2452,7 @@ export default function SearchModule({
                 {/* Section 2: Items Table Detail */}
                 <div className="space-y-3">
                   <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-1">
-                    2. DETALLE DE ÍTEMS Y ESPECIFICACIONES TÉCNICAS SOLICITADAS
+                    2. Detalle de Ítems Requeridos
                   </h3>
 
                   <div className="border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden">
@@ -2448,7 +2481,7 @@ export default function SearchModule({
                               {it.cantidad} {it.unidadMedida || 'un'}
                             </td>
                             <td className="p-2.5 text-right font-black text-slate-900 dark:text-white">
-                              ${it.precioUnitario.toLocaleString('es-CL')}
+                              {it.precioUnitario ? `$${it.precioUnitario.toLocaleString('es-CL')}` : 'No informado'}
                             </td>
                           </tr>
                         ))}
@@ -2457,28 +2490,17 @@ export default function SearchModule({
                   </div>
                 </div>
 
-                {/* Section 3: Terms */}
-                <div className="space-y-2 text-xs">
-                  <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-1">
-                    3. CONDICIONES DE PRESENTACIÓN Y ENTREGA
-                  </h3>
-                  <ul className="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-400 text-[11px]">
-                    <li>Las ofertas deben ser ingresadas a través del portal Mercado Público dentro del plazo legal.</li>
-                    <li>Cotización formal debe incluir marca, garantía, especificaciones técnicas claras y plazo de entrega.</li>
-                    <li>Despacho obligatorio en la Región de {previewDocModal.opportunity.region}.</li>
-                  </ul>
-                </div>
-
-                {/* Verification Footer */}
-                <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-[10px] text-slate-400 font-mono">
-                  <div>
-                    <span>Documento Oficial Certificado • Mercado Público Chile</span>
-                    <span className="block text-slate-500">HASH: SHA256-MP-{previewDocModal.opportunity.codigo}-DOC</span>
-                  </div>
-                  <div className="text-right">
-                    <span className="font-bold text-slate-700 dark:text-slate-300 block">VERIFICADO DIGITALMENTE</span>
-                    <span>Plataforma Avanzada de Abastecimiento</span>
-                  </div>
+                {/* Footer — honest disclaimer, link to real official ficha */}
+                <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-1.5 text-[10px] text-slate-400">
+                  <span>Resumen generado por BidCoop a partir de los datos sincronizados de Mercado Público. No reemplaza las bases oficiales.</span>
+                  <a
+                    href={getFichaUrl(previewDocModal.opportunity)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-black text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    Ver ficha oficial en Mercado Público →
+                  </a>
                 </div>
 
               </div>
@@ -2542,25 +2564,18 @@ export default function SearchModule({
             <div className="flex-1 overflow-y-auto p-4 sm:p-8 bg-slate-100 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100">
               <div className="max-w-3xl mx-auto bg-white p-8 sm:p-12 rounded-2xl border border-slate-200 shadow-xl space-y-6 text-slate-900 font-sans">
                 
-                {/* Official Company Header */}
+                {/* Company Header — datos reales desde utils/empresas.ts, nunca inventados */}
                 <div className="flex justify-between items-start border-b-2 border-slate-900 pb-6">
                   <div>
                     <h1 className="text-xl font-black tracking-tight text-blue-900">
-                      {quoteCompany === 'V-MOCCS' ? 'V-MOCCS SpA' : 'AMINORTE SpA'}
-
+                      {EMPRESAS[quoteCompany].nombreCompleto}
                     </h1>
                     <p className="text-xs font-bold text-slate-600 mt-0.5">
-                      {quoteCompany === 'Aminorte'
-                        ? 'Distribución e Importación de Papelería, Resmas y Artículos de Oficina'
-                        : quoteCompany === 'V-MOCCS'
-                        ? 'Comercializadora e Importadora de Papelería, Convenio Marco y Escritorio'
-                        : 'Fabricación y Distribución de Insumos Sanitarios, Aseo Químico e Higiene Hospitalaria'}
+                      {EMPRESAS[quoteCompany].rubros.join(' • ')}
                     </p>
                     <div className="text-[11px] text-slate-500 mt-2 space-y-0.5">
-                      <p>RUT: {quoteCompany === 'Aminorte' ? '76.123.500-1' : quoteCompany === 'V-MOCCS' ? '77.235.702-8' : '76.854.912-K'}</p>
-                      <p>Dirección: {quoteCompany === 'V-MOCCS' ? 'Av. Apoquindo 4700, Las Condes, Santiago, Chile' : 'Av. Providencia 1234, Of. 602, Santiago, Chile'}</p>
-                      <p>Contacto Comercial: contacto@{quoteCompany === 'V-MOCCS' ? 'v-moccs.cl' : 'aminorte.cl'} | {quoteCompany === 'V-MOCCS' ? '+56 2 2950 1800' : '+56 2 2940 8800'}</p>
-
+                      <p>RUT: {EMPRESAS[quoteCompany].rut}</p>
+                      <p>Contacto Comercial: {EMPRESAS[quoteCompany].emailContacto}</p>
                     </div>
                   </div>
 
@@ -2670,21 +2685,20 @@ export default function SearchModule({
                   <ul className="list-disc list-inside space-y-1">
                     <li><strong>Plazo de Entrega:</strong> Máximo 3 a 5 días hábiles contados desde la recepción conforme de la Orden de Compra.</li>
                     <li><strong>Lugar de Despacho:</strong> Dependencias del organismo en la Región de {selectedOpportunity.region}.</li>
-                    <li><strong>Condición de Pago:</strong> {selectedOpportunity.organismoPagoDias} días vista factura según normativa de Mercado Público.</li>
+                    <li><strong>Condición de Pago Propuesta:</strong> 30 días vista factura, sujeto a lo que establezcan las bases oficiales del proceso.</li>
                     <li><strong>Garantía Comercial:</strong> 12 meses contra defectos de fábrica.</li>
                   </ul>
                 </div>
 
-                {/* Signature */}
+                {/* Signature — sin afirmar una certificación digital ni validez ante Mercado
+                    Público que este documento no tiene realmente. */}
                 <div className="pt-8 flex justify-between items-end text-xs border-t border-slate-200">
                   <div>
-                    <span className="text-[10px] text-slate-400 block font-mono">Firma Certificada Digitalmente</span>
-                    <span className="font-bold text-slate-800">Departamento Comercial — {quoteCompany === 'V-MOCCS' ? 'V-MOCCS SpA' : 'Aminorte SpA'}</span>
-
+                    <span className="text-[10px] text-slate-400 block font-mono">Cotización preparada por</span>
+                    <span className="font-bold text-slate-800">Departamento Comercial — {EMPRESAS[quoteCompany].nombreCompleto}</span>
                   </div>
                   <div className="text-right">
-                    <span className="text-[9px] font-mono text-slate-400 block">HASH: SHA256-COT-{selectedOpportunity.codigo}</span>
-                    <span className="font-bold text-emerald-600">Documento Válido para Mercado Público</span>
+                    <span className="text-[10px] text-slate-400">Documento de trabajo BidCoop — revisa y firma según el procedimiento oficial de tu empresa antes de presentarlo.</span>
                   </div>
                 </div>
 
