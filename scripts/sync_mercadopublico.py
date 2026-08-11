@@ -55,6 +55,7 @@ _load_env_local()
 
 OUTPUT_FILE = os.path.join(PROJECT_PATH, "src/app/mockData.ts")
 META_FILE = os.path.join(PROJECT_PATH, "data/sync_meta.json")
+SNAPSHOT_FILE = os.path.join(PROJECT_PATH, "data/sync_snapshot.json")
 EMPRESAS_CONFIG = os.path.join(PROJECT_PATH, "config/empresas.json")
 BACKUP_FILE = os.path.join(PROJECT_PATH, "data/mockData.ts.backup")
 DETAIL_CACHE_FILE = os.path.join(PROJECT_PATH, "data/detail_cache.json")
@@ -210,6 +211,109 @@ def save_detail_cache(cache: dict):
     os.makedirs(os.path.dirname(DETAIL_CACHE_FILE), exist_ok=True)
     with open(DETAIL_CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+# ═══════════════════════════════════════════════════════════
+# "¿QUÉ CAMBIÓ?" — Diff real contra la corrida anterior
+# ═══════════════════════════════════════════════════════════
+# Cada corrida sobreescribe mockData.ts por completo, así que sin este
+# snapshot no habría forma honesta de saber qué es nuevo, qué cambió de
+# estado/monto o qué dejó de estar activo. Se guarda un resumen liviano
+# (no todo el registro) exclusivamente para comparar la próxima corrida.
+
+def load_previous_snapshot() -> dict:
+    if not os.path.isfile(SNAPSHOT_FILE):
+        return {"generatedAt": None, "registros": {}}
+    try:
+        with open(SNAPSHOT_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, dict) and isinstance(data.get("registros"), dict):
+                return data
+    except Exception:
+        pass
+    return {"generatedAt": None, "registros": {}}
+
+def save_snapshot(processed: List[Dict]):
+    registros = {}
+    for op in processed:
+        code = op.get("codigo")
+        if not code:
+            continue
+        registros[code] = {
+            "titulo": op.get("titulo"),
+            "organismo": op.get("organismo"),
+            "estado": op.get("estado"),
+            "monto": op.get("monto", 0),
+            "empresaMatch": op.get("empresaMatch"),
+            "fechaCierre": op.get("fechaCierre")
+        }
+    os.makedirs(os.path.dirname(SNAPSHOT_FILE), exist_ok=True)
+    with open(SNAPSHOT_FILE, "w", encoding="utf-8") as f:
+        json.dump({"generatedAt": NOW_STR, "registros": registros}, f, ensure_ascii=False, indent=2)
+
+def compute_cambios(previous: dict, processed: List[Dict], max_items: int = 60) -> dict:
+    old_registros = previous.get("registros", {})
+    new_map = {}
+    for op in processed:
+        code = op.get("codigo")
+        if code:
+            new_map[code] = op
+
+    nuevos, modificados, cerrados = [], [], []
+
+    for code, op in new_map.items():
+        old = old_registros.get(code)
+        if old is None:
+            nuevos.append({
+                "codigo": code,
+                "titulo": op.get("titulo"),
+                "organismo": op.get("organismo"),
+                "monto": op.get("monto", 0),
+                "empresaMatch": op.get("empresaMatch"),
+                "matchScore": op.get("matchScore"),
+                "fechaCierre": op.get("fechaCierre")
+            })
+        else:
+            estado_cambio = old.get("estado") != op.get("estado")
+            monto_cambio = (old.get("monto") or 0) != (op.get("monto") or 0)
+            if estado_cambio or monto_cambio:
+                modificados.append({
+                    "codigo": code,
+                    "titulo": op.get("titulo"),
+                    "organismo": op.get("organismo"),
+                    "estadoAnterior": old.get("estado"),
+                    "estadoNuevo": op.get("estado"),
+                    "montoAnterior": old.get("monto", 0),
+                    "montoNuevo": op.get("monto", 0),
+                    "empresaMatch": op.get("empresaMatch")
+                })
+
+    for code, old in old_registros.items():
+        if code not in new_map:
+            cerrados.append({
+                "codigo": code,
+                "titulo": old.get("titulo"),
+                "organismo": old.get("organismo"),
+                "estadoAnterior": old.get("estado"),
+                "monto": old.get("monto", 0),
+                "empresaMatch": old.get("empresaMatch")
+            })
+
+    # Ordenar por monto descendente para que lo más relevante quede primero
+    # en las listas truncadas.
+    nuevos.sort(key=lambda x: x.get("monto") or 0, reverse=True)
+    modificados.sort(key=lambda x: x.get("montoNuevo") or 0, reverse=True)
+    cerrados.sort(key=lambda x: x.get("monto") or 0, reverse=True)
+
+    return {
+        "comparadoContra": previous.get("generatedAt"),
+        "nuevosCount": len(nuevos),
+        "modificadosCount": len(modificados),
+        "cerradosCount": len(cerrados),
+        "nuevos": nuevos[:max_items],
+        "modificados": modificados[:max_items],
+        "cerrados": cerrados[:max_items]
+    }
 
 def is_cache_valid(cached_entry: dict, close_str: str) -> bool:
     if not cached_entry or "ts" not in cached_entry:
@@ -868,6 +972,12 @@ def main():
         print("[ERROR] 0 registros procesados. mockData.ts NO será sobreescrito.")
         sys.exit(1)
 
+    # ── "¿QUÉ CAMBIÓ?" — comparar contra la corrida anterior ──
+    previous_snapshot = load_previous_snapshot()
+    cambios = compute_cambios(previous_snapshot, processed)
+    print(f"[CAMBIOS] Nuevos: {cambios['nuevosCount']} | Modificados: {cambios['modificadosCount']} | Cerrados/expirados: {cambios['cerradosCount']}")
+    save_snapshot(processed)
+
     # ── 4. AUDITORÍA AUTOMÁTICA Y CONTROL DE CALIDAD (REGLA 15) ──
     cats = {"licitaciones": 0, "comprasAgiles": 0, "convenioMarco": 0, "ordenes_compra": 0, "grandesCompras": 0}
     empresa_counts = {}
@@ -1020,6 +1130,7 @@ def main():
         "categorias": cats,
         "tiposOficiales": tipos_count,
         "matchPorEmpresa": empresa_counts,
+        "cambios": cambios,
         "tiempoEjecucionSegundos": round(time.time() - START_TIME, 1),
         "errores": field_errors,
         "advertencias": field_warnings[:100]

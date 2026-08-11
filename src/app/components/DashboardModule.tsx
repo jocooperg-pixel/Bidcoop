@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Cell
@@ -39,6 +39,105 @@ export default function DashboardModule({
     () => new Set(oportunidades.map(o => o.empresaMatch).filter(Boolean)).size,
     [oportunidades]
   );
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // "DESDE TU ÚLTIMA VISITA" — comparación real, no estimada.
+  // La fecha de la visita anterior se guarda en este navegador (no hay
+  // backend de usuarios todavía). "Nuevas oportunidades" = fechaPublicacion
+  // real posterior a esa visita — dato real de Mercado Público, no inventado.
+  // ═══════════════════════════════════════════════════════════════════════
+  const LAST_VISIT_KEY = 'bidcoop_last_visit';
+  const [previousVisit, setPreviousVisit] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const stored = window.localStorage.getItem(LAST_VISIT_KEY);
+    setPreviousVisit(stored);
+    window.localStorage.setItem(LAST_VISIT_KEY, new Date().toISOString());
+    // Solo se ejecuta una vez al montar — no se debe re-marcar "última visita"
+    // en cada render, solo al abrir la plataforma.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const desdeUltimaVisita = useMemo(() => {
+    // Primera vez que se abre desde este navegador: no hay "desde cuándo"
+    // real que comparar — se muestra honestamente vacío en vez de inventar
+    // una ventana arbitraria.
+    if (!previousVisit) {
+      return null;
+    }
+
+    const cutoff = previousVisit.slice(0, 10); // YYYY-MM-DD
+    const activas = oportunidades.filter(o => o.estado === 'Publicada');
+    const nuevas = activas.filter(o => (o.fechaPublicacion || '') > cutoff);
+    const altaPrioridad = nuevas.filter(o => (o.matchScore || 0) >= 90);
+
+    const now = new Date();
+    const en24h = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+    const requierenAccion = nuevas.filter(o => {
+      if (!o.fechaCierre) return false;
+      const cierre = new Date(o.fechaCierre);
+      return !isNaN(cierre.getTime()) && cierre <= en24h && cierre >= now;
+    });
+
+    const montoPotencial = nuevas.reduce((sum, o) => sum + (o.monto || 0), 0);
+
+    const en7d = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const cierresProximos = activas.filter(o => {
+      if (!o.fechaCierre) return false;
+      const cierre = new Date(o.fechaCierre);
+      return !isNaN(cierre.getTime()) && cierre <= en7d && cierre >= now;
+    });
+
+    return {
+      nuevasCount: nuevas.length,
+      altaPrioridadCount: altaPrioridad.length,
+      requierenAccionCount: requierenAccion.length,
+      requierenAccion,
+      montoPotencial,
+      procesosActivos: activas.length,
+      cierresProximosCount: cierresProximos.length
+    };
+  }, [oportunidades, previousVisit]);
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // "¿QUÉ CAMBIÓ?" — diff real generado por el motor de sync (Python) entre
+  // esta corrida y la anterior. Viene de data/sync_meta.json vía
+  // /api/sync-status. Si el campo no existe (versión antigua de sync_meta,
+  // antes de que existiera esta función), se muestra honestamente ausente.
+  const [cambios, setCambios] = useState<{
+    comparadoContra: string | null;
+    nuevosCount: number;
+    modificadosCount: number;
+    cerradosCount: number;
+    nuevos: Array<{ codigo: string; titulo: string; organismo: string; monto: number; empresaMatch?: string }>;
+    modificados: Array<{ codigo: string; titulo: string; organismo: string; estadoAnterior: string; estadoNuevo: string; montoAnterior: number; montoNuevo: number }>;
+    cerrados: Array<{ codigo: string; titulo: string; organismo: string; estadoAnterior: string; monto: number }>;
+  } | null>(null);
+
+  useEffect(() => {
+    fetch('/api/sync-status', { cache: 'no-store' })
+      .then(r => (r.ok ? r.json() : null))
+      .then(d => setCambios(d?.cambios || null))
+      .catch(() => setCambios(null));
+  }, []);
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // "¿DÓNDE ESTÁ EL DINERO?" — Top 10 real por monto + calidad de match,
+  // solo entre oportunidades activas con empresa asignada (match real).
+  // ═══════════════════════════════════════════════════════════════════════
+  const dondeEstaElDinero = useMemo(() => {
+    const candidatas = oportunidades.filter(o =>
+      o.estado === 'Publicada' && o.empresaMatch && (o.monto || 0) > 0
+    );
+    return [...candidatas]
+      .sort((a, b) => {
+        const scoreA = (a.monto || 0) * (0.5 + (a.matchScore || 0) / 200);
+        const scoreB = (b.monto || 0) * (0.5 + (b.matchScore || 0) / 200);
+        return scoreB - scoreA;
+      })
+      .slice(0, 10);
+  }, [oportunidades]);
 
   const [dateRange, setDateRange] = useState<'hoy' | '7d' | '1m' | '3m'>('1m');
   const [suggestedTab, setSuggestedTab] = useState<'match' | 'recientes' | 'monto'>('match');
@@ -225,6 +324,125 @@ export default function DashboardModule({
           ))}
         </div>
       </div>
+
+      {/* "BUENOS DÍAS" — DESDE TU ÚLTIMA VISITA (dato real, no estimado) */}
+      {desdeUltimaVisita && (
+        <div className="bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 border border-blue-800/40 rounded-3xl p-6 text-white shadow-xl">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-lg">👋</span>
+            <h3 className="text-sm font-black uppercase tracking-wider text-blue-300">Desde tu última visita</h3>
+          </div>
+          <p className="text-xs text-slate-300 mb-4">
+            Comparado con tu visita anterior, se detectaron{' '}
+            <strong className="text-white">{desdeUltimaVisita.nuevasCount} nuevas oportunidades publicadas</strong>
+            {desdeUltimaVisita.altaPrioridadCount > 0 && (
+              <> — <strong className="text-emerald-400">{desdeUltimaVisita.altaPrioridadCount} de alta compatibilidad</strong> (match ≥ 90)</>
+            )}
+            {desdeUltimaVisita.requierenAccionCount > 0 && (
+              <> y <strong className="text-amber-400">{desdeUltimaVisita.requierenAccionCount} cierran en menos de 24 horas</strong>, requieren revisión hoy</>
+            )}.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="bg-slate-950/50 border border-slate-800 rounded-2xl p-3">
+              <span className="text-[9px] font-bold uppercase text-slate-400 block">Nuevas Oportunidades</span>
+              <span className="text-xl font-black text-white">{desdeUltimaVisita.nuevasCount}</span>
+            </div>
+            <div className="bg-slate-950/50 border border-slate-800 rounded-2xl p-3">
+              <span className="text-[9px] font-bold uppercase text-slate-400 block">Monto Potencial</span>
+              <span className="text-xl font-black text-emerald-400">${(desdeUltimaVisita.montoPotencial / 1000000).toFixed(1)}M</span>
+            </div>
+            <div className="bg-slate-950/50 border border-slate-800 rounded-2xl p-3">
+              <span className="text-[9px] font-bold uppercase text-slate-400 block">Procesos Activos</span>
+              <span className="text-xl font-black text-white">{desdeUltimaVisita.procesosActivos}</span>
+            </div>
+            <div className="bg-slate-950/50 border border-amber-800/50 rounded-2xl p-3">
+              <span className="text-[9px] font-bold uppercase text-amber-400 block">Cierres Próximos (7 días)</span>
+              <span className="text-xl font-black text-amber-400">{desdeUltimaVisita.cierresProximosCount}</span>
+            </div>
+          </div>
+          {desdeUltimaVisita.requierenAccionCount > 0 && (
+            <div className="mt-4 pt-4 border-t border-slate-800 space-y-1.5">
+              <span className="text-[10px] font-black uppercase text-amber-400">🔴 Requieren acción hoy</span>
+              {desdeUltimaVisita.requierenAccion.slice(0, 3).map(op => (
+                <div
+                  key={op.id}
+                  onClick={() => onSelectOpportunity(op)}
+                  className="flex items-center justify-between gap-2 text-xs bg-amber-950/30 hover:bg-amber-950/50 border border-amber-800/40 rounded-xl px-3 py-2 cursor-pointer transition"
+                >
+                  <span className="font-bold text-white truncate">{op.titulo}</span>
+                  <span className="text-amber-300 font-mono text-[10px] shrink-0">{op.codigo}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* "¿QUÉ CAMBIÓ?" — diff real generado por el motor de sync */}
+      {cambios && (cambios.nuevosCount > 0 || cambios.modificadosCount > 0 || cambios.cerradosCount > 0) && (
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-xs font-black uppercase text-slate-700 dark:text-slate-300 tracking-wider flex items-center gap-1.5">
+              <span>🔄</span> ¿Qué cambió? (última sincronización)
+            </h3>
+            <span className="text-[9px] text-slate-400 font-semibold">
+              Comparado contra la corrida anterior
+            </span>
+          </div>
+          <div className="grid grid-cols-3 gap-3">
+            <div className="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 rounded-xl p-3 text-center">
+              <span className="text-lg font-black text-emerald-700 dark:text-emerald-300 block">{cambios.nuevosCount}</span>
+              <span className="text-[9px] font-bold uppercase text-emerald-600 dark:text-emerald-400">Nuevos</span>
+            </div>
+            <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/50 rounded-xl p-3 text-center">
+              <span className="text-lg font-black text-blue-700 dark:text-blue-300 block">{cambios.modificadosCount}</span>
+              <span className="text-[9px] font-bold uppercase text-blue-600 dark:text-blue-400">Modificados</span>
+            </div>
+            <div className="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-3 text-center">
+              <span className="text-lg font-black text-slate-700 dark:text-slate-300 block">{cambios.cerradosCount}</span>
+              <span className="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">Cerrados / Expirados</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* "¿DÓNDE ESTÁ EL DINERO?" — TOP 10 real por monto + match */}
+      {dondeEstaElDinero.length > 0 && (
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-xs font-black uppercase text-slate-700 dark:text-slate-300 tracking-wider flex items-center gap-1.5">
+              <span>💰</span> ¿Dónde está el dinero? — Top {dondeEstaElDinero.length}
+            </h3>
+          </div>
+          <div className="space-y-2">
+            {dondeEstaElDinero.map((op, idx) => (
+              <div
+                key={op.id}
+                onClick={() => onSelectOpportunity(op)}
+                className="flex items-center gap-3 p-3 rounded-xl border border-slate-100 dark:border-slate-800 hover:border-emerald-300 dark:hover:border-emerald-700 hover:bg-emerald-50/40 dark:hover:bg-emerald-950/10 cursor-pointer transition group"
+              >
+                <span className="text-xs font-black text-slate-300 dark:text-slate-600 w-5 shrink-0">{idx + 1}</span>
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-emerald-600 dark:group-hover:text-emerald-400">
+                      {op.titulo}
+                    </span>
+                  </div>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 truncate block">{op.organismo}</span>
+                </div>
+                <span className="text-[9px] font-black uppercase px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 shrink-0">
+                  {op.empresaMatch}
+                </span>
+                <span className="text-[10px] font-black text-emerald-600 dark:text-emerald-400 shrink-0">{op.matchScore}%</span>
+                <span className="text-xs font-black text-slate-900 dark:text-white shrink-0 w-24 text-right">
+                  ${(op.monto || 0).toLocaleString('es-CL')}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* 1. COMPACT LINK BAR FOR GRANDES COMPRAS */}
       <div className="bg-slate-900 border border-purple-500/30 rounded-2xl p-4 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-md">
         <div className="flex items-center gap-3">
