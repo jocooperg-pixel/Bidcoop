@@ -13,8 +13,8 @@
     "apps/*"
   ],
   "dependencies": {
-    "@licitia/database": "file:packages/database",
-    "@licitia/mp-client": "file:packages/mp-client",
+    "@bidcoop/database": "file:packages/database",
+    "@bidcoop/mp-client": "file:packages/mp-client",
     "@types/nodemailer": "^8.0.1",
     "@vercel/blob": "^2.7.0",
     "jspdf": "^4.2.1",

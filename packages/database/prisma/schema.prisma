@@ -1,5 +1,15 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
+// Schema Prisma de BidCoop — modelo de datos central (Fase P0).
+//
+// Reemplaza un scaffold genérico previo, nunca conectado a producción
+// (branding "Licitia", sin DATABASE_URL configurada, cero imports desde
+// src/app). Este es el modelo real que empieza a migrarse desde
+// src/app/mockData.ts + Vercel Blob.
+//
+// Principio "no inventar" aplicado al esquema: cualquier registro que venga
+// de una fuente externa (Mercado Público, un proveedor, un comprador) lleva
+// FuenteTipo + fuenteNombre + observadoEn/sincronizadoEn + confianza, para
+// que el frontend pueda distinguir siempre dato oficial / manual / estimado
+// / derivado / demo — nunca mostrar una estimación como si fuera oficial.
 
 generator client {
   provider = "prisma-client-js"
@@ -10,136 +20,646 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// SaaS User account information
-model User {
+// ═══════════════════════════════════════════════════════════════════════
+// ENUMS
+// ═══════════════════════════════════════════════════════════════════════
+
+// De dónde viene un dato — nunca mezclar demo con producción, nunca
+// presentar 'estimado'/'derivado' como si fuera 'oficial'.
+enum FuenteTipo {
+  OFICIAL   // Mercado Público / ChileCompra, vía API pública
+  MANUAL    // Ingresado a mano por un usuario del holding
+  ESTIMADO  // Calculado por BidCoop con una regla explícita y declarada
+  DERIVADO  // Calculado a partir de otros datos ya guardados (ej. margen)
+  DEMO      // Dato de entorno de demostración — JAMÁS debe aparecer en prod
+}
+
+// Los 16 estados canónicos del pipeline — todos los módulos deben leer y
+// escribir el mismo enum, nunca un string libre paralelo.
+enum EstadoOportunidad {
+  DETECTADA
+  EN_ANALISIS
+  DESCARTADA
+  SEGUIDA
+  COTIZANDO
+  PREPARANDO_OFERTA
+  PENDIENTE_APROBACION
+  APROBADA
+  OFERTA_ENVIADA
+  EN_EVALUACION
+  ADJUDICADA
+  PERDIDA
+  DESIERTA
+  CANCELADA
+  VENCIDA
+  ARCHIVADA
+}
+
+enum RolUsuario {
+  ADMIN_HOLDING       // Administrador del holding — acceso a todas las empresas
+  ADMIN_EMPRESA       // Administrador de una empresa específica
+  DIRECTOR_LICITACIONES
+  GESTOR
+  APROBADOR_COMERCIAL
+  LECTOR
+}
+
+enum ModalidadCompra {
+  COMPRA_AGIL
+  LICITACION
+  CONVENIO_MARCO
+  GRANDES_COMPRAS
+  TRATO_DIRECTO
+}
+
+enum TipoDocumento {
+  OFICIAL     // Descargado o enlazado desde Mercado Público
+  INTERNO     // Generado o subido por el equipo
+  GENERADO_IA // Producido por el asistente/motor de BidCoop (nunca "oficial")
+}
+
+enum EstadoDocumento {
+  VIGENTE
+  POR_VENCER
+  VENCIDO
+  ARCHIVADO
+}
+
+enum EstadoTarea {
+  PENDIENTE
+  EN_PROGRESO
+  COMPLETADA
+  VENCIDA
+}
+
+enum PrioridadAlerta {
+  BAJA
+  MEDIA
+  ALTA
+  CRITICA
+}
+
+enum ResultadoSync {
+  EXITOSO
+  PARCIAL
+  FALLIDO
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// WORKSPACE / EMPRESA / USUARIOS
+// ═══════════════════════════════════════════════════════════════════════
+
+model Workspace {
   id        String   @id @default(uuid())
-  email     String   @unique
-  name      String?
+  nombre    String   // ej. "Holding Jonathan Cooper"
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  alerts    Alert[]
+
+  empresas      Empresa[]
+  usuarios      Usuario[]
+  oportunidades Oportunidad[]
+  compradores   Comprador[]
+  proveedores   Proveedor[]
+  auditoria     RegistroAuditoria[]
+  eventosSync   EventoSync[]
 }
 
-// Supplier company profile (Aminorte, V-MOCCS or competitors)
-model Provider {
+model Empresa {
   id             String   @id @default(uuid())
+  workspaceId    String
+  workspace      Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+
+  nombre         String   // "Aminorte", "V-MOCCS"
+  nombreCompleto String   // "AMINORTE SPA"
   rut            String   @unique
-  razonSocial    String
-  tamano         String   // Grande, Mediana, Pequeña, Micro
-  rubro          String
   emailContacto  String?
-  telefono       String?
-  
-  // Sales by modality in past 36 mobile months (in CLP)
-  ventasConvenio   Decimal @default(0)
-  ventasLicitacion Decimal @default(0)
-  ventasTratoDirecto Decimal @default(0)
-  ventasCompraAgil Decimal @default(0)
-  total36Meses     Decimal @default(0)
+  activa         Boolean  @default(true)
+  margenMinimoPct Decimal? // margen mínimo configurable — dispara alerta si una oferta queda por debajo
 
-  transactions   Transaction[]
-  contracts      Contract[]
+  catalogoKeywords String[] // para el match por catálogo (equivalente a config/empresas.json)
+  rubros           String[]
 
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  usuarios       UsuarioEmpresa[]
+  productos      Producto[]
+  oportunidades  OportunidadEmpresa[]
+  postulaciones  Postulacion[]
+  documentos     Documento[]
+
+  @@index([workspaceId])
 }
 
-// Buyer public institution profile
-model Buyer {
-  id               String   @id @default(uuid())
-  rut              String   @unique
-  nombre           String
-  responsablePago  String?
+model Usuario {
+  id          String   @id @default(uuid())
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+
+  email    String     @unique
+  nombre   String
+  rol      RolUsuario
+  activo   Boolean    @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  empresas          UsuarioEmpresa[]
+  oportunidadesResp Oportunidad[]        @relation("ResponsableOportunidad")
+  tareas            Tarea[]              @relation("TareaAsignada")
+  comentarios       Comentario[]
+  alertas           Alerta[]
+  cambiosEstado     CambioEstado[]
+  auditoria         RegistroAuditoria[]
+  documentosSubidos Documento[]          @relation("DocumentoResponsable")
+
+  @@index([workspaceId])
+}
+
+// Qué empresas puede ver/operar un usuario — separación estricta Aminorte/V-MOCCS
+// salvo rol ADMIN_HOLDING con vista consolidada.
+model UsuarioEmpresa {
+  id        String  @id @default(uuid())
+  usuarioId String
+  usuario   Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  empresaId String
+  empresa   Empresa @relation(fields: [empresaId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([usuarioId, empresaId])
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// OPORTUNIDAD — entidad central
+// ═══════════════════════════════════════════════════════════════════════
+
+model Oportunidad {
+  id          String    @id @default(uuid())
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+
+  // Identificación oficial
+  codigo         String          @unique // código de Mercado Público — clave de deduplicación real
+  tituloOficial  String
+  modalidad      ModalidadCompra
+  estado         EstadoOportunidad @default(DETECTADA)
+  estadoOficialMP String?        // estado tal cual lo informa Mercado Público (Publicada/Cerrada/etc), separado del pipeline CRM
+
+  // Comprador / ubicación
+  compradorId String?
+  comprador   Comprador? @relation(fields: [compradorId], references: [id])
+  region      String?
+  comuna      String?
+  direccion   String?
+
+  // Montos — nunca calcular margen si faltan estos
+  montoEstimado Decimal?
+  moneda        String   @default("CLP")
+
+  // Fechas — siempre America/Santiago en la app; se guardan en UTC real
+  fechaPublicacion DateTime?
+  fechaCierre      DateTime?
+
+  // Trazabilidad de fuente — obligatoria en todo registro externo
+  fuenteTipo      FuenteTipo @default(OFICIAL)
+  fuenteNombre    String     @default("Mercado Público")
+  fuenteUrl       String?
+  observadoEn     DateTime?  // cuándo Mercado Público publicó/actualizó el dato
+  sincronizadoEn  DateTime?  // cuándo BidCoop lo trajo
+  confianza       Int?       // 0-100, ver Motor de Match Explicable
+  rawSourceId     String?    // ID/ticket de la respuesta cruda de la API, para auditar
+
+  // CRM
+  responsableId String?
+  responsable   Usuario? @relation("ResponsableOportunidad", fields: [responsableId], references: [id])
+  proximaAccion       String?
+  fechaProximaAccion  DateTime?
+  precioObjetivo      Decimal?
+  probabilidadAdjudicacion Int? // 0-100, solo si hay base real — null si no calculable
+  etiquetas           String[]
+
+  descripcion String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  empresas       OportunidadEmpresa[]
+  items          OportunidadItem[]
+  snapshots      OportunidadSnapshot[]
+  postulaciones  Postulacion[]
+  documentos     Documento[]
+  checklists     Checklist[]
+  tareas         Tarea[]
+  comentarios    Comentario[]
+  alertas        Alerta[]
+  cambiosEstado  CambioEstado[]
+  resultado      Resultado?
+  cotizaciones   CotizacionProveedor[]
+
+  @@index([workspaceId])
+  @@index([estado])
+  @@index([fechaCierre])
+  @@index([compradorId])
+}
+
+// Empresas del holding a las que esta oportunidad podría corresponder (match
+// de catálogo) — separado de "responsable", que es la persona.
+model OportunidadEmpresa {
+  id            String      @id @default(uuid())
+  oportunidadId String
+  oportunidad   Oportunidad @relation(fields: [oportunidadId], references: [id], onDelete: Cascade)
+  empresaId     String
+  empresa       Empresa     @relation(fields: [empresaId], references: [id], onDelete: Cascade)
+
+  esCoincidenciaPrincipal Boolean @default(true)
+
+  createdAt DateTime @default(now())
+
+  @@unique([oportunidadId, empresaId])
+}
+
+// Snapshot histórico de la fuente oficial — necesario para "¿qué cambió?"
+// real (nuevos/modificados/cerrados) sin depender de sobreescribir el único
+// registro vigente.
+model OportunidadSnapshot {
+  id            String      @id @default(uuid())
+  oportunidadId String
+  oportunidad   Oportunidad @relation(fields: [oportunidadId], references: [id], onDelete: Cascade)
+
+  capturadoEn DateTime @default(now())
+  estadoOficialMP String?
+  montoEstimado   Decimal?
+  fechaCierre     DateTime?
+  rawJson         Json     // respuesta cruda de la API en ese momento, para auditoría completa
+
+  @@index([oportunidadId])
+}
+
+model OportunidadItem {
+  id            String      @id @default(uuid())
+  oportunidadId String
+  oportunidad   Oportunidad @relation(fields: [oportunidadId], references: [id], onDelete: Cascade)
+
+  sku              String?
+  descripcion      String
+  cantidad         Decimal
+  unidad           String?
+  precioUnitarioRef Decimal? // referencial, de la fuente oficial — null si no informado, nunca inventado
+
+  productoId String?
+  producto   Producto? @relation(fields: [productoId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  cotizaciones CotizacionProveedor[]
+
+  @@index([oportunidadId])
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// COMPRADOR / PROVEEDOR (fichas CRM)
+// ═══════════════════════════════════════════════════════════════════════
+
+model Comprador {
+  id          String    @id @default(uuid())
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+
+  rut    String? @unique
+  nombre String
+
+  // Nunca "Bajo" por defecto — 'Sin evaluar' hasta tener antecedentes reales.
+  riesgo        String  @default("Sin evaluar")
+  riesgoMetodologia String? // explicación reproducible de cómo se calculó, si se calculó
+
+  contactoEmail   String?
+  contactoTelefono String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  oportunidades Oportunidad[]
+  notas         Comentario[]
+
+  @@index([workspaceId])
+}
+
+model Proveedor {
+  id          String    @id @default(uuid())
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+
+  rut         String  @unique
+  razonSocial String
+  rubros      String[]
   contactoEmail    String?
   contactoTelefono String?
-  plazoPagoPromedio Int     @default(30) // average payment days
 
-  // Purchase volume past 36 mobile months (in CLP)
-  comprasConvenio   Decimal @default(0)
-  comprasLicitacion Decimal @default(0)
-  comprasTratoDirecto Decimal @default(0)
-  comprasCompraAgil Decimal @default(0)
-  total36Meses      Decimal @default(0)
+  fuenteTipo   FuenteTipo @default(MANUAL)
+  fechaValidacion DateTime?
 
-  transactions     Transaction[]
-  contracts        Contract[]
+  evaluacionInterna String? // texto libre, quién lo evaluó y cuándo va en RegistroAuditoria
 
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  cotizaciones CotizacionProveedor[]
+
+  @@index([workspaceId])
 }
 
-// Purchase Transaction (Orders or Adjudications)
-model Transaction {
-  id                 String   @id @default(uuid())
-  codigoAdjudicacion String   @unique // e.g. OC-XXXX-XX or LIC-XXXX-XX
-  modalidad          String   // Convenio Marco, Licitacion Publica, Compra Agil, Trato Directo
-  monto              Decimal
-  fecha              DateTime
-  sku                String?
-  items              String?  // JSON string containing detailed items metadata
+model Producto {
+  id        String  @id @default(uuid())
+  empresaId String
+  empresa   Empresa @relation(fields: [empresaId], references: [id], onDelete: Cascade)
 
-  buyerId            String
-  buyer              Buyer    @relation(fields: [buyerId], references: [id])
+  sku         String
+  nombre      String
+  categoria   String?
+  precioBase  Decimal?
+  costoActual Decimal?
+  stock       Int?
 
-  providerId         String
-  provider           Provider @relation(fields: [providerId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  createdAt          DateTime @default(now())
+  items OportunidadItem[]
+
+  @@unique([empresaId, sku])
 }
 
-// Active Biddings and Opportunities for IA parsing
-model Licitacion {
-  id                String   @id @default(uuid())
-  codigo            String   @unique // e.g. 3047-23-LE26
-  titulo            String
-  estado            String   // Publicada, Evaluacion, Adjudicada, Desierta
-  rubro             String
-  region            String
-  montoEstimado     Decimal?
-  fechaCierre       DateTime
-  basesUrl          String?
-  
-  // AI analysis fields
-  resumenIa         String?  // Executive summary
-  plazosClave       String?  // JSON string containing key milestones
-  requisitosAdmisibles String? // JSON list of requirements
-  riesgosExclusion   String?  // JSON text with traffic light indicators
+// ═══════════════════════════════════════════════════════════════════════
+// PIPELINE: POSTULACIÓN / OFERTA / COTIZACIÓN / COSTOS / FLETE
+// ═══════════════════════════════════════════════════════════════════════
 
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
+model Postulacion {
+  id            String      @id @default(uuid())
+  oportunidadId String
+  oportunidad   Oportunidad @relation(fields: [oportunidadId], references: [id], onDelete: Cascade)
+  empresaId     String
+  empresa       Empresa     @relation(fields: [empresaId], references: [id])
+
+  // Envío real — nunca marcar "enviada" sin evidencia si no hay API oficial
+  // de escritura (ver Oferta.confirmadoManualmente).
+  fechaCreacion DateTime @default(now())
+
+  ofertas Oferta[]
+
+  @@index([oportunidadId])
+  @@index([empresaId])
 }
 
-// User-defined Alerts configurations
-model Alert {
-  id        String   @id @default(uuid())
-  rubro     String
-  region    String
-  montoMin  Decimal  @default(0)
-  
-  userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+model Oferta {
+  id            String      @id @default(uuid())
+  postulacionId String
+  postulacion   Postulacion @relation(fields: [postulacionId], references: [id], onDelete: Cascade)
+
+  montoOfertado Decimal?
+  fechaEnvio    DateTime?
+
+  // Mercado Público no tiene API oficial de escritura — nunca simular un
+  // envío automático. Si el usuario marca manualmente como enviada, queda
+  // registrado quién y cuándo, con comprobante opcional.
+  confirmadoManualmente   Boolean  @default(false)
+  confirmadoPorUsuarioId  String?
+  comprobanteDocumentoId  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([postulacionId])
+}
+
+model CotizacionProveedor {
+  id            String      @id @default(uuid())
+  oportunidadId String
+  oportunidad   Oportunidad @relation(fields: [oportunidadId], references: [id], onDelete: Cascade)
+  itemId        String?
+  item          OportunidadItem? @relation(fields: [itemId], references: [id])
+  proveedorId   String
+  proveedor     Proveedor   @relation(fields: [proveedorId], references: [id])
+
+  costoUnitario Decimal
+  cantidad      Decimal
+  descuentoPct  Decimal? @default(0)
+  vigenciaHasta DateTime?
+  stockDisponible Int?
+  plazoEntregaDias Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([oportunidadId])
+  @@index([proveedorId])
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// DOCUMENTOS / CHECKLIST / TAREAS / COMENTARIOS
+// ═══════════════════════════════════════════════════════════════════════
+
+model Documento {
+  id            String   @id @default(uuid())
+  empresaId     String?
+  empresa       Empresa? @relation(fields: [empresaId], references: [id])
+  oportunidadId String?
+  oportunidad   Oportunidad? @relation(fields: [oportunidadId], references: [id])
+
+  nombre        String
+  tipo          TipoDocumento
+  estado        EstadoDocumento @default(VIGENTE)
+  version       Int             @default(1)
+  urlArchivo    String?         // URL firmada de almacenamiento (Vercel Blob), nunca secreto en claro
+
+  fechaEmision      DateTime?
+  fechaVencimiento  DateTime?
+
+  responsableId String?
+  responsable   Usuario? @relation("DocumentoResponsable", fields: [responsableId], references: [id])
+  etiquetas     String[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([empresaId])
+  @@index([oportunidadId])
+  @@index([fechaVencimiento])
+}
+
+model Checklist {
+  id            String      @id @default(uuid())
+  oportunidadId String
+  oportunidad   Oportunidad @relation(fields: [oportunidadId], references: [id], onDelete: Cascade)
+
+  nombre String
+  items  ChecklistItem[]
+
+  createdAt DateTime @default(now())
+
+  @@index([oportunidadId])
+}
+
+model ChecklistItem {
+  id          String    @id @default(uuid())
+  checklistId String
+  checklist   Checklist @relation(fields: [checklistId], references: [id], onDelete: Cascade)
+
+  descripcion  String
+  completado   Boolean  @default(false)
+  completadoEn DateTime?
+
+  @@index([checklistId])
+}
+
+model Tarea {
+  id            String       @id @default(uuid())
+  oportunidadId String?
+  oportunidad   Oportunidad? @relation(fields: [oportunidadId], references: [id])
+
+  titulo      String
+  descripcion String?
+  estado      EstadoTarea @default(PENDIENTE)
+  fechaLimite DateTime?
+
+  asignadoAId String?
+  asignadoA   Usuario? @relation("TareaAsignada", fields: [asignadoAId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([oportunidadId])
+  @@index([asignadoAId])
+  @@index([estado, fechaLimite])
+}
+
+model Comentario {
+  id            String       @id @default(uuid())
+  oportunidadId String?
+  oportunidad   Oportunidad? @relation(fields: [oportunidadId], references: [id])
+  compradorId   String?
+  comprador     Comprador?   @relation(fields: [compradorId], references: [id])
+
+  autorId String
+  autor   Usuario @relation(fields: [autorId], references: [id])
+  texto   String
+  menciones String[] // ids de usuarios mencionados
+
+  createdAt DateTime @default(now())
+
+  @@index([oportunidadId])
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// ALERTAS / CAMBIOS DE ESTADO / RESULTADO / AUDITORÍA / SYNC
+// ═══════════════════════════════════════════════════════════════════════
+
+model Alerta {
+  id            String       @id @default(uuid())
+  oportunidadId String?
+  oportunidad   Oportunidad? @relation(fields: [oportunidadId], references: [id])
+  usuarioId     String?
+  usuario       Usuario?     @relation(fields: [usuarioId], references: [id])
+
+  tipo       String // 'match_alto' | 'cierre_proximo' | 'tarea_vencida' | ... (ver spec sección 13)
+  prioridad  PrioridadAlerta @default(MEDIA)
+  mensaje    String
+
+  enviadaEn  DateTime?
+  entregadaEn DateTime?
+  leidaEn    DateTime?
+  error      String?
+
+  createdAt DateTime @default(now())
+
+  @@index([oportunidadId])
+  @@index([usuarioId])
+}
+
+// Historial de transición de estados — nunca sobrescribir sin dejar rastro.
+model CambioEstado {
+  id            String      @id @default(uuid())
+  oportunidadId String
+  oportunidad   Oportunidad @relation(fields: [oportunidadId], references: [id], onDelete: Cascade)
+
+  estadoAnterior EstadoOportunidad?
+  estadoNuevo    EstadoOportunidad
+  campoAdicional String? // ej. "fechaCierre" cuando el cambio es de un dato, no solo el estado
+  valorAnterior  String?
+  valorNuevo     String?
+
+  fuenteTipo FuenteTipo @default(OFICIAL)
+  usuarioId  String?
+  usuario    Usuario?   @relation(fields: [usuarioId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@index([oportunidadId])
+}
+
+model Resultado {
+  id            String      @id @default(uuid())
+  oportunidadId String      @unique
+  oportunidad   Oportunidad @relation(fields: [oportunidadId], references: [id], onDelete: Cascade)
+
+  adjudicada         Boolean
+  proveedorAdjudicado String?
+  rutProveedor        String?
+  montoAdjudicado     Decimal?
+  fechaResultado      DateTime?
+
+  motivoPerdidaId String?
+  motivoPerdida   MotivoPerdida? @relation(fields: [motivoPerdidaId], references: [id])
+
+  fuenteTipo FuenteTipo @default(OFICIAL)
 
   createdAt DateTime @default(now())
 }
 
-// Supply Contract or CM allocation
-model Contract {
-  id            String   @id @default(uuid())
-  codigo        String   @unique
-  objeto        String
-  monto         Decimal
-  fechaInicio   DateTime
-  fechaVence    DateTime
-  estadoEntrega Float    @default(0.0) // Deliveries completion progress rate
-  status        String   // Activo, Critico, Vencido
-  rolUsuario    String   // Proveedor, Comprador
+model MotivoPerdida {
+  id       String @id @default(uuid())
+  nombre   String @unique // "Precio", "Plazo de entrega", "Documentación", etc.
+  resultados Resultado[]
+}
 
-  providerId    String
-  provider      Provider @relation(fields: [providerId], references: [id])
+// Corrida de sincronización con Mercado Público — versión en base de datos
+// del contenido que hoy vive en data/sync_meta.json.
+model EventoSync {
+  id          String    @id @default(uuid())
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
 
-  buyerId       String
-  buyer         Buyer    @relation(fields: [buyerId], references: [id])
+  resultado         ResultadoSync
+  registrosLeidos    Int      @default(0)
+  registrosCreados   Int      @default(0)
+  registrosActualizados Int   @default(0)
+  registrosRechazados Int     @default(0)
+  duracionMs        Int?
+  errores           Json?     // array de {mensaje, fuente}
 
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  iniciadoEn  DateTime @default(now())
+  finalizadoEn DateTime?
+
+  @@index([workspaceId])
+  @@index([iniciadoEn])
+}
+
+// Toda acción crítica del usuario (spec sección 15 y 27) — nunca opcional.
+model RegistroAuditoria {
+  id          String    @id @default(uuid())
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  usuarioId   String?
+  usuario     Usuario?  @relation(fields: [usuarioId], references: [id])
+
+  accion      String   // "postulacion.enviar", "documento.descargar", "empresa.cambiar_config", etc.
+  entidadTipo String?  // "Oportunidad", "Documento", ...
+  entidadId   String?
+  detalle     Json?
+
+  createdAt DateTime @default(now())
+
+  @@index([workspaceId])
+  @@index([usuarioId])
+  @@index([entidadTipo, entidadId])
 }
