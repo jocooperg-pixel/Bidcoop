@@ -10,11 +10,13 @@ name: BidCoop — Sync Automático Mercado Público
 on:
   workflow_dispatch:   # Permite ejecutar manualmente desde GitHub cuando el usuario lo solicite
   schedule:
-    # 11:00 UTC = 07:00 hora de Chile en horario estándar (UTC-4, vigente hoy).
-    # GitHub Actions solo agenda en UTC: durante horario de verano chileno
-    # (UTC-3, aprox. septiembre-abril) esto corre ~08:00 hora local en vez de
-    # 07:00 — ajustar el cron si eso deja de ser aceptable.
-    - cron: '0 11 * * *'
+    # Cada 3 horas, 24/7 — no depende de que el usuario pida "actualiza".
+    # Corre a las 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 UTC,
+    # que en horario estándar de Chile (UTC-4) equivale a 20:00, 23:00, 02:00,
+    # 05:00, 08:00, 11:00, 14:00, 17:00. GitHub Actions solo agenda en UTC:
+    # durante horario de verano chileno (UTC-3, aprox. septiembre-abril) cada
+    # hora local corre ~1h más temprano.
+    - cron: '0 */3 * * *'
 
 jobs:
   sync-and-deploy:

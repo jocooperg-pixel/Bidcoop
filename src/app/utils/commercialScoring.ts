@@ -60,6 +60,10 @@ export function calculateCommercialScore(op: Partial<Oportunidad>): CommercialAn
   }
 
   // 3. Organismo Comprador & Historial (0-20 pts)
+  // Mercado Público no expone riesgo del organismo ni días de pago vía API
+  // pública — 'Sin evaluar' es el estado real de casi todos los registros
+  // hoy. No sumar puntos por eso: sumar por defecto aquí equivaldría a
+  // fabricar una señal de confianza que no existe (ver feedback_no_fabrication).
   const riesgo = op.organismoRiesgo || op.riesgo;
   if (riesgo === 'Bajo') {
     score += 20;
@@ -70,6 +74,8 @@ export function calculateCommercialScore(op: Partial<Oportunidad>): CommercialAn
   } else if (riesgo === 'Alto') {
     score -= 10;
     razones.push('Atención: Organismo con historial de demoras en pago');
+  } else {
+    razones.push('Riesgo del organismo: sin evaluar (Mercado Público no publica este dato)');
   }
 
   const pagoDias = op.organismoPagoDias;

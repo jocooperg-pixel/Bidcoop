@@ -42,8 +42,11 @@ export interface Oportunidad {
   titulo: string;
   organismo: string;
   organismoRut: string;
-  organismoPagoDias: number;
-  organismoRiesgo: 'Bajo' | 'Medio' | 'Alto';
+  // organismoPagoDias/organismoRiesgo: Mercado Público no expone esto vía API
+  // pública — 'Sin evaluar' es el único valor honesto hasta que exista una
+  // fuente real (nunca fijar 'Bajo' por defecto, ver feedback_no_fabrication).
+  organismoPagoDias: number | null;
+  organismoRiesgo: 'Bajo' | 'Medio' | 'Alto' | 'Sin evaluar';
   rubro: string;
   region: string;
   ciudad?: string;
@@ -52,7 +55,7 @@ export interface Oportunidad {
   fechaPublicacion: string;
   fechaCierre: string;
   matchScore: number;
-  riesgo: 'Bajo' | 'Medio' | 'Alto';
+  riesgo: 'Bajo' | 'Medio' | 'Alto' | 'Sin evaluar';
   descripcion: string;
   estado: OpportunityState;
   cronograma: Array<{ hito: string; fecha: string }>;

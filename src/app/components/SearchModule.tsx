@@ -1823,8 +1823,13 @@ export default function SearchModule({
                   <div>
                     <span className="text-[9px] uppercase font-black text-slate-400 block">Nivel Riesgo</span>
                     <span className={`font-black mt-0.5 block ${
-                      selectedOpportunity.riesgo === 'Bajo' ? 'text-green-500' : selectedOpportunity.riesgo === 'Medio' ? 'text-amber-500' : 'text-red-500'
-                    }`}>{selectedOpportunity.riesgo}</span>
+                      selectedOpportunity.riesgo === 'Bajo' ? 'text-green-500' :
+                      selectedOpportunity.riesgo === 'Medio' ? 'text-amber-500' :
+                      selectedOpportunity.riesgo === 'Alto' ? 'text-red-500' :
+                      'text-slate-400'
+                    }`} title={selectedOpportunity.riesgo === 'Sin evaluar' ? 'Mercado Público no publica este dato' : undefined}>
+                      {selectedOpportunity.riesgo}
+                    </span>
                   </div>
                 </div>
 
@@ -1992,6 +1997,7 @@ export default function SearchModule({
                   <option value="Bajo">Riesgo Bajo (Buen pagador)</option>
                   <option value="Medio">Riesgo Medio</option>
                   <option value="Alto">Riesgo Alto (Plazos extendidos)</option>
+                  <option value="Sin evaluar">Sin evaluar (sin dato oficial)</option>
                 </select>
               </div>
 
