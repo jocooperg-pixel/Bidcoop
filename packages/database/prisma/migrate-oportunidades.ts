@@ -13,10 +13,9 @@ import { get } from '@vercel/blob';
 import * as path from 'path';
 
 // mockData.ts es TypeScript compilado con los tipos de la app — lo
-// importamos directo vía ts-node/tsx, que resuelve el path relativo real.
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+// importamos directo vía tsx, que resuelve el path relativo real.
 const mockDataPath = path.join(__dirname, '../../../src/app/mockData.ts');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const { mockOportunidades } = require(mockDataPath);
 
 const prisma = new PrismaClient();
@@ -55,6 +54,7 @@ const MODALIDAD_MAP: Record<string, ModalidadCompra> = {
   'Compra Ágil': ModalidadCompra.COMPRA_AGIL,
   'Licitación': ModalidadCompra.LICITACION,
   'Convenio Marco': ModalidadCompra.CONVENIO_MARCO,
+  'Orden de Compra': ModalidadCompra.ORDEN_COMPRA,
   'Grandes Compras': ModalidadCompra.GRANDES_COMPRAS
 };
 
@@ -126,26 +126,38 @@ async function main() {
       continue;
     }
 
-    // Comprador — upsert por nombre de organismo (no todos traen RUT real)
+    // Comprador — la API de Mercado Público entrega "No informado" como
+    // placeholder literal cuando no hay RUT real, NO como ausencia del
+    // campo. Tratarlo como un RUT real colapsaría organismos distintos
+    // (ej. un hospital y un ministerio) en un único Comprador — exactamente
+    // el tipo de mezcla de identidades que este proyecto prohíbe. Por eso
+    // solo se usa el RUT como clave de upsert cuando es un RUT real; en
+    // caso contrario se identifica por nombre de organismo (dentro del
+    // workspace) y el campo rut queda null (honesto: sin dato real).
+    const rutEsReal = !!op.organismoRut && op.organismoRut.trim() !== '' && op.organismoRut.trim().toLowerCase() !== 'no informado';
+
     let compradorId = compradorCache.get(op.organismo);
     if (!compradorId && op.organismo) {
-      const comprador = await prisma.comprador.upsert({
-        where: op.organismoRut ? { rut: op.organismoRut } : { rut: `__sin_rut__${op.organismo}` },
-        update: { nombre: op.organismo },
-        create: {
-          workspaceId: workspace.id,
-          rut: op.organismoRut || null,
-          nombre: op.organismo
-        }
-      }).catch(async () => {
-        // Puede no existir aún con ese RUT sintético — crear directo si el upsert por RUT sintético falla
-        return prisma.comprador.create({
-          data: { workspaceId: workspace.id, rut: op.organismoRut || null, nombre: op.organismo }
+      if (rutEsReal) {
+        const yaExistia = await prisma.comprador.findUnique({ where: { rut: op.organismoRut!.trim() } });
+        const comprador = await prisma.comprador.upsert({
+          where: { rut: op.organismoRut!.trim() },
+          update: { nombre: op.organismo },
+          create: { workspaceId: workspace.id, rut: op.organismoRut!.trim(), nombre: op.organismo }
         });
-      });
-      compradorId = comprador.id;
+        if (!yaExistia) reporte.compradoresCreados++;
+        compradorId = comprador.id;
+      } else {
+        let comprador = await prisma.comprador.findFirst({ where: { workspaceId: workspace.id, nombre: op.organismo, rut: null } });
+        if (!comprador) {
+          comprador = await prisma.comprador.create({
+            data: { workspaceId: workspace.id, rut: null, nombre: op.organismo }
+          });
+          reporte.compradoresCreados++;
+        }
+        compradorId = comprador.id;
+      }
       compradorCache.set(op.organismo, compradorId);
-      reporte.compradoresCreados++;
     }
 
     const tienePostulacionReal = postuladasIds.has(op.id);

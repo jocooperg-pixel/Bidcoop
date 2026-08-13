@@ -68,6 +68,7 @@ enum ModalidadCompra {
   COMPRA_AGIL
   LICITACION
   CONVENIO_MARCO
+  ORDEN_COMPRA // Orden de compra emitida bajo Convenio Marco (tipo O1/O2 en Mercado Público) — distinta de una licitación de Convenio Marco abierta
   GRANDES_COMPRAS
   TRATO_DIRECTO
 }
