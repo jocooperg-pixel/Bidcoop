@@ -28,6 +28,12 @@ export default function BusinessModule({
   activeCompany = 'Consolidado',
   selectedAdjudicacionCodigo = null
 }: BusinessModuleProps) {
+  // Forma real de un ítem del Kanban: puede ser una Oportunidad completa o un
+  // objeto parcial reconstruido desde una postulación cuya oportunidad ya no
+  // está en el sync (por eso todos los campos de Oportunidad son opcionales
+  // salvo id/codigo).
+  type KanbanItem = Partial<Oportunidad> & { id: string; codigo: string };
+
   const [currentSub, setCurrentSub] = useState(activeSubSection || 'mis-negocios');
 
   useEffect(() => {
@@ -45,7 +51,7 @@ export default function BusinessModule({
         id: `p-${idx + 1}`,
         sku: parts[0] || 'SKU-000',
         nombre: parts[1] || 'Producto sin nombre',
-        proveedor: parts[2] || 'Inderquim',
+        proveedor: parts[2] || 'Aminorte',
         categoria: parts[3] || 'General',
         detalle: parts[4] || '',
         precioBase: parseFloat(parts[5]) || 1000,
@@ -77,7 +83,7 @@ export default function BusinessModule({
   const filteredPostulaciones = useMemo(() => {
     return postulaciones.filter(p => {
       // Company match
-      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.includes('COT') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'Inder-Roll');
+      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.includes('COT') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'V-MOCCS');
       if (activeCompany !== 'Consolidado' && pCompany !== activeCompany) {
         return false;
       }
@@ -98,7 +104,7 @@ export default function BusinessModule({
   // Statistics for Compras Ágiles Aminorte
   const statsAgilAminorte = useMemo(() => {
     const list = postulaciones.filter(p => {
-      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') ? 'Aminorte' : 'Inder-Roll');
+      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') ? 'Aminorte' : 'V-MOCCS');
       const pModality = p.modalidad || (p.oportunidadCodigo?.startsWith('COT-') ? 'Compra Ágil' : 'Grandes Compras');
       return pCompany === 'Aminorte' && pModality === 'Compra Ágil';
     });
@@ -116,8 +122,8 @@ export default function BusinessModule({
 
   // Documents Repo State
   const [internalDocs, setInternalDocs] = useState([
-    { nombre: 'Estatuto_Social_Inderquim_Firmado.pdf', categoria: 'Legal', fecha: '2026-01-10', tamanho: '4.5 MB' },
-    { nombre: 'RUT_Efectivo_Inderquim.pdf', categoria: 'Tributario', fecha: '2026-02-15', tamanho: '850 KB' },
+    { nombre: 'Estatuto_Social_Aminorte_Firmado.pdf', categoria: 'Legal', fecha: '2026-01-10', tamanho: '4.5 MB' },
+    { nombre: 'RUT_Efectivo_Aminorte.pdf', categoria: 'Tributario', fecha: '2026-02-15', tamanho: '850 KB' },
     { nombre: 'Certificado_Antecedentes_Laborales_F30_Julio.pdf', categoria: 'Laboral', fecha: '2026-07-01', tamanho: '340 KB' },
     { nombre: 'Balance_Financiero_Audita_2025.xlsx', categoria: 'Finanzas', fecha: '2026-04-20', tamanho: '1.2 MB' }
   ]);
@@ -134,7 +140,7 @@ export default function BusinessModule({
 
     const companyPosts = postulaciones.filter(p => {
       const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
-      const pCompany = op ? op.empresaMatch : (p.empresaMatch || (p.oportunidadCodigo?.includes('6012') || p.oportunidadCodigo?.includes('1105') ? 'Aminorte' : 'Inder-Roll'));
+      const pCompany = op ? op.empresaMatch : (p.empresaMatch || (p.oportunidadCodigo?.includes('6012') || p.oportunidadCodigo?.includes('1105') ? 'Aminorte' : 'V-MOCCS'));
       if (activeCompany === 'Consolidado') return true;
       return pCompany === activeCompany;
     });
@@ -392,10 +398,10 @@ export default function BusinessModule({
                       <p className="text-[11px] font-bold text-slate-400">No hay procesos para visualizar</p>
                     </div>
                   ) : (
-                    col.items.map((item: any) => (
+                    col.items.map((item: KanbanItem) => (
                       <div
                         key={item.id || item.codigo}
-                        onClick={() => onSelectOpportunity && onSelectOpportunity(item)}
+                        onClick={() => onSelectOpportunity && onSelectOpportunity(item as Oportunidad)}
                         className="p-3.5 bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-750 hover:border-blue-500 dark:hover:border-blue-400 rounded-xl shadow-sm cursor-pointer transition text-xs space-y-2.5 group"
                       >
                         <div className="flex items-center justify-between">
@@ -481,13 +487,12 @@ export default function BusinessModule({
               <div className="relative">
                 <select
                   value={filterCompany}
-                  onChange={(e) => setFilterCompany(e.target.value as any)}
+                  onChange={(e) => setFilterCompany(e.target.value as 'Todas' | 'Aminorte' | 'V-MOCCS')}
                   className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-4 pr-10 py-2 rounded-xl border border-sky-400/40 hover:border-sky-300 shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 cursor-pointer"
                 >
                   <option value="Todas">📊 Consolidado Holding (Todas las Empresas)</option>
-                  <option value="Inder-Roll">🧹 Inder-Roll SpA (Aseo e Higiene)</option>
                   <option value="Aminorte">📄 Aminorte SpA (Oficina & Librería)</option>
-                  <option value="V-MOCCS">✏️ V-MOCCS SpA (Oficina & Librería)</option>
+                  <option value="V-MOCCS">✏️ V-MOCCS SpA (Mobiliario & Equipamiento)</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-sky-300">
                   ▼
@@ -512,18 +517,17 @@ export default function BusinessModule({
               <div className="flex items-center gap-2">
                 <select
                   value={filterCompany}
-                  onChange={(e) => setFilterCompany(e.target.value as any)}
+                  onChange={(e) => setFilterCompany(e.target.value as 'Todas' | 'Aminorte' | 'V-MOCCS')}
                   className="px-2.5 py-1.5 text-xs font-bold rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 cursor-pointer"
                 >
                   <option value="Todas">🏢 Todas las Empresas</option>
                   <option value="Aminorte">Aminorte (Escritorio / Convenio Marco)</option>
-                  <option value="V-MOCCS">V-MOCCS SpA (Escritorio / Convenio Marco)</option>
-                  <option value="Inder-Roll">Inder-Roll (Aseo)</option>
+                  <option value="V-MOCCS">V-MOCCS SpA (Mobiliario / Convenio Marco)</option>
                 </select>
 
                 <select
                   value={filterModality}
-                  onChange={(e) => setFilterModality(e.target.value as any)}
+                  onChange={(e) => setFilterModality(e.target.value as 'Todas' | 'Compra Ágil' | 'Grandes Compras')}
                   className="px-2.5 py-1.5 text-xs font-bold rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 cursor-pointer"
                 >
                   <option value="Todas">📦 Todas las Modalidades</option>
@@ -555,7 +559,7 @@ export default function BusinessModule({
                     </tr>
                   ) : (
                     filteredPostulaciones.map((p) => {
-                      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'Inder-Roll');
+                      const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'V-MOCCS');
                       const pModality = p.modalidad || (p.oportunidadCodigo?.startsWith('COT-') ? 'Compra Ágil' : 'Grandes Compras');
 
                       return (
@@ -576,8 +580,8 @@ export default function BusinessModule({
 
                           <td className="p-3">
                             <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase ${
-                              pCompany === 'Inder-Roll'
-                                ? 'bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300 border border-sky-300'
+                              pCompany === 'V-MOCCS'
+                                ? 'bg-purple-100 text-purple-800 dark:bg-purple-950 dark:text-purple-300 border border-purple-300'
                                 : 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 border border-blue-300'
                             }`}>
                               {pCompany}
@@ -810,7 +814,7 @@ export default function BusinessModule({
                   <span className="text-2xl">✉️</span>
                   <div>
                     <h4 className="text-xs font-black text-slate-900 dark:text-white">Canal Correo Electrónico</h4>
-                    <p className="text-[11px] text-slate-500 font-medium mt-0.5">Destino: licitaciones@aminorte.cl | ventas@inderroll.cl</p>
+                    <p className="text-[11px] text-slate-500 font-medium mt-0.5">Destino: licitaciones@aminorte.cl | ventas@discoverymerch.cl</p>
                   </div>
                 </div>
                 <button
@@ -870,7 +874,7 @@ export default function BusinessModule({
                       monto: '$91.800.000 CLP',
                       canal: 'Email',
                       fechaLimite: '2026-07-27',
-                      estadoRaw: 'Adjudicada a Inder-Roll SpA'
+                      estadoRaw: 'Adjudicada a Aminorte SpA'
                     }
                   ];
 
@@ -1037,11 +1041,11 @@ export default function BusinessModule({
                     <td className="p-3 font-semibold text-slate-850 dark:text-slate-350">{p.nombre}</td>
                     <td className="p-3">
                       <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase ${
-                        p.proveedor === 'Inderquim'
-                          ? 'bg-green-50 text-green-700 dark:bg-green-950/30 dark:text-green-400'
+                        p.proveedor === 'V-MOCCS'
+                          ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400'
                           : 'bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400'
                       }`}>
-                        {p.proveedor === 'Inderquim' ? 'Aseo (Inder-Roll)' : 'Escritorio (Aminorte)'}
+                        {p.proveedor === 'V-MOCCS' ? 'Mobiliario (V-MOCCS)' : 'Escritorio (Aminorte)'}
                       </span>
                     </td>
                     <td className="p-3">

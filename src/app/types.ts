@@ -1,5 +1,5 @@
-export type Empresa = 'Consolidado' | 'Aminorte' | 'V-MOCCS' | 'Inder-Roll';
-export type EmpresaMatch = 'Aminorte' | 'V-MOCCS' | 'Inder-Roll';
+export type Empresa = 'Consolidado' | 'Aminorte' | 'V-MOCCS';
+export type EmpresaMatch = 'Aminorte' | 'V-MOCCS';
 
 /**
  * Metadatos de trazabilidad del match empresa-oportunidad.
@@ -132,6 +132,12 @@ export interface Oportunidad {
     canal: 'WhatsApp' | 'Email';
     fechaHora: string;
   }>;
+  puntajeComercial?: number; // 0 a 100
+  nivelOportunidad?: 'Alta' | 'Media' | 'Baja';
+  razonesOportunidad?: string[];
+  esNueva?: boolean;
+  fueModificada?: boolean;
+  fechaUltimaModificacion?: string;
 }
 
 export interface Postulacion {

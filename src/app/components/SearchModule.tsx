@@ -215,7 +215,7 @@ export default function SearchModule({
   // interno de BidCoop, con lo real que tenemos (título, organismo, montos,
   // ítems) y "No informado" explícito donde no tenemos dato real (nunca un
   // relleno inventado tipo RUT 60.000.000-0 o precio $1.000).
-  const handleDownloadDoc = (doc: any, opportunity: Oportunidad) => {
+  const handleDownloadDoc = (doc: DocumentoAdjunto, opportunity: Oportunidad) => {
     // El único documento real que trae el sync es un link a la ficha oficial
     // — para ese caso "descargar" no tiene sentido, así que abrimos el link
     // real en vez de generar cualquier archivo.
@@ -599,9 +599,10 @@ export default function SearchModule({
         console.log('[ExportExcel] Elementos temporales removidos del DOM');
       }, 5000);
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("[ExportExcel] ❌ Error:", error);
-      alert(`Error al exportar: ${error?.message || error}`);
+      const msg = error instanceof Error ? error.message : String(error);
+      alert(`Error al exportar: ${msg}`);
     }
   };
 
@@ -1150,11 +1151,11 @@ export default function SearchModule({
                         <div className="flex justify-between font-black text-slate-950 dark:text-slate-200">
                           <span>Consulta • {p.usuario}</span>
                         </div>
-                        <p className="text-slate-600 dark:text-slate-400 italic">"{p.pregunta}"</p>
+                        <p className="text-slate-600 dark:text-slate-400 italic">&quot;{p.pregunta}&quot;</p>
                         {p.respuesta && (
                           <div className="pl-4 border-l-2 border-blue-500 mt-2 space-y-1">
                             <span className="text-[9px] uppercase font-black text-blue-500">Respuesta Oficial</span>
-                            <p className="text-slate-800 dark:text-slate-300 font-bold">"{p.respuesta}"</p>
+                            <p className="text-slate-800 dark:text-slate-300 font-bold">&quot;{p.respuesta}&quot;</p>
                           </div>
                         )}
                       </div>
@@ -1442,7 +1443,7 @@ export default function SearchModule({
                     <span className="text-2xl block mb-2 text-center">⚫</span>
                     <p className="text-xs font-black text-slate-600 dark:text-slate-300 uppercase text-center">Sin Contacto Directo Verificado</p>
                     <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1.5 text-center leading-relaxed">
-                      No tenemos un nombre, correo o teléfono de contacto real para esta unidad de compras. Para consultas, la vía oficial es el módulo de "Preguntas Públicas" dentro de la ficha del proceso en Mercado Público.
+                      No tenemos un nombre, correo o teléfono de contacto real para esta unidad de compras. Para consultas, la vía oficial es el módulo de &quot;Preguntas Públicas&quot; dentro de la ficha del proceso en Mercado Público.
                     </p>
                     {selectedOpportunity.sourceUrl && (
                       <div className="text-center mt-3">
@@ -1968,7 +1969,7 @@ export default function SearchModule({
                   <option value="Atacama">Atacama</option>
                   <option value="Coquimbo">Coquimbo</option>
                   <option value="Valparaíso">Valparaíso</option>
-                  <option value="O'Higgins">O'Higgins</option>
+                  <option value="O'Higgins">O&apos;Higgins</option>
                   <option value="Maule">Maule</option>
                   <option value="Ñuble">Ñuble</option>
                   <option value="Biobío">Biobío</option>
@@ -2086,7 +2087,7 @@ export default function SearchModule({
                         <label key={col} className="flex items-center gap-2 px-2 py-1 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg cursor-pointer">
                           <input
                             type="checkbox"
-                            checked={(visibleColumns as any)[col]}
+                            checked={(visibleColumns as Record<string, boolean>)[col]}
                             onChange={(e) => setVisibleColumns(prev => ({ ...prev, [col]: e.target.checked }))}
                             className="rounded text-blue-600"
                           />
@@ -2444,7 +2445,7 @@ export default function SearchModule({
 
                   <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 text-xs leading-relaxed text-slate-700 dark:text-slate-300">
                     <p className="italic">
-                      "{previewDocModal.opportunity.descripcion}"
+                      &quot;{previewDocModal.opportunity.descripcion}&quot;
                     </p>
                   </div>
                 </div>
@@ -2534,7 +2535,7 @@ export default function SearchModule({
                 <div className="relative">
                   <select
                     value={quoteCompany}
-                    onChange={(e) => setQuoteCompany(e.target.value as any)}
+                    onChange={(e) => setQuoteCompany(e.target.value === 'V-MOCCS' ? 'V-MOCCS' : 'Aminorte')}
                     className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-3.5 pr-8 py-1.5 rounded-xl border border-slate-700 hover:border-sky-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer"
                   >
                     <option value="Aminorte">📄 Aminorte SpA</option>

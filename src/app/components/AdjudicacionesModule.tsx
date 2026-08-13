@@ -10,7 +10,7 @@ interface AdjudicacionesModuleProps {
   selectedCodigoInitial?: string | null;
 }
 
-// Complete list of pre-seeded Adjudications & Purchase Orders for Inder-Roll, Aminorte and V-MOCCS
+// Complete list of pre-seeded Adjudications & Purchase Orders for Aminorte and V-MOCCS
 export const initialAdjudicaciones: AdjudicacionDetalle[] = [
   // --- COMPRAS ÁGILES ---
   {
@@ -152,12 +152,12 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     direccionEntrega: 'PLAZA DE ARMAS N°1, SANTIAGO',
     region: 'Región Metropolitana de Santiago',
     plazoEntrega: '7 dias',
-    observaciones: 'OFERTA ADJUDICADA A INDER-ROLL PRODUCTOS DE ASEO SPA POR CUMPLIMIENTO TOTAL Y MENOR EVALUACIÓN ECONÓMICA.',
-    postuladoPor: '[JCOOPER] (INDER-ROLL)',
+    observaciones: 'OFERTA ADJUDICADA A AMINORTE SPA POR CUMPLIMIENTO TOTAL Y MENOR EVALUACIÓN ECONÓMICA.',
+    postuladoPor: '[JCOOPER] (AMINORTE)',
     empresaMatch: 'Aminorte',
 
     participantes: [
-      { posicion: 1, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 15546218, montoIvaInc: 18500000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
+      { posicion: 1, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 15546218, montoIvaInc: 18500000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
       { posicion: 2, nombre: 'CLEAN CHILE S.A.', rut: '96.771.200-4', montoNeto: 16800000, montoIvaInc: 19992000, resultado: 'No adjudicado' },
       { posicion: 3, nombre: 'DETERGENTES DEL PACÍFICO SPA', rut: '77.012.550-8', montoNeto: 17500000, montoIvaInc: 20825000, resultado: 'No adjudicado' }
     ]
@@ -177,12 +177,12 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     region: 'Región Metropolitana de Santiago',
     plazoEntrega: '10 dias',
     observaciones: 'PROCESO FINALIZADO. EVALUACIÓN DE OFERTAS TÉCNICAS COMPLETADA.',
-    postuladoPor: '[JCOOPER] (INDER-ROLL)',
+    postuladoPor: '[JCOOPER] (AMINORTE)',
     empresaMatch: 'Aminorte',
 
     participantes: [
       { posicion: 1, nombre: 'QUÍMICA VIRUTEX ILKO S.A.', rut: '96.510.200-7', montoNeto: 27500000, montoIvaInc: 32725000, resultado: 'ADJUDICADO' },
-      { posicion: 2, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 28991596, montoIvaInc: 34500000, resultado: 'No adjudicado', esNuestraEmpresa: true },
+      { posicion: 2, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 28991596, montoIvaInc: 34500000, resultado: 'No adjudicado', esNuestraEmpresa: true },
       { posicion: 3, nombre: 'DISTRIBUIDORA SANITARIA CENTRAL LTDA', rut: '77.410.900-1', montoNeto: 31000000, montoIvaInc: 36890000, resultado: 'No adjudicado' }
     ]
   },
@@ -249,12 +249,12 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     region: 'Región de Valparaíso',
     plazoEntrega: '7 dias',
     observaciones: 'GRANDE COMPRA RESUELTA. OFERTA GANADORA CORRESPONDE A CMPC TISSUE S.A.',
-    postuladoPor: '[JCOOPER] (INDER-ROLL)',
+    postuladoPor: '[JCOOPER] (AMINORTE)',
     empresaMatch: 'Aminorte',
 
     participantes: [
       { posicion: 1, nombre: 'CMPC TISSUE S.A.', rut: '96.520.110-2', montoNeto: 54000000, montoIvaInc: 64260000, resultado: 'ADJUDICADO' },
-      { posicion: 2, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 56722689, montoIvaInc: 67500000, resultado: 'No adjudicado', esNuestraEmpresa: true },
+      { posicion: 2, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 56722689, montoIvaInc: 67500000, resultado: 'No adjudicado', esNuestraEmpresa: true },
       { posicion: 3, nombre: 'KIMBERLY-CLARK CHILE S.A.', rut: '96.701.440-9', montoNeto: 59000000, montoIvaInc: 70210000, resultado: 'No adjudicado' }
     ]
   },
@@ -276,11 +276,11 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     region: 'Región Metropolitana de Santiago',
     plazoEntrega: '5 dias',
     observaciones: 'ORDEN DE COMPRA EMITIDA DIRECTAMENTE DESDE LA TIENDA DE CONVENIO MARCO DE MERCADO PÚBLICO. ACEPTADA Y EN DESPACHO.',
-    postuladoPor: '[JCOOPER] (INDER-ROLL)',
+    postuladoPor: '[JCOOPER] (AMINORTE)',
     empresaMatch: 'Aminorte',
 
     participantes: [
-      { posicion: 1, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 15546218, montoIvaInc: 18500000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
+      { posicion: 1, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 15546218, montoIvaInc: 18500000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
       { posicion: 2, nombre: 'TIENDA CONVENIO MARCO ASEO S.A.', rut: '96.881.000-4', montoNeto: 16500000, montoIvaInc: 19635000, resultado: 'No adjudicado' }
     ]
   },
@@ -346,11 +346,11 @@ export const initialAdjudicaciones: AdjudicacionDetalle[] = [
     region: 'Región Metropolitana de Santiago',
     plazoEntrega: '7 dias',
     observaciones: 'ORDEN DE COMPRA ACEPTADA EN CATÁLOGO MARCO VIGENTE DE PRODUCTOS DE ASEO.',
-    postuladoPor: '[JCOOPER] (INDER-ROLL)',
+    postuladoPor: '[JCOOPER] (AMINORTE)',
     empresaMatch: 'Aminorte',
 
     participantes: [
-      { posicion: 1, nombre: 'INDER-ROLL PRODUCTOS DE ASEO SPA', rut: '76.123.456-7', montoNeto: 36500000, montoIvaInc: 43435000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
+      { posicion: 1, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 36500000, montoIvaInc: 43435000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
       { posicion: 2, nombre: 'INSUQUIM CHILE S.A.', rut: '77.301.990-2', montoNeto: 39500000, montoIvaInc: 47005000, resultado: 'No adjudicado' }
     ]
   }

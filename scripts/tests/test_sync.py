@@ -9,7 +9,7 @@ Verifica:
   T04. Tipos oficiales mapeados correctamente (CO=Compra Ágil, LE/LP=Licitación, etc.)
   T05. Registros confirmados vs requiere_verificacion
   T06. Deduplicación por officialCode
-  T07. Match por empresa (Aminorte, V-MOCCS, Inder-Roll)
+  T07. Match por empresa (Aminorte, V-MOCCS)
   T08. Ningún registro tiene amount=0 cuando amountType=no_informado (problema $0 falsos)
   T09. URLs de Compras Ágiles usan módulo correcto (DAP)
   T10. Validación de muestra real contra API de Mercado Público (5 registros aleatorios)
@@ -231,7 +231,7 @@ for op in opps:
     emp = op.get("empresaMatch", "Sin asignar")
     empresa_counts[emp] = empresa_counts.get(emp, 0) + 1
 
-active_emp_names = ["Aminorte", "Inder-Roll"]
+active_emp_names = ["Aminorte", "V-MOCCS"]
 if os.path.isfile(EMPRESAS_CONFIG):
     with open(EMPRESAS_CONFIG) as f:
         cfg = json.load(f)

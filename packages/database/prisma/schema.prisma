@@ -20,7 +20,7 @@ model User {
   alerts    Alert[]
 }
 
-// Supplier company profile (Inderquim or competitors)
+// Supplier company profile (Aminorte, V-MOCCS or competitors)
 model Provider {
   id             String   @id @default(uuid())
   rut            String   @unique

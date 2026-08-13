@@ -505,13 +505,41 @@ export default function Home() {
           `Para traer datos nuevos de Mercado Público, corre scripts/sync_mercadopublico.py y sube el resultado — la plataforma nunca genera datos por su cuenta.`
         );
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
       if (!silent) {
-        alert('Error al consultar el estado de sincronización: ' + err.message);
+        const msg = err instanceof Error ? err.message : String(err);
+        alert('Error al consultar el estado de sincronización: ' + msg);
       }
     }
   };
+
+  // Forma parcial y real del JSON crudo que devuelve la API pública de
+  // Mercado Público para un código consultado manualmente — solo los campos
+  // que este handler realmente lee. La API es externa y no tenemos un
+  // contrato de tipos oficial, por eso los campos son opcionales.
+  interface MPApiItemDetalle {
+    Descripcion?: string;
+    NombreProducto?: string;
+    Correlativo?: number;
+    Cantidad?: number;
+    PrecioUnitario?: number;
+  }
+  interface MPApiItem {
+    Nombre?: string;
+    Descripcion?: string;
+    CodigoExterno?: string;
+    Rubro?: string;
+    Region?: string;
+    Estado?: string;
+    Organismo?: string;
+    MontoEstimado?: number;
+    FechaPublicacion?: string;
+    FechaCierre?: string;
+    Comprador?: { NombreOrganismo?: string; RutUnico?: string; RutUnidad?: string; RegionUnidad?: string };
+    Items?: { Listado?: MPApiItemDetalle[] };
+  }
+  const VALID_OPPORTUNITY_STATES = ['Publicada', 'Cerrada', 'Proveedor seleccionado', 'Cancelada', 'Adjudicada', 'Desierta', 'En Evaluación', 'Postulada'] as const;
 
   const handleQueryApiBidding = async (code: string) => {
     if (!code.trim()) return;
@@ -531,7 +559,7 @@ export default function Home() {
 
     try {
       const response = await fetch(`/api/mercadopublico?codigo=${encodeURIComponent(cleanCode)}`);
-      let data: any = null;
+      let data: { Listado?: MPApiItem[] } | null = null;
       if (response.ok) {
         data = await response.json();
       }
@@ -549,7 +577,7 @@ export default function Home() {
           descripcion: descripcionReal,
           rubro: item.Rubro,
           items: item.Items?.Listado
-            ? item.Items.Listado.map((it: any) => ({ producto: it.Descripcion || it.NombreProducto || '', especificacionTecnica: '' }))
+            ? item.Items.Listado.map((it: MPApiItemDetalle) => ({ producto: it.Descripcion || it.NombreProducto || '', especificacionTecnica: '' }))
             : []
         });
 
@@ -584,7 +612,9 @@ export default function Home() {
           empresaMatch: smart.companyMatch || undefined,
           modalidad: modality,
           descripcion: descripcionReal || 'Sin descripción informada por Mercado Público para este proceso.',
-          estado: item.Estado || 'Publicada',
+          estado: (VALID_OPPORTUNITY_STATES as readonly string[]).includes(item.Estado || '')
+            ? (item.Estado as Oportunidad['estado'])
+            : 'Publicada',
           cronograma: [
             { hito: 'Publicación de bases', fecha: item.FechaPublicacion?.replace('T', ' ').slice(0, 16) || 'No informado' },
             { hito: 'Cierre de ofertas', fecha: item.FechaCierre?.replace('T', ' ').slice(0, 16) || 'No informado' }
@@ -593,16 +623,17 @@ export default function Home() {
             { nombre: `Ver Ficha Oficial en Mercado Público (${item.CodigoExterno || cleanCode})`, tipo: 'link', tamanho: `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${item.CodigoExterno || cleanCode}` }
           ],
           items: item.Items?.Listado?.length
-            ? item.Items.Listado.map((it: any, idx: number) => ({
+            ? item.Items.Listado.map((it: MPApiItemDetalle, idx: number) => ({
                 sku: `ITEM-${it.Correlativo || idx + 1}`,
                 producto: it.Descripcion || it.NombreProducto || title,
                 cantidad: it.Cantidad || 1,
                 precioUnitario: it.PrecioUnitario || 0
               }))
             : [{ sku: 'ITEM-1', producto: title, cantidad: 1, precioUnitario: montoReal }],
-          criteriosEvaluacion: [
-            { aspecto: 'Precio Ofertado', ponderacion: 100, descripcion: 'Menor costo' }
-          ],
+          // Mercado Público no expone las ponderaciones reales de evaluación vía
+          // API — dejar vacío en vez de inventar un criterio (misma regla ya
+          // aplicada en scripts/sync_mercadopublico.py).
+          criteriosEvaluacion: [],
           preguntas: [],
           comentarios: [],
           competidoresPropuestos: []
@@ -647,7 +678,7 @@ export default function Home() {
       }
 
       alert(`No se encontró la licitación o compra ágil ${cleanCode} en Mercado Público.`);
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
       // Try local fallback as last resort before alerting error
       const fallbackMock = mockOportunidades.find(
@@ -665,7 +696,8 @@ export default function Home() {
         return;
       }
 
-      alert(`Error al buscar licitación: ${err.message || err}`);
+      const msg = err instanceof Error ? err.message : String(err);
+      alert(`Error al buscar licitación: ${msg}`);
     }
   };
 

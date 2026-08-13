@@ -47,7 +47,7 @@ def load_json(path):
 
 def check_health():
     alertas = []
-    ahora = datetime.datetime.now()
+    ahora = datetime.datetime.now(datetime.timezone.utc)
     print(f"[{ahora.isoformat()}] BidCoop — Verificación de salud")
 
     if not os.path.isfile(META_FILE):
@@ -62,6 +62,8 @@ def check_health():
         alertas.append("[ALERT] No hay sincronización exitosa registrada.")
     else:
         ultima_sync = datetime.datetime.fromisoformat(ultima_sync_str)
+        if ultima_sync.tzinfo is None:
+            ultima_sync = ultima_sync.replace(tzinfo=datetime.timezone.utc)
         horas = (ahora - ultima_sync).total_seconds() / 3600
         if horas > MAX_HORAS_SIN_SYNC:
             alertas.append(f"[ALERT] Última sync exitosa hace {horas:.1f} horas (máximo: {MAX_HORAS_SIN_SYNC}h). Posible falla del cron.")

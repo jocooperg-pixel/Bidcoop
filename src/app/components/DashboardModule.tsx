@@ -972,7 +972,7 @@ export default function DashboardModule({
                     <option value="Atacama">Atacama</option>
                     <option value="Coquimbo">Coquimbo</option>
                     <option value="Valparaíso">Valparaíso</option>
-                    <option value="O'Higgins">O'Higgins</option>
+                    <option value="O'Higgins">O&apos;Higgins</option>
                     <option value="Maule">Maule</option>
                     <option value="Ñuble">Ñuble</option>
                     <option value="Biobío">Biobío</option>
@@ -1124,7 +1124,7 @@ export default function DashboardModule({
               />
               <select
                 value={inviteRole}
-                onChange={(e: any) => setInviteRole(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setInviteRole(e.target.value as 'Admin' | 'Gestor' | 'Lector')}
                 className="text-[10px] p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-blue-500 outline-none text-slate-900 dark:text-slate-100"
               >
                 <option value="Admin">Admin</option>

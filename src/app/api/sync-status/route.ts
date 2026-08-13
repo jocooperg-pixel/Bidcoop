@@ -30,20 +30,48 @@ export async function GET() {
     const raw = fs.readFileSync(metaPath, 'utf-8');
     const meta = JSON.parse(raw);
 
-    // Calcular tiempo desde última sync exitosa
+    // Calcular tiempo desde última sync exitosa en minutos y horas
     let horasDesdeUltimaSync: number | null = null;
+    let minutosDesdeUltimaSync: number | null = null;
     if (meta.ultimaSincronizacionExitosa) {
       const lastSync = new Date(meta.ultimaSincronizacionExitosa);
-      horasDesdeUltimaSync = Math.round((Date.now() - lastSync.getTime()) / 1000 / 60 / 60);
+      const diffMs = Date.now() - lastSync.getTime();
+      minutosDesdeUltimaSync = Math.max(0, Math.floor(diffMs / 60000));
+      horasDesdeUltimaSync = parseFloat((diffMs / 3600000).toFixed(1));
     }
 
-    // Verificar si la sync está atrasada (más de 8 horas sin actualizar)
-    const syncAtrasada = horasDesdeUltimaSync !== null && horasDesdeUltimaSync > 8;
+    // Determinar estado de salud del sistema según las reglas de Bidcoop
+    let estadoSalud: '🟢 OPERATIVO' | '🟡 CON PROBLEMAS' | '🔴 SIN ACTUALIZACIÓN' = '🟢 OPERATIVO';
+    let detalleSalud = 'Sincronización en régimen normal cada 3 horas (24/7).';
+
+    if (horasDesdeUltimaSync === null || horasDesdeUltimaSync > 6) {
+      estadoSalud = '🔴 SIN ACTUALIZACIÓN';
+      detalleSalud = `Alerta: Más de ${horasDesdeUltimaSync || 'N/D'} horas sin sincronización exitosa. API de Mercado Público requiere revisión.`;
+    } else if (horasDesdeUltimaSync > 3.5 || meta.errores?.length > 0) {
+      estadoSalud = '🟡 CON PROBLEMAS';
+      detalleSalud = 'Advertencia: Reintentos de sincronización ejecutados o ligera demora en la API oficial.';
+    }
+
+    // Calcular próxima sincronización estimada (+3 horas)
+    let proximaSincronizacion: string | null = null;
+    if (meta.ultimaSincronizacionExitosa) {
+      const nextSyncDate = new Date(new Date(meta.ultimaSincronizacionExitosa).getTime() + 3 * 3600000);
+      proximaSincronizacion = nextSyncDate.toISOString();
+    }
+
+    const fechaHoraChile = new Date().toLocaleString('es-CL', { timeZone: 'America/Santiago' });
 
     return NextResponse.json({
       ...meta,
+      estadoSalud,
+      detalleSalud,
+      fuenteOficial: 'Mercado Público / ChileCompra',
+      frecuenciaConfigurada: 'Cada 3 horas (24/7)',
+      minutosDesdeUltimaSync,
       horasDesdeUltimaSync,
-      syncAtrasada,
+      proximaSincronizacion,
+      fechaHoraChile,
+      syncAtrasada: horasDesdeUltimaSync !== null && horasDesdeUltimaSync > 3.5,
       timestampConsulta: new Date().toISOString()
     });
 

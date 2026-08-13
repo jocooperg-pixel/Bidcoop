@@ -41,7 +41,6 @@ GROUND_TRUTH_PROCESSES = {
 }
 
 # CATALOG DEFINITIONS
-CATALOG_INDER = ["papel higiénico", "toalla de papel", "cloro gel", "amonio cuaternario", "alcohol gel", "detergente líquido", "desinfectante", "lavaloza", "limpiador de pisos", "cera autobrillo", "suavizante", "jabón gel", "dispensador", "mopa", "escobillón", "guantes nitrilo"]
 CATALOG_AMINORTE = ["resma papel carta", "resma papel oficio", "archivador lomo ancho", "carpeta nepaco", "separadores 1-12", "bolígrafo pasta 0.7mm", "destacadores", "corchetera escritorio", "clips mariposa", "block notas adhesivas", "tóner hp laserjet", "cartucho tinta", "mouse óptico usb", "teclado usb", "cable hdmi", "pendrive usb 3.0", "ampolleta led", "pintura esmalte"]
 CATALOG_VMOCCS = ["silla ergonómica ejecutiva", "silla operativa malla", "silla visita trineo", "escritorio modular 18mm", "mesa de reunión", "estante librero 5 repisas", "cajonera rodante 3 cajones", "archivo metálico kardex", "locker metálico", "panel divisorio acústico"]
 
@@ -81,15 +80,11 @@ def generate_data():
         num2 = 10 + (i % 80)
         code = f"{num1}-{num2}-COT26"
         
-        comp = "Inder-Roll" if (i % 3 == 1) else ("Aminorte" if (i % 3 == 2) else "V-MOCCS")
+        comp = "Aminorte" if (i % 2 == 0) else "V-MOCCS"
         
-        if comp == "Inder-Roll":
-            item_name = CATALOG_INDER[i % len(CATALOG_INDER)]
-            rubro = "Aseo e Higiene"
-            title = f"Adquisición Compra Ágil de {item_name.title()} Institucional"
-        elif comp == "V-MOCCS":
+        if comp == "V-MOCCS":
             item_name = CATALOG_VMOCCS[i % len(CATALOG_VMOCCS)]
-            rubro = "Artículos de Escritorio y Oficina"
+            rubro = "Mobiliario y Equipamiento de Oficina"
             title = f"Compra Ágil de {item_name.title()} para Oficinas Públicas"
         else:
             item_name = CATALOG_AMINORTE[i % len(CATALOG_AMINORTE)]
@@ -159,10 +154,10 @@ def generate_data():
 
     # 2. GENERATE 120 LICITACIONES PÚBLICAS
     for i in range(1, 121):
-        comp = "Inder-Roll" if (i % 3 == 1) else ("Aminorte" if (i % 3 == 2) else "V-MOCCS")
-        if comp == "Inder-Roll":
-            item_name = CATALOG_INDER[i % len(CATALOG_INDER)]
-            rubro = "Aseo e Higiene"
+        comp = "Aminorte" if (i % 2 == 0) else "V-MOCCS"
+        if comp == "V-MOCCS":
+            item_name = CATALOG_VMOCCS[i % len(CATALOG_VMOCCS)]
+            rubro = "Mobiliario y Equipamiento de Oficina"
             title = f"Licitación Pública de Provisión Anual de {item_name.title()}"
         elif comp == "V-MOCCS":
             item_name = CATALOG_VMOCCS[i % len(CATALOG_VMOCCS)]
@@ -224,10 +219,10 @@ def generate_data():
 
     # 3. GENERATE 50 CONVENIO MARCO
     for i in range(1, 51):
-        comp = "Inder-Roll" if (i % 3 == 1) else ("Aminorte" if (i % 3 == 2) else "V-MOCCS")
-        if comp == "Inder-Roll":
-            item_name = CATALOG_INDER[i % len(CATALOG_INDER)]
-            rubro = "Aseo e Higiene"
+        comp = "Aminorte" if (i % 2 == 0) else "V-MOCCS"
+        if comp == "V-MOCCS":
+            item_name = CATALOG_VMOCCS[i % len(CATALOG_VMOCCS)]
+            rubro = "Mobiliario y Equipamiento de Oficina"
             cm_name = "Convenio Marco de Aseo, Higiene y Desinfección Institucional"
         elif comp == "V-MOCCS":
             item_name = CATALOG_VMOCCS[i % len(CATALOG_VMOCCS)]
@@ -285,10 +280,10 @@ def generate_data():
 
     # 4. GENERATE 20 GRANDES COMPRAS
     for i in range(1, 21):
-        comp = "Inder-Roll" if (i % 3 == 1) else ("Aminorte" if (i % 3 == 2) else "V-MOCCS")
-        if comp == "Inder-Roll":
-            item_name = CATALOG_INDER[i % len(CATALOG_INDER)]
-            rubro = "Aseo e Higiene"
+        comp = "Aminorte" if (i % 2 == 0) else "V-MOCCS"
+        if comp == "V-MOCCS":
+            item_name = CATALOG_VMOCCS[i % len(CATALOG_VMOCCS)]
+            rubro = "Mobiliario y Equipamiento de Oficina"
         elif comp == "V-MOCCS":
             item_name = CATALOG_VMOCCS[i % len(CATALOG_VMOCCS)]
             rubro = "Artículos de Escritorio y Oficina"
@@ -398,7 +393,7 @@ def generate_data():
             "oportunidadCodigo": "1004-14-COT26",
             "oportunidadTitulo": "Adquisición Compra Ágil de Alcohol Gel Institucional",
             "organismo": "MINISTERIO DE EDUCACIÓN (MINEDUC)",
-            "empresaMatch": "Inder-Roll",
+            "empresaMatch": "Aminorte",
             "modalidad": "Compra Ágil",
             "responsable": "Carlos Valenzuela",
             "montoOferta": 1950000,
@@ -440,21 +435,6 @@ def generate_data():
             "itemsOfertados": [{"sku": "ITEM-1", "precioOferta": 2980000, "cantidad": 1}]
         },
         {
-            "id": "post-e3",
-            "oportunidadId": "op-ca-8",
-            "oportunidadCodigo": "1008-18-COT26",
-            "oportunidadTitulo": "Adquisición de Jabón Gel y Dispensadores Hospitalarios",
-            "organismo": "HOSPITAL DR. GUSTAVO FRICKE VIÑA DEL MAR",
-            "empresaMatch": "Inder-Roll",
-            "modalidad": "Compra Ágil",
-            "responsable": "Carlos Valenzuela",
-            "montoOferta": 3200000,
-            "fechaActualizacion": "2026-07-25",
-            "estado": "Enviada",
-            "documentosAdjuntos": ["Oferta_Fricke_InderRoll.pdf"],
-            "itemsOfertados": [{"sku": "ITEM-1", "precioOferta": 3200000, "cantidad": 1}]
-        },
-        {
             "id": "post-e4",
             "oportunidadId": "op-ca-9",
             "oportunidadCodigo": "1009-19-COT26",
@@ -477,13 +457,13 @@ def generate_data():
             "oportunidadCodigo": "2002-12-LE26",
             "oportunidadTitulo": "Licitación Pública Aseo e Higiene Institucional Anual",
             "organismo": "CARABINEROS DE CHILE - DIRECCIÓN DE LOGÍSTICA",
-            "empresaMatch": "Inder-Roll",
+            "empresaMatch": "Aminorte",
             "modalidad": "Licitación",
             "responsable": "Carlos Valenzuela",
             "montoOferta": 42500000,
             "fechaActualizacion": "2026-07-25",
             "estado": "En Evaluación",
-            "documentosAdjuntos": ["Propuesta_Tecnica_InderRoll.pdf"],
+            "documentosAdjuntos": ["Propuesta_Tecnica_Aminorte.pdf"],
             "itemsOfertados": [{"sku": "ITEM-1", "precioOferta": 42500000, "cantidad": 1}]
         },
         {
@@ -539,13 +519,13 @@ def generate_data():
             "oportunidadCodigo": "1005-15-COT26",
             "oportunidadTitulo": "Adquisición de Insumos de Aseo y Desinfección Hospitalaria",
             "organismo": "HOSPITAL REGIONAL DR. JUAN NOÉ ARICA",
-            "empresaMatch": "Inder-Roll",
+            "empresaMatch": "Aminorte",
             "modalidad": "Compra Ágil",
             "responsable": "Carlos Valenzuela",
             "montoOferta": 3450000,
             "fechaActualizacion": "2026-07-24",
             "estado": "Adjudicada",
-            "documentosAdjuntos": ["Oferta_Economica_InderRoll.pdf"],
+            "documentosAdjuntos": ["Oferta_Economica_Aminorte.pdf"],
             "itemsOfertados": [{"sku": "ITEM-1", "precioOferta": 3450000, "cantidad": 1}]
         },
         {
@@ -554,13 +534,13 @@ def generate_data():
             "oportunidadCodigo": "1022-30-COT26",
             "oportunidadTitulo": "Suministro de Papel Higiénico Jumbo e Interfoliado",
             "organismo": "JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)",
-            "empresaMatch": "Inder-Roll",
+            "empresaMatch": "Aminorte",
             "modalidad": "Compra Ágil",
             "responsable": "Carlos Valenzuela",
             "montoOferta": 2150000,
             "fechaActualizacion": "2026-07-23",
             "estado": "Adjudicada",
-            "documentosAdjuntos": ["Oferta_InderRoll_Junji.pdf"],
+            "documentosAdjuntos": ["Oferta_Aminorte_Junji.pdf"],
             "itemsOfertados": [{"sku": "ITEM-1", "precioOferta": 2150000, "cantidad": 1}]
         },
         {
@@ -610,7 +590,7 @@ export const mockMiembrosEquipo: MiembroEquipo[] = [
 ];
 
 export const mockNotificaciones: Notificacion[] = [
-  {{ id: 'n-1', titulo: 'Oportunidad de Alto Match', descripcion: 'Nueva Compra Ágil de Insumos de Aseo con 98% de Match para Inder-Roll.', fecha: 'Hace 10 min', leida: false, tipo: 'info' }},
+  {{ id: 'n-1', titulo: 'Oportunidad de Alto Match', descripcion: 'Nueva Compra Ágil de Insumos de Aseo con 98% de Match para Aminorte.', fecha: 'Hace 10 min', leida: false, tipo: 'info' }},
   {{ id: 'n-2', titulo: 'Alerta de Cierre', descripcion: 'Quedan 2 horas para el cierre de cotización en SERVIU RM.', fecha: 'Hace 1 hora', leida: false, tipo: 'alerta' }}
 ];
 

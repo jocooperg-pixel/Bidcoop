@@ -68,18 +68,7 @@ GROUND_TRUTH_PROCESSES = {
     }
 }
 
-CATALOG_INDER_ROLL = [
-    "papel higienico", "papel higiénico", "toalla de papel", "toalla papel", "interfoliada",
-    "jumbo", "hoja simple", "hoja doble", "rollo 300m", "rollo 200m", "inder-roll", "tork",
-    "cloro", "cloro gel", "cloro concentrado", "desinfectante", "amonio cuaternario",
-    "alcohol gel", "detergente", "detergente líquido", "desengrasante", "lavaloza",
-    "limpiador de pisos", "limpiador superficies", "lustramuebles", "cera", "cera autobrillo",
-    "suavizante", "quitamanchas", "jabón", "jabon", "jabón líquido", "dispensador",
-    "bolsa basura", "escoba", "escobillón", "mopa", "paño microfibra", "guante nitrilo", "mascarilla", "bolsa",
-    "aseo", "higiene", "limpieza", "desechable", "desechables", "servilleta", "servilletas",
-    "sabana", "sábanas", "sabanilla", "sabanillas", "cafetería", "cafeteria", "alimentos", "snack",
-    "vasos", "platos", "mascarillas", "guantes", "funda", "fundas", "albergue", "insumos hospitalarios", "esterilización"
-]
+
 
 CATALOG_VMOCCS = [
     "silla", "silla ejecutiva", "silla operativa", "silla ergonómica", "silla visita",
@@ -180,26 +169,20 @@ def infer_chilean_region(inst, unidad="", title=""):
 
 def calculate_smart_catalog_match(title, desc="", source_hint=""):
     full_text = f"{title} {desc}".lower()
-    match_inder = sum(1 for k in CATALOG_INDER_ROLL if k in full_text)
     match_vmoccs = sum(1 for k in CATALOG_VMOCCS if k in full_text)
     match_aminorte = sum(1 for k in CATALOG_AMINORTE if k in full_text)
     
-    if match_inder > 0 and match_inder >= match_vmoccs and match_inder >= match_aminorte:
-        score = min(99, 85 + match_inder * 5)
-        return "Inder-Roll", "Aseo e Higiene", score
-    elif match_vmoccs > 0 and match_vmoccs >= match_aminorte:
+    if match_vmoccs > 0 and match_vmoccs >= match_aminorte:
         score = min(99, 85 + match_vmoccs * 6)
-        return "V-MOCCS", "Artículos de Escritorio y Oficina", score
+        return "V-MOCCS", "Mobiliario y Equipamiento de Oficina", score
     elif match_aminorte > 0:
         score = min(99, 82 + match_aminorte * 5)
         is_tech = any(k in full_text for k in ["tóner", "toner", "impresora", "mouse", "teclado", "usb", "hdmi", "corte laser", "aire acondicionado"])
         rubro = "Tecnología y Hardware" if is_tech else "Artículos de Escritorio y Oficina"
         return "Aminorte", rubro, score
     else:
-        if source_hint == "inder-roll":
-            return "Inder-Roll", "Aseo e Higiene", 85
-        elif any(k in full_text for k in ["silla", "mueble", "escritorio"]):
-            return "V-MOCCS", "Artículos de Escritorio y Oficina", 85
+        if any(k in full_text for k in ["silla", "mueble", "escritorio"]):
+            return "V-MOCCS", "Mobiliario y Equipamiento de Oficina", 85
         else:
             return "Aminorte", "Artículos de Escritorio y Oficina", 82
 
@@ -239,8 +222,7 @@ def find_excel_files():
     clean_files = [f for f in all_files if not os.path.basename(f).startswith("~$")]
     file_info = []
     for filepath in clean_files:
-        basename = os.path.basename(filepath)
-        source_hint = "inder-roll" if ("(1)" in basename or "inder" in basename.lower()) else "v-moccs-aminorte"
+        source_hint = "v-moccs-aminorte"
         file_info.append({"path": filepath, "source": source_hint, "name": basename})
     return file_info
 
@@ -503,14 +485,14 @@ export const mockPostulaciones: Postulacion[] = [
     itemsOfertados: [],
     fechaActualizacion: "{TODAY_STR}",
     estado: "Adjudicada",
-    empresaMatch: "Inder-Roll"
+    empresaMatch: "Aminorte"
   }}
 ];
 
 export const mockOrdenesCompra: OrdenCompra[] = [];
 
 export const mockTeamMembers: MiembroEquipo[] = [
-  {{ id: "user-1", nombre: "Jonathan Cooper", email: "jcooper@inder-roll.cl", rol: "Admin", avatar: "JC", estado: "Activo" }},
+  {{ id: "user-1", nombre: "Jonathan Cooper", email: "jcooper@bidcoop.cl", rol: "Admin", avatar: "JC", estado: "Activo" }},
   {{ id: "user-2", nombre: "Manuel Viguera", email: "mviguera@aminorte.cl", rol: "Gestor", avatar: "MV", estado: "Activo" }},
   {{ id: "user-3", nombre: "Jorge Alvarado", email: "jorge.alvarado@discoverymerch.cl", rol: "Gestor", avatar: "JA", estado: "Activo" }},
   {{ id: "user-4", nombre: "José San Martín", email: "jsanmartin@aminorte.cl", rol: "Gestor", avatar: "JS", estado: "Activo" }}

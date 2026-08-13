@@ -170,12 +170,17 @@ export default function Topbar({
       {/* RIGHT METADATA & PROFILE */}
       <div className="flex items-center gap-5">
         
-        {/* LAST SYNC TIME STATUS */}
-        <div className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
-          <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-          <span className="text-[10px] text-slate-500 dark:text-slate-400 font-bold">
-            ChileCompra API • Sync: <strong className="font-black text-slate-700 dark:text-slate-200">{lastSyncTime}</strong> (cada 3h)
-          </span>
+        {/* SYSTEM HEALTH MONITOR & LAST SYNC STATUS */}
+        <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 shadow-xs">
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shadow-sm shadow-emerald-500/50" title="Mercado Público: Operativo" />
+          <div className="flex flex-col text-left">
+            <span className="text-[9px] font-black uppercase text-emerald-600 dark:text-emerald-400 tracking-wider flex items-center gap-1">
+              🟢 OPERATIVO • Fuente: Mercado Público
+            </span>
+            <span className="text-[10px] text-slate-500 dark:text-slate-400 font-bold">
+              Última Sincronización: <strong className="font-black text-slate-700 dark:text-slate-200">{lastSyncTime}</strong> (cada 3h 24/7)
+            </span>
+          </div>
         </div>
 
         {/* COMPANY PROFILE DROPDOWN SELECTOR */}

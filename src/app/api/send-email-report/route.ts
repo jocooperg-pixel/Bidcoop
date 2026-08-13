@@ -20,10 +20,6 @@ export async function POST(request: Request) {
     const today = new Date().toISOString().split('T')[0];
 
     // 1. RECIPIENT LISTS STRICTLY SEGREGATED BY BUSINESS DIRECTIVE
-    const INDER_ROLL_EMAILS = [
-      'jonathan.cooper.g@gmail.com'
-    ];
-
     const AMINORTE_VMOCCS_SUR_CENTRO_EMAILS = [
       'mviguera@aminorte.cl',
       'jonathan.cooper.g@gmail.com'
