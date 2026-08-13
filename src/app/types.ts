@@ -34,7 +34,11 @@ export interface Item {
   unidadMedida?: string;
 }
 
-export type OpportunityState = 'Publicada' | 'Cerrada' | 'Proveedor seleccionado' | 'Cancelada' | 'Adjudicada' | 'Desierta' | 'En Evaluación' | 'Postulada';
+// 'Vencida' es distinto de 'Cerrada': se asigna automáticamente en el
+// frontend (ver isVencida en utils/chileTime.ts) cuando fechaCierre ya pasó
+// en hora de Chile y Mercado Público todavía no publicó una actualización
+// oficial de estado — evita mostrar como activa una oportunidad vencida.
+export type OpportunityState = 'Publicada' | 'Cerrada' | 'Proveedor seleccionado' | 'Cancelada' | 'Adjudicada' | 'Desierta' | 'En Evaluación' | 'Postulada' | 'Vencida';
 
 export interface Oportunidad {
   id: string;

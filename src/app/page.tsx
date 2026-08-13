@@ -15,6 +15,7 @@ import LoginScreen from './components/LoginScreen';
 
 import { Oportunidad, Postulacion, MiembroEquipo, Notificacion, VistaGuardada, Empresa } from './types';
 import { calculateSmartCatalogMatch } from './utils/smartMatchEngine';
+import { isVencida } from './utils/chileTime';
 import {
   mockOportunidades,
   mockMiembrosEquipo,
@@ -101,12 +102,6 @@ export default function Home() {
     });
 
   const [oportunidades, setOportunidades] = useState<Oportunidad[]>(() => {
-    const d = new Date();
-    const year = d.getFullYear();
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    const todayStr = `${year}-${month}-${day}`;
-
     // Reconstruir qué oportunidades ya fueron postuladas (según la caché local,
     // de entrada — se corrige apenas llega la respuesta real del servidor),
     // ya que mockOportunidades siempre trae el estado real de Mercado Público,
@@ -117,12 +112,37 @@ export default function Home() {
       if (postuladasIds.has(o.id)) {
         return { ...o, estado: 'Postulada' };
       }
-      if (o.estado === 'Publicada' && o.fechaCierre && o.fechaCierre < todayStr) {
-        return { ...o, estado: 'Cerrada' };
+      if (o.estado === 'Publicada' && isVencida(o.fechaCierre)) {
+        return { ...o, estado: 'Vencida' };
       }
       return o;
     });
   });
+
+  // El vencimiento no puede depender solo del cálculo al montar: una pestaña
+  // abierta durante horas debe reflejar "Vencida" apenas pasa la hora de
+  // cierre real (America/Santiago), no recién al recargar la página. Se
+  // revisa cada minuto — barato, y evita mostrar como activa una oportunidad
+  // que ya cerró (queja explícita del usuario: "vencidas que aparecen
+  // activas").
+  useEffect(() => {
+    const marcarVencidas = () => {
+      setOportunidades(prev => {
+        let changed = false;
+        const next = prev.map(o => {
+          if (o.estado === 'Publicada' && isVencida(o.fechaCierre)) {
+            changed = true;
+            return { ...o, estado: 'Vencida' as const };
+          }
+          return o;
+        });
+        return changed ? next : prev;
+      });
+    };
+    marcarVencidas();
+    const interval = setInterval(marcarVencidas, 60 * 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Cargar la fuente de verdad real (servidor) apenas monta — sobrescribe la
   // caché local con lo que realmente hay guardado, sin importar desde qué

@@ -1760,6 +1760,7 @@ export default function SearchModule({
                   selectedOpportunity.estado === 'Cancelada' ? 'bg-red-100 text-red-700 dark:bg-red-950/30 dark:text-red-400' :
                   selectedOpportunity.estado === 'Adjudicada' ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400' :
                   selectedOpportunity.estado === 'Desierta' ? 'bg-purple-100 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400' :
+                  selectedOpportunity.estado === 'Vencida' ? 'bg-red-50 text-red-600 dark:bg-red-950/20 dark:text-red-400' :
                   'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-400'
                 }`}>
                   {selectedOpportunity.estado}
@@ -1770,6 +1771,7 @@ export default function SearchModule({
                    selectedOpportunity.estado === 'Cancelada' ? 'Proceso cancelado por el comprador' :
                    selectedOpportunity.estado === 'Adjudicada' ? 'Proceso finalizado y contratado' :
                    selectedOpportunity.estado === 'Desierta' ? 'Sin ofertas válidas presentadas' :
+                   selectedOpportunity.estado === 'Vencida' ? 'Cierre pasado — sin actualización oficial de resultado aún' :
                    'Recepción de ofertas finalizada'}
                 </span>
               </div>
@@ -2030,6 +2032,7 @@ export default function SearchModule({
                   <option value="Cancelada">Cancelada</option>
                   <option value="Adjudicada">Adjudicada</option>
                   <option value="Desierta">Desierta</option>
+                  <option value="Vencida">Vencida (cierre pasado, sin resultado oficial)</option>
                 </select>
               </div>
 
@@ -2256,6 +2259,8 @@ export default function SearchModule({
                                     ? 'bg-red-50 text-red-700 dark:bg-red-950/30 dark:text-red-400'
                                     : op.estado === 'Adjudicada'
                                     ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400'
+                                    : op.estado === 'Vencida'
+                                    ? 'bg-red-50 text-red-600 dark:bg-red-950/20 dark:text-red-400'
                                     : 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-450'
                                 }`}>
                                   {op.estado}
