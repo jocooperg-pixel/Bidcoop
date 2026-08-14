@@ -38,12 +38,38 @@ const CATALOG_AMINORTE = [
   { keyword: 'tóner', name: 'Tóner Compatible HP LaserJet (85A / 26A / 05A)' },
   { keyword: 'toner', name: 'Tóner Compatible HP LaserJet (85A / 26A / 05A)' },
   { keyword: 'tinta', name: 'Cartuchos de Tinta Impresora HP / Epson' },
+  { keyword: 'cartucho', name: 'Cartucho de Tinta/Tóner para Impresora' },
+  { keyword: 'impresora', name: 'Impresora Láser / Multifuncional' },
+  { keyword: 'multifuncional', name: 'Impresora Multifuncional Láser' },
+  { keyword: 'fotocopiadora', name: 'Fotocopiadora / Multifuncional' },
+  { keyword: 'librería', name: 'Artículos de Librería y Oficina' },
+  { keyword: 'libreria', name: 'Artículos de Librería y Oficina' },
+  { keyword: 'papelería', name: 'Artículos de Papelería y Oficina' },
+  { keyword: 'papeleria', name: 'Artículos de Papelería y Oficina' },
+  { keyword: 'computador', name: 'Computador de Escritorio / All in One' },
+  { keyword: 'notebook', name: 'Notebook / Laptop' },
+  { keyword: 'laptop', name: 'Notebook / Laptop' },
+  { keyword: 'tablet', name: 'Tablet' },
+  { keyword: 'servidor', name: 'Servidor' },
+  { keyword: 'monitor', name: 'Monitor de Computador' },
   { keyword: 'mouse', name: 'Mouse Óptico USB 1000 DPI Ambidiestro' },
   { keyword: 'teclado', name: 'Teclado USB Español Latino con Teclado Numérico' },
   { keyword: 'mouse pad', name: 'Mouse Pad Ergonómico con Apoyo Gel' },
   { keyword: 'cable hdmi', name: 'Cable HDMI 2.0 3m Malla' },
+  { keyword: 'disco duro', name: 'Disco Duro / SSD' },
+  { keyword: 'ssd', name: 'Disco de Estado Sólido (SSD)' },
   { keyword: 'pendrive', name: 'Pendrive USB 3.0 64GB Kingston / SanDisk' },
+  { keyword: 'proyector', name: 'Proyector' },
   { keyword: 'ampolleta', name: 'Ampolleta LED 12W E27 Luz Fría' },
+  { keyword: 'pantalla led', name: 'Pantalla / Televisor LED' },
+  { keyword: 'pantallas led', name: 'Pantalla / Televisor LED' },
+  { keyword: 'monitor led', name: 'Monitor LED' },
+  { keyword: 'televisor', name: 'Televisor LED' },
+  { keyword: 'televisor led', name: 'Televisor LED' },
+  { keyword: 'tv led', name: 'Televisor LED' },
+  { keyword: 'smart tv', name: 'Smart TV LED' },
+  { keyword: 'display led', name: 'Display / Panel LED' },
+  { keyword: 'panel led', name: 'Panel LED' },
   { keyword: 'huincha aisladora', name: 'Huincha Aisladora 18mm x 20m 3M' },
   { keyword: 'pintura', name: 'Pintura Esmalte al Agua Blanco Galón' }
 ];
@@ -109,7 +135,9 @@ export function calculateSmartCatalogMatch(op: {
   } else if (countAminorte > 0) {
     bestCompany = 'Aminorte';
     bestMatchedProducts = matchedAminorte;
-    const isTech = fullText.includes('tóner') || fullText.includes('toner') || fullText.includes('impresora') || fullText.includes('mouse') || fullText.includes('teclado') || fullText.includes('usb');
+    const isTech = fullText.includes('tóner') || fullText.includes('toner') || fullText.includes('impresora') || fullText.includes('mouse') || fullText.includes('teclado') || fullText.includes('usb') ||
+      fullText.includes('computador') || fullText.includes('notebook') || fullText.includes('laptop') || fullText.includes('monitor') ||
+      fullText.includes('servidor') || fullText.includes('pantalla') || fullText.includes('televisor') || fullText.includes('tv led') || fullText.includes('smart tv');
     rubroRecomendado = isTech ? 'Tecnología y Hardware' : 'Artículos de Escritorio y Oficina';
     bestScore = Math.min(99, 82 + countAminorte * 5);
   }

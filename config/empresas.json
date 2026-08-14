@@ -1,7 +1,7 @@
 {
   "_comentario": "Configuración centralizada de empresas para BidCoop. NO duplicar RUT, nombre ni keywords en scripts individuales.",
   "_version": "1.0.0",
-  "_ultimaModificacion": "2026-08-07",
+  "_ultimaModificacion": "2026-08-14",
   "empresas": [
     {
       "id": "aminorte",
@@ -17,7 +17,8 @@
         "saca corchete", "clip", "clip mariposa", "post-it", "nota adhesiva", "cinta adhesiva", "cinta embalaje", "tijera", "regla", "guillotina", "perforadora", "chinche", "útiles de oficina", "utiles de oficina", "artículos de oficina", "articulos de oficina", "artículos de escritorio", "articulos de escritorio", "artículos de librería", "articulos de libreria", "materiales de oficina", "insumos de oficina", "insumos de escritorio",
         "tóner", "toner", "tinta", "tintas", "cartucho", "cartuchos", "tambor", "drum", "insumos de impresión", "impresora", "impresoras", "multifuncional", "multifuncionales", "fotocopiadora", "fotocopiadoras", "plotter", "escáner", "escaner",
         "computador", "computadores", "computadora", "computadoras", "pc", "all in one", "notebook", "notebooks", "laptop", "laptops", "tablet", "servidor", "monitor", "monitores", "pantalla", "teclado", "mouse", "mouse pad", "audífono", "headset", "webcam", "cámara", "disco duro", "ssd", "pendrive", "usb", "memoria", "cable hdmi", "displayport", "vga", "adaptador", "dockstation", "hub usb", "ups", "respaldo de energía", "proyector", "router", "switch",
-        "ampolleta", "led", "huincha aisladora", "pintura", "esmalte al agua", "brocha", "aire acondicionado", "climatización"
+        "ampolleta", "led", "pantalla led", "pantallas led", "monitor led", "televisor", "televisor led", "tv led", "smart tv", "display led", "panel led", "letrero led", "señalética led", "videowall",
+        "huincha aisladora", "pintura", "esmalte al agua", "brocha", "aire acondicionado", "climatización"
       ],
       "rubros": ["Artículos de Escritorio y Oficina", "Tecnología y Hardware", "Servicios de Climatización y Maquinaria"]
     },
