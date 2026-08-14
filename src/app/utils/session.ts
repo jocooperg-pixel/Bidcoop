@@ -1,4 +1,5 @@
 import { SignJWT, jwtVerify } from 'jose';
+import type { NextRequest } from 'next/server';
 
 const COOKIE_NAME = 'bidcoop_session';
 const SESSION_DURATION_SECONDS = 60 * 60 * 12; // 12 horas
@@ -37,3 +38,13 @@ export async function verificarTokenSesion(token: string): Promise<SessionPayloa
 
 export const SESSION_COOKIE_NAME = COOKIE_NAME;
 export const SESSION_MAX_AGE = SESSION_DURATION_SECONDS;
+
+// Helper reusable para rutas API: el proxy (src/proxy.ts) ya garantiza que
+// solo llegan requests con cookie válida a estas rutas, pero cada ruta
+// vuelve a verificar (no confía en headers propagados) para poder leer el
+// payload y aplicar separación de datos por empresa/rol.
+export async function obtenerSesionDesdeRequest(req: NextRequest): Promise<SessionPayload | null> {
+  const token = req.cookies.get(SESSION_COOKIE_NAME)?.value;
+  if (!token) return null;
+  return verificarTokenSesion(token);
+}
