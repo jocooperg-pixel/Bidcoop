@@ -1,53 +1,53 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-13T21:49:55.909963+00:00",
-  "ultimoIntentoRealizado": "2026-08-13T21:49:55.909963+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-14T02:09:20.967679+00:00",
+  "ultimoIntentoRealizado": "2026-08-14T02:09:20.967679+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 540,
   "registrosConfirmados": 540,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 386,
-  "excluidosPrefiltroIrrelevante": 4233,
-  "excluidosSinDatosReales": 1,
+  "registrosConMontoReal": 388,
+  "excluidosPrefiltroIrrelevante": 4240,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 501,
   "comprasAgilesAudit": {
-    "total": 235,
+    "total": 234,
     "conMontoValido": 232,
-    "pctValidado": 98.7,
+    "pctValidado": 99.1,
     "stats": {
       "VALIDADO": 3,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 229,
-      "MONTO_NO_ENCONTRADO": 3
+      "MONTO_NO_ENCONTRADO": 2
     },
     "montoOriginalSum": 325929312,
     "montoFinalSum": 325929312,
     "montoRecuperadoSum": 0
   },
   "categorias": {
-    "licitaciones": 301,
-    "comprasAgiles": 235,
+    "licitaciones": 302,
+    "comprasAgiles": 234,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 65,
+    "LP": 66,
     "L1": 19,
     "LE": 178,
     "LR": 30,
     "I2": 3,
     "B2": 1,
-    "CO": 6,
+    "CO": 5,
     "LS": 2,
     "E2": 3,
     "O1": 4,
     "COT": 229
   },
   "matchPorEmpresa": {
-    "Aminorte": 461,
-    "V-MOCCS": 79
+    "Aminorte": 460,
+    "V-MOCCS": 80
   },
   "cambios": {
     "comparadoContra": "2026-08-13T15:57:09.789931+00:00",
@@ -269,7 +269,7 @@
         "monto": 180000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-08-13"
+        "fechaCierre": "2026-08-14"
       },
       {
         "codigo": "1305544-48-B226",
@@ -351,6 +351,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-24T15:00:00"
+      },
+      {
+        "codigo": "1057536-96-LP26",
+        "titulo": "COMPUTADOR - CESFAM FRUTILLAR",
+        "organismo": "SERVICIO SALUD DEL RELONCAVI",
+        "monto": 94600000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-08-20T16:00:00"
       },
       {
         "codigo": "2563-36-LP26",
@@ -585,21 +594,12 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-18T15:30:00"
-      },
-      {
-        "codigo": "557639-64-LE26",
-        "titulo": "Pantallas y Proyectores Establecimientos Cormun",
-        "organismo": "CORP MUNICIPAL DE SERVICIOS PUBLICOS TRASPASADOS DE RANCAGUA",
-        "monto": 51075098,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-08-17T15:00:00"
       }
     ],
     "modificados": [],
     "cerrados": []
   },
-  "tiempoEjecucionSegundos": 963.1,
+  "tiempoEjecucionSegundos": 17.4,
   "errores": [],
   "advertencias": []
 }
