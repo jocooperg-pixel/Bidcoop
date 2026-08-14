@@ -9,6 +9,7 @@ import BusinessModule from './components/BusinessModule';
 import AnalyticsModule from './components/AnalyticsModule';
 import ConfigModule from './components/ConfigModule';
 import ProvidersModule from './components/ProvidersModule';
+import BuyersModule from './components/BuyersModule';
 import AssistantWidget from './components/AssistantWidget';
 import ReportsNotificationsModule from './components/ReportsNotificationsModule';
 import LoginScreen from './components/LoginScreen';
@@ -849,6 +850,10 @@ export default function Home() {
               postulaciones={filteredPostulaciones}
               onNavigateView={handleNavigateView}
             />
+          )}
+
+          {activeModule === 'buyers' && (
+            <BuyersModule />
           )}
 
           {activeModule === 'providers' && (

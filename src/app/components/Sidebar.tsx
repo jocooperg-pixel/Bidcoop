@@ -106,6 +106,18 @@ export default function Sidebar({
       ]
     },
     {
+      id: 'buyers',
+      label: 'Compradores',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2M5 21H3m8-14h.01M11 11h.01M11 15h.01M15 7h.01M15 11h.01M15 15h.01M7 7h.01M7 11h.01M7 15h.01" />
+        </svg>
+      ),
+      subSections: [
+        { id: 'directorio', label: 'Directorio' }
+      ]
+    },
+    {
       id: 'providers',
       label: 'Proveedores',
       icon: (
