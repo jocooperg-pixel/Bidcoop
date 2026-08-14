@@ -734,7 +734,11 @@ export default function Home() {
   }
 
   if (!isAuthenticated) {
-    return <LoginScreen onLoginSuccess={() => setIsAuthenticated(true)} />;
+    // Reload completo (no solo setIsAuthenticated) para que todos los
+    // efectos que hacen fetch a APIs protegidas (sync-status, postulaciones,
+    // watchlist, etc.) se ejecuten de nuevo con la cookie de sesión ya
+    // presente — esos efectos corren una sola vez al montar el componente.
+    return <LoginScreen onLoginSuccess={() => window.location.reload()} />;
   }
 
   return (

@@ -54,7 +54,7 @@ export default function DbStatusPage() {
   }, [isAuthenticated]);
 
   if (!checkedAuth) return null;
-  if (!isAuthenticated) return <LoginScreen onLoginSuccess={() => setIsAuthenticated(true)} />;
+  if (!isAuthenticated) return <LoginScreen onLoginSuccess={() => window.location.reload()} />;
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-8 font-sans">
