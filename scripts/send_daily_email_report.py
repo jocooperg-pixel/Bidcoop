@@ -2,9 +2,9 @@
 """
 BidCoop — Envío de Reportes por Correo Electrónico (Estrictamente 2 Envíos)
 1) Correo Regiones: Compras Ágiles activas fuera de la RM (I a XVI regiones)
-   Destinatarios BCC: mviguera@aminorte.cl, jonathan.cooper.g@gmail.com
+   Destinatarios BCC: mviguera@aminorte.cl + REPORT_RECIPIENT_EMAIL
 2) Correo Región Metropolitana: Compras Ágiles activas de la RM
-   Destinatarios BCC: mviguera@aminorte.cl, jonathan.cooper.g@gmail.com
+   Destinatarios BCC: mviguera@aminorte.cl + REPORT_RECIPIENT_EMAIL
 """
 
 import os
@@ -18,23 +18,19 @@ import datetime
 import csv
 import io
 
-# Nunca hardcodear una credencial real aquí — este script vive en un
-# repositorio público. Debe correr con SMTP_USER/SMTP_PASS como variables
-# de entorno reales (ej. `SMTP_USER=... SMTP_PASS=... python3 scripts/...`).
+# Nunca hardcodear una credencial ni un correo personal real aquí — este
+# script vive en un repositorio público. Debe correr con SMTP_USER/SMTP_PASS/
+# REPORT_RECIPIENT_EMAIL como variables de entorno reales
+# (ej. `SMTP_USER=... SMTP_PASS=... REPORT_RECIPIENT_EMAIL=... python3 scripts/...`).
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 465
 SMTP_USER = os.environ.get("SMTP_USER", "")
 SMTP_PASS = os.environ.get("SMTP_PASS", "")
+REPORT_RECIPIENT_EMAIL = os.environ.get("REPORT_RECIPIENT_EMAIL", "")
 
-EMAILS_REGIONES = [
-    "mviguera@aminorte.cl",
-    "jonathan.cooper.g@gmail.com"
-]
+EMAILS_REGIONES = [e for e in ["mviguera@aminorte.cl", REPORT_RECIPIENT_EMAIL] if e]
 
-EMAILS_RM = [
-    "mviguera@aminorte.cl",
-    "jonathan.cooper.g@gmail.com"
-]
+EMAILS_RM = [e for e in ["mviguera@aminorte.cl", REPORT_RECIPIENT_EMAIL] if e]
 
 MOCK_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src/app/mockData.ts")
 
@@ -270,6 +266,9 @@ def dispatch_email(subject, recipients, ops, csv_filename):
 def main():
     if not SMTP_USER or not SMTP_PASS:
         print("[ERROR] Faltan SMTP_USER/SMTP_PASS como variables de entorno reales. No se enviará nada.")
+        return
+    if not REPORT_RECIPIENT_EMAIL:
+        print("[ERROR] Falta REPORT_RECIPIENT_EMAIL como variable de entorno real. No se enviará nada.")
         return
     today = datetime.date.today().isoformat()
     print(f"[{datetime.datetime.now().isoformat()}] Cargando oportunidades desde mockData.ts...")

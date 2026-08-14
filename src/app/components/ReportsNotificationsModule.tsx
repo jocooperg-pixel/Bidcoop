@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Oportunidad, Empresa } from '../types';
 import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 
@@ -19,7 +19,21 @@ export default function ReportsNotificationsModule({
   const [reportTime, setReportTime] = useState<string>('08:00');
   const [autoEmailEnabled, setAutoEmailEnabled] = useState<boolean>(true);
   const [whatsappPushEnabled, setWhatsappPushEnabled] = useState<boolean>(true);
-  const [recipientEmails, setRecipientEmails] = useState<string>('jocooperg@gmail.com');
+  // El correo real de destino nunca vive hardcodeado en este archivo (código
+  // fuente público) — se pide al servidor (REPORT_RECIPIENT_EMAIL, variable
+  // de entorno) recién al montar, y solo a una sesión ya autenticada.
+  const [defaultRecipientEmail, setDefaultRecipientEmail] = useState<string>('');
+  const [recipientEmails, setRecipientEmails] = useState<string>('');
+
+  useEffect(() => {
+    fetch('/api/config/report-recipient')
+      .then(res => (res.ok ? res.json() : { email: '' }))
+      .then(data => {
+        setDefaultRecipientEmail(data.email || '');
+        setRecipientEmails(prev => prev || data.email || '');
+      })
+      .catch(() => {});
+  }, []);
   const [recipientPhones, setRecipientPhones] = useState<string>('+56 9 7722 2179, +56 9 8409 3057, +56 9 4747 9588, +56 9 6308 4062');
   const [filterRubro, setFilterRubro] = useState<string>('Todos');
   const [activeTab, setActiveTab] = useState<'reportes' | 'correos' | 'winrate' | 'configuracion'>('reportes');
@@ -164,9 +178,9 @@ export default function ReportsNotificationsModule({
     const today = new Date().toISOString().split('T')[0];
     
     // Recipients by region
-    let targetEmails = 'mviguera@aminorte.cl,jonathan.cooper.g@gmail.com';
+    let targetEmails = `mviguera@aminorte.cl,${defaultRecipientEmail}`;
     if (zona === 'Metropolitana') {
-      targetEmails = 'mviguera@aminorte.cl,jonathan.cooper.g@gmail.com';
+      targetEmails = `mviguera@aminorte.cl,${defaultRecipientEmail}`;
     }
 
     // Filter opportunities
@@ -307,9 +321,9 @@ export default function ReportsNotificationsModule({
       <div className="space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
           
-          {/* Dispatch Button 1: Correo Principal (Jonathan Cooper) */}
+          {/* Dispatch Button 1: Correo Principal */}
           <button
-            onClick={() => handleSendTestEmail('jonathan.cooper.g@gmail.com', 'Todas')}
+            onClick={() => handleSendTestEmail(defaultRecipientEmail, 'Todas')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold text-xs shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -319,7 +333,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Correo Principal</div>
-                <div className="text-[10px] text-emerald-100 font-medium">jonathan.cooper.g@gmail.com</div>
+                <div className="text-[10px] text-emerald-100 font-medium">{defaultRecipientEmail || 'Cargando…'}</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -329,7 +343,7 @@ export default function ReportsNotificationsModule({
 
           {/* Dispatch Button 2: RM */}
           <button
-            onClick={() => handleSendTestEmail('mviguera@aminorte.cl, jonathan.cooper.g@gmail.com', 'Metropolitana')}
+            onClick={() => handleSendTestEmail(`mviguera@aminorte.cl, ${defaultRecipientEmail}`, 'Metropolitana')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 text-white font-bold text-xs shadow-lg shadow-blue-500/20 hover:shadow-blue-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -349,7 +363,7 @@ export default function ReportsNotificationsModule({
 
           {/* Dispatch Button 3: Regiones IV-X */}
           <button
-            onClick={() => handleSendTestEmail('mviguera@aminorte.cl, jonathan.cooper.g@gmail.com', 'SurCentro')}
+            onClick={() => handleSendTestEmail(`mviguera@aminorte.cl, ${defaultRecipientEmail}`, 'SurCentro')}
             disabled={sendingEmail}
             className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white font-bold text-xs shadow-lg shadow-teal-500/20 hover:shadow-teal-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
@@ -859,7 +873,7 @@ export default function ReportsNotificationsModule({
                     className="w-full bg-white dark:bg-slate-800 border border-emerald-300 dark:border-emerald-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white font-mono"
                   />
                   <button
-                    onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
+                    onClick={() => handleSendTestEmail(defaultRecipientEmail)}
                     disabled={sendingEmail}
                     className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2 rounded-xl shrink-0 transition cursor-pointer"
                   >
@@ -896,7 +910,7 @@ export default function ReportsNotificationsModule({
                   className="w-full bg-white dark:bg-slate-800 border border-indigo-300 dark:border-indigo-700 text-xs px-3 py-2 rounded-xl text-slate-900 dark:text-white font-mono"
                 />
                 <button
-                  onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
+                  onClick={() => handleSendTestEmail(defaultRecipientEmail)}
                   disabled={sendingEmail}
                   className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2 rounded-xl shrink-0 transition cursor-pointer"
                 >
@@ -904,7 +918,7 @@ export default function ReportsNotificationsModule({
                 </button>
               </div>
               <p className="text-[10px] text-slate-500">
-                Resend.com entrega 3.000 correos al mes 100% gratis a tu casilla <strong>jocooperg@gmail.com</strong> sin necesidad de claves ni verificaciones de Google.
+                Resend.com entrega 3.000 correos al mes 100% gratis a tu casilla <strong>{defaultRecipientEmail || 'configurada'}</strong> sin necesidad de claves ni verificaciones de Google.
               </p>
             </div>
           </div>
@@ -1006,7 +1020,7 @@ export default function ReportsNotificationsModule({
                   Vista Previa del Correo Oficial 08:00 AM
                 </span>
                 <h3 className="text-xl font-black mt-1">
-                  Reporte Diario de Compras Ágiles — jocooperg@gmail.com
+                  Reporte Diario de Compras Ágiles — {defaultRecipientEmail || 'correo configurado'}
                 </h3>
               </div>
               <button
@@ -1023,7 +1037,7 @@ export default function ReportsNotificationsModule({
               {/* Technical explanation alert & Credentials Config */}
               <div className="bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 p-5 rounded-2xl text-blue-900 dark:text-blue-200 space-y-3">
                 <div className="font-extrabold flex items-center justify-between">
-                  <span className="text-sm">🔑 Conector para Entrega Directa en Gmail (jocooperg@gmail.com)</span>
+                  <span className="text-sm">🔑 Conector para Entrega Directa en Gmail ({defaultRecipientEmail || 'correo configurado'})</span>
                   <span className="bg-blue-200 dark:bg-blue-900 text-blue-900 dark:text-blue-100 text-[10px] font-bold px-2 py-0.5 rounded">Requisito Antispam Gmail</span>
                 </div>
                 <p className="text-[11px] leading-relaxed">
@@ -1063,11 +1077,11 @@ export default function ReportsNotificationsModule({
 
                 <div className="pt-2 flex justify-end">
                   <button
-                    onClick={() => handleSendTestEmail('jocooperg@gmail.com')}
+                    onClick={() => handleSendTestEmail(defaultRecipientEmail)}
                     disabled={sendingEmail}
                     className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs px-4 py-2 rounded-xl transition-all shadow-sm"
                   >
-                    {sendingEmail ? 'Enviando...' : '🚀 Disparar Envío Real a jocooperg@gmail.com'}
+                    {sendingEmail ? 'Enviando...' : `🚀 Disparar Envío Real a ${defaultRecipientEmail || 'correo configurado'}`}
                   </button>
                 </div>
               </div>
@@ -1076,9 +1090,9 @@ export default function ReportsNotificationsModule({
               <div className="bg-white text-slate-900 rounded-2xl p-6 border border-slate-200 shadow-md space-y-4 max-h-[600px] overflow-y-auto">
                 <div className="border-b border-slate-200 pb-3 space-y-2 text-xs">
                   <div><strong>De:</strong> <span className="font-semibold text-slate-800">Alertas BidCoop &lt;alertas.bidcoop@gmail.com&gt;</span></div>
-                  <div><strong>Correo Principal:</strong> <span className="font-mono font-bold text-emerald-700">jonathan.cooper.g@gmail.com</span></div>
-                  <div><strong>Para Aminorte & V-MOCCS (Sur-Centro):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, jonathan.cooper.g@gmail.com</span></div>
-                  <div><strong>Para Aminorte & V-MOCCS (RM Santiago):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, jonathan.cooper.g@gmail.com</span></div>
+                  <div><strong>Correo Principal:</strong> <span className="font-mono font-bold text-emerald-700">{defaultRecipientEmail || 'No configurado'}</span></div>
+                  <div><strong>Para Aminorte & V-MOCCS (Sur-Centro):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, {defaultRecipientEmail}</span></div>
+                  <div><strong>Para Aminorte & V-MOCCS (RM Santiago):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, {defaultRecipientEmail}</span></div>
                   <div><strong>Asunto:</strong> <span className="font-extrabold text-slate-900">[BidCoop 08:00 AM] Reporte Exclusivo de Compras Ágiles ({new Date().toISOString().split('T')[0]})</span></div>
                   <div><strong>Modalidad Envío:</strong> <span className="font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">📧 Informe Exclusivo en Cuerpo de Correo (Sin Adjuntos)</span></div>
                 </div>
@@ -1179,7 +1193,7 @@ export default function ReportsNotificationsModule({
               <button
                 onClick={() => {
                   setShowEmailPreviewModal(false);
-                  handleSendTestEmail('mviguera@aminorte.cl, jonathan.cooper.g@gmail.com');
+                  handleSendTestEmail(`mviguera@aminorte.cl, ${defaultRecipientEmail}`);
                 }}
                 disabled={sendingEmail}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-md flex items-center gap-2 cursor-pointer"

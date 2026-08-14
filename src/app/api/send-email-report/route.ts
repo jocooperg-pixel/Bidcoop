@@ -22,13 +22,13 @@ export async function POST(request: Request) {
     // 1. RECIPIENT LISTS STRICTLY SEGREGATED BY BUSINESS DIRECTIVE
     const AMINORTE_VMOCCS_SUR_CENTRO_EMAILS = [
       'mviguera@aminorte.cl',
-      'jonathan.cooper.g@gmail.com'
-    ];
+      process.env.REPORT_RECIPIENT_EMAIL || ''
+    ].filter(Boolean);
 
     const AMINORTE_VMOCCS_METROPOLITANA_EMAILS = [
       'mviguera@aminorte.cl',
-      'jonathan.cooper.g@gmail.com'
-    ];
+      process.env.REPORT_RECIPIENT_EMAIL || ''
+    ].filter(Boolean);
 
     // Helper for exact Chilean region resolution from organism & description
     const resolveRealRegion = (op: any): string => {
@@ -139,13 +139,13 @@ export async function POST(request: Request) {
 
     const EMAILS_REGIONES = [
       'mviguera@aminorte.cl',
-      'jonathan.cooper.g@gmail.com'
-    ];
+      process.env.REPORT_RECIPIENT_EMAIL || ''
+    ].filter(Boolean);
 
     const EMAILS_RM = [
       'mviguera@aminorte.cl',
-      'jonathan.cooper.g@gmail.com'
-    ];
+      process.env.REPORT_RECIPIENT_EMAIL || ''
+    ].filter(Boolean);
 
     // Keys for Resend / SMTP
     const keysToTry = [
