@@ -1,61 +1,114 @@
 'use client';
-import React, { useState, useMemo } from 'react';
-import { listadoProveedores, articulosMasVendidos, Proveedor, ArticuloMasVendido } from '../providersData';
+import React, { useState, useMemo, useEffect } from 'react';
+import { articulosMasVendidos } from '../providersData';
+
+interface ProveedorResumen {
+  id: string;
+  rut: string;
+  razonSocial: string;
+  tipoEmpresa: string | null;
+  comuna: string | null;
+  region: string | null;
+  representante: string | null;
+  sitioWeb: string | null;
+  rubros: string[];
+  contactoEmail: string | null;
+  contactoTelefono: string | null;
+  fuenteTipo: string;
+  fechaValidacion: string | null;
+  totalVentasRegistradas: number;
+}
+
+interface VentaHistorica {
+  id: string;
+  articulo: string;
+  precio: number;
+  compradorRegion: string | null;
+  modalidad: string | null;
+}
 
 export default function ProvidersModule() {
+  const [proveedores, setProveedores] = useState<ProveedorResumen[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
   const [search, setSearch] = useState('');
   const [selectedRubro, setSelectedRubro] = useState('Todos');
   const [selectedRegion, setSelectedRegion] = useState('Todos');
   const [currentPage, setCurrentPage] = useState(1);
-  const [expandedProv, setExpandedProv] = useState<string | null>(null);
-  
-  // Tab control: 'proveedores' | 'articulos'
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [ventasPorProveedor, setVentasPorProveedor] = useState<Record<string, VentaHistorica[]>>({});
+  const [ventasLoading, setVentasLoading] = useState(false);
+
   const [activeTab, setActiveTab] = useState<'proveedores' | 'articulos'>('proveedores');
-  
+
   const itemsPerPage = 15;
 
-  // Regions list
-  const regiones = useMemo(() => {
-    const set = new Set(listadoProveedores.map(p => p.region));
-    return ['Todos', ...Array.from(set).sort()];
+  useEffect(() => {
+    fetch('/api/db-proveedores')
+      .then(res => res.json())
+      .then(data => {
+        if (data.error) { setError(data.error); return; }
+        setProveedores(data.proveedores);
+      })
+      .catch(err => setError(String(err)))
+      .finally(() => setLoading(false));
   }, []);
 
-  // Filtered providers
+  const regiones = useMemo(() => {
+    const set = new Set(proveedores.map(p => p.region).filter((r): r is string => !!r));
+    return ['Todos', ...Array.from(set).sort()];
+  }, [proveedores]);
+
   const filtered = useMemo(() => {
-    return listadoProveedores.filter(p => {
-      const matchSearch = 
-        p.razonSocial.toLowerCase().includes(search.toLowerCase()) ||
-        p.rut.toLowerCase().includes(search.toLowerCase()) ||
-        p.email.toLowerCase().includes(search.toLowerCase()) ||
-        p.comuna.toLowerCase().includes(search.toLowerCase());
-        
-      const matchRubro = selectedRubro === 'Todos' || p.rubro === selectedRubro;
+    return proveedores.filter(p => {
+      const q = search.toLowerCase();
+      const matchSearch =
+        p.razonSocial.toLowerCase().includes(q) ||
+        p.rut.toLowerCase().includes(q) ||
+        (p.contactoEmail ?? '').toLowerCase().includes(q) ||
+        (p.comuna ?? '').toLowerCase().includes(q);
+
+      const matchRubro = selectedRubro === 'Todos' || p.rubros.includes(selectedRubro);
       const matchRegion = selectedRegion === 'Todos' || p.region === selectedRegion;
 
       return matchSearch && matchRubro && matchRegion;
     });
-  }, [search, selectedRubro, selectedRegion]);
+  }, [proveedores, search, selectedRubro, selectedRegion]);
 
-  // Paginated providers
   const paginated = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     return filtered.slice(startIndex, startIndex + itemsPerPage);
   }, [filtered, currentPage]);
 
-  const totalPages = Math.ceil(filtered.length / itemsPerPage);
+  const totalPages = Math.max(1, Math.ceil(filtered.length / itemsPerPage));
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    setExpandedProv(null); // Close expanded details on page change
+    setExpandedId(null);
+  };
+
+  const toggleExpand = (p: ProveedorResumen) => {
+    if (expandedId === p.id) { setExpandedId(null); return; }
+    setExpandedId(p.id);
+    if (!ventasPorProveedor[p.id]) {
+      setVentasLoading(true);
+      fetch(`/api/db-proveedores/${p.id}`)
+        .then(res => res.json())
+        .then(data => {
+          setVentasPorProveedor(prev => ({ ...prev, [p.id]: data.proveedor?.ventasHistoricas ?? [] }));
+        })
+        .finally(() => setVentasLoading(false));
+    }
   };
 
   const handleExportCSV = () => {
-    const headers = 'RUT,Razon Social,Tipo,Rubro,Email,Telefono,Comuna,Region,Representante,Sitio Web\n';
-    const rows = filtered.map(p => 
-      `"${p.rut}","${p.razonSocial}","${p.tipoEmpresa}","${p.rubro}","${p.email}","${p.telefono}","${p.comuna}","${p.region}","${p.representante}","${p.web}"`
+    const headers = 'RUT,Razon Social,Tipo,Rubros,Email,Telefono,Comuna,Region,Representante,Sitio Web,Fuente,Validado\n';
+    const rows = filtered.map(p =>
+      `"${p.rut}","${p.razonSocial}","${p.tipoEmpresa ?? ''}","${p.rubros.join('; ')}","${p.contactoEmail ?? ''}","${p.contactoTelefono ?? ''}","${p.comuna ?? ''}","${p.region ?? ''}","${p.representante ?? ''}","${p.sitioWeb ?? ''}","${p.fuenteTipo}","${p.fechaValidacion ? 'Sí' : 'No validado'}"`
     ).join('\n');
-    
-    const blob = new Blob(['\ufeff' + headers + rows], { type: 'text/csv;charset=utf-8;' });
+
+    const blob = new Blob(['﻿' + headers + rows], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
@@ -65,18 +118,15 @@ export default function ProvidersModule() {
     document.body.removeChild(link);
   };
 
-  // Group top articles by convenio
-  const aseoArticles = useMemo(() => {
-    return articulosMasVendidos.filter(a => a.convenio === 'Aseo e Higiene');
-  }, []);
+  const aseoArticles = useMemo(() => articulosMasVendidos.filter(a => a.convenio === 'Aseo e Higiene'), []);
+  const escritorioArticles = useMemo(() => articulosMasVendidos.filter(a => a.convenio === 'Artículos de Escritorio y Oficina'), []);
 
-  const escritorioArticles = useMemo(() => {
-    return articulosMasVendidos.filter(a => a.convenio === 'Artículos de Escritorio y Oficina');
-  }, []);
+  if (loading) return <div className="p-8 text-sm text-slate-500 dark:text-slate-400">Cargando proveedores…</div>;
+  if (error) return <div className="p-8 text-sm text-red-600 dark:text-red-400">{error}</div>;
 
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
-      
+
       {/* HEADER SECTION */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
@@ -84,10 +134,10 @@ export default function ProvidersModule() {
             👥 Inteligencia de Mercado y Proveedores
           </h1>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-            Análisis de competidores, directorio de contactos y artículos más vendidos para Aseo e Higiene y Artículos de Escritorio.
+            Directorio real extraído de adjudicaciones de Mercado Público — <span className="font-bold text-amber-600 dark:text-amber-400">no validado formalmente por el equipo aún</span>. Artículos más vendidos para Aseo e Higiene y Artículos de Escritorio.
           </p>
         </div>
-        
+
         {activeTab === 'proveedores' && (
           <button
             onClick={handleExportCSV}
@@ -104,7 +154,7 @@ export default function ProvidersModule() {
           <span className="text-2xl p-2.5 rounded-xl bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400">👥</span>
           <div>
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Total Proveedores</p>
-            <h3 className="text-lg font-black text-slate-900 dark:text-white mt-0.5">{listadoProveedores.length}</h3>
+            <h3 className="text-lg font-black text-slate-900 dark:text-white mt-0.5">{proveedores.length}</h3>
           </div>
         </div>
         <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-3">
@@ -112,7 +162,7 @@ export default function ProvidersModule() {
           <div>
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Convenio Aseo</p>
             <h3 className="text-lg font-black text-slate-900 dark:text-white mt-0.5">
-              {listadoProveedores.filter(p => p.rubro === 'Aseo e Higiene').length}
+              {proveedores.filter(p => p.rubros.includes('Aseo e Higiene')).length}
             </h3>
           </div>
         </div>
@@ -121,7 +171,7 @@ export default function ProvidersModule() {
           <div>
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Convenio Escritorio</p>
             <h3 className="text-lg font-black text-slate-900 dark:text-white mt-0.5">
-              {listadoProveedores.filter(p => p.rubro === 'Artículos de Escritorio y Oficina').length}
+              {proveedores.filter(p => p.rubros.includes('Artículos de Escritorio y Oficina')).length}
             </h3>
           </div>
         </div>
@@ -132,38 +182,29 @@ export default function ProvidersModule() {
         <button
           onClick={() => setActiveTab('proveedores')}
           className={`pb-3 text-xs font-black transition relative cursor-pointer ${
-            activeTab === 'proveedores'
-              ? 'text-blue-600 dark:text-blue-400'
-              : 'text-slate-400 hover:text-slate-650 dark:hover:text-slate-300'
+            activeTab === 'proveedores' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400 hover:text-slate-650 dark:hover:text-slate-300'
           }`}
         >
           <span>📁</span> Directorio de Proveedores
-          {activeTab === 'proveedores' && (
-            <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full" />
-          )}
+          {activeTab === 'proveedores' && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full" />}
         </button>
         <button
           onClick={() => setActiveTab('articulos')}
           className={`pb-3 text-xs font-black transition relative cursor-pointer ${
-            activeTab === 'articulos'
-              ? 'text-blue-600 dark:text-blue-400'
-              : 'text-slate-400 hover:text-slate-650 dark:hover:text-slate-300'
+            activeTab === 'articulos' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400 hover:text-slate-650 dark:hover:text-slate-300'
           }`}
         >
           <span>🛍️</span> Artículos Más Vendidos
-          {activeTab === 'articulos' && (
-            <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full" />
-          )}
+          {activeTab === 'articulos' && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full" />}
         </button>
       </div>
 
       {/* TAB 1: PROVIDERS TABLE LIST */}
       {activeTab === 'proveedores' && (
         <div className="space-y-4">
-          
+
           {/* FILTER BAR */}
           <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {/* Search */}
             <div className="space-y-1">
               <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Buscar Proveedor</label>
               <div className="relative">
@@ -178,7 +219,6 @@ export default function ProvidersModule() {
               </div>
             </div>
 
-            {/* Rubro Filter */}
             <div className="space-y-1">
               <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Convenio / Rubro</label>
               <select
@@ -187,12 +227,11 @@ export default function ProvidersModule() {
                 className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-xl text-xs focus:ring-2 focus:ring-blue-500 outline-none text-slate-800 dark:text-white"
               >
                 <option value="Todos">Todos los Convenios</option>
+                <option value="Aseo e Higiene">Aseo e Higiene</option>
                 <option value="Artículos de Escritorio y Oficina">Artículos de Escritorio y Oficina (Aminorte / V-MOCCS)</option>
-
               </select>
             </div>
 
-            {/* Region Filter */}
             <div className="space-y-1">
               <label className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Región</label>
               <select
@@ -200,9 +239,7 @@ export default function ProvidersModule() {
                 onChange={(e) => { setSelectedRegion(e.target.value); setCurrentPage(1); }}
                 className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-xl text-xs focus:ring-2 focus:ring-blue-500 outline-none text-slate-800 dark:text-white"
               >
-                {regiones.map(reg => (
-                  <option key={reg} value={reg}>{reg}</option>
-                ))}
+                {regiones.map(reg => <option key={reg} value={reg}>{reg}</option>)}
               </select>
             </div>
           </div>
@@ -217,58 +254,67 @@ export default function ProvidersModule() {
                     <th className="py-3 px-4">Convenio</th>
                     <th className="py-3 px-4">Ubicación</th>
                     <th className="py-3 px-4">Contacto</th>
+                    <th className="py-3 px-4">Validación</th>
                     <th className="py-3 px-4 text-right">Acción</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-50 dark:divide-slate-800/60 text-xs">
                   {paginated.length > 0 ? (
-                    paginated.map((prov, index) => {
-                      const isExpanded = expandedProv === prov.rut;
+                    paginated.map((prov) => {
+                      const isExpanded = expandedId === prov.id;
+                      const ventas = ventasPorProveedor[prov.id];
                       return (
-                        <React.Fragment key={prov.rut}>
-                          <tr className={`hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors ${
-                            isExpanded ? 'bg-slate-50/30 dark:bg-slate-800/20' : ''
-                          }`}>
+                        <React.Fragment key={prov.id}>
+                          <tr className={`hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors ${isExpanded ? 'bg-slate-50/30 dark:bg-slate-800/20' : ''}`}>
                             <td className="py-4 px-4">
                               <div className="font-black text-slate-900 dark:text-white max-w-[250px] truncate" title={prov.razonSocial}>
                                 {prov.razonSocial}
                               </div>
-                              <div className="text-[10px] font-mono text-slate-400 mt-0.5">
-                                {prov.rut}
-                              </div>
+                              <div className="text-[10px] font-mono text-slate-400 mt-0.5">{prov.rut}</div>
                             </td>
                             <td className="py-4 px-4">
-                              <span className={`px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-wider ${
-                                prov.rubro === 'Aseo e Higiene'
-                                  ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
-                                  : 'bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400'
-                              }`}>
-                                {prov.rubro === 'Aseo e Higiene' ? 'Aseo 🧼' : 'Escritorio ✏️'}
-                              </span>
+                              {prov.rubros.map(r => (
+                                <span key={r} className={`inline-block mr-1 mb-1 px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-wider ${
+                                  r === 'Aseo e Higiene'
+                                    ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400'
+                                    : 'bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400'
+                                }`}>
+                                  {r === 'Aseo e Higiene' ? 'Aseo 🧼' : r === 'Artículos de Escritorio y Oficina' ? 'Escritorio ✏️' : r}
+                                </span>
+                              ))}
                             </td>
                             <td className="py-4 px-4">
-                              <div className="text-slate-800 dark:text-slate-200 font-medium">
-                                {prov.comuna}
-                              </div>
-                              <div className="text-[10px] text-slate-450 dark:text-slate-500">
-                                {prov.region}
-                              </div>
+                              <div className="text-slate-800 dark:text-slate-200 font-medium">{prov.comuna ?? 'No disponible'}</div>
+                              <div className="text-[10px] text-slate-450 dark:text-slate-500">{prov.region ?? ''}</div>
                             </td>
                             <td className="py-4 px-4 space-y-0.5">
-                              <div className="flex items-center gap-1">
-                                <span className="text-[10px]">📧</span>
-                                <a href={`mailto:${prov.email}`} className="text-blue-600 dark:text-blue-400 font-bold hover:underline">
-                                  {prov.email}
-                                </a>
-                              </div>
+                              {prov.contactoEmail ? (
+                                <div className="flex items-center gap-1">
+                                  <span className="text-[10px]">📧</span>
+                                  <a href={`mailto:${prov.contactoEmail}`} className="text-blue-600 dark:text-blue-400 font-bold hover:underline">
+                                    {prov.contactoEmail}
+                                  </a>
+                                </div>
+                              ) : (
+                                <span className="text-slate-400 text-[10px]">Sin email</span>
+                              )}
                               <div className="flex items-center gap-1 text-[10px] text-slate-400">
                                 <span>📞</span>
-                                <span className="font-mono">{prov.telefono}</span>
+                                <span className="font-mono">{prov.contactoTelefono ?? 'No disponible'}</span>
                               </div>
+                            </td>
+                            <td className="py-4 px-4">
+                              <span className={`px-2 py-0.5 rounded-full text-[9px] font-bold ${
+                                prov.fechaValidacion
+                                  ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/30 dark:text-emerald-400'
+                                  : 'bg-amber-50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400'
+                              }`}>
+                                {prov.fechaValidacion ? 'Validado' : 'No validado'}
+                              </span>
                             </td>
                             <td className="py-4 px-4 text-right">
                               <button
-                                onClick={() => setExpandedProv(isExpanded ? null : prov.rut)}
+                                onClick={() => toggleExpand(prov)}
                                 className={`px-3 py-1.5 rounded-xl text-[10px] font-black transition cursor-pointer ${
                                   isExpanded
                                     ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-350'
@@ -279,22 +325,27 @@ export default function ProvidersModule() {
                               </button>
                             </td>
                           </tr>
-                          
-                          {/* Expanded row details: Sales history table */}
+
                           {isExpanded && (
                             <tr>
-                              <td colSpan={5} className="py-4 px-6 bg-slate-50/40 dark:bg-slate-800/10 border-t border-slate-100 dark:border-slate-800">
+                              <td colSpan={6} className="py-4 px-6 bg-slate-50/40 dark:bg-slate-800/10 border-t border-slate-100 dark:border-slate-800">
                                 <div className="space-y-3 animate-in slide-in-from-top-1 duration-150">
                                   <div className="flex items-center justify-between">
                                     <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-wider">
                                       Historial de Ventas / Adjudicaciones en Mercado Público
                                     </h4>
-                                    <span className="text-[10px] font-bold text-slate-450 dark:text-slate-500">
-                                      Registro de {prov.ventas.length} transacciones
-                                    </span>
+                                    {ventas && (
+                                      <span className="text-[10px] font-bold text-slate-450 dark:text-slate-500">
+                                        Registro de {ventas.length} transacciones
+                                      </span>
+                                    )}
                                   </div>
 
-                                  {prov.ventas && prov.ventas.length > 0 ? (
+                                  {ventasLoading && !ventas && (
+                                    <div className="p-4 text-center text-slate-400 text-[11px]">Cargando historial…</div>
+                                  )}
+
+                                  {ventas && ventas.length > 0 && (
                                     <div className="border border-slate-100 dark:border-slate-800/80 rounded-xl overflow-hidden">
                                       <table className="w-full text-left border-collapse">
                                         <thead>
@@ -306,37 +357,33 @@ export default function ProvidersModule() {
                                           </tr>
                                         </thead>
                                         <tbody className="divide-y divide-slate-100/55 dark:divide-slate-800/40 text-[11px] text-slate-700 dark:text-slate-300">
-                                          {prov.ventas.map((v, sIdx) => (
-                                            <tr key={sIdx} className="hover:bg-slate-100/20 dark:hover:bg-slate-800/10 transition">
-                                              <td className="py-2 px-3 font-bold text-slate-850 dark:text-slate-200">
-                                                {v.articulo}
-                                              </td>
+                                          {ventas.map((v) => (
+                                            <tr key={v.id} className="hover:bg-slate-100/20 dark:hover:bg-slate-800/10 transition">
+                                              <td className="py-2 px-3 font-bold text-slate-850 dark:text-slate-200">{v.articulo}</td>
                                               <td className="py-2 px-3 font-mono font-black text-slate-900 dark:text-white">
                                                 ${v.precio.toLocaleString('es-CL')} CLP
                                               </td>
+                                              <td className="py-2 px-3">{v.compradorRegion || 'No disponible'}</td>
                                               <td className="py-2 px-3">
-                                                {v.compradorRegion}
-                                              </td>
-                                              <td className="py-2 px-3">
-                                                <span className="text-[9px] font-bold text-blue-500 uppercase">
-                                                  {v.modalidad}
-                                                </span>
+                                                <span className="text-[9px] font-bold text-blue-500 uppercase">{v.modalidad || 'No disponible'}</span>
                                               </td>
                                             </tr>
                                           ))}
                                         </tbody>
                                       </table>
                                     </div>
-                                  ) : (
+                                  )}
+
+                                  {ventas && ventas.length === 0 && (
                                     <div className="p-6 text-center text-slate-400 italic">
                                       Sin historial de ventas disponible en el sistema.
                                     </div>
                                   )}
-                                  
-                                  {prov.web !== 'No disponible' && (
+
+                                  {prov.sitioWeb && (
                                     <div className="pt-1 flex">
                                       <a
-                                        href={prov.web.startsWith('http') ? prov.web : `http://${prov.web}`}
+                                        href={prov.sitioWeb.startsWith('http') ? prov.sitioWeb : `http://${prov.sitioWeb}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-[10px] font-black text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1"
@@ -354,7 +401,7 @@ export default function ProvidersModule() {
                     })
                   ) : (
                     <tr>
-                      <td colSpan={5} className="py-12 text-center text-slate-450 dark:text-slate-500">
+                      <td colSpan={6} className="py-12 text-center text-slate-450 dark:text-slate-500">
                         <span className="text-3xl block mb-2">📭</span>
                         <p className="font-bold">No se encontraron proveedores que coincidan con los filtros</p>
                         <p className="text-[10px] text-slate-400 mt-1">Intente cambiar su término de búsqueda o filtros regionales.</p>
@@ -365,13 +412,11 @@ export default function ProvidersModule() {
               </table>
             </div>
 
-            {/* PAGINATION PANEL */}
             {totalPages > 1 && (
               <div className="flex items-center justify-between p-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/10">
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   Mostrando {filtered.length} proveedores
                 </span>
-                
                 <div className="flex items-center gap-1.5">
                   <button
                     onClick={() => handlePageChange(currentPage - 1)}
@@ -397,21 +442,18 @@ export default function ProvidersModule() {
         </div>
       )}
 
-      {/* TAB 2: TOP SELLING ARTICLES */}
+      {/* TAB 2: TOP SELLING ARTICLES (dataset curado aparte, aún no migrado a Postgres) */}
       {activeTab === 'articulos' && (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 animate-in fade-in duration-200">
-          
-          {/* CATEGORY 1: ASEO E HIGIENE */}
           <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl shadow-sm p-6 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-50 dark:border-slate-800/80">
               <div className="flex items-center gap-2">
                 <span className="text-xl p-1.5 rounded-lg bg-blue-50 dark:bg-blue-950/40">🧼</span>
                 <div>
                   <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">
-                    Convenio Artículos de Escritorio y Oficina
+                    Convenio Aseo e Higiene
                   </h3>
                   <p className="text-[10px] text-slate-450 dark:text-slate-500 font-medium">Aminorte & V-MOCCS</p>
-
                 </div>
               </div>
               <span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 text-[9px] font-black">
@@ -421,14 +463,9 @@ export default function ProvidersModule() {
 
             <div className="space-y-3">
               {aseoArticles.map((art, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50/50 dark:bg-slate-800/35 border border-slate-100 dark:border-slate-800/60 text-xs hover:border-blue-200 dark:hover:border-blue-900/60 transition"
-                >
+                <div key={idx} className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50/50 dark:bg-slate-800/35 border border-slate-100 dark:border-slate-800/60 text-xs hover:border-blue-200 dark:hover:border-blue-900/60 transition">
                   <div className="space-y-1 max-w-[65%]">
-                    <h4 className="font-black text-slate-850 dark:text-slate-200 truncate" title={art.nombre}>
-                      {art.nombre}
-                    </h4>
+                    <h4 className="font-black text-slate-850 dark:text-slate-200 truncate" title={art.nombre}>{art.nombre}</h4>
                     <div className="flex items-center gap-1.5 text-[9px] text-slate-400 font-bold uppercase">
                       <span>Udm: {art.unidadMedida}</span>
                       <span>•</span>
@@ -436,19 +473,14 @@ export default function ProvidersModule() {
                     </div>
                   </div>
                   <div className="text-right space-y-0.5">
-                    <div className="font-mono font-black text-slate-900 dark:text-white">
-                      ${art.precio.toLocaleString('es-CL')} CLP
-                    </div>
-                    <div className="text-[10px] font-black text-emerald-600 dark:text-emerald-400 font-mono">
-                      {art.cantidadVendida.toLocaleString('es-CL')} vendidos
-                    </div>
+                    <div className="font-mono font-black text-slate-900 dark:text-white">${art.precio.toLocaleString('es-CL')} CLP</div>
+                    <div className="text-[10px] font-black text-emerald-600 dark:text-emerald-400 font-mono">{art.cantidadVendida.toLocaleString('es-CL')} vendidos</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* CATEGORY 2: ESCRITORIO Y OFICINA */}
           <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl shadow-sm p-6 space-y-4">
             <div className="flex items-center justify-between pb-3 border-b border-slate-50 dark:border-slate-800/80">
               <div className="flex items-center gap-2">
@@ -467,14 +499,9 @@ export default function ProvidersModule() {
 
             <div className="space-y-3">
               {escritorioArticles.map((art, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50/50 dark:bg-slate-800/35 border border-slate-100 dark:border-slate-800/60 text-xs hover:border-indigo-200 dark:hover:border-indigo-900/60 transition"
-                >
+                <div key={idx} className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50/50 dark:bg-slate-800/35 border border-slate-100 dark:border-slate-800/60 text-xs hover:border-indigo-200 dark:hover:border-indigo-900/60 transition">
                   <div className="space-y-1 max-w-[65%]">
-                    <h4 className="font-black text-slate-850 dark:text-slate-200 truncate" title={art.nombre}>
-                      {art.nombre}
-                    </h4>
+                    <h4 className="font-black text-slate-850 dark:text-slate-200 truncate" title={art.nombre}>{art.nombre}</h4>
                     <div className="flex items-center gap-1.5 text-[9px] text-slate-400 font-bold uppercase">
                       <span>Udm: {art.unidadMedida}</span>
                       <span>•</span>
@@ -482,18 +509,13 @@ export default function ProvidersModule() {
                     </div>
                   </div>
                   <div className="text-right space-y-0.5">
-                    <div className="font-mono font-black text-slate-900 dark:text-white">
-                      ${art.precio.toLocaleString('es-CL')} CLP
-                    </div>
-                    <div className="text-[10px] font-black text-emerald-600 dark:text-emerald-400 font-mono">
-                      {art.cantidadVendida.toLocaleString('es-CL')} vendidos
-                    </div>
+                    <div className="font-mono font-black text-slate-900 dark:text-white">${art.precio.toLocaleString('es-CL')} CLP</div>
+                    <div className="text-[10px] font-black text-emerald-600 dark:text-emerald-400 font-mono">{art.cantidadVendida.toLocaleString('es-CL')} vendidos</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-
         </div>
       )}
 

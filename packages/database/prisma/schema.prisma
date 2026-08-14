@@ -357,6 +357,11 @@ model Proveedor {
 
   rut         String  @unique
   razonSocial String
+  tipoEmpresa String? // ej. PYME — como lo informa la propia fuente, no inferido
+  comuna      String?
+  region      String?
+  representante String?
+  sitioWeb    String?
   rubros      String[]
   contactoEmail    String?
   contactoTelefono String?
@@ -370,8 +375,33 @@ model Proveedor {
   updatedAt DateTime @updatedAt
 
   cotizaciones CotizacionProveedor[]
+  ventasHistoricas VentaHistoricaProveedor[]
 
   @@index([workspaceId])
+}
+
+// Ventas observadas de un proveedor en adjudicaciones reales de Mercado
+// Público (extraídas de archivos de adjudicación, no de la API pública en
+// vivo — por eso fuenteTipo default MANUAL, igual que Proveedor). Es
+// inteligencia competitiva: a qué precio ha vendido la competencia, no una
+// cotización que ese proveedor nos haya dado a nosotros (eso es
+// CotizacionProveedor, ligado a una Oportunidad propia).
+model VentaHistoricaProveedor {
+  id          String    @id @default(uuid())
+  proveedorId String
+  proveedor   Proveedor @relation(fields: [proveedorId], references: [id], onDelete: Cascade)
+
+  articulo        String
+  precio          Decimal
+  compradorRegion String?
+  modalidad       String?
+
+  fuenteTipo  FuenteTipo @default(MANUAL)
+  rawSourceId String? // nombre del archivo de origen, ej. "Mercado Publico_Bastian.xlsx"
+
+  createdAt DateTime @default(now())
+
+  @@index([proveedorId])
 }
 
 model Producto {
