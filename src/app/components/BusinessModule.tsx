@@ -652,10 +652,10 @@ export default function BusinessModule({
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-4">
               <div>
                 <h2 className="text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
-                  <span>🚚</span> Calculadora Dinámica de Márgenes y Logística Regional
+                  <span>🚚</span> Simulador de Márgenes y Logística Regional
                 </h2>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                  Estima el costo de despacho a cualquiera de las 16 regiones de Chile y calcula el margen neto real de tu oferta descontando flete e IVA (19%).
+                  Simula el margen de una oferta descontando flete e IVA (19%) a partir de los montos que ingreses. El flete es una <strong>regla comercial fija por región</strong> (no una cotización real de transportista) — úsalo como referencia, no como precio final.
                 </p>
               </div>
             </div>
@@ -716,7 +716,10 @@ export default function BusinessModule({
               return (
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 pt-2">
                   <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-800">
-                    <span className="text-[10px] uppercase font-black text-slate-400 block">Costo Flete Estimado</span>
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] uppercase font-black text-slate-400 block">Costo Flete</span>
+                      <span className="text-[8px] font-black uppercase px-1.5 py-0.5 rounded bg-amber-100 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400">Regla comercial</span>
+                    </div>
                     <strong className="text-sm font-black text-slate-900 dark:text-white mt-1 block">
                       ${fleteCost.toLocaleString('es-CL')} CLP
                     </strong>
