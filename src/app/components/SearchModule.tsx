@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Oportunidad, Postulacion, MiembroEquipo, VistaGuardada, DocumentoAdjunto, Item } from '../types';
-import { calculateSmartCatalogMatch, getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
+import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 import { getSemaforoBidCoop } from '../utils/semaforoEngine';
 import { EMPRESAS } from '../utils/empresas';
 import { mockPostulaciones } from '../mockData';
@@ -874,16 +874,26 @@ export default function SearchModule({
                 </div>
                 <div className="bg-slate-50 dark:bg-slate-850 p-4 rounded-2xl border border-slate-100 dark:border-slate-800 text-xs leading-relaxed space-y-3.5 text-slate-700 dark:text-slate-300">
                   <p>{selectedOpportunity.descripcion}</p>
-                  {/* Smart Catalog Match Card */}
+                  {/* Desglose del match — construido SOLO desde matchScore/matchKeywords
+                      ya guardados (el mismo cálculo que produjo el % mostrado en toda la
+                      app). Nunca recalcular con otra lógica aquí: dos motores de matching
+                      distintos mostrando dos porcentajes distintos para la misma
+                      oportunidad fue exactamente el bug que esto reemplaza. */}
                   {(() => {
-                    const matchInfo = calculateSmartCatalogMatch(selectedOpportunity);
+                    const empresa = selectedOpportunity.empresaMatch;
+                    const keywords = selectedOpportunity.matchKeywords;
+                    const explicacion = !empresa
+                      ? 'Sin match real de catálogo — ningún producto/palabra clave coincide con Aminorte o V-MOCCS. Requiere clasificación manual.'
+                      : keywords && keywords.length > 0
+                        ? `Match del ${selectedOpportunity.matchScore}% por catálogo: ${keywords.length} palabra(s) clave del Convenio Marco de ${empresa} coinciden con el título/descripción de este proceso.`
+                        : `Match asignado a ${empresa}, pero este registro fue sincronizado antes de guardar el desglose de palabras clave — no disponible para auditar retroactivamente.`;
                     return (
                       <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/30 dark:to-teal-950/30 border border-emerald-200 dark:border-emerald-800/60 p-4 rounded-xl space-y-2.5">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-2">
                             <span className="text-base">🎯</span>
                             <h4 className="font-black text-xs text-emerald-900 dark:text-emerald-300 uppercase tracking-wider">
-                              Matching por Catálogo — {selectedOpportunity.empresaMatch || matchInfo.companyMatch || 'Sin match'}
+                              Matching por Catálogo — {empresa || 'Sin match'}
                             </h4>
                           </div>
                           <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-emerald-600 text-white shadow-sm">
@@ -891,17 +901,17 @@ export default function SearchModule({
                           </span>
                         </div>
                         <p className="text-[11px] text-emerald-800 dark:text-emerald-300/90 leading-normal">
-                          {matchInfo.explanation}
+                          {explicacion}
                         </p>
-                        {matchInfo.matchedProducts.length > 0 && (
+                        {keywords && keywords.length > 0 && (
                           <div className="pt-2 border-t border-emerald-200/80 dark:border-emerald-800/50">
                             <span className="text-[10px] font-bold text-slate-600 dark:text-slate-400 uppercase block mb-1.5">
-                              Productos del Convenio Coincidentes ({matchInfo.matchedProducts.length}):
+                              Palabras clave coincidentes ({keywords.length}):
                             </span>
                             <div className="flex flex-wrap gap-1.5">
-                              {matchInfo.matchedProducts.map((prod, pIdx) => (
+                              {keywords.map((kw, pIdx) => (
                                 <span key={pIdx} className="text-[10px] font-semibold px-2.5 py-1 rounded-lg bg-white dark:bg-slate-900 text-emerald-900 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700/60 shadow-xs">
-                                  ✓ {prod}
+                                  ✓ {kw}
                                 </span>
                               ))}
                             </div>

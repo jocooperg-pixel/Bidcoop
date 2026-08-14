@@ -59,6 +59,11 @@ export interface Oportunidad {
   fechaPublicacion: string;
   fechaCierre: string;
   matchScore: number;
+  // Los keywords reales del catálogo que produjeron matchScore (mismo
+  // cálculo que lo generó, calculate_company_match() en el sync de Python)
+  // — nunca recalcular matchScore con otra lógica en el frontend, o el
+  // desglose mostrado puede no coincidir con el número mostrado.
+  matchKeywords?: string[];
   riesgo: 'Bajo' | 'Medio' | 'Alto' | 'Sin evaluar';
   descripcion: string;
   estado: OpportunityState;

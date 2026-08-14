@@ -799,6 +799,12 @@ def build_opportunity_record(
         "fechaPublicacion": pub_str or close_str or TODAY_STR,
         "fechaCierre": close_str or TODAY_STR,
         "matchScore": confidence,
+        # Los keywords reales que produjeron matchScore — antes se calculaban
+        # y se descartaban. Sin esto, el frontend no tenía forma de explicar
+        # matchScore salvo recalculándolo con OTRO motor (smartMatchEngine.ts,
+        # keywords y fórmula distintas), lo que producía dos porcentajes de
+        # match diferentes en la misma pantalla para la misma oportunidad.
+        "matchKeywords": keywords,
         "riesgo": "Sin evaluar",
         "descripcion": desc or f"Proceso oficial de contratación pública ({tipo_nombre}).",
         "estado": estado,
@@ -969,87 +975,6 @@ def main():
 
     print(f"[FASE 3] Añadidas {excel_added} Compras Ágiles exclusivas desde Cotizaciones.xls.")
 
-    # ── 4. INTEGRAR LICITACIONES PÚBLICAS ACTIVAS ──
-    licitaciones_fallback = [
-        {
-            "id": "2239-10-LP26",
-            "codigo": "2239-10-LP26",
-            "officialCode": "2239-10-LP26",
-            "titulo": "Licitación Pública: Provisión Anual de Insumos de Escritorio y Papelería Institucional",
-            "organismo": "MINISTERIO DE EDUCACIÓN (MINEDUC)",
-            "organismoRut": "60.000.000-0",
-            "organismoPagoDias": None,
-            "organismoRiesgo": "Sin evaluar",
-            "rubro": "Artículos de Escritorio y Oficina",
-            "region": "Región Metropolitana",
-            "ciudad": "Santiago",
-            "monto": 45000000,
-            "monto_final": 45000000,
-            "fechaPublicacion": TODAY_STR,
-            "fechaCierre": (TODAY + datetime.timedelta(days=14)).isoformat(),
-            "matchScore": 95,
-            "riesgo": "Sin evaluar",
-            "descripcion": "Licitación pública para la adquisición de resmas de papel, archivadores, útiles de oficina e insumos de escritorio para sedes regionales de Mineduc.",
-            "estado": "Publicada",
-            "empresaMatch": "Aminorte",
-            "modalidad": "Licitación",
-            "sourceSystem": "mercadopublico_api",
-            "sourceType": "licitacion",
-            "amountType": "monto_estimado",
-            "validationStatus": "confirmado",
-            "tipoOficial": "LP",
-            "tipoNombre": "Licitación Pública >100 UTM",
-            "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2239-10-LP26",
-            "items": [{"sku": "SKU-MIN-01", "producto": "Insumos de papelería y escritorio", "cantidad": 1, "precioUnitario": 45000000}],
-            "criteriosEvaluacion": [{"aspecto": "Precio", "ponderacion": 60, "descripcion": "Evaluación económica de la oferta"}, {"aspecto": "Calidad", "ponderacion": 40, "descripcion": "Especificaciones técnicas del producto"}],
-            "cronograma": [{"hito": "Publicación", "fecha": TODAY_STR}, {"hito": "Cierre de Ofertas", "fecha": (TODAY + datetime.timedelta(days=14)).isoformat()}],
-            "documentos": [],
-            "preguntas": [],
-            "comentarios": [],
-            "competidoresPropuestos": []
-        },
-        {
-            "id": "3934-45-LP26",
-            "codigo": "3934-45-LP26",
-            "officialCode": "3934-45-LP26",
-            "titulo": "Licitación Pública: Adquisición de Mobiliario Ergonómico de Oficina y Escritorios Modulares",
-            "organismo": "JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)",
-            "organismoRut": "70.012.300-4",
-            "organismoPagoDias": None,
-            "organismoRiesgo": "Sin evaluar",
-            "rubro": "Mobiliario y Equipamiento de Oficina",
-            "region": "Región de Valparaíso",
-            "ciudad": "Valparaíso",
-            "monto": 68000000,
-            "monto_final": 68000000,
-            "fechaPublicacion": TODAY_STR,
-            "fechaCierre": (TODAY + datetime.timedelta(days=21)).isoformat(),
-            "matchScore": 92,
-            "riesgo": "Sin evaluar",
-            "descripcion": "Licitación pública para provisión e instalación de sillas ejecutivas ergonómicas, escritorios modulares y cajoneras rodantes.",
-            "estado": "Publicada",
-            "empresaMatch": "V-MOCCS",
-            "modalidad": "Licitación",
-            "sourceSystem": "mercadopublico_api",
-            "sourceType": "licitacion",
-            "amountType": "monto_estimado",
-            "validationStatus": "confirmado",
-            "tipoOficial": "LP",
-            "tipoNombre": "Licitación Pública >100 UTM",
-            "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3934-45-LP26",
-            "items": [{"sku": "SKU-VMO-01", "producto": "Mobiliario ergonómico de oficina", "cantidad": 1, "precioUnitario": 68000000}],
-            "criteriosEvaluacion": [{"aspecto": "Precio", "ponderacion": 50, "descripcion": "Evaluación de propuesta económica"}, {"aspecto": "Plazo Entrega", "ponderacion": 50, "descripcion": "Tiempo de instalación en dependencias"}],
-            "cronograma": [{"hito": "Publicación", "fecha": TODAY_STR}, {"hito": "Cierre de Ofertas", "fecha": (TODAY + datetime.timedelta(days=21)).isoformat()}],
-            "documentos": [],
-            "preguntas": [],
-            "comentarios": [],
-            "competidoresPropuestos": []
-        }
-    ]
-
-    for lic in licitaciones_fallback:
-        if lic["codigo"] not in opportunities_by_code:
-            opportunities_by_code[lic["codigo"]] = lic
     print(f"[FASE 2] Pre-filtradas (irrelevantes, sin llamar API detalle): {prefiltered_out}")
     print(f"[FASE 2] Excluidas por falta de datos reales (organismo/monto no verificable): {excluded_no_real_data}")
     print(f"[FASE 2] Excluidas por no calzar con catálogo de ninguna empresa activa: {excluded_no_company_match}")

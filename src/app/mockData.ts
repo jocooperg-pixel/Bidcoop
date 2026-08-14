@@ -155,7 +155,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1002772-79-LP26",
@@ -255,7 +258,11 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "clip",
+      "pc"
+    ]
   },
   {
     "id": "op-1005498-17-LP26",
@@ -347,7 +354,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-1012975-9-L126",
@@ -439,7 +449,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-1029940-11-LE26",
@@ -531,7 +544,10 @@ const rawOportunidades: any = [
         "sobre"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre"
+    ]
   },
   {
     "id": "op-1049-59-LP26",
@@ -637,7 +653,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1056854-8-LE26",
@@ -736,7 +755,10 @@ const rawOportunidades: any = [
         "servidor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor"
+    ]
   },
   {
     "id": "op-1057049-269-LE26",
@@ -828,7 +850,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-1057387-41-LR26",
@@ -920,7 +945,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1057387-47-LE26",
@@ -1015,7 +1043,13 @@ const rawOportunidades: any = [
         "multifuncionales"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras",
+      "multifuncional",
+      "multifuncionales"
+    ]
   },
   {
     "id": "op-1057428-28-LE26",
@@ -1107,7 +1141,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-1057489-211-I226",
@@ -1202,7 +1239,13 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre",
+      "marcador",
+      "regla",
+      "pc"
+    ]
   },
   {
     "id": "op-1057489-237-I226",
@@ -1297,7 +1340,13 @@ const rawOportunidades: any = [
         "servidor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre",
+      "regla",
+      "pc",
+      "servidor"
+    ]
   },
   {
     "id": "op-1057489-240-LE26",
@@ -1390,7 +1439,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla",
+      "cámara"
+    ]
   },
   {
     "id": "op-1057489-241-LP26",
@@ -1511,7 +1564,11 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla",
+      "pc"
+    ]
   },
   {
     "id": "op-1057490-57-LP26",
@@ -1603,7 +1660,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1057491-149-LP26",
@@ -1695,7 +1755,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1057494-46-LE26",
@@ -1801,7 +1864,10 @@ const rawOportunidades: any = [
         "insumos de escritorio"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "insumos de escritorio"
+    ]
   },
   {
     "id": "op-1057494-51-LP26",
@@ -1956,7 +2022,10 @@ const rawOportunidades: any = [
         "kardex"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "kardex"
+    ]
   },
   {
     "id": "op-1057495-16-LP26",
@@ -2048,7 +2117,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1057495-17-LP26",
@@ -2140,7 +2212,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1057501-434-LR26",
@@ -2386,7 +2461,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1057503-117-LP26",
@@ -2486,7 +2564,11 @@ const rawOportunidades: any = [
         "monitores"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "monitores"
+    ]
   },
   {
     "id": "op-1057509-230-LE26",
@@ -2578,7 +2660,10 @@ const rawOportunidades: any = [
         "clip"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "clip"
+    ]
   },
   {
     "id": "op-1057536-96-LP26",
@@ -2671,7 +2756,11 @@ const rawOportunidades: any = [
         "computadores"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "computadores"
+    ]
   },
   {
     "id": "op-1057539-88-LR26",
@@ -2763,7 +2852,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1057544-232-LR26",
@@ -2876,7 +2968,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1057548-17-LE26",
@@ -2968,7 +3063,10 @@ const rawOportunidades: any = [
         "fotocopia"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia"
+    ]
   },
   {
     "id": "op-1058043-36-LR26",
@@ -3061,7 +3159,11 @@ const rawOportunidades: any = [
         "lapices"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "lápices",
+      "lapices"
+    ]
   },
   {
     "id": "op-1063534-5-LE26",
@@ -3153,7 +3255,10 @@ const rawOportunidades: any = [
         "laptop"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "laptop"
+    ]
   },
   {
     "id": "op-1063538-191-LP26",
@@ -3245,7 +3350,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1064967-4-LE26",
@@ -3337,7 +3445,10 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "led"
+    ]
   },
   {
     "id": "op-1067455-13-LE26",
@@ -3429,7 +3540,10 @@ const rawOportunidades: any = [
         "proyector"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "proyector"
+    ]
   },
   {
     "id": "op-1075337-44-LP26",
@@ -4051,7 +4165,15 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-1075963-340-LE26",
@@ -4276,7 +4398,10 @@ const rawOportunidades: any = [
         "clip"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "clip"
+    ]
   },
   {
     "id": "op-1079576-42-LE26",
@@ -4368,7 +4493,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1079650-39-LE26",
@@ -4461,7 +4589,11 @@ const rawOportunidades: any = [
         "escaner"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "escáner",
+      "escaner"
+    ]
   },
   {
     "id": "op-1079650-47-LE26",
@@ -4609,7 +4741,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1080286-21-LE26",
@@ -4855,7 +4990,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1084156-43-LR26",
@@ -4948,7 +5086,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-1093303-6-LE26",
@@ -5040,7 +5182,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-1106-20-LE26",
@@ -5139,7 +5284,10 @@ const rawOportunidades: any = [
         "tambor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tambor"
+    ]
   },
   {
     "id": "op-1113265-13-LE26",
@@ -5243,7 +5391,15 @@ const rawOportunidades: any = [
         "proyector"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "computadores",
+      "monitor",
+      "monitores",
+      "pantalla",
+      "proyector"
+    ]
   },
   {
     "id": "op-1126922-31-LE26",
@@ -5377,7 +5533,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1159-6-LE26",
@@ -5472,7 +5631,13 @@ const rawOportunidades: any = [
         "monitores"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "notebook",
+      "notebooks",
+      "monitor",
+      "monitores"
+    ]
   },
   {
     "id": "op-1171317-74-LE26",
@@ -5564,7 +5729,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-1173933-10-LE26",
@@ -5712,7 +5880,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1180740-6-LE26",
@@ -5813,7 +5984,12 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "computadores",
+      "monitor"
+    ]
   },
   {
     "id": "op-1180968-1-LR26",
@@ -5997,7 +6173,11 @@ const rawOportunidades: any = [
         "monitores"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "monitores"
+    ]
   },
   {
     "id": "op-1196-14-L126",
@@ -6096,7 +6276,17 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia",
+      "impresora",
+      "impresoras",
+      "computador",
+      "computadores",
+      "notebook",
+      "servidor",
+      "cámara"
+    ]
   },
   {
     "id": "op-1198-26-LE26",
@@ -6195,7 +6385,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1200377-22-LE26",
@@ -6744,7 +6937,12 @@ const rawOportunidades: any = [
         "escaner"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla",
+      "escáner",
+      "escaner"
+    ]
   },
   {
     "id": "op-1208541-11-LE26",
@@ -6983,7 +7181,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1233619-35-LE26",
@@ -7075,7 +7276,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1242121-19-LE26",
@@ -7168,7 +7372,11 @@ const rawOportunidades: any = [
         "ssd"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla",
+      "ssd"
+    ]
   },
   {
     "id": "op-1242125-5-LE26",
@@ -7260,7 +7468,10 @@ const rawOportunidades: any = [
         "regla"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla"
+    ]
   },
   {
     "id": "op-1247197-54-LE26",
@@ -7352,7 +7563,10 @@ const rawOportunidades: any = [
         "plotter"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "plotter"
+    ]
   },
   {
     "id": "op-1260113-5-LR26",
@@ -7448,7 +7662,14 @@ const rawOportunidades: any = [
         "notebooks"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "computadores",
+      "pc",
+      "notebook",
+      "notebooks"
+    ]
   },
   {
     "id": "op-1288505-7-LE26",
@@ -7540,7 +7761,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1292-26-LE26",
@@ -7632,7 +7856,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1305525-36-LP26",
@@ -7754,7 +7981,12 @@ const rawOportunidades: any = [
         "all in one"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "computadores",
+      "all in one"
+    ]
   },
   {
     "id": "op-1305544-48-B226",
@@ -7847,7 +8079,11 @@ const rawOportunidades: any = [
         "notebooks"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "notebook",
+      "notebooks"
+    ]
   },
   {
     "id": "op-1306643-23-LE26",
@@ -7939,7 +8175,10 @@ const rawOportunidades: any = [
         "mampara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mampara"
+    ]
   },
   {
     "id": "op-1317954-2-LE26",
@@ -8031,7 +8270,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1347870-14-LE26",
@@ -8123,7 +8365,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-1360-8-LE26",
@@ -8216,7 +8461,11 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "monitor"
+    ]
   },
   {
     "id": "op-1375735-9-LE26",
@@ -8309,7 +8558,11 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pantalla",
+      "led"
+    ]
   },
   {
     "id": "op-1380-159-LE26",
@@ -8403,7 +8656,12 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-1392-28-LE26",
@@ -8496,7 +8754,11 @@ const rawOportunidades: any = [
         "computadores"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "computadores"
+    ]
   },
   {
     "id": "op-1395-52-LE26",
@@ -8728,7 +8990,10 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "led"
+    ]
   },
   {
     "id": "op-1414396-21-LP26",
@@ -8820,7 +9085,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1415861-9-L126",
@@ -8912,7 +9180,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-1422256-1-LP26",
@@ -9004,7 +9275,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1422830-14-LR26",
@@ -9145,7 +9419,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-14-24-LE26",
@@ -9237,7 +9514,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1426039-8-LE26",
@@ -9329,7 +9609,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1426100-10-CO26",
@@ -9421,7 +9704,10 @@ const rawOportunidades: any = [
         "carpeta"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "carpeta"
+    ]
   },
   {
     "id": "op-1431841-48-LE26",
@@ -9526,7 +9812,16 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas",
+      "tambor",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-1434-22-LE26",
@@ -9618,7 +9913,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-1447790-10-LP26",
@@ -9724,7 +10022,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1499-160-LR26",
@@ -9817,7 +10118,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-1537592-9-LE26",
@@ -9917,7 +10222,11 @@ const rawOportunidades: any = [
         "escaner"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "escáner",
+      "escaner"
+    ]
   },
   {
     "id": "op-1540-87-LE26",
@@ -10009,7 +10318,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-1550-3-LE26",
@@ -10103,7 +10415,12 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "pc",
+      "climatización"
+    ]
   },
   {
     "id": "op-1554-49-LP26",
@@ -10204,7 +10521,12 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-1562-44-LE26",
@@ -10296,7 +10618,10 @@ const rawOportunidades: any = [
         "router"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "router"
+    ]
   },
   {
     "id": "op-1589-7-LE26",
@@ -10397,7 +10722,12 @@ const rawOportunidades: any = [
         "fotocopiadoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia",
+      "fotocopiadora",
+      "fotocopiadoras"
+    ]
   },
   {
     "id": "op-1592-9-LP26",
@@ -10489,7 +10819,10 @@ const rawOportunidades: any = [
         "sobre"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre"
+    ]
   },
   {
     "id": "op-1618-8-LE26",
@@ -10581,7 +10914,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1641-219-LR26",
@@ -10809,7 +11145,13 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla",
+      "pc",
+      "aire acondicionado",
+      "climatización"
+    ]
   },
   {
     "id": "op-1641-266-LP26",
@@ -10911,7 +11253,13 @@ const rawOportunidades: any = [
         "monitores"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla",
+      "pc",
+      "monitor",
+      "monitores"
+    ]
   },
   {
     "id": "op-1641-334-LR26",
@@ -11010,7 +11358,10 @@ const rawOportunidades: any = [
         "tijera"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tijera"
+    ]
   },
   {
     "id": "op-1658-181-LE26",
@@ -11103,7 +11454,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-1663-127-LE26",
@@ -11200,7 +11555,15 @@ const rawOportunidades: any = [
         "multifuncionales"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "impresora",
+      "impresoras",
+      "multifuncional",
+      "multifuncionales"
+    ]
   },
   {
     "id": "op-1663-129-LE26",
@@ -11299,7 +11662,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1663-130-LE26",
@@ -11391,7 +11757,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1697-38-LE26",
@@ -11498,7 +11867,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc",
+      "cámara"
+    ]
   },
   {
     "id": "op-1699-5-LP26",
@@ -11590,7 +11963,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-1725-178-LE26",
@@ -11682,7 +12058,10 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-1725-183-LE26",
@@ -11774,7 +12153,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1725-186-LE26",
@@ -11866,7 +12248,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-1947-138-LP26",
@@ -11958,7 +12343,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-1947-147-LE26",
@@ -12058,7 +12446,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-1949-1-LP26",
@@ -12150,7 +12542,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-1965-12-LE26",
@@ -12245,7 +12640,13 @@ const rawOportunidades: any = [
         "multifuncionales"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras",
+      "multifuncional",
+      "multifuncionales"
+    ]
   },
   {
     "id": "op-1979-171-LP26",
@@ -12337,7 +12738,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-2006-12-LE26",
@@ -12429,7 +12833,10 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "led"
+    ]
   },
   {
     "id": "op-2045-12-L126",
@@ -12521,7 +12928,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-2048-56-LP26",
@@ -12628,7 +13038,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-2048-60-LP26",
@@ -12720,7 +13134,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-2069-133-LP26",
@@ -12890,7 +13307,11 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "clip",
+      "pc"
+    ]
   },
   {
     "id": "op-2078-33-LE26",
@@ -12983,7 +13404,11 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc",
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-2080-233-LP26",
@@ -13348,7 +13773,10 @@ const rawOportunidades: any = [
         "clip"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "clip"
+    ]
   },
   {
     "id": "op-2101-127-L126",
@@ -13447,7 +13875,10 @@ const rawOportunidades: any = [
         "separador"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "separador"
+    ]
   },
   {
     "id": "op-2126-109-LR26",
@@ -13539,7 +13970,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-2173-24-LP26",
@@ -13631,7 +14065,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-2173-25-LE26",
@@ -13723,7 +14160,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-2183-12-LP26",
@@ -13815,7 +14255,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-2307-36-LR26",
@@ -13910,7 +14353,13 @@ const rawOportunidades: any = [
         "multifuncionales"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras",
+      "multifuncional",
+      "multifuncionales"
+    ]
   },
   {
     "id": "op-2308-67-LR26",
@@ -14003,7 +14452,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "cámara"
+    ]
   },
   {
     "id": "op-2322-66-LE26",
@@ -14095,7 +14548,10 @@ const rawOportunidades: any = [
         "servidor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor"
+    ]
   },
   {
     "id": "op-2322-67-LE26",
@@ -14188,7 +14644,11 @@ const rawOportunidades: any = [
         "respaldo de energía"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups",
+      "respaldo de energía"
+    ]
   },
   {
     "id": "op-2324-97-LE26",
@@ -14280,7 +14740,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-2328-49-LE26",
@@ -14379,7 +14842,10 @@ const rawOportunidades: any = [
         "pizarra"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pizarra"
+    ]
   },
   {
     "id": "op-2335-52-LE26",
@@ -14471,7 +14937,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-2343-18-LE26",
@@ -14563,7 +15032,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-2384-38-LE26",
@@ -14656,7 +15128,11 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pantalla",
+      "led"
+    ]
   },
   {
     "id": "op-2385-39-LE26",
@@ -14748,7 +15224,10 @@ const rawOportunidades: any = [
         "sobre"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre"
+    ]
   },
   {
     "id": "op-2402-67-LE26",
@@ -14840,7 +15319,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-2408-148-LE26",
@@ -14932,7 +15414,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-2409-44-L126",
@@ -15024,7 +15509,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-2410-35-LP26",
@@ -15116,7 +15604,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-2415-11-LE26",
@@ -15209,7 +15700,11 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre",
+      "pc"
+    ]
   },
   {
     "id": "op-2421-39-LE26",
@@ -15301,7 +15796,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-2422-143-L126",
@@ -15393,7 +15891,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-2423-53-LP26",
@@ -15485,7 +15986,10 @@ const rawOportunidades: any = [
         "switch"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "switch"
+    ]
   },
   {
     "id": "op-2427-49-LE26",
@@ -15619,7 +16123,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-2430-62-LR26",
@@ -15711,7 +16218,10 @@ const rawOportunidades: any = [
         "pantalla"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pantalla"
+    ]
   },
   {
     "id": "op-2440-58-LE26",
@@ -15803,7 +16313,10 @@ const rawOportunidades: any = [
         "fotocopia"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia"
+    ]
   },
   {
     "id": "op-2460-92-LE26",
@@ -15895,7 +16408,10 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-2479-2-LS10",
@@ -15987,7 +16503,10 @@ const rawOportunidades: any = [
         "sobre"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre"
+    ]
   },
   {
     "id": "op-2483-174-LR26",
@@ -16080,7 +16599,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-2483-231-LP26",
@@ -16172,7 +16695,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-2490-73-LR26",
@@ -16272,7 +16798,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-2561-17-LE26",
@@ -16364,7 +16894,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-2562-18-LR26",
@@ -16561,7 +17094,10 @@ const rawOportunidades: any = [
         "respaldo de energía"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "respaldo de energía"
+    ]
   },
   {
     "id": "op-2563-36-LP26",
@@ -16675,7 +17211,11 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor",
+      "monitor"
+    ]
   },
   {
     "id": "op-2656-54-LE26",
@@ -16767,7 +17307,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-2663-68-L126",
@@ -16860,7 +17403,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-2665-37-LE26",
@@ -16953,7 +17500,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-2697-26-LP26",
@@ -17052,7 +17603,10 @@ const rawOportunidades: any = [
         "sobre"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre"
+    ]
   },
   {
     "id": "op-2710-50-LE26",
@@ -17144,7 +17698,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-2713-120-LE26",
@@ -17243,7 +17800,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-2713-123-LE26",
@@ -17335,7 +17895,10 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "led"
+    ]
   },
   {
     "id": "op-2735-108-LR26",
@@ -17427,7 +17990,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-2755-29-LE26",
@@ -17520,7 +18086,11 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara",
+      "climatización"
+    ]
   },
   {
     "id": "op-2757-10-LE26",
@@ -17612,7 +18182,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-2760-101-CO26",
@@ -17704,7 +18277,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-2760-98-LE26",
@@ -17797,7 +18373,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-2770-121-LE26",
@@ -17889,7 +18469,10 @@ const rawOportunidades: any = [
         "insumos de impresión"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "insumos de impresión"
+    ]
   },
   {
     "id": "op-2788-38-LP26",
@@ -17981,7 +18564,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-2788-42-LE26",
@@ -18073,7 +18659,10 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "led"
+    ]
   },
   {
     "id": "op-2791-22-LE26",
@@ -18165,7 +18754,10 @@ const rawOportunidades: any = [
         "proyector"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "proyector"
+    ]
   },
   {
     "id": "op-2831-26-LE26",
@@ -18257,7 +18849,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-29-54-LE26",
@@ -18489,7 +19084,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-29-59-LE26",
@@ -18581,7 +19179,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-2974-58-LE26",
@@ -18673,7 +19274,10 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-2981-202-LP26",
@@ -18765,7 +19369,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-2981-212-LP26",
@@ -18859,7 +19466,12 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "escáner",
+      "escaner",
+      "cámara"
+    ]
   },
   {
     "id": "op-3030-24-L126",
@@ -18954,7 +19566,13 @@ const rawOportunidades: any = [
         "articulos de escritorio"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "papelería",
+      "papeleria",
+      "artículos de escritorio",
+      "articulos de escritorio"
+    ]
   },
   {
     "id": "op-3053-3-LE26",
@@ -19048,7 +19666,12 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina",
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-3065-52-LE26",
@@ -19140,7 +19763,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-3109-4-LE26",
@@ -19302,7 +19928,10 @@ const rawOportunidades: any = [
         "servidor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor"
+    ]
   },
   {
     "id": "op-3129-2-L126",
@@ -19394,7 +20023,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-3134-78-LE26",
@@ -19486,7 +20118,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-316-47-LE26",
@@ -19578,7 +20213,10 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-316-50-LE26",
@@ -19670,7 +20308,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-3178-27-LP26",
@@ -19762,7 +20403,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-3179-27-LE26",
@@ -19854,7 +20498,10 @@ const rawOportunidades: any = [
         "silla"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "silla"
+    ]
   },
   {
     "id": "op-3206-26-L126",
@@ -19948,7 +20595,12 @@ const rawOportunidades: any = [
         "fotocopiadoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia",
+      "fotocopiadora",
+      "fotocopiadoras"
+    ]
   },
   {
     "id": "op-3253-73-LE26",
@@ -20040,7 +20692,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-3268-17-LE26",
@@ -20139,7 +20794,10 @@ const rawOportunidades: any = [
         "tambor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tambor"
+    ]
   },
   {
     "id": "op-3326-42-LE26",
@@ -20231,7 +20889,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-3328-91-LE26",
@@ -20330,7 +20991,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-3335-27-LE26",
@@ -20422,7 +21086,10 @@ const rawOportunidades: any = [
         "proyector"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "proyector"
+    ]
   },
   {
     "id": "op-3378-47-LP26",
@@ -20514,7 +21181,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-3420-5-LE26",
@@ -20606,7 +21276,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-3428-16-LE26",
@@ -20698,7 +21371,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-3444-10-LE26",
@@ -20790,7 +21466,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-3447-135-E226",
@@ -20911,7 +21590,11 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado",
+      "climatización"
+    ]
   },
   {
     "id": "op-3518-15-LE26",
@@ -21003,7 +21686,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-3561-35-LE26",
@@ -21095,7 +21781,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-3588-34-LE26",
@@ -21188,7 +21877,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "cámara"
+    ]
   },
   {
     "id": "op-3634-19-LE26",
@@ -21280,7 +21973,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-3693-151-LE26",
@@ -21372,7 +22068,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-3697-35-LP26",
@@ -21466,7 +22165,12 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina",
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-3781-4-LE26",
@@ -21558,7 +22262,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-3797-39-LE26",
@@ -21651,7 +22358,11 @@ const rawOportunidades: any = [
         "memoria"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor",
+      "memoria"
+    ]
   },
   {
     "id": "op-3853-15-LE26",
@@ -21743,7 +22454,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-3858-28-LE26",
@@ -21849,7 +22563,10 @@ const rawOportunidades: any = [
         "notebook"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "notebook"
+    ]
   },
   {
     "id": "op-3864-43-LE26",
@@ -22004,7 +22721,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-3882-71-LE26",
@@ -22097,7 +22817,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "cámara"
+    ]
   },
   {
     "id": "op-3885-49-L126",
@@ -22225,7 +22949,11 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "insumos de oficina",
+      "pc"
+    ]
   },
   {
     "id": "op-3887-37-LE26",
@@ -22317,7 +23045,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-3929-53-LP26",
@@ -22410,7 +23141,11 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "pc"
+    ]
   },
   {
     "id": "op-3933-43-L126",
@@ -22503,7 +23238,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-3933-45-L126",
@@ -22595,7 +23334,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-3935-75-LE26",
@@ -22688,7 +23430,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "cámara"
+    ]
   },
   {
     "id": "op-3958-51-L126",
@@ -22781,7 +23527,11 @@ const rawOportunidades: any = [
         "notebooks"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "notebook",
+      "notebooks"
+    ]
   },
   {
     "id": "op-4053-36-LE26",
@@ -22874,7 +23624,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-407-120-LE26",
@@ -22966,7 +23720,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-411-38-LE26",
@@ -23079,7 +23836,10 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-4123-5-LE26",
@@ -23178,7 +23938,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-4127-31-LE26",
@@ -23270,7 +24033,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-4157-19-L126",
@@ -23364,7 +24130,12 @@ const rawOportunidades: any = [
         "fotocopiadora"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia",
+      "impresora",
+      "fotocopiadora"
+    ]
   },
   {
     "id": "op-418-49-LP26",
@@ -23456,7 +24227,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-4237-12-LR26",
@@ -23548,7 +24322,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-4238-64-LE26",
@@ -23641,7 +24418,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-425-36-LP26",
@@ -23733,7 +24514,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-425-46-LR26",
@@ -23825,7 +24609,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-4284-133-L126",
@@ -23931,7 +24718,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-4301-55-LP26",
@@ -24029,7 +24819,16 @@ const rawOportunidades: any = [
         "fotocopiadoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia",
+      "impresora",
+      "impresoras",
+      "multifuncional",
+      "multifuncionales",
+      "fotocopiadora",
+      "fotocopiadoras"
+    ]
   },
   {
     "id": "op-438-44-LE26",
@@ -24121,7 +24920,10 @@ const rawOportunidades: any = [
         "sobre"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre"
+    ]
   },
   {
     "id": "op-4404-50-LE26",
@@ -24244,7 +25046,13 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-4469-152-E226",
@@ -24343,7 +25151,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-4494-50-LE26",
@@ -24435,7 +25246,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-4642-95-LP26",
@@ -24528,7 +25342,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-4732-20-LE26",
@@ -24621,7 +25439,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "cámara"
+    ]
   },
   {
     "id": "op-4776-50-LE26",
@@ -24727,7 +25549,10 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-4803-26-LE26",
@@ -24819,7 +25644,10 @@ const rawOportunidades: any = [
         "servidor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor"
+    ]
   },
   {
     "id": "op-4928-28-LE26",
@@ -24911,7 +25739,10 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-4968-45-LE26",
@@ -25004,7 +25835,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-5048-27-O126",
@@ -25097,7 +25932,11 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre",
+      "pc"
+    ]
   },
   {
     "id": "op-5067-111-CO26",
@@ -25189,7 +26028,10 @@ const rawOportunidades: any = [
         "servidor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor"
+    ]
   },
   {
     "id": "op-507428-86-LP26",
@@ -25281,7 +26123,10 @@ const rawOportunidades: any = [
         "silla"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "silla"
+    ]
   },
   {
     "id": "op-507428-93-LE26",
@@ -25373,7 +26218,10 @@ const rawOportunidades: any = [
         "pantalla"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pantalla"
+    ]
   },
   {
     "id": "op-514862-106-LP26",
@@ -25488,7 +26336,12 @@ const rawOportunidades: any = [
         "notebook"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "computadores",
+      "notebook"
+    ]
   },
   {
     "id": "op-520149-29-I226",
@@ -25581,7 +26434,11 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc",
+      "climatización"
+    ]
   },
   {
     "id": "op-520149-30-LR26",
@@ -25680,7 +26537,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-520149-37-LE26",
@@ -25772,7 +26632,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-520663-35-LS10",
@@ -25864,7 +26727,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-5240-78-LR26",
@@ -25956,7 +26822,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-5251-62-LE26",
@@ -26048,7 +26917,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-5268-29-O126",
@@ -26140,7 +27012,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-539119-73-LE26",
@@ -26240,7 +27115,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-5553-1-LE26",
@@ -26333,7 +27212,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "cámara"
+    ]
   },
   {
     "id": "op-5562-6-LE26",
@@ -26425,7 +27308,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-557639-64-LE26",
@@ -26532,7 +27418,11 @@ const rawOportunidades: any = [
         "proyector"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pantalla",
+      "proyector"
+    ]
   },
   {
     "id": "op-557639-68-LE26",
@@ -26624,7 +27514,10 @@ const rawOportunidades: any = [
         "tabique"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tabique"
+    ]
   },
   {
     "id": "op-558869-39-LR26",
@@ -26769,7 +27662,14 @@ const rawOportunidades: any = [
         "fotocopiadoras"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia",
+      "impresora",
+      "impresoras",
+      "fotocopiadora",
+      "fotocopiadoras"
+    ]
   },
   {
     "id": "op-5611-20-CO26",
@@ -26861,7 +27761,10 @@ const rawOportunidades: any = [
         "plotter"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "plotter"
+    ]
   },
   {
     "id": "op-5612-6-LE26",
@@ -26969,7 +27872,12 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre",
+      "monitor",
+      "cámara"
+    ]
   },
   {
     "id": "op-564162-62-LP26",
@@ -27075,7 +27983,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-564162-80-LE26",
@@ -27167,7 +28078,10 @@ const rawOportunidades: any = [
         "notebook"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "notebook"
+    ]
   },
   {
     "id": "op-5642-15-LE26",
@@ -27259,7 +28173,10 @@ const rawOportunidades: any = [
         "memoria"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "memoria"
+    ]
   },
   {
     "id": "op-5684-9-LR26",
@@ -27358,7 +28275,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-5748-2-LP26",
@@ -27450,7 +28370,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-603663-4-LE26",
@@ -27542,7 +28465,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-605-16-LE26",
@@ -27662,7 +28588,10 @@ const rawOportunidades: any = [
         "aire acondicionado"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado"
+    ]
   },
   {
     "id": "op-608-161-LP26",
@@ -27824,7 +28753,10 @@ const rawOportunidades: any = [
         "adaptador"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "adaptador"
+    ]
   },
   {
     "id": "op-608897-50-LE26",
@@ -27916,7 +28848,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-609-18-LP26",
@@ -28008,7 +28943,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-612-26-LE26",
@@ -28100,7 +29038,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-618923-10-LE26",
@@ -28192,7 +29133,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-619133-74-LE26",
@@ -28467,7 +29411,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-621-644-LR26",
@@ -28559,7 +29507,10 @@ const rawOportunidades: any = [
         "tablet"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tablet"
+    ]
   },
   {
     "id": "op-621-697-LP26",
@@ -28651,7 +29602,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-621-721-LR26",
@@ -28743,7 +29697,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-622-44-L126",
@@ -28835,7 +29792,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-622847-10-LP26",
@@ -28927,7 +29887,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-627025-8-LE26",
@@ -29020,7 +29983,11 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "regla",
+      "pc"
+    ]
   },
   {
     "id": "op-629373-16-LP26",
@@ -29112,7 +30079,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-634-68-LE26",
@@ -29211,7 +30181,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-652-37-LP26",
@@ -29303,7 +30276,10 @@ const rawOportunidades: any = [
         "servidor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor"
+    ]
   },
   {
     "id": "op-661-11-LE26",
@@ -29399,7 +30375,14 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas",
+      "pc"
+    ]
   },
   {
     "id": "op-693-28-LE26",
@@ -29499,7 +30482,11 @@ const rawOportunidades: any = [
         "monitores"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "monitores"
+    ]
   },
   {
     "id": "op-693-29-LP26",
@@ -29591,7 +30578,10 @@ const rawOportunidades: any = [
         "locker"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "locker"
+    ]
   },
   {
     "id": "op-701426-7-LE26",
@@ -29684,7 +30674,11 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pantalla",
+      "led"
+    ]
   },
   {
     "id": "op-707409-23-E226",
@@ -29849,7 +30843,13 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-710326-2-LE26",
@@ -29941,7 +30941,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-721-29-LP26",
@@ -30033,7 +31036,10 @@ const rawOportunidades: any = [
         "servidor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "servidor"
+    ]
   },
   {
     "id": "op-721703-32-LP26",
@@ -30139,7 +31145,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-732434-17-LR26",
@@ -30232,7 +31241,11 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc",
+      "cámara"
+    ]
   },
   {
     "id": "op-744-3-LE26",
@@ -30325,7 +31338,11 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "aire acondicionado",
+      "climatización"
+    ]
   },
   {
     "id": "op-747-5-LE26",
@@ -30417,7 +31434,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-752-28-LE26",
@@ -30509,7 +31529,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-757-56-LE26",
@@ -30608,7 +31631,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-757818-15-LE26",
@@ -30714,7 +31740,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-771555-10-LE26",
@@ -30809,7 +31838,13 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "sobre",
+      "pc",
+      "monitor",
+      "cámara"
+    ]
   },
   {
     "id": "op-776-25-LE26",
@@ -30902,7 +31937,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-799512-40-LE26",
@@ -30994,7 +32033,10 @@ const rawOportunidades: any = [
         "audífono"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "audífono"
+    ]
   },
   {
     "id": "op-799512-46-LE26",
@@ -31090,7 +32132,14 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras",
+      "multifuncional",
+      "multifuncionales",
+      "pc"
+    ]
   },
   {
     "id": "op-809-50-LE26",
@@ -31186,7 +32235,14 @@ const rawOportunidades: any = [
         "multifuncionales"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "fotocopia",
+      "impresora",
+      "impresoras",
+      "multifuncional",
+      "multifuncionales"
+    ]
   },
   {
     "id": "op-813-79-LE26",
@@ -31280,7 +32336,12 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria",
+      "pc"
+    ]
   },
   {
     "id": "op-813-86-LP26",
@@ -31386,7 +32447,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-825-3-O126",
@@ -31479,7 +32543,11 @@ const rawOportunidades: any = [
         "memoria"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc",
+      "memoria"
+    ]
   },
   {
     "id": "op-846-27-LP26",
@@ -31571,7 +32639,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-857-4-LE26",
@@ -31666,7 +32737,13 @@ const rawOportunidades: any = [
         "multifuncionales"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras",
+      "multifuncional",
+      "multifuncionales"
+    ]
   },
   {
     "id": "op-867990-66-L126",
@@ -31758,7 +32835,10 @@ const rawOportunidades: any = [
         "mampara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mampara"
+    ]
   },
   {
     "id": "op-893-8-LP26",
@@ -31850,7 +32930,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-896-12-CO26",
@@ -31942,7 +33025,10 @@ const rawOportunidades: any = [
         "monitor"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "monitor"
+    ]
   },
   {
     "id": "op-898-156-LE26",
@@ -32034,7 +33120,10 @@ const rawOportunidades: any = [
         "mampara"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mampara"
+    ]
   },
   {
     "id": "op-937232-69-LP26",
@@ -32833,7 +33922,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-938-27-LE26",
@@ -32925,7 +34017,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-948354-109-LR26",
@@ -33017,7 +34112,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-976-10-O126",
@@ -33109,7 +34207,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-986278-14-LE26",
@@ -33243,7 +34344,10 @@ const rawOportunidades: any = [
         "climatización"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "climatización"
+    ]
   },
   {
     "id": "op-986278-15-LE26",
@@ -33356,7 +34460,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-999-27-LE26",
@@ -33448,7 +34555,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-1057439-4608-COT26",
@@ -33541,7 +34651,11 @@ const rawOportunidades: any = [
         "monitores"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "monitor",
+      "monitores"
+    ]
   },
   {
     "id": "op-2378-155-COT26",
@@ -33633,7 +34747,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-2408-320-COT26",
@@ -33725,7 +34842,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-2923-602-COT26",
@@ -33820,7 +34940,13 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-2427-829-COT26",
@@ -33913,7 +35039,11 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "silla",
+      "escritorio"
+    ]
   },
   {
     "id": "op-3167-131-COT26",
@@ -34007,7 +35137,12 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "impresora"
+    ]
   },
   {
     "id": "op-1082957-130-COT26",
@@ -34099,7 +35234,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-2705-1085-COT26",
@@ -34194,7 +35332,13 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-3637-173-COT26",
@@ -34286,7 +35430,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-1274667-293-COT26",
@@ -34378,7 +35525,10 @@ const rawOportunidades: any = [
         "talonario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "talonario"
+    ]
   },
   {
     "id": "op-3731-116-COT26",
@@ -34471,7 +35621,11 @@ const rawOportunidades: any = [
         "articulos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de oficina",
+      "articulos de oficina"
+    ]
   },
   {
     "id": "op-2934-72-COT26",
@@ -34565,7 +35719,12 @@ const rawOportunidades: any = [
         "multifuncional"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras",
+      "multifuncional"
+    ]
   },
   {
     "id": "op-5740-146-COT26",
@@ -34657,7 +35816,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-722-85-COT26",
@@ -34749,7 +35911,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-2923-605-COT26",
@@ -34841,7 +36006,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-2460-760-COT26",
@@ -34933,7 +36101,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-1426102-58-COT26",
@@ -35031,7 +36202,16 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas",
+      "tambor",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-3692-225-COT26",
@@ -35124,7 +36304,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-1057539-3332-COT26",
@@ -35216,7 +36400,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-5153-1540-COT26",
@@ -35308,7 +36495,10 @@ const rawOportunidades: any = [
         "sobre"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "sobre"
+    ]
   },
   {
     "id": "op-2585-965-COT26",
@@ -35400,7 +36590,10 @@ const rawOportunidades: any = [
         "insumos de impresión"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de impresión"
+    ]
   },
   {
     "id": "op-2322-473-COT26",
@@ -35493,7 +36686,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-2207-643-COT26",
@@ -35585,7 +36782,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-3508-557-COT26",
@@ -35678,7 +36878,11 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "impresora"
+    ]
   },
   {
     "id": "op-2294-1621-COT26",
@@ -35770,7 +36974,10 @@ const rawOportunidades: any = [
         "plotter"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "plotter"
+    ]
   },
   {
     "id": "op-2270-239-COT26",
@@ -35862,7 +37069,10 @@ const rawOportunidades: any = [
         "cuaderno"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "cuaderno"
+    ]
   },
   {
     "id": "op-2389-431-COT26",
@@ -35954,7 +37164,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-2765-388-COT26",
@@ -36046,7 +37259,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-2980-385-COT26",
@@ -36138,7 +37354,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1965-273-COT26",
@@ -36230,7 +37449,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-507428-289-COT26",
@@ -36322,7 +37544,10 @@ const rawOportunidades: any = [
         "silla"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "silla"
+    ]
   },
   {
     "id": "op-557639-1959-COT26",
@@ -36414,7 +37639,10 @@ const rawOportunidades: any = [
         "insumos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de oficina"
+    ]
   },
   {
     "id": "op-1718-856-COT26",
@@ -36507,7 +37735,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-986278-70-COT26",
@@ -36599,7 +37831,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-3508-558-COT26",
@@ -36693,7 +37928,12 @@ const rawOportunidades: any = [
         "cartuchos"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "cartucho",
+      "cartuchos"
+    ]
   },
   {
     "id": "op-3885-254-COT26",
@@ -36785,7 +38025,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-3383-42-COT26",
@@ -36882,7 +38125,15 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-449-267-COT26",
@@ -36974,7 +38225,10 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "led"
+    ]
   },
   {
     "id": "op-3017-593-COT26",
@@ -37066,7 +38320,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-3567-305-COT26",
@@ -37159,7 +38416,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-1175-251-COT26",
@@ -37251,7 +38512,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-3712-405-COT26",
@@ -37343,7 +38607,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-3703-316-COT26",
@@ -37435,7 +38702,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1035206-118-COT26",
@@ -37528,7 +38798,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-2682-233-COT26",
@@ -37620,7 +38894,10 @@ const rawOportunidades: any = [
         "insumos de impresión"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de impresión"
+    ]
   },
   {
     "id": "op-3017-586-COT26",
@@ -37712,7 +38989,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-3544-218-COT26",
@@ -37804,7 +39084,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-1431841-881-COT26",
@@ -37896,7 +39179,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-2793-712-COT26",
@@ -37988,7 +39274,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1057543-159-COT26",
@@ -38080,7 +39369,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-3208-124-COT26",
@@ -38172,7 +39464,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-5251-721-COT26",
@@ -38264,7 +39559,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1432083-1207-COT26",
@@ -38356,7 +39654,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-3316-117-COT26",
@@ -38451,7 +39752,13 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-2132-127-COT26",
@@ -38546,7 +39853,13 @@ const rawOportunidades: any = [
         "articulos de escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "papelería",
+      "papeleria",
+      "artículos de escritorio",
+      "articulos de escritorio"
+    ]
   },
   {
     "id": "op-1004823-85-COT26",
@@ -38641,7 +39954,13 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "papelería",
+      "papeleria",
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-3747-238-COT26",
@@ -38736,7 +40055,13 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-630424-438-COT26",
@@ -38828,7 +40153,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-564953-564-COT26",
@@ -38920,7 +40248,10 @@ const rawOportunidades: any = [
         "pizarra"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pizarra"
+    ]
   },
   {
     "id": "op-4452-362-COT26",
@@ -39014,7 +40345,12 @@ const rawOportunidades: any = [
         "tambor"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tambor"
+    ]
   },
   {
     "id": "op-2440-1256-COT26",
@@ -39107,7 +40443,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-1057415-96-COT26",
@@ -39202,7 +40542,13 @@ const rawOportunidades: any = [
         "articulos de libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria",
+      "artículos de librería",
+      "articulos de libreria"
+    ]
   },
   {
     "id": "op-952751-156-COT26",
@@ -39294,7 +40640,10 @@ const rawOportunidades: any = [
         "talonario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "talonario"
+    ]
   },
   {
     "id": "op-3017-579-COT26",
@@ -39386,7 +40735,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1069417-714-COT26",
@@ -39481,7 +40833,13 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-2343-365-COT26",
@@ -39573,7 +40931,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-4494-450-COT26",
@@ -39665,7 +41026,10 @@ const rawOportunidades: any = [
         "insumos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de oficina"
+    ]
   },
   {
     "id": "op-2733-388-COT26",
@@ -39760,7 +41124,13 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-3602-83-COT26",
@@ -39852,7 +41222,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-889473-1464-COT26",
@@ -39945,7 +41318,11 @@ const rawOportunidades: any = [
         "articulos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de oficina",
+      "articulos de oficina"
+    ]
   },
   {
     "id": "op-2864-226-COT26",
@@ -40038,7 +41415,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-5416-530-COT26",
@@ -40131,7 +41512,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-4993-130-COT26",
@@ -40223,7 +41608,10 @@ const rawOportunidades: any = [
         "sobre"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "sobre"
+    ]
   },
   {
     "id": "op-3533-285-COT26",
@@ -40315,7 +41703,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-2422-484-COT26",
@@ -40407,7 +41798,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-647431-36-COT26",
@@ -40499,7 +41893,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-608-4946-COT26",
@@ -40592,7 +41989,11 @@ const rawOportunidades: any = [
         "cartuchos"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "cartucho",
+      "cartuchos"
+    ]
   },
   {
     "id": "op-2446-730-COT26",
@@ -40684,7 +42085,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1426100-61-COT26",
@@ -40776,7 +42180,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1101892-142-COT26",
@@ -40868,7 +42275,10 @@ const rawOportunidades: any = [
         "insumos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de oficina"
+    ]
   },
   {
     "id": "op-2371-284-COT26",
@@ -40960,7 +42370,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-2385-436-COT26",
@@ -41052,7 +42465,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1591-102-COT26",
@@ -41144,7 +42560,10 @@ const rawOportunidades: any = [
         "carpeta"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "carpeta"
+    ]
   },
   {
     "id": "op-1962-224-COT26",
@@ -41236,7 +42655,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1485-34-COT26",
@@ -41329,7 +42751,11 @@ const rawOportunidades: any = [
         "utiles de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "útiles de oficina",
+      "utiles de oficina"
+    ]
   },
   {
     "id": "op-4053-108-COT26",
@@ -41421,7 +42847,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-2464-1131-COT26",
@@ -41514,7 +42943,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-552757-111-COT26",
@@ -41609,7 +43042,13 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-5416-532-COT26",
@@ -41702,7 +43141,11 @@ const rawOportunidades: any = [
         "articulos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de oficina",
+      "articulos de oficina"
+    ]
   },
   {
     "id": "op-602-146-COT26",
@@ -41794,7 +43237,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-2428-1061-COT26",
@@ -41887,7 +43333,11 @@ const rawOportunidades: any = [
         "cajonera"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio",
+      "cajonera"
+    ]
   },
   {
     "id": "op-707424-22-COT26",
@@ -41981,7 +43431,12 @@ const rawOportunidades: any = [
         "usb"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "notebook",
+      "ssd",
+      "usb"
+    ]
   },
   {
     "id": "op-377-294-COT26",
@@ -42073,7 +43528,10 @@ const rawOportunidades: any = [
         "plotter"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "plotter"
+    ]
   },
   {
     "id": "op-974550-5-COT26",
@@ -42168,7 +43626,13 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-2585-964-COT26",
@@ -42262,7 +43726,12 @@ const rawOportunidades: any = [
         "tinta"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "tinta"
+    ]
   },
   {
     "id": "op-1079454-507-COT26",
@@ -42354,7 +43823,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-1230750-171-COT26",
@@ -42447,7 +43919,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-2940-111-COT26",
@@ -42542,7 +44018,13 @@ const rawOportunidades: any = [
         "articulos de libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria",
+      "artículos de librería",
+      "articulos de libreria"
+    ]
   },
   {
     "id": "op-2281-1427-COT26",
@@ -42634,7 +44116,10 @@ const rawOportunidades: any = [
         "pizarra"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pizarra"
+    ]
   },
   {
     "id": "op-2292-592-COT26",
@@ -42729,7 +44214,13 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "resma",
+      "fotocopia",
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-2408-322-COT26",
@@ -42822,7 +44313,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-3178-782-COT26",
@@ -42915,7 +44410,11 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "impresora"
+    ]
   },
   {
     "id": "op-617807-1953-COT26",
@@ -43008,7 +44507,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-2710-336-COT26",
@@ -43100,7 +44603,10 @@ const rawOportunidades: any = [
         "libreta"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "libreta"
+    ]
   },
   {
     "id": "op-662456-1-COT26",
@@ -43192,7 +44698,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1673-224-COT26",
@@ -43284,7 +44793,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-4050-641-COT26",
@@ -43376,7 +44888,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-3938-229-COT26",
@@ -43468,7 +44983,10 @@ const rawOportunidades: any = [
         "talonario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "talonario"
+    ]
   },
   {
     "id": "op-5956-83-COT26",
@@ -43561,7 +45079,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-2422-487-COT26",
@@ -43654,7 +45176,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-1057468-67-COT26",
@@ -43746,7 +45272,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-5742-72-COT26",
@@ -43838,7 +45367,10 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mueble"
+    ]
   },
   {
     "id": "op-4777-588-COT26",
@@ -43930,7 +45462,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-1469-2393-COT26",
@@ -44022,7 +45557,10 @@ const rawOportunidades: any = [
         "pizarra"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pizarra"
+    ]
   },
   {
     "id": "op-3944-108-COT26",
@@ -44114,7 +45652,10 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "led"
+    ]
   },
   {
     "id": "op-2762-493-COT26",
@@ -44207,7 +45748,11 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pc",
+      "ups"
+    ]
   },
   {
     "id": "op-4170-196-COT26",
@@ -44299,7 +45844,10 @@ const rawOportunidades: any = [
         "talonario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "talonario"
+    ]
   },
   {
     "id": "op-1260453-1-COT26",
@@ -44391,7 +45939,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-557639-1970-COT26",
@@ -44483,7 +46034,10 @@ const rawOportunidades: any = [
         "resma"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "resma"
+    ]
   },
   {
     "id": "op-2062-66-COT26",
@@ -44576,7 +46130,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-2703-166-COT26",
@@ -44668,7 +46226,10 @@ const rawOportunidades: any = [
         "archivador"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "archivador"
+    ]
   },
   {
     "id": "op-2328-864-COT26",
@@ -44760,7 +46321,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-3926-174-COT26",
@@ -44853,7 +46417,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-1079576-65-COT26",
@@ -44945,7 +46513,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-2701-515-COT26",
@@ -45037,7 +46608,10 @@ const rawOportunidades: any = [
         "mobiliario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "mobiliario"
+    ]
   },
   {
     "id": "op-1026727-296-COT26",
@@ -45130,7 +46704,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-2432-594-COT26",
@@ -45225,7 +46803,13 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-1411-910-COT26",
@@ -45318,7 +46902,11 @@ const rawOportunidades: any = [
         "articulos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de oficina",
+      "articulos de oficina"
+    ]
   },
   {
     "id": "op-2401-677-COT26",
@@ -45411,7 +46999,11 @@ const rawOportunidades: any = [
         "brocha"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "esmalte al agua",
+      "brocha"
+    ]
   },
   {
     "id": "op-654-191-COT26",
@@ -45503,7 +47095,10 @@ const rawOportunidades: any = [
         "plotter"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "plotter"
+    ]
   },
   {
     "id": "op-3082-119-COT26",
@@ -45595,7 +47190,10 @@ const rawOportunidades: any = [
         "insumos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de oficina"
+    ]
   },
   {
     "id": "op-3082-118-COT26",
@@ -45687,7 +47285,10 @@ const rawOportunidades: any = [
         "insumos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de oficina"
+    ]
   },
   {
     "id": "op-2138-256-COT26",
@@ -45781,7 +47382,12 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora"
+    ]
   },
   {
     "id": "op-3013-520-COT26",
@@ -45874,7 +47480,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-643-172-COT26",
@@ -45966,7 +47576,10 @@ const rawOportunidades: any = [
         "talonario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "talonario"
+    ]
   },
   {
     "id": "op-4834-82-COT26",
@@ -46058,7 +47671,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1057514-108-COT26",
@@ -46150,7 +47766,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-3508-552-COT26",
@@ -46243,7 +47862,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-900-402-COT26",
@@ -46335,7 +47958,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-3938-226-COT26",
@@ -46427,7 +48053,10 @@ const rawOportunidades: any = [
         "insumos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de oficina"
+    ]
   },
   {
     "id": "op-1040758-153-COT26",
@@ -46519,7 +48148,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-3869-592-COT26",
@@ -46611,7 +48243,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-699360-41-COT26",
@@ -46703,7 +48338,10 @@ const rawOportunidades: any = [
         "carpeta"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "carpeta"
+    ]
   },
   {
     "id": "op-2495-403-COT26",
@@ -46795,7 +48433,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-3899-52-COT26",
@@ -46888,7 +48529,11 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "proyector",
+      "led"
+    ]
   },
   {
     "id": "op-3821-229-COT26",
@@ -46981,7 +48626,11 @@ const rawOportunidades: any = [
         "impresoras"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora",
+      "impresoras"
+    ]
   },
   {
     "id": "op-3508-556-COT26",
@@ -47073,7 +48722,10 @@ const rawOportunidades: any = [
         "ampolleta"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "ampolleta"
+    ]
   },
   {
     "id": "op-4197-195-COT26",
@@ -47165,7 +48817,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-5504-246-COT26",
@@ -47257,7 +48912,10 @@ const rawOportunidades: any = [
         "carpeta"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "carpeta"
+    ]
   },
   {
     "id": "op-1643-794-COT26",
@@ -47349,7 +49007,10 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "led"
+    ]
   },
   {
     "id": "op-2467-523-COT26",
@@ -47441,7 +49102,10 @@ const rawOportunidades: any = [
         "carpeta"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "carpeta"
+    ]
   },
   {
     "id": "op-727-32-COT26",
@@ -47533,7 +49197,10 @@ const rawOportunidades: any = [
         "tambor"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tambor"
+    ]
   },
   {
     "id": "op-1057486-117-COT26",
@@ -47625,7 +49292,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-1622-547-COT26",
@@ -47717,7 +49387,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-1057501-2598-COT26",
@@ -47809,7 +49482,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-2862-102-COT26",
@@ -47903,7 +49579,12 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora"
+    ]
   },
   {
     "id": "op-1525570-30-COT26",
@@ -47996,7 +49677,11 @@ const rawOportunidades: any = [
         "articulos de escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de escritorio",
+      "articulos de escritorio"
+    ]
   },
   {
     "id": "op-2078-335-COT26",
@@ -48090,7 +49775,12 @@ const rawOportunidades: any = [
         "plotter"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "plotter"
+    ]
   },
   {
     "id": "op-1736-462-COT26",
@@ -48182,7 +49872,10 @@ const rawOportunidades: any = [
         "insumos de escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de escritorio"
+    ]
   },
   {
     "id": "op-4197-196-COT26",
@@ -48274,7 +49967,10 @@ const rawOportunidades: any = [
         "insumos de escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de escritorio"
+    ]
   },
   {
     "id": "op-2727-467-COT26",
@@ -48369,7 +50065,13 @@ const rawOportunidades: any = [
         "articulos de libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria",
+      "artículos de librería",
+      "articulos de libreria"
+    ]
   },
   {
     "id": "op-4519-236-COT26",
@@ -48462,7 +50164,11 @@ const rawOportunidades: any = [
         "articulos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de oficina",
+      "articulos de oficina"
+    ]
   },
   {
     "id": "op-630424-439-COT26",
@@ -48554,7 +50260,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-5615-595-COT26",
@@ -48648,7 +50357,12 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora"
+    ]
   },
   {
     "id": "op-411-259-COT26",
@@ -48742,7 +50456,12 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora"
+    ]
   },
   {
     "id": "op-1195-428-COT26",
@@ -48836,7 +50555,12 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas",
+      "impresora"
+    ]
   },
   {
     "id": "op-4355-775-COT26",
@@ -48929,7 +50653,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-900-403-COT26",
@@ -49022,7 +50750,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-4548-445-COT26",
@@ -49115,7 +50847,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-2674-647-COT26",
@@ -49209,7 +50945,12 @@ const rawOportunidades: any = [
         "perforadora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "corchetera",
+      "corchete",
+      "perforadora"
+    ]
   },
   {
     "id": "op-1138054-97-COT26",
@@ -49302,7 +51043,11 @@ const rawOportunidades: any = [
         "articulos de escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de escritorio",
+      "articulos de escritorio"
+    ]
   },
   {
     "id": "op-732868-19-COT26",
@@ -49395,7 +51140,11 @@ const rawOportunidades: any = [
         "articulos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de oficina",
+      "articulos de oficina"
+    ]
   },
   {
     "id": "op-3780-166-COT26",
@@ -49487,7 +51236,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-4454-566-COT26",
@@ -49579,7 +51331,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-968695-120-COT26",
@@ -49672,7 +51427,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-4291-919-COT26",
@@ -49764,7 +51523,10 @@ const rawOportunidades: any = [
         "cámara"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "cámara"
+    ]
   },
   {
     "id": "op-2067-201-COT26",
@@ -49856,7 +51618,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-5067-1914-COT26",
@@ -49949,7 +51714,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-387-369-COT26",
@@ -50042,7 +51811,11 @@ const rawOportunidades: any = [
         "cable hdmi"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pendrive",
+      "cable hdmi"
+    ]
   },
   {
     "id": "op-889-26-COT26",
@@ -50135,7 +51908,11 @@ const rawOportunidades: any = [
         "papeleria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "papelería",
+      "papeleria"
+    ]
   },
   {
     "id": "op-449-269-COT26",
@@ -50228,7 +52005,11 @@ const rawOportunidades: any = [
         "led"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "cámara",
+      "led"
+    ]
   },
   {
     "id": "op-3355-268-COT26",
@@ -50320,7 +52101,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-4158-147-COT26",
@@ -50413,7 +52197,11 @@ const rawOportunidades: any = [
         "mueble"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "kardex",
+      "mueble"
+    ]
   },
   {
     "id": "op-3665-494-COT26",
@@ -50505,7 +52293,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-4968-527-COT26",
@@ -50597,7 +52388,10 @@ const rawOportunidades: any = [
         "ampolleta"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "ampolleta"
+    ]
   },
   {
     "id": "op-2186-283-COT26",
@@ -50689,7 +52483,10 @@ const rawOportunidades: any = [
         "cajonera"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "cajonera"
+    ]
   },
   {
     "id": "op-2658-958-COT26",
@@ -50781,7 +52578,10 @@ const rawOportunidades: any = [
         "destacador"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "destacador"
+    ]
   },
   {
     "id": "op-2186-281-COT26",
@@ -50873,7 +52673,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-3636-166-COT26",
@@ -50965,7 +52768,10 @@ const rawOportunidades: any = [
         "insumos de escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de escritorio"
+    ]
   },
   {
     "id": "op-881-108-COT26",
@@ -51059,7 +52865,12 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner",
+      "impresora"
+    ]
   },
   {
     "id": "op-557639-1967-COT26",
@@ -51152,7 +52963,11 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-1079866-251-COT26",
@@ -51244,7 +53059,10 @@ const rawOportunidades: any = [
         "archivador"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "archivador"
+    ]
   },
   {
     "id": "op-5955-358-COT26",
@@ -51337,7 +53155,11 @@ const rawOportunidades: any = [
         "libreria"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "librería",
+      "libreria"
+    ]
   },
   {
     "id": "op-2427-833-COT26",
@@ -51429,7 +53251,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-4881-18-COT26",
@@ -51521,7 +53346,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1079576-66-COT26",
@@ -51614,7 +53442,11 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tambor",
+      "impresora"
+    ]
   },
   {
     "id": "op-1729-310-COT26",
@@ -51708,7 +53540,12 @@ const rawOportunidades: any = [
         "toner"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "resma",
+      "tóner",
+      "toner"
+    ]
   },
   {
     "id": "op-2424-1365-COT26",
@@ -51800,7 +53637,10 @@ const rawOportunidades: any = [
         "notebook"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "notebook"
+    ]
   },
   {
     "id": "op-3866-83-COT26",
@@ -51892,7 +53732,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-732425-15-COT26",
@@ -51984,7 +53827,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1430710-311-COT26",
@@ -52076,7 +53922,10 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "ups"
+    ]
   },
   {
     "id": "op-5153-1548-COT26",
@@ -52168,7 +54017,10 @@ const rawOportunidades: any = [
         "talonario"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "talonario"
+    ]
   },
   {
     "id": "op-1782-14-COT26",
@@ -52261,7 +54113,11 @@ const rawOportunidades: any = [
         "notebooks"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "notebook",
+      "notebooks"
+    ]
   },
   {
     "id": "op-1079967-545-COT26",
@@ -52353,7 +54209,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-699100-8-COT26",
@@ -52445,7 +54304,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1463-277-COT26",
@@ -52538,7 +54400,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-5067-1918-COT26",
@@ -52631,7 +54497,11 @@ const rawOportunidades: any = [
         "articulos de escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "artículos de escritorio",
+      "articulos de escritorio"
+    ]
   },
   {
     "id": "op-5504-245-COT26",
@@ -52724,7 +54594,11 @@ const rawOportunidades: any = [
         "boligrafo"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "bolígrafo",
+      "boligrafo"
+    ]
   },
   {
     "id": "op-4100-165-COT26",
@@ -52816,7 +54690,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-2701-510-COT26",
@@ -52908,7 +54785,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-2062-65-COT26",
@@ -53001,7 +54881,11 @@ const rawOportunidades: any = [
         "tintas"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "tintas"
+    ]
   },
   {
     "id": "op-1058339-435-COT26",
@@ -53093,7 +54977,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-3651-188-COT26",
@@ -53185,7 +55072,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1298357-185-COT26",
@@ -53277,7 +55167,10 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "impresora"
+    ]
   },
   {
     "id": "op-2291-774-COT26",
@@ -53369,7 +55262,10 @@ const rawOportunidades: any = [
         "perforadora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "perforadora"
+    ]
   },
   {
     "id": "op-1671-142-COT26",
@@ -53461,7 +55357,10 @@ const rawOportunidades: any = [
         "notebook"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "notebook"
+    ]
   },
   {
     "id": "op-2658-957-COT26",
@@ -53554,7 +55453,11 @@ const rawOportunidades: any = [
         "perforadora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "carpeta",
+      "perforadora"
+    ]
   },
   {
     "id": "op-686619-7-COT26",
@@ -53648,7 +55551,12 @@ const rawOportunidades: any = [
         "ups"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "computador",
+      "computadores",
+      "ups"
+    ]
   },
   {
     "id": "op-5702-250-COT26",
@@ -53741,7 +55649,11 @@ const rawOportunidades: any = [
         "utiles de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "útiles de oficina",
+      "utiles de oficina"
+    ]
   },
   {
     "id": "op-1450521-82-COT26",
@@ -53833,7 +55745,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-5178-4149-COT26",
@@ -53925,7 +55840,10 @@ const rawOportunidades: any = [
         "escritorio"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "escritorio"
+    ]
   },
   {
     "id": "op-799512-1069-COT26",
@@ -54017,7 +55935,10 @@ const rawOportunidades: any = [
         "pintura"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pintura"
+    ]
   },
   {
     "id": "op-4247-485-COT26",
@@ -54110,7 +56031,11 @@ const rawOportunidades: any = [
         "impresora"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "tinta",
+      "impresora"
+    ]
   },
   {
     "id": "op-2727-466-COT26",
@@ -54202,7 +56127,10 @@ const rawOportunidades: any = [
         "insumos de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "insumos de oficina"
+    ]
   },
   {
     "id": "op-623339-52-COT26",
@@ -54294,7 +56222,10 @@ const rawOportunidades: any = [
         "materiales de oficina"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "materiales de oficina"
+    ]
   },
   {
     "id": "op-1209-226-COT26",
@@ -54386,7 +56317,10 @@ const rawOportunidades: any = [
         "pc"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pc"
+    ]
   },
   {
     "id": "op-875646-1830-COT26",
@@ -54478,7 +56412,10 @@ const rawOportunidades: any = [
         "pizarra"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "pizarra"
+    ]
   },
   {
     "id": "op-5178-4154-COT26",
@@ -54570,7 +56507,10 @@ const rawOportunidades: any = [
         "encuadernación"
       ],
       "fuenteDatos": "excel"
-    }
+    },
+    "matchKeywords": [
+      "encuadernación"
+    ]
   },
   {
     "id": "op-4197-194-COT26",
@@ -54663,135 +56603,11 @@ const rawOportunidades: any = [
         "multifuncional"
       ],
       "fuenteDatos": "excel"
-    }
-  },
-  {
-    "id": "2239-10-LP26",
-    "codigo": "2239-10-LP26",
-    "officialCode": "2239-10-LP26",
-    "titulo": "Licitación Pública: Provisión Anual de Insumos de Escritorio y Papelería Institucional",
-    "organismo": "MINISTERIO DE EDUCACIÓN (MINEDUC)",
-    "organismoRut": "60.000.000-0",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región Metropolitana",
-    "ciudad": "Santiago",
-    "monto": 45000000,
-    "monto_final": 45000000,
-    "fechaPublicacion": "2026-08-14",
-    "fechaCierre": "2026-08-28",
-    "matchScore": 95,
-    "riesgo": "Sin evaluar",
-    "descripcion": "Licitación pública para la adquisición de resmas de papel, archivadores, útiles de oficina e insumos de escritorio para sedes regionales de Mineduc.",
-    "estado": "Publicada",
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "amountType": "monto_estimado",
-    "validationStatus": "confirmado",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2239-10-LP26",
-    "items": [
-      {
-        "sku": "SKU-MIN-01",
-        "producto": "Insumos de papelería y escritorio",
-        "cantidad": 1,
-        "precioUnitario": 45000000
-      }
-    ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio",
-        "ponderacion": 60,
-        "descripcion": "Evaluación económica de la oferta"
-      },
-      {
-        "aspecto": "Calidad",
-        "ponderacion": 40,
-        "descripcion": "Especificaciones técnicas del producto"
-      }
-    ],
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-14"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-28"
-      }
-    ],
-    "documentos": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": []
-  },
-  {
-    "id": "3934-45-LP26",
-    "codigo": "3934-45-LP26",
-    "officialCode": "3934-45-LP26",
-    "titulo": "Licitación Pública: Adquisición de Mobiliario Ergonómico de Oficina y Escritorios Modulares",
-    "organismo": "JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)",
-    "organismoRut": "70.012.300-4",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Mobiliario y Equipamiento de Oficina",
-    "region": "Región de Valparaíso",
-    "ciudad": "Valparaíso",
-    "monto": 68000000,
-    "monto_final": 68000000,
-    "fechaPublicacion": "2026-08-14",
-    "fechaCierre": "2026-09-04",
-    "matchScore": 92,
-    "riesgo": "Sin evaluar",
-    "descripcion": "Licitación pública para provisión e instalación de sillas ejecutivas ergonómicas, escritorios modulares y cajoneras rodantes.",
-    "estado": "Publicada",
-    "empresaMatch": "V-MOCCS",
-    "modalidad": "Licitación",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "amountType": "monto_estimado",
-    "validationStatus": "confirmado",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3934-45-LP26",
-    "items": [
-      {
-        "sku": "SKU-VMO-01",
-        "producto": "Mobiliario ergonómico de oficina",
-        "cantidad": 1,
-        "precioUnitario": 68000000
-      }
-    ],
-    "criteriosEvaluacion": [
-      {
-        "aspecto": "Precio",
-        "ponderacion": 50,
-        "descripcion": "Evaluación de propuesta económica"
-      },
-      {
-        "aspecto": "Plazo Entrega",
-        "ponderacion": 50,
-        "descripcion": "Tiempo de instalación en dependencias"
-      }
-    ],
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-14"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-09-04"
-      }
-    ],
-    "documentos": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": []
+    },
+    "matchKeywords": [
+      "impresora",
+      "multifuncional"
+    ]
   }
 ];
 export const mockOportunidades: Oportunidad[] = rawOportunidades as Oportunidad[];
