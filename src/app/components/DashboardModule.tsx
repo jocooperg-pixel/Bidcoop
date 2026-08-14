@@ -3,16 +3,25 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Cell
 } from 'recharts';
-import { Oportunidad, MiembroEquipo } from '../types';
+import { Oportunidad, Postulacion } from '../types';
 import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 import { calcularCentroAlertas } from '../utils/alertasEngine';
+import { rolLabel } from '../utils/roles';
+
+interface UsuarioResumen {
+  id: string;
+  nombre: string;
+  email: string;
+  rol: string;
+  activo: boolean;
+}
 
 interface DashboardModuleProps {
   oportunidades: Oportunidad[];
-  teamMembers: MiembroEquipo[];
-  onInviteMember: (nombre: string, email: string, rol: 'Admin' | 'Gestor' | 'Lector') => void;
+  postulaciones: Postulacion[];
   onSelectOpportunity: (op: Oportunidad) => void;
-  currentUser: { nombre: string };
+  onNavigateView: (module: string, subSection: string) => void;
+  currentUser: { nombre: string; rolRaw: string };
   globalPrefs: {
     rubros: string[];
     modalidades: string[];
@@ -30,14 +39,26 @@ interface DashboardModuleProps {
 
 export default function DashboardModule({
   oportunidades,
-  teamMembers,
-  onInviteMember,
+  postulaciones,
   onSelectOpportunity,
+  onNavigateView,
   currentUser,
   globalPrefs,
   onChangePrefs,
   followedOps = {}
 }: DashboardModuleProps) {
+  const [equipoReal, setEquipoReal] = useState<UsuarioResumen[]>([]);
+  const [equipoLoading, setEquipoLoading] = useState(false);
+
+  useEffect(() => {
+    if (currentUser.rolRaw !== 'ADMIN_HOLDING') return;
+    setEquipoLoading(true);
+    fetch('/api/usuarios')
+      .then(res => (res.ok ? res.json() : { usuarios: [] }))
+      .then(data => setEquipoReal(Array.isArray(data.usuarios) ? data.usuarios : []))
+      .catch(() => setEquipoReal([]))
+      .finally(() => setEquipoLoading(false));
+  }, [currentUser.rolRaw]);
   const empresasActivasCount = useMemo(
     () => new Set(oportunidades.map(o => o.empresaMatch).filter(Boolean)).size,
     [oportunidades]
@@ -211,11 +232,6 @@ export default function DashboardModule({
 
   const [dateRange, setDateRange] = useState<'hoy' | '7d' | '1m' | '3m'>('1m');
   const [suggestedTab, setSuggestedTab] = useState<'match' | 'recientes' | 'monto'>('match');
-  
-  // Team invite form
-  const [inviteEmail, setInviteEmail] = useState('');
-  const [inviteName, setInviteName] = useState('');
-  const [inviteRole, setInviteRole] = useState<'Admin' | 'Gestor' | 'Lector'>('Gestor');
 
   // Search onboarding configuration (B2B Convenios & Rubros setup)
   const [selectedRubros, setSelectedRubros] = useState<string[]>(globalPrefs.rubros);
@@ -223,16 +239,6 @@ export default function DashboardModule({
   const [preferredRegion, setPreferredRegion] = useState<string>(globalPrefs.region);
   const [alertMinMonto, setAlertMinMonto] = useState<string>(globalPrefs.montoMinimo.toString());
   const [configSaved, setConfigSaved] = useState(false);
-
-  // Date range multiplier to simulate data shifting on range change
-  const rangeMultiplier = useMemo(() => {
-    switch (dateRange) {
-      case 'hoy': return 0.2;
-      case '7d': return 0.6;
-      case '1m': return 1.0;
-      case '3m': return 2.4;
-    }
-  }, [dateRange]);
 
   // Dynamic KPI Card counts (BUG-01 & BUG-02 FIX: Stable calculation from global opportunities)
   const kpiData = useMemo(() => {
@@ -290,30 +296,55 @@ export default function DashboardModule({
     }
   }, [oportunidades, suggestedTab]);
 
-  // Chart data simulated based on range
+// Actividad real por rango de fecha — cuenta oportunidades reales
+  // (fechaPublicacion) y postulaciones reales (fechaActualizacion) agrupadas
+  // en buckets según el rango elegido. Nunca se inventa ni escala un número:
+  // si no hay datos reales en un bucket, el valor es 0.
   const chartData = useMemo(() => {
-    const base = [
-      { name: 'Semana 1', oportunidades: 14, postuladas: 4, exito: 2 },
-      { name: 'Semana 2', oportunidades: 18, postuladas: 8, exito: 4 },
-      { name: 'Semana 3', oportunidades: 22, postuladas: 7, exito: 5 },
-      { name: 'Semana 4', oportunidades: 25, postuladas: 11, exito: 8 }
-    ];
-    return base.map(item => ({
-      ...item,
-      oportunidades: Math.round(item.oportunidades * rangeMultiplier),
-      postuladas: Math.round(item.postuladas * rangeMultiplier),
-      exito: Math.round(item.exito * rangeMultiplier)
-    }));
-  }, [rangeMultiplier]);
+    const parseDate = (s?: string): Date | null => {
+      if (!s || s === 'No informado') return null;
+      const d = new Date(s);
+      return isNaN(d.getTime()) ? null : d;
+    };
 
-  const handleInviteSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!inviteEmail.trim() || !inviteName.trim()) return;
-    onInviteMember(inviteName, inviteEmail, inviteRole);
-    setInviteEmail('');
-    setInviteName('');
-    alert(`Invitación enviada con éxito a ${inviteEmail}`);
-  };
+    const ahora = new Date();
+    const buckets: { name: string; start: Date; end: Date }[] = [];
+
+    if (dateRange === 'hoy') {
+      const start = new Date(ahora); start.setHours(0, 0, 0, 0);
+      buckets.push({ name: 'Hoy', start, end: ahora });
+    } else if (dateRange === '7d') {
+      for (let i = 6; i >= 0; i--) {
+        const d = new Date(ahora); d.setDate(d.getDate() - i); d.setHours(0, 0, 0, 0);
+        const end = new Date(d); end.setHours(23, 59, 59, 999);
+        buckets.push({ name: d.toLocaleDateString('es-CL', { weekday: 'short' }), start: d, end });
+      }
+    } else if (dateRange === '1m') {
+      for (let i = 3; i >= 0; i--) {
+        const end = new Date(ahora); end.setDate(end.getDate() - i * 7); end.setHours(23, 59, 59, 999);
+        const start = new Date(end); start.setDate(start.getDate() - 6); start.setHours(0, 0, 0, 0);
+        buckets.push({ name: `Semana ${4 - i}`, start, end });
+      }
+    } else {
+      for (let i = 2; i >= 0; i--) {
+        const start = new Date(ahora.getFullYear(), ahora.getMonth() - i, 1);
+        const end = new Date(ahora.getFullYear(), ahora.getMonth() - i + 1, 0, 23, 59, 59);
+        buckets.push({ name: start.toLocaleDateString('es-CL', { month: 'short' }), start, end });
+      }
+    }
+
+    return buckets.map(b => {
+      const opsEnBucket = oportunidades.filter(o => {
+        const d = parseDate(o.fechaPublicacion);
+        return d && d >= b.start && d <= b.end;
+      }).length;
+      const postEnBucket = postulaciones.filter(p => {
+        const d = parseDate(p.fechaActualizacion);
+        return d && d >= b.start && d <= b.end;
+      }).length;
+      return { name: b.name, oportunidades: opsEnBucket, postuladas: postEnBucket };
+    });
+  }, [dateRange, oportunidades, postulaciones]);
 
   const handleSaveConfig = () => {
     onChangePrefs({
@@ -1064,74 +1095,58 @@ export default function DashboardModule({
           </div>
         </div>
 
-        {/* Team Members Workplace Panel */}
+        {/* Team Members Workplace Panel — datos reales desde /api/usuarios,
+            visible solo para ADMIN_HOLDING (mismo criterio de autorización
+            que la pantalla completa de Usuarios). Antes mostraba 2 personas
+            inventadas (incluido un correo falso para el usuario real) con un
+            formulario "Invitar" que solo mostraba una alerta de éxito sin
+            crear nada de verdad — reemplazado por el directorio real. */}
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
           <div>
             <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider mb-1.5">Equipo de Trabajo</h3>
-            <p className="text-[10px] text-slate-400 mb-4">Integrantes asignados a la postulación de ofertas.</p>
+            <p className="text-[10px] text-slate-400 mb-4">Usuarios reales con acceso a la plataforma.</p>
 
-            <div className="space-y-3.5 max-h-40 overflow-y-auto pr-1">
-              {teamMembers.map((m) => (
-                <div key={m.id} className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-blue-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold text-xs flex items-center justify-center relative">
-                      {m.avatar}
-                      {/* Active status bubble */}
-                      <span className={`absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full border-2 border-white dark:border-slate-900 ${
-                        m.estado === 'Activo' ? 'bg-green-500' : m.estado === 'Ausente' ? 'bg-amber-500' : 'bg-slate-400'
-                      }`} />
+            {currentUser.rolRaw !== 'ADMIN_HOLDING' && (
+              <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                La gestión de usuarios la administra tu Administrador del Holding.
+              </p>
+            )}
+
+            {currentUser.rolRaw === 'ADMIN_HOLDING' && equipoLoading && (
+              <p className="text-[11px] text-slate-400">Cargando…</p>
+            )}
+
+            {currentUser.rolRaw === 'ADMIN_HOLDING' && !equipoLoading && (
+              <div className="space-y-3.5 max-h-40 overflow-y-auto pr-1">
+                {equipoReal.slice(0, 5).map((u) => (
+                  <div key={u.id} className="flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-8 h-8 rounded-lg bg-blue-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold text-xs flex items-center justify-center relative">
+                        {u.nombre.split(' ').map(n => n[0]).slice(0, 2).join('').toUpperCase()}
+                        <span className={`absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full border-2 border-white dark:border-slate-900 ${u.activo ? 'bg-green-500' : 'bg-slate-400'}`} />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-slate-900 dark:text-white">{u.nombre}</h4>
+                        <span className="text-[9px] text-slate-400 block mt-0.5">{u.email}</span>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-xs font-bold text-slate-900 dark:text-white">{m.nombre}</h4>
-                      <span className="text-[9px] text-slate-400 block mt-0.5">{m.email}</span>
-                    </div>
+                    <span className="text-[9px] font-black bg-slate-100 dark:bg-slate-850 px-2 py-0.5 rounded text-slate-500 dark:text-slate-400">
+                      {rolLabel(u.rol)}
+                    </span>
                   </div>
-                  <span className="text-[9px] font-black bg-slate-100 dark:bg-slate-850 px-2 py-0.5 rounded text-slate-500 dark:text-slate-400">
-                    {m.rol}
-                  </span>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
 
-          <form onSubmit={handleInviteSubmit} className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 space-y-3">
-            <span className="text-[9px] uppercase font-black text-slate-400 block">Invitar al Espacio</span>
-            <div className="grid grid-cols-2 gap-2">
-              <input
-                type="text"
-                placeholder="Nombre"
-                value={inviteName}
-                onChange={(e) => setInviteName(e.target.value)}
-                className="text-[10px] p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-blue-500 outline-none text-slate-900 dark:text-slate-100"
-                required
-              />
-              <select
-                value={inviteRole}
-                onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setInviteRole(e.target.value as 'Admin' | 'Gestor' | 'Lector')}
-                className="text-[10px] p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-blue-500 outline-none text-slate-900 dark:text-slate-100"
-              >
-                <option value="Admin">Admin</option>
-                <option value="Gestor">Gestor</option>
-                <option value="Lector">Lector</option>
-              </select>
-            </div>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="email@empresa.cl"
-                value={inviteEmail}
-                onChange={(e) => setInviteEmail(e.target.value)}
-                className="flex-1 text-[10px] p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-blue-500 outline-none text-slate-900 dark:text-slate-100"
-                required
-              />
-              <button
-                type="submit"
-                className="px-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-xs transition"
-              >
-                Invitar
-              </button>
-            </div>
-          </form>
+          {currentUser.rolRaw === 'ADMIN_HOLDING' && (
+            <button
+              onClick={() => onNavigateView('usuarios', 'directorio')}
+              className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs font-black text-blue-600 dark:text-blue-400 hover:text-blue-700 text-left"
+            >
+              Gestionar usuarios →
+            </button>
+          )}
         </div>
       </div>
     </div>

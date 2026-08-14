@@ -12,15 +12,15 @@ import ProvidersModule from './components/ProvidersModule';
 import BuyersModule from './components/BuyersModule';
 import AssistantWidget from './components/AssistantWidget';
 import ReportsNotificationsModule from './components/ReportsNotificationsModule';
+import UsersModule from './components/UsersModule';
 import LoginScreen from './components/LoginScreen';
 
-import { Oportunidad, Postulacion, MiembroEquipo, Notificacion, VistaGuardada, Empresa } from './types';
+import { Oportunidad, Postulacion, Notificacion, VistaGuardada, Empresa } from './types';
 import { calculateSmartCatalogMatch } from './utils/smartMatchEngine';
 import { isVencida } from './utils/chileTime';
 import { rolLabel, inicialesDe } from './utils/roles';
 import {
   mockOportunidades,
-  mockMiembrosEquipo,
   mockNotificaciones,
   mockVistasGuardadas,
   mockOrdenesCompra,
@@ -42,7 +42,9 @@ export default function Home() {
     nombre: '',
     email: '',
     avatar: '',
-    rol: ''
+    rol: '',
+    rolRaw: '',
+    id: null as string | null
   });
 
   useEffect(() => {
@@ -57,7 +59,9 @@ export default function Home() {
             nombre: data.usuario.nombre,
             email: data.usuario.email,
             avatar: inicialesDe(data.usuario.nombre),
-            rol: rolLabel(data.usuario.rol)
+            rol: rolLabel(data.usuario.rol),
+            rolRaw: data.usuario.rol,
+            id: data.usuario.id
           });
         }
       })
@@ -284,7 +288,6 @@ export default function Home() {
   };
 
   const [ordenesCompra, setOrdenesCompra] = useState(mockOrdenesCompra);
-  const [teamMembers, setTeamMembers] = useState<MiembroEquipo[]>(mockMiembrosEquipo);
   const [notifications, setNotifications] = useState<Notificacion[]>(mockNotificaciones);
   const [vistasGuardadas, setVistasGuardadas] = useState<VistaGuardada[]>(mockVistasGuardadas);
   const [selectedOpportunity, setSelectedOpportunity] = useState<Oportunidad | null>(null);
@@ -419,30 +422,6 @@ export default function Home() {
     setSelectedOpportunity(null);
   };
 
-  const handleInviteMember = (nombre: string, email: string, rol: 'Admin' | 'Gestor' | 'Lector') => {
-    const newMember: MiembroEquipo = {
-      id: `usr-${Date.now()}`,
-      nombre,
-      rol,
-      avatar: nombre.split(' ').map(n => n[0]).join('').toUpperCase(),
-      estado: 'Invitado',
-      email
-    };
-    setTeamMembers(prev => [...prev, newMember]);
-
-    // Push system alert
-    const alertId = `nt-${Date.now()}`;
-    const newAlert: Notificacion = {
-      id: alertId,
-      leida: false,
-      tipo: 'sistema',
-      fecha: new Date().toISOString().replace('T', ' ').slice(0, 16),
-      titulo: 'Colaborador Invitado',
-      descripcion: `Se envió una invitación de acceso a ${nombre} con privilegios de ${rol}.`
-    };
-    setNotifications(prev => [newAlert, ...prev]);
-  };
-
   const handleSaveVistaGuardada = (view: VistaGuardada) => {
     setVistasGuardadas(prev => [view, ...prev]);
   };
@@ -519,12 +498,6 @@ export default function Home() {
       email: email,
       avatar: name.split(' ').map(n => n[0]).join('').toUpperCase()
     }));
-  };
-
-  const handleUpdateRole = (id: string, newRol: 'Admin' | 'Gestor' | 'Lector') => {
-    setTeamMembers(prev =>
-      prev.map(m => (m.id === id ? { ...m, rol: newRol } : m))
-    );
   };
 
   // Único motor de datos: scripts/sync_mercadopublico.py -> mockData.ts.
@@ -780,6 +753,7 @@ export default function Home() {
         onChangeView={handleNavigateView}
         darkMode={darkMode}
         setDarkMode={toggleDarkMode}
+        currentUser={currentUser}
       />
 
       {/* 2. MAIN LAYOUT FLEX COLUMN */}
@@ -806,9 +780,9 @@ export default function Home() {
           {activeModule === 'dashboard' && (
             <DashboardModule
               oportunidades={oportunidades}
-              teamMembers={teamMembers}
-              onInviteMember={handleInviteMember}
+              postulaciones={postulaciones}
               onSelectOpportunity={handleSelectOpportunityFromGlobal}
+              onNavigateView={handleNavigateView}
               currentUser={currentUser}
               globalPrefs={globalPrefs}
               onChangePrefs={setGlobalPrefs}
@@ -820,7 +794,6 @@ export default function Home() {
             <SearchModule
               oportunidades={filteredOportunidades}
               vistasGuardadas={vistasGuardadas}
-              teamMembers={teamMembers}
               activeSubSection={activeSubSection}
               selectedOpportunity={selectedOpportunity}
               onSelectOpportunity={setSelectedOpportunity}
@@ -894,11 +867,13 @@ export default function Home() {
           {activeModule === 'config' && (
             <ConfigModule
               activeSubSection={activeSubSection}
-              teamMembers={teamMembers}
-              onUpdateRole={handleUpdateRole}
               currentUser={currentUser}
               onUpdateProfile={handleUpdateProfile}
             />
+          )}
+
+          {activeModule === 'usuarios' && (
+            <UsersModule currentUser={currentUser} currentUserId={currentUser.id} />
           )}
         </main>
       </div>

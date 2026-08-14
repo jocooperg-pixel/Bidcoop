@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Oportunidad, Postulacion, OrdenCompra, MiembroEquipo, VistaGuardada, Notificacion } from './types';
+import { Oportunidad, Postulacion, OrdenCompra, VistaGuardada, Notificacion } from './types';
 
 // ============================================================
 // mockData.ts — Generado automáticamente por BidCoop v7.5
@@ -56614,11 +56614,6 @@ export const mockOportunidades: Oportunidad[] = rawOportunidades as Oportunidad[
 
 export const mockPostulaciones: Postulacion[] = [];
 export const mockOrdenesCompra: OrdenCompra[] = [];
-
-export const mockMiembrosEquipo: MiembroEquipo[] = [
-  { id: "user-1", nombre: "Jonathan Cooper", email: "jcooper@bidcoop.cl", rol: "Admin", avatar: "JC", estado: "Activo" },
-  { id: "user-2", nombre: "Manuel Viguera", email: "mviguera@aminorte.cl", rol: "Gestor", avatar: "MV", estado: "Activo" }
-];
 
 export const mockNotificaciones: Notificacion[] = [
   {

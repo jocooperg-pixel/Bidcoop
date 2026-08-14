@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { inicialesDe } from '../utils/roles';
 
 interface SidebarProps {
   activeModule: string;
@@ -6,6 +7,7 @@ interface SidebarProps {
   onChangeView: (module: string, subSection: string) => void;
   darkMode: boolean;
   setDarkMode: (dark: boolean) => void;
+  currentUser: { nombre: string; rolRaw: string };
 }
 
 export default function Sidebar({
@@ -13,7 +15,8 @@ export default function Sidebar({
   activeSubSection,
   onChangeView,
   darkMode,
-  setDarkMode
+  setDarkMode,
+  currentUser
 }: SidebarProps) {
   const [hoveredModule, setHoveredModule] = useState<string | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -144,7 +147,22 @@ export default function Sidebar({
         { id: 'ia-prompt', label: 'Plantillas de IA' },
         { id: 'suscripcion', label: 'Planes y Suscripción' }
       ]
-    }
+    },
+    // Solo visible para el administrador del holding — mismo criterio de
+    // autorización que ya aplica /api/usuarios en el servidor (defensa en
+    // profundidad: ocultar la opción no reemplaza el chequeo real del backend).
+    ...(currentUser.rolRaw === 'ADMIN_HOLDING' ? [{
+      id: 'usuarios',
+      label: 'Usuarios',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M9 20H4v-2a3 3 0 015.356-1.857M9 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      ),
+      subSections: [
+        { id: 'directorio', label: 'Usuarios y Permisos' }
+      ]
+    }] : [])
   ];
 
   return (
@@ -255,9 +273,12 @@ export default function Sidebar({
           )}
         </button>
 
-        {/* User initials bubble */}
-        <div className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center font-bold text-slate-300 text-sm border border-slate-700 hover:border-slate-500 transition cursor-pointer">
-          JC
+        {/* User initials bubble — iniciales reales del usuario logueado */}
+        <div
+          className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center font-bold text-slate-300 text-sm border border-slate-700 hover:border-slate-500 transition cursor-pointer"
+          title={currentUser.nombre}
+        >
+          {currentUser.nombre ? inicialesDe(currentUser.nombre) : '?'}
         </div>
       </div>
     </aside>

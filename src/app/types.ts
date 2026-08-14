@@ -175,15 +175,6 @@ export interface Postulacion {
   confirmadoEn?: string;
 }
 
-export interface MiembroEquipo {
-  id: string;
-  nombre: string;
-  rol: 'Admin' | 'Gestor' | 'Lector';
-  avatar: string;
-  estado: 'Activo' | 'Ausente' | 'Invitado';
-  email: string;
-}
-
 export interface ParticipanteAdjudicacion {
   posicion: number;
   nombre: string;

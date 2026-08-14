@@ -1,14 +1,18 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { Oportunidad, Postulacion, MiembroEquipo, VistaGuardada, DocumentoAdjunto, Item } from '../types';
+import { Oportunidad, Postulacion, VistaGuardada, DocumentoAdjunto, Item } from '../types';
 import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 import { getSemaforoBidCoop } from '../utils/semaforoEngine';
 import { EMPRESAS } from '../utils/empresas';
 import { mockPostulaciones } from '../mockData';
 
+interface UsuarioBasico {
+  id: string;
+  nombre: string;
+}
+
 interface SearchModuleProps {
   oportunidades: Oportunidad[];
   vistasGuardadas: VistaGuardada[];
-  teamMembers: MiembroEquipo[];
   activeSubSection: string;
   selectedOpportunity: Oportunidad | null;
   onSelectOpportunity: (op: Oportunidad | null) => void;
@@ -31,7 +35,6 @@ interface SearchModuleProps {
 export default function SearchModule({
   oportunidades,
   vistasGuardadas,
-  teamMembers,
   activeSubSection,
   selectedOpportunity,
   onSelectOpportunity,
@@ -176,6 +179,16 @@ export default function SearchModule({
   // Edit Items Modal State
   const [showEditItemsModal, setShowEditItemsModal] = useState<boolean>(false);
   const [editableItems, setEditableItems] = useState<Item[]>([]);
+
+  // Directorio real de usuarios (para "Encargado de Postulación") — reemplaza
+  // el roster fabricado que antes venía por prop (teamMembers).
+  const [usuariosDirectorio, setUsuariosDirectorio] = useState<UsuarioBasico[]>([]);
+  useEffect(() => {
+    fetch('/api/usuarios/directorio-basico')
+      .then(res => (res.ok ? res.json() : { usuarios: [] }))
+      .then(data => setUsuariosDirectorio(Array.isArray(data.usuarios) ? data.usuarios : []))
+      .catch(() => setUsuariosDirectorio([]));
+  }, []);
 
   // Synchronize local search state with Topbar global search input
   useEffect(() => {
@@ -620,7 +633,7 @@ export default function SearchModule({
     
     // Autofill base values
     setFormMonto(op.monto);
-    setFormResponsable(teamMembers[0]?.nombre || '');
+    setFormResponsable(currentUser.nombre || usuariosDirectorio[0]?.nombre || '');
     setUploadedDocs([]);
     const initialPrices: Record<string, number> = {};
     const initialCosts: Record<string, number> = {};
@@ -1786,8 +1799,11 @@ export default function SearchModule({
                       onChange={(e) => setFormResponsable(e.target.value)}
                       className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white"
                     >
-                      {teamMembers.map((m) => (
-                        <option key={m.id} value={m.nombre}>{m.nombre} ({m.rol})</option>
+                      {!usuariosDirectorio.some(u => u.nombre === currentUser.nombre) && (
+                        <option value={currentUser.nombre}>{currentUser.nombre}</option>
+                      )}
+                      {usuariosDirectorio.map((u) => (
+                        <option key={u.id} value={u.nombre}>{u.nombre}</option>
                       ))}
                     </select>
                   </div>

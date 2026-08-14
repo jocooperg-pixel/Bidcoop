@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
-import { MiembroEquipo } from '../types';
 
 interface ConfigModuleProps {
   activeSubSection: string;
-  teamMembers: MiembroEquipo[];
-  onUpdateRole: (id: string, newRol: 'Admin' | 'Gestor' | 'Lector') => void;
   currentUser: { nombre: string; email: string; avatar: string; rol: string };
   onUpdateProfile: (name: string, email: string) => void;
 }
 
 export default function ConfigModule({
   activeSubSection,
-  teamMembers,
-  onUpdateRole,
   currentUser,
   onUpdateProfile
 }: ConfigModuleProps) {
