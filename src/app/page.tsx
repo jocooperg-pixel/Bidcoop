@@ -31,12 +31,14 @@ export default function Home() {
   const [isAuthChecked, setIsAuthChecked] = useState<boolean>(false);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      if (sessionStorage.getItem('bidcoop_authenticated') === 'true') {
-        setIsAuthenticated(true);
-      }
-      setIsAuthChecked(true);
-    }
+    // La sesión se verifica en el servidor (cookie firmada, no un flag
+    // local) — sessionStorage ya no decide si el usuario está autenticado.
+    fetch('/api/auth/me')
+      .then(res => res.json())
+      .then(data => {
+        if (data.autenticado) setIsAuthenticated(true);
+      })
+      .finally(() => setIsAuthChecked(true));
   }, []);
 
   // --- GLOBAL STATES ---
@@ -724,10 +726,7 @@ export default function Home() {
   };
 
   const handleLogout = () => {
-    if (typeof window !== 'undefined') {
-      sessionStorage.removeItem('bidcoop_authenticated');
-    }
-    setIsAuthenticated(false);
+    fetch('/api/auth/logout', { method: 'POST' }).finally(() => setIsAuthenticated(false));
   };
 
   if (!isAuthChecked) {

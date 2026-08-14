@@ -32,14 +32,13 @@ export default function DbStatusPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Mismo patrón que src/app/page.tsx: el estado inicial debe coincidir
-    // entre SSR y cliente (sessionStorage no existe en el servidor), por
-    // eso la verificación va en un efecto en vez de en el estado inicial.
-    if (typeof window !== 'undefined') {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      if (sessionStorage.getItem('bidcoop_authenticated') === 'true') setIsAuthenticated(true);
-      setCheckedAuth(true);
-    }
+    // Sesión verificada en servidor (cookie firmada) — no un flag local.
+    fetch('/api/auth/me')
+      .then(res => res.json())
+      .then(data => {
+        if (data.autenticado) setIsAuthenticated(true);
+      })
+      .finally(() => setCheckedAuth(true));
   }, []);
 
   useEffect(() => {

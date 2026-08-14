@@ -13,21 +13,30 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMsg(null);
     setIsLoading(true);
 
-    setTimeout(() => {
-      // Validate credentials
-      if (username.trim() === 'admin' && password === 'Maka2026*') {
-        sessionStorage.setItem('bidcoop_authenticated', 'true');
-        onLoginSuccess();
-      } else {
-        setErrorMsg('Usuario o contraseña incorrectos. Verifica tus credenciales.');
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: username.trim(), password })
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        setErrorMsg(data.error || 'Usuario o contraseña incorrectos. Verifica tus credenciales.');
         setIsLoading(false);
+        return;
       }
-    }, 400);
+
+      onLoginSuccess();
+    } catch {
+      setErrorMsg('No se pudo conectar con el servidor. Intenta de nuevo.');
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -75,16 +84,16 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
           {/* Username Field */}
           <div className="space-y-1.5">
             <label className="text-xs font-bold text-slate-300 block">
-              Usuario
+              Correo electrónico
             </label>
             <div className="relative">
               <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-sm">
                 👤
               </span>
               <input
-                type="text"
+                type="email"
                 required
-                placeholder="admin"
+                placeholder="tu@empresa.cl"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 className="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-400 text-slate-100 text-sm font-semibold pl-10 pr-4 py-3 rounded-2xl outline-none transition-all placeholder:text-slate-600 focus:ring-2 focus:ring-cyan-500/20"
