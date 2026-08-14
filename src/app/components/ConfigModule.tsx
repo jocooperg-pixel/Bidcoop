@@ -166,7 +166,7 @@ export default function ConfigModule({
               </div>
               <div>
                 <span className="text-[9px] uppercase font-black text-slate-400 block">Último Acceso</span>
-                <span className="text-slate-800 dark:text-white mt-0.5 block">Hoy desde Santiago (IP: 190.45.12.8)</span>
+                <span className="text-slate-800 dark:text-white mt-0.5 block">No disponible</span>
               </div>
             </div>
           </div>
