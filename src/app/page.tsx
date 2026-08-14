@@ -17,6 +17,7 @@ import LoginScreen from './components/LoginScreen';
 import { Oportunidad, Postulacion, MiembroEquipo, Notificacion, VistaGuardada, Empresa } from './types';
 import { calculateSmartCatalogMatch } from './utils/smartMatchEngine';
 import { isVencida } from './utils/chileTime';
+import { rolLabel, inicialesDe } from './utils/roles';
 import {
   mockOportunidades,
   mockMiembrosEquipo,
@@ -31,13 +32,34 @@ export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [isAuthChecked, setIsAuthChecked] = useState<boolean>(false);
 
+  // Current User profile — SIEMPRE viene de la sesión real verificada en
+  // servidor (/api/auth/me), nunca un valor de ejemplo. Antes esto estaba
+  // hardcodeado a un usuario falso ("Jonathan Cooper" / jocooper@antigravity.cl)
+  // y cualquier comentario, postulación o acción quedaba atribuida a esa
+  // persona inexistente en vez de a quien realmente estaba logueado —
+  // hacía imposible una auditoría real de quién hizo qué.
+  const [currentUser, setCurrentUser] = useState({
+    nombre: '',
+    email: '',
+    avatar: '',
+    rol: ''
+  });
+
   useEffect(() => {
     // La sesión se verifica en el servidor (cookie firmada, no un flag
     // local) — sessionStorage ya no decide si el usuario está autenticado.
     fetch('/api/auth/me')
       .then(res => res.json())
       .then(data => {
-        if (data.autenticado) setIsAuthenticated(true);
+        if (data.autenticado && data.usuario) {
+          setIsAuthenticated(true);
+          setCurrentUser({
+            nombre: data.usuario.nombre,
+            email: data.usuario.email,
+            avatar: inicialesDe(data.usuario.nombre),
+            rol: rolLabel(data.usuario.rol)
+          });
+        }
       })
       .finally(() => setIsAuthChecked(true));
   }, []);
@@ -338,14 +360,6 @@ export default function Home() {
   // Dictionary to store technical comments by bid ID
   const [teamComments, setTeamComments] = useState<Record<string, Oportunidad['comentarios']>>({});
 
-  // Current User profile state
-  const [currentUser, setCurrentUser] = useState({
-    nombre: 'Jonathan Cooper',
-    email: 'jocooper@antigravity.cl',
-    avatar: 'JC',
-    rol: 'Director de Licitaciones B2B'
-  });
-
   // Sync dark mode class
   useEffect(() => {
     if (darkMode) {
@@ -433,11 +447,14 @@ export default function Home() {
     setVistasGuardadas(prev => [view, ...prev]);
   };
 
+  // BidCoop no tiene integración de escritura con Mercado Público — esto
+  // SOLO guarda la preparación interna de la oferta (Borrador). Nunca se
+  // debe afirmar que algo fue "transmitido" u "enviado al organismo", eso
+  // pasa fuera de la plataforma y requiere confirmación manual explícita
+  // (ver handleConfirmarEnvioPostulacion).
   const handlePostularOpportunity = (postulacion: Postulacion) => {
-    // 1. Add postulation
     setPostulaciones(prev => [postulacion, ...prev]);
 
-    // 2. Update Opportunity state in global state
     setOportunidades(prev =>
       prev.map(op =>
         op.id === postulacion.oportunidadId
@@ -446,24 +463,35 @@ export default function Home() {
       )
     );
 
-    // 3. Clear selected opportunity after submitting postulation
     setSelectedOpportunity(null);
 
-    // 4. Create system alert
     const newAlert: Notificacion = {
       id: `nt-${Date.now()}`,
       leida: false,
       tipo: 'sistema',
       fecha: new Date().toISOString().replace('T', ' ').slice(0, 16),
-      titulo: 'Postulación Completada',
-      descripcion: `La oferta por $${postulacion.montoOferta.toLocaleString('es-CL')} CLP para ${postulacion.oportunidadCodigo} fue transmitida con éxito.`,
+      titulo: 'Preparación de oferta guardada',
+      descripcion: `Oferta por $${postulacion.montoOferta.toLocaleString('es-CL')} CLP para ${postulacion.oportunidadCodigo} guardada como borrador. Confirma el envío real cuando la hayas postulado en el portal oficial de Mercado Público.`,
       oportunidadId: postulacion.oportunidadId
     };
     setNotifications(prev => [newAlert, ...prev]);
 
-    // 5. Navigate to Mis Negocios to see the postulation in pipeline
     setActiveModule('business');
     setActiveSubSection('mis-negocios');
+  };
+
+  // Único punto donde una postulación pasa de Borrador a Enviada — requiere
+  // confirmación manual explícita del usuario (checkbox), nunca automática.
+  // Queda registrado quién y cuándo confirmó, como evidencia de auditoría.
+  const handleConfirmarEnvioPostulacion = (postulacionId: string) => {
+    const ahora = new Date().toISOString();
+    setPostulaciones(prev =>
+      prev.map(p =>
+        p.id === postulacionId
+          ? { ...p, estado: 'Enviada', confirmadoPor: currentUser.email, confirmadoEn: ahora, fechaActualizacion: ahora.split('T')[0] }
+          : p
+      )
+    );
   };
 
   const handleAddComment = (opId: string, texto: string) => {
@@ -798,6 +826,9 @@ export default function Home() {
               onSelectOpportunity={setSelectedOpportunity}
               onSaveVistaGuardada={handleSaveVistaGuardada}
               onPostular={handlePostularOpportunity}
+              postulaciones={postulaciones}
+              currentUser={currentUser}
+              onConfirmarEnvio={handleConfirmarEnvioPostulacion}
               teamComments={teamComments}
               onAddComment={handleAddComment}
               onImportFromApi={handleQueryApiBidding}

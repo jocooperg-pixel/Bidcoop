@@ -14,6 +14,9 @@ interface SearchModuleProps {
   onSelectOpportunity: (op: Oportunidad | null) => void;
   onSaveVistaGuardada: (vista: VistaGuardada) => void;
   onPostular: (postulacion: Postulacion) => void;
+  postulaciones: Postulacion[];
+  currentUser: { nombre: string; email: string; rol: string };
+  onConfirmarEnvio: (postulacionId: string) => void;
   teamComments: Record<string, Oportunidad['comentarios']>;
   onAddComment: (opId: string, texto: string) => void;
   onImportFromApi?: (code: string) => Promise<void>;
@@ -34,6 +37,9 @@ export default function SearchModule({
   onSelectOpportunity,
   onSaveVistaGuardada,
   onPostular,
+  postulaciones,
+  currentUser,
+  onConfirmarEnvio,
   teamComments,
   onAddComment,
   onImportFromApi,
@@ -651,7 +657,10 @@ export default function SearchModule({
       oportunidadId: selectedOpportunity.id,
       oportunidadTitulo: selectedOpportunity.titulo,
       oportunidadCodigo: selectedOpportunity.codigo,
-      estado: 'Enviada',
+      // Nunca 'Enviada' aquí — BidCoop no transmite nada a Mercado Público.
+      // Queda en Borrador hasta que el usuario confirme manualmente que
+      // postuló de verdad en el portal oficial.
+      estado: 'Borrador',
       responsable: formResponsable,
       montoOferta: totalPostuladoMonto || formMonto,
       documentosAdjuntos: [...uploadedDocs, ...selectedOpportunity.documentos.map(d => d.nombre)],
@@ -664,8 +673,10 @@ export default function SearchModule({
     };
 
     onPostular(newPostulacion);
-    alert('¡Postulación enviada exitosamente al organismo comprador! Se ha sincronizado a la sección Mis Negocios.');
+    alert('Preparación de oferta guardada en Mis Negocios. Esto NO envía nada a Mercado Público — cuando postules de verdad en el portal oficial, vuelve aquí y confírmalo.');
   };
+
+  const [confirmacionMarcada, setConfirmacionMarcada] = useState(false);
 
   const handleAddCommentSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -1473,7 +1484,70 @@ export default function SearchModule({
             )}
 
             {/* SUB-VIEW 11: Formulario de postulación */}
-            {detailGroup === 'postulacion' && (
+            {detailGroup === 'postulacion' && (() => {
+              const postulacionActual = postulaciones.find(p => p.oportunidadId === selectedOpportunity.id);
+
+              if (postulacionActual && postulacionActual.estado === 'Enviada') {
+                return (
+                  <div className="space-y-4">
+                    <div>
+                      <h2 className="text-lg font-black text-slate-900 dark:text-white">Postulación Confirmada</h2>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">Registro de confirmación manual — BidCoop no tiene integración de escritura con Mercado Público, esto es evidencia interna de que el equipo ya postuló en el portal oficial.</p>
+                    </div>
+                    <div className="bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/40 rounded-2xl p-5 space-y-2">
+                      <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-400 font-black text-sm">
+                        <span>✓</span> Envío confirmado
+                      </div>
+                      <p className="text-xs text-slate-600 dark:text-slate-300">
+                        Confirmado por <strong>{postulacionActual.confirmadoPor || 'No disponible'}</strong>
+                        {postulacionActual.confirmadoEn && ` el ${new Date(postulacionActual.confirmadoEn).toLocaleString('es-CL', { timeZone: 'America/Santiago' })}`}
+                      </p>
+                      <p className="text-xs text-slate-600 dark:text-slate-300">
+                        Monto ofertado: ${postulacionActual.montoOferta.toLocaleString('es-CL')} CLP
+                      </p>
+                    </div>
+                  </div>
+                );
+              }
+
+              if (postulacionActual && postulacionActual.estado === 'Borrador') {
+                return (
+                  <div className="space-y-4">
+                    <div>
+                      <h2 className="text-lg font-black text-slate-900 dark:text-white">Confirmar Envío Real</h2>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                        Ya guardaste una preparación de oferta por ${postulacionActual.montoOferta.toLocaleString('es-CL')} CLP. BidCoop no puede enviarla a Mercado Público — cuando la hayas postulado de verdad en el portal oficial, confírmalo aquí.
+                      </p>
+                    </div>
+                    <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/40 rounded-2xl p-5 space-y-4">
+                      <label className="flex items-start gap-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={confirmacionMarcada}
+                          onChange={(e) => setConfirmacionMarcada(e.target.checked)}
+                          className="mt-0.5 w-4 h-4 accent-emerald-600"
+                        />
+                        <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+                          Confirmo que esta postulación fue enviada realmente en el portal oficial de Mercado Público (fuera de BidCoop), a nombre de {currentUser.nombre || currentUser.email}.
+                        </span>
+                      </label>
+                      <button
+                        type="button"
+                        disabled={!confirmacionMarcada}
+                        onClick={() => {
+                          onConfirmarEnvio(postulacionActual.id);
+                          setConfirmacionMarcada(false);
+                        }}
+                        className="w-full py-3 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-300 disabled:cursor-not-allowed dark:disabled:bg-slate-700 text-white font-black text-xs rounded-xl shadow-lg shadow-emerald-500/20 transition cursor-pointer"
+                      >
+                        Confirmar Envío Real
+                      </button>
+                    </div>
+                  </div>
+                );
+              }
+
+              return (
               <form onSubmit={handlePostulationSubmit} className="space-y-6">
                 <div>
                   <h2 className="text-lg font-black text-slate-900 dark:text-white">Preparar Formulario de Oferta</h2>
@@ -1749,10 +1823,11 @@ export default function SearchModule({
                   type="submit"
                   className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-black text-xs rounded-xl shadow-lg shadow-blue-500/20 transition cursor-pointer"
                 >
-                  Enviar Postulación Oficial a Mercado Público
+                  Guardar Preparación de Oferta
                 </button>
               </form>
-            )}
+              );
+            })()}
 
           </div>
 

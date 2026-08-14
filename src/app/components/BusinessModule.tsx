@@ -401,7 +401,15 @@ export default function BusinessModule({
                     col.items.map((item: KanbanItem) => (
                       <div
                         key={item.id || item.codigo}
-                        onClick={() => onSelectOpportunity && onSelectOpportunity(item as Oportunidad)}
+                        onClick={() => {
+                          // item.estado aquí es la ETAPA INTERNA de la postulación
+                          // (Borrador/Enviada/...), no el estado oficial de Mercado
+                          // Público — nunca abrir el detalle con ese valor sobreescrito,
+                          // o el panel mostraría "BORRADOR" como si fuera un estado real
+                          // del proceso. Se busca la oportunidad real por código/id.
+                          const real = oportunidades.find(o => o.codigo === item.codigo || o.id === item.id);
+                          if (onSelectOpportunity) onSelectOpportunity((real || item) as Oportunidad);
+                        }}
                         className="p-3.5 bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-750 hover:border-blue-500 dark:hover:border-blue-400 rounded-xl shadow-sm cursor-pointer transition text-xs space-y-2.5 group"
                       >
                         <div className="flex items-center justify-between">

@@ -166,6 +166,13 @@ export interface Postulacion {
   empresaMatch?: EmpresaMatch;
   modalidad?: 'Compra Ágil' | 'Licitación' | 'Convenio Marco' | 'Grandes Compras';
   organismo?: string;
+  // BidCoop no tiene integración de escritura con Mercado Público — no existe
+  // forma de enviar una postulación "de verdad" desde la plataforma. estado
+  // solo pasa a 'Enviada' cuando un usuario confirma manualmente que ya
+  // postuló en el portal oficial (fuera de BidCoop). confirmadoPor/confirmadoEn
+  // son el registro de auditoría de esa confirmación — nunca inferidos.
+  confirmadoPor?: string;
+  confirmadoEn?: string;
 }
 
 export interface MiembroEquipo {
