@@ -5,6 +5,7 @@ import {
 } from 'recharts';
 import { Oportunidad, MiembroEquipo } from '../types';
 import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
+import { calcularCentroAlertas } from '../utils/alertasEngine';
 
 interface DashboardModuleProps {
   oportunidades: Oportunidad[];
@@ -148,25 +149,7 @@ export default function DashboardModule({
   // criterio anti-duplicado que pide el prompt maestro. Solo procesos
   // 'Publicada' con fechaCierre real — nada estimado.
   // ═══════════════════════════════════════════════════════════════════════
-  const centroAlertas = useMemo(() => {
-    const now = new Date();
-    const activas = oportunidades.filter(o => o.estado === 'Publicada' && o.fechaCierre);
-
-    const conHoras = activas
-      .map(o => {
-        const cierre = new Date(o.fechaCierre as string);
-        if (isNaN(cierre.getTime())) return null;
-        const horas = (cierre.getTime() - now.getTime()) / (1000 * 60 * 60);
-        return horas >= 0 ? { op: o, horas } : null;
-      })
-      .filter((x): x is { op: Oportunidad; horas: number } => x !== null);
-
-    const critico = conHoras.filter(x => x.horas <= 24).sort((a, b) => a.horas - b.horas);
-    const alto = conHoras.filter(x => x.horas > 24 && x.horas <= 72).sort((a, b) => a.horas - b.horas);
-    const medio = conHoras.filter(x => x.horas > 72 && x.horas <= 168).sort((a, b) => a.horas - b.horas);
-
-    return { critico, alto, medio, total: critico.length + alto.length + medio.length };
-  }, [oportunidades]);
+  const centroAlertas = useMemo(() => calcularCentroAlertas(oportunidades), [oportunidades]);
 
   // ═══════════════════════════════════════════════════════════════════════
   // PRIORIDAD DE HOY — máximo 3 acciones, ranking sobre datos 100% reales:

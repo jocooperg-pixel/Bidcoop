@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Oportunidad, Postulacion, OrdenCompra, Empresa } from '../types';
 import { FLETES_REGIONALES_CHILE } from '../mockData';
+import { calcularCentroAlertas } from '../utils/alertasEngine';
 import AdjudicacionesModule from './AdjudicacionesModule';
 
 // We import productCatalogRaw from catalog.ts to parse it
@@ -75,9 +76,8 @@ export default function BusinessModule({
   const [logMontoVenta, setLogMontoVenta] = useState<number>(1750000);
   const [logCostoPMP, setLogCostoPMP] = useState<number>(1050000);
 
-  // Alerts Center State
-  const [alertWhatsappEnabled, setAlertWhatsappEnabled] = useState<boolean>(true);
-  const [alertEmailEnabled, setAlertEmailEnabled] = useState<boolean>(true);
+  // Centro de Alertas — mismo motor real que Inicio (utils/alertasEngine.ts)
+  const centroAlertasBusiness = useMemo(() => calcularCentroAlertas(oportunidades), [oportunidades]);
 
   // Filtered Postulaciones
   const filteredPostulaciones = useMemo(() => {
@@ -842,155 +842,55 @@ export default function BusinessModule({
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-4">
               <div>
                 <h2 className="text-base font-black text-slate-900 dark:text-white flex items-center gap-2">
-                  <span>🔔</span> Centro de Alertas e Integración de Notificaciones (WhatsApp / Email)
+                  <span>🔔</span> Centro de Alertas
                 </h2>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                  Recibe avisos inmediatos en tu celular cuando una Compra Ágil de alto calce esté a menos de 2 horas de su cierre.
+                  Procesos reales agrupados por urgencia real de cierre — mismo cálculo que el resumen de Inicio, nunca dos números distintos para lo mismo.
                 </p>
               </div>
             </div>
 
-            {/* Channels Status */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* WhatsApp Channel */}
-              <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-850/50 flex items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">📱</span>
-                  <div>
-                    <h4 className="text-xs font-black text-slate-900 dark:text-white">Canal WhatsApp Business</h4>
-                    <p className="text-[11px] text-slate-500 font-semibold mt-0.5">Destino: <span className="font-mono text-indigo-600 dark:text-indigo-400 font-extrabold">+56 9 7722 2179</span> (Jonathan Cooper)</p>
-                  </div>
-                </div>
-                <button
-                  onClick={() => {
-                    setAlertWhatsappEnabled(!alertWhatsappEnabled);
-                    alert(alertWhatsappEnabled ? 'Alertas por WhatsApp pausadas.' : 'Alertas por WhatsApp activadas.');
-                  }}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-black transition cursor-pointer ${
-                    alertWhatsappEnabled
-                      ? 'bg-emerald-600 text-white shadow-sm'
-                      : 'bg-slate-200 dark:bg-slate-800 text-slate-500'
-                  }`}
-                >
-                  {alertWhatsappEnabled ? 'ACTIVO 🟢' : 'PAUSADO ⚪'}
-                </button>
-              </div>
-
-              {/* Email Channel */}
-              <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-850/50 flex items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">✉️</span>
-                  <div>
-                    <h4 className="text-xs font-black text-slate-900 dark:text-white">Canal Correo Electrónico</h4>
-                    <p className="text-[11px] text-slate-500 font-medium mt-0.5">Destino: licitaciones@aminorte.cl | ventas@discoverymerch.cl</p>
-                  </div>
-                </div>
-                <button
-                  onClick={() => {
-                    setAlertEmailEnabled(!alertEmailEnabled);
-                    alert(alertEmailEnabled ? 'Alertas por Correo pausadas.' : 'Alertas por Correo activadas.');
-                  }}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-black transition cursor-pointer ${
-                    alertEmailEnabled
-                      ? 'bg-blue-600 text-white shadow-sm'
-                      : 'bg-slate-200 dark:bg-slate-800 text-slate-500'
-                  }`}
-                >
-                  {alertEmailEnabled ? 'ACTIVO 🟢' : 'PAUSADO ⚪'}
-                </button>
-              </div>
+            <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-850/50 text-[11px] text-slate-500 dark:text-slate-400">
+              BidCoop no envía WhatsApp ni correos automáticamente — ningún proceso en segundo plano lo hace. Los reportes por correo/WhatsApp se envían solo cuando tú presionas manualmente el botón en <strong>Analítica → Reportes</strong>.
             </div>
 
-            {/* Active Live Alerts List (BUG-10 FIX: Auto invalidation of expired alerts against current date) */}
-            <div className="space-y-3">
+            {/* Alertas reales — mismo motor que el Centro de Alertas de Inicio (utils/alertasEngine.ts) */}
+            <div className="space-y-4">
               <h3 className="text-xs font-black uppercase text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-1">
-                Monitoreo Activo de Alertas y Eventos Programados
+                {centroAlertasBusiness.total} proceso{centroAlertasBusiness.total !== 1 ? 's' : ''} con cierre dentro de 7 días
               </h3>
 
-              <div className="space-y-3">
-                {(() => {
-                  const todayStr = '2026-07-27';
-                  const rawAlerts = [
-                    {
-                      id: 'alt-1',
-                      tipo: '⚡ Cierre Inminente Compra Ágil',
-                      codigo: '3244-277-COT26',
-                      proceso: 'Papel de manualidades autoadhesivo (ID: 39985469)',
-                      organismo: 'I. Municipalidad de Santo Domingo',
-                      monto: '$1.750.000 CLP',
-                      canal: 'WhatsApp + Email',
-                      fechaLimite: '2026-07-25',
-                      estadoRaw: 'Programado para 25/07 13:00 hrs (2 hrs antes del cierre)'
-                    },
-                    {
-                      id: 'alt-2',
-                      tipo: '🛍️ Apertura de Foro de Consultas',
-                      codigo: 'GC-1105-650-CM26',
-                      proceso: 'Grande Compra: Suministro Resmas Carta/Oficio y Papelería',
-                      organismo: 'Servicio de Impuestos Internos (SII)',
-                      monto: '$104.500.000 CLP',
-                      canal: 'WhatsApp',
-                      fechaLimite: '2026-07-27',
-                      estadoRaw: 'Enviado hoy 10:15 hrs'
-                    },
-                    {
-                      id: 'alt-3',
-                      tipo: '🏆 Publicación de Adjudicación',
-                      codigo: 'GC-3047-901-CM26',
-                      proceso: 'Grande Compra: Insumos de Aseo Químico e Higiene',
-                      organismo: 'Hospital Clínico San Borja Arriarán',
-                      monto: '$91.800.000 CLP',
-                      canal: 'Email',
-                      fechaLimite: '2026-07-27',
-                      estadoRaw: 'Adjudicada a Aminorte SpA'
-                    }
-                  ];
+              {centroAlertasBusiness.total === 0 && (
+                <p className="text-xs text-slate-400 italic py-4 text-center">Sin procesos con cierre próximo en este momento.</p>
+              )}
 
-                  return rawAlerts.map((alt) => {
-                    const isExpired = alt.fechaLimite < todayStr;
-                    const displayStatus = isExpired 
-                      ? '📁 Resuelta / Archivada (Proceso vencido 25/07)' 
-                      : alt.estadoRaw;
-
-                    return (
-                      <div key={alt.id} className={`p-4 rounded-xl border transition-all ${
-                        isExpired 
-                          ? 'border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/40 opacity-75' 
-                          : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm'
-                      } flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4`}>
-                        <div className="space-y-1">
-                          <div className="flex items-center gap-2">
-                            <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase ${
-                              isExpired 
-                                ? 'bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-slate-400' 
-                                : 'bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300'
-                            }`}>
-                              {alt.tipo}
-                            </span>
-                            <span className="text-[10px] font-mono font-bold text-blue-600 dark:text-blue-400">{alt.codigo}</span>
-                            {isExpired && (
-                              <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300">
-                                ARCHIVADA
-                              </span>
-                            )}
-                          </div>
-                          <h4 className="text-xs font-black text-slate-900 dark:text-white">{alt.proceso}</h4>
-                          <p className="text-[10px] text-slate-500">{alt.organismo} • Monto: {alt.monto}</p>
+              {([
+                { key: 'critico', label: 'Crítico — cierra en menos de 24h', emoji: '🔴', items: centroAlertasBusiness.critico },
+                { key: 'alto', label: 'Alto — cierra en 1 a 3 días', emoji: '🟠', items: centroAlertasBusiness.alto },
+                { key: 'medio', label: 'Medio — cierra en 3 a 7 días', emoji: '🟡', items: centroAlertasBusiness.medio }
+              ] as const).map(grupo => grupo.items.length > 0 && (
+                <div key={grupo.key} className="space-y-2">
+                  <span className="text-[10px] font-black uppercase text-slate-500 dark:text-slate-400">{grupo.emoji} {grupo.label} ({grupo.items.length})</span>
+                  {grupo.items.slice(0, 8).map(({ op, horas }) => (
+                    <div
+                      key={op.id}
+                      onClick={() => onSelectOpportunity && onSelectOpportunity(op)}
+                      className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm flex items-center justify-between gap-4 cursor-pointer hover:border-blue-400 dark:hover:border-blue-500 transition"
+                    >
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-2">
+                          <span className="text-[10px] font-mono font-bold text-blue-600 dark:text-blue-400">{op.codigo}</span>
                         </div>
-
-                        <div className="text-left sm:text-right shrink-0">
-                          <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 block">
-                            Canal: {alt.canal}
-                          </span>
-                          <span className={`text-[9px] font-medium block mt-0.5 ${isExpired ? 'text-slate-400 font-bold' : 'text-slate-400'}`}>
-                            {displayStatus}
-                          </span>
-                        </div>
+                        <h4 className="text-xs font-black text-slate-900 dark:text-white truncate">{op.titulo}</h4>
+                        <p className="text-[10px] text-slate-500 truncate">{op.organismo}</p>
                       </div>
-                    );
-                  });
-                })()}
-              </div>
+                      <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 shrink-0">
+                        {horas < 1 ? `${Math.round(horas * 60)} min` : horas < 24 ? `${Math.round(horas)} h` : `${Math.round(horas / 24)} días`}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
 
           </div>
