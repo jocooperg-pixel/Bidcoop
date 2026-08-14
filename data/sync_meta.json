@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-14T10:05:45.647971+00:00",
-  "ultimoIntentoRealizado": "2026-08-14T10:05:45.647971+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-14T18:58:27.847634+00:00",
+  "ultimoIntentoRealizado": "2026-08-14T18:58:27.847634+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 540,
-  "registrosConfirmados": 540,
+  "registrosEnPlataforma": 529,
+  "registrosConfirmados": 529,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 388,
-  "excluidosPrefiltroIrrelevante": 4241,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 389,
+  "excluidosPrefiltroIrrelevante": 4364,
+  "excluidosSinDatosReales": 21,
   "excluidosSinMatchEmpresa": 501,
   "comprasAgilesAudit": {
-    "total": 234,
-    "conMontoValido": 232,
+    "total": 233,
+    "conMontoValido": 231,
     "pctValidado": 99.1,
     "stats": {
-      "VALIDADO": 3,
+      "VALIDADO": 2,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 229,
       "MONTO_NO_ENCONTRADO": 2
     },
-    "montoOriginalSum": 325929312,
-    "montoFinalSum": 325929312,
+    "montoOriginalSum": 304220319,
+    "montoFinalSum": 304220319,
     "montoRecuperadoSum": 0
   },
   "categorias": {
-    "licitaciones": 302,
-    "comprasAgiles": 234,
+    "licitaciones": 292,
+    "comprasAgiles": 233,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 66,
-    "L1": 19,
-    "LE": 178,
+    "LP": 61,
+    "L1": 20,
+    "LE": 172,
     "LR": 30,
     "I2": 3,
     "B2": 1,
-    "CO": 5,
+    "CO": 4,
     "LS": 2,
     "E2": 3,
     "O1": 4,
     "COT": 229
   },
   "matchPorEmpresa": {
-    "Aminorte": 460,
-    "V-MOCCS": 80
+    "Aminorte": 454,
+    "V-MOCCS": 75
   },
   "cambios": {
     "comparadoContra": "2026-08-13T15:57:09.789931+00:00",
-    "nuevosCount": 309,
+    "nuevosCount": 300,
     "modificadosCount": 0,
-    "cerradosCount": 0,
+    "cerradosCount": 2,
     "nuevos": [
       {
         "codigo": "1057489-211-I226",
@@ -200,6 +200,15 @@
         "fechaCierre": "2026-09-02T16:00:00"
       },
       {
+        "codigo": "1488-32-LP26",
+        "titulo": "PPTA 276-26 SER MANT REP MUEBLES RODADOS METALICOS",
+        "organismo": "HOSPITAL DOCTOR HERNAN HENRIQUEZ ARAVENA",
+        "monto": 323299200,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-03T15:00:00"
+      },
+      {
         "codigo": "621-697-LP26",
         "titulo": "IMATINIB  400 MG CPCM REC. 1000022948",
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
@@ -216,6 +225,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-20T09:00:00"
+      },
+      {
+        "codigo": "3310-36-LP26",
+        "titulo": "Pantallas LED indoor outdoor",
+        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
+        "monto": 300000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-09-07T15:01:00"
       },
       {
         "codigo": "4301-55-LP26",
@@ -279,15 +297,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-17T17:44:00"
-      },
-      {
-        "codigo": "2410-35-LP26",
-        "titulo": "Adquisición de artículos eléctricos para mantención de inmuebles",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "monto": 147660200,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-03T09:00:00"
       },
       {
         "codigo": "622847-10-LP26",
@@ -360,15 +369,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-20T16:00:00"
-      },
-      {
-        "codigo": "2563-36-LP26",
-        "titulo": "Adquisición de tres 3 servidores para la DGAC",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "monto": 90976650,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-08-20T15:00:00"
       },
       {
         "codigo": "721703-32-LP26",
@@ -587,19 +587,36 @@
         "fechaCierre": "2026-08-14T18:00:00"
       },
       {
-        "codigo": "2415-11-LE26",
-        "titulo": "Servicio de Suministro de Impresiones gráficas para Municipalidad de Concepción",
-        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
-        "monto": 53900000,
+        "codigo": "557639-64-LE26",
+        "titulo": "Pantallas y Proyectores Establecimientos Cormun",
+        "organismo": "CORP MUNICIPAL DE SERVICIOS PUBLICOS TRASPASADOS DE RANCAGUA",
+        "monto": 51075098,
         "empresaMatch": "Aminorte",
         "matchScore": 70,
-        "fechaCierre": "2026-08-18T15:30:00"
+        "fechaCierre": "2026-08-17T15:00:00"
       }
     ],
     "modificados": [],
-    "cerrados": []
+    "cerrados": [
+      {
+        "codigo": "3934-45-LP26",
+        "titulo": "Licitación Pública: Adquisición de Mobiliario Ergonómico de Oficina y Escritorios Modulares",
+        "organismo": "JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)",
+        "estadoAnterior": "Publicada",
+        "monto": 68000000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2239-10-LP26",
+        "titulo": "Licitación Pública: Provisión Anual de Insumos de Escritorio y Papelería Institucional",
+        "organismo": "MINISTERIO DE EDUCACIÓN (MINEDUC)",
+        "estadoAnterior": "Publicada",
+        "monto": 45000000,
+        "empresaMatch": "Aminorte"
+      }
+    ]
   },
-  "tiempoEjecucionSegundos": 3.2,
+  "tiempoEjecucionSegundos": 1350.1,
   "errores": [],
   "advertencias": []
 }
