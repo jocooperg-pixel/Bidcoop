@@ -1,13 +1,13 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-14T02:09:20.967679+00:00",
-  "ultimoIntentoRealizado": "2026-08-14T02:09:20.967679+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-14T04:50:00.111707+00:00",
+  "ultimoIntentoRealizado": "2026-08-14T04:50:00.111707+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 540,
   "registrosConfirmados": 540,
   "registrosPendientesVerificacion": 0,
   "registrosConMontoReal": 388,
-  "excluidosPrefiltroIrrelevante": 4240,
+  "excluidosPrefiltroIrrelevante": 4241,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 501,
   "comprasAgilesAudit": {
@@ -599,7 +599,7 @@
     "modificados": [],
     "cerrados": []
   },
-  "tiempoEjecucionSegundos": 17.4,
+  "tiempoEjecucionSegundos": 3.2,
   "errores": [],
   "advertencias": []
 }
