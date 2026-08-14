@@ -81,7 +81,7 @@ export default function ReportsNotificationsModule({
       'Empresa Asignada',
       'Modalidad',
       'Estado',
-      'Sugerencia Precio Óptimo (Win-Rate CLP)'
+      'Precio Referencia (Regla 94% CLP)'
     ];
 
     const targetOps = companyName === 'Todas' 
@@ -204,7 +204,7 @@ export default function ReportsNotificationsModule({
       bodyText += `• CÓDIGO: ${op.codigo}\n`;
       bodyText += `  ORGANISMO: ${op.organismo} (${op.region})\n`;
       bodyText += `  PROCESO: ${op.titulo}\n`;
-      bodyText += `  MONTO: $${op.monto.toLocaleString('es-CL')} CLP | PRECIO AI (94%): $${winPrice.toLocaleString('es-CL')} CLP\n`;
+      bodyText += `  MONTO: $${op.monto.toLocaleString('es-CL')} CLP | PRECIO REF. (REGLA 94%): $${winPrice.toLocaleString('es-CL')} CLP\n`;
       bodyText += `  CIERRE: ${op.fechaCierre}\n\n`;
     });
 
@@ -247,7 +247,7 @@ export default function ReportsNotificationsModule({
       statusBadgeColor,
       cierre: op.fechaCierre,
       titulo: op.titulo,
-      body: `Estimado Equipo de ${company},\n\nLe notificamos la actualización de la cotización enviada:\n\nProceso: ${op.codigo} - ${op.titulo}\nOrganismo: ${op.organismo}\nMonto Estimado: $${op.monto.toLocaleString('es-CL')} CLP\nPrecio Sugerido Win-Rate (IA): $${winPrice.toLocaleString('es-CL')} CLP\nEstado Actual: ${op.estado}\n\nPor favor revise el panel de BidCoop para adjuntar documentos definitivos.`
+      body: `Estimado Equipo de ${company},\n\nLe notificamos la actualización de la cotización enviada:\n\nProceso: ${op.codigo} - ${op.titulo}\nOrganismo: ${op.organismo}\nMonto Estimado: $${op.monto.toLocaleString('es-CL')} CLP\nPrecio Referencia (Regla Comercial 94%): $${winPrice.toLocaleString('es-CL')} CLP\nEstado Actual: ${op.estado}\n\nPor favor revise el panel de BidCoop para adjuntar documentos definitivos.`
     };
   };
 
@@ -298,7 +298,7 @@ export default function ReportsNotificationsModule({
             Módulo de Reportes Diarios y Seguimiento de Postulaciones
           </h1>
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            Generación automatizada a las 8:00 AM de Compras Ágiles activas y notificaciones por correo de seguimiento segmentadas por empresa.
+            Reportes de Compras Ágiles activas y notificaciones por correo de seguimiento, segmentadas por empresa — siempre generados al presionar un botón, nunca en segundo plano.
           </p>
         </div>
       </div>
@@ -477,10 +477,7 @@ export default function ReportsNotificationsModule({
               : 'border-transparent text-slate-500 hover:text-slate-800 dark:text-slate-400'
           }`}
         >
-          <span>🎯 Win-Rate AI (Precio Ganador)</span>
-          <span className="bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 text-xs px-2 py-0.5 rounded-full font-black">
-            IA Activa
-          </span>
+          <span>🎯 Regla Comercial (Precio Referencia)</span>
         </button>
 
         <button
@@ -580,7 +577,7 @@ export default function ReportsNotificationsModule({
                     <th className="py-3 px-4">Monto Estimado</th>
                     <th className="py-3 px-4">Empresa Asignada</th>
                     <th className="py-3 px-4">Cierre</th>
-                    <th className="py-3 px-4">Precio Sugerido AI</th>
+                    <th className="py-3 px-4">Precio Referencia (Regla 94%)</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-700/50">
@@ -713,27 +710,26 @@ export default function ReportsNotificationsModule({
         </div>
       )}
 
-      {/* TAB CONTENT 3: WIN-RATE AI */}
+      {/* TAB CONTENT 3: REGLA COMERCIAL DE PRECIO */}
       {activeTab === 'winrate' && (
         <div className="space-y-6">
           <div className="bg-gradient-to-r from-indigo-900 to-slate-900 text-white p-6 rounded-2xl shadow-md space-y-3">
             <div className="flex items-center gap-2">
               <span className="bg-amber-400 text-slate-950 font-black text-xs px-2.5 py-1 rounded-full uppercase">
-                Algoritmo Inteligente Win-Rate AI
+                Regla Comercial — no es IA
               </span>
             </div>
             <h3 className="text-xl font-black">
-              Sugeridor de Precio Óptimo de Oferta
+              Precio de Referencia por Regla Fija
             </h3>
             <p className="text-xs text-slate-300 max-w-3xl">
-              El motor de inteligencia artificial de BidCoop analiza el presupuesto asignado por el organismo comprador y la conducta histórica de competidores (ej: Dimerc SpA) para calcular el precio óptimo con un 94.2% de probabilidad de ganar la adjudicación manteniendo el margen comercial.
+              Esto NO es un algoritmo ni analiza competidores — es una regla fija simple: 94% del presupuesto público informado por el organismo. BidCoop no tiene datos reales de comportamiento de competidores ni de tus costos, así que no calcula margen aquí. Para un margen real, usa el simulador en Negocios → Flete y Márgenes con tus costos reales.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {companyFilteredOps.slice(0, 3).map((op) => {
               const winPrice = Math.round(op.monto * 0.94);
-              const marginEst = Math.round((winPrice - (op.monto * 0.65)));
               return (
                 <div key={op.codigo} className="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
                   <div className="flex items-center justify-between">
@@ -753,12 +749,12 @@ export default function ReportsNotificationsModule({
                       <span className="font-bold">${op.monto.toLocaleString('es-CL')} CLP</span>
                     </div>
                     <div className="flex justify-between text-emerald-600 dark:text-emerald-400 font-extrabold">
-                      <span>Precio Sugerido AI:</span>
+                      <span>Precio Ref. (Regla 94%):</span>
                       <span>${winPrice.toLocaleString('es-CL')} CLP</span>
                     </div>
-                    <div className="flex justify-between text-indigo-600 dark:text-indigo-400 font-bold">
-                      <span>Margen Est. Holding:</span>
-                      <span>+${marginEst.toLocaleString('es-CL')} CLP</span>
+                    <div className="flex justify-between text-slate-400 dark:text-slate-500 font-medium">
+                      <span>Margen:</span>
+                      <span>No calculable sin costos reales</span>
                     </div>
                   </div>
 

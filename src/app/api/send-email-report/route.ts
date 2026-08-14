@@ -363,8 +363,11 @@ export async function POST(request: Request) {
         opsList
       );
 
-      const activeUser = (smtpUser && smtpUser.trim()) ? smtpUser.trim() : (process.env.SMTP_USER || 'jonathan.cooper.g@gmail.com');
-      const activePass = (smtpPass && smtpPass.trim()) ? smtpPass.trim() : (process.env.SMTP_PASS || 'stutlzydxqefmptu');
+      // Nunca un fallback hardcodeado a una credencial real — solo lo que
+      // el usuario ingresó en la UI o lo que esté configurado como
+      // variable de entorno del servidor.
+      const activeUser = (smtpUser && smtpUser.trim()) ? smtpUser.trim() : (process.env.SMTP_USER || '');
+      const activePass = (smtpPass && smtpPass.trim()) ? smtpPass.trim() : (process.env.SMTP_PASS || '');
 
       // Strategy 1: Gmail / Nodemailer SMTP with SSL (Port 465) or TLS (Port 587)
       try {

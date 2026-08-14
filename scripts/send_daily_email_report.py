@@ -18,10 +18,13 @@ import datetime
 import csv
 import io
 
+# Nunca hardcodear una credencial real aquí — este script vive en un
+# repositorio público. Debe correr con SMTP_USER/SMTP_PASS como variables
+# de entorno reales (ej. `SMTP_USER=... SMTP_PASS=... python3 scripts/...`).
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 465
-SMTP_USER = "jonathan.cooper.g@gmail.com"
-SMTP_PASS = "stutlzydxqefmptu"
+SMTP_USER = os.environ.get("SMTP_USER", "")
+SMTP_PASS = os.environ.get("SMTP_PASS", "")
 
 EMAILS_REGIONES = [
     "mviguera@aminorte.cl",
@@ -265,6 +268,9 @@ def dispatch_email(subject, recipients, ops, csv_filename):
         print(f"  - {r}")
 
 def main():
+    if not SMTP_USER or not SMTP_PASS:
+        print("[ERROR] Faltan SMTP_USER/SMTP_PASS como variables de entorno reales. No se enviará nada.")
+        return
     today = datetime.date.today().isoformat()
     print(f"[{datetime.datetime.now().isoformat()}] Cargando oportunidades desde mockData.ts...")
     ops = load_opportunities()

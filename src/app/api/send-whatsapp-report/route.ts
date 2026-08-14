@@ -7,8 +7,8 @@ export async function POST(request: Request) {
       phone = '56977222179, 56984093057, 56947479588, 56963084062',
       empresa = 'Consolidado Holding',
       oportunidades = [],
-      instanceId = process.env.ULTRAMSG_INSTANCE_ID || 'instance185972',
-      token = process.env.ULTRAMSG_TOKEN || 'j5tw4912zijm9wg6',
+      instanceId = process.env.ULTRAMSG_INSTANCE_ID || '',
+      token = process.env.ULTRAMSG_TOKEN || '',
       twilioSid = process.env.TWILIO_ACCOUNT_SID || '',
       twilioToken = process.env.TWILIO_AUTH_TOKEN || '',
       twilioFrom = process.env.TWILIO_WHATSAPP_NUMBER || 'whatsapp:+14155238886'
