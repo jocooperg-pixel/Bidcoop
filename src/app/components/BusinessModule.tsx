@@ -120,14 +120,53 @@ export default function BusinessModule({
     };
   }, [postulaciones]);
 
-  // Documents Repo State
-  const [internalDocs, setInternalDocs] = useState([
-    { nombre: 'Estatuto_Social_Aminorte_Firmado.pdf', categoria: 'Legal', fecha: '2026-01-10', tamanho: '4.5 MB' },
-    { nombre: 'RUT_Efectivo_Aminorte.pdf', categoria: 'Tributario', fecha: '2026-02-15', tamanho: '850 KB' },
-    { nombre: 'Certificado_Antecedentes_Laborales_F30_Julio.pdf', categoria: 'Laboral', fecha: '2026-07-01', tamanho: '340 KB' },
-    { nombre: 'Balance_Financiero_Audita_2025.xlsx', categoria: 'Finanzas', fecha: '2026-04-20', tamanho: '1.2 MB' }
-  ]);
-  const [newDocFile, setNewDocFile] = useState<string>('');
+  // Documents Repo State — repositorio real (Postgres + Vercel Blob), sin
+  // documentos ni tamaños inventados. Antes esto era una lista hardcodeada
+  // de 4 archivos que no existían y un botón "Descargar" que solo mostraba
+  // un alert() sin entregar ningún archivo real.
+  interface DocumentoReal {
+    id: string;
+    nombre: string;
+    tipo: string;
+    estado: string;
+    version: number;
+    fechaEmision: string | null;
+    fechaVencimiento: string | null;
+    tamanoBytes: number | null;
+    responsable: { nombre: string; email: string } | null;
+    empresa: { nombre: string } | null;
+  }
+  const [documentos, setDocumentos] = useState<DocumentoReal[]>([]);
+  const [docsLoading, setDocsLoading] = useState(true);
+  const [newDocNombre, setNewDocNombre] = useState<string>('');
+  const [newDocFile, setNewDocFile] = useState<File | null>(null);
+  const [newDocTipo, setNewDocTipo] = useState<'INTERNO' | 'OFICIAL'>('INTERNO');
+  const [newDocEmpresa, setNewDocEmpresa] = useState<string>('');
+  const [newDocVencimiento, setNewDocVencimiento] = useState<string>('');
+  const [subiendoDoc, setSubiendoDoc] = useState(false);
+
+  useEffect(() => {
+    fetch('/api/documentos')
+      .then(res => res.json())
+      .then(data => setDocumentos(data.documentos ?? []))
+      .catch(() => setDocumentos([]))
+      .finally(() => setDocsLoading(false));
+  }, []);
+
+  const formatBytes = (bytes: number | null) => {
+    if (bytes === null) return 'No disponible';
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+  };
+
+  const estadoVencimiento = (fechaVencimiento: string | null): { label: string; className: string } => {
+    if (!fechaVencimiento) return { label: 'Sin vencimiento definido', className: 'text-slate-400' };
+    const dias = Math.ceil((new Date(fechaVencimiento).getTime() - Date.now()) / 86400000);
+    if (dias < 0) return { label: `Vencido hace ${Math.abs(dias)} día(s)`, className: 'text-red-600 dark:text-red-400 font-bold' };
+    if (dias <= 30) return { label: `Vence en ${dias} día(s)`, className: 'text-amber-600 dark:text-amber-400 font-bold' };
+    return { label: `Vence ${new Date(fechaVencimiento).toLocaleDateString('es-CL')}`, className: 'text-slate-500 dark:text-slate-400' };
+  };
 
   // Kanban Board Columns
   // Kanban Board Columns matching exact Mercado Público participation pipeline
@@ -302,15 +341,33 @@ export default function BusinessModule({
     return days;
   }, [oportunidades, calendarMonth]);
 
-  const handleUploadDoc = (e: React.FormEvent) => {
+  const handleUploadDoc = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newDocFile.trim()) return;
-    setInternalDocs(prev => [
-      { nombre: newDocFile, categoria: 'Corporativo', fecha: new Date().toISOString().split('T')[0], tamanho: '1.1 MB' },
-      ...prev
-    ]);
-    setNewDocFile('');
-    alert('Documento guardado con éxito en el Repositorio de Recursos B2B.');
+    if (!newDocFile || !newDocNombre.trim()) return;
+
+    setSubiendoDoc(true);
+    try {
+      const formData = new FormData();
+      formData.append('file', newDocFile);
+      formData.append('nombre', newDocNombre.trim());
+      formData.append('tipo', newDocTipo);
+      if (newDocEmpresa) formData.append('empresaNombre', newDocEmpresa);
+      if (newDocVencimiento) formData.append('fechaVencimiento', newDocVencimiento);
+
+      const res = await fetch('/api/documentos', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (!res.ok) {
+        alert(data.error || 'No se pudo subir el documento.');
+        return;
+      }
+
+      setDocumentos(prev => [{ ...data.documento, tamanoBytes: newDocFile.size }, ...prev]);
+      setNewDocNombre('');
+      setNewDocFile(null);
+      setNewDocVencimiento('');
+    } finally {
+      setSubiendoDoc(false);
+    }
   };
 
   return (
@@ -1082,59 +1139,105 @@ export default function BusinessModule({
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
             <div>
-              <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Carpeta Legal e Institucional</h3>
-              <p className="text-[10px] text-slate-400 mt-0.5">Certificados y escrituras pre-cargados para adjuntar en las postulaciones.</p>
+              <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Repositorio Documental</h3>
+              <p className="text-[10px] text-slate-400 mt-0.5">Archivos reales, con versionado y alerta de vencimiento — nada precargado ni simulado.</p>
             </div>
 
+            {docsLoading && <p className="text-xs text-slate-400">Cargando documentos…</p>}
+            {!docsLoading && documentos.length === 0 && (
+              <p className="text-xs text-slate-400 italic py-6 text-center">Sin documentos cargados todavía.</p>
+            )}
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {internalDocs.map((doc, idx) => (
-                <div key={idx} className="p-4 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 flex flex-col justify-between h-28">
-                  <div className="flex items-start gap-2.5">
-                    <span className="text-xl">📁</span>
-                    <div>
-                      <h4 className="text-xs font-black text-slate-900 dark:text-white truncate max-w-[150px]" title={doc.nombre}>{doc.nombre}</h4>
-                      <span className="text-[9px] text-slate-400">{doc.categoria} • {doc.tamanho}</span>
+              {documentos.map((doc) => {
+                const venc = estadoVencimiento(doc.fechaVencimiento);
+                return (
+                  <div key={doc.id} className="p-4 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 flex flex-col justify-between gap-2">
+                    <div className="flex items-start gap-2.5">
+                      <span className="text-xl">📁</span>
+                      <div className="min-w-0">
+                        <h4 className="text-xs font-black text-slate-900 dark:text-white truncate" title={doc.nombre}>{doc.nombre}</h4>
+                        <span className="text-[9px] text-slate-400">
+                          {doc.tipo} · v{doc.version} · {formatBytes(doc.tamanoBytes)}
+                          {doc.empresa && ` · ${doc.empresa.nombre}`}
+                        </span>
+                      </div>
+                    </div>
+                    <span className={`text-[9px] ${venc.className}`}>{venc.label}</span>
+                    <div className="flex justify-between items-center text-[10px] pt-1 border-t border-slate-100 dark:border-slate-800">
+                      <span className="text-slate-400 font-bold">
+                        {doc.responsable?.nombre || 'No disponible'}
+                      </span>
+                      <a
+                        href={`/api/documentos/${doc.id}/download`}
+                        className="text-blue-500 font-black hover:text-blue-600"
+                      >
+                        Descargar
+                      </a>
                     </div>
                   </div>
-                  <div className="flex justify-between items-center text-[10px]">
-                    <span className="text-slate-400 font-bold">Subido: {doc.fecha}</span>
-                    <button
-                      onClick={() => alert(`Descargando ${doc.nombre}...`)}
-                      className="text-blue-500 font-black hover:text-blue-600"
-                    >
-                      Descargar
-                    </button>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
           {/* Upload new */}
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
-            <form onSubmit={handleUploadDoc} className="space-y-4">
-              <span className="text-[10px] uppercase font-black text-slate-400 tracking-wider block">Cargar Nuevo Recurso</span>
-              <p className="text-[11px] text-slate-400">Incorpore archivos PDF o Excel al repositorio para que estén accesibles en el panel de ofertas.</p>
-              
-              <div className="space-y-3">
+            <form onSubmit={handleUploadDoc} className="space-y-3">
+              <span className="text-[10px] uppercase font-black text-slate-400 tracking-wider block">Cargar Nuevo Documento</span>
+
+              <input
+                type="text"
+                placeholder="Nombre descriptivo (ej. F30_Agosto.pdf)"
+                value={newDocNombre}
+                onChange={(e) => setNewDocNombre(e.target.value)}
+                className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white"
+                required
+              />
+
+              <input
+                type="file"
+                onChange={(e) => setNewDocFile(e.target.files?.[0] || null)}
+                className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white file:mr-2 file:py-1 file:px-2 file:rounded-lg file:border-0 file:text-[10px] file:font-bold file:bg-slate-200 dark:file:bg-slate-700"
+                required
+              />
+
+              <div className="grid grid-cols-2 gap-2">
+                <select
+                  value={newDocTipo}
+                  onChange={(e) => setNewDocTipo(e.target.value as 'INTERNO' | 'OFICIAL')}
+                  className="text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white"
+                >
+                  <option value="INTERNO">Interno</option>
+                  <option value="OFICIAL">Oficial (Mercado Público)</option>
+                </select>
+                <select
+                  value={newDocEmpresa}
+                  onChange={(e) => setNewDocEmpresa(e.target.value)}
+                  className="text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white"
+                >
+                  <option value="">Corporativo (sin empresa)</option>
+                  <option value="Aminorte">Aminorte</option>
+                  <option value="V-MOCCS">V-MOCCS</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="text-[9px] uppercase font-bold text-slate-400 block mb-1">Fecha de vencimiento (opcional)</label>
                 <input
-                  type="text"
-                  placeholder="Nombre descriptivo del archivo (ej. F30_Agosto.pdf)"
-                  value={newDocFile}
-                  onChange={(e) => setNewDocFile(e.target.value)}
+                  type="date"
+                  value={newDocVencimiento}
+                  onChange={(e) => setNewDocVencimiento(e.target.value)}
                   className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white"
-                  required
                 />
-                <div className="p-6 border-2 border-dashed border-slate-150 dark:border-slate-850 rounded-2xl text-center text-xs text-slate-400">
-                  Arrastre archivos o haga clic para simular carga local.
-                </div>
               </div>
 
               <button
                 type="submit"
-                className="w-full py-2.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white font-black text-xs transition"
+                disabled={subiendoDoc}
+                className="w-full py-2.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 disabled:opacity-50 text-white font-black text-xs transition"
               >
-                ✓ Guardar en Repositorio
+                {subiendoDoc ? 'Subiendo…' : '✓ Guardar en Repositorio'}
               </button>
             </form>
           </div>
