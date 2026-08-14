@@ -28,8 +28,10 @@ export default function ReportsNotificationsModule({
   const [showEmailPreviewModal, setShowEmailPreviewModal] = useState<boolean>(false);
   const [sendingEmail, setSendingEmail] = useState<boolean>(false);
   const [userResendKey, setUserResendKey] = useState<string>('');
-  const [userSmtpUser, setUserSmtpUser] = useState<string>('jonathan.cooper.g@gmail.com');
-  const [userSmtpPass, setUserSmtpPass] = useState<string>('stutlzydxqefmptu');
+  // Nunca precargar credenciales reales aquí — este archivo es código fuente
+  // público. El usuario debe ingresarlas manualmente cada vez que las use.
+  const [userSmtpUser, setUserSmtpUser] = useState<string>('');
+  const [userSmtpPass, setUserSmtpPass] = useState<string>('');
   const [userTwilioSid, setUserTwilioSid] = useState<string>('');
   const [userTwilioToken, setUserTwilioToken] = useState<string>('');
   const [userTwilioFrom, setUserTwilioFrom] = useState<string>('');
@@ -129,7 +131,7 @@ export default function ReportsNotificationsModule({
           empresa: selectedCompany,
           oportunidades: companyFilteredOps,
           apiKey: userResendKey,
-          smtpUser: userSmtpUser || 'jonathan.cooper.g@gmail.com',
+          smtpUser: userSmtpUser,
           smtpPass: userSmtpPass
         })
       });
@@ -138,12 +140,12 @@ export default function ReportsNotificationsModule({
       const anySent = data.dispatchesDetail?.some((d: any) => d.isSent);
 
       if (anySent) {
-        setReportSuccessMsg(`¡✅ Correos despachados automáticamente desde jonathan.cooper.g@gmail.com a las casillas oficiales! (${companyFilteredOps.length} Compras Ágiles)`);
+        setReportSuccessMsg(`¡✅ Correos enviados a las casillas oficiales! (${companyFilteredOps.length} Compras Ágiles)`);
       } else {
         // Prompt user to enter Gmail App Password or API Key in UI config without opening Safari
         setShowEmailPreviewModal(true);
         setActiveTab('configuracion');
-        setReportSuccessMsg('⚙️ Conector Gmail (jonathan.cooper.g@gmail.com): Ingrese la clave de aplicación o API Key en la pestaña Automatización para realizar el despacho.');
+        setReportSuccessMsg('⚙️ Ingresa tu clave de aplicación de Gmail o API Key en la pestaña Configuración para poder enviar.');
       }
     } catch (err: any) {
       setShowEmailPreviewModal(true);
@@ -286,10 +288,10 @@ export default function ReportsNotificationsModule({
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <span className="bg-indigo-600 text-white text-xs font-black px-2.5 py-1 rounded-full uppercase tracking-wider">
-              BidCoop Automated Reports
+              BidCoop Reports
             </span>
-            <span className="bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300 text-xs font-semibold px-2.5 py-1 rounded-full">
-              Sincronización 08:00 AM Activa ⏰
+            <span className="bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 text-xs font-semibold px-2.5 py-1 rounded-full">
+              Envío 100% manual — sin cron ni automatización
             </span>
           </div>
           <h1 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
@@ -784,7 +786,7 @@ export default function ReportsNotificationsModule({
             {/* Hour Selector */}
             <div className="space-y-2">
               <label className="font-extrabold text-slate-700 dark:text-slate-300 block">
-                Hora Oficial de Despacho Automático
+                Hora de referencia (recordatorio personal)
               </label>
               <input
                 type="time"
@@ -793,7 +795,7 @@ export default function ReportsNotificationsModule({
                 className="w-full bg-slate-100 dark:bg-slate-700 font-mono font-bold text-sm text-slate-900 dark:text-white px-4 py-2.5 rounded-xl border-none focus:ring-2 focus:ring-indigo-500"
               />
               <p className="text-slate-500 text-[11px]">
-                Hora recomendada: 08:00 AM (Chile GMT-4).
+                BidCoop no envía nada a esta hora ni a ninguna otra automáticamente — solo tú, presionando los botones de envío.
               </p>
             </div>
 
@@ -957,8 +959,8 @@ export default function ReportsNotificationsModule({
           <div className="space-y-4 border-t border-slate-100 dark:border-slate-700 pt-4">
             <div className="flex items-center justify-between">
               <div>
-                <div className="font-bold text-slate-800 dark:text-slate-200">Envío por Correo Electrónico (8:00 AM)</div>
-                <div className="text-slate-500 text-[11px]">Envía el reporte Excel adjunto automáticamente todas las mañanas.</div>
+                <div className="font-bold text-slate-800 dark:text-slate-200">Recordarme enviar el reporte por correo</div>
+                <div className="text-slate-500 text-[11px]">Solo un recordatorio en esta pantalla — el envío real sigue requiriendo que presiones el botón de envío tú mismo.</div>
               </div>
               <input
                 type="checkbox"
@@ -970,8 +972,8 @@ export default function ReportsNotificationsModule({
 
             <div className="flex items-center justify-between">
               <div>
-                <div className="font-bold text-slate-800 dark:text-slate-200">Alertas Push vía WhatsApp / Telegram (8:00 AM)</div>
-                <div className="text-slate-500 text-[11px]">Envía un resumen ejecutivo rápido a <strong className="text-indigo-600 dark:text-indigo-400 font-mono">+56 9 7722 2179 (Jonathan Cooper)</strong> y al equipo de ventas.</div>
+                <div className="font-bold text-slate-800 dark:text-slate-200">Recordarme enviar alertas por WhatsApp</div>
+                <div className="text-slate-500 text-[11px]">Solo un recordatorio en esta pantalla — el envío real sigue requiriendo que presiones el botón de envío tú mismo.</div>
               </div>
               <input
                 type="checkbox"
@@ -985,7 +987,7 @@ export default function ReportsNotificationsModule({
           <div className="flex justify-end pt-2">
             <button
               onClick={() => {
-                setReportSuccessMsg('Configuración de automatización 8:00 AM guardada con éxito.');
+                setReportSuccessMsg('Preferencia de recordatorio guardada (esto no envía nada automáticamente).');
                 setTimeout(() => setReportSuccessMsg(null), 4000);
               }}
               className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all"

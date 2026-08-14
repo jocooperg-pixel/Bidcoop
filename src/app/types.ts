@@ -188,8 +188,10 @@ export interface ParticipanteAdjudicacion {
   posicion: number;
   nombre: string;
   rut: string;
-  montoNeto: number;
-  montoIvaInc: number;
+  // null cuando Mercado Público no expone el monto real del participante —
+  // nunca inventar una cifra ni usar 0 (que se leería como "gratis").
+  montoNeto: number | null;
+  montoIvaInc: number | null;
   resultado: 'ADJUDICADO' | 'No adjudicado' | 'Descalificado';
   esNuestraEmpresa?: boolean;
 }

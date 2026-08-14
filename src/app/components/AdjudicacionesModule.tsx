@@ -1,496 +1,160 @@
-import React, { useState, useMemo } from 'react';
-import { Oportunidad, Postulacion, OrdenCompra, Empresa, AdjudicacionDetalle, ParticipanteAdjudicacion } from '../types';
+import React, { useState, useMemo, useEffect } from 'react';
+import { Oportunidad, Postulacion, OrdenCompra, Empresa, AdjudicacionDetalle } from '../types';
+import { EMPRESAS } from '../utils/empresas';
 
 interface AdjudicacionesModuleProps {
   oportunidades: Oportunidad[];
   postulaciones?: Postulacion[];
   ordenesCompra?: OrdenCompra[];
   activeCompany?: Empresa;
-  onSimulateNewAdjudication?: (newAdjudication: AdjudicacionDetalle) => void;
   selectedCodigoInitial?: string | null;
 }
 
-// Complete list of pre-seeded Adjudications & Purchase Orders for Aminorte and V-MOCCS
-export const initialAdjudicaciones: AdjudicacionDetalle[] = [
-  // --- COMPRAS ÁGILES ---
-  {
-    id: 'adj-1075956-11-COT26',
-    codigo: '1075956-11-COT26',
-    modalidad: 'Compra Ágil',
-    titulo: 'ADQUISICIÓN DE MATERIALES DE OFICINA - SEGÚN TÉRMINOS DE REFERENCIA- ANEXO N° 1 DECLARACIÓN PROGRAMA INTEGRIDAD "OBLIGATORIO" - PRESUPUESTO DISPONIBLE $ 3.406.032.',
-    institucion: 'DEPARTAMENTO CONTROL FINANCIERO',
-    institucionRut: '60.505.000-K',
-    presupuestoEstimado: 3406032,
-    fechaInicioPostulaciones: '2026-06-18 09:38',
-    fechaCierrePostulaciones: '2026-06-25 10:00',
-    fechaResultado: '2026-07-06 13:40',
-    direccionEntrega: 'EXEQUIEL FERNANDEZ N°1162, ÑUÑOA',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '5 dias',
-    observaciones: 'ADQUISICIÓN DE MATERIALES DE OFICINA- SEGÚN TÉRMINOS DE REFERENCIA ADJUNTOS - ANEXO N° 1 DECLARACIÓN PROGRAMA INTEGRIDAD "OBLIGATORIO". PRESUPUESTO DISPONIBLE $3.406.032. SERÁ ADJUDICADO EL PROVEEDOR QUE CUMPLA CON LA TOTALIDAD DE REQUISITOS Y SU OFERTA SE ENMARQUE DENTRO DEL PRESUPUESTO DISPONIBLE.',
-    postuladoPor: '[BBARBA] (VMONCCS)',
-    empresaMatch: 'V-MOCCS',
-    participantes: [
-      { posicion: 1, nombre: 'INDUSTRIAL Y COMERCIAL MEIGGS 51 LIMITADA', rut: '77.558.540-4', montoNeto: 2152334, montoIvaInc: 2561277, resultado: 'ADJUDICADO' },
-      { posicion: 2, nombre: 'SOCIEDAD COMERCIAL DISTRIBUCION GLOBAL LIMITADA', rut: '76.100.732-7', montoNeto: 2328012, montoIvaInc: 2770334, resultado: 'No adjudicado' },
-      { posicion: 3, nombre: 'GBD GROUP ENTERPRISES SPA', rut: '78.078.188-2', montoNeto: 2524548, montoIvaInc: 3004212, resultado: 'No adjudicado' },
-      { posicion: 4, nombre: 'V-MOCCS SPA', rut: '77.235.702-8', montoNeto: 2691280, montoIvaInc: 3202623, resultado: 'No adjudicado', esNuestraEmpresa: true },
-      { posicion: 5, nombre: 'IMPORTADORA Y COMERCIALIZADORA FERVET ON LINE LIMITADA', rut: '76.955.038-0', montoNeto: 2813378, montoIvaInc: 3347920, resultado: 'No adjudicado' },
-      { posicion: 6, nombre: 'E-PROVEE SPA', rut: '77.042.972-2', montoNeto: 2887062, montoIvaInc: 3435604, resultado: 'No adjudicado' },
-      { posicion: 7, nombre: 'RED OFFICE DISTRIBUCION SPA', rut: '76.378.394-4', montoNeto: 2961968, montoIvaInc: 3524742, resultado: 'No adjudicado' },
-      { posicion: 8, nombre: 'COMERCIALIZADORA ROMULO LIMITADA', rut: '76.185.139-K', montoNeto: 2968521, montoIvaInc: 3532540, resultado: 'No adjudicado' },
-      { posicion: 9, nombre: 'BUY ME SPA', rut: '77.431.951-4', montoNeto: 2983600, montoIvaInc: 3550484, resultado: 'No adjudicado' },
-      { posicion: 10, nombre: 'IMPORTADORA Y COMERCIALIZADORA JMMB SPA', rut: '77.461.733-7', montoNeto: 3816780, montoIvaInc: 4541968, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-5188-312-COT26',
-    codigo: '5188-312-COT26',
-    modalidad: 'Compra Ágil',
-    titulo: 'Compra Ágil: Adquisición de Artículos de Escritorio y Papelería para Municipalidad de Macul',
-    institucion: 'I MUNICIPALIDAD DE MACUL',
-    institucionRut: '69.070.400-5',
-    presupuestoEstimado: 1848400,
-    fechaInicioPostulaciones: '2026-07-15 08:30',
-    fechaCierrePostulaciones: '2026-07-20 14:00',
-    fechaResultado: '2026-07-22 11:20',
-    direccionEntrega: 'AV. GREGORIO DE LA FUENTE N°3200, MACUL',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '3 dias',
-    observaciones: 'ADJUDICADO POR MENOR PRECIO Y CUMPLIMIENTO 100% DE ESPECIFICACIONES TÉCNICAS.',
-    postuladoPor: '[JCOOPER] (VMONCCS)',
-    empresaMatch: 'V-MOCCS',
-    participantes: [
-      { posicion: 1, nombre: 'V-MOCCS SPA', rut: '77.235.702-8', montoNeto: 1553277, montoIvaInc: 1848400, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'DISPROMAC LIMITADA', rut: '76.441.900-3', montoNeto: 1680000, montoIvaInc: 1999200, resultado: 'No adjudicado' },
-      { posicion: 3, nombre: 'LIBRERÍA NACIONAL S.A.', rut: '96.502.130-9', montoNeto: 1790000, montoIvaInc: 2130100, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-COT-6012-401-COT26',
-    codigo: 'COT-6012-401-COT26',
-    modalidad: 'Compra Ágil',
-    titulo: 'Compra Ágil: Adquisición Urgente de Resmas Carta/Oficio y Tintas de Impresión',
-    institucion: 'SUBSECRETARÍA DE EDUCACIÓN (MINEDUC)',
-    institucionRut: '60.701.000-0',
-    presupuestoEstimado: 2450000,
-    fechaInicioPostulaciones: '2026-07-05 09:00',
-    fechaCierrePostulaciones: '2026-07-09 13:00',
-    fechaResultado: '2026-07-10 16:15',
-    direccionEntrega: 'AV. BERNARDO O’HIGGINS N°1371, SANTIAGO',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '2 dias',
-    observaciones: 'ADJUDICADO A AMINORTE DISTRIBUIDORA SPA POR OFERTA CON MEJOR PLAZO DE ENTREGA Y PRECIO UNITARIO.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-    participantes: [
-      { posicion: 1, nombre: 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA', rut: '76.882.110-3', montoNeto: 2058823, montoIvaInc: 2450000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'PRISA S.A. LOGÍSTICA', rut: '96.502.130-9', montoNeto: 2180000, montoIvaInc: 2594200, resultado: 'No adjudicado' },
-      { posicion: 3, nombre: 'OFIMARKET CHILE SPA', rut: '77.810.120-1', montoNeto: 2350000, montoIvaInc: 2796500, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-COT-7012-101-COT26',
-    codigo: 'COT-7012-101-COT26',
-    modalidad: 'Compra Ágil',
-    titulo: 'Compra Ágil: Adquisición Urgente de Cloro Concentrado, Detergentes y Jabón Líquido',
-    institucion: 'HOSPITAL DR. GUSTAVO FRICKE DE VIÑA DEL MAR',
-    institucionRut: '61.602.100-8',
-    presupuestoEstimado: 3120000,
-    fechaInicioPostulaciones: '2026-07-20 09:00',
-    fechaCierrePostulaciones: '2026-07-23 15:00',
-    fechaResultado: '2026-07-24 10:30',
-    direccionEntrega: 'ALVAREZ N°1532, VIÑA DEL MAR',
-    region: 'Región de Valparaíso',
-    plazoEntrega: '4 dias',
-    observaciones: 'ADJUDICACIÓN A AMINORTE DISTRIBUIDORA SPA POR CUMPLIR TOTALMENTE ESPECIFICACIONES TÉCNICAS.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-    participantes: [
-
-      { posicion: 1, nombre: 'AMINORTE DISTRIBUIDORA SPA', rut: '76.882.110-3', montoNeto: 2621848, montoIvaInc: 3120000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'DIVERSEY CHILE S.A.', rut: '96.882.900-1', montoNeto: 2850000, montoIvaInc: 3391500, resultado: 'No adjudicado' },
-      { posicion: 3, nombre: 'QUÍMICA INDUSTRIAL ANTOFAGASTA LTDA', rut: '77.201.880-9', montoNeto: 2990000, montoIvaInc: 3558100, resultado: 'No adjudicado' }
-    ]
-  },
-
-  // --- LICITACIONES PÚBLICAS Y PRIVADAS ---
-  {
-    id: 'adj-2210-441-LR26',
-    codigo: '2210-441-LR26',
-    modalidad: 'Licitación',
-    titulo: 'Suministro Escolar y Insumos de Papelería Parvularia 2026',
-    institucion: 'JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)',
-    institucionRut: '70.012.300-4',
-    presupuestoEstimado: 85000000,
-    fechaInicioPostulaciones: '2026-07-11 09:00',
-    fechaCierrePostulaciones: '2026-07-20 14:00',
-    fechaResultado: '2026-07-24 16:30',
-    direccionEntrega: 'AVENIDA ESPAÑA N°2450, VALPARAÍSO',
-    region: 'Región de Valparaíso',
-    plazoEntrega: '15 dias',
-    observaciones: 'ADJUDICADO SEGÚN CRITERIO ECONÓMICO Y EVALUACIÓN TÉCNICA DE MUESTRAS. CUMPLE CON REQUISITOS DE BASES.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-    participantes: [
-      { posicion: 1, nombre: 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA', rut: '76.882.110-3', montoNeto: 68900000, montoIvaInc: 81991000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'DIPRISA S.A.', rut: '96.502.130-9', montoNeto: 72400000, montoIvaInc: 86156000, resultado: 'No adjudicado' },
-      { posicion: 3, nombre: 'LIBRERÍA Y IMPRENTA CATEDRAL LTDA', rut: '78.112.400-5', montoNeto: 76100000, montoIvaInc: 90559000, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-3047-1042-LE26',
-    codigo: '3047-1042-LE26',
-    modalidad: 'Licitación',
-    titulo: 'Licitación Pública: Suministro de Alcohol Gel, Desinfectantes y Elementos de Aseo Municipal',
-    institucion: 'ILUSTRE MUNICIPALIDAD DE SANTIAGO',
-    institucionRut: '69.070.300-9',
-    presupuestoEstimado: 18500000,
-    fechaInicioPostulaciones: '2026-06-10 09:00',
-    fechaCierrePostulaciones: '2026-06-22 17:00',
-    fechaResultado: '2026-06-25 12:00',
-    direccionEntrega: 'PLAZA DE ARMAS N°1, SANTIAGO',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '7 dias',
-    observaciones: 'OFERTA ADJUDICADA A AMINORTE SPA POR CUMPLIMIENTO TOTAL Y MENOR EVALUACIÓN ECONÓMICA.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-
-    participantes: [
-      { posicion: 1, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 15546218, montoIvaInc: 18500000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'CLEAN CHILE S.A.', rut: '96.771.200-4', montoNeto: 16800000, montoIvaInc: 19992000, resultado: 'No adjudicado' },
-      { posicion: 3, nombre: 'DETERGENTES DEL PACÍFICO SPA', rut: '77.012.550-8', montoNeto: 17500000, montoIvaInc: 20825000, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-2239-8-LR25',
-    codigo: '2239-8-LR25',
-    modalidad: 'Licitación',
-    titulo: 'Licitación Pública: Suministro de Insumos de Aseo Químico e Higiene Hospitalaria',
-    institucion: 'SERVICIO DE SALUD METROPOLITANO SUR - HOSPITAL SANATORIO EL PINO',
-    institucionRut: '61.602.400-7',
-    presupuestoEstimado: 34500000,
-    fechaInicioPostulaciones: '2026-07-01 09:00',
-    fechaCierrePostulaciones: '2026-07-18 14:00',
-    fechaResultado: '2026-07-21 15:30',
-    direccionEntrega: 'AV. LOS MORROS N°11500, SAN BERNARDO',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '10 dias',
-    observaciones: 'PROCESO FINALIZADO. EVALUACIÓN DE OFERTAS TÉCNICAS COMPLETADA.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-
-    participantes: [
-      { posicion: 1, nombre: 'QUÍMICA VIRUTEX ILKO S.A.', rut: '96.510.200-7', montoNeto: 27500000, montoIvaInc: 32725000, resultado: 'ADJUDICADO' },
-      { posicion: 2, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 28991596, montoIvaInc: 34500000, resultado: 'No adjudicado', esNuestraEmpresa: true },
-      { posicion: 3, nombre: 'DISTRIBUIDORA SANITARIA CENTRAL LTDA', rut: '77.410.900-1', montoNeto: 31000000, montoIvaInc: 36890000, resultado: 'No adjudicado' }
-    ]
-  },
-
-  // --- GRANDES COMPRAS (CONVENIO MARCO > 1.000 UTM) ---
-  {
-    id: 'adj-GC-6012-280-CM26',
-    codigo: 'GC-6012-280-CM26',
-    modalidad: 'Grandes Compras',
-    titulo: 'Grande Compra: Dotación Anual de Papelería y Resmas para Seremi de Salud RM',
-    institucion: 'SEREMI DE SALUD REGIÓN METROPOLITANA',
-    institucionRut: '60.705.000-2',
-    presupuestoEstimado: 83400000,
-    fechaInicioPostulaciones: '2026-06-15 09:00',
-    fechaCierrePostulaciones: '2026-06-25 17:00',
-    fechaResultado: '2026-06-28 11:00',
-    direccionEntrega: 'PADRE ALONSO DE OVALLE N°1250, SANTIAGO',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '7 dias',
-    observaciones: 'ADJUDICADO MEDIANTE CATÁLOGO ELECTRÓNICO DE CONVENIO MARCO A AMINORTE SPA POR OBTENER EL MAYOR PUNTAJE PONDERADO.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-    participantes: [
-      { posicion: 1, nombre: 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA', rut: '76.882.110-3', montoNeto: 70084033, montoIvaInc: 83400000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'PRISA S.A.', rut: '96.502.130-9', montoNeto: 74200000, montoIvaInc: 88298000, resultado: 'No adjudicado' },
-      { posicion: 3, nombre: 'DIMERC S.A.', rut: '96.620.190-1', montoNeto: 78900000, montoIvaInc: 93891000, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-GC-6012-195-CM26',
-    codigo: 'GC-6012-195-CM26',
-    modalidad: 'Grandes Compras',
-    titulo: 'Grande Compra: Insumos de Escritorio y Archivadores para Dirección de Obras Públicas',
-    institucion: 'DIRECCIÓN GENERAL DE OBRAS PÚBLICAS (MOP)',
-    institucionRut: '61.201.000-3',
-    presupuestoEstimado: 130800000,
-    fechaInicioPostulaciones: '2026-06-20 09:00',
-    fechaCierrePostulaciones: '2026-07-02 17:00',
-    fechaResultado: '2026-07-05 14:30',
-    direccionEntrega: 'BOMBERO SALAS N°1351, SANTIAGO',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '10 dias',
-    observaciones: 'SELECCIÓN DE OFERTA ADJUDICADA EN CONVENIO MARCO A AMINORTE DISTRIBUIDORA SPA.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-    participantes: [
-      { posicion: 1, nombre: 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA', rut: '76.882.110-3', montoNeto: 109915966, montoIvaInc: 130800000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'LIBRERÍA NACIONAL S.A.', rut: '96.502.130-9', montoNeto: 115000000, montoIvaInc: 136850000, resultado: 'No adjudicado' },
-      { posicion: 3, nombre: 'COMPAÑÍA DE PAPELES Y CARTONES CMPC S.A.', rut: '90.150.000-8', montoNeto: 122000000, montoIvaInc: 145180000, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-1627-940-CM26',
-    codigo: '1627-940-CM26',
-    modalidad: 'Grandes Compras',
-    titulo: 'Grande Compra: Suministro de Toallas de Papel Interfoliadas y Jabón Institucional',
-    institucion: 'ILUSTRE MUNICIPALIDAD DE VALPARAÍSO',
-    institucionRut: '69.060.100-1',
-    presupuestoEstimado: 67500000,
-    fechaInicioPostulaciones: '2026-06-10 09:00',
-    fechaCierrePostulaciones: '2026-06-22 17:00',
-    fechaResultado: '2026-06-25 16:00',
-    direccionEntrega: 'CONDICO N°1490, VALPARAÍSO',
-    region: 'Región de Valparaíso',
-    plazoEntrega: '7 dias',
-    observaciones: 'GRANDE COMPRA RESUELTA. OFERTA GANADORA CORRESPONDE A CMPC TISSUE S.A.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-
-    participantes: [
-      { posicion: 1, nombre: 'CMPC TISSUE S.A.', rut: '96.520.110-2', montoNeto: 54000000, montoIvaInc: 64260000, resultado: 'ADJUDICADO' },
-      { posicion: 2, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 56722689, montoIvaInc: 67500000, resultado: 'No adjudicado', esNuestraEmpresa: true },
-      { posicion: 3, nombre: 'KIMBERLY-CLARK CHILE S.A.', rut: '96.701.440-9', montoNeto: 59000000, montoIvaInc: 70210000, resultado: 'No adjudicado' }
-    ]
-  },
-
-  // --- ÓRDENES DE COMPRA DIRECTAS POR CONVENIO MARCO ---
-  {
-    id: 'adj-OC-61601500-112',
-    codigo: 'OC-61601500-112',
-    codigoOC: 'OC-61601500-112',
-    modalidad: 'Orden de Compra CM',
-    titulo: 'Orden de Compra Convenio Marco: Adquisición Insumos Aseo Institucional y Cloro',
-    institucion: 'ILUSTRE MUNICIPALIDAD DE SANTIAGO',
-    institucionRut: '69.070.300-9',
-    presupuestoEstimado: 18500000,
-    fechaInicioPostulaciones: '2026-06-20 10:00',
-    fechaCierrePostulaciones: '2026-06-24 18:00',
-    fechaResultado: '2026-06-25 09:30',
-    direccionEntrega: 'AMUNATEGUI N°980, SANTIAGO',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '5 dias',
-    observaciones: 'ORDEN DE COMPRA EMITIDA DIRECTAMENTE DESDE LA TIENDA DE CONVENIO MARCO DE MERCADO PÚBLICO. ACEPTADA Y EN DESPACHO.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-
-    participantes: [
-      { posicion: 1, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 15546218, montoIvaInc: 18500000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'TIENDA CONVENIO MARCO ASEO S.A.', rut: '96.881.000-4', montoNeto: 16500000, montoIvaInc: 19635000, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-OC-70012300-884',
-    codigo: 'OC-70012300-884',
-    codigoOC: 'OC-70012300-884',
-    modalidad: 'Orden de Compra CM',
-    titulo: 'Orden de Compra Convenio Marco: Resmas de Papel y Artículos de Escritorio Oficina Central',
-    institucion: 'JUNTA NACIONAL DE JARDINES INFANTILES (JUNJI)',
-    institucionRut: '70.012.300-4',
-    presupuestoEstimado: 24800000,
-    fechaInicioPostulaciones: '2026-07-02 08:30',
-    fechaCierrePostulaciones: '2026-07-05 16:00',
-    fechaResultado: '2026-07-06 10:15',
-    direccionEntrega: 'AVENIDA ESPAÑA N°2450, VALPARAÍSO',
-    region: 'Región de Valparaíso',
-    plazoEntrega: '4 dias',
-    observaciones: 'EMISIÓN DIRECTA ORDEN DE COMPRA CONVENIO MARCO N° OC-70012300-884 ACEPTADA POR AMINORTE DISTRIBUIDORA SPA.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-    participantes: [
-      { posicion: 1, nombre: 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA', rut: '76.882.110-3', montoNeto: 20840336, montoIvaInc: 24800000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'PRISA CONVENIO MARCO CHILE', rut: '96.502.130-9', montoNeto: 22100000, montoIvaInc: 26300000, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-OC-60505000-551',
-    codigo: 'OC-60505000-551',
-    codigoOC: 'OC-60505000-551',
-    modalidad: 'Orden de Compra CM',
-    titulo: 'Orden de Compra Convenio Marco: Artículos de Escritorio y Papelería General',
-    institucion: 'DEPARTAMENTO CONTROL FINANCIERO',
-    institucionRut: '60.505.000-K',
-    presupuestoEstimado: 12350000,
-    fechaInicioPostulaciones: '2026-07-10 09:00',
-    fechaCierrePostulaciones: '2026-07-14 15:00',
-    fechaResultado: '2026-07-15 12:45',
-    direccionEntrega: 'EXEQUIEL FERNANDEZ N°1162, ÑUÑOA',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '5 dias',
-    observaciones: 'ORDEN DE COMPRA EMITIDA EN CATÁLOGO ELECTRÓNICO Y ACEPTADA POR V-MOCCS SPA.',
-    postuladoPor: '[BBARBA] (VMONCCS)',
-    empresaMatch: 'V-MOCCS',
-    participantes: [
-      { posicion: 1, nombre: 'V-MOCCS SPA', rut: '77.235.702-8', montoNeto: 10378151, montoIvaInc: 12350000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'DIMERC CHILE S.A.', rut: '96.620.190-1', montoNeto: 11200000, montoIvaInc: 13328000, resultado: 'No adjudicado' }
-    ]
-  },
-  {
-    id: 'adj-OC-61608100-339',
-    codigo: 'OC-61608100-339',
-    codigoOC: 'OC-61608100-339',
-    modalidad: 'Orden de Compra CM',
-    titulo: 'Orden de Compra Convenio Marco: Insumos Aseo Quirúrgico e Higiene Hospitalaria',
-    institucion: 'HOSPITAL CLINICO SAN BORJA ARRIARAN',
-    institucionRut: '61.608.100-2',
-    presupuestoEstimado: 43435000,
-    fechaInicioPostulaciones: '2026-07-12 09:00',
-    fechaCierrePostulaciones: '2026-07-16 17:00',
-    fechaResultado: '2026-07-17 11:30',
-    direccionEntrega: 'SANTA ROSA N°1234, SANTIAGO CENTRO',
-    region: 'Región Metropolitana de Santiago',
-    plazoEntrega: '7 dias',
-    observaciones: 'ORDEN DE COMPRA ACEPTADA EN CATÁLOGO MARCO VIGENTE DE PRODUCTOS DE ASEO.',
-    postuladoPor: '[JCOOPER] (AMINORTE)',
-    empresaMatch: 'Aminorte',
-
-    participantes: [
-      { posicion: 1, nombre: 'AMINORTE SPA', rut: '99.533.780-0', montoNeto: 36500000, montoIvaInc: 43435000, resultado: 'ADJUDICADO', esNuestraEmpresa: true },
-      { posicion: 2, nombre: 'INSUQUIM CHILE S.A.', rut: '77.301.990-2', montoNeto: 39500000, montoIvaInc: 47005000, resultado: 'No adjudicado' }
-    ]
-  }
-];
+// RUTs reales conocidos del holding — único criterio para marcar
+// "esNuestraEmpresa": nunca por coincidencia aproximada de nombre.
+const RUTS_PROPIOS = new Set(Object.values(EMPRESAS).map(e => e.rut));
 
 export default function AdjudicacionesModule({
   oportunidades,
   postulaciones = [],
   ordenesCompra = [],
   activeCompany = 'Consolidado',
-  onSimulateNewAdjudication,
   selectedCodigoInitial = null
 }: AdjudicacionesModuleProps) {
-  const [adjudicacionesList, setAdjudicacionesList] = useState<AdjudicacionDetalle[]>(initialAdjudicaciones);
-  const [selectedCodigo, setSelectedCodigo] = useState<string>(selectedCodigoInitial || '1075956-11-COT26');
+  const [selectedCodigo, setSelectedCodigo] = useState<string>(selectedCodigoInitial || '');
   const [filterModalidad, setFilterModalidad] = useState<string>('Todas');
-  const [showToast, setShowToast] = useState<string | null>(null);
 
-  // Combine initial static list with dynamic postulations and purchase orders
+  // Deriva adjudicaciones SOLO de datos reales — nunca un competidor, monto
+  // o ganador inventado. Si Mercado Público no expone quién ganó, el
+  // registro se muestra igual (para no ocultar que el proceso ya cerró)
+  // pero con participantes: [] y una nota honesta, en vez de rellenar con
+  // nombres de empresas que no existen.
   const allAvailableAdjudicaciones = useMemo(() => {
     const map = new Map<string, AdjudicacionDetalle>();
-    
-    // 1. Load seed adjudications
-    initialAdjudicaciones.forEach(item => map.set(item.codigo, item));
-    adjudicacionesList.forEach(item => map.set(item.codigo, item));
 
-    // 2. Map dynamic postulations into adjudications if not present
-    postulaciones.forEach(p => {
-      if (!p.oportunidadCodigo) return;
-      if (!map.has(p.oportunidadCodigo)) {
-        const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
-        const company = p.empresaMatch || op?.empresaMatch || 'Aminorte';
-        const companyFullName = company === 'Aminorte' ? 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA' : 'V-MOCCS SPA';
-        const companyRut = company === 'Aminorte' ? '76.882.110-3' : '77.235.702-8';
-        const isWinner = p.estado === 'Adjudicada';
-        const mod: AdjudicacionDetalle['modalidad'] = p.modalidad || op?.modalidad || (p.oportunidadCodigo.includes('COT') ? 'Compra Ágil' : (p.oportunidadCodigo.includes('GC') ? 'Grandes Compras' : 'Licitación'));
+    // 1. Oportunidades reales marcadas Adjudicada por Mercado Público
+    oportunidades.forEach(op => {
+      if (op.estado !== 'Adjudicada') return;
+      const tieneGanadorReal = !!op.proveedorAdjudicado && op.proveedorAdjudicado.trim() !== '';
+      const esNuestra = tieneGanadorReal && !!op.rutProveedor && RUTS_PROPIOS.has(op.rutProveedor);
 
-        const netAmount = Math.round(p.montoOferta / 1.19);
-
-        map.set(p.oportunidadCodigo, {
-          id: `adj-post-${p.id}`,
-          codigo: p.oportunidadCodigo,
-          modalidad: mod,
-          titulo: p.oportunidadTitulo || op?.titulo || `Proceso ${p.oportunidadCodigo}`,
-          institucion: p.organismo || op?.organismo || 'ORGANISMO PÚBLICO DE CHILE',
-          institucionRut: op?.organismoRut || '60.000.000-0',
-          presupuestoEstimado: op?.monto || p.montoOferta,
-          fechaInicioPostulaciones: op?.fechaPublicacion ? op.fechaPublicacion + ' 09:00' : '2026-07-01 09:00',
-          fechaCierrePostulaciones: op?.fechaCierre ? op.fechaCierre + ' 17:00' : '2026-07-15 17:00',
-          fechaResultado: p.fechaActualizacion ? p.fechaActualizacion + ' 12:00' : '2026-07-20 12:00',
-          direccionEntrega: 'DIRECCIÓN OFICIAL DE DESPACHO E IMPRESIÓN',
-          region: op?.region || 'Metropolitana',
-          plazoEntrega: '5 dias',
-          observaciones: `SEGUIMIENTO DE OFERTA POSTULADA PARA ${p.oportunidadCodigo}. ESTADO OFICIAL: ${p.estado.toUpperCase()}.`,
-          postuladoPor: `[${p.responsable || 'JCOOPER'}] (${company.toUpperCase()})`,
-          empresaMatch: company,
-          participantes: [
-            {
-              posicion: isWinner ? 1 : 2,
-              nombre: companyFullName,
-              rut: companyRut,
-              montoNeto: netAmount,
-              montoIvaInc: p.montoOferta,
-              resultado: isWinner ? 'ADJUDICADO' : 'No adjudicado',
-              esNuestraEmpresa: true
-            },
-            {
-              posicion: isWinner ? 2 : 1,
-              nombre: isWinner ? 'COMPETIDOR SECUNDARIO CHILE SPA' : 'PROVEEDOR LÍDER ADJUDICADO S.A.',
-              rut: '96.502.130-9',
-              montoNeto: Math.round((netAmount * (isWinner ? 1.08 : 0.92))),
-              montoIvaInc: Math.round((p.montoOferta * (isWinner ? 1.08 : 0.92))),
-              resultado: isWinner ? 'No adjudicado' : 'ADJUDICADO'
-            },
-            {
-              posicion: 3,
-              nombre: 'DISTRIBUIDORA Y COMERCIALIZADORA NACIONAL LTDA',
-              rut: '77.810.120-1',
-              montoNeto: Math.round(netAmount * 1.15),
-              montoIvaInc: Math.round(p.montoOferta * 1.15),
-              resultado: 'No adjudicado'
-            }
-          ]
-        });
-      }
+      map.set(op.codigo, {
+        id: `adj-op-${op.id}`,
+        codigo: op.codigo,
+        modalidad: op.modalidad,
+        titulo: op.titulo,
+        institucion: op.organismo,
+        institucionRut: op.organismoRut || 'No disponible',
+        presupuestoEstimado: op.monto,
+        fechaInicioPostulaciones: op.fechaPublicacion || 'No disponible',
+        fechaCierrePostulaciones: op.fechaCierre || 'No disponible',
+        fechaResultado: op.fechaCierre || 'No disponible',
+        direccionEntrega: 'No disponible',
+        region: op.region || 'No disponible',
+        plazoEntrega: 'No disponible',
+        observaciones: tieneGanadorReal
+          ? `Adjudicada oficialmente en Mercado Público a ${op.proveedorAdjudicado}.`
+          : 'Adjudicada oficialmente en Mercado Público — el proveedor ganador no está expuesto vía API pública para este proceso.',
+        postuladoPor: 'No disponible',
+        empresaMatch: op.empresaMatch,
+        participantes: tieneGanadorReal
+          ? [{
+              posicion: 1,
+              nombre: op.proveedorAdjudicado as string,
+              rut: op.rutProveedor || 'No disponible',
+              montoNeto: null,
+              montoIvaInc: op.monto > 0 ? op.monto : null,
+              resultado: 'ADJUDICADO',
+              esNuestraEmpresa: esNuestra
+            }]
+          : []
+      });
     });
 
-    // 3. Map purchase orders from Convenio Marco into adjudications
+    // 2. Postulaciones propias reales ya resueltas (Adjudicada/Rechazada) —
+    // solo nuestra empresa real, nunca un competidor inventado.
+    postulaciones.forEach(p => {
+      if (!p.oportunidadCodigo) return;
+      if (p.estado !== 'Adjudicada' && p.estado !== 'Rechazada') return;
+      if (map.has(p.oportunidadCodigo)) return; // ya cubierto por datos oficiales de Mercado Público
+
+      const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
+      const company = p.empresaMatch || op?.empresaMatch;
+      const companyInfo = company ? EMPRESAS[company] : undefined;
+      const isWinner = p.estado === 'Adjudicada';
+
+      map.set(p.oportunidadCodigo, {
+        id: `adj-post-${p.id}`,
+        codigo: p.oportunidadCodigo,
+        modalidad: p.modalidad || op?.modalidad || 'Compra Ágil',
+        titulo: p.oportunidadTitulo || op?.titulo || `Proceso ${p.oportunidadCodigo}`,
+        institucion: p.organismo || op?.organismo || 'No disponible',
+        institucionRut: op?.organismoRut || 'No disponible',
+        presupuestoEstimado: op?.monto || p.montoOferta,
+        fechaInicioPostulaciones: op?.fechaPublicacion || 'No disponible',
+        fechaCierrePostulaciones: op?.fechaCierre || 'No disponible',
+        fechaResultado: p.fechaActualizacion || 'No disponible',
+        direccionEntrega: 'No disponible',
+        region: op?.region || 'No disponible',
+        plazoEntrega: 'No disponible',
+        observaciones: `Postulación propia — resultado real: ${p.estado}.${p.confirmadoPor ? ` Confirmada por ${p.confirmadoPor}.` : ''}`,
+        postuladoPor: p.responsable || 'No disponible',
+        empresaMatch: company,
+        participantes: [{
+          posicion: 1,
+          nombre: companyInfo?.nombreCompleto || company || 'Nuestra empresa',
+          rut: companyInfo?.rut || 'No disponible',
+          montoNeto: Math.round(p.montoOferta / 1.19),
+          montoIvaInc: p.montoOferta,
+          resultado: isWinner ? 'ADJUDICADO' : 'No adjudicado',
+          esNuestraEmpresa: true
+        }]
+      });
+    });
+
+    // 3. Órdenes de compra reales recibidas por Convenio Marco — recibir una
+    // OC es en sí evidencia real de adjudicación a nuestra empresa; no se
+    // inventa un segundo proveedor "competidor".
     ordenesCompra.forEach(oc => {
       if (!oc.codigoOC) return;
-      if (!map.has(oc.codigoOC)) {
-        const op = oportunidades.find(o => o.id === oc.oportunidadId || o.codigo === oc.oportunidadId);
-        const company = op?.empresaMatch || 'Aminorte';
-        const companyFullName = company === 'Aminorte' ? 'AMINORTE DISTRIBUIDORA DE ESCRITORIO SPA' : 'V-MOCCS SPA';
-        const companyRut = company === 'Aminorte' ? '76.882.110-3' : '77.235.702-8';
-        const netAmount = Math.round(oc.monto / 1.19);
+      if (map.has(oc.codigoOC)) return;
 
-        map.set(oc.codigoOC, {
-          id: `adj-oc-${oc.id}`,
-          codigo: oc.codigoOC,
-          codigoOC: oc.codigoOC,
-          modalidad: 'Orden de Compra CM',
-          titulo: `Orden de Compra Convenio Marco: ${op?.titulo || oc.organismo}`,
-          institucion: oc.organismo,
-          institucionRut: op?.organismoRut || '60.505.000-K',
-          presupuestoEstimado: oc.monto,
-          fechaInicioPostulaciones: oc.fechaEmision + ' 09:00',
-          fechaCierrePostulaciones: oc.fechaEmision + ' 17:00',
-          fechaResultado: oc.fechaEmision + ' 18:00',
-          direccionEntrega: 'DIRECCIÓN DE DESPACHO REGIONAL CONVENIO MARCO',
-          region: op?.region || 'Metropolitana',
-          plazoEntrega: '5 dias',
-          observaciones: `ORDEN DE COMPRA EMITIDA DIRECTAMENTE POR CONVENIO MARCO (${oc.codigoOC}). ESTADO: ${oc.estado.toUpperCase()}.`,
-          postuladoPor: `[SISTEMA CONVENIO MARCO] (${company.toUpperCase()})`,
-          empresaMatch: company,
-          participantes: [
-            {
-              posicion: 1,
-              nombre: companyFullName,
-              rut: companyRut,
-              montoNeto: netAmount,
-              montoIvaInc: oc.monto,
-              resultado: 'ADJUDICADO',
-              esNuestraEmpresa: true
-            },
-            {
-              posicion: 2,
-              nombre: 'TIENDA DIGITAL CONVENIO MARCO CHILE',
-              rut: '96.881.000-4',
-              montoNeto: Math.round(netAmount * 1.05),
-              montoIvaInc: Math.round(oc.monto * 1.05),
-              resultado: 'No adjudicado'
-            }
-          ]
-        });
-      }
+      const op = oportunidades.find(o => o.id === oc.oportunidadId || o.codigo === oc.oportunidadId);
+      const company = op?.empresaMatch;
+      const companyInfo = company ? EMPRESAS[company] : undefined;
+
+      map.set(oc.codigoOC, {
+        id: `adj-oc-${oc.id}`,
+        codigo: oc.codigoOC,
+        codigoOC: oc.codigoOC,
+        modalidad: 'Orden de Compra CM',
+        titulo: `Orden de Compra Convenio Marco: ${op?.titulo || oc.organismo}`,
+        institucion: oc.organismo,
+        institucionRut: op?.organismoRut || 'No disponible',
+        presupuestoEstimado: oc.monto,
+        fechaInicioPostulaciones: oc.fechaEmision,
+        fechaCierrePostulaciones: oc.fechaEmision,
+        fechaResultado: oc.fechaEmision,
+        direccionEntrega: 'No disponible',
+        region: op?.region || 'No disponible',
+        plazoEntrega: 'No disponible',
+        observaciones: `Orden de Compra real recibida por Convenio Marco (${oc.codigoOC}). Estado: ${oc.estado}.`,
+        postuladoPor: 'No disponible',
+        empresaMatch: company,
+        participantes: [{
+          posicion: 1,
+          nombre: companyInfo?.nombreCompleto || company || 'Nuestra empresa',
+          rut: companyInfo?.rut || 'No disponible',
+          montoNeto: Math.round(oc.monto / 1.19),
+          montoIvaInc: oc.monto,
+          resultado: 'ADJUDICADO',
+          esNuestraEmpresa: true
+        }]
+      });
     });
 
     return Array.from(map.values());
-  }, [adjudicacionesList, postulaciones, ordenesCompra, oportunidades]);
+  }, [postulaciones, ordenesCompra, oportunidades]);
 
   // Filter list by modality and activeCompany context
   const filteredList = useMemo(() => {
@@ -506,131 +170,24 @@ export default function AdjudicacionesModule({
     });
   }, [allAvailableAdjudicaciones, filterModalidad, activeCompany]);
 
-  // Current active adjudication item
+  // Auto-seleccionar el primer resultado real disponible cuando cambia la
+  // lista filtrada — nunca un código de ejemplo fijo.
+  useEffect(() => {
+    if (filteredList.length === 0) {
+      if (selectedCodigo !== '') setSelectedCodigo('');
+      return;
+    }
+    if (!filteredList.some(a => a.codigo === selectedCodigo)) {
+      setSelectedCodigo(filteredList[0].codigo);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filteredList]);
+
+  // Current active adjudication item — null si no hay ningún resultado real
+  // disponible. Nunca se fabrica un objeto sintético como fallback.
   const currentAdjudicacion = useMemo(() => {
-    const found = allAvailableAdjudicaciones.find(a => a.codigo === selectedCodigo || a.id === selectedCodigo || a.codigoOC === selectedCodigo);
-    if (found) return found;
-
-    // Fallback: search in opportunities and build a synthetic adjudication object
-    const op = oportunidades.find(o => o.codigo === selectedCodigo || o.id === selectedCodigo);
-    if (op) {
-      return {
-        id: `adj-${op.codigo}`,
-        codigo: op.codigo,
-        modalidad: op.modalidad,
-        titulo: op.titulo,
-        institucion: op.organismo,
-        institucionRut: op.organismoRut || '60.000.000-0',
-        presupuestoEstimado: op.monto,
-        fechaInicioPostulaciones: op.fechaPublicacion + ' 09:00',
-        fechaCierrePostulaciones: op.fechaCierre + ' 14:00',
-        fechaResultado: new Date().toISOString().replace('T', ' ').slice(0, 16),
-        direccionEntrega: 'DIRECCIÓN DE ENTREGA REGIONAL',
-        region: op.region || 'Metropolitana',
-        plazoEntrega: '5 dias',
-        observaciones: `PROCESO DE EVALUACIÓN FINALIZADO PARA ${op.codigo}. RESULTADOS PUBLICADOS OFICIALMENTE EN MERCADO PÚBLICO.`,
-        postuladoPor: `[EQUIPO] (${op.empresaMatch || 'BIDCOOP'})`,
-        empresaMatch: op.empresaMatch,
-        participantes: [
-          {
-            posicion: 1,
-            nombre: 'PROVEEDOR ADJUDICADO OFICIAL S.A.',
-            rut: '76.452.190-8',
-            montoNeto: Math.round(op.monto * 0.85),
-            montoIvaInc: Math.round(op.monto * 0.85 * 1.19),
-            resultado: 'ADJUDICADO'
-          },
-          {
-            posicion: 2,
-            nombre: op.empresaMatch === 'V-MOCCS' ? 'V-MOCCS SPA' : 'AMINORTE SPA',
-
-            rut: '76.882.110-3',
-            montoNeto: Math.round(op.monto * 0.92),
-            montoIvaInc: Math.round(op.monto * 0.92 * 1.19),
-            resultado: 'No adjudicado',
-            esNuestraEmpresa: true
-          },
-          {
-            posicion: 3,
-            nombre: 'COMERCIALIZADORA REGIONAL LTDA',
-            rut: '77.102.330-1',
-            montoNeto: op.monto,
-            montoIvaInc: Math.round(op.monto * 1.19),
-            resultado: 'No adjudicado'
-          }
-        ]
-      };
-    }
-
-    return filteredList[0] || initialAdjudicaciones[0];
-  }, [allAvailableAdjudicaciones, selectedCodigo, oportunidades, filteredList]);
-
-  // Handler to simulate new real-time adjudication event
-  const handleTriggerNewAdjudication = () => {
-    const randomCodes = ['5542-12-COT26', '7701-88-LR26', 'GC-2026-990-CM26', 'OC-9902100-441'];
-    const chosenCode = randomCodes[Math.floor(Math.random() * randomCodes.length)];
-    const dateStr = new Date().toISOString().replace('T', ' ').slice(0, 16);
-    const isOC = chosenCode.startsWith('OC-');
-    const isGC = chosenCode.startsWith('GC-');
-
-    const newAdj: AdjudicacionDetalle = {
-      id: `adj-${chosenCode}-${Date.now()}`,
-      codigo: chosenCode,
-      codigoOC: isOC ? chosenCode : undefined,
-      modalidad: isOC ? 'Orden de Compra CM' : (isGC ? 'Grandes Compras' : (chosenCode.includes('COT') ? 'Compra Ágil' : 'Licitación')),
-      titulo: isOC ? `Orden de Compra Convenio Marco Recibida (${chosenCode})` : `ADQUISICIÓN DE INSUMOS Y EQUIPAMIENTO (${chosenCode})`,
-      institucion: 'ILUSTRE MUNICIPALIDAD DE SANTIAGO',
-      institucionRut: '69.070.300-9',
-      presupuestoEstimado: 4850000,
-      fechaInicioPostulaciones: '2026-07-15 08:30',
-      fechaCierrePostulaciones: '2026-07-22 12:00',
-      fechaResultado: dateStr,
-      direccionEntrega: 'ALAMEDA N°1500, SANTIAGO',
-      region: 'Región Metropolitana de Santiago',
-      plazoEntrega: '3 dias',
-      observaciones: isOC ? 'ORDEN DE COMPRA INGRESADA Y ACEPTADA POR TIENDA CONVENIO MARCO.' : 'EVALUACIÓN AUTOMÁTICA REALIZADA EN MERCADO PÚBLICO.',
-      postuladoPor: `[SISTEMA] (${activeCompany !== 'Consolidado' ? activeCompany : 'AMINORTE'})`,
-      empresaMatch: activeCompany !== 'Consolidado' ? activeCompany : 'Aminorte',
-      participantes: [
-        {
-          posicion: 1,
-          nombre: activeCompany === 'V-MOCCS' ? 'V-MOCCS SPA' : 'AMINORTE DISTRIBUIDORA SPA',
-
-          rut: '76.882.110-3',
-          montoNeto: 3950000,
-          montoIvaInc: 4700500,
-          resultado: 'ADJUDICADO',
-          esNuestraEmpresa: true
-        },
-        {
-          posicion: 2,
-          nombre: 'PROVEEDORA CENTRAL CHILE LTDA',
-          rut: '77.990.220-5',
-          montoNeto: 4200000,
-          montoIvaInc: 4998000,
-          resultado: 'No adjudicado'
-        },
-        {
-          posicion: 3,
-          nombre: 'DISTRIBUIDORA DE INSUMOS DEL NORTE SPA',
-          rut: '78.551.400-K',
-          montoNeto: 4600000,
-          montoIvaInc: 5474000,
-          resultado: 'No adjudicado'
-        }
-      ]
-    };
-
-    setAdjudicacionesList(prev => [newAdj, ...prev]);
-    setSelectedCodigo(newAdj.codigo);
-
-    if (onSimulateNewAdjudication) {
-      onSimulateNewAdjudication(newAdj);
-    }
-
-    setShowToast(`🔔 ¡NUEVO RESULTADO RECIBIDO! Proceso / OC ${newAdj.codigo} ingresado en la plataforma BidCoop.`);
-    setTimeout(() => setShowToast(null), 5000);
-  };
+    return allAvailableAdjudicaciones.find(a => a.codigo === selectedCodigo || a.id === selectedCodigo || a.codigoOC === selectedCodigo) || null;
+  }, [allAvailableAdjudicaciones, selectedCodigo]);
 
   const handlePrintReport = () => {
     window.print();
@@ -641,25 +198,6 @@ export default function AdjudicacionesModule({
 
   return (
     <div className="space-y-6 max-w-6xl mx-auto pb-12">
-      
-      {/* REAL-TIME ALERT TOAST BANNER */}
-      {showToast && (
-        <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white font-bold p-4 rounded-2xl shadow-2xl border-2 border-white/20 flex items-center justify-between animate-bounce">
-          <div className="flex items-center gap-3">
-            <span className="text-2xl">🎉</span>
-            <div>
-              <p className="text-sm font-black tracking-wide uppercase">Aviso de Nueva Adjudicación / Orden de Compra CM</p>
-              <p className="text-xs font-medium text-emerald-100">{showToast}</p>
-            </div>
-          </div>
-          <button 
-            onClick={() => setShowToast(null)}
-            className="text-xs bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-xl font-bold uppercase transition"
-          >
-            Entendido
-          </button>
-        </div>
-      )}
 
       {/* TOP CONTROL BAR & SUMMARY COUNTERS */}
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-5 shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
@@ -679,18 +217,6 @@ export default function AdjudicacionesModule({
         </div>
 
         <div className="flex flex-wrap items-center gap-2 w-full md:w-auto justify-end">
-          {/* Simulation button */}
-          <button
-            onClick={handleTriggerNewAdjudication}
-            className="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white font-bold text-xs px-4 py-2.5 rounded-2xl shadow-lg shadow-blue-500/20 flex items-center gap-2 transition active:scale-95"
-            title="Simular la llegada de un nuevo resultado o OC de Convenio Marco"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-            </svg>
-            <span>Simular Resultado / OC</span>
-          </button>
-
           {/* Export / Print */}
           <button
             onClick={handlePrintReport}
@@ -749,10 +275,20 @@ export default function AdjudicacionesModule({
       </div>
 
       {/* ========================================================================= */}
-      {/* SEGUIMIENTO POSTULACION / OC REPORT CARD (EXACT MATCH TO ATTACHED IMAGES) */}
+      {/* SEGUIMIENTO POSTULACION / OC REPORT CARD */}
       {/* ========================================================================= */}
+      {!currentAdjudicacion && (
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-12 text-center space-y-2">
+          <span className="text-3xl block mb-2">📭</span>
+          <p className="text-sm font-black text-slate-700 dark:text-slate-200">Sin resultados de adjudicación disponibles</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md mx-auto">
+            Ninguno de tus procesos tiene un resultado oficial de Mercado Público, una postulación resuelta o una Orden de Compra real registrada todavía. En cuanto exista un dato real, aparecerá aquí — nunca se muestra un ganador o competidor inventado.
+          </p>
+        </div>
+      )}
+      {currentAdjudicacion && (
       <div className="bg-white text-slate-900 rounded-3xl border-2 border-slate-200 shadow-2xl overflow-hidden print:border-none print:shadow-none print:m-0 print:p-0">
-        
+
         {/* GREEN LEFT MARGIN ACCENT BAR (Matches image green bar on left) */}
         <div className="flex border-l-[12px] border-emerald-500 min-h-[700px] flex-col">
 
@@ -871,6 +407,13 @@ export default function AdjudicacionesModule({
                     </tr>
                   </thead>
                   <tbody>
+                    {currentAdjudicacion.participantes.length === 0 && (
+                      <tr>
+                        <td colSpan={4} className="py-6 px-4 text-center text-slate-500 italic">
+                          Mercado Público no expone el proveedor adjudicado para este proceso vía API pública.
+                        </td>
+                      </tr>
+                    )}
                     {currentAdjudicacion.participantes.map((p) => {
                       const isWinner = p.resultado === 'ADJUDICADO';
                       return (
@@ -903,10 +446,10 @@ export default function AdjudicacionesModule({
                           {/* Postulated Amount */}
                           <td className="py-3 px-4 border-r border-slate-300 text-right">
                             <div className="font-bold text-slate-900">
-                              ${p.montoNeto.toLocaleString('es-CL')}
+                              {p.montoNeto !== null ? `$${p.montoNeto.toLocaleString('es-CL')}` : 'No disponible'}
                             </div>
                             <div className="text-xs text-slate-500">
-                              (${p.montoIvaInc.toLocaleString('es-CL')} iva inc)
+                              {p.montoIvaInc !== null ? `($${p.montoIvaInc.toLocaleString('es-CL')} iva inc)` : ''}
                             </div>
                           </td>
 
@@ -935,7 +478,7 @@ export default function AdjudicacionesModule({
           {/* 5. FOOTER NOTICE */}
           <div className="mt-auto border-t border-slate-300 bg-white p-6 text-center text-xs text-slate-600 space-y-4">
             <p className="italic">
-              *Este es un mensaje generado en forma automatica por AMITACORA / BIDCOOP ENGINE.
+              *Registro generado por BidCoop a partir de datos reales de Mercado Público y de tu propio seguimiento.
             </p>
             <div className="bg-slate-200 text-slate-800 font-black py-2 px-4 uppercase tracking-widest text-sm rounded-lg">
               Portal {activePortalName} 2026 - <a href="#" className="hover:underline">{activeDomain}</a>
@@ -945,6 +488,7 @@ export default function AdjudicacionesModule({
         </div>
 
       </div>
+      )}
 
     </div>
   );
