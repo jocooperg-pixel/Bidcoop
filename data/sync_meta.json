@@ -1,13 +1,13 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-15T18:33:56.847681+00:00",
-  "ultimoIntentoRealizado": "2026-08-15T18:33:56.847681+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-15T21:24:09.521186+00:00",
+  "ultimoIntentoRealizado": "2026-08-15T21:24:09.521186+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 831,
-  "registrosConfirmados": 831,
+  "registrosEnPlataforma": 832,
+  "registrosConfirmados": 832,
   "registrosPendientesVerificacion": 0,
   "registrosConMontoReal": 542,
-  "excluidosPrefiltroIrrelevante": 7915,
+  "excluidosPrefiltroIrrelevante": 7919,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 502,
   "comprasAgilesAudit": {
@@ -26,7 +26,7 @@
     "montoRecuperadoSum": 0
   },
   "categorias": {
-    "licitaciones": 590,
+    "licitaciones": 591,
     "comprasAgiles": 237,
     "convenioMarco": 0,
     "ordenes_compra": 4,
@@ -35,7 +35,7 @@
   "tiposOficiales": {
     "LP": 118,
     "L1": 68,
-    "LE": 351,
+    "LE": 352,
     "LR": 43,
     "I2": 3,
     "B2": 1,
@@ -47,12 +47,12 @@
   },
   "matchPorEmpresa": {
     "Aminorte": 702,
-    "V-MOCCS": 129
+    "V-MOCCS": 130
   },
   "cambios": {
     "comparadoContra": "2026-08-15T14:31:47.933760+00:00",
-    "nuevosCount": 9,
-    "modificadosCount": 0,
+    "nuevosCount": 10,
+    "modificadosCount": 1,
     "cerradosCount": 0,
     "nuevos": [
       {
@@ -110,6 +110,15 @@
         "fechaCierre": "2026-06-17T15:28:00"
       },
       {
+        "codigo": "514848-20-LE26",
+        "titulo": "MOBILIARIO",
+        "organismo": "I MUNICIPALIDAD DE LAUTARO",
+        "monto": 0,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-06-12T19:57:00"
+      },
+      {
         "codigo": "1079576-31-LE26",
         "titulo": "CONTRATACIÓN DEL SERVICIO DE REPARACIÓN MANTENCIÓN Y MEJORAMIENTO DE LA FACHADA DE LA SECCIÓN CRIMINALÍSTICA CONCEPCIÓN",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -137,10 +146,21 @@
         "fechaCierre": "2026-07-20T15:01:00"
       }
     ],
-    "modificados": [],
+    "modificados": [
+      {
+        "codigo": "1965-12-LE26",
+        "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      }
+    ],
     "cerrados": []
   },
-  "tiempoEjecucionSegundos": 32.4,
+  "tiempoEjecucionSegundos": 34.0,
   "errores": [],
   "advertencias": []
 }
