@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-15T01:22:53.241880+00:00",
-  "ultimoIntentoRealizado": "2026-08-15T01:22:53.241880+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-15T02:35:20.924289+00:00",
+  "ultimoIntentoRealizado": "2026-08-15T02:35:20.924289+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 552,
-  "registrosConfirmados": 552,
+  "registrosEnPlataforma": 591,
+  "registrosConfirmados": 591,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 394,
-  "excluidosPrefiltroIrrelevante": 4262,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 417,
+  "excluidosPrefiltroIrrelevante": 7906,
+  "excluidosSinDatosReales": 238,
   "excluidosSinMatchEmpresa": 501,
   "comprasAgilesAudit": {
     "total": 234,
@@ -26,32 +26,32 @@
     "montoRecuperadoSum": 0
   },
   "categorias": {
-    "licitaciones": 314,
+    "licitaciones": 353,
     "comprasAgiles": 234,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 69,
+    "LP": 77,
     "L1": 22,
-    "LE": 186,
-    "LR": 29,
+    "LE": 213,
+    "LR": 32,
     "I2": 3,
     "B2": 1,
     "CO": 5,
     "LS": 2,
-    "E2": 2,
+    "E2": 3,
     "O1": 4,
     "COT": 229
   },
   "matchPorEmpresa": {
-    "Aminorte": 470,
-    "V-MOCCS": 82
+    "Aminorte": 504,
+    "V-MOCCS": 87
   },
   "cambios": {
     "comparadoContra": "2026-08-13T15:57:09.789931+00:00",
-    "nuevosCount": 323,
+    "nuevosCount": 362,
     "modificadosCount": 0,
     "cerradosCount": 2,
     "nuevos": [
@@ -101,6 +101,15 @@
         "fechaCierre": "2026-09-07T16:00:00"
       },
       {
+        "codigo": "621-644-LR26",
+        "titulo": "SISTEMA SEGUIMIE OCULAR CTABLET O NOTEB 1000022903",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 673174670,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-14T16:00:00"
+      },
+      {
         "codigo": "520149-29-I226",
         "titulo": "MVG-Mantención de Equipos de Climatización_DINFRA-PC N°6378",
         "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
@@ -108,6 +117,24 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-28T11:00:00"
+      },
+      {
+        "codigo": "1084156-43-LR26",
+        "titulo": "SUMINISTRO PRODUCTOS DE LIBRERÍA",
+        "organismo": "SERVICIO LOCAL DE EDUCACION PUBLICA ANDALIEN SUR",
+        "monto": 650000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-08-14T16:00:00"
+      },
+      {
+        "codigo": "2684-25-LR26",
+        "titulo": "PP 18-2026 Servicio de arriendo de equipos multifuncionales impresoras fotocopiadoras y escáner para las unidades municipales",
+        "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
+        "monto": 615600000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 98,
+        "fechaCierre": "2026-06-12T12:00:00"
       },
       {
         "codigo": "2126-109-LR26",
@@ -278,7 +305,7 @@
         "monto": 180000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-08-15"
+        "fechaCierre": "2026-08-14"
       },
       {
         "codigo": "896-14-LP26",
@@ -344,6 +371,15 @@
         "fechaCierre": "2026-08-18T15:00:00"
       },
       {
+        "codigo": "1057509-160-LP26",
+        "titulo": "CONVENIO PROVEEDURÍA MARCADOR TISULAR DE TEJIDO MAMARIO",
+        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
+        "monto": 106575638,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-03T16:00:00"
+      },
+      {
         "codigo": "2697-26-LP26",
         "titulo": "CONTRATACIÓN DE SEGUROS SOBRE BIENES MUNICIPALES",
         "organismo": "I MUNICIPALIDAD DE CARTAGENA",
@@ -380,6 +416,15 @@
         "fechaCierre": "2026-08-20T16:00:00"
       },
       {
+        "codigo": "2563-36-LP26",
+        "titulo": "Adquisición de tres 3 servidores para la DGAC",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "monto": 90976650,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-08-20T15:00:00"
+      },
+      {
         "codigo": "721703-32-LP26",
         "titulo": "SERVICIO DE ASEO IQUIQUE CONCEPCIÓN Y PTO MONTT",
         "organismo": "AGENCIA DE CALIDAD DE LA EDUCACION",
@@ -396,6 +441,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-24T17:29:00"
+      },
+      {
+        "codigo": "1530393-6-LP26",
+        "titulo": "DISPOSITIVOS MÉDICOS PARA MONITOREO CONTINUO DE GLUCOSA",
+        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE LINARES",
+        "monto": 84371000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-06-15T15:00:00"
       },
       {
         "codigo": "1057495-17-LP26",
@@ -524,6 +578,15 @@
         "fechaCierre": "2026-08-21T16:00:00"
       },
       {
+        "codigo": "1260058-2-LE26",
+        "titulo": "“SUMINISTRO DE ANTISÉPTICOS DESINFECTANTES DETERGENTES Y SOLVENTES DE USO HOSPITALARIO Y PRODUCTOS CLÍNICOS SOBRE TEJIDO HUMANO ",
+        "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE P",
+        "monto": 69000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-01T15:01:00"
+      },
+      {
         "codigo": "885-75-LE26",
         "titulo": "Servicios de mantención para los sistemas de climatización de precisión en datacenters institucionales en Santiago y Valparaíso",
         "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
@@ -531,69 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-24T16:00:00"
-      },
-      {
-        "codigo": "1360-8-LE26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE MONITOREO DE ALARMAS PARA LAS OFICINAS DE LA DIRECCIÓN REGIÓN METROPOLITANA DEL SERVICIO DE REGISTRO CIVIL E IDENTIFICACIÓN",
-        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-08-25T15:00:00"
-      },
-      {
-        "codigo": "2408-148-LE26",
-        "titulo": "MANTENCIÓN Y REPARACIÓN EQUIPOS DE CLIMATIZACIÓN 2026 - 2028.",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-21T09:00:00"
-      },
-      {
-        "codigo": "3134-78-LE26",
-        "titulo": "ADQUISICIÓN DE CUATRO 4 CÁMARAS TERMALES  CON ACCESORIOS PARA LA POLICÍA MARÍTIMA ",
-        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-24T16:00:00"
-      },
-      {
-        "codigo": "813-79-LE26",
-        "titulo": "Servicios de una librería robótica. E1O2RT9",
-        "organismo": "INSTITUTO DE SALUD PUBLICA DE CHILE",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-08-17T15:00:00"
-      },
-      {
-        "codigo": "1056854-8-LE26",
-        "titulo": "ADQUISICIÓN DE UN SERVIDOR PARA VIDEO VIGILANCIA CON LICENCIAMIENTO",
-        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
-        "monto": 59663865,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-25T10:00:00"
-      },
-      {
-        "codigo": "799512-40-LE26",
-        "titulo": "SUMINISTRO DE AUDIFONOS CLÍNICOS PARA UAPORRINO",
-        "organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
-        "monto": 59400000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-26T12:00:00"
-      },
-      {
-        "codigo": "1725-178-LE26",
-        "titulo": "SERVICIO DE MANTENCIÓN DE AIRE ACONDICIONADO",
-        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
-        "monto": 57964160,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-20T12:00:00"
       }
     ],
     "modificados": [],
@@ -616,7 +616,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 206.8,
+  "tiempoEjecucionSegundos": 1763.2,
   "errores": [],
   "advertencias": []
 }

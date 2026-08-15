@@ -49,7 +49,10 @@ def _load_env_local():
             if not line or line.startswith("#") or "=" not in line:
                 continue
             key, _, val = line.partition("=")
-            os.environ.setdefault(key.strip(), val.strip())
+            val = val.strip()
+            if len(val) >= 2 and val[0] == val[-1] and val[0] in ("'", '"'):
+                val = val[1:-1]
+            os.environ.setdefault(key.strip(), val)
 
 _load_env_local()
 
@@ -526,6 +529,42 @@ def fetch_api_bulk_list(estado: str = "activas") -> List[Dict]:
     return results
 
 
+def fetch_api_by_recent_dates(days_back: int = 7) -> List[Dict]:
+    """
+    Complementa fetch_api_bulk_list(estado="activas"): confirmado en vivo que
+    el endpoint bulk "activas" apenas expone un puñado de Compras Ágiles en
+    un momento dado (las Compras Ágiles tienen ventanas de vigencia muy
+    cortas — a menudo cierran en 1-5 días — así que la mayoría ya no figura
+    como "activa" cuando corre el sync, aunque se hayan publicado hace poco).
+    La única forma documentada de capturarlas de forma confiable es
+    consultar licitaciones.json?fecha=DDMMYYYY día por día. Antes de esto,
+    el 98% de las Compras Ágiles en la plataforma venían de un Excel estático
+    subido una sola vez (data/Cotizaciones.xls, sin actualizar desde hace
+    días) — quedaban sin capturar todas las publicadas después de esa fecha.
+    Deduplicación por CodigoExterno la hace naturalmente el llamador (mismo
+    dict opportunities_by_code que usa el listado de "activas").
+    """
+    results = []
+    seen_codes = set()
+    today = datetime.date.today()
+    for i in range(days_back):
+        d = today - datetime.timedelta(days=i)
+        fecha = d.strftime("%d%m%Y")
+        url = f"{BASE_URL}/licitaciones.json?fecha={fecha}&ticket={TICKET}"
+        data = fetch_json(url, timeout=30)
+        if data is None:
+            print(f"  [WARN] Consulta por fecha {fecha} falló sin respuesta.")
+            continue
+        listado = data.get("Listado", [])
+        for item in listado:
+            code = item.get("CodigoExterno")
+            if code and code not in seen_codes:
+                seen_codes.add(code)
+                results.append(item)
+        time.sleep(0.4)
+    return results
+
+
 def fetch_opportunity_detail(code: str, close_str: str, detail_cache: dict) -> Tuple[Optional[Dict], str]:
     cached = detail_cache.get(code)
     if cached and is_cache_valid(cached, close_str):
@@ -890,7 +929,35 @@ def main():
     # ── 1. FASE 1: LISTA MASIVA DESDE API ──────────────────
     print("[FASE 1] Obteniendo listado masivo de licitaciones activas desde Mercado Público...")
     bulk_list = fetch_api_bulk_list(estado="activas")
-    print(f"[FASE 1] Obtenidos {len(bulk_list)} registros en listado masivo.")
+    print(f"[FASE 1] Obtenidos {len(bulk_list)} registros en listado masivo (estado=activas).")
+
+    # estado=activas apenas expone un puñado de Compras Ágiles vigentes en un
+    # instante dado (ventanas de vigencia muy cortas). Se complementa con
+    # consultas reales por fecha de los últimos días — misma API oficial,
+    # sin inventar nada — para no depender de un Excel estático desactualizado
+    # como única fuente de Compras Ágiles recientes.
+    print("[FASE 1] Complementando con consulta por fecha (últimos 7 días) para cobertura real de Compras Ágiles...")
+    recent_list = fetch_api_by_recent_dates(days_back=7)
+    bulk_codes = {item.get("CodigoExterno") for item in bulk_list}
+    added_from_dates = 0
+    for item in recent_list:
+        code = item.get("CodigoExterno")
+        if code and code not in bulk_codes:
+            bulk_list.append(item)
+            bulk_codes.add(code)
+            added_from_dates += 1
+    print(f"[FASE 1] Sumados {added_from_dates} registros adicionales reales desde consulta por fecha (no estaban en 'activas').")
+
+    # SALVAGUARDA: si la API pública no devolvió NINGÚN registro (ni por
+    # estado=activas ni por ninguna de las consultas por fecha), es una
+    # falla de la API (red, rate-limit, mantención) — no un mercado real sin
+    # movimiento. Seguir de largo sobrescribiría mockData.ts con solo lo que
+    # trae el Excel estático, borrando cientos de licitaciones reales
+    # vigentes de una corrida anterior exitosa. Se aborta sin tocar
+    # mockData.ts; el próximo ciclo de sync (cada 3h) reintenta solo.
+    if len(bulk_list) == 0:
+        print("[ERROR] La API de Mercado Público no devolvió NINGÚN registro (ni 'activas' ni por fecha) — probable falla temporal de red/API. Abortando sin sobrescribir mockData.ts para no perder datos reales ya sincronizados.")
+        sys.exit(1)
 
     # ── 2. FASE 2: FETCH DE DETALLES Y RECONCILIACIÓN ──────
     print("[FASE 2] Consultando detalle oficial y ejecutando reconciliación de montos...")
@@ -987,8 +1054,20 @@ def main():
         print("[ERROR] 0 registros procesados. mockData.ts NO será sobreescrito.")
         sys.exit(1)
 
-    # ── "¿QUÉ CAMBIÓ?" — comparar contra la corrida anterior ──
+    # SALVAGUARDA: aunque la API haya respondido algo, si el resultado final
+    # cae de forma drástica respecto a la corrida anterior (ej. una falla
+    # parcial de red a mitad de camino), es más probable que sea una falla
+    # de sincronización que un mercado real que se vació de golpe. Se aborta
+    # sin sobrescribir en vez de publicar un dataset dañado — el próximo
+    # ciclo de 3h reintenta con datos frescos.
     previous_snapshot = load_previous_snapshot()
+    prev_count = len(previous_snapshot.get("registros", {}))
+    if prev_count >= 50 and len(processed) < prev_count * 0.6:
+        print(f"[ERROR] Caída drástica de registros: {prev_count} → {len(processed)} ({round(100 - len(processed) / prev_count * 100)}% menos). "
+              f"Probable falla parcial de la API, no un mercado real vaciado de golpe. Abortando sin sobrescribir mockData.ts.")
+        sys.exit(1)
+
+    # ── "¿QUÉ CAMBIÓ?" — comparar contra la corrida anterior ──
     cambios = compute_cambios(previous_snapshot, processed)
     print(f"[CAMBIOS] Nuevos: {cambios['nuevosCount']} | Modificados: {cambios['modificadosCount']} | Cerrados/expirados: {cambios['cerradosCount']}")
     save_snapshot(processed)

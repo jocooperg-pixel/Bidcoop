@@ -113,7 +113,10 @@ def load_ticket() -> str:
             for line in f:
                 line = line.strip()
                 if line.startswith("MERCADOPUBLICO_TICKET="):
-                    return line.split("=", 1)[1].strip()
+                    val = line.split("=", 1)[1].strip()
+                    if len(val) >= 2 and val[0] == val[-1] and val[0] in ("'", '"'):
+                        val = val[1:-1]
+                    return val
     return "F8537A18-6766-4DEF-9E59-426B4FEE2844"
 
 
