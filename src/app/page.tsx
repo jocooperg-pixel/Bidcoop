@@ -745,7 +745,7 @@ export default function Home() {
   }
 
   return (
-    <div className={`min-h-screen flex bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-300`}>
+    <div className={`h-screen flex bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-300 overflow-hidden`}>
       
       {/* 1. SIDEBAR VERTICAL NAV */}
       <Sidebar
@@ -755,11 +755,12 @@ export default function Home() {
         darkMode={darkMode}
         setDarkMode={toggleDarkMode}
         currentUser={currentUser}
+        oportunidades={oportunidades}
       />
 
-      {/* 2. MAIN LAYOUT FLEX COLUMN */}
-      <div className="flex-1 flex flex-col min-w-0">
-        
+      {/* 2. MAIN LAYOUT FLEX COLUMN — Topbar fijo, solo <main> hace scroll */}
+      <div className="flex-1 flex flex-col min-w-0 h-full min-h-0">
+
         {/* Top bar header */}
         <Topbar
           notifications={filteredNotifications}

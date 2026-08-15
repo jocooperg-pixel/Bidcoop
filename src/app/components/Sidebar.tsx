@@ -1,5 +1,23 @@
-import React, { useState, useRef, useEffect } from 'react';
+'use client';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
+import {
+  LayoutDashboard,
+  Search,
+  Briefcase,
+  BarChart3,
+  Building2,
+  Truck,
+  ClipboardList,
+  Settings,
+  Users,
+  ChevronLeft,
+  ChevronRight,
+  Sun,
+  Moon
+} from 'lucide-react';
 import { inicialesDe } from '../utils/roles';
+import { getSemaforoBidCoop } from '../utils/semaforoEngine';
+import type { Oportunidad } from '../types';
 
 interface SidebarProps {
   activeModule: string;
@@ -8,7 +26,10 @@ interface SidebarProps {
   darkMode: boolean;
   setDarkMode: (dark: boolean) => void;
   currentUser: { nombre: string; rolRaw: string };
+  oportunidades?: Oportunidad[];
 }
+
+const EXPANDED_STORAGE_KEY = 'bidcoop_sidebar_expanded';
 
 export default function Sidebar({
   activeModule,
@@ -16,13 +37,28 @@ export default function Sidebar({
   onChangeView,
   darkMode,
   setDarkMode,
-  currentUser
+  currentUser,
+  oportunidades = []
 }: SidebarProps) {
   const [hoveredModule, setHoveredModule] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return true;
+    const stored = window.localStorage.getItem(EXPANDED_STORAGE_KEY);
+    return stored !== null ? stored === 'true' : true;
+  });
+  const [tareasPendientes, setTareasPendientes] = useState<number | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const sidebarRef = useRef<HTMLElement>(null);
 
-  // BUG-05 FIX: Close dropdown submenus when clicking outside sidebar
+  const toggleExpanded = () => {
+    setExpanded(prev => {
+      const next = !prev;
+      window.localStorage.setItem(EXPANDED_STORAGE_KEY, String(next));
+      return next;
+    });
+  };
+
+  // Cierra el submenú flotante (modo contraído) al hacer click afuera.
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
@@ -47,30 +83,49 @@ export default function Sidebar({
     }
     hoverTimeoutRef.current = setTimeout(() => {
       setHoveredModule(null);
-    }, 350); // 350ms grace delay to give ample time when moving mouse to submenu
+    }, 350);
   };
 
-  const modules = [
+  // Indicador real de tareas pendientes propias — mismo endpoint que TasksModule.
+  useEffect(() => {
+    fetch('/api/tareas')
+      .then(res => (res.ok ? res.json() : { tareas: [] }))
+      .then(data => {
+        const tareas = Array.isArray(data.tareas) ? data.tareas : [];
+        const pendientes = tareas.filter((t: { estado: string }) => t.estado === 'PENDIENTE' || t.estado === 'VENCIDA').length;
+        setTareasPendientes(pendientes);
+      })
+      .catch(() => setTareasPendientes(null));
+  }, []);
+
+  // Indicador real de oportunidades con semáforo verde (match alto) — usa
+  // getSemaforoBidCoop sin modificarlo, mismos datos ya cargados en la app.
+  const matchAltoCount = useMemo(() => {
+    return oportunidades.filter(o => {
+      if (o.estado !== 'Publicada') return false;
+      const s = getSemaforoBidCoop({ monto: o.monto, matchScore: o.matchScore, amount: o.amount, amountType: o.amountType });
+      return s.color === 'verde';
+    }).length;
+  }, [oportunidades]);
+
+  const modules: Array<{
+    id: string;
+    label: string;
+    icon: React.ComponentType<{ className?: string }>;
+    badge?: number;
+    subSections: { id: string; label: string }[];
+  }> = [
     {
       id: 'dashboard',
       label: 'Inicio',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-      ),
-      subSections: [
-        { id: 'resumen', label: 'Resumen General' }
-      ]
+      icon: LayoutDashboard,
+      subSections: [{ id: 'resumen', label: 'Resumen General' }]
     },
     {
       id: 'search',
       label: 'Búsqueda',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-      ),
+      icon: Search,
+      badge: matchAltoCount > 0 ? matchAltoCount : undefined,
       subSections: [
         { id: 'compra-agil', label: '⚡ Compra Ágil' },
         { id: 'grandes-compras', label: '🛍️ Grandes Compras' },
@@ -81,11 +136,7 @@ export default function Sidebar({
     {
       id: 'business',
       label: 'Negocios',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      ),
+      icon: Briefcase,
       subSections: [
         { id: 'mis-negocios', label: 'Mis Negocios' },
         { id: 'adjudicaciones', label: 'Seguimiento de Adjudicaciones' },
@@ -97,11 +148,7 @@ export default function Sidebar({
     {
       id: 'analytics',
       label: 'Analítica',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2zm9-10v10a2 2 0 002 2h2a2 2 0 002-2V9a2 2 0 00-2-2h-2a2 2 0 00-2 2z" />
-        </svg>
-      ),
+      icon: BarChart3,
       subSections: [
         { id: 'reportes-8am', label: 'Reportes y Alertas 8 AM' },
         { id: 'inteligencia-mercado', label: 'Inteligencia de Mercado' },
@@ -111,35 +158,20 @@ export default function Sidebar({
     {
       id: 'buyers',
       label: 'Compradores',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2M5 21H3m8-14h.01M11 11h.01M11 15h.01M15 7h.01M15 11h.01M15 15h.01M7 7h.01M7 11h.01M7 15h.01" />
-        </svg>
-      ),
-      subSections: [
-        { id: 'directorio', label: 'Directorio' }
-      ]
+      icon: Building2,
+      subSections: [{ id: 'directorio', label: 'Directorio' }]
     },
     {
       id: 'providers',
       label: 'Proveedores',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
-      subSections: [
-        { id: 'directorio', label: 'Directorio Pymes' }
-      ]
+      icon: Truck,
+      subSections: [{ id: 'directorio', label: 'Directorio Pymes' }]
     },
     {
       id: 'tareas',
       label: 'Tareas',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-        </svg>
-      ),
+      icon: ClipboardList,
+      badge: tareasPendientes && tareasPendientes > 0 ? tareasPendientes : undefined,
       subSections: [
         { id: 'tareas', label: 'Tareas' },
         { id: 'checklists', label: 'Checklists' }
@@ -148,12 +180,7 @@ export default function Sidebar({
     {
       id: 'config',
       label: 'Ajustes',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
+      icon: Settings,
       subSections: [
         { id: 'perfil', label: 'Mi Perfil' },
         { id: 'parametros', label: 'Espacio de Trabajo' },
@@ -164,36 +191,40 @@ export default function Sidebar({
     // Solo visible para el administrador del holding — mismo criterio de
     // autorización que ya aplica /api/usuarios en el servidor (defensa en
     // profundidad: ocultar la opción no reemplaza el chequeo real del backend).
-    ...(currentUser.rolRaw === 'ADMIN_HOLDING' ? [{
-      id: 'usuarios',
-      label: 'Usuarios',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M9 20H4v-2a3 3 0 015.356-1.857M9 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-        </svg>
-      ),
-      subSections: [
-        { id: 'directorio', label: 'Usuarios y Permisos' }
-      ]
-    }] : [])
+    ...(currentUser.rolRaw === 'ADMIN_HOLDING'
+      ? [
+          {
+            id: 'usuarios',
+            label: 'Usuarios',
+            icon: Users,
+            subSections: [{ id: 'directorio', label: 'Usuarios y Permisos' }]
+          }
+        ]
+      : [])
   ];
 
   return (
-    <aside ref={sidebarRef} className="w-[72px] bg-slate-900 border-r border-slate-800/80 flex flex-col justify-between items-center py-6 shrink-0 relative z-50">
-      <div className="flex flex-col items-center gap-10 w-full">
-        {/* OFFICIAL FLOATING ROUND BIDCOOP LOGO */}
-        <div className="flex flex-col items-center gap-1 group cursor-pointer" title="BidCoop - Tu Plataforma en Mercado Público">
-          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-400 p-0.5 shadow-xl shadow-sky-500/30 group-hover:scale-110 transition-all duration-300 flex items-center justify-center border-2 border-white/90">
+    <aside
+      ref={sidebarRef}
+      className={`${
+        expanded ? 'w-60' : 'w-[72px]'
+      } h-screen sticky top-0 overflow-y-auto bg-brand-950 border-r border-brand-900/60 flex flex-col justify-between py-5 shrink-0 relative z-50 transition-all duration-200`}
+    >
+      <div className={`flex flex-col gap-8 w-full ${expanded ? 'px-3' : 'items-center'}`}>
+        {/* LOGO */}
+        <div className={`flex items-center gap-2.5 ${expanded ? 'px-1' : 'flex-col'}`} title="BidCoop - Tu Plataforma en Mercado Público">
+          <div className="w-11 h-11 rounded-full bg-gradient-to-br from-brand-500 via-sky-500 to-cyan-400 p-0.5 shadow-lg shadow-brand-600/30 shrink-0 flex items-center justify-center border-2 border-white/90">
             <div className="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
               <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain rounded-full" />
             </div>
           </div>
-          <span className="text-[8px] font-black text-sky-400 tracking-widest uppercase mt-0.5 opacity-90 group-hover:opacity-100">BidCoop</span>
+          {expanded && <span className="text-sm font-black text-white tracking-wide">BidCoop</span>}
         </div>
 
-        {/* NAVIGATION ITEMS */}
-        <nav className="flex flex-col gap-4 w-full px-2">
-          {modules.map((m) => {
+        {/* NAVIGATION */}
+        <nav className={`flex flex-col gap-1 w-full ${expanded ? '' : 'px-2'}`}>
+          {modules.map(m => {
+            const Icon = m.icon;
             const isModuleActive = activeModule === m.id;
             const isHovered = hoveredModule === m.id;
 
@@ -201,44 +232,46 @@ export default function Sidebar({
               <div
                 key={m.id}
                 className="relative"
-                onMouseEnter={() => handleMouseEnter(m.id)}
-                onMouseLeave={handleMouseLeave}
+                onMouseEnter={() => !expanded && handleMouseEnter(m.id)}
+                onMouseLeave={() => !expanded && handleMouseLeave()}
               >
-                {/* Main Icon Button */}
                 <button
                   onClick={() => {
                     onChangeView(m.id, m.subSections[0].id);
                     setHoveredModule(m.id);
                   }}
-                  className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-200 mx-auto relative group cursor-pointer ${
+                  className={`${expanded ? 'w-full justify-start gap-3 px-3' : 'w-12 h-12 justify-center mx-auto'} h-11 rounded-xl flex items-center transition-all duration-150 relative group cursor-pointer ${
                     isModuleActive
-                      ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/40 border border-sky-400/40'
-                      : 'text-slate-400 hover:text-white hover:bg-slate-800/80'
+                      ? 'bg-brand-600 text-white shadow-md shadow-brand-600/30'
+                      : 'text-brand-200/70 hover:text-white hover:bg-white/5'
                   }`}
                   aria-label={m.label}
                 >
-                  {m.icon}
-                  {/* Active dot */}
-                  {isModuleActive && (
-                    <span className="absolute right-1 top-1 w-2.5 h-2.5 bg-sky-400 border border-slate-900 rounded-full animate-pulse shadow-sm shadow-sky-400" />
+                  <Icon className="w-[18px] h-[18px] shrink-0" />
+                  {expanded && <span className="text-xs font-bold truncate">{m.label}</span>}
+                  {!!m.badge && (
+                    <span
+                      className={`${
+                        expanded ? 'ml-auto' : 'absolute -right-1 -top-1'
+                      } min-w-[18px] h-[18px] px-1 rounded-full bg-amber-400 text-brand-950 text-[9px] font-black flex items-center justify-center shadow-sm`}
+                    >
+                      {m.badge > 99 ? '99+' : m.badge}
+                    </span>
                   )}
                 </button>
 
-                {/* FLOATING SUBMENU (Seamless hover bridge + grace delay) */}
-                {isHovered && (
+                {/* Submenú: flotante en modo contraído (hover), inline en modo expandido (siempre visible si activo) */}
+                {(!expanded && isHovered) && (
                   <div
                     onMouseEnter={() => handleMouseEnter(m.id)}
                     onMouseLeave={handleMouseLeave}
-                    className="absolute left-[48px] top-0 pl-5 -ml-1 w-64 z-50 transition-all duration-200 animate-in fade-in slide-in-from-left-2 duration-150"
+                    className="absolute left-[64px] top-0 pl-3 w-64 z-50 animate-in fade-in slide-in-from-left-2 duration-150"
                   >
-                    <div className="bg-slate-950/95 backdrop-blur-md border border-slate-800 rounded-2xl shadow-2xl p-3 flex flex-col gap-1 border-l-2 border-l-blue-500">
-                      <div className="px-3 py-1.5 border-b border-slate-800 mb-1 flex items-center justify-between">
-                        <span className="text-[10px] uppercase font-black text-sky-400 tracking-wider">
-                          {m.label}
-                        </span>
-                        <span className="text-[9px] text-slate-500 font-bold">Opciones</span>
+                    <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl p-3 flex flex-col gap-1">
+                      <div className="px-3 py-1.5 border-b border-slate-100 dark:border-slate-800 mb-1">
+                        <span className="text-[10px] uppercase font-black text-brand-600 dark:text-brand-400 tracking-wider">{m.label}</span>
                       </div>
-                      {m.subSections.map((sub) => {
+                      {m.subSections.map(sub => {
                         const isSubActive = activeModule === m.id && activeSubSection === sub.id;
                         return (
                           <button
@@ -250,8 +283,8 @@ export default function Sidebar({
                             }}
                             className={`w-full text-left text-xs font-bold px-3 py-2 rounded-xl transition cursor-pointer ${
                               isSubActive
-                                ? 'bg-blue-600/25 text-sky-300 border-l-2 border-sky-400 pl-2.5 shadow-sm'
-                                : 'text-slate-300 hover:bg-slate-800/80 hover:text-white pl-3'
+                                ? 'bg-brand-50 dark:bg-brand-950/40 text-brand-700 dark:text-brand-300'
+                                : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/80'
                             }`}
                           >
                             {sub.label}
@@ -261,37 +294,62 @@ export default function Sidebar({
                     </div>
                   </div>
                 )}
+
+                {expanded && isModuleActive && m.subSections.length > 1 && (
+                  <div className="mt-1 mb-1 ml-4 pl-3 border-l border-white/10 flex flex-col gap-0.5">
+                    {m.subSections.map(sub => {
+                      const isSubActive = activeSubSection === sub.id;
+                      return (
+                        <button
+                          key={sub.id}
+                          onClick={() => onChangeView(m.id, sub.id)}
+                          className={`w-full text-left text-[11px] font-bold px-2.5 py-1.5 rounded-lg transition cursor-pointer truncate ${
+                            isSubActive ? 'bg-white/10 text-white' : 'text-brand-200/60 hover:text-white hover:bg-white/5'
+                          }`}
+                        >
+                          {sub.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             );
           })}
         </nav>
       </div>
 
-      {/* LOWER FOOTER ACTIONS */}
-      <div className="flex flex-col items-center gap-5 w-full">
-        {/* Dark/Light mode Toggle */}
+      {/* FOOTER */}
+      <div className={`flex flex-col gap-3 w-full ${expanded ? 'px-3' : 'items-center'}`}>
         <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="w-10 h-10 rounded-xl bg-slate-800 text-slate-400 hover:text-amber-400 hover:bg-slate-700 transition flex items-center justify-center cursor-pointer shadow-inner"
-          title="Cambiar Tema"
+          onClick={toggleExpanded}
+          className={`${
+            expanded ? 'w-full justify-start gap-3 px-3' : 'w-10 h-10 justify-center mx-auto'
+          } h-10 rounded-xl text-brand-200/70 hover:text-white hover:bg-white/5 transition flex items-center cursor-pointer`}
+          title={expanded ? 'Contraer menú' : 'Expandir menú'}
         >
-          {darkMode ? (
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
-            </svg>
-          ) : (
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-            </svg>
-          )}
+          {expanded ? <ChevronLeft className="w-[18px] h-[18px]" /> : <ChevronRight className="w-[18px] h-[18px]" />}
+          {expanded && <span className="text-xs font-bold">Contraer</span>}
         </button>
 
-        {/* User initials bubble — iniciales reales del usuario logueado */}
-        <div
-          className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center font-bold text-slate-300 text-sm border border-slate-700 hover:border-slate-500 transition cursor-pointer"
-          title={currentUser.nombre}
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className={`${
+            expanded ? 'w-full justify-start gap-3 px-3' : 'w-10 h-10 justify-center mx-auto'
+          } h-10 rounded-xl bg-white/5 text-brand-200/70 hover:text-amber-300 hover:bg-white/10 transition flex items-center cursor-pointer`}
+          title="Cambiar Tema"
         >
-          {currentUser.nombre ? inicialesDe(currentUser.nombre) : '?'}
+          {darkMode ? <Sun className="w-[18px] h-[18px]" /> : <Moon className="w-[18px] h-[18px]" />}
+          {expanded && <span className="text-xs font-bold">{darkMode ? 'Modo claro' : 'Modo oscuro'}</span>}
+        </button>
+
+        <div className={`flex items-center gap-2.5 ${expanded ? 'px-1 pt-1' : ''}`} title={currentUser.nombre}>
+          <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center font-black text-white text-xs border border-white/10 shrink-0">
+            {currentUser.nombre ? inicialesDe(currentUser.nombre) : '?'}
+          </div>
+          {expanded && (
+            <span className="text-[11px] font-bold text-brand-200/80 truncate">{currentUser.nombre || 'Usuario'}</span>
+          )}
         </div>
       </div>
     </aside>

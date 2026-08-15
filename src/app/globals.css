@@ -1,8 +1,49 @@
 @import "tailwindcss";
 
+/* Habilita `dark:` basado en la clase .dark del <html> (ya la aplica
+   page.tsx vía toggleDarkMode). Sin esto, Tailwind v4 solo responde a
+   prefers-color-scheme del SO y el toggle de la app no hace nada visual. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Paleta de marca — azul profundo/medio/claro pedidos para el rediseño.
+     brand-600 reutiliza literalmente blue-600 (#2563eb), ya dominante en
+     ~49 usos de CTA existentes, para no generar churn en botones actuales. */
+  --color-brand-50: #f3f8ff;
+  --color-brand-100: #e4eefc;
+  --color-brand-200: #c7ddf7;
+  --color-brand-300: #9cc2ef;
+  --color-brand-400: #5f9ce3;
+  --color-brand-500: #2f74d0;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1b4f9e;
+  --color-brand-800: #123b7a;
+  --color-brand-900: #0b2a5c;
+  --color-brand-950: #071b3f;
+
+  /* Shades intermedios ya usados en el código (bg-slate-850, text-slate-350,
+     etc.) que no existen en la paleta oficial de Tailwind y por eso no
+     generaban CSS — se definen aquí interpolados entre los shades reales
+     adyacentes. Corrige ~90 usos existentes sin tocar ningún call-site. */
+  --color-slate-105: #eff3f7;
+  --color-slate-250: #d6dee8;
+  --color-slate-350: #afbccc;
+  --color-slate-450: #7c8ba1;
+  --color-slate-550: #55647a;
+  --color-slate-605: #46546a;
+  --color-slate-650: #3d4b5f;
+  --color-slate-750: #283548;
+  --color-slate-805: #1d283a;
+  --color-slate-850: #162032;
+  --color-slate-855: #131c2d;
+
+  --color-blue-450: #4d93f8;
+  --color-blue-550: #3072f0;
+
+  --color-indigo-650: #493fd7;
 }
 
 @theme inline {
@@ -10,17 +51,48 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+  --color-brand-950: var(--color-brand-950);
+
+  --color-slate-105: var(--color-slate-105);
+  --color-slate-250: var(--color-slate-250);
+  --color-slate-350: var(--color-slate-350);
+  --color-slate-450: var(--color-slate-450);
+  --color-slate-550: var(--color-slate-550);
+  --color-slate-605: var(--color-slate-605);
+  --color-slate-650: var(--color-slate-650);
+  --color-slate-750: var(--color-slate-750);
+  --color-slate-805: var(--color-slate-805);
+  --color-slate-850: var(--color-slate-850);
+  --color-slate-855: var(--color-slate-855);
+
+  --color-blue-450: var(--color-blue-450);
+  --color-blue-550: var(--color-blue-550);
+
+  --color-indigo-650: var(--color-indigo-650);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* La app controla el tema aplicando/quitando .dark en <html> (page.tsx,
+   toggleDarkMode) — estas variables deben seguir esa clase, no solo la
+   preferencia del SO, para que coincidan con el resto de las utilidades
+   dark: ya corregidas arriba. */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
