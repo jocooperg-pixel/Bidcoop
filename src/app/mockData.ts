@@ -3,8 +3,8 @@ import { Oportunidad, Postulacion, OrdenCompra, MiembroEquipo, VistaGuardada, No
 
 // ============================================================
 // mockData.ts — Generado automáticamente por BidCoop v7.5
-// Última sincronización oficial: 2026-08-15T02:35:20.924289+00:00
-// Total registros: 591 | Confirmados: 591 | Compras Ágiles validadas: 232/234
+// Última sincronización oficial: 2026-08-15T12:42:27.799036+00:00
+// Total registros: 552 | Confirmados: 552 | Compras Ágiles validadas: 232/234
 // NO EDITAR MANUALMENTE
 // ============================================================
 
@@ -134,8 +134,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1002772-77-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -152,7 +152,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -237,8 +237,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1002772-79-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -255,7 +255,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "clip",
@@ -333,8 +333,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1005498-17-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 127637800,
     "monto_adjudicado": null,
@@ -351,7 +351,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -428,8 +428,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1012975-9-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1,
     "monto_adjudicado": null,
@@ -446,7 +446,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -523,8 +523,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1029940-11-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 18000000,
     "monto_adjudicado": null,
@@ -541,7 +541,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "sobre"
@@ -632,8 +632,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1049-59-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 73200000,
     "monto_adjudicado": null,
@@ -650,7 +650,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -727,8 +727,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1049-62-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 15000000,
     "monto_adjudicado": null,
@@ -745,7 +745,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -829,8 +829,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1056854-8-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 59663865,
     "monto_adjudicado": null,
@@ -847,7 +847,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "servidor"
@@ -924,8 +924,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057049-269-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -942,7 +942,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -1075,8 +1075,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057049-294-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -1093,7 +1093,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -1184,8 +1184,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057049-297-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -1202,7 +1202,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -1279,8 +1279,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057387-41-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 382963905,
     "monto_adjudicado": null,
@@ -1297,7 +1297,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -1377,8 +1377,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057387-47-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 9000000,
     "monto_adjudicado": null,
@@ -1395,7 +1395,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "impresora",
@@ -1475,8 +1475,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057428-28-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -1493,7 +1493,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -1573,8 +1573,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057489-211-I226",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 10674771238,
     "monto_adjudicado": null,
@@ -1591,7 +1591,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "sobre",
@@ -1674,8 +1674,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057489-237-I226",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 464171400,
     "monto_adjudicado": null,
@@ -1692,7 +1692,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "sobre",
@@ -1773,8 +1773,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057489-240-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 31000000,
     "monto_adjudicado": null,
@@ -1791,7 +1791,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "regla",
@@ -1898,8 +1898,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057489-241-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 353163553,
     "monto_adjudicado": null,
@@ -1916,7 +1916,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "regla",
@@ -1994,8 +1994,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057490-57-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -2012,7 +2012,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -2089,8 +2089,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057491-149-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -2107,7 +2107,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -2198,8 +2198,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057494-46-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -2216,7 +2216,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de escritorio"
@@ -2356,8 +2356,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057494-51-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -2374,7 +2374,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "kardex"
@@ -2451,8 +2451,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057495-16-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 192212894,
     "monto_adjudicado": null,
@@ -2469,7 +2469,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -2546,8 +2546,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057495-17-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 81222343,
     "monto_adjudicado": null,
@@ -2564,7 +2564,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -2795,8 +2795,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057501-434-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -2813,7 +2813,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -2898,8 +2898,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057503-117-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -2916,7 +2916,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -2994,8 +2994,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057509-230-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -3012,7 +3012,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "clip"
@@ -3090,8 +3090,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057536-96-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 94600000,
     "monto_adjudicado": null,
@@ -3108,7 +3108,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "computador",
@@ -3186,8 +3186,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057539-88-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -3204,7 +3204,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -3302,8 +3302,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057544-232-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -3320,7 +3320,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -3398,8 +3398,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058043-36-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -3416,7 +3416,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "lápices",
@@ -3494,8 +3494,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1063534-5-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 71000000,
     "monto_adjudicado": null,
@@ -3512,7 +3512,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "laptop"
@@ -3589,8 +3589,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1063538-191-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -3607,7 +3607,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -3684,8 +3684,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1064967-4-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 70000000,
     "monto_adjudicado": null,
@@ -3702,7 +3702,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "led"
@@ -3779,8 +3779,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1067455-13-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 22000000,
     "monto_adjudicado": null,
@@ -3797,7 +3797,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "proyector"
@@ -4404,8 +4404,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075337-44-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -4422,7 +4422,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "tóner",
@@ -4637,8 +4637,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-340-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -4655,7 +4655,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "clip"
@@ -4732,8 +4732,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079576-42-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 35286141,
     "monto_adjudicado": null,
@@ -4750,7 +4750,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -4883,8 +4883,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079650-47-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -4901,7 +4901,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -5132,8 +5132,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1080286-21-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 24777000,
     "monto_adjudicado": null,
@@ -5150,7 +5150,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -5229,8 +5229,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1080936-45-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 71000000,
     "monto_adjudicado": null,
@@ -5247,7 +5247,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "fotocopia",
@@ -5326,8 +5326,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1093303-6-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 16000000,
     "monto_adjudicado": null,
@@ -5344,7 +5344,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -5428,8 +5428,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1106-20-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -5446,7 +5446,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "tambor"
@@ -5535,8 +5535,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1113265-13-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -5553,7 +5553,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "computador",
@@ -5677,8 +5677,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1126922-31-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -5695,7 +5695,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -5775,8 +5775,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1159-6-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 71640000,
     "monto_adjudicado": null,
@@ -5793,7 +5793,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "notebook",
@@ -5873,8 +5873,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1171317-74-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 19676754,
     "monto_adjudicado": null,
@@ -5891,7 +5891,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -6024,8 +6024,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173933-10-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -6042,7 +6042,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -6128,8 +6128,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1180740-6-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 31000000,
     "monto_adjudicado": null,
@@ -6146,7 +6146,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "computador",
@@ -6317,8 +6317,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1180968-1-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -6335,7 +6335,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -6421,8 +6421,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1196-14-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 6350000,
     "monto_adjudicado": null,
@@ -6439,7 +6439,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "fotocopia",
@@ -6531,8 +6531,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1198-26-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7506000,
     "monto_adjudicado": null,
@@ -6549,7 +6549,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -7083,8 +7083,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1200377-22-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -7101,7 +7101,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "regla",
@@ -7327,8 +7327,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1208541-11-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 11835000,
     "monto_adjudicado": null,
@@ -7345,7 +7345,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -7422,8 +7422,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233619-35-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 72000000,
     "monto_adjudicado": null,
@@ -7440,7 +7440,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -7518,8 +7518,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1242121-19-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 8000000,
     "monto_adjudicado": null,
@@ -7536,7 +7536,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "regla",
@@ -7614,8 +7614,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1242125-5-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 44400000,
     "monto_adjudicado": null,
@@ -7632,7 +7632,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "regla"
@@ -7709,8 +7709,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1247197-54-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 21040000,
     "monto_adjudicado": null,
@@ -7727,7 +7727,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "plotter"
@@ -7808,8 +7808,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1260113-5-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 517422761,
     "monto_adjudicado": null,
@@ -7826,7 +7826,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "computador",
@@ -7907,8 +7907,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1288505-7-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 12243000,
     "monto_adjudicado": null,
@@ -7925,7 +7925,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -8032,8 +8032,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1305525-36-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 274221694,
     "monto_adjudicado": null,
@@ -8050,7 +8050,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "computador",
@@ -8130,8 +8130,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1305544-48-B226",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 161000000,
     "monto_adjudicado": null,
@@ -8148,7 +8148,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "notebook",
@@ -8226,8 +8226,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1306643-23-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -8244,7 +8244,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mampara"
@@ -8321,8 +8321,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1317954-2-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -8339,7 +8339,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -8416,8 +8416,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1344402-9-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 5000000,
     "monto_adjudicado": null,
@@ -8434,7 +8434,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -8511,8 +8511,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1347870-14-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 10800000,
     "monto_adjudicado": null,
@@ -8529,7 +8529,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -8607,8 +8607,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1360-8-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 60000000,
     "monto_adjudicado": null,
@@ -8625,7 +8625,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -8705,8 +8705,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1375735-9-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -8723,7 +8723,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "pantalla",
@@ -8804,8 +8804,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-159-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 22103060,
     "monto_adjudicado": null,
@@ -8822,7 +8822,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "sobre",
@@ -8902,8 +8902,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1392-28-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 41769000,
     "monto_adjudicado": null,
@@ -8920,7 +8920,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "computador",
@@ -9138,8 +9138,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1395-52-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -9156,7 +9156,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "led"
@@ -9233,8 +9233,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1414396-21-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -9251,7 +9251,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -9328,8 +9328,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1415861-9-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 6000000,
     "monto_adjudicado": null,
@@ -9346,7 +9346,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -9423,8 +9423,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1422256-1-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 270000000,
     "monto_adjudicado": null,
@@ -9441,7 +9441,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -9567,8 +9567,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1422830-14-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -9585,7 +9585,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -9662,8 +9662,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=14-24-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 39143920,
     "monto_adjudicado": null,
@@ -9680,7 +9680,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -9757,8 +9757,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426100-10-CO26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -9775,7 +9775,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "carpeta"
@@ -9865,8 +9865,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1431841-48-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 32000000,
     "monto_adjudicado": null,
@@ -9883,7 +9883,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "tóner",
@@ -9966,8 +9966,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1434-22-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 26007000,
     "monto_adjudicado": null,
@@ -9984,7 +9984,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -10075,8 +10075,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1447790-10-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 249122440,
     "monto_adjudicado": null,
@@ -10093,7 +10093,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -10170,8 +10170,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1488-32-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 323299200,
     "monto_adjudicado": null,
@@ -10188,7 +10188,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -10266,8 +10266,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1499-160-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 400891960,
     "monto_adjudicado": null,
@@ -10284,7 +10284,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -10370,8 +10370,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1537592-9-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -10388,7 +10388,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "escáner",
@@ -10468,8 +10468,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1550-3-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -10486,7 +10486,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tinta",
@@ -10574,8 +10574,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1554-49-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -10592,7 +10592,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "regla",
@@ -10671,8 +10671,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1562-44-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 12103000,
     "monto_adjudicado": null,
@@ -10689,7 +10689,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "router"
@@ -10775,8 +10775,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1589-7-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -10793,7 +10793,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "fotocopia",
@@ -10872,8 +10872,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1592-9-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 100000000,
     "monto_adjudicado": null,
@@ -10890,7 +10890,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "sobre"
@@ -10967,8 +10967,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1618-8-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 21022,
     "monto_adjudicado": null,
@@ -10985,7 +10985,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -11198,8 +11198,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1641-219-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -11216,7 +11216,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "regla",
@@ -11306,8 +11306,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1641-266-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -11324,7 +11324,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "regla",
@@ -11411,8 +11411,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1641-334-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -11429,7 +11429,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "tijera"
@@ -11507,8 +11507,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1658-181-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 40000000,
     "monto_adjudicado": null,
@@ -11525,7 +11525,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -11608,8 +11608,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-127-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -11626,7 +11626,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "tóner",
@@ -11715,8 +11715,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-129-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -11733,7 +11733,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -11810,8 +11810,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-130-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -11828,7 +11828,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -11905,8 +11905,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-131-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -11923,7 +11923,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -12000,8 +12000,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1666-8-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7200000,
     "monto_adjudicado": null,
@@ -12018,7 +12018,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -12110,8 +12110,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1697-38-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1537,
     "monto_adjudicado": null,
@@ -12128,7 +12128,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "pc",
@@ -12206,8 +12206,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1699-5-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -12224,7 +12224,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -12301,8 +12301,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1725-178-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 57964160,
     "monto_adjudicado": null,
@@ -12319,7 +12319,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -12396,8 +12396,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1725-183-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 30000000,
     "monto_adjudicado": null,
@@ -12414,7 +12414,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -12491,8 +12491,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1725-186-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7000000,
     "monto_adjudicado": null,
@@ -12509,7 +12509,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -12586,8 +12586,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1947-138-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -12604,7 +12604,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -12689,8 +12689,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1947-147-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -12707,7 +12707,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -12785,8 +12785,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1949-1-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 80000000,
     "monto_adjudicado": null,
@@ -12803,7 +12803,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -12880,8 +12880,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1979-171-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -12898,7 +12898,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -12975,8 +12975,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2006-12-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 55442000,
     "monto_adjudicado": null,
@@ -12993,7 +12993,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "led"
@@ -13070,8 +13070,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2045-12-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -13088,7 +13088,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -13180,8 +13180,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2048-56-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -13198,7 +13198,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -13276,8 +13276,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2048-60-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -13294,7 +13294,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -13449,8 +13449,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2069-133-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -13467,7 +13467,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "clip",
@@ -13546,8 +13546,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2078-33-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -13564,7 +13564,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "pc",
@@ -13915,8 +13915,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2080-233-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -13933,7 +13933,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "clip"
@@ -14017,8 +14017,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2101-127-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1900000,
     "monto_adjudicado": null,
@@ -14035,7 +14035,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "separador"
@@ -14112,8 +14112,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2126-109-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 518679945,
     "monto_adjudicado": null,
@@ -14130,7 +14130,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -14207,8 +14207,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2173-24-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -14225,7 +14225,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -14302,8 +14302,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2173-25-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -14320,7 +14320,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -14397,8 +14397,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2183-12-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -14415,7 +14415,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -14499,8 +14499,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2258-146-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -14517,7 +14517,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -14597,8 +14597,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2307-36-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 418569330,
     "monto_adjudicado": null,
@@ -14615,7 +14615,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "impresora",
@@ -14696,8 +14696,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2308-67-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1426698000,
     "monto_adjudicado": null,
@@ -14714,7 +14714,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -14792,8 +14792,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2322-66-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 10000000,
     "monto_adjudicado": null,
@@ -14810,7 +14810,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "servidor"
@@ -14888,8 +14888,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2322-67-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -14906,7 +14906,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "ups",
@@ -14991,8 +14991,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2328-49-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -15009,7 +15009,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pizarra"
@@ -15086,8 +15086,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2335-52-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 23458400,
     "monto_adjudicado": null,
@@ -15104,7 +15104,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -15181,8 +15181,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2343-18-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 19000000,
     "monto_adjudicado": null,
@@ -15199,7 +15199,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -15276,8 +15276,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2366-55-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 10301040,
     "monto_adjudicado": null,
@@ -15294,7 +15294,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -15373,8 +15373,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2384-38-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -15391,7 +15391,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "pantalla",
@@ -15470,8 +15470,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2385-39-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 30000000,
     "monto_adjudicado": null,
@@ -15488,7 +15488,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "sobre"
@@ -15565,8 +15565,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2402-67-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 9000000,
     "monto_adjudicado": null,
@@ -15583,7 +15583,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -15660,8 +15660,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2408-148-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 60000000,
     "monto_adjudicado": null,
@@ -15678,7 +15678,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -15755,8 +15755,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-44-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4500000,
     "monto_adjudicado": null,
@@ -15773,7 +15773,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -15850,8 +15850,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2410-35-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 147660200,
     "monto_adjudicado": null,
@@ -15868,7 +15868,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -15946,8 +15946,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2415-11-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 53900000,
     "monto_adjudicado": null,
@@ -15964,7 +15964,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "sobre",
@@ -16042,8 +16042,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2421-38-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -16060,7 +16060,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -16137,8 +16137,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2421-39-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -16155,7 +16155,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -16232,8 +16232,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2422-143-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4464457,
     "monto_adjudicado": null,
@@ -16250,7 +16250,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -16327,8 +16327,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2423-53-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -16345,7 +16345,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "switch"
@@ -16464,8 +16464,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-49-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 17700000,
     "monto_adjudicado": null,
@@ -16482,7 +16482,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -16559,8 +16559,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2430-62-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 491000000,
     "monto_adjudicado": null,
@@ -16577,7 +16577,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pantalla"
@@ -16654,8 +16654,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2440-58-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 5500000,
     "monto_adjudicado": null,
@@ -16672,7 +16672,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "fotocopia"
@@ -16749,8 +16749,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2460-92-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 26550000,
     "monto_adjudicado": null,
@@ -16767,7 +16767,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -16799,7 +16799,7 @@ const rawOportunidades: any = [
     "amountType": "no_informado",
     "currency": "CLP",
     "fechaPublicacion": "2010-12-17T10:43:32.547",
-    "fechaCierre": "2026-08-14",
+    "fechaCierre": "2026-08-15",
     "matchScore": 60,
     "matchKeywords": [
       "sobre"
@@ -16814,7 +16814,7 @@ const rawOportunidades: any = [
       },
       {
         "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14"
+        "fecha": "2026-08-15"
       }
     ],
     "documentos": [
@@ -16844,8 +16844,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2479-2-LS10",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -16862,7 +16862,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "sobre"
@@ -16940,8 +16940,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2483-174-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -16958,7 +16958,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -17036,8 +17036,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2483-231-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -17054,7 +17054,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -17139,8 +17139,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2490-73-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -17157,7 +17157,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -17235,8 +17235,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2561-17-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -17253,7 +17253,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -17435,8 +17435,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2562-18-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1800000,
     "monto_adjudicado": null,
@@ -17453,7 +17453,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "respaldo de energía"
@@ -17530,8 +17530,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2656-54-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 25000000,
     "monto_adjudicado": null,
@@ -17548,7 +17548,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -17626,8 +17626,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2663-68-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3123334,
     "monto_adjudicado": null,
@@ -17644,7 +17644,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -17723,8 +17723,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2665-37-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -17741,7 +17741,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -17826,8 +17826,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2697-26-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 105000000,
     "monto_adjudicado": null,
@@ -17844,7 +17844,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "sobre"
@@ -17921,8 +17921,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2710-50-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 8330000,
     "monto_adjudicado": null,
@@ -17939,7 +17939,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -18018,8 +18018,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2710-76-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 35670250,
     "monto_adjudicado": null,
@@ -18036,7 +18036,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "impresora",
@@ -18122,8 +18122,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2713-120-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18140,7 +18140,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -18217,8 +18217,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2713-123-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18235,7 +18235,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "led"
@@ -18312,8 +18312,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2735-108-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18330,7 +18330,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -18436,8 +18436,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2744-29-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18454,7 +18454,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "computador",
@@ -18533,8 +18533,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2755-29-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18551,7 +18551,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "cámara",
@@ -18629,8 +18629,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2755-31-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18647,7 +18647,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -18724,8 +18724,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2757-10-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18742,7 +18742,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -18819,8 +18819,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2760-101-CO26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18837,7 +18837,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -18915,8 +18915,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2760-98-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -18933,7 +18933,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -19011,8 +19011,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2770-121-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 45000000,
     "monto_adjudicado": null,
@@ -19029,7 +19029,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de impresión"
@@ -19106,8 +19106,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2788-38-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -19124,7 +19124,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -19201,8 +19201,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2788-42-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -19219,7 +19219,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "led"
@@ -19296,8 +19296,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2791-22-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -19314,7 +19314,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "proyector"
@@ -19412,8 +19412,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2920-33-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -19430,7 +19430,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -19647,8 +19647,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=29-54-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -19665,7 +19665,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -19742,8 +19742,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=29-59-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -19760,7 +19760,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -19837,8 +19837,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2974-58-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 15467552,
     "monto_adjudicado": null,
@@ -19855,7 +19855,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -19932,8 +19932,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2981-202-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 95000000,
     "monto_adjudicado": null,
@@ -19950,7 +19950,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -20029,8 +20029,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2981-212-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 132000000,
     "monto_adjudicado": null,
@@ -20047,7 +20047,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "escáner",
@@ -20129,8 +20129,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3030-24-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -20147,7 +20147,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "papelería",
@@ -20229,8 +20229,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3053-3-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -20247,7 +20247,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "materiales de oficina",
@@ -20396,8 +20396,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3109-4-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 28000000,
     "monto_adjudicado": null,
@@ -20414,7 +20414,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "servidor"
@@ -20491,8 +20491,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3129-2-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 5038255,
     "monto_adjudicado": null,
@@ -20509,7 +20509,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -20586,8 +20586,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3134-78-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 60000000,
     "monto_adjudicado": null,
@@ -20604,7 +20604,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -20681,8 +20681,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=316-47-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 20000000,
     "monto_adjudicado": null,
@@ -20699,7 +20699,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -20776,8 +20776,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=316-50-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 15830000,
     "monto_adjudicado": null,
@@ -20794,7 +20794,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -20871,8 +20871,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3178-27-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -20889,7 +20889,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -20966,8 +20966,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3179-27-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 19492500,
     "monto_adjudicado": null,
@@ -20984,7 +20984,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "silla"
@@ -21063,8 +21063,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3206-26-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -21081,7 +21081,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "fotocopia",
@@ -21167,8 +21167,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3212-11-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 12400000,
     "monto_adjudicado": null,
@@ -21185,7 +21185,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -21262,8 +21262,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3253-73-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -21280,7 +21280,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -21364,8 +21364,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3268-17-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 10244859,
     "monto_adjudicado": null,
@@ -21382,7 +21382,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "tambor"
@@ -21476,8 +21476,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3310-36-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 300000000,
     "monto_adjudicado": null,
@@ -21494,7 +21494,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "pantalla",
@@ -21574,8 +21574,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3326-42-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 20000000,
     "monto_adjudicado": null,
@@ -21592,7 +21592,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -21676,8 +21676,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-91-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -21694,7 +21694,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -21771,8 +21771,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3335-27-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 8700000,
     "monto_adjudicado": null,
@@ -21789,7 +21789,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "proyector"
@@ -21866,8 +21866,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3378-47-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -21884,7 +21884,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -21961,8 +21961,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3420-5-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 49112312,
     "monto_adjudicado": null,
@@ -21979,7 +21979,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -22056,8 +22056,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3428-16-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -22074,7 +22074,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -22151,8 +22151,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3444-10-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -22169,7 +22169,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -22275,8 +22275,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3447-135-E226",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -22293,7 +22293,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "aire acondicionado",
@@ -22371,8 +22371,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3496-10-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -22389,7 +22389,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -22466,8 +22466,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3518-15-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -22484,7 +22484,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -22561,8 +22561,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3561-35-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 19615473,
     "monto_adjudicado": null,
@@ -22579,7 +22579,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -22656,8 +22656,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3634-19-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -22674,7 +22674,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -22751,8 +22751,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3693-151-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -22769,7 +22769,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -22848,8 +22848,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3697-35-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 120000000,
     "monto_adjudicado": null,
@@ -22866,7 +22866,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "materiales de oficina",
@@ -22952,8 +22952,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3730-86-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2700000,
     "monto_adjudicado": null,
@@ -22970,7 +22970,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "switch"
@@ -23047,8 +23047,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3781-4-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -23065,7 +23065,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -23143,8 +23143,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3797-39-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -23161,7 +23161,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "servidor",
@@ -23239,8 +23239,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3853-15-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -23257,7 +23257,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -23348,8 +23348,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3858-28-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 24600100,
     "monto_adjudicado": null,
@@ -23366,7 +23366,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "notebook"
@@ -23444,8 +23444,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3882-71-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -23462,7 +23462,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -23576,8 +23576,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3885-49-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 6985300,
     "monto_adjudicado": null,
@@ -23594,7 +23594,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "insumos de oficina",
@@ -23672,8 +23672,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3887-37-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 70000000,
     "monto_adjudicado": null,
@@ -23690,7 +23690,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -23768,8 +23768,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3929-53-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 310000000,
     "monto_adjudicado": null,
@@ -23786,7 +23786,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "computador",
@@ -23865,8 +23865,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3933-43-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -23883,7 +23883,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -23961,8 +23961,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3933-45-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -23979,7 +23979,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -24057,8 +24057,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3935-75-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -24075,7 +24075,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -24153,8 +24153,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3953-22-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -24171,7 +24171,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -24249,8 +24249,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3958-51-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7150000,
     "monto_adjudicado": null,
@@ -24267,7 +24267,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "notebook",
@@ -24346,8 +24346,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3970-6-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7500000,
     "monto_adjudicado": null,
@@ -24364,7 +24364,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "multifuncional",
@@ -24444,8 +24444,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3978-15-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 32000000,
     "monto_adjudicado": null,
@@ -24462,7 +24462,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "pantalla",
@@ -24542,8 +24542,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4053-36-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -24560,7 +24560,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -24638,8 +24638,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=407-120-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -24656,7 +24656,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -24754,8 +24754,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=411-38-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -24772,7 +24772,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -24856,8 +24856,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4123-5-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -24874,7 +24874,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -24951,8 +24951,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4127-31-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 70000000,
     "monto_adjudicado": null,
@@ -24969,7 +24969,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -25048,8 +25048,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4157-19-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3534300,
     "monto_adjudicado": null,
@@ -25066,7 +25066,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "fotocopia",
@@ -25145,8 +25145,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-49-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -25163,7 +25163,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -25240,8 +25240,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4237-12-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -25258,7 +25258,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -25336,8 +25336,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4238-64-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -25354,7 +25354,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -25432,8 +25432,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=425-36-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -25450,7 +25450,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -25527,8 +25527,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=425-46-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -25545,7 +25545,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -25636,8 +25636,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4284-133-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1800000,
     "monto_adjudicado": null,
@@ -25654,7 +25654,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -25737,8 +25737,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4301-55-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 297000000,
     "monto_adjudicado": null,
@@ -25755,7 +25755,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "fotocopia",
@@ -25843,8 +25843,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=434-99-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 40000000,
     "monto_adjudicado": null,
@@ -25861,7 +25861,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "tóner",
@@ -25951,8 +25951,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4375-109-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -25969,7 +25969,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -26048,8 +26048,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4375-115-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -26066,7 +26066,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -26144,8 +26144,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=438-44-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 30000000,
     "monto_adjudicado": null,
@@ -26162,7 +26162,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "sobre"
@@ -26270,8 +26270,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4404-50-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -26288,7 +26288,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tóner",
@@ -26368,8 +26368,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4494-50-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 27660000,
     "monto_adjudicado": null,
@@ -26386,7 +26386,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -26464,8 +26464,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4642-95-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -26482,7 +26482,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -26561,8 +26561,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4732-20-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -26579,7 +26579,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -26671,8 +26671,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4776-50-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 26600000,
     "monto_adjudicado": null,
@@ -26689,7 +26689,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -26766,8 +26766,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4928-28-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -26784,7 +26784,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -26862,8 +26862,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4968-45-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -26880,7 +26880,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -26959,8 +26959,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "orden_compra",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5048-27-O126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -26977,7 +26977,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "sobre",
@@ -27055,8 +27055,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5066-2-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -27073,7 +27073,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "aire acondicionado"
@@ -27150,8 +27150,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-111-CO26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 10000000,
     "monto_adjudicado": null,
@@ -27168,7 +27168,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "servidor"
@@ -27245,8 +27245,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=507428-86-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -27263,7 +27263,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "silla"
@@ -27340,8 +27340,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=507428-93-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -27358,7 +27358,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pantalla"
@@ -27458,8 +27458,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=514862-106-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 75218896,
     "monto_adjudicado": null,
@@ -27476,7 +27476,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "computador",
@@ -27870,8 +27870,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=514862-108-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 20000000,
     "monto_adjudicado": null,
@@ -27888,7 +27888,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -27966,8 +27966,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=520149-29-I226",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 650000000,
     "monto_adjudicado": null,
@@ -27984,7 +27984,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "pc",
@@ -28069,8 +28069,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=520149-30-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -28087,7 +28087,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -28164,8 +28164,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=520149-37-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 25000000,
     "monto_adjudicado": null,
@@ -28182,7 +28182,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -28214,7 +28214,7 @@ const rawOportunidades: any = [
     "amountType": "monto_estimado",
     "currency": "CLP",
     "fechaPublicacion": "2010-12-29T10:09:48.01",
-    "fechaCierre": "2026-08-14",
+    "fechaCierre": "2026-08-15",
     "matchScore": 60,
     "matchKeywords": [
       "pc"
@@ -28229,7 +28229,7 @@ const rawOportunidades: any = [
       },
       {
         "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14"
+        "fecha": "2026-08-15"
       }
     ],
     "documentos": [
@@ -28259,8 +28259,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=520663-35-LS10",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 180000000,
     "monto_adjudicado": null,
@@ -28277,7 +28277,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -28354,8 +28354,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5240-78-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1002028000,
     "monto_adjudicado": null,
@@ -28372,7 +28372,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -28449,8 +28449,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5251-62-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 40000000,
     "monto_adjudicado": null,
@@ -28467,7 +28467,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -28544,8 +28544,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "orden_compra",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5268-29-O126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -28562,7 +28562,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -28647,8 +28647,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=539119-73-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 10800000,
     "monto_adjudicado": null,
@@ -28665,7 +28665,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -28743,8 +28743,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=552975-70-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -28761,7 +28761,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mampara"
@@ -28839,8 +28839,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5553-1-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 40500000,
     "monto_adjudicado": null,
@@ -28857,7 +28857,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -28935,8 +28935,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5562-6-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 11000000,
     "monto_adjudicado": null,
@@ -28953,7 +28953,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -29045,8 +29045,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-64-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 51075098,
     "monto_adjudicado": null,
@@ -29063,7 +29063,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "pantalla",
@@ -29141,8 +29141,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-68-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 13315885,
     "monto_adjudicado": null,
@@ -29159,7 +29159,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "tabique"
@@ -29250,8 +29250,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-119-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 43000000,
     "monto_adjudicado": null,
@@ -29268,7 +29268,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -29398,8 +29398,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=558869-39-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -29416,7 +29416,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "fotocopia",
@@ -29497,8 +29497,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5611-20-CO26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 21708993,
     "monto_adjudicado": null,
@@ -29515,7 +29515,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "plotter"
@@ -29608,8 +29608,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5612-6-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -29626,7 +29626,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "sobre",
@@ -29719,8 +29719,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=564162-62-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 88405,
     "monto_adjudicado": null,
@@ -29737,7 +29737,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -29814,8 +29814,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=564162-80-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 10500000,
     "monto_adjudicado": null,
@@ -29832,7 +29832,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "notebook"
@@ -29909,8 +29909,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5642-15-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7500000,
     "monto_adjudicado": null,
@@ -29927,7 +29927,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "memoria"
@@ -30011,8 +30011,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5684-9-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -30029,7 +30029,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -30106,8 +30106,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5748-2-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 80000000,
     "monto_adjudicado": null,
@@ -30124,7 +30124,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -30201,8 +30201,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=603663-4-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -30219,7 +30219,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -30366,8 +30366,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=608-161-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -30384,7 +30384,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "adaptador"
@@ -30461,8 +30461,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=608897-50-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 18000000,
     "monto_adjudicado": null,
@@ -30479,7 +30479,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -30556,8 +30556,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=609-18-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -30574,7 +30574,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -30651,8 +30651,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=612-26-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -30669,7 +30669,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -30746,8 +30746,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=618923-10-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 8528100,
     "monto_adjudicado": null,
@@ -30764,7 +30764,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -31024,8 +31024,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=619133-74-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -31042,7 +31042,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -31120,8 +31120,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=621-697-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 321916896,
     "monto_adjudicado": null,
@@ -31138,7 +31138,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -31215,8 +31215,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=621-721-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 915534151,
     "monto_adjudicado": null,
@@ -31233,7 +31233,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -31310,8 +31310,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=622-44-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3000000,
     "monto_adjudicado": null,
@@ -31328,7 +31328,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -31405,8 +31405,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=622847-10-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 135000000,
     "monto_adjudicado": null,
@@ -31423,7 +31423,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -31501,8 +31501,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=627025-8-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 8500000,
     "monto_adjudicado": null,
@@ -31519,7 +31519,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "regla",
@@ -31597,8 +31597,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=629373-16-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -31615,7 +31615,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -31699,8 +31699,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=634-68-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -31717,7 +31717,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -31794,8 +31794,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=652-37-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -31812,7 +31812,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "servidor"
@@ -31893,8 +31893,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=661-11-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -31911,7 +31911,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "tóner",
@@ -32001,8 +32001,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=693-28-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -32019,7 +32019,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "monitor",
@@ -32098,8 +32098,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=693-29-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -32116,7 +32116,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "locker"
@@ -32195,8 +32195,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=701426-7-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -32213,7 +32213,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "pantalla",
@@ -32365,8 +32365,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=707409-23-E226",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2400000,
     "monto_adjudicado": null,
@@ -32383,7 +32383,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tóner",
@@ -32463,8 +32463,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=710326-2-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -32481,7 +32481,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -32558,8 +32558,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=721-29-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4728,
     "monto_adjudicado": null,
@@ -32576,7 +32576,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "servidor"
@@ -32667,8 +32667,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=721703-32-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 85718400,
     "monto_adjudicado": null,
@@ -32685,7 +32685,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -32763,8 +32763,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=732434-17-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -32781,7 +32781,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "pc",
@@ -32859,8 +32859,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=747-5-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -32877,7 +32877,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -32954,8 +32954,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=752-28-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 40000000,
     "monto_adjudicado": null,
@@ -32972,7 +32972,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -33063,8 +33063,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=757818-15-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -33081,7 +33081,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -33161,8 +33161,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=771555-10-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 33126615,
     "monto_adjudicado": null,
@@ -33179,7 +33179,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "sobre",
@@ -33260,8 +33260,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=776-25-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 40000,
     "monto_adjudicado": null,
@@ -33278,7 +33278,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -33356,8 +33356,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=799512-40-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 59400000,
     "monto_adjudicado": null,
@@ -33374,7 +33374,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -33455,8 +33455,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=799512-46-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -33473,7 +33473,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "impresora",
@@ -33558,8 +33558,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=809-50-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -33576,7 +33576,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "fotocopia",
@@ -33659,8 +33659,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=813-79-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 60000000,
     "monto_adjudicado": null,
@@ -33677,7 +33677,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "librería",
@@ -33770,8 +33770,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=813-86-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 85000000,
     "monto_adjudicado": null,
@@ -33788,7 +33788,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -33866,8 +33866,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "orden_compra",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=825-3-O126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -33884,7 +33884,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "pc",
@@ -33962,8 +33962,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=846-27-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 76360160,
     "monto_adjudicado": null,
@@ -33980,7 +33980,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -34060,8 +34060,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=857-4-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -34078,7 +34078,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "impresora",
@@ -34158,8 +34158,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-66-L126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3000000,
     "monto_adjudicado": null,
@@ -34176,7 +34176,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mampara"
@@ -34253,8 +34253,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=885-75-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 68000000,
     "monto_adjudicado": null,
@@ -34271,7 +34271,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -34348,8 +34348,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=893-8-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -34366,7 +34366,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -34443,8 +34443,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=896-12-CO26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 30000000,
     "monto_adjudicado": null,
@@ -34461,7 +34461,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -34538,8 +34538,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=896-13-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 225000000,
     "monto_adjudicado": null,
@@ -34556,7 +34556,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -34633,8 +34633,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=896-14-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 180000000,
     "monto_adjudicado": null,
@@ -34651,7 +34651,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "monitor"
@@ -34728,8 +34728,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=898-156-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7500000,
     "monto_adjudicado": null,
@@ -34746,7 +34746,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mampara"
@@ -35530,8 +35530,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=937232-69-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -35548,7 +35548,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -35625,8 +35625,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=937232-79-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -35643,7 +35643,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "audífono"
@@ -35720,8 +35720,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=938-27-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7900,
     "monto_adjudicado": null,
@@ -35738,7 +35738,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -35815,8 +35815,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=948354-109-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1066100000,
     "monto_adjudicado": null,
@@ -35833,7 +35833,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -35910,8 +35910,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "orden_compra",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=976-10-O126",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -35928,7 +35928,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -36047,8 +36047,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=986278-14-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 69169093,
     "monto_adjudicado": null,
@@ -36065,7 +36065,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "climatización"
@@ -36163,8 +36163,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=986278-15-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 11667827,
     "monto_adjudicado": null,
@@ -36181,7 +36181,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -36258,8 +36258,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_api",
     "sourceType": "licitacion",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=999-27-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 0,
     "monto_adjudicado": null,
@@ -36276,5232 +36276,12 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
       ],
       "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1057049-234-LP26",
-    "codigo": "1057049-234-LP26",
-    "officialCode": "1057049-234-LP26",
-    "id_compra_agil": "1057049-234-LP26",
-    "id_proceso": "1057049-234-LP26",
-    "id_cotizacion": "1057049-234-LP26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.608.604-9",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "titulo": "PCV - Servicio de Retiro de Residuos",
-    "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
-    "organismoRut": "61.608.604-9",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-08T13:05:19.387",
-    "fechaCierre": "2026-07-28T15:30:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "pc"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "El objetivo de la Propuesta es la contratación del Servicio de Retiro, Tratamiento y Disposición de Residuos del Hospital Clínico San Borja Arriarán, solicitados en las especificaciones técnicas, en concordancia con las Bases Administrativas, Técnicas, Formularios, aclaraciones y otros documentos que pudieran formularse en el transcurso de la licitación.\r\n\r\nSe entenderá que todo proveedor conoce y acepta irrevocablemente el contenido de estas Bases, por el solo hecho de presentar ofertas en este proceso de licitación.",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-08T13:05:19.387"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-28T15:30:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1057049-234-LP26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057049-234-LP26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Recolección, destrucción, transformación o eliminación de basuras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057049-234-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1057049-234-LP26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "pc"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1057509-160-LP26",
-    "codigo": "1057509-160-LP26",
-    "officialCode": "1057509-160-LP26",
-    "id_compra_agil": "1057509-160-LP26",
-    "id_proceso": "1057509-160-LP26",
-    "id_cotizacion": "1057509-160-LP26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.607.001-0",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "titulo": "CONVENIO PROVEEDURÍA MARCADOR TISULAR DE TEJIDO MAMARIO",
-    "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
-    "organismoRut": "61.607.001-0",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región del Ñuble",
-    "monto": 106575638,
-    "amount": 106575638,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-06-22T11:48:36.747",
-    "fechaCierre": "2026-07-03T16:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "marcador"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "El Hospital Clínico Herminda Martín de Chillán llama a Licitación Pública a través del Portal Mercado Público, para suscribir un convenio de proveeduría de Marcadores Tisulares de Tejido Mamario, de acuerdo a requerimientos especificados en Bases Administrativas y Técnicas de la presente licitación, para uso en forma oportuna y permanente en las prestaciones que se requieran desde Unidad de Imagenología. Se pretende obtener la mejor calidad y oportunidad en la proveeduría de insumos médicos a un precio conveniente.",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-06-22T11:48:36.747"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-03T16:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1057509-160-LP26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057509-160-LP26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Sets suministros quirúrgicos generales o accesorios",
-        "cantidad": 528.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057509-160-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 106575638,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 106575638,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1057509-160-LP26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "marcador"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1074010-8-LP26",
-    "codigo": "1074010-8-LP26",
-    "officialCode": "1074010-8-LP26",
-    "id_compra_agil": "1074010-8-LP26",
-    "id_proceso": "1074010-8-LP26",
-    "id_cotizacion": "1074010-8-LP26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "60.501.000-8",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "titulo": "Seguro inmueble y su contenido Edificio Moneda",
-    "organismo": "SUBSECRETARIA DEL INTERIOR",
-    "organismoRut": "60.501.000-8",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Mobiliario y Equipamiento de Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 2388,
-    "amount": 2388,
-    "amountType": "monto_estimado",
-    "currency": "CLF",
-    "fechaPublicacion": "2026-07-01T13:00:48.27",
-    "fechaCierre": "2026-07-21T17:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "mueble"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "La Subsecretaría del Interior llama a licitación pública para la contratación del seguro para el Edificio Moneda Bicentenario y su contenido, ubicado en Moneda N° 1.326, comuna de Santiago.",
-    "estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-01T13:00:48.27"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-21T17:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1074010-8-LP26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1074010-8-LP26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Seguros de edificios o de su contenido",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "V-MOCCS",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1074010-8-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 2388,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 2388,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1074010-8-LP26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "vmoccs",
-      "empresaAsociada": "V-MOCCS",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "mueble"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1540-87-LE26",
-    "codigo": "1540-87-LE26",
-    "officialCode": "1540-87-LE26",
-    "id_compra_agil": "1540-87-LE26",
-    "id_proceso": "1540-87-LE26",
-    "id_cotizacion": "1540-87-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.607.904-2",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "CONV SUM BRAZALETES CON IMPRESORA ACOMODATO",
-    "organismo": "SERVICIO DE SALUD MAGALLANES HOSPITAL DE PTO NATALES",
-    "organismoRut": "61.607.904-2",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Tecnología y Hardware",
-    "region": "Región de Magallanes y de la Antártica",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-04T16:14:23.25",
-    "fechaCierre": "2026-08-14T15:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "impresora"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Se requiere la adquisición de brazaletes de identificación, compatibles con impresora de estos para dar cumplimiento a la actualización de la norma de identidad, la cual exige que todo paciente que ingrese al establecimiento para recibir atención de salud debe tener un elemento de identificación hasta el de su salida, que permita corroborar inequívocamente su identidad en todo momento.",
-    "estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-04T16:14:23.25"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1540-87-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1540-87-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Kits de pulseras de identificación de personal o accesorios",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1540-87-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1540-87-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "impresora"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1075963-190-LP26",
-    "codigo": "1075963-190-LP26",
-    "officialCode": "1075963-190-LP26",
-    "id_compra_agil": "1075963-190-LP26",
-    "id_proceso": "1075963-190-LP26",
-    "id_cotizacion": "1075963-190-LP26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.606.001-5",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "titulo": "SEGUNDO LLAMADO PARA CONVENIO DE SUMINISTRO DE TIRAS REACTIVAS DE GLICEMIA CON EQUIPO EN COMODATO DE MONITOR DE GLICEMIA CAPILAR POR 36 MESES",
-    "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
-    "organismoRut": "61.606.001-5",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Arica y Parinacota",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-06-08T16:10:57.01",
-    "fechaCierre": "2026-06-30T17:30:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "monitor"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "SE DEBEN ADJUNTAR TODOS LOS ANEXOS CON SUS RESPECTIVAS FIRMAS DEL REPRESENTANTE LEGAL SEGÚN LO INDICADO EN BASES ADMINISTRATIVA ARTICULO N°13 \"DE LA PRESENTACIÓN DE LA PROPUESTA Y REQUISITOS PARA LOS OFERENTES\". ADEMAS, ADJUNTAR LOS ANTECEDENTES LEGALES PARA OFERTAR SEGÚN LO ESTABLECIDO EN EL ARTÍCULO N°14 \"ANTECEDENTES LEGALES PARA OFERTAR\" DE LAS BASES ADMINISTRATIVAS.",
-    "estado": "Revocada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-06-08T16:10:57.01"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-06-30T17:30:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1075963-190-LP26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-190-LP26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Analizadores de glucosa",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-190-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1075963-190-LP26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "monitor"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1292-26-LE26",
-    "codigo": "1292-26-LE26",
-    "officialCode": "1292-26-LE26",
-    "id_compra_agil": "1292-26-LE26",
-    "id_proceso": "1292-26-LE26",
-    "id_cotizacion": "1292-26-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.202.000-0",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "Sistema  de  monitoreo  Satelital tipo GPS Husky",
-    "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-    "organismoRut": "61.202.000-0",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región del Maule ",
-    "monto": 30000000,
-    "amount": 30000000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-06T12:36:54.77",
-    "fechaCierre": "2026-08-14T15:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "monitor"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "La Dirección de Vialidad solicita ofertas para la contratación de SERVICIO DE EQUIPAMINETO Y NAVEGACION ASISTIDA HUSKY PARA EQUIPOS PASO PEHUENCHE DE LA DIRECCION PROVINCIAL DE VIALIDAD TALCA CAD PROVINCIA TALCA ADMINISTRACION DIRECTA, de acuerdo a los requerimientos de las presentes Bases y Especificaciones.",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-06T12:36:54.77"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1292-26-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1292-26-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Bases, monturas o apoyos de dispositivos de comunicación personal",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1292-26-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 30000000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 30000000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1292-26-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "monitor"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1079650-39-LE26",
-    "codigo": "1079650-39-LE26",
-    "officialCode": "1079650-39-LE26",
-    "id_compra_agil": "1079650-39-LE26",
-    "id_proceso": "1079650-39-LE26",
-    "id_cotizacion": "1079650-39-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.607.100-9",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "ESCÁNER INTRAORAL PARA HOSPITAL SAN JOSÉ DE CORONEL - COLDAS -USS",
-    "organismo": "SERVICIO DE SALUD CONCEPCION",
-    "organismoRut": "61.607.100-9",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región del Biobío ",
-    "monto": 10000000,
-    "amount": 10000000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-04T17:34:34.913",
-    "fechaCierre": "2026-08-14T15:00:00",
-    "matchScore": 70,
-    "matchKeywords": [
-      "escáner",
-      "escaner"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "ESCÁNER INTRAORAL PARA HOSPITAL SAN JOSÉ DE CORONEL - COLDAS -USS",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-04T17:34:34.913"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1079650-39-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079650-39-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Unidades de Rayos X dentales",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079650-39-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 10000000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 10000000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1079650-39-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 70,
-      "keywordsCoincidentes": [
-        "escáner",
-        "escaner"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1084156-43-LR26",
-    "codigo": "1084156-43-LR26",
-    "officialCode": "1084156-43-LR26",
-    "id_compra_agil": "1084156-43-LR26",
-    "id_proceso": "1084156-43-LR26",
-    "id_cotizacion": "1084156-43-LR26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "65.181.672-6",
-    "tipoOficial": "LR",
-    "tipoNombre": "Licitación Privada",
-    "titulo": "SUMINISTRO PRODUCTOS DE LIBRERÍA",
-    "organismo": "SERVICIO LOCAL DE EDUCACION PUBLICA ANDALIEN SUR",
-    "organismoRut": "65.181.672-6",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región del Biobío ",
-    "monto": 650000000,
-    "amount": 650000000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-13T16:36:06.07",
-    "fechaCierre": "2026-08-14T16:00:00",
-    "matchScore": 70,
-    "matchKeywords": [
-      "librería",
-      "libreria"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "E1O2RT9",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-13T16:36:06.07"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T16:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1084156-43-LR26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1084156-43-LR26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Lápices de madera",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1084156-43-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 650000000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 650000000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1084156-43-LR26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 70,
-      "keywordsCoincidentes": [
-        "librería",
-        "libreria"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1209395-10-LE26",
-    "codigo": "1209395-10-LE26",
-    "officialCode": "1209395-10-LE26",
-    "id_compra_agil": "1209395-10-LE26",
-    "id_proceso": "1209395-10-LE26",
-    "id_cotizacion": "1209395-10-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "62.000.890-7",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "Mobiliario y Equipamiento para RF de AADD",
-    "organismo": "SERVICIO NACIONAL DE PROTECCIÓN ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCI",
-    "organismoRut": "62.000.890-7",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Mobiliario y Equipamiento de Oficina",
-    "region": "Región de la Araucanía ",
-    "monto": 20234260,
-    "amount": 20234260,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-16T19:11:02.633",
-    "fechaCierre": "2026-07-27T15:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "mobiliario"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "El Servicio Nacional de Protección Especializada a la Niñez y Adolescencia Región de la Araucanía, en adelante “El Servicio” o “Servicio de Protección Araucanía”, requiere la “ADQUISICIÓN DE MOBILIARIO Y EQUIPAMIENTO PARA RESIDENCIAS FAMILIARES DE ADMINISTRACIÓN DIRECTA DE LA DIRECCIÓN REGIONAL ARAUCANIA DEL SERVICIO NACIONAL DE PROTECCION ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCIA”, de acuerdo con las condiciones establecidas en las presentes bases administrativas, técnicas y sus anexos. La presente licitación pública corresponde a aquellas contrataciones mayores a 100 UTM y menores a 1000 UTM.",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-16T19:11:02.633"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-27T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1209395-10-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1209395-10-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Mobiliario",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Mobiliario",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      },
-      {
-        "sku": "SKU-3",
-        "producto": "Mobiliario",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      },
-      {
-        "sku": "SKU-4",
-        "producto": "Mobiliario",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      },
-      {
-        "sku": "SKU-5",
-        "producto": "Mobiliario",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      },
-      {
-        "sku": "SKU-6",
-        "producto": "Mobiliario",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "V-MOCCS",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1209395-10-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 20234260,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 20234260,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1209395-10-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "vmoccs",
-      "empresaAsociada": "V-MOCCS",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "mobiliario"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1237328-35-LE26",
-    "codigo": "1237328-35-LE26",
-    "officialCode": "1237328-35-LE26",
-    "id_compra_agil": "1237328-35-LE26",
-    "id_proceso": "1237328-35-LE26",
-    "id_cotizacion": "1237328-35-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "70.931.900-0",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "SUMINISTRO ARTICULOS DE ESCRITORIO Y PAPELERÍA",
-    "organismo": "CORP MUNICIPAL DE PUNTA ARENAS PARA LA EDUCACION SALUD Y AT AL MENOR",
-    "organismoRut": "70.931.900-0",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Magallanes y de la Antártica",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-05-26T13:41:01.483",
-    "fechaCierre": "2026-06-05T09:00:00",
-    "matchScore": 90,
-    "matchKeywords": [
-      "papelería",
-      "papeleria",
-      "artículos de escritorio",
-      "articulos de escritorio"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Las presentes Bases Administrativas tienen por objeto la contratación de “SUMINISTRO ARTICULOS DE ESCRITORIO Y PAPELERÍA”, en dependencias de la Corporación Municipal Área Salud o donde la Unidad Técnica lo señale, bajo la modalidad de convenio de suministro y con plazo de vigencia de 24 meses, o hasta agotar el monto del contrato, lo que ocurra primero.\r\n\r\nSe deja expresa constancia que la presente licitación se ejecutará bajo la modalidad de suministro a requerimiento, por lo que la CORMUPA adquirirá únicamente aquellos productos que resulten necesarios para el cumplimiento de sus funciones, no encontrándose obligada, en ningún caso, a contratar ni adquirir la totalidad de los ítems considerados en el listado referencial de productos.\r\n\r\nPara el cumplimiento de lo anterior, se requiere de participantes que aseguren y certifiquen que los productos ofertados son prestados de acuerdo con las normas técnicas vigentes, con los estándares de calidad suficientes para satisfacer los requerimientos de la CORMUPA.\r\n\r\nFormarán parte integra de estas bases sus eventuales aclaraciones, rectificaciones, encomiendas y sus anexos; en general, todo documento relacionado con la licitación, que emane de la CORMUPA y publicado en el portal www.mercadopublico.cl.",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-05-26T13:41:01.483"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-06-05T09:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1237328-35-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1237328-35-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Abrecartas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Sujeta documentos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-3",
-        "producto": "Bloques para mensajes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-4",
-        "producto": "Alfileres de gancho",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-5",
-        "producto": "Almohadilla para moquetas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-6",
-        "producto": "Máquina encuadernadora",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-7",
-        "producto": "Sujetapapeles",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-8",
-        "producto": "Sujetapapeles",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-9",
-        "producto": "Sujetapapeles",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-10",
-        "producto": "Sujetapapeles",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-11",
-        "producto": "Sujetapapeles",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-12",
-        "producto": "Sujetapapeles",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-13",
-        "producto": "Archivadores de fichas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-14",
-        "producto": "Bandejas de correspondencia",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-15",
-        "producto": "Bandejas de correspondencia",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-16",
-        "producto": "Banderitas autoadhesivas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-17",
-        "producto": "Papel, bolsas o cajas de regalo",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-18",
-        "producto": "Borradores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-19",
-        "producto": "Calculadoras o accesorios",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-20",
-        "producto": "Agendas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-21",
-        "producto": "Carpetas para archivos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-22",
-        "producto": "Carpetas para archivos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-23",
-        "producto": "Carpetas para archivos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-24",
-        "producto": "Carpetas para archivos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-25",
-        "producto": "Carpetas para archivos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-26",
-        "producto": "Carpetas para archivos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-27",
-        "producto": "Carpetas para archivos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-28",
-        "producto": "Chinches y tachuelas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-29",
-        "producto": "Cintas adhesivas de protección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-30",
-        "producto": "Cintas adhesivas de protección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-31",
-        "producto": "Cintas adhesivas de protección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-32",
-        "producto": "Cintas adhesivas de protección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-33",
-        "producto": "Cintas adhesivas de protección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-34",
-        "producto": "Cintas adhesivas de protección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-35",
-        "producto": "Cintas adhesivas de protección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-36",
-        "producto": "Cintas adhesivas de protección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-37",
-        "producto": "Clips para papel",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-38",
-        "producto": "Clips para papel",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-39",
-        "producto": "Clips para papel",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-40",
-        "producto": "Clips para papel",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-41",
-        "producto": "Corcheteras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-42",
-        "producto": "Corchetes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-43",
-        "producto": "Corchetes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-44",
-        "producto": "Corchetes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-45",
-        "producto": "Corchetes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-46",
-        "producto": "Corchetes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-47",
-        "producto": "Cinta correctora",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-48",
-        "producto": "Líquido corrector",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-49",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-50",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-51",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-52",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-53",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-54",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-55",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-56",
-        "producto": "Cuchillos cartoneros",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-57",
-        "producto": "Dedo de goma",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-58",
-        "producto": "Dedo de goma",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-59",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-60",
-        "producto": "Dispensador de cinta",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-61",
-        "producto": "Dispensadores o receptáculo de grapas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-62",
-        "producto": "Envolturas de monedas o fajas para billetes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-63",
-        "producto": "Máquina encuadernadora",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-64",
-        "producto": "Espirales de encuadernación",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-65",
-        "producto": "Fundas de etiquetas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-66",
-        "producto": "Fundas de etiquetas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-67",
-        "producto": "Goma de borrar",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-68",
-        "producto": "Máquinas para cortar papel o accesorios",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-69",
-        "producto": "Kit de limpieza para el computador o el equipamiento de oficina",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-70",
-        "producto": "Lámina para plastificar",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-71",
-        "producto": "Lámina para plastificar",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-72",
-        "producto": "Lápices de grafito",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-73",
-        "producto": "Lápiz pasta",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-74",
-        "producto": "Lápiz pasta",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-75",
-        "producto": "Lápiz pasta",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-76",
-        "producto": "Lápiz pasta",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-77",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-78",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-79",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-80",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-81",
-        "producto": "Libros o cuadernos de registro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-82",
-        "producto": "Estuches de llaves o llaveros",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-83",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-84",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-85",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-86",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-87",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-88",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-89",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-90",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-91",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-92",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-93",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-94",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-95",
-        "producto": "Marcadores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-96",
-        "producto": "Mica",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-97",
-        "producto": "Plumas, bolígrafos o lápices de corrección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-98",
-        "producto": "Plumas, bolígrafos o lápices de corrección",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-99",
-        "producto": "Notas de papel autoadhesivo",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-100",
-        "producto": "Notas de papel autoadhesivo",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-101",
-        "producto": "Notas de papel autoadhesivo",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-102",
-        "producto": "Papel artístico o papel Kraft",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-103",
-        "producto": "Papel artístico o papel Kraft",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-104",
-        "producto": "Barras de pegamento libres de ácido",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-105",
-        "producto": "Barras de pegamento libres de ácido",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-106",
-        "producto": "Tiras o canutillos de encuadernación",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-107",
-        "producto": "Perforadoras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-108",
-        "producto": "Pilas alcalinas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-109",
-        "producto": "Pilas alcalinas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-110",
-        "producto": "Pilas alcalinas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-111",
-        "producto": "Pizarras para plumón y accesorios",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-112",
-        "producto": "Pizarras para plumón y accesorios",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-113",
-        "producto": "Calendarios",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-114",
-        "producto": "Calendarios",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-115",
-        "producto": "Clips para papel",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-116",
-        "producto": "Portalápiz",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-117",
-        "producto": "Calendarios",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-118",
-        "producto": "Reglas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-119",
-        "producto": "Almohadillas de ratón o mousepad",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-120",
-        "producto": "Sujeta documentos",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-121",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-122",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-123",
-        "producto": "Cintas de papel",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-124",
-        "producto": "Cintas de papel",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-125",
-        "producto": "Papel de etiquetas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-126",
-        "producto": "Papel de etiquetas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-127",
-        "producto": "Papel de etiquetas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-128",
-        "producto": "Saca corchetes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-129",
-        "producto": "Saca corchetes",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-130",
-        "producto": "Sacapuntas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-131",
-        "producto": "Divisores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-132",
-        "producto": "Divisores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-133",
-        "producto": "Divisores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-134",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-135",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-136",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-137",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-138",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-139",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-140",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-141",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-142",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-143",
-        "producto": "Plastificadoras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-144",
-        "producto": "Tijeras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-145",
-        "producto": "Tijeras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-146",
-        "producto": "Tinta china",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-147",
-        "producto": "Tinta china",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-148",
-        "producto": "Tinta china",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-149",
-        "producto": "Artículos de papelería",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1237328-35-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1237328-35-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 90,
-      "keywordsCoincidentes": [
-        "papelería",
-        "papeleria",
-        "artículos de escritorio",
-        "articulos de escritorio"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-2448-73-LE26",
-    "codigo": "2448-73-LE26",
-    "officialCode": "2448-73-LE26",
-    "id_compra_agil": "2448-73-LE26",
-    "id_proceso": "2448-73-LE26",
-    "id_cotizacion": "2448-73-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "69.040.300-5",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "PENDRIVE 256GB USB 2.0 CON CARCASA METALALICA GIRO",
-    "organismo": "I MUNICIPALIDAD DE COQUIMBO",
-    "organismoRut": "69.040.300-5",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Tecnología y Hardware",
-    "region": "Región de Coquimbo ",
-    "monto": 20000000,
-    "amount": 20000000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-06-04T14:51:24.267",
-    "fechaCierre": "2026-06-16T17:30:00",
-    "matchScore": 70,
-    "matchKeywords": [
-      "pendrive",
-      "usb"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "PENDRIVE 256GB USB 2.0. PENDRIVE CON CARCASA METALICA DE GIRO, DE 256 GB DE CAPACIDAD.",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-06-04T14:51:24.267"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-06-16T17:30:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (2448-73-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2448-73-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Dispositivos de almacenamiento de memoria flash",
-        "cantidad": 675.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2448-73-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 20000000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 20000000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "2448-73-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 70,
-      "keywordsCoincidentes": [
-        "pendrive",
-        "usb"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-2831-26-LE26",
-    "codigo": "2831-26-LE26",
-    "officialCode": "2831-26-LE26",
-    "id_compra_agil": "2831-26-LE26",
-    "id_proceso": "2831-26-LE26",
-    "id_cotizacion": "2831-26-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "69.060.100-1",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "Cámaras de Televigilancia Ins. de 6 puntos QTA",
-    "organismo": "I MUNICIPALIDAD DE QUILLOTA",
-    "organismoRut": "69.060.100-1",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Valparaíso ",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-30T16:43:51.97",
-    "fechaCierre": "2026-08-14T12:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "cámara"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Las presentes Bases Administrativas tienen por objeto regular el llamado a propuesta pública para contratar la ejecución del proyecto denominado Cámaras de Televigilancia “Reforzando Nuestra Seguridad”",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-30T16:43:51.97"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T12:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (2831-26-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2831-26-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Cámaras de seguridad",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2831-26-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "2831-26-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "cámara"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-2731-18-LE26",
-    "codigo": "2731-18-LE26",
-    "officialCode": "2731-18-LE26",
-    "id_compra_agil": "2731-18-LE26",
-    "id_proceso": "2731-18-LE26",
-    "id_cotizacion": "2731-18-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "69.071.700-K",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "SC N°19-012_DIRECCIÓN DE SEGURIDAD PUBLICA_ADQUISICIÓN DE CAMARAS CORPORALES PARA PATRULLAJE PREVENTIVO",
-    "organismo": "MUNICIPALIDAD DE PEÑAFLOR",
-    "organismoRut": "69.071.700-K",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 15540100,
-    "amount": 15540100,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-01T16:57:44.93",
-    "fechaCierre": "2026-07-13T15:30:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "cámara"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "ADQUISICIÓN DE CAMARAS CORPORALES PARA PATRULLAJE PREVENTIVO SEGUN DECRETO ALCALDICIO QUE APRUEBA BASES DE LICITACIÓN N°670 DE FECHA 30 DE JUNIO DE 2026",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-01T16:57:44.93"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-13T15:30:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (2731-18-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-18-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Videocámaras portátiles",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-18-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 15540100,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 15540100,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "2731-18-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "cámara"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-2563-36-LP26",
-    "codigo": "2563-36-LP26",
-    "officialCode": "2563-36-LP26",
-    "id_compra_agil": "2563-36-LP26",
-    "id_proceso": "2563-36-LP26",
-    "id_cotizacion": "2563-36-LP26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.104.000-8",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "titulo": "Adquisición de tres 3 servidores para la DGAC",
-    "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-    "organismoRut": "61.104.000-8",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 90976650,
-    "amount": 90976650,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-31T14:35:47.553",
-    "fechaCierre": "2026-08-20T15:00:00",
-    "matchScore": 70,
-    "matchKeywords": [
-      "servidor",
-      "monitor"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Adquirir tres 3 servidores para el monitoreo de red – Plataforma PRTG, puesto de mando institucional y almacenamiento de imágenes del aeropuerto Arturo Merino Benítez.",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-31T14:35:47.553"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-20T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (2563-36-LP26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2563-36-LP26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Servidores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Servidores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-3",
-        "producto": "Servidores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-4",
-        "producto": "Servidores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2563-36-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 90976650,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 90976650,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "2563-36-LP26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 70,
-      "keywordsCoincidentes": [
-        "servidor",
-        "monitor"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-2684-25-LR26",
-    "codigo": "2684-25-LR26",
-    "officialCode": "2684-25-LR26",
-    "id_compra_agil": "2684-25-LR26",
-    "id_proceso": "2684-25-LR26",
-    "id_cotizacion": "2684-25-LR26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "69.061.500-2",
-    "tipoOficial": "LR",
-    "tipoNombre": "Licitación Privada",
-    "titulo": "PP 18-2026 Servicio de arriendo de equipos multifuncionales impresoras fotocopiadoras y escáner para las unidades municipales",
-    "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
-    "organismoRut": "69.061.500-2",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Tecnología y Hardware",
-    "region": "Región de Valparaíso ",
-    "monto": 615600000,
-    "amount": 615600000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-05-12T13:13:23.153",
-    "fechaCierre": "2026-06-12T12:00:00",
-    "matchScore": 98,
-    "matchKeywords": [
-      "fotocopia",
-      "impresora",
-      "impresoras",
-      "multifuncional",
-      "multifuncionales",
-      "fotocopiadora",
-      "fotocopiadoras",
-      "escáner",
-      "escaner"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Se requiere la contratación de servicio de provisión de equipos de impresión, fotocopiado y escaneos destinados a los distintos departamentos y unidades de la Municipalidad de Villa Alemana.",
-    "estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-05-12T13:13:23.153"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-06-12T12:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (2684-25-LR26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2684-25-LR26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Servicios de copias en blanco y negro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Servicios de copias a color",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-3",
-        "producto": "Servicios de copias en blanco y negro",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-4",
-        "producto": "Servicios de copias a color",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-5",
-        "producto": "Escáner",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Mes"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2684-25-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 615600000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 615600000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "2684-25-LR26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 98,
-      "keywordsCoincidentes": [
-        "fotocopia",
-        "impresora",
-        "impresoras",
-        "multifuncional",
-        "multifuncionales",
-        "fotocopiadora",
-        "fotocopiadoras",
-        "escáner",
-        "escaner"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1075963-255-LE26",
-    "codigo": "1075963-255-LE26",
-    "officialCode": "1075963-255-LE26",
-    "id_compra_agil": "1075963-255-LE26",
-    "id_proceso": "1075963-255-LE26",
-    "id_cotizacion": "1075963-255-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.606.001-5",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "ADQUISICION DE AGUJAS SQ EQUIPO ASPIRACION CONTINUA JERINGA APOSITOS  PINZAS  PASADOR  CATETER ADAPTADOR NIPPLE PAPEL TEST ESFUERZO Y OTROS INSUMOS CLINICOS",
-    "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
-    "organismoRut": "61.606.001-5",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Arica y Parinacota",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-06-08T12:44:47.983",
-    "fechaCierre": "2026-06-18T17:30:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "adaptador"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "ADQUISICION DE AGUJAS, SQ, EQUIPO ASPIRACION CONTINUA,, JERINGA, APOSITOS,  PINZAS , PASADOR  CATETER, ADAPTADOR NIPPLE, PAPEL TEST ESFUERZO Y OTROS INSUMOS CLINICOS",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-06-08T12:44:47.983"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-06-18T17:30:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1075963-255-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-255-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Agujas de tratamiento diagnóstico",
-        "cantidad": 5000.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Sutura quirúrgica o agarradores de alambre o productos relacionados",
-        "cantidad": 2628.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-3",
-        "producto": "Sutura quirúrgica o agarradores de alambre o productos relacionados",
-        "cantidad": 216.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-4",
-        "producto": "Sutura quirúrgica o agarradores de alambre o productos relacionados",
-        "cantidad": 316.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-5",
-        "producto": "Sutura quirúrgica o agarradores de alambre o productos relacionados",
-        "cantidad": 108.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-6",
-        "producto": "Sutura quirúrgica o agarradores de alambre o productos relacionados",
-        "cantidad": 24.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-7",
-        "producto": "Catéteres de línea arterial",
-        "cantidad": 30.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-8",
-        "producto": "Jeringas médicas de aspiración o irrigación",
-        "cantidad": 800.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-9",
-        "producto": "Nebulizadores o accesorios",
-        "cantidad": 12.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-10",
-        "producto": "Vendas o vendajes para uso general",
-        "cantidad": 5500.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-11",
-        "producto": "Pinzas quirúrgicas",
-        "cantidad": 40.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-12",
-        "producto": "Equipo electro quirúrgico o electro cauterio o accesorios o productos relacionados",
-        "cantidad": 10000.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-13",
-        "producto": "Catéteres de línea arterial",
-        "cantidad": 10.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-14",
-        "producto": "Catéteres de línea arterial",
-        "cantidad": 20.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-15",
-        "producto": "Trocares quirúrgicos para uso general o accesorios",
-        "cantidad": 30.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-16",
-        "producto": "Equipo electro quirúrgico o electro cauterio o accesorios o productos relacionados",
-        "cantidad": 100.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-17",
-        "producto": "Pinzas quirúrgicas",
-        "cantidad": 5.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-18",
-        "producto": "Broncoscopios o accesorios",
-        "cantidad": 12.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-19",
-        "producto": "Kits de accesorios para endoscopía",
-        "cantidad": 50.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-20",
-        "producto": "Pinzas quirúrgicas",
-        "cantidad": 40.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-21",
-        "producto": "Accesorios para productos de administración de oxigenoterapia o sus suministros",
-        "cantidad": 150.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-22",
-        "producto": "Papel de registro de electrocardiografía (ECG)",
-        "cantidad": 100.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-255-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1075963-255-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "adaptador"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1199-11-LE26",
-    "codigo": "1199-11-LE26",
-    "officialCode": "1199-11-LE26",
-    "id_compra_agil": "1199-11-LE26",
-    "id_proceso": "1199-11-LE26",
-    "id_cotizacion": "1199-11-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.107.000-4",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "Mantener y Reparar Aire acondicionado IND MAULE",
-    "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-    "organismoRut": "61.107.000-4",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región del Maule ",
-    "monto": 41000000,
-    "amount": 41000000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-15T13:10:00",
-    "fechaCierre": "2026-08-03T17:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "aire acondicionado"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "La presente licitación tiene por objeto contratar el “SERVICIO DE MANTENCIÓN Y REPARACIÓN DE EQUIPOS DE AIRE ACONDICIONADO Y EQUIPOS DE VENTILACIÓN DE AIRE PARA RECINTOS Y DIRECCION REGIONAL DEL INSTITUTO NACIONAL DE DEPORTES DE CHILE, REGIÓN DEL MAULE”, por un periodo de 24 meses, de acuerdo a los requerimientos que se detallan en las bases técnicas.",
-    "estado": "Revocada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-15T13:10:00"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-03T17:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1199-11-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1199-11-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Lanchas",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Bicicletas de carreras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-3",
-        "producto": "Prendas de deporte y buzos de hombre",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-4",
-        "producto": "Bicicletas de carreras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1199-11-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 41000000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 41000000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1199-11-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "aire acondicionado"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1260058-2-LE26",
-    "codigo": "1260058-2-LE26",
-    "officialCode": "1260058-2-LE26",
-    "id_compra_agil": "1260058-2-LE26",
-    "id_proceso": "1260058-2-LE26",
-    "id_cotizacion": "1260058-2-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.602.121-4",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "“SUMINISTRO DE ANTISÉPTICOS DESINFECTANTES DETERGENTES Y SOLVENTES DE USO HOSPITALARIO Y PRODUCTOS CLÍNICOS SOBRE TEJIDO HUMANO ",
-    "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE P",
-    "organismoRut": "61.602.121-4",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 69000000,
-    "amount": 69000000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-06-18T12:33:00",
-    "fechaCierre": "2026-07-01T15:01:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "sobre"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "4.\tQue considerando que las infecciones intrahospitalarias (IIH) o infecciones asociadas a la atención de salud (IAAS) son una dificultad importante de salud, cuyas implicancias en morbimortalidad y costos para el sistema hospitalario, son conocidos, requiriendo para su control, de un conjunto de acciones que comprenden toda la organización hospitalaria y la incidencia de estas es un indicador de la calidad de la atención otorgada, y considerando que dichos productos corresponden a un porcentaje de la Distribución Anual Programada (DAP) del centro de costo, que es concentrada en la resolución que aprueba el PAC institucional, no se requerirá para aquellos productos citados, el Certificado de Necesidad, siendo estos necesarios para el correcto funcionamiento de diferentes servicio dentro del recinto hospitalari",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-06-18T12:33:00"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-01T15:01:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1260058-2-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1260058-2-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Antisépticos basados en alcohol o acetona",
-        "cantidad": 900.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Antisépticos basados en alcohol o acetona",
-        "cantidad": 1500.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-3",
-        "producto": "Antisépticos basados en alcohol o acetona",
-        "cantidad": 6920.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-4",
-        "producto": "Antisépticos basados en alcohol o acetona",
-        "cantidad": 12.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-5",
-        "producto": "Agua destilada para irrigación",
-        "cantidad": 200.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-6",
-        "producto": "Éter",
-        "cantidad": 8.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-7",
-        "producto": "Detergentes o limpiadores de instrumentos",
-        "cantidad": 50.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-8",
-        "producto": "Detergentes o limpiadores de instrumentos",
-        "cantidad": 130.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-9",
-        "producto": "Detergentes o limpiadores de instrumentos",
-        "cantidad": 20.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-10",
-        "producto": "Equipos para reconstruir el tejido del cadáver",
-        "cantidad": 8.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-11",
-        "producto": "Gluconato de clorhexidina",
-        "cantidad": 230.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-12",
-        "producto": "Gluconato de clorhexidina",
-        "cantidad": 330.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-13",
-        "producto": "Gluconato de clorhexidina",
-        "cantidad": 300.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-14",
-        "producto": "Gluconato de clorhexidina",
-        "cantidad": 400.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-15",
-        "producto": "Gluconato de clorhexidina",
-        "cantidad": 110.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-16",
-        "producto": "Gluconato de clorhexidina",
-        "cantidad": 200.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-17",
-        "producto": "Gluconato de clorhexidina",
-        "cantidad": 160.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-18",
-        "producto": "Antisépticos de peróxido de hidrógeno",
-        "cantidad": 30.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-19",
-        "producto": "Comprobadores de pulpa o vitalidad dental",
-        "cantidad": 40.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-20",
-        "producto": "Quita adhesivo o quita cola médicos",
-        "cantidad": 6000.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-21",
-        "producto": "Solución de rehidratación oral",
-        "cantidad": 800.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-22",
-        "producto": "Absorbedores para limpiar la herida",
-        "cantidad": 2600.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1260058-2-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 69000000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 69000000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1260058-2-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "sobre"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-4642-85-LE26",
-    "codigo": "4642-85-LE26",
-    "officialCode": "4642-85-LE26",
-    "id_compra_agil": "4642-85-LE26",
-    "id_proceso": "4642-85-LE26",
-    "id_cotizacion": "4642-85-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "60.514.000-9",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "PROVISIÓN E INSTALACIÓN DE ESTANTERIAS METALICAS A MEDIDA DESTINADAS A LA BODEGA DE INSUMOS MÉDICOS DEL HOSPITAL DE CARABINEROS.",
-    "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-    "organismoRut": "60.514.000-9",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Mobiliario y Equipamiento de Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-13T16:13:24.837",
-    "fechaCierre": "2026-08-03T16:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "estante"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "PROVISIÓN E INSTALACIÓN DE ESTANTERIAS METALICAS A MEDIDA DESTINADAS A LA BODEGA DE INSUMOS MÉDICOS DEL HOSPITAL DE CARABINEROS.\r\nRES. Y BASES N°826 DEL 07-07-2026 - SOLICITUD 2605461.",
-    "estado": "Revocada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-13T16:13:24.837"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-03T16:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (4642-85-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4642-85-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Estantería no modular",
-        "cantidad": 123.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "V-MOCCS",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4642-85-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "4642-85-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "vmoccs",
-      "empresaAsociada": "V-MOCCS",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "estante"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1057548-17-LE26",
-    "codigo": "1057548-17-LE26",
-    "officialCode": "1057548-17-LE26",
-    "id_compra_agil": "1057548-17-LE26",
-    "id_proceso": "1057548-17-LE26",
-    "id_cotizacion": "1057548-17-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.607.503-9",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "Convenio Suministro de Servicio de Fotocopiado Impresion y Digitalizacion con Entrega de Equipos ",
-    "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL LA U",
-    "organismoRut": "61.607.503-9",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Los Ríos",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-04T10:27:37.907",
-    "fechaCierre": "2026-08-14T12:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "fotocopia"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "El Hospital La Unión invita a personas naturales o jurídicas que cumplan con los requisitos establecidos en las presentes Bases a ofertar en su licitación pública “CONVENIO SUMINISTRO DE SERVICIO DE FOTOCOPIADO, IMPRESIÓN Y DIGITALIZACION CON ENTREGA DE EQUIPOS PARA EL HOSPITAL DE LA UNION”.\r\nLa presente licitación pública es de tipo simple.",
-    "estado": "Cerrada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-04T10:27:37.907"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T12:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1057548-17-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057548-17-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Impresión digital",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057548-17-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1057548-17-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "fotocopia"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1058900-7-LE26",
-    "codigo": "1058900-7-LE26",
-    "officialCode": "1058900-7-LE26",
-    "id_compra_agil": "1058900-7-LE26",
-    "id_proceso": "1058900-7-LE26",
-    "id_cotizacion": "1058900-7-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "70.783.100-6",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "Servicio de Mantención Preventiva y Correctiva para Sistema de Climatización del Edificio de la Clínica Odontológica Asistencial Docente del Departamento de Odontología",
-    "organismo": "UNIVERSIDAD DE LA SERENA",
-    "organismoRut": "70.783.100-6",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Coquimbo ",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-06-16T08:28:36.92",
-    "fechaCierre": "2026-06-26T09:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "climatización"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Servicio de Mantención Preventiva y Correctiva para Sistema de Climatización del Edificio de la Clínica Odontológica Asistencial Docente del Departamento de Odontología según sc 50135",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-06-16T08:28:36.92"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-06-26T09:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1058900-7-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058900-7-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058900-7-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1058900-7-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "climatización"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-2324-97-LE26",
-    "codigo": "2324-97-LE26",
-    "officialCode": "2324-97-LE26",
-    "id_compra_agil": "2324-97-LE26",
-    "id_proceso": "2324-97-LE26",
-    "id_cotizacion": "2324-97-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "69.220.100-0",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "LICITACION PÚBLICA N° 112026 SERVICIO DE RECEPCIÓN Y DISPOSICIÓN FINAL DE ESCOMBROS CALCINADOS PROVENIENTES DE INCENDIOS EN LA COMUNA DE PUERTO MONTT DIMAO",
-    "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
-    "organismoRut": "69.220.100-0",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de los Lagos ",
-    "monto": 27840000,
-    "amount": 27840000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-04T14:31:44.6",
-    "fechaCierre": "2026-08-14T17:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "pc"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "LICITACION PÚBLICA N° 11/2026 SERVICIO DE RECEPCIÓN Y DISPOSICIÓN FINAL DE ESCOMBROS CALCINADOS PROVENIENTES DE INCENDIOS EN LA COMUNA DE PUERTO MONTT, DIMAO",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-04T14:31:44.6"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T17:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (2324-97-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2324-97-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Vertedero de basuras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Global"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2324-97-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 27840000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 27840000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "2324-97-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "pc"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1049-53-LE26",
-    "codigo": "1049-53-LE26",
-    "officialCode": "1049-53-LE26",
-    "id_compra_agil": "1049-53-LE26",
-    "id_proceso": "1049-53-LE26",
-    "id_cotizacion": "1049-53-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.310.000-8",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "MONITOREO DE BIODIVERSIDAD BENTÓNICA MARINA",
-    "organismo": "INSTITUTO DE FOMENTO PESQUERO",
-    "organismoRut": "61.310.000-8",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Valparaíso ",
-    "monto": 31000000,
-    "amount": 31000000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-02T13:20:54.513",
-    "fechaCierre": "2026-07-13T15:30:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "monitor"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Req 53402 CC P-585021 CT ELIANA VELASCO levantamiento de datos de biodiversidad bentónica marina debe incluir el monitoreo de comunidades macrobentónicas en el intermareal y submareal, monitoreo de especies estructuradoras de hábitat algas pardas tanto en el intermareal como submareal rocoso; y monitoreo ambiental a través de la instalación, mantención y descarga de datos de temperatura",
-    "estado": "Revocada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-02T13:20:54.513"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-13T15:30:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1049-53-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1049-53-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Evaluación de recursos pesqueros",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1049-53-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 31000000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 31000000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1049-53-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "monitor"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1075963-176-LP26",
-    "codigo": "1075963-176-LP26",
-    "officialCode": "1075963-176-LP26",
-    "id_compra_agil": "1075963-176-LP26",
-    "id_proceso": "1075963-176-LP26",
-    "id_cotizacion": "1075963-176-LP26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.606.001-5",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "titulo": "CONVENIO DE SUMINISTROS DE SILLAS DE RUEDAS ESTANDAR Y XXL PARA LA UNIDAD DE DISCAPACIDAD",
-    "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
-    "organismoRut": "61.606.001-5",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Mobiliario y Equipamiento de Oficina",
-    "region": "Región de Arica y Parinacota",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-05-14T11:16:29.763",
-    "fechaCierre": "2026-06-03T19:56:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "silla"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "convenio de suministros por 36 meses para discapacidad-",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-05-14T11:16:29.763"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-06-03T19:56:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1075963-176-LP26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-176-LP26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Sillas de ruedas",
-        "cantidad": 1400.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Sillas de ruedas",
-        "cantidad": 8.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "V-MOCCS",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-176-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1075963-176-LP26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "vmoccs",
-      "empresaAsociada": "V-MOCCS",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "silla"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1511-46-LE26",
-    "codigo": "1511-46-LE26",
-    "officialCode": "1511-46-LE26",
-    "id_compra_agil": "1511-46-LE26",
-    "id_proceso": "1511-46-LE26",
-    "id_cotizacion": "1511-46-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.606.911-k",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "SERVICIO DE ARRIENDO DE COMPUTADORES TIPO AIO",
-    "organismo": "Hospital de Constitución",
-    "organismoRut": "61.606.911-k",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región del Maule ",
-    "monto": 43054200,
-    "amount": 43054200,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-05T10:02:00",
-    "fechaCierre": "2026-08-11T15:01:00",
-    "matchScore": 70,
-    "matchKeywords": [
-      "computador",
-      "computadores"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "SERVICIO DE ARRIENDO DE COMPUTADORES TIPO AIO",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-05T10:02:00"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-11T15:01:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1511-46-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1511-46-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Computadores de escritorio",
-        "cantidad": 24.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Mes"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1511-46-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 43054200,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 43054200,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1511-46-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 70,
-      "keywordsCoincidentes": [
-        "computador",
-        "computadores"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1543-3-LE26",
-    "codigo": "1543-3-LE26",
-    "officialCode": "1543-3-LE26",
-    "id_compra_agil": "1543-3-LE26",
-    "id_proceso": "1543-3-LE26",
-    "id_cotizacion": "1543-3-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "60.902.071-7",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "CATERING PARA DISTINTAS JORNADAS",
-    "organismo": "SUBSECRETARIA DEL MINISTERIO DE EDUCACION PUBLICA",
-    "organismoRut": "60.902.071-7",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Valparaíso ",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-07T15:36:00",
-    "fechaCierre": "2026-08-13T09:00:00",
-    "matchScore": 70,
-    "matchKeywords": [
-      "tinta",
-      "tintas"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "CONTRATAR “SERVICIO DE ALIMENTACIÓN TIPO CATERING PARA DISTINTAS JORNADAS, PARA DOCENTES, Y PROFESIONALES DE ESTABLECIMIENTOS EDUCACIÓNALES DE LA JURISDICCIÓN DEL DEPARTAMENTO PROVINCIAL DE EDUCACIÓN QUILLOTA-PETORCA, DE LA REGIÓN DE VALPARAÍSO",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-07T15:36:00"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-13T09:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1543-3-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1543-3-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Servicios de catering",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1543-3-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1543-3-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 70,
-      "keywordsCoincidentes": [
-        "tinta",
-        "tintas"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1965-12-LE26",
-    "codigo": "1965-12-LE26",
-    "officialCode": "1965-12-LE26",
-    "id_compra_agil": "1965-12-LE26",
-    "id_proceso": "1965-12-LE26",
-    "id_cotizacion": "1965-12-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.004.054-3",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
-    "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
-    "organismoRut": "61.004.054-3",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Tecnología y Hardware",
-    "region": "Región de Magallanes y de la Antártica",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-11T16:18:30.7",
-    "fechaCierre": "2026-08-25T15:00:00",
-    "matchScore": 90,
-    "matchKeywords": [
-      "impresora",
-      "impresoras",
-      "multifuncional",
-      "multifuncionales"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES PARA DIRECCIÓN REGIONAL Y UNIDADES PENALES Y ESPECIALES DE LA REGION DE MAGALLANES",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-11T16:18:30.7"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-25T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1965-12-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1965-12-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Impresoras multifunción o multifuncionales",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1965-12-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1965-12-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 90,
-      "keywordsCoincidentes": [
-        "impresora",
-        "impresoras",
-        "multifuncional",
-        "multifuncionales"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-2992-44-LE26",
-    "codigo": "2992-44-LE26",
-    "officialCode": "2992-44-LE26",
-    "id_compra_agil": "2992-44-LE26",
-    "id_proceso": "2992-44-LE26",
-    "id_cotizacion": "2992-44-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "69.040.800-7",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "servicio de arriendo de fotocopiadoras",
-    "organismo": "I MUNICIPALIDAD DE MONTEPATRIA",
-    "organismoRut": "69.040.800-7",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Coquimbo ",
-    "monto": 15652980,
-    "amount": 15652980,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-14T16:43:59.353",
-    "fechaCierre": "2026-07-23T09:00:00",
-    "matchScore": 80,
-    "matchKeywords": [
-      "fotocopia",
-      "fotocopiadora",
-      "fotocopiadoras"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Servicio de arriendo de fotocopiadoras para esciela Alejandro Chelen Rojas y colegio Cerro Guayaquil",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-14T16:43:59.353"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-23T09:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (2992-44-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2992-44-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Fotocopiadoras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Fotocopiadoras",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2992-44-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 15652980,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 15652980,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "2992-44-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 80,
-      "keywordsCoincidentes": [
-        "fotocopia",
-        "fotocopiadora",
-        "fotocopiadoras"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-3232-37-LE26",
-    "codigo": "3232-37-LE26",
-    "officialCode": "3232-37-LE26",
-    "id_compra_agil": "3232-37-LE26",
-    "id_proceso": "3232-37-LE26",
-    "id_cotizacion": "3232-37-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "69.073.500-8",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "SUSCRIPCIÓN DE SOFTWARE PRIVATIVO SAAS PARA LA GESTIÓN DE ACTIVOS INVENTARIOS Y MANTENIMIENTO DE LA DIRECCIÓN DE OPERACIONES",
-    "organismo": "I MUNICIPALIDAD DE SANTO DOMINGO",
-    "organismoRut": "69.073.500-8",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Valparaíso ",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLF",
-    "fechaPublicacion": "2026-07-15T13:01:28.243",
-    "fechaCierre": "2026-07-27T16:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "pc"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "La Ilustre Municipalidad de Santo Domingo requiere la contratación de un servicio bajo la modalidad de Software como Servicio (SaaS) destinado a la gestión integral de activos, inventarios, planes de mantenimiento y órdenes de trabajo para la Dirección de Operaciones de la Ilustre Municipalidad de Santo Domingo. El servicio contratado debe incluir el licenciamiento de la plataforma por un periodo de 12 meses",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-15T13:01:28.243"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-07-27T16:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (3232-37-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3232-37-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Software de gestión de licencias",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3232-37-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "3232-37-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "pc"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1530393-6-LP26",
-    "codigo": "1530393-6-LP26",
-    "officialCode": "1530393-6-LP26",
-    "id_compra_agil": "1530393-6-LP26",
-    "id_proceso": "1530393-6-LP26",
-    "id_cotizacion": "1530393-6-LP26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.606.917-9",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "titulo": "DISPOSITIVOS MÉDICOS PARA MONITOREO CONTINUO DE GLUCOSA",
-    "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE LINARES",
-    "organismoRut": "61.606.917-9",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región del Maule ",
-    "monto": 84371000,
-    "amount": 84371000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-05-25T16:19:39.8",
-    "fechaCierre": "2026-06-15T15:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "monitor"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "DISPOSITIVOS MÉDICOS PARA MONITOREO CONTINUO DE GLUCOSA según requerimiento MEMO N83 de fecha 12 de mayo del 2026 de Jefe de Abastecimiento Clínico.",
-    "estado": "Adjudicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-05-25T16:19:39.8"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-06-15T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1530393-6-LP26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1530393-6-LP26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Monitores o medidores de glucosa",
-        "cantidad": 2500.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Monitores o medidores de glucosa",
-        "cantidad": 100.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1530393-6-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 84371000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 84371000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "1530393-6-LP26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "monitor"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-4469-152-E226",
-    "codigo": "4469-152-E226",
-    "officialCode": "4469-152-E226",
-    "id_compra_agil": "4469-152-E226",
-    "id_proceso": "4469-152-E226",
-    "id_cotizacion": "4469-152-E226",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "70.754.700-6",
-    "tipoOficial": "E2",
-    "tipoNombre": "Convenio de Suministro",
-    "titulo": "SC39797 PÇ ADQ. RELOJ DEPORTIVO Y OTROS UPA22991",
-    "organismo": "UNIVERSIDAD DE PLAYA ANCHA DE CIENCIAS DE LA EDUCACION",
-    "organismoRut": "70.754.700-6",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Valparaíso ",
-    "monto": 668923,
-    "amount": 668923,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-06T16:13:57.223",
-    "fechaCierre": "2026-08-14T15:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "pc"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "S.C. N° 39797 P.C ADQUISICIÓN DE RELOJ DEPORTIVO DEPORTIVO Y OTROS PARA CS. DE LA ACTIVIDAD FÍSICA ; PROYECTO UPA 22991 DGINVESTIGACION.\r\nART. 38 SEGÚN LEY 21094 DE UNIVERSIDADES ESTATALES",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-06T16:13:57.223"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (4469-152-E226)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4469-152-E226"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Tienda de deporte",
-        "cantidad": 2.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      },
-      {
-        "sku": "SKU-2",
-        "producto": "Tienda de deporte",
-        "cantidad": 2.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4469-152-E226",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 668923,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 668923,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "4469-152-E226",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "pc"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-519302-2-LE26",
-    "codigo": "519302-2-LE26",
-    "officialCode": "519302-2-LE26",
-    "id_compra_agil": "519302-2-LE26",
-    "id_proceso": "519302-2-LE26",
-    "id_cotizacion": "519302-2-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "65.999.669-3",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "SUSCRIPCIÓN A UNA PLATAFORMA PARA LA COMPARACIÓN D",
-    "organismo": "INSTITUTO NACIONAL DE PROPIEDAD INDUSTRIAL",
-    "organismoRut": "65.999.669-3",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 15200000,
-    "amount": 15200000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-04-24T16:51:00",
-    "fechaCierre": "2026-05-11T16:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "pc"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "El Instituto Nacional de Propiedad Industrial, requiere contratar el servicio de  acceso a un software que permita realizar reconocimiento visual y conceptual de marcas comerciales que cuenten con representación gráfica a través de una plataforma web en la que sea posible hacer búsquedas de imágenes de la base de datos de INAPI, las compare entre sí, y arroje resultados ordenados de mayor a menor similitud, de forma rápida y que además sea simple de usar.",
-    "estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-04-24T16:51:00"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-05-11T16:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (519302-2-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=519302-2-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Software de clasificación o categorización",
-        "cantidad": 12.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Mes"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=519302-2-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 15200000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 15200000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "519302-2-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "pc"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-1426039-8-LE26",
-    "codigo": "1426039-8-LE26",
-    "officialCode": "1426039-8-LE26",
-    "id_compra_agil": "1426039-8-LE26",
-    "id_proceso": "1426039-8-LE26",
-    "id_cotizacion": "1426039-8-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "70.941.900-5",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "Adquisición de mobiliario Salas Cunas y Jardines",
-    "organismo": "Corporación Municipal de Desarrollo Social de Colina",
-    "organismoRut": "70.941.900-5",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Mobiliario y Equipamiento de Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-31T12:58:00",
-    "fechaCierre": "2026-08-14T15:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "mobiliario"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "La presente licitación tiene por objetivo la adquisición de mobiliario para las salas cunas y jardines infantiles dependientes de la Dirección de Educación de la Corporación Municipal de Desarrollo Social de Colina, con el propósito de dotar a los establecimientos de equipamiento adecuado, seguro, funcional y de calidad, que contribuya al óptimo desarrollo de las actividades pedagógicas y al fortalecimiento de los espacios destinados a la atención integral de los niños y niñas.\r\n\r\nAsimismo, se busca garantizar que el mobiliario cumpla con las especificaciones técnicas, condiciones de seguridad, resistencia y durabilidad requeridas para establecimientos de educación parvularia, favoreciendo ambientes educativos organizados, confortables y acordes con la normativa vigente.",
-    "estado": "Cerrada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-31T12:58:00"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (1426039-8-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426039-8-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Mobiliario",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad no definida"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "V-MOCCS",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426039-8-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "1426039-8-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "vmoccs",
-      "empresaAsociada": "V-MOCCS",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "mobiliario"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-4803-26-LE26",
-    "codigo": "4803-26-LE26",
-    "officialCode": "4803-26-LE26",
-    "id_compra_agil": "4803-26-LE26",
-    "id_proceso": "4803-26-LE26",
-    "id_cotizacion": "4803-26-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "60.201.000-7",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "ADQUISICIÓN SERVIDOR ALTO RENDIMIENTO EN GPU NUEVO",
-    "organismo": "SENADO DE LA REPUBLICA",
-    "organismoRut": "60.201.000-7",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Valparaíso ",
-    "monto": 55000000,
-    "amount": 55000000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-29T17:44:00",
-    "fechaCierre": "2026-08-14T18:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "servidor"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "ADQUISICIÓN DE UN SERVIDOR DE ALTO RENDIMIENTO EN GPU NUEVO, PARA EL SENADO, EN LA COMUNA DE VALPARAÍSO.",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-29T17:44:00"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T18:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (4803-26-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4803-26-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Servidores",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4803-26-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 55000000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 55000000,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "4803-26-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "servidor"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-621-644-LR26",
-    "codigo": "621-644-LR26",
-    "officialCode": "621-644-LR26",
-    "id_compra_agil": "621-644-LR26",
-    "id_proceso": "621-644-LR26",
-    "id_cotizacion": "621-644-LR26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.608.700-2",
-    "tipoOficial": "LR",
-    "tipoNombre": "Licitación Privada",
-    "titulo": "SISTEMA SEGUIMIE OCULAR CTABLET O NOTEB 1000022903",
-    "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-    "organismoRut": "61.608.700-2",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región Metropolitana de Santiago",
-    "monto": 673174670,
-    "amount": 673174670,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-07-13T12:22:08.07",
-    "fechaCierre": "2026-08-14T16:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "tablet"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "BASES ADMINISTRATIVAS Y TÉCNICAS TIPO, POR LAS QUE SE REGIRÁN LOS PROCESOS DE LICITACIÓN PARA LA ADQUISICIÓN DE PRODUCTOS FARMACÉUTICOS, COSMÉTICOS, VACUNAS, INSUMOS, DISPOSITIVOS, Y/O ALIMENTOS DE USO MÉDICO, DESTINADO AL EJERCICIO DE ACCIONES DE SALUD",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-13T12:22:08.07"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T16:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (621-644-LR26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=621-644-LR26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Microscopios, recodos o aumentadores quirúrgicos o accesorios",
-        "cantidad": 200.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=621-644-LR26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 673174670,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 673174670,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "621-644-LR26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "tablet"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-3588-34-LE26",
-    "codigo": "3588-34-LE26",
-    "officialCode": "3588-34-LE26",
-    "id_compra_agil": "3588-34-LE26",
-    "id_proceso": "3588-34-LE26",
-    "id_cotizacion": "3588-34-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "69.141.500-7",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "IMPLEMENTACIÓN SALA MONITOREO CÁMARAS DE SEGURIDAD",
-    "organismo": "I MUNICIPALIDAD DE YUNGAY",
-    "organismoRut": "69.141.500-7",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región del Ñuble",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-04T10:51:23.127",
-    "fechaCierre": "2026-08-14T13:20:00",
-    "matchScore": 70,
-    "matchKeywords": [
-      "monitor",
-      "cámara"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "fortalecimiento de la seguridad ciudadana de la comuna de Yungay mediante la instalación de un sistema avanzado de central de monitoreo",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-04T10:51:23.127"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T13:20:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (3588-34-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3588-34-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Tecnología audiovisual",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3588-34-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "3588-34-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 70,
-      "keywordsCoincidentes": [
-        "monitor",
-        "cámara"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-744-3-LE26",
-    "codigo": "744-3-LE26",
-    "officialCode": "744-3-LE26",
-    "id_compra_agil": "744-3-LE26",
-    "id_proceso": "744-3-LE26",
-    "id_cotizacion": "744-3-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "60.703.000-6",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "SERVICIO DE MANTENCIÓN DE SISTEMA DE CLIMATIZACIÓN",
-    "organismo": "INSTITUTO NACIONAL DE ESTADISTICAS",
-    "organismoRut": "60.703.000-6",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Valparaíso ",
-    "monto": 0,
-    "amount": null,
-    "amountType": "no_informado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-03T10:50:59.59",
-    "fechaCierre": "2026-08-14T15:00:00",
-    "matchScore": 70,
-    "matchKeywords": [
-      "aire acondicionado",
-      "climatización"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "El Instituto Nacional de Estadísticas, en adelante INE, requiere contratar el Servicio de mantención preventivo y correctivo de 15 Unidades de Aire Acondicionado.",
-    "estado": "Cerrada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-03T10:50:59.59"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (744-3-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=744-3-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=744-3-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 0,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 0,
-    "fuente_monto": "No Encontrado",
-    "id_fuente_monto": "744-3-LE26",
-    "estado_validacion_monto": "MONTO_NO_ENCONTRADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 70,
-      "keywordsCoincidentes": [
-        "aire acondicionado",
-        "climatización"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-3065-52-LE26",
-    "codigo": "3065-52-LE26",
-    "officialCode": "3065-52-LE26",
-    "id_compra_agil": "3065-52-LE26",
-    "id_proceso": "3065-52-LE26",
-    "id_cotizacion": "3065-52-LE26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "61.102.012-0",
-    "tipoOficial": "LE",
-    "tipoNombre": "Licitación Pública >1000 UTM",
-    "titulo": "ADQUIRIR EL SERVICIO DE POSICIONAMIENTO Y MONITOREO DE AERONAVES DE LA AVIACIÓN NAVAL",
-    "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-    "organismoRut": "61.102.012-0",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Artículos de Escritorio y Oficina",
-    "region": "Región de Valparaíso ",
-    "monto": 7242,
-    "amount": 7242,
-    "amountType": "monto_estimado",
-    "currency": "USD",
-    "fechaPublicacion": "2026-07-31T12:13:53.79",
-    "fechaCierre": "2026-08-14T15:00:00",
-    "matchScore": 60,
-    "matchKeywords": [
-      "monitor"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "ADQUISICIÓN DEL SERVICIO DE POSICIONAMIENTO Y MONITOREO DE AERONAVES DE LA AVIACIÓN NAVAL",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-07-31T12:13:53.79"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-14T15:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (3065-52-LE26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3065-52-LE26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "SKU-1",
-        "producto": "Sistemas de seguimiento de aire a tierra",
-        "cantidad": 1.0,
-        "precioUnitario": 0,
-        "unidadMedida": "Unidad Internacional"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_api",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3065-52-LE26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 7242,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 7242,
-    "fuente_monto": "Presupuesto Estimado API",
-    "id_fuente_monto": "3065-52-LE26",
-    "estado_validacion_monto": "VALIDADO",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 60,
-      "keywordsCoincidentes": [
-        "monitor"
-      ],
-      "fuenteDatos": "api"
-    }
-  },
-  {
-    "id": "op-707424-22-LP26",
-    "codigo": "707424-22-LP26",
-    "officialCode": "707424-22-LP26",
-    "id_compra_agil": "707424-22-LP26",
-    "id_proceso": "707424-22-LP26",
-    "id_cotizacion": "707424-22-COT26",
-    "id_orden_compra": null,
-    "codigoOrdenCompra": null,
-    "rutOrganismo": "No informado",
-    "tipoOficial": "LP",
-    "tipoNombre": "Licitación Pública >100 UTM",
-    "titulo": "Fundación Integra requiere adquirir Discos de Estado Sólido (SSD) nuevos y Cargadores para Notebook tipo USB-C.",
-    "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
-    "organismoRut": "No informado",
-    "organismoPagoDias": null,
-    "organismoRiesgo": "Sin evaluar",
-    "rubro": "Tecnología y Hardware",
-    "region": "Región Metropolitana",
-    "monto": 900000,
-    "amount": 900000,
-    "amountType": "monto_estimado",
-    "currency": "CLP",
-    "fechaPublicacion": "2026-08-06T14:31:00",
-    "fechaCierre": "2026-08-11T12:00:00",
-    "matchScore": 80,
-    "matchKeywords": [
-      "notebook",
-      "ssd",
-      "usb"
-    ],
-    "riesgo": "Sin evaluar",
-    "descripcion": "Proceso oficial de contratación pública (Licitación Pública >100 UTM).",
-    "estado": "Publicada",
-    "cronograma": [
-      {
-        "hito": "Publicación",
-        "fecha": "2026-08-06T14:31:00"
-      },
-      {
-        "hito": "Cierre de Ofertas",
-        "fecha": "2026-08-11T12:00:00"
-      }
-    ],
-    "documentos": [
-      {
-        "nombre": "Ver Ficha Oficial en Mercado Público (707424-22-LP26)",
-        "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=707424-22-LP26"
-      }
-    ],
-    "items": [
-      {
-        "sku": "ITEM-1",
-        "producto": "Fundación Integra requiere adquirir Discos de Estado Sólido (SSD) nuevos y Cargadores para Notebook tipo USB-C.",
-        "cantidad": 1,
-        "precioUnitario": 0,
-        "unidadMedida": "UN"
-      }
-    ],
-    "criteriosEvaluacion": [],
-    "preguntas": [],
-    "comentarios": [],
-    "competidoresPropuestos": [],
-    "empresaMatch": "Aminorte",
-    "modalidad": "Licitación",
-    "esInvitacionGrandesCompras": false,
-    "subestadoEvaluacion": "Sin oferta seleccionada",
-    "sourceSystem": "mercadopublico_excel",
-    "sourceType": "licitacion",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=707424-22-LP26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
-    "validationStatus": "confirmado",
-    "monto_original": 900000,
-    "monto_adjudicado": null,
-    "monto_oc": null,
-    "monto_final": 900000,
-    "fuente_monto": "Cotización Mercado Público (Excel)",
-    "id_fuente_monto": "707424-22-COT26",
-    "estado_validacion_monto": "RECUPERADO_DESDE_COTIZACION",
-    "proveedorAdjudicado": null,
-    "rutProveedor": null,
-    "estadoOC": null,
-    "matchMetadata": {
-      "empresaId": "aminorte",
-      "empresaAsociada": "Aminorte",
-      "motivoMatch": "keyword_catalog",
-      "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
-      "nivelConfianza": 80,
-      "keywordsCoincidentes": [
-        "notebook",
-        "ssd",
-        "usb"
-      ],
-      "fuenteDatos": "excel"
     }
   },
   {
@@ -41574,8 +36354,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4608-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7068600,
     "monto_adjudicado": null,
@@ -41592,7 +36372,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "monitor",
@@ -41670,8 +36450,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2378-155-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 7000000,
     "monto_adjudicado": null,
@@ -41688,7 +36468,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -41765,8 +36545,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2408-320-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 6950000,
     "monto_adjudicado": null,
@@ -41783,7 +36563,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -41863,8 +36643,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2923-602-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 6000000,
     "monto_adjudicado": null,
@@ -41881,7 +36661,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tóner",
@@ -41962,8 +36742,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-829-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 6000000,
     "monto_adjudicado": null,
@@ -41980,7 +36760,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "silla",
@@ -42060,8 +36840,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3167-131-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 5600000,
     "monto_adjudicado": null,
@@ -42078,7 +36858,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tóner",
@@ -42157,8 +36937,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1082957-130-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4950000,
     "monto_adjudicado": null,
@@ -42175,7 +36955,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -42255,8 +37035,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1085-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4760000,
     "monto_adjudicado": null,
@@ -42273,7 +37053,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tinta",
@@ -42353,8 +37133,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3637-173-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4600000,
     "monto_adjudicado": null,
@@ -42371,7 +37151,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -42448,8 +37228,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274667-293-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4500000,
     "monto_adjudicado": null,
@@ -42466,7 +37246,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "talonario"
@@ -42544,8 +37324,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3731-116-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4285426,
     "monto_adjudicado": null,
@@ -42562,7 +37342,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de oficina",
@@ -42642,8 +37422,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2934-72-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4050000,
     "monto_adjudicado": null,
@@ -42660,7 +37440,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "impresora",
@@ -42739,8 +37519,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5740-146-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4000000,
     "monto_adjudicado": null,
@@ -42757,7 +37537,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -42834,8 +37614,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=722-85-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4000000,
     "monto_adjudicado": null,
@@ -42852,7 +37632,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -42929,8 +37709,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2923-605-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 4000000,
     "monto_adjudicado": null,
@@ -42947,7 +37727,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -43024,8 +37804,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2460-760-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3882450,
     "monto_adjudicado": null,
@@ -43042,7 +37822,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -43125,8 +37905,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426102-58-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3510000,
     "monto_adjudicado": null,
@@ -43143,7 +37923,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "tóner",
@@ -43227,8 +38007,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3692-225-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3000000,
     "monto_adjudicado": null,
@@ -43245,7 +38025,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -43323,8 +38103,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057539-3332-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3000000,
     "monto_adjudicado": null,
@@ -43341,7 +38121,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -43418,8 +38198,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5153-1540-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 3000000,
     "monto_adjudicado": null,
@@ -43436,7 +38216,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "sobre"
@@ -43513,8 +38293,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2585-965-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2850000,
     "monto_adjudicado": null,
@@ -43531,7 +38311,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de impresión"
@@ -43609,8 +38389,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2322-473-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2800000,
     "monto_adjudicado": null,
@@ -43627,7 +38407,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -43705,8 +38485,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2207-643-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2800000,
     "monto_adjudicado": null,
@@ -43723,7 +38503,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -43801,8 +38581,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3508-557-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2700000,
     "monto_adjudicado": null,
@@ -43819,7 +38599,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -43897,8 +38677,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2294-1621-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2650000,
     "monto_adjudicado": null,
@@ -43915,7 +38695,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "plotter"
@@ -43992,8 +38772,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2270-239-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2629900,
     "monto_adjudicado": null,
@@ -44010,7 +38790,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cuaderno"
@@ -44087,8 +38867,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2389-431-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2500000,
     "monto_adjudicado": null,
@@ -44105,7 +38885,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -44182,8 +38962,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2765-388-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2500000,
     "monto_adjudicado": null,
@@ -44200,7 +38980,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -44277,8 +39057,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2980-385-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2500000,
     "monto_adjudicado": null,
@@ -44295,7 +39075,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -44372,8 +39152,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1965-273-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2500000,
     "monto_adjudicado": null,
@@ -44390,7 +39170,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -44467,8 +39247,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=507428-289-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2500000,
     "monto_adjudicado": null,
@@ -44485,7 +39265,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "silla"
@@ -44562,8 +39342,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-1959-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2400000,
     "monto_adjudicado": null,
@@ -44580,7 +39360,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de oficina"
@@ -44658,8 +39438,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1718-856-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2400000,
     "monto_adjudicado": null,
@@ -44676,7 +39456,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -44754,8 +39534,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=986278-70-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2391900,
     "monto_adjudicado": null,
@@ -44772,7 +39552,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -44851,8 +39631,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3508-558-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2100000,
     "monto_adjudicado": null,
@@ -44869,7 +39649,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tinta",
@@ -44948,8 +39728,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3885-254-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2040000,
     "monto_adjudicado": null,
@@ -44966,7 +39746,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -45048,8 +39828,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3383-42-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2034186,
     "monto_adjudicado": null,
@@ -45066,7 +39846,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 98,
       "keywordsCoincidentes": [
         "tóner",
@@ -45148,8 +39928,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=449-267-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2000000,
     "monto_adjudicado": null,
@@ -45166,7 +39946,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "led"
@@ -45243,8 +40023,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3017-593-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2000000,
     "monto_adjudicado": null,
@@ -45261,7 +40041,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -45339,8 +40119,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3567-305-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2000000,
     "monto_adjudicado": null,
@@ -45357,7 +40137,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -45435,8 +40215,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1175-251-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2000000,
     "monto_adjudicado": null,
@@ -45453,7 +40233,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -45530,8 +40310,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3712-405-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2000000,
     "monto_adjudicado": null,
@@ -45548,7 +40328,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -45625,8 +40405,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3703-316-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2000000,
     "monto_adjudicado": null,
@@ -45643,7 +40423,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -45721,8 +40501,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1035206-118-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 2000000,
     "monto_adjudicado": null,
@@ -45739,7 +40519,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -45817,8 +40597,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2682-233-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1900000,
     "monto_adjudicado": null,
@@ -45835,7 +40615,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de impresión"
@@ -45912,8 +40692,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3017-586-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1892000,
     "monto_adjudicado": null,
@@ -45930,7 +40710,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -46007,8 +40787,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3544-218-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1841000,
     "monto_adjudicado": null,
@@ -46025,7 +40805,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -46102,8 +40882,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1431841-881-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1820000,
     "monto_adjudicado": null,
@@ -46120,7 +40900,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -46197,8 +40977,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2793-712-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1819986,
     "monto_adjudicado": null,
@@ -46215,7 +40995,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -46292,8 +41072,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057543-159-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1800000,
     "monto_adjudicado": null,
@@ -46310,7 +41090,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -46387,8 +41167,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3208-124-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1729603,
     "monto_adjudicado": null,
@@ -46405,7 +41185,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -46482,8 +41262,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5251-721-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1710000,
     "monto_adjudicado": null,
@@ -46500,7 +41280,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -46577,8 +41357,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1432083-1207-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1641450,
     "monto_adjudicado": null,
@@ -46595,7 +41375,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -46675,8 +41455,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3316-117-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1600000,
     "monto_adjudicado": null,
@@ -46693,7 +41473,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tinta",
@@ -46776,8 +41556,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2132-127-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1600000,
     "monto_adjudicado": null,
@@ -46794,7 +41574,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "papelería",
@@ -46877,8 +41657,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1004823-85-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1600000,
     "monto_adjudicado": null,
@@ -46895,7 +41675,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "papelería",
@@ -46978,8 +41758,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3747-238-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1500000,
     "monto_adjudicado": null,
@@ -46996,7 +41776,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tóner",
@@ -47076,8 +41856,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=630424-438-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1500000,
     "monto_adjudicado": null,
@@ -47094,7 +41874,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -47171,8 +41951,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=564953-564-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1500000,
     "monto_adjudicado": null,
@@ -47189,7 +41969,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pizarra"
@@ -47268,8 +42048,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4452-362-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1500000,
     "monto_adjudicado": null,
@@ -47286,7 +42066,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tóner",
@@ -47366,8 +42146,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2440-1256-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1500000,
     "monto_adjudicado": null,
@@ -47384,7 +42164,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -47465,8 +42245,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057415-96-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1500000,
     "monto_adjudicado": null,
@@ -47483,7 +42263,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "librería",
@@ -47563,8 +42343,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=952751-156-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1400000,
     "monto_adjudicado": null,
@@ -47581,7 +42361,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "talonario"
@@ -47658,8 +42438,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3017-579-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1400000,
     "monto_adjudicado": null,
@@ -47676,7 +42456,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -47756,8 +42536,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1069417-714-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1372000,
     "monto_adjudicado": null,
@@ -47774,7 +42554,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tinta",
@@ -47854,8 +42634,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2343-365-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1331817,
     "monto_adjudicado": null,
@@ -47872,7 +42652,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -47949,8 +42729,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4494-450-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1252486,
     "monto_adjudicado": null,
@@ -47967,7 +42747,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de oficina"
@@ -48047,8 +42827,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2733-388-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1220000,
     "monto_adjudicado": null,
@@ -48065,7 +42845,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tóner",
@@ -48145,8 +42925,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3602-83-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1200000,
     "monto_adjudicado": null,
@@ -48163,7 +42943,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -48241,8 +43021,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=889473-1464-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1200000,
     "monto_adjudicado": null,
@@ -48259,7 +43039,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de oficina",
@@ -48338,8 +43118,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2864-226-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1200000,
     "monto_adjudicado": null,
@@ -48356,7 +43136,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -48435,8 +43215,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5416-530-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1150000,
     "monto_adjudicado": null,
@@ -48453,7 +43233,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -48531,8 +43311,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4993-130-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1140000,
     "monto_adjudicado": null,
@@ -48549,7 +43329,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "sobre"
@@ -48626,8 +43406,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3533-285-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1121240,
     "monto_adjudicado": null,
@@ -48644,7 +43424,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -48721,8 +43501,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2422-484-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1092000,
     "monto_adjudicado": null,
@@ -48739,7 +43519,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -48816,8 +43596,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=647431-36-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1050000,
     "monto_adjudicado": null,
@@ -48834,7 +43614,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -48912,8 +43692,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=608-4946-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1000000,
     "monto_adjudicado": null,
@@ -48930,7 +43710,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "cartucho",
@@ -49008,8 +43788,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2446-730-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1000000,
     "monto_adjudicado": null,
@@ -49026,7 +43806,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -49103,8 +43883,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426100-61-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1000000,
     "monto_adjudicado": null,
@@ -49121,7 +43901,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -49198,8 +43978,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1101892-142-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1000000,
     "monto_adjudicado": null,
@@ -49216,7 +43996,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de oficina"
@@ -49293,8 +44073,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2371-284-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1000000,
     "monto_adjudicado": null,
@@ -49311,7 +44091,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -49388,8 +44168,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2385-436-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1000000,
     "monto_adjudicado": null,
@@ -49406,7 +44186,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -49483,8 +44263,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1591-102-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1000000,
     "monto_adjudicado": null,
@@ -49501,7 +44281,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "carpeta"
@@ -49578,8 +44358,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1962-224-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 1000000,
     "monto_adjudicado": null,
@@ -49596,7 +44376,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -49674,8 +44454,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1485-34-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 995000,
     "monto_adjudicado": null,
@@ -49692,7 +44472,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "útiles de oficina",
@@ -49770,8 +44550,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4053-108-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 952000,
     "monto_adjudicado": null,
@@ -49788,7 +44568,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -49866,8 +44646,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2464-1131-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 950000,
     "monto_adjudicado": null,
@@ -49884,7 +44664,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -49965,8 +44745,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=552757-111-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 928154,
     "monto_adjudicado": null,
@@ -49983,7 +44763,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tóner",
@@ -50064,8 +44844,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5416-532-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 922000,
     "monto_adjudicado": null,
@@ -50082,7 +44862,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de oficina",
@@ -50160,8 +44940,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=602-146-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 913418,
     "monto_adjudicado": null,
@@ -50178,7 +44958,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -50256,8 +45036,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1061-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 900000,
     "monto_adjudicado": null,
@@ -50274,7 +45054,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "escritorio",
@@ -50354,8 +45134,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=707424-22-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 900000,
     "monto_adjudicado": null,
@@ -50372,7 +45152,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "notebook",
@@ -50451,8 +45231,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=377-294-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 867000,
     "monto_adjudicado": null,
@@ -50469,7 +45249,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "plotter"
@@ -50549,8 +45329,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=974550-5-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 830000,
     "monto_adjudicado": null,
@@ -50567,7 +45347,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tóner",
@@ -50649,8 +45429,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2585-964-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 828700,
     "monto_adjudicado": null,
@@ -50667,7 +45447,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tóner",
@@ -50746,8 +45526,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079454-507-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 802239,
     "monto_adjudicado": null,
@@ -50764,7 +45544,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -50842,8 +45622,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1230750-171-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 800000,
     "monto_adjudicado": null,
@@ -50860,7 +45640,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -50941,8 +45721,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2940-111-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 800000,
     "monto_adjudicado": null,
@@ -50959,7 +45739,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "librería",
@@ -51039,8 +45819,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2281-1427-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 800000,
     "monto_adjudicado": null,
@@ -51057,7 +45837,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pizarra"
@@ -51137,8 +45917,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2292-592-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 800000,
     "monto_adjudicado": null,
@@ -51155,7 +45935,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "resma",
@@ -51236,8 +46016,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2408-322-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 800000,
     "monto_adjudicado": null,
@@ -51254,7 +46034,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -51333,8 +46113,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3178-782-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 800000,
     "monto_adjudicado": null,
@@ -51351,7 +46131,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -51430,8 +46210,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=617807-1953-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 789327,
     "monto_adjudicado": null,
@@ -51448,7 +46228,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -51526,8 +46306,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2710-336-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 770477,
     "monto_adjudicado": null,
@@ -51544,7 +46324,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "libreta"
@@ -51621,8 +46401,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=662456-1-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 750000,
     "monto_adjudicado": null,
@@ -51639,7 +46419,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -51716,8 +46496,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1673-224-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 733000,
     "monto_adjudicado": null,
@@ -51734,7 +46514,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -51811,8 +46591,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4050-641-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 730000,
     "monto_adjudicado": null,
@@ -51829,7 +46609,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -51906,8 +46686,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3938-229-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 714000,
     "monto_adjudicado": null,
@@ -51924,7 +46704,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "talonario"
@@ -52002,8 +46782,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5956-83-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 700000,
     "monto_adjudicado": null,
@@ -52020,7 +46800,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -52099,8 +46879,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2422-487-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 700000,
     "monto_adjudicado": null,
@@ -52117,7 +46897,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -52195,8 +46975,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057468-67-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 700000,
     "monto_adjudicado": null,
@@ -52213,7 +46993,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -52290,8 +47070,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5742-72-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 700000,
     "monto_adjudicado": null,
@@ -52308,7 +47088,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mueble"
@@ -52385,8 +47165,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4777-588-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 700000,
     "monto_adjudicado": null,
@@ -52403,7 +47183,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -52480,8 +47260,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2393-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 648000,
     "monto_adjudicado": null,
@@ -52498,7 +47278,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pizarra"
@@ -52575,8 +47355,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3944-108-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 641502,
     "monto_adjudicado": null,
@@ -52593,7 +47373,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "led"
@@ -52671,8 +47451,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2762-493-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 630000,
     "monto_adjudicado": null,
@@ -52689,7 +47469,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "pc",
@@ -52767,8 +47547,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4170-196-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 626506,
     "monto_adjudicado": null,
@@ -52785,7 +47565,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "talonario"
@@ -52862,8 +47642,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1260453-1-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 624900,
     "monto_adjudicado": null,
@@ -52880,7 +47660,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -52957,8 +47737,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-1970-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 620000,
     "monto_adjudicado": null,
@@ -52975,7 +47755,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "resma"
@@ -53053,8 +47833,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2062-66-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 602000,
     "monto_adjudicado": null,
@@ -53071,7 +47851,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -53149,8 +47929,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2703-166-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 600000,
     "monto_adjudicado": null,
@@ -53167,7 +47947,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "archivador"
@@ -53244,8 +48024,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2328-864-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 600000,
     "monto_adjudicado": null,
@@ -53262,7 +48042,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -53340,8 +48120,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3926-174-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 594485,
     "monto_adjudicado": null,
@@ -53358,7 +48138,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -53436,8 +48216,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079576-65-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 582000,
     "monto_adjudicado": null,
@@ -53454,7 +48234,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -53531,8 +48311,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2701-515-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 560000,
     "monto_adjudicado": null,
@@ -53549,7 +48329,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "mobiliario"
@@ -53627,8 +48407,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1026727-296-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 550000,
     "monto_adjudicado": null,
@@ -53645,7 +48425,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -53726,8 +48506,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2432-594-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 540000,
     "monto_adjudicado": null,
@@ -53744,7 +48524,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "tinta",
@@ -53825,8 +48605,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-910-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 534000,
     "monto_adjudicado": null,
@@ -53843,7 +48623,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de oficina",
@@ -53922,8 +48702,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2401-677-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 514080,
     "monto_adjudicado": null,
@@ -53940,7 +48720,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "esmalte al agua",
@@ -54018,8 +48798,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=654-191-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 510000,
     "monto_adjudicado": null,
@@ -54036,7 +48816,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "plotter"
@@ -54113,8 +48893,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3082-119-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 506000,
     "monto_adjudicado": null,
@@ -54131,7 +48911,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de oficina"
@@ -54208,8 +48988,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3082-118-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54226,7 +49006,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de oficina"
@@ -54305,8 +49085,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2138-256-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54323,7 +49103,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tinta",
@@ -54403,8 +49183,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3013-520-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54421,7 +49201,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -54499,8 +49279,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=643-172-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54517,7 +49297,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "talonario"
@@ -54594,8 +49374,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4834-82-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54612,7 +49392,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -54689,8 +49469,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057514-108-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54707,7 +49487,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -54785,8 +49565,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3508-552-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54803,7 +49583,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -54881,8 +49661,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=900-402-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54899,7 +49679,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -54976,8 +49756,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3938-226-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 500000,
     "monto_adjudicado": null,
@@ -54994,7 +49774,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de oficina"
@@ -55071,8 +49851,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1040758-153-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 499990,
     "monto_adjudicado": null,
@@ -55089,7 +49869,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -55166,8 +49946,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3869-592-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 490000,
     "monto_adjudicado": null,
@@ -55184,7 +49964,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -55261,8 +50041,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=699360-41-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 450000,
     "monto_adjudicado": null,
@@ -55279,7 +50059,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "carpeta"
@@ -55356,8 +50136,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2495-403-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 450000,
     "monto_adjudicado": null,
@@ -55374,7 +50154,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -55452,8 +50232,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3899-52-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 450000,
     "monto_adjudicado": null,
@@ -55470,7 +50250,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "proyector",
@@ -55549,8 +50329,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3821-229-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 450000,
     "monto_adjudicado": null,
@@ -55567,7 +50347,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -55645,8 +50425,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3508-556-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 450000,
     "monto_adjudicado": null,
@@ -55663,7 +50443,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ampolleta"
@@ -55740,8 +50520,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4197-195-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 409710,
     "monto_adjudicado": null,
@@ -55758,7 +50538,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -55835,8 +50615,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5504-246-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 400000,
     "monto_adjudicado": null,
@@ -55853,7 +50633,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "carpeta"
@@ -55930,8 +50710,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1643-794-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 400000,
     "monto_adjudicado": null,
@@ -55948,7 +50728,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "led"
@@ -56025,8 +50805,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-523-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 400000,
     "monto_adjudicado": null,
@@ -56043,7 +50823,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "carpeta"
@@ -56120,8 +50900,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=727-32-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 400000,
     "monto_adjudicado": null,
@@ -56138,7 +50918,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "tambor"
@@ -56215,8 +50995,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057486-117-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 400000,
     "monto_adjudicado": null,
@@ -56233,7 +51013,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -56310,8 +51090,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1622-547-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 400000,
     "monto_adjudicado": null,
@@ -56328,7 +51108,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -56405,8 +51185,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057501-2598-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 400000,
     "monto_adjudicado": null,
@@ -56423,7 +51203,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -56502,8 +51282,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2862-102-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 397000,
     "monto_adjudicado": null,
@@ -56520,7 +51300,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tinta",
@@ -56600,8 +51380,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1525570-30-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 370000,
     "monto_adjudicado": null,
@@ -56618,7 +51398,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de escritorio",
@@ -56698,8 +51478,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2078-335-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 366520,
     "monto_adjudicado": null,
@@ -56716,7 +51496,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tinta",
@@ -56795,8 +51575,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1736-462-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 359300,
     "monto_adjudicado": null,
@@ -56813,7 +51593,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de escritorio"
@@ -56890,8 +51670,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4197-196-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 349500,
     "monto_adjudicado": null,
@@ -56908,7 +51688,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de escritorio"
@@ -56988,8 +51768,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2727-467-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 340000,
     "monto_adjudicado": null,
@@ -57006,7 +51786,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 90,
       "keywordsCoincidentes": [
         "librería",
@@ -57087,8 +51867,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4519-236-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 300000,
     "monto_adjudicado": null,
@@ -57105,7 +51885,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de oficina",
@@ -57183,8 +51963,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=630424-439-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 300000,
     "monto_adjudicado": null,
@@ -57201,7 +51981,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -57280,8 +52060,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5615-595-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 300000,
     "monto_adjudicado": null,
@@ -57298,7 +52078,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tinta",
@@ -57379,8 +52159,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=411-259-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 300000,
     "monto_adjudicado": null,
@@ -57397,7 +52177,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tinta",
@@ -57478,8 +52258,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1195-428-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 300000,
     "monto_adjudicado": null,
@@ -57496,7 +52276,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tinta",
@@ -57576,8 +52356,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4355-775-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 300000,
     "monto_adjudicado": null,
@@ -57594,7 +52374,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -57673,8 +52453,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=900-403-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 300000,
     "monto_adjudicado": null,
@@ -57691,7 +52471,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -57770,8 +52550,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4548-445-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 299798,
     "monto_adjudicado": null,
@@ -57788,7 +52568,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -57868,8 +52648,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2674-647-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 284168,
     "monto_adjudicado": null,
@@ -57886,7 +52666,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "corchetera",
@@ -57966,8 +52746,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1138054-97-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 283000,
     "monto_adjudicado": null,
@@ -57984,7 +52764,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de escritorio",
@@ -58063,8 +52843,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=732868-19-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 270000,
     "monto_adjudicado": null,
@@ -58081,7 +52861,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de oficina",
@@ -58159,8 +52939,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3780-166-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 261345,
     "monto_adjudicado": null,
@@ -58177,7 +52957,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -58254,8 +53034,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4454-566-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 260000,
     "monto_adjudicado": null,
@@ -58272,7 +53052,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -58350,8 +53130,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=968695-120-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 250000,
     "monto_adjudicado": null,
@@ -58368,7 +53148,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -58446,8 +53226,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-919-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 250000,
     "monto_adjudicado": null,
@@ -58464,7 +53244,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cámara"
@@ -58541,8 +53321,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2067-201-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 250000,
     "monto_adjudicado": null,
@@ -58559,7 +53339,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -58637,8 +53417,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1914-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 223574,
     "monto_adjudicado": null,
@@ -58655,7 +53435,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -58734,8 +53514,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=387-369-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 220000,
     "monto_adjudicado": null,
@@ -58752,7 +53532,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "pendrive",
@@ -58831,8 +53611,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=889-26-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 210000,
     "monto_adjudicado": null,
@@ -58849,7 +53629,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "papelería",
@@ -58928,8 +53708,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=449-269-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -58946,7 +53726,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "cámara",
@@ -59024,8 +53804,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3355-268-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -59042,7 +53822,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -59120,8 +53900,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4158-147-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -59138,7 +53918,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "kardex",
@@ -59216,8 +53996,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3665-494-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -59234,7 +54014,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -59311,8 +54091,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4968-527-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -59329,7 +54109,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ampolleta"
@@ -59406,8 +54186,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2186-283-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -59424,7 +54204,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "cajonera"
@@ -59501,8 +54281,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2658-958-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -59519,7 +54299,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "destacador"
@@ -59596,8 +54376,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2186-281-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -59614,7 +54394,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -59691,8 +54471,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3636-166-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 200000,
     "monto_adjudicado": null,
@@ -59709,7 +54489,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de escritorio"
@@ -59788,8 +54568,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=881-108-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 190000,
     "monto_adjudicado": null,
@@ -59806,7 +54586,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "tóner",
@@ -59886,8 +54666,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-1967-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 180000,
     "monto_adjudicado": null,
@@ -59904,7 +54684,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tóner",
@@ -59982,8 +54762,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079866-251-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 179600,
     "monto_adjudicado": null,
@@ -60000,7 +54780,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "archivador"
@@ -60078,8 +54858,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5955-358-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 173106,
     "monto_adjudicado": null,
@@ -60096,7 +54876,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "librería",
@@ -60174,8 +54954,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-833-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 173000,
     "monto_adjudicado": null,
@@ -60192,7 +54972,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -60269,8 +55049,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4881-18-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 172149,
     "monto_adjudicado": null,
@@ -60287,7 +55067,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -60365,8 +55145,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079576-66-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 169990,
     "monto_adjudicado": null,
@@ -60383,7 +55163,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tambor",
@@ -60463,8 +55243,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1729-310-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 150409,
     "monto_adjudicado": null,
@@ -60481,7 +55261,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "resma",
@@ -60560,8 +55340,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2424-1365-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 150000,
     "monto_adjudicado": null,
@@ -60578,7 +55358,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "notebook"
@@ -60655,8 +55435,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3866-83-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 150000,
     "monto_adjudicado": null,
@@ -60673,7 +55453,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -60750,8 +55530,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=732425-15-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 150000,
     "monto_adjudicado": null,
@@ -60768,7 +55548,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -60845,8 +55625,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1430710-311-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 150000,
     "monto_adjudicado": null,
@@ -60863,7 +55643,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "ups"
@@ -60940,8 +55720,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5153-1548-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 150000,
     "monto_adjudicado": null,
@@ -60958,7 +55738,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "talonario"
@@ -61036,8 +55816,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1782-14-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 150000,
     "monto_adjudicado": null,
@@ -61054,7 +55834,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "notebook",
@@ -61132,8 +55912,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079967-545-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 134699,
     "monto_adjudicado": null,
@@ -61150,7 +55930,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -61227,8 +56007,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=699100-8-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 130000,
     "monto_adjudicado": null,
@@ -61245,7 +56025,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -61323,8 +56103,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1463-277-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 128000,
     "monto_adjudicado": null,
@@ -61341,7 +56121,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -61420,8 +56200,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1918-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 126500,
     "monto_adjudicado": null,
@@ -61438,7 +56218,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "artículos de escritorio",
@@ -61517,8 +56297,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5504-245-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 120000,
     "monto_adjudicado": null,
@@ -61535,7 +56315,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "bolígrafo",
@@ -61613,8 +56393,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-165-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 119676,
     "monto_adjudicado": null,
@@ -61631,7 +56411,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -61708,8 +56488,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2701-510-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 105000,
     "monto_adjudicado": null,
@@ -61726,7 +56506,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -61804,8 +56584,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2062-65-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 105000,
     "monto_adjudicado": null,
@@ -61822,7 +56602,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -61900,8 +56680,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058339-435-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 100000,
     "monto_adjudicado": null,
@@ -61918,7 +56698,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -61995,8 +56775,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3651-188-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 100000,
     "monto_adjudicado": null,
@@ -62013,7 +56793,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -62090,8 +56870,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1298357-185-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 100000,
     "monto_adjudicado": null,
@@ -62108,7 +56888,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "impresora"
@@ -62185,8 +56965,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-774-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 100000,
     "monto_adjudicado": null,
@@ -62203,7 +56983,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "perforadora"
@@ -62280,8 +57060,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1671-142-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 100000,
     "monto_adjudicado": null,
@@ -62298,7 +57078,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "notebook"
@@ -62376,8 +57156,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2658-957-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 100000,
     "monto_adjudicado": null,
@@ -62394,7 +57174,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "carpeta",
@@ -62474,8 +57254,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=686619-7-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 100000,
     "monto_adjudicado": null,
@@ -62492,7 +57272,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 80,
       "keywordsCoincidentes": [
         "computador",
@@ -62572,8 +57352,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5702-250-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 99100,
     "monto_adjudicado": null,
@@ -62590,7 +57370,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "útiles de oficina",
@@ -62668,8 +57448,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1450521-82-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 85800,
     "monto_adjudicado": null,
@@ -62686,7 +57466,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -62763,8 +57543,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5178-4149-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 84000,
     "monto_adjudicado": null,
@@ -62781,7 +57561,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "escritorio"
@@ -62858,8 +57638,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=799512-1069-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 70000,
     "monto_adjudicado": null,
@@ -62876,7 +57656,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pintura"
@@ -62954,8 +57734,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4247-485-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 60000,
     "monto_adjudicado": null,
@@ -62972,7 +57752,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "tinta",
@@ -63050,8 +57830,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2727-466-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 40000,
     "monto_adjudicado": null,
@@ -63068,7 +57848,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "insumos de oficina"
@@ -63145,8 +57925,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=623339-52-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 39876,
     "monto_adjudicado": null,
@@ -63163,7 +57943,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "materiales de oficina"
@@ -63240,8 +58020,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1209-226-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 37937,
     "monto_adjudicado": null,
@@ -63258,7 +58038,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pc"
@@ -63335,8 +58115,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=875646-1830-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 30000,
     "monto_adjudicado": null,
@@ -63353,7 +58133,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "V-MOCCS",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "pizarra"
@@ -63430,8 +58210,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5178-4154-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 27500,
     "monto_adjudicado": null,
@@ -63448,7 +58228,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 60,
       "keywordsCoincidentes": [
         "encuadernación"
@@ -63526,8 +58306,8 @@ const rawOportunidades: any = [
     "sourceSystem": "mercadopublico_excel",
     "sourceType": "compra_agil",
     "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4197-194-COT26",
-    "fetchedAt": "2026-08-15T02:35:20.924289+00:00",
-    "lastVerifiedAt": "2026-08-15T02:35:20.924289+00:00",
+    "fetchedAt": "2026-08-15T12:42:27.799036+00:00",
+    "lastVerifiedAt": "2026-08-15T12:42:27.799036+00:00",
     "validationStatus": "confirmado",
     "monto_original": 240,
     "monto_adjudicado": null,
@@ -63544,7 +58324,7 @@ const rawOportunidades: any = [
       "empresaAsociada": "Aminorte",
       "motivoMatch": "keyword_catalog",
       "campoMatch": "titulo_descripcion",
-      "fechaDeteccion": "2026-08-14",
+      "fechaDeteccion": "2026-08-15",
       "nivelConfianza": 70,
       "keywordsCoincidentes": [
         "impresora",
@@ -63566,12 +58346,12 @@ export const mockMiembrosEquipo: MiembroEquipo[] = [
 
 export const mockNotificaciones: Notificacion[] = [
   {
-    id: "notif-sync-20260814",
+    id: "notif-sync-20260815",
     leida: false,
     tipo: "info",
-    fecha: "2026-08-14",
+    fecha: "2026-08-15",
     titulo: "Sincronización Mercado Público Completada",
-    descripcion: "Sincronizadas 591 oportunidades (232 Compras Ágiles validadas con presupuesto)."
+    descripcion: "Sincronizadas 552 oportunidades (232 Compras Ágiles validadas con presupuesto)."
   }
 ];
 
