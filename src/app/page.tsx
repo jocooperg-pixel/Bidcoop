@@ -386,7 +386,7 @@ export default function Home() {
   // real de esa sincronización para mostrarlo en pantalla — no se vuelve a construir
   // ni a inventar ninguna oportunidad en el navegador.
   useEffect(() => {
-    handleCheckSyncStatus();
+    handleCheckSyncStatus(true);
   }, []);
 
   const toggleDarkMode = (dark: boolean) => {
