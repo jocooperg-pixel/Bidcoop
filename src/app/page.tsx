@@ -13,6 +13,7 @@ import BuyersModule from './components/BuyersModule';
 import AssistantWidget from './components/AssistantWidget';
 import ReportsNotificationsModule from './components/ReportsNotificationsModule';
 import UsersModule from './components/UsersModule';
+import TasksModule from './components/TasksModule';
 import LoginScreen from './components/LoginScreen';
 
 import { Oportunidad, Postulacion, Notificacion, VistaGuardada, Empresa } from './types';
@@ -874,6 +875,10 @@ export default function Home() {
 
           {activeModule === 'usuarios' && (
             <UsersModule currentUser={currentUser} currentUserId={currentUser.id} />
+          )}
+
+          {activeModule === 'tareas' && (
+            <TasksModule />
           )}
         </main>
       </div>
