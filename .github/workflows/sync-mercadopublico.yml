@@ -1,6 +1,6 @@
 name: BidCoop — Sync Automático Mercado Público
 
-# Único motor de datos del proyecto: scripts/sync_mercadopublico.py (BidCoop v7.5).
+# Único motor de datos del proyecto: scripts/sync_mercadopublico.py (BidCoop v7.6).
 # Este workflow NO contiene lógica propia de sincronización — solo instala
 # dependencias y ejecuta ese script, que es el mismo que se corre localmente.
 # Nunca se debe reintroducir aquí un motor de datos paralelo (ver historial:
@@ -35,10 +35,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Instalar dependencias
-        run: pip install pandas openpyxl
-
-      - name: Sincronizar con API Mercado Público (motor v7.5)
+      - name: Sincronizar con API Mercado Público (motor v7.6)
+        env:
+          MERCADOPUBLICO_TICKET: ${{ secrets.MERCADOPUBLICO_TICKET }}
+          MERCADOPUBLICO_COMPRAAGIL_TICKET: ${{ secrets.MERCADOPUBLICO_COMPRAAGIL_TICKET }}
         run: python3 scripts/sync_mercadopublico.py
 
       - name: Commit y Push cambios
@@ -46,7 +46,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "BidCoop Auto-Sync"
           git add src/app/mockData.ts data/sync_meta.json data/sync_diagnostics.json data/detail_cache.json data/mockData.ts.backup
-          git diff --cached --quiet || git commit -m "sync: Auto $(date '+%Y-%m-%d %H:%M UTC') — API Mercado Público (BidCoop v7.5)"
+          git diff --cached --quiet || git commit -m "sync: Auto $(date '+%Y-%m-%d %H:%M UTC') — API Mercado Público (BidCoop v7.6)"
           git push
 
       # El push a main dispara automáticamente el redeploy en Vercel vía la

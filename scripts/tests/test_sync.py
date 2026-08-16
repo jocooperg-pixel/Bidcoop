@@ -307,10 +307,10 @@ if os.path.isfile(META_FILE):
         meta = json.load(f)
     sync_date = meta.get("ultimaSincronizacionExitosa", "")
     version = meta.get("syncVersion", "")
-    if version in ("7.0", "7.5"):
+    if version in ("7.0", "7.5", "7.6"):
         ok(f"sync_meta.json versión v{version}, última sync: {sync_date[:19]}")
     else:
-        warn(f"sync_meta.json versión {version} (esperado: 7.5)")
+        warn(f"sync_meta.json versión {version} (esperado: 7.6)")
     if meta.get("exitosa"):
         ok(f"Última sincronización reportada como exitosa")
     else:

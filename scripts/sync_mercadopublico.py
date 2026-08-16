@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
-BidCoop v7.5 — Motor Maestro de Sincronización y Reconciliación con Trazabilidad Completa
+BidCoop v7.6 — Motor Maestro de Sincronización y Reconciliación con Trazabilidad Completa
 =======================================================================================
-Implementa las 19 reglas estrictas de cruce y reconciliación de Compras Ágiles:
-  - Cruce jerárquico obligatorio (OC > Adjudicación > Adjudicación Ítems > Cotización Excel > Presupuesto API).
+Implementa las reglas estrictas de cruce y reconciliación de Compras Ágiles:
+  - Licitaciones (LP/LE/L1/CO/CM/...) vía API pública v1 de Mercado Público.
+  - Compras Ágiles (-COT##) vía API oficial v2 de Compra Ágil
+    (https://api2.mercadopublico.cl/v2/compra-agil) — la API v1 de licitaciones
+    NUNCA soportó Compra Ágil (confirmado públicamente por ChileCompra), por lo
+    que antes de v7.6 la única fuente era un Excel manual (Cotizaciones.xls),
+    reemplazado por completo con esta API real.
   - Trazabilidad completa por registro (monto_original, monto_adjudicado, monto_oc, monto_final, fuente_monto, estado_validacion_monto).
   - Estado explícito MONTO_NO_ENCONTRADO (nunca confundido con $0 real).
-  - Deduplicación y exclusión de OCs canceladas/anuladas.
-  - Ingesta completa de data/Cotizaciones.xls (427 Compras Ágiles reales).
-  - Registro de los 19 identificadores principales (rutOrganismo, proveedorAdjudicado, rutProveedor, etc.).
+  - Registro de los identificadores principales (rutOrganismo, proveedorAdjudicado, rutProveedor, etc.).
   - Auditoría automática en terminal y sync_meta.json.
 """
 
@@ -63,10 +66,18 @@ EMPRESAS_CONFIG = os.path.join(PROJECT_PATH, "config/empresas.json")
 BACKUP_FILE = os.path.join(PROJECT_PATH, "data/mockData.ts.backup")
 DETAIL_CACHE_FILE = os.path.join(PROJECT_PATH, "data/detail_cache.json")
 DIAGNOSTICS_FILE = os.path.join(PROJECT_PATH, "data/sync_diagnostics.json")
-COTIZACIONES_EXCEL = os.path.join(PROJECT_PATH, "data/Cotizaciones.xls")
 
 TICKET = os.environ.get("MERCADOPUBLICO_TICKET", "F8537A18-6766-4DEF-9E59-426B4FEE2844")
 BASE_URL = "https://api.mercadopublico.cl/servicios/v1/publico"
+
+# API oficial v2 de Compra Ágil (lanzada por ChileCompra en mayo 2026) — dominio
+# y esquema de autenticación distintos de la API v1 de licitaciones (header
+# 'ticket' en vez de query param). Sin ticket configurado, la sincronización de
+# Compras Ágiles se omite explícitamente (nunca se cae de vuelta a un Excel ni
+# se inventa un dato) — ver fetch_compraagil_bulk_list().
+COMPRAAGIL_TICKET = os.environ.get("MERCADOPUBLICO_COMPRAAGIL_TICKET", "")
+COMPRAAGIL_BASE_URL = "https://api2.mercadopublico.cl"
+
 TODAY = datetime.date.today()
 TODAY_STR = TODAY.isoformat()
 # Timestamp con offset UTC explícito (+00:00) — sin esto, el navegador del
@@ -74,7 +85,7 @@ TODAY_STR = TODAY.isoformat()
 # muestra la hora de sync desplazada por su propio huso horario (ej. un
 # usuario en Chile veía "11:47" en vez de la hora real "07:47" local).
 NOW_STR = datetime.datetime.now(datetime.timezone.utc).isoformat()
-SYNC_VERSION = "7.5"
+SYNC_VERSION = "7.6"
 
 MAX_EXEC_SECONDS = 25 * 60
 START_TIME = time.time()
@@ -130,60 +141,6 @@ def normalize_amount(val) -> Optional[int]:
         return num if num > 0 else None
     except Exception:
         return None
-
-
-# ═══════════════════════════════════════════════════════════
-# CARGA DE EXCEL COTIZACIONES
-# ═══════════════════════════════════════════════════════════
-
-def load_cotizaciones_excel() -> Tuple[Dict[str, dict], Dict[str, dict]]:
-    """
-    Carga data/Cotizaciones.xls y crea dos índices:
-    1. cot_dict: mapeo por ID exacto (e.g. 1057498-2072-COT26)
-    2. cot_base_dict: mapeo por código base (e.g. 1057498-2072)
-    """
-    cot_dict = {}
-    cot_base_dict = {}
-
-    if not HAS_PANDAS or not os.path.isfile(COTIZACIONES_EXCEL):
-        return cot_dict, cot_base_dict
-
-    try:
-        df = pd.read_excel(COTIZACIONES_EXCEL)
-        for _, row in df.iterrows():
-            cid = str(row.get("ID", "")).strip()
-            if not cid or cid == "nan":
-                continue
-            
-            presupuesto_raw = row.get("Presupuesto estimado")
-            presupuesto = normalize_amount(presupuesto_raw)
-            
-            item = {
-                "id": cid,
-                "nombre": str(row.get("Nombre", "")).strip(),
-                "unidad_compra": str(row.get("Unidad de compra", "")).strip(),
-                "fecha_pub": str(row.get("Fecha de publicación", "")).strip(),
-                "fecha_cierre": str(row.get("Fecha de cierre", "")).strip(),
-                "estado": str(row.get("Estado", "")).strip(),
-                "cotizaciones_enviadas": row.get("Cotizaciones enviadas"),
-                "institucion": str(row.get("Institución", "")).strip(),
-                "presupuesto_estimado": presupuesto,
-                "moneda": str(row.get("Tipo Moneda", "CLP")).strip(),
-                "orden_compra": str(row.get("Orden de compra", "")).strip() if pd.notna(row.get("Orden de compra")) else None,
-                "estado_oc": str(row.get("Estado OC", "")).strip() if pd.notna(row.get("Estado OC")) else None
-            }
-
-            cot_dict[cid] = item
-
-            # Código base (e.g. 1057498-2072)
-            m = re.match(r'^(\d+-\d+)', cid)
-            if m:
-                base_code = m.group(1)
-                cot_base_dict[base_code] = item
-    except Exception as e:
-        print(f"[WARN] No se pudo leer Cotizaciones.xls: {e}")
-
-    return cot_dict, cot_base_dict
 
 
 # ═══════════════════════════════════════════════════════════
@@ -480,7 +437,7 @@ def fetch_json(url: str, timeout: int = 20, max_retries: int = 3) -> Optional[di
     for attempt in range(1, max_retries + 1):
         try:
             req = urllib.request.Request(url, headers={
-                "User-Agent": "BidCoop/7.5 (+https://bidcoop.cl)",
+                "User-Agent": "BidCoop/7.6 (+https://bidcoop.cl)",
                 "Accept": "application/json"
             })
             with urllib.request.urlopen(req, timeout=timeout) as resp:
@@ -531,16 +488,16 @@ def fetch_api_bulk_list(estado: str = "activas") -> List[Dict]:
 
 def fetch_api_by_recent_dates(days_back: int = 7) -> List[Dict]:
     """
-    Complementa fetch_api_bulk_list(estado="activas"): confirmado en vivo que
-    el endpoint bulk "activas" apenas expone un puñado de Compras Ágiles en
-    un momento dado (las Compras Ágiles tienen ventanas de vigencia muy
-    cortas — a menudo cierran en 1-5 días — así que la mayoría ya no figura
-    como "activa" cuando corre el sync, aunque se hayan publicado hace poco).
-    La única forma documentada de capturarlas de forma confiable es
-    consultar licitaciones.json?fecha=DDMMYYYY día por día. Antes de esto,
-    el 98% de las Compras Ágiles en la plataforma venían de un Excel estático
-    subido una sola vez (data/Cotizaciones.xls, sin actualizar desde hace
-    días) — quedaban sin capturar todas las publicadas después de esa fecha.
+    Complementa fetch_api_bulk_list(estado="activas") para LICITACIONES
+    (LP/LE/L1/CM/...): "activas" solo devuelve procesos vigentes en este
+    instante, así que cualquier proceso que cerró hace poco pero cuyo
+    detalle todavía interesa (para el diff "¿Qué cambió?"/"cerrados") no
+    aparece ahí. Se cubre consultando licitaciones.json?fecha=DDMMYYYY día
+    por día. NOTA: confirmado en vivo que este endpoint (y el de
+    estado=activas) NUNCA devuelven registros de Compra Ágil (-COT), sin
+    importar la fecha consultada — ChileCompra mismo confirmó públicamente
+    que la API v1 de licitaciones no soporta Compra Ágil. Esa cobertura
+    viene exclusivamente de fetch_compraagil_bulk_list() (API v2 oficial).
     Deduplicación por CodigoExterno la hace naturalmente el llamador (mismo
     dict opportunities_by_code que usa el listado de "activas").
     """
@@ -592,29 +549,122 @@ def fetch_opportunity_detail(code: str, close_str: str, detail_cache: dict) -> T
 
 
 # ═══════════════════════════════════════════════════════════
+# API v2 DE COMPRA ÁGIL (api2.mercadopublico.cl) — reemplaza el Excel manual
+# ═══════════════════════════════════════════════════════════
+
+def fetch_compraagil_json(url: str, timeout: int = 20, max_retries: int = 3) -> Optional[dict]:
+    """Igual que fetch_json, pero la API v2 de Compra Ágil autentica con el
+    ticket en un HEADER HTTP ('ticket: ...'), no como query param — a
+    diferencia de la API v1 de licitaciones."""
+    for attempt in range(1, max_retries + 1):
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": "BidCoop/7.6 (+https://bidcoop.cl)",
+                "Accept": "application/json",
+                "ticket": COMPRAAGIL_TICKET
+            })
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode('utf-8'))
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                # Cuota diaria agotada — reintentar en la misma corrida no sirve
+                # (se restablece recién al día siguiente, según la guía oficial).
+                print("  [WARN] Cuota diaria de la API Compra Ágil v2 agotada (429).")
+                return None
+            if e.code == 404:
+                return None
+            if attempt < max_retries:
+                time.sleep(2.5 * attempt)
+        except Exception:
+            if attempt < max_retries:
+                time.sleep(2.5 * attempt)
+    return None
+
+
+def fetch_compraagil_bulk_list(days_back: int = 15) -> List[Dict]:
+    """
+    Lista todas las Compras Ágiles publicadas en los últimos `days_back` días
+    vía la API oficial v2 (GET /v2/compra-agil), paginando hasta agotar
+    payload.paginacion.total_paginas. 15 días cubre con margen la ventana de
+    vigencia típica de una Compra Ágil (cierra en 1-5 días hábiles) más el
+    historial reciente necesario para el diff "¿Qué cambió?".
+    """
+    if not COMPRAAGIL_TICKET:
+        print("  [WARN] MERCADOPUBLICO_COMPRAAGIL_TICKET no configurado — Compras Ágiles NO se sincronizarán (se omite, no se inventa ni se usa un Excel).")
+        return []
+
+    desde = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days_back)).strftime("%Y-%m-%dT00:00:00Z")
+    results = []
+    page = 1
+    total_pages = 1
+    max_pages_safety = 100  # ~5.000 registros — margen amplio sobre el volumen real observado
+    while page <= total_pages and page <= max_pages_safety:
+        url = (f"{COMPRAAGIL_BASE_URL}/v2/compra-agil"
+               f"?publicado_desde={desde}&tamano_pagina=50&numero_pagina={page}"
+               f"&ordenar_por=FechaPublicacion")
+        data = fetch_compraagil_json(url, timeout=30)
+        if data is None or data.get("success") != "OK":
+            print(f"  [WARN] Página {page} de Compra Ágil v2 falló sin respuesta.")
+            break
+        payload = data.get("payload") or {}
+        items = payload.get("items") or []
+        results.extend(items)
+        paginacion = payload.get("paginacion") or {}
+        total_pages = paginacion.get("total_paginas", 1) or 1
+        page += 1
+        time.sleep(0.25)
+
+    return results
+
+
+def fetch_compraagil_detail(code: str, detail_cache: dict) -> Optional[Dict]:
+    """Detalle completo de una Compra Ágil (productos, proveedores cotizando,
+    presupuesto). Usa el mismo detail_cache que las licitaciones, bajo una
+    clave prefijada ('CA:') para no colisionar con códigos de licitación."""
+    cache_key = f"CA:{code}"
+    cached = detail_cache.get(cache_key)
+    if cached:
+        close_str = ((cached.get("data") or {}).get("fechas") or {}).get("fecha_cierre")
+        if is_cache_valid(cached, close_str):
+            return cached.get("data")
+
+    elapsed = time.time() - START_TIME
+    if elapsed > MAX_EXEC_SECONDS:
+        return None
+
+    url = f"{COMPRAAGIL_BASE_URL}/v2/compra-agil/{code}"
+    data = fetch_compraagil_json(url, timeout=20, max_retries=2)
+    if data and data.get("success") == "OK" and data.get("payload"):
+        detail = data["payload"]
+        detail_cache[cache_key] = {"data": detail, "ts": time.time(), "fetchedAt": NOW_STR}
+        return detail
+
+    if cache_key in detail_cache:
+        del detail_cache[cache_key]
+    return None
+
+
+# ═══════════════════════════════════════════════════════════
 # PROCESO DE RECONCILIACIÓN Y CRUCE DE MONTOS (REGLA 14)
 # ═══════════════════════════════════════════════════════════
 
 def reconciliar_monto_compra_agil(
     code: str,
     bulk_item: Optional[dict],
-    detail_item: Optional[dict],
-    cot_excel_data: Optional[dict]
+    detail_item: Optional[dict]
 ) -> dict:
     """
-    Ejecuta el cruce jerárquico estricto de información para Compras Ágiles (REGLA 4):
+    Ejecuta el cruce jerárquico de información para el tipo "CO" de 2 letras
+    (raro; distinto del formato "-COT" que ahora se sincroniza en su
+    totalidad vía la API v2 de Compra Ágil — ver build_compraagil_record()):
       1. Monto total Orden de Compra emitida (PRIORIDAD 1)
       2. Monto total adjudicado al proveedor (PRIORIDAD 2)
-      3. Suma de ítems adjudicados (PRIORIDAD 3)
-      4. Cotización Excel / Presupuesto estimado (PRIORIDAD 4)
-      5. Presupuesto estimado API (PRIORIDAD 5)
-      6. MONTO_NO_ENCONTRADO si ninguna fuente entregó un monto >0.
+      3. Presupuesto estimado API (PRIORIDAD 3)
+      4. MONTO_NO_ENCONTRADO si ninguna fuente entregó un monto >0.
     """
     monto_original = 0
     if detail_item and detail_item.get("MontoEstimado"):
         monto_original = normalize_amount(detail_item.get("MontoEstimado")) or 0
-    elif cot_excel_data and cot_excel_data.get("presupuesto_estimado"):
-        monto_original = normalize_amount(cot_excel_data.get("presupuesto_estimado")) or 0
 
     monto_adjudicado = None
     monto_oc = None
@@ -632,15 +682,7 @@ def reconciliar_monto_compra_agil(
     estado_valid = "MONTO_NO_ENCONTRADO"
     monto_resolved = None
 
-    # --- PRIORIDAD 1: ORDEN DE COMPRA ASOCIADA ---
-    # Revisar si existe OC en Excel o en el detalle
-    if cot_excel_data and cot_excel_data.get("orden_compra"):
-        oc_code = cot_excel_data["orden_compra"]
-        oc_st = cot_excel_data.get("estado_oc") or "Emitida"
-        if oc_st not in ("Anulada", "Cancelada", "Rechazada"):
-            codigo_oc = oc_code
-            estado_oc = oc_st
-
+    # --- PRIORIDAD 1: ORDEN DE COMPRA ASOCIADA (según detalle oficial) ---
     if detail_item:
         adj = detail_item.get("Adjudicacion") or {}
         if isinstance(adj, dict):
@@ -664,11 +706,6 @@ def reconciliar_monto_compra_agil(
         fuente_monto = "Adjudicación"
         id_fuente_monto = code
         estado_valid = "RECUPERADO_DESDE_ADJUDICACION"
-    elif cot_excel_data and cot_excel_data.get("presupuesto_estimado"):
-        monto_resolved = cot_excel_data["presupuesto_estimado"]
-        fuente_monto = "Cotización Mercado Público (Excel)"
-        id_fuente_monto = cot_excel_data.get("id") or code
-        estado_valid = "RECUPERADO_DESDE_COTIZACION"
     elif monto_original > 0:
         monto_resolved = monto_original
         fuente_monto = "Presupuesto Estimado API"
@@ -701,14 +738,13 @@ def reconciliar_monto_compra_agil(
 
 
 # ═══════════════════════════════════════════════════════════
-# CONSTRUCTOR ESTRICTO DE OPORTUNIDAD v7.5
+# CONSTRUCTOR ESTRICTO DE OPORTUNIDAD v7.6
 # ═══════════════════════════════════════════════════════════
 
 def build_opportunity_record(
     code: str,
     bulk_item: Optional[Dict],
     detail_item: Optional[Dict],
-    cot_excel_data: Optional[Dict],
     field_errors: List[str],
     field_warnings: List[str]
 ) -> Dict:
@@ -728,16 +764,6 @@ def build_opportunity_record(
     region = None
     validation_status = "requiere_verificacion"
     source_system = "mercadopublico_api"
-
-    if cot_excel_data:
-        source_system = "mercadopublico_excel"
-        validation_status = "confirmado"
-        title = cot_excel_data.get("nombre")
-        organismo = cot_excel_data.get("institucion")
-        pub_str = format_date_to_iso(cot_excel_data.get("fecha_pub"))
-        close_str = format_date_to_iso(cot_excel_data.get("fecha_cierre"))
-        estado = cot_excel_data.get("estado") or "Publicada"
-        moneda = cot_excel_data.get("moneda") or "CLP"
 
     if detail_item:
         validation_status = "confirmado"
@@ -775,7 +801,7 @@ def build_opportunity_record(
                 "unidadMedida": it.get("UnidadMedida") or "UN"
             })
 
-    elif bulk_item and not cot_excel_data:
+    elif bulk_item:
         title = bulk_item.get("Nombre") or "Proceso de Compra Pública"
         close_str = format_date_to_iso(bulk_item.get("FechaCierre"))
         pub_str = None
@@ -794,14 +820,14 @@ def build_opportunity_record(
         }]
 
     # Reconciliación de montos
-    reconciled = reconciliar_monto_compra_agil(code, bulk_item, detail_item, cot_excel_data)
+    reconciled = reconciliar_monto_compra_agil(code, bulk_item, detail_item)
 
     official_url = build_official_url(code, tipo)
     empresa_id, empresa_nombre, rubro, confidence, keywords = calculate_company_match(title, desc or "")
     region_final = region or infer_chilean_region(title, "", "")
 
     # Señales para que main() excluya el registro en vez de mostrar datos inventados:
-    sin_datos_reales = not detail_item and not cot_excel_data
+    sin_datos_reales = not detail_item
     sin_match_empresa = empresa_id is None
 
     monto_final_num = reconciled["monto_final"]
@@ -814,7 +840,7 @@ def build_opportunity_record(
         "officialCode": code,
         "id_compra_agil": code,
         "id_proceso": code,
-        "id_cotizacion": cot_excel_data.get("id") if cot_excel_data else code,
+        "id_cotizacion": code,
         "id_orden_compra": reconciled.get("codigoOrdenCompra"),
         "codigoOrdenCompra": reconciled.get("codigoOrdenCompra"),
         "rutOrganismo": organismo_rut or "No informado",
@@ -878,7 +904,7 @@ def build_opportunity_record(
         "_sinDatosReales": sin_datos_reales,
         "_sinMatchEmpresa": sin_match_empresa,
 
-        # --- TRAZABILIDAD Y RECONCILIACIÓN v7.5 ---
+        # --- TRAZABILIDAD Y RECONCILIACIÓN v7.6 ---
         "sourceSystem": source_system,
         "sourceType": source_type,
         "sourceUrl": official_url,
@@ -904,7 +930,7 @@ def build_opportunity_record(
             "fechaDeteccion": TODAY_STR,
             "nivelConfianza": confidence,
             "keywordsCoincidentes": keywords[:10],
-            "fuenteDatos": "api" if source_system == "mercadopublico_api" else "excel"
+            "fuenteDatos": "api"
         }
     }
 
@@ -912,15 +938,200 @@ def build_opportunity_record(
 
 
 # ═══════════════════════════════════════════════════════════
-# PRINCIPAL v7.5
+# CONSTRUCTOR DE COMPRA ÁGIL DESDE API v2 (reemplaza el cruce con Excel)
+# ═══════════════════════════════════════════════════════════
+
+ESTADO_COMPRAAGIL_DISPLAY = {
+    "publicada": "Publicada",
+    "cerrada": "Cerrada",
+    "desierta": "Desierta",
+    "cancelada": "Cancelada",
+    "proveedor_seleccionado": "Adjudicada",
+    "oc_emitida": "Adjudicada",
+}
+
+def build_compraagil_record(
+    list_item: Dict,
+    detail: Optional[Dict],
+    field_errors: List[str],
+    field_warnings: List[str]
+) -> Dict:
+    """
+    Construye un registro de Oportunidad para una Compra Ágil obtenida desde
+    la API oficial v2 (api2.mercadopublico.cl/v2/compra-agil) — mismo esquema
+    de salida que build_opportunity_record() para que el frontend no
+    distinga la fuente. Reemplaza el cruce contra Cotizaciones.xls.
+    """
+    code = list_item.get("codigo")
+    tipo = "COT"
+    tipo_nombre = TIPO_OFICIAL_MAP.get(tipo, tipo)
+    modality, source_type = classify_modality(tipo)
+
+    # El listado trae lo esencial; el detalle agrega descripción, productos
+    # solicitados y proveedores cotizando. Se usa detalle cuando está
+    # disponible y se cae al listado sin inventar campos que faltan.
+    src = detail or list_item
+
+    title = src.get("nombre") or "Proceso de Compra Pública"
+    desc = ((detail or {}).get("descripcion") or "").strip()
+
+    estado_info = src.get("estado") or {}
+    estado_codigo = estado_info.get("codigo") or "publicada"
+    estado = ESTADO_COMPRAAGIL_DISPLAY.get(estado_codigo) or estado_info.get("glosa") or "Publicada"
+
+    fechas = src.get("fechas") or {}
+    pub_str = format_date_to_iso(fechas.get("fecha_publicacion"))
+    close_str = format_date_to_iso(fechas.get("fecha_cierre"))
+
+    institucion = src.get("institucion") or {}
+    organismo = institucion.get("organismo_comprador") or "No informado"
+    organismo_rut = institucion.get("rut") or "No informado"
+    # La API entrega directamente el nombre de región oficial (con espacios
+    # sobrantes en algunos casos, ej. "Región del Biobío ") — se usa tal cual
+    # tras strip() en vez de re-inferirlo por texto libre.
+    region_final = (institucion.get("nombre_region") or "").strip() or infer_chilean_region(organismo, "", title)
+
+    # Monto: la API v2 solo expone el presupuesto informado por el comprador
+    # (disponible o estimado). El monto final de la OC emitida NO es
+    # confiable en esta API — codigo_orden_compra/estado_orden_compra
+    # retornan null incluso cuando la OC existe (documentado explícitamente
+    # en el changelog v3.0 de la guía oficial). Nunca se inventa ese monto;
+    # solo se usa lo que el comprador informó como presupuesto real.
+    presupuesto = (detail or {}).get("presupuesto") or {}
+    monto_disponible = normalize_amount(presupuesto.get("monto_disponible_clp") or presupuesto.get("monto_disponible"))
+    monto_estimado = normalize_amount(presupuesto.get("presupuesto_estimado"))
+    monto_lista = normalize_amount((list_item.get("montos") or {}).get("monto_disponible_clp"))
+    monto_resolved = monto_disponible or monto_estimado or monto_lista
+
+    if monto_resolved and monto_resolved > 0:
+        fuente_monto = "Presupuesto Compra Ágil (API v2)"
+        estado_validacion_monto = "VALIDADO"
+    else:
+        monto_resolved = None
+        fuente_monto = "No Encontrado"
+        estado_validacion_monto = "MONTO_NO_ENCONTRADO"
+
+    items_list = []
+    for p in ((detail or {}).get("productos_solicitados") or []):
+        items_list.append({
+            "sku": f"SKU-{p.get('codigo_producto', 1)}",
+            "producto": p.get("nombre") or title,
+            "cantidad": float(p.get("cantidad") or 1),
+            # La API no informa precio unitario del lado solicitado (solo del
+            # lado cotizado por cada proveedor, en proveedores_cotizando[]) —
+            # 0 = "no informado", misma convención que el resto del motor.
+            "precioUnitario": 0,
+            "unidadMedida": p.get("unidad_medida") or "UN"
+        })
+    if not items_list:
+        items_list = [{"sku": "ITEM-1", "producto": title, "cantidad": 1, "precioUnitario": 0, "unidadMedida": "UN"}]
+
+    official_url = build_official_url(code, tipo)
+    empresa_id, empresa_nombre, rubro, confidence, keywords = calculate_company_match(title, desc)
+
+    # Señal para que main() excluya el registro en vez de mostrar datos
+    # inventados — aquí siempre hay al menos list_item real de la API.
+    sin_datos_reales = False
+    sin_match_empresa = empresa_id is None
+
+    monto_final_num = monto_resolved or 0
+    amount_type_sem = "monto_estimado" if monto_resolved and monto_resolved > 0 else "no_informado"
+
+    record = {
+        "id": f"op-{code}",
+        "codigo": code,
+        "officialCode": code,
+        "id_compra_agil": code,
+        "id_proceso": code,
+        "id_cotizacion": code,
+        "id_orden_compra": (detail or {}).get("id_orden_compra"),
+        "codigoOrdenCompra": None,
+        "rutOrganismo": organismo_rut,
+        "tipoOficial": tipo,
+        "tipoNombre": tipo_nombre,
+        "titulo": title,
+        "organismo": organismo,
+        "organismoRut": organismo_rut,
+        "organismoPagoDias": None,
+        "organismoRiesgo": "Sin evaluar",
+        "rubro": rubro,
+        "region": region_final,
+        "monto": monto_final_num,
+        "amount": monto_resolved,
+        "amountType": amount_type_sem,
+        "currency": presupuesto.get("moneda") or "CLP",
+        "fechaPublicacion": pub_str or close_str or TODAY_STR,
+        "fechaCierre": close_str or TODAY_STR,
+        "matchScore": confidence,
+        "matchKeywords": keywords,
+        "riesgo": "Sin evaluar",
+        "descripcion": desc or f"Proceso oficial de contratación pública ({tipo_nombre}).",
+        "estado": estado,
+        "cronograma": [
+            {"hito": "Publicación", "fecha": pub_str or close_str or TODAY_STR},
+            {"hito": "Cierre de Ofertas", "fecha": close_str or TODAY_STR}
+        ],
+        "documentos": [
+            {
+                "nombre": f"Ver Ficha Oficial en Mercado Público ({code})",
+                "tipo": "link",
+                "tamanho": official_url
+            }
+        ],
+        "items": items_list,
+        "criteriosEvaluacion": [],
+        "preguntas": [],
+        "comentarios": [],
+        "competidoresPropuestos": [],
+        "empresaMatch": empresa_nombre,
+        "modalidad": modality,
+        "esInvitacionGrandesCompras": False,
+        "subestadoEvaluacion": "Sin oferta seleccionada",
+
+        "_sinDatosReales": sin_datos_reales,
+        "_sinMatchEmpresa": sin_match_empresa,
+
+        "sourceSystem": "mercadopublico_api_compraagil_v2",
+        "sourceType": source_type,
+        "sourceUrl": official_url,
+        "fetchedAt": NOW_STR,
+        "lastVerifiedAt": NOW_STR,
+        "validationStatus": "confirmado",
+        "monto_original": monto_estimado or monto_disponible or 0,
+        "monto_adjudicado": None,
+        "monto_oc": None,
+        "monto_final": monto_final_num,
+        "fuente_monto": fuente_monto,
+        "id_fuente_monto": code,
+        "estado_validacion_monto": estado_validacion_monto,
+        "proveedorAdjudicado": None,
+        "rutProveedor": None,
+        "estadoOC": None,
+
+        "matchMetadata": {
+            "empresaId": empresa_id,
+            "empresaAsociada": empresa_nombre,
+            "motivoMatch": "keyword_catalog",
+            "campoMatch": "titulo_descripcion",
+            "fechaDeteccion": TODAY_STR,
+            "nivelConfianza": confidence,
+            "keywordsCoincidentes": keywords[:10],
+            "fuenteDatos": "api"
+        }
+    }
+
+    return record
+
+
+# ═══════════════════════════════════════════════════════════
+# PRINCIPAL v7.6
 # ═══════════════════════════════════════════════════════════
 
 def main():
     print(f"[{NOW_STR}] BidCoop v{SYNC_VERSION} — Motor Maestro de Sincronización y Reconciliación")
 
     detail_cache = load_detail_cache()
-    cot_excel_dict, cot_base_dict = load_cotizaciones_excel()
-    print(f"[EXCEL] Ingestadas {len(cot_excel_dict)} cotizaciones desde Cotizaciones.xls")
+    previous_snapshot = load_previous_snapshot()
 
     opportunities_by_code = {}
     field_errors = []
@@ -951,10 +1162,10 @@ def main():
     # SALVAGUARDA: si la API pública no devolvió NINGÚN registro (ni por
     # estado=activas ni por ninguna de las consultas por fecha), es una
     # falla de la API (red, rate-limit, mantención) — no un mercado real sin
-    # movimiento. Seguir de largo sobrescribiría mockData.ts con solo lo que
-    # trae el Excel estático, borrando cientos de licitaciones reales
-    # vigentes de una corrida anterior exitosa. Se aborta sin tocar
-    # mockData.ts; el próximo ciclo de sync (cada 3h) reintenta solo.
+    # movimiento. Seguir de largo sobrescribiría mockData.ts perdiendo
+    # cientos de licitaciones reales vigentes de una corrida anterior
+    # exitosa. Se aborta sin tocar mockData.ts; el próximo ciclo de sync
+    # (cada 3h) reintenta solo.
     if len(bulk_list) == 0:
         print("[ERROR] La API de Mercado Público no devolvió NINGÚN registro (ni 'activas' ni por fecha) — probable falla temporal de red/API. Abortando sin sobrescribir mockData.ts para no perder datos reales ya sincronizados.")
         sys.exit(1)
@@ -977,16 +1188,11 @@ def main():
 
         close_str = format_date_to_iso(bulk_item.get("FechaCierre", ""))
 
-        # Buscar cruce en Excel
-        m = re.match(r'^(\d+-\d+)', code)
-        base_code = m.group(1) if m else code
-        excel_match = cot_excel_dict.get(code) or cot_base_dict.get(base_code)
-
-        # Pre-filtro: si el título no calza con el catálogo de ninguna empresa activa
-        # y no hay cotización Excel que lo respalde, se descarta ANTES de gastar una
-        # llamada a la API de detalle. Esto evita pedir detalle de miles de licitaciones
-        # irrelevantes (y por eso antes se agotaba el tiempo antes de terminar).
-        if not excel_match and not title_matches_active_companies(bulk_item.get("Nombre") or ""):
+        # Pre-filtro: si el título no calza con el catálogo de ninguna empresa
+        # activa, se descarta ANTES de gastar una llamada a la API de detalle.
+        # Esto evita pedir detalle de miles de licitaciones irrelevantes (y por
+        # eso antes se agotaba el tiempo antes de terminar).
+        if not title_matches_active_companies(bulk_item.get("Nombre") or ""):
             prefiltered_out += 1
             continue
 
@@ -1010,7 +1216,7 @@ def main():
                 else:
                     failed_fetched += 1
 
-        op_record = build_opportunity_record(code, bulk_item, detail_item, excel_match, field_errors, field_warnings)
+        op_record = build_opportunity_record(code, bulk_item, detail_item, field_errors, field_warnings)
 
         # No publicar registros sin datos reales (organismo/monto inventados) ni sin
         # match real de empresa (nunca asignar por defecto a Aminorte/V-MOCCS).
@@ -1023,24 +1229,54 @@ def main():
 
         opportunities_by_code[code] = op_record
 
-    # ── 3. MERGE EXCEL COTIZACIONES FALTANTES (COMPRAS ÁGILES) ──
-    print("[FASE 3] Integrando Compras Ágiles desde Cotizaciones.xls...")
-    excel_added = 0
-    for cid, ex_item in cot_excel_dict.items():
-        m = re.match(r'^(\d+-\d+)', cid)
-        base_code = m.group(1) if m else cid
-        
-        # Si no existe por ID exacto ni por código base
-        if cid not in opportunities_by_code and base_code not in opportunities_by_code:
-            op_record = build_opportunity_record(cid, None, None, ex_item, field_errors, field_warnings)
-            op_record.pop("_sinDatosReales", False)
-            if op_record.pop("_sinMatchEmpresa", False):
-                excluded_no_company_match += 1
-                continue
-            opportunities_by_code[cid] = op_record
-            excel_added += 1
+    # ── 3. FASE 3: COMPRAS ÁGILES DESDE API OFICIAL v2 ──────
+    print("[FASE 3] Sincronizando Compras Ágiles desde API oficial v2 (api2.mercadopublico.cl)...")
+    compraagil_list = fetch_compraagil_bulk_list(days_back=15)
+    print(f"[FASE 3] Obtenidos {len(compraagil_list)} registros de Compra Ágil (últimos 15 días).")
 
-    print(f"[FASE 3] Añadidas {excel_added} Compras Ágiles exclusivas desde Cotizaciones.xls.")
+    compraagil_prefiltered_out = 0
+    compraagil_added = 0
+    for ca_item in compraagil_list:
+        code = ca_item.get("codigo")
+        if not code or code in opportunities_by_code:
+            continue
+
+        nombre = ca_item.get("nombre") or ""
+        if not title_matches_active_companies(nombre):
+            compraagil_prefiltered_out += 1
+            continue
+
+        detail = fetch_compraagil_detail(code, detail_cache)
+        if detail:
+            live_fetched += 1
+            time.sleep(0.15)
+
+        op_record = build_compraagil_record(ca_item, detail, field_errors, field_warnings)
+
+        if op_record.pop("_sinDatosReales", False):
+            excluded_no_real_data += 1
+            continue
+        if op_record.pop("_sinMatchEmpresa", False):
+            excluded_no_company_match += 1
+            continue
+
+        opportunities_by_code[code] = op_record
+        compraagil_added += 1
+
+    print(f"[FASE 3] Añadidas {compraagil_added} Compras Ágiles reales desde API v2 (pre-filtradas por catálogo: {compraagil_prefiltered_out}).")
+
+    # SALVAGUARDA ESPECÍFICA DE COMPRA ÁGIL: la salvaguarda de "caída drástica"
+    # de más abajo opera sobre el TOTAL (licitaciones + Compra Ágil), así que
+    # una falla que vacíe solo Compra Ágil (ticket agotado, API caída a mitad
+    # de camino) podría no cruzar ese umbral global y sobrescribir mockData.ts
+    # perdiendo silenciosamente todas las Compras Ágiles ya sincronizadas. Se
+    # compara contra cuántos códigos "-COT" había en la corrida anterior.
+    prev_compraagil_count = sum(1 for code in previous_snapshot.get("registros", {}) if "-COT" in code)
+    if COMPRAAGIL_TICKET and prev_compraagil_count >= 20 and compraagil_added < prev_compraagil_count * 0.4:
+        print(f"[ERROR] Caída drástica de Compras Ágiles: {prev_compraagil_count} → {compraagil_added} "
+              f"({round(100 - compraagil_added / prev_compraagil_count * 100)}% menos). Probable falla parcial de "
+              f"la API v2 de Compra Ágil (cuota agotada, error de red). Abortando sin sobrescribir mockData.ts.")
+        sys.exit(1)
 
     print(f"[FASE 2] Pre-filtradas (irrelevantes, sin llamar API detalle): {prefiltered_out}")
     print(f"[FASE 2] Excluidas por falta de datos reales (organismo/monto no verificable): {excluded_no_real_data}")
@@ -1060,7 +1296,6 @@ def main():
     # de sincronización que un mercado real que se vació de golpe. Se aborta
     # sin sobrescribir en vez de publicar un dataset dañado — el próximo
     # ciclo de 3h reintenta con datos frescos.
-    previous_snapshot = load_previous_snapshot()
     prev_count = len(previous_snapshot.get("registros", {}))
     if prev_count >= 50 and len(processed) < prev_count * 0.6:
         print(f"[ERROR] Caída drástica de registros: {prev_count} → {len(processed)} ({round(100 - len(processed) / prev_count * 100)}% menos). "
@@ -1244,7 +1479,7 @@ def main():
     with open(DIAGNOSTICS_FILE, "w", encoding="utf-8") as f:
         json.dump(diag, f, ensure_ascii=False, indent=2)
 
-    print("✅ SINCRONIZACIÓN v7.5 COMPLETADA EXITOSAMENTE")
+    print("✅ SINCRONIZACIÓN v7.6 COMPLETADA EXITOSAMENTE")
 
 
 if __name__ == "__main__":
