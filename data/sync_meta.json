@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-16T01:28:34.969338+00:00",
-  "ultimoIntentoRealizado": "2026-08-16T01:28:34.969338+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-16T03:50:42.616518+00:00",
+  "ultimoIntentoRealizado": "2026-08-16T03:50:42.616518+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 824,
-  "registrosConfirmados": 824,
+  "registrosEnPlataforma": 832,
+  "registrosConfirmados": 832,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 540,
+  "registrosConMontoReal": 542,
   "excluidosPrefiltroIrrelevante": 7918,
-  "excluidosSinDatosReales": 8,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 502,
   "comprasAgilesAudit": {
     "total": 237,
@@ -26,17 +26,17 @@
     "montoRecuperadoSum": 0
   },
   "categorias": {
-    "licitaciones": 583,
+    "licitaciones": 591,
     "comprasAgiles": 237,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 115,
+    "LP": 118,
     "L1": 68,
-    "LE": 348,
-    "LR": 42,
+    "LE": 352,
+    "LR": 43,
     "I2": 3,
     "B2": 1,
     "CO": 8,
@@ -46,14 +46,14 @@
     "COT": 229
   },
   "matchPorEmpresa": {
-    "Aminorte": 694,
+    "Aminorte": 702,
     "V-MOCCS": 130
   },
   "cambios": {
     "comparadoContra": "2026-08-15T14:31:47.933760+00:00",
     "nuevosCount": 10,
     "modificadosCount": 1,
-    "cerradosCount": 8,
+    "cerradosCount": 0,
     "nuevos": [
       {
         "codigo": "1057500-61-LE26",
@@ -65,15 +65,6 @@
         "fechaCierre": "2026-08-10T15:01:00"
       },
       {
-        "codigo": "2440-40-LE26",
-        "titulo": "Mesas  Sillas y Estantes para el Establecimiento Educacional Escuela Padre Alberto Hurtado ",
-        "organismo": "I MUNICIPALIDAD DE CURICO",
-        "monto": 12000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 70,
-        "fechaCierre": "2026-07-08T11:10:00"
-      },
-      {
         "codigo": "4314-17-LE26",
         "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
         "organismo": "Ilustre Municipalidad de Curepto",
@@ -81,6 +72,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 98,
         "fechaCierre": "2026-08-10T16:00:00"
+      },
+      {
+        "codigo": "2440-40-LE26",
+        "titulo": "Mesas  Sillas y Estantes para el Establecimiento Educacional Escuela Padre Alberto Hurtado ",
+        "organismo": "I MUNICIPALIDAD DE CURICO",
+        "monto": 12000000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 70,
+        "fechaCierre": "2026-07-08T11:10:00"
       },
       {
         "codigo": "949-10-L126",
@@ -128,15 +128,6 @@
         "fechaCierre": "2026-06-12T19:57:00"
       },
       {
-        "codigo": "2421-40-LE26",
-        "titulo": "SUMINISTRO CARTRIDGES CHEM8 Y TROPONINA SAR TUCAPEL DAS CONCEPCIÓN",
-        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
-        "monto": 0,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-10T15:00:00"
-      },
-      {
         "codigo": "5586-98-LE26",
         "titulo": "BC PROVISIÓN DE SWITCH DE ACCESO L2 ADMINISTRABLES",
         "organismo": "UNIVERSIDAD DE LA FRONTERA",
@@ -144,6 +135,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-07-20T15:01:00"
+      },
+      {
+        "codigo": "2421-40-LE26",
+        "titulo": "SUMINISTRO CARTRIDGES CHEM8 Y TROPONINA SAR TUCAPEL DAS CONCEPCIÓN",
+        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
+        "monto": 0,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-10T15:00:00"
       }
     ],
     "modificados": [
@@ -158,74 +158,9 @@
         "empresaMatch": "Aminorte"
       }
     ],
-    "cerrados": [
-      {
-        "codigo": "1233619-35-LE26",
-        "titulo": "SERVICIO DE INTERNET TELEFONÍA SEGURIDAD PERIMETRAL Y MONITOREO DE RED PARA EL SERVICIO LOCAL DE EDUCACIÓN PÚBLICA MAULE COSTA",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA MAULE COSTA",
-        "estadoAnterior": "Publicada",
-        "monto": 72000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1697-38-LE26",
-        "titulo": "SERVICIO DE MANTENCIÓN CORRESPONDIENTE A SANITIZACIÓN Y LIMPIEZA DE ESTANQUES DE ALMACENAMIENTO AGUA POTABLE Y CÁMARAS DE ALCANTARILLADO PARA TRIBUNALES DE LA JURISDICCION DE ANTOFAGASTA",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
-        "estadoAnterior": "Publicada",
-        "monto": 1537,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057539-88-LR26",
-        "titulo": "CONVENIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO EQUIPOS DE ANESTESIA Y MONITOREO HOSPITAL PUERTO MONTT SOLIC 2026-43.",
-        "organismo": "HOSPITAL PUERTO MONTT SERVICIO DE SALUD DEL RELONCAVI",
-        "estadoAnterior": "Publicada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2423-53-LP26",
-        "titulo": "ADQUISICIÓN DE SWITCH ARUBA O EQUIVALENTE TÉCNICO",
-        "organismo": "I MUNICIPALIDAD DE PUENTE ALTO",
-        "estadoAnterior": "Publicada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3178-27-LP26",
-        "titulo": "PCR MÚLTIPLEX",
-        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-        "estadoAnterior": "Publicada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3781-4-LE26",
-        "titulo": "SERVICIO DE LIMPIEZA DE COLECTORES DE AGUAS SERVIDAS Y CÁMARAS MATRICERAS DE RED DE ALCANTARILLADO.",
-        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-        "estadoAnterior": "Publicada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5612-6-LE26",
-        "titulo": "NOS COMPRA DE RIFLES DARDOS Y CAMARAS TRAMPA CODIGO BIP 40062265-0",
-        "organismo": "SERVICIO AGRICOLA Y GANADERO",
-        "estadoAnterior": "Publicada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "629373-16-LP26",
-        "titulo": "CONVENIO DE SUMINISTRO DE AUDÍFONOS CMSM",
-        "organismo": "CORP MUNICIPAL DE SAN MIGUEL",
-        "estadoAnterior": "Publicada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      }
-    ]
+    "cerrados": []
   },
-  "tiempoEjecucionSegundos": 1122.0,
+  "tiempoEjecucionSegundos": 162.0,
   "errores": [],
   "advertencias": []
 }
