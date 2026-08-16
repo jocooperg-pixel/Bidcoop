@@ -1,7 +1,7 @@
 {
   "syncVersion": "7.5",
-  "ultimaSincronizacionExitosa": "2026-08-16T03:50:42.616518+00:00",
-  "ultimoIntentoRealizado": "2026-08-16T03:50:42.616518+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-16T06:43:29.786233+00:00",
+  "ultimoIntentoRealizado": "2026-08-16T06:43:29.786233+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 832,
   "registrosConfirmados": 832,
@@ -110,15 +110,6 @@
         "fechaCierre": "2026-06-17T15:28:00"
       },
       {
-        "codigo": "1079576-31-LE26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE REPARACIÓN MANTENCIÓN Y MEJORAMIENTO DE LA FACHADA DE LA SECCIÓN CRIMINALÍSTICA CONCEPCIÓN",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "monto": 0,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-07-22T09:00:00"
-      },
-      {
         "codigo": "514848-20-LE26",
         "titulo": "MOBILIARIO",
         "organismo": "I MUNICIPALIDAD DE LAUTARO",
@@ -126,6 +117,15 @@
         "empresaMatch": "V-MOCCS",
         "matchScore": 60,
         "fechaCierre": "2026-06-12T19:57:00"
+      },
+      {
+        "codigo": "1079576-31-LE26",
+        "titulo": "CONTRATACIÓN DEL SERVICIO DE REPARACIÓN MANTENCIÓN Y MEJORAMIENTO DE LA FACHADA DE LA SECCIÓN CRIMINALÍSTICA CONCEPCIÓN",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "monto": 0,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-22T09:00:00"
       },
       {
         "codigo": "5586-98-LE26",
@@ -160,7 +160,7 @@
     ],
     "cerrados": []
   },
-  "tiempoEjecucionSegundos": 162.0,
+  "tiempoEjecucionSegundos": 16.5,
   "errores": [],
   "advertencias": []
 }
