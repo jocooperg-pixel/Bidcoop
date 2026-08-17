@@ -19,6 +19,19 @@ interface TopbarProps {
   onSelectAdjudicacionCode?: (codigo: string) => void;
 }
 
+interface CompradorBasico {
+  id: string;
+  nombre: string;
+  rut: string | null;
+}
+
+interface ProveedorBasico {
+  id: string;
+  rut: string | null;
+  razonSocial: string;
+  region: string | null;
+}
+
 export default function Topbar({
   notifications,
   oportunidades,
@@ -38,6 +51,27 @@ export default function Topbar({
   const [searchVal, setSearchVal] = useState('');
   const [searchResults, setSearchResults] = useState<Oportunidad[]>([]);
 
+  // Buscador global ampliado a compradores/proveedores (Sección 10/11 del
+  // CRM) — se cargan una sola vez al montar (directorios reales vía
+  // Postgres, mismo patrón que Buyers/ProvidersModule) y se filtran en el
+  // cliente igual que las oportunidades, sin pedir nada nuevo al servidor
+  // por cada tecla.
+  const [compradoresDir, setCompradoresDir] = useState<CompradorBasico[]>([]);
+  const [proveedoresDir, setProveedoresDir] = useState<ProveedorBasico[]>([]);
+  const [compradorResults, setCompradorResults] = useState<CompradorBasico[]>([]);
+  const [proveedorResults, setProveedorResults] = useState<ProveedorBasico[]>([]);
+
+  useEffect(() => {
+    fetch('/api/db-compradores')
+      .then(res => (res.ok ? res.json() : { compradores: [] }))
+      .then(data => setCompradoresDir(Array.isArray(data.compradores) ? data.compradores : []))
+      .catch(() => setCompradoresDir([]));
+    fetch('/api/db-proveedores')
+      .then(res => (res.ok ? res.json() : { proveedores: [] }))
+      .then(data => setProveedoresDir(Array.isArray(data.proveedores) ? data.proveedores : []))
+      .catch(() => setProveedoresDir([]));
+  }, []);
+
   const [showCompanyMenu, setShowCompanyMenu] = useState(false);
 
   const notifRef = useRef<HTMLDivElement>(null);
@@ -56,6 +90,8 @@ export default function Topbar({
       }
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
         setSearchResults([]);
+        setCompradorResults([]);
+        setProveedorResults([]);
       }
       if (companyMenuRef.current && !companyMenuRef.current.contains(event.target as Node)) {
         setShowCompanyMenu(false);
@@ -65,32 +101,62 @@ export default function Topbar({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Filter opportunities for autocomplete
+  // Filter opportunities + compradores + proveedores for autocomplete
   const handleSearchChange = (val: string) => {
     setSearchVal(val);
     if (!val.trim()) {
       setSearchResults([]);
+      setCompradorResults([]);
+      setProveedorResults([]);
       return;
     }
+    const q = val.toLowerCase();
     const filtered = oportunidades.filter(op =>
-      op.titulo.toLowerCase().includes(val.toLowerCase()) ||
-      op.codigo.toLowerCase().includes(val.toLowerCase()) ||
-      op.organismo.toLowerCase().includes(val.toLowerCase())
+      op.titulo.toLowerCase().includes(q) ||
+      op.codigo.toLowerCase().includes(q) ||
+      op.organismo.toLowerCase().includes(q)
     ).slice(0, 5);
     setSearchResults(filtered);
+
+    setCompradorResults(
+      compradoresDir.filter(c => c.nombre.toLowerCase().includes(q) || (c.rut || '').toLowerCase().includes(q)).slice(0, 4)
+    );
+    setProveedorResults(
+      proveedoresDir.filter(p => p.razonSocial.toLowerCase().includes(q) || (p.rut || '').toLowerCase().includes(q)).slice(0, 4)
+    );
+  };
+
+  const clearSearchResults = () => {
+    setSearchResults([]);
+    setCompradorResults([]);
+    setProveedorResults([]);
   };
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSearchQuery(searchVal);
-    setSearchResults([]);
+    clearSearchResults();
   };
 
   const handleSelectResult = (op: Oportunidad) => {
     onSelectOpportunity(op);
     setSearchVal(op.titulo);
-    setSearchResults([]);
+    clearSearchResults();
   };
+
+  const handleSelectComprador = () => {
+    setSearchVal('');
+    clearSearchResults();
+    if (onNavigateView) onNavigateView('buyers', 'directorio');
+  };
+
+  const handleSelectProveedor = () => {
+    setSearchVal('');
+    clearSearchResults();
+    if (onNavigateView) onNavigateView('providers', 'directorio');
+  };
+
+  const hasResults = searchResults.length > 0 || compradorResults.length > 0 || proveedorResults.length > 0;
 
   const unreadCount = notifications.filter(n => !n.leida).length;
 
@@ -124,29 +190,69 @@ export default function Topbar({
           </div>
         </form>
 
-        {searchVal.trim() !== '' && searchResults.length > 0 && (
-          <div className="absolute top-12 left-0 right-0 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-2xl z-50 p-2 flex flex-col gap-1">
-            <div className="px-3 py-1 border-b border-slate-100 dark:border-slate-800 mb-1">
-              <span className="text-[10px] uppercase font-black text-slate-400">Sugerencias de Búsqueda</span>
-            </div>
-            {searchResults.map((op) => (
-              <button
-                key={op.id}
-                onClick={() => handleSelectResult(op)}
-                className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center justify-between gap-4 transition"
-              >
-                <div className="truncate">
-                  <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100 truncate">{op.titulo}</h4>
-                  <span className="text-[10px] text-slate-400 dark:text-slate-500 truncate block mt-0.5">{op.organismo} • {op.codigo}</span>
+        {searchVal.trim() !== '' && hasResults && (
+          <div className="absolute top-12 left-0 right-0 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-2xl z-50 p-2 flex flex-col gap-1 max-h-[70vh] overflow-y-auto">
+            {searchResults.length > 0 && (
+              <>
+                <div className="px-3 py-1 border-b border-slate-100 dark:border-slate-800 mb-1">
+                  <span className="text-[10px] uppercase font-black text-slate-400">Oportunidades</span>
                 </div>
-                <div className="flex items-center gap-2 shrink-0">
-                  <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-400">
-                    {op.rubro}
-                  </span>
-                  <MatchBadge score={op.matchScore} />
+                {searchResults.map((op) => (
+                  <button
+                    key={op.id}
+                    onClick={() => handleSelectResult(op)}
+                    className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center justify-between gap-4 transition"
+                  >
+                    <div className="truncate">
+                      <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100 truncate">{op.titulo}</h4>
+                      <span className="text-[10px] text-slate-400 dark:text-slate-500 truncate block mt-0.5">{op.organismo} • {op.codigo}</span>
+                    </div>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-brand-100 text-brand-700 dark:bg-brand-900/30 dark:text-brand-400">
+                        {op.rubro}
+                      </span>
+                      <MatchBadge score={op.matchScore} />
+                    </div>
+                  </button>
+                ))}
+              </>
+            )}
+
+            {compradorResults.length > 0 && (
+              <>
+                <div className="px-3 py-1 border-b border-slate-100 dark:border-slate-800 mb-1 mt-1">
+                  <span className="text-[10px] uppercase font-black text-slate-400">Compradores</span>
                 </div>
-              </button>
-            ))}
+                {compradorResults.map((c) => (
+                  <button
+                    key={c.id}
+                    onClick={handleSelectComprador}
+                    className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center justify-between gap-4 transition"
+                  >
+                    <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100 truncate">{c.nombre}</h4>
+                    <span className="text-[10px] text-slate-400 dark:text-slate-500 shrink-0">{c.rut || "RUT no informado"}</span>
+                  </button>
+                ))}
+              </>
+            )}
+
+            {proveedorResults.length > 0 && (
+              <>
+                <div className="px-3 py-1 border-b border-slate-100 dark:border-slate-800 mb-1 mt-1">
+                  <span className="text-[10px] uppercase font-black text-slate-400">Proveedores</span>
+                </div>
+                {proveedorResults.map((p) => (
+                  <button
+                    key={p.id}
+                    onClick={handleSelectProveedor}
+                    className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center justify-between gap-4 transition"
+                  >
+                    <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100 truncate">{p.razonSocial}</h4>
+                    <span className="text-[10px] text-slate-400 dark:text-slate-500 shrink-0">{p.rut || "RUT no informado"}</span>
+                  </button>
+                ))}
+              </>
+            )}
           </div>
         )}
       </div>
