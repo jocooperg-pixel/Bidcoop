@@ -158,6 +158,10 @@ export default function SearchModule({
   const [analysisProgress, setAnalysisProgress] = useState(0);
   const [analysisText, setAnalysisText] = useState('');
 
+  // Competidores reales vía API OCDS de Datos Abiertos (ChileCompra) — nunca inventados
+  const [ocdsData, setOcdsData] = useState<Record<string, { tenderers: Array<{ nombre: string; rut: string | null; region: string | null }>; awards: Array<{ estado?: string; proveedor?: string; monto?: number; moneda?: string }> } | null>>({});
+  const [ocdsLoading, setOcdsLoading] = useState<Record<string, boolean>>({});
+
   // Postulation form state
   const [formMonto, setFormMonto] = useState<number>(0);
   const [formResponsable, setFormResponsable] = useState('');
@@ -475,6 +479,27 @@ export default function SearchModule({
       return () => clearInterval(interval);
     }
   }, [detailGroup, selectedOpportunity, analyzedOps]);
+
+  // Competidores reales (OCDS) — se pide solo al abrir el tab, una vez por oportunidad
+  useEffect(() => {
+    if (!selectedOpportunity) return;
+    if (!(detailGroup === 'inteligencia' && detailSub === 'competidores')) return;
+    const codigo = selectedOpportunity.codigo;
+    if (!codigo || codigo in ocdsData || ocdsLoading[codigo]) return;
+
+    setOcdsLoading(prev => ({ ...prev, [codigo]: true }));
+    fetch(`/api/mercadopublico?codigo=${encodeURIComponent(codigo)}&endpoint=ocds`)
+      .then(res => res.ok ? res.json() : null)
+      .then(data => {
+        setOcdsData(prev => ({ ...prev, [codigo]: data && Array.isArray(data.tenderers) ? data : { tenderers: [], awards: [] } }));
+      })
+      .catch(() => {
+        setOcdsData(prev => ({ ...prev, [codigo]: { tenderers: [], awards: [] } }));
+      })
+      .finally(() => {
+        setOcdsLoading(prev => ({ ...prev, [codigo]: false }));
+      });
+  }, [detailGroup, detailSub, selectedOpportunity, ocdsData, ocdsLoading]);
 
   // Apply saved view filters
   const handleApplySavedView = (view: VistaGuardada) => {
@@ -1529,6 +1554,33 @@ export default function SearchModule({
                     )}
                   </div>
                 )}
+
+                {/* Proveedores que efectivamente cotizaron/postularon — dato real vía API OCDS ChileCompra */}
+                <div className="pt-2">
+                  <h3 className="text-xs font-black text-slate-700 dark:text-slate-300 uppercase tracking-wide mb-2">Proveedores que Cotizaron (Dato Real OCDS)</h3>
+                  {ocdsLoading[selectedOpportunity.codigo] ? (
+                    <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 text-center text-xs text-slate-500 dark:text-slate-400">
+                      Consultando API OCDS de Datos Abiertos (ChileCompra)...
+                    </div>
+                  ) : ocdsData[selectedOpportunity.codigo]?.tenderers.length ? (
+                    <div className="space-y-2">
+                      {ocdsData[selectedOpportunity.codigo]!.tenderers.map((t, idx) => (
+                        <div key={`${t.rut || t.nombre}-${idx}`} className="p-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 flex flex-wrap items-center justify-between gap-2">
+                          <span className="text-xs font-bold text-slate-800 dark:text-slate-100">{t.nombre}</span>
+                          <span className="text-[10px] text-slate-500 dark:text-slate-400 flex gap-3">
+                            {t.rut && <span>RUT: {t.rut}</span>}
+                            {t.region && <span>{t.region}</span>}
+                          </span>
+                        </div>
+                      ))}
+                      <p className="text-[10px] text-slate-400 dark:text-slate-500 pt-1">Fuente: API OCDS de Datos Abiertos, ChileCompra — lista de proveedores registrados como postulantes (&quot;tenderer&quot;) en el proceso.</p>
+                    </div>
+                  ) : (
+                    <div className="p-4 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 text-center">
+                      <p className="text-[11px] text-slate-500 dark:text-slate-400">La API OCDS de Datos Abiertos tampoco reporta postulantes para este proceso todavía.</p>
+                    </div>
+                  )}
+                </div>
               </div>
             )}
 

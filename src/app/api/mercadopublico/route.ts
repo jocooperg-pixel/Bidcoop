@@ -15,6 +15,13 @@ import { mockOportunidades } from '@/app/mockData';
 
 const TICKET = 'F8537A18-6766-4DEF-9E59-426B4FEE2844';
 const BASE_URL = 'https://api.mercadopublico.cl/servicios/v1/publico';
+// API OCDS de Datos Abiertos — distinta de la API de licitaciones de arriba:
+// no requiere ticket y expone, en tiempo real, quiénes efectivamente
+// cotizaron/postularon (role "tenderer") en cada proceso — dato real que la
+// API v1 nunca entrega. Confirmado en vivo que NO expone documentos/bases
+// (el campo tender.documents del estándar OCDS existe pero ChileCompra no
+// lo puebla) — solo se usa aquí para competidores reales, nunca inventados.
+const OCDS_BASE_URL = 'https://api.mercadopublico.cl/APISOCDS/OCDS/tender';
 
 interface CacheEnvelope {
   data: any;
@@ -59,6 +66,49 @@ async function safeFetch(url: string, timeout = 12000, maxRetries = 3, baseDelay
   return null;
 }
 
+interface OcdsParty {
+  name?: string;
+  roles?: string[];
+  identifier?: { id?: string; legalName?: string };
+  address?: { region?: string };
+}
+
+interface OcdsRelease {
+  parties?: OcdsParty[];
+  awards?: Array<{ status?: string; suppliers?: OcdsParty[]; value?: { amount?: number; currency?: string } }>;
+}
+
+/**
+ * Extrae proveedores reales que cotizaron/postularon (role "tenderer") desde
+ * la API OCDS — usa la última release del proceso (estado más reciente).
+ * Nunca sintetiza un competidor: si OCDS no trae parties con ese rol, se
+ * devuelve una lista vacía, no una inventada.
+ */
+function parseOcdsTenderers(ocdsPayload: unknown): { tenderers: Array<{ nombre: string; rut: string | null; region: string | null }>; awards: Array<{ estado?: string; proveedor?: string; monto?: number; moneda?: string }> } {
+  const releases = (ocdsPayload as { releases?: OcdsRelease[] } | null)?.releases;
+  if (!Array.isArray(releases) || releases.length === 0) {
+    return { tenderers: [], awards: [] };
+  }
+  const lastRelease = releases[releases.length - 1];
+  const tenderers = (lastRelease.parties || [])
+    .filter(p => Array.isArray(p.roles) && p.roles.includes('tenderer'))
+    .map(p => ({
+      nombre: p.identifier?.legalName || p.name || 'Proveedor sin nombre informado',
+      rut: p.identifier?.id || null,
+      region: p.address?.region?.trim() || null
+    }));
+
+  const awardsRaw = releases.flatMap(r => r.awards || []);
+  const awards = awardsRaw.map(a => ({
+    estado: a.status,
+    proveedor: a.suppliers?.[0]?.name,
+    monto: a.value?.amount,
+    moneda: a.value?.currency
+  }));
+
+  return { tenderers, awards };
+}
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const codigo = searchParams.get('codigo');
@@ -75,11 +125,18 @@ export async function GET(request: Request) {
   }
 
   if (!forceRefresh) {
-    const cached = detailCache.get(codigo);
+    const cached = detailCache.get(`${endpoint}:${codigo}`);
     const now = Date.now();
     if (cached && now - cached.timestamp < DETAIL_CACHE_TTL) {
       return NextResponse.json(cached.data);
     }
+  }
+
+  if (endpoint === 'ocds') {
+    const ocdsData = await safeFetch(`${OCDS_BASE_URL}/${encodeURIComponent(codigo)}`, 12000, 2);
+    const parsed = parseOcdsTenderers(ocdsData);
+    detailCache.set(`ocds:${codigo}`, { data: parsed, timestamp: Date.now() });
+    return NextResponse.json(parsed);
   }
 
   const targetUrl = endpoint === 'ordenes'
@@ -90,7 +147,7 @@ export async function GET(request: Request) {
 
   // Passthrough: si la API oficial devolvió el proceso, se retorna tal cual.
   if (data && data.Listado && Array.isArray(data.Listado) && data.Listado.length > 0) {
-    detailCache.set(codigo, { data, timestamp: Date.now() });
+    detailCache.set(`${endpoint}:${codigo}`, { data, timestamp: Date.now() });
     return NextResponse.json(data);
   }
 
@@ -135,7 +192,7 @@ export async function GET(request: Request) {
         }
       }]
     };
-    detailCache.set(codigo, { data: fallbackPayload, timestamp: Date.now() });
+    detailCache.set(`${endpoint}:${codigo}`, { data: fallbackPayload, timestamp: Date.now() });
     return NextResponse.json(fallbackPayload);
   }
 
