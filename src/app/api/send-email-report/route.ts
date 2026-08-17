@@ -19,16 +19,15 @@ export async function POST(request: Request) {
 
     const today = new Date().toISOString().split('T')[0];
 
-    // 1. RECIPIENT LISTS STRICTLY SEGREGATED BY BUSINESS DIRECTIVE
-    const AMINORTE_VMOCCS_SUR_CENTRO_EMAILS = [
+    // 1. Lista fija de destinatarios de reportes, misma lista para ambos
+    // grupos de despacho (Regiones y RM) — pedida explícitamente por el
+    // usuario, no depende de REPORT_RECIPIENT_EMAIL para no quedar sujeta
+    // a qué valor tenga esa variable en Vercel en un momento dado.
+    const REPORT_RECIPIENTS = [
       'mviguera@aminorte.cl',
-      process.env.REPORT_RECIPIENT_EMAIL || ''
-    ].filter(Boolean);
-
-    const AMINORTE_VMOCCS_METROPOLITANA_EMAILS = [
-      'mviguera@aminorte.cl',
-      process.env.REPORT_RECIPIENT_EMAIL || ''
-    ].filter(Boolean);
+      'lizgamarra@aminorte.cl',
+      'jonathan.cooper.g@gmail.com'
+    ];
 
     // Helper for exact Chilean region resolution from organism & description
     const resolveRealRegion = (op: any): string => {
@@ -137,15 +136,8 @@ export async function POST(request: Request) {
     const opsRegiones = activeOps.filter((op: any) => op.region !== 'Región Metropolitana');
     const opsRM = activeOps.filter((op: any) => op.region === 'Región Metropolitana');
 
-    const EMAILS_REGIONES = [
-      'mviguera@aminorte.cl',
-      process.env.REPORT_RECIPIENT_EMAIL || ''
-    ].filter(Boolean);
-
-    const EMAILS_RM = [
-      'mviguera@aminorte.cl',
-      process.env.REPORT_RECIPIENT_EMAIL || ''
-    ].filter(Boolean);
+    const EMAILS_REGIONES = REPORT_RECIPIENTS;
+    const EMAILS_RM = REPORT_RECIPIENTS;
 
     // Keys for Resend / SMTP
     const keysToTry = [

@@ -353,7 +353,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Correo RM</div>
-                <div className="text-[10px] text-brand-100 font-medium">2 Destinatarios RM</div>
+                <div className="text-[10px] text-brand-100 font-medium">3 Destinatarios RM</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -373,7 +373,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Regiones (IV-X)</div>
-                <div className="text-[10px] text-teal-100 font-medium">2 Destinatarios IV-X</div>
+                <div className="text-[10px] text-teal-100 font-medium">3 Destinatarios IV-X</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -1090,9 +1090,8 @@ export default function ReportsNotificationsModule({
               <div className="bg-white text-slate-900 rounded-2xl p-6 border border-slate-200 shadow-md space-y-4 max-h-[600px] overflow-y-auto">
                 <div className="border-b border-slate-200 pb-3 space-y-2 text-xs">
                   <div><strong>De:</strong> <span className="font-semibold text-slate-800">Alertas BidCoop &lt;alertas.bidcoop@gmail.com&gt;</span></div>
-                  <div><strong>Correo Principal:</strong> <span className="font-mono font-bold text-emerald-700">{defaultRecipientEmail || 'No configurado'}</span></div>
-                  <div><strong>Para Aminorte & V-MOCCS (Sur-Centro):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, {defaultRecipientEmail}</span></div>
-                  <div><strong>Para Aminorte & V-MOCCS (RM Santiago):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, {defaultRecipientEmail}</span></div>
+                  <div><strong>Para Aminorte & V-MOCCS (Sur-Centro):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, lizgamarra@aminorte.cl, jonathan.cooper.g@gmail.com</span></div>
+                  <div><strong>Para Aminorte & V-MOCCS (RM Santiago):</strong> <span className="font-mono text-slate-700">mviguera@aminorte.cl, lizgamarra@aminorte.cl, jonathan.cooper.g@gmail.com</span></div>
                   <div><strong>Asunto:</strong> <span className="font-extrabold text-slate-900">[BidCoop 08:00 AM] Reporte Exclusivo de Compras Ágiles ({new Date().toISOString().split('T')[0]})</span></div>
                   <div><strong>Modalidad Envío:</strong> <span className="font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">📧 Informe Exclusivo en Cuerpo de Correo (Sin Adjuntos)</span></div>
                 </div>
