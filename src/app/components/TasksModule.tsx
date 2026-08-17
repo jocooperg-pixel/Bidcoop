@@ -361,7 +361,7 @@ export default function TasksModule() {
               value={codigoBusqueda}
               onChange={e => setCodigoBusqueda(e.target.value)}
               placeholder="Código de oportunidad, ej. 1002772-77-LP26"
-              className="flex-1 text-sm p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-cyan-500/30 font-mono"
+              className="flex-1 text-sm p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500/30 font-mono"
             />
             <button type="submit" className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-black text-xs transition">
               Buscar

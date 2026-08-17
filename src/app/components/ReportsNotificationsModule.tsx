@@ -345,7 +345,7 @@ export default function ReportsNotificationsModule({
           <button
             onClick={() => handleSendTestEmail(`mviguera@aminorte.cl, ${defaultRecipientEmail}`, 'Metropolitana')}
             disabled={sendingEmail}
-            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 text-white font-bold text-xs shadow-lg shadow-blue-500/20 hover:shadow-blue-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-brand-600 hover:from-blue-500 hover:to-brand-500 text-white font-bold text-xs shadow-lg shadow-blue-500/20 hover:shadow-blue-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
@@ -353,7 +353,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Correo RM</div>
-                <div className="text-[10px] text-sky-100 font-medium">2 Destinatarios RM</div>
+                <div className="text-[10px] text-brand-100 font-medium">2 Destinatarios RM</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -365,7 +365,7 @@ export default function ReportsNotificationsModule({
           <button
             onClick={() => handleSendTestEmail(`mviguera@aminorte.cl, ${defaultRecipientEmail}`, 'SurCentro')}
             disabled={sendingEmail}
-            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-cyan-600 via-teal-600 to-emerald-600 hover:from-cyan-500 hover:to-emerald-500 text-white font-bold text-xs shadow-lg shadow-teal-500/20 hover:shadow-teal-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-brand-600 via-teal-600 to-emerald-600 hover:from-brand-500 hover:to-emerald-500 text-white font-bold text-xs shadow-lg shadow-teal-500/20 hover:shadow-teal-500/35 transition-all transform active:scale-95 disabled:opacity-50 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
@@ -384,10 +384,10 @@ export default function ReportsNotificationsModule({
           {/* Auxiliary Button 4: Live Email Preview */}
           <button
             onClick={() => setShowEmailPreviewModal(true)}
-            className="group relative flex items-center justify-between p-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700/80 hover:border-sky-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
+            className="group relative flex items-center justify-between p-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700/80 hover:border-brand-500/50 shadow-md transition-all transform active:scale-95 cursor-pointer overflow-hidden"
           >
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
+              <div className="w-9 h-9 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
                 👁️
               </div>
               <div className="text-left">
@@ -395,7 +395,7 @@ export default function ReportsNotificationsModule({
                 <div className="text-[10px] text-slate-400 font-medium">Formato HTML</div>
               </div>
             </div>
-            <span className="bg-slate-700 text-sky-400 border border-sky-500/30 font-bold text-[10px] px-2 py-1 rounded-full shrink-0">
+            <span className="bg-slate-700 text-brand-400 border border-brand-500/30 font-bold text-[10px] px-2 py-1 rounded-full shrink-0">
               Ver HTML
             </span>
           </button>
@@ -404,12 +404,12 @@ export default function ReportsNotificationsModule({
 
       {/* SUCCESS NOTIFICATION TOAST */}
       {reportSuccessMsg && (
-        <div className="bg-sky-50 dark:bg-sky-950/80 border border-sky-300 dark:border-sky-700 text-sky-900 dark:text-sky-200 p-4 rounded-xl flex items-center justify-between shadow-md transition-all">
+        <div className="bg-brand-50 dark:bg-brand-950/80 border border-brand-300 dark:border-brand-700 text-brand-900 dark:text-brand-200 p-4 rounded-xl flex items-center justify-between shadow-md transition-all">
           <div className="flex items-center gap-3">
             <span className="text-xl">✅</span>
             <span className="text-sm font-semibold">{reportSuccessMsg}</span>
           </div>
-          <button onClick={() => setReportSuccessMsg(null)} className="text-sky-700 dark:text-sky-400 font-bold hover:underline text-xs">
+          <button onClick={() => setReportSuccessMsg(null)} className="text-brand-700 dark:text-brand-400 font-bold hover:underline text-xs">
             Cerrar
           </button>
         </div>
@@ -426,13 +426,13 @@ export default function ReportsNotificationsModule({
             <select
               value={selectedCompany}
               onChange={(e) => setSelectedCompany(e.target.value)}
-              className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-4 pr-10 py-2.5 rounded-xl border border-slate-700 hover:border-sky-500 shadow-md focus:outline-none focus:ring-2 focus:ring-sky-500 cursor-pointer"
+              className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-4 pr-10 py-2.5 rounded-xl border border-slate-700 hover:border-brand-500 shadow-md focus:outline-none focus:ring-2 focus:ring-brand-500 cursor-pointer"
             >
               <option value="Todas">Todas las Empresas (Consolidado)</option>
               <option value="Aminorte">📄 Aminorte SpA (Artículos de Escritorio / Tecnología)</option>
               <option value="V-MOCCS">🪑 V-MOCCS SpA (Mobiliario)</option>
             </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-sky-400">
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-brand-400">
               ▼
             </div>
           </div>
@@ -1100,15 +1100,15 @@ export default function ReportsNotificationsModule({
                 {/* Email Body Live HTML Canvas */}
                 <div className="space-y-6 border rounded-2xl p-5 bg-slate-50 border-slate-200">
                   {/* Canvas Header */}
-                  <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-6 rounded-2xl border-b-4 border-cyan-400 relative flex justify-between items-center">
+                  <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-6 rounded-2xl border-b-4 border-brand-400 relative flex justify-between items-center">
                     <div>
-                      <span className="bg-cyan-400 text-slate-950 text-[9px] font-black px-3 py-1 rounded-full uppercase tracking-widest block w-fit mb-2">
+                      <span className="bg-brand-400 text-slate-950 text-[9px] font-black px-3 py-1 rounded-full uppercase tracking-widest block w-fit mb-2">
                         BIDCOOP REPORTE REGIONAL ENRUTADO (08:00 AM)
                       </span>
                       <h3 className="text-xl font-black text-white">BidCoop — Tu Plataforma en Mercado Público</h3>
-                      <p className="text-xs text-sky-200 mt-1">OPORTUNIDADES DE NEGOCIO • Enrutamiento Regional para {selectedCompany}</p>
+                      <p className="text-xs text-brand-200 mt-1">OPORTUNIDADES DE NEGOCIO • Enrutamiento Regional para {selectedCompany}</p>
                     </div>
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-400 p-0.5 shadow-xl border-2 border-white flex items-center justify-center shrink-0">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 via-brand-500 to-brand-400 p-0.5 shadow-xl border-2 border-white flex items-center justify-center shrink-0">
                       <div className="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
                         <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain rounded-full" />
                       </div>
@@ -1121,8 +1121,8 @@ export default function ReportsNotificationsModule({
                       <span className="text-[10px] font-black uppercase text-emerald-700 block">Compras Ágiles Activas</span>
                       <span className="text-xl font-black text-slate-900 mt-1 block">{companyFilteredOps.length} Procesos</span>
                     </div>
-                    <div className="p-4 bg-white rounded-xl border border-slate-200 border-l-4 border-l-sky-600">
-                      <span className="text-[10px] font-black uppercase text-sky-700 block">Presupuesto Total CLP</span>
+                    <div className="p-4 bg-white rounded-xl border border-slate-200 border-l-4 border-l-brand-600">
+                      <span className="text-[10px] font-black uppercase text-brand-700 block">Presupuesto Total CLP</span>
                       <span className="text-xl font-black text-slate-900 mt-1 block">${companyFilteredOps.reduce((a,c) => a + c.monto, 0).toLocaleString('es-CL')}</span>
                     </div>
                   </div>
@@ -1131,7 +1131,7 @@ export default function ReportsNotificationsModule({
                   <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
                     <div className="bg-slate-900 text-white px-4 py-3 text-xs font-black flex justify-between items-center">
                       <span>📊 Desglose Completo de Compras Ágiles ({companyFilteredOps.length} Procesos)</span>
-                      <span className="text-sky-400">Total: ${companyFilteredOps.reduce((a,c) => a + c.monto, 0).toLocaleString('es-CL')} CLP</span>
+                      <span className="text-brand-400">Total: ${companyFilteredOps.reduce((a,c) => a + c.monto, 0).toLocaleString('es-CL')} CLP</span>
                     </div>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left text-xs border-collapse">
@@ -1153,12 +1153,12 @@ export default function ReportsNotificationsModule({
                                 <span className="font-mono font-bold text-slate-900 block text-xs">{op.codigo}</span>
                                 <div className="flex flex-wrap gap-1 mt-1">
                                   <span className="px-1.5 py-0.5 rounded text-[8px] font-black bg-orange-100 text-orange-800 border border-orange-200">⚡ COMPRA ÁGIL</span>
-                                  <span className="px-1.5 py-0.5 rounded text-[8px] font-black bg-sky-100 text-sky-800 border border-sky-200">{op.empresaMatch || 'Aminorte / V-MOCCS'}</span>
+                                  <span className="px-1.5 py-0.5 rounded text-[8px] font-black bg-brand-100 text-brand-800 border border-brand-200">{op.empresaMatch || 'Aminorte / V-MOCCS'}</span>
                                 </div>
                               </td>
                               <td className="p-2.5 vertical-top font-bold text-[11px] text-slate-800 uppercase">
                                 {op.organismo}
-                                <span className="text-[9px] font-bold text-sky-600 block mt-0.5">📍 {op.region || 'Región Metropolitana'}</span>
+                                <span className="text-[9px] font-bold text-brand-600 block mt-0.5">📍 {op.region || 'Región Metropolitana'}</span>
                               </td>
                               <td className="p-2.5 vertical-top">
                                 <span className="font-bold text-slate-900 block">{op.titulo}</span>

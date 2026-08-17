@@ -390,8 +390,8 @@ export default function BusinessModule({
             onClick={() => setCurrentSub(tab.id)}
             className={`px-4 py-2 rounded-xl text-xs font-black transition-all ${
               currentSub === tab.id
-                ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30 border border-sky-400/40'
-                : 'text-slate-600 hover:text-blue-600 hover:bg-sky-50 dark:text-slate-400 dark:hover:text-sky-300 dark:hover:bg-slate-800/60'
+                ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30 border border-brand-400/40'
+                : 'text-slate-600 hover:text-blue-600 hover:bg-brand-50 dark:text-slate-400 dark:hover:text-brand-300 dark:hover:bg-slate-800/60'
             }`}
           >
             {tab.label}
@@ -546,20 +546,20 @@ export default function BusinessModule({
 
             {/* Corporate Company Filter Dropdown Select */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
-              <span className="text-xs font-black text-sky-200 uppercase tracking-wider flex items-center gap-1.5">
+              <span className="text-xs font-black text-brand-200 uppercase tracking-wider flex items-center gap-1.5">
                 <span>🏢</span> Filtrar por Empresa:
               </span>
               <div className="relative">
                 <select
                   value={filterCompany}
                   onChange={(e) => setFilterCompany(e.target.value as 'Todas' | 'Aminorte' | 'V-MOCCS')}
-                  className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-4 pr-10 py-2 rounded-xl border border-sky-400/40 hover:border-sky-300 shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 cursor-pointer"
+                  className="appearance-none bg-slate-900 text-white font-extrabold text-xs pl-4 pr-10 py-2 rounded-xl border border-brand-400/40 hover:border-brand-300 shadow-md focus:outline-none focus:ring-2 focus:ring-brand-400 cursor-pointer"
                 >
                   <option value="Todas">📊 Consolidado Holding (Todas las Empresas)</option>
                   <option value="Aminorte">📄 Aminorte SpA (Oficina & Librería)</option>
                   <option value="V-MOCCS">✏️ V-MOCCS SpA (Mobiliario & Equipamiento)</option>
                 </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-sky-300">
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-brand-300">
                   ▼
                 </div>
               </div>
@@ -633,7 +633,7 @@ export default function BusinessModule({
                             <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase inline-block mb-1 ${
                               pModality === 'Compra Ágil'
                                 ? 'bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-300 border border-orange-300'
-                                : 'bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300 border border-sky-300'
+                                : 'bg-brand-100 text-brand-800 dark:bg-brand-950 dark:text-brand-300 border border-brand-300'
                             }`}>
                               {pModality === 'Compra Ágil' ? '⚡ Compra Ágil' : '🛍️ Grande Compra'}
                             </span>
@@ -675,7 +675,7 @@ export default function BusinessModule({
                           <td className="p-3 text-center">
                             <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase ${
                               p.estado === 'Adjudicada'
-                                ? 'bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-300'
+                                ? 'bg-brand-100 text-brand-800 dark:bg-brand-950/80 dark:text-brand-300 border border-brand-300'
                                 : p.estado === 'Rechazada'
                                 ? 'bg-red-100 text-red-700 dark:bg-red-950/80 dark:text-red-300 border border-red-300'
                                 : 'bg-orange-100 text-orange-700 dark:bg-orange-950/80 dark:text-orange-300 border border-orange-300'

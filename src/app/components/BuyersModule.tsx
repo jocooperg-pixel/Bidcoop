@@ -103,7 +103,7 @@ export default function BuyersModule() {
           placeholder="Buscar por nombre o RUT…"
           value={search}
           onChange={e => { setSearch(e.target.value); setCurrentPage(1); }}
-          className="w-72 px-3 py-2 text-sm rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-cyan-500/30"
+          className="w-72 px-3 py-2 text-sm rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-brand-500/30"
         />
       </div>
 

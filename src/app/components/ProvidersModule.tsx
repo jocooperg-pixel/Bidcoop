@@ -141,7 +141,7 @@ export default function ProvidersModule() {
         {activeTab === 'proveedores' && (
           <button
             onClick={handleExportCSV}
-            className="px-4 py-2 bg-gradient-to-r from-blue-600 via-sky-600 to-cyan-500 hover:from-blue-500 hover:to-sky-400 text-white rounded-xl text-xs font-black shadow-md shadow-sky-500/20 flex items-center gap-1.5 transition cursor-pointer self-start sm:self-auto"
+            className="px-4 py-2 bg-gradient-to-r from-blue-600 via-brand-600 to-brand-500 hover:from-blue-500 hover:to-brand-400 text-white rounded-xl text-xs font-black shadow-md shadow-brand-500/20 flex items-center gap-1.5 transition cursor-pointer self-start sm:self-auto"
           >
             <span>📥</span> Exportar listado filtrado (.CSV)
           </button>

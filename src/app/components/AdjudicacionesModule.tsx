@@ -328,7 +328,7 @@ export default function AdjudicacionesModule({
                 
                 {/* Mercado Público Logo Graphic */}
                 <div className="w-32 h-36 border border-slate-300 rounded-xl p-3 flex flex-col items-center justify-center bg-slate-50 shrink-0 mx-auto md:mx-0 shadow-inner">
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-sky-400 p-2 flex items-center justify-center text-white font-black text-center text-xs leading-tight shadow-md">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-brand-400 p-2 flex items-center justify-center text-white font-black text-center text-xs leading-tight shadow-md">
                     ChileCompra Mercado Público
                   </div>
                   <span className="text-[10px] font-bold text-slate-500 mt-2 text-center">Mercado Público</span>
