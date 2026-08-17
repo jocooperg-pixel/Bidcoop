@@ -797,28 +797,27 @@ export default function SearchModule({
                 </a>
               </div>
 
-              {/* Collapsible Groups */}
+              {/* Bloques de navegación del detalle — reorganizados en 7 bloques
+                  (Resumen/Productos/Match/Rentabilidad/Requisitos/Documentos/
+                  Seguimiento) sin tocar el estado ni el contenido real: cada
+                  botón sigue apuntando al mismo detailGroup/detailSub de
+                  siempre, solo cambia cómo se agrupan y etiquetan. */}
               <div className="space-y-4">
-                
-                {/* Grupo 1: Información General */}
+
+                {/* Bloque 1: Resumen */}
                 <div>
-                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Información General</h4>
+                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Resumen</h4>
                   <div className="flex flex-col gap-1">
                     {[
                       { id: 'resumen', label: 'Resumen Ejecutivo' },
-                      { id: 'cronograma', label: 'Cronograma' },
-                      { id: 'items', label: 'Ítems y Cantidades' },
-                      { id: 'documentos', label: 'Documentos Anexos' },
-                      { id: 'preguntas', label: 'Preguntas Públicas' },
-                      { id: 'criterios', label: 'Criterios de Evaluación' },
-                      { id: 'comentarios', label: 'Comentarios del Equipo' }
+                      { id: 'cronograma', label: 'Cronograma' }
                     ].map(sub => (
                       <button
                         key={sub.id}
                         onClick={() => { setDetailGroup('general'); setDetailSub(sub.id); }}
                         className={`w-full text-left text-xs font-bold px-3 py-1.5 rounded-lg transition ${
                           detailGroup === 'general' && detailSub === sub.id
-                            ? 'bg-blue-600 text-white shadow-sm'
+                            ? 'bg-brand-600 text-white shadow-sm'
                             : 'text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
                         }`}
                       >
@@ -828,9 +827,32 @@ export default function SearchModule({
                   </div>
                 </div>
 
-                {/* Grupo 2: Inteligencia */}
+                {/* Bloque 2: Productos */}
                 <div>
-                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Inteligencia B2B</h4>
+                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Productos</h4>
+                  <div className="flex flex-col gap-1">
+                    {[
+                      { id: 'items', label: 'Ítems y Cantidades' }
+                    ].map(sub => (
+                      <button
+                        key={sub.id}
+                        onClick={() => { setDetailGroup('general'); setDetailSub(sub.id); }}
+                        className={`w-full text-left text-xs font-bold px-3 py-1.5 rounded-lg transition ${
+                          detailGroup === 'general' && detailSub === sub.id
+                            ? 'bg-brand-600 text-white shadow-sm'
+                            : 'text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
+                        }`}
+                      >
+                        {sub.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Bloque 3: Match — todo lo que evalúa qué tan bien calza
+                    esta oportunidad con el negocio (Inteligencia B2B) */}
+                <div>
+                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Match</h4>
                   <div className="flex flex-col gap-1">
                     {[
                       { id: 'convocatorias', label: 'Convocatorias Similares' },
@@ -844,7 +866,7 @@ export default function SearchModule({
                         onClick={() => { setDetailGroup('inteligencia'); setDetailSub(sub.id); }}
                         className={`w-full text-left text-xs font-bold px-3 py-1.5 rounded-lg transition cursor-pointer ${
                           detailGroup === 'inteligencia' && detailSub === sub.id
-                            ? 'bg-blue-600 text-white shadow-sm shadow-blue-600/10'
+                            ? 'bg-brand-600 text-white shadow-sm shadow-brand-600/10'
                             : 'text-slate-600 hover:bg-slate-105 hover:text-slate-800 dark:text-slate-400 dark:hover:bg-slate-800/60 dark:hover:text-white'
                         }`}
                       >
@@ -854,9 +876,9 @@ export default function SearchModule({
                   </div>
                 </div>
 
-                {/* Grupo 3: Postulación */}
+                {/* Bloque 4: Rentabilidad — oferta, costos y simulador de margen */}
                 <div>
-                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Postulación</h4>
+                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Rentabilidad</h4>
                   <div className="flex flex-col gap-1">
                     {[
                       { id: 'formulario', label: 'Oferta y Presupuesto' }
@@ -866,7 +888,74 @@ export default function SearchModule({
                         onClick={() => { setDetailGroup('postulacion'); setDetailSub(sub.id); }}
                         className={`w-full text-left text-xs font-bold px-3 py-1.5 rounded-lg transition ${
                           detailGroup === 'postulacion' && detailSub === sub.id
-                            ? 'bg-blue-600 text-white shadow-sm'
+                            ? 'bg-brand-600 text-white shadow-sm'
+                            : 'text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
+                        }`}
+                      >
+                        {sub.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Bloque 5: Requisitos */}
+                <div>
+                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Requisitos</h4>
+                  <div className="flex flex-col gap-1">
+                    {[
+                      { id: 'criterios', label: 'Criterios de Evaluación' }
+                    ].map(sub => (
+                      <button
+                        key={sub.id}
+                        onClick={() => { setDetailGroup('general'); setDetailSub(sub.id); }}
+                        className={`w-full text-left text-xs font-bold px-3 py-1.5 rounded-lg transition ${
+                          detailGroup === 'general' && detailSub === sub.id
+                            ? 'bg-brand-600 text-white shadow-sm'
+                            : 'text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
+                        }`}
+                      >
+                        {sub.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Bloque 6: Documentos */}
+                <div>
+                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Documentos</h4>
+                  <div className="flex flex-col gap-1">
+                    {[
+                      { id: 'documentos', label: 'Documentos Anexos' }
+                    ].map(sub => (
+                      <button
+                        key={sub.id}
+                        onClick={() => { setDetailGroup('general'); setDetailSub(sub.id); }}
+                        className={`w-full text-left text-xs font-bold px-3 py-1.5 rounded-lg transition ${
+                          detailGroup === 'general' && detailSub === sub.id
+                            ? 'bg-brand-600 text-white shadow-sm'
+                            : 'text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
+                        }`}
+                      >
+                        {sub.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Bloque 7: Seguimiento — preguntas públicas y comentarios internos del equipo */}
+                <div>
+                  <h4 className="text-[10px] uppercase font-black text-slate-400 dark:text-slate-500 tracking-wider mb-2 px-1">Seguimiento</h4>
+                  <div className="flex flex-col gap-1">
+                    {[
+                      { id: 'preguntas', label: 'Preguntas Públicas' },
+                      { id: 'comentarios', label: 'Comentarios del Equipo' }
+                    ].map(sub => (
+                      <button
+                        key={sub.id}
+                        onClick={() => { setDetailGroup('general'); setDetailSub(sub.id); }}
+                        className={`w-full text-left text-xs font-bold px-3 py-1.5 rounded-lg transition ${
+                          detailGroup === 'general' && detailSub === sub.id
+                            ? 'bg-brand-600 text-white shadow-sm'
                             : 'text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800'
                         }`}
                       >
