@@ -369,71 +369,79 @@ export async function POST(request: Request) {
       const activeUser = (smtpUser && smtpUser.trim()) ? smtpUser.trim() : (process.env.SMTP_USER || '');
       const activePass = (smtpPass && smtpPass.trim()) ? smtpPass.trim() : (process.env.SMTP_PASS || '');
 
-      // Strategy 1: Gmail / Nodemailer SMTP with SSL (Port 465) or TLS (Port 587)
-      try {
-        const transporter = nodemailer.createTransport({
-          host: smtpHost || 'smtp.gmail.com',
-          port: Number(smtpPort) || 465,
-          secure: Number(smtpPort) === 465,
-          auth: {
-            user: activeUser,
-            pass: activePass
-          },
-          connectionTimeout: 10000,
-          greetingTimeout: 10000,
-          socketTimeout: 15000
-        });
-
-        const info = await transporter.sendMail({
-          from: `"Jonathan Cooper - BidCoop Intelligence" <${activeUser}>`,
-          to: activeUser, 
-          bcc: targetEmails, 
-          subject,
-          html: htmlBody,
-          attachments: [
-            {
-              filename,
-              content: csvContent,
-              contentType: 'text/csv;charset=utf-8;'
-            }
-          ]
-        });
-
-        if (info && info.messageId) {
-          isSent = true;
-          sentId = info.messageId;
-          return { groupName, targetEmails, isSent, sentId, filename, totalOps: opsList.length };
-        }
-      } catch (errG: any) {
-        console.warn(`Gmail SMTP (465) failed for ${groupName}, trying Port 587:`, errG.message);
+      // Strategy 1: Gmail / Nodemailer SMTP con SSL (465) o TLS (587) — SOLO
+      // si hay una contraseña de aplicación realmente configurada. Preferir
+      // Resend (Strategy 2, API key dedicada y revocable) cuando no hay
+      // credencial Gmail: evita intentos de conexión inútiles y, sobre todo,
+      // evita depender de una contraseña de aplicación ligada a la cuenta
+      // personal de Gmail — más sensible de exponer que una API key de un
+      // servicio de envío dedicado.
+      if (activeUser && activePass) {
         try {
-          const transporter587 = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 587,
-            secure: false,
+          const transporter = nodemailer.createTransport({
+            host: smtpHost || 'smtp.gmail.com',
+            port: Number(smtpPort) || 465,
+            secure: Number(smtpPort) === 465,
             auth: {
               user: activeUser,
               pass: activePass
             },
-            connectionTimeout: 10000
+            connectionTimeout: 10000,
+            greetingTimeout: 10000,
+            socketTimeout: 15000
           });
 
-          const info587 = await transporter587.sendMail({
+          const info = await transporter.sendMail({
             from: `"Jonathan Cooper - BidCoop Intelligence" <${activeUser}>`,
             to: activeUser,
             bcc: targetEmails,
             subject,
             html: htmlBody,
-            attachments: [{ filename, content: csvContent, contentType: 'text/csv;charset=utf-8;' }]
+            attachments: [
+              {
+                filename,
+                content: csvContent,
+                contentType: 'text/csv;charset=utf-8;'
+              }
+            ]
           });
 
-          if (info587 && info587.messageId) {
+          if (info && info.messageId) {
             isSent = true;
-            sentId = info587.messageId;
+            sentId = info.messageId;
             return { groupName, targetEmails, isSent, sentId, filename, totalOps: opsList.length };
           }
-        } catch (err587: any) {
-          console.warn(`Gmail SMTP (587) failed for ${groupName}:`, err587.message);
+        } catch (errG: any) {
+          console.warn(`Gmail SMTP (465) failed for ${groupName}, trying Port 587:`, errG.message);
+          try {
+            const transporter587 = nodemailer.createTransport({
+              host: 'smtp.gmail.com',
+              port: 587,
+              secure: false,
+              auth: {
+                user: activeUser,
+                pass: activePass
+              },
+              connectionTimeout: 10000
+            });
+
+            const info587 = await transporter587.sendMail({
+              from: `"Jonathan Cooper - BidCoop Intelligence" <${activeUser}>`,
+              to: activeUser,
+              bcc: targetEmails,
+              subject,
+              html: htmlBody,
+              attachments: [{ filename, content: csvContent, contentType: 'text/csv;charset=utf-8;' }]
+            });
+
+            if (info587 && info587.messageId) {
+              isSent = true;
+              sentId = info587.messageId;
+              return { groupName, targetEmails, isSent, sentId, filename, totalOps: opsList.length };
+            }
+          } catch (err587: any) {
+            console.warn(`Gmail SMTP (587) failed for ${groupName}:`, err587.message);
+          }
         }
       }
 
