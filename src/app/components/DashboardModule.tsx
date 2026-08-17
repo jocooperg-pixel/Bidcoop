@@ -3,10 +3,12 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   BarChart, Bar, Cell
 } from 'recharts';
+import { Database, Zap, FileText, Target } from 'lucide-react';
 import { Oportunidad, Postulacion } from '../types';
 import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 import { calcularCentroAlertas } from '../utils/alertasEngine';
 import { rolLabel } from '../utils/roles';
+import KpiCard from './ui/KpiCard';
 
 interface UsuarioResumen {
   id: string;
@@ -361,36 +363,36 @@ export default function DashboardModule({
     <div className="space-y-6 animate-in fade-in duration-200">
       
       {/* BRAND BANNER WITH FLOATING ROUND LOGO */}
-      <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-6 rounded-3xl border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-brand-950 via-brand-900 to-brand-950 text-white p-6 rounded-3xl border border-brand-800/60 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
         <div className="flex items-center gap-5 relative z-10">
-          <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-400 p-0.5 shadow-xl shadow-sky-500/30 shrink-0 border-2 border-white">
+          <div className="w-14 h-14 rounded-full bg-gradient-to-br from-brand-600 via-brand-500 to-brand-400 p-0.5 shadow-xl shadow-brand-500/30 shrink-0 border-2 border-white">
             <div className="w-full h-full rounded-full bg-white p-1 flex items-center justify-center overflow-hidden">
               <img src="/bidcoop-logo.png" alt="BidCoop Logo" className="w-full h-full object-contain rounded-full" />
             </div>
           </div>
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="bg-sky-500/20 text-sky-300 border border-sky-500/30 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+              <span className="bg-brand-500/20 text-brand-300 border border-brand-500/30 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                 Plataforma Oficial B2B
               </span>
-              <span className="bg-blue-500/20 text-blue-300 border border-blue-500/30 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+              <span className="bg-brand-500/20 text-brand-300 border border-brand-500/30 text-[10px] font-bold px-2.5 py-0.5 rounded-full">
                 Sincronizado con Mercado Público 🇨🇱
               </span>
             </div>
             <h2 className="text-xl font-black tracking-tight text-white">
               BidCoop — Tu Plataforma en Mercado Público
             </h2>
-            <p className="text-xs text-slate-300 max-w-xl">
+            <p className="text-xs text-brand-100/80 max-w-xl">
               Monitoreo inteligente en tiempo real de Convenios Marco, Compras Ágiles y Licitaciones Públicas segmentado por holding.
             </p>
           </div>
         </div>
 
         <div className="flex items-center gap-3 shrink-0 relative z-10">
-          <div className="text-right bg-slate-950/60 p-3 rounded-2xl border border-slate-800/80">
-            <span className="text-[10px] font-extrabold uppercase text-slate-400 block">Status Holding</span>
-            <span className="text-xs font-black text-sky-400 flex items-center gap-1.5 justify-end">
-              <span className="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
+          <div className="text-right bg-brand-950/60 p-3 rounded-2xl border border-brand-800/80">
+            <span className="text-[10px] font-extrabold uppercase text-brand-300/70 block">Status Holding</span>
+            <span className="text-xs font-black text-brand-300 flex items-center gap-1.5 justify-end">
+              <span className="w-2 h-2 rounded-full bg-brand-400 animate-ping"></span>
               {empresasActivasCount} {empresasActivasCount === 1 ? 'Empresa Activa' : 'Empresas Activas'}
             </span>
           </div>
@@ -784,64 +786,34 @@ export default function DashboardModule({
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-2xl p-4 text-white shadow-lg shadow-blue-500/10 flex flex-col justify-between h-36">
-          <div className="flex items-center justify-between">
-            <span className="text-[10px] uppercase font-black tracking-wider text-blue-100">Base Total Activa</span>
-            <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 4a2 2 0 00-2-2v3m2-3V9m0 0l-2 2" />
-              </svg>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-3xl font-black">{kpiData.available}</h2>
-            <span className="text-[10px] font-bold text-blue-200 block mt-1">Oportunidades en Mercado Público</span>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-tr from-amber-500 to-orange-600 rounded-2xl p-4 text-white shadow-lg shadow-orange-500/10 flex flex-col justify-between h-36">
-          <div className="flex items-center justify-between">
-            <span className="text-[10px] uppercase font-black tracking-wider text-amber-100">Compras Ágiles Hoy</span>
-            <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
-              <span className="text-sm">⚡</span>
-            </div>
-          </div>
-          <div>
-            <div className="flex items-baseline gap-2">
-              <h2 className="text-3xl font-black">{kpiData.comprasAgiles}</h2>
-              <span className="text-xs font-bold text-amber-200">vigentes hoy</span>
-            </div>
-            <span className="text-[10px] font-bold text-amber-100 block mt-1">Menores a 60 UTM (~$3.95M CLP)</span>
-          </div>
-        </div>
-
-        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm flex flex-col justify-between h-36">
-          <div className="flex items-center justify-between">
-            <span className="text-[10px] uppercase font-black tracking-wider text-slate-400">Licitaciones &amp; Convenio</span>
-            <div className="w-8 h-8 rounded-lg bg-purple-50 dark:bg-purple-950/30 flex items-center justify-center">
-              <span className="text-sm">📜</span>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-3xl font-black text-slate-900 dark:text-white">{kpiData.licitaciones + kpiData.convenioMarco}</h2>
-            <span className="text-[10px] font-bold text-purple-600 dark:text-purple-400 block mt-1">{kpiData.licitaciones} Licitaciones / {kpiData.convenioMarco} Convenios</span>
-          </div>
-        </div>
-
-        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm flex flex-col justify-between h-36">
-          <div className="flex items-center justify-between">
-            <span className="text-[10px] uppercase font-black tracking-wider text-slate-400">Match Score &gt; 90%</span>
-            <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center">
-              <svg className="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-3xl font-black text-emerald-600 dark:text-emerald-400">{kpiData.alerts}</h2>
-            <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 block mt-1">Alta prioridad para postulación</span>
-          </div>
-        </div>
+        <KpiCard
+          label="Base Total Activa"
+          value={kpiData.available}
+          subtitle="Oportunidades en Mercado Público"
+          icon={<Database className="w-4 h-4" />}
+          accent="brand"
+        />
+        <KpiCard
+          label="Compras Ágiles Hoy"
+          value={kpiData.comprasAgiles}
+          subtitle="Menores a 60 UTM (~$3.95M CLP)"
+          icon={<Zap className="w-4 h-4" />}
+          accent="amber"
+        />
+        <KpiCard
+          label="Licitaciones & Convenio"
+          value={kpiData.licitaciones + kpiData.convenioMarco}
+          subtitle={`${kpiData.licitaciones} Licitaciones / ${kpiData.convenioMarco} Convenios`}
+          icon={<FileText className="w-4 h-4" />}
+          accent="slate"
+        />
+        <KpiCard
+          label="Match Score > 90%"
+          value={kpiData.alerts}
+          subtitle="Alta prioridad para postulación"
+          icon={<Target className="w-4 h-4" />}
+          accent="emerald"
+        />
       </div>
 
       {/* 3. CHARTS AND SUGGESTED OPTIONS */}
@@ -860,8 +832,8 @@ export default function DashboardModule({
               <AreaChart data={chartData} margin={{ top: 10, right: 10, left: -25, bottom: 0 }}>
                 <defs>
                   <linearGradient id="colorOps" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#3B82F6" stopOpacity={0.2}/>
-                    <stop offset="95%" stopColor="#3B82F6" stopOpacity={0}/>
+                    <stop offset="5%" stopColor="#2563eb" stopOpacity={0.2}/>
+                    <stop offset="95%" stopColor="#2563eb" stopOpacity={0}/>
                   </linearGradient>
                   <linearGradient id="colorPost" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="#10B981" stopOpacity={0.2}/>
@@ -873,15 +845,15 @@ export default function DashboardModule({
                 <YAxis style={{ fontSize: 9, fontWeight: 'bold' }} stroke="#94a3b8" />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: '#0f172a',
-                    border: '1px solid #1e293b',
+                    backgroundColor: '#071b3f',
+                    border: '1px solid #123b7a',
                     borderRadius: '12px',
                     color: '#fff',
                     fontSize: '11px',
                     fontWeight: 'bold'
                   }}
                 />
-                <Area type="monotone" dataKey="oportunidades" name="Oportunidades" stroke="#3B82F6" strokeWidth={2} fillOpacity={1} fill="url(#colorOps)" />
+                <Area type="monotone" dataKey="oportunidades" name="Oportunidades" stroke="#2563eb" strokeWidth={2} fillOpacity={1} fill="url(#colorOps)" />
                 <Area type="monotone" dataKey="postuladas" name="Postuladas" stroke="#10B981" strokeWidth={2} fillOpacity={1} fill="url(#colorPost)" />
               </AreaChart>
             </ResponsiveContainer>
