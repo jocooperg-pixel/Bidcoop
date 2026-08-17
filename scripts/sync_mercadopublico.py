@@ -193,6 +193,31 @@ def load_previous_snapshot() -> dict:
         pass
     return {"generatedAt": None, "registros": {}}
 
+def load_previous_full_dataset() -> List[Dict]:
+    """
+    Lee el mockData.ts ya publicado y extrae el array de oportunidades tal
+    cual quedó en la última corrida exitosa. Usado únicamente como fallback
+    cuando una fuente parcial (hoy: Compra Ágil vía API v2) falla a mitad de
+    camino, para conservar ese dato real de la corrida anterior en vez de
+    publicar un dataset vacío que sugiera falsamente que el mercado se vació
+    — nunca se usa para inventar nada nuevo, solo para no perder lo último
+    que sí se confirmó real.
+    """
+    if not os.path.isfile(OUTPUT_FILE):
+        return []
+    try:
+        with open(OUTPUT_FILE, encoding="utf-8") as f:
+            content = f.read()
+        marker = "const rawOportunidades: any = "
+        start = content.index(marker) + len(marker)
+        end = content.index("];", start) + 1  # incluye el ']' de cierre, excluye el ';'
+        data = json.loads(content[start:end])
+        if isinstance(data, list):
+            return data
+    except Exception as e:
+        print(f"  [WARN] No se pudo leer el mockData.ts previo como fallback: {e}")
+    return []
+
 def save_snapshot(processed: List[Dict]):
     registros = {}
     for op in processed:
@@ -1265,18 +1290,33 @@ def main():
 
     print(f"[FASE 3] Añadidas {compraagil_added} Compras Ágiles reales desde API v2 (pre-filtradas por catálogo: {compraagil_prefiltered_out}).")
 
-    # SALVAGUARDA ESPECÍFICA DE COMPRA ÁGIL: la salvaguarda de "caída drástica"
-    # de más abajo opera sobre el TOTAL (licitaciones + Compra Ágil), así que
-    # una falla que vacíe solo Compra Ágil (ticket agotado, API caída a mitad
-    # de camino) podría no cruzar ese umbral global y sobrescribir mockData.ts
-    # perdiendo silenciosamente todas las Compras Ágiles ya sincronizadas. Se
-    # compara contra cuántos códigos "-COT" había en la corrida anterior.
+    # SALVAGUARDA ESPECÍFICA DE COMPRA ÁGIL: si la API v2 falla a mitad de
+    # camino (cuota agotada, caída de red, mantención de ChileCompra), no se
+    # aborta TODO el ciclo — eso congelaría también licitaciones, que sí tiene
+    # datos frescos y correctos vía la API v1 (independiente). En vez de eso,
+    # se conservan las Compras Ágiles del último mockData.ts publicado (dato
+    # real de la corrida anterior, no inventado) mientras licitaciones sigue
+    # actualizándose con normalidad. Se compara contra cuántos códigos "-COT"
+    # había en la corrida anterior.
     prev_compraagil_count = sum(1 for code in previous_snapshot.get("registros", {}) if "-COT" in code)
     if COMPRAAGIL_TICKET and prev_compraagil_count >= 20 and compraagil_added < prev_compraagil_count * 0.4:
         print(f"[ERROR] Caída drástica de Compras Ágiles: {prev_compraagil_count} → {compraagil_added} "
               f"({round(100 - compraagil_added / prev_compraagil_count * 100)}% menos). Probable falla parcial de "
-              f"la API v2 de Compra Ágil (cuota agotada, error de red). Abortando sin sobrescribir mockData.ts.")
-        sys.exit(1)
+              f"la API v2 de Compra Ágil (cuota agotada, error de red).")
+        previous_full = load_previous_full_dataset()
+        carried_over = 0
+        for record in previous_full:
+            code = record.get("codigo")
+            if code and "-COT" in code and code not in opportunities_by_code:
+                opportunities_by_code[code] = record
+                carried_over += 1
+        if carried_over > 0:
+            print(f"  [INFO] Conservadas {carried_over} Compras Ágiles de la última sincronización exitosa "
+                  f"— licitaciones sigue actualizándose con normalidad este ciclo.")
+        else:
+            print("  [ERROR] No se pudo recuperar el dataset previo de Compras Ágiles tampoco. "
+                  "Abortando sin sobrescribir mockData.ts.")
+            sys.exit(1)
 
     print(f"[FASE 2] Pre-filtradas (irrelevantes, sin llamar API detalle): {prefiltered_out}")
     print(f"[FASE 2] Excluidas por falta de datos reales (organismo/monto no verificable): {excluded_no_real_data}")
