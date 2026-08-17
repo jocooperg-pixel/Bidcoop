@@ -1,9 +1,13 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { LayoutGrid, List, Star, Sparkles, FileSpreadsheet, Eye, Building2, Clock } from 'lucide-react';
 import { Oportunidad, Postulacion, VistaGuardada, DocumentoAdjunto, Item } from '../types';
 import { getMatchScoreBadgeStyle } from '../utils/smartMatchEngine';
 import { getSemaforoBidCoop } from '../utils/semaforoEngine';
 import { EMPRESAS } from '../utils/empresas';
 import { mockPostulaciones } from '../mockData';
+import Card from './ui/Card';
+import { MatchBadge, SemaforoBadge } from './ui/Badge';
+import Pagination from './ui/Pagination';
 
 interface UsuarioBasico {
   id: string;
@@ -76,6 +80,7 @@ export default function SearchModule({
     cierre: true
   });
   const [showColumnSelector, setShowColumnSelector] = useState(false);
+  const [viewMode, setViewMode] = useState<'cards' | 'table'>('cards');
 
   // Saved view creation
   const [newViewName, setNewViewName] = useState('');
@@ -649,6 +654,34 @@ export default function SearchModule({
     setSimMargins(initialMargins);
     setSimFlete(op.monto > 5000000 ? 80000 : 15000);
     setShowSimulator(false);
+  };
+
+  // Atajos desde la tarjeta de oportunidad — reusan el mismo estado/lógica
+  // del panel de detalle (handleOpenDetail), solo cambian el punto de
+  // entrada: en vez de abrir siempre en "Resumen", saltan directo a la
+  // pestaña que el usuario pidió.
+  const handleQuickAnalizar = (op: Oportunidad) => {
+    handleOpenDetail(op);
+    setDetailGroup('inteligencia');
+    setDetailSub('convocatorias');
+  };
+
+  const handleQuickCotizar = (op: Oportunidad) => {
+    handleOpenDetail(op);
+    setShowQuoteModal(true);
+  };
+
+  // Tiempo restante hasta el cierre — mismo criterio que Centro de Alertas
+  // del Dashboard (horas reales desde ahora, nunca estimado).
+  const tiempoRestante = (op: Oportunidad): string | null => {
+    if (!op.fechaCierre) return null;
+    const cierre = new Date(op.fechaCierre);
+    if (isNaN(cierre.getTime())) return null;
+    const horas = (cierre.getTime() - Date.now()) / (1000 * 60 * 60);
+    if (horas < 0) return null;
+    if (horas < 1) return `${Math.round(horas * 60)} min`;
+    if (horas < 24) return `${Math.round(horas)} h`;
+    return `${Math.round(horas / 24)} días`;
   };
 
   // Calculate sum of item postulations
@@ -2182,8 +2215,35 @@ export default function SearchModule({
 
               {/* Action Buttons */}
               <div className="flex items-center gap-2">
-                
-                {/* Column selector */}
+
+                {/* View mode toggle */}
+                <div className="flex items-center gap-0.5 bg-slate-100 dark:bg-slate-800 p-0.5 rounded-xl">
+                  <button
+                    onClick={() => setViewMode('cards')}
+                    title="Vista de tarjetas"
+                    className={`p-1.5 px-2.5 rounded-lg text-[10px] font-bold flex items-center gap-1.5 transition ${
+                      viewMode === 'cards'
+                        ? 'bg-white dark:bg-slate-900 text-brand-600 dark:text-brand-400 shadow-sm'
+                        : 'text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white'
+                    }`}
+                  >
+                    <LayoutGrid className="w-3.5 h-3.5" /> Tarjetas
+                  </button>
+                  <button
+                    onClick={() => setViewMode('table')}
+                    title="Vista de tabla"
+                    className={`p-1.5 px-2.5 rounded-lg text-[10px] font-bold flex items-center gap-1.5 transition ${
+                      viewMode === 'table'
+                        ? 'bg-white dark:bg-slate-900 text-brand-600 dark:text-brand-400 shadow-sm'
+                        : 'text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white'
+                    }`}
+                  >
+                    <List className="w-3.5 h-3.5" /> Tabla
+                  </button>
+                </div>
+
+                {/* Column selector — solo aplica a la vista de tabla */}
+                {viewMode === 'table' && (
                 <div className="relative">
                   <button
                     onClick={() => setShowColumnSelector(!showColumnSelector)}
@@ -2207,6 +2267,7 @@ export default function SearchModule({
                     </div>
                   )}
                 </div>
+                )}
 
                 {/* Exports */}
                 <button
@@ -2279,7 +2340,163 @@ export default function SearchModule({
               )}
             </div>
 
+            {/* RESULTS — CARD VIEW (default) */}
+            {viewMode === 'cards' && (
+              <div className="flex-1">
+                {paginatedOportunidades.length === 0 ? (
+                  <div className="py-12 text-center text-slate-400 text-xs">
+                    No se encontraron oportunidades bajo este criterio de búsqueda.
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+                    {paginatedOportunidades.map((op) => {
+                      const isFollowed = !!followedOps[op.id];
+                      const restante = tiempoRestante(op);
+                      return (
+                        <Card
+                          key={op.id}
+                          padded={false}
+                          className="p-4 flex flex-col gap-2.5 hover:border-brand-300 dark:hover:border-brand-700 hover:shadow-md transition cursor-pointer"
+                        >
+                          <div onClick={() => handleOpenDetail(op)} className="flex-1 flex flex-col gap-2.5">
+                            {/* Header: código + estado de verificación + seguir */}
+                            <div className="flex items-start justify-between gap-2">
+                              <div className="flex items-center gap-1.5 flex-wrap min-w-0">
+                                <span className="text-[10px] font-black text-slate-900 dark:text-white">{op.officialCode || op.codigo}</span>
+                                {op.validationStatus === 'confirmado' ? (
+                                  <span className="text-[8px] font-extrabold px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800" title="Verificado con API oficial de Mercado Público">
+                                    ✓ MP Verificado
+                                  </span>
+                                ) : (
+                                  <span className="text-[8px] font-semibold px-1.5 py-0.5 rounded bg-amber-50 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-900" title="En cola para verificación de detalle oficial">
+                                    ⚠️ En Verificación
+                                  </span>
+                                )}
+                              </div>
+                              <button
+                                onClick={(e) => { e.stopPropagation(); onToggleFollow(op.id); }}
+                                title={isFollowed ? 'Dejar de seguir' : 'Seguir oportunidad'}
+                                className={`shrink-0 p-1 rounded-lg transition ${isFollowed ? 'text-amber-500' : 'text-slate-300 dark:text-slate-600 hover:text-amber-400'}`}
+                              >
+                                <Star className="w-4 h-4" fill={isFollowed ? 'currentColor' : 'none'} />
+                              </button>
+                            </div>
+
+                            {/* Título + organismo */}
+                            <div>
+                              <h4 className="text-xs font-black text-slate-800 dark:text-slate-100 line-clamp-2 group-hover:text-brand-600 transition-colors">
+                                {op.titulo}
+                              </h4>
+                              <div className="flex items-center gap-1 mt-1 text-[10px] font-bold text-slate-500 dark:text-slate-400">
+                                <Building2 className="w-3 h-3 shrink-0" />
+                                <span className="truncate">{op.organismo}</span>
+                              </div>
+                            </div>
+
+                            {/* Chips: rubro / empresa / modalidad / estado */}
+                            <div className="flex gap-1.5 items-center flex-wrap">
+                              <span className="text-[8px] font-black px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">{op.rubro}</span>
+                              {op.empresaMatch && (
+                                <span className={`text-[8px] font-black px-1.5 py-0.5 rounded uppercase ${
+                                  op.empresaMatch === 'Aminorte'
+                                    ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400'
+                                    : op.empresaMatch === 'V-MOCCS'
+                                    ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-400'
+                                    : 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400'
+                                }`}>
+                                  {op.empresaMatch}
+                                </span>
+                              )}
+                              {op.modalidad && (
+                                <span className={`text-[8px] font-black px-1.5 py-0.5 rounded uppercase ${
+                                  op.modalidad === 'Grandes Compras' || op.esInvitacionGrandesCompras
+                                    ? 'bg-purple-600 text-white font-extrabold'
+                                    : op.modalidad === 'Compra Ágil'
+                                    ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/30 dark:text-orange-400'
+                                    : op.modalidad === 'Convenio Marco'
+                                    ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400'
+                                    : 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400'
+                                }`}>
+                                  {op.modalidad === 'Grandes Compras' ? '🛍️ Grande Compra' : op.modalidad}
+                                </span>
+                              )}
+                              {op.estado && (
+                                <span className={`text-[8px] font-black px-1.5 py-0.5 rounded uppercase ${
+                                  op.estado === 'Publicada'
+                                    ? 'bg-green-50 text-green-700 dark:bg-green-950/40 dark:text-green-400'
+                                    : op.estado === 'Cerrada'
+                                    ? 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-450'
+                                    : op.estado === 'Proveedor seleccionado'
+                                    ? 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400'
+                                    : op.estado === 'Cancelada'
+                                    ? 'bg-red-50 text-red-700 dark:bg-red-950/30 dark:text-red-400'
+                                    : op.estado === 'Adjudicada'
+                                    ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400'
+                                    : op.estado === 'Vencida'
+                                    ? 'bg-red-50 text-red-600 dark:bg-red-950/20 dark:text-red-400'
+                                    : 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-450'
+                                }`}>
+                                  {op.estado}
+                                </span>
+                              )}
+                            </div>
+
+                            {/* Monto + Match + Semáforo */}
+                            <div className="flex items-center justify-between gap-2 pt-2 border-t border-slate-100 dark:border-slate-800">
+                              <div className="min-w-0">
+                                {op.amountType === 'no_informado' || op.amount === null || (!op.amount && op.monto === 0) ? (
+                                  <span className="text-[10px] font-semibold italic text-slate-400 dark:text-slate-500">Monto no informado</span>
+                                ) : (
+                                  <span className="text-sm font-black text-slate-900 dark:text-white">
+                                    ${(op.amount || op.monto).toLocaleString('es-CL')} <span className="text-[9px] text-slate-400 font-medium">{op.currency || 'CLP'}</span>
+                                  </span>
+                                )}
+                              </div>
+                              <div className="flex items-center gap-1.5 shrink-0">
+                                <MatchBadge score={op.matchScore} />
+                                <SemaforoBadge op={op} compact />
+                              </div>
+                            </div>
+
+                            {/* Fecha cierre / tiempo restante */}
+                            <div className="flex items-center gap-1.5 text-[10px] font-bold text-slate-500 dark:text-slate-400">
+                              <Clock className="w-3 h-3 shrink-0" />
+                              <span>{op.fechaCierre}</span>
+                              {restante && <span className="text-brand-600 dark:text-brand-400">· cierra en {restante}</span>}
+                            </div>
+                          </div>
+
+                          {/* Acciones rápidas */}
+                          <div className="grid grid-cols-3 gap-1.5 pt-2.5 border-t border-slate-100 dark:border-slate-800">
+                            <button
+                              onClick={() => handleOpenDetail(op)}
+                              className="flex items-center justify-center gap-1 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-bold text-[9px] uppercase transition"
+                            >
+                              <Eye className="w-3 h-3" /> Ver
+                            </button>
+                            <button
+                              onClick={() => handleQuickAnalizar(op)}
+                              className="flex items-center justify-center gap-1 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 font-bold text-[9px] uppercase transition"
+                            >
+                              <Sparkles className="w-3 h-3" /> Analizar
+                            </button>
+                            <button
+                              onClick={() => handleQuickCotizar(op)}
+                              className="flex items-center justify-center gap-1 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 font-bold text-[9px] uppercase transition"
+                            >
+                              <FileSpreadsheet className="w-3 h-3" /> Cotizar
+                            </button>
+                          </div>
+                        </Card>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* RESULTS TABLE */}
+            {viewMode === 'table' && (
             <div className="overflow-x-auto flex-1">
               <table className="w-full text-left border-collapse">
                 <thead>
@@ -2427,6 +2644,7 @@ export default function SearchModule({
                 </tbody>
               </table>
             </div>
+            )}
 
             {/* PAGINATION PANEL */}
             <div className="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mt-4">
@@ -2434,25 +2652,7 @@ export default function SearchModule({
                 Mostrando {paginatedOportunidades.length} de {filteredOportunidades.length} registros
               </span>
               
-              <div className="flex items-center gap-1">
-                <button
-                  disabled={currentPage === 1}
-                  onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-                  className="p-1.5 px-3 rounded-lg border border-slate-200 dark:border-slate-700 text-[10px] font-bold text-slate-600 dark:text-slate-400 hover:bg-slate-50 disabled:opacity-40"
-                >
-                  Anterior
-                </button>
-                <span className="text-[10px] font-black text-slate-900 dark:text-white px-2">
-                  Pág {currentPage} de {totalPages}
-                </span>
-                <button
-                  disabled={currentPage === totalPages}
-                  onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-                  className="p-1.5 px-3 rounded-lg border border-slate-200 dark:border-slate-700 text-[10px] font-bold text-slate-600 dark:text-slate-400 hover:bg-slate-50 disabled:opacity-40"
-                >
-                  Siguiente
-                </button>
-              </div>
+              <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
             </div>
 
           </div>
