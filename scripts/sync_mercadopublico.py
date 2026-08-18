@@ -70,6 +70,21 @@ DIAGNOSTICS_FILE = os.path.join(PROJECT_PATH, "data/sync_diagnostics.json")
 TICKET = os.environ.get("MERCADOPUBLICO_TICKET", "F8537A18-6766-4DEF-9E59-426B4FEE2844")
 BASE_URL = "https://api.mercadopublico.cl/servicios/v1/publico"
 
+# Confirmado en vivo (runs #61/#62 del workflow) que api.mercadopublico.cl
+# responde 200 OK con Listado vacío específicamente desde las IPs de los
+# runners de GitHub Actions — nunca desde una IP normal ni desde Vercel,
+# donde el mismo endpoint funciona bien en producción. En vez de mover todo
+# este motor a Vercel, se relevan solo las llamadas a licitaciones.json a
+# través de /api/sync-relay (deploy de este mismo repo), que reenvía la
+# petición desde la IP de Vercel — ver ese endpoint para el detalle y por
+# qué es seguro exponerlo sin sesión. Se puede desactivar (volver a pedirle
+# directo a Mercado Público) con SYNC_RELAY_URL="" si el relay no está
+# disponible.
+_relay_default = "https://bidcoop.vercel.app/api/sync-relay"
+RELAY_BASE_URL = os.environ.get("SYNC_RELAY_URL", _relay_default)
+if RELAY_BASE_URL == "off":
+    RELAY_BASE_URL = ""
+
 # API oficial v2 de Compra Ágil (lanzada por ChileCompra en mayo 2026) — dominio
 # y esquema de autenticación distintos de la API v1 de licitaciones (header
 # 'ticket' en vez de query param). Sin ticket configurado, la sincronización de
@@ -485,13 +500,22 @@ def fetch_json(url: str, timeout: int = 20, max_retries: int = 3) -> Optional[di
     return None
 
 
+def licitaciones_url(**params: str) -> str:
+    """Construye la URL de licitaciones.json — vía el relay de Vercel
+    (RELAY_BASE_URL) si está configurado, o directo a Mercado Público si no."""
+    base = RELAY_BASE_URL if RELAY_BASE_URL else f"{BASE_URL}/licitaciones.json"
+    query = "&".join(f"{k}={v}" for k, v in params.items() if v is not None)
+    ticket_part = "" if RELAY_BASE_URL else f"&ticket={TICKET}"
+    return f"{base}?{query}{ticket_part}"
+
+
 def fetch_api_bulk_list(estado: str = "activas") -> List[Dict]:
     results = []
     page = 1
     total_pages_estimate = 10
 
     while page <= total_pages_estimate:
-        url = f"{BASE_URL}/licitaciones.json?estado={estado}&pagina={page}&ticket={TICKET}"
+        url = licitaciones_url(estado=estado, pagina=str(page))
         data = fetch_json(url, timeout=30)
         if data is None:
             print(f"  [WARN] Página {page} falló sin respuesta.")
@@ -532,7 +556,7 @@ def fetch_api_by_recent_dates(days_back: int = 7) -> List[Dict]:
     for i in range(days_back):
         d = today - datetime.timedelta(days=i)
         fecha = d.strftime("%d%m%Y")
-        url = f"{BASE_URL}/licitaciones.json?fecha={fecha}&ticket={TICKET}"
+        url = licitaciones_url(fecha=fecha)
         data = fetch_json(url, timeout=30)
         if data is None:
             print(f"  [WARN] Consulta por fecha {fecha} falló sin respuesta.")
@@ -556,7 +580,7 @@ def fetch_opportunity_detail(code: str, close_str: str, detail_cache: dict) -> T
     if elapsed > MAX_EXEC_SECONDS:
         return None, "timeout"
 
-    url = f"{BASE_URL}/licitaciones.json?codigo={code}&ticket={TICKET}"
+    url = licitaciones_url(codigo=code)
     resp = fetch_json(url, timeout=20, max_retries=2)
 
     if resp and "Listado" in resp and isinstance(resp["Listado"], list) and len(resp["Listado"]) > 0:

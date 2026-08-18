@@ -7,7 +7,10 @@ import { verificarTokenSesion, SESSION_COOKIE_NAME } from './app/utils/session';
 // /api/assistant no verificaban sesión — cualquiera con la URL podía leer
 // inteligencia de negocio real (compradores, montos, licitaciones objetivo)
 // sin haber iniciado sesión. /api/auth/* queda excluido (login/logout/me
-// deben ser accesibles sin sesión previa).
+// deben ser accesibles sin sesión previa). /api/sync-relay también queda
+// excluido a propósito: lo llama scripts/sync_mercadopublico.py desde
+// GitHub Actions (sin sesión de usuario), y solo reenvía datos ya públicos
+// de Mercado Público — ver el comentario en esa ruta.
 //
 // Esta es una capa, no la única defensa: cada ruta que mute datos sensibles
 // (empresas, compradores) debe verificar autorización por rol/empresa por
@@ -25,5 +28,5 @@ export async function proxy(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/api/((?!auth).*)']
+  matcher: ['/api/((?!auth|sync-relay).*)']
 };
