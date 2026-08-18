@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { get } from '@vercel/blob';
+import { prisma } from '@bidcoop/database';
 import { mockOportunidades } from '../../mockData';
 import type { Postulacion } from '../../types';
+import syncMeta from '../../../../data/sync_meta.json';
 
 // ═══════════════════════════════════════════════════════════════════════════
 // Asistente conversacional BidCoop — responde ÚNICAMENTE con datos reales ya
@@ -29,7 +31,21 @@ async function loadJsonBlob<T>(pathname: string, fallback: T): Promise<T> {
   }
 }
 
-function buildContext(postulaciones: Postulacion[], watchlist: { oportunidadId: string }[]) {
+function countBy<T>(items: T[], keyFn: (item: T) => string): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const item of items) {
+    const key = keyFn(item) || 'Sin dato';
+    out[key] = (out[key] || 0) + 1;
+  }
+  return out;
+}
+
+async function buildContext(
+  postulaciones: Postulacion[],
+  watchlist: { oportunidadId: string }[],
+  totalCompradores: number,
+  totalProveedores: number
+) {
   const now = new Date();
   const activas = mockOportunidades.filter(o => o.estado === 'Publicada');
 
@@ -49,44 +65,77 @@ function buildContext(postulaciones: Postulacion[], watchlist: { oportunidadId: 
   const topMonto = [...activas]
     .filter(o => (o.monto || 0) > 0)
     .sort((a, b) => (b.monto || 0) - (a.monto || 0))
-    .slice(0, 10);
+    .slice(0, 15);
 
   const watchlistIds = new Set(watchlist.map(w => w.oportunidadId));
   const seguidas = activas.filter(o => watchlistIds.has(o.id));
 
-  const postuladasCount = postulaciones.length;
-  const adjudicadasCount = activas.filter(o => o.estado === 'Adjudicada').length;
+  const montoTotalActivoCLP = activas.reduce((sum, o) => sum + (o.monto || 0), 0);
+
+  const adjudicadasReales = mockOportunidades
+    .filter(o => o.estado === 'Adjudicada')
+    .slice(0, 15)
+    .map(o => ({
+      codigo: o.codigo,
+      titulo: o.titulo,
+      organismo: o.organismo,
+      proveedorAdjudicado: o.proveedorAdjudicado || null,
+      monto: o.monto || null
+    }));
+
+  const postulacionesPorEstado = countBy(postulaciones, p => p.estado);
 
   const resumen = {
-    fechaHoy: now.toISOString().slice(0, 10),
+    metaSincronizacion: {
+      fechaHoy: now.toISOString().slice(0, 10),
+      ultimaSincronizacionExitosa: syncMeta.ultimaSincronizacionExitosa,
+      totalRegistrosEnPlataforma: syncMeta.registrosEnPlataforma,
+      fuente: 'API oficial de Mercado Público (ChileCompra), sincronizada automáticamente cada 3 horas'
+    },
     totalOportunidadesActivas: activas.length,
+    montoTotalActivoEstimadoCLP: montoTotalActivoCLP,
+    desglosePorModalidad: countBy(activas, o => o.modalidad),
+    desglosePorEmpresaMatch: countBy(activas, o => o.empresaMatch || 'Sin match de catálogo'),
+    desglosePorRegion: countBy(activas, o => o.region),
+    desglosePorRubro: countBy(activas, o => o.rubro),
     cierresProximos7Dias: cierresProximos7d.length,
-    cierresProximosDetalle: cierresProximos7d.slice(0, 20).map(x => ({
+    cierresProximosDetalle: cierresProximos7d.slice(0, 30).map(x => ({
       codigo: x.op.codigo,
       titulo: x.op.titulo,
       organismo: x.op.organismo,
+      modalidad: x.op.modalidad,
+      region: x.op.region,
       monto: x.op.monto || null,
       matchScore: x.op.matchScore,
       horasHastaCierre: Math.round(x.horas),
       empresaMatch: x.op.empresaMatch || null
     })),
-    top10PorMonto: topMonto.map(o => ({
+    top15PorMonto: topMonto.map(o => ({
       codigo: o.codigo,
       titulo: o.titulo,
       organismo: o.organismo,
+      modalidad: o.modalidad,
+      region: o.region,
       monto: o.monto,
       matchScore: o.matchScore,
       empresaMatch: o.empresaMatch || null,
       fechaCierre: o.fechaCierre
     })),
+    procesosAdjudicadosConDatosReales: adjudicadasReales,
     oportunidadesSeguidasPorElUsuario: seguidas.map(o => ({
       codigo: o.codigo,
       titulo: o.titulo,
       fechaCierre: o.fechaCierre,
       estado: o.estado
     })),
-    postulacionesRealizadas: postuladasCount,
-    oportunidadesAdjudicadasEnPlataforma: adjudicadasCount
+    postulaciones: {
+      total: postulaciones.length,
+      porEstado: postulacionesPorEstado
+    },
+    directorioReal: {
+      totalCompradoresRegistrados: totalCompradores,
+      totalProveedoresRegistrados: totalProveedores
+    }
   };
 
   return JSON.stringify(resumen, null, 2);
@@ -120,12 +169,19 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Falta el mensaje.' }, { status: 400 });
     }
 
-    const [postulaciones, watchlist] = await Promise.all([
+    const [postulaciones, watchlist, totalCompradores, totalProveedores] = await Promise.all([
       loadJsonBlob<Postulacion[]>('data/postulaciones.json', []),
-      loadJsonBlob<{ oportunidadId: string }[]>('data/watchlist.json', [])
+      loadJsonBlob<{ oportunidadId: string }[]>('data/watchlist.json', []),
+      prisma.comprador.count().catch(() => 0),
+      prisma.proveedor.count().catch(() => 0)
     ]);
 
-    const contexto = buildContext(Array.isArray(postulaciones) ? postulaciones : [], Array.isArray(watchlist) ? watchlist : []);
+    const contexto = await buildContext(
+      Array.isArray(postulaciones) ? postulaciones : [],
+      Array.isArray(watchlist) ? watchlist : [],
+      totalCompradores,
+      totalProveedores
+    );
 
     const messages = [
       ...history.slice(-10).map(h => ({ role: h.role, content: h.content })),
