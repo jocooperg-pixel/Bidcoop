@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-18T06:48:42.039346+00:00",
-  "ultimoIntentoRealizado": "2026-08-18T06:48:42.039346+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-18T09:36:30.329377+00:00",
+  "ultimoIntentoRealizado": "2026-08-18T09:36:30.329377+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1287,
-  "registrosConfirmados": 1287,
+  "registrosEnPlataforma": 1288,
+  "registrosConfirmados": 1288,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1016,
+  "registrosConMontoReal": 1017,
   "excluidosPrefiltroIrrelevante": 7047,
-  "excluidosSinDatosReales": 1,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 732,
@@ -21,12 +21,12 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 172019804,
+    "montoOriginalSum": 549327283,
     "montoFinalSum": 1131847323,
-    "montoRecuperadoSum": 959827519
+    "montoRecuperadoSum": 582520040
   },
   "categorias": {
-    "licitaciones": 551,
+    "licitaciones": 552,
     "comprasAgiles": 732,
     "convenioMarco": 0,
     "ordenes_compra": 4,
@@ -35,7 +35,7 @@
   "tiposOficiales": {
     "LP": 110,
     "L1": 59,
-    "LE": 329,
+    "LE": 330,
     "LR": 43,
     "I2": 3,
     "CO": 7,
@@ -46,12 +46,12 @@
     "COT": 725
   },
   "matchPorEmpresa": {
-    "Aminorte": 1091,
-    "V-MOCCS": 196
+    "Aminorte": 1095,
+    "V-MOCCS": 193
   },
   "cambios": {
     "comparadoContra": "2026-08-17T13:37:22.646533+00:00",
-    "nuevosCount": 975,
+    "nuevosCount": 976,
     "modificadosCount": 17,
     "cerradosCount": 688,
     "nuevos": [
@@ -542,15 +542,6 @@
         "fechaCierre": "2026-07-13T15:30:00"
       },
       {
-        "codigo": "2741-32-LE26",
-        "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO PARA MEJORAM",
-        "organismo": "I MUNICIPALIDAD DE SAN FELIPE",
-        "monto": 31000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-05-19T12:00:00"
-      },
-      {
         "codigo": "4358-12-LE26",
         "titulo": "EQUIPOS MULTIFUNCIONALES Y TONER PARA ESTABLECIMIE",
         "organismo": "I MUNICIPALIDAD DE NACIMIENTO",
@@ -558,6 +549,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 90,
         "fechaCierre": "2026-06-22T15:30:00"
+      },
+      {
+        "codigo": "2741-32-LE26",
+        "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO PARA MEJORAM",
+        "organismo": "I MUNICIPALIDAD DE SAN FELIPE",
+        "monto": 31000000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-05-19T12:00:00"
       },
       {
         "codigo": "1552-67-LE26",
@@ -1251,7 +1251,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1508.5,
+  "tiempoEjecucionSegundos": 1510.2,
   "errores": [],
   "advertencias": []
 }
