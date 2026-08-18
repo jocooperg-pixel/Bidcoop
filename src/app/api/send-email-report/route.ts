@@ -438,14 +438,15 @@ export async function POST(request: Request) {
       }
 
       // Strategy 2: Resend API with BCC
+      let lastError: string | null = null;
       for (const activeKey of keysToTry) {
         try {
           const resend = new Resend(activeKey);
-          
+
           const data = await resend.emails.send({
             from: 'BidCoop Alertas <onboarding@resend.dev>',
             to: [activeUser],
-            bcc: targetEmails, 
+            bcc: targetEmails,
             subject,
             html: htmlBody,
             attachments: [
@@ -460,19 +461,32 @@ export async function POST(request: Request) {
             isSent = true;
             sentId = data.data.id;
             break;
+          } else if (data.error) {
+            // Resend devuelve el error como dato, no como excepción — si no
+            // se registra acá queda invisible (nunca lanza, nunca cae al
+            // catch), y el fallback de abajo terminaba reportando éxito
+            // igual. Nunca ocultar un error real.
+            lastError = data.error.message || JSON.stringify(data.error);
+            console.warn(`Resend devolvió error para ${groupName}:`, lastError);
           }
         } catch (e: any) {
+          lastError = e.message;
           console.warn(`Resend failed for ${groupName}:`, e.message);
         }
       }
 
       if (!isSent) {
-        // Fallback simulation mode for local dev/preview
-        isSent = true;
-        sentId = `msg-bidcoop-${Date.now()}`;
+        if (keysToTry.length === 0 && !(activeUser && activePass)) {
+          // Ningún proveedor de correo configurado (ni Resend ni Gmail) —
+          // modo simulación explícita, solo para desarrollo local.
+          isSent = true;
+          sentId = `msg-bidcoop-simulado-${Date.now()}`;
+        }
+        // Si sí había un proveedor configurado y falló de verdad, isSent
+        // queda en false — nunca se reporta un envío que no ocurrió.
       }
 
-      return { groupName, targetEmails, isSent, sentId, filename, totalOps: opsList.length };
+      return { groupName, targetEmails, isSent, sentId, error: isSent ? null : lastError, filename, totalOps: opsList.length };
     };
 
 
@@ -505,12 +519,20 @@ export async function POST(request: Request) {
     }
 
 
+    const realSends = dispatchResults.filter(r => r.isSent);
+    const failedSends = dispatchResults.filter(r => !r.isSent);
+    const emailStatus = dispatchResults.length === 0
+      ? 'No había Compras Ágiles vigentes para ningún grupo (Regiones/RM) — no se envió nada.'
+      : failedSends.length === 0
+        ? `¡Se completó el despacho de ${realSends.length} correo(s) con adjuntos .CSV!`
+        : `Fallaron ${failedSends.length} de ${dispatchResults.length} despacho(s): ${failedSends.map(r => `${r.groupName} (${r.error || 'sin detalle'})`).join('; ')}`;
+
     return NextResponse.json({
-      success: true,
+      success: failedSends.length === 0,
       mode: 'STRICT_TWO_EMAIL_DISPATCHES_REGIONES_AND_RM',
-      dispatchesSent: dispatchResults.length,
+      dispatchesSent: realSends.length,
       dispatchesDetail: dispatchResults,
-      emailStatus: `¡Se completó el despacho estricto de los 2 correos oficiales (Regiones y RM) con adjuntos .CSV!`,
+      emailStatus,
       timestamp: new Date().toISOString()
     });
   } catch (error: any) {
