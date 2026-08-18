@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-18T03:43:10.857026+00:00",
-  "ultimoIntentoRealizado": "2026-08-18T03:43:10.857026+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-18T06:48:42.039346+00:00",
+  "ultimoIntentoRealizado": "2026-08-18T06:48:42.039346+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1242,
-  "registrosConfirmados": 1242,
+  "registrosEnPlataforma": 1287,
+  "registrosConfirmados": 1287,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 995,
+  "registrosConMontoReal": 1016,
   "excluidosPrefiltroIrrelevante": 7047,
-  "excluidosSinDatosReales": 46,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 732,
@@ -21,40 +21,49 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 79128993,
+    "montoOriginalSum": 172019804,
     "montoFinalSum": 1131847323,
-    "montoRecuperadoSum": 1052718330
+    "montoRecuperadoSum": 959827519
   },
   "categorias": {
-    "licitaciones": 507,
+    "licitaciones": 551,
     "comprasAgiles": 732,
     "convenioMarco": 0,
-    "ordenes_compra": 3,
+    "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 103,
-    "L1": 52,
-    "LE": 302,
-    "LR": 41,
+    "LP": 110,
+    "L1": 59,
+    "LE": 329,
+    "LR": 43,
     "I2": 3,
     "CO": 7,
     "LS": 2,
-    "E2": 3,
-    "O1": 3,
+    "E2": 4,
+    "O1": 4,
     "B2": 1,
     "COT": 725
   },
   "matchPorEmpresa": {
-    "Aminorte": 1047,
-    "V-MOCCS": 195
+    "Aminorte": 1091,
+    "V-MOCCS": 196
   },
   "cambios": {
     "comparadoContra": "2026-08-17T13:37:22.646533+00:00",
-    "nuevosCount": 933,
-    "modificadosCount": 15,
-    "cerradosCount": 691,
+    "nuevosCount": 975,
+    "modificadosCount": 17,
+    "cerradosCount": 688,
     "nuevos": [
+      {
+        "codigo": "621-265-LR26",
+        "titulo": "INSUL GLARG 300UML SIN LAPIZ DESECH+AG 1000022394",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 20879206790,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-04-07T16:00:00"
+      },
       {
         "codigo": "1057539-85-LR26",
         "titulo": "CONVENIO SUMINISTRO PARA ARRIENDO DE IMPRESORAS",
@@ -189,6 +198,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-02T15:30:00"
+      },
+      {
+        "codigo": "948356-113-LP26",
+        "titulo": "Adquisición de reactivos para Exámenes Biomarcadores ",
+        "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
+        "monto": 170000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-28T16:00:00"
       },
       {
         "codigo": "837-66-LP26",
@@ -335,6 +353,15 @@
         "fechaCierre": "2026-08-21T16:00:00"
       },
       {
+        "codigo": "1260058-2-LE26",
+        "titulo": "“SUMINISTRO DE ANTISÉPTICOS DESINFECTANTES DETERGENTES Y SOLVENTES DE USO HOSPITALARIO Y PRODUCTOS CLÍNICOS SOBRE TEJIDO HUMANO ",
+        "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE P",
+        "monto": 69000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-01T15:01:00"
+      },
+      {
         "codigo": "885-75-LE26",
         "titulo": "Servicios de mantención para los sistemas de climatización de precisión en datacenters institucionales en Santiago y Valparaíso",
         "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
@@ -362,6 +389,15 @@
         "fechaCierre": "2026-08-13T15:01:00"
       },
       {
+        "codigo": "813-79-LE26",
+        "titulo": "Servicios de una librería robótica. E1O2RT9",
+        "organismo": "INSTITUTO DE SALUD PUBLICA DE CHILE",
+        "monto": 60000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-08-19T15:00:00"
+      },
+      {
         "codigo": "4803-26-LE26",
         "titulo": "ADQUISICIÓN SERVIDOR ALTO RENDIMIENTO EN GPU NUEVO",
         "organismo": "SENADO DE LA REPUBLICA",
@@ -387,6 +423,24 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-18T15:30:00"
+      },
+      {
+        "codigo": "558869-50-LE26",
+        "titulo": "CONV. DE SUMINISTRO MANT. Y  REPARAC. IMPRESORAS",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
+        "monto": 45000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-08-13T11:00:00"
+      },
+      {
+        "codigo": "1511-46-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE COMPUTADORES TIPO AIO",
+        "organismo": "Hospital de Constitución",
+        "monto": 43054200,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-08-11T15:01:00"
       },
       {
         "codigo": "2981-222-LE26",
@@ -452,6 +506,15 @@
         "fechaCierre": "2026-08-07T10:30:00"
       },
       {
+        "codigo": "3970-4-LE26",
+        "titulo": "ADQUISICIÓN 01 SERVIDOR FORENSE",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "monto": 32500000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-29T15:30:00"
+      },
+      {
         "codigo": "2450-83-LE26",
         "titulo": "Adquisición de monitores desfibriladores y espirómetros para los distintos dispositivos de salud",
         "organismo": "ILUSTRE MUNICIPALIDAD DE LA SERENA",
@@ -488,6 +551,15 @@
         "fechaCierre": "2026-05-19T12:00:00"
       },
       {
+        "codigo": "4358-12-LE26",
+        "titulo": "EQUIPOS MULTIFUNCIONALES Y TONER PARA ESTABLECIMIE",
+        "organismo": "I MUNICIPALIDAD DE NACIMIENTO",
+        "monto": 31000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 90,
+        "fechaCierre": "2026-06-22T15:30:00"
+      },
+      {
         "codigo": "1552-67-LE26",
         "titulo": "INSUMOS PESQUISA DE VPH POR PCR",
         "organismo": "SERVICIO DE SALUD ATACAMA",
@@ -495,15 +567,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-07-06T15:00:00"
-      },
-      {
-        "codigo": "2581-25-LE26",
-        "titulo": "Adquisición Pantalla LED Soporte y Accesorios.",
-        "organismo": "I MUNICIPALIDAD DE CONCHALI",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-06-12T14:00:00"
       },
       {
         "codigo": "896-12-CO26",
@@ -515,6 +578,15 @@
         "fechaCierre": "2026-08-17T15:06:00"
       },
       {
+        "codigo": "2581-25-LE26",
+        "titulo": "Adquisición Pantalla LED Soporte y Accesorios.",
+        "organismo": "I MUNICIPALIDAD DE CONCHALI",
+        "monto": 30000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-06-12T14:00:00"
+      },
+      {
         "codigo": "1292-26-LE26",
         "titulo": "Sistema  de  monitoreo  Satelital tipo GPS Husky",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -522,78 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-14T15:00:00"
-      },
-      {
-        "codigo": "1048-58-LE26",
-        "titulo": "Suministro e instalacion de camaras barriales inalambricas e inteligentes EL TABO",
-        "organismo": "I MUNICIPALIDAD DE EL TABO",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-08-12T15:00:00"
-      },
-      {
-        "codigo": "1499-158-LE26",
-        "titulo": "RBV SERVICIO DE ARRIENDO DE EQUIPO MÉDICO CENTRAL DE MONITOREO",
-        "organismo": "INSTITUTO NACIONAL DEL TORAX",
-        "monto": 25920000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-13T17:00:00"
-      },
-      {
-        "codigo": "2467-78-LE26",
-        "titulo": "ADQUISICIÓN DE COMPONENTES DE VIDEOWALL PARA VISUA",
-        "organismo": "I MUNICIPALIDAD DE CHILLAN",
-        "monto": 25450000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-07-23T11:49:00"
-      },
-      {
-        "codigo": "1147293-21-LE26",
-        "titulo": "Adopción de un nuevo cultivo de alto valor",
-        "organismo": "Fundación para la Innovación Agraria",
-        "monto": 25000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-27T16:30:00"
-      },
-      {
-        "codigo": "948355-50-LE26",
-        "titulo": "Adquisición de Set de Monitoreo por Sistema de Suministro para el Hospital de la Dirección de Previsión de Carabineros de Chile.",
-        "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
-        "monto": 25000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-07-07T16:00:00"
-      },
-      {
-        "codigo": "1725-189-LE26",
-        "titulo": "CLIMATIZACIÓN CENTRAL VENTILACIÓN FORZADA CECREA",
-        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
-        "monto": 23064000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-03T12:00:00"
-      },
-      {
-        "codigo": "3134-82-LE26",
-        "titulo": "SERVIDOR FORMATO TORRE",
-        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-        "monto": 22000260,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-27T16:00:00"
-      },
-      {
-        "codigo": "2410-83-LE26",
-        "titulo": "Adquisición de artículos hidráulicos para mantención de inmuebles DMI",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "monto": 21817950,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-01T09:00:00"
       }
     ],
     "modificados": [
@@ -625,6 +625,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 22000000,
         "montoNuevo": 22000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1562-44-LE26",
+        "titulo": "ADQUISICIÓN DE ROUTER 4G Y 5G PARA RNVV – OVDAS",
+        "organismo": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 12103000,
+        "montoNuevo": 12103000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -718,11 +728,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1063538-191-LP26",
-        "titulo": "BAJADAS PARENTERALES CON BOMBAS PCA EN COMODATO",
-        "organismo": "HOSPITAL BASE OSORNO",
+        "codigo": "1550-3-LE26",
+        "titulo": "LE-5058 Mantencion Sistema Climatización y Venti",
+        "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -746,25 +756,19 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1063538-191-LP26",
+        "titulo": "BAJADAS PARENTERALES CON BOMBAS PCA EN COMODATO",
+        "organismo": "HOSPITAL BASE OSORNO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
-      {
-        "codigo": "1260113-5-LR26",
-        "titulo": "ADQUISICIÓN DE NOTEBOOKS Y COMPUTADORES TODO EN UNO PARA PROYECTO “ADQUISICIÓN Y REPOSICIÓN DE EQUIPOS INFORMÁTICOS ESTABLECIMIENTOS EDUCACIONALES RURALES SLEPCH” CÓDIGO BIP 40065439-0",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
-        "estadoAnterior": "Publicada",
-        "monto": 517422761,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1562-44-LE26",
-        "titulo": "ADQUISICIÓN DE ROUTER 4G Y 5G PARA RNVV – OVDAS",
-        "organismo": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA",
-        "estadoAnterior": "Publicada",
-        "monto": 12103000,
-        "empresaMatch": "Aminorte"
-      },
       {
         "codigo": "800-5775-COT26",
         "titulo": "90625\tMANGA PARA CAMARA LAPARASCOPICA",
@@ -1228,10 +1232,26 @@
         "estadoAnterior": "Publicada",
         "monto": 5300000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2324-798-COT26",
+        "titulo": "INSUMOS DE OFICINA PARA BODEGA DE ABASTECIMIENTO” / D.A.F - DPTO. DE BIENES",
+        "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
+        "estadoAnterior": "Publicada",
+        "monto": 5249135,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1271178-157-COT26",
+        "titulo": "Memo349(f)_Computadores",
+        "organismo": "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE MACUL",
+        "estadoAnterior": "Publicada",
+        "monto": 5200000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2622.5,
+  "tiempoEjecucionSegundos": 1508.5,
   "errores": [],
   "advertencias": []
 }
