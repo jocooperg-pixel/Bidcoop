@@ -1,39 +1,39 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-18T09:36:30.329377+00:00",
-  "ultimoIntentoRealizado": "2026-08-18T09:36:30.329377+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-18T12:51:48.092899+00:00",
+  "ultimoIntentoRealizado": "2026-08-18T12:51:48.092899+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1288,
-  "registrosConfirmados": 1288,
+  "registrosEnPlataforma": 1019,
+  "registrosConfirmados": 1019,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1017,
-  "excluidosPrefiltroIrrelevante": 7047,
+  "registrosConMontoReal": 748,
+  "excluidosPrefiltroIrrelevante": 7065,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 732,
-    "conMontoValido": 729,
-    "pctValidado": 99.6,
+    "total": 462,
+    "conMontoValido": 459,
+    "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 729,
+      "VALIDADO": 459,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
     "montoOriginalSum": 549327283,
-    "montoFinalSum": 1131847323,
-    "montoRecuperadoSum": 582520040
+    "montoFinalSum": 776978968,
+    "montoRecuperadoSum": 227651685
   },
   "categorias": {
-    "licitaciones": 552,
-    "comprasAgiles": 732,
+    "licitaciones": 553,
+    "comprasAgiles": 462,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 110,
+    "LP": 111,
     "L1": 59,
     "LE": 330,
     "LR": 43,
@@ -43,17 +43,17 @@
     "E2": 4,
     "O1": 4,
     "B2": 1,
-    "COT": 725
+    "COT": 455
   },
   "matchPorEmpresa": {
-    "Aminorte": 1095,
-    "V-MOCCS": 193
+    "Aminorte": 876,
+    "V-MOCCS": 143
   },
   "cambios": {
     "comparadoContra": "2026-08-17T13:37:22.646533+00:00",
-    "nuevosCount": 976,
-    "modificadosCount": 17,
-    "cerradosCount": 688,
+    "nuevosCount": 726,
+    "modificadosCount": 12,
+    "cerradosCount": 707,
     "nuevos": [
       {
         "codigo": "621-265-LR26",
@@ -270,6 +270,15 @@
         "empresaMatch": "V-MOCCS",
         "matchScore": 60,
         "fechaCierre": "2026-07-20T17:00:00"
+      },
+      {
+        "codigo": "2710-47-LP26",
+        "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "MUNICIPALIDAD DE OVALLE",
+        "monto": 100000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 90,
+        "fechaCierre": "2026-07-27T15:01:00"
       },
       {
         "codigo": "3573-35-LP26",
@@ -542,15 +551,6 @@
         "fechaCierre": "2026-07-13T15:30:00"
       },
       {
-        "codigo": "4358-12-LE26",
-        "titulo": "EQUIPOS MULTIFUNCIONALES Y TONER PARA ESTABLECIMIE",
-        "organismo": "I MUNICIPALIDAD DE NACIMIENTO",
-        "monto": 31000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 90,
-        "fechaCierre": "2026-06-22T15:30:00"
-      },
-      {
         "codigo": "2741-32-LE26",
         "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO PARA MEJORAM",
         "organismo": "I MUNICIPALIDAD DE SAN FELIPE",
@@ -560,22 +560,13 @@
         "fechaCierre": "2026-05-19T12:00:00"
       },
       {
-        "codigo": "1552-67-LE26",
-        "titulo": "INSUMOS PESQUISA DE VPH POR PCR",
-        "organismo": "SERVICIO DE SALUD ATACAMA",
-        "monto": 30000000,
+        "codigo": "4358-12-LE26",
+        "titulo": "EQUIPOS MULTIFUNCIONALES Y TONER PARA ESTABLECIMIE",
+        "organismo": "I MUNICIPALIDAD DE NACIMIENTO",
+        "monto": 31000000,
         "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-07-06T15:00:00"
-      },
-      {
-        "codigo": "896-12-CO26",
-        "titulo": "ASESORIA INSPECTOR FISCAL AMPLIACION RED MONITOREO",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-17T15:06:00"
+        "matchScore": 90,
+        "fechaCierre": "2026-06-22T15:30:00"
       },
       {
         "codigo": "2581-25-LE26",
@@ -587,13 +578,22 @@
         "fechaCierre": "2026-06-12T14:00:00"
       },
       {
-        "codigo": "1292-26-LE26",
-        "titulo": "Sistema  de  monitoreo  Satelital tipo GPS Husky",
+        "codigo": "896-12-CO26",
+        "titulo": "ASESORIA INSPECTOR FISCAL AMPLIACION RED MONITOREO",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
         "monto": 30000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-08-14T15:00:00"
+        "fechaCierre": "2026-08-17T15:06:00"
+      },
+      {
+        "codigo": "1552-67-LE26",
+        "titulo": "INSUMOS PESQUISA DE VPH POR PCR",
+        "organismo": "SERVICIO DE SALUD ATACAMA",
+        "monto": 30000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-06T15:00:00"
       }
     ],
     "modificados": [
@@ -658,16 +658,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2069-2247-COT26",
-        "titulo": "PMH-3401607\tMARCADOR DE TEJIDO MAMARIO (REF: TWIRL) UNIDAD",
-        "organismo": "SERVICIO DE SALUD METROPOLITANO SUR HOSP",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 7000000,
-        "montoNuevo": 7000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1415861-9-L126",
         "titulo": "CONTROL Y MONITOREO DE QUIROPTEROS - TEATINOS 726 ",
         "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
@@ -675,66 +665,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 6000000,
         "montoNuevo": 6000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2069-2234-COT26",
-        "titulo": "MPF-CE-32744-TUBO FLUORESENTES LED 120CM 16W 6000-6500°K CONEXION L-N EN UN SOLO COSTADO",
-        "organismo": "SERVICIO DE SALUD METROPOLITANO SUR HOSP",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1800000,
-        "montoNuevo": 1800000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2069-2236-COT26",
-        "titulo": "MPF-CE-32799-ESCRITORIO STANDAR PARA OFICINA UNIDAD",
-        "organismo": "SERVICIO DE SALUD METROPOLITANO SUR HOSP",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1000000,
-        "montoNuevo": 1000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1057417-3444-COT26",
-        "titulo": " IG rrr AG PEDIDO SEPTIEMBRE 2026 agujas, cierres, telas de generos, tijeras y pañal desechable",
-        "organismo": "COMPLEJO ASISTENCIAL DR.VICTOR RIOS RUIZ",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 640000,
-        "montoNuevo": 640000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057491-1599-COT26",
-        "titulo": "MANGA DE CAMARA(Funda para manga de laparoscopia )",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 250000,
-        "montoNuevo": 250000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1537592-9-LE26",
-        "titulo": "Adquisición de trituradora de tarjetas y escáneres portátiles - LBV",
-        "organismo": "EMPRESA DE TRANSPORTE DE PASAJEROS METRO S A",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1550-3-LE26",
-        "titulo": "LE-5058 Mantencion Sistema Climatización y Venti",
-        "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
@@ -763,6 +693,26 @@
         "organismo": "HOSPITAL BASE OSORNO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1537592-9-LE26",
+        "titulo": "Adquisición de trituradora de tarjetas y escáneres portátiles - LBV",
+        "organismo": "EMPRESA DE TRANSPORTE DE PASAJEROS METRO S A",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1550-3-LE26",
+        "titulo": "LE-5058 Mantencion Sistema Climatización y Venti",
+        "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -879,6 +829,14 @@
         "organismo": "I MUNICIPALIDAD DE COQUIMBO",
         "estadoAnterior": "Publicada",
         "monto": 7062237,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2069-2247-COT26",
+        "titulo": "PMH-3401607\tMARCADOR DE TEJIDO MAMARIO (REF: TWIRL) UNIDAD",
+        "organismo": "SERVICIO DE SALUD METROPOLITANO SUR HOSP",
+        "estadoAnterior": "Publicada",
+        "monto": 7000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1178,6 +1136,14 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "4401-90-COT26",
+        "titulo": "SC 757 SERVIDORES TIC",
+        "organismo": "I MUNICIPALIDAD DE SAN CLEMENTE",
+        "estadoAnterior": "Publicada",
+        "monto": 5900000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1075337-1673-COT26",
         "titulo": "pca Compra de Insumos Clínicos (INJERTOS) para Traumatología, Agosto 2026",
         "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE HOSPITAL DE ANGOL",
@@ -1232,26 +1198,10 @@
         "estadoAnterior": "Publicada",
         "monto": 5300000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2324-798-COT26",
-        "titulo": "INSUMOS DE OFICINA PARA BODEGA DE ABASTECIMIENTO” / D.A.F - DPTO. DE BIENES",
-        "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
-        "estadoAnterior": "Publicada",
-        "monto": 5249135,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1271178-157-COT26",
-        "titulo": "Memo349(f)_Computadores",
-        "organismo": "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE MACUL",
-        "estadoAnterior": "Publicada",
-        "monto": 5200000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1510.2,
+  "tiempoEjecucionSegundos": 1820.9,
   "errores": [],
   "advertencias": []
 }
