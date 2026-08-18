@@ -1163,8 +1163,22 @@ def main():
     field_warnings = []
 
     # ── 1. FASE 1: LISTA MASIVA DESDE API ──────────────────
+    # Reintento a nivel de corrida completa (no solo dentro de fetch_json):
+    # se observó en producción (GitHub Actions) que la API a veces responde
+    # 200 OK con Listado vacío específicamente desde IPs de runners en la
+    # nube — no es un timeout (fetch_json ya reintenta eso internamente),
+    # es una respuesta "exitosa" sin datos. Un solo intento vacío no basta
+    # para asumir que la API está caída; se espera y se reintenta la
+    # corrida completa un par de veces antes de rendirse.
     print("[FASE 1] Obteniendo listado masivo de licitaciones activas desde Mercado Público...")
     bulk_list = fetch_api_bulk_list(estado="activas")
+    for retry_attempt in range(1, 3):
+        if bulk_list:
+            break
+        wait_s = 45 * retry_attempt
+        print(f"  [WARN] Listado masivo vino vacío (intento {retry_attempt}/2) — esperando {wait_s}s y reintentando...")
+        time.sleep(wait_s)
+        bulk_list = fetch_api_bulk_list(estado="activas")
     print(f"[FASE 1] Obtenidos {len(bulk_list)} registros en listado masivo (estado=activas).")
 
     # estado=activas apenas expone un puñado de Compras Ágiles vigentes en un
