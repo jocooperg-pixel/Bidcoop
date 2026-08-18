@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-18T15:34:16.746729+00:00",
-  "ultimoIntentoRealizado": "2026-08-18T15:34:16.746729+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-18T18:41:28.352292+00:00",
+  "ultimoIntentoRealizado": "2026-08-18T18:41:28.352292+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1028,
-  "registrosConfirmados": 1028,
+  "registrosEnPlataforma": 1157,
+  "registrosConfirmados": 1157,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 754,
-  "excluidosPrefiltroIrrelevante": 7249,
-  "excluidosSinDatosReales": 2,
+  "registrosConMontoReal": 875,
+  "excluidosPrefiltroIrrelevante": 7389,
+  "excluidosSinDatosReales": 4,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 462,
-    "conMontoValido": 459,
-    "pctValidado": 99.4,
+    "total": 575,
+    "conMontoValido": 572,
+    "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 459,
+      "VALIDADO": 572,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 549327283,
-    "montoFinalSum": 776978968,
-    "montoRecuperadoSum": 227651685
+    "montoOriginalSum": 683832812,
+    "montoFinalSum": 928890652,
+    "montoRecuperadoSum": 245057840
   },
   "categorias": {
-    "licitaciones": 562,
-    "comprasAgiles": 462,
+    "licitaciones": 578,
+    "comprasAgiles": 575,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 113,
-    "L1": 59,
-    "LE": 336,
+    "LP": 114,
+    "L1": 63,
+    "LE": 347,
     "LR": 44,
     "I2": 3,
-    "CO": 7,
     "LS": 2,
     "E2": 4,
     "O1": 4,
+    "CO": 7,
     "B2": 1,
-    "COT": 455
+    "COT": 568
   },
   "matchPorEmpresa": {
-    "Aminorte": 885,
-    "V-MOCCS": 143
+    "Aminorte": 986,
+    "V-MOCCS": 171
   },
   "cambios": {
     "comparadoContra": "2026-08-17T13:37:22.646533+00:00",
-    "nuevosCount": 737,
-    "modificadosCount": 52,
-    "cerradosCount": 709,
+    "nuevosCount": 864,
+    "modificadosCount": 54,
+    "cerradosCount": 707,
     "nuevos": [
       {
         "codigo": "621-265-LR26",
@@ -698,6 +698,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "4494-50-LE26",
+        "titulo": "EQUIPOS COMUNICACIÓN RED CAMARAS DE VIGILANCIAS",
+        "organismo": "I MUNICIPALIDAD DE PENCO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 27660000,
+        "montoNuevo": 27660000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1067455-13-LE26",
         "titulo": "Servicio de Consultoría para la Identificación de Factores Proyectores de Salud Mental de Niños Niñas y Adolescentes",
         "organismo": "SUBSECRETARIA DE LA NIÑEZ",
@@ -888,26 +898,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1057501-434-LR26",
-        "titulo": "CONVENIO PROTESIS DE REVISION CON OPCION DE BISAGRA ROTATORIA",
-        "organismo": "COMPLEJO ASISTENCIAL DR. SOTERO DEL RIO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057539-88-LR26",
-        "titulo": "CONVENIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO EQUIPOS DE ANESTESIA Y MONITOREO HOSPITAL PUERTO MONTT SOLIC 2026-43.",
-        "organismo": "HOSPITAL PUERTO MONTT SERVICIO DE SALUD DEL RELONCAVI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1057049-269-LE26",
         "titulo": "MCO MANTENIMIENTO CORRECTIVO MANEJADORAS DE AIRE CHILLER Y BOMBAS DE RECIRCULACIÓN SISTEMA VENTILACIÓN Y CLIMATIZACIÓN PABELLONES ROBÓTICA Y HEMODINAMIA DEL HOSPITAL CLÍNICO SAN BORJA ARRIARÁN",
         "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
@@ -916,26 +906,6 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3882-71-LE26",
-        "titulo": "REPOSICIÓN SISTEMA ELÉCTRICO CENTRAL DE CÁMARAS COMUNA DE LLAY LLAY",
-        "organismo": "I MUNICIPALIDAD DE LLAY LLAY",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1173933-10-LE26",
-        "titulo": "Adquisición de Mobiliario Castillo de San José",
-        "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "1537592-9-LE26",
@@ -958,39 +928,29 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2045-12-L126",
+        "titulo": "Servicio de arriendo Monitoreo Ambulatorio de Presión Arterial / Holter de Presión Arterial",
+        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE CUREPTO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2173-25-LE26",
+        "titulo": "MANTENCIÓN DE TABLEROS ELÉCTRICOS PAC 3168-22-PC26",
+        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1063538-191-LP26",
         "titulo": "BAJADAS PARENTERALES CON BOMBAS PCA EN COMODATO",
         "organismo": "HOSPITAL BASE OSORNO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3797-39-LE26",
-        "titulo": "ADQUISICION SERVIDOR INSTITUCIONAL",
-        "organismo": "I MUNICIPALIDAD DE COCHRANE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "609-18-LP26",
-        "titulo": "Servicios de guardias de seguridad y recepción",
-        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "747-5-LE26",
-        "titulo": "SERVICIO RADIOTAXIS EJECUTIVOS PROV. CONCEPCION",
-        "organismo": "INSTITUTO NACIONAL DE ESTADISTICAS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 0,
@@ -1008,6 +968,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2713-120-LE26",
+        "titulo": "Seguros inmuebles y equipos informaticos-Folio 933",
+        "organismo": "I MUNICIPALIDAD DE AYSEN",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1947-147-LE26",
         "titulo": "CONTRATACIÓN DEL SERVICIO DE ARRIENDO DE IMPRESORAS DE ETIQUETAS Y CAPTURADORES DE ACUERDO A DETALLE PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RÍO MMT",
         "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
@@ -1018,11 +988,21 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1663-130-LE26",
-        "titulo": "2DO LLAMADO-SERVICIO DE TRASLADO EQUIPOS EQUIPAMIENTO Y MOBILIARIO",
-        "organismo": "SERVICIO DE SALUD CHILOE",
+        "codigo": "3853-15-LE26",
+        "titulo": "CONTRATACION DE SEGUROS PARA LOS BIENES INMUEBLES Y VEHÍCULOS",
+        "organismo": "I MUNICIPALIDAD DE RIO BUENO",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1173933-10-LE26",
+        "titulo": "Adquisición de Mobiliario Castillo de San José",
+        "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
@@ -1031,36 +1011,6 @@
         "codigo": "3518-15-LE26",
         "titulo": "PROVISION E INSTALACION DE CAMARAS DE SEGURIDAD",
         "organismo": "MUNICIPALIDAD DE TRAIGUEN",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2760-101-CO26",
-        "titulo": "SERVICIO DE HABILITACION Y REPARACION DE CAMARAS",
-        "organismo": "I MUNICIPALIDAD DE CORONEL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2788-38-LP26",
-        "titulo": "“SERVICIO DE ARRIENDO E INSTALACIÓN DE CARPAS TOLDOS CAMARINES Y SU RESPECTIVO MOBILIARIO PARA CELEBRACIÓN DE FIESTAS PATRIAS AÑO 2026 COMUNA DE PAINE”.",
-        "organismo": "I MUNICIPALIDAD DE PAINE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2045-12-L126",
-        "titulo": "Servicio de arriendo Monitoreo Ambulatorio de Presión Arterial / Holter de Presión Arterial",
-        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE CUREPTO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1088,9 +1038,29 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2713-120-LE26",
-        "titulo": "Seguros inmuebles y equipos informaticos-Folio 933",
-        "organismo": "I MUNICIPALIDAD DE AYSEN",
+        "codigo": "1663-130-LE26",
+        "titulo": "2DO LLAMADO-SERVICIO DE TRASLADO EQUIPOS EQUIPAMIENTO Y MOBILIARIO",
+        "organismo": "SERVICIO DE SALUD CHILOE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2760-101-CO26",
+        "titulo": "SERVICIO DE HABILITACION Y REPARACION DE CAMARAS",
+        "organismo": "I MUNICIPALIDAD DE CORONEL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2788-38-LP26",
+        "titulo": "“SERVICIO DE ARRIENDO E INSTALACIÓN DE CARPAS TOLDOS CAMARINES Y SU RESPECTIVO MOBILIARIO PARA CELEBRACIÓN DE FIESTAS PATRIAS AÑO 2026 COMUNA DE PAINE”.",
+        "organismo": "I MUNICIPALIDAD DE PAINE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1098,19 +1068,69 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "3853-15-LE26",
-        "titulo": "CONTRATACION DE SEGUROS PARA LOS BIENES INMUEBLES Y VEHÍCULOS",
-        "organismo": "I MUNICIPALIDAD DE RIO BUENO",
+        "codigo": "3882-71-LE26",
+        "titulo": "REPOSICIÓN SISTEMA ELÉCTRICO CENTRAL DE CÁMARAS COMUNA DE LLAY LLAY",
+        "organismo": "I MUNICIPALIDAD DE LLAY LLAY",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
+        "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2173-25-LE26",
-        "titulo": "MANTENCIÓN DE TABLEROS ELÉCTRICOS PAC 3168-22-PC26",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "codigo": "609-18-LP26",
+        "titulo": "Servicios de guardias de seguridad y recepción",
+        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "747-5-LE26",
+        "titulo": "SERVICIO RADIOTAXIS EJECUTIVOS PROV. CONCEPCION",
+        "organismo": "INSTITUTO NACIONAL DE ESTADISTICAS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057501-434-LR26",
+        "titulo": "CONVENIO PROTESIS DE REVISION CON OPCION DE BISAGRA ROTATORIA",
+        "organismo": "COMPLEJO ASISTENCIAL DR. SOTERO DEL RIO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057539-88-LR26",
+        "titulo": "CONVENIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO EQUIPOS DE ANESTESIA Y MONITOREO HOSPITAL PUERTO MONTT SOLIC 2026-43.",
+        "organismo": "HOSPITAL PUERTO MONTT SERVICIO DE SALUD DEL RELONCAVI",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3206-26-L126",
+        "titulo": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS",
+        "organismo": "I MUNICIPALIDAD DE SAN RAFAEL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3797-39-LE26",
+        "titulo": "ADQUISICION SERVIDOR INSTITUCIONAL",
+        "organismo": "I MUNICIPALIDAD DE COCHRANE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1119,14 +1139,6 @@
       }
     ],
     "cerrados": [
-      {
-        "codigo": "4494-50-LE26",
-        "titulo": "EQUIPOS COMUNICACIÓN RED CAMARAS DE VIGILANCIAS",
-        "organismo": "I MUNICIPALIDAD DE PENCO",
-        "estadoAnterior": "Publicada",
-        "monto": 27660000,
-        "empresaMatch": "Aminorte"
-      },
       {
         "codigo": "800-5775-COT26",
         "titulo": "90625\tMANGA PARA CAMARA LAPARASCOPICA",
@@ -1598,10 +1610,18 @@
         "estadoAnterior": "Publicada",
         "monto": 5307701,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "807-26-COT26",
+        "titulo": "Adquisición toner HP Originales",
+        "organismo": "CORP NACIONAL DE DESARROLLO INDIGENA",
+        "estadoAnterior": "Publicada",
+        "monto": 5300000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 224.3,
+  "tiempoEjecucionSegundos": 1460.8,
   "errores": [],
   "advertencias": []
 }
