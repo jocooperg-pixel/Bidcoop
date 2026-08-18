@@ -208,8 +208,10 @@ export async function POST(request: Request) {
         return `
           <tr style="border-bottom: 1px solid #e2e8f0; background-color: ${index % 2 === 0 ? '#ffffff' : '#f8fafc'};">
             <td style="padding: 12px 10px; vertical-align: top;">
-              <div style="font-family: monospace; font-size: 13px; font-weight: 900; color: #0f172a; margin-bottom: 4px;">
-                ${op.codigo}
+              <div style="font-family: monospace; font-size: 13px; font-weight: 900; margin-bottom: 4px;">
+                ${op.sourceUrl
+                  ? `<a href="${op.sourceUrl}" target="_blank" style="color: #0f172a; text-decoration: underline;">${op.codigo}</a>`
+                  : `<span style="color: #0f172a;">${op.codigo}</span>`}
               </div>
               <div style="display: flex; flex-wrap: wrap; gap: 4px;">
                 <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 9px; font-weight: 900; border: 1px solid #bae6fd;">
