@@ -133,8 +133,13 @@ export async function POST(request: Request) {
 
 
     // 3. SEGREGATE OPPORTUNITIES STRICTLY INTO 2 GEOGRAPHIC GROUPS
-    const opsRegiones = activeOps.filter((op: any) => op.region !== 'Región Metropolitana');
-    const opsRM = activeOps.filter((op: any) => op.region === 'Región Metropolitana');
+    // El sync engine puebla `region` con el nombre oficial completo (ej.
+    // "Región Metropolitana de Santiago"), no el literal corto "Región
+    // Metropolitana" — una comparación === nunca calzaba, así que el grupo
+    // RM quedaba siempre vacío y todo (incluida la RM) caía en "Regiones".
+    // isRegionRM ya existía para esto (definida arriba) pero nunca se usaba.
+    const opsRegiones = activeOps.filter((op: any) => !isRegionRM(op.region || ''));
+    const opsRM = activeOps.filter((op: any) => isRegionRM(op.region || ''));
 
     const EMAILS_REGIONES = REPORT_RECIPIENTS;
     const EMAILS_RM = REPORT_RECIPIENTS;
