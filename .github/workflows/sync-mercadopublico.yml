@@ -10,13 +10,19 @@ name: BidCoop — Sync Automático Mercado Público
 on:
   workflow_dispatch:   # Permite ejecutar manualmente desde GitHub cuando el usuario lo solicite
   schedule:
-    # Cada 3 horas, 24/7 — no depende de que el usuario pida "actualiza".
-    # Corre a las 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 UTC,
-    # que en horario estándar de Chile (UTC-4) equivale a 20:00, 23:00, 02:00,
-    # 05:00, 08:00, 11:00, 14:00, 17:00. GitHub Actions solo agenda en UTC:
-    # durante horario de verano chileno (UTC-3, aprox. septiembre-abril) cada
-    # hora local corre ~1h más temprano.
-    - cron: '0 */3 * * *'
+    # Cada 2 horas, 24/7 — no depende de que el usuario pida "actualiza".
+    # Bajado de 3h a 2h el 2026-08-19: la corrida completa (licitaciones +
+    # Compra Ágil) tarda 15-30 min en terminar, y esa parte de Compra Ágil se
+    # consulta temprano en ese proceso — cualquier proceso publicado después
+    # de esa consulta queda fuera hasta el siguiente ciclo. Un intervalo más
+    # corto reduce ese margen de atraso, que importa porque una Compra Ágil
+    # puede cerrar en 1-2 días hábiles.
+    # Corre cada hora par UTC (00:00, 02:00, 04:00... 22:00), que en horario
+    # estándar de Chile (UTC-4) equivale a las horas impares locales (20:00,
+    # 22:00, 00:00... 18:00). GitHub Actions solo agenda en UTC: durante
+    # horario de verano chileno (UTC-3, aprox. septiembre-abril) cada hora
+    # local corre ~1h más temprano.
+    - cron: '0 */2 * * *'
 
 jobs:
   sync-and-deploy:

@@ -647,14 +647,34 @@ def fetch_compraagil_bulk_list(days_back: int = 15) -> List[Dict]:
     page = 1
     total_pages = 1
     max_pages_safety = 100  # ~5.000 registros — margen amplio sobre el volumen real observado
+    consecutive_failures = 0
+    # Máximo de páginas seguidas que pueden fallar antes de asumir que es una
+    # caída real de la API (no una página suelta con un 504 pasajero — este
+    # endpoint es notoriamente inestable, se observaron 504 intermitentes en
+    # ~30-40% de las llamadas en vivo el 2026-08-19). Antes, una sola página
+    # fallida abortaba TODA la paginación restante — como está ordenado por
+    # FechaPublicacion descendente, eso podía tirar silenciosamente Compras
+    # Ágiles recién publicadas que sí calzaban con el catálogo, sin que
+    # ninguna salvaguarda lo detectara (el total final seguía viéndose
+    # "normal"). Ahora se salta la página fallida y se sigue con la
+    # siguiente; solo se detiene si fallan varias seguidas.
+    max_consecutive_failures = 5
     while page <= total_pages and page <= max_pages_safety:
         url = (f"{COMPRAAGIL_BASE_URL}/v2/compra-agil"
                f"?publicado_desde={desde}&tamano_pagina=50&numero_pagina={page}"
                f"&ordenar_por=FechaPublicacion")
         data = fetch_compraagil_json(url, timeout=30)
         if data is None or data.get("success") != "OK":
-            print(f"  [WARN] Página {page} de Compra Ágil v2 falló sin respuesta.")
-            break
+            consecutive_failures += 1
+            print(f"  [WARN] Página {page} de Compra Ágil v2 falló ({consecutive_failures}/{max_consecutive_failures} fallos seguidos) — se salta y sigue con la siguiente.")
+            if consecutive_failures >= max_consecutive_failures:
+                print(f"  [WARN] {max_consecutive_failures} páginas seguidas fallaron — probable caída real de la API, se detiene la paginación acá.")
+                break
+            page += 1
+            time.sleep(1.0)
+            continue
+
+        consecutive_failures = 0
         payload = data.get("payload") or {}
         items = payload.get("items") or []
         results.extend(items)
