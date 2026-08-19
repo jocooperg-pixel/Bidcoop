@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-19T18:58:48.464135+00:00",
-  "ultimoIntentoRealizado": "2026-08-19T18:58:48.464135+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-19T20:11:46.572255+00:00",
+  "ultimoIntentoRealizado": "2026-08-19T20:11:46.572255+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1603,
-  "registrosConfirmados": 1603,
+  "registrosEnPlataforma": 1612,
+  "registrosConfirmados": 1612,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1323,
-  "excluidosPrefiltroIrrelevante": 7457,
-  "excluidosSinDatosReales": 2,
+  "registrosConMontoReal": 1330,
+  "excluidosPrefiltroIrrelevante": 7587,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 1013,
@@ -26,18 +26,18 @@
     "montoRecuperadoSum": 1175995626
   },
   "categorias": {
-    "licitaciones": 586,
+    "licitaciones": 595,
     "comprasAgiles": 1013,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 115,
+    "LP": 116,
     "CO": 9,
-    "L1": 55,
-    "LE": 360,
-    "LR": 44,
+    "L1": 56,
+    "LE": 366,
+    "LR": 45,
     "E2": 5,
     "I2": 3,
     "LS": 2,
@@ -46,164 +46,101 @@
     "COT": 1004
   },
   "matchPorEmpresa": {
-    "Aminorte": 1314,
+    "Aminorte": 1323,
     "V-MOCCS": 289
   },
   "cambios": {
-    "comparadoContra": "2026-08-19T16:17:05.588635+00:00",
-    "nuevosCount": 15,
+    "comparadoContra": "2026-08-19T18:58:48.464135+00:00",
+    "nuevosCount": 9,
     "modificadosCount": 0,
-    "cerradosCount": 1,
+    "cerradosCount": 0,
     "nuevos": [
       {
-        "codigo": "2157-120-LR26",
-        "titulo": "SUMINISTRO KIT NEUROMONITOREO",
-        "organismo": "SERVICIO NAC DE SALUD HOSPITAL TRAUMATOLOGICO",
-        "monto": 700000000,
+        "codigo": "2709-22-LP26",
+        "titulo": "SERVICIO DE FOTOCOPIADO E IMPRESION DIGITAL ",
+        "organismo": "MUNICIPALIDAD DE OVALLE",
+        "monto": 120000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-09-21T17:04:00"
+        "fechaCierre": "2026-04-07T14:00:00"
       },
       {
-        "codigo": "937232-66-LR26",
-        "titulo": "Servicio de Alimentación por 15 para el CRS HPC",
-        "organismo": "CENTRO DE REFERENCIA DE SALUD HOSPITAL PROVINCIA CORDILLERA",
-        "monto": 537500000,
+        "codigo": "2078-30-LE26",
+        "titulo": "APRUEBA BASES ADMINISTRATIVAS Y TECNICAS PARA LA COMPRA DEL “SERVICIO DE ELABORACIÓN DE BASE DE DATOS DE CASOS DE INCIDENTES DE LOS REGISTROS POBLACIONALES DE CANCER DE LAS PROVINCIAS DE CONCEPCIÓN BIOBÍO Y ARAUCO SC276",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+        "monto": 56000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-07-27T15:01:00"
+        "fechaCierre": "2026-08-07T16:00:00"
       },
       {
-        "codigo": "1216085-58-LE26",
-        "titulo": "SUMINISTRO DE SEGUROS PARA VEHÍCULO E INMUEBLES",
-        "organismo": "CORP MUNICIPAL PARA EL DESARROLLO SOCIAL",
-        "monto": 70000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-31T15:00:00"
-      },
-      {
-        "codigo": "5512-12-LE26",
-        "titulo": "ADQUISICIÓN DE EQUIPOS DE AIRE ACONDICIONADO PROYECTO UTA 22991 y URY2457",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "monto": 20000000,
+        "codigo": "1160-15-LE26",
+        "titulo": "8101REPARACION Y MANTENCIÓN OFICINAS CONCEPCIÓN",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "monto": 40000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-07-10T15:30:00"
+        "fechaCierre": "2026-09-01T15:05:00"
       },
       {
-        "codigo": "1395865-14-LE26",
-        "titulo": "SERVICIO MANTENCIÓN  PREVENTIVA  ÁREA CLIMATIZACIÓN ",
-        "organismo": "ASOCIACIÓN PATRIMONIAL CULTURAL DE LA REGION DE LOS RIOS",
-        "monto": 10800000,
+        "codigo": "4022-17-LE26",
+        "titulo": "ADQ. DE PLOTTER DE IMPRESION Y CORTE.",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE PUTRE",
+        "monto": 25000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-09-02T15:00:00"
+        "fechaCierre": "2026-09-01T15:00:00"
       },
-      {
-        "codigo": "2827-86-LE26",
-        "titulo": "SERVICIO DE EJECUCION PROYECTO MEMORIAS SANTA OLGA",
-        "organismo": "I MUNICIPALIDAD DE CONSTITUCION",
-        "monto": 10000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-07-17T15:01:00"
-      },
-      {
-        "codigo": "1005498-19-CO26",
-        "titulo": "SUSCRIPCIÓN DE 6 LICENCIAS DE MAD-TOD-SUB TOAD",
-        "organismo": "COMISION PARA EL MERCADO FINANCIERO",
-        "monto": 9764000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-31T16:00:00"
-      },
-      {
-        "codigo": "1213002-22-LE26",
-        "titulo": "ADQUISICIÓN DE 18 COMPUTADORES PORTATILES",
-        "organismo": "CORP MUNICIPAL DE EDUCACION Y SAL",
-        "monto": 9000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 98,
-        "fechaCierre": "2026-08-31T16:00:00"
-      },
-      {
-        "codigo": "1057415-50-E226",
-        "titulo": "EXAMENES DE MONITOREO AMBULATORIO DE PRESIÓN ARTER",
-        "organismo": "SERVICIO SALUD BIO BIO HOSPITAL NACIMIENTO",
-        "monto": 5250000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-28T08:00:00"
-      },
-      {
-        "codigo": "2495-16-CO26",
-        "titulo": "ARRIENDO DE INMUEBLE PARA OFICINA Y RESIDENCIA",
-        "organismo": "I MUNICIPALIDAD DE COYHAIQUE",
-        "monto": 0,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-31T16:00:00"
-      },
-      {
-        "codigo": "1079576-37-LE26",
-        "titulo": "“ADQUISICIÓN DE CURSO DE CERTIFICACIÓN CELLEBRITE CERTIFIED PHYSICAL ANALYST CCPA PARA PERSONAL DE LA SECCIÓN SEBV CONCEPCIÓN”",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "monto": 0,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-03T15:00:00"
-      },
-      {
-        "codigo": "3933-32-L126",
-        "titulo": "“MANTENCIÓN INSTALACIÓN Y COMPRA DE EQUIPO DE AIRE ACONDICIONADO PARA ESCUELA JUAN SEGUEL FONDOS MANTENCIÓN” ",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
-        "monto": 0,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-04T09:00:00"
-      },
-      {
-        "codigo": "2765-50-LE26",
-        "titulo": "Arriendo e instalación mobiliarios actividades",
-        "organismo": "I MUNICIPALIDAD DE LA CISTERNA",
-        "monto": 0,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 70,
-        "fechaCierre": "2026-08-12T15:00:00"
-      },
-      {
-        "codigo": "3933-39-L126",
-        "titulo": "“MATERIAL DE LIBRERÍA PARA ESCUELA DE DOLLINCO FONDOS PIE”",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
-        "monto": 0,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-08-11T09:00:00"
-      },
-      {
-        "codigo": "2045-12-L126",
-        "titulo": "Servicio de arriendo Monitoreo Ambulatorio de Presión Arterial / Holter de Presión Arterial",
-        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE CUREPTO",
-        "monto": 0,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-17T18:35:00"
-      }
-    ],
-    "modificados": [],
-    "cerrados": [
       {
         "codigo": "5155-28-LE26",
         "titulo": "375 - Servicio mantención preventiva y correctiva de equipos de aire acondicionado del nivel central Servel",
         "organismo": "SERVICIO ELECTORAL",
-        "estadoAnterior": "Adjudicada",
         "monto": 10000000,
-        "empresaMatch": "Aminorte"
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-27T15:00:00"
+      },
+      {
+        "codigo": "2101-136-L126",
+        "titulo": "“ADQUISICIÓN DE MATERIALES Y ARTÍCULOS DE ESCRITORIO PARA BODEGA DE ECONOMATO Y VACUNATORIO”",
+        "organismo": "HOSPITAL INTERCULTURAL KALLVU LLANKA.-",
+        "monto": 3108500,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-08-27T18:30:00"
+      },
+      {
+        "codigo": "3084-30-LR26",
+        "titulo": "CONTRATACIÓN SERVICIO DE SUSCRIPCIÓN DE LICENCIAS",
+        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
+        "monto": 399041,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-21T15:01:00"
+      },
+      {
+        "codigo": "4401-56-LE26",
+        "titulo": "SC 476 ADQUISICIÓN SUMINISTRO IMPRESIÓN TINTAS",
+        "organismo": "I MUNICIPALIDAD DE SAN CLEMENTE",
+        "monto": 0,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-08-31T16:30:00"
+      },
+      {
+        "codigo": "1079650-36-LE26",
+        "titulo": "ADQUISICION DE 23 COMPUTADORES PARA CVMF",
+        "organismo": "SERVICIO DE SALUD CONCEPCION",
+        "monto": 0,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-07-23T15:00:00"
       }
-    ]
+    ],
+    "modificados": [],
+    "cerrados": []
   },
-  "tiempoEjecucionSegundos": 201.8,
+  "tiempoEjecucionSegundos": 191.7,
   "errores": [],
   "advertencias": []
 }
