@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-19T01:23:16.425259+00:00",
-  "ultimoIntentoRealizado": "2026-08-19T01:23:16.425259+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-19T03:49:25.605962+00:00",
+  "ultimoIntentoRealizado": "2026-08-19T03:49:25.605962+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1265,
-  "registrosConfirmados": 1265,
+  "registrosEnPlataforma": 1267,
+  "registrosConfirmados": 1267,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 999,
-  "excluidosPrefiltroIrrelevante": 7080,
+  "registrosConMontoReal": 1001,
+  "excluidosPrefiltroIrrelevante": 7084,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 710,
-    "conMontoValido": 707,
+    "total": 711,
+    "conMontoValido": 708,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 707,
+      "VALIDADO": 708,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 266660399,
-    "montoFinalSum": 1168052372,
-    "montoRecuperadoSum": 901391973
+    "montoOriginalSum": 328124170,
+    "montoFinalSum": 1175021285,
+    "montoRecuperadoSum": 846897115
   },
   "categorias": {
-    "licitaciones": 551,
-    "comprasAgiles": 710,
+    "licitaciones": 552,
+    "comprasAgiles": 711,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
@@ -35,7 +35,7 @@
   "tiposOficiales": {
     "LP": 111,
     "L1": 51,
-    "LE": 336,
+    "LE": 337,
     "LR": 42,
     "CO": 7,
     "I2": 3,
@@ -43,16 +43,16 @@
     "E2": 4,
     "O1": 4,
     "B2": 2,
-    "COT": 703
+    "COT": 704
   },
   "matchPorEmpresa": {
-    "Aminorte": 1042,
+    "Aminorte": 1044,
     "V-MOCCS": 223
   },
   "cambios": {
     "comparadoContra": "2026-08-17T13:37:22.646533+00:00",
-    "nuevosCount": 972,
-    "modificadosCount": 71,
+    "nuevosCount": 974,
+    "modificadosCount": 72,
     "cerradosCount": 707,
     "nuevos": [
       {
@@ -638,9 +638,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4127-31-LE26",
-        "titulo": "TIC. SUSCRIPCIÓN LICENCIAS Y SERVICIOS WAF",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+        "codigo": "3887-37-LE26",
+        "titulo": "Demarcacion Vial de Pinturas Termoplasticas",
+        "organismo": "I MUNICIPALIDAD DE VILLARRICA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 70000000,
@@ -648,9 +648,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3887-37-LE26",
-        "titulo": "Demarcacion Vial de Pinturas Termoplasticas",
-        "organismo": "I MUNICIPALIDAD DE VILLARRICA",
+        "codigo": "4127-31-LE26",
+        "titulo": "TIC. SUSCRIPCIÓN LICENCIAS Y SERVICIOS WAF",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 70000000,
@@ -978,19 +978,19 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1306643-23-LE26",
-        "titulo": "SERVICIO DE REPOSICIÓN MAMPARAS CESFAM",
-        "organismo": "I.MUNICIPALIDAD DE CERRO NAVIA",
+        "codigo": "1618-8-LE26",
+        "titulo": "Suscripciones Adobe Acrobat Pro Gob + InDesign",
+        "organismo": "DIRECCION DE PRESUPUESTOS MINISTERIO DE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
+        "montoAnterior": 21022,
+        "montoNuevo": 21022,
+        "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1426100-10-CO26",
-        "titulo": "CARPETA DE PROTECCION PARA PAVIMENTO DEPORTIVO",
-        "organismo": "SERVICIO NACIONAL DE REINSERCION SOCIAL JUVENIL",
+        "codigo": "2561-17-LE26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE CÁMARA DE CONGELADOS",
+        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -998,9 +998,19 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3253-73-LE26",
-        "titulo": "SISTEMA DE ALIMENTACION INTERRUMPIDA UPS",
-        "organismo": "I MUNICIPALIDAD DE PELLUHUE",
+        "codigo": "2322-67-LE26",
+        "titulo": "Adquisición de Equipos de Respaldo de Energía UPS – Municipalidad de Vallenar",
+        "organismo": "I MUNICIPALIDAD DE VALLENAR",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3781-4-LE26",
+        "titulo": "SERVICIO DE LIMPIEZA DE COLECTORES DE AGUAS SERVIDAS Y CÁMARAS MATRICERAS DE RED DE ALCANTARILLADO.",
+        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1028,26 +1038,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2561-17-LE26",
-        "titulo": "ADQUISICIÓN E INSTALACIÓN DE CÁMARA DE CONGELADOS",
-        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2322-67-LE26",
-        "titulo": "Adquisición de Equipos de Respaldo de Energía UPS – Municipalidad de Vallenar",
-        "organismo": "I MUNICIPALIDAD DE VALLENAR",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "4053-36-LE26",
         "titulo": "IMPRESORA Y BRAZALETES HSE",
         "organismo": "I MUNICIPALIDAD DE MARIQUINA",
@@ -1058,9 +1048,29 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3781-4-LE26",
-        "titulo": "SERVICIO DE LIMPIEZA DE COLECTORES DE AGUAS SERVIDAS Y CÁMARAS MATRICERAS DE RED DE ALCANTARILLADO.",
-        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
+        "codigo": "1426100-10-CO26",
+        "titulo": "CARPETA DE PROTECCION PARA PAVIMENTO DEPORTIVO",
+        "organismo": "SERVICIO NACIONAL DE REINSERCION SOCIAL JUVENIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1306643-23-LE26",
+        "titulo": "SERVICIO DE REPOSICIÓN MAMPARAS CESFAM",
+        "organismo": "I.MUNICIPALIDAD DE CERRO NAVIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3253-73-LE26",
+        "titulo": "SISTEMA DE ALIMENTACION INTERRUMPIDA UPS",
+        "organismo": "I MUNICIPALIDAD DE PELLUHUE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1078,6 +1088,16 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "2173-25-LE26",
+        "titulo": "MANTENCIÓN DE TABLEROS ELÉCTRICOS PAC 3168-22-PC26",
+        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1663-130-LE26",
         "titulo": "2DO LLAMADO-SERVICIO DE TRASLADO EQUIPOS EQUIPAMIENTO Y MOBILIARIO",
         "organismo": "SERVICIO DE SALUD CHILOE",
@@ -1086,26 +1106,6 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1057501-434-LR26",
-        "titulo": "CONVENIO PROTESIS DE REVISION CON OPCION DE BISAGRA ROTATORIA",
-        "organismo": "COMPLEJO ASISTENCIAL DR. SOTERO DEL RIO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057539-88-LR26",
-        "titulo": "CONVENIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO EQUIPOS DE ANESTESIA Y MONITOREO HOSPITAL PUERTO MONTT SOLIC 2026-43.",
-        "organismo": "HOSPITAL PUERTO MONTT SERVICIO DE SALUD DEL RELONCAVI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1057049-269-LE26",
@@ -1138,11 +1138,31 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2173-25-LE26",
-        "titulo": "MANTENCIÓN DE TABLEROS ELÉCTRICOS PAC 3168-22-PC26",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "codigo": "1057501-434-LR26",
+        "titulo": "CONVENIO PROTESIS DE REVISION CON OPCION DE BISAGRA ROTATORIA",
+        "organismo": "COMPLEJO ASISTENCIAL DR. SOTERO DEL RIO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057539-88-LR26",
+        "titulo": "CONVENIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO EQUIPOS DE ANESTESIA Y MONITOREO HOSPITAL PUERTO MONTT SOLIC 2026-43.",
+        "organismo": "HOSPITAL PUERTO MONTT SERVICIO DE SALUD DEL RELONCAVI",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1063538-191-LP26",
+        "titulo": "BAJADAS PARENTERALES CON BOMBAS PCA EN COMODATO",
+        "organismo": "HOSPITAL BASE OSORNO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1168,29 +1188,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3206-26-L126",
-        "titulo": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS",
-        "organismo": "I MUNICIPALIDAD DE SAN RAFAEL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1063538-191-LP26",
-        "titulo": "BAJADAS PARENTERALES CON BOMBAS PCA EN COMODATO",
-        "organismo": "HOSPITAL BASE OSORNO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2045-12-L126",
-        "titulo": "Servicio de arriendo Monitoreo Ambulatorio de Presión Arterial / Holter de Presión Arterial",
-        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE CUREPTO",
+        "codigo": "3882-71-LE26",
+        "titulo": "REPOSICIÓN SISTEMA ELÉCTRICO CENTRAL DE CÁMARAS COMUNA DE LLAY LLAY",
+        "organismo": "I MUNICIPALIDAD DE LLAY LLAY",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2118.4,
+  "tiempoEjecucionSegundos": 1518.3,
   "errores": [],
   "advertencias": []
 }
