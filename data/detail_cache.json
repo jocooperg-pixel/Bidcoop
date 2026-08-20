@@ -5367,7 +5367,7 @@
         "NombreUsuario": "ÚRSULA RUZ ROZAS",
         "CargoUsuario": "ENCARGADA DE COMPRAS"
       },
-      "DiasCierreLicitacion": "4",
+      "DiasCierreLicitacion": "1",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -5447,8 +5447,8 @@
         ]
       }
     },
-    "ts": 1787024633.2303476,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199865.0927908,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1031849-14-LE26": {
     "data": {
@@ -24727,7 +24727,7 @@
         "NombreUsuario": "Jonathan Sarrias Sanchez",
         "CargoUsuario": "Analista de licitaciones"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -24829,8 +24829,8 @@
         ]
       }
     },
-    "ts": 1787024637.0757985,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199865.7777715,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1051425-34-LP26": {
     "data": {
@@ -25423,7 +25423,7 @@
         "NombreUsuario": "Nataly  San Martin Lagos",
         "CargoUsuario": "Jefe Unidad Abastecimiento"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "6",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -25439,13 +25439,13 @@
       "CantidadReclamos": 280,
       "Fechas": {
         "FechaCreacion": "2026-07-22T09:56:59.927",
-        "FechaCierre": "2026-08-24T15:00:00",
+        "FechaCierre": "2026-08-26T15:00:00",
         "FechaInicio": "2026-07-23T21:24:00",
         "FechaFinal": "2026-07-31T21:24:00",
         "FechaPubRespuestas": "2026-08-03T21:24:00",
-        "FechaActoAperturaTecnica": "2026-08-24T15:01:00",
-        "FechaActoAperturaEconomica": "2026-08-24T15:01:00",
-        "FechaPublicacion": "2026-07-23T18:07:24.317",
+        "FechaActoAperturaTecnica": "2026-08-26T15:01:00",
+        "FechaActoAperturaEconomica": "2026-08-26T15:01:00",
+        "FechaPublicacion": "2026-07-23T18:07:00",
         "FechaAdjudicacion": "2026-09-03T16:21:00",
         "FechaEstimadaAdjudicacion": "2026-09-03T16:21:00",
         "FechaSoporteFisico": null,
@@ -25503,8 +25503,8 @@
         ]
       }
     },
-    "ts": 1787024640.9982238,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199870.7858005,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057390-32-LP26": {
     "data": {
@@ -31228,7 +31228,7 @@
         "NombreUsuario": "Pedro Antonio Salas",
         "CargoUsuario": "Ejecutivo de Compras"
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 3,
       "Tipo": "I2",
@@ -31308,8 +31308,8 @@
         ]
       }
     },
-    "ts": 1787024647.0908074,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199876.714338,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057489-212-LP26": {
     "data": {
@@ -35993,7 +35993,7 @@
         "NombreUsuario": "MAXIMILIANO LEON",
         "CargoUsuario": "Analista de Licitaciones"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -36073,8 +36073,8 @@
         ]
       }
     },
-    "ts": 1787024654.9783232,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199888.5044968,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057491-150-LP26": {
     "data": {
@@ -37754,7 +37754,7 @@
         "NombreUsuario": "Luz Martinez",
         "CargoUsuario": "Encargada de licitaciones"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -37834,8 +37834,8 @@
         ]
       }
     },
-    "ts": 1787024657.8914807,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199892.653997,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057496-30-LE26": {
     "data": {
@@ -54689,7 +54689,7 @@
         "NombreUsuario": "Ismael Estay Marchant",
         "CargoUsuario": "Encargado de Equipos Médicos"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -54702,7 +54702,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 2221,
+      "CantidadReclamos": 2230,
       "Fechas": {
         "FechaCreacion": "2026-08-03T12:09:28.167",
         "FechaCierre": "2026-08-27T17:00:00",
@@ -54780,8 +54780,8 @@
         ]
       }
     },
-    "ts": 1787024665.2542524,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199896.7847495,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057508-91-L126": {
     "data": {
@@ -59672,8 +59672,8 @@
         ]
       }
     },
-    "ts": 1787111506.831551,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200138.5186105,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1079650-40-LE26": {
     "data": {
@@ -65933,8 +65933,8 @@
         ]
       }
     },
-    "ts": 1787111510.7465549,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200143.643334,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1088172-5-LE26": {
     "data": {
@@ -81892,7 +81892,7 @@
         "NombreUsuario": "Luis Ricardo Hernandez Beltran",
         "CargoUsuario": "Jefe Unidad Adq Insumos Clínicos y Farmacos"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -81905,7 +81905,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 2852,
+      "CantidadReclamos": 2853,
       "Fechas": {
         "FechaCreacion": "2026-07-10T00:00:00",
         "FechaCierre": "2026-08-24T17:12:00",
@@ -82005,8 +82005,8 @@
         ]
       }
     },
-    "ts": 1787024673.3989558,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199905.602415,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057544-245-LP26": {
     "data": {
@@ -122838,7 +122838,7 @@
         "NombreUsuario": "YENIFER PEREZ TAPIA",
         "CargoUsuario": "Jefa Depto Abastecimiento SST "
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -123061,8 +123061,8 @@
         ]
       }
     },
-    "ts": 1787024693.506459,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199935.60665,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1180968-7-LE26": {
     "data": {
@@ -153035,8 +153035,8 @@
         ]
       }
     },
-    "ts": 1787111544.8877609,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200108.115976,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1293138-10-LR26": {
     "data": {
@@ -162145,8 +162145,8 @@
         ]
       }
     },
-    "ts": 1787111533.6107373,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200117.9637494,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1641-219-LR26": {
     "data": {
@@ -175289,7 +175289,7 @@
         "NombreUsuario": "Katerine Jara Hueitra",
         "CargoUsuario": "Profesional Abastecimiento"
       },
-      "DiasCierreLicitacion": "4",
+      "DiasCierreLicitacion": "1",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -175369,8 +175369,8 @@
         ]
       }
     },
-    "ts": 1787024867.2057967,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200074.2902882,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "956-54-LE26": {
     "data": {
@@ -178170,177 +178170,6 @@
     },
     "ts": 1787150497.587123,
     "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
-  "986278-14-LE26": {
-    "data": {
-      "CodigoExterno": "986278-14-LE26",
-      "Nombre": "PROYECTO EQUIPAMIENTO Y MOBILIARIO DECRETO EX. 888",
-      "CodigoEstado": 5,
-      "Descripcion": "PROCESO LICITATORIO PÚBLICO POR LINEA DENOMINADO “PROYECTO EQUIPAMIENTO Y MOBILIARIO DECRETO EXENTO N°888 DEL 24.10.2025 PARA LA CARRERA TNS CLIMATIZACIÓN Y REFRIGERACIÓN CFT DE LA REGIÓN DE LA ARAUCANÍA”.\r\n",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "1577943",
-        "NombreOrganismo": "CENTRO DE FORMACION TECNICA DE LA REGION DE LA ARAUCANIA",
-        "RutUnidad": "65.148.017-5",
-        "CodigoUnidad": "986278",
-        "NombreUnidad": "Sub-Unidad Adquisiciones y Contrataciones Públicas",
-        "DireccionUnidad": "Manuel Antonio Matta N°01055",
-        "ComunaUnidad": "Lautaro",
-        "RegionUnidad": "Región de la Araucanía ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2381815",
-        "NombreUsuario": "LORETO DEL PILAR GARCIA VALDES",
-        "CargoUsuario": "PROFESIONAL ADQUISICIONES, CONTRATACIONES PÚBLICAS"
-      },
-      "DiasCierreLicitacion": "4",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 2,
-      "Fechas": {
-        "FechaCreacion": "2026-08-11T16:34:06.267",
-        "FechaCierre": "2026-08-21T16:00:00",
-        "FechaInicio": "2026-08-11T20:00:00",
-        "FechaFinal": "2026-08-17T16:00:00",
-        "FechaPubRespuestas": "2026-08-18T16:00:00",
-        "FechaActoAperturaTecnica": "2026-08-21T16:15:00",
-        "FechaActoAperturaEconomica": "2026-08-21T16:15:00",
-        "FechaPublicacion": "2026-08-11T17:53:00",
-        "FechaAdjudicacion": "2026-09-11T16:00:00",
-        "FechaEstimadaAdjudicacion": "2026-09-11T16:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 69169093,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "VIVIANA QUIÑEHUAL",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "ORIANA ERICES RAMIREZ",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "Según documento adjunto aprobado mediante Res. 1196.",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "PRESUPUESTO TOTAL DISPONIBLE PARA EL TOTAL DE LAS LÍNEAS: 69.169.093 con IVA y todos los gastos asociados incluidos.\r\nEn documento adjunto, se detallará el presupuesto disponible para cada línea.",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 1,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 7,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 41103024,
-            "CodigoCategoria": "41103000",
-            "Categoria": "Equipamiento para laboratorios / Equipos e insumos para laboratorio / Equipo de enfriamiento para laboratorio",
-            "NombreProducto": "Condensadores de frío",
-            "Descripcion": "LÍNEA N°1: CÁMARA DE FRÍO, PRESUPUESTO DISPONIBLE PARA LA LÍNEA $ 7.363.720.- IVA INCLUIDO\r\nEl oferente debe ofertar la totalidad de requerido en la Línea, o su oferta será declarada inadmisible. \r\n*Cualquier alusión a marca es meramente referencial",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 41101805,
-            "CodigoCategoria": "41101800",
-            "Categoria": "Equipamiento para laboratorios / Equipos e insumos para laboratorio / Equipo de física de electrones y de estado sólido para laboratorio",
-            "NombreProducto": "Medidores de flujo",
-            "Descripcion": "LÍNEA N°2: CICLO RANKINE, PRESUPUESTO DISPONIBLE PARA LA LÍNEA $ 33.320.000.- IVA INCLUIDO\r\nEl oferente debe ofertar la totalidad de requerido en la Línea, o su oferta será declarada inadmisible. \r\n*Cualquier alusión a marca es meramente referencial",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 40102001,
-            "CodigoCategoria": "40102000",
-            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control de temperatura y ventilación / Calderas",
-            "NombreProducto": "Caldera de tubo de fuego",
-            "Descripcion": "LÍNEA N°3: CALDERA A PELLET COMPACTA, PRESUPUESTO DISPONIBLE PARA LA LÍNEA $ 4.165.000.- IVA INCLUIDO\r\nEl oferente debe ofertar la totalidad de requerido en la Línea, o su oferta será declarada inadmisible. *Cualquier alusión a marca es meramente referenc",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 4,
-            "CodigoProducto": 41111922,
-            "CodigoCategoria": "41111900",
-            "Categoria": "Equipamiento para laboratorios / Instrumentos de medida y experimentación / Instrumentos y equipos de grabación y registro",
-            "NombreProducto": "Detector de falla de lámpara",
-            "Descripcion": "LÍNEA N°4: DETECTOR DE AMONIACO, PRESUPUESTO DISPONIBLE PARA LA LÍNEA $ 2.618.000.- IVA INCLUIDO\r\nEl oferente debe ofertar la totalidad de requerido en la Línea, o su oferta será declarada inadmisible. ",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 5,
-            "CodigoProducto": 23153001,
-            "CodigoCategoria": "23153000",
-            "Categoria": "Maquinaria para fabricación y transformación industrial / Maquinaria y suministros de procesos industriales / Dispositivos de guía, posicionamiento y sujeción",
-            "NombreProducto": "Artículo de calibración",
-            "Descripcion": "LÍNEA N°5: EQUIPOS DE MEDICIÓN Y CALIBRACIÓN, PRESUPUESTO DISPONIBLE PARA LA LÍNEA $ 6.973.400.- IVA INCLUIDO\r\nEl oferente debe ofertar la totalidad de requerido en la Línea, o su oferta será declarada inadmisible. \r\n",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 6,
-            "CodigoProducto": 26131701,
-            "CodigoCategoria": "26131700",
-            "Categoria": "Maquinaria para generación y distribución de energía / Generación de energía / Equipos de vigilancia para producción de energía",
-            "NombreProducto": "Detectores de gases inflamables o peligrosos para generadores",
-            "Descripcion": "LÍNEA N°6: EQUIPOS PORTÁTILES PARA GASES INDUSTRIALES, PRESUPUESTO DISPONIBLE PARA LA LÍNEA $ 4.194.750.- IVA INCLUIDO\r\nEl oferente debe ofertar la totalidad de requerido en la Línea, o su oferta será declarada inadmisible. \r\n",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 7,
-            "CodigoProducto": 31161727,
-            "CodigoCategoria": "31161700",
-            "Categoria": "Artículos de fabricación y producción / Artículos de ferretería / Tuercas",
-            "NombreProducto": "Tuercas hexagonales",
-            "Descripcion": "LÍNEA N°7: EQUIPOS Y HERRAMIENTAS FERRETERÍA GENERAL, PRESUPUESTO DISPONIBLE PARA LA LÍNEA $ 10.534.223.- IVA INCLUIDO\r\nEl oferente debe ofertar la totalidad de requerido en la Línea, o su oferta será declarada inadmisible\r\n",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787024874.2045553,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
   },
   "1075963-340-LE26": {
     "data": {
@@ -181553,7 +181382,7 @@
         "NombreUsuario": "Angélica Queupumil",
         "CargoUsuario": "Encargada Mercado Público SDNT "
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -181633,8 +181462,8 @@
         ]
       }
     },
-    "ts": 1787024825.2458656,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200042.5953972,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "986278-15-LE26": {
     "data": {
@@ -181658,7 +181487,7 @@
         "NombreUsuario": "MIGUEL ANGEL HEISE RAIO",
         "CargoUsuario": "Asistente Administrativo de la Unidad de Compras"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -181771,8 +181600,8 @@
         ]
       }
     },
-    "ts": 1787024878.024999,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200078.4579177,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1002772-77-LP26": {
     "data": {
@@ -181796,7 +181625,7 @@
         "NombreUsuario": "Mitzi Acuña",
         "CargoUsuario": ""
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -181964,8 +181793,8 @@
         ]
       }
     },
-    "ts": 1787024627.1031868,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199859.319754,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1012975-9-L126": {
     "data": {
@@ -182110,15 +181939,15 @@
       "CantidadReclamos": 110,
       "Fechas": {
         "FechaCreacion": "2026-08-06T00:00:00",
-        "FechaCierre": "2026-08-25T10:00:00",
+        "FechaCierre": "2026-08-28T12:00:00",
         "FechaInicio": "2026-08-11T16:50:00",
         "FechaFinal": "2026-08-17T16:00:00",
-        "FechaPubRespuestas": "2026-08-19T19:00:00",
-        "FechaActoAperturaTecnica": "2026-08-25T10:15:00",
-        "FechaActoAperturaEconomica": "2026-08-25T10:15:00",
-        "FechaPublicacion": "2026-08-11T16:42:13.26",
-        "FechaAdjudicacion": "2026-09-30T18:43:00",
-        "FechaEstimadaAdjudicacion": "2026-09-30T18:43:00",
+        "FechaPubRespuestas": "2026-08-24T18:00:00",
+        "FechaActoAperturaTecnica": "2026-08-28T12:15:00",
+        "FechaActoAperturaEconomica": "2026-08-28T12:15:00",
+        "FechaPublicacion": "2026-08-11T16:42:00",
+        "FechaAdjudicacion": "2026-10-16T18:43:00",
+        "FechaEstimadaAdjudicacion": "2026-10-16T18:43:00",
         "FechaSoporteFisico": null,
         "FechaTiempoEvaluacion": null,
         "FechaEstimadaFirma": null,
@@ -182185,8 +182014,8 @@
         ]
       }
     },
-    "ts": 1787024638.4452615,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199869.4399693,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057387-47-LE26": {
     "data": {
@@ -182210,7 +182039,7 @@
         "NombreUsuario": "JOSHUA IZQUIERDO MUÑOZ",
         "CargoUsuario": "PROFESIONAL"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "6",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -182226,13 +182055,13 @@
       "CantidadReclamos": 280,
       "Fechas": {
         "FechaCreacion": "2026-08-11T16:10:20.897",
-        "FechaCierre": "2026-08-25T15:30:00",
+        "FechaCierre": "2026-08-26T15:30:00",
         "FechaInicio": "2026-08-13T13:21:00",
         "FechaFinal": "2026-08-19T18:00:00",
         "FechaPubRespuestas": "2026-08-21T18:01:00",
-        "FechaActoAperturaTecnica": "2026-08-25T15:31:00",
-        "FechaActoAperturaEconomica": "2026-08-25T15:31:00",
-        "FechaPublicacion": "2026-08-13T12:41:39.68",
+        "FechaActoAperturaTecnica": "2026-08-26T15:31:00",
+        "FechaActoAperturaEconomica": "2026-08-26T15:31:00",
+        "FechaPublicacion": "2026-08-13T12:41:00",
         "FechaAdjudicacion": "2026-09-04T17:15:00",
         "FechaEstimadaAdjudicacion": "2026-09-04T17:15:00",
         "FechaSoporteFisico": null,
@@ -182290,8 +182119,8 @@
         ]
       }
     },
-    "ts": 1787024642.4877582,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199871.5325913,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057428-28-LE26": {
     "data": {
@@ -182315,7 +182144,7 @@
         "NombreUsuario": "Marissa Karina Chávez Torres",
         "CargoUsuario": "Administrador"
       },
-      "DiasCierreLicitacion": "11",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -182395,8 +182224,8 @@
         ]
       }
     },
-    "ts": 1787024643.0660422,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199872.2821643,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057489-237-I226": {
     "data": {
@@ -182420,7 +182249,7 @@
         "NombreUsuario": "Pedro Antonio Salas",
         "CargoUsuario": "Ejecutivo de Compras"
       },
-      "DiasCierreLicitacion": "28",
+      "DiasCierreLicitacion": "25",
       "Informada": 0,
       "CodigoTipo": 3,
       "Tipo": "I2",
@@ -182500,8 +182329,8 @@
         ]
       }
     },
-    "ts": 1787024647.7027721,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199877.4136372,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057489-240-LE26": {
     "data": {
@@ -182525,7 +182354,7 @@
         "NombreUsuario": "Patricia León Alfaro",
         "CargoUsuario": "Administrativo"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -182605,8 +182434,8 @@
         ]
       }
     },
-    "ts": 1787024648.3199823,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199880.8155348,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057489-241-LP26": {
     "data": {
@@ -182630,7 +182459,7 @@
         "NombreUsuario": "Cynthia Aránguiz Escobar",
         "CargoUsuario": ""
       },
-      "DiasCierreLicitacion": "16",
+      "DiasCierreLicitacion": "13",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -182754,8 +182583,8 @@
         ]
       }
     },
-    "ts": 1787024649.6402166,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199884.441344,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057495-17-LP26": {
     "data": {
@@ -182779,7 +182608,7 @@
         "NombreUsuario": "Luz Martinez",
         "CargoUsuario": "Encargada de licitaciones"
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -182859,8 +182688,8 @@
         ]
       }
     },
-    "ts": 1787024661.748375,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199893.31506,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057509-230-LE26": {
     "data": {
@@ -182884,7 +182713,7 @@
         "NombreUsuario": "Maximiliano Jara Valenzuela",
         "CargoUsuario": "Ejecutivo de Compras"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -182964,113 +182793,8 @@
         ]
       }
     },
-    "ts": 1787024665.8210232,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
-  },
-  "1058043-36-LR26": {
-    "data": {
-      "CodigoExterno": "1058043-36-LR26",
-      "Nombre": "C.S. Insulina Glargina 300 Ui Ml Lápices Desechables",
-      "CodigoEstado": 5,
-      "Descripcion": "Las presentes bases enmarcan los requerimientos de la Unidad de Farmacia del Hospital La Serena bajo la licitación “C.S. Insulina Glargina 300 Ui/ Ml Lápices Desechables”, ID 1058043-36-LR26 con el fin de obtener el suministro de los requerimientos señalados en punto B de las presentes bases de licitación, los cuales son necesarios para la adecuada y oportuna atención de todos los pacientes del Hospital de La Serena, tanto en Atención Abierta como en la Atención Cerrada. ",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "7312",
-        "NombreOrganismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL LA SERENA",
-        "RutUnidad": "61.606.402-9",
-        "CodigoUnidad": "1058043",
-        "NombreUnidad": "Fármacos",
-        "DireccionUnidad": "JOSE M. BALMACEDA 916",
-        "ComunaUnidad": "La Serena",
-        "RegionUnidad": "Región de Coquimbo ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1826789",
-        "NombreUsuario": "Karla Parga Meza",
-        "CargoUsuario": "Ejecutivo Compras Públicas"
-      },
-      "DiasCierreLicitacion": "23",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LR",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 2787,
-      "Fechas": {
-        "FechaCreacion": "2026-07-01T00:00:00",
-        "FechaCierre": "2026-09-09T17:00:00",
-        "FechaInicio": "2026-08-10T16:01:00",
-        "FechaFinal": "2026-08-25T16:00:00",
-        "FechaPubRespuestas": "2026-08-30T17:00:00",
-        "FechaActoAperturaTecnica": "2026-09-09T17:01:00",
-        "FechaActoAperturaEconomica": "2026-09-09T17:01:00",
-        "FechaPublicacion": "2026-08-10T15:40:47.307",
-        "FechaAdjudicacion": "2026-11-09T17:00:00",
-        "FechaEstimadaAdjudicacion": "2026-11-09T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "Hospital La Serena",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "36",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Manuel Acuña Rojas",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Felipe Gaete Vergara",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "Según estipula el numeral 32 de las Bases Administrativas de Licitación.",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "36",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 51181506,
-            "CodigoCategoria": "51181500",
-            "Categoria": "Medicamentos y productos farmacéuticos / Hormonas y antagonistas hormonales / Agentes antidiabéticos y agentes hiperglicémicos",
-            "NombreProducto": "Insulina",
-            "Descripcion": "262-0268 INSULINA GLARGINA 300 UI / ML LAPICES DESECHABLES\r\n",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787024676.8100078,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199901.2075553,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1063534-5-LE26": {
     "data": {
@@ -183199,7 +182923,7 @@
         "NombreUsuario": "Romina Vasquez Vasquez",
         "CargoUsuario": "Ejecutiva de Compras"
       },
-      "DiasCierreLicitacion": "16",
+      "DiasCierreLicitacion": "13",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -184104,8 +183828,8 @@
         ]
       }
     },
-    "ts": 1787024678.2347145,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199912.5931854,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1080286-21-LE26": {
     "data": {
@@ -184129,7 +183853,7 @@
         "NombreUsuario": "Francisco Ismael Betancur Vega",
         "CargoUsuario": "comprador"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "6",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -184142,7 +183866,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 3456,
+      "CantidadReclamos": 3457,
       "Fechas": {
         "FechaCreacion": "2026-08-12T18:03:15.93",
         "FechaCierre": "2026-08-26T15:30:00",
@@ -184451,113 +184175,8 @@
         ]
       }
     },
-    "ts": 1787024682.8048358,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
-  },
-  "1093303-6-LE26": {
-    "data": {
-      "CodigoExterno": "1093303-6-LE26",
-      "Nombre": "PP 102.2026 adquisición equipo UPS más instalación puesta en marcha capacitación y mantenciones preventivas. E1O2RT9",
-      "CodigoEstado": 5,
-      "Descripcion": "Según documentación adjunta al proceso",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "7177",
-        "NombreOrganismo": "INSTITUTO DE SALUD PUBLICA DE CHILE",
-        "RutUnidad": "61.605.000-1",
-        "CodigoUnidad": "1093303",
-        "NombreUnidad": "Administración de Fondos de Terceros",
-        "DireccionUnidad": "Av. Marathón 1000",
-        "ComunaUnidad": "Santiago",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1385493",
-        "NombreUsuario": "Jose Luis Guajardo Ortiz",
-        "CargoUsuario": "Ejecutivo de Compras"
-      },
-      "DiasCierreLicitacion": "7",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 225,
-      "Fechas": {
-        "FechaCreacion": "2026-08-12T00:00:00",
-        "FechaCierre": "2026-08-24T15:00:00",
-        "FechaInicio": "2026-08-12T20:00:00",
-        "FechaFinal": "2026-08-18T12:00:00",
-        "FechaPubRespuestas": "2026-08-19T18:00:00",
-        "FechaActoAperturaTecnica": "2026-08-24T15:00:00",
-        "FechaActoAperturaEconomica": "2026-08-24T15:00:00",
-        "FechaPublicacion": "2026-08-12T12:21:27.2",
-        "FechaAdjudicacion": "2026-10-08T20:00:00",
-        "FechaEstimadaAdjudicacion": "2026-10-08T20:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": "1900-01-02T00:00:00",
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "Proyecto PNCO",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 16000000,
-      "Tiempo": "24",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Jefatura Subdepto. Gestión Financiera",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Jefatura Sección Análisis de Ilícitos",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "24",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "Según documentación adjunta al proceso",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 1,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 39121011,
-            "CodigoCategoria": "39121000",
-            "Categoria": "Artículos eléctricos y de iluminación / Equipamiento y artículos eléctricos / Equipamiento para distribución y transformación eléctrica",
-            "NombreProducto": "Fuentes de alimentación continua",
-            "Descripcion": "PRECIO NETO equipo UPS más instalación puesta en marcha capacitación y mantenciones preventivas, según bases de licitación adjuntas (no olvidar ofertar en Anexos adjuntos)",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787024684.2627158,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199916.1071825,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1106-20-LE26": {
     "data": {
@@ -184581,7 +184200,7 @@
         "NombreUsuario": "Cecilia Andrea Cruz Garay",
         "CargoUsuario": "Jefa Área Regional de Adquisiciones "
       },
-      "DiasCierreLicitacion": "3",
+      "DiasCierreLicitacion": "0",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -184672,8 +184291,8 @@
         ]
       }
     },
-    "ts": 1787024684.8697834,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199923.1097023,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1113265-13-LE26": {
     "data": {
@@ -184697,7 +184316,7 @@
         "NombreUsuario": "Mauricio Remigio Maulén Díaz",
         "CargoUsuario": "Encargado de Compras Publicas"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -184788,8 +184407,8 @@
         ]
       }
     },
-    "ts": 1787024685.4822865,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199927.0641167,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1159-6-LE26": {
     "data": {
@@ -184813,7 +184432,7 @@
         "NombreUsuario": "Luis Pavez",
         "CargoUsuario": "Profesional de apoyo honorarios"
       },
-      "DiasCierreLicitacion": "4",
+      "DiasCierreLicitacion": "1",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -184893,8 +184512,8 @@
         ]
       }
     },
-    "ts": 1787024692.3368447,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199934.0628912,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1180740-6-LE26": {
     "data": {
@@ -184918,7 +184537,7 @@
         "NombreUsuario": "Juan Pablo Rodríguez Riquelme",
         "CargoUsuario": "Profesional de Adquisiciones."
       },
-      "DiasCierreLicitacion": "3",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -184934,15 +184553,15 @@
       "CantidadReclamos": 1158,
       "Fechas": {
         "FechaCreacion": "2026-06-05T00:00:00",
-        "FechaCierre": "2026-08-20T15:30:00",
+        "FechaCierre": "2026-08-24T15:30:00",
         "FechaInicio": "2026-08-10T10:01:00",
         "FechaFinal": "2026-08-12T12:00:00",
         "FechaPubRespuestas": "2026-08-13T18:00:00",
-        "FechaActoAperturaTecnica": "2026-08-20T15:31:00",
-        "FechaActoAperturaEconomica": "2026-08-20T15:31:00",
-        "FechaPublicacion": "2026-08-10T09:41:23.027",
-        "FechaAdjudicacion": "2026-09-09T18:00:00",
-        "FechaEstimadaAdjudicacion": "2026-09-09T18:00:00",
+        "FechaActoAperturaTecnica": "2026-08-24T15:31:00",
+        "FechaActoAperturaEconomica": "2026-08-24T15:31:00",
+        "FechaPublicacion": "2026-08-10T09:41:00",
+        "FechaAdjudicacion": "2026-09-14T18:00:00",
+        "FechaEstimadaAdjudicacion": "2026-09-14T18:00:00",
         "FechaSoporteFisico": null,
         "FechaTiempoEvaluacion": null,
         "FechaEstimadaFirma": null,
@@ -185009,8 +184628,8 @@
         ]
       }
     },
-    "ts": 1787024692.892561,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199934.9732738,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1233619-35-LE26": {
     "data": {
@@ -185034,7 +184653,7 @@
         "NombreUsuario": "MARIA AMIGO BRAVO",
         "CargoUsuario": "Encargada de Compras"
       },
-      "DiasCierreLicitacion": "4",
+      "DiasCierreLicitacion": "1",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -185114,8 +184733,8 @@
         ]
       }
     },
-    "ts": 1787024699.4074547,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199942.474271,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1242121-19-LE26": {
     "data": {
@@ -185139,7 +184758,7 @@
         "NombreUsuario": "Leonardo Jesús Pérez Soto",
         "CargoUsuario": "Gestor licitaciones"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -185219,8 +184838,8 @@
         ]
       }
     },
-    "ts": 1787024700.0104988,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199947.0452704,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1305525-36-LP26": {
     "data": {
@@ -185244,7 +184863,7 @@
         "NombreUsuario": "GASTÓN LEBERTHON",
         "CargoUsuario": "Profesional de Compras"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -185368,8 +184987,8 @@
         ]
       }
     },
-    "ts": 1787024706.8347247,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199950.6585624,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1347870-14-LE26": {
     "data": {
@@ -185498,7 +185117,7 @@
         "NombreUsuario": "Celso Gastón Acosta Carvajal",
         "CargoUsuario": "Profesional de Apoyo "
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -185578,8 +185197,8 @@
         ]
       }
     },
-    "ts": 1787024714.795256,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199951.8964329,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1375735-9-LE26": {
     "data": {
@@ -185603,7 +185222,7 @@
         "NombreUsuario": "Fernanda Molina Madariaga",
         "CargoUsuario": "Profesional de Adquisiciones"
       },
-      "DiasCierreLicitacion": "11",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -185683,8 +185302,8 @@
         ]
       }
     },
-    "ts": 1787024715.3692932,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199952.73765,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1392-28-LE26": {
     "data": {
@@ -185708,7 +185327,7 @@
         "NombreUsuario": "Ingrid Correa Alvarado",
         "CargoUsuario": "COMPRADOR"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -185721,7 +185340,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 202,
+      "CantidadReclamos": 203,
       "Fechas": {
         "FechaCreacion": "2026-08-05T12:24:42.217",
         "FechaCierre": "2026-08-24T15:00:00",
@@ -185788,8 +185407,8 @@
         ]
       }
     },
-    "ts": 1787024719.7416303,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199957.17765,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1422256-1-LP26": {
     "data": {
@@ -185813,7 +185432,7 @@
         "NombreUsuario": "Hector Patricio Arias Ignao",
         "CargoUsuario": "Profesional de Apoyo"
       },
-      "DiasCierreLicitacion": "16",
+      "DiasCierreLicitacion": "13",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -185893,8 +185512,8 @@
         ]
       }
     },
-    "ts": 1787024723.4622066,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199960.6461318,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1422830-14-LR26": {
     "data": {
@@ -185918,7 +185537,7 @@
         "NombreUsuario": "Francisco Guzmán González",
         "CargoUsuario": "Profesional Licitador"
       },
-      "DiasCierreLicitacion": "24",
+      "DiasCierreLicitacion": "21",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -186075,8 +185694,8 @@
         ]
       }
     },
-    "ts": 1787024726.8748636,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199961.5757222,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "14-24-LE26": {
     "data": {
@@ -186100,7 +185719,7 @@
         "NombreUsuario": "Alvaro Cavieres",
         "CargoUsuario": "Ejecutivo de compras"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -186113,7 +185732,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 66,
+      "CantidadReclamos": 67,
       "Fechas": {
         "FechaCreacion": "2026-08-13T12:23:09.88",
         "FechaCierre": "2026-08-27T15:00:00",
@@ -186180,8 +185799,8 @@
         ]
       }
     },
-    "ts": 1787024730.7889543,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199965.0371215,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1434-22-LE26": {
     "data": {
@@ -186205,7 +185824,7 @@
         "NombreUsuario": "FRANCISCO PARADA GUZMAN",
         "CargoUsuario": "SUPERVISOR CHILECOMPRA"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -186218,7 +185837,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 202,
+      "CantidadReclamos": 203,
       "Fechas": {
         "FechaCreacion": "2026-08-12T00:00:00",
         "FechaCierre": "2026-08-27T15:01:00",
@@ -186285,8 +185904,8 @@
         ]
       }
     },
-    "ts": 1787024734.7627547,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199965.9965339,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1447790-10-LP26": {
     "data": {
@@ -186553,7 +186172,7 @@
         "NombreUsuario": "Yasnaia Nicole Bustamante Osorio",
         "CargoUsuario": "Profesional Adquisiciones"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -186633,8 +186252,8 @@
         ]
       }
     },
-    "ts": 1787024743.1408634,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199974.727349,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1618-8-LE26": {
     "data": {
@@ -186738,8 +186357,8 @@
         ]
       }
     },
-    "ts": 1787111404.0811894,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200092.5738513,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1641-266-LP26": {
     "data": {
@@ -186763,7 +186382,7 @@
         "NombreUsuario": "MATIAS NICOLAS ORTEGA RODRIGUEZ",
         "CargoUsuario": "PROFESIONAL DE LICITACIONES"
       },
-      "DiasCierreLicitacion": "15",
+      "DiasCierreLicitacion": "12",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -186776,7 +186395,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 2820,
+      "CantidadReclamos": 2821,
       "Fechas": {
         "FechaCreacion": "2026-06-05T00:00:00",
         "FechaCierre": "2026-09-01T16:00:00",
@@ -186854,8 +186473,8 @@
         ]
       }
     },
-    "ts": 1787024749.9892693,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199978.466731,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1641-334-LR26": {
     "data": {
@@ -186879,7 +186498,7 @@
         "NombreUsuario": "Javiera Carrasco  Robles",
         "CargoUsuario": "Profesional de Licitaciones"
       },
-      "DiasCierreLicitacion": "28",
+      "DiasCierreLicitacion": "25",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -186892,7 +186511,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 2820,
+      "CantidadReclamos": 2821,
       "Fechas": {
         "FechaCreacion": "2026-07-15T00:00:00",
         "FechaCierre": "2026-09-14T17:00:00",
@@ -186970,8 +186589,8 @@
         ]
       }
     },
-    "ts": 1787024750.9985454,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199979.5083125,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1725-183-LE26": {
     "data": {
@@ -189575,7 +189194,7 @@
         "NombreUsuario": "VANESSA CARRASCO MUÑÓZ",
         "CargoUsuario": "Analista de compra"
       },
-      "DiasCierreLicitacion": "2",
+      "DiasCierreLicitacion": "0",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -189588,7 +189207,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 202,
+      "CantidadReclamos": 203,
       "Fechas": {
         "FechaCreacion": "2026-06-25T11:48:42.34",
         "FechaCierre": "2026-08-20T15:00:00",
@@ -189688,8 +189307,8 @@
         ]
       }
     },
-    "ts": 1787111545.4898329,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200122.8206098,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2656-54-LE26": {
     "data": {
@@ -190472,7 +190091,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 1334,
+      "CantidadReclamos": 1336,
       "Fechas": {
         "FechaCreacion": "2026-07-24T00:00:00",
         "FechaCierre": "2026-08-14T12:00:00",
@@ -190539,8 +190158,8 @@
         ]
       }
     },
-    "ts": 1787111526.3488343,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200168.649733,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "29-54-LE26": {
     "data": {
@@ -193036,8 +192655,8 @@
         ]
       }
     },
-    "ts": 1787111537.4599614,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200128.6285448,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "3634-19-LE26": {
     "data": {
@@ -197780,7 +197399,7 @@
         "NombreUsuario": "Karla Abarca",
         "CargoUsuario": "Sección Compras"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -197882,8 +197501,8 @@
         ]
       }
     },
-    "ts": 1787024833.5764441,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200048.1401064,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "825-3-O126": {
     "data": {
@@ -197907,7 +197526,7 @@
         "NombreUsuario": "Lidia Pinto",
         "CargoUsuario": "Analista de Planificación"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "O1",
@@ -197987,8 +197606,8 @@
         ]
       }
     },
-    "ts": 1787024836.9218037,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200050.145789,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "846-27-LP26": {
     "data": {
@@ -198095,111 +197714,6 @@
     "ts": 1787185708.95908,
     "fetchedAt": "2026-08-20T00:27:21.792072+00:00"
   },
-  "857-4-LE26": {
-    "data": {
-      "CodigoExterno": "857-4-LE26",
-      "Nombre": "SERVICIO DE ARRIENDO DE EQUIPOS  MULTIFUNCIONALES",
-      "CodigoEstado": 5,
-      "Descripcion": "Suscribir CONTRATO DE SERVICIO DE ARRIENDO DE EQUIPOS MULTIFUNCIONALES, es implementar y dar continuidad al servicio de arriendo de impresoras multifuncionales para el Servicio Nacional de la Discapacidad (SENADIS), asegurando \r\nel correcto funcionamiento operativo y el soporte técnico necesario en las dependencias institucionales.",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "7184",
-        "NombreOrganismo": "SERVICIO NACIONAL DE LA DISCAPACIDAD",
-        "RutUnidad": "72.576.700-5",
-        "CodigoUnidad": "1853",
-        "NombreUnidad": "Servicio Nacional de la Discapacidad",
-        "DireccionUnidad": "",
-        "ComunaUnidad": "",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "2044312",
-        "NombreUsuario": "PAULA ANDREA COVARRUBIAS BASCUÑATE",
-        "CargoUsuario": "EJECUTIVA DE COMPRAS"
-      },
-      "DiasCierreLicitacion": "7",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 99,
-      "Fechas": {
-        "FechaCreacion": "2026-08-12T00:00:00",
-        "FechaCierre": "2026-08-24T15:00:00",
-        "FechaInicio": "2026-08-13T08:00:00",
-        "FechaFinal": "2026-08-18T11:00:00",
-        "FechaPubRespuestas": "2026-08-19T18:00:00",
-        "FechaActoAperturaTecnica": "2026-08-24T15:01:00",
-        "FechaActoAperturaEconomica": "2026-08-24T15:01:00",
-        "FechaPublicacion": "2026-08-12T17:22:58.013",
-        "FechaAdjudicacion": "2026-09-24T18:00:00",
-        "FechaEstimadaAdjudicacion": "2026-09-24T18:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "2209005",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "8",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Jose Vargas",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Juan Cariqueo",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "El Proveedor no podrá, en caso alguno, ceder o transferir en forma alguna, total o parcialmente, los \r\nderechos y obligaciones que nacen del desarrollo de la presente licitación y, en especial, los \r\nestablecidos en el contrato definitivo...",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "8",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "Pagarán en cuotas mensuales, contadas desde el inicio del servicio. Considera costo fijo arriendo y Puper cut y costo variable Impresión BN",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 43212110,
-            "CodigoCategoria": "43212100",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
-            "NombreProducto": "Impresoras multifunción o multifuncionales",
-            "Descripcion": "Arriendo y continuidad de multifuncionales (fotocopiado, impresión y escaneo). ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 21,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787024848.4564433,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
-  },
   "893-8-LP26": {
     "data": {
       "CodigoExterno": "893-8-LP26",
@@ -198222,7 +197736,7 @@
         "NombreUsuario": "Sergio Erwin Vargas Paredes",
         "CargoUsuario": "Gestion de Compras"
       },
-      "DiasCierreLicitacion": "4",
+      "DiasCierreLicitacion": "1",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -198302,8 +197816,8 @@
         ]
       }
     },
-    "ts": 1787024853.3780415,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200056.4755847,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "896-12-CO26": {
     "data": {
@@ -198432,7 +197946,7 @@
         "NombreUsuario": "Diego Fuentes Yañez",
         "CargoUsuario": "Ejecutivo de Compras"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -198445,7 +197959,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 3152,
+      "CantidadReclamos": 3153,
       "Fechas": {
         "FechaCreacion": "2026-08-12T10:31:27.267",
         "FechaCierre": "2026-08-25T15:30:00",
@@ -198512,8 +198026,8 @@
         ]
       }
     },
-    "ts": 1787024858.5948796,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200064.6872585,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "937232-69-LP26": {
     "data": {
@@ -198537,7 +198051,7 @@
         "NombreUsuario": "Fernanda Cabezas Nunez",
         "CargoUsuario": "Profesional Unidad de Compras"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -199728,8 +199242,8 @@
         ]
       }
     },
-    "ts": 1787024862.9703755,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200068.6497142,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "938-27-LE26": {
     "data": {
@@ -199753,7 +199267,7 @@
         "NombreUsuario": "JUAN ANDRES GONZALEZ SAAVEDRA",
         "CargoUsuario": ""
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "6",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -199766,7 +199280,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 202,
+      "CantidadReclamos": 203,
       "Fechas": {
         "FechaCreacion": "2026-08-12T11:10:13.96",
         "FechaCierre": "2026-08-26T10:00:00",
@@ -199833,8 +199347,8 @@
         ]
       }
     },
-    "ts": 1787024866.427125,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200073.2528167,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "999-27-LE26": {
     "data": {
@@ -199963,7 +199477,7 @@
         "NombreUsuario": "NICOLE SOFFIA RUIZ",
         "CargoUsuario": "Profesional adquisiciones"
       },
-      "DiasCierreLicitacion": "3",
+      "DiasCierreLicitacion": "0",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -199976,7 +199490,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 530,
+      "CantidadReclamos": 531,
       "Fechas": {
         "FechaCreacion": "2026-07-28T11:03:58.43",
         "FechaCierre": "2026-08-20T16:00:00",
@@ -200043,8 +199557,8 @@
         ]
       }
     },
-    "ts": 1787024669.9942925,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199905.0650253,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "557639-68-LE26": {
     "data": {
@@ -204816,7 +204330,7 @@
         "NombreUsuario": "Geraldine Gutierrez",
         "CargoUsuario": "Analista"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -204896,8 +204410,8 @@
         ]
       }
     },
-    "ts": 1787024852.4320438,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200055.6651187,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "896-13-LP26": {
     "data": {
@@ -204921,7 +204435,7 @@
         "NombreUsuario": "JEANETTE ELIZABETH MURILLO LEYTON",
         "CargoUsuario": "JEFE ADMINISTRATIVO"
       },
-      "DiasCierreLicitacion": "16",
+      "DiasCierreLicitacion": "13",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -205001,8 +204515,8 @@
         ]
       }
     },
-    "ts": 1787024853.9945045,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200057.6381664,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "896-14-LP26": {
     "data": {
@@ -205026,7 +204540,7 @@
         "NombreUsuario": "JEANETTE ELIZABETH MURILLO LEYTON",
         "CargoUsuario": "JEFE ADMINISTRATIVO"
       },
-      "DiasCierreLicitacion": "16",
+      "DiasCierreLicitacion": "13",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -205106,8 +204620,8 @@
         ]
       }
     },
-    "ts": 1787024854.5437462,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200061.1814868,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "937232-79-LR26": {
     "data": {
@@ -205131,7 +204645,7 @@
         "NombreUsuario": "Solange Bravo Arias",
         "CargoUsuario": "Profesional Unidad de Compras"
       },
-      "DiasCierreLicitacion": "28",
+      "DiasCierreLicitacion": "25",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -205211,8 +204725,8 @@
         ]
       }
     },
-    "ts": 1787024864.306028,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200069.6408172,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057049-234-LP26": {
     "data": {
@@ -205327,8 +204841,8 @@
         ]
       }
     },
-    "ts": 1787111522.003684,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200160.6936624,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057509-160-LP26": {
     "data": {
@@ -205548,8 +205062,8 @@
         ]
       }
     },
-    "ts": 1787111541.5741189,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200107.449457,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1209395-10-LE26": {
     "data": {
@@ -205744,8 +205258,8 @@
         ]
       }
     },
-    "ts": 1787111511.8682435,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200145.7752254,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1237328-35-LE26": {
     "data": {
@@ -208228,8 +207742,8 @@
         ]
       }
     },
-    "ts": 1787111513.000809,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200146.871066,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2448-73-LE26": {
     "data": {
@@ -208344,8 +207858,8 @@
         ]
       }
     },
-    "ts": 1787111525.614421,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200164.520043,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2684-25-LR26": {
     "data": {
@@ -208499,8 +208013,8 @@
         ]
       }
     },
-    "ts": 1787111549.3425314,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200124.6226735,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1075963-255-LE26": {
     "data": {
@@ -208931,8 +208445,8 @@
         ]
       }
     },
-    "ts": 1787111505.2955458,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200102.372839,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1199-11-LE26": {
     "data": {
@@ -209069,8 +208583,8 @@
         ]
       }
     },
-    "ts": 1787111505.8253334,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200103.144029,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "4642-85-LE26": {
     "data": {
@@ -209292,243 +208806,6 @@
     },
     "ts": 1787122330.6954272,
     "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
-  "1049-53-LE26": {
-    "data": {
-      "CodigoExterno": "1049-53-LE26",
-      "Nombre": "MONITOREO DE BIODIVERSIDAD BENTÓNICA MARINA",
-      "CodigoEstado": 15,
-      "Descripcion": "Req 53402 CC P-585021 CT ELIANA VELASCO levantamiento de datos de biodiversidad bentónica marina debe incluir el monitoreo de comunidades macrobentónicas en el intermareal y submareal, monitoreo de especies estructuradoras de hábitat algas pardas tanto en el intermareal como submareal rocoso; y monitoreo ambiental a través de la instalación, mantención y descarga de datos de temperatura",
-      "FechaCierre": null,
-      "Estado": "Revocada",
-      "Comprador": {
-        "CodigoOrganismo": "7070",
-        "NombreOrganismo": "INSTITUTO DE FOMENTO PESQUERO",
-        "RutUnidad": "61.310.000-8",
-        "CodigoUnidad": "2045",
-        "NombreUnidad": "IFOP",
-        "DireccionUnidad": "Blanco 839, \"Valparaíso\" ",
-        "ComunaUnidad": "Valparaíso",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2380347",
-        "NombreUsuario": "Jonathan Sarrias Sanchez",
-        "CargoUsuario": "Analista de licitaciones"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 15,
-      "Fechas": {
-        "FechaCreacion": "2026-07-01T15:31:15.59",
-        "FechaCierre": "2026-07-13T15:30:00",
-        "FechaInicio": "2026-07-02T15:01:00",
-        "FechaFinal": "2026-07-06T16:30:00",
-        "FechaPubRespuestas": "2026-07-08T16:30:00",
-        "FechaActoAperturaTecnica": "2026-07-13T15:31:00",
-        "FechaActoAperturaEconomica": "2026-07-13T15:31:00",
-        "FechaPublicacion": "2026-07-02T13:20:54.513",
-        "FechaAdjudicacion": "2026-09-11T16:30:00",
-        "FechaEstimadaAdjudicacion": "2026-09-11T16:30:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 31000000,
-      "Tiempo": "5",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Lorena Romero",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Eliana Velasco Vinasco",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "5",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 70101806,
-            "CodigoCategoria": "70101800",
-            "Categoria": "Servicios agrícolas, pesqueros, forestales y relacionados con la fauna / Industria pesquera y acuicultura / Recursos pesqueros",
-            "NombreProducto": "Evaluación de recursos pesqueros",
-            "Descripcion": "Req.53402 SERVICIO DE MONITOREO DE BIODIVERSIDAD BENTÓNICA MARINA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787111529.676382,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
-  },
-  "1075963-176-LP26": {
-    "data": {
-      "CodigoExterno": "1075963-176-LP26",
-      "Nombre": "CONVENIO DE SUMINISTROS DE SILLAS DE RUEDAS ESTANDAR Y XXL PARA LA UNIDAD DE DISCAPACIDAD",
-      "CodigoEstado": 8,
-      "Descripcion": "convenio de suministros por 36 meses para discapacidad-",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "1667479",
-        "NombreOrganismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
-        "RutUnidad": "61.606.001-5",
-        "CodigoUnidad": "1075963",
-        "NombreUnidad": "Hospital Juan Noé",
-        "DireccionUnidad": "18 DE SEPTIEMBRE #1000, ARICA. ",
-        "ComunaUnidad": "Santiago",
-        "RegionUnidad": "Región de Arica y Parinacota",
-        "RutUsuario": "",
-        "CodigoUsuario": "1703114",
-        "NombreUsuario": "Jessica Lira",
-        "CargoUsuario": "Profesional de Compras "
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 165,
-      "Fechas": {
-        "FechaCreacion": "2026-04-06T00:00:00",
-        "FechaCierre": "2026-06-03T19:56:00",
-        "FechaInicio": "2026-05-14T14:57:00",
-        "FechaFinal": "2026-05-20T08:15:00",
-        "FechaPubRespuestas": "2026-05-27T14:57:00",
-        "FechaActoAperturaTecnica": "2026-06-03T19:57:00",
-        "FechaActoAperturaEconomica": "2026-06-03T19:57:00",
-        "FechaPublicacion": "2026-05-14T11:16:29.763",
-        "FechaAdjudicacion": "2026-08-14T09:50:46.167",
-        "FechaEstimadaAdjudicacion": "2026-12-03T19:57:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "PRESUPUESTO HOSPITAL",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "36",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Renata Baltolú",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Rodrigo Soriano Barraza",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "36",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-07T00:00:00",
-        "Numero": "3617",
-        "NumeroOferentes": 7,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=QtB8pS/x45J1JJemN2eFl0/QmQMbeURfcQqphjJ1kXo="
-      },
-      "Items": {
-        "Cantidad": 2,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 42192210,
-            "CodigoCategoria": "42192200",
-            "Categoria": "Equipamiento y suministros médicos / Equipamiento para instalaciones médicas / Artículos para transporte de paciente",
-            "NombreProducto": "Sillas de ruedas",
-            "Descripcion": "(PR00002) SILLA DE RUEDAS MOD. UNIVERSAL.-\r\n\r\n",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1400,
-            "Adjudicacion": {
-              "RutProveedor": "76.262.486-9",
-              "NombreProveedor": "SOCIEDAD COMERCIAL TOLUCA SPA",
-              "Cantidad": 1400,
-              "MontoUnitario": 132000
-            }
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 42192210,
-            "CodigoCategoria": "42192200",
-            "Categoria": "Equipamiento y suministros médicos / Equipamiento para instalaciones médicas / Artículos para transporte de paciente",
-            "NombreProducto": "Sillas de ruedas",
-            "Descripcion": "(RF0029)\tSILLA\tDE\tRUEDAS\tXXL\tOBESOS MORBIDOS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": {
-              "RutProveedor": "77.070.635-1",
-              "NombreProveedor": "CLINICON SPA",
-              "Cantidad": 8,
-              "MontoUnitario": 210000
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787111530.2257364,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
   },
   "2992-44-LE26": {
     "data": {
@@ -210018,8 +209295,8 @@
         ]
       }
     },
-    "ts": 1787111553.7073076,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200134.5032215,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "3573-35-LP26": {
     "data": {
@@ -210129,8 +209406,8 @@
         ]
       }
     },
-    "ts": 1787111516.541984,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200150.2647033,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "359-65-LE26": {
     "data": {
@@ -210293,8 +209570,8 @@
         ]
       }
     },
-    "ts": 1787111517.396141,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200153.55651,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "605-16-LE26": {
     "data": {
@@ -210560,170 +209837,6 @@
     },
     "ts": 1787122285.6757727,
     "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
-  "507428-74-LP26": {
-    "data": {
-      "CodigoExterno": "507428-74-LP26",
-      "Nombre": "ADQUISICIÓN DE EQUIPOS DE MONITOREO Y FOTOTERAPIA PARA MATERNIDAD NHA",
-      "CodigoEstado": 8,
-      "Descripcion": "El Servicio de Salud Chiloé requiere la adquisición de Equipos de Monitoreo y Fototerapia para Maternidad para la implementación del Nuevo Hospital de Ancud.",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "16223",
-        "NombreOrganismo": "SERVICIO DE SALUD CHILOE",
-        "RutUnidad": "61.979.210-6",
-        "CodigoUnidad": "507428",
-        "NombreUnidad": "Servicio de Salud Chiloé",
-        "DireccionUnidad": "Avda. Bernardo O'Higgins 504, Castro",
-        "ComunaUnidad": "Castro",
-        "RegionUnidad": "Región de los Lagos ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2213560",
-        "NombreUsuario": "ERWIN IGNACIO PARRA RUAY",
-        "CargoUsuario": "Profesional Subdepto Abastecimiento"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 2184,
-      "Fechas": {
-        "FechaCreacion": "2026-06-23T00:00:00",
-        "FechaCierre": "2026-07-17T18:00:00",
-        "FechaInicio": "2026-06-26T13:01:00",
-        "FechaFinal": "2026-07-01T15:00:00",
-        "FechaPubRespuestas": "2026-07-13T15:00:00",
-        "FechaActoAperturaTecnica": "2026-07-20T09:00:00",
-        "FechaActoAperturaEconomica": "2026-07-20T09:00:00",
-        "FechaPublicacion": "2026-06-26T12:31:00",
-        "FechaAdjudicacion": "2026-08-14T11:46:42.96",
-        "FechaEstimadaAdjudicacion": "2026-10-08T19:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "Presupuesto año 2026",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Marcelo Momberg Suarez",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "KAREN SALDIVIA GUERRERO",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "MONTO REFERENCIAL",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-13T00:00:00",
-        "Numero": "9456",
-        "NumeroOferentes": 8,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=1mwbMnKyX9pxrer5eG/oydxT+5a1Qffz9KerOCjpSJI="
-      },
-      "Items": {
-        "Cantidad": 4,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 42181801,
-            "CodigoCategoria": "42181800",
-            "Categoria": "Equipamiento y suministros médicos / Productos para exámenes y control de pacientes / Oxímetros de pulso",
-            "NombreProducto": "Unidades de oxímetros de pulso",
-            "Descripcion": "12 OXIMETRO DE PULSO ADULTO-PEDIATRICO; SEGÚN EETT DEL FORMULARIO ADJUNTO.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 12,
-            "Adjudicacion": {
-              "RutProveedor": "77.051.901-2",
-              "NombreProveedor": "ORTOPEDIA3D JAVIER ARRIAGADA MALDONADO E.I.R.L.",
-              "Cantidad": 12,
-              "MontoUnitario": 400000
-            }
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 42181801,
-            "CodigoCategoria": "42181800",
-            "Categoria": "Equipamiento y suministros médicos / Productos para exámenes y control de pacientes / Oxímetros de pulso",
-            "NombreProducto": "Unidades de oxímetros de pulso",
-            "Descripcion": "07 OXIMETRO DE PULSO NEONATAL; SEGÚN EETT DEL FORMULARIO ADJUNTO.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 7,
-            "Adjudicacion": {
-              "RutProveedor": "77.051.901-2",
-              "NombreProveedor": "ORTOPEDIA3D JAVIER ARRIAGADA MALDONADO E.I.R.L.",
-              "Cantidad": 7,
-              "MontoUnitario": 400000
-            }
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 42142106,
-            "CodigoCategoria": "42142100",
-            "Categoria": "Equipamiento y suministros médicos / Suministros y productos clínicos / Productos de terapia para frío y calor",
-            "NombreProducto": "Cubiertas o mantas terapéuticas de calentar o de enfriar",
-            "Descripcion": "02 MANTA DE FOTOTERAPIA; SEGÚN EETT DEL FORMULARIO ADJUNTO.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": {
-              "RutProveedor": "86.383.300-0",
-              "NombreProveedor": "MEDIPLEX S.A.",
-              "Cantidad": 2,
-              "MontoUnitario": 4686000
-            }
-          },
-          {
-            "Correlativo": 4,
-            "CodigoProducto": 42201701,
-            "CodigoCategoria": "42201700",
-            "Categoria": "Equipamiento y suministros médicos / Productos para imágenes y de medicina nuclear / Artículos para imágenes de ultrasonido, doppler y eco",
-            "NombreProducto": "Ultrasonido cardiaco o doppler o unidades de eco o cardioscopios",
-            "Descripcion": "08 MONITOR DE LATIDOS CARDIOFETALES; SEGÚN EETT DEL FORMULARIO ADJUNTO.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": {
-              "RutProveedor": "96.533.330-4",
-              "NombreProveedor": "HEMISFERIO SUR S.A.",
-              "Cantidad": 8,
-              "MontoUnitario": 4950000
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787111521.2912896,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
   },
   "552975-49-LE26": {
     "data": {
@@ -211000,122 +210113,6 @@
     "ts": 1787122256.9836802,
     "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
   },
-  "2428-53-LE26": {
-    "data": {
-      "CodigoExterno": "2428-53-LE26",
-      "Nombre": "INSTALACIÓN Y CONSTRUCCIÓN DE TABIQUERIA MODULAR",
-      "CodigoEstado": 8,
-      "Descripcion": "DAR CUMPLIMIENTO AL PEDIDO N11, DE ALCALDÍA.\r\n\r\nRequiere el servicio de instalación y construcción de tabiquería modular vidriada y obras complementarias en zonas interiores de Edificio Municipal.",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "87633",
-        "NombreOrganismo": "I. MUNICIPALIDAD DE QUILPUE",
-        "RutUnidad": "69.061.300-K",
-        "CodigoUnidad": "3420",
-        "NombreUnidad": "I. MUNICIPALIDAD DE QUILPUE",
-        "DireccionUnidad": "Augusto Carozzi 841, Quilpué",
-        "ComunaUnidad": "Quilpué",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2239491",
-        "NombreUsuario": "Manuela Oyarce Carrasco",
-        "CargoUsuario": "Profesional de Adquisciones"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 65,
-      "Fechas": {
-        "FechaCreacion": "2026-07-08T11:16:14.45",
-        "FechaCierre": "2026-07-24T12:00:00",
-        "FechaInicio": "2026-07-14T12:01:00",
-        "FechaFinal": "2026-07-17T12:02:00",
-        "FechaPubRespuestas": "2026-07-22T13:00:00",
-        "FechaActoAperturaTecnica": "2026-07-24T12:01:00",
-        "FechaActoAperturaEconomica": "2026-07-24T12:01:00",
-        "FechaPublicacion": "2026-07-14T11:49:27.35",
-        "FechaAdjudicacion": "2026-08-14T12:07:43.683",
-        "FechaEstimadaAdjudicacion": "2026-08-10T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "I.MUNICIPALIDAD DE QUILPUÉ",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "I.MUNICIPALIDAD DE QUILPUÉ",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "ILUSTRE MUNICIPALIDAD DE QUILPUÉ",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 4,
-        "Fecha": "2026-08-14T00:00:00",
-        "Numero": "2042",
-        "NumeroOferentes": 7,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=0IldpmbBp7l+hlUJ1n0Jkl2q+5SB7pqzyS2Y0sfnWv8="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 72101903,
-            "CodigoCategoria": "72101900",
-            "Categoria": "Servicios de construcción y mantenimiento / Servicios de atención, mantenimiento y reparaciones de edificios / Acabados de interiores",
-            "NombreProducto": "Carpintería o chapistería de acabados",
-            "Descripcion": "Servicio de instalación y construcción de tabiquería modular vidriada y obras complementarias en zonas interiores de Edificio Municipal, de acuerdo a lo indicado en bases técnicas.",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "76.322.929-7",
-              "NombreProveedor": "DILAU INGENIERIA SPA",
-              "Cantidad": 1,
-              "MontoUnitario": 13310924
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787111536.9314132,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
-  },
   "3890-115-L126": {
     "data": {
       "CodigoExterno": "3890-115-L126",
@@ -211229,8 +210226,8 @@
         ]
       }
     },
-    "ts": 1787111552.8862455,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200133.6677938,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "4920-11-LE26": {
     "data": {
@@ -211345,8 +210342,8 @@
         ]
       }
     },
-    "ts": 1787111540.7781541,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200132.3537338,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "4737-5-LE26": {
     "data": {
@@ -230502,7 +229499,7 @@
         "NombreUsuario": "Lorena Negron Campos",
         "CargoUsuario": "Adquisiciones Municipal"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 3,
       "Tipo": "E2",
@@ -230593,8 +229590,8 @@
         ]
       }
     },
-    "ts": 1787024798.0540702,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200026.1826553,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1079576-31-LE26": {
     "data": {
@@ -230631,7 +229628,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 3456,
+      "CantidadReclamos": 3457,
       "Fechas": {
         "FechaCreacion": "2026-07-06T00:00:00",
         "FechaCierre": "2026-07-22T09:00:00",
@@ -230709,8 +229706,8 @@
         ]
       }
     },
-    "ts": 1787111501.949137,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200097.6904006,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "3890-95-L126": {
     "data": {
@@ -230831,8 +229828,8 @@
         ]
       }
     },
-    "ts": 1787111497.2829857,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200093.9400418,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057490-57-LP26": {
     "data": {
@@ -230856,7 +229853,7 @@
         "NombreUsuario": "Sebastián Meza Arriagada",
         "CargoUsuario": "Supervisor de Adquisiciones"
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -230936,8 +229933,8 @@
         ]
       }
     },
-    "ts": 1787024654.1112192,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199887.888135,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1063538-191-LP26": {
     "data": {
@@ -232632,7 +231629,7 @@
         "NombreUsuario": "Josselyn Igor",
         "CargoUsuario": "Encargada Unidad de Compras"
       },
-      "DiasCierreLicitacion": "15",
+      "DiasCierreLicitacion": "12",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -232712,8 +231709,8 @@
         ]
       }
     },
-    "ts": 1787024632.452038,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199864.3749564,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1057491-162-LE26": {
     "data": {
@@ -232737,7 +231734,7 @@
         "NombreUsuario": "JEANNETTE ALEJANDRA TAPIA RUIZ",
         "CargoUsuario": "ANALISTA DE CONVENIOS Y LICITACIONES"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -232828,8 +231825,8 @@
         ]
       }
     },
-    "ts": 1787024656.0632277,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199889.1448162,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1147293-21-LE26": {
     "data": {
@@ -232853,7 +231850,7 @@
         "NombreUsuario": "Aylin Martínez",
         "CargoUsuario": "Profesional de apoyo en compras"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -232933,8 +231930,8 @@
         ]
       }
     },
-    "ts": 1787024688.8576357,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199930.5702603,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1221016-31-LE26": {
     "data": {
@@ -232958,7 +231955,7 @@
         "NombreUsuario": "Katherine Arancibia",
         "CargoUsuario": "Profesional de Compras y Gestión de Contratos"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -232971,7 +231968,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 545,
+      "CantidadReclamos": 546,
       "Fechas": {
         "FechaCreacion": "2026-08-17T16:37:09.723",
         "FechaCierre": "2026-08-27T18:00:00",
@@ -233137,8 +232134,8 @@
         ]
       }
     },
-    "ts": 1787024698.40931,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199938.984054,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1388961-43-LE26": {
     "data": {
@@ -233162,7 +232159,7 @@
         "NombreUsuario": "Diego Alejandro Baeza Del Rio",
         "CargoUsuario": "Encargado de Compras Públicas"
       },
-      "DiasCierreLicitacion": "11",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -233242,8 +232239,8 @@
         ]
       }
     },
-    "ts": 1787024715.9485788,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199956.2840917,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1499-170-LE26": {
     "data": {
@@ -233267,7 +232264,7 @@
         "NombreUsuario": "Sebastián Aguirre",
         "CargoUsuario": "Gestion licitaciones"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -233369,8 +232366,8 @@
         ]
       }
     },
-    "ts": 1787024738.315912,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199969.767618,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1588-26-LE26": {
     "data": {
@@ -233394,7 +232391,7 @@
         "NombreUsuario": "max moreno",
         "CargoUsuario": "comprador"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -233474,8 +232471,8 @@
         ]
       }
     },
-    "ts": 1787024738.9503806,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199970.4535158,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1589-7-LE26": {
     "data": {
@@ -233499,7 +232496,7 @@
         "NombreUsuario": "MARIA EUGENIA MENDOZA CARRILLO",
         "CargoUsuario": ""
       },
-      "DiasCierreLicitacion": "3",
+      "DiasCierreLicitacion": "0",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -233590,8 +232587,8 @@
         ]
       }
     },
-    "ts": 1787024742.4741468,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199974.0271032,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1663-127-LE26": {
     "data": {
@@ -233615,7 +232612,7 @@
         "NombreUsuario": "Nury Jazmín Ojeda Cárdenas",
         "CargoUsuario": "Administrativo"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -233695,8 +232692,8 @@
         ]
       }
     },
-    "ts": 1787024752.1805177,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199980.4956524,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1725-189-LE26": {
     "data": {
@@ -233720,7 +232717,7 @@
         "NombreUsuario": "Karen Roxana Vergara Guerra",
         "CargoUsuario": "Operador compras"
       },
-      "DiasCierreLicitacion": "17",
+      "DiasCierreLicitacion": "14",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -233800,8 +232797,8 @@
         ]
       }
     },
-    "ts": 1787024755.6007352,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199981.9254296,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "188-77-LE26": {
     "data": {
@@ -233825,7 +232822,7 @@
         "NombreUsuario": "Daniela Neira",
         "CargoUsuario": "Analista Proveedores"
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -233838,7 +232835,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 1487,
+      "CantidadReclamos": 1488,
       "Fechas": {
         "FechaCreacion": "2026-08-14T12:27:00.603",
         "FechaCierre": "2026-08-31T15:01:00",
@@ -233905,8 +232902,8 @@
         ]
       }
     },
-    "ts": 1787024759.4482274,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199982.5649054,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2410-83-LE26": {
     "data": {
@@ -233930,7 +232927,7 @@
         "NombreUsuario": "Mical Rebeca Pulido Garces",
         "CargoUsuario": "Profesional"
       },
-      "DiasCierreLicitacion": "15",
+      "DiasCierreLicitacion": "12",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -234010,113 +233007,8 @@
         ]
       }
     },
-    "ts": 1787024763.4082575,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
-  },
-  "2415-11-LE26": {
-    "data": {
-      "CodigoExterno": "2415-11-LE26",
-      "Nombre": "Servicio de Suministro de Impresiones gráficas para Municipalidad de Concepción",
-      "CodigoEstado": 6,
-      "Descripcion": "Adquisición de insumos imprimibles sobre\r\nsustratos de PVC, adhesivos, placas rígidas\r\nde sintra, acrílicas, textiles impresos por\r\nanverso y reverso, etcétera. Que consideren\r\n– en algunos casos - instalación de piezas en\r\nvía pública.",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "87382",
-        "NombreOrganismo": "I MUNICIPALIDAD DE CONCEPCION",
-        "RutUnidad": "69.150.400-K",
-        "CodigoUnidad": "3407",
-        "NombreUnidad": "IMUNI_CONCEPCION ADQUISICIONES",
-        "DireccionUnidad": "EJERCITO 1058",
-        "ComunaUnidad": "Concepción",
-        "RegionUnidad": "Región del Biobío ",
-        "RutUsuario": "",
-        "CodigoUsuario": "609540",
-        "NombreUsuario": "Leonardo Alexis Fernandez espinoza",
-        "CargoUsuario": "Administrativo  DIDECO  Supervisor"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 549,
-      "Fechas": {
-        "FechaCreacion": "2026-07-06T00:00:00",
-        "FechaCierre": "2026-08-18T15:30:00",
-        "FechaInicio": "2026-08-05T13:58:00",
-        "FechaFinal": "2026-08-10T20:00:00",
-        "FechaPubRespuestas": "2026-08-11T20:01:00",
-        "FechaActoAperturaTecnica": "2026-08-18T15:31:00",
-        "FechaActoAperturaEconomica": "2026-08-18T15:31:00",
-        "FechaPublicacion": "2026-08-05T10:17:00",
-        "FechaAdjudicacion": "2026-09-21T18:47:00",
-        "FechaEstimadaAdjudicacion": "2026-09-21T18:47:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 53900000,
-      "Tiempo": "4",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "MAURICIO SANDOVAL",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "MAURICIO ESCALONA",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "4",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 82121505,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión promocional o publicitaria",
-            "Descripcion": "SERVICIO DE SUMINISTRO IMPRESIONES GRÁFICAS, MUNICIPALIDAD DE CONCEPCIÓN",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787111399.8132796,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787199983.5251124,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2421-39-LE26": {
     "data": {
@@ -234140,7 +233032,7 @@
         "NombreUsuario": "Macarena Venegas Vidal",
         "CargoUsuario": "Gestor Logístico"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -234220,8 +233112,8 @@
         ]
       }
     },
-    "ts": 1787024768.1914945,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199988.4764798,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2427-49-LE26": {
     "data": {
@@ -234391,8 +233283,8 @@
         ]
       }
     },
-    "ts": 1787111400.4016645,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200088.5799077,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2450-83-LE26": {
     "data": {
@@ -234416,7 +233308,7 @@
         "NombreUsuario": "RENATA ANTONIA ROMERO EMPARANZA",
         "CargoUsuario": "Profesional"
       },
-      "DiasCierreLicitacion": "11",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -234429,7 +233321,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 426,
+      "CantidadReclamos": 428,
       "Fechas": {
         "FechaCreacion": "2026-08-11T00:00:00",
         "FechaCierre": "2026-08-28T15:30:00",
@@ -234507,8 +233399,8 @@
         ]
       }
     },
-    "ts": 1787024772.3560538,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199990.0253274,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2663-68-L126": {
     "data": {
@@ -234532,7 +233424,7 @@
         "NombreUsuario": "Gabriela Cardenas",
         "CargoUsuario": "Administrativa"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "L1",
@@ -234612,8 +233504,8 @@
         ]
       }
     },
-    "ts": 1787024774.0263207,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199991.7167017,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2727-15-LE26": {
     "data": {
@@ -234637,7 +233529,7 @@
         "NombreUsuario": "Jorge Rafael Leiva Ortiz",
         "CargoUsuario": "Administrativo"
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -235014,8 +233906,8 @@
         ]
       }
     },
-    "ts": 1787024775.2153785,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199995.3598957,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2755-31-LE26": {
     "data": {
@@ -235039,7 +233931,7 @@
         "NombreUsuario": "Tomás Alfredo Plaza Gaete",
         "CargoUsuario": "Administrativo adquisiciones Municipal"
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -235119,8 +234011,8 @@
         ]
       }
     },
-    "ts": 1787024775.79465,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199995.9094038,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2756-11-LE26": {
     "data": {
@@ -235144,7 +234036,7 @@
         "NombreUsuario": "Richard Antonio Carreño Menares",
         "CargoUsuario": "Encargado Tecnologías e Informática DAEM"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -235235,8 +234127,8 @@
         ]
       }
     },
-    "ts": 1787024779.1780257,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787199996.7285132,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2757-10-LE26": {
     "data": {
@@ -235260,7 +234152,7 @@
         "NombreUsuario": "Alejandra Quiroz Vergara",
         "CargoUsuario": "Subrogante unidad adquisiciones Salud"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -235340,8 +234232,8 @@
         ]
       }
     },
-    "ts": 1787024779.7389472,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200000.606936,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2760-98-LE26": {
     "data": {
@@ -235365,7 +234257,7 @@
         "NombreUsuario": "KATHERINE ANDREA GATICA CATRIL",
         "CargoUsuario": "APOYO TECNICO LICITACIONES Y MERCADO PUBLICO"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -235445,8 +234337,8 @@
         ]
       }
     },
-    "ts": 1787024784.0012717,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200004.2200108,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2920-33-LE26": {
     "data": {
@@ -235470,7 +234362,7 @@
         "NombreUsuario": "RUT SCHILLER ANGULO",
         "CargoUsuario": "ADQUISICIONES"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -235583,8 +234475,8 @@
         ]
       }
     },
-    "ts": 1787024784.6484387,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200005.8209274,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2981-221-LP26": {
     "data": {
@@ -235608,7 +234500,7 @@
         "NombreUsuario": "Paulina Soto Bravo",
         "CargoUsuario": "COMPRADOR"
       },
-      "DiasCierreLicitacion": "21",
+      "DiasCierreLicitacion": "18",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -235688,8 +234580,8 @@
         ]
       }
     },
-    "ts": 1787024785.209439,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200008.181688,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "2981-222-LE26": {
     "data": {
@@ -235713,7 +234605,7 @@
         "NombreUsuario": "Alejandra FLORES LUTTY",
         "CargoUsuario": "PROFESIONAL"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -235793,8 +234685,8 @@
         ]
       }
     },
-    "ts": 1787024788.5549138,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200008.8255513,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "3134-82-LE26": {
     "data": {
@@ -235818,7 +234710,7 @@
         "NombreUsuario": "Carla Cristina MAC IVER Miranda",
         "CargoUsuario": "COMPRADOR"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -235831,7 +234723,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 2577,
+      "CantidadReclamos": 2578,
       "Fechas": {
         "FechaCreacion": "2026-08-14T11:41:18.36",
         "FechaCierre": "2026-08-27T16:00:00",
@@ -235898,8 +234790,8 @@
         ]
       }
     },
-    "ts": 1787024792.6430316,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200017.8029768,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "3797-41-L126": {
     "data": {
@@ -235923,7 +234815,7 @@
         "NombreUsuario": "SALIME ESTER CARO CHEUQUEMAN",
         "CargoUsuario": "Encargada Adquisiciones"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "L1",
@@ -236003,8 +234895,8 @@
         ]
       }
     },
-    "ts": 1787024796.6012073,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200021.8393462,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "3935-78-LE26": {
     "data": {
@@ -236028,7 +234920,7 @@
         "NombreUsuario": "MARIA EUGENIA VALDES FUENTEALBA",
         "CargoUsuario": "Adquisiciones Secpla"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -236119,8 +235011,8 @@
         ]
       }
     },
-    "ts": 1787024798.669172,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200027.873251,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "3960-55-LE26": {
     "data": {
@@ -236144,7 +235036,7 @@
         "NombreUsuario": "Michelle Gutiérrez",
         "CargoUsuario": "Adquisiciones Municipal"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -236224,8 +235116,8 @@
         ]
       }
     },
-    "ts": 1787024799.7994616,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200029.1538084,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "4284-138-L126": {
     "data": {
@@ -236249,7 +235141,7 @@
         "NombreUsuario": "Nayadeth Mora rios",
         "CargoUsuario": "Encargada licitaciones publicas"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "L1",
@@ -236362,8 +235254,8 @@
         ]
       }
     },
-    "ts": 1787024804.3263056,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200030.1183133,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "4629-25-LE26": {
     "data": {
@@ -236387,7 +235279,7 @@
         "NombreUsuario": "Yenifer Carvajal Araya",
         "CargoUsuario": "Analista de compras"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -236467,8 +235359,8 @@
         ]
       }
     },
-    "ts": 1787024807.7262063,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200031.2769754,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "4857-41-LE26": {
     "data": {
@@ -236492,7 +235384,7 @@
         "NombreUsuario": "Magdiel Wegner",
         "CargoUsuario": "Comprador Daem"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -236572,8 +235464,8 @@
         ]
       }
     },
-    "ts": 1787024808.5228126,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200032.9701738,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "557639-72-LE26": {
     "data": {
@@ -236597,7 +235489,7 @@
         "NombreUsuario": "HERNAN ALEJANDRO GONZALEZ RODRIGUEZ",
         "CargoUsuario": "Administrativo abastecimiento"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -236610,7 +235502,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 1820,
+      "CantidadReclamos": 1822,
       "Fechas": {
         "FechaCreacion": "2026-08-17T09:55:05.69",
         "FechaCierre": "2026-08-27T10:03:00",
@@ -236677,8 +235569,8 @@
         ]
       }
     },
-    "ts": 1787024815.3078818,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200037.7872715,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "697057-28-LE26": {
     "data": {
@@ -236702,7 +235594,7 @@
         "NombreUsuario": "EDUARDO VELIZ PAREJA",
         "CargoUsuario": "SUPERVISOR"
       },
-      "DiasCierreLicitacion": "22",
+      "DiasCierreLicitacion": "19",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -236782,8 +235674,8 @@
         ]
       }
     },
-    "ts": 1787024821.8604844,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200039.0906787,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "813-101-LE26": {
     "data": {
@@ -236807,7 +235699,7 @@
         "NombreUsuario": "Cristian Mauricio Urzua Valdes",
         "CargoUsuario": "Ejecutivo de Sección Compras"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "12",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -236823,19 +235715,19 @@
       "CantidadReclamos": 225,
       "Fechas": {
         "FechaCreacion": "2026-08-17T16:05:24.243",
-        "FechaCierre": "2026-08-27T14:30:00",
+        "FechaCierre": "2026-09-01T14:30:00",
         "FechaInicio": "2026-08-17T18:00:00",
         "FechaFinal": "2026-08-20T12:00:00",
         "FechaPubRespuestas": "2026-08-21T20:00:00",
-        "FechaActoAperturaTecnica": "2026-08-27T15:00:00",
-        "FechaActoAperturaEconomica": "2026-08-27T15:00:00",
-        "FechaPublicacion": "2026-08-17T16:57:51.983",
+        "FechaActoAperturaTecnica": "2026-09-01T15:00:00",
+        "FechaActoAperturaEconomica": "2026-09-01T15:00:00",
+        "FechaPublicacion": "2026-08-17T16:57:00",
         "FechaAdjudicacion": "2026-10-28T19:58:00",
         "FechaEstimadaAdjudicacion": "2026-10-28T19:58:00",
         "FechaSoporteFisico": null,
         "FechaTiempoEvaluacion": null,
         "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
+        "FechasUsuario": "1900-01-02T00:00:00",
         "FechaVisitaTerreno": null,
         "FechaEntregaAntecedentes": null
       },
@@ -236887,8 +235779,8 @@
         ]
       }
     },
-    "ts": 1787024829.0123382,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200044.3843243,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "837-93-LP26": {
     "data": {
@@ -236912,7 +235804,7 @@
         "NombreUsuario": "Mario Andres Barrientos Aranguiz",
         "CargoUsuario": "Profesional"
       },
-      "DiasCierreLicitacion": "18",
+      "DiasCierreLicitacion": "15",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -236992,8 +235884,8 @@
         ]
       }
     },
-    "ts": 1787024840.2884693,
-    "fetchedAt": "2026-08-18T03:43:10.857026+00:00"
+    "ts": 1787200051.0932043,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1415862-13-L126": {
     "data": {
@@ -241737,8 +240629,8 @@
         ]
       }
     },
-    "ts": 1787111497.9610043,
-    "fetchedAt": "2026-08-19T03:49:25.605962+00:00"
+    "ts": 1787200098.4526165,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
   "1260113-5-LR26": {
     "data": {
@@ -326373,5 +325265,264 @@
     },
     "ts": 1787194163.3720322,
     "fetchedAt": "2026-08-20T02:45:45.568724+00:00"
+  },
+  "1072229-36-LE26": {
+    "data": {
+      "CodigoExterno": "1072229-36-LE26",
+      "Nombre": "ADQUISICIÓN DE “INSUMOS DE ASEO Y ELEMENTOS DE PROTECCION PARA JARDINES INFANTILES SALAS CUNA Y OFICINA REGIONAL DE FUNDACIÓN INTEGRA ÑUBLE”",
+      "CodigoEstado": 5,
+      "Descripcion": "Fundación Integra, requiere de la Adquisición de Insumos de aseo y elementos de protección para jardines, salas cuna y oficina regional de Fundación Integra de la Región de Ñuble”, de conformidad a lo señalado en las presentes Bases Administrativas Especiales, Bases Administrativas Generales, Bases Técnicas, y Anexos.",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "1172700",
+        "NombreOrganismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+        "RutUnidad": "70.574.900-0",
+        "CodigoUnidad": "1072229",
+        "NombreUnidad": "Regional Ñuble",
+        "DireccionUnidad": "a convenir",
+        "ComunaUnidad": "Chillán",
+        "RegionUnidad": "Región del Ñuble",
+        "RutUsuario": "",
+        "CodigoUsuario": "2338414",
+        "NombreUsuario": "Nicolas Ignacio Larroucau Moraga",
+        "CargoUsuario": "Profesional Finanzas"
+      },
+      "DiasCierreLicitacion": "7",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 31,
+      "Fechas": {
+        "FechaCreacion": "2026-08-14T00:00:00",
+        "FechaCierre": "2026-08-27T15:00:00",
+        "FechaInicio": "2026-08-17T15:01:00",
+        "FechaFinal": "2026-08-20T15:30:00",
+        "FechaPubRespuestas": "2026-08-24T17:00:00",
+        "FechaActoAperturaTecnica": "2026-08-27T15:01:00",
+        "FechaActoAperturaEconomica": "2026-08-27T15:01:00",
+        "FechaPublicacion": "2026-08-17T14:39:36.833",
+        "FechaAdjudicacion": "2026-09-04T17:00:00",
+        "FechaEstimadaAdjudicacion": "2026-09-04T17:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "Fundación Integra",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 30000000,
+      "Tiempo": "4",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Álvaro Figueroa Martínez",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Julia Cáceres González",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "Durante la ejecución de la contratación, y por la naturaleza de los servicios que se contratan, el Proveedor tiene prohibición de efectuar cualquier tipo de subcontrataciones, según numeral 8.2 de bases administrativas especiales.",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "4",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 15,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 12191601,
+            "CodigoCategoria": "12191600",
+            "Categoria": "Productos químicos industriales / Solventes / Solventes oxigenados",
+            "NombreProducto": "Solventes de alcohol",
+            "Descripcion": "Alcohol desnaturalizado 70%.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2592,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 11121802,
+            "CodigoCategoria": "11121800",
+            "Categoria": "Productos derivados de minerales, plantas y animales / Productos no comestibles de origen vegetal / Fibras vegetales",
+            "NombreProducto": "Algodón",
+            "Descripcion": "hidrófilo prensado de 1 kg.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 864,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 3,
+            "CodigoProducto": 27112903,
+            "CodigoCategoria": "27112900",
+            "Categoria": "Herramientas y maquinaria en general / Herramientas manuales / Herramientas dosificadoras",
+            "NombreProducto": "Rociador de la mano",
+            "Descripcion": "Atomizador plástico 1000 cc tipo americano",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 270,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 4,
+            "CodigoProducto": 47121804,
+            "CodigoCategoria": "47121800",
+            "Categoria": "Equipos y suministros de limpieza / Equipo de limpieza / Equipos de limpieza",
+            "NombreProducto": "Cubos o baldes para limpieza",
+            "Descripcion": "Balde plástico con manilla 10 a 13 litros sin escurridor",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 108,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 5,
+            "CodigoProducto": 47121702,
+            "CodigoCategoria": "47121700",
+            "Categoria": "Equipos y suministros de limpieza / Equipo de limpieza / Envases y accesorios para residuos",
+            "NombreProducto": "Envases para residuos o forros rígidos",
+            "Descripcion": "Basurero plástico con tapa y pedal color blanco 20 a 25 lts.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 108,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 6,
+            "CodigoProducto": 42131502,
+            "CodigoCategoria": "42131500",
+            "Categoria": "Equipamiento y suministros médicos / Vestuario clínico / Vestuario para pacientes",
+            "NombreProducto": "Gorras para pacientes",
+            "Descripcion": "Gorro tipo clip(cofia) desechable formato cj 100 un.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 432,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 7,
+            "CodigoProducto": 42132202,
+            "CodigoCategoria": "42132200",
+            "Categoria": "Equipamiento y suministros médicos / Vestuario clínico / Guantes médicos y accesorios",
+            "NombreProducto": "Dediles",
+            "Descripcion": "Guante Desechable, etiquetado, de vinilo,  caja de 100 un talla S.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 200,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 8,
+            "CodigoProducto": 42132202,
+            "CodigoCategoria": "42132200",
+            "Categoria": "Equipamiento y suministros médicos / Vestuario clínico / Guantes médicos y accesorios",
+            "NombreProducto": "Dediles",
+            "Descripcion": "Guante Desechable, etiquetado, de vinilo, caja de 100 un talla M.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 432,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 9,
+            "CodigoProducto": 42132202,
+            "CodigoCategoria": "42132200",
+            "Categoria": "Equipamiento y suministros médicos / Vestuario clínico / Guantes médicos y accesorios",
+            "NombreProducto": "Dediles",
+            "Descripcion": "Guante Desechable, etiquetado, de vinilo, caja de 100 un talla L.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 432,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 10,
+            "CodigoProducto": 47131608,
+            "CodigoCategoria": "47131600",
+            "Categoria": "Equipos y suministros de limpieza / Suministros de limpieza / Escobas, traperos, cepillos y accesorios",
+            "NombreProducto": "Cepillos para aseos",
+            "Descripcion": "Hisopo WC, Plástico y con recipiente.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 216,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 11,
+            "CodigoProducto": 12191601,
+            "CodigoCategoria": "12191600",
+            "Categoria": "Productos químicos industriales / Solventes / Solventes oxigenados",
+            "NombreProducto": "Solventes de alcohol",
+            "Descripcion": "Alcohol Gel al 70% formato 1.000 cc ",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 216,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 12,
+            "CodigoProducto": 14111701,
+            "CodigoCategoria": "14111700",
+            "Categoria": "Productos de papel / Productos de papel / Productos de papel de uso personal",
+            "NombreProducto": "Papel facial",
+            "Descripcion": "Toallitas húmedas hipoalergénica 0% alcohol uso permitido en niños desde los 3 meses de edad. formato entre 45 y 60 unidades. con tapa.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1512,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 13,
+            "CodigoProducto": 31211903,
+            "CodigoCategoria": "31211900",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Accesorios para pintar",
+            "NombreProducto": "Equipo para protección",
+            "Descripcion": "Mascarilla 3 pliegues ajuste universal polipropileno resistente a la humedad barra ajuste elástica formato 50 unidades.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 648,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 14,
+            "CodigoProducto": 31211903,
+            "CodigoCategoria": "31211900",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Accesorios para pintar",
+            "NombreProducto": "Equipo para protección",
+            "Descripcion": "Mascarilla N95. Certificación libre de látex 0020 d. Tamaño: universal. Formato unidad.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 432,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 15,
+            "CodigoProducto": 42281711,
+            "CodigoCategoria": "42281700",
+            "Categoria": "Equipamiento y suministros médicos / Productos para la esterilización médica / Soluciones y equipo de limpieza pre-esterilización",
+            "NombreProducto": "Desincrustantes líquidos de esterilización",
+            "Descripcion": "Líquido limpiador desincrustante formato 500 cc ",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 108,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787199909.2431462,
+    "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   }
 }
