@@ -310,7 +310,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1005498-19-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1005498-19-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1005498-19-CO26"
       }
     ],
     "items": [
@@ -332,7 +332,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1005498-19-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1005498-19-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -1106,7 +1106,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1049-65-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1049-65-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1049-65-CO26"
       }
     ],
     "items": [
@@ -1128,7 +1128,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1049-65-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1049-65-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -2065,7 +2065,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057387-51-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057387-51-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057387-51-CO26"
       }
     ],
     "items": [
@@ -2087,7 +2087,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057387-51-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057387-51-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -20264,7 +20264,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2495-16-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2495-16-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2495-16-CO26"
       }
     ],
     "items": [
@@ -20286,7 +20286,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2495-16-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2495-16-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -22422,7 +22422,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2793-100-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2793-100-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2793-100-CO26"
       }
     ],
     "items": [
@@ -22444,7 +22444,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2793-100-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2793-100-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -32357,7 +32357,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5611-20-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5611-20-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5611-20-CO26"
       }
     ],
     "items": [
@@ -32379,7 +32379,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5611-20-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5611-20-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -48757,7 +48757,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1426100-10-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426100-10-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1426100-10-CO26"
       }
     ],
     "items": [
@@ -48779,7 +48779,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426100-10-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1426100-10-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -55233,7 +55233,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2760-101-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2760-101-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2760-101-CO26"
       }
     ],
     "items": [
@@ -55255,7 +55255,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2760-101-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2760-101-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -63840,7 +63840,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5067-111-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-111-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5067-111-CO26"
       }
     ],
     "items": [
@@ -63862,7 +63862,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-111-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5067-111-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -64125,7 +64125,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (896-12-CO26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=896-12-CO26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=896-12-CO26"
       }
     ],
     "items": [
@@ -64147,7 +64147,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=896-12-CO26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=896-12-CO26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -72452,7 +72452,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (812261-383-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=812261-383-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=812261-383-COT26"
       }
     ],
     "items": [
@@ -72474,7 +72474,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=812261-383-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=812261-383-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -72547,7 +72547,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (418-1243-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1243-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=418-1243-COT26"
       }
     ],
     "items": [
@@ -72569,7 +72569,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1243-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=418-1243-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -72643,7 +72643,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2596-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2596-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2596-COT26"
       }
     ],
     "items": [
@@ -72721,7 +72721,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2596-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2596-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -72796,7 +72796,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5394-458-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5394-458-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5394-458-COT26"
       }
     ],
     "items": [
@@ -72818,7 +72818,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5394-458-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5394-458-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -72893,7 +72893,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5394-455-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5394-455-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5394-455-COT26"
       }
     ],
     "items": [
@@ -72915,7 +72915,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5394-455-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5394-455-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -72989,7 +72989,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4230-75-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4230-75-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4230-75-COT26"
       }
     ],
     "items": [
@@ -73011,7 +73011,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4230-75-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4230-75-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73084,7 +73084,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557639-2120-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2120-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557639-2120-COT26"
       }
     ],
     "items": [
@@ -73106,7 +73106,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2120-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557639-2120-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73179,7 +73179,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3765-209-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3765-209-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3765-209-COT26"
       }
     ],
     "items": [
@@ -73201,7 +73201,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3765-209-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3765-209-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73274,7 +73274,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3765-207-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3765-207-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3765-207-COT26"
       }
     ],
     "items": [
@@ -73303,7 +73303,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3765-207-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3765-207-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73376,7 +73376,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2594-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2594-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2594-COT26"
       }
     ],
     "items": [
@@ -73398,7 +73398,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2594-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2594-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73471,7 +73471,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2721-381-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2721-381-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2721-381-COT26"
       }
     ],
     "items": [
@@ -73493,7 +73493,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2721-381-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2721-381-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73567,7 +73567,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2859-787-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2859-787-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2859-787-COT26"
       }
     ],
     "items": [
@@ -73589,7 +73589,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2859-787-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2859-787-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73664,7 +73664,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1658-1209-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1658-1209-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1658-1209-COT26"
       }
     ],
     "items": [
@@ -73686,7 +73686,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1658-1209-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1658-1209-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73761,7 +73761,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2393-1163-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2393-1163-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2393-1163-COT26"
       }
     ],
     "items": [
@@ -73783,7 +73783,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2393-1163-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2393-1163-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73857,7 +73857,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (792895-13-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=792895-13-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=792895-13-COT26"
       }
     ],
     "items": [
@@ -73879,7 +73879,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=792895-13-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=792895-13-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -73953,7 +73953,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1497-165-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1497-165-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1497-165-COT26"
       }
     ],
     "items": [
@@ -73975,7 +73975,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1497-165-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1497-165-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74049,7 +74049,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2735-1030-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2735-1030-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2735-1030-COT26"
       }
     ],
     "items": [
@@ -74071,7 +74071,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2735-1030-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2735-1030-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74144,7 +74144,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5067-1988-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1988-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5067-1988-COT26"
       }
     ],
     "items": [
@@ -74166,7 +74166,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1988-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5067-1988-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74239,7 +74239,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1549-3588-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1549-3588-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1549-3588-COT26"
       }
     ],
     "items": [
@@ -74261,7 +74261,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1549-3588-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1549-3588-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74335,7 +74335,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2306-670-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2306-670-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2306-670-COT26"
       }
     ],
     "items": [
@@ -74357,7 +74357,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2306-670-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2306-670-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74431,7 +74431,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2548-180-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2548-180-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2548-180-COT26"
       }
     ],
     "items": [
@@ -74453,7 +74453,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2548-180-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2548-180-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74527,7 +74527,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5434-355-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5434-355-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5434-355-COT26"
       }
     ],
     "items": [
@@ -74549,7 +74549,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5434-355-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5434-355-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74623,7 +74623,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (807-28-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=807-28-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=807-28-COT26"
       }
     ],
     "items": [
@@ -74645,7 +74645,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=807-28-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=807-28-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74721,7 +74721,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (751-65-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=751-65-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=751-65-COT26"
       }
     ],
     "items": [
@@ -74750,7 +74750,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=751-65-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=751-65-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -74826,7 +74826,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3871-54-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3871-54-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3871-54-COT26"
       }
     ],
     "items": [
@@ -75051,7 +75051,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3871-54-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3871-54-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75124,7 +75124,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5625-39-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5625-39-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5625-39-COT26"
       }
     ],
     "items": [
@@ -75146,7 +75146,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5625-39-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5625-39-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75219,7 +75219,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3500-134-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3500-134-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3500-134-COT26"
       }
     ],
     "items": [
@@ -75241,7 +75241,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3500-134-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3500-134-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75318,7 +75318,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057541-429-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057541-429-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057541-429-COT26"
       }
     ],
     "items": [
@@ -75382,7 +75382,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057541-429-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057541-429-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75465,7 +75465,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4105-486-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4105-486-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4105-486-COT26"
       }
     ],
     "items": [
@@ -75536,7 +75536,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4105-486-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4105-486-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75615,7 +75615,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3326-461-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3326-461-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3326-461-COT26"
       }
     ],
     "items": [
@@ -75637,7 +75637,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3326-461-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3326-461-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75711,7 +75711,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2412-407-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2412-407-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2412-407-COT26"
       }
     ],
     "items": [
@@ -75733,7 +75733,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2412-407-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2412-407-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75807,7 +75807,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3743-197-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3743-197-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3743-197-COT26"
       }
     ],
     "items": [
@@ -75829,7 +75829,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3743-197-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3743-197-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75902,7 +75902,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (761-154-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761-154-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=761-154-COT26"
       }
     ],
     "items": [
@@ -75924,7 +75924,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761-154-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=761-154-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -75998,7 +75998,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5702-273-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5702-273-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5702-273-COT26"
       }
     ],
     "items": [
@@ -76020,7 +76020,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5702-273-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5702-273-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76094,7 +76094,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5960-64-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5960-64-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5960-64-COT26"
       }
     ],
     "items": [
@@ -76116,7 +76116,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5960-64-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5960-64-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76189,7 +76189,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3483-154-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3483-154-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3483-154-COT26"
       }
     ],
     "items": [
@@ -76211,7 +76211,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3483-154-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3483-154-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76286,7 +76286,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2424-1433-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2424-1433-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2424-1433-COT26"
       }
     ],
     "items": [
@@ -76308,7 +76308,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2424-1433-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2424-1433-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76385,7 +76385,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5702-274-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5702-274-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5702-274-COT26"
       }
     ],
     "items": [
@@ -76407,7 +76407,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5702-274-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5702-274-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76484,7 +76484,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2674-688-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2674-688-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2674-688-COT26"
       }
     ],
     "items": [
@@ -76513,7 +76513,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2674-688-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2674-688-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76588,7 +76588,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3185-95-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3185-95-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3185-95-COT26"
       }
     ],
     "items": [
@@ -76610,7 +76610,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3185-95-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3185-95-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76683,7 +76683,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3337-31-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3337-31-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3337-31-COT26"
       }
     ],
     "items": [
@@ -76705,7 +76705,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3337-31-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3337-31-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76778,7 +76778,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1393575-31-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1393575-31-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1393575-31-COT26"
       }
     ],
     "items": [
@@ -76800,7 +76800,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1393575-31-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1393575-31-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -76873,7 +76873,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233619-551-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233619-551-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233619-551-COT26"
       }
     ],
     "items": [
@@ -77091,7 +77091,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233619-551-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233619-551-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -77165,7 +77165,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5434-354-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5434-354-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5434-354-COT26"
       }
     ],
     "items": [
@@ -77187,7 +77187,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5434-354-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5434-354-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -77262,7 +77262,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5178-4338-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5178-4338-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5178-4338-COT26"
       }
     ],
     "items": [
@@ -77361,7 +77361,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5178-4338-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5178-4338-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -77437,7 +77437,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3762-223-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3762-223-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3762-223-COT26"
       }
     ],
     "items": [
@@ -77459,7 +77459,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3762-223-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3762-223-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -77534,7 +77534,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5517-351-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5517-351-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5517-351-COT26"
       }
     ],
     "items": [
@@ -77556,7 +77556,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5517-351-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5517-351-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -77631,7 +77631,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5960-63-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5960-63-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5960-63-COT26"
       }
     ],
     "items": [
@@ -77660,7 +77660,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5960-63-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5960-63-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -77737,7 +77737,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1417913-219-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1417913-219-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1417913-219-COT26"
       }
     ],
     "items": [
@@ -77787,7 +77787,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1417913-219-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1417913-219-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -77863,7 +77863,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2626-422-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2626-422-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2626-422-COT26"
       }
     ],
     "items": [
@@ -77885,7 +77885,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2626-422-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2626-422-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -77959,7 +77959,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2205-114-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2205-114-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2205-114-COT26"
       }
     ],
     "items": [
@@ -77981,7 +77981,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2205-114-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2205-114-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78054,7 +78054,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4083-422-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4083-422-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4083-422-COT26"
       }
     ],
     "items": [
@@ -78118,7 +78118,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4083-422-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4083-422-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78191,7 +78191,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2548-179-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2548-179-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2548-179-COT26"
       }
     ],
     "items": [
@@ -78213,7 +78213,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2548-179-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2548-179-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78286,7 +78286,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2731-909-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-909-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2731-909-COT26"
       }
     ],
     "items": [
@@ -78308,7 +78308,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-909-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2731-909-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78381,7 +78381,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4189-277-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4189-277-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4189-277-COT26"
       }
     ],
     "items": [
@@ -78403,7 +78403,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4189-277-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4189-277-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78476,7 +78476,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1079694-285-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079694-285-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1079694-285-COT26"
       }
     ],
     "items": [
@@ -78498,7 +78498,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079694-285-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1079694-285-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78571,7 +78571,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4491-345-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4491-345-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4491-345-COT26"
       }
     ],
     "items": [
@@ -78656,7 +78656,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4491-345-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4491-345-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78729,7 +78729,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4777-646-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4777-646-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4777-646-COT26"
       }
     ],
     "items": [
@@ -78751,7 +78751,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4777-646-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4777-646-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78824,7 +78824,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3873-278-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3873-278-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3873-278-COT26"
       }
     ],
     "items": [
@@ -78846,7 +78846,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3873-278-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3873-278-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -78921,7 +78921,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1285526-45-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1285526-45-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1285526-45-COT26"
       }
     ],
     "items": [
@@ -79104,7 +79104,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1285526-45-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1285526-45-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79179,7 +79179,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057439-4845-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4845-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057439-4845-COT26"
       }
     ],
     "items": [
@@ -79208,7 +79208,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4845-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057439-4845-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79281,7 +79281,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1221016-167-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1221016-167-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1221016-167-COT26"
       }
     ],
     "items": [
@@ -79303,7 +79303,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1221016-167-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1221016-167-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79376,7 +79376,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5684-324-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5684-324-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5684-324-COT26"
       }
     ],
     "items": [
@@ -79398,7 +79398,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5684-324-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5684-324-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79471,7 +79471,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (696961-31-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=696961-31-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=696961-31-COT26"
       }
     ],
     "items": [
@@ -79493,7 +79493,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=696961-31-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=696961-31-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79566,7 +79566,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1638-591-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-591-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1638-591-COT26"
       }
     ],
     "items": [
@@ -79588,7 +79588,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-591-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1638-591-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79661,7 +79661,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3512-134-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3512-134-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3512-134-COT26"
       }
     ],
     "items": [
@@ -79683,7 +79683,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3512-134-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3512-134-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79756,7 +79756,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2281-1511-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2281-1511-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2281-1511-COT26"
       }
     ],
     "items": [
@@ -79778,7 +79778,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2281-1511-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2281-1511-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79851,7 +79851,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3687-133-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3687-133-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3687-133-COT26"
       }
     ],
     "items": [
@@ -79873,7 +79873,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3687-133-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3687-133-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -79946,7 +79946,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3337-29-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3337-29-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3337-29-COT26"
       }
     ],
     "items": [
@@ -79968,7 +79968,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3337-29-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3337-29-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80042,7 +80042,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1121-50-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1121-50-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1121-50-COT26"
       }
     ],
     "items": [
@@ -80064,7 +80064,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1121-50-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1121-50-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80138,7 +80138,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5529-80-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5529-80-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5529-80-COT26"
       }
     ],
     "items": [
@@ -80160,7 +80160,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5529-80-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5529-80-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80233,7 +80233,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3807-368-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3807-368-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3807-368-COT26"
       }
     ],
     "items": [
@@ -80255,7 +80255,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3807-368-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3807-368-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80328,7 +80328,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2111-1080-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2111-1080-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2111-1080-COT26"
       }
     ],
     "items": [
@@ -80350,7 +80350,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2111-1080-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2111-1080-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80423,7 +80423,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2432-624-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2432-624-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2432-624-COT26"
       }
     ],
     "items": [
@@ -80445,7 +80445,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2432-624-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2432-624-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80519,7 +80519,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5960-62-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5960-62-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5960-62-COT26"
       }
     ],
     "items": [
@@ -80541,7 +80541,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5960-62-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5960-62-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80615,7 +80615,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5684-323-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5684-323-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5684-323-COT26"
       }
     ],
     "items": [
@@ -80637,7 +80637,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5684-323-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5684-323-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80711,7 +80711,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3784-313-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3784-313-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3784-313-COT26"
       }
     ],
     "items": [
@@ -80733,7 +80733,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3784-313-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3784-313-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80807,7 +80807,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1350104-43-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350104-43-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1350104-43-COT26"
       }
     ],
     "items": [
@@ -80829,7 +80829,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350104-43-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1350104-43-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80903,7 +80903,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4994-44-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4994-44-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4994-44-COT26"
       }
     ],
     "items": [
@@ -80925,7 +80925,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4994-44-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4994-44-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -80999,7 +80999,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5907-179-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-179-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5907-179-COT26"
       }
     ],
     "items": [
@@ -81021,7 +81021,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-179-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5907-179-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81095,7 +81095,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2792-662-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2792-662-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2792-662-COT26"
       }
     ],
     "items": [
@@ -81117,7 +81117,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2792-662-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2792-662-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81191,7 +81191,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4401-94-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4401-94-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4401-94-COT26"
       }
     ],
     "items": [
@@ -81213,7 +81213,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4401-94-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4401-94-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81289,7 +81289,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3784-312-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3784-312-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3784-312-COT26"
       }
     ],
     "items": [
@@ -81311,7 +81311,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3784-312-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3784-312-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81387,7 +81387,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3678-402-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3678-402-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3678-402-COT26"
       }
     ],
     "items": [
@@ -81409,7 +81409,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3678-402-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3678-402-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81483,7 +81483,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057498-2159-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057498-2159-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057498-2159-COT26"
       }
     ],
     "items": [
@@ -81505,7 +81505,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057498-2159-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057498-2159-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81580,7 +81580,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2905-382-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2905-382-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2905-382-COT26"
       }
     ],
     "items": [
@@ -81602,7 +81602,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2905-382-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2905-382-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81678,7 +81678,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2592-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2592-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2592-COT26"
       }
     ],
     "items": [
@@ -81700,7 +81700,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2592-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2592-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81777,7 +81777,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (906-138-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=906-138-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=906-138-COT26"
       }
     ],
     "items": [
@@ -81799,7 +81799,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=906-138-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=906-138-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81874,7 +81874,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3588-396-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3588-396-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3588-396-COT26"
       }
     ],
     "items": [
@@ -81896,7 +81896,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3588-396-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3588-396-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -81969,7 +81969,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057439-4842-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4842-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057439-4842-COT26"
       }
     ],
     "items": [
@@ -81991,7 +81991,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4842-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057439-4842-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82064,7 +82064,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5642-38-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5642-38-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5642-38-COT26"
       }
     ],
     "items": [
@@ -82086,7 +82086,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5642-38-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5642-38-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82160,7 +82160,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2705-1212-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1212-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2705-1212-COT26"
       }
     ],
     "items": [
@@ -82182,7 +82182,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1212-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2705-1212-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82257,7 +82257,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2408-357-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2408-357-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2408-357-COT26"
       }
     ],
     "items": [
@@ -82279,7 +82279,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2408-357-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2408-357-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82353,7 +82353,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057534-394-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057534-394-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057534-394-COT26"
       }
     ],
     "items": [
@@ -82375,7 +82375,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057534-394-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057534-394-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82448,7 +82448,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3820-803-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3820-803-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3820-803-COT26"
       }
     ],
     "items": [
@@ -82470,7 +82470,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3820-803-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3820-803-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82544,7 +82544,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1402-284-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1402-284-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1402-284-COT26"
       }
     ],
     "items": [
@@ -82566,7 +82566,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1402-284-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1402-284-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82641,7 +82641,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1393495-667-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1393495-667-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1393495-667-COT26"
       }
     ],
     "items": [
@@ -82663,7 +82663,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1393495-667-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1393495-667-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82737,7 +82737,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557639-2111-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2111-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557639-2111-COT26"
       }
     ],
     "items": [
@@ -82759,7 +82759,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2111-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557639-2111-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82832,7 +82832,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2381-680-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2381-680-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2381-680-COT26"
       }
     ],
     "items": [
@@ -82854,7 +82854,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2381-680-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2381-680-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -82927,7 +82927,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2805-451-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2805-451-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2805-451-COT26"
       }
     ],
     "items": [
@@ -82949,7 +82949,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2805-451-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2805-451-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83022,7 +83022,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1138108-13-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1138108-13-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1138108-13-COT26"
       }
     ],
     "items": [
@@ -83044,7 +83044,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1138108-13-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1138108-13-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83117,7 +83117,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (696961-30-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=696961-30-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=696961-30-COT26"
       }
     ],
     "items": [
@@ -83139,7 +83139,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=696961-30-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=696961-30-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83212,7 +83212,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2762-519-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2762-519-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2762-519-COT26"
       }
     ],
     "items": [
@@ -83234,7 +83234,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2762-519-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2762-519-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83307,7 +83307,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2594-641-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2594-641-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2594-641-COT26"
       }
     ],
     "items": [
@@ -83329,7 +83329,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2594-641-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2594-641-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83402,7 +83402,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4777-645-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4777-645-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4777-645-COT26"
       }
     ],
     "items": [
@@ -83424,7 +83424,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4777-645-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4777-645-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83497,7 +83497,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (623-215-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=623-215-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=623-215-COT26"
       }
     ],
     "items": [
@@ -83519,7 +83519,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=623-215-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=623-215-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83593,7 +83593,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1335445-66-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1335445-66-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1335445-66-COT26"
       }
     ],
     "items": [
@@ -83615,7 +83615,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1335445-66-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1335445-66-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83690,7 +83690,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4157-630-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4157-630-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4157-630-COT26"
       }
     ],
     "items": [
@@ -83712,7 +83712,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4157-630-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4157-630-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83787,7 +83787,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2412-395-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2412-395-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2412-395-COT26"
       }
     ],
     "items": [
@@ -83809,7 +83809,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2412-395-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2412-395-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83883,7 +83883,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1079563-295-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079563-295-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1079563-295-COT26"
       }
     ],
     "items": [
@@ -83905,7 +83905,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079563-295-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1079563-295-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -83978,7 +83978,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2408-356-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2408-356-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2408-356-COT26"
       }
     ],
     "items": [
@@ -84000,7 +84000,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2408-356-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2408-356-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84073,7 +84073,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2731-908-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-908-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2731-908-COT26"
       }
     ],
     "items": [
@@ -84095,7 +84095,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-908-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2731-908-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84170,7 +84170,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1274277-118-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274277-118-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1274277-118-COT26"
       }
     ],
     "items": [
@@ -84192,7 +84192,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274277-118-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1274277-118-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84267,7 +84267,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057439-4837-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4837-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057439-4837-COT26"
       }
     ],
     "items": [
@@ -84289,7 +84289,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4837-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057439-4837-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84363,7 +84363,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1707-43-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1707-43-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1707-43-COT26"
       }
     ],
     "items": [
@@ -84385,7 +84385,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1707-43-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1707-43-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84460,7 +84460,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3982-185-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3982-185-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3982-185-COT26"
       }
     ],
     "items": [
@@ -84482,7 +84482,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3982-185-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3982-185-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84556,7 +84556,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2412-408-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2412-408-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2412-408-COT26"
       }
     ],
     "items": [
@@ -84578,7 +84578,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2412-408-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2412-408-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84652,7 +84652,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3687-132-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3687-132-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3687-132-COT26"
       }
     ],
     "items": [
@@ -84674,7 +84674,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3687-132-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3687-132-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84748,7 +84748,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3455-138-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3455-138-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3455-138-COT26"
       }
     ],
     "items": [
@@ -84770,7 +84770,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3455-138-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3455-138-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84844,7 +84844,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4020-697-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4020-697-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4020-697-COT26"
       }
     ],
     "items": [
@@ -84866,7 +84866,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4020-697-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4020-697-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -84940,7 +84940,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1388961-142-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1388961-142-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1388961-142-COT26"
       }
     ],
     "items": [
@@ -84962,7 +84962,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1388961-142-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1388961-142-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85035,7 +85035,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (722-91-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=722-91-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=722-91-COT26"
       }
     ],
     "items": [
@@ -85057,7 +85057,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=722-91-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=722-91-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85130,7 +85130,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557639-2117-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2117-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557639-2117-COT26"
       }
     ],
     "items": [
@@ -85152,7 +85152,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2117-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557639-2117-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85225,7 +85225,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233619-550-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233619-550-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233619-550-COT26"
       }
     ],
     "items": [
@@ -85247,7 +85247,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233619-550-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233619-550-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85320,7 +85320,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3606-59-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3606-59-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3606-59-COT26"
       }
     ],
     "items": [
@@ -85342,7 +85342,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3606-59-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3606-59-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85415,7 +85415,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (877-100-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=877-100-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=877-100-COT26"
       }
     ],
     "items": [
@@ -85437,7 +85437,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=877-100-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=877-100-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85510,7 +85510,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1347870-186-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1347870-186-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1347870-186-COT26"
       }
     ],
     "items": [
@@ -85532,7 +85532,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1347870-186-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1347870-186-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85605,7 +85605,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1173431-42-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173431-42-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1173431-42-COT26"
       }
     ],
     "items": [
@@ -85627,7 +85627,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173431-42-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1173431-42-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85700,7 +85700,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1147293-131-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1147293-131-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1147293-131-COT26"
       }
     ],
     "items": [
@@ -85722,7 +85722,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1147293-131-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1147293-131-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85796,7 +85796,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2759-512-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2759-512-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2759-512-COT26"
       }
     ],
     "items": [
@@ -85818,7 +85818,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2759-512-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2759-512-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85892,7 +85892,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6051-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6051-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6051-COT26"
       }
     ],
     "items": [
@@ -85914,7 +85914,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6051-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6051-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -85987,7 +85987,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5603-133-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5603-133-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5603-133-COT26"
       }
     ],
     "items": [
@@ -86009,7 +86009,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5603-133-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5603-133-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86086,7 +86086,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3820-801-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3820-801-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3820-801-COT26"
       }
     ],
     "items": [
@@ -86108,7 +86108,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3820-801-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3820-801-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86185,7 +86185,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1298355-936-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1298355-936-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1298355-936-COT26"
       }
     ],
     "items": [
@@ -86207,7 +86207,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1298355-936-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1298355-936-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86280,7 +86280,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2291-813-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-813-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2291-813-COT26"
       }
     ],
     "items": [
@@ -86302,7 +86302,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-813-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2291-813-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86375,7 +86375,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6050-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6050-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6050-COT26"
       }
     ],
     "items": [
@@ -86397,7 +86397,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6050-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6050-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86470,7 +86470,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3703-337-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3703-337-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3703-337-COT26"
       }
     ],
     "items": [
@@ -86492,7 +86492,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3703-337-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3703-337-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86565,7 +86565,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (685103-73-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=685103-73-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=685103-73-COT26"
       }
     ],
     "items": [
@@ -86587,7 +86587,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=685103-73-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=685103-73-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86660,7 +86660,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4291-1027-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1027-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4291-1027-COT26"
       }
     ],
     "items": [
@@ -86682,7 +86682,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1027-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4291-1027-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86755,7 +86755,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1238167-229-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1238167-229-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1238167-229-COT26"
       }
     ],
     "items": [
@@ -86777,7 +86777,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1238167-229-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1238167-229-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86850,7 +86850,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3885-272-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3885-272-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3885-272-COT26"
       }
     ],
     "items": [
@@ -86872,7 +86872,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3885-272-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3885-272-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -86945,7 +86945,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5688-37-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5688-37-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5688-37-COT26"
       }
     ],
     "items": [
@@ -86967,7 +86967,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5688-37-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5688-37-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87040,7 +87040,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4157-628-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4157-628-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4157-628-COT26"
       }
     ],
     "items": [
@@ -87062,7 +87062,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4157-628-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4157-628-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87135,7 +87135,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233619-549-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233619-549-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233619-549-COT26"
       }
     ],
     "items": [
@@ -87157,7 +87157,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233619-549-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233619-549-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87230,7 +87230,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3387-134-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3387-134-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3387-134-COT26"
       }
     ],
     "items": [
@@ -87252,7 +87252,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3387-134-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3387-134-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87325,7 +87325,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1390-29-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1390-29-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1390-29-COT26"
       }
     ],
     "items": [
@@ -87347,7 +87347,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1390-29-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1390-29-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87420,7 +87420,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5215-686-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5215-686-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5215-686-COT26"
       }
     ],
     "items": [
@@ -87442,7 +87442,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5215-686-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5215-686-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87517,7 +87517,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5588-15-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5588-15-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5588-15-COT26"
       }
     ],
     "items": [
@@ -87539,7 +87539,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5588-15-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5588-15-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87614,7 +87614,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2341-394-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2341-394-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2341-394-COT26"
       }
     ],
     "items": [
@@ -87636,7 +87636,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2341-394-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2341-394-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87709,7 +87709,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1973-716-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1973-716-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1973-716-COT26"
       }
     ],
     "items": [
@@ -87731,7 +87731,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1973-716-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1973-716-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87804,7 +87804,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4777-644-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4777-644-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4777-644-COT26"
       }
     ],
     "items": [
@@ -87826,7 +87826,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4777-644-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4777-644-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87899,7 +87899,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557639-2115-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2115-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557639-2115-COT26"
       }
     ],
     "items": [
@@ -87921,7 +87921,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2115-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557639-2115-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -87994,7 +87994,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557639-2114-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2114-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557639-2114-COT26"
       }
     ],
     "items": [
@@ -88016,7 +88016,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2114-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557639-2114-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88089,7 +88089,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5907-178-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-178-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5907-178-COT26"
       }
     ],
     "items": [
@@ -88111,7 +88111,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-178-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5907-178-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88184,7 +88184,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4236-464-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4236-464-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4236-464-COT26"
       }
     ],
     "items": [
@@ -88206,7 +88206,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4236-464-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4236-464-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88279,7 +88279,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1736-498-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1736-498-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1736-498-COT26"
       }
     ],
     "items": [
@@ -88301,7 +88301,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1736-498-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1736-498-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88375,7 +88375,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (701426-263-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=701426-263-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=701426-263-COT26"
       }
     ],
     "items": [
@@ -88397,7 +88397,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=701426-263-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=701426-263-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88476,7 +88476,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2591-1808-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1808-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2591-1808-COT26"
       }
     ],
     "items": [
@@ -88498,7 +88498,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1808-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2591-1808-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88577,7 +88577,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6048-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6048-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6048-COT26"
       }
     ],
     "items": [
@@ -88599,7 +88599,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6048-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6048-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88673,7 +88673,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233616-81-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233616-81-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233616-81-COT26"
       }
     ],
     "items": [
@@ -88695,7 +88695,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233616-81-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233616-81-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88768,7 +88768,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (761391-751-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761391-751-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=761391-751-COT26"
       }
     ],
     "items": [
@@ -88790,7 +88790,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761391-751-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=761391-751-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88864,7 +88864,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3743-196-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3743-196-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3743-196-COT26"
       }
     ],
     "items": [
@@ -88886,7 +88886,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3743-196-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3743-196-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -88961,7 +88961,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2665-286-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2665-286-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2665-286-COT26"
       }
     ],
     "items": [
@@ -88983,7 +88983,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2665-286-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2665-286-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89058,7 +89058,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2427-887-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-887-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2427-887-COT26"
       }
     ],
     "items": [
@@ -89080,7 +89080,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-887-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2427-887-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89154,7 +89154,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5907-177-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-177-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5907-177-COT26"
       }
     ],
     "items": [
@@ -89176,7 +89176,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-177-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5907-177-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89249,7 +89249,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (881-122-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=881-122-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=881-122-COT26"
       }
     ],
     "items": [
@@ -89271,7 +89271,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=881-122-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=881-122-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89344,7 +89344,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2731-907-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-907-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2731-907-COT26"
       }
     ],
     "items": [
@@ -89366,7 +89366,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-907-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2731-907-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89439,7 +89439,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4856-185-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4856-185-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4856-185-COT26"
       }
     ],
     "items": [
@@ -89461,7 +89461,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4856-185-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4856-185-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89534,7 +89534,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057510-1457-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057510-1457-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057510-1457-COT26"
       }
     ],
     "items": [
@@ -89556,7 +89556,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057510-1457-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057510-1457-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89629,7 +89629,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1088-72-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1088-72-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1088-72-COT26"
       }
     ],
     "items": [
@@ -89651,7 +89651,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1088-72-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1088-72-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89725,7 +89725,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1350133-11-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350133-11-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1350133-11-COT26"
       }
     ],
     "items": [
@@ -89747,7 +89747,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350133-11-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1350133-11-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89821,7 +89821,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2335-349-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2335-349-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2335-349-COT26"
       }
     ],
     "items": [
@@ -89843,7 +89843,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2335-349-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2335-349-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -89916,7 +89916,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3309-286-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3309-286-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3309-286-COT26"
       }
     ],
     "items": [
@@ -89938,7 +89938,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3309-286-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3309-286-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -90011,7 +90011,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2581-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2581-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2581-COT26"
       }
     ],
     "items": [
@@ -90033,7 +90033,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2581-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2581-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -90106,7 +90106,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2859-784-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2859-784-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2859-784-COT26"
       }
     ],
     "items": [
@@ -90128,7 +90128,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2859-784-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2859-784-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -90201,7 +90201,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4498-62-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4498-62-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4498-62-COT26"
       }
     ],
     "items": [
@@ -90223,7 +90223,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4498-62-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4498-62-COT26",
     "fetchedAt": "2026-08-20T12:19:19.314344+00:00",
     "lastVerifiedAt": "2026-08-20T12:19:19.314344+00:00",
     "validationStatus": "confirmado",
@@ -90297,7 +90297,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3335-1011-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3335-1011-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3335-1011-COT26"
       }
     ],
     "items": [
@@ -90319,7 +90319,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3335-1011-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3335-1011-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -90396,7 +90396,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3684-128-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3684-128-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3684-128-COT26"
       }
     ],
     "items": [
@@ -90418,7 +90418,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3684-128-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3684-128-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -90495,7 +90495,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057461-50-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057461-50-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057461-50-COT26"
       }
     ],
     "items": [
@@ -90517,7 +90517,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057461-50-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057461-50-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -90591,7 +90591,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2335-351-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2335-351-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2335-351-COT26"
       }
     ],
     "items": [
@@ -90613,7 +90613,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2335-351-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2335-351-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -90686,7 +90686,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2759-510-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2759-510-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2759-510-COT26"
       }
     ],
     "items": [
@@ -90708,7 +90708,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2759-510-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2759-510-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -90781,7 +90781,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4993-143-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4993-143-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4993-143-COT26"
       }
     ],
     "items": [
@@ -90803,7 +90803,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4993-143-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4993-143-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -90876,7 +90876,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2591-1807-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1807-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2591-1807-COT26"
       }
     ],
     "items": [
@@ -90898,7 +90898,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1807-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2591-1807-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -90971,7 +90971,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1430715-292-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1430715-292-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1430715-292-COT26"
       }
     ],
     "items": [
@@ -90993,7 +90993,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1430715-292-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1430715-292-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91066,7 +91066,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1171234-82-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1171234-82-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1171234-82-COT26"
       }
     ],
     "items": [
@@ -91088,7 +91088,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1171234-82-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1171234-82-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91161,7 +91161,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3492-78-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3492-78-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3492-78-COT26"
       }
     ],
     "items": [
@@ -91183,7 +91183,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3492-78-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3492-78-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91256,7 +91256,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1348-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1348-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1348-COT26"
       }
     ],
     "items": [
@@ -91278,7 +91278,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1348-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1348-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91351,7 +91351,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3366-88-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3366-88-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3366-88-COT26"
       }
     ],
     "items": [
@@ -91373,7 +91373,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3366-88-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3366-88-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91446,7 +91446,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2594-640-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2594-640-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2594-640-COT26"
       }
     ],
     "items": [
@@ -91468,7 +91468,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2594-640-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2594-640-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91541,7 +91541,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2580-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2580-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2580-COT26"
       }
     ],
     "items": [
@@ -91563,7 +91563,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2580-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2580-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91636,7 +91636,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4083-419-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4083-419-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4083-419-COT26"
       }
     ],
     "items": [
@@ -91658,7 +91658,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4083-419-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4083-419-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91731,7 +91731,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1347-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1347-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1347-COT26"
       }
     ],
     "items": [
@@ -91753,7 +91753,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1347-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1347-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91829,7 +91829,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1171234-83-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1171234-83-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1171234-83-COT26"
       }
     ],
     "items": [
@@ -91851,7 +91851,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1171234-83-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1171234-83-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -91927,7 +91927,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (696961-29-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=696961-29-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=696961-29-COT26"
       }
     ],
     "items": [
@@ -91949,7 +91949,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=696961-29-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=696961-29-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92023,7 +92023,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3780-175-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3780-175-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3780-175-COT26"
       }
     ],
     "items": [
@@ -92045,7 +92045,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3780-175-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3780-175-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92119,7 +92119,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3507-534-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-534-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3507-534-COT26"
       }
     ],
     "items": [
@@ -92141,7 +92141,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-534-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3507-534-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92215,7 +92215,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4993-142-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4993-142-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4993-142-COT26"
       }
     ],
     "items": [
@@ -92237,7 +92237,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4993-142-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4993-142-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92311,7 +92311,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2358-415-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2358-415-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2358-415-COT26"
       }
     ],
     "items": [
@@ -92333,7 +92333,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2358-415-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2358-415-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92406,7 +92406,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1663-773-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-773-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1663-773-COT26"
       }
     ],
     "items": [
@@ -92428,7 +92428,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-773-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1663-773-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92501,7 +92501,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1346-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1346-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1346-COT26"
       }
     ],
     "items": [
@@ -92523,7 +92523,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1346-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1346-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92597,7 +92597,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5907-176-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-176-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5907-176-COT26"
       }
     ],
     "items": [
@@ -92619,7 +92619,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-176-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5907-176-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92694,7 +92694,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (654-198-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=654-198-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=654-198-COT26"
       }
     ],
     "items": [
@@ -92716,7 +92716,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=654-198-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=654-198-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92790,7 +92790,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057472-359-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-359-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057472-359-COT26"
       }
     ],
     "items": [
@@ -92812,7 +92812,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-359-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057472-359-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92885,7 +92885,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1305527-30-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1305527-30-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1305527-30-COT26"
       }
     ],
     "items": [
@@ -92907,7 +92907,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1305527-30-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1305527-30-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -92980,7 +92980,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3335-1023-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3335-1023-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3335-1023-COT26"
       }
     ],
     "items": [
@@ -93002,7 +93002,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3335-1023-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3335-1023-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93075,7 +93075,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2080-755-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2080-755-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2080-755-COT26"
       }
     ],
     "items": [
@@ -93097,7 +93097,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2080-755-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2080-755-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93171,7 +93171,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1411-1005-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1005-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1411-1005-COT26"
       }
     ],
     "items": [
@@ -93193,7 +93193,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1005-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1411-1005-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93267,7 +93267,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5907-175-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-175-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5907-175-COT26"
       }
     ],
     "items": [
@@ -93289,7 +93289,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5907-175-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5907-175-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93362,7 +93362,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3073-267-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3073-267-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3073-267-COT26"
       }
     ],
     "items": [
@@ -93384,7 +93384,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3073-267-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3073-267-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93457,7 +93457,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1345-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1345-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1345-COT26"
       }
     ],
     "items": [
@@ -93479,7 +93479,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1345-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1345-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93552,7 +93552,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1540-1059-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1540-1059-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1540-1059-COT26"
       }
     ],
     "items": [
@@ -93574,7 +93574,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1540-1059-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1540-1059-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93648,7 +93648,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2048-420-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2048-420-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2048-420-COT26"
       }
     ],
     "items": [
@@ -93670,7 +93670,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2048-420-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2048-420-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93745,7 +93745,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2705-1208-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1208-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2705-1208-COT26"
       }
     ],
     "items": [
@@ -93767,7 +93767,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1208-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2705-1208-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93841,7 +93841,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2676-599-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2676-599-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2676-599-COT26"
       }
     ],
     "items": [
@@ -93863,7 +93863,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2676-599-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2676-599-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -93936,7 +93936,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1002588-84-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1002588-84-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1002588-84-COT26"
       }
     ],
     "items": [
@@ -93958,7 +93958,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1002588-84-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1002588-84-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94033,7 +94033,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2358-413-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2358-413-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2358-413-COT26"
       }
     ],
     "items": [
@@ -94055,7 +94055,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2358-413-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2358-413-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94131,7 +94131,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2724-673-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2724-673-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2724-673-COT26"
       }
     ],
     "items": [
@@ -94153,7 +94153,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2724-673-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2724-673-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94228,7 +94228,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2428-1141-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1141-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2428-1141-COT26"
       }
     ],
     "items": [
@@ -94250,7 +94250,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1141-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2428-1141-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94324,7 +94324,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2704-1461-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2704-1461-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2704-1461-COT26"
       }
     ],
     "items": [
@@ -94346,7 +94346,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2704-1461-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2704-1461-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94419,7 +94419,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3019-504-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3019-504-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3019-504-COT26"
       }
     ],
     "items": [
@@ -94441,7 +94441,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3019-504-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3019-504-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94514,7 +94514,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (761391-750-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761391-750-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=761391-750-COT26"
       }
     ],
     "items": [
@@ -94536,7 +94536,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761391-750-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=761391-750-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94610,7 +94610,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2483-370-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2483-370-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2483-370-COT26"
       }
     ],
     "items": [
@@ -94632,7 +94632,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2483-370-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2483-370-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94706,7 +94706,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (538598-617-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=538598-617-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=538598-617-COT26"
       }
     ],
     "items": [
@@ -94728,7 +94728,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=538598-617-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=538598-617-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94801,7 +94801,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1347870-182-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1347870-182-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1347870-182-COT26"
       }
     ],
     "items": [
@@ -94823,7 +94823,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1347870-182-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1347870-182-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94898,7 +94898,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4034-460-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4034-460-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4034-460-COT26"
       }
     ],
     "items": [
@@ -94920,7 +94920,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4034-460-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4034-460-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -94995,7 +94995,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5572-5-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5572-5-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5572-5-COT26"
       }
     ],
     "items": [
@@ -95017,7 +95017,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5572-5-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5572-5-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95091,7 +95091,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1969-498-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1969-498-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1969-498-COT26"
       }
     ],
     "items": [
@@ -95113,7 +95113,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1969-498-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1969-498-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95188,7 +95188,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4291-1025-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1025-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4291-1025-COT26"
       }
     ],
     "items": [
@@ -95210,7 +95210,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1025-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4291-1025-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95284,7 +95284,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1343-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1343-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1343-COT26"
       }
     ],
     "items": [
@@ -95306,7 +95306,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1343-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1343-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95379,7 +95379,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1411-1004-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1004-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1411-1004-COT26"
       }
     ],
     "items": [
@@ -95401,7 +95401,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1004-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1411-1004-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95475,7 +95475,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2721-379-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2721-379-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2721-379-COT26"
       }
     ],
     "items": [
@@ -95497,7 +95497,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2721-379-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2721-379-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95572,7 +95572,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2926-173-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2926-173-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2926-173-COT26"
       }
     ],
     "items": [
@@ -95594,7 +95594,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2926-173-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2926-173-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95668,7 +95668,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2785-607-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2785-607-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2785-607-COT26"
       }
     ],
     "items": [
@@ -95690,7 +95690,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2785-607-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2785-607-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95764,7 +95764,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5615-629-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5615-629-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5615-629-COT26"
       }
     ],
     "items": [
@@ -95786,7 +95786,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5615-629-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5615-629-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95862,7 +95862,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4236-460-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4236-460-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4236-460-COT26"
       }
     ],
     "items": [
@@ -95884,7 +95884,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4236-460-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4236-460-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -95959,7 +95959,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (531153-112-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=531153-112-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=531153-112-COT26"
       }
     ],
     "items": [
@@ -95981,7 +95981,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=531153-112-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=531153-112-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96054,7 +96054,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1342-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1342-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1342-COT26"
       }
     ],
     "items": [
@@ -96076,7 +96076,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1342-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1342-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96150,7 +96150,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1965-300-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1965-300-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1965-300-COT26"
       }
     ],
     "items": [
@@ -96172,7 +96172,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1965-300-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1965-300-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96246,7 +96246,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3553-63-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3553-63-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3553-63-COT26"
       }
     ],
     "items": [
@@ -96268,7 +96268,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3553-63-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3553-63-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96341,7 +96341,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2997-71-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2997-71-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2997-71-COT26"
       }
     ],
     "items": [
@@ -96363,7 +96363,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2997-71-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2997-71-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96437,7 +96437,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3841-63-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3841-63-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3841-63-COT26"
       }
     ],
     "items": [
@@ -96459,7 +96459,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3841-63-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3841-63-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96533,7 +96533,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1341-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1341-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1341-COT26"
       }
     ],
     "items": [
@@ -96555,7 +96555,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1341-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1341-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96628,7 +96628,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2291-811-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-811-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2291-811-COT26"
       }
     ],
     "items": [
@@ -96650,7 +96650,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-811-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2291-811-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96723,7 +96723,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (696713-59-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=696713-59-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=696713-59-COT26"
       }
     ],
     "items": [
@@ -96745,7 +96745,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=696713-59-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=696713-59-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96818,7 +96818,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2421-344-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2421-344-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2421-344-COT26"
       }
     ],
     "items": [
@@ -96840,7 +96840,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2421-344-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2421-344-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -96914,7 +96914,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2827-397-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2827-397-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2827-397-COT26"
       }
     ],
     "items": [
@@ -96936,7 +96936,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2827-397-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2827-397-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97010,7 +97010,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1350293-28-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350293-28-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1350293-28-COT26"
       }
     ],
     "items": [
@@ -97032,7 +97032,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350293-28-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1350293-28-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97105,7 +97105,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3633-125-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3633-125-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3633-125-COT26"
       }
     ],
     "items": [
@@ -97127,7 +97127,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3633-125-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3633-125-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97200,7 +97200,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1391-472-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1391-472-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1391-472-COT26"
       }
     ],
     "items": [
@@ -97222,7 +97222,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1391-472-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1391-472-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97295,7 +97295,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557974-371-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557974-371-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557974-371-COT26"
       }
     ],
     "items": [
@@ -97317,7 +97317,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557974-371-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557974-371-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97390,7 +97390,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1350296-416-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350296-416-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1350296-416-COT26"
       }
     ],
     "items": [
@@ -97412,7 +97412,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350296-416-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1350296-416-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97487,7 +97487,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2566-164-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2566-164-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2566-164-COT26"
       }
     ],
     "items": [
@@ -97509,7 +97509,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2566-164-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2566-164-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97585,7 +97585,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3544-224-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3544-224-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3544-224-COT26"
       }
     ],
     "items": [
@@ -97607,7 +97607,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3544-224-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3544-224-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97681,7 +97681,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2211-956-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2211-956-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2211-956-COT26"
       }
     ],
     "items": [
@@ -97703,7 +97703,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2211-956-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2211-956-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97776,7 +97776,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (511451-76-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=511451-76-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=511451-76-COT26"
       }
     ],
     "items": [
@@ -97798,7 +97798,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=511451-76-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=511451-76-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97871,7 +97871,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (836-80-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=836-80-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=836-80-COT26"
       }
     ],
     "items": [
@@ -97893,7 +97893,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=836-80-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=836-80-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -97968,7 +97968,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2705-1207-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1207-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2705-1207-COT26"
       }
     ],
     "items": [
@@ -97990,7 +97990,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1207-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2705-1207-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98068,7 +98068,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1641-4721-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1641-4721-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1641-4721-COT26"
       }
     ],
     "items": [
@@ -98090,7 +98090,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1641-4721-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1641-4721-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98166,7 +98166,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3507-531-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-531-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3507-531-COT26"
       }
     ],
     "items": [
@@ -98188,7 +98188,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-531-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3507-531-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98261,7 +98261,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1339-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1339-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1339-COT26"
       }
     ],
     "items": [
@@ -98283,7 +98283,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1339-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1339-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98356,7 +98356,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1411-1002-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1002-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1411-1002-COT26"
       }
     ],
     "items": [
@@ -98378,7 +98378,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1002-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1411-1002-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98452,7 +98452,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3608-464-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3608-464-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3608-464-COT26"
       }
     ],
     "items": [
@@ -98474,7 +98474,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3608-464-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3608-464-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98550,7 +98550,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4173-123-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4173-123-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4173-123-COT26"
       }
     ],
     "items": [
@@ -98572,7 +98572,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4173-123-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4173-123-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98647,7 +98647,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6042-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6042-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6042-COT26"
       }
     ],
     "items": [
@@ -98669,7 +98669,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6042-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6042-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98742,7 +98742,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1411-1003-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1003-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1411-1003-COT26"
       }
     ],
     "items": [
@@ -98764,7 +98764,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1003-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1411-1003-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98840,7 +98840,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057472-355-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-355-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057472-355-COT26"
       }
     ],
     "items": [
@@ -98862,7 +98862,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-355-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057472-355-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -98938,7 +98938,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3888-761-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3888-761-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3888-761-COT26"
       }
     ],
     "items": [
@@ -98960,7 +98960,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3888-761-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3888-761-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99034,7 +99034,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3497-368-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3497-368-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3497-368-COT26"
       }
     ],
     "items": [
@@ -99056,7 +99056,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3497-368-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3497-368-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99130,7 +99130,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1596-63-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1596-63-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1596-63-COT26"
       }
     ],
     "items": [
@@ -99152,7 +99152,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1596-63-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1596-63-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99225,7 +99225,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1338-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1338-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1338-COT26"
       }
     ],
     "items": [
@@ -99247,7 +99247,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1338-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1338-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99321,7 +99321,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (794947-121-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=794947-121-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=794947-121-COT26"
       }
     ],
     "items": [
@@ -99343,7 +99343,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=794947-121-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=794947-121-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99417,7 +99417,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1380-4109-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-4109-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1380-4109-COT26"
       }
     ],
     "items": [
@@ -99439,7 +99439,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-4109-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1380-4109-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99514,7 +99514,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1704-2852-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1704-2852-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1704-2852-COT26"
       }
     ],
     "items": [
@@ -99536,7 +99536,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1704-2852-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1704-2852-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99611,7 +99611,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3507-529-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-529-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3507-529-COT26"
       }
     ],
     "items": [
@@ -99633,7 +99633,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-529-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3507-529-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99707,7 +99707,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1331787-8-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1331787-8-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1331787-8-COT26"
       }
     ],
     "items": [
@@ -99729,7 +99729,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1331787-8-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1331787-8-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99805,7 +99805,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057472-354-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-354-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057472-354-COT26"
       }
     ],
     "items": [
@@ -99827,7 +99827,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-354-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057472-354-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99902,7 +99902,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2324-819-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2324-819-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2324-819-COT26"
       }
     ],
     "items": [
@@ -99924,7 +99924,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2324-819-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2324-819-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -99997,7 +99997,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1003473-4011-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1003473-4011-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1003473-4011-COT26"
       }
     ],
     "items": [
@@ -100019,7 +100019,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1003473-4011-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1003473-4011-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100092,7 +100092,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1075339-466-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075339-466-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1075339-466-COT26"
       }
     ],
     "items": [
@@ -100114,7 +100114,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075339-466-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1075339-466-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100187,7 +100187,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3436-332-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3436-332-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3436-332-COT26"
       }
     ],
     "items": [
@@ -100209,7 +100209,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3436-332-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3436-332-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100282,7 +100282,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1413-393-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1413-393-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1413-393-COT26"
       }
     ],
     "items": [
@@ -100304,7 +100304,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1413-393-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1413-393-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100377,7 +100377,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1337-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1337-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1337-COT26"
       }
     ],
     "items": [
@@ -100399,7 +100399,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1337-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1337-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100472,7 +100472,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1020-99-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1020-99-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1020-99-COT26"
       }
     ],
     "items": [
@@ -100494,7 +100494,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1020-99-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1020-99-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100567,7 +100567,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1628-280-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1628-280-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1628-280-COT26"
       }
     ],
     "items": [
@@ -100589,7 +100589,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1628-280-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1628-280-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100663,7 +100663,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3785-175-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3785-175-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3785-175-COT26"
       }
     ],
     "items": [
@@ -100685,7 +100685,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3785-175-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3785-175-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100759,7 +100759,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1376-198-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1376-198-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1376-198-COT26"
       }
     ],
     "items": [
@@ -100781,7 +100781,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1376-198-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1376-198-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100854,7 +100854,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1336-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1336-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1336-COT26"
       }
     ],
     "items": [
@@ -100876,7 +100876,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1336-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1336-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -100949,7 +100949,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2307-402-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2307-402-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2307-402-COT26"
       }
     ],
     "items": [
@@ -100971,7 +100971,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2307-402-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2307-402-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101046,7 +101046,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057472-353-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-353-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057472-353-COT26"
       }
     ],
     "items": [
@@ -101068,7 +101068,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-353-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057472-353-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101144,7 +101144,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2564-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2564-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2564-COT26"
       }
     ],
     "items": [
@@ -101166,7 +101166,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2564-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2564-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101240,7 +101240,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4236-459-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4236-459-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4236-459-COT26"
       }
     ],
     "items": [
@@ -101262,7 +101262,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4236-459-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4236-459-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101336,7 +101336,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (990973-138-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=990973-138-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=990973-138-COT26"
       }
     ],
     "items": [
@@ -101358,7 +101358,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=990973-138-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=990973-138-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101432,7 +101432,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (673663-15-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=673663-15-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=673663-15-COT26"
       }
     ],
     "items": [
@@ -101454,7 +101454,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=673663-15-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=673663-15-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101527,7 +101527,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (418-1238-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1238-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=418-1238-COT26"
       }
     ],
     "items": [
@@ -101549,7 +101549,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1238-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=418-1238-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101623,7 +101623,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3320-417-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3320-417-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3320-417-COT26"
       }
     ],
     "items": [
@@ -101645,7 +101645,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3320-417-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3320-417-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101719,7 +101719,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1643-834-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1643-834-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1643-834-COT26"
       }
     ],
     "items": [
@@ -101741,7 +101741,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1643-834-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1643-834-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101814,7 +101814,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1237328-180-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1237328-180-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1237328-180-COT26"
       }
     ],
     "items": [
@@ -101836,7 +101836,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1237328-180-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1237328-180-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -101909,7 +101909,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057439-4830-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4830-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057439-4830-COT26"
       }
     ],
     "items": [
@@ -101931,7 +101931,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057439-4830-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057439-4830-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102005,7 +102005,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2780-68-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2780-68-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2780-68-COT26"
       }
     ],
     "items": [
@@ -102027,7 +102027,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2780-68-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2780-68-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102101,7 +102101,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2324-818-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2324-818-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2324-818-COT26"
       }
     ],
     "items": [
@@ -102123,7 +102123,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2324-818-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2324-818-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102196,7 +102196,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057510-1453-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057510-1453-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057510-1453-COT26"
       }
     ],
     "items": [
@@ -102218,7 +102218,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057510-1453-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057510-1453-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102291,7 +102291,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5667-127-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5667-127-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5667-127-COT26"
       }
     ],
     "items": [
@@ -102313,7 +102313,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5667-127-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5667-127-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102387,7 +102387,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4141-27-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4141-27-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4141-27-COT26"
       }
     ],
     "items": [
@@ -102409,7 +102409,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4141-27-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4141-27-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102483,7 +102483,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (898-1011-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=898-1011-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=898-1011-COT26"
       }
     ],
     "items": [
@@ -102505,7 +102505,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=898-1011-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=898-1011-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102578,7 +102578,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (960854-19-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=960854-19-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=960854-19-COT26"
       }
     ],
     "items": [
@@ -102600,7 +102600,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=960854-19-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=960854-19-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102673,7 +102673,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057540-514-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057540-514-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057540-514-COT26"
       }
     ],
     "items": [
@@ -102695,7 +102695,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057540-514-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057540-514-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102769,7 +102769,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (777304-2966-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=777304-2966-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=777304-2966-COT26"
       }
     ],
     "items": [
@@ -102791,7 +102791,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=777304-2966-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=777304-2966-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102865,7 +102865,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1655-121-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1655-121-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1655-121-COT26"
       }
     ],
     "items": [
@@ -102887,7 +102887,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1655-121-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1655-121-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -102960,7 +102960,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (591-34-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=591-34-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=591-34-COT26"
       }
     ],
     "items": [
@@ -102982,7 +102982,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=591-34-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=591-34-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103057,7 +103057,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3187-307-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3187-307-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3187-307-COT26"
       }
     ],
     "items": [
@@ -103079,7 +103079,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3187-307-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3187-307-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103154,7 +103154,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1663-770-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-770-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1663-770-COT26"
       }
     ],
     "items": [
@@ -103176,7 +103176,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-770-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1663-770-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103249,7 +103249,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3085-419-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3085-419-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3085-419-COT26"
       }
     ],
     "items": [
@@ -103271,7 +103271,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3085-419-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3085-419-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103344,7 +103344,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057543-171-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057543-171-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057543-171-COT26"
       }
     ],
     "items": [
@@ -103366,7 +103366,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057543-171-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057543-171-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103439,7 +103439,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1173430-127-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173430-127-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1173430-127-COT26"
       }
     ],
     "items": [
@@ -103461,7 +103461,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173430-127-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1173430-127-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103534,7 +103534,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4778-242-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4778-242-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4778-242-COT26"
       }
     ],
     "items": [
@@ -103556,7 +103556,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4778-242-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4778-242-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103629,7 +103629,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3507-527-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-527-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3507-527-COT26"
       }
     ],
     "items": [
@@ -103651,7 +103651,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-527-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3507-527-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103724,7 +103724,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1238167-228-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1238167-228-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1238167-228-COT26"
       }
     ],
     "items": [
@@ -103746,7 +103746,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1238167-228-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1238167-228-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103820,7 +103820,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2137-413-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2137-413-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2137-413-COT26"
       }
     ],
     "items": [
@@ -103842,7 +103842,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2137-413-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2137-413-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -103917,7 +103917,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1641-4716-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1641-4716-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1641-4716-COT26"
       }
     ],
     "items": [
@@ -103939,7 +103939,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1641-4716-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1641-4716-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104013,7 +104013,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1380-4108-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-4108-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1380-4108-COT26"
       }
     ],
     "items": [
@@ -104035,7 +104035,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-4108-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1380-4108-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104110,7 +104110,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4197-247-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4197-247-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4197-247-COT26"
       }
     ],
     "items": [
@@ -104132,7 +104132,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4197-247-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4197-247-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104207,7 +104207,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1549-3585-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1549-3585-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1549-3585-COT26"
       }
     ],
     "items": [
@@ -104229,7 +104229,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1549-3585-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1549-3585-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104304,7 +104304,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2098-525-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2098-525-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2098-525-COT26"
       }
     ],
     "items": [
@@ -104326,7 +104326,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2098-525-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2098-525-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104401,7 +104401,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2766-158-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2766-158-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2766-158-COT26"
       }
     ],
     "items": [
@@ -104423,7 +104423,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2766-158-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2766-158-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104496,7 +104496,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1417902-19-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1417902-19-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1417902-19-COT26"
       }
     ],
     "items": [
@@ -104518,7 +104518,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1417902-19-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1417902-19-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104591,7 +104591,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1380-4107-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-4107-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1380-4107-COT26"
       }
     ],
     "items": [
@@ -104613,7 +104613,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-4107-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1380-4107-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104690,7 +104690,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3695-291-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3695-291-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3695-291-COT26"
       }
     ],
     "items": [
@@ -104712,7 +104712,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3695-291-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3695-291-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104789,7 +104789,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2211-953-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2211-953-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2211-953-COT26"
       }
     ],
     "items": [
@@ -104811,7 +104811,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2211-953-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2211-953-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104884,7 +104884,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1305525-101-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1305525-101-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1305525-101-COT26"
       }
     ],
     "items": [
@@ -104906,7 +104906,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1305525-101-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1305525-101-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -104979,7 +104979,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3694-324-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3694-324-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3694-324-COT26"
       }
     ],
     "items": [
@@ -105001,7 +105001,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3694-324-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3694-324-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105074,7 +105074,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2211-952-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2211-952-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2211-952-COT26"
       }
     ],
     "items": [
@@ -105096,7 +105096,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2211-952-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2211-952-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105169,7 +105169,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5052-334-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5052-334-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5052-334-COT26"
       }
     ],
     "items": [
@@ -105191,7 +105191,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5052-334-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5052-334-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105265,7 +105265,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (577289-66-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=577289-66-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=577289-66-COT26"
       }
     ],
     "items": [
@@ -105287,7 +105287,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=577289-66-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=577289-66-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105363,7 +105363,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4283-106-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4283-106-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4283-106-COT26"
       }
     ],
     "items": [
@@ -105385,7 +105385,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4283-106-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4283-106-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105460,7 +105460,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1380-4105-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-4105-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1380-4105-COT26"
       }
     ],
     "items": [
@@ -105482,7 +105482,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1380-4105-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1380-4105-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105555,7 +105555,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1256-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1256-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1256-COT26"
       }
     ],
     "items": [
@@ -105577,7 +105577,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1256-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1256-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105650,7 +105650,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3509-91-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3509-91-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3509-91-COT26"
       }
     ],
     "items": [
@@ -105672,7 +105672,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3509-91-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3509-91-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105745,7 +105745,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4020-696-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4020-696-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4020-696-COT26"
       }
     ],
     "items": [
@@ -105767,7 +105767,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4020-696-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4020-696-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105840,7 +105840,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557639-2106-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2106-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557639-2106-COT26"
       }
     ],
     "items": [
@@ -105862,7 +105862,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2106-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557639-2106-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -105936,7 +105936,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2558-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2558-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2558-COT26"
       }
     ],
     "items": [
@@ -105958,7 +105958,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2558-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2558-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106032,7 +106032,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3595-196-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3595-196-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3595-196-COT26"
       }
     ],
     "items": [
@@ -106054,7 +106054,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3595-196-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3595-196-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106127,7 +106127,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5456-31-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5456-31-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5456-31-COT26"
       }
     ],
     "items": [
@@ -106149,7 +106149,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5456-31-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5456-31-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106222,7 +106222,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3730-198-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3730-198-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3730-198-COT26"
       }
     ],
     "items": [
@@ -106244,7 +106244,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3730-198-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3730-198-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106317,7 +106317,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1524577-23-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1524577-23-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1524577-23-COT26"
       }
     ],
     "items": [
@@ -106339,7 +106339,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1524577-23-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1524577-23-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106413,7 +106413,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1254-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1254-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1254-COT26"
       }
     ],
     "items": [
@@ -106435,7 +106435,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1254-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1254-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106511,7 +106511,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2559-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2559-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2559-COT26"
       }
     ],
     "items": [
@@ -106533,7 +106533,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2559-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2559-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106608,7 +106608,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057402-1090-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057402-1090-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057402-1090-COT26"
       }
     ],
     "items": [
@@ -106630,7 +106630,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057402-1090-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057402-1090-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106703,7 +106703,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (584105-203-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=584105-203-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=584105-203-COT26"
       }
     ],
     "items": [
@@ -106725,7 +106725,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=584105-203-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=584105-203-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106798,7 +106798,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1173430-126-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173430-126-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1173430-126-COT26"
       }
     ],
     "items": [
@@ -106820,7 +106820,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173430-126-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1173430-126-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106893,7 +106893,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1253-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1253-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1253-COT26"
       }
     ],
     "items": [
@@ -106915,7 +106915,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1253-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1253-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -106989,7 +106989,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2281-1510-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2281-1510-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2281-1510-COT26"
       }
     ],
     "items": [
@@ -107011,7 +107011,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2281-1510-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2281-1510-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107086,7 +107086,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1107276-342-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1107276-342-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1107276-342-COT26"
       }
     ],
     "items": [
@@ -107108,7 +107108,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1107276-342-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1107276-342-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107182,7 +107182,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5489-65-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5489-65-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5489-65-COT26"
       }
     ],
     "items": [
@@ -107204,7 +107204,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5489-65-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5489-65-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107277,7 +107277,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1252-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1252-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1252-COT26"
       }
     ],
     "items": [
@@ -107299,7 +107299,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1252-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1252-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107372,7 +107372,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4922-289-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4922-289-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4922-289-COT26"
       }
     ],
     "items": [
@@ -107394,7 +107394,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4922-289-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4922-289-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107467,7 +107467,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4481-15-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4481-15-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4481-15-COT26"
       }
     ],
     "items": [
@@ -107489,7 +107489,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4481-15-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4481-15-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107562,7 +107562,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3861-87-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3861-87-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3861-87-COT26"
       }
     ],
     "items": [
@@ -107584,7 +107584,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3861-87-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3861-87-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107657,7 +107657,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (867990-436-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-436-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=867990-436-COT26"
       }
     ],
     "items": [
@@ -107679,7 +107679,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-436-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=867990-436-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107753,7 +107753,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1251-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1251-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1251-COT26"
       }
     ],
     "items": [
@@ -107775,7 +107775,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1251-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1251-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107849,7 +107849,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (732907-7-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=732907-7-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=732907-7-COT26"
       }
     ],
     "items": [
@@ -107871,7 +107871,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=732907-7-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=732907-7-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -107944,7 +107944,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (842082-72-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=842082-72-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=842082-72-COT26"
       }
     ],
     "items": [
@@ -107966,7 +107966,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=842082-72-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=842082-72-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108040,7 +108040,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2591-1802-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1802-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2591-1802-COT26"
       }
     ],
     "items": [
@@ -108062,7 +108062,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1802-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2591-1802-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108136,7 +108136,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3880-407-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3880-407-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3880-407-COT26"
       }
     ],
     "items": [
@@ -108158,7 +108158,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3880-407-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3880-407-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108232,7 +108232,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3633-124-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3633-124-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3633-124-COT26"
       }
     ],
     "items": [
@@ -108254,7 +108254,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3633-124-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3633-124-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108328,7 +108328,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2585-1049-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2585-1049-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2585-1049-COT26"
       }
     ],
     "items": [
@@ -108350,7 +108350,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2585-1049-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2585-1049-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108423,7 +108423,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5198-103-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5198-103-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5198-103-COT26"
       }
     ],
     "items": [
@@ -108445,7 +108445,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5198-103-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5198-103-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108519,7 +108519,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5178-4329-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5178-4329-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5178-4329-COT26"
       }
     ],
     "items": [
@@ -108541,7 +108541,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5178-4329-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5178-4329-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108615,7 +108615,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3880-406-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3880-406-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3880-406-COT26"
       }
     ],
     "items": [
@@ -108637,7 +108637,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3880-406-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3880-406-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108710,7 +108710,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3507-526-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-526-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3507-526-COT26"
       }
     ],
     "items": [
@@ -108732,7 +108732,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3507-526-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3507-526-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108805,7 +108805,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5613-387-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5613-387-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5613-387-COT26"
       }
     ],
     "items": [
@@ -108827,7 +108827,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5613-387-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5613-387-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108901,7 +108901,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3962-305-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3962-305-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3962-305-COT26"
       }
     ],
     "items": [
@@ -108923,7 +108923,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3962-305-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3962-305-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -108997,7 +108997,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1411-1000-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1000-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1411-1000-COT26"
       }
     ],
     "items": [
@@ -109019,7 +109019,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1411-1000-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1411-1000-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109092,7 +109092,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (643-184-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=643-184-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=643-184-COT26"
       }
     ],
     "items": [
@@ -109114,7 +109114,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=643-184-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=643-184-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109188,7 +109188,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2686-392-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2686-392-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2686-392-COT26"
       }
     ],
     "items": [
@@ -109210,7 +109210,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2686-392-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2686-392-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109284,7 +109284,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2460-800-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2460-800-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2460-800-COT26"
       }
     ],
     "items": [
@@ -109306,7 +109306,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2460-800-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2460-800-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109379,7 +109379,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1274277-116-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274277-116-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1274277-116-COT26"
       }
     ],
     "items": [
@@ -109401,7 +109401,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274277-116-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1274277-116-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109475,7 +109475,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4367-313-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4367-313-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4367-313-COT26"
       }
     ],
     "items": [
@@ -109497,7 +109497,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4367-313-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4367-313-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109571,7 +109571,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2369-32-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2369-32-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2369-32-COT26"
       }
     ],
     "items": [
@@ -109593,7 +109593,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2369-32-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2369-32-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109667,7 +109667,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3892-289-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3892-289-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3892-289-COT26"
       }
     ],
     "items": [
@@ -109689,7 +109689,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3892-289-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3892-289-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109763,7 +109763,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2565-303-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2565-303-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2565-303-COT26"
       }
     ],
     "items": [
@@ -109785,7 +109785,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2565-303-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2565-303-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109858,7 +109858,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3141-153-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3141-153-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3141-153-COT26"
       }
     ],
     "items": [
@@ -109880,7 +109880,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3141-153-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3141-153-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -109953,7 +109953,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1274277-115-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274277-115-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1274277-115-COT26"
       }
     ],
     "items": [
@@ -109975,7 +109975,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274277-115-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1274277-115-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110048,7 +110048,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4161-278-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4161-278-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4161-278-COT26"
       }
     ],
     "items": [
@@ -110070,7 +110070,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4161-278-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4161-278-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110143,7 +110143,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1480133-105-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1480133-105-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1480133-105-COT26"
       }
     ],
     "items": [
@@ -110165,7 +110165,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1480133-105-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1480133-105-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110238,7 +110238,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2428-1134-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1134-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2428-1134-COT26"
       }
     ],
     "items": [
@@ -110260,7 +110260,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1134-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2428-1134-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110334,7 +110334,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2996-121-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2996-121-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2996-121-COT26"
       }
     ],
     "items": [
@@ -110356,7 +110356,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2996-121-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2996-121-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110431,7 +110431,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2427-884-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-884-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2427-884-COT26"
       }
     ],
     "items": [
@@ -110453,7 +110453,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-884-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2427-884-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110528,7 +110528,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4489-8-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4489-8-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4489-8-COT26"
       }
     ],
     "items": [
@@ -110550,7 +110550,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4489-8-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4489-8-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110624,7 +110624,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1274277-114-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274277-114-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1274277-114-COT26"
       }
     ],
     "items": [
@@ -110646,7 +110646,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274277-114-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1274277-114-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110719,7 +110719,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5178-4328-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5178-4328-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5178-4328-COT26"
       }
     ],
     "items": [
@@ -110741,7 +110741,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5178-4328-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5178-4328-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110814,7 +110814,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4062-692-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4062-692-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4062-692-COT26"
       }
     ],
     "items": [
@@ -110836,7 +110836,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4062-692-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4062-692-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -110909,7 +110909,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2380-1800-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2380-1800-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2380-1800-COT26"
       }
     ],
     "items": [
@@ -110931,7 +110931,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2380-1800-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2380-1800-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111004,7 +111004,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057432-304-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057432-304-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057432-304-COT26"
       }
     ],
     "items": [
@@ -111026,7 +111026,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057432-304-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057432-304-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111101,7 +111101,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1058339-496-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058339-496-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1058339-496-COT26"
       }
     ],
     "items": [
@@ -111123,7 +111123,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058339-496-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1058339-496-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111199,7 +111199,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2548-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2548-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2548-COT26"
       }
     ],
     "items": [
@@ -111221,7 +111221,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2548-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2548-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111295,7 +111295,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2591-1799-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1799-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2591-1799-COT26"
       }
     ],
     "items": [
@@ -111317,7 +111317,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1799-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2591-1799-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111390,7 +111390,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4074-142-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4074-142-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4074-142-COT26"
       }
     ],
     "items": [
@@ -111412,7 +111412,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4074-142-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4074-142-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111485,7 +111485,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5687-28-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5687-28-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5687-28-COT26"
       }
     ],
     "items": [
@@ -111507,7 +111507,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5687-28-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5687-28-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111580,7 +111580,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1426-35-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426-35-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1426-35-COT26"
       }
     ],
     "items": [
@@ -111602,7 +111602,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1426-35-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1426-35-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111675,7 +111675,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4535-30-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4535-30-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4535-30-COT26"
       }
     ],
     "items": [
@@ -111697,7 +111697,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4535-30-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4535-30-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111770,7 +111770,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2428-1132-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1132-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2428-1132-COT26"
       }
     ],
     "items": [
@@ -111792,7 +111792,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1132-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2428-1132-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111865,7 +111865,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2734-522-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2734-522-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2734-522-COT26"
       }
     ],
     "items": [
@@ -111887,7 +111887,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2734-522-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2734-522-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -111960,7 +111960,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3474-184-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3474-184-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3474-184-COT26"
       }
     ],
     "items": [
@@ -111982,7 +111982,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3474-184-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3474-184-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112055,7 +112055,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1058345-66-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058345-66-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1058345-66-COT26"
       }
     ],
     "items": [
@@ -112077,7 +112077,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058345-66-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1058345-66-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112151,7 +112151,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4863-54-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4863-54-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4863-54-COT26"
       }
     ],
     "items": [
@@ -112173,7 +112173,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4863-54-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4863-54-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112247,7 +112247,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4525-362-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4525-362-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4525-362-COT26"
       }
     ],
     "items": [
@@ -112269,7 +112269,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4525-362-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4525-362-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112346,7 +112346,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (757818-89-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=757818-89-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=757818-89-COT26"
       }
     ],
     "items": [
@@ -112368,7 +112368,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=757818-89-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=757818-89-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112445,7 +112445,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4195-770-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4195-770-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4195-770-COT26"
       }
     ],
     "items": [
@@ -112467,7 +112467,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4195-770-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4195-770-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112540,7 +112540,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4027-244-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4027-244-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4027-244-COT26"
       }
     ],
     "items": [
@@ -112562,7 +112562,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4027-244-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4027-244-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112635,7 +112635,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1346283-205-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1346283-205-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1346283-205-COT26"
       }
     ],
     "items": [
@@ -112657,7 +112657,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1346283-205-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1346283-205-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112731,7 +112731,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (701433-24-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=701433-24-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=701433-24-COT26"
       }
     ],
     "items": [
@@ -112753,7 +112753,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=701433-24-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=701433-24-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112828,7 +112828,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (867990-435-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-435-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=867990-435-COT26"
       }
     ],
     "items": [
@@ -112850,7 +112850,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-435-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=867990-435-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -112924,7 +112924,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4100-186-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-186-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4100-186-COT26"
       }
     ],
     "items": [
@@ -112946,7 +112946,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-186-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4100-186-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113020,7 +113020,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1638-587-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-587-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1638-587-COT26"
       }
     ],
     "items": [
@@ -113042,7 +113042,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-587-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1638-587-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113117,7 +113117,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2827-391-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2827-391-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2827-391-COT26"
       }
     ],
     "items": [
@@ -113139,7 +113139,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2827-391-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2827-391-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113213,7 +113213,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1874-18-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1874-18-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1874-18-COT26"
       }
     ],
     "items": [
@@ -113235,7 +113235,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1874-18-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1874-18-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113308,7 +113308,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (924-211-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=924-211-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=924-211-COT26"
       }
     ],
     "items": [
@@ -113330,7 +113330,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=924-211-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=924-211-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113403,7 +113403,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (885-676-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=885-676-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=885-676-COT26"
       }
     ],
     "items": [
@@ -113425,7 +113425,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=885-676-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=885-676-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113499,7 +113499,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5349-423-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5349-423-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5349-423-COT26"
       }
     ],
     "items": [
@@ -113521,7 +113521,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5349-423-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5349-423-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113595,7 +113595,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4373-41-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4373-41-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4373-41-COT26"
       }
     ],
     "items": [
@@ -113617,7 +113617,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4373-41-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4373-41-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113690,7 +113690,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4100-185-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-185-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4100-185-COT26"
       }
     ],
     "items": [
@@ -113712,7 +113712,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-185-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4100-185-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113786,7 +113786,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (875646-2032-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=875646-2032-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=875646-2032-COT26"
       }
     ],
     "items": [
@@ -113808,7 +113808,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=875646-2032-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=875646-2032-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113883,7 +113883,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2989-287-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2989-287-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2989-287-COT26"
       }
     ],
     "items": [
@@ -113905,7 +113905,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2989-287-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2989-287-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -113980,7 +113980,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (387-394-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=387-394-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=387-394-COT26"
       }
     ],
     "items": [
@@ -114002,7 +114002,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=387-394-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=387-394-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114076,7 +114076,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4306-353-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4306-353-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4306-353-COT26"
       }
     ],
     "items": [
@@ -114098,7 +114098,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4306-353-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4306-353-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114171,7 +114171,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2188-371-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2188-371-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2188-371-COT26"
       }
     ],
     "items": [
@@ -114193,7 +114193,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2188-371-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2188-371-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114266,7 +114266,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3287-369-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3287-369-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3287-369-COT26"
       }
     ],
     "items": [
@@ -114288,7 +114288,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3287-369-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3287-369-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114363,7 +114363,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1106245-146-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1106245-146-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1106245-146-COT26"
       }
     ],
     "items": [
@@ -114385,7 +114385,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1106245-146-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1106245-146-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114461,7 +114461,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2710-381-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2710-381-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2710-381-COT26"
       }
     ],
     "items": [
@@ -114483,7 +114483,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2710-381-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2710-381-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114557,7 +114557,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4105-483-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4105-483-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4105-483-COT26"
       }
     ],
     "items": [
@@ -114579,7 +114579,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4105-483-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4105-483-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114652,7 +114652,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2415-171-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2415-171-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2415-171-COT26"
       }
     ],
     "items": [
@@ -114674,7 +114674,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2415-171-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2415-171-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114747,7 +114747,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5687-26-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5687-26-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5687-26-COT26"
       }
     ],
     "items": [
@@ -114769,7 +114769,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5687-26-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5687-26-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114843,7 +114843,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (867990-433-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-433-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=867990-433-COT26"
       }
     ],
     "items": [
@@ -114865,7 +114865,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-433-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=867990-433-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -114939,7 +114939,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5215-678-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5215-678-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5215-678-COT26"
       }
     ],
     "items": [
@@ -114961,7 +114961,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5215-678-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5215-678-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115034,7 +115034,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5626-478-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5626-478-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5626-478-COT26"
       }
     ],
     "items": [
@@ -115056,7 +115056,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5626-478-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5626-478-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115129,7 +115129,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1173459-23-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173459-23-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1173459-23-COT26"
       }
     ],
     "items": [
@@ -115151,7 +115151,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173459-23-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1173459-23-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115224,7 +115224,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2905-364-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2905-364-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2905-364-COT26"
       }
     ],
     "items": [
@@ -115246,7 +115246,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2905-364-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2905-364-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115320,7 +115320,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2450-750-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2450-750-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2450-750-COT26"
       }
     ],
     "items": [
@@ -115342,7 +115342,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2450-750-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2450-750-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115419,7 +115419,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1417913-218-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1417913-218-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1417913-218-COT26"
       }
     ],
     "items": [
@@ -115441,7 +115441,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1417913-218-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1417913-218-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115518,7 +115518,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4371-266-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4371-266-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4371-266-COT26"
       }
     ],
     "items": [
@@ -115540,7 +115540,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4371-266-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4371-266-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115614,7 +115614,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1385462-77-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1385462-77-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1385462-77-COT26"
       }
     ],
     "items": [
@@ -115636,7 +115636,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1385462-77-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1385462-77-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115709,7 +115709,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2713-1005-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2713-1005-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2713-1005-COT26"
       }
     ],
     "items": [
@@ -115731,7 +115731,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2713-1005-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2713-1005-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115805,7 +115805,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4168-280-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4168-280-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4168-280-COT26"
       }
     ],
     "items": [
@@ -115827,7 +115827,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4168-280-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4168-280-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115902,7 +115902,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1058339-495-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058339-495-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1058339-495-COT26"
       }
     ],
     "items": [
@@ -115924,7 +115924,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058339-495-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1058339-495-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -115998,7 +115998,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1098710-134-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1098710-134-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1098710-134-COT26"
       }
     ],
     "items": [
@@ -116020,7 +116020,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1098710-134-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1098710-134-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116095,7 +116095,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1515-37-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1515-37-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1515-37-COT26"
       }
     ],
     "items": [
@@ -116117,7 +116117,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1515-37-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1515-37-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116192,7 +116192,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5520-682-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5520-682-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5520-682-COT26"
       }
     ],
     "items": [
@@ -116214,7 +116214,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5520-682-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5520-682-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116287,7 +116287,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4201-468-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4201-468-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4201-468-COT26"
       }
     ],
     "items": [
@@ -116309,7 +116309,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4201-468-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4201-468-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116383,7 +116383,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1116003-60-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1116003-60-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1116003-60-COT26"
       }
     ],
     "items": [
@@ -116405,7 +116405,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1116003-60-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1116003-60-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116481,7 +116481,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3705-354-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3705-354-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3705-354-COT26"
       }
     ],
     "items": [
@@ -116503,7 +116503,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3705-354-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3705-354-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116581,7 +116581,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1075963-1093-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-1093-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1075963-1093-COT26"
       }
     ],
     "items": [
@@ -116603,7 +116603,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-1093-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1075963-1093-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116679,7 +116679,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1950-716-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1950-716-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1950-716-COT26"
       }
     ],
     "items": [
@@ -116701,7 +116701,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1950-716-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1950-716-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116774,7 +116774,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2464-1194-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2464-1194-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2464-1194-COT26"
       }
     ],
     "items": [
@@ -116796,7 +116796,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2464-1194-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2464-1194-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116869,7 +116869,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3497-365-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3497-365-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3497-365-COT26"
       }
     ],
     "items": [
@@ -116891,7 +116891,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3497-365-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3497-365-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -116965,7 +116965,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1315764-46-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1315764-46-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1315764-46-COT26"
       }
     ],
     "items": [
@@ -116987,7 +116987,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1315764-46-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1315764-46-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117061,7 +117061,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5586-2100-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-2100-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5586-2100-COT26"
       }
     ],
     "items": [
@@ -117083,7 +117083,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-2100-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5586-2100-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117156,7 +117156,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1391-471-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1391-471-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1391-471-COT26"
       }
     ],
     "items": [
@@ -117178,7 +117178,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1391-471-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1391-471-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117251,7 +117251,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1497-160-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1497-160-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1497-160-COT26"
       }
     ],
     "items": [
@@ -117273,7 +117273,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1497-160-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1497-160-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117346,7 +117346,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (867990-431-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-431-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=867990-431-COT26"
       }
     ],
     "items": [
@@ -117368,7 +117368,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-431-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=867990-431-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117443,7 +117443,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3017-652-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3017-652-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3017-652-COT26"
       }
     ],
     "items": [
@@ -117465,7 +117465,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3017-652-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3017-652-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117540,7 +117540,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2059-165-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2059-165-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2059-165-COT26"
       }
     ],
     "items": [
@@ -117562,7 +117562,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2059-165-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2059-165-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117636,7 +117636,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4075-105-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4075-105-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4075-105-COT26"
       }
     ],
     "items": [
@@ -117658,7 +117658,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4075-105-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4075-105-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117733,7 +117733,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2792-656-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2792-656-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2792-656-COT26"
       }
     ],
     "items": [
@@ -117755,7 +117755,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2792-656-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2792-656-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117830,7 +117830,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057490-184-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057490-184-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057490-184-COT26"
       }
     ],
     "items": [
@@ -117852,7 +117852,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057490-184-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057490-184-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -117927,7 +117927,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (872535-343-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=872535-343-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=872535-343-COT26"
       }
     ],
     "items": [
@@ -117949,7 +117949,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=872535-343-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=872535-343-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118027,7 +118027,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2731-904-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-904-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2731-904-COT26"
       }
     ],
     "items": [
@@ -118049,7 +118049,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-904-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2731-904-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118126,7 +118126,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057510-1448-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057510-1448-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057510-1448-COT26"
       }
     ],
     "items": [
@@ -118148,7 +118148,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057510-1448-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057510-1448-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118221,7 +118221,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2580-85-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2580-85-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2580-85-COT26"
       }
     ],
     "items": [
@@ -118243,7 +118243,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2580-85-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2580-85-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118317,7 +118317,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1182705-151-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1182705-151-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1182705-151-COT26"
       }
     ],
     "items": [
@@ -118339,7 +118339,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1182705-151-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1182705-151-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118414,7 +118414,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2467-556-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-556-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2467-556-COT26"
       }
     ],
     "items": [
@@ -118436,7 +118436,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-556-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2467-556-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118510,7 +118510,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (957865-139-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=957865-139-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=957865-139-COT26"
       }
     ],
     "items": [
@@ -118532,7 +118532,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=957865-139-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=957865-139-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118606,7 +118606,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2961-759-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2961-759-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2961-759-COT26"
       }
     ],
     "items": [
@@ -118628,7 +118628,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2961-759-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2961-759-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118702,7 +118702,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4201-467-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4201-467-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4201-467-COT26"
       }
     ],
     "items": [
@@ -118724,7 +118724,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4201-467-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4201-467-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118797,7 +118797,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2705-1201-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1201-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2705-1201-COT26"
       }
     ],
     "items": [
@@ -118819,7 +118819,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2705-1201-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2705-1201-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118892,7 +118892,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4540-44-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4540-44-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4540-44-COT26"
       }
     ],
     "items": [
@@ -118914,7 +118914,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4540-44-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4540-44-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -118987,7 +118987,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1161-230-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1161-230-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1161-230-COT26"
       }
     ],
     "items": [
@@ -119009,7 +119009,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1161-230-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1161-230-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119082,7 +119082,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5067-1984-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1984-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5067-1984-COT26"
       }
     ],
     "items": [
@@ -119104,7 +119104,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1984-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5067-1984-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119177,7 +119177,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1947-816-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1947-816-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1947-816-COT26"
       }
     ],
     "items": [
@@ -119199,7 +119199,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1947-816-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1947-816-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119272,7 +119272,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4832-82-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4832-82-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4832-82-COT26"
       }
     ],
     "items": [
@@ -119294,7 +119294,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4832-82-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4832-82-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119368,7 +119368,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1968-396-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1968-396-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1968-396-COT26"
       }
     ],
     "items": [
@@ -119390,7 +119390,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1968-396-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1968-396-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119464,7 +119464,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (856-45-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=856-45-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=856-45-COT26"
       }
     ],
     "items": [
@@ -119486,7 +119486,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=856-45-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=856-45-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119559,7 +119559,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5215-676-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5215-676-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5215-676-COT26"
       }
     ],
     "items": [
@@ -119581,7 +119581,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5215-676-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5215-676-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119656,7 +119656,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3508-605-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3508-605-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3508-605-COT26"
       }
     ],
     "items": [
@@ -119678,7 +119678,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3508-605-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3508-605-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119753,7 +119753,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4100-183-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-183-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4100-183-COT26"
       }
     ],
     "items": [
@@ -119775,7 +119775,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-183-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4100-183-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119849,7 +119849,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1059109-80-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1059109-80-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1059109-80-COT26"
       }
     ],
     "items": [
@@ -119871,7 +119871,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1059109-80-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1059109-80-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -119945,7 +119945,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4825-9-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4825-9-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4825-9-COT26"
       }
     ],
     "items": [
@@ -119967,7 +119967,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4825-9-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4825-9-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120042,7 +120042,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1173418-41-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173418-41-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1173418-41-COT26"
       }
     ],
     "items": [
@@ -120064,7 +120064,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1173418-41-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1173418-41-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120139,7 +120139,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057539-3552-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057539-3552-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057539-3552-COT26"
       }
     ],
     "items": [
@@ -120161,7 +120161,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057539-3552-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057539-3552-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120234,7 +120234,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057510-1445-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057510-1445-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057510-1445-COT26"
       }
     ],
     "items": [
@@ -120256,7 +120256,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057510-1445-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057510-1445-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120329,7 +120329,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2467-555-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-555-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2467-555-COT26"
       }
     ],
     "items": [
@@ -120351,7 +120351,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-555-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2467-555-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120424,7 +120424,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2294-1709-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2294-1709-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2294-1709-COT26"
       }
     ],
     "items": [
@@ -120446,7 +120446,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2294-1709-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2294-1709-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120519,7 +120519,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2410-79-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2410-79-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2410-79-COT26"
       }
     ],
     "items": [
@@ -120541,7 +120541,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2410-79-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2410-79-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120616,7 +120616,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1962-248-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1962-248-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1962-248-COT26"
       }
     ],
     "items": [
@@ -120638,7 +120638,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1962-248-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1962-248-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120713,7 +120713,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2279-540-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2279-540-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2279-540-COT26"
       }
     ],
     "items": [
@@ -120735,7 +120735,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2279-540-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2279-540-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120808,7 +120808,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2961-772-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2961-772-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2961-772-COT26"
       }
     ],
     "items": [
@@ -120830,7 +120830,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2961-772-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2961-772-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -120904,7 +120904,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5659-8-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5659-8-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5659-8-COT26"
       }
     ],
     "items": [
@@ -120926,7 +120926,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5659-8-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5659-8-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121000,7 +121000,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (867990-429-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-429-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=867990-429-COT26"
       }
     ],
     "items": [
@@ -121022,7 +121022,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=867990-429-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=867990-429-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121095,7 +121095,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1350803-30-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350803-30-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1350803-30-COT26"
       }
     ],
     "items": [
@@ -121117,7 +121117,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350803-30-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1350803-30-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121190,7 +121190,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1075956-101-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075956-101-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1075956-101-COT26"
       }
     ],
     "items": [
@@ -121212,7 +121212,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075956-101-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1075956-101-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121286,7 +121286,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2803-143-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2803-143-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2803-143-COT26"
       }
     ],
     "items": [
@@ -121308,7 +121308,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2803-143-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2803-143-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121383,7 +121383,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1973-712-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1973-712-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1973-712-COT26"
       }
     ],
     "items": [
@@ -121405,7 +121405,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1973-712-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1973-712-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121480,7 +121480,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (545598-788-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=545598-788-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=545598-788-COT26"
       }
     ],
     "items": [
@@ -121502,7 +121502,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=545598-788-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=545598-788-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121577,7 +121577,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2703-180-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2703-180-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2703-180-COT26"
       }
     ],
     "items": [
@@ -121599,7 +121599,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2703-180-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2703-180-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121674,7 +121674,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5814-39-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5814-39-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5814-39-COT26"
       }
     ],
     "items": [
@@ -121696,7 +121696,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5814-39-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5814-39-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121771,7 +121771,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4074-140-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4074-140-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4074-140-COT26"
       }
     ],
     "items": [
@@ -121793,7 +121793,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4074-140-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4074-140-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121867,7 +121867,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2467-553-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-553-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2467-553-COT26"
       }
     ],
     "items": [
@@ -121889,7 +121889,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-553-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2467-553-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -121963,7 +121963,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5586-2097-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-2097-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5586-2097-COT26"
       }
     ],
     "items": [
@@ -121985,7 +121985,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-2097-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5586-2097-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122059,7 +122059,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (761391-681-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761391-681-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=761391-681-COT26"
       }
     ],
     "items": [
@@ -122081,7 +122081,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761391-681-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=761391-681-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122154,7 +122154,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3734-451-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3734-451-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3734-451-COT26"
       }
     ],
     "items": [
@@ -122176,7 +122176,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3734-451-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3734-451-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122250,7 +122250,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057389-1848-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057389-1848-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057389-1848-COT26"
       }
     ],
     "items": [
@@ -122272,7 +122272,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057389-1848-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057389-1848-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122346,7 +122346,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1477-54-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1477-54-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1477-54-COT26"
       }
     ],
     "items": [
@@ -122368,7 +122368,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1477-54-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1477-54-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122441,7 +122441,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1485-40-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1485-40-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1485-40-COT26"
       }
     ],
     "items": [
@@ -122463,7 +122463,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1485-40-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1485-40-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122536,7 +122536,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3836-244-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3836-244-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3836-244-COT26"
       }
     ],
     "items": [
@@ -122558,7 +122558,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3836-244-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3836-244-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122632,7 +122632,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4168-279-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4168-279-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4168-279-COT26"
       }
     ],
     "items": [
@@ -122654,7 +122654,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4168-279-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4168-279-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122728,7 +122728,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4074-139-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4074-139-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4074-139-COT26"
       }
     ],
     "items": [
@@ -122750,7 +122750,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4074-139-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4074-139-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122824,7 +122824,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5067-1966-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1966-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5067-1966-COT26"
       }
     ],
     "items": [
@@ -122846,7 +122846,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1966-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5067-1966-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -122920,7 +122920,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1216062-384-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1216062-384-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1216062-384-COT26"
       }
     ],
     "items": [
@@ -122942,7 +122942,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1216062-384-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1216062-384-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123015,7 +123015,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (564162-796-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=564162-796-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=564162-796-COT26"
       }
     ],
     "items": [
@@ -123037,7 +123037,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=564162-796-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=564162-796-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123110,7 +123110,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5668-24-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5668-24-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5668-24-COT26"
       }
     ],
     "items": [
@@ -123132,7 +123132,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5668-24-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5668-24-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123206,7 +123206,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2703-179-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2703-179-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2703-179-COT26"
       }
     ],
     "items": [
@@ -123228,7 +123228,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2703-179-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2703-179-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123302,7 +123302,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1391-470-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1391-470-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1391-470-COT26"
       }
     ],
     "items": [
@@ -123324,7 +123324,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1391-470-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1391-470-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123397,7 +123397,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2294-1708-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2294-1708-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2294-1708-COT26"
       }
     ],
     "items": [
@@ -123419,7 +123419,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2294-1708-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2294-1708-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123493,7 +123493,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (652-180-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=652-180-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=652-180-COT26"
       }
     ],
     "items": [
@@ -123515,7 +123515,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=652-180-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=652-180-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123589,7 +123589,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2440-1365-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2440-1365-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2440-1365-COT26"
       }
     ],
     "items": [
@@ -123611,7 +123611,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2440-1365-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2440-1365-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123684,7 +123684,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3714-282-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3714-282-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3714-282-COT26"
       }
     ],
     "items": [
@@ -123706,7 +123706,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3714-282-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3714-282-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123779,7 +123779,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4486-229-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4486-229-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4486-229-COT26"
       }
     ],
     "items": [
@@ -123801,7 +123801,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4486-229-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4486-229-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123874,7 +123874,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1224957-552-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1224957-552-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1224957-552-COT26"
       }
     ],
     "items": [
@@ -123896,7 +123896,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1224957-552-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1224957-552-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -123969,7 +123969,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3797-372-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3797-372-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3797-372-COT26"
       }
     ],
     "items": [
@@ -123991,7 +123991,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3797-372-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3797-372-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124064,7 +124064,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2542-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2542-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2542-COT26"
       }
     ],
     "items": [
@@ -124086,7 +124086,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2542-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2542-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124160,7 +124160,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1962-247-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1962-247-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1962-247-COT26"
       }
     ],
     "items": [
@@ -124182,7 +124182,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1962-247-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1962-247-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124258,7 +124258,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1457282-95-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1457282-95-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1457282-95-COT26"
       }
     ],
     "items": [
@@ -124280,7 +124280,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1457282-95-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1457282-95-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124355,7 +124355,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1542-29-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1542-29-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1542-29-COT26"
       }
     ],
     "items": [
@@ -124377,7 +124377,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1542-29-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1542-29-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124450,7 +124450,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (759-232-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=759-232-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=759-232-COT26"
       }
     ],
     "items": [
@@ -124472,7 +124472,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=759-232-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=759-232-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124545,7 +124545,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2380-1798-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2380-1798-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2380-1798-COT26"
       }
     ],
     "items": [
@@ -124567,7 +124567,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2380-1798-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2380-1798-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124640,7 +124640,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1002772-2443-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1002772-2443-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1002772-2443-COT26"
       }
     ],
     "items": [
@@ -124662,7 +124662,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1002772-2443-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1002772-2443-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124736,7 +124736,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1242-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1242-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1242-COT26"
       }
     ],
     "items": [
@@ -124758,7 +124758,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1242-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1242-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124833,7 +124833,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5537-239-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5537-239-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5537-239-COT26"
       }
     ],
     "items": [
@@ -124855,7 +124855,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5537-239-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5537-239-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -124929,7 +124929,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2566-163-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2566-163-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2566-163-COT26"
       }
     ],
     "items": [
@@ -124951,7 +124951,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2566-163-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2566-163-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125024,7 +125024,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1075956-100-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075956-100-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1075956-100-COT26"
       }
     ],
     "items": [
@@ -125046,7 +125046,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075956-100-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1075956-100-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125119,7 +125119,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2249-147-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2249-147-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2249-147-COT26"
       }
     ],
     "items": [
@@ -125141,7 +125141,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2249-147-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2249-147-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125214,7 +125214,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1075963-1085-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-1085-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1075963-1085-COT26"
       }
     ],
     "items": [
@@ -125236,7 +125236,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075963-1085-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1075963-1085-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125310,7 +125310,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1525570-33-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1525570-33-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1525570-33-COT26"
       }
     ],
     "items": [
@@ -125332,7 +125332,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1525570-33-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1525570-33-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125406,7 +125406,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2421-341-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2421-341-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2421-341-COT26"
       }
     ],
     "items": [
@@ -125428,7 +125428,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2421-341-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2421-341-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125503,7 +125503,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1457282-94-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1457282-94-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1457282-94-COT26"
       }
     ],
     "items": [
@@ -125525,7 +125525,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1457282-94-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1457282-94-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125600,7 +125600,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2793-744-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2793-744-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2793-744-COT26"
       }
     ],
     "items": [
@@ -125622,7 +125622,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2793-744-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2793-744-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125695,7 +125695,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1662-1201-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1662-1201-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1662-1201-COT26"
       }
     ],
     "items": [
@@ -125717,7 +125717,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1662-1201-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1662-1201-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125791,7 +125791,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2710-380-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2710-380-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2710-380-COT26"
       }
     ],
     "items": [
@@ -125813,7 +125813,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2710-380-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2710-380-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125887,7 +125887,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (564162-795-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=564162-795-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=564162-795-COT26"
       }
     ],
     "items": [
@@ -125909,7 +125909,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=564162-795-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=564162-795-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -125983,7 +125983,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1691-1475-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1691-1475-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1691-1475-COT26"
       }
     ],
     "items": [
@@ -126005,7 +126005,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1691-1475-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1691-1475-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126079,7 +126079,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4414-522-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4414-522-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4414-522-COT26"
       }
     ],
     "items": [
@@ -126101,7 +126101,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4414-522-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4414-522-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126175,7 +126175,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233623-516-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233623-516-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233623-516-COT26"
       }
     ],
     "items": [
@@ -126197,7 +126197,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233623-516-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233623-516-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126272,7 +126272,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1552-128-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1552-128-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1552-128-COT26"
       }
     ],
     "items": [
@@ -126294,7 +126294,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1552-128-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1552-128-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126369,7 +126369,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2287-507-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2287-507-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2287-507-COT26"
       }
     ],
     "items": [
@@ -126391,7 +126391,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2287-507-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2287-507-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126466,7 +126466,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (770691-7-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=770691-7-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=770691-7-COT26"
       }
     ],
     "items": [
@@ -126488,7 +126488,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=770691-7-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=770691-7-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126562,7 +126562,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2541-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2541-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2541-COT26"
       }
     ],
     "items": [
@@ -126584,7 +126584,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2541-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2541-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126658,7 +126658,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1402-283-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1402-283-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1402-283-COT26"
       }
     ],
     "items": [
@@ -126680,7 +126680,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1402-283-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1402-283-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126754,7 +126754,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1638-586-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-586-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1638-586-COT26"
       }
     ],
     "items": [
@@ -126776,7 +126776,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-586-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1638-586-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126849,7 +126849,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2467-552-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-552-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2467-552-COT26"
       }
     ],
     "items": [
@@ -126871,7 +126871,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-552-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2467-552-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -126944,7 +126944,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3649-257-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3649-257-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3649-257-COT26"
       }
     ],
     "items": [
@@ -126966,7 +126966,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3649-257-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3649-257-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127042,7 +127042,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1239-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1239-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1239-COT26"
       }
     ],
     "items": [
@@ -127064,7 +127064,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1239-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1239-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127140,7 +127140,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2111-1075-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2111-1075-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2111-1075-COT26"
       }
     ],
     "items": [
@@ -127162,7 +127162,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2111-1075-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2111-1075-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127235,7 +127235,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4100-182-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-182-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4100-182-COT26"
       }
     ],
     "items": [
@@ -127257,7 +127257,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4100-182-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4100-182-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127331,7 +127331,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (761391-744-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761391-744-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=761391-744-COT26"
       }
     ],
     "items": [
@@ -127353,7 +127353,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=761391-744-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=761391-744-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127428,7 +127428,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557639-2101-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2101-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557639-2101-COT26"
       }
     ],
     "items": [
@@ -127450,7 +127450,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2101-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557639-2101-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127524,7 +127524,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2249-146-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2249-146-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2249-146-COT26"
       }
     ],
     "items": [
@@ -127546,7 +127546,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2249-146-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2249-146-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127619,7 +127619,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3516-489-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3516-489-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3516-489-COT26"
       }
     ],
     "items": [
@@ -127641,7 +127641,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3516-489-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3516-489-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127715,7 +127715,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1238-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1238-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1238-COT26"
       }
     ],
     "items": [
@@ -127737,7 +127737,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1238-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1238-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127812,7 +127812,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057490-183-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057490-183-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057490-183-COT26"
       }
     ],
     "items": [
@@ -127834,7 +127834,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057490-183-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057490-183-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -127909,7 +127909,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4491-342-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4491-342-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4491-342-COT26"
       }
     ],
     "items": [
@@ -127931,7 +127931,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4491-342-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4491-342-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128008,7 +128008,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2731-901-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-901-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2731-901-COT26"
       }
     ],
     "items": [
@@ -128030,7 +128030,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2731-901-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2731-901-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128106,7 +128106,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2704-1455-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2704-1455-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2704-1455-COT26"
       }
     ],
     "items": [
@@ -128128,7 +128128,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2704-1455-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2704-1455-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128202,7 +128202,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2585-1047-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2585-1047-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2585-1047-COT26"
       }
     ],
     "items": [
@@ -128224,7 +128224,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2585-1047-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2585-1047-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128299,7 +128299,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1107281-181-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1107281-181-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1107281-181-COT26"
       }
     ],
     "items": [
@@ -128321,7 +128321,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1107281-181-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1107281-181-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128395,7 +128395,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3085-417-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3085-417-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3085-417-COT26"
       }
     ],
     "items": [
@@ -128417,7 +128417,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3085-417-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3085-417-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128490,7 +128490,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1446646-13-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1446646-13-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1446646-13-COT26"
       }
     ],
     "items": [
@@ -128512,7 +128512,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1446646-13-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1446646-13-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128585,7 +128585,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1638-584-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-584-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1638-584-COT26"
       }
     ],
     "items": [
@@ -128607,7 +128607,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-584-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1638-584-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128682,7 +128682,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3884-454-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3884-454-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3884-454-COT26"
       }
     ],
     "items": [
@@ -128704,7 +128704,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3884-454-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3884-454-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128781,7 +128781,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3105-76-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3105-76-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3105-76-COT26"
       }
     ],
     "items": [
@@ -128803,7 +128803,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3105-76-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3105-76-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128878,7 +128878,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (418-1233-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1233-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=418-1233-COT26"
       }
     ],
     "items": [
@@ -128900,7 +128900,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1233-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=418-1233-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -128974,7 +128974,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (770691-6-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=770691-6-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=770691-6-COT26"
       }
     ],
     "items": [
@@ -128996,7 +128996,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=770691-6-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=770691-6-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129070,7 +129070,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1953-346-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1953-346-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1953-346-COT26"
       }
     ],
     "items": [
@@ -129092,7 +129092,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1953-346-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1953-346-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129165,7 +129165,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1079659-347-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079659-347-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1079659-347-COT26"
       }
     ],
     "items": [
@@ -129187,7 +129187,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079659-347-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1079659-347-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129260,7 +129260,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1305532-68-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1305532-68-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1305532-68-COT26"
       }
     ],
     "items": [
@@ -129282,7 +129282,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1305532-68-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1305532-68-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129357,7 +129357,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1233-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1233-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1233-COT26"
       }
     ],
     "items": [
@@ -129379,7 +129379,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1233-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1233-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129454,7 +129454,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2436-1230-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2436-1230-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2436-1230-COT26"
       }
     ],
     "items": [
@@ -129476,7 +129476,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2436-1230-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2436-1230-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129550,7 +129550,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2249-145-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2249-145-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2249-145-COT26"
       }
     ],
     "items": [
@@ -129572,7 +129572,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2249-145-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2249-145-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129646,7 +129646,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5251-786-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5251-786-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5251-786-COT26"
       }
     ],
     "items": [
@@ -129668,7 +129668,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5251-786-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5251-786-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129742,7 +129742,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1234-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1234-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1234-COT26"
       }
     ],
     "items": [
@@ -129764,7 +129764,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1234-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1234-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129838,7 +129838,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5416-565-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5416-565-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5416-565-COT26"
       }
     ],
     "items": [
@@ -129860,7 +129860,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5416-565-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5416-565-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -129934,7 +129934,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5733-67-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5733-67-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5733-67-COT26"
       }
     ],
     "items": [
@@ -129956,7 +129956,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5733-67-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5733-67-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130031,7 +130031,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233623-514-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233623-514-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233623-514-COT26"
       }
     ],
     "items": [
@@ -130053,7 +130053,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233623-514-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233623-514-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130127,7 +130127,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557639-2102-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2102-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557639-2102-COT26"
       }
     ],
     "items": [
@@ -130149,7 +130149,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557639-2102-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557639-2102-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130223,7 +130223,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4955-58-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4955-58-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4955-58-COT26"
       }
     ],
     "items": [
@@ -130245,7 +130245,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4955-58-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4955-58-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130320,7 +130320,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4291-1018-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1018-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4291-1018-COT26"
       }
     ],
     "items": [
@@ -130342,7 +130342,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1018-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4291-1018-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130416,7 +130416,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1953-345-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1953-345-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1953-345-COT26"
       }
     ],
     "items": [
@@ -130438,7 +130438,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1953-345-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1953-345-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130511,7 +130511,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1526274-4-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1526274-4-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1526274-4-COT26"
       }
     ],
     "items": [
@@ -130533,7 +130533,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1526274-4-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1526274-4-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130606,7 +130606,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5525-146-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5525-146-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5525-146-COT26"
       }
     ],
     "items": [
@@ -130628,7 +130628,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5525-146-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5525-146-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130701,7 +130701,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3326-455-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3326-455-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3326-455-COT26"
       }
     ],
     "items": [
@@ -130723,7 +130723,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3326-455-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3326-455-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130799,7 +130799,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1511-196-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1511-196-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1511-196-COT26"
       }
     ],
     "items": [
@@ -130821,7 +130821,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1511-196-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1511-196-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130897,7 +130897,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2436-1228-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2436-1228-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2436-1228-COT26"
       }
     ],
     "items": [
@@ -130919,7 +130919,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2436-1228-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2436-1228-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -130992,7 +130992,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5539-115-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5539-115-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5539-115-COT26"
       }
     ],
     "items": [
@@ -131014,7 +131014,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5539-115-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5539-115-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131087,7 +131087,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1231-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1231-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1231-COT26"
       }
     ],
     "items": [
@@ -131109,7 +131109,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1231-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1231-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131183,7 +131183,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1391-469-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1391-469-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1391-469-COT26"
       }
     ],
     "items": [
@@ -131205,7 +131205,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1391-469-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1391-469-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131279,7 +131279,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3378-1228-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3378-1228-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3378-1228-COT26"
       }
     ],
     "items": [
@@ -131301,7 +131301,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3378-1228-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3378-1228-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131375,7 +131375,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1161266-544-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1161266-544-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1161266-544-COT26"
       }
     ],
     "items": [
@@ -131397,7 +131397,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1161266-544-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1161266-544-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131471,7 +131471,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3703-334-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3703-334-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3703-334-COT26"
       }
     ],
     "items": [
@@ -131493,7 +131493,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3703-334-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3703-334-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131566,7 +131566,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3885-269-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3885-269-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3885-269-COT26"
       }
     ],
     "items": [
@@ -131588,7 +131588,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3885-269-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3885-269-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131661,7 +131661,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3611-174-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3611-174-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3611-174-COT26"
       }
     ],
     "items": [
@@ -131683,7 +131683,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3611-174-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3611-174-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131756,7 +131756,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2583-652-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2583-652-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2583-652-COT26"
       }
     ],
     "items": [
@@ -131778,7 +131778,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2583-652-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2583-652-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131851,7 +131851,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1079505-322-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079505-322-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1079505-322-COT26"
       }
     ],
     "items": [
@@ -131873,7 +131873,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079505-322-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1079505-322-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -131946,7 +131946,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057390-197-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057390-197-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057390-197-COT26"
       }
     ],
     "items": [
@@ -131968,7 +131968,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057390-197-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057390-197-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132045,7 +132045,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1638-583-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-583-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1638-583-COT26"
       }
     ],
     "items": [
@@ -132067,7 +132067,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-583-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1638-583-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132145,7 +132145,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2591-1783-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1783-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2591-1783-COT26"
       }
     ],
     "items": [
@@ -132167,7 +132167,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2591-1783-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2591-1783-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132241,7 +132241,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2287-506-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2287-506-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2287-506-COT26"
       }
     ],
     "items": [
@@ -132263,7 +132263,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2287-506-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2287-506-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132336,7 +132336,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3661-372-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3661-372-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3661-372-COT26"
       }
     ],
     "items": [
@@ -132358,7 +132358,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3661-372-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3661-372-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132431,7 +132431,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5615-625-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5615-625-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5615-625-COT26"
       }
     ],
     "items": [
@@ -132453,7 +132453,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5615-625-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5615-625-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132526,7 +132526,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2291-812-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-812-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2291-812-COT26"
       }
     ],
     "items": [
@@ -132548,7 +132548,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-812-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2291-812-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132622,7 +132622,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5586-2087-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-2087-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5586-2087-COT26"
       }
     ],
     "items": [
@@ -132644,7 +132644,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-2087-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5586-2087-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132718,7 +132718,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1242121-308-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1242121-308-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1242121-308-COT26"
       }
     ],
     "items": [
@@ -132740,7 +132740,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1242121-308-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1242121-308-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132813,7 +132813,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4434-14-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4434-14-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4434-14-COT26"
       }
     ],
     "items": [
@@ -132835,7 +132835,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4434-14-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4434-14-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -132908,7 +132908,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1375761-255-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1375761-255-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1375761-255-COT26"
       }
     ],
     "items": [
@@ -132930,7 +132930,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1375761-255-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1375761-255-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133003,7 +133003,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1663-767-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-767-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1663-767-COT26"
       }
     ],
     "items": [
@@ -133025,7 +133025,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1663-767-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1663-767-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133098,7 +133098,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (229-113-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=229-113-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=229-113-COT26"
       }
     ],
     "items": [
@@ -133120,7 +133120,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=229-113-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=229-113-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133193,7 +133193,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1638-582-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-582-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1638-582-COT26"
       }
     ],
     "items": [
@@ -133215,7 +133215,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-582-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1638-582-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133288,7 +133288,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1691-1469-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1691-1469-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1691-1469-COT26"
       }
     ],
     "items": [
@@ -133310,7 +133310,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1691-1469-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1691-1469-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133384,7 +133384,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2436-1227-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2436-1227-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2436-1227-COT26"
       }
     ],
     "items": [
@@ -133406,7 +133406,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2436-1227-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2436-1227-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133484,7 +133484,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1461054-288-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1461054-288-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1461054-288-COT26"
       }
     ],
     "items": [
@@ -133506,7 +133506,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1461054-288-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1461054-288-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133583,7 +133583,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2428-1128-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1128-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2428-1128-COT26"
       }
     ],
     "items": [
@@ -133605,7 +133605,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2428-1128-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2428-1128-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133678,7 +133678,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2917-206-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2917-206-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2917-206-COT26"
       }
     ],
     "items": [
@@ -133700,7 +133700,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2917-206-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2917-206-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133774,7 +133774,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6019-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6019-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6019-COT26"
       }
     ],
     "items": [
@@ -133796,7 +133796,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6019-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6019-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133870,7 +133870,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1224953-343-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1224953-343-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1224953-343-COT26"
       }
     ],
     "items": [
@@ -133892,7 +133892,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1224953-343-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1224953-343-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -133965,7 +133965,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057472-350-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-350-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057472-350-COT26"
       }
     ],
     "items": [
@@ -133987,7 +133987,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057472-350-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057472-350-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134060,7 +134060,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4494-477-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4494-477-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4494-477-COT26"
       }
     ],
     "items": [
@@ -134082,7 +134082,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4494-477-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4494-477-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134155,7 +134155,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1588-64-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1588-64-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1588-64-COT26"
       }
     ],
     "items": [
@@ -134177,7 +134177,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1588-64-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1588-64-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134251,7 +134251,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6017-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6017-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6017-COT26"
       }
     ],
     "items": [
@@ -134273,7 +134273,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6017-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6017-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134347,7 +134347,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1075337-1692-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075337-1692-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1075337-1692-COT26"
       }
     ],
     "items": [
@@ -134369,7 +134369,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1075337-1692-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1075337-1692-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134443,7 +134443,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5427-4-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5427-4-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5427-4-COT26"
       }
     ],
     "items": [
@@ -134465,7 +134465,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5427-4-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5427-4-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134539,7 +134539,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1111089-93-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1111089-93-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1111089-93-COT26"
       }
     ],
     "items": [
@@ -134561,7 +134561,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1111089-93-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1111089-93-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134634,7 +134634,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (788110-156-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=788110-156-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=788110-156-COT26"
       }
     ],
     "items": [
@@ -134656,7 +134656,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=788110-156-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=788110-156-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134729,7 +134729,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4895-155-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4895-155-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4895-155-COT26"
       }
     ],
     "items": [
@@ -134751,7 +134751,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4895-155-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4895-155-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134825,7 +134825,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2412-401-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2412-401-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2412-401-COT26"
       }
     ],
     "items": [
@@ -134847,7 +134847,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2412-401-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2412-401-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -134921,7 +134921,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5586-2084-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-2084-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5586-2084-COT26"
       }
     ],
     "items": [
@@ -134943,7 +134943,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5586-2084-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5586-2084-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135019,7 +135019,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2917-205-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2917-205-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2917-205-COT26"
       }
     ],
     "items": [
@@ -135041,7 +135041,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2917-205-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2917-205-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135117,7 +135117,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3600-152-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3600-152-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3600-152-COT26"
       }
     ],
     "items": [
@@ -135139,7 +135139,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3600-152-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3600-152-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135212,7 +135212,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4491-340-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4491-340-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4491-340-COT26"
       }
     ],
     "items": [
@@ -135234,7 +135234,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4491-340-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4491-340-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135307,7 +135307,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (508418-30-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=508418-30-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=508418-30-COT26"
       }
     ],
     "items": [
@@ -135329,7 +135329,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=508418-30-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=508418-30-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135402,7 +135402,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5338-225-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5338-225-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5338-225-COT26"
       }
     ],
     "items": [
@@ -135424,7 +135424,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5338-225-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5338-225-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135497,7 +135497,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1030177-62-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1030177-62-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1030177-62-COT26"
       }
     ],
     "items": [
@@ -135519,7 +135519,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1030177-62-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1030177-62-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135592,7 +135592,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1079580-260-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079580-260-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1079580-260-COT26"
       }
     ],
     "items": [
@@ -135614,7 +135614,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079580-260-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1079580-260-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135687,7 +135687,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2467-549-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-549-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2467-549-COT26"
       }
     ],
     "items": [
@@ -135709,7 +135709,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2467-549-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2467-549-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135782,7 +135782,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2429-903-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2429-903-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2429-903-COT26"
       }
     ],
     "items": [
@@ -135804,7 +135804,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2429-903-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2429-903-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135877,7 +135877,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (619133-1042-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=619133-1042-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=619133-1042-COT26"
       }
     ],
     "items": [
@@ -135899,7 +135899,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=619133-1042-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=619133-1042-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -135973,7 +135973,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3500-130-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3500-130-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3500-130-COT26"
       }
     ],
     "items": [
@@ -135995,7 +135995,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3500-130-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3500-130-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136070,7 +136070,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1602-67-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1602-67-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1602-67-COT26"
       }
     ],
     "items": [
@@ -136092,7 +136092,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1602-67-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1602-67-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136166,7 +136166,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1155683-94-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1155683-94-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1155683-94-COT26"
       }
     ],
     "items": [
@@ -136188,7 +136188,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1155683-94-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1155683-94-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136261,7 +136261,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1175-263-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1175-263-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1175-263-COT26"
       }
     ],
     "items": [
@@ -136283,7 +136283,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1175-263-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1175-263-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136356,7 +136356,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4389-42-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4389-42-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4389-42-COT26"
       }
     ],
     "items": [
@@ -136378,7 +136378,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4389-42-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4389-42-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136451,7 +136451,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4091-167-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4091-167-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4091-167-COT26"
       }
     ],
     "items": [
@@ -136473,7 +136473,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4091-167-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4091-167-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136547,7 +136547,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2328-962-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2328-962-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2328-962-COT26"
       }
     ],
     "items": [
@@ -136569,7 +136569,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2328-962-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2328-962-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136644,7 +136644,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1889-14-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1889-14-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1889-14-COT26"
       }
     ],
     "items": [
@@ -136666,7 +136666,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1889-14-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1889-14-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136740,7 +136740,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057536-930-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057536-930-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057536-930-COT26"
       }
     ],
     "items": [
@@ -136762,7 +136762,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057536-930-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057536-930-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136837,7 +136837,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3803-105-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3803-105-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3803-105-COT26"
       }
     ],
     "items": [
@@ -136859,7 +136859,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3803-105-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3803-105-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -136934,7 +136934,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1638-570-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-570-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1638-570-COT26"
       }
     ],
     "items": [
@@ -136956,7 +136956,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1638-570-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1638-570-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137030,7 +137030,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2401-704-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2401-704-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2401-704-COT26"
       }
     ],
     "items": [
@@ -137052,7 +137052,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2401-704-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2401-704-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137126,7 +137126,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1274667-310-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274667-310-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1274667-310-COT26"
       }
     ],
     "items": [
@@ -137148,7 +137148,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274667-310-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1274667-310-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137221,7 +137221,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4164-339-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4164-339-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4164-339-COT26"
       }
     ],
     "items": [
@@ -137243,7 +137243,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4164-339-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4164-339-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137317,7 +137317,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (14-28-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=14-28-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=14-28-COT26"
       }
     ],
     "items": [
@@ -137339,7 +137339,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=14-28-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=14-28-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137414,7 +137414,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2778-405-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2778-405-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2778-405-COT26"
       }
     ],
     "items": [
@@ -137436,7 +137436,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2778-405-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2778-405-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137511,7 +137511,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4499-116-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4499-116-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4499-116-COT26"
       }
     ],
     "items": [
@@ -137533,7 +137533,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4499-116-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4499-116-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137607,7 +137607,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1079639-857-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079639-857-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1079639-857-COT26"
       }
     ],
     "items": [
@@ -137629,7 +137629,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1079639-857-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1079639-857-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137703,7 +137703,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1216094-47-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1216094-47-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1216094-47-COT26"
       }
     ],
     "items": [
@@ -137725,7 +137725,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1216094-47-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1216094-47-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137799,7 +137799,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5613-385-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5613-385-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5613-385-COT26"
       }
     ],
     "items": [
@@ -137821,7 +137821,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5613-385-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5613-385-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137895,7 +137895,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057388-124-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057388-124-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057388-124-COT26"
       }
     ],
     "items": [
@@ -137917,7 +137917,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057388-124-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057388-124-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -137991,7 +137991,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4494-476-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4494-476-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4494-476-COT26"
       }
     ],
     "items": [
@@ -138013,7 +138013,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4494-476-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4494-476-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138089,7 +138089,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3193-346-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3193-346-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3193-346-COT26"
       }
     ],
     "items": [
@@ -138111,7 +138111,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3193-346-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3193-346-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138187,7 +138187,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6010-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6010-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6010-COT26"
       }
     ],
     "items": [
@@ -138209,7 +138209,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6010-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6010-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138283,7 +138283,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233613-328-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233613-328-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233613-328-COT26"
       }
     ],
     "items": [
@@ -138305,7 +138305,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233613-328-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233613-328-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138379,7 +138379,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1274667-309-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274667-309-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1274667-309-COT26"
       }
     ],
     "items": [
@@ -138401,7 +138401,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1274667-309-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1274667-309-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138474,7 +138474,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3073-265-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3073-265-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3073-265-COT26"
       }
     ],
     "items": [
@@ -138496,7 +138496,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3073-265-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3073-265-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138569,7 +138569,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2583-651-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2583-651-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2583-651-COT26"
       }
     ],
     "items": [
@@ -138591,7 +138591,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2583-651-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2583-651-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138664,7 +138664,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1437-565-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1437-565-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1437-565-COT26"
       }
     ],
     "items": [
@@ -138686,7 +138686,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1437-565-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1437-565-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138759,7 +138759,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4291-1008-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1008-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4291-1008-COT26"
       }
     ],
     "items": [
@@ -138781,7 +138781,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1008-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4291-1008-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138854,7 +138854,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1425127-10-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1425127-10-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1425127-10-COT26"
       }
     ],
     "items": [
@@ -138876,7 +138876,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1425127-10-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1425127-10-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -138949,7 +138949,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5360-54-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5360-54-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5360-54-COT26"
       }
     ],
     "items": [
@@ -138971,7 +138971,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5360-54-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5360-54-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139044,7 +139044,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (699866-953-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=699866-953-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=699866-953-COT26"
       }
     ],
     "items": [
@@ -139066,7 +139066,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=699866-953-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=699866-953-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139139,7 +139139,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2018-33-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2018-33-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2018-33-COT26"
       }
     ],
     "items": [
@@ -139161,7 +139161,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2018-33-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2018-33-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139234,7 +139234,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6007-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6007-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6007-COT26"
       }
     ],
     "items": [
@@ -139256,7 +139256,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6007-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6007-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139330,7 +139330,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5061-487-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5061-487-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5061-487-COT26"
       }
     ],
     "items": [
@@ -139352,7 +139352,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5061-487-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5061-487-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139426,7 +139426,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1350803-27-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350803-27-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1350803-27-COT26"
       }
     ],
     "items": [
@@ -139448,7 +139448,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1350803-27-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1350803-27-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139521,7 +139521,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3478-244-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3478-244-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3478-244-COT26"
       }
     ],
     "items": [
@@ -139543,7 +139543,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3478-244-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3478-244-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139618,7 +139618,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (418-1231-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1231-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=418-1231-COT26"
       }
     ],
     "items": [
@@ -139640,7 +139640,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1231-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=418-1231-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139716,7 +139716,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3245-131-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3245-131-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3245-131-COT26"
       }
     ],
     "items": [
@@ -139738,7 +139738,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3245-131-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3245-131-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139812,7 +139812,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2341-382-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2341-382-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2341-382-COT26"
       }
     ],
     "items": [
@@ -139834,7 +139834,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2341-382-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2341-382-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -139909,7 +139909,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2328-961-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2328-961-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2328-961-COT26"
       }
     ],
     "items": [
@@ -139931,7 +139931,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2328-961-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2328-961-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140006,7 +140006,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (800-6006-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6006-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=800-6006-COT26"
       }
     ],
     "items": [
@@ -140028,7 +140028,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=800-6006-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=800-6006-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140101,7 +140101,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (545598-782-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=545598-782-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=545598-782-COT26"
       }
     ],
     "items": [
@@ -140123,7 +140123,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=545598-782-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=545598-782-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140196,7 +140196,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2803-142-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2803-142-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2803-142-COT26"
       }
     ],
     "items": [
@@ -140218,7 +140218,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2803-142-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2803-142-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140291,7 +140291,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057402-1085-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057402-1085-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057402-1085-COT26"
       }
     ],
     "items": [
@@ -140313,7 +140313,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057402-1085-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057402-1085-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140386,7 +140386,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2663-296-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2663-296-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2663-296-COT26"
       }
     ],
     "items": [
@@ -140408,7 +140408,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2663-296-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2663-296-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140481,7 +140481,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4355-798-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4355-798-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4355-798-COT26"
       }
     ],
     "items": [
@@ -140503,7 +140503,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4355-798-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4355-798-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140576,7 +140576,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1040758-164-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1040758-164-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1040758-164-COT26"
       }
     ],
     "items": [
@@ -140598,7 +140598,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1040758-164-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1040758-164-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140671,7 +140671,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4291-1017-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1017-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4291-1017-COT26"
       }
     ],
     "items": [
@@ -140693,7 +140693,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4291-1017-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4291-1017-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140766,7 +140766,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057792-44-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057792-44-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057792-44-COT26"
       }
     ],
     "items": [
@@ -140788,7 +140788,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057792-44-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057792-44-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140861,7 +140861,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (730357-15-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=730357-15-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=730357-15-COT26"
       }
     ],
     "items": [
@@ -140883,7 +140883,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=730357-15-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=730357-15-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -140956,7 +140956,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057535-130-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057535-130-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057535-130-COT26"
       }
     ],
     "items": [
@@ -140978,7 +140978,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057535-130-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057535-130-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141052,7 +141052,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3661-368-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3661-368-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3661-368-COT26"
       }
     ],
     "items": [
@@ -141074,7 +141074,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3661-368-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3661-368-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141148,7 +141148,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (707409-74-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=707409-74-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=707409-74-COT26"
       }
     ],
     "items": [
@@ -141170,7 +141170,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=707409-74-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=707409-74-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141243,7 +141243,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057792-43-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057792-43-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057792-43-COT26"
       }
     ],
     "items": [
@@ -141265,7 +141265,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057792-43-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057792-43-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141339,7 +141339,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2529-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2529-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2529-COT26"
       }
     ],
     "items": [
@@ -141361,7 +141361,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2529-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2529-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141435,7 +141435,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2129-69-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2129-69-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2129-69-COT26"
       }
     ],
     "items": [
@@ -141457,7 +141457,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2129-69-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2129-69-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141531,7 +141531,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5349-420-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5349-420-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5349-420-COT26"
       }
     ],
     "items": [
@@ -141553,7 +141553,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5349-420-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5349-420-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141627,7 +141627,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3888-758-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3888-758-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3888-758-COT26"
       }
     ],
     "items": [
@@ -141649,7 +141649,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3888-758-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3888-758-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141722,7 +141722,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4894-208-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4894-208-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4894-208-COT26"
       }
     ],
     "items": [
@@ -141744,7 +141744,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4894-208-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4894-208-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141818,7 +141818,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (545598-780-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=545598-780-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=545598-780-COT26"
       }
     ],
     "items": [
@@ -141840,7 +141840,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=545598-780-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=545598-780-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -141918,7 +141918,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2792-654-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2792-654-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2792-654-COT26"
       }
     ],
     "items": [
@@ -141940,7 +141940,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2792-654-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2792-654-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142017,7 +142017,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1058052-30-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058052-30-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1058052-30-COT26"
       }
     ],
     "items": [
@@ -142039,7 +142039,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1058052-30-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1058052-30-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142112,7 +142112,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2912-330-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2912-330-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2912-330-COT26"
       }
     ],
     "items": [
@@ -142134,7 +142134,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2912-330-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2912-330-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142207,7 +142207,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (508418-27-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=508418-27-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=508418-27-COT26"
       }
     ],
     "items": [
@@ -142229,7 +142229,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=508418-27-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=508418-27-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142303,7 +142303,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3328-1333-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1333-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3328-1333-COT26"
       }
     ],
     "items": [
@@ -142325,7 +142325,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3328-1333-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3328-1333-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142400,7 +142400,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2427-883-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-883-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2427-883-COT26"
       }
     ],
     "items": [
@@ -142422,7 +142422,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2427-883-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2427-883-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142496,7 +142496,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1138111-21-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1138111-21-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1138111-21-COT26"
       }
     ],
     "items": [
@@ -142518,7 +142518,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1138111-21-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1138111-21-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142591,7 +142591,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2628-444-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2628-444-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2628-444-COT26"
       }
     ],
     "items": [
@@ -142613,7 +142613,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2628-444-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2628-444-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142686,7 +142686,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4642-191-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4642-191-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4642-191-COT26"
       }
     ],
     "items": [
@@ -142708,7 +142708,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4642-191-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4642-191-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142782,7 +142782,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2502-87-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2502-87-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2502-87-COT26"
       }
     ],
     "items": [
@@ -142804,7 +142804,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2502-87-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2502-87-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142878,7 +142878,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4020-691-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4020-691-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4020-691-COT26"
       }
     ],
     "items": [
@@ -142900,7 +142900,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4020-691-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4020-691-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -142973,7 +142973,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3587-192-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3587-192-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3587-192-COT26"
       }
     ],
     "items": [
@@ -142995,7 +142995,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3587-192-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3587-192-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143069,7 +143069,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3502-288-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3502-288-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3502-288-COT26"
       }
     ],
     "items": [
@@ -143091,7 +143091,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3502-288-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3502-288-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143165,7 +143165,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3947-496-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3947-496-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3947-496-COT26"
       }
     ],
     "items": [
@@ -143187,7 +143187,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3947-496-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3947-496-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143260,7 +143260,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057973-5-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057973-5-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057973-5-COT26"
       }
     ],
     "items": [
@@ -143373,7 +143373,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057973-5-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057973-5-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143446,7 +143446,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057535-128-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057535-128-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057535-128-COT26"
       }
     ],
     "items": [
@@ -143468,7 +143468,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057535-128-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057535-128-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143541,7 +143541,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3947-495-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3947-495-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3947-495-COT26"
       }
     ],
     "items": [
@@ -143570,7 +143570,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3947-495-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3947-495-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143644,7 +143644,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4105-482-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4105-482-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4105-482-COT26"
       }
     ],
     "items": [
@@ -143666,7 +143666,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4105-482-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4105-482-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143743,7 +143743,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2500-71-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2500-71-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2500-71-COT26"
       }
     ],
     "items": [
@@ -143765,7 +143765,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2500-71-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2500-71-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143844,7 +143844,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2048-416-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2048-416-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2048-416-COT26"
       }
     ],
     "items": [
@@ -143901,7 +143901,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2048-416-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2048-416-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -143978,7 +143978,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (681006-29-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=681006-29-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=681006-29-COT26"
       }
     ],
     "items": [
@@ -144000,7 +144000,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=681006-29-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=681006-29-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144075,7 +144075,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1298355-928-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1298355-928-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1298355-928-COT26"
       }
     ],
     "items": [
@@ -144097,7 +144097,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1298355-928-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1298355-928-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144171,7 +144171,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2547-173-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2547-173-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2547-173-COT26"
       }
     ],
     "items": [
@@ -144193,7 +144193,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2547-173-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2547-173-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144267,7 +144267,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5349-417-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5349-417-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5349-417-COT26"
       }
     ],
     "items": [
@@ -144289,7 +144289,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5349-417-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5349-417-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144365,7 +144365,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2409-1226-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1226-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2409-1226-COT26"
       }
     ],
     "items": [
@@ -144387,7 +144387,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2409-1226-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2409-1226-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144462,7 +144462,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (617807-2023-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=617807-2023-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=617807-2023-COT26"
       }
     ],
     "items": [
@@ -144484,7 +144484,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=617807-2023-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=617807-2023-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144558,7 +144558,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057417-3538-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057417-3538-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057417-3538-COT26"
       }
     ],
     "items": [
@@ -144580,7 +144580,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057417-3538-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057417-3538-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144654,7 +144654,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5349-414-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5349-414-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5349-414-COT26"
       }
     ],
     "items": [
@@ -144676,7 +144676,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5349-414-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5349-414-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144750,7 +144750,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (418-1230-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1230-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=418-1230-COT26"
       }
     ],
     "items": [
@@ -144912,7 +144912,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=418-1230-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=418-1230-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -144986,7 +144986,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4140-56-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4140-56-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4140-56-COT26"
       }
     ],
     "items": [
@@ -145008,7 +145008,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4140-56-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4140-56-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145081,7 +145081,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1488587-59-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1488587-59-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1488587-59-COT26"
       }
     ],
     "items": [
@@ -145103,7 +145103,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1488587-59-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1488587-59-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145176,7 +145176,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5485-639-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5485-639-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5485-639-COT26"
       }
     ],
     "items": [
@@ -145198,7 +145198,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5485-639-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5485-639-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145271,7 +145271,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (635-450-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=635-450-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=635-450-COT26"
       }
     ],
     "items": [
@@ -145293,7 +145293,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=635-450-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=635-450-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145368,7 +145368,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3759-236-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3759-236-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3759-236-COT26"
       }
     ],
     "items": [
@@ -145390,7 +145390,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3759-236-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3759-236-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145465,7 +145465,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4895-154-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4895-154-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4895-154-COT26"
       }
     ],
     "items": [
@@ -145487,7 +145487,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4895-154-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4895-154-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145561,7 +145561,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3759-235-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3759-235-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3759-235-COT26"
       }
     ],
     "items": [
@@ -145583,7 +145583,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3759-235-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3759-235-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145657,7 +145657,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (707415-50-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=707415-50-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=707415-50-COT26"
       }
     ],
     "items": [
@@ -145679,7 +145679,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=707415-50-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=707415-50-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145754,7 +145754,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5420-81-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5420-81-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5420-81-COT26"
       }
     ],
     "items": [
@@ -145776,7 +145776,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5420-81-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5420-81-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145851,7 +145851,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5420-80-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5420-80-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5420-80-COT26"
       }
     ],
     "items": [
@@ -145873,7 +145873,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5420-80-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5420-80-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -145946,7 +145946,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2341-381-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2341-381-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2341-381-COT26"
       }
     ],
     "items": [
@@ -145968,7 +145968,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2341-381-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2341-381-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146041,7 +146041,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233623-511-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233623-511-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233623-511-COT26"
       }
     ],
     "items": [
@@ -146063,7 +146063,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233623-511-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233623-511-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146136,7 +146136,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2792-653-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2792-653-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2792-653-COT26"
       }
     ],
     "items": [
@@ -146158,7 +146158,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2792-653-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2792-653-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146232,7 +146232,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4062-688-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4062-688-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4062-688-COT26"
       }
     ],
     "items": [
@@ -146254,7 +146254,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4062-688-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4062-688-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146328,7 +146328,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3597-655-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3597-655-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3597-655-COT26"
       }
     ],
     "items": [
@@ -146350,7 +146350,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3597-655-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3597-655-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146423,7 +146423,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1422051-250-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1422051-250-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1422051-250-COT26"
       }
     ],
     "items": [
@@ -146445,7 +146445,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1422051-250-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1422051-250-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146518,7 +146518,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2535-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2535-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2535-COT26"
       }
     ],
     "items": [
@@ -146540,7 +146540,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2535-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2535-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146615,7 +146615,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3597-656-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3597-656-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3597-656-COT26"
       }
     ],
     "items": [
@@ -146651,7 +146651,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3597-656-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3597-656-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146726,7 +146726,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2765-416-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2765-416-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2765-416-COT26"
       }
     ],
     "items": [
@@ -146748,7 +146748,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2765-416-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2765-416-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146824,7 +146824,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4152-633-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4152-633-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4152-633-COT26"
       }
     ],
     "items": [
@@ -146846,7 +146846,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4152-633-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4152-633-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -146923,7 +146923,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3515-390-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3515-390-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3515-390-COT26"
       }
     ],
     "items": [
@@ -146945,7 +146945,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3515-390-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3515-390-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -147020,7 +147020,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1233623-510-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233623-510-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1233623-510-COT26"
       }
     ],
     "items": [
@@ -147042,7 +147042,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1233623-510-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1233623-510-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -147116,7 +147116,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2288-564-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2288-564-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2288-564-COT26"
       }
     ],
     "items": [
@@ -147138,7 +147138,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2288-564-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2288-564-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -147211,7 +147211,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5440-11-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5440-11-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5440-11-COT26"
       }
     ],
     "items": [
@@ -147233,7 +147233,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5440-11-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5440-11-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -147311,7 +147311,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3703-333-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3703-333-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3703-333-COT26"
       }
     ],
     "items": [
@@ -147410,7 +147410,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3703-333-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3703-333-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -147488,7 +147488,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2887-86-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2887-86-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2887-86-COT26"
       }
     ],
     "items": [
@@ -147510,7 +147510,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2887-86-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2887-86-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -147583,7 +147583,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1183926-174-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1183926-174-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1183926-174-COT26"
       }
     ],
     "items": [
@@ -147605,7 +147605,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1183926-174-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1183926-174-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -147678,7 +147678,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2407-512-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2407-512-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2407-512-COT26"
       }
     ],
     "items": [
@@ -147987,7 +147987,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2407-512-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2407-512-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -148060,7 +148060,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2686-391-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2686-391-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2686-391-COT26"
       }
     ],
     "items": [
@@ -148082,7 +148082,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2686-391-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2686-391-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -148156,7 +148156,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (5067-1981-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1981-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=5067-1981-COT26"
       }
     ],
     "items": [
@@ -148178,7 +148178,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=5067-1981-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=5067-1981-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -148252,7 +148252,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1081640-5-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1081640-5-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1081640-5-COT26"
       }
     ],
     "items": [
@@ -148274,7 +148274,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1081640-5-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1081640-5-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -148348,7 +148348,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1969-496-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1969-496-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1969-496-COT26"
       }
     ],
     "items": [
@@ -148475,7 +148475,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1969-496-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1969-496-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -148549,7 +148549,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1431841-939-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1431841-939-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1431841-939-COT26"
       }
     ],
     "items": [
@@ -148571,7 +148571,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1431841-939-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1431841-939-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -148644,7 +148644,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1251183-150-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1251183-150-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1251183-150-COT26"
       }
     ],
     "items": [
@@ -148841,7 +148841,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1251183-150-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1251183-150-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -148914,7 +148914,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4013-168-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4013-168-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4013-168-COT26"
       }
     ],
     "items": [
@@ -148936,7 +148936,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4013-168-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4013-168-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149009,7 +149009,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1469-2531-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2531-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1469-2531-COT26"
       }
     ],
     "items": [
@@ -149031,7 +149031,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1469-2531-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1469-2531-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149105,7 +149105,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3704-151-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3704-151-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3704-151-COT26"
       }
     ],
     "items": [
@@ -149127,7 +149127,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3704-151-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3704-151-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149201,7 +149201,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2291-810-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-810-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2291-810-COT26"
       }
     ],
     "items": [
@@ -149223,7 +149223,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2291-810-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2291-810-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149297,7 +149297,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2393-1156-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2393-1156-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2393-1156-COT26"
       }
     ],
     "items": [
@@ -149319,7 +149319,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2393-1156-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2393-1156-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149394,7 +149394,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2686-390-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2686-390-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2686-390-COT26"
       }
     ],
     "items": [
@@ -149416,7 +149416,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2686-390-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2686-390-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149491,7 +149491,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (557974-370-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557974-370-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=557974-370-COT26"
       }
     ],
     "items": [
@@ -149513,7 +149513,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=557974-370-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=557974-370-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149588,7 +149588,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1057430-891-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057430-891-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1057430-891-COT26"
       }
     ],
     "items": [
@@ -149638,7 +149638,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1057430-891-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1057430-891-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149712,7 +149712,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (3743-194-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3743-194-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=3743-194-COT26"
       }
     ],
     "items": [
@@ -149769,7 +149769,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=3743-194-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=3743-194-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149845,7 +149845,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (4105-480-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4105-480-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=4105-480-COT26"
       }
     ],
     "items": [
@@ -149867,7 +149867,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=4105-480-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=4105-480-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -149943,7 +149943,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2778-426-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2778-426-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2778-426-COT26"
       }
     ],
     "items": [
@@ -149965,7 +149965,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2778-426-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2778-426-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -150039,7 +150039,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (858-150-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=858-150-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=858-150-COT26"
       }
     ],
     "items": [
@@ -150061,7 +150061,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=858-150-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=858-150-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -150135,7 +150135,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2778-425-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2778-425-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2778-425-COT26"
       }
     ],
     "items": [
@@ -150157,7 +150157,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2778-425-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2778-425-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -150230,7 +150230,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (1115456-49-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1115456-49-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=1115456-49-COT26"
       }
     ],
     "items": [
@@ -150252,7 +150252,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=1115456-49-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=1115456-49-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",
@@ -150326,7 +150326,7 @@ const rawOportunidades: any = [
       {
         "nombre": "Ver Ficha Oficial en Mercado Público (2374-108-COT26)",
         "tipo": "link",
-        "tamanho": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2374-108-COT26"
+        "tamanho": "https://buscador.mercadopublico.cl/ficha?code=2374-108-COT26"
       }
     ],
     "items": [
@@ -150348,7 +150348,7 @@ const rawOportunidades: any = [
     "subestadoEvaluacion": "Sin oferta seleccionada",
     "sourceSystem": "mercadopublico_api_compraagil_v2",
     "sourceType": "compra_agil",
-    "sourceUrl": "https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion=2374-108-COT26",
+    "sourceUrl": "https://buscador.mercadopublico.cl/ficha?code=2374-108-COT26",
     "fetchedAt": "2026-08-20T10:16:28.965832+00:00",
     "lastVerifiedAt": "2026-08-20T10:16:28.965832+00:00",
     "validationStatus": "confirmado",

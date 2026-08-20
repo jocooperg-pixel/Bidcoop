@@ -364,7 +364,13 @@ def get_tipo_from_code(code: str) -> str:
 
 def build_official_url(code: str, tipo: str) -> str:
     if tipo in ("CO", "COT"):
-        return f"https://www.mercadopublico.cl/Procurement/Modules/DAP/Details.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion={code}"
+        # Compra Ágil vive en un buscador SPA separado (subdominio propio,
+        # lanzado junto con la API v2), no en las rutas /Procurement/... del
+        # portal legacy. La ruta vieja (DAP/Details.aspx) daba 404 real —
+        # confirmado en vivo el 2026-08-20 navegando el sitio: el link real
+        # que arma buscador.mercadopublico.cl al abrir el detalle de un
+        # proceso es esta.
+        return f"https://buscador.mercadopublico.cl/ficha?code={code}"
     if tipo == "CM":
         return f"https://www.mercadopublico.cl/cmr/asp/cmr_listado_oc.aspx"
     return f"https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94bVIVFUe5Sth1FXBBAA==&IdLicitacion={code}"
