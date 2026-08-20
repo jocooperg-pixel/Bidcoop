@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-20T10:16:28.965832+00:00",
-  "ultimoIntentoRealizado": "2026-08-20T10:16:28.965832+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-20T12:19:19.314344+00:00",
+  "ultimoIntentoRealizado": "2026-08-20T12:19:19.314344+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1406,
-  "registrosConfirmados": 1406,
+  "registrosEnPlataforma": 1420,
+  "registrosConfirmados": 1420,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1125,
-  "excluidosPrefiltroIrrelevante": 7043,
-  "excluidosSinDatosReales": 13,
+  "registrosConMontoReal": 1135,
+  "excluidosPrefiltroIrrelevante": 7048,
+  "excluidosSinDatosReales": 5,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 797,
-    "conMontoValido": 793,
+    "total": 802,
+    "conMontoValido": 798,
     "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 793,
+      "VALIDADO": 798,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 252726434,
-    "montoFinalSum": 1239340890,
-    "montoRecuperadoSum": 986614456
+    "montoOriginalSum": 266980256,
+    "montoFinalSum": 1246724752,
+    "montoRecuperadoSum": 979744496
   },
   "categorias": {
-    "licitaciones": 605,
-    "comprasAgiles": 797,
+    "licitaciones": 614,
+    "comprasAgiles": 802,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 111,
+    "LP": 112,
     "CO": 10,
-    "LE": 376,
+    "LE": 384,
     "LR": 43,
     "E2": 5,
     "I2": 3,
@@ -43,17 +43,17 @@
     "LS": 2,
     "O1": 4,
     "B2": 2,
-    "COT": 787
+    "COT": 792
   },
   "matchPorEmpresa": {
-    "Aminorte": 1200,
-    "V-MOCCS": 206
+    "Aminorte": 1212,
+    "V-MOCCS": 208
   },
   "cambios": {
     "comparadoContra": "2026-08-19T18:58:48.464135+00:00",
-    "nuevosCount": 517,
+    "nuevosCount": 523,
     "modificadosCount": 23,
-    "cerradosCount": 714,
+    "cerradosCount": 706,
     "nuevos": [
       {
         "codigo": "707419-31-LP26",
@@ -870,14 +870,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1260058-2-LE26",
-        "titulo": "“SUMINISTRO DE ANTISÉPTICOS DESINFECTANTES DETERGENTES Y SOLVENTES DE USO HOSPITALARIO Y PRODUCTOS CLÍNICOS SOBRE TEJIDO HUMANO ",
-        "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE P",
-        "estadoAnterior": "Adjudicada",
-        "monto": 69000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1562-40-LE26",
         "titulo": "ASEO RECEPCIONISTA MENSAJERIA CCS",
         "organismo": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA",
@@ -907,22 +899,6 @@
         "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
         "estadoAnterior": "Cerrada",
         "monto": 31989200,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3109-4-LE26",
-        "titulo": "HARDWARE PARA SERVIDORES SUBDEPTO. T.I",
-        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-        "estadoAnterior": "Cerrada",
-        "monto": 28000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2324-97-LE26",
-        "titulo": "LICITACION PÚBLICA N° 112026 SERVICIO DE RECEPCIÓN Y DISPOSICIÓN FINAL DE ESCOMBROS CALCINADOS PROVENIENTES DE INCENDIOS EN LA COMUNA DE PUERTO MONTT DIMAO",
-        "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
-        "estadoAnterior": "Cerrada",
-        "monto": 27840000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -979,14 +955,6 @@
         "organismo": "I MUNICIPALIDAD DE LA GRANJA",
         "estadoAnterior": "Cerrada",
         "monto": 12500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1133353-31-LE26",
-        "titulo": "RODILLO COMPACTADOR VIBRATORIO DE DOBLE TAMBOR PARA LA COMUNA DE RAUCO",
-        "organismo": "I MUNICIPALIDAD DE RAUCO",
-        "estadoAnterior": "Adjudicada",
-        "monto": 12100000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1308,10 +1276,42 @@
         "estadoAnterior": "Publicada",
         "monto": 6000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "800-5997-COT26",
+        "titulo": " 70.0011 SILLA DE RUEDA,RUEDA INFLABLE T/46 DE ALUMINIO DU",
+        "organismo": "UNIVERSIDAD DE CHILE",
+        "estadoAnterior": "Publicada",
+        "monto": 6000000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "800-5995-COT26",
+        "titulo": "70.0011 SILLA DE RUEDA,RUEDA INFLABLE T/46 DE ALUMINIO DU",
+        "organismo": "UNIVERSIDAD DE CHILE",
+        "estadoAnterior": "Publicada",
+        "monto": 6000000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "800-5994-COT26",
+        "titulo": " 70.0011 SILLA DE RUEDA,RUEDA INFLABLE T/46 DE ALUMINIO DU",
+        "organismo": "UNIVERSIDAD DE CHILE",
+        "estadoAnterior": "Publicada",
+        "monto": 6000000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "5067-1979-COT26",
+        "titulo": "Sol.92577 CC83 / Adquisición de Proyectores",
+        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
+        "estadoAnterior": "Publicada",
+        "monto": 6000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2422.2,
+  "tiempoEjecucionSegundos": 1512.2,
   "errores": [],
   "advertencias": []
 }
