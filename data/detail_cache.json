@@ -2758,10 +2758,10 @@
     "data": {
       "CodigoExterno": "1005498-17-LP26",
       "Nombre": "Servicio de mantención equipos de climatización",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "La Comisión para el Mercado Financiero, requiere contratar los servicios de mantención preventiva, correctiva y de emergencia de los equipos de climatización general por 24 meses, de sus sedes ubicadas en Avenida Libertador Bernardo O’Higgins N°1449, Torre I, pisos 8° al 12°; Torre II, piso 2° y Moneda N°1123, pisos 3° al 14°, comuna de Santiago.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7016",
         "NombreOrganismo": "COMISION PARA EL MERCADO FINANCIERO",
@@ -2783,7 +2783,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -2856,8 +2856,8 @@
         ]
       }
     },
-    "ts": 1787150037.241805,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242808.722075,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1011183-7-LE26": {
     "data": {
@@ -12195,111 +12195,6 @@
     },
     "ts": 1786301449.342752,
     "fetchedAt": "2026-08-09T14:39:05.946758"
-  },
-  "1057049-269-LE26": {
-    "data": {
-      "CodigoExterno": "1057049-269-LE26",
-      "Nombre": "MCO MANTENIMIENTO CORRECTIVO MANEJADORAS DE AIRE CHILLER Y BOMBAS DE RECIRCULACIÓN SISTEMA VENTILACIÓN Y CLIMATIZACIÓN PABELLONES ROBÓTICA Y HEMODINAMIA DEL HOSPITAL CLÍNICO SAN BORJA ARRIARÁN",
-      "CodigoEstado": 6,
-      "Descripcion": "MANTENIMIENTO CORRECTIVO MANEJADORAS DE AIRE, CHILLER Y BOMBAS DE RECIRCULACIÓN SISTEMA VENTILACIÓN Y CLIMATIZACIÓN PABELLONES ROBÓTICA Y HEMODINAMIA DEL HOSPITAL CLÍNICO SAN BORJA ARRIARÁN",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "7326",
-        "NombreOrganismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
-        "RutUnidad": "61.608.604-9",
-        "CodigoUnidad": "1057049",
-        "NombreUnidad": "Bienes y Servicios",
-        "DireccionUnidad": "Santa Rosa 1234",
-        "ComunaUnidad": "Santiago",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "2376712",
-        "NombreUsuario": "Maximiliano Cortés Oyanedel",
-        "CargoUsuario": "Ejecutivo de Compras"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 4675,
-      "Fechas": {
-        "FechaCreacion": "2026-07-29T00:00:00",
-        "FechaCierre": "2026-08-17T15:30:00",
-        "FechaInicio": "2026-07-29T17:03:00",
-        "FechaFinal": "2026-08-03T12:00:00",
-        "FechaPubRespuestas": "2026-08-05T16:00:00",
-        "FechaActoAperturaTecnica": "2026-08-17T15:31:00",
-        "FechaActoAperturaEconomica": "2026-08-17T15:31:00",
-        "FechaPublicacion": "2026-07-29T16:45:00",
-        "FechaAdjudicacion": "2026-10-11T16:00:00",
-        "FechaEstimadaAdjudicacion": "2026-10-11T16:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": "1900-01-02T00:00:00",
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Silvana Aceto Cassi",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Juan Carlos Araneda Barria",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "RESOL 1961 27.07.2026",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 40101501,
-            "CodigoCategoria": "40101500",
-            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control de temperatura y ventilación / Ventilación",
-            "NombreProducto": "Colectores de aire",
-            "Descripcion": "837-0091 | MANTENIMIENTO CORRECTIVO MANEJADORAS DE AIRE, CHILLER Y BOMBAS DE RECIRCULACIÓN SISTEMA VENTILACIÓN Y CLIMATIZACIÓN PABELLONES ROBÓTICA Y HEMODINAMIA",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787154576.918231,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
   },
   "1057049-271-LE26": {
     "data": {
@@ -130014,8 +129909,8 @@
         ]
       }
     },
-    "ts": 1787154799.695287,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242898.2912393,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1208985-7-LP26": {
     "data": {
@@ -147796,10 +147691,10 @@
     "data": {
       "CodigoExterno": "1247197-54-LE26",
       "Nombre": "ADQUISICIÓN DE PLOTTER GRAN FORMATO NUEVO RES. 341",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "El objetivo de este proceso de licitación pública es celebrar la contratación del suministro del mencionado equipo y sus componentes, los cuales deberán ser entregados instalados, probados, en correcto funcionamiento y con garantía técnica, asegurando así su adecuado uso en la elaboración de material gráfico para la difusión de actividades, operativos y campañas de prevención y salud de la red municipal.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "1801813",
         "NombreOrganismo": "CORP MUNICIPAL DE CONCHALI DE EDUCACION SALUD Y ATENCION DE MENORES",
@@ -147821,7 +147716,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -147894,8 +147789,8 @@
         ]
       }
     },
-    "ts": 1787150066.7069418,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242809.2668378,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1247197-55-LE26": {
     "data": {
@@ -160034,111 +159929,6 @@
     "ts": 1786312981.8064709,
     "fetchedAt": "2026-08-09T17:37:51.604625"
   },
-  "1196-14-L126": {
-    "data": {
-      "CodigoExterno": "1196-14-L126",
-      "Nombre": "Seguros incendio, sismo, inundación, tsunami, riesgos de la naturaleza, riesgos políticos , robos , incluye el resguardo de muebles, equipos y máquinas de todo el edificio CER",
-      "CodigoEstado": 6,
-      "Descripcion": "SEGURO DE ROBO, INCENDIO Y CATASTROFE (SISMO-TSUNAMI-LLUVIA-VIENTO) DE MUEBLES, EQUIPOS\nPERIFERICOS, MAQUINAS DE OFICINA, ESCRITORIOS, SILLAS, KARDEX, ESTACIONES DE TRABAJO,SILLONES, ESTANTES, BIBLIOTECAS, MESA DE REUNIONES, NOTEBOOK, COMPUTADORES, IMPRESORAS, SCANNER, FOTOCOPIAS, EQUIPOS DE SONIDOS Y AMPLIFICACION, CAMARAS DIGITALES, DATA SHOW, TELEVISORES, LCD, CAMARAS DE VIGILANCIA, COCINAS, REFRIGERADOR, MICROONDAS, EQUIPOS DE SERVIDOR, TELEFONOS, CELULARES, SISTEMA DE RED COMPUTACIONAL, MA",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "7216",
-        "NombreOrganismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "RutUnidad": "61.107.000-4",
-        "CodigoUnidad": "2192",
-        "NombreUnidad": "I.ND. REGION I",
-        "DireccionUnidad": "SANTIAGO POLANCO 2201",
-        "ComunaUnidad": "Iquique",
-        "RegionUnidad": "Región de Tarapacá  ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1427502",
-        "NombreUsuario": "Manuel Saavedra Venegas",
-        "CargoUsuario": "Unidad de Administración y Finanzas"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "L1",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 382,
-      "Fechas": {
-        "FechaCreacion": "2026-08-05T10:39:31.47",
-        "FechaCierre": "2026-08-17T15:00:00",
-        "FechaInicio": "2026-08-07T12:09:00.8",
-        "FechaFinal": "2026-08-11T14:00:00",
-        "FechaPubRespuestas": "2026-08-12T14:00:00",
-        "FechaActoAperturaTecnica": "2026-08-18T14:40:00",
-        "FechaActoAperturaEconomica": "2026-08-18T14:40:00",
-        "FechaPublicacion": "2026-08-07T12:09:00.8",
-        "FechaAdjudicacion": "2026-09-01T14:40:00",
-        "FechaEstimadaAdjudicacion": "2026-09-01T14:40:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 2,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 6350000,
-      "Tiempo": null,
-      "UnidadTiempo": "2",
-      "Modalidad": 0,
-      "TipoPago": "-1",
-      "NombreResponsablePago": "",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 0,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "1",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "0",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 84131501,
-            "CodigoCategoria": "84131500",
-            "Categoria": "Servicios financieros, pensiones y seguros / Seguros y jubilación / Seguros para estructuras, propiedades y bienes",
-            "NombreProducto": "Seguros de edificios o de su contenido",
-            "Descripcion": "SEGURO DE ROBO, INCENDIO Y CATASTROFE \n",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787155315.155902,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
-  },
   "1350296-74-LP26": {
     "data": {
       "CodigoExterno": "1350296-74-LP26",
@@ -160314,10 +160104,10 @@
     "data": {
       "CodigoExterno": "1380-159-LE26",
       "Nombre": "PPTA 271-26 ADQUISICION DE IMPRESORAS TERMICAS PARA EL HOSPITAL DR. HERNAN HENRIQUEZ ARAVENA",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "La presente licitación tiene por objeto la adquisición de un total de treinta y siete (37) impresoras térmicas para diferentes Servicios Clínicos del Hospital, en adelante, \"los Equipos\", de acuerdo con las condiciones establecidas en las presentes Bases Administrativas, Bases Técnicas y demás antecedentes que forman parte integrante del proceso licitatorio.\r\n\r\nLa cantidad de 32 impresoras tienen como finalidad implementar la Nota Técnica N°245 sobre Seguridad y Calidad de la Atención del Paciente: Identificación de Pacientes, permitiendo incorporar la impresión de brazaletes de identificación en aquellos servicios donde actualmente no se realiza dicho procedimiento. Asimismo, considera la reposición de equipos existentes que han cumplido su vida útil o requieren ser reemplazados para asegurar la continuidad operativa.\r\n\r\nAdicionalmente, cinco (5) impresoras serán destinadas como respaldo estratégico para atender fallas de los equipos en operación y cubrir nuevos requerimientos derivados de la implementación y funcionamiento de los sistemas institucionales, tales como Anatomía Patológica, Sistema de Laboratorio, Sistema de Información Hospitalaria (HIS) y Sistema de Farmacia, garantizando la continuidad de los procesos asistenciales y la correcta identificación de pacientes.\r\n\r\nLa provisión de los equipos deberá incluir todos los elementos necesarios para su correcta instalación, puesta en marcha, configuración, pruebas de funcionamiento y capacitación de los usuarios, así como cualquier otro costo asociado que resulte necesario para su adecuada operación, de conformidad con lo establecido en las presentes bases y especificaciones técnicas.\r\n\r\nLa presente licitación contempla una visita a terreno de carácter obligatorio, la cual será coordinada por el Inspector Técnico del Contrato (ITC) una vez iniciado el proceso de evaluación de las ofertas.\r\nCon ocasión de dicha visita, el oferente deberá presentar una impresora de muestra, la que será sometida a pruebas de funcionamiento e interoperabilidad con los siguientes sistemas institucionales:\r\n\r\n•\tSistema Pathient (Anatomía Patológica).\r\n•\tSistema de Laboratorio LIS (con Zebracheck).\r\n•\tSistema HIS (Hospitalizado con brazaletes).\r\n•\tSistema SSASUR (Farmacia).\r\n\r\n Será requisito de ADMISIBILIDAD que la impresora no presente problemas o fallas en dicho procedimiento.  \r\n\r\n",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7046",
         "NombreOrganismo": "HOSPITAL DOCTOR HERNAN HENRIQUEZ ARAVENA",
@@ -160339,7 +160129,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -160412,8 +160202,8 @@
         ]
       }
     },
-    "ts": 1787150071.500072,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242842.4286597,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1380371-11-LE26": {
     "data": {
@@ -162956,8 +162746,8 @@
         ]
       }
     },
-    "ts": 1787154577.776578,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242873.117807,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1949-1-LP26": {
     "data": {
@@ -163063,111 +162853,6 @@
     },
     "ts": 1787150121.067845,
     "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
-  "2006-12-LE26": {
-    "data": {
-      "CodigoExterno": "2006-12-LE26",
-      "Nombre": "Mat.base Gran Cruce G-814 La Arboleda-La Rinconada",
-      "CodigoEstado": 6,
-      "Descripcion": "Material Granular para uso de Recebo con un CBR 100% TMáx abs 40máx L.L= 25 máx. banda granular chancada (tipo Achupallas) IP 6 máx. 55% de chancado en Camino Cruce G-814 (La Arboleda) – La Rinconada del Km 7,000 al Km 8,500 de la Comuna de San Antonio, Dirección de Vialidad",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "7248",
-        "NombreOrganismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "RutUnidad": "61.202.000-0",
-        "CodigoUnidad": "3001",
-        "NombreUnidad": "Dirección de Vialidad - V Región - Provincia de San Antonio",
-        "DireccionUnidad": "La Marina 1770, Barrancas",
-        "ComunaUnidad": "San Antonio",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2243811",
-        "NombreUsuario": "Andrea Godoy Ramirez",
-        "CargoUsuario": "Encargada de Adquisiciones"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 461,
-      "Fechas": {
-        "FechaCreacion": "2026-08-06T00:00:00",
-        "FechaCierre": "2026-08-17T15:00:00",
-        "FechaInicio": "2026-08-07T11:36:00",
-        "FechaFinal": "2026-08-10T17:00:00",
-        "FechaPubRespuestas": "2026-08-12T18:00:00",
-        "FechaActoAperturaTecnica": "2026-08-17T15:02:00",
-        "FechaActoAperturaEconomica": "2026-08-17T15:02:00",
-        "FechaPublicacion": "2026-08-07T11:32:30.313",
-        "FechaAdjudicacion": "2026-08-21T17:00:00",
-        "FechaEstimadaAdjudicacion": "2026-08-21T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "31",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 55442000,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Carmen Arriagada",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Cristian Duvingelo Figueroa",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "El adjudicatario será el exclusivo empleador del personal que destine al cumplimiento de las obligaciones derivadas del contrato que se suscriba. El personal deberá ser contratado de acuerdo a las normas del código del Trabajo.",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "El presupuesto esta destinado a financiar el valor de la contratacion y los impuestos que corresponden.",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 11111611,
-            "CodigoCategoria": "11111600",
-            "Categoria": "Productos derivados de minerales, plantas y animales / Tierra y piedra / Piedras",
-            "NombreProducto": "Grava",
-            "Descripcion": "Material Granular para uso de Recebo con un CBR 100% TMáx abs 40máx L.L= 25 máx. banda granular chancada (tipo Achupallas) IP 6 máx. 55% de chancado en Camino Camino Cruce G-814(La Arboleda) – La Rinconada Km 7.000 al Km 8.500, Comuna de San Antonio.",
-            "UnidadMedida": "Metro Cúbico",
-            "Cantidad": 2000,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787154590.0308568,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
   },
   "2031-1-LE26": {
     "data": {
@@ -163504,10 +163189,10 @@
     "data": {
       "CodigoExterno": "2078-33-LE26",
       "Nombre": "SERVICIOS DE MANTENCION PREVENTIVA DE EQUIPIOS DE AIRE ACONDICIONADO DE LA SEREMI DE SALUD REGION DE BIOBIO SC75",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "PROVEER CONTRATACIÓN DE SERVICIOS DE MANTENCION PREVENTIVA DE EQUIPIOS DE AIRE ACONDICIONADO DE LA SEREMI DE SALUD REGION DE BIOBIO SC75. VISITA DE TERRENO OBLIGATORIA: Lunes 10.08.26, 12:00 hrs. Of. Central, Ohiggins 241, Of. 510, Concepción.  Martes 11.08.26, 12:00 hrs. D. Biobío, Avda. Ricardo Vicuña 371, Los Ángeles. Miércoles 12.08.26, 12:00 hrs. D. Arauco, Rioseco 25, Lebu. ",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7079",
         "NombreOrganismo": "SUBSECRETARIA DE SALUD PUBLICA",
@@ -163529,7 +163214,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -163602,8 +163287,8 @@
         ]
       }
     },
-    "ts": 1787150136.3593228,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242846.4068549,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2080-233-LP26": {
     "data": {
@@ -164679,10 +164364,10 @@
     "data": {
       "CodigoExterno": "2328-49-LE26",
       "Nombre": "LICITACIÓN PÚBLICA E-592026 “ADQUISICION E INSTALACION DE PIZARRAS INTERACTIVAS PARA LICEO ANDRES BELLO DEPENDIENTE DEL D.A.E.M. DE PUERTO MONTT FONDOS SEP 2026”",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "LICITACIÓN PÚBLICA E-59/2026 “ADQUISICION E INSTALACION DE PIZARRAS INTERACTIVAS PARA LICEO ANDRES BELLO DEPENDIENTE DEL D.A.E.M. DE PUERTO MONTT, FONDOS SEP 2026”",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "86507",
         "NombreOrganismo": "I MUNICIPALIDAD DE PUERTO MONTT",
@@ -164704,13 +164389,13 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 2,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "2",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 2517,
+      "CantidadReclamos": 2518,
       "Fechas": {
         "FechaCreacion": "2026-08-06T00:00:00",
         "FechaCierre": "2026-08-19T16:15:00",
@@ -164788,8 +164473,8 @@
         ]
       }
     },
-    "ts": 1787150154.1875122,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242773.9034166,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2405-121-LE26": {
     "data": {
@@ -165425,10 +165110,10 @@
     "data": {
       "CodigoExterno": "2460-92-LE26",
       "Nombre": "ADQUISICIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA LA MUNICIPALIDAD DE PROVIDENCIA",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "ADQUISICIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA LA MUNICIPALIDAD DE PROVIDENCIA",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "88102",
         "NombreOrganismo": "I MUNICIPALIDAD DE PROVIDENCIA",
@@ -165450,7 +165135,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -165523,8 +165208,8 @@
         ]
       }
     },
-    "ts": 1787150182.0823832,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242823.4579265,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2490-73-LR26": {
     "data": {
@@ -165879,122 +165564,6 @@
     },
     "ts": 1786805228.404075,
     "fetchedAt": "2026-08-15T14:31:47.933760+00:00"
-  },
-  "2713-120-LE26": {
-    "data": {
-      "CodigoExterno": "2713-120-LE26",
-      "Nombre": "Seguros inmuebles y equipos informaticos-Folio 933",
-      "CodigoEstado": 6,
-      "Descripcion": "La Ilustre Municipalidad de Aysén requiere contratar seguros generales para cubrir los riesgos eventuales de equipos informáticos y bienes inmuebles de la institución, en los términos y condiciones establecidas en las presentes bases, por un periodo de 12 meses contados desde las 12:00 PM del día 07 de septiembre 2026.",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "100049",
-        "NombreOrganismo": "I MUNICIPALIDAD DE AYSEN",
-        "RutUnidad": "69.240.100-K",
-        "CodigoUnidad": "3702",
-        "NombreUnidad": "I.MUNICIPALIDAD AYSEN-ADQUISICIONES",
-        "DireccionUnidad": "Cementerio Municipal",
-        "ComunaUnidad": "Aysén",
-        "RegionUnidad": "Región Aysén del General Carlos Ibáñez del Campo",
-        "RutUsuario": "",
-        "CodigoUsuario": "1899790",
-        "NombreUsuario": "Jonas Jara",
-        "CargoUsuario": "Administrativo"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLF",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 581,
-      "Fechas": {
-        "FechaCreacion": "2026-08-03T10:12:25.64",
-        "FechaCierre": "2026-08-17T15:30:00",
-        "FechaInicio": "2026-08-05T18:18:00",
-        "FechaFinal": "2026-08-08T18:18:00",
-        "FechaPubRespuestas": "2026-08-11T18:18:00",
-        "FechaActoAperturaTecnica": "2026-08-17T15:31:00",
-        "FechaActoAperturaEconomica": "2026-08-17T15:31:00",
-        "FechaPublicacion": "2026-08-05T15:51:58.093",
-        "FechaAdjudicacion": "2026-09-07T19:00:00",
-        "FechaEstimadaAdjudicacion": "2026-09-07T19:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "12",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Victor Godoy Tapia",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Victor Godoy Tapia",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "12",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "Para la contratación de seguros generales orientados a otorgar cobertura y protección a los bienes inmuebles y equipos electrónicos de la institución.",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 2,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 84131501,
-            "CodigoCategoria": "84131500",
-            "Categoria": "Servicios financieros, pensiones y seguros / Seguros y jubilación / Seguros para estructuras, propiedades y bienes",
-            "NombreProducto": "Seguros de edificios o de su contenido",
-            "Descripcion": "Seguros generales orientados a otorgar cobertura y protección a los bienes inmuebles",
-            "UnidadMedida": "Unidad no definida",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 84131512,
-            "CodigoCategoria": "84131500",
-            "Categoria": "Servicios financieros, pensiones y seguros / Seguros y jubilación / Seguros para estructuras, propiedades y bienes",
-            "NombreProducto": "Seguro de equipo electrónico",
-            "Descripcion": "Seguros generales orientados a otorgar cobertura y protección a los equipos electrónicos de la institución",
-            "UnidadMedida": "Unidad no definida",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787154615.751803,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
   },
   "2713-123-LE26": {
     "data": {
@@ -167392,111 +166961,6 @@
     "ts": 1787150245.520255,
     "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
   },
-  "3179-27-LE26": {
-    "data": {
-      "CodigoExterno": "3179-27-LE26",
-      "Nombre": "ADQ DE PRESILLA OFICIAL SUBALTERNO MASC PAC 2026",
-      "CodigoEstado": 5,
-      "Descripcion": "ADQ DE PRESILLA OFICIAL SUBALTERNO MASC PAC 2026\r\n",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "113812",
-        "NombreOrganismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "RutUnidad": "61.938.500-4",
-        "CodigoUnidad": "4100",
-        "NombreUnidad": "Depto.Adquis y Abast.L2",
-        "DireccionUnidad": "Avda. Bernardo O'higgins  Nro. 1196",
-        "ComunaUnidad": "Santiago",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "628265",
-        "NombreUsuario": "Luis Guillermo Alcaide Gonzalez",
-        "CargoUsuario": "Operador Administrativo"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 3456,
-      "Fechas": {
-        "FechaCreacion": "2026-06-10T00:00:00",
-        "FechaCierre": "2026-08-19T17:00:00",
-        "FechaInicio": "2026-08-05T18:01:00",
-        "FechaFinal": "2026-08-10T15:00:00",
-        "FechaPubRespuestas": "2026-08-13T18:00:00",
-        "FechaActoAperturaTecnica": "2026-08-19T17:01:00",
-        "FechaActoAperturaEconomica": "2026-08-19T17:01:00",
-        "FechaPublicacion": "2026-08-05T17:07:09.797",
-        "FechaAdjudicacion": "2026-10-01T18:00:00",
-        "FechaEstimadaAdjudicacion": "2026-10-01T18:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 19492500,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "DEPARTAMENTO DE FINANZAS",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "DEPARTAMENTO DE ADQUISICIONES Y ABASTECIMIENTO L.2",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 53141609,
-            "CodigoCategoria": "53141600",
-            "Categoria": "Ropa, maletas y productos de aseo personal / Suministros y accesorios de costura / Suministros de costura variados",
-            "NombreProducto": "Volteador de presillas",
-            "Descripcion": "PRESILLAS OFICIAL SUBALTERNO MASCULINO",
-            "UnidadMedida": "Par",
-            "Cantidad": 750,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787150254.487472,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
   "3325-8-LE26": {
     "data": {
       "CodigoExterno": "3325-8-LE26",
@@ -168731,111 +168195,6 @@
     "ts": 1787214166.577045,
     "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
-  "3887-37-LE26": {
-    "data": {
-      "CodigoExterno": "3887-37-LE26",
-      "Nombre": "Demarcacion Vial de Pinturas Termoplasticas",
-      "CodigoEstado": 6,
-      "Descripcion": "Servico 5.000 mts2 de demarcacion vial para la comuna de villarrica, con objetivo de mantener las condiciones de seguridad optimas en los cruces de calles, semaforos, pasos peatonales, achurados, lineas continuas, reductores de velocidad, ceda el paso entre otros.",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "118084",
-        "NombreOrganismo": "I MUNICIPALIDAD DE VILLARRICA",
-        "RutUnidad": "69.191.500-K",
-        "CodigoUnidad": "4807",
-        "NombreUnidad": "I MUNICIPALIDAD DE VILLARRICA",
-        "DireccionUnidad": "Pedro de Valdivia 810",
-        "ComunaUnidad": "Villarrica",
-        "RegionUnidad": "Región de la Araucanía ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1464081",
-        "NombreUsuario": "Angelo Licanqueo",
-        "CargoUsuario": "Administrativo"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 471,
-      "Fechas": {
-        "FechaCreacion": "2026-08-07T12:14:54.197",
-        "FechaCierre": "2026-08-17T17:34:00",
-        "FechaInicio": "2026-08-07T16:22:00",
-        "FechaFinal": "2026-08-10T16:22:00",
-        "FechaPubRespuestas": "2026-08-13T16:22:00",
-        "FechaActoAperturaTecnica": "2026-08-17T17:35:00",
-        "FechaActoAperturaEconomica": "2026-08-17T17:35:00",
-        "FechaPublicacion": "2026-08-07T12:46:08.263",
-        "FechaAdjudicacion": "2026-08-18T17:35:00",
-        "FechaEstimadaAdjudicacion": "2026-08-18T17:35:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 70000000,
-      "Tiempo": "5",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Angela Mendoza Noack ",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "luis enrique muñoz osses",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": ".",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "5",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "Impuestro incluido",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 72102401,
-            "CodigoCategoria": "72102400",
-            "Categoria": "Servicios de construcción y mantenimiento / Servicios de atención, mantenimiento y reparaciones de edificios / Pintura y colocación de papel pintado (empapelado)",
-            "NombreProducto": "Servicios de pintura de exteriores",
-            "Descripcion": "Demarcacion Vial de Pinturas Termoplasticas, segun bases administrativas.-",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787155290.388408,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
-  },
   "3929-48-LR26": {
     "data": {
       "CodigoExterno": "3929-48-LR26",
@@ -169507,8 +168866,8 @@
         ]
       }
     },
-    "ts": 1787155273.349951,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242918.0852501,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "4190-22-L126": {
     "data": {
@@ -170026,8 +169385,8 @@
         ]
       }
     },
-    "ts": 1787155116.9728,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242902.6832135,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "4511-45-LE26": {
     "data": {
@@ -172754,10 +172113,10 @@
     "data": {
       "CodigoExterno": "619133-74-LE26",
       "Nombre": "CONVENIO DE SUMINISTRO PARA LA ADQUISICIÓN DE TÓNERES ORIGINALES Y ALTERNATIVOS DESTINADOS A LA BODEGA CENTRAL DEL HOSPITAL SAN CAMILO",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Las presentes Bases Administrativas rigen el llamado a licitación pública “CONVENIO DE SUMINISTRO PARA LA ADQUISICIÓN DE TÓNERES ORIGINALES Y ALTERNATIVOS DESTINADOS A LA BODEGA CENTRAL DEL HOSPITAL SAN CAMILO”, en Hospital San Camilo ubicado en Av. Miraflores 2085 San Felipe, Quinta región, aplicando los procedimientos establecidos en la Ley de Compras N° 19.886 de la Administración Pública, ID 619133-74-LE26.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "1216718",
         "NombreOrganismo": "SERVICIO SALUD SAN FELIPE LOS ANDES HOSP",
@@ -172779,7 +172138,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -173138,113 +172497,8 @@
         ]
       }
     },
-    "ts": 1787150456.3427498,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
-  "622847-10-LP26": {
-    "data": {
-      "CodigoExterno": "622847-10-LP26",
-      "Nombre": "Diseño provisión e instalación de mobiliario BRA",
-      "CodigoEstado": 6,
-      "Descripcion": "Diseño, provisión e instalación de mobiliario para la Biblioteca Regional de Atacama",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "7011",
-        "NombreOrganismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
-        "RutUnidad": "60.905.000-4",
-        "CodigoUnidad": "622847",
-        "NombreUnidad": "DEPARTAMENTO DE INVERSIÓN E INFRAESTRUCTURA PATRIM",
-        "DireccionUnidad": "Herrera N° 360",
-        "ComunaUnidad": "Santiago Centro",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1149220",
-        "NombreUsuario": "Juan Oscar Gonzalez Fuentes",
-        "CargoUsuario": "Encargado de Compras"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 387,
-      "Fechas": {
-        "FechaCreacion": "2026-07-28T09:47:30.43",
-        "FechaCierre": "2026-08-17T15:00:00",
-        "FechaInicio": "2026-07-28T11:10:00",
-        "FechaFinal": "2026-08-04T15:00:00",
-        "FechaPubRespuestas": "2026-08-07T15:00:00",
-        "FechaActoAperturaTecnica": "2026-08-17T15:01:00",
-        "FechaActoAperturaEconomica": "2026-08-17T15:01:00",
-        "FechaPublicacion": "2026-07-28T11:03:17.557",
-        "FechaAdjudicacion": "2026-09-06T19:57:00",
-        "FechaEstimadaAdjudicacion": "2026-09-06T19:57:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": "1900-01-02T00:00:00",
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 135000000,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Juan Gonzalez ",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Demian Guerra",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "La oferta económica propuesta por quien oferte no puede exceder el presupuesto máximo disponible de 135.000.000.- ciento treinta y cinco millones de pesos IVA incluido. En caso contrario, la oferta será declarada inadmisible.",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 56101532,
-            "CodigoCategoria": "56101500",
-            "Categoria": "Muebles y mobiliario / Muebles de alojamiento / Muebles",
-            "NombreProducto": "Mobiliario",
-            "Descripcion": "Diseño, provisión e instalación de mobiliario para la Biblioteca Regional de Atacama",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787155261.120244,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242839.0486631,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "622847-12-LE26": {
     "data": {
@@ -177494,8 +176748,8 @@
         ]
       }
     },
-    "ts": 1787155301.180598,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242913.010351,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "407-120-LE26": {
     "data": {
@@ -177726,8 +176980,8 @@
         ]
       }
     },
-    "ts": 1787155305.2159948,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242926.001752,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "507428-86-LP26": {
     "data": {
@@ -178913,8 +178167,8 @@
         ]
       }
     },
-    "ts": 1787155257.44985,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242878.4471385,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2122-27-LE26": {
     "data": {
@@ -179340,10 +178594,10 @@
     "data": {
       "CodigoExterno": "2974-58-LE26",
       "Nombre": "MANTENIMIENTO PREVENTIVO DE EQUIPOS DE AIRE ACONDICIONADO.1262026",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "MANTENIMIENTO PREVENTIVO DE EQUIPOS DE AIRE ACONDICIONADO.(126/2026)",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "6946",
         "NombreOrganismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
@@ -179365,7 +178619,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -179438,113 +178692,8 @@
         ]
       }
     },
-    "ts": 1787150233.0856478,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
-  "3053-3-LE26": {
-    "data": {
-      "CodigoExterno": "3053-3-LE26",
-      "Nombre": "Adquisición de materiales de oficina para la Municipalidad de San Pedro de Atacama.",
-      "CodigoEstado": 5,
-      "Descripcion": "La Municipalidad de San Pedro de Atacama invita a participar en el proceso de licitación pública para la Adquisición de materiales de oficina para la Municipalidad de San Pedro de Atacama. El presente proceso tiene por objetivo mantener abastecidas las distintas unidades y departamentos, asegurando la disponibilidad oportuna de los insumos necesarios para el adecuado funcionamiento de las diversas Direcciones municipales.",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "113428",
-        "NombreOrganismo": "I MUNICIPALIDAD DE SAN PEDRO DE ATACAMA",
-        "RutUnidad": "69.252.500-0",
-        "CodigoUnidad": "3996",
-        "NombreUnidad": "Depto. de Finanzas",
-        "DireccionUnidad": "Gustavo Le Paige 328",
-        "ComunaUnidad": "San Pedro de Atacama",
-        "RegionUnidad": "Región de Antofagasta ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2373784",
-        "NombreUsuario": "Karolyn Flores",
-        "CargoUsuario": "Profesional de compras"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 253,
-      "Fechas": {
-        "FechaCreacion": "2026-07-30T00:00:00",
-        "FechaCierre": "2026-08-19T18:48:00",
-        "FechaInicio": "2026-08-04T12:37:00",
-        "FechaFinal": "2026-08-07T13:37:00",
-        "FechaPubRespuestas": "2026-08-12T17:37:00",
-        "FechaActoAperturaTecnica": "2026-08-19T18:49:00",
-        "FechaActoAperturaEconomica": "2026-08-19T18:49:00",
-        "FechaPublicacion": "2026-08-04T11:00:31.663",
-        "FechaAdjudicacion": "2026-09-11T18:49:00",
-        "FechaEstimadaAdjudicacion": "2026-09-11T18:49:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "MUNICIPAL",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Díaz, Cesar",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Díaz, César",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "El adjudicatario no podrá subcontratar, salvo autorización escrita de la Municipalidad de San Pedro de Atacama.",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 14111509,
-            "CodigoCategoria": "14111500",
-            "Categoria": "Productos de papel / Productos de papel / Papel de imprenta y escritura",
-            "NombreProducto": "Artículos de papelería",
-            "Descripcion": "Adquisición de materiales de oficina, según el detalle requerido en las especificaciones técnicas, para el abastecimiento de la bodega central municipal.",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787150239.9974961,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242781.2587416,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "5602-32-LE26": {
     "data": {
@@ -180393,10 +179542,10 @@
     "data": {
       "CodigoExterno": "707409-23-E226",
       "Nombre": "SUMINISTRO DE TINTAS Y TONERS P",
-      "CodigoEstado": 6,
+      "CodigoEstado": 7,
       "Descripcion": "Nombre de la Licitación\tSuministro de Tintas y Toners para Jardines Infantiles, Salas Cunas y Oficinas de la región Arica y Parinacota Año 2026\r\n \r\nLa presente contratación corresponde a un suministro de bienes bajo la modalidad contra demanda, ejecutado mediante la emisión de órdenes de compra a través del portal Mercado Público, conforme a los requerimientos de la Fundación, hasta agotar el presupuesto máximo disponible o hasta el término de la vigencia del contrato, lo que ocurra primero.",
       "FechaCierre": null,
-      "Estado": "Cerrada",
+      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
       "Comprador": {
         "CodigoOrganismo": "1172700",
         "NombreOrganismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
@@ -180434,7 +179583,7 @@
         "FechaActoAperturaTecnica": "2026-08-17T15:01:00",
         "FechaActoAperturaEconomica": "2026-08-17T15:01:00",
         "FechaPublicacion": "2026-08-07T10:41:29.913",
-        "FechaAdjudicacion": "2026-08-24T18:00:00",
+        "FechaAdjudicacion": "2026-08-19T12:59:39.253",
         "FechaEstimadaAdjudicacion": "2026-08-24T18:00:00",
         "FechaSoporteFisico": null,
         "FechaTiempoEvaluacion": null,
@@ -180473,7 +179622,13 @@
       "PeriodoTiempoRenovacion": " ",
       "EsRenovable": 0,
       "CodigoBIP": null,
-      "Adjudicacion": null,
+      "Adjudicacion": {
+        "Tipo": null,
+        "Fecha": null,
+        "Numero": null,
+        "NumeroOferentes": 2,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=m7w8+ZKbqo2QWX4k+FWh5JAuTbw+/plv+5ZO/3NWvIk="
+      },
       "Items": {
         "Cantidad": 11,
         "Listado": [
@@ -180601,8 +179756,8 @@
         ]
       }
     },
-    "ts": 1787155286.248153,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242804.3531525,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "707418-33-LE26": {
     "data": {
@@ -187436,10 +186591,10 @@
     "data": {
       "CodigoExterno": "2343-18-LE26",
       "Nombre": "MONITOREO Y REGISTRO DE MATERIAL INFORMATIVO",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Contratar el servicio de monitoreo y registro de las informaciones aparecidas en medios de comunicación, en sus diversos formatos de televisión, prensa escrita, radios, medios digitales y redes sociales, de interés para el Municipio, a suma alzada por  estados de pago mensual. El trabajo se concretará en la entrega diaria del material de registro informativo, además de alertas permanentes de las informaciones de interés, que serán definidos con palabras claves tags determinados por el municipio, a través de su Dirección de Comunicaciones.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "86568",
         "NombreOrganismo": "I MUNICIPALIDAD DE SANTIAGO",
@@ -187461,7 +186616,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -187534,17 +186689,17 @@
         ]
       }
     },
-    "ts": 1787150156.4137652,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242829.5153687,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2384-38-LE26": {
     "data": {
       "CodigoExterno": "2384-38-LE26",
       "Nombre": "SERVICIO DE AUDIO ILUMINACIÓN Y PANTALLA FIESTAS PATRIAS 2026",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "El presente servicio tiene por objeto la provisión, montaje, operación técnica, mantención y desmontaje de un sistema integral de audio, iluminación, pantallas LED y tarimas para la ejecución de las actividades oficiales de Fiestas Patrias Calama 2026.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "86917",
         "NombreOrganismo": "I MUNICIPALIDAD DE CALAMA",
@@ -187566,7 +186721,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -187639,8 +186794,8 @@
         ]
       }
     },
-    "ts": 1787150162.738784,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242777.616892,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2385-39-LE26": {
     "data": {
@@ -187744,17 +186899,17 @@
         ]
       }
     },
-    "ts": 1787154582.6002,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242873.6632679,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2402-67-LE26": {
     "data": {
       "CodigoExterno": "2402-67-LE26",
       "Nombre": "ARRIENDO E INST. TEMPORAL CAMARAS SEGURIDAD-F.PATR",
-      "CodigoEstado": 5,
+      "CodigoEstado": 7,
       "Descripcion": "La Municipalidad de Rancagua llama a la presente licitación ha objeto de contratar la instalación y soporte \r\ntécnico de un sistema temporal de videovigilancia en la Medialuna Monumental de Rancagua, para ser \r\ninstalados donde se realizarán las fiestas patrias del año 2026, de la Municipalidad de Rancagua.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
       "Comprador": {
         "CodigoOrganismo": "87167",
         "NombreOrganismo": "I MUNICIPALIDAD DE RANCAGUA",
@@ -187776,7 +186931,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -187831,7 +186986,13 @@
       "PeriodoTiempoRenovacion": " ",
       "EsRenovable": 0,
       "CodigoBIP": null,
-      "Adjudicacion": null,
+      "Adjudicacion": {
+        "Tipo": null,
+        "Fecha": null,
+        "Numero": null,
+        "NumeroOferentes": 0,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=RRxF4Fsv7tmoAtysRmFFdrtsvCLhcbLetA+MF6RDxhU="
+      },
       "Items": {
         "Cantidad": 1,
         "Listado": [
@@ -187849,8 +187010,8 @@
         ]
       }
     },
-    "ts": 1787150166.7900548,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242816.265278,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2409-44-L126": {
     "data": {
@@ -187954,8 +187115,8 @@
         ]
       }
     },
-    "ts": 1787154594.8400052,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242930.3049316,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2422-143-L126": {
     "data": {
@@ -188059,8 +187220,8 @@
         ]
       }
     },
-    "ts": 1787154588.386254,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242874.446599,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2423-53-LP26": {
     "data": {
@@ -189738,8 +188899,8 @@
         ]
       }
     },
-    "ts": 1787155265.66001,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242890.2024744,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2788-42-LE26": {
     "data": {
@@ -190731,7 +189892,7 @@
       "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 2578,
+      "CantidadReclamos": 2579,
       "Fechas": {
         "FechaCreacion": "2026-08-04T14:08:11.227",
         "FechaCierre": "2026-08-17T15:00:00",
@@ -190798,8 +189959,8 @@
         ]
       }
     },
-    "ts": 1787154619.736537,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242912.1637964,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "3134-78-LE26": {
     "data": {
@@ -192236,10 +191397,10 @@
     "data": {
       "CodigoExterno": "3518-15-LE26",
       "Nombre": "PROVISION E INSTALACION DE CAMARAS DE SEGURIDAD",
-      "CodigoEstado": 6,
+      "CodigoEstado": 8,
       "Descripcion": "SE REQUIERE LA PROVISION E INSTALACION DE CAMARAS DE SEGURIDAD EN EL LICEO LUIS DURAND DURAND SEGUN BASES ADJUNTAS",
       "FechaCierre": null,
-      "Estado": "Cerrada",
+      "Estado": "Adjudicada",
       "Comprador": {
         "CodigoOrganismo": "115163",
         "NombreOrganismo": "MUNICIPALIDAD DE TRAIGUEN",
@@ -192277,7 +191438,7 @@
         "FechaActoAperturaTecnica": "2026-08-17T15:05:00",
         "FechaActoAperturaEconomica": "2026-08-17T15:05:00",
         "FechaPublicacion": "2026-08-05T17:48:00",
-        "FechaAdjudicacion": "2026-08-20T17:28:00",
+        "FechaAdjudicacion": "2026-08-19T17:55:19.233",
         "FechaEstimadaAdjudicacion": "2026-08-20T17:28:00",
         "FechaSoporteFisico": null,
         "FechaTiempoEvaluacion": null,
@@ -192316,7 +191477,13 @@
       "PeriodoTiempoRenovacion": " ",
       "EsRenovable": 0,
       "CodigoBIP": null,
-      "Adjudicacion": null,
+      "Adjudicacion": {
+        "Tipo": 4,
+        "Fecha": "2026-08-19T00:00:00",
+        "Numero": "2217",
+        "NumeroOferentes": 4,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=v+uBbcPuoLNiDnvB1UCqjazk59ZMz4gFGohXLW/TsJA="
+      },
       "Items": {
         "Cantidad": 1,
         "Listado": [
@@ -192329,118 +191496,18 @@
             "Descripcion": "PROVISION E INSTALACION DE CAMARAS DE SEGURIDAD SEGUN BASES ADJUNTAS",
             "UnidadMedida": "Unidad",
             "Cantidad": 1,
-            "Adjudicacion": null
+            "Adjudicacion": {
+              "RutProveedor": "77.141.504-0",
+              "NombreProveedor": "TECHNOSUN SPA",
+              "Cantidad": 1,
+              "MontoUnitario": 7000000
+            }
           }
         ]
       }
     },
-    "ts": 1787154598.8817658,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
-  },
-  "3561-35-LE26": {
-    "data": {
-      "CodigoExterno": "3561-35-LE26",
-      "Nombre": "ADQUISICIÓN DE DISPOSITIVOS AUDITIVOS AUDIFONOS PARA PACIENTES BENEFICIARIOS",
-      "CodigoEstado": 6,
-      "Descripcion": "ADQUISICIÓN DE DISPOSITIVOS AUDITIVOS (AUDIFONOS) PARA PACIENTES BENEFICIARIOS DEL DEPARTAMENTO DE SALUD DE LA CALERA",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "115185",
-        "NombreOrganismo": "I MUNICIPALIDAD DE LA CALERA",
-        "RutUnidad": "69.060.300-4",
-        "CodigoUnidad": "4481",
-        "NombreUnidad": "Departamento de Salud Municipal",
-        "DireccionUnidad": "San Diego Nº 147",
-        "ComunaUnidad": "La Calera",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "603862",
-        "NombreUsuario": "Norma Rosario Miranda Escudero",
-        "CargoUsuario": "Adquisiciones"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 188,
-      "Fechas": {
-        "FechaCreacion": "2026-08-03T00:00:00",
-        "FechaCierre": "2026-08-17T15:51:00",
-        "FechaInicio": "2026-08-03T17:50:00",
-        "FechaFinal": "2026-08-06T15:50:00",
-        "FechaPubRespuestas": "2026-08-11T15:50:00",
-        "FechaActoAperturaTecnica": "2026-08-17T15:52:00",
-        "FechaActoAperturaEconomica": "2026-08-17T15:52:00",
-        "FechaPublicacion": "2026-08-03T16:43:47.083",
-        "FechaAdjudicacion": "2026-08-31T13:52:00",
-        "FechaEstimadaAdjudicacion": "2026-08-31T13:52:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": "1900-01-16T00:00:00",
-        "FechaEstimadaFirma": "2026-09-15T00:00:00",
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 2,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "Departamento de Salud de La Calera",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 19615473,
-      "Tiempo": "5",
-      "UnidadTiempo": "2",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Rodrigo Araya Gonzalez",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Carolina Herrera",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "El oferente que se haya adjudicado el contrato no podrá, en ningún caso, subcontratar el contrato celebrado con el Dpto. de Salud, o realizar a su respecto cualquier acto jurídico o negociación que signifique que el mismo, sea ejecutado por un titular di",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "5",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 42211705,
-            "CodigoCategoria": "42211700",
-            "Categoria": "Equipamiento y suministros médicos / Ayuda para personas con discapacidad / Artículos de ayuda para la comunicación de discapacitados",
-            "NombreProducto": "Audífonos para personas con discapacidad física",
-            "Descripcion": "DISPOSITIVOS AUDITIVOS (AUDIFONOS). VER BASES ADMINISTRATIVAS Y TECNICAS.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 80,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787154604.4649742,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242785.0244539,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "3588-34-LE26": {
     "data": {
@@ -192655,8 +191722,8 @@
         ]
       }
     },
-    "ts": 1787154607.530986,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242888.3584127,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "3693-151-LE26": {
     "data": {
@@ -192970,17 +192037,17 @@
         ]
       }
     },
-    "ts": 1787155316.6798022,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242925.1041296,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "3858-28-LE26": {
     "data": {
       "CodigoExterno": "3858-28-LE26",
       "Nombre": "ADQUISICIÓN DE NOTEBOOK Y LICENCIAS PARA TP CEJJLB",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "tiene por objeto la adquisición de equipamiento destinados a dar continuidad a la ejecución del “Proyecto de Equipamiento para Establecimientos de Educación Media Técnico Profesional, año 2024” del Complejo Educativo Juan José Latorre Benavente, en conformidad a lo establecido en el convenio suscrito entre la Subsecretaría de Educación del Ministerio de Educación y la Ilustre Municipalidad de Mejillones",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "117581",
         "NombreOrganismo": "I MUNICIPALIDAD DE MEJILLONES",
@@ -193002,7 +192069,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -193097,8 +192164,8 @@
         ]
       }
     },
-    "ts": 1787150299.543145,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242847.0647192,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "3885-49-L126": {
     "data": {
@@ -193258,111 +192325,6 @@
       }
     },
     "ts": 1787150303.6304388,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
-  "3933-43-L126": {
-    "data": {
-      "CodigoExterno": "3933-43-L126",
-      "Nombre": "“MATERIAL DE LIBRERÍA PARA JARDIN RAIMAPU FONDOS JUNJI” ",
-      "CodigoEstado": 5,
-      "Descripcion": "“MATERIAL DE LIBRERÍA PARA JARDIN RAIMAPU, FONDOS JUNJI” ",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "118089",
-        "NombreOrganismo": "I MUNICIPALIDAD DE FREIRE",
-        "RutUnidad": "69.190.900-K",
-        "CodigoUnidad": "4853",
-        "NombreUnidad": "Departamento de Educación",
-        "DireccionUnidad": "Pedro Camalez Nº85",
-        "ComunaUnidad": "Freire",
-        "RegionUnidad": "Región de la Araucanía ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1357374",
-        "NombreUsuario": "René Flores Urra",
-        "CargoUsuario": "Encargado Adquisiciones DAEM"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "L1",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 213,
-      "Fechas": {
-        "FechaCreacion": "2026-08-13T00:00:00",
-        "FechaCierre": "2026-08-19T14:01:00",
-        "FechaInicio": "2026-08-13T16:01:00",
-        "FechaFinal": "2026-08-16T16:01:00",
-        "FechaPubRespuestas": "2026-08-17T16:01:00",
-        "FechaActoAperturaTecnica": "2026-08-19T14:02:00",
-        "FechaActoAperturaEconomica": "2026-08-19T14:02:00",
-        "FechaPublicacion": "2026-08-13T12:06:15.25",
-        "FechaAdjudicacion": "2026-09-30T14:02:00",
-        "FechaEstimadaAdjudicacion": "2026-09-30T14:02:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "FONDOS JUNJI",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "EDGARDO FUENTES",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "EDGARDO FUENTES",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 44121904,
-            "CodigoCategoria": "44121900",
-            "Categoria": "Equipos, accesorios y suministros de oficina / Suministros de oficina / Recambios de tinta y minas de lápices",
-            "NombreProducto": "Rellenos de tinta",
-            "Descripcion": "“MATERIAL DE LIBRERÍA PARA JARDIN RAIMAPU, FONDOS JUNJI” ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787150310.24267,
     "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
   },
   "3933-45-L126": {
@@ -193604,7 +192566,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
@@ -193677,8 +192639,8 @@
         ]
       }
     },
-    "ts": 1787155115.508395,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242933.9742188,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "4127-31-LE26": {
     "data": {
@@ -193782,8 +192744,8 @@
         ]
       }
     },
-    "ts": 1787154611.735662,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242889.3568096,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "4732-20-LE26": {
     "data": {
@@ -194097,17 +193059,17 @@
         ]
       }
     },
-    "ts": 1787155306.7371058,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242929.6673553,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "520149-30-LR26": {
     "data": {
       "CodigoExterno": "520149-30-LR26",
       "Nombre": "CEA_PC N°6409_DIPRO_Servicio de transporte Oficial",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "La Subsecretaría de Relaciones Exteriores, en adelante la Subsecretaría, requiere contratar por línea de servicio, el servicio de transporte de pasajeros para la atención de visitas oficiales y huéspedes ilustres del Estado de Chile, y para las actividades oficiales de la Subsecretaría de Relaciones Exteriores, de acuerdo con las condiciones expresadas en las presentes Bases Administrativas y a las especificaciones detalladas en las Bases Técnicas.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7227",
         "NombreOrganismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
@@ -194129,7 +193091,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -194213,8 +193175,8 @@
         ]
       }
     },
-    "ts": 1787150399.9662971,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242824.608726,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "5553-1-LE26": {
     "data": {
@@ -194445,8 +193407,8 @@
         ]
       }
     },
-    "ts": 1787155270.449923,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242905.0492089,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "564162-62-LP26": {
     "data": {
@@ -194782,17 +193744,17 @@
         ]
       }
     },
-    "ts": 1787155296.3756568,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242917.390974,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "5684-9-LR26": {
     "data": {
       "CodigoExterno": "5684-9-LR26",
       "Nombre": "Mantenimiento preventivo y correctivo UPS",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Servicio de Mantenimiento preventivo y correctivo de las Unidades de Respaldo Ininterrumpido UPS eléctricas de la FCFM",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7251",
         "NombreOrganismo": "UNIVERSIDAD DE CHILE",
@@ -194814,13 +193776,13 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLF",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 7790,
+      "CantidadReclamos": 7794,
       "Fechas": {
         "FechaCreacion": "2026-07-02T11:29:45.137",
         "FechaCierre": "2026-08-19T18:00:00",
@@ -194898,8 +193860,8 @@
         ]
       }
     },
-    "ts": 1787150441.376328,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242838.4766536,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "599-26-CO26": {
     "data": {
@@ -195016,10 +193978,10 @@
     "data": {
       "CodigoExterno": "603663-4-LE26",
       "Nombre": "SERVICIO DE MONITOREO DE PRENSA PARA EL INDH",
-      "CodigoEstado": 5,
+      "CodigoEstado": 7,
       "Descripcion": "El objeto de la Licitación es la contratación del servicio electrónico diario de búsqueda, monitoreo y registro de información mediática, cuya finalidad es conocer las informaciones relativas al INDH, así como a los derechos humanos y temáticas de interés institucional, contenidas en los medios de prensa y comunicación escritos, de circulación nacional y regional, medios digitales y de televisión y radio con cobertura nacional.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
       "Comprador": {
         "CodigoOrganismo": "1189679",
         "NombreOrganismo": "INSTITUTO NACIONAL DE DERECHOS HUMANOS",
@@ -195096,7 +194058,13 @@
       "PeriodoTiempoRenovacion": " ",
       "EsRenovable": 0,
       "CodigoBIP": null,
-      "Adjudicacion": null,
+      "Adjudicacion": {
+        "Tipo": null,
+        "Fecha": null,
+        "Numero": null,
+        "NumeroOferentes": 0,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=jhoa9SqW4L6MSEvxM8YD5wSF5jpOKdiqlm/egSj5EPQ="
+      },
       "Items": {
         "Cantidad": 1,
         "Listado": [
@@ -195114,17 +194082,17 @@
         ]
       }
     },
-    "ts": 1787150446.9308429,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242834.5876617,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "608-161-LP26": {
     "data": {
       "CodigoExterno": "608-161-LP26",
       "Nombre": "ern CONVENIO SUMINISTRO INSUMOS CLINICOS AGUJAS BOLSA EXTRACTORAS ADAPTADORES FILTRO CONECTORES",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "ern CONVENIO SUMINISTRO INSUMOS CLINICOS AGUJAS, BOLSA EXTRACTORAS, ADAPTADORES, FILTRO, CONECTORES",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "6936",
         "NombreOrganismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
@@ -195146,7 +194114,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -195329,8 +194297,8 @@
         ]
       }
     },
-    "ts": 1787150451.556213,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242828.73948,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "608897-50-LE26": {
     "data": {
@@ -195539,8 +194507,8 @@
         ]
       }
     },
-    "ts": 1787155275.278422,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242935.4866147,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "612-26-LE26": {
     "data": {
@@ -195756,10 +194724,10 @@
     "data": {
       "CodigoExterno": "621-697-LP26",
       "Nombre": "IMATINIB  400 MG CPCM REC. 1000022948",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "BASES ADMINISTRATIVAS Y TÉCNICAS TIPO, POR LAS QUE SE REGIRÁN LOS PROCESOS DE LICITACIÓN PARA LA ADQUISICIÓN DE PRODUCTOS FARMACÉUTICOS, COSMÉTICOS, VACUNAS, INSUMOS, DISPOSITIVOS, Y/O ALIMENTOS DE USO MÉDICO, DESTINADO AL EJERCICIO DE ACCIONES DE SALUD",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "6957",
         "NombreOrganismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
@@ -195781,7 +194749,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "1",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -195854,8 +194822,8 @@
         ]
       }
     },
-    "ts": 1787150457.1711738,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242850.737392,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "621-721-LR26": {
     "data": {
@@ -196102,7 +195070,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 2578,
+      "CantidadReclamos": 2579,
       "Fechas": {
         "FechaCreacion": "2026-08-06T09:28:53.807",
         "FechaCierre": "2026-08-17T15:30:00",
@@ -196169,8 +195137,8 @@
         ]
       }
     },
-    "ts": 1787155309.271183,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242921.446619,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "629373-16-LP26": {
     "data": {
@@ -196954,8 +195922,8 @@
         ]
       }
     },
-    "ts": 1787155281.072566,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242936.3906426,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "771555-10-LE26": {
     "data": {
@@ -200444,119 +199412,14 @@
     "ts": 1787150313.469874,
     "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
   },
-  "3978-15-LE26": {
-    "data": {
-      "CodigoExterno": "3978-15-LE26",
-      "Nombre": "ADQUISICIÓN DE PANTALLA LED SANTA BARBARA",
-      "CodigoEstado": 5,
-      "Descripcion": "La licitación tiene por objeto la adquisición de una pantalla LED modular para actividades y eventos municipales de la comuna de Santa Bárbara.",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "118860",
-        "NombreOrganismo": "I MUNICIPALIDAD DE SANTA BARBARA",
-        "RutUnidad": "69.170.200-6",
-        "CodigoUnidad": "4898",
-        "NombreUnidad": "Direccion De Secplan",
-        "DireccionUnidad": "Rosas 160",
-        "ComunaUnidad": "Santa Bárbara",
-        "RegionUnidad": "Región del Biobío ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1466308",
-        "NombreUsuario": "ANGELO ANDRES GOMEZ ERICES",
-        "CargoUsuario": "PROFESIONAL SECPLAN"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 232,
-      "Fechas": {
-        "FechaCreacion": "2026-08-12T10:56:21.59",
-        "FechaCierre": "2026-08-19T12:00:00",
-        "FechaInicio": "2026-08-14T12:01:00",
-        "FechaFinal": "2026-08-15T12:02:00",
-        "FechaPubRespuestas": "2026-08-15T23:59:00",
-        "FechaActoAperturaTecnica": "2026-08-19T12:01:00",
-        "FechaActoAperturaEconomica": "2026-08-19T12:01:00",
-        "FechaPublicacion": "2026-08-14T11:56:23.317",
-        "FechaAdjudicacion": "2026-09-04T12:02:00",
-        "FechaEstimadaAdjudicacion": "2026-09-04T12:02:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "Municipal",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 32000000,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "MITCHELL PARRA ",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "SERGIO GONZALEZ FIGUEROA",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 86141702,
-            "CodigoCategoria": "86141700",
-            "Categoria": "Educación, formación, entrenamiento y capacitación / Servicios de orientación y tecnología educativa / Tecnología educativa",
-            "NombreProducto": "Tecnología audiovisual",
-            "Descripcion": "Pantalla LED para interior y exterior de 24 m² con estructura metálica de montaje",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787150318.019982,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
   "434-99-LE26": {
     "data": {
       "CodigoExterno": "434-99-LE26",
       "Nombre": "SEGUNDO CONTRATO SUMINISTRO TINTAS TAMBORES PAPEL PLOTTER Y TONER",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "SEGUNDO CONTRATO SUMINISTRO TINTAS, TAMBORES, PAPEL PLOTTER Y TONER NECESARIOS PARA MANTENER EN STOCK EN BODEGA DE ADQUISICIONES PARA DISTRIBUIR A LOS DIFERENTES DEPARTAMENTOS DE LA MUNICIPALIDAD, SEGUN FORMULARIO N 13 DE SECPLA (ADQUISICIONES). FLETE INCLUIDO Y PUESTO EN BODEGA MUNICIPAL",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7351",
         "NombreOrganismo": "I MUNICIPALIDAD DE CAUQUENES",
@@ -200578,7 +199441,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -200651,8 +199514,8 @@
         ]
       }
     },
-    "ts": 1787150347.1608288,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242812.8580189,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "514862-108-LE26": {
     "data": {
@@ -201974,8 +200837,8 @@
         ]
       }
     },
-    "ts": 1787154605.796584,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242869.4491384,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1395-52-LE26": {
     "data": {
@@ -202301,117 +201164,6 @@
     },
     "ts": 1787150075.5976279,
     "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
-  "1663-130-LE26": {
-    "data": {
-      "CodigoExterno": "1663-130-LE26",
-      "Nombre": "2DO LLAMADO-SERVICIO DE TRASLADO EQUIPOS EQUIPAMIENTO Y MOBILIARIO",
-      "CodigoEstado": 7,
-      "Descripcion": "Trasladar de manera segura el equipo, equipamiento y mobiliario al Hospital, mediante servicio de traslado desde el Hospital actual al Nuevo Hospital de Quellon.",
-      "FechaCierre": null,
-      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
-      "Comprador": {
-        "CodigoOrganismo": "16223",
-        "NombreOrganismo": "SERVICIO DE SALUD CHILOE",
-        "RutUnidad": "61.602.276-8",
-        "CodigoUnidad": "2659",
-        "NombreUnidad": "Hospital de Quellón",
-        "DireccionUnidad": "",
-        "ComunaUnidad": "",
-        "RegionUnidad": "Región de los Lagos ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2213144",
-        "NombreUsuario": "Nancy Fernanda Mansilla Yañez",
-        "CargoUsuario": "Administrativo Adquisiciones"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 2184,
-      "Fechas": {
-        "FechaCreacion": "2026-08-04T00:00:00",
-        "FechaCierre": "2026-08-17T17:00:00",
-        "FechaInicio": "2026-08-07T14:35:00",
-        "FechaFinal": "2026-08-12T16:00:00",
-        "FechaPubRespuestas": "2026-08-13T17:30:00",
-        "FechaActoAperturaTecnica": "2026-08-18T09:00:00",
-        "FechaActoAperturaEconomica": "2026-08-18T09:00:00",
-        "FechaPublicacion": "2026-08-07T10:58:24.69",
-        "FechaAdjudicacion": "2026-09-21T17:30:00",
-        "FechaEstimadaAdjudicacion": "2026-09-21T17:30:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "Hospital de Quellon",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Fredy Orias Toro",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Carlos Cortez Alvarez",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": null,
-        "Fecha": null,
-        "Numero": null,
-        "NumeroOferentes": 0,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=hW8bbUZ6oEiBvXbLSrB75jcFT/4rkuReJ7G0/vSxTTk="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 78111808,
-            "CodigoCategoria": "78111800",
-            "Categoria": "Servicios de transporte, almacenaje y correo / Transporte de pasajeros / Transporte de pasajeros por carretera",
-            "NombreProducto": "Arriendo de vehículos",
-            "Descripcion": "SERVICIO DE TRASLADO EQUIPOS, EQUIPAMIENTO Y MOBILIARIO, Según Bases. -",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787155259.662335,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
   },
   "1666-8-LE26": {
     "data": {
@@ -203185,10 +201937,10 @@
     "data": {
       "CodigoExterno": "2710-76-LE26",
       "Nombre": "SERVICIO DE ARRIENDO DE IMPRESORAS MULTIFUNCIONAL",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "SERVICIO DE ARRIENDO DE IMPRESORAS MULTIFUNCIONAL",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "99860",
         "NombreOrganismo": "MUNICIPALIDAD DE OVALLE",
@@ -203210,7 +201962,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -203283,8 +202035,8 @@
         ]
       }
     },
-    "ts": 1787150210.166419,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242824.058185,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2744-29-LE26": {
     "data": {
@@ -203537,8 +202289,8 @@
         ]
       }
     },
-    "ts": 1787155267.692899,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242891.0769532,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "3212-11-LE26": {
     "data": {
@@ -273522,7 +272274,7 @@
         "NombreUsuario": "Diego Schneider",
         "CargoUsuario": "Profesional"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -273602,8 +272354,8 @@
         ]
       }
     },
-    "ts": 1787067279.429602,
-    "fetchedAt": "2026-08-18T15:34:16.746729+00:00"
+    "ts": 1787242760.594275,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2282-96-LE26": {
     "data": {
@@ -273627,7 +272379,7 @@
         "NombreUsuario": "Jessica Azocar",
         "CargoUsuario": "Operadora Licitaciones"
       },
-      "DiasCierreLicitacion": "16",
+      "DiasCierreLicitacion": "14",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -273707,8 +272459,8 @@
         ]
       }
     },
-    "ts": 1787067283.7670383,
-    "fetchedAt": "2026-08-18T15:34:16.746729+00:00"
+    "ts": 1787242764.3655953,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2439-27-LE26": {
     "data": {
@@ -273732,7 +272484,7 @@
         "NombreUsuario": "Norma del Carmen González Terra",
         "CargoUsuario": "Técnico"
       },
-      "DiasCierreLicitacion": "15",
+      "DiasCierreLicitacion": "13",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -273745,7 +272497,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 1098,
+      "CantidadReclamos": 1104,
       "Fechas": {
         "FechaCreacion": "2026-08-11T13:01:14.37",
         "FechaCierre": "2026-09-02T09:00:00",
@@ -273812,8 +272564,8 @@
         ]
       }
     },
-    "ts": 1787067287.0124211,
-    "fetchedAt": "2026-08-18T15:34:16.746729+00:00"
+    "ts": 1787242765.276857,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2703-163-L126": {
     "data": {
@@ -273837,7 +272589,7 @@
         "NombreUsuario": "ROSSANA GÓMEZ PAVEZ",
         "CargoUsuario": "PROFESIONAL"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "L1",
@@ -273850,7 +272602,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 1330,
+      "CantidadReclamos": 1331,
       "Fechas": {
         "FechaCreacion": "2026-08-14T00:00:00",
         "FechaCierre": "2026-08-27T15:00:00",
@@ -273917,8 +272669,8 @@
         ]
       }
     },
-    "ts": 1787067287.5409563,
-    "fetchedAt": "2026-08-18T15:34:16.746729+00:00"
+    "ts": 1787242769.002052,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "4886-23-LE26": {
     "data": {
@@ -274033,8 +272785,8 @@
         ]
       }
     },
-    "ts": 1787154560.697151,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242854.3762808,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2667-46-LE26": {
     "data": {
@@ -274071,7 +272823,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 81,
+      "CantidadReclamos": 83,
       "Fechas": {
         "FechaCreacion": "2026-03-13T00:00:00",
         "FechaCierre": "2026-06-26T15:00:00",
@@ -274144,1244 +272896,8 @@
         ]
       }
     },
-    "ts": 1787154568.081781,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
-  },
-  "1216085-45-LP26": {
-    "data": {
-      "CodigoExterno": "1216085-45-LP26",
-      "Nombre": "CONVENIO DE SUMINISTRO DE PAPELERIA E IMPRESOS",
-      "CodigoEstado": 8,
-      "Descripcion": "Las presentes Bases señalan los requerimientos administrativos establecidos para la adquisición de papelería e impresos destinados a los Centros de Salud de Villa Alemana, con el objeto de asegurar la continuidad de las prestaciones administrativas y clínicas, manteniendo estándares adecuados de calidad, oportunidad de entrega y correcta identificación de los productos solicitados por la Unid. Tér",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "1803814",
-        "NombreOrganismo": "CORP MUNICIPAL PARA EL DESARROLLO SOCIAL",
-        "RutUnidad": "70.983.600-5",
-        "CodigoUnidad": "1216085",
-        "NombreUnidad": "Adquisiciones",
-        "DireccionUnidad": "QUINTA 050 VILLA ALEMANA",
-        "ComunaUnidad": "Villa Alemana",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1897381",
-        "NombreUsuario": "PAULINA PONCE",
-        "CargoUsuario": "JEFA DE ADQUISICIONES"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 28,
-      "Fechas": {
-        "FechaCreacion": "2026-07-01T00:00:00",
-        "FechaCierre": "2026-07-29T17:00:00",
-        "FechaInicio": "2026-07-09T17:40:00",
-        "FechaFinal": "2026-07-14T17:40:00",
-        "FechaPubRespuestas": "2026-07-15T19:00:00",
-        "FechaActoAperturaTecnica": "2026-07-29T17:01:00",
-        "FechaActoAperturaEconomica": "2026-07-29T17:01:00",
-        "FechaPublicacion": "2026-07-09T17:28:17.553",
-        "FechaAdjudicacion": "2026-08-18T10:31:02.97",
-        "FechaEstimadaAdjudicacion": "2026-09-07T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "PERCAPITA PROGRAMAS",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 76393734,
-      "Tiempo": "12",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "MONICA VALLEBONA",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "HEIDDY RIVEROS",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "Queda expresamente prohibido al adjudicatario concertar con terceros la subcontratación del contrato, en particular, por tratarse de servicios especiales, en donde se contratará en vista de la capacidad o idoneidad del contratista. En virtud de lo señal",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "12",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-13T00:00:00",
-        "Numero": "584",
-        "NumeroOferentes": 4,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=BGCeufwdNAN43Axv3oth1HgF9q4Xzg+bQOUFQES8ir4="
-      },
-      "Items": {
-        "Cantidad": 71,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "ACTA ENTREGA AYUDAS TÉCNICAS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 31,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 31,
-              "MontoUnitario": 4900
-            }
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "AGENDA DE PERSONAS MAYORES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2000,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 2000,
-              "MontoUnitario": 2100
-            }
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET PERSONAS MAYORES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4800,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 4800,
-              "MontoUnitario": 290
-            }
-          },
-          {
-            "Correlativo": 4,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET CRONICOS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4300,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 4300,
-              "MontoUnitario": 190
-            }
-          },
-          {
-            "Correlativo": 5,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET HIPERTENSOS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1300,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1300,
-              "MontoUnitario": 160
-            }
-          },
-          {
-            "Correlativo": 6,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET DIABETICOS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1300,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1300,
-              "MontoUnitario": 160
-            }
-          },
-          {
-            "Correlativo": 7,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET CONTROL SALA RBC",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2400,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 2400,
-              "MontoUnitario": 140
-            }
-          },
-          {
-            "Correlativo": 8,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET DE CONTROL SALUD MENTAL",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4223,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 4223,
-              "MontoUnitario": 140
-            }
-          },
-          {
-            "Correlativo": 9,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET DE CURACIONES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2800,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 2800,
-              "MontoUnitario": 140
-            }
-          },
-          {
-            "Correlativo": 10,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET DENTAL ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3250,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 3250,
-              "MontoUnitario": 130
-            }
-          },
-          {
-            "Correlativo": 11,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET SALA ERA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2150,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 2150,
-              "MontoUnitario": 190
-            }
-          },
-          {
-            "Correlativo": 12,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET SALA IRA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1700,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1700,
-              "MontoUnitario": 190
-            }
-          },
-          {
-            "Correlativo": 13,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET VACUNACIÓN ANTIRRÁBICA / ANTITETÁNICA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1140,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1140,
-              "MontoUnitario": 130
-            }
-          },
-          {
-            "Correlativo": 14,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARNET VACUNACIÓN HEPATITIS B",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 240,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 240,
-              "MontoUnitario": 200
-            }
-          },
-          {
-            "Correlativo": 15,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARTOLA FAMILIAR ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2800,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 2800,
-              "MontoUnitario": 145
-            }
-          },
-          {
-            "Correlativo": 16,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CARTOLA PRENATAL",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 920,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 920,
-              "MontoUnitario": 240
-            }
-          },
-          {
-            "Correlativo": 17,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CERTIFICADO DE ATENCIÓN",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 104,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 104,
-              "MontoUnitario": 2100
-            }
-          },
-          {
-            "Correlativo": 18,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CERTIFICADO EMBARAZO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 88,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 88,
-              "MontoUnitario": 2300
-            }
-          },
-          {
-            "Correlativo": 19,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CIERRE CASO GES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 46,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 46,
-              "MontoUnitario": 3900
-            }
-          },
-          {
-            "Correlativo": 20,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CONSENTIMIENTO INFORMADO IMPLANTE",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 42,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 42,
-              "MontoUnitario": 4900
-            }
-          },
-          {
-            "Correlativo": 21,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CONSENTIMIENTO INFORMADO MUJERES NO AMAMANTAR",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 52,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 52,
-              "MontoUnitario": 4900
-            }
-          },
-          {
-            "Correlativo": 22,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CONSENTIMIENTO INFORMADO VIH",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 46,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 46,
-              "MontoUnitario": 2600
-            }
-          },
-          {
-            "Correlativo": 23,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CONSTANCIA GES(formato nuevo)",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 133,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 133,
-              "MontoUnitario": 3600
-            }
-          },
-          {
-            "Correlativo": 24,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CUADERNO DEL ADOLESCENTE",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2450,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 2450,
-              "MontoUnitario": 850
-            }
-          },
-          {
-            "Correlativo": 25,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CUADERNO DEL ADULTO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2000,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 2000,
-              "MontoUnitario": 1100
-            }
-          },
-          {
-            "Correlativo": 26,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "CUADERNO INFANTIL ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1380,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1380,
-              "MontoUnitario": 1300
-            }
-          },
-          {
-            "Correlativo": 27,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "EXCEPCIÓN GARANTÍA GES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 26,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 26,
-              "MontoUnitario": 4900
-            }
-          },
-          {
-            "Correlativo": 28,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FORMULARIO DE TRASLADO PNAC",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 8,
-              "MontoUnitario": 5400
-            }
-          },
-          {
-            "Correlativo": 29,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FORMULARIO ENVIO MUESTRA VIH",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 408,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 408,
-              "MontoUnitario": 1900
-            }
-          },
-          {
-            "Correlativo": 30,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FORMULARIO ENVIO MUESTRAS CHAGAS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 38,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 38,
-              "MontoUnitario": 3900
-            }
-          },
-          {
-            "Correlativo": 31,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FORMULARIO INGRESO FI PNAC BASICO O REFUERZO MENORES 12 MESES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 890,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 890,
-              "MontoUnitario": 240
-            }
-          },
-          {
-            "Correlativo": 32,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FORMULARIO INGRESO PNAC BASICO O REFUERZO MENORES 12 MESES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 905,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 905,
-              "MontoUnitario": 240
-            }
-          },
-          {
-            "Correlativo": 33,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FORMULARIO MUESTRA TBC",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 8,
-              "MontoUnitario": 4500
-            }
-          },
-          {
-            "Correlativo": 34,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FORMULARIO PARA SUSPENSIÓN O EGRESO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 4,
-              "MontoUnitario": 5900
-            }
-          },
-          {
-            "Correlativo": 35,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "INDICACIONES ELECTROCARDIOGRAMA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 440,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 440,
-              "MontoUnitario": 1700
-            }
-          },
-          {
-            "Correlativo": 36,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "INDICACIONES ESPIROMETRIA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 26,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 26,
-              "MontoUnitario": 3600
-            }
-          },
-          {
-            "Correlativo": 37,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "INDICACIONES EXAMEN COPROPARASITOLOGICO SERIADO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 620,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 620,
-              "MontoUnitario": 600
-            }
-          },
-          {
-            "Correlativo": 38,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "INDICACIONES EXAMEN ORINA COMPLETA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1330,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1330,
-              "MontoUnitario": 550
-            }
-          },
-          {
-            "Correlativo": 39,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "INDICACIONES EXÁMENES DE SANGRE",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1430,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1430,
-              "MontoUnitario": 590
-            }
-          },
-          {
-            "Correlativo": 40,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "INDICACIONES H. PYLORI",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 712,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 712,
-              "MontoUnitario": 490
-            }
-          },
-          {
-            "Correlativo": 41,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "INDICACIONES PRUEBA TOLERANCIA GLUCOSA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1240,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1240,
-              "MontoUnitario": 540
-            }
-          },
-          {
-            "Correlativo": 42,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "INDICACIONES TOMA DE COPROCULTIVO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 650,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 650,
-              "MontoUnitario": 600
-            }
-          },
-          {
-            "Correlativo": 43,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "ORDEN DE ESTERILIZACIÓN",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1302,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1302,
-              "MontoUnitario": 1700
-            }
-          },
-          {
-            "Correlativo": 44,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "ORDEN DE EXAMEN RH Y COOMBS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 31,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 31,
-              "MontoUnitario": 3900
-            }
-          },
-          {
-            "Correlativo": 45,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "ORDEN RADIOGRAFÍA EXTRAORAL",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 83,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 83,
-              "MontoUnitario": 3100
-            }
-          },
-          {
-            "Correlativo": 46,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "ORDEN RADIOGRAFÍA INTRAORAL",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 112,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 112,
-              "MontoUnitario": 900
-            }
-          },
-          {
-            "Correlativo": 47,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "PREPARACIÓN TOMA DE RADIOGRAFÍAS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 10,
-              "MontoUnitario": 3900
-            }
-          },
-          {
-            "Correlativo": 48,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "RECETA MEDICA EXTERNA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 26,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 26,
-              "MontoUnitario": 2600
-            }
-          },
-          {
-            "Correlativo": 49,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "SOLICITUD ENVIO MUESTA PAP",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 163,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 163,
-              "MontoUnitario": 2900
-            }
-          },
-          {
-            "Correlativo": 50,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "SOLICITUD EXAMENES EXTERNOS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 94,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 94,
-              "MontoUnitario": 3500
-            }
-          },
-          {
-            "Correlativo": 51,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA ALIMENTACIÓN ADULTO MAYOR",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1350,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1350,
-              "MontoUnitario": 140
-            }
-          },
-          {
-            "Correlativo": 52,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA APLV",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 350,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 350,
-              "MontoUnitario": 240
-            }
-          },
-          {
-            "Correlativo": 53,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA ASISTENCIA SALA ESTIMULACIÓN",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 650,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 650,
-              "MontoUnitario": 190
-            }
-          },
-          {
-            "Correlativo": 54,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA BINCARD PARA BODEGA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 200,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 200,
-              "MontoUnitario": 390
-            }
-          },
-          {
-            "Correlativo": 55,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA CONTROL DISTRIBUCIÓN ALIMENTOS GESTANTE Y MADRE QUE AMAMANTA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 880,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 880,
-              "MontoUnitario": 140
-            }
-          },
-          {
-            "Correlativo": 56,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA CONTROL DISTRIBUCIÓN ALIMENTOS PNAC BÁSICO O REFUERZO MENORES 12 MESES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 950,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 950,
-              "MontoUnitario": 140
-            }
-          },
-          {
-            "Correlativo": 57,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA CONTROL DISTRIBUCIÓN ALIMENTOS POB. INFANTIL MAYOR 12 MESES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1500,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 1500,
-              "MontoUnitario": 130
-            }
-          },
-          {
-            "Correlativo": 58,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA CONTROL DISTRIBUCIÓN ALIMENTOS PREMATUROS EXTREMOS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 345,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 345,
-              "MontoUnitario": 210
-            }
-          },
-          {
-            "Correlativo": 59,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TARJETA EVALUACIÓN DESARROLLO PSICOMOTOR",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 250,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 250,
-              "MontoUnitario": 210
-            }
-          },
-          {
-            "Correlativo": 60,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TEST PROVOCACIÓN BRONQUIAL",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 50,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 50,
-              "MontoUnitario": 500
-            }
-          },
-          {
-            "Correlativo": 61,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TRASLADOS A NIVEL SECUNDARIO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 210,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 210,
-              "MontoUnitario": 340
-            }
-          },
-          {
-            "Correlativo": 62,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "RECETA PARA MORBILIDAD",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 836,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 836,
-              "MontoUnitario": 2500
-            }
-          },
-          {
-            "Correlativo": 63,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "RECETA PARA BEZODIAZEPINAS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 206,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 206,
-              "MontoUnitario": 2700
-            }
-          },
-          {
-            "Correlativo": 64,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "RECETA CHEQUE",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 74,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 74,
-              "MontoUnitario": 4900
-            }
-          },
-          {
-            "Correlativo": 65,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "LIBRO EMPASTADO COLOR AZUL MARINO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 3,
-              "MontoUnitario": 45000
-            }
-          },
-          {
-            "Correlativo": 66,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "TRASPASO PNAC / PACAM",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 5,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 5,
-              "MontoUnitario": 6500
-            }
-          },
-          {
-            "Correlativo": 67,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "GUIAS ANTICIPATORIAS (MAIS)",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 500,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 500,
-              "MontoUnitario": 140
-            }
-          },
-          {
-            "Correlativo": 68,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "RECETARIO DE LENTES  ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 50,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 50,
-              "MontoUnitario": 2900
-            }
-          },
-          {
-            "Correlativo": 69,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FORMULARIO DE REGISTRO DE REQUERIMIENTO OIRS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 21,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 21,
-              "MontoUnitario": 4900
-            }
-          },
-          {
-            "Correlativo": 70,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "FAP AMBULANCIA **** SAPU 100 HOJAS CON COPIA FOLIADO ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 40,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 40,
-              "MontoUnitario": 3900
-            }
-          },
-          {
-            "Correlativo": 71,
-            "CodigoProducto": 82121507,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión de papelería o formularios comerciales",
-            "Descripcion": "SOBRES BLOND 30X23 CM, CON LOGO INSTITUCIONAL (PROGRAMA IMÁGENES DIAGNOSTICAS)",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8000,
-            "Adjudicacion": {
-              "RutProveedor": "6.950.453-1",
-              "NombreProveedor": "HERNAN ORLANDO LEMUS LEYTON",
-              "Cantidad": 8000,
-              "MontoUnitario": 260
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787154480.7685928,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242865.6878946,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "4511-41-LE26": {
     "data": {
@@ -275507,124 +273023,8 @@
         ]
       }
     },
-    "ts": 1787154562.645173,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
-  },
-  "899-26-LE26": {
-    "data": {
-      "CodigoExterno": "899-26-LE26",
-      "Nombre": "Mantenimiento Preventivo y Correctivo impresoras",
-      "CodigoEstado": 8,
-      "Descripcion": "“Servicio de Mantenimiento Preventivo y Correctivo de Impresoras para el Hospital Familiar y Comunitario San José de Casablanca”",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "7239",
-        "NombreOrganismo": "SERVICIO DE SALUD VALPARAISO SAN ANTONIO",
-        "RutUnidad": "61.602.067-6",
-        "CodigoUnidad": "1895",
-        "NombreUnidad": "Hospital San Jose - Casablanca",
-        "DireccionUnidad": "Juan Verdaguer N° 122",
-        "ComunaUnidad": "Casablanca",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2142832",
-        "NombreUsuario": "Paola Gomez Cuevas",
-        "CargoUsuario": "Ejecutiva de compras"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 3153,
-      "Fechas": {
-        "FechaCreacion": "2026-06-22T10:43:49",
-        "FechaCierre": "2026-07-02T12:00:00",
-        "FechaInicio": "2026-06-22T14:31:00",
-        "FechaFinal": "2026-06-25T14:31:00",
-        "FechaPubRespuestas": "2026-06-26T20:00:00",
-        "FechaActoAperturaTecnica": "2026-07-02T12:01:00",
-        "FechaActoAperturaEconomica": "2026-07-02T12:01:00",
-        "FechaPublicacion": "2026-06-22T11:45:27.23",
-        "FechaAdjudicacion": "2026-08-18T09:43:41.58",
-        "FechaEstimadaAdjudicacion": "2026-09-03T20:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "36",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "IVAN MUÑOZ GUZMAN",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Encargado Unidad TIC",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "36",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-12T00:00:00",
-        "Numero": "1128",
-        "NumeroOferentes": 2,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=+2pjPTRCnsEWG66off4lmpDU5q2QY6R/eChCR0VvkNg="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 43212110,
-            "CodigoCategoria": "43212100",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
-            "NombreProducto": "Impresoras multifunción o multifuncionales",
-            "Descripcion": "Servicio mantención preventivo y correctivo impresoras",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "76.497.659-2",
-              "NombreProveedor": "SERVICIOS E IMPORTACIONES ALFARO Y PENA LIMITADA",
-              "Cantidad": 1,
-              "MontoUnitario": 55000000
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787154564.224787,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242861.7603338,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1020-39-LE26": {
     "data": {
@@ -301019,327 +298419,8 @@
         ]
       }
     },
-    "ts": 1787150505.45964,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
-  },
-  "2328-73-LE25": {
-    "data": {
-      "CodigoExterno": "2328-73-LE25",
-      "Nombre": "LICITACIÓN PÚBLICA E-462025 “ADQUISICION DE PROYECTORES Y EQUIPOS COMPLEMENTARIOS PARA SALAS DE CLASES ESCUELA ARABE SIRIA ESCUELA RURAL LENCA ESCUELA ARGENTINA LICEO MANUEL MONTT Y ESCUELA ARTURO PRAT DEPENDIENTES DEL D.A.E.M. PUERTO MONTT”",
-      "CodigoEstado": 8,
-      "Descripcion": "LICITACIÓN PÚBLICA E-46/2025 “ADQUISICION DE PROYECTORES Y EQUIPOS COMPLEMENTARIOS PARA SALAS DE CLASES ESCUELA ARABE SIRIA, ESCUELA RURAL LENCA, ESCUELA ARGENTINA, LICEO MANUEL MONTT Y ESCUELA ARTURO PRAT DEPENDIENTES DEL D.A.E.M. PUERTO MONTT”",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "86507",
-        "NombreOrganismo": "I MUNICIPALIDAD DE PUERTO MONTT",
-        "RutUnidad": "69.220.100-0",
-        "CodigoUnidad": "3321",
-        "NombreUnidad": "Unidad de Adquisiciones Dirección de Educación",
-        "DireccionUnidad": "Avda. Presidente Ibañez Nº600 4TO PISO",
-        "ComunaUnidad": "Puerto Montt",
-        "RegionUnidad": "Región de los Lagos ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1155019",
-        "NombreUsuario": "Mauricio  Sandoval Perez",
-        "CargoUsuario": "Comprador DAEM"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 2517,
-      "Fechas": {
-        "FechaCreacion": "2025-10-23T00:00:00",
-        "FechaCierre": "2025-11-07T13:33:00",
-        "FechaInicio": "2025-10-27T15:40:00",
-        "FechaFinal": "2025-11-03T13:32:00",
-        "FechaPubRespuestas": "2025-11-04T13:32:00",
-        "FechaActoAperturaTecnica": "2025-11-07T13:34:00",
-        "FechaActoAperturaEconomica": "2025-11-07T13:34:00",
-        "FechaPublicacion": "2025-10-27T15:39:22.713",
-        "FechaAdjudicacion": "2026-08-19T09:58:58.283",
-        "FechaEstimadaAdjudicacion": "2025-11-28T13:35:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "SEP",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "UNIDAD DE FINANZAS DAEM",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "UNIDAD DE ADQUISICIONES DAEM",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 4,
-        "Fecha": "2025-03-24T00:00:00",
-        "Numero": "03449",
-        "NumeroOferentes": 10,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=6E+lovzw2D4+2GkUsTXBsQYQXgaLY0cidxBYQdi6FR0="
-      },
-      "Items": {
-        "Cantidad": 14,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "PROYECTOR EQUIVALENTE O SUPERIOR A LS510WH PROYECTOR LED WXGA 3000 SEGUN ESPECIFICACIONES TÉCNICAS ADJUNTAS PARA ESCUELA ARABE SIRIA. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": {
-              "RutProveedor": "76.811.566-4",
-              "NombreProveedor": "TECNOMONTT SPA",
-              "Cantidad": 4,
-              "MontoUnitario": 480000
-            }
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "PROYECTOR EQUIVALENTE O SUPERIOR A VIEWSONIC - LS740W - 1280 X 800 - PORTABLE - 5000 ANSI LUMENS WXGA SEGUN ESPECIFICACIONES TÉCNICAS ADJUNTAS PARA ESCUELA ARABE SIRIA.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": {
-              "RutProveedor": "76.359.312-6",
-              "NombreProveedor": "AURA XD SPA",
-              "Cantidad": 2,
-              "MontoUnitario": 733320
-            }
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 45111501,
-            "CodigoCategoria": "45111500",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Atriles, sistemas de sonido y accesorios",
-            "NombreProducto": "Atriles de pie",
-            "Descripcion": "TELÓN MURAL 1.52 X 1.52 MTS. (VW60) (60\" X 60\") PARA ESCUELA ARABE SIRIA ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 7,
-            "Adjudicacion": {
-              "RutProveedor": "76.811.566-4",
-              "NombreProveedor": "TECNOMONTT SPA",
-              "Cantidad": 7,
-              "MontoUnitario": 55000
-            }
-          },
-          {
-            "Correlativo": 4,
-            "CodigoProducto": 45111501,
-            "CodigoCategoria": "45111500",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Atriles, sistemas de sonido y accesorios",
-            "NombreProducto": "Atriles de pie",
-            "Descripcion": "TELÓN TRÍPODE 1.78 X 1.78 MTS. (VT70) (70\" X 70\") PARA ESCUELA ARABE SIRIA ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": {
-              "RutProveedor": "76.596.570-5",
-              "NombreProveedor": "SOCIEDAD COMERCIAL ALCA LIMITADA",
-              "Cantidad": 3,
-              "MontoUnitario": 69950
-            }
-          },
-          {
-            "Correlativo": 5,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "PROYECTOR EQUIVALENTE O SUPERIOR A EPSON PROYECTOR BRIGHTLINK 675WI V11H743021, TIRO CORTO SEGÚN ESPECIFICACIONES TECNICAS PARA ESCUELA RURAL LENCA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 5,
-            "Adjudicacion": {
-              "RutProveedor": "77.072.745-6",
-              "NombreProveedor": "OMA SPA",
-              "Cantidad": 5,
-              "MontoUnitario": 1260420
-            }
-          },
-          {
-            "Correlativo": 6,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "PROYECTOR INTERACTIVO 1080P 3LCD 3600 LÚMENES EQUIVALENTE O SUPERIOR A LO SOLICITADO EN ESPECIFICACIONES TÉCNICAS ADJUNTAS PARA LA ESCUELA ARGENTINA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": {
-              "RutProveedor": "76.359.312-6",
-              "NombreProveedor": "AURA XD SPA",
-              "Cantidad": 4,
-              "MontoUnitario": 1210560
-            }
-          },
-          {
-            "Correlativo": 7,
-            "CodigoProducto": 43201552,
-            "CodigoCategoria": "43201500",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Componentes para tecnología de la información, difusión o telecomunicaciones / Módulos, interfaces, procesadores y placas de sistema",
-            "NombreProducto": "Adaptadores de telefonía o hardware",
-            "Descripcion": "ADAPTADOR DE RED USB 3.0 A GIGABIT ETHERNET TPLINK UE306 EQUIVALENTE O SUPERIOR A LO INDICADO EN ESPECIFICACIONES TÉCNICAS ADJUNTAS PARA LA ESCUELA ARGENTINA. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": {
-              "RutProveedor": "76.811.566-4",
-              "NombreProveedor": "TECNOMONTT SPA",
-              "Cantidad": 10,
-              "MontoUnitario": 9000
-            }
-          },
-          {
-            "Correlativo": 8,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "PROYECTOR 3LCD XGA CON DIAL HDMI  EQUIVALENTE O SUPERIOR A LO INDICADO EN ESPECIFICACIONES TÉCNICAS ADJUNTAS PARA LA ESCUELA ARGENTINA.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 9,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "SOPORTE PARA PROYECTOR COMPATIBLE   EQUIVALENTE O SUPERIOR A LO INDICADO EN ESPECIFICACIONES TÉCNICAS ADJUNTAS PARA LA ESCUELA ARGENTINA.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": {
-              "RutProveedor": "76.811.566-4",
-              "NombreProveedor": "TECNOMONTT SPA",
-              "Cantidad": 4,
-              "MontoUnitario": 95000
-            }
-          },
-          {
-            "Correlativo": 10,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "PROYECTOR EQUIVALENTE O SUPERIOR A EPSON POWER LITE 815E SEGÚN ESPECIFICACIONES TECNICAS ADJUNTAS PARA ARTURO PRAT",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "76.596.570-5",
-              "NombreProveedor": "SOCIEDAD COMERCIAL ALCA LIMITADA",
-              "Cantidad": 1,
-              "MontoUnitario": 2576900
-            }
-          },
-          {
-            "Correlativo": 11,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "PROYECTOR EQUIVALENTE O SUPERIOR A EPSON E-20 SEGÚN ESPECIFICACIONES TECNICAS ADJUNTAS PARA ARTURO PRAT",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 12,
-            "Adjudicacion": {
-              "RutProveedor": "76.811.566-4",
-              "NombreProveedor": "TECNOMONTT SPA",
-              "Cantidad": 12,
-              "MontoUnitario": 330000
-            }
-          },
-          {
-            "Correlativo": 12,
-            "CodigoProducto": 45111616,
-            "CodigoCategoria": "45111600",
-            "Categoria": "Equipos y suministros de imprenta, fotográficos y audiovisuales / Equipos de composición y presentación audiovisual / Proyectores y suministros",
-            "NombreProducto": "Proyectores de video",
-            "Descripcion": "PROYECTOR EQUIVALENTE O SUPERIOR A VIEWSONIC PA700W SEGÚN ESPECIFICACIONES TECNICAS ADJUNTAS PARA MANUEL MONTT",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 20,
-            "Adjudicacion": {
-              "RutProveedor": "76.359.312-6",
-              "NombreProveedor": "AURA XD SPA",
-              "Cantidad": 20,
-              "MontoUnitario": 361713
-            }
-          },
-          {
-            "Correlativo": 13,
-            "CodigoProducto": 26121636,
-            "CodigoCategoria": "26121600",
-            "Categoria": "Maquinaria para generación y distribución de energía / Alambres y cables eléctricos y electrónicos / Cables eléctricos y accesorios",
-            "NombreProducto": "Cables de alimentación",
-            "Descripcion": "CABLE HDMI ULTRA, LARGO 10 METROS SEGÚN ESPECIFICACIONES TECNICAS ADJUNTAS PARA LICEO MANUEL MONTT",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 25,
-            "Adjudicacion": {
-              "RutProveedor": "77.619.564-2",
-              "NombreProveedor": "MULTIPRODUCTO SPA",
-              "Cantidad": 25,
-              "MontoUnitario": 5299
-            }
-          },
-          {
-            "Correlativo": 14,
-            "CodigoProducto": 56101501,
-            "CodigoCategoria": "56101500",
-            "Categoria": "Muebles y mobiliario / Muebles de alojamiento / Muebles",
-            "NombreProducto": "Soportes",
-            "Descripcion": "SOPORTE PARA PROYECTOR CON BRAZO A TECHO PARED SEGÚN ESPECIFICACIONES TECNICAS ADJUNTAS PARA MANUEL MONTT",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 20,
-            "Adjudicacion": {
-              "RutProveedor": "77.619.564-2",
-              "NombreProveedor": "MULTIPRODUCTO SPA",
-              "Cantidad": 20,
-              "MontoUnitario": 10883
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787150506.393215,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242807.7263699,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "5965-8-LE26": {
     "data": {
@@ -301454,8 +298535,8 @@
         ]
       }
     },
-    "ts": 1787150507.519624,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242789.0717564,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2663-61-L126": {
     "data": {
@@ -301725,8 +298806,8 @@
         ]
       }
     },
-    "ts": 1787150508.544339,
-    "fetchedAt": "2026-08-19T14:33:35.024866+00:00"
+    "ts": 1787242820.088592,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2069-142-LE26": {
     "data": {
@@ -303047,10 +300128,10 @@
     "data": {
       "CodigoExterno": "4928-28-LE26",
       "Nombre": "SERVICIO DE MANTENCION PREVENTIVA AIRE ACONDICIONADO",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "SERVICIO DE MANTENCION PREVENTIVA AIRE ACONDICIONADO",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "113812",
         "NombreOrganismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -303072,13 +300153,13 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 3456,
+      "CantidadReclamos": 3457,
       "Fechas": {
         "FechaCreacion": "2026-08-05T00:00:00",
         "FechaCierre": "2026-08-19T18:00:00",
@@ -303145,8 +300226,8 @@
         ]
       }
     },
-    "ts": 1787154244.501333,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242803.61776,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "5066-2-LE26": {
     "data": {
@@ -304459,8 +301540,8 @@
         ]
       }
     },
-    "ts": 1787154475.7518022,
-    "fetchedAt": "2026-08-19T15:42:59.120896+00:00"
+    "ts": 1787242796.4433599,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1024-40-LE26": {
     "data": {
@@ -305701,7 +302782,7 @@
       "JustificacionPublicidad": "",
       "Contrato": null,
       "Obras": "0",
-      "CantidadReclamos": 2987,
+      "CantidadReclamos": 2988,
       "Fechas": {
         "FechaCreacion": "2026-03-27T00:00:00",
         "FechaCierre": "2026-05-07T16:00:00",
@@ -307226,8 +304307,8 @@
         ]
       }
     },
-    "ts": 1787156281.534006,
-    "fetchedAt": "2026-08-19T16:17:05.588635+00:00"
+    "ts": 1787242792.776024,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "898-84-R126": {
     "data": {
@@ -307573,272 +304654,8 @@
         ]
       }
     },
-    "ts": 1787156282.4842591,
-    "fetchedAt": "2026-08-19T16:17:05.588635+00:00"
-  },
-  "1002772-54-LP26": {
-    "data": {
-      "CodigoExterno": "1002772-54-LP26",
-      "Nombre": "SUMINISTRO LAPIZ ELECTROBISTURI Y ELECTRODOS",
-      "CodigoEstado": 8,
-      "Descripcion": "Las presentes Bases constituyen el instrumento guía destinado a celebrar un CONVENIO DE SUMINISTRO DE LÁPIZ ELECTROBISTURÍ Y ELECTRODOS PARA EL HOSPITAL DR. FÉLIX BULNES CERDA, en adelante Hospital, éstas, establecen los fines, condiciones y requisitos que deberán ser cumplidos por los oferentes, en todas y cada una de las partes que conformen su oferta, además de regular el todo el proceso licitatorio hasta la suscripción del correspondiente contrato.",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "7383",
-        "NombreOrganismo": "SERVICIO SALUD OCCIDENTE HOSPITAL DR FELIX BULNES CERDA",
-        "RutUnidad": "61.608.205-1",
-        "CodigoUnidad": "1002772",
-        "NombreUnidad": "INSUMOS CLINICOS",
-        "DireccionUnidad": "",
-        "ComunaUnidad": "",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1760076",
-        "NombreUsuario": "Mitzi Acuña",
-        "CargoUsuario": ""
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 2829,
-      "Fechas": {
-        "FechaCreacion": "2026-06-05T10:18:27.76",
-        "FechaCierre": "2026-06-19T16:00:00",
-        "FechaInicio": "2026-06-05T16:01:00",
-        "FechaFinal": "2026-06-11T16:00:00",
-        "FechaPubRespuestas": "2026-06-15T16:00:00",
-        "FechaActoAperturaTecnica": "2026-06-22T09:00:00",
-        "FechaActoAperturaEconomica": "2026-06-22T09:00:00",
-        "FechaPublicacion": "2026-06-05T11:55:27.903",
-        "FechaAdjudicacion": "2026-08-18T09:43:31.1",
-        "FechaEstimadaAdjudicacion": "2026-08-18T16:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "24",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "RODRIGO QUIDEL PARRA",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "BARBARA CARVAJAL",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "24",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-17T00:00:00",
-        "Numero": "14814",
-        "NumeroOferentes": 14,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=r1NWIFCKeSfjB0bMlEMuF1KO6AMSKg42oub+BZC8E9I="
-      },
-      "Items": {
-        "Cantidad": 3,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 42295104,
-            "CodigoCategoria": "42295100",
-            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Equipo quirúrgico, accesorios y productos relacionados",
-            "NombreProducto": "Equipo electro quirúrgico o electro cauterio o accesorios o productos relacionados",
-            "Descripcion": "0020020127 LAPIZ ELECTROBISTURI PUNTA PALETA CON DOBLE EMPAQUE CONTROL MANUAL CON BOTONES INDEPENDIENTES",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 31200,
-            "Adjudicacion": {
-              "RutProveedor": "92.288.000-k",
-              "NombreProveedor": "DROGUERIA HOFMANN LIMITADA Y COMPANIA SOCIEDAD EN COMANDITA POR ACCION",
-              "Cantidad": 31200,
-              "MontoUnitario": 1050
-            }
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 42295104,
-            "CodigoCategoria": "42295100",
-            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Equipo quirúrgico, accesorios y productos relacionados",
-            "NombreProducto": "Equipo electro quirúrgico o electro cauterio o accesorios o productos relacionados",
-            "Descripcion": "0140010417 ELECTRODO DE ACERO INOXIDABLE PUNTA PALETA LARGA (16-16.5 CM LONGITUD APROXIMADAMENTE)",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4800,
-            "Adjudicacion": {
-              "RutProveedor": "77.783.690-0",
-              "NombreProveedor": "DOLPHIN MEDICAL SPA",
-              "Cantidad": 4800,
-              "MontoUnitario": 2400
-            }
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 42295104,
-            "CodigoCategoria": "42295100",
-            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Equipo quirúrgico, accesorios y productos relacionados",
-            "NombreProducto": "Equipo electro quirúrgico o electro cauterio o accesorios o productos relacionados",
-            "Descripcion": "0010045243 ELECTRODO DE ACERO INOXIDABLE MICROPUNTA (PUNTA AGUJA 5 CMS DE LARGO APROX)",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1200,
-            "Adjudicacion": {
-              "RutProveedor": "96.636.310-k",
-              "NombreProveedor": "ALLMEDICA SOCIEDAD ANONIMA",
-              "Cantidad": 1200,
-              "MontoUnitario": 1630
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787156283.392145,
-    "fetchedAt": "2026-08-19T16:17:05.588635+00:00"
-  },
-  "1431841-48-LE26": {
-    "data": {
-      "CodigoExterno": "1431841-48-LE26",
-      "Nombre": "SUM.TINTAS TÓNER MASTER Y SERV MANT. REP. MPRESORA",
-      "CodigoEstado": 6,
-      "Descripcion": "El objetivo es contratar el suministro y servicio técnico que permita garantizar el correcto\r\nfuncionamiento de los equipos de impresión del DAEM y establecimientos educacionales,\r\nPara dar cumplimento se requiere la contratación de un servicio especializado y técnicamente\r\ncompetente para ejecutar el contrato de los siguientes servicios:\r\na El suministro de tintas, tóner, master y tambores para equipos de impresión.\r\nb La mantención correctiva y reparación de equipos de impresión.\r\nc El eventual cambio de piezas, partes o componentes necesarios para restituir el correcto\r\nfuncionamiento del equipo, cuando ello corresponda.\r\nEl servicio es para las impresoras existentes en el Departamento de Educación y\r\nestablecimientos educacionales y para las eventuales maquinas que se puedan adquirir\r\ndurante la ejecución del servicio.",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "7325",
-        "NombreOrganismo": "I MUNICIPALIDAD DE RECOLETA",
-        "RutUnidad": "69.254.800-0",
-        "CodigoUnidad": "1431841",
-        "NombreUnidad": "DIRECCION  DE COMPRAS PUBLICAS",
-        "DireccionUnidad": "Avenida Recoleta 2774",
-        "ComunaUnidad": "Recoleta",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1892756",
-        "NombreUsuario": "Carolina Alejandra Rodriguez Villablanca",
-        "CargoUsuario": "Jefa Abastecimiento DAEM"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 4162,
-      "Fechas": {
-        "FechaCreacion": "2026-08-03T15:46:58.057",
-        "FechaCierre": "2026-08-17T15:00:00",
-        "FechaInicio": "2026-08-03T19:01:00",
-        "FechaFinal": "2026-08-10T13:00:00",
-        "FechaPubRespuestas": "2026-08-13T23:00:00",
-        "FechaActoAperturaTecnica": "2026-08-17T15:30:00",
-        "FechaActoAperturaEconomica": "2026-08-17T15:30:00",
-        "FechaPublicacion": "2026-08-03T18:12:15.563",
-        "FechaAdjudicacion": "2026-09-14T18:00:00",
-        "FechaEstimadaAdjudicacion": "2026-09-14T18:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "Presupuesto",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 32000000,
-      "Tiempo": "12",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "ADRIANA BARRERA",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Salvador Delgadillo",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "La Municipalidad de Recoleta podrá re adjudicar la licitación al oferente que siga en el orden\r\nde prelación de acuerdo con el puntaje obtenido, en los siguientes casos:\r\na Sí el primer calificado desiste de su oferta.\r\nb La emisión de la Orden de Compra",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "12",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "Este monto corresponde al presupuesto máximo estimado para la vigencia del contrato y se\r\nejecutará de acuerdo con los requerimientos efectivos que formule la entidad licitante.",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 2,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 44101727,
-            "CodigoCategoria": "44101700",
-            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Accesorios para impresoras, fotocopiadoras y aparatos de fax",
-            "NombreProducto": "Soportes de impresora",
-            "Descripcion": "VALOR NETO TOTAL SUMATORIA 1 PRODUCTO POR SUMINISTRO TINTAS,TONER,MASTER ",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 44101501,
-            "CodigoCategoria": "44101500",
-            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Multicopistas, fotocopiadoras, fax y multifuncionales",
-            "NombreProducto": "Fotocopiadoras",
-            "Descripcion": "VALOR NETO SUMATORIA NIVEL 1 Y 2 POR MANTENCIÓN",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787156288.4581409,
-    "fetchedAt": "2026-08-19T16:17:05.588635+00:00"
+    "ts": 1787242828.1609967,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "1288505-7-LE26": {
     "data": {
@@ -307942,8 +304759,8 @@
         ]
       }
     },
-    "ts": 1787156289.546083,
-    "fetchedAt": "2026-08-19T16:17:05.588635+00:00"
+    "ts": 1787242899.096703,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "2173-25-LE26": {
     "data": {
@@ -308047,8 +304864,8 @@
         ]
       }
     },
-    "ts": 1787156291.46837,
-    "fetchedAt": "2026-08-19T16:17:05.588635+00:00"
+    "ts": 1787242904.1516871,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   },
   "5612-6-LE26": {
     "data": {
@@ -328927,5 +325744,226 @@
     },
     "ts": 1787235866.2276907,
     "fetchedAt": "2026-08-20T14:22:44.249389+00:00"
+  },
+  "1057937-10-LE26": {
+    "data": {
+      "CodigoExterno": "1057937-10-LE26",
+      "Nombre": "COMPRA 01 TERMOCICLADOR QPCR PARA EL LABORATORIO DE BIOLOGIA MOLECULAR",
+      "CodigoEstado": 5,
+      "Descripcion": "COMPRA DE 01 TERMOCICLADOR QPCR PARA EL LABORATORIO DE BIOLOGIA MOLECULAR – HOSPITAL BASE VALDIVIA",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "7410",
+        "NombreOrganismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL BASE",
+        "RutUnidad": "61.607.502-0",
+        "CodigoUnidad": "1057937",
+        "NombreUnidad": "Activos Fijos",
+        "DireccionUnidad": "Simpson 850",
+        "ComunaUnidad": "Valdivia",
+        "RegionUnidad": "Región de Los Ríos",
+        "RutUsuario": "",
+        "CodigoUsuario": "1498721",
+        "NombreUsuario": "Rita Veronica Agüero Velasquez",
+        "CargoUsuario": "Ejecutivo Compras"
+      },
+      "DiasCierreLicitacion": "6",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 1729,
+      "Fechas": {
+        "FechaCreacion": "2026-08-20T00:00:00",
+        "FechaCierre": "2026-08-26T19:00:00",
+        "FechaInicio": "2026-08-20T11:45:00",
+        "FechaFinal": "2026-08-23T19:00:00",
+        "FechaPubRespuestas": "2026-08-24T19:00:00",
+        "FechaActoAperturaTecnica": "2026-08-27T08:30:00",
+        "FechaActoAperturaEconomica": "2026-08-27T08:30:00",
+        "FechaPublicacion": "2026-08-20T10:20:02.83",
+        "FechaAdjudicacion": "2026-12-18T19:00:00",
+        "FechaEstimadaAdjudicacion": "2026-12-18T19:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "RECURSOS PROPIOS",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 26559000,
+      "Tiempo": null,
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "ALBERTO DELGADO KAUZLARICH",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "AURORA LEIVA CASTILLO",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 1,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "1",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 30201902,
+            "CodigoCategoria": "30201900",
+            "Categoria": "Artículos para estructuras, obras y construcciones / Estructuras prefabricadas / Construcciones médicas prefabricadas",
+            "NombreProducto": "Unidades de laboratorio",
+            "Descripcion": "1\tTERMOCICLADOR QPCR",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787242759.7388217,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
+  },
+  "5538-8-LE26": {
+    "data": {
+      "CodigoExterno": "5538-8-LE26",
+      "Nombre": "MANTENCIÓN REPARACION EQUIPOS DE CLIMATIZACIÓN",
+      "CodigoEstado": 8,
+      "Descripcion": "La Junta Nacional de Jardines Infantiles, JUNJI, a través de la Subdirección de Cobertura y Habilitación de Espacios Educativos, requiere la adquisición del servicio de “Mantenimiento, reparación y certificación de sistemas de climatización y calefacción, incluyendo calderas, estufas y equipos Split en jardines infantiles, así como en las oficinas de dirección y centro de logística regionales de los programas 01, 02 y 04, para la Junta Nacional de Jardines Infantiles de los Ríos” \r\nEl llamado a licitación y contratación se regirá por las presentes Bases Administrativas, Bases Técnicas, Anexos Complementarios, y todos los documentos que comprende la Carpeta Técnica Especificaciones Técnicas, Itemizado Referencial y demás Anexos y la Ley Nº19.886, sobre la materia y su Reglamento.",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "6928",
+        "NombreOrganismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
+        "RutUnidad": "70.072.600-2",
+        "CodigoUnidad": "6451",
+        "NombreUnidad": "Junji - XIV Región - Los Ríos",
+        "DireccionUnidad": "ARAUCO N° 371-373, Valdivia",
+        "ComunaUnidad": "Valdivia",
+        "RegionUnidad": "Región de Los Ríos",
+        "RutUsuario": "",
+        "CodigoUsuario": "1299380",
+        "NombreUsuario": "LETICIA BUSTAMANTE",
+        "CargoUsuario": "Comprador"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "1",
+      "Obras": "0",
+      "CantidadReclamos": 655,
+      "Fechas": {
+        "FechaCreacion": "2026-06-26T09:52:24.847",
+        "FechaCierre": "2026-07-21T18:00:00",
+        "FechaInicio": "2026-07-07T16:01:00",
+        "FechaFinal": "2026-07-13T16:00:00",
+        "FechaPubRespuestas": "2026-07-14T18:00:00",
+        "FechaActoAperturaTecnica": "2026-07-22T09:30:00",
+        "FechaActoAperturaEconomica": "2026-07-22T09:30:00",
+        "FechaPublicacion": "2026-07-07T15:11:52.257",
+        "FechaAdjudicacion": "2026-08-20T12:13:26.717",
+        "FechaEstimadaAdjudicacion": "2026-08-10T17:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "SOL.59764",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "24",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "PABLO HERRERA",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "FELIPE LAVADO",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "24",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-08-19T00:00:00",
+        "Numero": "214",
+        "NumeroOferentes": 5,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=hSUgptwEXGKw57yMVZtyDxMxn1NvUiIQi56KBTwxooY="
+      },
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 72102302,
+            "CodigoCategoria": "72102300",
+            "Categoria": "Servicios de construcción y mantenimiento / Servicios de atención, mantenimiento y reparaciones de edificios / Gasfitería, calefacción y aire acondicionado",
+            "NombreProducto": "Instalación, reparación o mantenimiento de sistemas de calefacción",
+            "Descripcion": "MANTENIMIENTO, REPARACIÓN Y CERTIFICACIÓN DE SISTEMAS DE CLIMATIZACIÓN Y CALEFACCIÓN, INCLUYENDO CALDERAS, ESTUFAS Y EQUIPOS SPLIT EN JARDINES INFANTILES, ASÍ COMO EN LAS OFICINAS DE DIRECCIÓN Y CENTRO DE LOGÍSTICA REGIONALES DE LOS PROGRAMAS 01, 02 Y 04,",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "76.420.367-4",
+              "NombreProveedor": "MF INGENIERIA SPA",
+              "Cantidad": 1,
+              "MontoUnitario": 16771164
+            }
+          }
+        ]
+      }
+    },
+    "ts": 1787242770.2153463,
+    "fetchedAt": "2026-08-20T16:18:51.519402+00:00"
   }
 }
