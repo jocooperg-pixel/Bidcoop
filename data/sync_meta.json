@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-20T08:21:45.094545+00:00",
-  "ultimoIntentoRealizado": "2026-08-20T08:21:45.094545+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-20T10:16:28.965832+00:00",
+  "ultimoIntentoRealizado": "2026-08-20T10:16:28.965832+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1417,
-  "registrosConfirmados": 1417,
+  "registrosEnPlataforma": 1406,
+  "registrosConfirmados": 1406,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1135,
-  "excluidosPrefiltroIrrelevante": 7036,
-  "excluidosSinDatosReales": 8,
+  "registrosConMontoReal": 1125,
+  "excluidosPrefiltroIrrelevante": 7043,
+  "excluidosSinDatosReales": 13,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 806,
-    "conMontoValido": 802,
+    "total": 797,
+    "conMontoValido": 793,
     "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 802,
+      "VALIDADO": 793,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
     "montoOriginalSum": 252726434,
-    "montoFinalSum": 1254483039,
-    "montoRecuperadoSum": 1001756605
+    "montoFinalSum": 1239340890,
+    "montoRecuperadoSum": 986614456
   },
   "categorias": {
-    "licitaciones": 607,
-    "comprasAgiles": 806,
+    "licitaciones": 605,
+    "comprasAgiles": 797,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 112,
+    "LP": 111,
     "CO": 10,
-    "LE": 378,
+    "LE": 376,
     "LR": 43,
     "E2": 5,
     "I2": 3,
-    "L1": 62,
+    "L1": 63,
     "LS": 2,
     "O1": 4,
     "B2": 2,
-    "COT": 796
+    "COT": 787
   },
   "matchPorEmpresa": {
-    "Aminorte": 1209,
-    "V-MOCCS": 208
+    "Aminorte": 1200,
+    "V-MOCCS": 206
   },
   "cambios": {
     "comparadoContra": "2026-08-19T18:58:48.464135+00:00",
-    "nuevosCount": 526,
+    "nuevosCount": 517,
     "modificadosCount": 23,
-    "cerradosCount": 712,
+    "cerradosCount": 714,
     "nuevos": [
       {
         "codigo": "707419-31-LP26",
@@ -838,14 +838,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "621-364-LR26",
-        "titulo": " SILLA RUEDAS ADTO NEURO 1000022489",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "estadoAnterior": "Adjudicada",
-        "monto": 540446830,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "1057490-59-LP26",
         "titulo": "ARRIENDO DE SERVIDORES PARA RIS PACS",
         "organismo": "Instituto de Neurocirugía",
@@ -854,19 +846,19 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "948356-113-LP26",
+        "titulo": "Adquisición de reactivos para Exámenes Biomarcadores ",
+        "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
+        "estadoAnterior": "Adjudicada",
+        "monto": 170000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "948354-97-LP26",
         "titulo": "CONTRATACIÓN DEL SERVICIO DE ARRIENDO DE EQUIPOS DE AIRE ACONDICIONADO PARA EL HOSPITAL DIPRECA ",
         "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
         "estadoAnterior": "Adjudicada",
         "monto": 140000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "621-511-LP26",
-        "titulo": "ACIDO MEFENAMICO 500 MG CPCMCM REC. 1000022628",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "estadoAnterior": "Adjudicada",
-        "monto": 108251314,
         "empresaMatch": "Aminorte"
       },
       {
@@ -902,14 +894,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1511-46-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE COMPUTADORES TIPO AIO",
-        "organismo": "Hospital de Constitución",
-        "estadoAnterior": "Adjudicada",
-        "monto": 43054200,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1079969-17-LE26",
         "titulo": "SERVICIO DE ARRIENDO POR 12 MESES DE 03 IMPRESORAS",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -918,19 +902,27 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4737-5-LE26",
-        "titulo": "“Adquisición de Insumos para Equipos de Impresoras Fotocopiadora y Duplicador para los Establecimientos Educacionales y DAEM de la comuna de Codegua”",
-        "organismo": "I MUNICIPALIDAD DE CODEGUA",
-        "estadoAnterior": "Adjudicada",
-        "monto": 33000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1057509-209-LE26",
         "titulo": "CONVENIO PROVEEDURÍA DE SENSORES DE MONITORIZACIÓN DEL INDICE BIESPECTRAL CON MONITORES EN COMODATO nat",
         "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
         "estadoAnterior": "Cerrada",
         "monto": 31989200,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3109-4-LE26",
+        "titulo": "HARDWARE PARA SERVIDORES SUBDEPTO. T.I",
+        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
+        "estadoAnterior": "Cerrada",
+        "monto": 28000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2324-97-LE26",
+        "titulo": "LICITACION PÚBLICA N° 112026 SERVICIO DE RECEPCIÓN Y DISPOSICIÓN FINAL DE ESCOMBROS CALCINADOS PROVENIENTES DE INCENDIOS EN LA COMUNA DE PUERTO MONTT DIMAO",
+        "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
+        "estadoAnterior": "Cerrada",
+        "monto": 27840000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -948,14 +940,6 @@
         "estadoAnterior": "Adjudicada",
         "monto": 25450000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "621-482-LE26",
-        "titulo": "SILLA RUEDAS PEDIATRICA RUEDA MACIZA 1000022686",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "monto": 21765100,
-        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "2026-50-LE26",
@@ -998,6 +982,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1133353-31-LE26",
+        "titulo": "RODILLO COMPACTADOR VIBRATORIO DE DOBLE TAMBOR PARA LA COMUNA DE RAUCO",
+        "organismo": "I MUNICIPALIDAD DE RAUCO",
+        "estadoAnterior": "Adjudicada",
+        "monto": 12100000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "633-42-LE26",
         "titulo": "ADQUISICIÓN CÁMARAS WEB Y ARTIC. COMPUTACIONALES.",
         "organismo": "CORP NACIONAL FORESTAL",
@@ -1012,6 +1004,14 @@
         "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "monto": 10000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1079596-32-LE26",
+        "titulo": "ADQUISICION DE MOBILIARIO Y ELECTRODOMESTICO",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Adjudicada",
+        "monto": 8934275,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "1638-57-LE26",
@@ -1311,7 +1311,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2231.5,
+  "tiempoEjecucionSegundos": 2422.2,
   "errores": [],
   "advertencias": []
 }
