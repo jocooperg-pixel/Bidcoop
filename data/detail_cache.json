@@ -84631,8 +84631,8 @@
         ]
       }
     },
-    "ts": 1787122329.997038,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214154.0950844,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "1057550-33-L126": {
     "data": {
@@ -161069,8 +161069,8 @@
         ]
       }
     },
-    "ts": 1787122252.0386493,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214158.3281271,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "1447929-6-L126": {
     "data": {
@@ -168728,8 +168728,8 @@
         ]
       }
     },
-    "ts": 1787122287.9710937,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214166.577045,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "3887-37-LE26": {
     "data": {
@@ -174575,111 +174575,6 @@
     },
     "ts": 1786325877.6836412,
     "fetchedAt": "2026-08-09T21:25:26.650754"
-  },
-  "744-3-LE26": {
-    "data": {
-      "CodigoExterno": "744-3-LE26",
-      "Nombre": "SERVICIO DE MANTENCIÓN DE SISTEMA DE CLIMATIZACIÓN",
-      "CodigoEstado": 6,
-      "Descripcion": "El Instituto Nacional de Estadísticas, en adelante INE, requiere contratar el Servicio de mantención preventivo y correctivo de 15 Unidades de Aire Acondicionado.",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "6931",
-        "NombreOrganismo": "INSTITUTO NACIONAL DE ESTADISTICAS",
-        "RutUnidad": "60.703.000-6",
-        "CodigoUnidad": "1740",
-        "NombreUnidad": "INE -  V Región",
-        "DireccionUnidad": "Calle 7 Norte N° 610. ",
-        "ComunaUnidad": "Viña del Mar",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1446495",
-        "NombreUsuario": "Claudio Silva Chacon",
-        "CargoUsuario": "Analista de Compras y Adquisiciones"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 66,
-      "Fechas": {
-        "FechaCreacion": "2026-07-30T10:18:25.317",
-        "FechaCierre": "2026-08-14T15:00:00",
-        "FechaInicio": "2026-08-03T12:31:00",
-        "FechaFinal": "2026-08-10T18:00:00",
-        "FechaPubRespuestas": "2026-08-12T18:00:00",
-        "FechaActoAperturaTecnica": "2026-08-14T15:01:00",
-        "FechaActoAperturaEconomica": "2026-08-14T15:01:00",
-        "FechaPublicacion": "2026-08-03T10:50:59.59",
-        "FechaAdjudicacion": "2026-09-04T19:00:00",
-        "FechaEstimadaAdjudicacion": "2026-09-04T19:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": "1900-01-06T00:00:00",
-        "FechaEstimadaFirma": "2026-09-11T00:00:00",
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 2,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "01 NORMAL",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "36",
-      "UnidadTiempo": "2",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "mario rojas Letelier",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "claudio silva Chacon",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "36",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 72102305,
-            "CodigoCategoria": "72102300",
-            "Categoria": "Servicios de construcción y mantenimiento / Servicios de atención, mantenimiento y reparaciones de edificios / Gasfitería, calefacción y aire acondicionado",
-            "NombreProducto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
-            "Descripcion": "A.\tANTECEDENTES\r\nEl Instituto Nacional de Estadísticas, en adelante INE, requiere contratar el Servicio de mantención preventivo y correctivo de 15 Unidades de Aire Acondicionado",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787122351.1399379,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
   },
   "847-43-L126": {
     "data": {
@@ -195854,8 +195749,8 @@
         ]
       }
     },
-    "ts": 1787122342.5907845,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214184.0688927,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "621-697-LP26": {
     "data": {
@@ -204957,8 +204852,8 @@
         ]
       }
     },
-    "ts": 1787122203.0716434,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214165.137674,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "1075963-190-LP26": {
     "data": {
@@ -208621,7 +208516,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 3456,
+      "CantidadReclamos": 3457,
       "Fechas": {
         "FechaCreacion": "2026-07-09T00:00:00",
         "FechaCierre": "2026-08-03T16:00:00",
@@ -208688,8 +208583,8 @@
         ]
       }
     },
-    "ts": 1787122291.4509716,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214171.682643,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "1058900-7-LE26": {
     "data": {
@@ -208726,7 +208621,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 121,
+      "CantidadReclamos": 122,
       "Fechas": {
         "FechaCreacion": "2026-06-16T00:00:00",
         "FechaCierre": "2026-06-26T09:00:00",
@@ -208804,8 +208699,8 @@
         ]
       }
     },
-    "ts": 1787122330.6954272,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214157.7700174,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "2992-44-LE26": {
     "data": {
@@ -208936,8 +208831,8 @@
         ]
       }
     },
-    "ts": 1787122292.3553612,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214200.643774,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "3232-37-LE26": {
     "data": {
@@ -209052,8 +208947,8 @@
         ]
       }
     },
-    "ts": 1787122294.3453805,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214204.3332632,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "1530393-6-LP26": {
     "data": {
@@ -209184,8 +209079,8 @@
         ]
       }
     },
-    "ts": 1787122198.2751837,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214153.1052206,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "519302-2-LE26": {
     "data": {
@@ -209719,8 +209614,8 @@
         ]
       }
     },
-    "ts": 1787122284.5231788,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214192.4827378,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "837-66-LP26": {
     "data": {
@@ -209835,8 +209730,8 @@
         ]
       }
     },
-    "ts": 1787122285.6757727,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214193.502783,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "552975-49-LE26": {
     "data": {
@@ -209999,119 +209894,8 @@
         ]
       }
     },
-    "ts": 1787122256.3023827,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
-  "621-482-LE26": {
-    "data": {
-      "CodigoExterno": "621-482-LE26",
-      "Nombre": "SILLA RUEDAS PEDIATRICA RUEDA MACIZA 1000022686",
-      "CodigoEstado": 7,
-      "Descripcion": "BASES ADMINISTRATIVAS Y TÉCNICAS TIPO, POR LAS QUE SE REGIRÁN LOS PROCESOS DE LICITACIÓN PARA LA ADQUISICIÓN DE PRODUCTOS FARMACÉUTICOS, COSMÉTICOS, VACUNAS, INSUMOS, DISPOSITIVOS, Y/O ALIMENTOS DE USO MÉDICO, DESTINADO AL EJERCICIO DE ACCIONES DE SALUD",
-      "FechaCierre": null,
-      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
-      "Comprador": {
-        "CodigoOrganismo": "6957",
-        "NombreOrganismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "RutUnidad": "61.608.700-2",
-        "CodigoUnidad": "1617",
-        "NombreUnidad": "Compras del Giro 621",
-        "DireccionUnidad": "Bodega Proveedor",
-        "ComunaUnidad": "Santiago Centro",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1734747",
-        "NombreUsuario": "Cristian Rodrigo Baroch Tobar",
-        "CargoUsuario": "Ejecutivo de Plataforma"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "1",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 5880,
-      "Fechas": {
-        "FechaCreacion": "2026-05-26T00:00:00",
-        "FechaCierre": "2026-06-10T16:00:00",
-        "FechaInicio": "2026-05-26T20:00:00",
-        "FechaFinal": "2026-06-01T17:30:00",
-        "FechaPubRespuestas": "2026-06-04T17:30:00",
-        "FechaActoAperturaTecnica": "2026-06-10T16:01:00",
-        "FechaActoAperturaEconomica": "2026-06-10T16:01:00",
-        "FechaPublicacion": "2026-05-26T12:24:04.18",
-        "FechaAdjudicacion": "2026-08-14T12:50:35.94",
-        "FechaEstimadaAdjudicacion": "2026-08-19T17:30:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 21765100,
-      "Tiempo": "30",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "2",
-      "NombreResponsablePago": "Víctor Barberis Castex",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Gisela Teresa Castro Gomez",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "30",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 1,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": null,
-        "Fecha": null,
-        "Numero": null,
-        "NumeroOferentes": 2,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=7I8DbH6oRzhdxOU+tWZJYIERG0jdY0RWSEf1Du1puRU="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 42192210,
-            "CodigoCategoria": "42192200",
-            "Categoria": "Equipamiento y suministros médicos / Equipamiento para instalaciones médicas / Artículos para transporte de paciente",
-            "NombreProducto": "Sillas de ruedas",
-            "Descripcion": "SILLA RUEDAS PEDIATRICA RUEDA MACIZA; 100007339",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 50,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787122256.9836802,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214208.0807974,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "3890-115-L126": {
     "data": {
@@ -210345,122 +210129,6 @@
     "ts": 1787200132.3537338,
     "fetchedAt": "2026-08-20T04:23:39.582479+00:00"
   },
-  "4737-5-LE26": {
-    "data": {
-      "CodigoExterno": "4737-5-LE26",
-      "Nombre": "“Adquisición de Insumos para Equipos de Impresoras Fotocopiadora y Duplicador para los Establecimientos Educacionales y DAEM de la comuna de Codegua”",
-      "CodigoEstado": 8,
-      "Descripcion": "“Adquisición de Insumos para Equipos de Impresoras, Fotocopiadora y Duplicador para los Establecimientos Educacionales y DAEM de la comuna de Codegua”",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "165106",
-        "NombreOrganismo": "I MUNICIPALIDAD DE CODEGUA",
-        "RutUnidad": "69.080.400-K",
-        "CodigoUnidad": "5652",
-        "NombreUnidad": "Daem",
-        "DireccionUnidad": "",
-        "ComunaUnidad": "",
-        "RegionUnidad": "Región del Libertador General Bernardo O´Higgins",
-        "RutUsuario": "",
-        "CodigoUsuario": "336452",
-        "NombreUsuario": "Monica Isabel  Sanchez Santis",
-        "CargoUsuario": "Encargada de Adquisiciones Daem"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 138,
-      "Fechas": {
-        "FechaCreacion": "2026-07-29T00:00:00",
-        "FechaCierre": "2026-08-07T10:30:00",
-        "FechaInicio": "2026-07-29T12:30:00",
-        "FechaFinal": "2026-07-31T10:00:00",
-        "FechaPubRespuestas": "2026-07-31T13:00:00",
-        "FechaActoAperturaTecnica": "2026-08-07T10:30:00",
-        "FechaActoAperturaEconomica": "2026-08-07T10:30:00",
-        "FechaPublicacion": "2026-07-29T10:38:02.43",
-        "FechaAdjudicacion": "2026-08-14T13:39:01.54",
-        "FechaEstimadaAdjudicacion": "2026-08-17T17:30:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "Ley 20.248",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 33000000,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "2",
-      "NombreResponsablePago": "Patricia del Carmen Arredondo Gajardo ",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Mónica Isabel Sánchez Santis ",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "La presente propuesta no permite subcontratación de ninguna especie.",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "Presupuesto Disponible es con IVA Incluido",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 4,
-        "Fecha": "2026-08-14T00:00:00",
-        "Numero": "18",
-        "NumeroOferentes": 8,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=WQxaRyUN34u5jNzJXT1R+VlvUyol+pkuGgKAZ5HB4S4="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 44103103,
-            "CodigoCategoria": "44103100",
-            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
-            "NombreProducto": "Tóner",
-            "Descripcion": "“Adquisición de Insumos para Equipos de Impresoras, fotocopiadora y Duplicador para los Establecimientos Educacionales y DAEM de la comuna de Codegua”, de acuerdo a las Bases Administrativas y Técnicas adjuntas ",
-            "UnidadMedida": "Paquete",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "14.205.876-6",
-              "NombreProveedor": "FERNANDO ALBERTO VELOSO OLIVA",
-              "Cantidad": 1,
-              "MontoUnitario": 21991740
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787122334.2002,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
   "5178-3-LP26": {
     "data": {
       "CodigoExterno": "5178-3-LP26",
@@ -210496,7 +210164,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 7789,
+      "CantidadReclamos": 7793,
       "Fechas": {
         "FechaCreacion": "2026-03-05T14:30:09.83",
         "FechaCierre": "2026-03-26T16:00:00",
@@ -210574,383 +210242,8 @@
         ]
       }
     },
-    "ts": 1787122337.6836073,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
-  "621-364-LR26": {
-    "data": {
-      "CodigoExterno": "621-364-LR26",
-      "Nombre": " SILLA RUEDAS ADTO NEURO 1000022489",
-      "CodigoEstado": 8,
-      "Descripcion": "BASES ADMINISTRATIVAS Y TÉCNICAS TIPO, POR LAS QUE SE REGIRÁN LOS PROCESOS DE LICITACIÓN PARA LA ADQUISICIÓN DE PRODUCTOS FARMACÉUTICOS, COSMÉTICOS, VACUNAS, INSUMOS, DISPOSITIVOS, Y/O ALIMENTOS DE USO MÉDICO, DESTINADO AL EJERCICIO DE ACCIONES DE SALUD",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "6957",
-        "NombreOrganismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "RutUnidad": "61.608.700-2",
-        "CodigoUnidad": "1617",
-        "NombreUnidad": "Compras del Giro 621",
-        "DireccionUnidad": "Bodega Proveedor",
-        "ComunaUnidad": "Santiago Centro",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1734747",
-        "NombreUsuario": "Cristian Rodrigo Baroch Tobar",
-        "CargoUsuario": "Ejecutivo de Plataforma"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LR",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "1",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 5880,
-      "Fechas": {
-        "FechaCreacion": "2026-03-25T00:00:00",
-        "FechaCierre": "2026-04-28T16:00:00",
-        "FechaInicio": "2026-03-25T20:00:00",
-        "FechaFinal": "2026-04-06T17:30:00",
-        "FechaPubRespuestas": "2026-04-13T17:30:00",
-        "FechaActoAperturaTecnica": "2026-04-28T16:01:00",
-        "FechaActoAperturaEconomica": "2026-04-28T16:01:00",
-        "FechaPublicacion": "2026-03-25T11:45:07.263",
-        "FechaAdjudicacion": "2026-08-14T17:00:51.903",
-        "FechaEstimadaAdjudicacion": "2026-07-07T17:30:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 540446830,
-      "Tiempo": "30",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "2",
-      "NombreResponsablePago": "Víctor Barberis Castexv",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Gisela Teresa Castro Gomez",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "30",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 1,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-11T00:00:00",
-        "Numero": "2747",
-        "NumeroOferentes": 2,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=/izRNK0cB7EjO7sOpNVCgjxxws2fUobR2HDYIoqRoSQ="
-      },
-      "Items": {
-        "Cantidad": 3,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 42192210,
-            "CodigoCategoria": "42192200",
-            "Categoria": "Equipamiento y suministros médicos / Equipamiento para instalaciones médicas / Artículos para transporte de paciente",
-            "NombreProducto": "Sillas de ruedas",
-            "Descripcion": "SILLA RUEDAS ADTO NEURO LRS AS 39A40 CM; 100005451",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 200,
-            "Adjudicacion": {
-              "RutProveedor": "76.106.857-1",
-              "NombreProveedor": "SIMIL EXPRESS S.A.",
-              "Cantidad": 200,
-              "MontoUnitario": 839000
-            }
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 42192210,
-            "CodigoCategoria": "42192200",
-            "Categoria": "Equipamiento y suministros médicos / Equipamiento para instalaciones médicas / Artículos para transporte de paciente",
-            "NombreProducto": "Sillas de ruedas",
-            "Descripcion": "SILLA RUEDAS ADTO NEURO LRS AS 45A46 CM; 100005453",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 184,
-            "Adjudicacion": {
-              "RutProveedor": "76.106.857-1",
-              "NombreProveedor": "SIMIL EXPRESS S.A.",
-              "Cantidad": 184,
-              "MontoUnitario": 839000
-            }
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 42192210,
-            "CodigoCategoria": "42192200",
-            "Categoria": "Equipamiento y suministros médicos / Equipamiento para instalaciones médicas / Artículos para transporte de paciente",
-            "NombreProducto": "Sillas de ruedas",
-            "Descripcion": "SILLA RUEDAS ADTO NEURO LRS AS 48A50 CM;100005454 ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 67,
-            "Adjudicacion": {
-              "RutProveedor": "76.106.857-1",
-              "NombreProveedor": "SIMIL EXPRESS S.A.",
-              "Cantidad": 67,
-              "MontoUnitario": 839000
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787122338.3921506,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
-  "621-511-LP26": {
-    "data": {
-      "CodigoExterno": "621-511-LP26",
-      "Nombre": "ACIDO MEFENAMICO 500 MG CPCMCM REC. 1000022628",
-      "CodigoEstado": 8,
-      "Descripcion": "BASES ADMINISTRATIVAS Y TÉCNICAS TIPO, POR LAS QUE SE REGIRÁN LOS PROCESOS DE LICITACIÓN PARA LA ADQUISICIÓN DE PRODUCTOS FARMACÉUTICOS, COSMÉTICOS, VACUNAS, INSUMOS, DISPOSITIVOS, Y/O ALIMENTOS DE USO MÉDICO, DESTINADO AL EJERCICIO DE ACCIONES DE SALUD",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "6957",
-        "NombreOrganismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "RutUnidad": "61.608.700-2",
-        "CodigoUnidad": "1617",
-        "NombreUnidad": "Compras del Giro 621",
-        "DireccionUnidad": "Bodega Proveedor",
-        "ComunaUnidad": "Santiago Centro",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1734747",
-        "NombreUsuario": "Cristian Rodrigo Baroch Tobar",
-        "CargoUsuario": "Ejecutivo de Plataforma"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "1",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 5880,
-      "Fechas": {
-        "FechaCreacion": "2026-06-01T00:00:00",
-        "FechaCierre": "2026-06-24T16:00:00",
-        "FechaInicio": "2026-06-01T20:00:00",
-        "FechaFinal": "2026-06-11T17:30:00",
-        "FechaPubRespuestas": "2026-06-16T17:30:00",
-        "FechaActoAperturaTecnica": "2026-06-24T16:01:00",
-        "FechaActoAperturaEconomica": "2026-06-24T16:01:00",
-        "FechaPublicacion": "2026-06-01T11:21:16.35",
-        "FechaAdjudicacion": "2026-08-14T17:03:29.987",
-        "FechaEstimadaAdjudicacion": "2026-09-02T17:30:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 108251314,
-      "Tiempo": "24",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "2",
-      "NombreResponsablePago": "Víctor Barberis Castex",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Gisela Teresa Castro Gomez",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "24",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 1,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-11T00:00:00",
-        "Numero": "2744",
-        "NumeroOferentes": 2,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=mSlMEfc+EHZoOEqWo5mLFthIaeKgo/ZFIQ26a4PfUak="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 51142012,
-            "CodigoCategoria": "51142000",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos para el sistema nervioso central / Analgésicos no narcóticos / antipiréticos",
-            "NombreProducto": "Ácido mefenámico",
-            "Descripcion": "ACIDO MEFENAMICO 500 MG CP/CM/CM REC. 100000024",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2610258,
-            "Adjudicacion": {
-              "RutProveedor": "78.350.440-5",
-              "NombreProveedor": "CENTRO DE ESPECIALIDADES FARMACEUTICAS SPA",
-              "Cantidad": 2610250,
-              "MontoUnitario": 28.6
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787122341.8238645,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
-  "702988-23-LE26": {
-    "data": {
-      "CodigoExterno": "702988-23-LE26",
-      "Nombre": "COMPUTADORES ALTA GAMA",
-      "CodigoEstado": 7,
-      "Descripcion": "ADQUISICIÓN DE COMPUTADORES DE ALTA GAMA, LOS QUE SERÁN EMPLEADOS EN EL CAMPAMENTO EMPLAZADO PARA  LAS OBRAS DE CONECTIVIDAD NACIONAL QUE SE EJECUTAN PARA EL CONVENIO CONSTRUCCIÓN CAMINO VICUÑA-YENDEGAIA, SECTOR CALETA 2 DE MAYO, ETAPA XII,  UBICADA EN EL EXTREMO SUR DE LA ISLA GRANDE DE TIERRA DEL FUEGO.",
-      "FechaCierre": null,
-      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
-      "Comprador": {
-        "CodigoOrganismo": "111870",
-        "NombreOrganismo": "DIVISION LOGISTICA DEL EJERCITO",
-        "RutUnidad": "61.101.091-5",
-        "CodigoUnidad": "702988",
-        "NombreUnidad": "Cuerpo Milit Subjefatura Zonal Punta Arenas (IGTF)",
-        "DireccionUnidad": "Camino E° Vicuña Km 65 ",
-        "ComunaUnidad": "Timaukel",
-        "RegionUnidad": "Región de Magallanes y de la Antártica",
-        "RutUsuario": "",
-        "CodigoUsuario": "250422",
-        "NombreUsuario": "Rolando Andrés Pino García",
-        "CargoUsuario": "Supervisor Mercado Público"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 11784,
-      "Fechas": {
-        "FechaCreacion": "2026-07-24T00:00:00",
-        "FechaCierre": "2026-08-05T15:01:00",
-        "FechaInicio": "2026-07-24T17:01:00",
-        "FechaFinal": "2026-07-29T15:00:00",
-        "FechaPubRespuestas": "2026-07-30T17:00:00",
-        "FechaActoAperturaTecnica": "2026-08-05T15:01:00",
-        "FechaActoAperturaEconomica": "2026-08-05T15:01:00",
-        "FechaPublicacion": "2026-07-24T16:01:23.627",
-        "FechaAdjudicacion": "2026-08-14T16:01:09.49",
-        "FechaEstimadaAdjudicacion": "2026-08-14T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "Fondos Presupuestarios",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Francisco Kuscic Vargas",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Francisco Aguilar Brstilo",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-14T00:00:00",
-        "Numero": "4193-973-2161",
-        "NumeroOferentes": 7,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=hVJWO0rMkthUy1GFeckCLmd+vIEP3m6nk4rmYYrOajM="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 43211508,
-            "CodigoCategoria": "43211500",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Computadores",
-            "NombreProducto": "Computadores personales",
-            "Descripcion": "COMPUTADORES DE ALTA GAMA, OFERTAR EN ESTA LINEA DE PRODUCTO LO INDICADO EN LAS BASES TÉCNICAS Y ANEXO N°2",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787122346.3201091,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214177.2684705,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "757-56-LE26": {
     "data": {
@@ -211065,8 +210358,8 @@
         ]
       }
     },
-    "ts": 1787122321.860622,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214216.3273816,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "707424-20-LE26": {
     "data": {
@@ -211405,8 +210698,8 @@
         ]
       }
     },
-    "ts": 1787122347.2575948,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214188.6309335,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "520149-28-LR26": {
     "data": {
@@ -211521,8 +210814,8 @@
         ]
       }
     },
-    "ts": 1787122295.1611357,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214172.7203124,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "1057387-40-LE26": {
     "data": {
@@ -240654,7 +239947,7 @@
         "NombreUsuario": "Francisca Antonia Freire Baro",
         "CargoUsuario": "Analista de Adquisiciones"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -240734,8 +240027,8 @@
         ]
       }
     },
-    "ts": 1787035744.6256318,
-    "fetchedAt": "2026-08-18T06:48:42.039346+00:00"
+    "ts": 1787214138.5517285,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "2101-127-L126": {
     "data": {
@@ -240875,7 +240168,7 @@
         "NombreUsuario": "Caroline Cristina Fuentes Cornejo",
         "CargoUsuario": "Analista de Licitaciones"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -240955,8 +240248,8 @@
         ]
       }
     },
-    "ts": 1787035749.6917348,
-    "fetchedAt": "2026-08-18T06:48:42.039346+00:00"
+    "ts": 1787214143.7729838,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "5615-43-LE26": {
     "data": {
@@ -240980,7 +240273,7 @@
         "NombreUsuario": "Lilian Roldan Avalos",
         "CargoUsuario": "Encargada  de Adquisiciones"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -241060,8 +240353,8 @@
         ]
       }
     },
-    "ts": 1787035751.5224972,
-    "fetchedAt": "2026-08-18T06:48:42.039346+00:00"
+    "ts": 1787214144.4516425,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "813-79-LE26": {
     "data": {
@@ -241190,7 +240483,7 @@
         "NombreUsuario": "Carolina Quiroz Pérez",
         "CargoUsuario": "Analista de Contratos"
       },
-      "DiasCierreLicitacion": "23",
+      "DiasCierreLicitacion": "21",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "O1",
@@ -241270,8 +240563,8 @@
         ]
       }
     },
-    "ts": 1787035753.4137962,
-    "fetchedAt": "2026-08-18T06:48:42.039346+00:00"
+    "ts": 1787214145.301063,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "1550-3-LE26": {
     "data": {
@@ -243409,544 +242702,6 @@
     "ts": 1787132285.0387347,
     "fetchedAt": "2026-08-19T09:36:57.273582+00:00"
   },
-  "1260058-2-LE26": {
-    "data": {
-      "CodigoExterno": "1260058-2-LE26",
-      "Nombre": "“SUMINISTRO DE ANTISÉPTICOS DESINFECTANTES DETERGENTES Y SOLVENTES DE USO HOSPITALARIO Y PRODUCTOS CLÍNICOS SOBRE TEJIDO HUMANO ",
-      "CodigoEstado": 8,
-      "Descripcion": "4.\tQue considerando que las infecciones intrahospitalarias (IIH) o infecciones asociadas a la atención de salud (IAAS) son una dificultad importante de salud, cuyas implicancias en morbimortalidad y costos para el sistema hospitalario, son conocidos, requiriendo para su control, de un conjunto de acciones que comprenden toda la organización hospitalaria y la incidencia de estas es un indicador de la calidad de la atención otorgada, y considerando que dichos productos corresponden a un porcentaje de la Distribución Anual Programada (DAP) del centro de costo, que es concentrada en la resolución que aprueba el PAC institucional, no se requerirá para aquellos productos citados, el Certificado de Necesidad, siendo estos necesarios para el correcto funcionamiento de diferentes servicio dentro del recinto hospitalari",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "7459",
-        "NombreOrganismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE P",
-        "RutUnidad": "61.602.121-4",
-        "CodigoUnidad": "1260058",
-        "NombreUnidad": "Fármacos",
-        "DireccionUnidad": "",
-        "ComunaUnidad": "",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "2296326",
-        "NombreUsuario": "MARIANA ENCINA ZULETA",
-        "CargoUsuario": "PROFESIONAL ADQUISICIONES"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 190,
-      "Fechas": {
-        "FechaCreacion": "2026-06-08T00:00:00",
-        "FechaCierre": "2026-07-01T15:01:00",
-        "FechaInicio": "2026-06-18T17:01:00",
-        "FechaFinal": "2026-06-24T15:01:00",
-        "FechaPubRespuestas": "2026-06-29T17:00:00",
-        "FechaActoAperturaTecnica": "2026-07-01T15:02:00",
-        "FechaActoAperturaEconomica": "2026-07-01T15:02:00",
-        "FechaPublicacion": "2026-06-18T12:33:00",
-        "FechaAdjudicacion": "2026-08-14T15:34:31.123",
-        "FechaEstimadaAdjudicacion": "2026-08-28T08:54:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "LEY DE PRESUPUESTO",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 69000000,
-      "Tiempo": "24",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "VIVIANA ARAYA",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "byron quijada",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "24",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "Según Res. Exenta N 2576, del 16 de junio 2026",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-14T00:00:00",
-        "Numero": "3374",
-        "NumeroOferentes": 20,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=ZalvTAYQXwASaZdcoR1zK4u/IeXfY1QsRu70zpipwF4="
-      },
-      "Items": {
-        "Cantidad": 22,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 51102710,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Antisépticos basados en alcohol o acetona",
-            "Descripcion": "Alcohol, gel tópico 70 % v/v, sin enjuague, botella con válvula dosificadora, envase resistente con sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento. Medidas a evaluar 300 a 500 Ml. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 900,
-            "Adjudicacion": {
-              "RutProveedor": "79.581.120-6",
-              "NombreProveedor": "DIFEM LABORATORIOS S A",
-              "Cantidad": 900,
-              "MontoUnitario": 3309
-            }
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 51102710,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Antisépticos basados en alcohol o acetona",
-            "Descripcion": "Alcohol, gel tópico 70 % v/v, botella o bolsa con válvula dosificadora, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 1 L. Dispensador en comodato, acorde al tipo de presentación. Vencimi",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1500,
-            "Adjudicacion": {
-              "RutProveedor": "96.756.540-7",
-              "NombreProveedor": "B BRAUN MEDICAL SPA",
-              "Cantidad": 1500,
-              "MontoUnitario": 4500
-            }
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 51102710,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Antisépticos basados en alcohol o acetona",
-            "Descripcion": "Alcohol, solución tópica 70 % v/v, botella con dosificador inserto, tapa rosca y sello de seguridad, con etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 250 mL. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6920,
-            "Adjudicacion": {
-              "RutProveedor": "79.581.120-6",
-              "NombreProveedor": "DIFEM LABORATORIOS S A",
-              "Cantidad": 6948,
-              "MontoUnitario": 1307
-            }
-          },
-          {
-            "Correlativo": 4,
-            "CodigoProducto": 51102710,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Antisépticos basados en alcohol o acetona",
-            "Descripcion": "Alcohol 95 % v/v, botella con dosificador inserto, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 1 L. Vencimiento mayor a 14 meses.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 12,
-            "Adjudicacion": {
-              "RutProveedor": "79.581.120-6",
-              "NombreProveedor": "DIFEM LABORATORIOS S A",
-              "Cantidad": 12,
-              "MontoUnitario": 3193
-            }
-          },
-          {
-            "Correlativo": 5,
-            "CodigoProducto": 51102702,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Agua destilada para irrigación",
-            "Descripcion": "Agua destilada, bidón con dosificador inserto, tapa rosca y sello de seguridad, con etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 5 L. Vencimiento mayor a 14 meses.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 200,
-            "Adjudicacion": {
-              "RutProveedor": "78.027.120-5",
-              "NombreProveedor": "DISTRIBUIDORA DE PRODUCTOS DE LABORATORIO DIPROLAB LIMITADA",
-              "Cantidad": 200,
-              "MontoUnitario": 19778
-            }
-          },
-          {
-            "Correlativo": 6,
-            "CodigoProducto": 51142930,
-            "CodigoCategoria": "51142900",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos para el sistema nervioso central / Fármacos anestésicos, complementos relacionados y analépticos",
-            "NombreProducto": "Éter",
-            "Descripcion": "Éter etílico, solvente farmacopea, botella con dosificador inserto, envase resistente, tapa y sello de seguridad antiderrame, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 1 L. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 7,
-            "CodigoProducto": 42281704,
-            "CodigoCategoria": "42281700",
-            "Categoria": "Equipamiento y suministros médicos / Productos para la esterilización médica / Soluciones y equipo de limpieza pre-esterilización",
-            "NombreProducto": "Detergentes o limpiadores de instrumentos",
-            "Descripcion": "Detergente penta enzimático neutro, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 1 L. Vencimiento mayor a 14 meses.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 50,
-            "Adjudicacion": {
-              "RutProveedor": "77.202.297-2",
-              "NombreProveedor": "SOCIEDAD COMERCIAL GAMMA HEALTH CARE SPA",
-              "Cantidad": 60,
-              "MontoUnitario": 2750
-            }
-          },
-          {
-            "Correlativo": 8,
-            "CodigoProducto": 42281704,
-            "CodigoCategoria": "42281700",
-            "Categoria": "Equipamiento y suministros médicos / Productos para la esterilización médica / Soluciones y equipo de limpieza pre-esterilización",
-            "NombreProducto": "Detergentes o limpiadores de instrumentos",
-            "Descripcion": "Detergente penta enzimático neutro, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 5 L. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 130,
-            "Adjudicacion": {
-              "RutProveedor": "77.202.297-2",
-              "NombreProveedor": "SOCIEDAD COMERCIAL GAMMA HEALTH CARE SPA",
-              "Cantidad": 132,
-              "MontoUnitario": 13125
-            }
-          },
-          {
-            "Correlativo": 9,
-            "CodigoProducto": 42281704,
-            "CodigoCategoria": "42281700",
-            "Categoria": "Equipamiento y suministros médicos / Productos para la esterilización médica / Soluciones y equipo de limpieza pre-esterilización",
-            "NombreProducto": "Detergentes o limpiadores de instrumentos",
-            "Descripcion": "Detergente amonio cuaternario de 4° generación, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 1 L. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 20,
-            "Adjudicacion": {
-              "RutProveedor": "77.202.297-2",
-              "NombreProveedor": "SOCIEDAD COMERCIAL GAMMA HEALTH CARE SPA",
-              "Cantidad": 20,
-              "MontoUnitario": 2425
-            }
-          },
-          {
-            "Correlativo": 10,
-            "CodigoProducto": 42261613,
-            "CodigoCategoria": "42261600",
-            "Categoria": "Equipamiento y suministros médicos / Equipo y suministros post mortem y funerarios / Suministros y equipos de autopsia",
-            "NombreProducto": "Equipos para reconstruir el tejido del cadáver",
-            "Descripcion": "Formalina tamponada 10 %, bolsa resistente con llave dispensadora de 1/4 vuelta, con sello de seguridad antiderrame, en envase exterior de cartón de alta resistencia, apilable, con mango troquelado para facilitar transporte y manipulación, etiqueta autoad",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 11,
-            "CodigoProducto": 51102707,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Gluconato de clorhexidina",
-            "Descripcion": "Clorhexidina digluconato 2 % solución tópica, botella, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 500 mL. Vencimiento mayor a 14 meses.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 230,
-            "Adjudicacion": {
-              "RutProveedor": "79.581.120-6",
-              "NombreProveedor": "DIFEM LABORATORIOS S A",
-              "Cantidad": 240,
-              "MontoUnitario": 6810
-            }
-          },
-          {
-            "Correlativo": 12,
-            "CodigoProducto": 51102707,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Gluconato de clorhexidina",
-            "Descripcion": "Clorhexidina digluconato 2 % solución tópica, botella con dosificador inserto, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 125 mL. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 330,
-            "Adjudicacion": {
-              "RutProveedor": "79.581.120-6",
-              "NombreProveedor": "DIFEM LABORATORIOS S A",
-              "Cantidad": 336,
-              "MontoUnitario": 2640
-            }
-          },
-          {
-            "Correlativo": 13,
-            "CodigoProducto": 51102707,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Gluconato de clorhexidina",
-            "Descripcion": "Clorhexidina digluconato 2 % solución jabonosa tópica, botella con dosificador inserto y sello de seguridad, envase resistente, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 50 mL. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 300,
-            "Adjudicacion": {
-              "RutProveedor": "79.581.120-6",
-              "NombreProveedor": "DIFEM LABORATORIOS S A",
-              "Cantidad": 315,
-              "MontoUnitario": 1579
-            }
-          },
-          {
-            "Correlativo": 14,
-            "CodigoProducto": 51102707,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Gluconato de clorhexidina",
-            "Descripcion": "Clorhexidina digluconato 2 % solución tópica, incolora, botella con dosificador inserto, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 50 mL. Vencimiento mayor a 14 meses",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 400,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 15,
-            "CodigoProducto": 51102707,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Gluconato de clorhexidina",
-            "Descripcion": "Clorhexidina digluconato 2 % solución jabonosa tópica, botella con válvula dosificadora y sello de seguridad, envase resistente, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 340 mL. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 110,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 16,
-            "CodigoProducto": 51102707,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Gluconato de clorhexidina",
-            "Descripcion": "Clorhexidina digluconato 2 % jabón líquido tópico, botella, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 1 L.   Dispensador en comodato acorde al tipo de presentación. Vencimiento mayor ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 200,
-            "Adjudicacion": {
-              "RutProveedor": "79.581.120-6",
-              "NombreProveedor": "DIFEM LABORATORIOS S A",
-              "Cantidad": 204,
-              "MontoUnitario": 8335
-            }
-          },
-          {
-            "Correlativo": 17,
-            "CodigoProducto": 51102707,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Gluconato de clorhexidina",
-            "Descripcion": "Clorhexidina digluconato 0,12 %, oral, botella, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 500 mL. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 160,
-            "Adjudicacion": {
-              "RutProveedor": "76.830.090-9",
-              "NombreProveedor": "FARMACEUTICA CARIBEAN SPA",
-              "Cantidad": 160,
-              "MontoUnitario": 4138
-            }
-          },
-          {
-            "Correlativo": 18,
-            "CodigoProducto": 51102709,
-            "CodigoCategoria": "51102700",
-            "Categoria": "Medicamentos y productos farmacéuticos / Medicamentos anti infecciosos / Antisépticos",
-            "NombreProducto": "Antisépticos de peróxido de hidrógeno",
-            "Descripcion": "Agua oxigenada 10 vol, botella con dosificador inserto, envase resistente, tapa rosca y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 100 mL. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 30,
-            "Adjudicacion": {
-              "RutProveedor": "78.027.120-5",
-              "NombreProveedor": "DISTRIBUIDORA DE PRODUCTOS DE LABORATORIO DIPROLAB LIMITADA",
-              "Cantidad": 30,
-              "MontoUnitario": 2132
-            }
-          },
-          {
-            "Correlativo": 19,
-            "CodigoProducto": 42151655,
-            "CodigoCategoria": "42151600",
-            "Categoria": "Equipamiento y suministros médicos / Equipos y suministros odontológicos / Instrumentos y dispositivos dentales y de sub-especialidad",
-            "NombreProducto": "Comprobadores de pulpa o vitalidad dental",
-            "Descripcion": "Test pulpar, envase aerosol, resistente, con válvula dosificadora, agentes refrigerantes -50 °C, sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 200 mL. Vencimiento mayor a 14 meses. (Insumo odontológico)",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 40,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 20,
-            "CodigoProducto": 42312004,
-            "CodigoCategoria": "42312000",
-            "Categoria": "Equipamiento y suministros médicos / Productos para el cuidado de heridas / Cierres médicos de tejidos y productos relacionados",
-            "NombreProducto": "Quita adhesivo o quita cola médicos",
-            "Descripcion": "Toalla removedora de residuos adhesivos cutáneos, sachet individual, estéril, no irritable, herméticamente sellado, desechable, con impresión de lote y fecha de vencimiento. Medidas a evaluar entre 5 x 5 cm.  Vencimiento mayor a 14 meses",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6000,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 21,
-            "CodigoProducto": 51191906,
-            "CodigoCategoria": "51191900",
-            "Categoria": "Medicamentos y productos farmacéuticos / Agentes que afectan el agua y los electrolitos / Suplementos dietéticos y productos de terapia alimenticia",
-            "NombreProducto": "Solución de rehidratación oral",
-            "Descripcion": "Gel oral, sachet individual, herméticamente sellado, etiqueta autoadhesiva o impresa, con impresión de lote y fecha de vencimiento.  Vencimiento mayor a 14 meses. (Coadyuvante en el tratamiento de las lesiones de la cavidad bucofaríngea)",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 800,
-            "Adjudicacion": {
-              "RutProveedor": "99.565.040-1",
-              "NombreProveedor": "LABORATORIOS KAMPAR  S A",
-              "Cantidad": 800,
-              "MontoUnitario": 4500
-            }
-          },
-          {
-            "Correlativo": 22,
-            "CodigoProducto": 42312301,
-            "CodigoCategoria": "42312300",
-            "Categoria": "Equipamiento y suministros médicos / Productos para el cuidado de heridas / Productos para la limpieza de heridas y desbridamiento",
-            "NombreProducto": "Absorbedores para limpiar la herida",
-            "Descripcion": "Protector cutáneo spray, con ácido hiperoxigenado, en envase resistente, con válvula dosificadora, tapa y sello de seguridad, etiqueta autoadhesiva o impresa, lote y fecha de vencimiento, 100 mL. Vencimiento mayor a 14 meses. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2600,
-            "Adjudicacion": {
-              "RutProveedor": "89.688.800-5",
-              "NombreProveedor": "KNOP LABORATORIOS S A",
-              "Cantidad": 2608,
-              "MontoUnitario": 6600
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787122194.556187,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
-  "1511-46-LE26": {
-    "data": {
-      "CodigoExterno": "1511-46-LE26",
-      "Nombre": "SERVICIO DE ARRIENDO DE COMPUTADORES TIPO AIO",
-      "CodigoEstado": 8,
-      "Descripcion": "SERVICIO DE ARRIENDO DE COMPUTADORES TIPO AIO",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "7277",
-        "NombreOrganismo": "Hospital de Constitución",
-        "RutUnidad": "61.606.911-k",
-        "CodigoUnidad": "2507",
-        "NombreUnidad": "Hospital de Constitución",
-        "DireccionUnidad": "Hospital N° 200",
-        "ComunaUnidad": "Constitución",
-        "RegionUnidad": "Región del Maule ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1745288",
-        "NombreUsuario": "Luis Daniel Jaque Solís",
-        "CargoUsuario": "Administrativo"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 235,
-      "Fechas": {
-        "FechaCreacion": "2026-08-04T00:00:00",
-        "FechaCierre": "2026-08-11T15:01:00",
-        "FechaInicio": "2026-08-05T11:01:00",
-        "FechaFinal": "2026-08-06T17:05:00",
-        "FechaPubRespuestas": "2026-08-08T17:06:00",
-        "FechaActoAperturaTecnica": "2026-08-11T15:01:00",
-        "FechaActoAperturaEconomica": "2026-08-11T15:01:00",
-        "FechaPublicacion": "2026-08-05T10:02:00",
-        "FechaAdjudicacion": "2026-08-14T12:10:58.737",
-        "FechaEstimadaAdjudicacion": "2026-09-15T16:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE CONSTITUCI",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 43054200,
-      "Tiempo": "24",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "MARIA PAZ QUIROZ CASTILLO",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "CRISTIAN YAÑEZ ESPINOZA",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "24",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-13T00:00:00",
-        "Numero": "3363",
-        "NumeroOferentes": 4,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=N0AdJwfXFolVhv1pmyYS5SVAuxhYAsxSGMGnLxw9aPY="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 43211507,
-            "CodigoCategoria": "43211500",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Computadores",
-            "NombreProducto": "Computadores de escritorio",
-            "Descripcion": "Servicio de arriendo mensual de 45 computadores tipo All In One (AIO), incluyendo instalación, configuración, soporte y mantenimiento, conforme a especificaciones técnicas.",
-            "UnidadMedida": "Mes",
-            "Cantidad": 24,
-            "Adjudicacion": {
-              "RutProveedor": "78.573.960-4",
-              "NombreProveedor": "ALFACOM INGENIERIA LTDA",
-              "Cantidad": 24,
-              "MontoUnitario": 1280250
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787122199.3162575,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
-  },
   "3065-52-LE26": {
     "data": {
       "CodigoExterno": "3065-52-LE26",
@@ -243982,7 +242737,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 2577,
+      "CantidadReclamos": 2578,
       "Fechas": {
         "FechaCreacion": "2026-07-30T00:00:00",
         "FechaCierre": "2026-08-14T15:00:00",
@@ -244049,8 +242804,8 @@
         ]
       }
     },
-    "ts": 1787122286.9339256,
-    "fetchedAt": "2026-08-19T06:49:19.707602+00:00"
+    "ts": 1787214165.9850473,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   },
   "2324-97-LE26": {
     "data": {
@@ -326352,5 +325107,285 @@
     },
     "ts": 1787207060.9484272,
     "fetchedAt": "2026-08-20T06:21:29.348816+00:00"
+  },
+  "507428-74-LP26": {
+    "data": {
+      "CodigoExterno": "507428-74-LP26",
+      "Nombre": "ADQUISICIÓN DE EQUIPOS DE MONITOREO Y FOTOTERAPIA PARA MATERNIDAD NHA",
+      "CodigoEstado": 8,
+      "Descripcion": "El Servicio de Salud Chiloé requiere la adquisición de Equipos de Monitoreo y Fototerapia para Maternidad para la implementación del Nuevo Hospital de Ancud.",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "16223",
+        "NombreOrganismo": "SERVICIO DE SALUD CHILOE",
+        "RutUnidad": "61.979.210-6",
+        "CodigoUnidad": "507428",
+        "NombreUnidad": "Servicio de Salud Chiloé",
+        "DireccionUnidad": "Avda. Bernardo O'Higgins 504, Castro",
+        "ComunaUnidad": "Castro",
+        "RegionUnidad": "Región de los Lagos ",
+        "RutUsuario": "",
+        "CodigoUsuario": "2213560",
+        "NombreUsuario": "ERWIN IGNACIO PARRA RUAY",
+        "CargoUsuario": "Profesional Subdepto Abastecimiento"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LP",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 2184,
+      "Fechas": {
+        "FechaCreacion": "2026-06-23T00:00:00",
+        "FechaCierre": "2026-07-17T18:00:00",
+        "FechaInicio": "2026-06-26T13:01:00",
+        "FechaFinal": "2026-07-01T15:00:00",
+        "FechaPubRespuestas": "2026-07-13T15:00:00",
+        "FechaActoAperturaTecnica": "2026-07-20T09:00:00",
+        "FechaActoAperturaEconomica": "2026-07-20T09:00:00",
+        "FechaPublicacion": "2026-06-26T12:31:00",
+        "FechaAdjudicacion": "2026-08-14T11:46:42.96",
+        "FechaEstimadaAdjudicacion": "2026-10-08T19:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "Presupuesto año 2026",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": null,
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "Marcelo Momberg Suarez",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "KAREN SALDIVIA GUERRERO",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 1,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "MONTO REFERENCIAL",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "1",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-08-13T00:00:00",
+        "Numero": "9456",
+        "NumeroOferentes": 8,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=1mwbMnKyX9pxrer5eG/oydxT+5a1Qffz9KerOCjpSJI="
+      },
+      "Items": {
+        "Cantidad": 4,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 42181801,
+            "CodigoCategoria": "42181800",
+            "Categoria": "Equipamiento y suministros médicos / Productos para exámenes y control de pacientes / Oxímetros de pulso",
+            "NombreProducto": "Unidades de oxímetros de pulso",
+            "Descripcion": "12 OXIMETRO DE PULSO ADULTO-PEDIATRICO; SEGÚN EETT DEL FORMULARIO ADJUNTO.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 12,
+            "Adjudicacion": {
+              "RutProveedor": "77.051.901-2",
+              "NombreProveedor": "ORTOPEDIA3D JAVIER ARRIAGADA MALDONADO E.I.R.L.",
+              "Cantidad": 12,
+              "MontoUnitario": 400000
+            }
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 42181801,
+            "CodigoCategoria": "42181800",
+            "Categoria": "Equipamiento y suministros médicos / Productos para exámenes y control de pacientes / Oxímetros de pulso",
+            "NombreProducto": "Unidades de oxímetros de pulso",
+            "Descripcion": "07 OXIMETRO DE PULSO NEONATAL; SEGÚN EETT DEL FORMULARIO ADJUNTO.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 7,
+            "Adjudicacion": {
+              "RutProveedor": "77.051.901-2",
+              "NombreProveedor": "ORTOPEDIA3D JAVIER ARRIAGADA MALDONADO E.I.R.L.",
+              "Cantidad": 7,
+              "MontoUnitario": 400000
+            }
+          },
+          {
+            "Correlativo": 3,
+            "CodigoProducto": 42142106,
+            "CodigoCategoria": "42142100",
+            "Categoria": "Equipamiento y suministros médicos / Suministros y productos clínicos / Productos de terapia para frío y calor",
+            "NombreProducto": "Cubiertas o mantas terapéuticas de calentar o de enfriar",
+            "Descripcion": "02 MANTA DE FOTOTERAPIA; SEGÚN EETT DEL FORMULARIO ADJUNTO.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2,
+            "Adjudicacion": {
+              "RutProveedor": "86.383.300-0",
+              "NombreProveedor": "MEDIPLEX S.A.",
+              "Cantidad": 2,
+              "MontoUnitario": 4686000
+            }
+          },
+          {
+            "Correlativo": 4,
+            "CodigoProducto": 42201701,
+            "CodigoCategoria": "42201700",
+            "Categoria": "Equipamiento y suministros médicos / Productos para imágenes y de medicina nuclear / Artículos para imágenes de ultrasonido, doppler y eco",
+            "NombreProducto": "Ultrasonido cardiaco o doppler o unidades de eco o cardioscopios",
+            "Descripcion": "08 MONITOR DE LATIDOS CARDIOFETALES; SEGÚN EETT DEL FORMULARIO ADJUNTO.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 8,
+            "Adjudicacion": {
+              "RutProveedor": "96.533.330-4",
+              "NombreProveedor": "HEMISFERIO SUR S.A.",
+              "Cantidad": 8,
+              "MontoUnitario": 4950000
+            }
+          }
+        ]
+      }
+    },
+    "ts": 1787214168.0795121,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
+  },
+  "2428-53-LE26": {
+    "data": {
+      "CodigoExterno": "2428-53-LE26",
+      "Nombre": "INSTALACIÓN Y CONSTRUCCIÓN DE TABIQUERIA MODULAR",
+      "CodigoEstado": 8,
+      "Descripcion": "DAR CUMPLIMIENTO AL PEDIDO N11, DE ALCALDÍA.\r\n\r\nRequiere el servicio de instalación y construcción de tabiquería modular vidriada y obras complementarias en zonas interiores de Edificio Municipal.",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "87633",
+        "NombreOrganismo": "I. MUNICIPALIDAD DE QUILPUE",
+        "RutUnidad": "69.061.300-K",
+        "CodigoUnidad": "3420",
+        "NombreUnidad": "I. MUNICIPALIDAD DE QUILPUE",
+        "DireccionUnidad": "Augusto Carozzi 841, Quilpué",
+        "ComunaUnidad": "Quilpué",
+        "RegionUnidad": "Región de Valparaíso ",
+        "RutUsuario": "",
+        "CodigoUsuario": "2239491",
+        "NombreUsuario": "Manuela Oyarce Carrasco",
+        "CargoUsuario": "Profesional de Adquisciones"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 65,
+      "Fechas": {
+        "FechaCreacion": "2026-07-08T11:16:14.45",
+        "FechaCierre": "2026-07-24T12:00:00",
+        "FechaInicio": "2026-07-14T12:01:00",
+        "FechaFinal": "2026-07-17T12:02:00",
+        "FechaPubRespuestas": "2026-07-22T13:00:00",
+        "FechaActoAperturaTecnica": "2026-07-24T12:01:00",
+        "FechaActoAperturaEconomica": "2026-07-24T12:01:00",
+        "FechaPublicacion": "2026-07-14T11:49:27.35",
+        "FechaAdjudicacion": "2026-08-14T12:07:43.683",
+        "FechaEstimadaAdjudicacion": "2026-08-10T17:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "I.MUNICIPALIDAD DE QUILPUÉ",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": null,
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "I.MUNICIPALIDAD DE QUILPUÉ",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "ILUSTRE MUNICIPALIDAD DE QUILPUÉ",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 1,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "1",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 4,
+        "Fecha": "2026-08-14T00:00:00",
+        "Numero": "2042",
+        "NumeroOferentes": 7,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=0IldpmbBp7l+hlUJ1n0Jkl2q+5SB7pqzyS2Y0sfnWv8="
+      },
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 72101903,
+            "CodigoCategoria": "72101900",
+            "Categoria": "Servicios de construcción y mantenimiento / Servicios de atención, mantenimiento y reparaciones de edificios / Acabados de interiores",
+            "NombreProducto": "Carpintería o chapistería de acabados",
+            "Descripcion": "Servicio de instalación y construcción de tabiquería modular vidriada y obras complementarias en zonas interiores de Edificio Municipal, de acuerdo a lo indicado en bases técnicas.",
+            "UnidadMedida": "Global",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "76.322.929-7",
+              "NombreProveedor": "DILAU INGENIERIA SPA",
+              "Cantidad": 1,
+              "MontoUnitario": 13310924
+            }
+          }
+        ]
+      }
+    },
+    "ts": 1787214212.9482884,
+    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
   }
 }

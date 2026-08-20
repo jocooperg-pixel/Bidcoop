@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-20T06:21:29.348816+00:00",
-  "ultimoIntentoRealizado": "2026-08-20T06:21:29.348816+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-20T08:21:45.094545+00:00",
+  "ultimoIntentoRealizado": "2026-08-20T08:21:45.094545+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1426,
-  "registrosConfirmados": 1426,
+  "registrosEnPlataforma": 1417,
+  "registrosConfirmados": 1417,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1142,
-  "excluidosPrefiltroIrrelevante": 7043,
-  "excluidosSinDatosReales": 2,
+  "registrosConMontoReal": 1135,
+  "excluidosPrefiltroIrrelevante": 7036,
+  "excluidosSinDatosReales": 8,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 806,
@@ -26,7 +26,7 @@
     "montoRecuperadoSum": 1001756605
   },
   "categorias": {
-    "licitaciones": 616,
+    "licitaciones": 607,
     "comprasAgiles": 806,
     "convenioMarco": 0,
     "ordenes_compra": 4,
@@ -35,25 +35,25 @@
   "tiposOficiales": {
     "LP": 112,
     "CO": 10,
-    "LE": 385,
-    "LR": 44,
+    "LE": 378,
+    "LR": 43,
     "E2": 5,
     "I2": 3,
-    "L1": 63,
+    "L1": 62,
     "LS": 2,
     "O1": 4,
     "B2": 2,
     "COT": 796
   },
   "matchPorEmpresa": {
-    "Aminorte": 1216,
-    "V-MOCCS": 210
+    "Aminorte": 1209,
+    "V-MOCCS": 208
   },
   "cambios": {
     "comparadoContra": "2026-08-19T18:58:48.464135+00:00",
     "nuevosCount": 526,
     "modificadosCount": 23,
-    "cerradosCount": 703,
+    "cerradosCount": 712,
     "nuevos": [
       {
         "codigo": "707419-31-LP26",
@@ -838,6 +838,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "621-364-LR26",
+        "titulo": " SILLA RUEDAS ADTO NEURO 1000022489",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "estadoAnterior": "Adjudicada",
+        "monto": 540446830,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1057490-59-LP26",
         "titulo": "ARRIENDO DE SERVIDORES PARA RIS PACS",
         "organismo": "Instituto de Neurocirugía",
@@ -854,11 +862,27 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "621-511-LP26",
+        "titulo": "ACIDO MEFENAMICO 500 MG CPCMCM REC. 1000022628",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "estadoAnterior": "Adjudicada",
+        "monto": 108251314,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1469-83-LE26",
         "titulo": "SERVICIOS DE PINTURA SEDE TALCA - UTALCA",
         "organismo": "UNIVERSIDAD DE TALCA",
         "estadoAnterior": "Revocada",
         "monto": 69500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1260058-2-LE26",
+        "titulo": "“SUMINISTRO DE ANTISÉPTICOS DESINFECTANTES DETERGENTES Y SOLVENTES DE USO HOSPITALARIO Y PRODUCTOS CLÍNICOS SOBRE TEJIDO HUMANO ",
+        "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE P",
+        "estadoAnterior": "Adjudicada",
+        "monto": 69000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -878,11 +902,27 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1511-46-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE COMPUTADORES TIPO AIO",
+        "organismo": "Hospital de Constitución",
+        "estadoAnterior": "Adjudicada",
+        "monto": 43054200,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1079969-17-LE26",
         "titulo": "SERVICIO DE ARRIENDO POR 12 MESES DE 03 IMPRESORAS",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Adjudicada",
         "monto": 33843600,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4737-5-LE26",
+        "titulo": "“Adquisición de Insumos para Equipos de Impresoras Fotocopiadora y Duplicador para los Establecimientos Educacionales y DAEM de la comuna de Codegua”",
+        "organismo": "I MUNICIPALIDAD DE CODEGUA",
+        "estadoAnterior": "Adjudicada",
+        "monto": 33000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -908,6 +948,14 @@
         "estadoAnterior": "Adjudicada",
         "monto": 25450000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "621-482-LE26",
+        "titulo": "SILLA RUEDAS PEDIATRICA RUEDA MACIZA 1000022686",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "monto": 21765100,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "2026-50-LE26",
@@ -1260,58 +1308,10 @@
         "estadoAnterior": "Publicada",
         "monto": 6000000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "800-5997-COT26",
-        "titulo": " 70.0011 SILLA DE RUEDA,RUEDA INFLABLE T/46 DE ALUMINIO DU",
-        "organismo": "UNIVERSIDAD DE CHILE",
-        "estadoAnterior": "Publicada",
-        "monto": 6000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "800-5995-COT26",
-        "titulo": "70.0011 SILLA DE RUEDA,RUEDA INFLABLE T/46 DE ALUMINIO DU",
-        "organismo": "UNIVERSIDAD DE CHILE",
-        "estadoAnterior": "Publicada",
-        "monto": 6000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "800-5994-COT26",
-        "titulo": " 70.0011 SILLA DE RUEDA,RUEDA INFLABLE T/46 DE ALUMINIO DU",
-        "organismo": "UNIVERSIDAD DE CHILE",
-        "estadoAnterior": "Publicada",
-        "monto": 6000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "5067-1979-COT26",
-        "titulo": "Sol.92577 CC83 / Adquisición de Proyectores",
-        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
-        "estadoAnterior": "Publicada",
-        "monto": 6000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1305527-27-COT26",
-        "titulo": "Notebook para uso especializado",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DEL PINO",
-        "estadoAnterior": "Publicada",
-        "monto": 6000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2546-923-COT26",
-        "titulo": "ADQUISICIÓN DE EQUIPOS PARA SECPLAN E IMPRESORA CREDENCIALES - INFORMÁTICA",
-        "organismo": "I MUNICIPALIDAD DE PADRE LAS CASAS",
-        "estadoAnterior": "Publicada",
-        "monto": 5960000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1658.1,
+  "tiempoEjecucionSegundos": 2231.5,
   "errores": [],
   "advertencias": []
 }
