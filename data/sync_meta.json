@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-20T18:18:30.965522+00:00",
-  "ultimoIntentoRealizado": "2026-08-20T18:18:30.965522+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-20T20:14:34.699257+00:00",
+  "ultimoIntentoRealizado": "2026-08-20T20:14:34.699257+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1441,
-  "registrosConfirmados": 1441,
+  "registrosEnPlataforma": 1452,
+  "registrosConfirmados": 1452,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1145,
-  "excluidosPrefiltroIrrelevante": 7387,
-  "excluidosSinDatosReales": 6,
+  "registrosConMontoReal": 1150,
+  "excluidosPrefiltroIrrelevante": 7513,
+  "excluidosSinDatosReales": 4,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 803,
@@ -26,34 +26,34 @@
     "montoRecuperadoSum": 979744496
   },
   "categorias": {
-    "licitaciones": 634,
+    "licitaciones": 645,
     "comprasAgiles": 803,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 116,
+    "LP": 117,
     "CO": 11,
-    "LE": 398,
-    "LR": 44,
+    "LE": 406,
+    "LR": 45,
     "E2": 5,
     "I2": 3,
-    "L1": 64,
+    "L1": 65,
     "LS": 2,
     "O1": 4,
     "B2": 2,
     "COT": 792
   },
   "matchPorEmpresa": {
-    "Aminorte": 1229,
+    "Aminorte": 1240,
     "V-MOCCS": 212
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 173,
+    "nuevosCount": 179,
     "modificadosCount": 39,
-    "cerradosCount": 57,
+    "cerradosCount": 52,
     "nuevos": [
       {
         "codigo": "707419-31-LP26",
@@ -551,6 +551,15 @@
         "fechaCierre": "2026-08-26T16:34:00"
       },
       {
+        "codigo": "4284-120-L126",
+        "titulo": "Adquisición de materiales de oficina publicidad y didáctico-educativo ejecución  programas Vínculos versión 20 primer añoOLN y vínculos eje 2025 según B.A.G Bases administrativas Generales",
+        "organismo": "I MUNICIPALIDAD DE CUNCO",
+        "monto": 2081470,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-08-05T14:34:00"
+      },
+      {
         "codigo": "2594-640-COT26",
         "titulo": "ARRIENDO DE CARPA SIN MUROS PARA CAMINATA ADULTO MAYOR 2026. (OFICINA DIDECO).",
         "organismo": "I MUNICIPALIDAD DE CONCON",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-01T11:00"
-      },
-      {
-        "codigo": "2594-641-COT26",
-        "titulo": "ADQUISICION MATERIAL DE PUBLICIDAD Y DIFUSION. (OFICINA DIDECO OLN).",
-        "organismo": "I MUNICIPALIDAD DE CONCON",
-        "monto": 1500000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-21T08:10"
       }
     ],
     "modificados": [
@@ -878,56 +878,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3933-43-L126",
-        "titulo": "“MATERIAL DE LIBRERÍA PARA JARDIN RAIMAPU FONDOS JUNJI” ",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4928-28-LE26",
-        "titulo": "SERVICIO DE MANTENCION PREVENTIVA AIRE ACONDICIONADO",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2328-49-LE26",
-        "titulo": "LICITACIÓN PÚBLICA E-592026 “ADQUISICION E INSTALACION DE PIZARRAS INTERACTIVAS PARA LICEO ANDRES BELLO DEPENDIENTE DEL D.A.E.M. DE PUERTO MONTT FONDOS SEP 2026”",
-        "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2384-38-LE26",
-        "titulo": "SERVICIO DE AUDIO ILUMINACIÓN Y PANTALLA FIESTAS PATRIAS 2026",
-        "organismo": "I MUNICIPALIDAD DE CALAMA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "608-161-LP26",
-        "titulo": "ern CONVENIO SUMINISTRO INSUMOS CLINICOS AGUJAS BOLSA EXTRACTORAS ADAPTADORES FILTRO CONECTORES",
-        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3053-3-LE26",
         "titulo": "Adquisición de materiales de oficina para la Municipalidad de San Pedro de Atacama.",
         "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE ATACAMA",
@@ -948,9 +898,19 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "619133-74-LE26",
-        "titulo": "CONVENIO DE SUMINISTRO PARA LA ADQUISICIÓN DE TÓNERES ORIGINALES Y ALTERNATIVOS DESTINADOS A LA BODEGA CENTRAL DEL HOSPITAL SAN CAMILO",
-        "organismo": "SERVICIO SALUD SAN FELIPE LOS ANDES HOSP",
+        "codigo": "2328-49-LE26",
+        "titulo": "LICITACIÓN PÚBLICA E-592026 “ADQUISICION E INSTALACION DE PIZARRAS INTERACTIVAS PARA LICEO ANDRES BELLO DEPENDIENTE DEL D.A.E.M. DE PUERTO MONTT FONDOS SEP 2026”",
+        "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2384-38-LE26",
+        "titulo": "SERVICIO DE AUDIO ILUMINACIÓN Y PANTALLA FIESTAS PATRIAS 2026",
+        "organismo": "I MUNICIPALIDAD DE CALAMA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -978,9 +938,49 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "608-161-LP26",
+        "titulo": "ern CONVENIO SUMINISTRO INSUMOS CLINICOS AGUJAS BOLSA EXTRACTORAS ADAPTADORES FILTRO CONECTORES",
+        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "619133-74-LE26",
+        "titulo": "CONVENIO DE SUMINISTRO PARA LA ADQUISICIÓN DE TÓNERES ORIGINALES Y ALTERNATIVOS DESTINADOS A LA BODEGA CENTRAL DEL HOSPITAL SAN CAMILO",
+        "organismo": "SERVICIO SALUD SAN FELIPE LOS ANDES HOSP",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "520149-30-LR26",
         "titulo": "CEA_PC N°6409_DIPRO_Servicio de transporte Oficial",
         "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3933-43-L126",
+        "titulo": "“MATERIAL DE LIBRERÍA PARA JARDIN RAIMAPU FONDOS JUNJI” ",
+        "organismo": "I MUNICIPALIDAD DE FREIRE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4928-28-LE26",
+        "titulo": "SERVICIO DE MANTENCION PREVENTIVA AIRE ACONDICIONADO",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1011,22 +1011,6 @@
         "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
         "estadoAnterior": "Adjudicada",
         "monto": 140000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1216085-45-LP26",
-        "titulo": "CONVENIO DE SUMINISTRO DE PAPELERIA E IMPRESOS",
-        "organismo": "CORP MUNICIPAL PARA EL DESARROLLO SOCIAL",
-        "estadoAnterior": "Adjudicada",
-        "monto": 76393734,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3887-37-LE26",
-        "titulo": "Demarcacion Vial de Pinturas Termoplasticas",
-        "organismo": "I MUNICIPALIDAD DE VILLARRICA",
-        "estadoAnterior": "Cerrada",
-        "monto": 70000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1083,22 +1067,6 @@
         "organismo": "I MUNICIPALIDAD DE CHILLAN",
         "estadoAnterior": "Adjudicada",
         "monto": 25450000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5512-12-LE26",
-        "titulo": "ADQUISICIÓN DE EQUIPOS DE AIRE ACONDICIONADO PROYECTO UTA 22991 y URY2457",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "estadoAnterior": "Adjudicada",
-        "monto": 20000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3561-35-LE26",
-        "titulo": "ADQUISICIÓN DE DISPOSITIVOS AUDITIVOS AUDIFONOS PARA PACIENTES BENEFICIARIOS",
-        "organismo": "I MUNICIPALIDAD DE LA CALERA",
-        "estadoAnterior": "Cerrada",
-        "monto": 19615473,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1270,18 +1238,10 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3882-71-LE26",
-        "titulo": "REPOSICIÓN SISTEMA ELÉCTRICO CENTRAL DE CÁMARAS COMUNA DE LLAY LLAY",
-        "organismo": "I MUNICIPALIDAD DE LLAY LLAY",
-        "estadoAnterior": "Cerrada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5612-6-LE26",
-        "titulo": "NOS COMPRA DE RIFLES DARDOS Y CAMARAS TRAMPA CODIGO BIP 40062265-0",
-        "organismo": "SERVICIO AGRICOLA Y GANADERO",
-        "estadoAnterior": "Cerrada",
+        "codigo": "3671-57-LE26",
+        "titulo": "“ADQUISICIÓN DE IMPRESORAS Y ESCÁNER” PARA LA MUNICIPALIDAD DE CHILLÁN VIEJO. ",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE CHILLAN VIEJO",
+        "estadoAnterior": "Publicada",
         "monto": 0,
         "empresaMatch": "Aminorte"
       },
@@ -1447,7 +1407,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 220.1,
+  "tiempoEjecucionSegundos": 228.6,
   "errores": [],
   "advertencias": []
 }
