@@ -267036,8 +267036,8 @@
         ]
       }
     },
-    "ts": 1787256979.185147,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350323.2676187,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "1480137-2-L126": {
     "data": {
@@ -267147,8 +267147,8 @@
         ]
       }
     },
-    "ts": 1787256987.0278933,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350319.8499143,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "1479098-19-L126": {
     "data": {
@@ -267280,8 +267280,8 @@
         ]
       }
     },
-    "ts": 1787256982.9073548,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350312.762411,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "3382-7-R126": {
     "data": {
@@ -267318,7 +267318,7 @@
       "JustificacionPublicidad": "",
       "Contrato": null,
       "Obras": "0",
-      "CantidadReclamos": 11790,
+      "CantidadReclamos": 11794,
       "Fechas": {
         "FechaCreacion": "2026-05-11T11:05:30.293",
         "FechaCierre": "2026-06-01T16:00:00",
@@ -267675,8 +267675,8 @@
         ]
       }
     },
-    "ts": 1787256995.0301962,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350328.1206987,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "5420-11-R126": {
     "data": {
@@ -267856,8 +267856,8 @@
         ]
       }
     },
-    "ts": 1787256991.2972438,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350323.8932292,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "4494-50-LE26": {
     "data": {
@@ -267961,17 +267961,17 @@
         ]
       }
     },
-    "ts": 1787257006.107491,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350343.957715,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "3206-26-L126": {
     "data": {
       "CodigoExterno": "3206-26-L126",
       "Nombre": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS",
-      "CodigoEstado": 6,
+      "CodigoEstado": 8,
       "Descripcion": "Se requiere contratar los servicios de arriendo de máquinas fotocopiadoras.",
       "FechaCierre": null,
-      "Estado": "Cerrada",
+      "Estado": "Adjudicada",
       "Comprador": {
         "CodigoOrganismo": "113913",
         "NombreOrganismo": "I MUNICIPALIDAD DE SAN RAFAEL",
@@ -268009,7 +268009,7 @@
         "FechaActoAperturaTecnica": "2026-08-17T15:20:00",
         "FechaActoAperturaEconomica": "2026-08-17T15:20:00",
         "FechaPublicacion": "2026-08-07T13:10:00",
-        "FechaAdjudicacion": "2026-08-21T14:38:00",
+        "FechaAdjudicacion": "2026-08-21T12:57:59.653",
         "FechaEstimadaAdjudicacion": "2026-08-21T14:38:00",
         "FechaSoporteFisico": null,
         "FechaTiempoEvaluacion": null,
@@ -268048,7 +268048,13 @@
       "PeriodoTiempoRenovacion": " ",
       "EsRenovable": 0,
       "CodigoBIP": null,
-      "Adjudicacion": null,
+      "Adjudicacion": {
+        "Tipo": 4,
+        "Fecha": "2026-08-20T00:00:00",
+        "Numero": "3514",
+        "NumeroOferentes": 1,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=1k11sEQ8/FW872iMJsXGfRVn4/qN7KeThjxMyfmCMjA="
+      },
       "Items": {
         "Cantidad": 1,
         "Listado": [
@@ -268061,13 +268067,18 @@
             "Descripcion": "Arriendo servicio de fotocopiadoras",
             "UnidadMedida": "Unidad",
             "Cantidad": 1,
-            "Adjudicacion": null
+            "Adjudicacion": {
+              "RutProveedor": "77.779.600-3",
+              "NombreProveedor": "COMERCIALIZADORA INCOTAL LIMITADA",
+              "Cantidad": 1,
+              "MontoUnitario": 1
+            }
           }
         ]
       }
     },
-    "ts": 1787257001.604963,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350294.3645768,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "CA:3436-329-COT26": {
     "data": {
@@ -297797,7 +297808,7 @@
         "NombreUsuario": "Rose Mary Cisternas Navarrete",
         "CargoUsuario": "Ej Compra"
       },
-      "DiasCierreLicitacion": "13",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -297877,113 +297888,8 @@
         ]
       }
     },
-    "ts": 1787170370.19276,
-    "fetchedAt": "2026-08-19T20:11:46.572255+00:00"
-  },
-  "3084-30-LR26": {
-    "data": {
-      "CodigoExterno": "3084-30-LR26",
-      "Nombre": "CONTRATACIÓN SERVICIO DE SUSCRIPCIÓN DE LICENCIAS",
-      "CodigoEstado": 5,
-      "Descripcion": "CONTRATACIÓN SERVICIO DE SUSCRIPCIÓN DE LICENCIAS",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "111875",
-        "NombreOrganismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-        "RutUnidad": "61.967.700-5",
-        "CodigoUnidad": "4014",
-        "NombreUnidad": "Dirección de Telecomunicaciones e Informática de la Armada",
-        "DireccionUnidad": "",
-        "ComunaUnidad": "",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "593791",
-        "NombreUsuario": "JUAN PARDO CARRASCO",
-        "CargoUsuario": "ADQUISICIONES"
-      },
-      "DiasCierreLicitacion": "33",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LR",
-      "TipoConvocatoria": "1",
-      "Moneda": "USD",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 2578,
-      "Fechas": {
-        "FechaCreacion": "2026-08-18T00:00:00",
-        "FechaCierre": "2026-09-21T15:01:00",
-        "FechaInicio": "2026-08-19T16:31:00",
-        "FechaFinal": "2026-08-30T15:00:00",
-        "FechaPubRespuestas": "2026-09-10T15:00:00",
-        "FechaActoAperturaTecnica": "2026-09-21T15:02:00",
-        "FechaActoAperturaEconomica": "2026-09-21T15:02:00",
-        "FechaPublicacion": "2026-08-19T16:00:43.697",
-        "FechaAdjudicacion": "2026-10-19T15:00:00",
-        "FechaEstimadaAdjudicacion": "2026-10-19T15:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "AFL DOLAR  2211003",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 399041,
-      "Tiempo": "12",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "JOSE ARELLANO",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Karen Arellano",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "1.\tEl “PROVEEDOR” no podrá bajo ningún pretexto negociar, traspasar, ceder o delegar las obligaciones contraídas en el Contrato a terceros. Por tanto, queda expresamente prohibida la cesión o traspaso del futuro Contrato o sus obligaciones por parte del",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "12",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "con cargo a fondos disponibles en recursos AFL Dólar",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 43231512,
-            "CodigoCategoria": "43231500",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Software / Software de gestión",
-            "NombreProducto": "Software de gestión de licencias",
-            "Descripcion": "SERVICIO DE SUSCRIPCIÓN A LICENCIAS OFFICE STANDARD 2021 GOVERNMENT LICENCIAS CORE CAL ENTERPRISE SUITE POR USUARIO” PARA LA DIRECCIÓN DE TELECOMUNICACIONES E INFORMATICA DE LA ARMADA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787170377.2344918,
-    "fetchedAt": "2026-08-19T20:11:46.572255+00:00"
+    "ts": 1787350253.5311654,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "4022-17-LE26": {
     "data": {
@@ -298007,7 +297913,7 @@
         "NombreUsuario": "José Miguel Roque",
         "CargoUsuario": "Profesional DAF"
       },
-      "DiasCierreLicitacion": "13",
+      "DiasCierreLicitacion": "11",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -298087,8 +297993,8 @@
         ]
       }
     },
-    "ts": 1787170377.976555,
-    "fetchedAt": "2026-08-19T20:11:46.572255+00:00"
+    "ts": 1787350272.2743766,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "4401-56-LE26": {
     "data": {
@@ -298112,7 +298018,7 @@
         "NombreUsuario": "Carolina Lara Echeverria",
         "CargoUsuario": "Jefa de adquisiciones"
       },
-      "DiasCierreLicitacion": "12",
+      "DiasCierreLicitacion": "10",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -298192,8 +298098,8 @@
         ]
       }
     },
-    "ts": 1787170381.8970387,
-    "fetchedAt": "2026-08-19T20:11:46.572255+00:00"
+    "ts": 1787350276.33902,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "1079650-36-LE26": {
     "data": {
@@ -298308,8 +298214,8 @@
         ]
       }
     },
-    "ts": 1787256969.8454478,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350307.4477108,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "2101-136-L126": {
     "data": {
@@ -298333,7 +298239,7 @@
         "NombreUsuario": "NICOLE SCARLETT  MOYANO JEREZ",
         "CargoUsuario": "EJECUTIVA DE COMPRAS"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "6",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "L1",
@@ -298534,8 +298440,8 @@
         ]
       }
     },
-    "ts": 1787170389.4980497,
-    "fetchedAt": "2026-08-19T20:11:46.572255+00:00"
+    "ts": 1787350261.2148292,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "2709-22-LP26": {
     "data": {
@@ -298650,8 +298556,8 @@
         ]
       }
     },
-    "ts": 1787256974.4505072,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350311.8594458,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "2078-30-LE26": {
     "data": {
@@ -298766,124 +298672,8 @@
         ]
       }
     },
-    "ts": 1787256973.6134777,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
-  },
-  "5155-28-LE26": {
-    "data": {
-      "CodigoExterno": "5155-28-LE26",
-      "Nombre": "375 - Servicio mantención preventiva y correctiva de equipos de aire acondicionado del nivel central Servel",
-      "CodigoEstado": 8,
-      "Descripcion": "El objetivo del presente llamado a licitación pública es proveer al Servicio Electoral, de la prestación del servicio mantención preventiva y correctiva de equipos de aire acondicionado instalados en el nivel central. Las presentes especificaciones tienen por objetivo definir los aspectos técnicos relevantes asociados a la mantención preventiva y correctiva de los equipos de aire acondicionado instalados en los inmuebles ubicados en Esmeralda N° 611, Santo domingo N° 628, Santo Domingo N° 566 y Miraflores N° 556, todos de la comuna de Santiago. La participación en el proceso de licitación implica la aceptación, por parte de los proponentes, de todos y cada uno de los términos y disposiciones contenidas en las Bases, sin necesidad de declaración expresa del oferente.",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "225773",
-        "NombreOrganismo": "SERVICIO ELECTORAL",
-        "RutUnidad": "60.504.000-4",
-        "CodigoUnidad": "6068",
-        "NombreUnidad": "Unidad de Adquisiciones",
-        "DireccionUnidad": "Esmeralda N°340 piso 11 ala sur, Iquique",
-        "ComunaUnidad": "Iquique",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1396155",
-        "NombreUsuario": "Antonio Phillipi",
-        "CargoUsuario": "Analista de Compras"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 10,
-      "Fechas": {
-        "FechaCreacion": "2026-07-14T00:00:00",
-        "FechaCierre": "2026-07-27T15:00:00",
-        "FechaInicio": "2026-07-17T12:00:00",
-        "FechaFinal": "2026-07-21T15:00:00",
-        "FechaPubRespuestas": "2026-07-23T15:00:00",
-        "FechaActoAperturaTecnica": "2026-07-27T15:00:00",
-        "FechaActoAperturaEconomica": "2026-07-27T15:00:00",
-        "FechaPublicacion": "2026-07-17T10:34:59.11",
-        "FechaAdjudicacion": "2026-08-18T12:37:44.237",
-        "FechaEstimadaAdjudicacion": "2026-08-21T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": "1900-01-02T00:00:00",
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 10000000,
-      "Tiempo": "18",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Maria Alejandra Borquez Pineda",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Sara Leiva Casanova",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "El oferente adjudicado podrá subcontratar con terceros parcialmente el servicio contratado.\r\nVer Punto N21 de bases administrativas",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "18",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-17T00:00:00",
-        "Numero": "2102",
-        "NumeroOferentes": 2,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=Dj+rWyG/ig7JlKcSij3i1oAhR32kCA8XbP/JlDHnJvQ="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 73161517,
-            "CodigoCategoria": "73161500",
-            "Categoria": "Servicios de producción y fabricación industrial / Fabricación de maquinarias y equipos de transporte / Fabricación de maquinarias",
-            "NombreProducto": "Servicios de fabricación de equipo de aire acondicionado, ventilación o refrigeración",
-            "Descripcion": "Serv mantención preventiva y correctiva equipos aire acondicionado del nivel central ubicados en Esmeralda N° 611, Sto domingo N° 628, Sto Domingo N° 566 y Miraflores N° 556, todos en comuna de Santiago, según requerimientos y especificaciones en bases.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "78.186.251-7",
-              "NombreProveedor": "KOOLVOLT INGENIERÍA SPA",
-              "Cantidad": 1,
-              "MontoUnitario": 7490000
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787256987.840857,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350303.8088965,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "1425525-4-LE26": {
     "data": {
@@ -319184,8 +318974,8 @@
         ]
       }
     },
-    "ts": 1787256954.9411955,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350298.4581864,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "2098-155-LE25": {
     "data": {
@@ -319300,8 +319090,8 @@
         ]
       }
     },
-    "ts": 1787256958.9280894,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350297.875954,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "1057544-242-LE26": {
     "data": {
@@ -319872,8 +319662,8 @@
         ]
       }
     },
-    "ts": 1787256959.5885491,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350299.529693,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "1479098-21-R126": {
     "data": {
@@ -320084,124 +319874,8 @@
         ]
       }
     },
-    "ts": 1787256966.3486001,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
-  },
-  "5512-12-LE26": {
-    "data": {
-      "CodigoExterno": "5512-12-LE26",
-      "Nombre": "ADQUISICIÓN DE EQUIPOS DE AIRE ACONDICIONADO PROYECTO UTA 22991 y URY2457",
-      "CodigoEstado": 8,
-      "Descripcion": "Se requiere la Adquisición de equipos de aire acondicionado con instalación incluida, según especificaciones de anexo N°2",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "204439",
-        "NombreOrganismo": "UNIVERSIDAD DE TARAPACA",
-        "RutUnidad": "70.770.800-k",
-        "CodigoUnidad": "6425",
-        "NombreUnidad": "Convenio de Desempeño",
-        "DireccionUnidad": "Pedro Aguirre N° 2036",
-        "ComunaUnidad": "Iquique",
-        "RegionUnidad": "Región de Arica y Parinacota",
-        "RutUsuario": "",
-        "CodigoUsuario": "1451954",
-        "NombreUsuario": "Yocelin Thompson",
-        "CargoUsuario": "COMPRADOR"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 166,
-      "Fechas": {
-        "FechaCreacion": "2026-05-26T00:00:00",
-        "FechaCierre": "2026-07-10T15:30:00",
-        "FechaInicio": "2026-06-23T13:01:00",
-        "FechaFinal": "2026-07-01T15:30:00",
-        "FechaPubRespuestas": "2026-07-07T18:00:00",
-        "FechaActoAperturaTecnica": "2026-07-10T15:31:00",
-        "FechaActoAperturaEconomica": "2026-07-10T15:31:00",
-        "FechaPublicacion": "2026-06-23T12:47:13.387",
-        "FechaAdjudicacion": "2026-08-19T13:08:08.397",
-        "FechaEstimadaAdjudicacion": "2026-10-06T18:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "cc 4548 y 991",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 20000000,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Víctor Saavedra ",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Jefe Encargado  de Proyecto ",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "No permite subcontratación. De acuerdo al Capítulo  IX Contrato de suministro y servicio, párrafo 4 Cesión y subcontratación, Artículo 128 Subcontratación reglamento de Ley N°19.886 Sobre compras públicas.",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-08-19T00:00:00",
-        "Numero": "Exenta VAF N°388-2026",
-        "NumeroOferentes": 3,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=M7pvQ8RAvMNE+YKy5LRYF7kSynTG5sB80qreI+wipak="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 41103403,
-            "CodigoCategoria": "41103400",
-            "Categoria": "Equipamiento para laboratorios / Equipos e insumos para laboratorio / Equipo de aire acondicionado para laboratorio",
-            "NombreProducto": "Equipo de control microbiológico del aire",
-            "Descripcion": "Adquisición de equipos de aire acondicionado con instalación incluida  para distintas oficinas  de la Universidad de Tarapacá, según  de Anexo N° 2 “Especificaciones Técnicas”. ",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "76.831.139-0",
-              "NombreProveedor": "INDUSTRIALES DUARTE Y CIA. LTDA.",
-              "Cantidad": 1,
-              "MontoUnitario": 9479040
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1787256978.2852848,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350300.324436,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "1216085-45-LP26": {
     "data": {
@@ -321436,8 +321110,8 @@
         ]
       }
     },
-    "ts": 1787256983.541856,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350316.2191749,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "3561-35-LE26": {
     "data": {
@@ -321541,8 +321215,8 @@
         ]
       }
     },
-    "ts": 1787256996.1086555,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350329.1214485,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "5612-6-LE26": {
     "data": {
@@ -321668,8 +321342,8 @@
         ]
       }
     },
-    "ts": 1787256997.1319783,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350332.781584,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "3882-71-LE26": {
     "data": {
@@ -321700,7 +321374,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 2,
-      "EstadoEtapas": "1",
+      "EstadoEtapas": "2",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -321773,8 +321447,8 @@
         ]
       }
     },
-    "ts": 1787256997.9583125,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350340.313623,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "3887-37-LE26": {
     "data": {
@@ -321878,8 +321552,8 @@
         ]
       }
     },
-    "ts": 1787257002.4635148,
-    "fetchedAt": "2026-08-20T20:14:34.699257+00:00"
+    "ts": 1787350336.6527715,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   },
   "1057049-305-B226": {
     "data": {
@@ -345164,5 +344838,978 @@
     },
     "ts": 1787343181.7844412,
     "fetchedAt": "2026-08-21T20:11:02.014782+00:00"
+  },
+  "1110404-157-L126": {
+    "data": {
+      "CodigoExterno": "1110404-157-L126",
+      "Nombre": "ADQUISICIÓN DE IMPRESORAS Y PLOTTER PARA LA ESCUELA DARÍO SALAS DÍAZ Y LICEO JOVINA NARANJO FERNANDEZ, DEPENDIENTES DEL SLEP CHINCHORRO.",
+      "CodigoEstado": 5,
+      "Descripcion": "SOL-2026-1244 ESCUELA DARIO SALAS\nSOL-2026-0407 LICEO JOVINA NARANJO FERNANDEZ\nSUBVENCION SEP",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "1675210",
+        "NombreOrganismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
+        "RutUnidad": "62.000.660-2",
+        "CodigoUnidad": "1110404",
+        "NombreUnidad": "SLEPCH - EE - Programa 02",
+        "DireccionUnidad": "MIGUEL AHUMADA N° 505...,",
+        "ComunaUnidad": "Arica",
+        "RegionUnidad": "Región de Arica y Parinacota",
+        "RutUsuario": "",
+        "CodigoUsuario": "1741798",
+        "NombreUsuario": "Mauricio Rojas Araya",
+        "CargoUsuario": "Comprador"
+      },
+      "DiasCierreLicitacion": "10",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "L1",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 119,
+      "Fechas": {
+        "FechaCreacion": "2026-08-21T13:24:26.307",
+        "FechaCierre": "2026-08-31T16:00:00",
+        "FechaInicio": "2026-08-21T17:22:15.643",
+        "FechaFinal": "2026-08-24T19:00:00",
+        "FechaPubRespuestas": "2026-08-25T19:00:00",
+        "FechaActoAperturaTecnica": "2026-08-31T16:01:00",
+        "FechaActoAperturaEconomica": "2026-08-31T16:01:00",
+        "FechaPublicacion": "2026-08-21T17:22:15.643",
+        "FechaAdjudicacion": "2026-09-20T17:28:00",
+        "FechaEstimadaAdjudicacion": "2026-09-20T17:28:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 2,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 1471954,
+      "Tiempo": null,
+      "UnidadTiempo": "2",
+      "Modalidad": 0,
+      "TipoPago": "-1",
+      "NombreResponsablePago": "",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 0,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "1",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "0",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 2,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 43212104,
+            "CodigoCategoria": "43212100",
+            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
+            "NombreProducto": "Impresoras de chorro de tinta",
+            "Descripcion": "ADQUISICIÓN DE IMPRESORAS PARA LA ESCUELA DARÍO SALAS DÍAZ",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 4,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 43212107,
+            "CodigoCategoria": "43212100",
+            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
+            "NombreProducto": "Trazadoras de gráficos",
+            "Descripcion": "ADQUISICIÓN DE PLOTTER PARA LICEO JOVINA NARANJO FERNANDEZ",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787350252.9347503,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
+  },
+  "1968-17-LE26": {
+    "data": {
+      "CodigoExterno": "1968-17-LE26",
+      "Nombre": "ARRIENDO  EQUIPOS MULTIFUNCIONALES",
+      "CodigoEstado": 5,
+      "Descripcion": "“SERVICIO DE ARRIENDO, SOPORTE Y SUMINISTRO OPERATIVO DE EQUIPOS MULTIFUNCIONALES PARA LA DIRECCIÓN REGIONAL Y UNIDADES PERIFÉRICAS DE GENDARMERÍA DE CHILE, REGIÓN DE LA ARAUCANÍA”.E102RT9",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "6925",
+        "NombreOrganismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+        "RutUnidad": "61.004.087-K",
+        "CodigoUnidad": "2963",
+        "NombreUnidad": "Región de La Araucanía",
+        "DireccionUnidad": "FACTURAR A DIRECCIÓN REGIONAL DE GENDARMERÍA DE CHILE REGIÓN DE LA ARAUCANIA. RUT: 61.004.087-K. GIRO: SERVICIO PUBLICO DIRECCIÓN: DIEGO PORTALES Nº 787 TE",
+        "ComunaUnidad": "Victoria",
+        "RegionUnidad": "Región de la Araucanía ",
+        "RutUsuario": "",
+        "CodigoUsuario": "1625422",
+        "NombreUsuario": "Karin Alejandra Arriagada Alvarado",
+        "CargoUsuario": "Operador de Compras"
+      },
+      "DiasCierreLicitacion": "14",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "1",
+      "Obras": "0",
+      "CantidadReclamos": 1134,
+      "Fechas": {
+        "FechaCreacion": "2026-08-21T12:27:51.627",
+        "FechaCierre": "2026-09-04T15:05:00",
+        "FechaInicio": "2026-08-21T17:20:00",
+        "FechaFinal": "2026-08-27T12:00:00",
+        "FechaPubRespuestas": "2026-08-28T18:00:00",
+        "FechaActoAperturaTecnica": "2026-09-04T15:10:00",
+        "FechaActoAperturaEconomica": "2026-09-04T15:10:00",
+        "FechaPublicacion": "2026-08-21T16:44:00",
+        "FechaAdjudicacion": "2026-10-14T18:00:00",
+        "FechaEstimadaAdjudicacion": "2026-10-14T18:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "36",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Luis Hernandez",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Jorge Barrera Vergara",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "El adjudicatario no podrá ceder ni transferir en forma alguna, total ni parcialmente, los derechos y obligaciones que nacen del desarrollo de esta licitación, y en especial, los establecidos en el contrato definitivo.  Respecto de la subcontratación est",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "36",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 1,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 43212110,
+            "CodigoCategoria": "43212100",
+            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
+            "NombreProducto": "Impresoras multifunción o multifuncionales",
+            "Descripcion": "servicio integral de arriendo de veinte (20) equipos multifuncionales de alto rendimiento, nuevos y sin uso, incluyendo la totalidad de sus garantías técnicas de fábrica, soporte y mantenimiento.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787350257.5125043,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
+  },
+  "2483-241-LP26": {
+    "data": {
+      "CodigoExterno": "2483-241-LP26",
+      "Nombre": "SERVICIO DE ARRIENDO DE IMPRESORAS PARA EL DEPARTAMENTO DE SALUD MUNICIPAL NUEVO LLAMADO",
+      "CodigoEstado": 5,
+      "Descripcion": "SERVICIO DE ARRIENDO DE IMPRESORAS PARA EL DEPARTAMENTO DE SALUD MUNICIPAL, NUEVO LLAMADO",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "88313",
+        "NombreOrganismo": "I MUNICIPALIDAD DE QUILICURA",
+        "RutUnidad": "69.071.300-4",
+        "CodigoUnidad": "3475",
+        "NombreUnidad": "DEPARTAMENTO COMPRAS PÚBLICAS",
+        "DireccionUnidad": "",
+        "ComunaUnidad": "",
+        "RegionUnidad": "Región Metropolitana de Santiago",
+        "RutUsuario": "",
+        "CodigoUsuario": "1743668",
+        "NombreUsuario": "NATALIA ACEVEDO HIGUERA",
+        "CargoUsuario": "GESTOR COMPRAS"
+      },
+      "DiasCierreLicitacion": "20",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LP",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 1898,
+      "Fechas": {
+        "FechaCreacion": "2026-08-18T00:00:00",
+        "FechaCierre": "2026-09-10T15:01:00",
+        "FechaInicio": "2026-08-21T17:31:00",
+        "FechaFinal": "2026-08-28T10:00:00",
+        "FechaPubRespuestas": "2026-09-03T10:00:00",
+        "FechaActoAperturaTecnica": "2026-09-10T15:02:00",
+        "FechaActoAperturaEconomica": "2026-09-10T15:02:00",
+        "FechaPublicacion": "2026-08-21T16:49:50.057",
+        "FechaAdjudicacion": "2026-10-30T18:00:00",
+        "FechaEstimadaAdjudicacion": "2026-10-30T18:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "DEPARTAMENTO DE SALUD",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "24",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "MARGARITA BAZAEZ",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "DIRECCIÓN DE ASESORIA JURIDICA",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "24",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 43212104,
+            "CodigoCategoria": "43212100",
+            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
+            "NombreProducto": "Impresoras de chorro de tinta",
+            "Descripcion": "SERVICIO DE ARRIENDO DE IMPRESORAS PARA EL DEPARTAMENTO DE SALUD MUNICIPAL, NUEVO LLAMADO",
+            "UnidadMedida": "Paquete",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787350264.7622805,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
+  },
+  "2595-91-LE26": {
+    "data": {
+      "CodigoExterno": "2595-91-LE26",
+      "Nombre": "ADQUISICIÓN DE ALIMENTOS PARA LAS DISTINTAS UNIDADES DE LA MUNICIPALIDAD DE PARRAL",
+      "CodigoEstado": 5,
+      "Descripcion": "ADQUISICIÓN DE ALIMENTOS PARA LAS DISTINTAS UNIDADES DE LA MUNICIPALIDAD DE PARRAL, DE ACUERDO CON TERMINOS DE REFERENCIA ADJUNTOS, BASES ADMINISTRATIVAS Y DEMAS NATECEDENTES REQUERIDOS.",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "94459",
+        "NombreOrganismo": "I MUNICIPALIDAD DE PARRAL",
+        "RutUnidad": "69.130.700-K",
+        "CodigoUnidad": "3586",
+        "NombreUnidad": "I MUNICIPALIDAD DE PARRAL",
+        "DireccionUnidad": "Dieciocho Nº 720",
+        "ComunaUnidad": "Parral",
+        "RegionUnidad": "Región del Maule ",
+        "RutUsuario": "",
+        "CodigoUsuario": "1277771",
+        "NombreUsuario": "Paola Andrea Castillo Agurto",
+        "CargoUsuario": "Coordinadora Mercadopublico"
+      },
+      "DiasCierreLicitacion": "7",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 230,
+      "Fechas": {
+        "FechaCreacion": "2026-08-21T00:00:00",
+        "FechaCierre": "2026-08-28T10:00:00",
+        "FechaInicio": "2026-08-21T18:30:00",
+        "FechaFinal": "2026-08-25T20:00:00",
+        "FechaPubRespuestas": "2026-08-26T17:00:00",
+        "FechaActoAperturaTecnica": "2026-08-28T10:00:00",
+        "FechaActoAperturaEconomica": "2026-08-28T10:00:00",
+        "FechaPublicacion": "2026-08-21T16:45:15.29",
+        "FechaAdjudicacion": "2026-09-10T16:23:00",
+        "FechaEstimadaAdjudicacion": "2026-09-10T16:23:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "2152201001",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": null,
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "ERICA GAJARDO PEREZ",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "FELIPE VASQUEZ CASTILLO",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 1,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "1",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 50161814,
+            "CodigoCategoria": "50161800",
+            "Categoria": "Alimentos, bebidas y tabaco / Chocolates, azúcares, edulcorantes y productos de confitería / Productos de confitería",
+            "NombreProducto": "Dulces con azúcar o sustitutos",
+            "Descripcion": "DQUISICIÓN DE ALIMENTOS PARA LAS DISTINTAS UNIDADES DE LA MUNICIPALIDAD DE PARRAL, DE ACUERDO CON TERMINOS DE REFERENCIA ADJUNTOS, BASES ADMINISTRATIVAS Y DEMAS NATECEDENTES REQUERIDOS. SE DEBE POSTULAR POR LA TOTALIDAD DE LOS PRODUCTOS. EN CASO CONTRARIO",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787350268.2518604,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
+  },
+  "4179-45-LP26": {
+    "data": {
+      "CodigoExterno": "4179-45-LP26",
+      "Nombre": "“CONTRATACIÓN DE COBERTURA DE SEGUROS GENERALES BIENES INMUEBLES Y CONTENIDO DE LA MUNICIPALIDAD DE LAUTARO”.",
+      "CodigoEstado": 5,
+      "Descripcion": "“CONTRATACIÓN DE COBERTURA DE SEGUROS GENERALES BIENES INMUEBLES Y CONTENIDO DE LA MUNICIPALIDAD DE LAUTARO”.",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "124577",
+        "NombreOrganismo": "I MUNICIPALIDAD DE LAUTARO",
+        "RutUnidad": "69.190.100-9",
+        "CodigoUnidad": "5098",
+        "NombreUnidad": "ABASTECIMIENTO",
+        "DireccionUnidad": "O´HIGGINS N° 1032  LAUTARO",
+        "ComunaUnidad": "Lautaro",
+        "RegionUnidad": "Región de la Araucanía ",
+        "RutUsuario": "",
+        "CodigoUsuario": "1863871",
+        "NombreUsuario": "Nataly Isabel Rodríguez Salazar",
+        "CargoUsuario": "Profesional Compras"
+      },
+      "DiasCierreLicitacion": "20",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LP",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 247,
+      "Fechas": {
+        "FechaCreacion": "2026-08-21T00:00:00",
+        "FechaCierre": "2026-09-10T15:00:00",
+        "FechaInicio": "2026-08-21T17:30:00",
+        "FechaFinal": "2026-08-28T18:00:00",
+        "FechaPubRespuestas": "2026-08-31T16:00:00",
+        "FechaActoAperturaTecnica": "2026-09-10T15:01:00",
+        "FechaActoAperturaEconomica": "2026-09-10T15:01:00",
+        "FechaPublicacion": "2026-08-21T17:07:22.907",
+        "FechaAdjudicacion": "2026-09-21T16:00:00",
+        "FechaEstimadaAdjudicacion": "2026-09-21T16:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "Presupuesto Municipal",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "12",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "Elizabeth Muñoz Huaiquipan",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Cristian Salinas Perez",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "Se prohíbe.",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "12",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 84131503,
+            "CodigoCategoria": "84131500",
+            "Categoria": "Servicios financieros, pensiones y seguros / Seguros y jubilación / Seguros para estructuras, propiedades y bienes",
+            "NombreProducto": "Seguro de automóviles o camiones",
+            "Descripcion": "“CONTRATACIÓN DE COBERTURA DE SEGUROS GENERALES BIENES INMUEBLES Y CONTENIDO DE LA MUNICIPALIDAD DE LAUTARO”.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787350275.7193475,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
+  },
+  "707419-37-L126": {
+    "data": {
+      "CodigoExterno": "707419-37-L126",
+      "Nombre": "Servicios de suministro para mantención preventiva y reparación automotriz para vehículos institucionales de la oficina regional de Fundación Integra Valparaíso.",
+      "CodigoEstado": 5,
+      "Descripcion": "Fundación Integra, requiere la contratación de servicio de suministro para la mantención mecánica, preventiva cada 10.000 km y/o reparaciones para 7 vehículos corporativos de la Oficina Regional de Fundación Integra Valparaíso.",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "1172700",
+        "NombreOrganismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+        "RutUnidad": "70.574.900-0",
+        "CodigoUnidad": "707419",
+        "NombreUnidad": "Regional Valparaiso",
+        "DireccionUnidad": "Manuel Río Frío 171, Playa Ancha",
+        "ComunaUnidad": "Viña del Mar",
+        "RegionUnidad": "Región de Valparaíso ",
+        "RutUsuario": "",
+        "CodigoUsuario": "1523037",
+        "NombreUsuario": "Felipe Huerta",
+        "CargoUsuario": "Analista de Finanzas"
+      },
+      "DiasCierreLicitacion": "12",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "L1",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 31,
+      "Fechas": {
+        "FechaCreacion": "2026-08-21T09:54:16.587",
+        "FechaCierre": "2026-09-02T15:00:00",
+        "FechaInicio": "2026-08-21T16:29:21.203",
+        "FechaFinal": "2026-08-26T23:59:00",
+        "FechaPubRespuestas": "2026-08-28T22:00:00",
+        "FechaActoAperturaTecnica": "2026-09-02T15:01:00",
+        "FechaActoAperturaEconomica": "2026-09-02T15:01:00",
+        "FechaPublicacion": "2026-08-21T16:29:21.203",
+        "FechaAdjudicacion": "2026-09-16T18:00:00",
+        "FechaEstimadaAdjudicacion": "2026-09-16T18:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 2,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 3700000,
+      "Tiempo": null,
+      "UnidadTiempo": "2",
+      "Modalidad": 0,
+      "TipoPago": "-1",
+      "NombreResponsablePago": "",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 0,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "0",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "0",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 78180103,
+            "CodigoCategoria": "78180100",
+            "Categoria": "Servicios de transporte, almacenaje y correo / Servicios de mantención o reparaciones de transportes / Mantención o reparación de vehículos",
+            "NombreProducto": "Servicios de cambio de fluidos de aceite o de la transmisión",
+            "Descripcion": "Servicio de suministro de mantención cada 10.000 km y reparación automotriz con el objetivo de garantizar su buen funcionamiento, seguridad y prolongar su vida útil.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787350279.9468532,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
+  },
+  "2483-137-LP26": {
+    "data": {
+      "CodigoExterno": "2483-137-LP26",
+      "Nombre": "“SERVICIO DE ARRIENDO DE IMPRESORAS PARA EL DEPARTAMENTO DE SALUD MUNICIPAL”",
+      "CodigoEstado": 15,
+      "Descripcion": "“SERVICIO DE ARRIENDO DE IMPRESORAS PARA EL DEPARTAMENTO DE SALUD MUNICIPAL”",
+      "FechaCierre": null,
+      "Estado": "Revocada",
+      "Comprador": {
+        "CodigoOrganismo": "88313",
+        "NombreOrganismo": "I MUNICIPALIDAD DE QUILICURA",
+        "RutUnidad": "69.071.300-4",
+        "CodigoUnidad": "3475",
+        "NombreUnidad": "DEPARTAMENTO COMPRAS PÚBLICAS",
+        "DireccionUnidad": "",
+        "ComunaUnidad": "",
+        "RegionUnidad": "Región Metropolitana de Santiago",
+        "RutUsuario": "",
+        "CodigoUsuario": "1743668",
+        "NombreUsuario": "NATALIA ACEVEDO HIGUERA",
+        "CargoUsuario": "GESTOR COMPRAS"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LP",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 1898,
+      "Fechas": {
+        "FechaCreacion": "2026-05-04T00:00:00",
+        "FechaCierre": "2026-06-18T15:01:00",
+        "FechaInicio": "2026-05-29T12:31:00",
+        "FechaFinal": "2026-06-05T10:00:00",
+        "FechaPubRespuestas": "2026-06-12T10:00:00",
+        "FechaActoAperturaTecnica": "2026-06-18T15:02:00",
+        "FechaActoAperturaEconomica": "2026-06-18T15:02:00",
+        "FechaPublicacion": "2026-05-29T12:00:33.277",
+        "FechaAdjudicacion": "2026-07-31T18:00:00",
+        "FechaEstimadaAdjudicacion": "2026-07-31T18:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "DEPARTAMENTO DE SALUD",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "24",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "MARGARITA BAZAEZ",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "DIRECCIÓN DE ASESORIA JURIDICA",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "24",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 43212104,
+            "CodigoCategoria": "43212100",
+            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
+            "NombreProducto": "Impresoras de chorro de tinta",
+            "Descripcion": " \t“SERVICIO DE ARRIENDO DE IMPRESORAS PARA EL DEPARTAMENTO DE SALUD MUNICIPAL”",
+            "UnidadMedida": "Paquete",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787350286.6818829,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
+  },
+  "1261592-44-LE26": {
+    "data": {
+      "CodigoExterno": "1261592-44-LE26",
+      "Nombre": "Entrega Audífonos Usuarios con Hipoacusia Afta",
+      "CodigoEstado": 8,
+      "Descripcion": "Cubrir de manera eficiante la entrega de dispositivos auditivos, con el propósito de reducir la lista de espera y mejorar la salud auditiva de los usuarios de la Comuna de Antofagasta.",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "1111614",
+        "NombreOrganismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
+        "RutUnidad": "71.102.600-2",
+        "CodigoUnidad": "1261592",
+        "NombreUnidad": "UNIDAD TÉCNICA DIRECCIÓN DE SALUD",
+        "DireccionUnidad": "AVENIDA ARGENTINA 1595 – II PISO",
+        "ComunaUnidad": "Antofagasta",
+        "RegionUnidad": "Región de Antofagasta ",
+        "RutUsuario": "",
+        "CodigoUsuario": "2197246",
+        "NombreUsuario": "Valeria Rojas Vieyra",
+        "CargoUsuario": "Apoyo Adquisiciones Dirección de Salud"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "1",
+      "Obras": "0",
+      "CantidadReclamos": 113,
+      "Fechas": {
+        "FechaCreacion": "2026-06-16T15:02:43.703",
+        "FechaCierre": "2026-07-01T12:00:00",
+        "FechaInicio": "2026-06-16T18:00:00",
+        "FechaFinal": "2026-06-20T18:00:00",
+        "FechaPubRespuestas": "2026-06-22T19:00:00",
+        "FechaActoAperturaTecnica": "2026-07-01T12:01:00",
+        "FechaActoAperturaEconomica": "2026-07-01T12:01:00",
+        "FechaPublicacion": "2026-06-16T16:46:04.683",
+        "FechaAdjudicacion": "2026-08-21T16:55:38.79",
+        "FechaEstimadaAdjudicacion": "2026-08-28T20:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "Convenio Resolutividad",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "6",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Suan Dahmen Hayashida",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Valeria Rojas Vieyra",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "No se permitirá la subcontratación en este proceso licitatorio.",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "6",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "La presente licitación se imputará al ítem presupuestario [22-11-999] OTROS SERVICIOS TÉCNICOS Y PROFESIONALES. El monto es de carácter referencial y es de 60.435.000.- SESENTA MILLONES CUATROCIENTOS TREINTA Y CINCO MIL PESOS IVA incluido.",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 1,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-08-19T00:00:00",
+        "Numero": "1044",
+        "NumeroOferentes": 1,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=NtRieGsedPHKza9EBFzxTzs/rPIsEHl5tltD5IICESo="
+      },
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 42211705,
+            "CodigoCategoria": "42211700",
+            "Categoria": "Equipamiento y suministros médicos / Ayuda para personas con discapacidad / Artículos de ayuda para la comunicación de discapacitados",
+            "NombreProducto": "Audífonos para personas con discapacidad física",
+            "Descripcion": "Entrega de Audífonos y al menos un control posterior.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 237,
+            "Adjudicacion": {
+              "RutProveedor": "76.136.334-4",
+              "NombreProveedor": "WS AUDIOLOGY CHILE SPA",
+              "Cantidad": 237,
+              "MontoUnitario": 185000
+            }
+          }
+        ]
+      }
+    },
+    "ts": 1787350290.2938342,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
+  },
+  "5251-58-LE26": {
+    "data": {
+      "CodigoExterno": "5251-58-LE26",
+      "Nombre": "SUITE DE PRODUCTIVIDAD O SOFTWARE DE OFICINA",
+      "CodigoEstado": 7,
+      "Descripcion": "Nuestro objetivo principal es asegurar la renovación anual de las licencias de la suite de productividad, garantizando que los estudiantes de la Universidad Tecnológica Metropolitana UTEM puedan continuar utilizando estas herramientas esenciales en sus actividades académicas y de investigación. Estas licencias son fundamentales para el desarrollo de sus estudios, facilitando el acceso a software de vanguardia que mejora su aprendizaje y productividad.\r\nAdemás, es crucial que los funcionarios de la UTEM dispongan de estas licencias para llevar a cabo sus funciones administrativas y académicas de manera eficiente. La adquisición debe cubrir la totalidad de las licencias necesarias, sin aceptar propuestas parciales, para asegurar la continuidad y eficiencia en el desarrollo de las funciones académicas y administrativas de la universidad.",
+      "FechaCierre": null,
+      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
+      "Comprador": {
+        "CodigoOrganismo": "126109",
+        "NombreOrganismo": "UNIVERSIDAD TECNOLOGICA METROPOLITANA",
+        "RutUnidad": "70.729.100-1",
+        "CodigoUnidad": "6164",
+        "NombreUnidad": "DEPARTAMENTO DE ABASTECIMIENTO",
+        "DireccionUnidad": "Calle Dieciocho Nª178, Santiago",
+        "ComunaUnidad": "Santiago",
+        "RegionUnidad": "Región Metropolitana de Santiago",
+        "RutUsuario": "",
+        "CodigoUsuario": "1506243",
+        "NombreUsuario": "Jose Leyton Zalduondo",
+        "CargoUsuario": "Comprador"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "USD",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 466,
+      "Fechas": {
+        "FechaCreacion": "2026-07-23T10:37:40.87",
+        "FechaCierre": "2026-08-04T16:00:00",
+        "FechaInicio": "2026-07-23T12:56:00",
+        "FechaFinal": "2026-07-28T16:30:00",
+        "FechaPubRespuestas": "2026-07-30T20:00:00",
+        "FechaActoAperturaTecnica": "2026-08-04T16:01:00",
+        "FechaActoAperturaEconomica": "2026-08-04T16:01:00",
+        "FechaPublicacion": "2026-07-23T12:50:28.037",
+        "FechaAdjudicacion": "2026-08-21T16:39:12.86",
+        "FechaEstimadaAdjudicacion": "2026-09-04T20:00:00",
+        "FechaSoporteFisico": "2026-08-04T00:00:00",
+        "FechaTiempoEvaluacion": "1900-01-11T00:00:00",
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "Universidad Tecnológica Metropolitana ",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 64600,
+      "Tiempo": "12",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Mauricio Loyola",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "José Leyton ",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "12",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "En base a estudio simple",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": null,
+        "Fecha": null,
+        "Numero": null,
+        "NumeroOferentes": 1,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=kuy7NqURw7ycZFP69t4dGfrdwVoYpfUVLKQwLQqLC0A="
+      },
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 43231512,
+            "CodigoCategoria": "43231500",
+            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Software / Software de gestión",
+            "NombreProducto": "Software de gestión de licencias",
+            "Descripcion": "SUITE DE PRODUCTIVIDAD O SOFTWARE DE OFICINA",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787350290.9103873,
+    "fetchedAt": "2026-08-21T22:10:15.272200+00:00"
   }
 }
