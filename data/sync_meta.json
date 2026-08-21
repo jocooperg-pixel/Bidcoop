@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-21T00:30:37.139259+00:00",
-  "ultimoIntentoRealizado": "2026-08-21T00:30:37.139259+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-21T02:52:33.255245+00:00",
+  "ultimoIntentoRealizado": "2026-08-21T02:52:33.255245+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1361,
-  "registrosConfirmados": 1361,
+  "registrosEnPlataforma": 1385,
+  "registrosConfirmados": 1385,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1077,
-  "excluidosPrefiltroIrrelevante": 6991,
-  "excluidosSinDatosReales": 10,
+  "registrosConMontoReal": 1101,
+  "excluidosPrefiltroIrrelevante": 6994,
+  "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 764,
-    "conMontoValido": 759,
-    "pctValidado": 99.3,
+    "total": 780,
+    "conMontoValido": 776,
+    "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 759,
+      "VALIDADO": 776,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 5
+      "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 170670362,
-    "montoFinalSum": 1247112359,
-    "montoRecuperadoSum": 1076441997
+    "montoOriginalSum": 192020676,
+    "montoFinalSum": 1302782523,
+    "montoRecuperadoSum": 1110761847
   },
   "categorias": {
-    "licitaciones": 593,
-    "comprasAgiles": 764,
+    "licitaciones": 601,
+    "comprasAgiles": 780,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
@@ -35,25 +35,25 @@
   "tiposOficiales": {
     "LP": 107,
     "CO": 11,
-    "LE": 370,
+    "LE": 377,
     "B2": 3,
     "LR": 40,
     "E2": 4,
     "I2": 3,
-    "L1": 64,
+    "L1": 65,
     "LS": 2,
     "O1": 4,
-    "COT": 753
+    "COT": 769
   },
   "matchPorEmpresa": {
-    "Aminorte": 1152,
-    "V-MOCCS": 209
+    "Aminorte": 1174,
+    "V-MOCCS": 211
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 752,
-    "modificadosCount": 78,
-    "cerradosCount": 716,
+    "nuevosCount": 770,
+    "modificadosCount": 83,
+    "cerradosCount": 710,
     "nuevos": [
       {
         "codigo": "1562-49-LR26",
@@ -218,6 +218,15 @@
         "fechaCierre": "2026-08-31T15:00:00"
       },
       {
+        "codigo": "3697-36-LE26",
+        "titulo": "CONTRATO DE SUMINISTRO DE CONFECCIÓN E IMPRESIÓN DE TALONARIOS Y OTROS MUNICIPALIDAD DE VICTORIA AÑO 2026-2028",
+        "organismo": "I MUNICIPALIDAD DE VICTORIA",
+        "monto": 32000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-20T15:00:00"
+      },
+      {
         "codigo": "1072229-36-LE26",
         "titulo": "ADQUISICIÓN DE “INSUMOS DE ASEO Y ELEMENTOS DE PROTECCION PARA JARDINES INFANTILES SALAS CUNA Y OFICINA REGIONAL DE FUNDACIÓN INTEGRA ÑUBLE”",
         "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
@@ -243,6 +252,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-31T15:30:00"
+      },
+      {
+        "codigo": "4174-30-CO26",
+        "titulo": "CÁMARAS DE SEGURIDAD PARA LA COMUNA DE QUIRIHUE",
+        "organismo": "Ilustre Municipalidad de Quirihue",
+        "monto": 21350314,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-04T15:00:00"
       },
       {
         "codigo": "2450-77-LE26",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-21T17:30"
-      },
-      {
-        "codigo": "4686-79-COT26",
-        "titulo": "Adquisición luminarias LED estancas",
-        "organismo": "Cámara de Diputados de Chile",
-        "monto": 7100000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-24T12:00"
-      },
-      {
-        "codigo": "2284-539-COT26",
-        "titulo": "SERVICIO DE MONITOREO DE ALARMAS AREA DE SALUD — SOLICITUD Nº 6352",
-        "organismo": "I MUNICIPALIDAD VALDIVIA",
-        "monto": 7100000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-21T10:00"
       }
     ],
     "modificados": [
@@ -638,6 +638,26 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1725-178-LE26",
+        "titulo": "SERVICIO DE MANTENCIÓN DE AIRE ACONDICIONADO",
+        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 57964160,
+        "montoNuevo": 57964160,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2770-121-LE26",
+        "titulo": "SUMINISTRO DE INSUMOS DE IMPRESIÓN PARA DEPENDENCIAS MUNICIPALES POR 12 MESES",
+        "organismo": "I MUNICIPALIDAD DE MAIPU",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 45000000,
+        "montoNuevo": 45000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "434-99-LE26",
         "titulo": "SEGUNDO CONTRATO SUMINISTRO TINTAS TAMBORES PAPEL PLOTTER Y TONER",
         "organismo": "I MUNICIPALIDAD DE CAUQUENES",
@@ -665,6 +685,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 32000000,
         "montoNuevo": 32000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "438-44-LE26",
+        "titulo": "SERIVICIO  DE ORGANIZACION DE EVENTO PARA ACTIVIDAD DE CONCIENTIZACION SOBRE ROL COMUNITARIO DE LAS PERSONAS MAYORES Y LA IMPORTANCIA DE VINCULARLES  CON TERRITORIO  BIENVENIDA  PRIMAVERA  2026",
+        "organismo": "I MUNICIPALIDAD DE SAN RAMON",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 30000000,
+        "montoNuevo": 30000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -755,6 +785,16 @@
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 9000000,
         "montoNuevo": 9000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3335-27-LE26",
+        "titulo": "ADQUISICIÓN DE PROYECTORES MÓDULO TÁCTIL Y SOPORTES PARA ESCUELA RADIMADI ORD N°69 RECURSOS LEY SEP.",
+        "organismo": "I MUNICIPALIDAD DE LA UNION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 8700000,
+        "montoNuevo": 8700000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1156,46 +1196,6 @@
         "montoAnterior": 88405,
         "montoNuevo": 88405,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5178-4338-COT26",
-        "titulo": "INSUMOS DE OFICINA / SP 1063868 / CJ ",
-        "organismo": "UNIVERSIDAD DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 75000,
-        "montoNuevo": 75000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2905-382-COT26",
-        "titulo": "ADQUISICION DE MATERIALES DE OFICINA",
-        "organismo": "I MUNICIPALIDAD DE LANCO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 68000,
-        "montoNuevo": 68000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3933-45-L126",
-        "titulo": "“IMPRESORA PARA ESCUELA DE DOLLINCO” FONDOS SEP",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "558869-39-LR26",
-        "titulo": "CONV. DE SUMINISTRO INSUMOS DE IMPRESORAS DE CMDS",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1344,27 +1344,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1725-178-LE26",
-        "titulo": "SERVICIO DE MANTENCIÓN DE AIRE ACONDICIONADO",
-        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
-        "estadoAnterior": "Publicada",
-        "monto": 57964160,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "4803-26-LE26",
         "titulo": "ADQUISICIÓN SERVIDOR ALTO RENDIMIENTO EN GPU NUEVO",
         "organismo": "SENADO DE LA REPUBLICA",
         "estadoAnterior": "Cerrada",
         "monto": 55000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2770-121-LE26",
-        "titulo": "SUMINISTRO DE INSUMOS DE IMPRESIÓN PARA DEPENDENCIAS MUNICIPALES POR 12 MESES",
-        "organismo": "I MUNICIPALIDAD DE MAIPU",
-        "estadoAnterior": "Publicada",
-        "monto": 45000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1421,14 +1405,6 @@
         "organismo": "INSTITUTO DE FOMENTO PESQUERO",
         "estadoAnterior": "Revocada",
         "monto": 31000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "438-44-LE26",
-        "titulo": "SERIVICIO  DE ORGANIZACION DE EVENTO PARA ACTIVIDAD DE CONCIENTIZACION SOBRE ROL COMUNITARIO DE LAS PERSONAS MAYORES Y LA IMPORTANCIA DE VINCULARLES  CON TERRITORIO  BIENVENIDA  PRIMAVERA  2026",
-        "organismo": "I MUNICIPALIDAD DE SAN RAMON",
-        "estadoAnterior": "Publicada",
-        "monto": 30000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1584,14 +1560,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3335-27-LE26",
-        "titulo": "ADQUISICIÓN DE PROYECTORES MÓDULO TÁCTIL Y SOPORTES PARA ESCUELA RADIMADI ORD N°69 RECURSOS LEY SEP.",
-        "organismo": "I MUNICIPALIDAD DE LA UNION",
-        "estadoAnterior": "Publicada",
-        "monto": 8700000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1638-57-LE26",
         "titulo": "CONTRATACION DE SERVICIOS DE SISTEMA DE MONITOREO Y CONTROL DE VEHICULOS MUNICIPALES BASADOS EN TECNOLOGIA GPS DIEGO DE ALMAGRO",
         "organismo": "ILUSTRE MUNICIPALIDAD DE DIEGO DE ALMAGRO",
@@ -1678,10 +1646,42 @@
         "estadoAnterior": "Publicada",
         "monto": 7100000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2686-391-COT26",
+        "titulo": "ADQUISICIÓN DE MEMORIA RAM ",
+        "organismo": "I MUNICIPALIDAD DE COLINA",
+        "estadoAnterior": "Publicada",
+        "monto": 7100000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2686-390-COT26",
+        "titulo": "ADQUISICIÓN DE MEMORIA RAM",
+        "organismo": "I MUNICIPALIDAD DE COLINA",
+        "estadoAnterior": "Cancelada",
+        "monto": 7100000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1736-498-COT26",
+        "titulo": "IMPRESORA MONOCROMATICA",
+        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "estadoAnterior": "Publicada",
+        "monto": 7020000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1233623-514-COT26",
+        "titulo": "ADQUISICIÓN DE TÓNER PARA ESCUELA GRECIA RBD-224, FECHA DE ENTREGA 04-09-2026",
+        "organismo": "Servicio Local de Educación Pública Licancabur",
+        "estadoAnterior": "Publicada",
+        "monto": 7000200,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2590.2,
+  "tiempoEjecucionSegundos": 2308.5,
   "errores": [],
   "advertencias": []
 }
