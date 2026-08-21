@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-21T04:25:28.595727+00:00",
-  "ultimoIntentoRealizado": "2026-08-21T04:25:28.595727+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-21T06:21:42.716182+00:00",
+  "ultimoIntentoRealizado": "2026-08-21T06:21:42.716182+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1386,
-  "registrosConfirmados": 1386,
+  "registrosEnPlataforma": 1381,
+  "registrosConfirmados": 1381,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1101,
+  "registrosConMontoReal": 1099,
   "excluidosPrefiltroIrrelevante": 6996,
-  "excluidosSinDatosReales": 1,
+  "excluidosSinDatosReales": 7,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 781,
-    "conMontoValido": 776,
+    "total": 782,
+    "conMontoValido": 777,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 776,
+      "VALIDADO": 777,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 192020676,
-    "montoFinalSum": 1302782523,
-    "montoRecuperadoSum": 1110761847
+    "montoOriginalSum": 202820676,
+    "montoFinalSum": 1307132523,
+    "montoRecuperadoSum": 1104311847
   },
   "categorias": {
-    "licitaciones": 601,
-    "comprasAgiles": 781,
+    "licitaciones": 595,
+    "comprasAgiles": 782,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 107,
+    "LP": 106,
     "CO": 12,
-    "LE": 377,
+    "LE": 372,
     "B2": 3,
     "LR": 40,
     "E2": 4,
@@ -43,17 +43,17 @@
     "L1": 65,
     "LS": 2,
     "O1": 4,
-    "COT": 769
+    "COT": 770
   },
   "matchPorEmpresa": {
-    "Aminorte": 1176,
-    "V-MOCCS": 210
+    "Aminorte": 1169,
+    "V-MOCCS": 212
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 770,
-    "modificadosCount": 85,
-    "cerradosCount": 709,
+    "nuevosCount": 771,
+    "modificadosCount": 87,
+    "cerradosCount": 715,
     "nuevos": [
       {
         "codigo": "1562-49-LR26",
@@ -299,15 +299,6 @@
         "fechaCierre": "2026-08-20T16:00:00"
       },
       {
-        "codigo": "4513-7-LE26",
-        "titulo": "CONMEMORACIÓN DE ANIVERSARIO PATRIO AÑO 2026 COMUNA DE RENAICO Y VILLA TIJERAL”               ",
-        "organismo": "I MUNICIPALIDAD DE RENAICO",
-        "monto": 12000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-06T15:30:00"
-      },
-      {
         "codigo": "4314-17-LE26",
         "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
         "organismo": "Ilustre Municipalidad de Curepto",
@@ -315,6 +306,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 98,
         "fechaCierre": "2026-08-10T16:00:00"
+      },
+      {
+        "codigo": "4513-7-LE26",
+        "titulo": "CONMEMORACIÓN DE ANIVERSARIO PATRIO AÑO 2026 COMUNA DE RENAICO Y VILLA TIJERAL”               ",
+        "organismo": "I MUNICIPALIDAD DE RENAICO",
+        "monto": 12000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-06T15:30:00"
       },
       {
         "codigo": "2385-42-LE26",
@@ -666,6 +666,16 @@
         "montoAnterior": 45000000,
         "montoNuevo": 45000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2981-222-LE26",
+        "titulo": "SERVICIO DE GUARDIA DE SEGURIDAD PARA INMUEBLE PDI",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 42000000,
+        "montoNuevo": 42000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "434-99-LE26",
@@ -1186,16 +1196,6 @@
         "montoAnterior": 120000,
         "montoNuevo": 120000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2111-1080-COT26",
-        "titulo": "MZ  ESPIRALES PARA ANILLADO, ENCUADERNACION ",
-        "organismo": "HOSPITAL DE URGENCIA ASISTENCIA PUBLICA DR ALEJANDRO DEL RIO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 100000,
-        "montoNuevo": 100000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1246,6 +1246,14 @@
         "estadoAnterior": "Adjudicada",
         "monto": 540446830,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1447790-10-LP26",
+        "titulo": "ADQ. EQUIPOS PRODUCCIÓN CENTRAL ALIMENTACIÓN HPC 3",
+        "organismo": "SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
+        "estadoAnterior": "Cerrada",
+        "monto": 249122440,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1057490-59-LP26",
@@ -1376,6 +1384,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1016-6-LE26",
+        "titulo": "Equipamiento Informático 13 Notebook Workstation",
+        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+        "estadoAnterior": "Adjudicada",
+        "monto": 35750000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1079969-17-LE26",
         "titulo": "SERVICIO DE ARRIENDO POR 12 MESES DE 03 IMPRESORAS",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -1440,12 +1456,12 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "5586-121-LE26",
-        "titulo": "BR ADQUISICIÓN DE MOBILIARIO Y EQUIPAMIENTO TECNOLÓGICO PARA LA DOCENCIA",
-        "organismo": "UNIVERSIDAD DE LA FRONTERA",
-        "estadoAnterior": "Publicada",
-        "monto": 23600000,
-        "empresaMatch": "V-MOCCS"
+        "codigo": "1067455-13-LE26",
+        "titulo": "Servicio de Consultoría para la Identificación de Factores Proyectores de Salud Mental de Niños Niñas y Adolescentes",
+        "organismo": "SUBSECRETARIA DE LA NIÑEZ",
+        "estadoAnterior": "Cerrada",
+        "monto": 22000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "707424-20-LE26",
@@ -1477,6 +1493,14 @@
         "organismo": "I MUNICIPALIDAD DE COQUIMBO",
         "estadoAnterior": "Adjudicada",
         "monto": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2427-49-LE26",
+        "titulo": "REPARACION SISTEMA CAMARAS TELVIGILANCIAS VALPO y PLACILLA DSC.",
+        "organismo": "I MUNICIPALIDAD DE VALPARAISO",
+        "estadoAnterior": "Cerrada",
+        "monto": 17700000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1654,34 +1678,10 @@
         "estadoAnterior": "Publicada",
         "monto": 7100000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2686-390-COT26",
-        "titulo": "ADQUISICIÓN DE MEMORIA RAM",
-        "organismo": "I MUNICIPALIDAD DE COLINA",
-        "estadoAnterior": "Cancelada",
-        "monto": 7100000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1736-498-COT26",
-        "titulo": "IMPRESORA MONOCROMATICA",
-        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
-        "estadoAnterior": "Publicada",
-        "monto": 7020000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1233623-514-COT26",
-        "titulo": "ADQUISICIÓN DE TÓNER PARA ESCUELA GRECIA RBD-224, FECHA DE ENTREGA 04-09-2026",
-        "organismo": "Servicio Local de Educación Pública Licancabur",
-        "estadoAnterior": "Publicada",
-        "monto": 7000200,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1816.2,
+  "tiempoEjecucionSegundos": 1508.5,
   "errores": [],
   "advertencias": []
 }
