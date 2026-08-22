@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-22T02:44:13.883882+00:00",
-  "ultimoIntentoRealizado": "2026-08-22T02:44:13.883882+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-22T04:19:03.494684+00:00",
+  "ultimoIntentoRealizado": "2026-08-22T04:19:03.494684+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1463,
-  "registrosConfirmados": 1463,
+  "registrosEnPlataforma": 1448,
+  "registrosConfirmados": 1448,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1154,
-  "excluidosPrefiltroIrrelevante": 7808,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 1140,
+  "excluidosPrefiltroIrrelevante": 7810,
+  "excluidosSinDatosReales": 4,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 796,
-    "conMontoValido": 791,
+    "total": 785,
+    "conMontoValido": 780,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 791,
+      "VALIDADO": 780,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
     "montoOriginalSum": 239570167,
-    "montoFinalSum": 1234420826,
-    "montoRecuperadoSum": 994850659
+    "montoFinalSum": 1213409790,
+    "montoRecuperadoSum": 973839623
   },
   "categorias": {
-    "licitaciones": 663,
-    "comprasAgiles": 796,
+    "licitaciones": 659,
+    "comprasAgiles": 785,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
@@ -35,25 +35,25 @@
   "tiposOficiales": {
     "LP": 118,
     "CO": 12,
-    "LE": 410,
+    "LE": 407,
     "B2": 3,
     "LR": 44,
     "E2": 5,
     "I2": 3,
-    "L1": 78,
+    "L1": 77,
     "LS": 2,
     "O1": 4,
-    "COT": 784
+    "COT": 773
   },
   "matchPorEmpresa": {
-    "Aminorte": 1230,
-    "V-MOCCS": 233
+    "Aminorte": 1218,
+    "V-MOCCS": 230
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 947,
+    "nuevosCount": 933,
     "modificadosCount": 65,
-    "cerradosCount": 809,
+    "cerradosCount": 810,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -479,15 +479,6 @@
         "fechaCierre": "2026-08-20T16:00:00"
       },
       {
-        "codigo": "4314-17-LE26",
-        "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
-        "organismo": "Ilustre Municipalidad de Curepto",
-        "monto": 12000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 98,
-        "fechaCierre": "2026-08-10T16:00:00"
-      },
-      {
         "codigo": "4513-7-LE26",
         "titulo": "CONMEMORACIÓN DE ANIVERSARIO PATRIO AÑO 2026 COMUNA DE RENAICO Y VILLA TIJERAL”               ",
         "organismo": "I MUNICIPALIDAD DE RENAICO",
@@ -495,6 +486,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-06T15:30:00"
+      },
+      {
+        "codigo": "4314-17-LE26",
+        "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "Ilustre Municipalidad de Curepto",
+        "monto": 12000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 98,
+        "fechaCierre": "2026-08-10T16:00:00"
       },
       {
         "codigo": "2385-42-LE26",
@@ -578,15 +578,6 @@
         "fechaCierre": "2026-08-31T15:00:00"
       },
       {
-        "codigo": "4174-28-LE26",
-        "titulo": "2 CONTAINERS PARA OFICINA Y BAÑO DE CORRALONES",
-        "organismo": "Ilustre Municipalidad de Quirihue",
-        "monto": 8000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-18T15:00:00"
-      },
-      {
         "codigo": "934-14-LE26",
         "titulo": "SERVICIO DE ASEO OFICINAS REGIONALES IND LOS LAGOS",
         "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-21T15:00:00"
+      },
+      {
+        "codigo": "742-6-LE26",
+        "titulo": "Servicios de aseo y mantenimiento Oficinas INDAP",
+        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
+        "monto": 7200000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-20T18:00:00"
       }
     ],
     "modificados": [
@@ -998,16 +998,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3206-26-L126",
-        "titulo": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS",
-        "organismo": "I MUNICIPALIDAD DE SAN RAFAEL",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "693-28-LE26",
         "titulo": "MONITORES Y TELEVISORES METRO S.A. 11-25745 LAJ",
         "organismo": "EMPRESA DE TRANSPORTE DE PASAJEROS METRO S A",
@@ -1028,11 +1018,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1589-7-LE26",
-        "titulo": "SERVICIO DE FOTOCOPIADORAS DPR ARAUCANIA",
-        "organismo": "DELEGACIÓN PRESIDENCIAL REGIONAL DE LA ARAUCANÍA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
+        "codigo": "3206-26-L126",
+        "titulo": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS",
+        "organismo": "I MUNICIPALIDAD DE SAN RAFAEL",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1041,6 +1031,66 @@
         "codigo": "3933-45-L126",
         "titulo": "“IMPRESORA PARA ESCUELA DE DOLLINCO” FONDOS SEP",
         "organismo": "I MUNICIPALIDAD DE FREIRE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2048-56-LP26",
+        "titulo": "Arriendo impresoras y scanner  .",
+        "organismo": "SERVICIO DE SALUD CHILOE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057494-46-LE26",
+        "titulo": "SUMINISTRO DE INSUMOS DE ESCRITORIO Y ETIQUETAS",
+        "organismo": "SERVICIO DE SALUD SUR HOSPITAL EXEQUIEL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "558869-39-LR26",
+        "titulo": "CONV. DE SUMINISTRO INSUMOS DE IMPRESORAS DE CMDS",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "799512-46-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
+        "organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2760-101-CO26",
+        "titulo": "SERVICIO DE HABILITACION Y REPARACION DE CAMARAS",
+        "organismo": "I MUNICIPALIDAD DE CORONEL",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1589-7-LE26",
+        "titulo": "SERVICIO DE FOTOCOPIADORAS DPR ARAUCANIA",
+        "organismo": "DELEGACIÓN PRESIDENCIAL REGIONAL DE LA ARAUCANÍA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1068,16 +1118,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "558869-39-LR26",
-        "titulo": "CONV. DE SUMINISTRO INSUMOS DE IMPRESORAS DE CMDS",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "732434-17-LR26",
         "titulo": "2do Llamado Arriendo Cámaras Frías",
         "organismo": "SERVICIO DE SALUD CONCEPCION",
@@ -1088,41 +1128,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2048-56-LP26",
-        "titulo": "Arriendo impresoras y scanner  .",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "799512-46-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
-        "organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
+        "codigo": "2078-33-LE26",
+        "titulo": "SERVICIOS DE MANTENCION PREVENTIVA DE EQUIPIOS DE AIRE ACONDICIONADO DE LA SEREMI DE SALUD REGION DE BIOBIO SC75",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057494-46-LE26",
-        "titulo": "SUMINISTRO DE INSUMOS DE ESCRITORIO Y ETIQUETAS",
-        "organismo": "SERVICIO DE SALUD SUR HOSPITAL EXEQUIEL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2760-101-CO26",
-        "titulo": "SERVICIO DE HABILITACION Y REPARACION DE CAMARAS",
-        "organismo": "I MUNICIPALIDAD DE CORONEL",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1141,6 +1151,16 @@
         "codigo": "4928-28-LE26",
         "titulo": "SERVICIO DE MANTENCION PREVENTIVA AIRE ACONDICIONADO",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "520149-30-LR26",
+        "titulo": "CEA_PC N°6409_DIPRO_Servicio de transporte Oficial",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1168,31 +1188,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2078-33-LE26",
-        "titulo": "SERVICIOS DE MANTENCION PREVENTIVA DE EQUIPIOS DE AIRE ACONDICIONADO DE LA SEREMI DE SALUD REGION DE BIOBIO SC75",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3518-15-LE26",
         "titulo": "PROVISION E INSTALACION DE CAMARAS DE SEGURIDAD",
         "organismo": "MUNICIPALIDAD DE TRAIGUEN",
         "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "608-161-LP26",
-        "titulo": "ern CONVENIO SUMINISTRO INSUMOS CLINICOS AGUJAS BOLSA EXTRACTORAS ADAPTADORES FILTRO CONECTORES",
-        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1429,6 +1429,14 @@
         "organismo": "I MUNICIPALIDAD DE CHILLAN",
         "estadoAnterior": "Adjudicada",
         "monto": 25450000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2656-54-LE26",
+        "titulo": "Adquisicion de camaras de seguridad",
+        "organismo": "I MUNICIPALIDAD DE TOME",
+        "estadoAnterior": "Cerrada",
+        "monto": 25000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1670,18 +1678,10 @@
         "estadoAnterior": "Cerrada",
         "monto": 7000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3703-337-COT26",
-        "titulo": "Servicio de monitoreo Post-Cierre Ex vertedero de la Comuna de Huasco.",
-        "organismo": "I MUNICIPALIDAD DE HUASCO",
-        "estadoAnterior": "Publicada",
-        "monto": 7000000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1982.3,
+  "tiempoEjecucionSegundos": 1781.0,
   "errores": [],
   "advertencias": []
 }
