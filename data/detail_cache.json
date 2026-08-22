@@ -172976,8 +172976,8 @@
         ]
       }
     },
-    "ts": 1787300657.5860417,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393454.5338826,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "928-23-LE26": {
     "data": {
@@ -190360,10 +190360,10 @@
     "data": {
       "CodigoExterno": "896-12-CO26",
       "Nombre": "ASESORIA INSPECTOR FISCAL AMPLIACION RED MONITOREO",
-      "CodigoEstado": 6,
+      "CodigoEstado": 8,
       "Descripcion": "“ASESORÍAS INSPECCIÓN FISCAL AMPLIACIÓN RED DE MONITOREO AGUAS SUBTERRÁNEAS. DIRECCIÓN GENERAL DE AGUAS.  REGIÓN DE ANTOFAGASTA, 2026”, REQUERIMIENTOS ESPECIFICOS EN ARCHIVO QUE SE ADJUNTA A ESTA LICITACION.",
       "FechaCierre": null,
-      "Estado": "Cerrada",
+      "Estado": "Adjudicada",
       "Comprador": {
         "CodigoOrganismo": "7247",
         "NombreOrganismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -190401,7 +190401,7 @@
         "FechaActoAperturaTecnica": "2026-08-17T15:07:00",
         "FechaActoAperturaEconomica": "2026-08-17T15:07:00",
         "FechaPublicacion": "2026-07-31T12:23:46.53",
-        "FechaAdjudicacion": "2026-08-31T18:00:00",
+        "FechaAdjudicacion": "2026-08-21T16:02:05.967",
         "FechaEstimadaAdjudicacion": "2026-08-31T18:00:00",
         "FechaSoporteFisico": null,
         "FechaTiempoEvaluacion": null,
@@ -190440,7 +190440,13 @@
       "PeriodoTiempoRenovacion": " ",
       "EsRenovable": 0,
       "CodigoBIP": null,
-      "Adjudicacion": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-08-21T00:00:00",
+        "Numero": "346",
+        "NumeroOferentes": 3,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=KEK1oP0LezxMjKBvZQE4bY27ehjdbx6tYt8BULF1Yp4="
+      },
       "Items": {
         "Cantidad": 1,
         "Listado": [
@@ -190453,13 +190459,18 @@
             "Descripcion": "“ASESORÍAS INSPECCIÓN FISCAL AMPLIACIÓN RED DE MONITOREO AGUAS SUBTERRÁNEAS. DIRECCIÓN GENERAL DE AGUAS.  REGIÓN DE ANTOFAGASTA, 2026”, REQUERIMIENTOS ESPECIFICOS EN ARCHIVO QUE SE ADJUNTA A ESTA LICITACION.",
             "UnidadMedida": "Unidad no definida",
             "Cantidad": 1,
-            "Adjudicacion": null
+            "Adjudicacion": {
+              "RutProveedor": "77.751.356-7",
+              "NombreProveedor": "SERVICIOS DE INGENIERIA GEOCLOUD SPA",
+              "Cantidad": 1,
+              "MontoUnitario": 30000000
+            }
           }
         ]
       }
     },
-    "ts": 1787300660.8596423,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393433.7370014,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "898-156-LE26": {
     "data": {
@@ -191989,8 +192000,8 @@
         ]
       }
     },
-    "ts": 1787300681.6448014,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393486.0716186,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1057536-96-LP26": {
     "data": {
@@ -220256,8 +220267,8 @@
         ]
       }
     },
-    "ts": 1787300672.8797467,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393474.1558251,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1200377-22-LE26": {
     "data": {
@@ -225191,8 +225202,8 @@
         ]
       }
     },
-    "ts": 1787300638.856154,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393448.5240905,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1426038-46-LE26": {
     "data": {
@@ -225307,8 +225318,8 @@
         ]
       }
     },
-    "ts": 1787300642.5922153,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393450.0047133,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1552-67-LE26": {
     "data": {
@@ -225423,8 +225434,8 @@
         ]
       }
     },
-    "ts": 1787300649.678431,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393456.676198,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1611-7-LE26": {
     "data": {
@@ -226285,8 +226296,8 @@
         ]
       }
     },
-    "ts": 1787300665.014941,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393468.4046626,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "867990-46-L126": {
     "data": {
@@ -226417,8 +226428,8 @@
         ]
       }
     },
-    "ts": 1787300628.148258,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393466.911335,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "2581-25-LE26": {
     "data": {
@@ -226549,8 +226560,8 @@
         ]
       }
     },
-    "ts": 1787300673.61627,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393477.9158254,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "3378-40-LE26": {
     "data": {
@@ -226587,7 +226598,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 11790,
+      "CantidadReclamos": 11794,
       "Fechas": {
         "FechaCreacion": "2026-06-01T00:00:00",
         "FechaCierre": "2026-06-15T15:00:00",
@@ -226665,8 +226676,8 @@
         ]
       }
     },
-    "ts": 1787300677.1927352,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393478.715933,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "14-18-R126": {
     "data": {
@@ -227465,8 +227476,8 @@
         ]
       }
     },
-    "ts": 1787300653.0228016,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393451.4672706,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "948355-50-LE26": {
     "data": {
@@ -227581,8 +227592,8 @@
         ]
       }
     },
-    "ts": 1787300677.9583378,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393482.3660178,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "2026-42-LE26": {
     "data": {
@@ -227808,8 +227819,8 @@
         ]
       }
     },
-    "ts": 1787300653.9601305,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393461.4770434,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "5349-66-LP26": {
     "data": {
@@ -228231,8 +228242,8 @@
         ]
       }
     },
-    "ts": 1787300669.1780033,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393470.0557172,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "856-20-LP26": {
     "data": {
@@ -229502,7 +229513,7 @@
         "NombreUsuario": "Francisca Antonia Freire Baro",
         "CargoUsuario": "Analista de Adquisiciones"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "6",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LR",
@@ -229582,8 +229593,8 @@
         ]
       }
     },
-    "ts": 1787214138.5517285,
-    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
+    "ts": 1787393423.5956101,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "2101-127-L126": {
     "data": {
@@ -229723,7 +229734,7 @@
         "NombreUsuario": "Caroline Cristina Fuentes Cornejo",
         "CargoUsuario": "Analista de Licitaciones"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -229803,8 +229814,8 @@
         ]
       }
     },
-    "ts": 1787214143.7729838,
-    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
+    "ts": 1787393425.052336,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "5615-43-LE26": {
     "data": {
@@ -229828,7 +229839,7 @@
         "NombreUsuario": "Lilian Roldan Avalos",
         "CargoUsuario": "Encargada  de Adquisiciones"
       },
-      "DiasCierreLicitacion": "8",
+      "DiasCierreLicitacion": "6",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -229908,8 +229919,8 @@
         ]
       }
     },
-    "ts": 1787214144.4516425,
-    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
+    "ts": 1787393428.8823855,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "813-79-LE26": {
     "data": {
@@ -230038,7 +230049,7 @@
         "NombreUsuario": "Carolina Quiroz Pérez",
         "CargoUsuario": "Analista de Contratos"
       },
-      "DiasCierreLicitacion": "21",
+      "DiasCierreLicitacion": "19",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "O1",
@@ -230118,8 +230129,8 @@
         ]
       }
     },
-    "ts": 1787214145.301063,
-    "fetchedAt": "2026-08-20T08:21:45.094545+00:00"
+    "ts": 1787393429.8841279,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1550-3-LE26": {
     "data": {
@@ -323427,8 +323438,8 @@
         ]
       }
     },
-    "ts": 1787300621.3532066,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393434.9967782,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1537592-9-LE26": {
     "data": {
@@ -323543,8 +323554,8 @@
         ]
       }
     },
-    "ts": 1787300622.4943974,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393444.336797,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "3444-9-LE26": {
     "data": {
@@ -323581,7 +323592,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 11790,
+      "CantidadReclamos": 11794,
       "Fechas": {
         "FechaCreacion": "2026-07-22T09:56:13.403",
         "FechaCierre": "2026-08-03T15:00:00",
@@ -323659,8 +323670,8 @@
         ]
       }
     },
-    "ts": 1787300626.5905669,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393453.2247324,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1016-6-LE26": {
     "data": {
@@ -323775,8 +323786,8 @@
         ]
       }
     },
-    "ts": 1787300627.3387134,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393438.6682665,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1447790-10-LP26": {
     "data": {
@@ -323902,8 +323913,8 @@
         ]
       }
     },
-    "ts": 1787300631.7648044,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393439.5653474,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1876-5-LE26": {
     "data": {
@@ -324018,8 +324029,8 @@
         ]
       }
     },
-    "ts": 1787300635.310087,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393440.4197972,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "1067455-13-LE26": {
     "data": {
@@ -324123,8 +324134,8 @@
         ]
       }
     },
-    "ts": 1787300646.057915,
-    "fetchedAt": "2026-08-21T08:23:13.228178+00:00"
+    "ts": 1787393455.5229793,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   },
   "29-63-LP26": {
     "data": {
@@ -348767,5 +348778,1600 @@
     },
     "ts": 1787387946.6153245,
     "fetchedAt": "2026-08-22T08:13:58.312388+00:00"
+  },
+  "1431841-37-L126": {
+    "data": {
+      "CodigoExterno": "1431841-37-L126",
+      "Nombre": "Memo SECPLA N°194/Servicio tasación comercial inmuebles municipales\"",
+      "CodigoEstado": 8,
+      "Descripcion": "Contratación de servicio de tasación de bienes raíces, para valorización y elaboración de informes de tasación comercial de inmuebles municipales, según detalles en bases técnicas que se adjuntan. Pago mediante transferencia electrónica para lo cual se adjunta formulario de la especie. ",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "7325",
+        "NombreOrganismo": "I MUNICIPALIDAD DE RECOLETA",
+        "RutUnidad": "69.254.800-0",
+        "CodigoUnidad": "1431841",
+        "NombreUnidad": "DIRECCION  DE COMPRAS PUBLICAS",
+        "DireccionUnidad": "AV RECOELTA 2774 PISO -1",
+        "ComunaUnidad": "Recoleta",
+        "RegionUnidad": "Región Metropolitana de Santiago",
+        "RutUsuario": "",
+        "CodigoUsuario": "1313535",
+        "NombreUsuario": "Patricio Ayala Alcayaga",
+        "CargoUsuario": "Supervisor de Compras"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "L1",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 4166,
+      "Fechas": {
+        "FechaCreacion": "2026-07-10T12:47:43.37",
+        "FechaCierre": "2026-07-21T23:59:00",
+        "FechaInicio": "2026-07-10T16:07:36.64",
+        "FechaFinal": "2026-07-14T23:30:00",
+        "FechaPubRespuestas": "2026-07-15T23:30:00",
+        "FechaActoAperturaTecnica": "2026-07-22T10:00:00",
+        "FechaActoAperturaEconomica": "2026-07-22T10:00:00",
+        "FechaPublicacion": "2026-07-10T16:07:36.64",
+        "FechaAdjudicacion": "2026-08-17T17:08:59.837",
+        "FechaEstimadaAdjudicacion": "2026-08-19T23:59:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 2,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 2000000,
+      "Tiempo": null,
+      "UnidadTiempo": "2",
+      "Modalidad": 0,
+      "TipoPago": "-1",
+      "NombreResponsablePago": "",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 0,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "0",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "0",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-08-17T00:00:00",
+        "Numero": "2590",
+        "NumeroOferentes": 6,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=Plf1yR1OY+8JTx0AUv7ARBKZZ3LHU3ac1KR9d5+3xKY="
+      },
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 80131802,
+            "CodigoCategoria": "80131800",
+            "Categoria": "Servicios profesionales, administrativos y consultorías de gestión empresarial / Servicios inmobiliarios / Servicios de gestión inmobiliaria",
+            "NombreProducto": "Servicios de tasación inmobiliaria",
+            "Descripcion": "Servicio de tasación inmobiliaria",
+            "UnidadMedida": "Unidad no definida",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "76.081.638-8",
+              "NombreProveedor": "INMOBILIARIA, CONSTRUCCION E INGENIERIA HERMES Y COMPANIA LIMITADA",
+              "Cantidad": 1,
+              "MontoUnitario": 700000
+            }
+          }
+        ]
+      }
+    },
+    "ts": 1787393465.2103138,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:1212413-88-COT26": {
+    "data": {
+      "codigo": "1212413-88-COT26",
+      "nombre": "MOBILIARIO TAXIDERMIA",
+      "descripcion": "Se adjunta archivo con especificaciones",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-25 10:00",
+        "fecha_cierre_segundo_llamado": "2026-08-29 02:44"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:15",
+        "fecha_cierre": "2026-08-25 10:00",
+        "fecha_ultimo_cambio": "2026-08-21 17:20",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "INTERIOR PARQUE QUINTA NORMAL S/N",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1810023,
+          "nombre": "Ficha de Solicitud de Compra Ágil MOBILIARIO.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 1000000,
+        "monto_disponible": 1000000,
+        "monto_disponible_clp": 1000000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "MUSEO NACIONAL DE HISTORIA NATURAL ",
+        "rut": "60.905.002-0",
+        "unidad_compra": "MUSEO NACIONAL DE HISTORIA NATURAL DOS",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 56121701,
+          "nombre": "Estantes",
+          "descripcion": "Estantes Armario Metálico Cerrado 185x87x40 cm (5 niveles con bandejas de acero ajustables en altura, 2 puertas con cerradura de llave incluida, Estructura metálica de alta resistencia, Fácil armado sin herramientas especiales, Color: Gris. INCLUIR ARMADO",
+          "cantidad": 3,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 56121701,
+          "nombre": "Estantes",
+          "descripcion": "Gabinetes estructura metálica de alta resistencia, con puertas correderas con cerradura de llave incluida, con repisas interiores ajustables. Medidas: 90 x 45 x 75, Color gris. INCLUIR ARMADO",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 3,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394747.2741468,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:4100-196-COT26": {
+    "data": {
+      "codigo": "4100-196-COT26",
+      "nombre": "ADQUISICION DE BANDERAS DE ESCRITORIO PARA EL DEPARTAMENTO RELACIONES PUBLICAS",
+      "descripcion": "ADQUISICION DE BANDERAS DE ESCRITORIO PARA EL DEPARTAMENTO RELACIONES PUBLICAS, CONFORME A REQUERIMIENTOS TECNICOS Y CONDICIONES DE COMPRA QUE SE ADJUNTAN",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-22 18:00",
+        "fecha_cierre_segundo_llamado": "2026-08-23 18:48"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:11",
+        "fecha_cierre": "2026-08-22 18:00",
+        "fecha_ultimo_cambio": "2026-08-21 17:15",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "AVDA. LIBERTADOR BERNARDO O'HIGGINS NRO. 1196, PISO 12",
+        "plazo_entrega_dias": 2
+      },
+      "documentos": [
+        {
+          "id": 1810015,
+          "nombre": "COND. COMPRA BANDERAS ESCRITORIO RELCAR.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 333200,
+        "monto_disponible": 333200,
+        "monto_disponible_clp": 333200,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Dirección General de Carabineros de Chile",
+        "rut": "60.505.000-K",
+        "unidad_compra": "Depto.Relaciones Públicas",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 55121723,
+          "nombre": "Bases o soportes para señales",
+          "descripcion": "ADQUISICION DE BANDERAS DE ESCRITORIO PARA EL DEPARTAMENTO RELACIONES PUBLICAS, conforme detalle adjunto",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 4,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394751.4122176,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:3932-299-COT26": {
+    "data": {
+      "codigo": "3932-299-COT26",
+      "nombre": "Insumos varios libreria, Cesfam Placilla REGIÓN DE O'HIGGINS",
+      "descripcion": "Se requiere adquirir los insumos detallados, para lo cual se solicita acompañar a la oferta imágenes referenciales de lo ofertado, se evaluara precio y calidad, se debe cumplir los plazos de entrega comprometidos en la propuesta del proveedor.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-24 09:30",
+        "fecha_cierre_segundo_llamado": "2026-08-27 01:53"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:06",
+        "fecha_cierre": "2026-08-24 09:30",
+        "fecha_ultimo_cambio": "2026-08-21 17:10",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Almirante Latorre 2229 Placilla REGIÓN DE O'HIGGINS",
+        "plazo_entrega_dias": 1
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 350000,
+        "monto_disponible": 350000,
+        "monto_disponible_clp": 350000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE PLACILLA",
+        "rut": "69.090.200-1",
+        "unidad_compra": "Salud Municipal",
+        "region": 6,
+        "nombre_region": "Región del Libertador General Bernardo O´Higgins"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Masking tape 24x 40 cms.",
+          "cantidad": 25,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Tijeras",
+          "cantidad": 8,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Cuerda cordel de 5 mm rollo de 100 mts.",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Cinta adhesiva scotch transparente 20 m opaca ancho 18 mm.",
+          "cantidad": 15,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Palos de maqueta adix (Bolsa de 4 un)",
+          "cantidad": 32,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Cola fría escolar artel lavable pote 1 kilo",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Frasco de tempera 250 ml colores: amarillo, verde, rojo, $ 1.350 $ 29.700\nnaranjo, azul, rosa, café, negro y morado.\n2 de cada color.\n4 blanc",
+          "cantidad": 22,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Set de 6 pinceles",
+          "cantidad": 15,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Resma de hojas de carta",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Resma de hojas de oficio",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 30222701,
+          "nombre": "Oficinas",
+          "descripcion": "Cartoneras",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394756.4385343,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:1298357-190-COT26": {
+    "data": {
+      "codigo": "1298357-190-COT26",
+      "nombre": "ADQUISICIÓN DE DISCOS DUROS, PARA EL SISTEMA DE CÁMARAS DE VIDEOVIGILANCIA DEL TEATRO MUNICIPAL DE CHILLÁN.",
+      "descripcion": "El Teatro Municipal de Chillán, mediante la Corporación Cultural Municipal de la comuna de Chillán requiere la adquisición de 4 discos duros especiales para videovigilancia (DVR/NVR) de alto rendimiento o equivalente técnico, destinados a renovar el almacenamiento de los NVR del sistema de cámaras de videovigilancia del Teatro Municipal de Chillán. \nCon motivo de que los discos duros actualmente instalados en los NVR del sistema de videovigilancia del Teatro Municipal de Chillán se encuentran fu",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-24 10:00",
+        "fecha_cierre_segundo_llamado": "2026-08-27 02:53"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:06",
+        "fecha_cierre": "2026-08-24 10:00",
+        "fecha_ultimo_cambio": "2026-08-21 17:10",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Calle 18 de septiembre #590",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1810004,
+          "nombre": "Ficha Técnica Compra Ágil ID 1298357-190-COT26.pdf"
+        },
+        {
+          "id": 1810005,
+          "nombre": "POLITICAS INTERNAS DE ADJUDICACION (2) (1) (1).pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 1300000,
+        "monto_disponible": 1300000,
+        "monto_disponible_clp": 1300000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "CORPORACION CULTURAL MUNICIPAL DE LA COMUNA DE CHILLAN",
+        "rut": "65.077.305-5",
+        "unidad_compra": "CORPORACION CULTURAL MUNICIPAL DE LA COMUNA DE CHILLAN",
+        "region": 16,
+        "nombre_region": "Región del Ñuble"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 43201803,
+          "nombre": "Discos duros",
+          "descripcion": "Se adjunta ficha técnica.",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 4,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394761.5080101,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:2859-799-COT26": {
+    "data": {
+      "codigo": "2859-799-COT26",
+      "nombre": "Compra de tintas",
+      "descripcion": "Monto presupuestado incluye IVA y despacho. La oferta debe ser por la totalidad del producto y el plazo de entrega debe ser acorde al lugar de entrega y todo plazo que este mencionado como \"entrega inmediata\" 1 día, 24 horas y las especificaciones técnicas no sean fehaciente y NO  presente alguna cotización detallada, automáticamente quedará fuera de las bases.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-26 12:00",
+        "fecha_cierre_segundo_llamado": "2026-08-31 06:53"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:06",
+        "fecha_cierre": "2026-08-26 12:00",
+        "fecha_ultimo_cambio": "2026-08-21 17:10",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Av. Copayapu N°485, Universidad de Atacama",
+        "plazo_entrega_dias": 8
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 277464,
+        "monto_disponible": 277464,
+        "monto_disponible_clp": 277464,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "UNIVERSIDAD DE ATACAMA",
+        "rut": "71.236.700-8",
+        "unidad_compra": "SECCIÓN ABASTECIMIENTO",
+        "region": 3,
+        "nombre_region": "Región de Atacama "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTA HP 951 YELLOW ORIGINAL",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTA HP 951 MAGENTA ORIGINAL",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTA HP 951 CYAN ORIGINAL",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "PACK 4 TINTAS EPSON ORIGINALES T544120/220/320/420",
+          "cantidad": 2,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "PACK 4 TINTAS CANON GI-10 GENUINAS BKCYMAYE G5010 G6010 Gm2010 ORIGINALES",
+          "cantidad": 2,
+          "unidad_medida": "PACK"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 2,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394768.5599422,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:634-297-COT26": {
+    "data": {
+      "codigo": "634-297-COT26",
+      "nombre": "EXP. N° 512 ADQUISICIÓN DE TELEVISOR PARA REQUERIMIENTOS CON SOPORTE AÉREO",
+      "descripcion": "ADQUISICIÓN DE TELEVISOR PARA REQUERIMIENTOS CON SOPORTE AÉREO SEGÚN ESPECIFICACIONES TÉCNICAS Y REQUERIMIENTOS ADMINISTRATIVOS. INDICAR PRECIO, PLAZO DE ENTREGA, ADJUNTAR ESPECIFICACIONES TÉCNICAS Y FORMULARIO DE SUSTENTABILIDAD N° 01. (E1O2RT9)",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-22 18:00",
+        "fecha_cierre_segundo_llamado": "2026-08-23 18:54"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:05",
+        "fecha_cierre": "2026-08-22 18:00",
+        "fecha_ultimo_cambio": "2026-08-21 17:10",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Carmen 1188",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1810001,
+          "nombre": "FORMULARIO N° 1 SUSTENTABILIDAD.docx"
+        },
+        {
+          "id": 1810002,
+          "nombre": "REQUERIMIENTO ADMINISTRATIVO.pdf"
+        },
+        {
+          "id": 1810003,
+          "nombre": "Bases tecnicas televisor.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 238000,
+        "monto_disponible": 238000,
+        "monto_disponible_clp": 238000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+        "rut": "61.004.000-4",
+        "unidad_compra": "Dirección Nacional",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 52161505,
+          "nombre": "Televisores convencionales, de plasma y LCD",
+          "descripcion": "Televisor de 50 pulgadas con soporte aéreo para colgar en pared, según especificaciones técnicas.",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 3,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394775.70141,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:5060-671-COT26": {
+    "data": {
+      "codigo": "5060-671-COT26",
+      "nombre": "S374.SEP. ADQ DE PAPEL PARA FOTOCOPIAS Y CARTULINAS ESC AMANECER.",
+      "descripcion": "S374.SEP. ADQ DE PAPEL PARA FOTOCOPIAS Y CARTULINAS ESC AMANECER. SEGUN E.T ADJUNTAS.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-25 12:00",
+        "fecha_cierre_segundo_llamado": "2026-08-29 06:56"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:03",
+        "fecha_cierre": "2026-08-25 12:00",
+        "fecha_ultimo_cambio": "2026-08-21 17:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Vicuña mackenna s/n entre calle bilbao y las acacias , Temuco, Región de la Araucanía",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1809995,
+          "nombre": "Copia de COMPRA ÁGIL 2026 (15).pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 5170780,
+        "monto_disponible": 5170780,
+        "monto_disponible_clp": 5170780,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE TEMUCO",
+        "rut": "69.190.700-7",
+        "unidad_compra": "Municipalidad de Temuco-Educación",
+        "region": 9,
+        "nombre_region": "Región de la Araucanía "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44111804,
+          "nombre": "Papeles de dibujo",
+          "descripcion": "S374.SEP. ADQ DE PAPEL PARA FOTOCOPIAS Y CARTULINAS ESC AMANECER. SEGUN E.T ADJUNTAS.",
+          "cantidad": 1,
+          "unidad_medida": "GL"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394780.3420136,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:1953-354-COT26": {
+    "data": {
+      "codigo": "1953-354-COT26",
+      "nombre": "506/ADQUISICIÓN DE MATERIALES DE OFICINA PARA EL CDP CASABLANCA /E1O2RT8",
+      "descripcion": "Se solicita adjunte cotización, con datos de proveedor (teléfono, correo electrónico, para poder comunicarse en caso de quedar seleccionado). Se solicita adjunte documento con descripción técnica de los productos ofertados. Se solicita no cobrar despacho además de llegar a lo más cercano al tope $252.600",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-24 08:30",
+        "fecha_cierre_segundo_llamado": "2026-08-26 23:56"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:03",
+        "fecha_cierre": "2026-08-24 08:30",
+        "fecha_ultimo_cambio": "2026-08-21 17:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Maipu 131, Casablanca ",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1809993,
+          "nombre": "04-REQ~2.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 252600,
+        "monto_disponible": 252600,
+        "monto_disponible_clp": 252600,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Dirección Regional de Gendarmeria - Valparaiso",
+        "rut": "61.004.024-1",
+        "unidad_compra": "Región de Valparaíso",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44111804,
+          "nombre": "Papeles de dibujo",
+          "descripcion": "Papel para fotocopiadora o impresora, tamaño oficio, 500 hojas",
+          "cantidad": 30,
+          "unidad_medida": "RM"
+        },
+        {
+          "codigo_producto": 44122001,
+          "nombre": "Archivadores de fichas",
+          "descripcion": "Archivador tamaño oficio, lomo ancho",
+          "cantidad": 30,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44122011,
+          "nombre": "Carpetas para archivos",
+          "descripcion": "Carpeta de cartulina tamaño oficio",
+          "cantidad": 100,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44122019,
+          "nombre": "Cajas de archivo o accesorios",
+          "descripcion": "Caja para archivo de documentación / caja archivo estándar",
+          "cantidad": 15,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44122005,
+          "nombre": "Cubiertas de revistas o libros",
+          "descripcion": "Libro de oficina tipo Acta",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44101707,
+          "nombre": "Corcheteras",
+          "descripcion": "Corchetera de escritorio",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60105704,
+          "nombre": "Barras de pegamento libres de ácido",
+          "descripcion": "Pegamento en barra 36 g aprox.",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 31201512,
+          "nombre": "Cinta Transparente",
+          "descripcion": "Cinta adhesiva transparente",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 31201517,
+          "nombre": "Cinta para empaquetar",
+          "descripcion": "Cinta de embalaje transparente 48 mm x 100 m aprox.",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121708,
+          "nombre": "Marcadores",
+          "descripcion": "Marcador permanente negro",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121708,
+          "nombre": "Marcadores",
+          "descripcion": "Destacador amarillo fluorescente",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121613,
+          "nombre": "Saca corchetes",
+          "descripcion": "Sacacorchete tipo palanca",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121708,
+          "nombre": "Marcadores",
+          "descripcion": "Marcador para pizarra azul",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121708,
+          "nombre": "Marcadores",
+          "descripcion": "Marcador para pizarra negro",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121708,
+          "nombre": "Marcadores",
+          "descripcion": "Marcador para pizarra rojo",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44122106,
+          "nombre": "Chinches y tachuelas",
+          "descripcion": "Chinches tipo Push Pins",
+          "cantidad": 2,
+          "unidad_medida": "BX"
+        },
+        {
+          "codigo_producto": 55121616,
+          "nombre": "Banderitas autoadhesivas",
+          "descripcion": "Banderitas autoadhesivas señalizadoras",
+          "cantidad": 5,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 14111530,
+          "nombre": "Notas de papel autoadhesivo",
+          "descripcion": "Notas adhesivas 76 x 76 mm aprox.",
+          "cantidad": 20,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121802,
+          "nombre": "Líquido corrector",
+          "descripcion": "Corrector líquido tipo lápiz, 7 ml aprox.",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60121524,
+          "nombre": "Bolígrafos de gel",
+          "descripcion": "Lápiz tinta gel azul, 0,5 mm aprox.",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60121524,
+          "nombre": "Bolígrafos de gel",
+          "descripcion": "Lápiz tinta gel rojo, 0,5 mm aprox.",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 0,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394795.311356,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:924-216-COT26": {
+    "data": {
+      "codigo": "924-216-COT26",
+      "nombre": "REDISTRIBUCIÓN DE PUESTOS DE TRABAJO TIPO BENCH, TRASLADO DE TABIQUES ACÚSTICOS, RECABLEADO Y REPARACIONES MENORES",
+      "descripcion": "El objetivo principal es ejecutar los trabajos adicionales de redistribución del mobiliario tipo bench y de los tabiques separadores tipo panel acústico (TPA) del piso 13 del Edificio Torre Amunátegui, con posterioridad al cierre contractual del proyecto principal de habilitación, garantizando que las estaciones de trabajo, sus instalaciones eléctricas y de corrientes débiles, así como las superficies y canalizaciones afectadas, mantengan los estándares técnicos, de seguridad, acústicos.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-27 15:00",
+        "fecha_cierre_segundo_llamado": "2026-09-02 12:57"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 17:02",
+        "fecha_cierre": "2026-08-27 15:00",
+        "fecha_ultimo_cambio": "2026-08-21 17:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Catedral 1401",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1809996,
+          "nombre": "TDR.pdf"
+        },
+        {
+          "id": 1809997,
+          "nombre": "Anexos.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 4854367,
+        "monto_disponible": 4854367,
+        "monto_disponible_clp": 4854367,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "SUBSECRETARIA DE SALUD PUBLICA",
+        "rut": "61.601.000-K",
+        "unidad_compra": "Seremi Salud R.M.",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 72131702,
+          "nombre": "Construcción de obras civiles",
+          "descripcion": "REDISTRIBUCIÓN DE PUESTOS DE TRABAJO TIPO BENCH, TRASLADO DE TABIQUES ACÚSTICOS, RECABLEADO Y REPARACIONES MENORES, DETALLE EN TDR ADJUNTO, VISITA EN TERRENO EL MIERCOLES 26-08-2026, SE DEBE INFORMAR PERSONAS QUE ASISTIRA EL 25-08-2026 PARA GESTIONAR ACCESO. COMPLETAR ANEXOS.",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 2,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": true
+      }
+    },
+    "ts": 1787394801.3759794,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:682942-7-COT26": {
+    "data": {
+      "codigo": "682942-7-COT26",
+      "nombre": "ARTICULOS DE OFICINA",
+      "descripcion": "ARTICULOS DE OFICINA QUE SE DETALLAN EN TERMINOS DE REFERENCIA ADJUNTOS",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-26 15:00",
+        "fecha_cierre_segundo_llamado": "2026-08-31 13:03"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 16:56",
+        "fecha_cierre": "2026-08-26 15:00",
+        "fecha_ultimo_cambio": "2026-08-21 17:00",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "ECHAURREN 560",
+        "plazo_entrega_dias": 3
+      },
+      "documentos": [
+        {
+          "id": 1809978,
+          "nombre": "TERMINOS DE REFERENCIA   COMPRA AGIL ID 682942-7-COT26  ARTICULOS.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 350000,
+        "monto_disponible": 350000,
+        "monto_disponible_clp": 350000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Juzgado de Familia de Limache",
+        "rut": "60.301.001-9",
+        "unidad_compra": "Jdo de Familia de Limache",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44121615,
+          "nombre": "Corcheteras",
+          "descripcion": "CORCHETERA TIPO ALICATE",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 14111507,
+          "nombre": "Papel para fotocopiadora o impresora",
+          "descripcion": "PAPEL PARA IMPRESORAS Y FOTOCOPIADORAS 75GSM  216x330 RESMA 500 HOJAS",
+          "cantidad": 20,
+          "unidad_medida": "RM"
+        },
+        {
+          "codigo_producto": 44122103,
+          "nombre": "Corchetes",
+          "descripcion": "CORCHETES 5/8\" SEMI INDUSTRIAL 23/17",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 26111702,
+          "nombre": "Pilas alcalinas",
+          "descripcion": "PILA ALCALINA AA 1.5 VOLT",
+          "cantidad": 12,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44122011,
+          "nombre": "Carpetas para archivos",
+          "descripcion": "CARPETAS PLASTICAS CON ELASTICOS",
+          "cantidad": 15,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121701,
+          "nombre": "Lápiz pasta",
+          "descripcion": "LÁPIZ TINTA GEL SUPER GEL 0.7 MM   ROJO CALIDAD IGUAL O SUPERIOR A PILOT",
+          "cantidad": 20,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121701,
+          "nombre": "Lápiz pasta",
+          "descripcion": "LÁPIZ TINTA GEL SUPER GEL 0.7 MM   NEGRO CALIDAD IGUAL O SUPERIOR A PILOT",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121701,
+          "nombre": "Lápiz pasta",
+          "descripcion": "LÁPIZ TINTA GEL SUPER GEL 0.7 MM   AZUL CALIDAD IGUAL O SUPERIOR A PILOT",
+          "cantidad": 50,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44121704,
+          "nombre": "Lápiz pasta",
+          "descripcion": "LAPIZ PASTA AZUL CALIDAD IGUAL O SUPERIOR A BIC",
+          "cantidad": 50,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 14111531,
+          "nombre": "Libros o cuadernos de registro",
+          "descripcion": "CUADERNO MATEMATICA 7mm 150HJS  Papel 56g/m * 27,5 x 20cm TAPA EXTRA-DURA CON ESPIRAL",
+          "cantidad": 30,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 4,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394816.8871622,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:4401-100-COT26": {
+    "data": {
+      "codigo": "4401-100-COT26",
+      "nombre": "SC 768 IMPRESORAS TERMICAS PARA BOTIQUINES FARMACIA ",
+      "descripcion": "El objeto de esta compra es adquirir al mismo proveedor, impresoras térmicas para botiquines de farmacias, los cuales serán asignados a postas de salud rural según necesidad, los cuales son esenciales para la realización de las atenciones habituales en los centros de salud rurales de la APS San Clemente",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-24 15:00",
+        "fecha_cierre_segundo_llamado": "2026-08-27 13:05"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 16:54",
+        "fecha_cierre": "2026-08-24 15:00",
+        "fecha_ultimo_cambio": "2026-08-21 16:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Los Espinos S/N",
+        "plazo_entrega_dias": 10
+      },
+      "documentos": [
+        {
+          "id": 1809972,
+          "nombre": "menor-1000utm.pdf"
+        },
+        {
+          "id": 1809973,
+          "nombre": "DE677 Equidad rural.pdf"
+        },
+        {
+          "id": 1809974,
+          "nombre": "TR E.Rural impresoras.pdf"
+        },
+        {
+          "id": 1809975,
+          "nombre": "INT 67 RES 477 SAN CLEMENTE EQUIDAD.pdf"
+        },
+        {
+          "id": 1809976,
+          "nombre": "Anexo N__1 propuesta econ__mica (2).docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 2000000,
+        "monto_disponible": 2000000,
+        "monto_disponible_clp": 2000000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE SAN CLEMENTE",
+        "rut": "69.110.500-8",
+        "unidad_compra": "DEPARTAMENTO SALUD MUNICIPALIDAD DE SAN CLEMENTE",
+        "region": 7,
+        "nombre_region": "Región del Maule "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 43212108,
+          "nombre": "Impresoras de cinta térmica",
+          "descripcion": "Impresora térmica para farmacias:\n-\tZebra ZD411 (modelo excluyente por compatibilidad).\n",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 9,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394832.4579513,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:2568-52-COT26": {
+    "data": {
+      "codigo": "2568-52-COT26",
+      "nombre": "50 pendrive de 64 GB",
+      "descripcion": "50 pendrive de 64 GB\nSe dará preferencia a proveedor local y que ofrezca menor plazo de entrega ",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-25 12:00",
+        "fecha_cierre_segundo_llamado": "2026-08-29 07:08"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 16:51",
+        "fecha_cierre": "2026-08-25 12:00",
+        "fecha_ultimo_cambio": "2026-08-21 16:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Avenida San Juan S/N, Interior Estadio Guillermo Chacón ",
+        "plazo_entrega_dias": 2
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 250000,
+        "monto_disponible": 250000,
+        "monto_disponible_clp": 250000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "CORP NACIONAL FORESTAL",
+        "rut": "61.313.000-4",
+        "unidad_compra": "VI Region - U.G. Manejo Del Fuego",
+        "region": 6,
+        "nombre_region": "Región del Libertador General Bernardo O´Higgins"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 73161515,
+          "nombre": "Servicios de fabricación de maquinaria o equipo de oficina",
+          "descripcion": "50 pendrive de 64 GB\nSe dará preferencia a proveedor local y que ofrezca menor plazo de entrega ",
+          "cantidad": 50,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 3,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394836.2835903,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:1305525-109-COT26": {
+    "data": {
+      "codigo": "1305525-109-COT26",
+      "nombre": "ADQUISICIÓN BANQUETAS Y SILLA DE ESPERA",
+      "descripcion": "SEGÚN EETT ADJUNTAS",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-24 08:00",
+        "fecha_cierre_segundo_llamado": "2026-08-26 23:09"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 16:50",
+        "fecha_cierre": "2026-08-24 08:00",
+        "fecha_ultimo_cambio": "2026-08-21 16:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "3 NORTE 331",
+        "plazo_entrega_dias": 3
+      },
+      "documentos": [
+        {
+          "id": 1809965,
+          "nombre": "EETT BANQUETAS Y SILLAS.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 1500000,
+        "monto_disponible": 1500000,
+        "monto_disponible_clp": 1500000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
+        "rut": "61.981.120-8",
+        "unidad_compra": "COMPRAS Y LICITACIONES",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 56112106,
+          "nombre": "Banquetas",
+          "descripcion": "SEGÚN EETT ADJUNTAS",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 56101504,
+          "nombre": "Sillas",
+          "descripcion": "SEGÚN EETT ADJUNTAS",
+          "cantidad": 8,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 56121006,
+          "nombre": "Bancos o banquetas tapizadas",
+          "descripcion": "SEGÚN EETT ADJUNTAS",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 7,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394892.842557,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:2430-197-COT26": {
+    "data": {
+      "codigo": "2430-197-COT26",
+      "nombre": " SERVICIO DE CAPACITACION EN EXPERIENCIAS INCLUSIVAS: LOS NUEVOS DESAFIOS, PARA OFICINA DE LA DISCAPACIDAD",
+      "descripcion": "SERVICIO DE CAPACITACION EN EXPERIENCIAS INCLUSIVAS: LOS NUEVOS DESAFIOS, PARA OFICINA DE LA DISCAPACIDAD",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-27 10:00",
+        "fecha_cierre_segundo_llamado": null
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 16:50",
+        "fecha_cierre": "2026-08-27 10:00",
+        "fecha_ultimo_cambio": "2026-08-21 16:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": " AV. SEPTIMO DE LINEA 3505   ",
+        "plazo_entrega_dias": 1
+      },
+      "documentos": [
+        {
+          "id": 1809963,
+          "nombre": "2° ET CAP EXPERIENCIAS INCLUSIVAS.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 5200000,
+        "monto_disponible": 5200000,
+        "monto_disponible_clp": 5200000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE ANTOFAGASTA",
+        "rut": "69.020.300-6",
+        "unidad_compra": "IMUNI_ANTOFAGASTA Gestion.Secoplan",
+        "region": 2,
+        "nombre_region": "Región de Antofagasta "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 80111504,
+          "nombre": "Formación, capacitación y entrenamiento de personal",
+          "descripcion": "SE ADJUNTA DETALLE CON REQUERIMIENTO, SE ADJUDICARA LA EMPRESA QUE CUMPLA CON TODOS LOS ITEMS SOLICITADOS. LA FECHA SE COORDINARA CON LA EMPRESA ADJUDICADA.\n",
+          "cantidad": 1,
+          "unidad_medida": "GL"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394896.4670532,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
+  },
+  "CA:4434-15-COT26": {
+    "data": {
+      "codigo": "4434-15-COT26",
+      "nombre": "Compra Articulos de Oficina y Librería",
+      "descripcion": "La Unidad Museo de Historia Natural de Concepción, dependiente del Servicio Nacional del Patrimonio Cultural, requiere la adquisición de artículos de escritorio y oficina. La entrega de los productos debe realizarse en el Museo, Ver Archivo Adjunto",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-24 17:30",
+        "fecha_cierre_segundo_llamado": "2026-08-27 18:09"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-21 16:50",
+        "fecha_cierre": "2026-08-24 17:30",
+        "fecha_ultimo_cambio": "2026-08-21 16:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Maipu 2359 Plaza Acevedo Concepción",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1809962,
+          "nombre": "Propuesta Compra Ágil- Materiales de Oficina Marzo.doc"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 490000,
+        "monto_disponible": 490000,
+        "monto_disponible_clp": 490000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
+        "rut": "60.905.000-4",
+        "unidad_compra": "MUSEO HISTORIA NATURAL DE CONCEPCIÓN",
+        "region": 8,
+        "nombre_region": "Región del Biobío "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44121612,
+          "nombre": "Cuchillos cartoneros",
+          "descripcion": "MAteriales y Utiles de Oficina",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 2,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1787394901.3935935,
+    "fetchedAt": "2026-08-22T10:09:58.095344+00:00"
   }
 }
