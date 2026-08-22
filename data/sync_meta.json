@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-22T18:10:35.768569+00:00",
-  "ultimoIntentoRealizado": "2026-08-22T18:10:35.768569+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-22T20:08:27.228790+00:00",
+  "ultimoIntentoRealizado": "2026-08-22T20:08:27.228790+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1466,
-  "registrosConfirmados": 1466,
+  "registrosEnPlataforma": 1469,
+  "registrosConfirmados": 1469,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1158,
+  "registrosConMontoReal": 1160,
   "excluidosPrefiltroIrrelevante": 7819,
-  "excluidosSinDatosReales": 6,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 804,
-    "conMontoValido": 799,
+    "total": 802,
+    "conMontoValido": 797,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 799,
+      "VALIDADO": 797,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 306579129,
-    "montoFinalSum": 1226978068,
-    "montoRecuperadoSum": 920398939
+    "montoOriginalSum": 414560426,
+    "montoFinalSum": 1246897061,
+    "montoRecuperadoSum": 832336635
   },
   "categorias": {
-    "licitaciones": 658,
-    "comprasAgiles": 804,
+    "licitaciones": 663,
+    "comprasAgiles": 802,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
     "LP": 118,
-    "CO": 11,
-    "LE": 406,
+    "CO": 12,
+    "LE": 410,
     "B2": 3,
     "LR": 44,
     "E2": 5,
     "I2": 3,
-    "L1": 77,
+    "L1": 78,
     "LS": 2,
     "O1": 4,
-    "COT": 793
+    "COT": 790
   },
   "matchPorEmpresa": {
-    "Aminorte": 1234,
-    "V-MOCCS": 232
+    "Aminorte": 1236,
+    "V-MOCCS": 233
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 954,
-    "modificadosCount": 71,
-    "cerradosCount": 813,
+    "nuevosCount": 953,
+    "modificadosCount": 79,
+    "cerradosCount": 809,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -299,6 +299,15 @@
         "fechaCierre": "2026-09-02T15:00:00"
       },
       {
+        "codigo": "2409-26-LE26",
+        "titulo": "ADQ. TEXTOS CON CUADERNOS DE TRABAJO PARA ESTUDIANTES DE ESCUELA ESPAÑA ",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "monto": 35000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-06-24T15:00:00"
+      },
+      {
         "codigo": "707420-20-LE26",
         "titulo": "SERVICIOS DE MANTENCIÓN DE ÁREAS VERDES PARA JARDINES INFANTILES SALAS CUNA Y OFICINAS TERRITORIALES DE FUNDACIÓN INTEGRA REGIÓN DEL MAULE.",
         "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
@@ -377,7 +386,7 @@
         "monto": 25000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-08-31T15:30:00"
+        "fechaCierre": "2026-09-02T15:30:00"
       },
       {
         "codigo": "4174-30-CO26",
@@ -470,15 +479,6 @@
         "fechaCierre": "2026-08-20T16:00:00"
       },
       {
-        "codigo": "4513-7-LE26",
-        "titulo": "CONMEMORACIÓN DE ANIVERSARIO PATRIO AÑO 2026 COMUNA DE RENAICO Y VILLA TIJERAL”               ",
-        "organismo": "I MUNICIPALIDAD DE RENAICO",
-        "monto": 12000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-06T15:30:00"
-      },
-      {
         "codigo": "4314-17-LE26",
         "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
         "organismo": "Ilustre Municipalidad de Curepto",
@@ -486,6 +486,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 98,
         "fechaCierre": "2026-08-10T16:00:00"
+      },
+      {
+        "codigo": "4513-7-LE26",
+        "titulo": "CONMEMORACIÓN DE ANIVERSARIO PATRIO AÑO 2026 COMUNA DE RENAICO Y VILLA TIJERAL”               ",
+        "organismo": "I MUNICIPALIDAD DE RENAICO",
+        "monto": 12000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-06T15:30:00"
       },
       {
         "codigo": "2385-42-LE26",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-21T15:00:00"
-      },
-      {
-        "codigo": "742-6-LE26",
-        "titulo": "Servicios de aseo y mantenimiento Oficinas INDAP",
-        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
-        "monto": 7200000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-20T18:00:00"
       }
     ],
     "modificados": [
@@ -808,6 +808,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "4776-50-LE26",
+        "titulo": "ADQUISICIÓN SUMINISTRO INSTALACIÓN Y PUESTA EN MARCHA DE EQUIPOS DE AIRE ACONDICIONADO PARA LOS CENTROS DE SALUD CAPREDENA DE SANTIAGO Y VALPARAÍSO Y EL CENTRO DE REHABILITACIÓN LA FLORIDA",
+        "organismo": "CAJA DE PREVISION DE LA DEFENSA NACIONAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 26600000,
+        "montoNuevo": 26600000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2460-92-LE26",
         "titulo": "ADQUISICIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA LA MUNICIPALIDAD DE PROVIDENCIA",
         "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
@@ -835,6 +845,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 22103060,
         "montoNuevo": 22103060,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5611-20-CO26",
+        "titulo": "SERVICIO DE ARRIENDO DE EQUIPO PLOTTER",
+        "organismo": "SERVICIO REGIONAL DE LA VIVIENDA Y URBAN",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 21708993,
+        "montoNuevo": 21708993,
         "empresaMatch": "Aminorte"
       },
       {
@@ -881,6 +901,16 @@
         "codigo": "1029940-11-LE26",
         "titulo": "Estudio sobre buenas prácticas",
         "organismo": "SUBSECRETARIA DEL PATRIMONIO CULTURAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 18000000,
+        "montoNuevo": 18000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "608897-50-LE26",
+        "titulo": "DESARROLLO DE UN PLAN DE MONITOREO DE FUENTES DIFUSAS EN LA CUENCA DEL LAGO VILLARRICA REGIÓN DE LA ARAUCANÍA",
+        "organismo": "SUBSECRETARIA DEL MEDIO AMBIENTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 18000000,
@@ -1018,6 +1048,26 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "1079650-47-LE26",
+        "titulo": "ADQ. MOBILIARIO CLÍNICO Y DE OFICINA PARA HTC",
+        "organismo": "SERVICIO DE SALUD CONCEPCION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1663-129-LE26",
+        "titulo": "MOBILIARIO COMPUTACIONAL",
+        "organismo": "SERVICIO DE SALUD CHILOE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2791-22-LE26",
         "titulo": "ADQUISICIÓN DE PROYECTORES Y MÓDULOS INTERACTIVOS",
         "organismo": "Municipalidad de Huechuraba",
@@ -1048,29 +1098,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "407-120-LE26",
-        "titulo": "SUMINISTRO E INSTALACION DE CLIMATIZACIÓN UNIDADES VARIAS HGGB",
-        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1663-129-LE26",
-        "titulo": "MOBILIARIO COMPUTACIONAL",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "893-8-LP26",
-        "titulo": "CONSTRUCCIÓN DE POZOS DE MONITOREO PIEZOMÉTRICO PROVINCIA DE LLANQUIHUE REGIÓN DE LOS LAGOS",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+        "codigo": "1395-52-LE26",
+        "titulo": "ADQUISICIÓN DE MEDICAMENTOS TELEDERMATOLOGIA ",
+        "organismo": "SERVICIO DE SALUD COQUIMBO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1088,9 +1118,49 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057494-46-LE26",
-        "titulo": "SUMINISTRO DE INSUMOS DE ESCRITORIO Y ETIQUETAS",
-        "organismo": "SERVICIO DE SALUD SUR HOSPITAL EXEQUIEL",
+        "codigo": "407-120-LE26",
+        "titulo": "SUMINISTRO E INSTALACION DE CLIMATIZACIÓN UNIDADES VARIAS HGGB",
+        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "507428-93-LE26",
+        "titulo": "PANTALLAS Y EQUIPO AUDIO PORTÁTIL NHA",
+        "organismo": "SERVICIO DE SALUD CHILOE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "757818-15-LE26",
+        "titulo": "ADQ. MOBILIARIO BIBLIOTECA PUBLICA DE PALMILLA",
+        "organismo": "I MUNICIPALIDAD DE PALMILLA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "661-11-LE26",
+        "titulo": "1657-46-PC26 ADQUISICION DE TINTAS Y TONER 2026",
+        "organismo": "SUBSECRETARIA DEL MINISTERIO DE LA VIVIENDA Y URBANISMO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "893-8-LP26",
+        "titulo": "CONSTRUCCIÓN DE POZOS DE MONITOREO PIEZOMÉTRICO PROVINCIA DE LLANQUIHUE REGIÓN DE LOS LAGOS",
+        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1101,36 +1171,6 @@
         "codigo": "1589-7-LE26",
         "titulo": "SERVICIO DE FOTOCOPIADORAS DPR ARAUCANIA",
         "organismo": "DELEGACIÓN PRESIDENCIAL REGIONAL DE LA ARAUCANÍA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2760-101-CO26",
-        "titulo": "SERVICIO DE HABILITACION Y REPARACION DE CAMARAS",
-        "organismo": "I MUNICIPALIDAD DE CORONEL",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2048-56-LP26",
-        "titulo": "Arriendo impresoras y scanner  .",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "799512-46-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
-        "organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1156,46 +1196,6 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "732434-17-LR26",
-        "titulo": "2do Llamado Arriendo Cámaras Frías",
-        "organismo": "SERVICIO DE SALUD CONCEPCION",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3933-45-L126",
-        "titulo": "“IMPRESORA PARA ESCUELA DE DOLLINCO” FONDOS SEP",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "558869-39-LR26",
-        "titulo": "CONV. DE SUMINISTRO INSUMOS DE IMPRESORAS DE CMDS",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2078-33-LE26",
-        "titulo": "SERVICIOS DE MANTENCION PREVENTIVA DE EQUIPIOS DE AIRE ACONDICIONADO DE LA SEREMI DE SALUD REGION DE BIOBIO SC75",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1317,14 +1317,6 @@
         "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE LINARES",
         "estadoAnterior": "Adjudicada",
         "monto": 84371000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4127-31-LE26",
-        "titulo": "TIC. SUSCRIPCIÓN LICENCIAS Y SERVICIOS WAF",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "estadoAnterior": "Cerrada",
-        "monto": 70000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1456,14 +1448,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "5611-20-CO26",
-        "titulo": "SERVICIO DE ARRIENDO DE EQUIPO PLOTTER",
-        "organismo": "SERVICIO REGIONAL DE LA VIVIENDA Y URBAN",
-        "estadoAnterior": "Publicada",
-        "monto": 21708993,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1209395-10-LE26",
         "titulo": "Mobiliario y Equipamiento para RF de AADD",
         "organismo": "SERVICIO NACIONAL DE PROTECCIÓN ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCI",
@@ -1477,14 +1461,6 @@
         "organismo": "I MUNICIPALIDAD DE COQUIMBO",
         "estadoAnterior": "Adjudicada",
         "monto": 20000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5965-8-LE26",
-        "titulo": "COMPRA DE SISTEMA DE FLUORESCENCIA LED PARA MICROSCOPIO",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "estadoAnterior": "Adjudicada",
-        "monto": 19200000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1654,34 @@
         "estadoAnterior": "Publicada",
         "monto": 7020000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1233623-514-COT26",
+        "titulo": "ADQUISICIÓN DE TÓNER PARA ESCUELA GRECIA RBD-224, FECHA DE ENTREGA 04-09-2026",
+        "organismo": "Servicio Local de Educación Pública Licancabur",
+        "estadoAnterior": "Publicada",
+        "monto": 7000200,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4055-55-L126",
+        "titulo": "ADQUISICIÓN DE SILLAS DE SALÓN DAF",
+        "organismo": "I MUNICIPALIDAD DE YUMBEL",
+        "estadoAnterior": "Cerrada",
+        "monto": 7000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3703-337-COT26",
+        "titulo": "Servicio de monitoreo Post-Cierre Ex vertedero de la Comuna de Huasco.",
+        "organismo": "I MUNICIPALIDAD DE HUASCO",
+        "estadoAnterior": "Publicada",
+        "monto": 7000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1553.2,
+  "tiempoEjecucionSegundos": 1518.2,
   "errores": [],
   "advertencias": []
 }
