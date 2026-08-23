@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-23T06:18:47.343811+00:00",
-  "ultimoIntentoRealizado": "2026-08-23T06:18:47.343811+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-23T08:14:25.246340+00:00",
+  "ultimoIntentoRealizado": "2026-08-23T08:14:25.246340+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1471,
-  "registrosConfirmados": 1471,
+  "registrosEnPlataforma": 1470,
+  "registrosConfirmados": 1470,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1162,
+  "registrosConMontoReal": 1161,
   "excluidosPrefiltroIrrelevante": 7822,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 804,
-    "conMontoValido": 799,
+    "total": 803,
+    "conMontoValido": 798,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 799,
+      "VALIDADO": 798,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 749348190,
-    "montoFinalSum": 1252188029,
-    "montoRecuperadoSum": 502839839
+    "montoOriginalSum": 768023233,
+    "montoFinalSum": 1251623029,
+    "montoRecuperadoSum": 483599796
   },
   "categorias": {
     "licitaciones": 663,
-    "comprasAgiles": 804,
+    "comprasAgiles": 803,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
@@ -43,15 +43,15 @@
     "L1": 78,
     "LS": 2,
     "O1": 4,
-    "COT": 792
+    "COT": 791
   },
   "matchPorEmpresa": {
     "Aminorte": 1247,
-    "V-MOCCS": 224
+    "V-MOCCS": 223
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 955,
+    "nuevosCount": 954,
     "modificadosCount": 79,
     "cerradosCount": 809,
     "nuevos": [
@@ -479,15 +479,6 @@
         "fechaCierre": "2026-08-20T16:00:00"
       },
       {
-        "codigo": "4513-7-LE26",
-        "titulo": "CONMEMORACIÓN DE ANIVERSARIO PATRIO AÑO 2026 COMUNA DE RENAICO Y VILLA TIJERAL”               ",
-        "organismo": "I MUNICIPALIDAD DE RENAICO",
-        "monto": 12000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-06T15:30:00"
-      },
-      {
         "codigo": "4314-17-LE26",
         "titulo": "SERVICIO ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
         "organismo": "Ilustre Municipalidad de Curepto",
@@ -495,6 +486,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 98,
         "fechaCierre": "2026-08-10T16:00:00"
+      },
+      {
+        "codigo": "4513-7-LE26",
+        "titulo": "CONMEMORACIÓN DE ANIVERSARIO PATRIO AÑO 2026 COMUNA DE RENAICO Y VILLA TIJERAL”               ",
+        "organismo": "I MUNICIPALIDAD DE RENAICO",
+        "monto": 12000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-06T15:30:00"
       },
       {
         "codigo": "2385-42-LE26",
@@ -1048,39 +1048,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1126922-31-LE26",
-        "titulo": "ADQUISICIÓN DE MOBILIARIOS PARA EE Y JUNJI",
-        "organismo": "SERVICIO LOCAL DE EDUCACION PUBLICA DE LLANQUIHUE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2791-22-LE26",
-        "titulo": "ADQUISICIÓN DE PROYECTORES Y MÓDULOS INTERACTIVOS",
-        "organismo": "Municipalidad de Huechuraba",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1395-52-LE26",
         "titulo": "ADQUISICIÓN DE MEDICAMENTOS TELEDERMATOLOGIA ",
         "organismo": "SERVICIO DE SALUD COQUIMBO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1663-129-LE26",
-        "titulo": "MOBILIARIO COMPUTACIONAL",
-        "organismo": "SERVICIO DE SALUD CHILOE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1098,18 +1068,38 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3206-26-L126",
-        "titulo": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS",
-        "organismo": "I MUNICIPALIDAD DE SAN RAFAEL",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
+        "codigo": "407-120-LE26",
+        "titulo": "SUMINISTRO E INSTALACION DE CLIMATIZACIÓN UNIDADES VARIAS HGGB",
+        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "507428-93-LE26",
-        "titulo": "PANTALLAS Y EQUIPO AUDIO PORTÁTIL NHA",
+        "codigo": "661-11-LE26",
+        "titulo": "1657-46-PC26 ADQUISICION DE TINTAS Y TONER 2026",
+        "organismo": "SUBSECRETARIA DEL MINISTERIO DE LA VIVIENDA Y URBANISMO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1126922-31-LE26",
+        "titulo": "ADQUISICIÓN DE MOBILIARIOS PARA EE Y JUNJI",
+        "organismo": "SERVICIO LOCAL DE EDUCACION PUBLICA DE LLANQUIHUE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1663-129-LE26",
+        "titulo": "MOBILIARIO COMPUTACIONAL",
         "organismo": "SERVICIO DE SALUD CHILOE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
@@ -1128,29 +1118,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "407-120-LE26",
-        "titulo": "SUMINISTRO E INSTALACION DE CLIMATIZACIÓN UNIDADES VARIAS HGGB",
-        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "757818-15-LE26",
-        "titulo": "ADQ. MOBILIARIO BIBLIOTECA PUBLICA DE PALMILLA",
-        "organismo": "I MUNICIPALIDAD DE PALMILLA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "661-11-LE26",
-        "titulo": "1657-46-PC26 ADQUISICION DE TINTAS Y TONER 2026",
-        "organismo": "SUBSECRETARIA DEL MINISTERIO DE LA VIVIENDA Y URBANISMO",
+        "codigo": "507428-93-LE26",
+        "titulo": "PANTALLAS Y EQUIPO AUDIO PORTÁTIL NHA",
+        "organismo": "SERVICIO DE SALUD CHILOE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1168,19 +1138,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2048-56-LP26",
-        "titulo": "Arriendo impresoras y scanner  .",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3933-45-L126",
-        "titulo": "“IMPRESORA PARA ESCUELA DE DOLLINCO” FONDOS SEP",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
+        "codigo": "2791-22-LE26",
+        "titulo": "ADQUISICIÓN DE PROYECTORES Y MÓDULOS INTERACTIVOS",
+        "organismo": "Municipalidad de Huechuraba",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1188,14 +1148,54 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "558869-39-LR26",
-        "titulo": "CONV. DE SUMINISTRO INSUMOS DE IMPRESORAS DE CMDS",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
+        "codigo": "3206-26-L126",
+        "titulo": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS",
+        "organismo": "I MUNICIPALIDAD DE SAN RAFAEL",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "757818-15-LE26",
+        "titulo": "ADQ. MOBILIARIO BIBLIOTECA PUBLICA DE PALMILLA",
+        "organismo": "I MUNICIPALIDAD DE PALMILLA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1589-7-LE26",
+        "titulo": "SERVICIO DE FOTOCOPIADORAS DPR ARAUCANIA",
+        "organismo": "DELEGACIÓN PRESIDENCIAL REGIONAL DE LA ARAUCANÍA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3447-135-E226",
+        "titulo": "ADQ. INST. Y MANT. DE EQUIPOS AIRE ACONDICIONADO",
+        "organismo": "MUNICIPALIDAD DE ALTO HOSPICIO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3496-10-L126",
+        "titulo": "ARRIENDO INMUEBLE FUNCIONAMIENTO DEPTO. SALUD COBQUECURA",
+        "organismo": "I MUNICIPALIDAD DE COBQUECURA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1509.3,
+  "tiempoEjecucionSegundos": 1523.7,
   "errores": [],
   "advertencias": []
 }
