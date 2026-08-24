@@ -1,7 +1,7 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-24T00:28:30.864367+00:00",
-  "ultimoIntentoRealizado": "2026-08-24T00:28:30.864367+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-24T02:53:06.164053+00:00",
+  "ultimoIntentoRealizado": "2026-08-24T02:53:06.164053+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1375,
   "registrosConfirmados": 1375,
@@ -21,9 +21,9 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 1236787213,
+    "montoOriginalSum": 1241587213,
     "montoFinalSum": 1252243029,
-    "montoRecuperadoSum": 15455816
+    "montoRecuperadoSum": 10655816
   },
   "categorias": {
     "licitaciones": 565,
@@ -1048,9 +1048,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2791-22-LE26",
-        "titulo": "ADQUISICIÓN DE PROYECTORES Y MÓDULOS INTERACTIVOS",
-        "organismo": "Municipalidad de Huechuraba",
+        "codigo": "1395-52-LE26",
+        "titulo": "ADQUISICIÓN DE MEDICAMENTOS TELEDERMATOLOGIA ",
+        "organismo": "SERVICIO DE SALUD COQUIMBO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1078,6 +1078,36 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "893-8-LP26",
+        "titulo": "CONSTRUCCIÓN DE POZOS DE MONITOREO PIEZOMÉTRICO PROVINCIA DE LLANQUIHUE REGIÓN DE LOS LAGOS",
+        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2791-22-LE26",
+        "titulo": "ADQUISICIÓN DE PROYECTORES Y MÓDULOS INTERACTIVOS",
+        "organismo": "Municipalidad de Huechuraba",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "693-28-LE26",
+        "titulo": "MONITORES Y TELEVISORES METRO S.A. 11-25745 LAJ",
+        "organismo": "EMPRESA DE TRANSPORTE DE PASAJEROS METRO S A",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3206-26-L126",
         "titulo": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS",
         "organismo": "I MUNICIPALIDAD DE SAN RAFAEL",
@@ -1098,36 +1128,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "757818-15-LE26",
-        "titulo": "ADQ. MOBILIARIO BIBLIOTECA PUBLICA DE PALMILLA",
-        "organismo": "I MUNICIPALIDAD DE PALMILLA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1663-129-LE26",
-        "titulo": "MOBILIARIO COMPUTACIONAL",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "893-8-LP26",
-        "titulo": "CONSTRUCCIÓN DE POZOS DE MONITOREO PIEZOMÉTRICO PROVINCIA DE LLANQUIHUE REGIÓN DE LOS LAGOS",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "407-120-LE26",
         "titulo": "SUMINISTRO E INSTALACION DE CLIMATIZACIÓN UNIDADES VARIAS HGGB",
         "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
@@ -1138,24 +1138,14 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1395-52-LE26",
-        "titulo": "ADQUISICIÓN DE MEDICAMENTOS TELEDERMATOLOGIA ",
-        "organismo": "SERVICIO DE SALUD COQUIMBO",
+        "codigo": "757818-15-LE26",
+        "titulo": "ADQ. MOBILIARIO BIBLIOTECA PUBLICA DE PALMILLA",
+        "organismo": "I MUNICIPALIDAD DE PALMILLA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "693-28-LE26",
-        "titulo": "MONITORES Y TELEVISORES METRO S.A. 11-25745 LAJ",
-        "organismo": "EMPRESA DE TRANSPORTE DE PASAJEROS METRO S A",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "661-11-LE26",
@@ -1168,9 +1158,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1589-7-LE26",
-        "titulo": "SERVICIO DE FOTOCOPIADORAS DPR ARAUCANIA",
-        "organismo": "DELEGACIÓN PRESIDENCIAL REGIONAL DE LA ARAUCANÍA",
+        "codigo": "1663-129-LE26",
+        "titulo": "MOBILIARIO COMPUTACIONAL",
+        "organismo": "SERVICIO DE SALUD CHILOE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1178,9 +1168,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3447-135-E226",
-        "titulo": "ADQ. INST. Y MANT. DE EQUIPOS AIRE ACONDICIONADO",
-        "organismo": "MUNICIPALIDAD DE ALTO HOSPICIO",
+        "codigo": "1057494-46-LE26",
+        "titulo": "SUMINISTRO DE INSUMOS DE ESCRITORIO Y ETIQUETAS",
+        "organismo": "SERVICIO DE SALUD SUR HOSPITAL EXEQUIEL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1188,14 +1178,24 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3496-10-L126",
-        "titulo": "ARRIENDO INMUEBLE FUNCIONAMIENTO DEPTO. SALUD COBQUECURA",
-        "organismo": "I MUNICIPALIDAD DE COBQUECURA",
+        "codigo": "2048-56-LP26",
+        "titulo": "Arriendo impresoras y scanner  .",
+        "organismo": "SERVICIO DE SALUD CHILOE",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "799512-46-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
+        "organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1337.1,
+  "tiempoEjecucionSegundos": 1184.2,
   "errores": [],
   "advertencias": []
 }
