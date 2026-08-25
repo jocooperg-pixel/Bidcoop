@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-25T04:25:59.594782+00:00",
-  "ultimoIntentoRealizado": "2026-08-25T04:25:59.594782+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-25T06:21:56.426680+00:00",
+  "ultimoIntentoRealizado": "2026-08-25T06:21:56.426680+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1417,
-  "registrosConfirmados": 1417,
+  "registrosEnPlataforma": 1419,
+  "registrosConfirmados": 1419,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1129,
+  "registrosConMontoReal": 1130,
   "excluidosPrefiltroIrrelevante": 7093,
-  "excluidosSinDatosReales": 3,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 819,
@@ -21,21 +21,21 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 187416254,
+    "montoOriginalSum": 315548623,
     "montoFinalSum": 1328218577,
-    "montoRecuperadoSum": 1140802323
+    "montoRecuperadoSum": 1012669954
   },
   "categorias": {
-    "licitaciones": 594,
+    "licitaciones": 596,
     "comprasAgiles": 819,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 118,
+    "LP": 119,
     "CO": 12,
-    "LE": 362,
+    "LE": 363,
     "B2": 2,
     "L1": 61,
     "LR": 40,
@@ -46,14 +46,14 @@
     "COT": 807
   },
   "matchPorEmpresa": {
-    "Aminorte": 1215,
-    "V-MOCCS": 202
+    "Aminorte": 1220,
+    "V-MOCCS": 199
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
     "nuevosCount": 1036,
-    "modificadosCount": 110,
-    "cerradosCount": 944,
+    "modificadosCount": 112,
+    "cerradosCount": 942,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -434,15 +434,6 @@
         "fechaCierre": "2026-08-10T17:00:00"
       },
       {
-        "codigo": "3697-36-LE26",
-        "titulo": "CONTRATO DE SUMINISTRO DE CONFECCIÓN E IMPRESIÓN DE TALONARIOS Y OTROS MUNICIPALIDAD DE VICTORIA AÑO 2026-2028",
-        "organismo": "I MUNICIPALIDAD DE VICTORIA",
-        "monto": 32000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-07-20T15:00:00"
-      },
-      {
         "codigo": "1611-12-LE26",
         "titulo": "1394 DPC ESR ESTUDIO FONDO CONCURSABLE 2026",
         "organismo": "Servicio Nacional del Consumidor - SERNAC",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-31T16:22:00"
+      },
+      {
+        "codigo": "3068-28-LE26",
+        "titulo": "ADQUISICIÓN DE PINTURAS",
+        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
+        "monto": 19236422,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-03T15:00:00"
       }
     ],
     "modificados": [
@@ -1028,6 +1028,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2322-66-LE26",
+        "titulo": "Adquisición de Equipamiento Redundante UniFi para ciberseguridad y continuidad para servidores",
+        "organismo": "I MUNICIPALIDAD DE VALLENAR",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 10000000,
+        "montoNuevo": 10000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2402-67-LE26",
         "titulo": "ARRIENDO E INST. TEMPORAL CAMARAS SEGURIDAD-F.PATR",
         "organismo": "I MUNICIPALIDAD DE RANCAGUA",
@@ -1186,16 +1196,6 @@
         "montoAnterior": 1459,
         "montoNuevo": 1459,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1075963-340-LE26",
-        "titulo": "ADQUISICION DE APOSITOS BOLSAS PRESERVATIVO ELECTRODO PROTESIS HEMOCLIP HOJA DE SIERRA CIRCUITO DE VENTILACION  CONITOS BOLSA DRENABLE GUANTE NITRILO Y OTROS INSUMOS CLINICOS",
-        "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1414,14 +1414,6 @@
         "estadoAnterior": "Adjudicada",
         "monto": 80000000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "539119-85-LP26",
-        "titulo": "SUMINISTRO POR LÍNEA DE ARTÍCULOS DE ESCRITORIO Y MATERIALES PEDAGÓGICOS PARA JARDINES INFANTILES ADMINISTRADOS POR EL DEPARTAMENTO DE PLANIFICACIÓN Y DESARROLLO SOCIAL B.6 DE LA DIRECCIÓN DE BIENESTAR DE CARABINEROS POR UN PERIODO 12 MESES.",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
-        "monto": 78283150,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1216085-45-LP26",
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Cerrada",
         "monto": 25920000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2467-78-LE26",
+        "titulo": "ADQUISICIÓN DE COMPONENTES DE VIDEOWALL PARA VISUA",
+        "organismo": "I MUNICIPALIDAD DE CHILLAN",
+        "estadoAnterior": "Adjudicada",
+        "monto": 25450000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2036.4,
+  "tiempoEjecucionSegundos": 1517.5,
   "errores": [],
   "advertencias": []
 }
