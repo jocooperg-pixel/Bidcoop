@@ -1,12 +1,12 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-25T06:21:56.426680+00:00",
-  "ultimoIntentoRealizado": "2026-08-25T06:21:56.426680+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-25T08:26:30.458150+00:00",
+  "ultimoIntentoRealizado": "2026-08-25T08:26:30.458150+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1419,
   "registrosConfirmados": 1419,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1130,
+  "registrosConMontoReal": 1131,
   "excluidosPrefiltroIrrelevante": 7093,
   "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
@@ -51,9 +51,9 @@
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1036,
-    "modificadosCount": 112,
-    "cerradosCount": 942,
+    "nuevosCount": 1037,
+    "modificadosCount": 130,
+    "cerradosCount": 943,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -434,6 +434,15 @@
         "fechaCierre": "2026-08-10T17:00:00"
       },
       {
+        "codigo": "3697-36-LE26",
+        "titulo": "CONTRATO DE SUMINISTRO DE CONFECCIÓN E IMPRESIÓN DE TALONARIOS Y OTROS MUNICIPALIDAD DE VICTORIA AÑO 2026-2028",
+        "organismo": "I MUNICIPALIDAD DE VICTORIA",
+        "monto": 32000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-20T15:00:00"
+      },
+      {
         "codigo": "1611-12-LE26",
         "titulo": "1394 DPC ESR ESTUDIO FONDO CONCURSABLE 2026",
         "organismo": "Servicio Nacional del Consumidor - SERNAC",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-31T16:22:00"
-      },
-      {
-        "codigo": "3068-28-LE26",
-        "titulo": "ADQUISICIÓN DE PINTURAS",
-        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-        "monto": 19236422,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-03T15:00:00"
       }
     ],
     "modificados": [
@@ -648,6 +648,26 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1305525-36-LP26",
+        "titulo": "ADQUISICIÓN COMPUTADORES P02",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 274221694,
+        "montoNuevo": 274221694,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057495-16-LP26",
+        "titulo": "PANELES DE PCR MULTIPLEX: MENINGEO Y ETS PARA HDLC",
+        "organismo": "SERVICIO DE SALUD SUR HOSPITAL LUCIO CORDOVA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 192212894,
+        "montoNuevo": 192212894,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1305544-48-B226",
         "titulo": "ADQUISICION DE NOTEBOOKS PARA ESTABLECIMIENTOS EDUCACIONALES DEL SERVICIO LOCAL DE EDUCACIÓN PÚBLICA SANTA CORINA ",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA SANTA CORINA",
@@ -678,6 +698,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "813-86-LP26",
+        "titulo": "PP 87 Servicio Mantenimiento preventivo y correctivo de UPS",
+        "organismo": "INSTITUTO DE SALUD PUBLICA DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 85000000,
+        "montoNuevo": 85000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "5748-2-LP26",
         "titulo": "SERVICIO OBRAS MENORES INMUEBLES REGIÓN TARAPACÁ",
         "organismo": "CORPORACION DE FOMENTO DE LA PRODUCCION",
@@ -695,6 +725,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 75218896,
         "montoNuevo": 75218896,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1049-59-LP26",
+        "titulo": "EMBARCACION MONITOREO DE REPRODUCCION LOS LAGOS",
+        "organismo": "INSTITUTO DE FOMENTO PESQUERO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 73200000,
+        "montoNuevo": 73200000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -778,6 +818,16 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "1392-28-LE26",
+        "titulo": "Adquisición de computadores",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 41769000,
+        "montoNuevo": 41769000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "752-28-LE26",
         "titulo": "Servicio de Mantención y Reparación Climatización",
         "organismo": "GOBIERNO REGIONAL DECIMA REGION LOS LAGOS",
@@ -815,6 +865,26 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 32000000,
         "montoNuevo": 32000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 31000000,
+        "montoNuevo": 31000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 31000000,
+        "montoNuevo": 31000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1008,6 +1078,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "986278-15-LE26",
+        "titulo": "PROYECTO EQUIPAMIENTO Y MOBILIARIO DECRETO EXENTO N°888 DEL 24.10.2025 CLÍNICA DE EMPRENDIMIENTO ESCUELA DE NEGOCIOS Y TECNOLOGÍA SEDE ANGOL",
+        "organismo": "CENTRO DE FORMACION TECNICA DE LA REGION DE LA ARAUCANIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 11667827,
+        "montoNuevo": 11667827,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "564162-80-LE26",
         "titulo": "91998 - 6  NOTEBOOK",
         "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
@@ -1116,86 +1196,6 @@
         "montoAnterior": 5000000,
         "montoNuevo": 5000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "867990-66-L126",
-        "titulo": "102 - 91711 Servicio de Reparación mamparas",
-        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 3000000,
-        "montoNuevo": 3000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "3730-86-L126",
-        "titulo": "ADQUISICION DE SWITCHER DE VIDEO Y 1 MICROFONO DINAMICO",
-        "organismo": "I MUNICIPALIDAD DE CHIMBARONGO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 2700000,
-        "montoNuevo": 2700000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "707409-23-E226",
-        "titulo": "SUMINISTRO DE TINTAS Y TONERS P",
-        "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 2400000,
-        "montoNuevo": 2400000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1110404-150-L126",
-        "titulo": "“ADQUISICIÓN DE CUADERNOS ECOLÓGICOS CON BOLÍGRAFO PARA ESTUDIANTES DEL LICEO BICENTENARIO PABLO NERUDA, SLEP CHINCHORRO, EN EL MARCO DE LA PREPARACIÓN DEL SIMCE, SLEP CHINCHORRO”.",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1600000,
-        "montoNuevo": 1600000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "564162-62-LP26",
-        "titulo": "Solicitud N 91312 - MFI y Cámara de envejecimiento",
-        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 88405,
-        "montoNuevo": 88405,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "776-25-LE26",
-        "titulo": "LIBRERÍA DE RESPALDO EN CINTA CON TECNOLOGÍA",
-        "organismo": "PRESIDENCIA DE LA REPUBLICA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 40000,
-        "montoNuevo": 40000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1697-38-LE26",
-        "titulo": "SERVICIO DE MANTENCIÓN CORRESPONDIENTE A SANITIZACIÓN Y LIMPIEZA DE ESTANQUES DE ALMACENAMIENTO AGUA POTABLE Y CÁMARAS DE ALCANTARILLADO PARA TRIBUNALES DE LA JURISDICCION DE ANTOFAGASTA",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1537,
-        "montoNuevo": 1537,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3945-18-LE26",
-        "titulo": "CONTRATACION POLIZAS DE SEGUROS ADICIONALES VEHICULOS MUNICIPALES BIENES INMUEBLES Y GENERADOR",
-        "organismo": "I MUNICIPALIDAD DE LOS ALAMOS DEPTO COMUNAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 1459,
-        "montoNuevo": 1459,
-        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1517.5,
+  "tiempoEjecucionSegundos": 1878.8,
   "errores": [],
   "advertencias": []
 }

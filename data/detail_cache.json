@@ -24394,10 +24394,10 @@
     "data": {
       "CodigoExterno": "1049-59-LP26",
       "Nombre": "EMBARCACION MONITOREO DE REPRODUCCION LOS LAGOS",
-      "CodigoEstado": 5,
+      "CodigoEstado": 7,
       "Descripcion": "REQ53586 CT: ERICK GAETE SERVICIO DE ARRIENDO DE EMBARCACION PARA MONITOREO DEL PROCESO REPRODUCTIVO DE SARDINA AUSTRAL, SARDINA COMÚN Y ANCHOVETA EN LA REGIÓN DE LOS LAGOS",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
       "Comprador": {
         "CodigoOrganismo": "7070",
         "NombreOrganismo": "INSTITUTO DE FOMENTO PESQUERO",
@@ -24419,7 +24419,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -24474,7 +24474,13 @@
       "PeriodoTiempoRenovacion": " ",
       "EsRenovable": 0,
       "CodigoBIP": null,
-      "Adjudicacion": null,
+      "Adjudicacion": {
+        "Tipo": null,
+        "Fecha": null,
+        "Numero": null,
+        "NumeroOferentes": 0,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=6Zcq+Jz8upHeqiXeVt2CTaSO6N/pR4baVepy/u2wOfs="
+      },
       "Items": {
         "Cantidad": 3,
         "Listado": [
@@ -24514,8 +24520,8 @@
         ]
       }
     },
-    "ts": 1787553037.7769628,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646423.357733,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1051425-34-LP26": {
     "data": {
@@ -35660,10 +35666,10 @@
     "data": {
       "CodigoExterno": "1057491-149-LP26",
       "Nombre": "SERVICIO DE ASEO EDIFICIO AMICAM TROI Y NUEVA UPC",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "CONTRATACIÓN DEL SERVICIO DE ASEO EDIFICIO AMICAM, TROI Y NUEVA UPC, PARA EL HOSPITAL DOCTOR LUIS CALVO MACKENNA",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "6918",
         "NombreOrganismo": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
@@ -35685,7 +35691,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -35758,8 +35764,8 @@
         ]
       }
     },
-    "ts": 1787553054.7325742,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646423.8931353,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1057491-150-LP26": {
     "data": {
@@ -37421,10 +37427,10 @@
     "data": {
       "CodigoExterno": "1057495-16-LP26",
       "Nombre": "PANELES DE PCR MULTIPLEX: MENINGEO Y ETS PARA HDLC",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "El objeto de la presente licitación es la “CONVENIO DE SUMINISTRO CONTINUO DE REACTIVOS E INSUMOS PARA LA REALIZACION DE PANELES DE PCR MULTIPLEX: MENINGEO Y ETS PARA EL HOSPITAL DE ENFERMEDADES INFECCIOSAS DR. LUCIO CÓRDOVA”, por un periodo de veinticuatro 24 meses, acorde a las necesidades actuales del hospital.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7311",
         "NombreOrganismo": "SERVICIO DE SALUD SUR HOSPITAL LUCIO CORDOVA",
@@ -37519,8 +37525,8 @@
         ]
       }
     },
-    "ts": 1787553058.7500226,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646412.3079002,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1057496-30-LE26": {
     "data": {
@@ -81460,10 +81466,10 @@
     "data": {
       "CodigoExterno": "1057544-232-LR26",
       "Nombre": "SISTEMA NEUROMONITOREO INTRAOPERARTORIO DE COLUMNA",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Suministro por requerimientos de material e insumos para Neuro Monitoreo de Columna en HHT",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7419",
         "NombreOrganismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
@@ -81491,7 +81497,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 2853,
+      "CantidadReclamos": 2854,
       "Fechas": {
         "FechaCreacion": "2026-07-10T00:00:00",
         "FechaCierre": "2026-08-24T17:12:00",
@@ -81591,8 +81597,8 @@
         ]
       }
     },
-    "ts": 1787553069.478569,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646427.4221685,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1057544-245-LP26": {
     "data": {
@@ -176098,10 +176104,10 @@
     "data": {
       "CodigoExterno": "809-50-LE26",
       "Nombre": "ARRIENDO DE IMPRESORAS  SDNT 2026",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "ARRIENDO DE IMPRESORAS MULTIFUNCIONALES PARA EL SERVICIO DE FOTOCOPIADO E IMPRESIONES para la Subdirección Nacional Temuco, CONADI, Año 2026",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7183",
         "NombreOrganismo": "CORP NACIONAL DE DESARROLLO INDIGENA",
@@ -176123,7 +176129,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -176196,17 +176202,17 @@
         ]
       }
     },
-    "ts": 1787553171.8745732,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646454.2786846,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "986278-15-LE26": {
     "data": {
       "CodigoExterno": "986278-15-LE26",
       "Nombre": "PROYECTO EQUIPAMIENTO Y MOBILIARIO DECRETO EXENTO N°888 DEL 24.10.2025 CLÍNICA DE EMPRENDIMIENTO ESCUELA DE NEGOCIOS Y TECNOLOGÍA SEDE ANGOL",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "El objeto de la presente licitación corresponde a la adquisición de equipamiento y mobiliario, esto debido al expansivo crecimiento de la matricula desde el año 2021 a la fecha en el CFT, dan cuenta de la necesidad de aumentar equipamiento disponible para las carreras existentes, según lo instruido en Resolución Exenta N°10866 de fecha 03 de octubre 2025, aprobada por la Subsecretaría de Educación Superior.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "1577943",
         "NombreOrganismo": "CENTRO DE FORMACION TECNICA DE LA REGION DE LA ARAUCANIA",
@@ -176228,7 +176234,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -176334,8 +176340,8 @@
         ]
       }
     },
-    "ts": 1787553195.8474755,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646458.490966,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1002772-77-LP26": {
     "data": {
@@ -176860,10 +176866,10 @@
     "data": {
       "CodigoExterno": "1057489-240-LE26",
       "Nombre": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Que, el Hospital del Salvador necesita contar con un Convenio de Suministro de \r\nMangas Laparoscópicas para campo estéril en torno al cabezal y cable de \r\ncámara del Equipo de Laparoscopia para el Hospital del Salvador, por treinta \r\ny seis (36) meses, con la finalidad de satisfacer de manera adecuada y eficiente la \r\nlabor asistencial;  \r\nQue, por la cuantía determinada, la presente licitación se ubica en el tramo para \r\naquellas contrataciones iguales o superiores a 100 UTM e inferiores a 1.000 UTM, \r\nen conformidad al Artículo 36º del Reglamento de la Ley Nº19.886; \r\n",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7428",
         "NombreOrganismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
@@ -176885,7 +176891,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -176958,8 +176964,8 @@
         ]
       }
     },
-    "ts": 1787553050.2755263,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646416.403494,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1057495-17-LP26": {
     "data": {
@@ -177064,111 +177070,6 @@
       }
     },
     "ts": 1787553062.1511564,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
-  },
-  "1057509-230-LE26": {
-    "data": {
-      "CodigoExterno": "1057509-230-LE26",
-      "Nombre": "CONVENIO PROVEEDURÍA CLIPS DE ANEURISMA mjv",
-      "CodigoEstado": 5,
-      "Descripcion": "El Hospital Clínico Herminda Martín de Chillán, ubicado en Francisco Ramírez 10, comuna de Chillán, perteneciente al Servicio de Salud Ñuble, requiere suscribir convenio proveeduría clips de aneurisma, el cual tiene como propósito, contar con un proveedor que asegure un stock de clips de aneurisma para la Unidad de Neurocirugía del Hospital Clínico Herminda Martín de Chillán, y así otorgar una respuesta oportuna y de calidad a los pacientes que padezcan una patología cerebral. Se pretende obtener la mejor calidad y oportunidad en la adquisición de los productos a un precio conveniente.",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "7042",
-        "NombreOrganismo": "HOSPITAL CLINICO HERMINDA MARTIN",
-        "RutUnidad": "61.607.001-0",
-        "CodigoUnidad": "1057509",
-        "NombreUnidad": "Bienes y Servicios",
-        "DireccionUnidad": "Francisco Ramirez 10",
-        "ComunaUnidad": "Chillán",
-        "RegionUnidad": "Región del Ñuble",
-        "RutUsuario": "",
-        "CodigoUsuario": "2397338",
-        "NombreUsuario": "Maximiliano Jara Valenzuela",
-        "CargoUsuario": "Ejecutivo de Compras"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 1494,
-      "Fechas": {
-        "FechaCreacion": "2026-08-07T00:00:00",
-        "FechaCierre": "2026-08-24T16:00:00",
-        "FechaInicio": "2026-08-13T17:16:00",
-        "FechaFinal": "2026-08-17T09:00:00",
-        "FechaPubRespuestas": "2026-08-19T17:00:00",
-        "FechaActoAperturaTecnica": "2026-08-24T16:01:00",
-        "FechaActoAperturaEconomica": "2026-08-24T16:01:00",
-        "FechaPublicacion": "2026-08-13T16:10:06.743",
-        "FechaAdjudicacion": "2026-09-08T17:25:00",
-        "FechaEstimadaAdjudicacion": "2026-09-08T17:25:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "24",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Tesorería General de la República",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": ".",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "24",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 42295134,
-            "CodigoCategoria": "42295100",
-            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Equipo quirúrgico, accesorios y productos relacionados",
-            "NombreProducto": "Sets suministros quirúrgicos generales o accesorios",
-            "Descripcion": "Clip de Aneurisma con aplicador. Ofertar según Anexo N°3. Monto Total Disponible $ 66.236.790. (impto. incluido).-",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787553066.0989418,
     "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
   },
   "1063534-5-LE26": {
@@ -177627,10 +177528,10 @@
     "data": {
       "CodigoExterno": "1106-20-LE26",
       "Nombre": "Arriendo Rodillos Neumático y Liso doble tambor",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "La Dirección de Vialidad Región Metropolitana, solicita ofertas para la contratación del “Servicio de Arriendo de Rodillo Neumático y Rodillo Liso Doble Tambor, para operaciones de Asfalto en la Red Vial en los Caminos de la Dirección de Vialidad Región Metropolitana”, por un periodo de 09 meses. El objetivo de la presente licitación para complementar las operaciones en la Red Vial de Caminos de Región Metropolitana, como también reemplazar la maquinaria en caso de que los respectivos maquinarias fiscales que no estén operativos o no existan en la dotación regional",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7248",
         "NombreOrganismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -177736,17 +177637,17 @@
         ]
       }
     },
-    "ts": 1787553079.7651312,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646420.037957,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1113265-13-LE26": {
     "data": {
       "CodigoExterno": "1113265-13-LE26",
       "Nombre": "MONITORES PARA COMPUTADORES Y PROYECTORES",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": ", la Dirección Económica y Administrativa ha propuesto la adquisición de veinticinco 25 monitores destinados a fortalecer los procesos formativos de la carrera de Técnico de Nivel Superior en Informática y Análisis de Seguridad Digital, la que requiere operar con plataformas de desarrollo, simuladores y herramientas de ciberseguridad que demandan la visualización simultánea de múltiples ventanas y sistemas, haciendo indispensable el uso de pantallas de alta resolución.\r\nQue, asimismo, se contempla la adquisición de quince 15 proyectores multimedia con resolución WXGA, destinados a las catorce 14 salas de clases y a un laboratorio de informática, en tanto constituyen herramientas pedagógicas que permiten enriquecer las clases mediante recursos visuales, presentaciones y materiales digitales, mejorando significativamente la experiencia educativa.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "1703725",
         "NombreOrganismo": "CENTRO DE FORMACION TECNICA DE LA REGION DE ANTOFAGASTA",
@@ -177768,7 +177669,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -177852,8 +177753,8 @@
         ]
       }
     },
-    "ts": 1787553081.850648,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646432.3631504,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1159-6-LE26": {
     "data": {
@@ -177964,10 +177865,10 @@
     "data": {
       "CodigoExterno": "1180740-6-LE26",
       "Nombre": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "La presente licitación tiene como objetivo la adquisición de los equipos y equipamientos descritos y detallado en las especificaciones técnicas (Formulario Nº 5 “Oferta Técnica”) y en las presentes bases. Sólo se aceptarán ofertas por equipo nuevo.  ",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7302",
         "NombreOrganismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
@@ -177989,7 +177890,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -178073,8 +177974,8 @@
         ]
       }
     },
-    "ts": 1787553086.0929308,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646446.4952638,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1233619-35-LE26": {
     "data": {
@@ -178290,10 +178191,10 @@
     "data": {
       "CodigoExterno": "1305525-36-LP26",
       "Nombre": "ADQUISICIÓN COMPUTADORES P02",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Adquirir 351 equipos computacionales tipo All In One, nuevos, destinados a establecimientos educacionales dependientes del Servicio Local de Educación Pública de Costa Central",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "1890618",
         "NombreOrganismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
@@ -178315,7 +178216,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -178432,8 +178333,8 @@
         ]
       }
     },
-    "ts": 1787553093.657326,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646447.0215259,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1347870-14-LE26": {
     "data": {
@@ -178754,10 +178655,10 @@
     "data": {
       "CodigoExterno": "1392-28-LE26",
       "Nombre": "Adquisición de computadores",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "La Dirección Meteorológica de Chile requiere la adquisición de estaciones de\r\ntrabajo de alto desempeño destinadas a fortalecer la infraestructura computacional utilizada en actividades de análisis meteorológico, procesamiento de información satelital, modelación numérica, visualización geoespacial y administración de plataformas operacionales basadas en sistemas operativos Linux empresariales.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7202",
         "NombreOrganismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
@@ -178779,7 +178680,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -178852,8 +178753,8 @@
         ]
       }
     },
-    "ts": 1787553102.0525527,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646435.6549904,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "1422256-1-LP26": {
     "data": {
@@ -186834,10 +186735,10 @@
     "data": {
       "CodigoExterno": "813-86-LP26",
       "Nombre": "PP 87 Servicio Mantenimiento preventivo y correctivo de UPS",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Las siguientes bases técnicas tienen por objeto regular la contratación, bajo la modalidad de suministro, de los servicios de mantenimiento preventivo y correctivo de UPS, del Instituto de Salud Pública de Chile, garantizando con ello asegurar y garantizar la disponibilidad y operatividad de los equipos, certificando la trazabilidad de las prestaciones y permitiendo la entrega de resultados analíticos de calidad, velando por las vidas útiles de los equipos, y, por consiguiente, resguardando los intereses del Instituto, equipos UPS listados en el numeral 3, del presente anexo B.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "7177",
         "NombreOrganismo": "INSTITUTO DE SALUD PUBLICA DE CHILE",
@@ -186859,7 +186760,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -186954,8 +186855,8 @@
         ]
       }
     },
-    "ts": 1787553175.8040874,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646457.6076107,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "825-3-O126": {
     "data": {
@@ -187497,10 +187398,10 @@
     "data": {
       "CodigoExterno": "937232-69-LP26",
       "Nombre": "ADQUISICIÓN DE INSTRUMENTAL PARA EQUIPOS MEDICOS DEL CRS HPC",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "EL CRS Hospital Provincia Cordillera requiere abastecer de forma oportuna el Instrumental para Unidades Clínicas que atienden a pacientes Ambulatorios.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "1530575",
         "NombreOrganismo": "CENTRO DE REFERENCIA DE SALUD HOSPITAL PROVINCIA CORDILLERA",
@@ -188706,8 +188607,8 @@
         ]
       }
     },
-    "ts": 1787553191.3615618,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646439.7994428,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "938-27-LE26": {
     "data": {
@@ -218267,10 +218168,10 @@
     "data": {
       "CodigoExterno": "1663-127-LE26",
       "Nombre": "SUMINISTRO TÓNER",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "SUMINISTRO TÓNER PARA IMPRESORAS MULTIFUNCIONALES DEL HOSPITAL DE QUELLÓN.",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "16223",
         "NombreOrganismo": "SERVICIO DE SALUD CHILOE",
@@ -218292,7 +218193,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -218365,8 +218266,8 @@
         ]
       }
     },
-    "ts": 1787553120.3478887,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646438.9336329,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "188-77-LE26": {
     "data": {
@@ -218582,10 +218483,10 @@
     "data": {
       "CodigoExterno": "2421-39-LE26",
       "Nombre": "SUMINISTRO DE ANESTESIA Lidocaína al 2% DENTAL DAS CONCEPCION",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Suministro de Anestésicos locales con vasoconstrictor para atención Odontológica de los CESFAM y dispositivos de Salud de la Municipalidad de Concepción  ",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "87382",
         "NombreOrganismo": "I MUNICIPALIDAD DE CONCEPCION",
@@ -218607,13 +218508,13 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 2,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 549,
+      "CantidadReclamos": 550,
       "Fechas": {
         "FechaCreacion": "2026-07-20T00:00:00",
         "FechaCierre": "2026-08-24T15:00:00",
@@ -218680,8 +218581,8 @@
         ]
       }
     },
-    "ts": 1787553128.4675515,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646428.3337874,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "2450-83-LE26": {
     "data": {
@@ -218803,10 +218704,10 @@
     "data": {
       "CodigoExterno": "2663-68-L126",
       "Nombre": "Sillas de escritorio ergonómicas",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "La Municipalidad de Puerto Natales, requiere adquirir sillas de escritorio ergonómicas para distintas dependencias de la Municipalidad de Natales",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "98448",
         "NombreOrganismo": "ILUSTRE MUNICIPALIDAD DE NATALES",
@@ -218828,7 +218729,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
@@ -218901,8 +218802,8 @@
         ]
       }
     },
-    "ts": 1787553132.688146,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646450.3260796,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "2727-15-LE26": {
     "data": {
@@ -220056,10 +219957,10 @@
     "data": {
       "CodigoExterno": "4284-138-L126",
       "Nombre": "Adquisición de alimentos televisor aire acondicionado y mapas turísticos para ejecución de actividades y charlas en colegios del programa turismo según NUMERAL 5 B.A.G Bases administrativas Generales",
-      "CodigoEstado": 5,
+      "CodigoEstado": 6,
       "Descripcion": "Adquisición de alimentos televisor, aire acondicionado y mapas turísticos para ejecución de actividades y charlas en colegios del programa turismo, según NUMERAL 5 B.A.G Bases administrativas Generales",
       "FechaCierre": null,
-      "Estado": "Publicada",
+      "Estado": "Cerrada",
       "Comprador": {
         "CodigoOrganismo": "129738",
         "NombreOrganismo": "I MUNICIPALIDAD DE CUNCO",
@@ -220081,7 +219982,7 @@
       "TipoConvocatoria": "1",
       "Moneda": "CLP",
       "Etapas": 1,
-      "EstadoEtapas": "0",
+      "EstadoEtapas": "1",
       "TomaRazon": "0",
       "EstadoPublicidadOfertas": 1,
       "JustificacionPublicidad": "",
@@ -220187,8 +220088,8 @@
         ]
       }
     },
-    "ts": 1787553161.0635583,
-    "fetchedAt": "2026-08-24T06:30:12.346936+00:00"
+    "ts": 1787646443.1913278,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "4629-25-LE26": {
     "data": {
@@ -314986,7 +314887,7 @@
         "NombreUsuario": "Bernarda Rapiman",
         "CargoUsuario": "Ejecutiva de Compras"
       },
-      "DiasCierreLicitacion": "5",
+      "DiasCierreLicitacion": "3",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -315132,8 +315033,8 @@
         ]
       }
     },
-    "ts": 1787472896.8674927,
-    "fetchedAt": "2026-08-23T08:14:25.246340+00:00"
+    "ts": 1787646411.5557108,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   },
   "CA:1425-33-COT26": {
     "data": {
@@ -433989,5 +433890,116 @@
     },
     "ts": 1787640431.2014978,
     "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+  },
+  "3697-36-LE26": {
+    "data": {
+      "CodigoExterno": "3697-36-LE26",
+      "Nombre": "CONTRATO DE SUMINISTRO DE CONFECCIÓN E IMPRESIÓN DE TALONARIOS Y OTROS MUNICIPALIDAD DE VICTORIA AÑO 2026-2028",
+      "CodigoEstado": 7,
+      "Descripcion": "LA LICITACIÓN CONSISTE EN PROVEER A LA MUNICIPALIDAD DE VICTORIA DE IMPRESIONES Y CONFECCIÓN DE TALONARIOS, FOLLETERÍA Y OTROS, PARA LOS DEPARTAMENTOS MUNICIPALES, ADEMÁS DE OTRAS NECESIDADES QUE SE PRESENTEN Y SE REQUIERAN SATISFACER DURANTE EL PERIODO.",
+      "FechaCierre": null,
+      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
+      "Comprador": {
+        "CodigoOrganismo": "116399",
+        "NombreOrganismo": "I MUNICIPALIDAD DE VICTORIA",
+        "RutUnidad": "69.180.900-5",
+        "CodigoUnidad": "4617",
+        "NombreUnidad": "Adquisiciones",
+        "DireccionUnidad": "Lagos 680",
+        "ComunaUnidad": "Victoria",
+        "RegionUnidad": "Región de la Araucanía ",
+        "RutUsuario": "",
+        "CodigoUsuario": "483027",
+        "NombreUsuario": "Javier Antonio Rozas Valderrama",
+        "CargoUsuario": "Comprador"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "1",
+      "Obras": "0",
+      "CantidadReclamos": 507,
+      "Fechas": {
+        "FechaCreacion": "2026-07-07T00:00:00",
+        "FechaCierre": "2026-07-20T15:00:00",
+        "FechaInicio": "2026-07-08T18:32:00",
+        "FechaFinal": "2026-07-14T09:00:00",
+        "FechaPubRespuestas": "2026-07-15T17:35:00",
+        "FechaActoAperturaTecnica": "2026-07-20T15:05:00",
+        "FechaActoAperturaEconomica": "2026-07-20T15:05:00",
+        "FechaPublicacion": "2026-07-08T16:24:59.303",
+        "FechaAdjudicacion": "2026-08-20T18:25:08.427",
+        "FechaEstimadaAdjudicacion": "2026-11-30T17:35:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "2207002",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 32000000,
+      "Tiempo": "24",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "BORIS JELDES SETIEN",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "MANUEL COFRE OVALLE",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "Se prohíbe absolutamente ceder o traspasar, parcial o totalmente, a cualquier título, el o los contratos definitivos o sus respectivas modificaciones, que hayan sido suscritos con la Municipalidad, para los efectos de todas y cada una de las obligaciones",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "24",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "Justificación del monto estimado: para esto se consideró el gasto realizado el año 2024, 2025 y parte del 2026 por este concepto, el cual ascendió a 31 millones de pesos, el que fue reajustado.",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": null,
+        "Fecha": null,
+        "Numero": null,
+        "NumeroOferentes": 3,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=HllVG20VuL6HKLiIb3z0t9VCuk6bpVs6ygQSDcaOJa4="
+      },
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 14111805,
+            "CodigoCategoria": "14111800",
+            "Categoria": "Productos de papel / Productos de papel / Papeles comerciales",
+            "NombreProducto": "Talones o talonarios",
+            "Descripcion": "CONTRATO DE SUMINISTRO DE CONFECCIÓN E IMPRESIÓN DE TALONARIOS Y OTROS MUNICIPALIDAD DE VICTORIA AÑO 2026-2028, SEGUN BASES Administrativas y Técnicas que se adjuntan",
+            "UnidadMedida": "Unidad no definida",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787646459.8941803,
+    "fetchedAt": "2026-08-25T08:26:30.458150+00:00"
   }
 }
