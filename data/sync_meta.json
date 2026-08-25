@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-25T14:32:06.087433+00:00",
-  "ultimoIntentoRealizado": "2026-08-25T14:32:06.087433+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-25T16:21:31.917122+00:00",
+  "ultimoIntentoRealizado": "2026-08-25T16:21:31.917122+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 964,
-  "registrosConfirmados": 964,
+  "registrosEnPlataforma": 1043,
+  "registrosConfirmados": 1043,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 671,
-  "excluidosPrefiltroIrrelevante": 7214,
+  "registrosConMontoReal": 744,
+  "excluidosPrefiltroIrrelevante": 7357,
   "excluidosSinDatosReales": 5,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 357,
-    "conMontoValido": 351,
-    "pctValidado": 98.3,
+    "total": 425,
+    "conMontoValido": 419,
+    "pctValidado": 98.6,
     "stats": {
-      "VALIDADO": 351,
+      "VALIDADO": 419,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 307542921,
-    "montoFinalSum": 680251351,
-    "montoRecuperadoSum": 372708430
+    "montoOriginalSum": 389943451,
+    "montoFinalSum": 767548531,
+    "montoRecuperadoSum": 377605080
   },
   "categorias": {
-    "licitaciones": 603,
-    "comprasAgiles": 357,
+    "licitaciones": 614,
+    "comprasAgiles": 425,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 120,
+    "LP": 123,
     "CO": 13,
-    "LE": 368,
+    "LE": 374,
     "B2": 2,
-    "L1": 62,
+    "L1": 64,
     "LR": 40,
     "E2": 6,
     "I2": 3,
     "LS": 2,
     "O1": 4,
-    "COT": 344
+    "COT": 412
   },
   "matchPorEmpresa": {
-    "Aminorte": 830,
-    "V-MOCCS": 134
+    "Aminorte": 899,
+    "V-MOCCS": 144
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 580,
-    "modificadosCount": 138,
-    "cerradosCount": 941,
+    "nuevosCount": 657,
+    "modificadosCount": 140,
+    "cerradosCount": 939,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -198,6 +198,24 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-08T15:30:00"
+      },
+      {
+        "codigo": "2704-60-LP26",
+        "titulo": "SC 3156 SERVICIO DE FOTOCOPIADO Y ARRIENDO DE EQUIPOS MULTIFUNCIONALES PARA LA UNIVERSIDAD DEL BÍO-BÍO SEDE CONCEPCIÓN ",
+        "organismo": "UNIVERSIDAD DEL BIO BIO",
+        "monto": 168000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 98,
+        "fechaCierre": "2026-09-14T20:00:00"
+      },
+      {
+        "codigo": "1490160-38-LP26",
+        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS PARQUES",
+        "monto": 145000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 90,
+        "fechaCierre": "2026-08-06T15:00:00"
       },
       {
         "codigo": "1409-12-LP26",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-04T17:30:00"
-      },
-      {
-        "codigo": "1057893-5-LP26",
-        "titulo": "ADQUISICIÓN DE 2 MONITORES DESFIBRILADORES",
-        "organismo": "HOSPITAL PADRE ALBERTO HURTADO",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-09-03T17:00:00"
-      },
-      {
-        "codigo": "4174-30-CO26",
-        "titulo": "CÁMARAS DE SEGURIDAD PARA LA COMUNA DE QUIRIHUE",
-        "organismo": "Ilustre Municipalidad de Quirihue",
-        "monto": 21350314,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-04T15:00:00"
       }
     ],
     "modificados": [
@@ -1008,6 +1008,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "3561-35-LE26",
+        "titulo": "ADQUISICIÓN DE DISPOSITIVOS AUDITIVOS AUDIFONOS PARA PACIENTES BENEFICIARIOS",
+        "organismo": "I MUNICIPALIDAD DE LA CALERA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 19615473,
+        "montoNuevo": 19615473,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3179-27-LE26",
         "titulo": "ADQ DE PRESILLA OFICIAL SUBALTERNO MASC PAC 2026",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -1185,16 +1195,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 7000000,
         "montoNuevo": 7000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3885-49-L126",
-        "titulo": "ADQ. MATERIALES E INSUMOS DE OFICINA DIDECO – PDTI – SENDA",
-        "organismo": "I MUNICIPALIDAD DE PICA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 6985300,
-        "montoNuevo": 6985300,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 169.0,
+  "tiempoEjecucionSegundos": 1524.7,
   "errores": [],
   "advertencias": []
 }
