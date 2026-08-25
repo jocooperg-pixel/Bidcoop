@@ -269506,7 +269506,7 @@
         "NombreUsuario": "Isabel Elinor Cuevas Carrasco",
         "CargoUsuario": "Ejecutiva de Compras"
       },
-      "DiasCierreLicitacion": "6",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -269608,8 +269608,8 @@
         ]
       }
     },
-    "ts": 1787445023.2372205,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626155.1346903,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "1057387-49-LE26": {
     "data": {
@@ -269633,7 +269633,7 @@
         "NombreUsuario": "JOSHUA IZQUIERDO MUÑOZ",
         "CargoUsuario": "PROFESIONAL"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -269713,8 +269713,8 @@
         ]
       }
     },
-    "ts": 1787445028.101232,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626157.1966949,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "1057539-115-LP26": {
     "data": {
@@ -269738,7 +269738,7 @@
         "NombreUsuario": "Fidel Garces M",
         "CargoUsuario": "Profesional de Compras"
       },
-      "DiasCierreLicitacion": "16",
+      "DiasCierreLicitacion": "14",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -269862,113 +269862,8 @@
         ]
       }
     },
-    "ts": 1787445029.0193996,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
-  },
-  "2173-27-LE26": {
-    "data": {
-      "CodigoExterno": "2173-27-LE26",
-      "Nombre": "SERVICIO PUNTUAL DE MANTENCION PREVENTIVA Y CORRECTIVA A EQUIPOS Y SISTEMAS DE CLIMATIZACION EN EDIFICIOS DE LA JURISDICCION ZONAL SANTIAGO",
-      "CodigoEstado": 5,
-      "Descripcion": "SERVICIO PUNTUAL DE MANTENCION PREVENTIVA Y CORRECTIVA A EQUIPOS Y SISTEMAS DE CLIMATIZACION EN EDIFICIOS DE LA JURISDICCION ZONAL SANTIAGO",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "7342",
-        "NombreOrganismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
-        "RutUnidad": "60.301.001-9",
-        "CodigoUnidad": "3168",
-        "NombreUnidad": "Corp. Adm. del Poder Judicial - Santiago",
-        "DireccionUnidad": "Compañia 1325",
-        "ComunaUnidad": "Santiago Centro",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1313065",
-        "NombreUsuario": "Priscilla Tapia Manzur",
-        "CargoUsuario": "Administrativo"
-      },
-      "DiasCierreLicitacion": "12",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLF",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 276,
-      "Fechas": {
-        "FechaCreacion": "2026-08-18T00:00:00",
-        "FechaCierre": "2026-09-03T16:00:00",
-        "FechaInicio": "2026-08-18T17:05:00",
-        "FechaFinal": "2026-08-26T15:30:00",
-        "FechaPubRespuestas": "2026-08-28T18:00:00",
-        "FechaActoAperturaTecnica": "2026-09-03T16:05:00",
-        "FechaActoAperturaEconomica": "2026-09-03T16:05:00",
-        "FechaPublicacion": "2026-08-18T16:21:07.003",
-        "FechaAdjudicacion": "2026-09-11T13:19:00",
-        "FechaEstimadaAdjudicacion": "2026-09-11T13:19:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": "1900-01-03T00:00:00",
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Eduardo González",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Paulina Espinoza Bustamante ",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 1,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 72102305,
-            "CodigoCategoria": "72102300",
-            "Categoria": "Servicios de construcción y mantenimiento / Servicios de atención, mantenimiento y reparaciones de edificios / Gasfitería, calefacción y aire acondicionado",
-            "NombreProducto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
-            "Descripcion": "Servicio puntual de mantencion preventiva y correctiva a equipos y sistemas de climatización en Edificios de la Jurisdiccion Zonal Santiago",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787445038.0586038,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626161.0381882,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "3813-29-LE26": {
     "data": {
@@ -269992,7 +269887,7 @@
         "NombreUsuario": "Claudia Meza Arredondo",
         "CargoUsuario": "Encargada de Licitaciones"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -270072,8 +269967,8 @@
         ]
       }
     },
-    "ts": 1787445046.8234606,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626178.2812235,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "1057780-1-LP26": {
     "data": {
@@ -312493,7 +312388,7 @@
         "NombreUsuario": "Alejandra Peralta Cavieres",
         "CargoUsuario": "Ejecutiva De Compras"
       },
-      "DiasCierreLicitacion": "18",
+      "DiasCierreLicitacion": "16",
       "Informada": 0,
       "CodigoTipo": 3,
       "Tipo": "B2",
@@ -312573,8 +312468,8 @@
         ]
       }
     },
-    "ts": 1787445023.854776,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626155.7348866,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "1057049-308-LE26": {
     "data": {
@@ -312598,7 +312493,7 @@
         "NombreUsuario": "Alejandra Peralta Cavieres",
         "CargoUsuario": "Ejecutiva De Compras"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -312766,8 +312661,8 @@
         ]
       }
     },
-    "ts": 1787445027.271036,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626156.5145044,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "1110404-153-LE26": {
     "data": {
@@ -312791,7 +312686,7 @@
         "NombreUsuario": "Sussy Solange Harrison Jara",
         "CargoUsuario": "Profesional de Adquisiciones"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -312871,8 +312766,8 @@
         ]
       }
     },
-    "ts": 1787445033.1107025,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626161.7247715,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "1230848-60-LE26": {
     "data": {
@@ -312896,7 +312791,7 @@
         "NombreUsuario": "Yolani Alexandra Durán Arispe",
         "CargoUsuario": "Administrativa de Adquisiciones"
       },
-      "DiasCierreLicitacion": "12",
+      "DiasCierreLicitacion": "10",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -312987,8 +312882,8 @@
         ]
       }
     },
-    "ts": 1787445034.1843302,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626165.4597688,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "2174-10-LE26": {
     "data": {
@@ -313012,7 +312907,7 @@
         "NombreUsuario": "Luis Antonio Briones González",
         "CargoUsuario": "Jefe de Adquisiciones y Mantenimiento"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -313092,8 +312987,8 @@
         ]
       }
     },
-    "ts": 1787445041.4445755,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626172.7391105,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "3542-22-LE26": {
     "data": {
@@ -313117,7 +313012,7 @@
         "NombreUsuario": "Rolando Andrés Pino García",
         "CargoUsuario": "Supervisor Mercado Público"
       },
-      "DiasCierreLicitacion": "12",
+      "DiasCierreLicitacion": "10",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -313130,7 +313025,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 11794,
+      "CantidadReclamos": 11802,
       "Fechas": {
         "FechaCreacion": "2026-08-19T00:00:00",
         "FechaCierre": "2026-09-03T15:01:00",
@@ -313197,8 +313092,8 @@
         ]
       }
     },
-    "ts": 1787445042.3408463,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626173.694278,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "3671-57-LE26": {
     "data": {
@@ -313222,7 +313117,7 @@
         "NombreUsuario": "MARIA PAZ VASQUEZ RAMIREZ",
         "CargoUsuario": "APOYO ADMINISTRATIVO SECPLA"
       },
-      "DiasCierreLicitacion": "6",
+      "DiasCierreLicitacion": "4",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -313302,8 +313197,8 @@
         ]
       }
     },
-    "ts": 1787445043.173457,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626177.4395833,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "3890-167-L126": {
     "data": {
@@ -313327,7 +313222,7 @@
         "NombreUsuario": "CARRY GISELLA GARIN CANDIA",
         "CargoUsuario": "INVENTARIO MUNICIPAL"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "L1",
@@ -313407,8 +313302,8 @@
         ]
       }
     },
-    "ts": 1787445050.5176926,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626182.4599605,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "3894-54-LP26": {
     "data": {
@@ -313432,7 +313327,7 @@
         "NombreUsuario": "AUKAN ROMERO FUENTES",
         "CargoUsuario": "PROFESIONAL LICITACIONES"
       },
-      "DiasCierreLicitacion": "30",
+      "DiasCierreLicitacion": "28",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -313512,8 +313407,8 @@
         ]
       }
     },
-    "ts": 1787445051.3435502,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626183.2746468,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "5067-80-LE26": {
     "data": {
@@ -313537,7 +313432,7 @@
         "NombreUsuario": "Samuel Antonio Valladares Pardo",
         "CargoUsuario": "Administrativo"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -313617,8 +313512,8 @@
         ]
       }
     },
-    "ts": 1787445055.1372666,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626187.054606,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "538598-39-LE26": {
     "data": {
@@ -313642,7 +313537,7 @@
         "NombreUsuario": "Mario Eduardo Martinez Poveda",
         "CargoUsuario": "Analista de Licitaciones"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -313766,8 +313661,8 @@
         ]
       }
     },
-    "ts": 1787445055.7475476,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626187.6972609,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "5416-31-LE26": {
     "data": {
@@ -313791,7 +313686,7 @@
         "NombreUsuario": "Andrés Vega",
         "CargoUsuario": "Ejecutivo de Compras"
       },
-      "DiasCierreLicitacion": "9",
+      "DiasCierreLicitacion": "7",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -313948,8 +313843,8 @@
         ]
       }
     },
-    "ts": 1787445059.6853154,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626191.2131033,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "921831-21-L126": {
     "data": {
@@ -313973,7 +313868,7 @@
         "NombreUsuario": "Damary Barra Arroyo",
         "CargoUsuario": "Operador"
       },
-      "DiasCierreLicitacion": "18",
+      "DiasCierreLicitacion": "16",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "L1",
@@ -313986,7 +313881,7 @@
       "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 11794,
+      "CantidadReclamos": 11802,
       "Fechas": {
         "FechaCreacion": "2026-07-29T14:13:02.033",
         "FechaCierre": "2026-09-09T13:00:00",
@@ -314053,8 +313948,8 @@
         ]
       }
     },
-    "ts": 1787445063.563519,
-    "fetchedAt": "2026-08-23T00:29:53.918238+00:00"
+    "ts": 1787626195.062395,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   },
   "1426038-54-LE26": {
     "data": {
@@ -424103,5 +423998,1009 @@
     },
     "ts": 1787617869.2168717,
     "fetchedAt": "2026-08-25T00:28:39.864158+00:00"
+  },
+  "1979-183-LP26": {
+    "data": {
+      "CodigoExterno": "1979-183-LP26",
+      "Nombre": "174.26 “CONVENIO SUMINISTRO DE SILLAS DE RUEDAS ESTANDAR PARA HOSPITAL DE NUEVA IMPERIAL.”",
+      "CodigoEstado": 5,
+      "Descripcion": "Se requiere suscribir contrato de CONVENIO SUMINISTRO DE SILLAS DE RUEDAS ESTANDAR PARA HOSPITAL DE NUEVA IMPERIAL, por 18 meses, pudiendo ser renovado, por una sola vez, hasta por 6 meses más, por razones fundadas y conforme a los valores ofertados, en proporción al nuevo plazo.",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "7060",
+        "NombreOrganismo": "SERVICIO DE SALUD ARAUCANIA SUR HOSPITAL DE NUEVA IMPERIAL",
+        "RutUnidad": "61.607.401-6",
+        "CodigoUnidad": "2974",
+        "NombreUnidad": "Hospital Nueva Imperial",
+        "DireccionUnidad": "Castellón # 0115",
+        "ComunaUnidad": "Nueva Imperial",
+        "RegionUnidad": "Región de la Araucanía ",
+        "RutUsuario": "",
+        "CodigoUsuario": "2120980",
+        "NombreUsuario": "KETZIA FAUNDEZ VEGA",
+        "CargoUsuario": "ADMINISTRATIVO"
+      },
+      "DiasCierreLicitacion": "21",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LP",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 215,
+      "Fechas": {
+        "FechaCreacion": "2026-08-21T00:00:00",
+        "FechaCierre": "2026-09-14T15:00:00",
+        "FechaInicio": "2026-08-24T19:01:00",
+        "FechaFinal": "2026-09-03T16:00:00",
+        "FechaPubRespuestas": "2026-09-08T18:00:00",
+        "FechaActoAperturaTecnica": "2026-09-14T15:01:00",
+        "FechaActoAperturaEconomica": "2026-09-14T15:01:00",
+        "FechaPublicacion": "2026-08-24T16:43:11.757",
+        "FechaAdjudicacion": "2026-12-14T20:00:00",
+        "FechaEstimadaAdjudicacion": "2026-12-14T20:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "recursos propios del establecimiento",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "18",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "ROCIO PIZARRO REYES",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "RODRIGO SAAVEDRA MEDINA",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "18",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "Se estima un presupuesto total referencial, aproximado, de 300.000.000. con Iva incluido, por la duración del contrato. Ofertas por sobre ese monto, se analizarán en su contexto",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 42192210,
+            "CodigoCategoria": "42192200",
+            "Categoria": "Equipamiento y suministros médicos / Equipamiento para instalaciones médicas / Artículos para transporte de paciente",
+            "NombreProducto": "Sillas de ruedas",
+            "Descripcion": "SILLAS DE RUEDAS",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1000,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787626166.2401252,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
+  },
+  "1075963-340-LE26": {
+    "data": {
+      "CodigoExterno": "1075963-340-LE26",
+      "Nombre": "ADQUISICION DE APOSITOS BOLSAS PRESERVATIVO ELECTRODO PROTESIS HEMOCLIP HOJA DE SIERRA CIRCUITO DE VENTILACION  CONITOS BOLSA DRENABLE GUANTE NITRILO Y OTROS INSUMOS CLINICOS",
+      "CodigoEstado": 6,
+      "Descripcion": "ADQUISICION DE APOSITOS, BOLSAS, PRESERVATIVO, ELECTRODO, PROTESIS, HEMOCLIP, HOJA DE SIERRA, CIRCUITO DE VENTILACION,  CONITOS, BOLSA DRENABLE, GUANTE NITRILO Y OTROS INSUMOS CLINICOS",
+      "FechaCierre": null,
+      "Estado": "Cerrada",
+      "Comprador": {
+        "CodigoOrganismo": "1667479",
+        "NombreOrganismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
+        "RutUnidad": "61.606.001-5",
+        "CodigoUnidad": "1075963",
+        "NombreUnidad": "Hospital Juan Noé",
+        "DireccionUnidad": "18 DE SEPTIEMBRE #1000, ARICA. ",
+        "ComunaUnidad": "Santiago",
+        "RegionUnidad": "Región de Arica y Parinacota",
+        "RutUsuario": "",
+        "CodigoUsuario": "1703346",
+        "NombreUsuario": "Pamela Donoso",
+        "CargoUsuario": "Profesional "
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "1",
+      "Obras": "0",
+      "CantidadReclamos": 166,
+      "Fechas": {
+        "FechaCreacion": "2026-07-29T00:00:00",
+        "FechaCierre": "2026-08-24T17:30:00",
+        "FechaInicio": "2026-08-12T17:30:00",
+        "FechaFinal": "2026-08-17T17:30:00",
+        "FechaPubRespuestas": "2026-08-19T17:30:00",
+        "FechaActoAperturaTecnica": "2026-08-25T08:00:00",
+        "FechaActoAperturaEconomica": "2026-08-25T08:00:00",
+        "FechaPublicacion": "2026-08-12T15:09:36.99",
+        "FechaAdjudicacion": "2026-09-25T08:00:00",
+        "FechaEstimadaAdjudicacion": "2026-09-25T08:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": null,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "HOSPITAL JUAN NOE CREVANI",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "12",
+      "UnidadTiempo": "-1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "RENATA BALTOLU",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "ROBERTO GUTIERREZ",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "12",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 20,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 41104105,
+            "CodigoCategoria": "41104100",
+            "Categoria": "Equipamiento para laboratorios / Equipos e insumos para laboratorio / Contenedores para especímenes de laboratorio",
+            "NombreProducto": "Bolsas de recogida o transporte de especímenes",
+            "Descripcion": "22510096 - BOLSA PARA EXTRACCION DE ESPECIMEN CON DISPOSITIVO DE MANIPULACION 10 mm/ 210 mL - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 20,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 41104105,
+            "CodigoCategoria": "41104100",
+            "Categoria": "Equipamiento para laboratorios / Equipos e insumos para laboratorio / Contenedores para especímenes de laboratorio",
+            "NombreProducto": "Bolsas de recogida o transporte de especímenes",
+            "Descripcion": "2251102 - APOSITO ESTERIL 7 X 20 CM (APF 1.3 UCI) - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 80000,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 3,
+            "CodigoProducto": 42295307,
+            "CodigoCategoria": "42295300",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Suministros y accesorios para cirugía de corazón abierto y productos relacionados",
+            "NombreProducto": "Separadores quirúrgicos para la arteria carótida o accesorios",
+            "Descripcion": "2255849 - PARCHE CAROTIDA DE  2 X 9 CM.(VASCULAR PATCH) - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 4,
+            "CodigoProducto": 42295307,
+            "CodigoCategoria": "42295300",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Suministros y accesorios para cirugía de corazón abierto y productos relacionados",
+            "NombreProducto": "Separadores quirúrgicos para la arteria carótida o accesorios",
+            "Descripcion": "2255851 - PARCHE DE CAROTIDA 3/4 MM-(SHUNT EXTERNAL) - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 5,
+            "CodigoProducto": 42295307,
+            "CodigoCategoria": "42295300",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Suministros y accesorios para cirugía de corazón abierto y productos relacionados",
+            "NombreProducto": "Separadores quirúrgicos para la arteria carótida o accesorios",
+            "Descripcion": "2255852 - PARCHE CARITIDA 3.5X5MM (SHUNT EXTERNAL) - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 6,
+            "CodigoProducto": 53131622,
+            "CodigoCategoria": "53131600",
+            "Categoria": "Ropa, maletas y productos de aseo personal / Artículos de baño o tocador / Artículos de baño y cuerpo",
+            "NombreProducto": "Condones",
+            "Descripcion": "2850001 - PRESERVATIVO SECO P/ECOGRAFIA TRANSVAG. TIPO ROYAL - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 12000,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 7,
+            "CodigoProducto": 42142504,
+            "CodigoCategoria": "42142500",
+            "Categoria": "Equipamiento y suministros médicos / Suministros y productos clínicos / Agujas clínicas",
+            "NombreProducto": "Agujas de biopsia",
+            "Descripcion": "3400389 - AGUJA DESECHABLE BIOPSIA TISULAR 14G X10CM (SIMIL MODELO UNICORE O UNIMED) COMPATIBLE PISTOLA MAGNUM - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 200,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 8,
+            "CodigoProducto": 42143102,
+            "CodigoCategoria": "42143100",
+            "Categoria": "Equipamiento y suministros médicos / Suministros y productos clínicos / Equipo y suministros de obstetricia y ginecología",
+            "NombreProducto": "Dispositivos uterinos o accesorios",
+            "Descripcion": "3401274 - ELECTRODO DE ASA 20 MM X 8 MM - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 160,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 9,
+            "CodigoProducto": 42272001,
+            "CodigoCategoria": "42272000",
+            "Categoria": "Equipamiento y suministros médicos / Productos de resucitación, anestesia y respiratorios / Suministros de intubación",
+            "NombreProducto": "Laringoscopios o accesorios",
+            "Descripcion": "3409208 - JUEGO LARINGOSCOPIO CON CUATRO HOJAS (HOJAS CURVAS Y RECTAS) - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 10,
+            "CodigoProducto": 42294944,
+            "CodigoCategoria": "42294900",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Instrumentos endoscópicos, suministros, accesorios y productos relacionados",
+            "NombreProducto": "Kits de accesorios para endoscopía",
+            "Descripcion": "3409252 - PROTESIS TEFLONADA BILIAR 7 FR X 12 CM - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 11,
+            "CodigoProducto": 42294944,
+            "CodigoCategoria": "42294900",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Instrumentos endoscópicos, suministros, accesorios y productos relacionados",
+            "NombreProducto": "Kits de accesorios para endoscopía",
+            "Descripcion": "3409253 - PROTESIS TEFLONADA BILIAR 7 FR X 7 CM CON EMPUJADOR - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 12,
+            "CodigoProducto": 42294944,
+            "CodigoCategoria": "42294900",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Instrumentos endoscópicos, suministros, accesorios y productos relacionados",
+            "NombreProducto": "Kits de accesorios para endoscopía",
+            "Descripcion": "3409369 - PROTESIS BILIAR 10 FR - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 6,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 13,
+            "CodigoProducto": 42294944,
+            "CodigoCategoria": "42294900",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Instrumentos endoscópicos, suministros, accesorios y productos relacionados",
+            "NombreProducto": "Kits de accesorios para endoscopía",
+            "Descripcion": "3409382 - HEMOCLIP ROTATABLE 230CM 16 APERTURA X LONGITUD 7 MM - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 200,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 14,
+            "CodigoProducto": 42291706,
+            "CodigoCategoria": "42291700",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Taladros quirúrgicos de mano, escariadores, instrumentos de punzonar, accesorios y productos relacionados",
+            "NombreProducto": "Fresas quirúrgicas o sus accesorios",
+            "Descripcion": "3451055 - FRESA SHAVER OVAL 4.0 - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 20,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 15,
+            "CodigoProducto": 42291709,
+            "CodigoCategoria": "42291700",
+            "Categoria": "Equipamiento y suministros médicos / Productos quirúrgicos / Taladros quirúrgicos de mano, escariadores, instrumentos de punzonar, accesorios y productos relacionados",
+            "NombreProducto": "Hojas de sierra quirúrgicas o accesorios",
+            "Descripcion": "3453235 - HOJA DE SIERRA GC211R MEDIDA 35MM / 20MM/ 0,5MM/0.8 MM  - (UM: UNIDAD)\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 20,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 16,
+            "CodigoProducto": 42272224,
+            "CodigoCategoria": "42272200",
+            "Categoria": "Equipamiento y suministros médicos / Productos de resucitación, anestesia y respiratorios / Ventiladores y accesorios de presión mecánica positiva",
+            "NombreProducto": "Kits de circuito de ventilación",
+            "Descripcion": "3476374 - CIRCUITO DE VENTILACION SIMIL AIR SPIRAL KIT ALTO FLUJO NASAL CANULA OPTIFLOW S COMPATIBLE CON VENTILADOR FISHEL Y PAYKEL - COVID - (UM: KIT)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 120,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 17,
+            "CodigoProducto": 42182005,
+            "CodigoCategoria": "42182000",
+            "Categoria": "Equipamiento y suministros médicos / Productos para exámenes y control de pacientes / Espéculos y accesorios para auscultación médica",
+            "NombreProducto": "Oftalmoscopios o otoscopios o juegos de scopios",
+            "Descripcion": "3495107 - CONITOS DESECHABLES 2.5 MM PARA OTOSCOPIO - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 300,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 18,
+            "CodigoProducto": 42182005,
+            "CodigoCategoria": "42182000",
+            "Categoria": "Equipamiento y suministros médicos / Productos para exámenes y control de pacientes / Espéculos y accesorios para auscultación médica",
+            "NombreProducto": "Oftalmoscopios o otoscopios o juegos de scopios",
+            "Descripcion": "3495108 - CONITOS DESECHABLES 4.0 MM PARA OTOSCOPIO - (UM: UNIDAD)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 300,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 19,
+            "CodigoProducto": 42312113,
+            "CodigoCategoria": "42312100",
+            "Categoria": "Equipamiento y suministros médicos / Productos para el cuidado de heridas / Suministros de ostomía y productos no quirúrgicos de drenaje de heridas",
+            "NombreProducto": "Bolsas de Ostomía",
+            "Descripcion": "2250445 - BOLSA DRENABLE 32 MM PEDIATRICA - (UM: UNIDAD)\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 600,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 20,
+            "CodigoProducto": 42132205,
+            "CodigoCategoria": "42132200",
+            "Categoria": "Equipamiento y suministros médicos / Vestuario clínico / Guantes médicos y accesorios",
+            "NombreProducto": "Guantes quirúrgicos",
+            "Descripcion": "2250328 - GUANTE NITRILO SIN POLVO 40 CM ALTO RIESGO TALLA M - (UM: UNIDAD)\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10000,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787626195.819439,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
+  },
+  "2490-73-LR26": {
+    "data": {
+      "CodigoExterno": "2490-73-LR26",
+      "Nombre": "REPARACIÓN DE VEREDAS DISTINTAS UNIDADES VECINALES",
+      "CodigoEstado": 6,
+      "Descripcion": "Contratación para la reparación de veredas tipo: baldosas, baldosas reforzadas, hormigón y hormigón reforzado, de acuerdo a lo establecido en las especificaciones técnicas.\r\nLa contratación se dividirá en 2 líneas independientes entre sí, ocontratos separados y adjudicadas a uno o más contratistas. -\tLINEA 1: UNIDAD VECINAL N°4 -\tLINEA 2: UNIDAD VECINAL N°9",
+      "FechaCierre": null,
+      "Estado": "Cerrada",
+      "Comprador": {
+        "CodigoOrganismo": "88102",
+        "NombreOrganismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "RutUnidad": "69.070.300-9",
+        "CodigoUnidad": "3482",
+        "NombreUnidad": "Dirección de Secpla",
+        "DireccionUnidad": "Pedro Valdivia N°963 ",
+        "ComunaUnidad": "Providencia",
+        "RegionUnidad": "Región Metropolitana de Santiago",
+        "RutUsuario": "",
+        "CodigoUsuario": "233420",
+        "NombreUsuario": "Ricardo Antonio Quezada Cancino",
+        "CargoUsuario": "PROFESIONAL LICITACIONES SECPLA"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LR",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 2,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 110,
+      "Fechas": {
+        "FechaCreacion": "2026-07-24T15:31:11.333",
+        "FechaCierre": "2026-08-24T15:00:00",
+        "FechaInicio": "2026-07-24T16:31:00",
+        "FechaFinal": "2026-07-31T12:00:00",
+        "FechaPubRespuestas": "2026-08-10T20:00:00",
+        "FechaActoAperturaTecnica": "2026-08-24T15:30:00",
+        "FechaActoAperturaEconomica": "2026-08-31T15:30:00",
+        "FechaPublicacion": "2026-07-24T16:21:43.033",
+        "FechaAdjudicacion": "2026-10-30T20:00:00",
+        "FechaEstimadaAdjudicacion": "2026-10-30T20:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "PRESUPUESTO MUNICIPAL",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": null,
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "2",
+      "NombreResponsablePago": "MARIANELA CIUDAD",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "manuel mediano ",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 1,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 1,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "1",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 2,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 72131702,
+            "CodigoCategoria": "72131700",
+            "Categoria": "Servicios de construcción y mantenimiento / Construcción de edificios en general / Construcción de obras civiles y infraestructuras",
+            "NombreProducto": "Construcción de obras civiles",
+            "Descripcion": "VALOR TOTAL NETO LÍNEA 1 UNIDAD VECINAL N°4",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 72131702,
+            "CodigoCategoria": "72131700",
+            "Categoria": "Servicios de construcción y mantenimiento / Construcción de edificios en general / Construcción de obras civiles y infraestructuras",
+            "NombreProducto": "Construcción de obras civiles",
+            "Descripcion": "VALOR TOTAL NETO LÍNEA 2 UNIDAD VECINAL N°9",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787626196.5172465,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
+  },
+  "3328-91-LE26": {
+    "data": {
+      "CodigoExterno": "3328-91-LE26",
+      "Nombre": "DNF - INSUMOS CON APOYO CLÍNICO SET DE MONITOREO",
+      "CodigoEstado": 6,
+      "Descripcion": "Adquisición de insumos para el normal funcionamiento del HCFA (R 10183)",
+      "FechaCierre": null,
+      "Estado": "Cerrada",
+      "Comprador": {
+        "CodigoOrganismo": "6946",
+        "NombreOrganismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
+        "RutUnidad": "61.103.007-K",
+        "CodigoUnidad": "4249",
+        "NombreUnidad": "Hospital Clinico \" General Dr. Raúl Yazigi J.\"",
+        "DireccionUnidad": "Avenida Las Condes Nº 8631 ",
+        "ComunaUnidad": "Las Condes",
+        "RegionUnidad": "Región Metropolitana de Santiago",
+        "RutUsuario": "",
+        "CodigoUsuario": "458794",
+        "NombreUsuario": "Diana Nilo Faúndez",
+        "CargoUsuario": "Ejecutiva de Compras"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 1467,
+      "Fechas": {
+        "FechaCreacion": "2026-08-12T00:00:00",
+        "FechaCierre": "2026-08-24T16:00:00",
+        "FechaInicio": "2026-08-12T15:55:00",
+        "FechaFinal": "2026-08-15T15:10:00",
+        "FechaPubRespuestas": "2026-08-17T17:00:00",
+        "FechaActoAperturaTecnica": "2026-08-25T08:00:00",
+        "FechaActoAperturaEconomica": "2026-08-25T08:00:00",
+        "FechaPublicacion": "2026-08-12T14:40:24.023",
+        "FechaAdjudicacion": "2026-12-10T12:00:00",
+        "FechaEstimadaAdjudicacion": "2026-12-10T12:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": "1900-01-02T00:00:00",
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 2,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "Institucional",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "12",
+      "UnidadTiempo": "2",
+      "Modalidad": 11,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Subdirección de Contabilidad y Finanzas",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Pamela Valencia Cisternas",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "12",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 2,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 42181905,
+            "CodigoCategoria": "42181900",
+            "Categoria": "Equipamiento y suministros médicos / Productos para exámenes y control de pacientes / Unidades de control de cuidado intenso y productos relacionados",
+            "NombreProducto": "Cables de control de transductor médico",
+            "Descripcion": "71020079//Transductor de presión desechable, simple, 150 cm de largo y 3 CC de cebado del sistema (certificación FDA excluyente)INSUMO DEBE CONSIDERAR APOYO CLÍNICO DE CABLES DE INTERFASE, SEGUN BASES TÉCNICAS Y ANEXOS ADJUNTO.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1500,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 42181905,
+            "CodigoCategoria": "42181900",
+            "Categoria": "Equipamiento y suministros médicos / Productos para exámenes y control de pacientes / Unidades de control de cuidado intenso y productos relacionados",
+            "NombreProducto": "Cables de control de transductor médico",
+            "Descripcion": "7020096\tTransductor de presión desechable, doble, 150 cm de largo y  3 CC de cebado del sistema (certificación FDA excluyente), INSUMO DEBE CONSIDERAR APOYO CLÍNICO DE CABLES DE INTERFASE, SEGUN BASES TÉCNICAS Y ANEXOS ADJUNTO.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 30,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787626197.1458187,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
+  },
+  "1110404-150-L126": {
+    "data": {
+      "CodigoExterno": "1110404-150-L126",
+      "Nombre": "“ADQUISICIÓN DE CUADERNOS ECOLÓGICOS CON BOLÍGRAFO PARA ESTUDIANTES DEL LICEO BICENTENARIO PABLO NERUDA, SLEP CHINCHORRO, EN EL MARCO DE LA PREPARACIÓN DEL SIMCE, SLEP CHINCHORRO”.",
+      "CodigoEstado": 6,
+      "Descripcion": "“ADQUISICIÓN DE CUADERNOS ECOLÓGICOS CON BOLÍGRAFO PARA ESTUDIANTES DEL LICEO BICENTENARIO PABLO NERUDA, SLEP CHINCHORRO, EN EL MARCO DE LA PREPARACIÓN DEL SIMCE, SLEP CHINCHORRO”.",
+      "FechaCierre": null,
+      "Estado": "Cerrada",
+      "Comprador": {
+        "CodigoOrganismo": "1675210",
+        "NombreOrganismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
+        "RutUnidad": "62.000.660-2",
+        "CodigoUnidad": "1110404",
+        "NombreUnidad": "SLEPCH - EE - Programa 02",
+        "DireccionUnidad": "MIGUEL AHUMADA N° 505.....................................................",
+        "ComunaUnidad": "Arica",
+        "RegionUnidad": "Región de Arica y Parinacota",
+        "RutUsuario": "",
+        "CodigoUsuario": "1741718",
+        "NombreUsuario": "Paola Tapia Guzmán",
+        "CargoUsuario": "Analista Unidad de Adquisiciones"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "L1",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 119,
+      "Fechas": {
+        "FechaCreacion": "2026-08-18T08:46:38.237",
+        "FechaCierre": "2026-08-24T15:00:00",
+        "FechaInicio": "2026-08-18T17:20:58.017",
+        "FechaFinal": "2026-08-20T16:00:00",
+        "FechaPubRespuestas": "2026-08-21T20:30:00",
+        "FechaActoAperturaTecnica": "2026-08-24T15:10:00",
+        "FechaActoAperturaEconomica": "2026-08-24T15:10:00",
+        "FechaPublicacion": "2026-08-18T17:20:58.017",
+        "FechaAdjudicacion": "2026-09-03T17:10:00",
+        "FechaEstimadaAdjudicacion": "2026-09-03T17:10:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 2,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 1600000,
+      "Tiempo": null,
+      "UnidadTiempo": "2",
+      "Modalidad": 0,
+      "TipoPago": "-1",
+      "NombreResponsablePago": "",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 0,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "1",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "0",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 14111531,
+            "CodigoCategoria": "14111500",
+            "Categoria": "Productos de papel / Productos de papel / Papel de imprenta y escritura",
+            "NombreProducto": "Libros o cuadernos de registro",
+            "Descripcion": "CUADERNO ECOLÓGICO CON TAPAS DURAS Y BOLÍGRAFO ECOLÓGICO.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 400,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787626201.0698798,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
+  },
+  "2307-36-LR26": {
+    "data": {
+      "CodigoExterno": "2307-36-LR26",
+      "Nombre": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+      "CodigoEstado": 6,
+      "Descripcion": "La I. Municipalidad de Osorno a través de su Departamento de Salud, requiere la contratación del servicio de arriendo de Impresoras nuevas, multifuncional blanco y negro y color, para dependencias de administración central y los establecimientos de Salud Primaria, según las especificaciones Técnicas, indicadas en el punto N°13 de las presentes bases de licitación y Requerimiento N°3.663.-",
+      "FechaCierre": null,
+      "Estado": "Cerrada",
+      "Comprador": {
+        "CodigoOrganismo": "84959",
+        "NombreOrganismo": "I MUNICIPALIDAD DE OSORNO",
+        "RutUnidad": "69.210.100-6",
+        "CodigoUnidad": "3301",
+        "NombreUnidad": "IMUNI_OSORNO DEPTO  SALUD",
+        "DireccionUnidad": "ARTURO PRAT N°432, OSORNO",
+        "ComunaUnidad": "",
+        "RegionUnidad": "Región de los Lagos ",
+        "RutUsuario": "",
+        "CodigoUsuario": "1987002",
+        "NombreUsuario": "Natalie  Carrasco Hidalgo ",
+        "CargoUsuario": "Profesional Abastecimiento"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LR",
+      "TipoConvocatoria": "1",
+      "Moneda": "USD",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 1057,
+      "Fechas": {
+        "FechaCreacion": "2026-07-23T00:00:00",
+        "FechaCierre": "2026-08-24T15:15:00",
+        "FechaInicio": "2026-07-23T17:00:00",
+        "FechaFinal": "2026-08-14T10:00:00",
+        "FechaPubRespuestas": "2026-08-17T17:00:00",
+        "FechaActoAperturaTecnica": "2026-08-24T15:16:00",
+        "FechaActoAperturaEconomica": "2026-08-24T15:16:00",
+        "FechaPublicacion": "2026-07-23T11:56:19.91",
+        "FechaAdjudicacion": "2026-10-26T17:00:00",
+        "FechaEstimadaAdjudicacion": "2026-10-26T17:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "DEPARTAMENTO DE SALUD",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 418569330,
+      "Tiempo": "36",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Gerardo Solís García",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Ignacio Montecino Rodriguez",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "VER PUNTO 12 DE BASES DE LICITACION",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "36",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "El finacimiento a cargo del Departamento de Salud",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 43212110,
+            "CodigoCategoria": "43212100",
+            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
+            "NombreProducto": "Impresoras multifunción o multifuncionales",
+            "Descripcion": "Se requiere arriendo impresoras Multifuncionales para el Departamento de Salud y Establecimiento Dependientes de acuerdo a punto N°13 de Bases de Licitacion ",
+            "UnidadMedida": "Global",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787626201.7611864,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
+  },
+  "707416-21-LE26": {
+    "data": {
+      "CodigoExterno": "707416-21-LE26",
+      "Nombre": "SUMINISTRO DE EQUIPAMIENTO Y MOBILIARIO 3 REGIÓN",
+      "CodigoEstado": 8,
+      "Descripcion": "Fundación requiere adquirir equipamiento y mobiliario a utilizar por niños, niñas, colaboradoras y colaboradores de los jardines infantiles, salas cuna y oficina regional de la Fundación Integra región de Atacama. Esta adquisición, tiene como objetivo dar respuesta a los requerimientos de los establecimientos de Integra, con foco en la mantención de la continuidad operativas de nuestros centros ed",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "1172700",
+        "NombreOrganismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+        "RutUnidad": "70.574.900-0",
+        "CodigoUnidad": "707416",
+        "NombreUnidad": "Regional Atacama",
+        "DireccionUnidad": "Salas 680",
+        "ComunaUnidad": "Alto Del Carmen",
+        "RegionUnidad": "Región de Atacama ",
+        "RutUsuario": "",
+        "CodigoUsuario": "2074320",
+        "NombreUsuario": "Ricardo Miranda",
+        "CargoUsuario": "Analista Administración y Finanzas"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 31,
+      "Fechas": {
+        "FechaCreacion": "2026-07-24T12:02:05.77",
+        "FechaCierre": "2026-08-10T15:00:00",
+        "FechaInicio": "2026-07-24T17:01:00",
+        "FechaFinal": "2026-07-29T10:00:00",
+        "FechaPubRespuestas": "2026-08-03T18:00:00",
+        "FechaActoAperturaTecnica": "2026-08-10T15:01:00",
+        "FechaActoAperturaEconomica": "2026-08-10T15:01:00",
+        "FechaPublicacion": "2026-07-24T14:55:30.72",
+        "FechaAdjudicacion": "2026-08-21T15:40:52.603",
+        "FechaEstimadaAdjudicacion": "2026-08-25T17:27:00",
+        "FechaSoporteFisico": "2026-08-10T00:00:00",
+        "FechaTiempoEvaluacion": "1900-01-11T00:00:00",
+        "FechaEstimadaFirma": "2026-08-26T00:00:00",
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 2,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "1-01 Ministerio de educación",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 16906831,
+      "Tiempo": null,
+      "UnidadTiempo": "2",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "PAMELA CORTES",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Camilo Valdes D.",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "NO PERMITE SUBCONTRATACION SEGUN LAS BASES ADMINISTRATIVAS ESPECIALES NUMERAL 8.2. DURANTE LA EJECUCION DE LA CONTRATACION, Y POR LA NATURALEZA DE LOS SERVICIOS QUE SE CONTRATAN, EL PROVEEDOR TIENE PROHIBICION DE EFECTUAR CUALQUIER TIPO DE SUBCONTRATACI",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 1,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "Para cumplir con lo anterior, Fundación Integra cuenta con el presupuesto máximo señalado precedentemente, para el periodo comprendido entre la aceptación de la orden de compra y el 31 de diciembre de 2026.",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "1",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-08-21T00:00:00",
+        "Numero": "03-051-2026",
+        "NumeroOferentes": 3,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=u4ZBSL0l5Ahy1r7HnROV7q4J/iQrSvMoQ72p1J6vkzk="
+      },
+      "Items": {
+        "Cantidad": 3,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 56101532,
+            "CodigoCategoria": "56101500",
+            "Categoria": "Muebles y mobiliario / Muebles de alojamiento / Muebles",
+            "NombreProducto": "Mobiliario",
+            "Descripcion": "SUMINISTRO DE EQUIPAMIENTO Y MOBILIARIO OF REGIONAL, JI, SC, ATACAMA CATEGORIA N°1",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "76.353.266-6",
+              "NombreProveedor": "SILVANA SALOMON Y DOMINICA SILVA INVERSIONES INMOBILIARIA Y MOBILIARIO",
+              "Cantidad": 1,
+              "MontoUnitario": 8467668
+            }
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 56101532,
+            "CodigoCategoria": "56101500",
+            "Categoria": "Muebles y mobiliario / Muebles de alojamiento / Muebles",
+            "NombreProducto": "Mobiliario",
+            "Descripcion": "SUMINISTRO DE EQUIPAMIENTO Y MOBILIARIO OF REGIONAL, JI, SC, ATACAMA CATEGORIA N°2",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "78.212.802-7",
+              "NombreProveedor": "OMICRON SPA",
+              "Cantidad": 1,
+              "MontoUnitario": 3892082
+            }
+          },
+          {
+            "Correlativo": 3,
+            "CodigoProducto": 56101532,
+            "CodigoCategoria": "56101500",
+            "Categoria": "Muebles y mobiliario / Muebles de alojamiento / Muebles",
+            "NombreProducto": "Mobiliario",
+            "Descripcion": "SUMINISTRO DE EQUIPAMIENTO Y MOBILIARIO OF REGIONAL, JI, SC, ATACAMA CATEGORIA N°3",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1787626205.4641798,
+    "fetchedAt": "2026-08-25T02:48:43.644114+00:00"
   }
 }

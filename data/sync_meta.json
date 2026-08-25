@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-25T00:28:39.864158+00:00",
-  "ultimoIntentoRealizado": "2026-08-25T00:28:39.864158+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-25T02:48:43.644114+00:00",
+  "ultimoIntentoRealizado": "2026-08-25T02:48:43.644114+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 992,
-  "registrosConfirmados": 992,
+  "registrosEnPlataforma": 1418,
+  "registrosConfirmados": 1418,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 707,
+  "registrosConMontoReal": 1130,
   "excluidosPrefiltroIrrelevante": 7091,
-  "excluidosSinDatosReales": 7,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 398,
-    "conMontoValido": 393,
-    "pctValidado": 98.7,
+    "total": 818,
+    "conMontoValido": 813,
+    "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 393,
+      "VALIDADO": 813,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 178823307,
-    "montoFinalSum": 731636191,
-    "montoRecuperadoSum": 552812884
+    "montoOriginalSum": 187951749,
+    "montoFinalSum": 1328504072,
+    "montoRecuperadoSum": 1140552323
   },
   "categorias": {
-    "licitaciones": 590,
-    "comprasAgiles": 398,
+    "licitaciones": 596,
+    "comprasAgiles": 818,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 118,
+    "LP": 119,
     "CO": 12,
-    "LE": 361,
+    "LE": 363,
     "B2": 2,
-    "L1": 60,
-    "LR": 38,
+    "L1": 61,
+    "LR": 40,
     "E2": 6,
     "I2": 3,
     "LS": 2,
     "O1": 4,
-    "COT": 386
+    "COT": 806
   },
   "matchPorEmpresa": {
-    "Aminorte": 859,
-    "V-MOCCS": 133
+    "Aminorte": 1215,
+    "V-MOCCS": 203
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 614,
-    "modificadosCount": 105,
-    "cerradosCount": 947,
+    "nuevosCount": 1036,
+    "modificadosCount": 110,
+    "cerradosCount": 943,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -618,6 +618,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2307-36-LR26",
+        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "I MUNICIPALIDAD DE OSORNO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 418569330,
+        "montoNuevo": 418569330,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "621-697-LP26",
         "titulo": "IMATINIB  400 MG CPCM REC. 1000022948",
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
@@ -1128,6 +1138,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1110404-150-L126",
+        "titulo": "“ADQUISICIÓN DE CUADERNOS ECOLÓGICOS CON BOLÍGRAFO PARA ESTUDIANTES DEL LICEO BICENTENARIO PABLO NERUDA, SLEP CHINCHORRO, EN EL MARCO DE LA PREPARACIÓN DEL SIMCE, SLEP CHINCHORRO”.",
+        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 1600000,
+        "montoNuevo": 1600000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "564162-62-LP26",
         "titulo": "Solicitud N 91312 - MFI y Cámara de envejecimiento",
         "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
@@ -1166,26 +1186,6 @@
         "montoAnterior": 1459,
         "montoNuevo": 1459,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2048-60-LP26",
-        "titulo": "COMPRA DE AUDIFONOS",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057049-294-LE26",
-        "titulo": "APC - MANTENCIÓN PREVENTIVA Y CORRECTIVA DE EQ MED",
-        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2744-29-LE26",
@@ -1261,14 +1261,6 @@
         "organismo": "CENTRO DE REFERENCIA DE SALUD HOSPITAL PROVINCIA CORDILLERA",
         "estadoAnterior": "Adjudicada",
         "monto": 537500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2307-36-LR26",
-        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
-        "organismo": "I MUNICIPALIDAD DE OSORNO",
-        "estadoAnterior": "Publicada",
-        "monto": 418569330,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Cerrada",
         "monto": 25920000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2467-78-LE26",
+        "titulo": "ADQUISICIÓN DE COMPONENTES DE VIDEOWALL PARA VISUA",
+        "organismo": "I MUNICIPALIDAD DE CHILLAN",
+        "estadoAnterior": "Adjudicada",
+        "monto": 25450000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 246.2,
+  "tiempoEjecucionSegundos": 2312.1,
   "errores": [],
   "advertencias": []
 }
