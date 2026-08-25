@@ -187286,8 +187286,8 @@
         ]
       }
     },
-    "ts": 1787567157.478163,
-    "fetchedAt": "2026-08-24T10:25:18.420804+00:00"
+    "ts": 1787660468.0836506,
+    "fetchedAt": "2026-08-25T12:20:25.184257+00:00"
   },
   "898-156-LE26": {
     "data": {
@@ -218161,8 +218161,8 @@
         ]
       }
     },
-    "ts": 1787567160.80514,
-    "fetchedAt": "2026-08-24T10:25:18.420804+00:00"
+    "ts": 1787660468.70587,
+    "fetchedAt": "2026-08-25T12:20:25.184257+00:00"
   },
   "1663-127-LE26": {
     "data": {
@@ -219555,7 +219555,7 @@
         "NombreUsuario": "Alejandra FLORES LUTTY",
         "CargoUsuario": "PROFESIONAL"
       },
-      "DiasCierreLicitacion": "3",
+      "DiasCierreLicitacion": "2",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -219635,8 +219635,8 @@
         ]
       }
     },
-    "ts": 1787567165.092327,
-    "fetchedAt": "2026-08-24T10:25:18.420804+00:00"
+    "ts": 1787660472.5773125,
+    "fetchedAt": "2026-08-25T12:20:25.184257+00:00"
   },
   "3134-82-LE26": {
     "data": {
@@ -337635,111 +337635,6 @@
     },
     "ts": 1787653158.6369228,
     "fetchedAt": "2026-08-25T10:18:36.177941+00:00"
-  },
-  "316-47-LE26": {
-    "data": {
-      "CodigoExterno": "316-47-LE26",
-      "Nombre": "MANTENCIÓN DE EQUIPOS DE AIRE ACONDICIONADO",
-      "CodigoEstado": 6,
-      "Descripcion": "SE REQUIERE LA CONTRATACIÓN DEL SERVICIO DE MANTENIMIENTO PREVENTIVO POR 46 EQUIPOS DE AIRE ACONDICIONADO, SPLIT MURO, DE LA ILUSTRE MUNICIPALIDAD DE VILLA ALEMANA, DE MANERA QUE SE ENCUENTREN OPERATIVOS Y AQUELLOS QUE NO CUENTEN CON SOLUCIÓN, SOLICITAR LA RESPECTIVA BAJA DEL INVENTARIO MUNICIPAL",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "7233",
-        "NombreOrganismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
-        "RutUnidad": "69.061.500-2",
-        "CodigoUnidad": "1313",
-        "NombreUnidad": "ADQUISICIONES",
-        "DireccionUnidad": "Av. Valparaíso N° 498",
-        "ComunaUnidad": "Villa Alemana",
-        "RegionUnidad": "Región de Valparaíso ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1485449",
-        "NombreUsuario": "BARBARA ARRIETA SEREY",
-        "CargoUsuario": "COMPRADOR MERCADO PUBLICO"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 114,
-      "Fechas": {
-        "FechaCreacion": "2026-08-05T00:00:00",
-        "FechaCierre": "2026-08-20T12:00:00",
-        "FechaInicio": "2026-08-06T09:01:00",
-        "FechaFinal": "2026-08-12T12:00:00",
-        "FechaPubRespuestas": "2026-08-17T21:00:00",
-        "FechaActoAperturaTecnica": "2026-08-20T12:01:00",
-        "FechaActoAperturaEconomica": "2026-08-20T12:01:00",
-        "FechaPublicacion": "2026-08-06T08:53:42.213",
-        "FechaAdjudicacion": "2026-10-20T21:00:00",
-        "FechaEstimadaAdjudicacion": "2026-10-20T21:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "ILUSTRE MUNICIPALIDAD DE VILLA ALEMANA",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 20000000,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "TESORERIA MUNICIPAL",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "DAYAN PILAR",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "PRESUPUESTO DISPONIBLE 20.000.000- CON IVA INCLUIDO, FINANCIADO CON RECURSOS PROPIOS DE LA ILUSTRE MUNICIPALIDAD DE VILLA ALEMANA.",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 72102305,
-            "CodigoCategoria": "72102300",
-            "Categoria": "Servicios de construcción y mantenimiento / Servicios de atención, mantenimiento y reparaciones de edificios / Gasfitería, calefacción y aire acondicionado",
-            "NombreProducto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
-            "Descripcion": "MANTENCIÓN DE EQUIPOS DE AIRE ACONDICIONADO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787567161.4033794,
-    "fetchedAt": "2026-08-24T10:25:18.420804+00:00"
   },
   "2656-54-LE26": {
     "data": {
