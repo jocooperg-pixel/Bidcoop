@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-25T08:26:30.458150+00:00",
-  "ultimoIntentoRealizado": "2026-08-25T08:26:30.458150+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-25T10:18:36.177941+00:00",
+  "ultimoIntentoRealizado": "2026-08-25T10:18:36.177941+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1419,
-  "registrosConfirmados": 1419,
+  "registrosEnPlataforma": 1417,
+  "registrosConfirmados": 1417,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1131,
+  "registrosConMontoReal": 1128,
   "excluidosPrefiltroIrrelevante": 7093,
-  "excluidosSinDatosReales": 1,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 819,
-    "conMontoValido": 814,
+    "total": 816,
+    "conMontoValido": 811,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 814,
+      "VALIDADO": 811,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 315548623,
-    "montoFinalSum": 1328218577,
-    "montoRecuperadoSum": 1012669954
+    "montoOriginalSum": 313563124,
+    "montoFinalSum": 1324890480,
+    "montoRecuperadoSum": 1011327356
   },
   "categorias": {
-    "licitaciones": 596,
-    "comprasAgiles": 819,
+    "licitaciones": 597,
+    "comprasAgiles": 816,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
@@ -35,7 +35,7 @@
   "tiposOficiales": {
     "LP": 119,
     "CO": 12,
-    "LE": 363,
+    "LE": 364,
     "B2": 2,
     "L1": 61,
     "LR": 40,
@@ -43,17 +43,17 @@
     "I2": 3,
     "LS": 2,
     "O1": 4,
-    "COT": 807
+    "COT": 804
   },
   "matchPorEmpresa": {
-    "Aminorte": 1220,
-    "V-MOCCS": 199
+    "Aminorte": 1219,
+    "V-MOCCS": 198
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1037,
-    "modificadosCount": 130,
-    "cerradosCount": 943,
+    "nuevosCount": 1034,
+    "modificadosCount": 137,
+    "cerradosCount": 942,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -758,6 +758,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "885-75-LE26",
+        "titulo": "Servicios de mantención para los sistemas de climatización de precisión en datacenters institucionales en Santiago y Valparaíso",
+        "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 68000000,
+        "montoNuevo": 68000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3134-78-LE26",
         "titulo": "ADQUISICIÓN DE CUATRO 4 CÁMARAS TERMALES  CON ACCESORIOS PARA LA POLICÍA MARÍTIMA ",
         "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
@@ -868,9 +878,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-240-LE26",
-        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -878,9 +888,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1180740-6-LE26",
-        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -1038,6 +1048,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1093303-6-LE26",
+        "titulo": "PP 102.2026 adquisición equipo UPS más instalación puesta en marcha capacitación y mantenciones preventivas. E1O2RT9",
+        "organismo": "INSTITUTO DE SALUD PUBLICA DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 16000000,
+        "montoNuevo": 16000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2974-58-LE26",
         "titulo": "MANTENIMIENTO PREVENTIVO DE EQUIPOS DE AIRE ACONDICIONADO.1262026",
         "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
@@ -1175,26 +1195,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 6985300,
         "montoNuevo": 6985300,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2440-58-LE26",
-        "titulo": "Servicio ade Impresion  Fotocopiado y Scaner para los trece Jardines VTF de la RED Educativa Municipal",
-        "organismo": "I MUNICIPALIDAD DE CURICO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 5500000,
-        "montoNuevo": 5500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1344402-9-L126",
-        "titulo": "PLANCHAS LAMINADAS EN FRÍO PARA EL CREMATORIO DE CONCEPCION",
-        "organismo": "CORPORACION SOCIAL Y CULTURA DE CONCEPCION - SEMCO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 5000000,
-        "montoNuevo": 5000000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1878.8,
+  "tiempoEjecucionSegundos": 1696.1,
   "errores": [],
   "advertencias": []
 }
