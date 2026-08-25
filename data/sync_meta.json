@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-25T02:48:43.644114+00:00",
-  "ultimoIntentoRealizado": "2026-08-25T02:48:43.644114+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-25T04:25:59.594782+00:00",
+  "ultimoIntentoRealizado": "2026-08-25T04:25:59.594782+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1418,
-  "registrosConfirmados": 1418,
+  "registrosEnPlataforma": 1417,
+  "registrosConfirmados": 1417,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1130,
-  "excluidosPrefiltroIrrelevante": 7091,
-  "excluidosSinDatosReales": 1,
+  "registrosConMontoReal": 1129,
+  "excluidosPrefiltroIrrelevante": 7093,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 818,
-    "conMontoValido": 813,
+    "total": 819,
+    "conMontoValido": 814,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 813,
+      "VALIDADO": 814,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 187951749,
-    "montoFinalSum": 1328504072,
-    "montoRecuperadoSum": 1140552323
+    "montoOriginalSum": 187416254,
+    "montoFinalSum": 1328218577,
+    "montoRecuperadoSum": 1140802323
   },
   "categorias": {
-    "licitaciones": 596,
-    "comprasAgiles": 818,
+    "licitaciones": 594,
+    "comprasAgiles": 819,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 119,
+    "LP": 118,
     "CO": 12,
-    "LE": 363,
+    "LE": 362,
     "B2": 2,
     "L1": 61,
     "LR": 40,
@@ -43,17 +43,17 @@
     "I2": 3,
     "LS": 2,
     "O1": 4,
-    "COT": 806
+    "COT": 807
   },
   "matchPorEmpresa": {
     "Aminorte": 1215,
-    "V-MOCCS": 203
+    "V-MOCCS": 202
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
     "nuevosCount": 1036,
     "modificadosCount": 110,
-    "cerradosCount": 943,
+    "cerradosCount": 944,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -1188,9 +1188,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2744-29-LE26",
-        "titulo": "ADQ DE COMPUTADORES Y EQUIPOS PERIFERICOS CESFAM PIEDRA DEL AGUILA",
-        "organismo": "I MUNICIPALIDAD DE ANGOL",
+        "codigo": "1075963-340-LE26",
+        "titulo": "ADQUISICION DE APOSITOS BOLSAS PRESERVATIVO ELECTRODO PROTESIS HEMOCLIP HOJA DE SIERRA CIRCUITO DE VENTILACION  CONITOS BOLSA DRENABLE GUANTE NITRILO Y OTROS INSUMOS CLINICOS",
+        "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1414,6 +1414,14 @@
         "estadoAnterior": "Adjudicada",
         "monto": 80000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "539119-85-LP26",
+        "titulo": "SUMINISTRO POR LÍNEA DE ARTÍCULOS DE ESCRITORIO Y MATERIALES PEDAGÓGICOS PARA JARDINES INFANTILES ADMINISTRADOS POR EL DEPARTAMENTO DE PLANIFICACIÓN Y DESARROLLO SOCIAL B.6 DE LA DIRECCIÓN DE BIENESTAR DE CARABINEROS POR UN PERIODO 12 MESES.",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "monto": 78283150,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1216085-45-LP26",
@@ -1670,18 +1678,10 @@
         "estadoAnterior": "Cerrada",
         "monto": 25920000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2467-78-LE26",
-        "titulo": "ADQUISICIÓN DE COMPONENTES DE VIDEOWALL PARA VISUA",
-        "organismo": "I MUNICIPALIDAD DE CHILLAN",
-        "estadoAnterior": "Adjudicada",
-        "monto": 25450000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2312.1,
+  "tiempoEjecucionSegundos": 2036.4,
   "errores": [],
   "advertencias": []
 }
