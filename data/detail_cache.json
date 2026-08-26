@@ -179414,8 +179414,8 @@
         ]
       }
     },
-    "ts": 1787638941.6636887,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725512.8349767,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "2322-67-LE26": {
     "data": {
@@ -179530,8 +179530,8 @@
         ]
       }
     },
-    "ts": 1787638946.0485153,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725500.0680437,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "2343-18-LE26": {
     "data": {
@@ -291303,7 +291303,7 @@
         "NombreUsuario": "LAURA VALENZUELA MANCILLA",
         "CargoUsuario": "ANALISTA DE LICITACIONES"
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "12",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -291405,8 +291405,8 @@
         ]
       }
     },
-    "ts": 1787546035.69882,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725463.25251,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1049-65-CO26": {
     "data": {
@@ -291430,7 +291430,7 @@
         "NombreUsuario": "Diego Alejandro Rojas Constenla",
         "CargoUsuario": "Analista de licitaciones"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 3,
       "Tipo": "CO",
@@ -291510,8 +291510,8 @@
         ]
       }
     },
-    "ts": 1787546036.3095772,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725464.299662,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1057510-61-LE26": {
     "data": {
@@ -291626,8 +291626,8 @@
         ]
       }
     },
-    "ts": 1787638938.250991,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725499.168516,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1057545-96-LE26": {
     "data": {
@@ -291731,8 +291731,8 @@
         ]
       }
     },
-    "ts": 1787638937.2121978,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725511.7009008,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1075963-324-LE26": {
     "data": {
@@ -291898,10 +291898,10 @@
     "data": {
       "CodigoExterno": "1090-9-LE26",
       "Nombre": "ARRIENDO 4 OFICINAS MODULARES INSTALADAS EN  TALCA",
-      "CodigoEstado": 6,
+      "CodigoEstado": 8,
       "Descripcion": "E1O2RT9\r\nSIC 1657  SIRE 1440\r\nArriendo de 4 ofic. modulares, inst. en 5 Nte 1666, Talca, Oficinas deben contener, iluminac, enchufes, aire acond., 4 estac. de trabajo, protec. metálicas, cortinas roller, revestida de forro interior aislante, piso de fácil aseo. Detalle en Bases\r\nProyecto:PREVENCION DE EMPLEO TEMPORAL CON ENFOQUE AMBIENTAL Y SOCIAL PARA LA REGIÓN DEL MAULE.\r\nBIP 40.078.799-0",
       "FechaCierre": null,
-      "Estado": "Cerrada",
+      "Estado": "Adjudicada",
       "Comprador": {
         "CodigoOrganismo": "6924",
         "NombreOrganismo": "CORP NACIONAL FORESTAL",
@@ -291939,7 +291939,7 @@
         "FechaActoAperturaTecnica": "2026-08-20T16:00:00",
         "FechaActoAperturaEconomica": "2026-08-20T16:00:00",
         "FechaPublicacion": "2026-08-14T13:22:55.03",
-        "FechaAdjudicacion": "2026-08-27T15:10:00",
+        "FechaAdjudicacion": "2026-08-25T10:59:21.333",
         "FechaEstimadaAdjudicacion": "2026-08-27T15:10:00",
         "FechaSoporteFisico": null,
         "FechaTiempoEvaluacion": "1900-01-08T00:00:00",
@@ -291978,7 +291978,13 @@
       "PeriodoTiempoRenovacion": " ",
       "EsRenovable": 0,
       "CodigoBIP": null,
-      "Adjudicacion": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-08-25T00:00:00",
+        "Numero": "165",
+        "NumeroOferentes": 3,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=cgZZAYiRxIOslWbLJBG2e+MaDaStWr5L8L4cnrp3HZI="
+      },
       "Items": {
         "Cantidad": 1,
         "Listado": [
@@ -291991,13 +291997,18 @@
             "Descripcion": "Arriendo de 4 oficinas modulares, inst. en 5 Norte N° 1666, Talca, cada oficina debe contener, iluminación, enchufes, aire acondicionado, 4 estaciones de trabajo, protecciones metálicas, cortinas roller, revestida de forro interior aislante, según bases.",
             "UnidadMedida": "Mes",
             "Cantidad": 1,
-            "Adjudicacion": null
+            "Adjudicacion": {
+              "RutProveedor": "19.046.637-k",
+              "NombreProveedor": "MAURICIO ALEJANDRO PINTO PARRA",
+              "Cantidad": 1,
+              "MontoUnitario": 1300000
+            }
           }
         ]
       }
     },
-    "ts": 1787638951.096253,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725494.6077206,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1126922-33-LP26": {
     "data": {
@@ -292021,7 +292032,7 @@
         "NombreUsuario": "Andres Edgardo Canquil Canquil",
         "CargoUsuario": "Profesional Compras"
       },
-      "DiasCierreLicitacion": "14",
+      "DiasCierreLicitacion": "12",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -292034,7 +292045,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "0",
       "Obras": "0",
-      "CantidadReclamos": 63,
+      "CantidadReclamos": 64,
       "Fechas": {
         "FechaCreacion": "2026-08-18T00:00:00",
         "FechaCierre": "2026-09-07T15:01:00",
@@ -292101,8 +292112,8 @@
         ]
       }
     },
-    "ts": 1787546044.5857277,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725467.8399913,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1134432-67-LE26": {
     "data": {
@@ -292126,7 +292137,7 @@
         "NombreUsuario": "Sandra Fernández Fernández",
         "CargoUsuario": "Técnico Adquisiciones"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -292283,113 +292294,8 @@
         ]
       }
     },
-    "ts": 1787546047.9618785,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
-  },
-  "1155683-16-L126": {
-    "data": {
-      "CodigoExterno": "1155683-16-L126",
-      "Nombre": "“SERVICIO DE ARRIENDO DE 2 AIRES ACONDICIONADO INVERTER CON INSTALACIÓN POR UN PERIODO DE 12 MESES EN OFICINA CONAF ÑUBLE”",
-      "CodigoEstado": 5,
-      "Descripcion": "Se requiere contratar el Servicio de arriendo e instalación de 2 aires acondicionados invertir de 12.000 BTU, con eficiencia energética A+, para ser instalados en Oficina Regional CONAF Ñuble, según especificaciones incluidas en las presentes Bases únicas de licitación.",
-      "FechaCierre": null,
-      "Estado": "Publicada",
-      "Comprador": {
-        "CodigoOrganismo": "6924",
-        "NombreOrganismo": "CORP NACIONAL FORESTAL",
-        "RutUnidad": "61.313.000-4",
-        "CodigoUnidad": "1155683",
-        "NombreUnidad": "XVI - OFICINA REGIONAL DE ÑUBLE",
-        "DireccionUnidad": "Parcela N° 74 Base Brigada Forestal - Vivero de Alamos",
-        "ComunaUnidad": "Chillán",
-        "RegionUnidad": "Región del Ñuble",
-        "RutUsuario": "",
-        "CodigoUsuario": "1801236",
-        "NombreUsuario": "Pamela Paola Riquelme Sandoval",
-        "CargoUsuario": "Administrativa Sección Administración"
-      },
-      "DiasCierreLicitacion": "2",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "L1",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 778,
-      "Fechas": {
-        "FechaCreacion": "2026-08-12T13:38:20.71",
-        "FechaCierre": "2026-08-26T16:34:00",
-        "FechaInicio": "2026-08-19T12:29:22.983",
-        "FechaFinal": "2026-08-21T16:33:00",
-        "FechaPubRespuestas": "2026-08-24T18:33:00",
-        "FechaActoAperturaTecnica": "2026-08-26T16:36:00",
-        "FechaActoAperturaEconomica": "2026-08-26T16:36:00",
-        "FechaPublicacion": "2026-08-19T12:29:22.983",
-        "FechaAdjudicacion": "2026-08-28T15:34:00",
-        "FechaEstimadaAdjudicacion": "2026-08-28T15:34:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 2,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 2260000,
-      "Tiempo": null,
-      "UnidadTiempo": "2",
-      "Modalidad": 0,
-      "TipoPago": "-1",
-      "NombreResponsablePago": "",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 0,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "0",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "0",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 40101701,
-            "CodigoCategoria": "40101700",
-            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control de temperatura y ventilación / Enfriamiento",
-            "NombreProducto": "Aires acondicionados",
-            "Descripcion": "SERVICIO DE ARRIENDO E INSTALACIÓN DE 1 EQUIPOS DE AIRE ACONDICIONADO INVERTER 12.000 BTU, CON EFICIENCIA ENERGETICA (A) PARA EL DEPARTAMENTEO DEFF OFICINA CONAF ÑUBLE",
-            "UnidadMedida": "Mes",
-            "Cantidad": 24,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1787546048.9753869,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725471.2008924,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1246-1-LE26": {
     "data": {
@@ -292413,7 +292319,7 @@
         "NombreUsuario": "Marlene Zagal Igor",
         "CargoUsuario": "Encargada de compras"
       },
-      "DiasCierreLicitacion": "10",
+      "DiasCierreLicitacion": "8",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -292493,8 +292399,8 @@
         ]
       }
     },
-    "ts": 1787546052.3762643,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725475.2122703,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1377068-20-LE26": {
     "data": {
@@ -293721,8 +293627,8 @@
         ]
       }
     },
-    "ts": 1787638942.5137866,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725507.333558,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "2385-42-LE26": {
     "data": {
@@ -293746,7 +293652,7 @@
         "NombreUsuario": "PATRICIO ROMAN LEAÑO DIAZ",
         "CargoUsuario": "comprador"
       },
-      "DiasCierreLicitacion": "7",
+      "DiasCierreLicitacion": "5",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -293826,8 +293732,8 @@
         ]
       }
     },
-    "ts": 1787546057.4477115,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725476.7469459,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "2450-77-LE26": {
     "data": {
@@ -294074,8 +293980,8 @@
         ]
       }
     },
-    "ts": 1787638946.5866623,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725516.4093006,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "3453-78-LE26": {
     "data": {
@@ -294099,7 +294005,7 @@
         "NombreUsuario": "Judith Martinez Ortiz",
         "CargoUsuario": "Comprador"
       },
-      "DiasCierreLicitacion": "3",
+      "DiasCierreLicitacion": "1",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -294112,7 +294018,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 3459,
+      "CantidadReclamos": 3461,
       "Fechas": {
         "FechaCreacion": "2026-08-17T14:54:54.653",
         "FechaCierre": "2026-08-27T19:00:00",
@@ -294179,8 +294085,8 @@
         ]
       }
     },
-    "ts": 1787546065.1724272,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725480.572334,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "3775-28-LP26": {
     "data": {
@@ -294204,7 +294110,7 @@
         "NombreUsuario": "Cristian Briones Arraño",
         "CargoUsuario": "Profesional Secplan"
       },
-      "DiasCierreLicitacion": "15",
+      "DiasCierreLicitacion": "13",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -294284,8 +294190,8 @@
         ]
       }
     },
-    "ts": 1787546068.6242676,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725484.1883683,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "3836-32-LE26": {
     "data": {
@@ -294309,7 +294215,7 @@
         "NombreUsuario": "Alejandra Paola Araneda Luengo",
         "CargoUsuario": "Unidad Adquisiciones"
       },
-      "DiasCierreLicitacion": "4",
+      "DiasCierreLicitacion": "2",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -294389,8 +294295,8 @@
         ]
       }
     },
-    "ts": 1787546069.4387608,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725488.9468067,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "3933-42-L126": {
     "data": {
@@ -294494,8 +294400,8 @@
         ]
       }
     },
-    "ts": 1787638967.3860536,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725527.8561184,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "4623-3-LP26": {
     "data": {
@@ -294624,7 +294530,7 @@
         "NombreUsuario": "PATRICIA ANDREA MENÉNDEZ ZÚÑICA",
         "CargoUsuario": "Analista de Licitaciones"
       },
-      "DiasCierreLicitacion": "15",
+      "DiasCierreLicitacion": "13",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LP",
@@ -294704,8 +294610,8 @@
         ]
       }
     },
-    "ts": 1787546074.0810626,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725489.8307316,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "613-6-LE26": {
     "data": {
@@ -294729,7 +294635,7 @@
         "NombreUsuario": "CINDY CADAGAN REYES",
         "CargoUsuario": "SECCION ADMINISTRACION Y FINANZAS"
       },
-      "DiasCierreLicitacion": "3",
+      "DiasCierreLicitacion": "1",
       "Informada": 0,
       "CodigoTipo": 1,
       "Tipo": "LE",
@@ -294809,8 +294715,8 @@
         ]
       }
     },
-    "ts": 1787546074.9593792,
-    "fetchedAt": "2026-08-24T04:32:40.894547+00:00"
+    "ts": 1787725490.755261,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "640-2-LP26": {
     "data": {
@@ -295283,8 +295189,8 @@
         ]
       }
     },
-    "ts": 1787638947.3190436,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725503.7752433,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "934-14-LE26": {
     "data": {
@@ -310727,8 +310633,8 @@
         ]
       }
     },
-    "ts": 1787638951.9829333,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725518.4033022,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "2770-121-LE26": {
     "data": {
@@ -310832,8 +310738,8 @@
         ]
       }
     },
-    "ts": 1787638963.7761111,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725522.8420033,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "438-44-LE26": {
     "data": {
@@ -310937,8 +310843,8 @@
         ]
       }
     },
-    "ts": 1787638955.8327322,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725522.058188,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "776-25-LE26": {
     "data": {
@@ -311042,8 +310948,8 @@
         ]
       }
     },
-    "ts": 1787638968.3771622,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725529.385796,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "3335-27-LE26": {
     "data": {
@@ -311080,7 +310986,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "2",
       "Obras": "0",
-      "CantidadReclamos": 793,
+      "CantidadReclamos": 794,
       "Fechas": {
         "FechaCreacion": "2026-08-10T00:00:00",
         "FechaCierre": "2026-08-20T20:00:00",
@@ -311147,8 +311053,8 @@
         ]
       }
     },
-    "ts": 1787638956.4102216,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725517.6457665,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1012975-9-L126": {
     "data": {
@@ -416836,8 +416742,8 @@
         ]
       }
     },
-    "ts": 1787638960.0586243,
-    "fetchedAt": "2026-08-25T06:21:56.426680+00:00"
+    "ts": 1787725526.4194365,
+    "fetchedAt": "2026-08-26T06:23:58.806034+00:00"
   },
   "1200377-22-LE26": {
     "data": {

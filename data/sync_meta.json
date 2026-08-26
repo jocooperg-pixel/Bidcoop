@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-26T04:27:34.175886+00:00",
-  "ultimoIntentoRealizado": "2026-08-26T04:27:34.175886+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-26T06:23:58.806034+00:00",
+  "ultimoIntentoRealizado": "2026-08-26T06:23:58.806034+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1416,
-  "registrosConfirmados": 1416,
+  "registrosEnPlataforma": 1415,
+  "registrosConfirmados": 1415,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1134,
+  "registrosConMontoReal": 1133,
   "excluidosPrefiltroIrrelevante": 7199,
-  "excluidosSinDatosReales": 0,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 823,
@@ -21,12 +21,12 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 319610020,
-    "montoFinalSum": 1266835897,
-    "montoRecuperadoSum": 947225877
+    "montoOriginalSum": 298547921,
+    "montoFinalSum": 1268035897,
+    "montoRecuperadoSum": 969487976
   },
   "categorias": {
-    "licitaciones": 589,
+    "licitaciones": 588,
     "comprasAgiles": 823,
     "convenioMarco": 0,
     "ordenes_compra": 4,
@@ -37,7 +37,7 @@
     "CO": 13,
     "LE": 352,
     "B2": 3,
-    "L1": 60,
+    "L1": 59,
     "LR": 39,
     "E2": 5,
     "I2": 3,
@@ -46,12 +46,12 @@
     "COT": 810
   },
   "matchPorEmpresa": {
-    "Aminorte": 1215,
-    "V-MOCCS": 201
+    "Aminorte": 1213,
+    "V-MOCCS": 202
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1085,
+    "nuevosCount": 1084,
     "modificadosCount": 134,
     "cerradosCount": 994,
     "nuevos": [
@@ -858,9 +858,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1180740-6-LE26",
-        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -868,9 +868,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-240-LE26",
-        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2275.7,
+  "tiempoEjecucionSegundos": 2144.9,
   "errores": [],
   "advertencias": []
 }
