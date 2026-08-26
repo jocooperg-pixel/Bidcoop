@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-26T02:54:46.086353+00:00",
-  "ultimoIntentoRealizado": "2026-08-26T02:54:46.086353+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-26T04:27:34.175886+00:00",
+  "ultimoIntentoRealizado": "2026-08-26T04:27:34.175886+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1389,
-  "registrosConfirmados": 1389,
+  "registrosEnPlataforma": 1416,
+  "registrosConfirmados": 1416,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1107,
+  "registrosConMontoReal": 1134,
   "excluidosPrefiltroIrrelevante": 7199,
-  "excluidosSinDatosReales": 1,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 797,
-    "conMontoValido": 791,
-    "pctValidado": 99.2,
+    "total": 823,
+    "conMontoValido": 817,
+    "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 791,
+      "VALIDADO": 817,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 319837220,
-    "montoFinalSum": 1236622432,
-    "montoRecuperadoSum": 916785212
+    "montoOriginalSum": 319610020,
+    "montoFinalSum": 1266835897,
+    "montoRecuperadoSum": 947225877
   },
   "categorias": {
-    "licitaciones": 588,
-    "comprasAgiles": 797,
+    "licitaciones": 589,
+    "comprasAgiles": 823,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
@@ -38,22 +38,22 @@
     "LE": 352,
     "B2": 3,
     "L1": 60,
-    "LR": 38,
+    "LR": 39,
     "E2": 5,
     "I2": 3,
     "LS": 2,
     "O1": 4,
-    "COT": 784
+    "COT": 810
   },
   "matchPorEmpresa": {
-    "Aminorte": 1191,
-    "V-MOCCS": 198
+    "Aminorte": 1215,
+    "V-MOCCS": 201
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1059,
-    "modificadosCount": 132,
-    "cerradosCount": 995,
+    "nuevosCount": 1085,
+    "modificadosCount": 134,
+    "cerradosCount": 994,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -618,6 +618,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2307-36-LR26",
+        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "I MUNICIPALIDAD DE OSORNO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 418569330,
+        "montoNuevo": 418569330,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3929-53-LP26",
         "titulo": "SUSCRIPCIÓN DE LICENCIAS DE SOFTWARE DE DISEÑO ASISTIDO POR COMPUTADOR CAD",
         "organismo": "I MUNICIPALIDAD DE VINA DEL MAR",
@@ -848,9 +858,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-240-LE26",
-        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -858,9 +868,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1180740-6-LE26",
-        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -1186,16 +1196,6 @@
         "montoAnterior": 6985300,
         "montoNuevo": 6985300,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1196-14-L126",
-        "titulo": "Seguros incendio, sismo, inundación, tsunami, riesgos de la naturaleza, riesgos políticos , robos , incluye el resguardo de muebles, equipos y máquinas de todo el edificio CER",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 6350000,
-        "montoNuevo": 6350000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1261,14 +1261,6 @@
         "organismo": "CENTRO DE REFERENCIA DE SALUD HOSPITAL PROVINCIA CORDILLERA",
         "estadoAnterior": "Adjudicada",
         "monto": 537500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2307-36-LR26",
-        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
-        "organismo": "I MUNICIPALIDAD DE OSORNO",
-        "estadoAnterior": "Publicada",
-        "monto": 418569330,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Cerrada",
         "monto": 35286141,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1079969-17-LE26",
+        "titulo": "SERVICIO DE ARRIENDO POR 12 MESES DE 03 IMPRESORAS",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Adjudicada",
+        "monto": 33843600,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2681.9,
+  "tiempoEjecucionSegundos": 2275.7,
   "errores": [],
   "advertencias": []
 }
