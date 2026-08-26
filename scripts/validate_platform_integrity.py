@@ -1,61 +1,67 @@
 #!/usr/bin/env python3
-"""
-Validador Automático de Integridad de Datos para BidCoop.
-Ejecuta pruebas de sanidad y consistencia sobre mockData.ts contra Mercado Público:
-  1. Ground-Truth 1001-11-COT26: Retiro, traslado e instalación de equipos de aire acondicionado.
-  2. Ground-Truth 1006-16-COT26: Adquisición de Insumos y Servicios de Impresión y Corte Laser ($1.066.239 CLP -> LASER CHILE SPA).
-  3. Cero duplicados de códigos y consistencia de postulaciones.
-"""
+"""Valida la estructura y consistencia del dataset vigente de BidCoop."""
 
-import sys
 import json
+import os
 import re
+import sys
+from collections import Counter
+
+
+PROJECT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MOCK_DATA_FILE = os.path.join(PROJECT_PATH, "src", "app", "mockData.ts")
+META_FILE = os.path.join(PROJECT_PATH, "data", "sync_meta.json")
+
+
+def load_dataset(content):
+    marker = "const rawOportunidades: any = "
+    start = content.index(marker) + len(marker)
+    end = content.index("];", start) + 1
+    return json.loads(content[start:end])
 
 def validate():
     print("🔍 Iniciando Validador de Integridad de Datos de BidCoop...")
     
-    file_path = "/Users/jonathancooper/Documents/Plataforma Avanzada de Abastecimiento/src/app/mockData.ts"
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(MOCK_DATA_FILE, "r", encoding="utf-8") as f:
         content = f.read()
-
+    dataset = load_dataset(content)
     errors = []
-    
-    # 1. VERIFICAR GROUND-TRUTH 1001-11-COT26
-    if "1001-11-COT26" in content:
-        if "Retiro, traslado e instalación de equipos de aire acondicionado" not in content:
-            errors.append("❌ FAIL: El título de 1001-11-COT26 no coincide con Mercado Público ('Retiro, traslado e instalación de equipos de aire acondicionado')")
-        else:
-            print("✅ PASS: Ground-Truth 1001-11-COT26 ('Retiro, traslado e instalación de equipos de aire acondicionado') verificado.")
-    else:
-        errors.append("❌ FAIL: No se encontró la Compra Ágil 1001-11-COT26 en mockData.ts")
 
-    # 2. VERIFICAR GROUND-TRUTH 1006-16-COT26
-    if "1006-16-COT26" in content:
-        if "1066239" not in content:
-            errors.append("❌ FAIL: El monto de 1006-16-COT26 en mockData.ts no es $1.066.239 CLP")
-        if "LASER CHILE SPA" not in content:
-            errors.append("❌ FAIL: El adjudicatario de 1006-16-COT26 no es LASER CHILE SPA")
-        print("✅ PASS: Ground-Truth 1006-16-COT26 ($1.066.239 CLP -> LASER CHILE SPA) verificado.")
-    else:
-        errors.append("❌ FAIL: No se encontró la Compra Ágil 1006-16-COT26 en mockData.ts")
+    if not dataset:
+        errors.append("❌ FAIL: El dataset de oportunidades está vacío")
 
-    # 3. VERIFICAR QUE NO EXISTA 1006-16-COT26 EN MOCKPOSTULACIONES
-    postulaciones_match = re.search(r'export const mockPostulaciones: Postulacion\[\] = \[(.*?)\];', content, re.DOTALL)
-    if postulaciones_match:
-        postulaciones_block = postulaciones_match.group(1)
-        if "1006-16-COT26" in postulaciones_block:
-            errors.append("❌ FAIL: 1006-16-COT26 está erróneamente incluida en mockPostulaciones")
-        else:
-            print("✅ PASS: 1006-16-COT26 aislada correctamente fuera de postulaciones holding.")
+    codes = [item.get("codigo") for item in dataset]
+    missing_codes = sum(code in (None, "") for code in codes)
+    duplicate_counts = Counter(code for code in codes if code)
+    duplicates = sorted(code for code, count in duplicate_counts.items() if count > 1)
+    if missing_codes:
+        errors.append(f"❌ FAIL: {missing_codes} registros no tienen código oficial")
+    if duplicates:
+        errors.append(f"❌ FAIL: Hay códigos duplicados: {', '.join(duplicates[:10])}")
 
-    # 4. COMPROBAR RESULTADO
+    malformed = [code for code in codes if code and not re.fullmatch(r"[A-Za-z0-9]+(?:-[A-Za-z0-9]+)+", code)]
+    if malformed:
+        errors.append(f"❌ FAIL: Hay códigos con formato inválido: {', '.join(malformed[:10])}")
+
+    required_fields = ("codigo", "officialCode", "titulo", "organismo", "tipoOficial", "empresaMatch", "sourceUrl")
+    incomplete = [item.get("codigo", "SIN-CODIGO") for item in dataset if any(item.get(field) in (None, "") for field in required_fields)]
+    if incomplete:
+        errors.append(f"❌ FAIL: {len(incomplete)} registros carecen de campos obligatorios")
+
+    if os.path.isfile(META_FILE):
+        with open(META_FILE, encoding="utf-8") as f:
+            meta = json.load(f)
+        expected = meta.get("registrosEnPlataforma")
+        if expected is not None and expected != len(dataset):
+            errors.append(f"❌ FAIL: sync_meta registra {expected}, pero mockData.ts contiene {len(dataset)} oportunidades")
+
     if errors:
         print("\n❌ ERRORES DETECTADOS DE INTEGRIDAD:")
         for err in errors:
             print(f"   {err}")
         sys.exit(1)
     else:
-        print("\n🎉 INTEGRIDAD 100% VERIFICADA SIN ERRORES CONTRA MERCADO PÚBLICO.")
+        print(f"\n🎉 INTEGRIDAD VERIFICADA: {len(dataset)} oportunidades, códigos únicos y metadatos consistentes.")
         sys.exit(0)
 
 if __name__ == "__main__":

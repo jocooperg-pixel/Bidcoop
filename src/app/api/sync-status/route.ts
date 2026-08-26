@@ -42,20 +42,20 @@ export async function GET() {
 
     // Determinar estado de salud del sistema según las reglas de Bidcoop
     let estadoSalud: '🟢 OPERATIVO' | '🟡 CON PROBLEMAS' | '🔴 SIN ACTUALIZACIÓN' = '🟢 OPERATIVO';
-    let detalleSalud = 'Sincronización en régimen normal cada 3 horas (24/7).';
+    let detalleSalud = 'Sincronización en régimen normal cada 2 horas (24/7).';
 
     if (horasDesdeUltimaSync === null || horasDesdeUltimaSync > 6) {
       estadoSalud = '🔴 SIN ACTUALIZACIÓN';
       detalleSalud = `Alerta: Más de ${horasDesdeUltimaSync || 'N/D'} horas sin sincronización exitosa. API de Mercado Público requiere revisión.`;
-    } else if (horasDesdeUltimaSync > 3.5 || meta.errores?.length > 0) {
+    } else if (horasDesdeUltimaSync > 2.5 || meta.errores?.length > 0) {
       estadoSalud = '🟡 CON PROBLEMAS';
       detalleSalud = 'Advertencia: Reintentos de sincronización ejecutados o ligera demora en la API oficial.';
     }
 
-    // Calcular próxima sincronización estimada (+3 horas)
+    // Calcular próxima sincronización estimada (+2 horas)
     let proximaSincronizacion: string | null = null;
     if (meta.ultimaSincronizacionExitosa) {
-      const nextSyncDate = new Date(new Date(meta.ultimaSincronizacionExitosa).getTime() + 3 * 3600000);
+      const nextSyncDate = new Date(new Date(meta.ultimaSincronizacionExitosa).getTime() + 2 * 3600000);
       proximaSincronizacion = nextSyncDate.toISOString();
     }
 
@@ -66,12 +66,12 @@ export async function GET() {
       estadoSalud,
       detalleSalud,
       fuenteOficial: 'Mercado Público / ChileCompra',
-      frecuenciaConfigurada: 'Cada 3 horas (24/7)',
+      frecuenciaConfigurada: 'Cada 2 horas (24/7)',
       minutosDesdeUltimaSync,
       horasDesdeUltimaSync,
       proximaSincronizacion,
       fechaHoraChile,
-      syncAtrasada: horasDesdeUltimaSync !== null && horasDesdeUltimaSync > 3.5,
+      syncAtrasada: horasDesdeUltimaSync !== null && horasDesdeUltimaSync > 2.5,
       timestampConsulta: new Date().toISOString()
     });
 
