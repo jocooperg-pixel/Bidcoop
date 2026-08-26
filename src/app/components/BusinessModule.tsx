@@ -38,7 +38,13 @@ export default function BusinessModule({
   // objeto parcial reconstruido desde una postulación cuya oportunidad ya no
   // está en el sync (por eso todos los campos de Oportunidad son opcionales
   // salvo id/codigo).
-  type KanbanItem = Partial<Oportunidad> & { id: string; codigo: string };
+  type KanbanItem = Partial<Oportunidad> & {
+    id: string;
+    codigo: string;
+    responsable?: string;
+    proximaAccion?: string;
+    fechaProximaAccion?: string;
+  };
 
   const [currentSub, setCurrentSub] = useState(activeSubSection || 'mis-negocios');
 
@@ -127,6 +133,31 @@ export default function BusinessModule({
     });
   }, [postulaciones, activeCompany, filterCompany, filterModality]);
 
+  const trackingStats = useMemo(() => {
+    const now = new Date();
+    const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    const nextSevenDays = todayStart + (7 * 86400000);
+    const active = filteredPostulaciones.filter(p => p.estado !== 'Adjudicada' && p.estado !== 'Rechazada');
+
+    let vencidas = 0;
+    let proximosSieteDias = 0;
+    let sinPlan = 0;
+    let alDia = 0;
+
+    active.forEach(p => {
+      if (!p.proximaAccion || !p.fechaProximaAccion) {
+        sinPlan += 1;
+        return;
+      }
+      const actionDate = new Date(`${p.fechaProximaAccion}T23:59:59`).getTime();
+      if (actionDate < todayStart) vencidas += 1;
+      else if (actionDate <= nextSevenDays) proximosSieteDias += 1;
+      else alDia += 1;
+    });
+
+    return { vencidas, proximosSieteDias, sinPlan, alDia };
+  }, [filteredPostulaciones]);
+
   // Statistics for Compras Ágiles Aminorte
   const statsAgilAminorte = useMemo(() => {
     const list = postulaciones.filter(p => {
@@ -214,7 +245,13 @@ export default function BusinessModule({
     const borradorPosts = companyPosts.filter(p => p.estado === 'Borrador');
     const borradorItems = borradorPosts.map(p => {
       const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
-      return op ? { ...op, estado: 'Borrador' } : {
+      return op ? {
+        ...op,
+        estado: 'Borrador',
+        responsable: p.responsable,
+        proximaAccion: p.proximaAccion,
+        fechaProximaAccion: p.fechaProximaAccion
+      } : {
         id: p.id,
         codigo: p.oportunidadCodigo || p.id,
         titulo: p.oportunidadTitulo,
@@ -222,7 +259,10 @@ export default function BusinessModule({
         monto: p.montoOferta,
         empresaMatch: p.empresaMatch,
         matchScore: 90,
-        estado: 'Borrador'
+        estado: 'Borrador',
+        responsable: p.responsable,
+        proximaAccion: p.proximaAccion,
+        fechaProximaAccion: p.fechaProximaAccion
       };
     });
 
@@ -230,7 +270,13 @@ export default function BusinessModule({
     const enviadasPosts = companyPosts.filter(p => p.estado === 'Enviada');
     const abiertasItems = enviadasPosts.map(p => {
       const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
-      return op ? { ...op, estado: 'Enviada' } : {
+      return op ? {
+        ...op,
+        estado: 'Enviada',
+        responsable: p.responsable,
+        proximaAccion: p.proximaAccion,
+        fechaProximaAccion: p.fechaProximaAccion
+      } : {
         id: p.id,
         codigo: p.oportunidadCodigo || p.id,
         titulo: p.oportunidadTitulo,
@@ -238,7 +284,10 @@ export default function BusinessModule({
         monto: p.montoOferta,
         empresaMatch: p.empresaMatch,
         matchScore: 92,
-        estado: 'Enviada'
+        estado: 'Enviada',
+        responsable: p.responsable,
+        proximaAccion: p.proximaAccion,
+        fechaProximaAccion: p.fechaProximaAccion
       };
     });
 
@@ -248,7 +297,13 @@ export default function BusinessModule({
     const cerradasMap = new Map();
     [...cerradasOps, ...evaluacionPosts.map(p => {
       const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
-      return op ? { ...op, estado: 'En Evaluación' } : {
+      return op ? {
+        ...op,
+        estado: 'En Evaluación',
+        responsable: p.responsable,
+        proximaAccion: p.proximaAccion,
+        fechaProximaAccion: p.fechaProximaAccion
+      } : {
         id: p.id,
         codigo: p.oportunidadCodigo || p.id,
         titulo: p.oportunidadTitulo,
@@ -256,7 +311,10 @@ export default function BusinessModule({
         monto: p.montoOferta,
         empresaMatch: p.empresaMatch,
         matchScore: 94,
-        estado: 'En Evaluación'
+        estado: 'En Evaluación',
+        responsable: p.responsable,
+        proximaAccion: p.proximaAccion,
+        fechaProximaAccion: p.fechaProximaAccion
       };
     })].forEach(item => {
       if (item && (item.codigo || item.id)) cerradasMap.set(item.codigo || item.id, item);
@@ -269,7 +327,13 @@ export default function BusinessModule({
     const publicadosMap = new Map();
     [...adjudicadasOps, ...adjudicadasPosts.map(p => {
       const op = oportunidades.find(o => o.codigo === p.oportunidadCodigo || o.id === p.oportunidadId);
-      return op ? { ...op, estado: 'Adjudicada' } : {
+      return op ? {
+        ...op,
+        estado: 'Adjudicada',
+        responsable: p.responsable,
+        proximaAccion: p.proximaAccion,
+        fechaProximaAccion: p.fechaProximaAccion
+      } : {
         id: p.id,
         codigo: p.oportunidadCodigo || p.id,
         titulo: p.oportunidadTitulo,
@@ -277,7 +341,10 @@ export default function BusinessModule({
         monto: p.montoOferta,
         empresaMatch: p.empresaMatch,
         matchScore: 98,
-        estado: 'Adjudicada'
+        estado: 'Adjudicada',
+        responsable: p.responsable,
+        proximaAccion: p.proximaAccion,
+        fechaProximaAccion: p.fechaProximaAccion
       };
     })].forEach(item => {
       if (item && (item.codigo || item.id)) publicadosMap.set(item.codigo || item.id, item);
@@ -514,6 +581,24 @@ export default function BusinessModule({
                           {item.organismo}
                         </p>
 
+                        {(item.responsable || item.proximaAccion) && (
+                          <div className="rounded-lg bg-slate-50 dark:bg-slate-800/70 px-2.5 py-2 space-y-1">
+                            {item.responsable && (
+                              <p className="text-[9px] font-bold text-slate-500 dark:text-slate-400 truncate">
+                                👤 {item.responsable}
+                              </p>
+                            )}
+                            <p className={`text-[9px] font-bold line-clamp-2 ${
+                              item.fechaProximaAccion && new Date(`${item.fechaProximaAccion}T23:59:59`).getTime() < Date.now()
+                                ? 'text-red-600 dark:text-red-400'
+                                : 'text-blue-700 dark:text-blue-300'
+                            }`}>
+                              {item.proximaAccion ? `➡️ ${item.proximaAccion}` : '➡️ Sin próxima acción'}
+                              {item.fechaProximaAccion ? ` · ${new Date(`${item.fechaProximaAccion}T12:00:00`).toLocaleDateString('es-CL')}` : ''}
+                            </p>
+                          </div>
+                        )}
+
                         <div className="flex justify-between items-center pt-2 border-t border-slate-100 dark:border-slate-800">
                           <span className="font-black text-slate-900 dark:text-white text-xs">
                             ${(item.monto || 0).toLocaleString('es-CL')} CLP
@@ -537,6 +622,23 @@ export default function BusinessModule({
           ======================================================================= */}
       {currentSub === 'postulaciones' && (
         <div className="space-y-5">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+            {[
+              { label: 'Acciones vencidas', value: trackingStats.vencidas, icon: '⚠️', tone: 'border-red-200 bg-red-50 text-red-700 dark:border-red-900 dark:bg-red-950/30 dark:text-red-300' },
+              { label: 'Próximos 7 días', value: trackingStats.proximosSieteDias, icon: '📅', tone: 'border-amber-200 bg-amber-50 text-amber-700 dark:border-amber-900 dark:bg-amber-950/30 dark:text-amber-300' },
+              { label: 'Sin plan definido', value: trackingStats.sinPlan, icon: '📝', tone: 'border-slate-200 bg-slate-50 text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300' },
+              { label: 'Seguimiento al día', value: trackingStats.alDia, icon: '✅', tone: 'border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-900 dark:bg-emerald-950/30 dark:text-emerald-300' }
+            ].map(stat => (
+              <div key={stat.label} className={`rounded-2xl border p-4 ${stat.tone}`}>
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-[10px] font-black uppercase tracking-wide">{stat.label}</span>
+                  <span>{stat.icon}</span>
+                </div>
+                <span className="text-2xl font-black block mt-1">{stat.value}</span>
+              </div>
+            ))}
+          </div>
+
           {/* AMINORTE COMPRAS ÁGILES SUMMARY HERO CARD */}
           <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 border border-blue-500/40 rounded-2xl p-5 text-white shadow-xl relative overflow-hidden space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 relative z-10 border-b border-blue-500/30 pb-3">
@@ -781,6 +883,24 @@ export default function BusinessModule({
                                   />
                                 </label>
                               </div>
+                              {p.historialSeguimiento && p.historialSeguimiento.length > 0 && (
+                                <div className="mt-4 border-t border-blue-100 dark:border-blue-900/60 pt-3">
+                                  <p className="text-[10px] font-black uppercase text-slate-500 mb-2">Historial reciente</p>
+                                  <div className="space-y-2 max-h-36 overflow-y-auto">
+                                    {p.historialSeguimiento.slice(-5).reverse().map((evento, index) => (
+                                      <div key={`${evento.fecha}-${index}`} className="rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-3 py-2">
+                                        <div className="flex flex-wrap items-center justify-between gap-2 text-[9px] text-slate-400 font-bold">
+                                          <span>{evento.usuario}</span>
+                                          <span>{new Date(evento.fecha).toLocaleString('es-CL')}</span>
+                                        </div>
+                                        <p className="text-[10px] text-slate-600 dark:text-slate-300 mt-1">
+                                          {evento.cambios.join(' · ')}
+                                        </p>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
                               <div className="flex justify-end gap-2 mt-3">
                                 <button
                                   onClick={() => setEditingPostulacionId(null)}
