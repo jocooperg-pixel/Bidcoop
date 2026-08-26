@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-26T14:32:13.403764+00:00",
-  "ultimoIntentoRealizado": "2026-08-26T14:32:13.403764+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-26T16:39:44.234802+00:00",
+  "ultimoIntentoRealizado": "2026-08-26T16:39:44.234802+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1420,
-  "registrosConfirmados": 1420,
+  "registrosEnPlataforma": 1583,
+  "registrosConfirmados": 1583,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1136,
-  "excluidosPrefiltroIrrelevante": 7316,
-  "excluidosSinDatosReales": 10,
+  "registrosConMontoReal": 1294,
+  "excluidosPrefiltroIrrelevante": 7467,
+  "excluidosSinDatosReales": 8,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 827,
-    "conMontoValido": 821,
-    "pctValidado": 99.3,
+    "total": 975,
+    "conMontoValido": 969,
+    "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 821,
+      "VALIDADO": 969,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
     "montoOriginalSum": 298547921,
-    "montoFinalSum": 1280775897,
-    "montoRecuperadoSum": 982227976
+    "montoFinalSum": 1498345578,
+    "montoRecuperadoSum": 1199797657
   },
   "categorias": {
-    "licitaciones": 590,
-    "comprasAgiles": 827,
+    "licitaciones": 605,
+    "comprasAgiles": 975,
     "convenioMarco": 0,
     "ordenes_compra": 3,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 124,
+    "LP": 125,
     "CO": 13,
-    "LE": 351,
+    "LE": 363,
     "B2": 3,
-    "L1": 63,
+    "L1": 65,
     "LR": 39,
     "E2": 5,
     "I2": 3,
     "LS": 2,
     "O1": 3,
-    "COT": 814
+    "COT": 962
   },
   "matchPorEmpresa": {
-    "Aminorte": 1218,
-    "V-MOCCS": 202
+    "Aminorte": 1360,
+    "V-MOCCS": 223
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1092,
-    "modificadosCount": 132,
-    "cerradosCount": 997,
+    "nuevosCount": 1253,
+    "modificadosCount": 134,
+    "cerradosCount": 995,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -171,6 +171,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-11T15:00:00"
+      },
+      {
+        "codigo": "2409-53-LP26",
+        "titulo": "MEJORAMIENTO DE SISTEMA DE CLIMATIZACIÓN PARA ESTABLECIMIENTOS EDUCACIONALES",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "monto": 230000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-15T15:00:00"
       },
       {
         "codigo": "1049-64-LP26",
@@ -416,6 +425,15 @@
         "fechaCierre": "2026-08-31T16:30:00"
       },
       {
+        "codigo": "1754-37-LE26",
+        "titulo": "ADQUISICION POLIZAS DE SEGURO SOAP Y MONITOREO GPS",
+        "organismo": "Departamento de Salud Parral",
+        "monto": 60000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-04T12:00:00"
+      },
+      {
         "codigo": "2446-207-LE26",
         "titulo": "ADQ. E INST. CÁMARAS TELEPROTECCIÓN LA PAMPILLA",
         "organismo": "I MUNICIPALIDAD DE COQUIMBO",
@@ -497,15 +515,6 @@
         "fechaCierre": "2026-09-07T16:00:00"
       },
       {
-        "codigo": "3506-87-LE26",
-        "titulo": "MEJORAMIENTO MOBILIARIO URBANO CALETA BOY TOCOPILLA",
-        "organismo": "I MUNICIPALIDAD DE TOCOPILLA",
-        "monto": 35000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-02T15:00:00"
-      },
-      {
         "codigo": "2409-26-LE26",
         "titulo": "ADQ. TEXTOS CON CUADERNOS DE TRABAJO PARA ESTUDIANTES DE ESCUELA ESPAÑA ",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -522,6 +531,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 90,
         "fechaCierre": "2026-09-04T13:30:00"
+      },
+      {
+        "codigo": "2460-57-LE26",
+        "titulo": "Adquisición de Insumos y Artículos de Oficina",
+        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "monto": 33807177,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-06-23T16:00:00"
       },
       {
         "codigo": "707420-20-LE26",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-07-20T15:00:00"
-      },
-      {
-        "codigo": "1611-12-LE26",
-        "titulo": "1394 DPC ESR ESTUDIO FONDO CONCURSABLE 2026",
-        "organismo": "Servicio Nacional del Consumidor - SERNAC",
-        "monto": 31093300,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-06T15:00:00"
-      },
-      {
-        "codigo": "1072229-36-LE26",
-        "titulo": "ADQUISICIÓN DE “INSUMOS DE ASEO Y ELEMENTOS DE PROTECCION PARA JARDINES INFANTILES SALAS CUNA Y OFICINA REGIONAL DE FUNDACIÓN INTEGRA ÑUBLE”",
-        "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-27T15:00:00"
       }
     ],
     "modificados": [
@@ -848,9 +848,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-240-LE26",
-        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -858,9 +858,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1180740-6-LE26",
-        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -958,6 +958,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "316-47-LE26",
+        "titulo": "MANTENCIÓN DE EQUIPOS DE AIRE ACONDICIONADO",
+        "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 20000000,
+        "montoNuevo": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3561-35-LE26",
         "titulo": "ADQUISICIÓN DE DISPOSITIVOS AUDITIVOS AUDIFONOS PARA PACIENTES BENEFICIARIOS",
         "organismo": "I MUNICIPALIDAD DE LA CALERA",
@@ -968,9 +978,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1029940-11-LE26",
-        "titulo": "Estudio sobre buenas prácticas",
-        "organismo": "SUBSECRETARIA DEL PATRIMONIO CULTURAL",
+        "codigo": "608897-50-LE26",
+        "titulo": "DESARROLLO DE UN PLAN DE MONITOREO DE FUENTES DIFUSAS EN LA CUENCA DEL LAGO VILLARRICA REGIÓN DE LA ARAUCANÍA",
+        "organismo": "SUBSECRETARIA DEL MEDIO AMBIENTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 18000000,
@@ -978,9 +988,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "608897-50-LE26",
-        "titulo": "DESARROLLO DE UN PLAN DE MONITOREO DE FUENTES DIFUSAS EN LA CUENCA DEL LAGO VILLARRICA REGIÓN DE LA ARAUCANÍA",
-        "organismo": "SUBSECRETARIA DEL MEDIO AMBIENTE",
+        "codigo": "1029940-11-LE26",
+        "titulo": "Estudio sobre buenas prácticas",
+        "organismo": "SUBSECRETARIA DEL PATRIMONIO CULTURAL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 18000000,
@@ -1185,16 +1195,6 @@
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 6350000,
         "montoNuevo": 6350000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1110404-148-L126",
-        "titulo": "ADQUISICION DE IMPRESORAS PARA ESCUELA CARLOS CONDELL DE LA HAZA, ESTABLECIMIENTO PERTENECIENTE AL SLEP CHINCHORRO",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 6000000,
-        "montoNuevo": 6000000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 284.1,
+  "tiempoEjecucionSegundos": 1674.4,
   "errores": [],
   "advertencias": []
 }
