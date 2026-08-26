@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-26T19:27:37.329727+00:00",
-  "ultimoIntentoRealizado": "2026-08-26T19:27:37.329727+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-26T22:32:22.847911+00:00",
+  "ultimoIntentoRealizado": "2026-08-26T22:32:22.847911+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1605,
-  "registrosConfirmados": 1605,
+  "registrosEnPlataforma": 1367,
+  "registrosConfirmados": 1367,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1307,
-  "excluidosPrefiltroIrrelevante": 7606,
-  "excluidosSinDatosReales": 1,
+  "registrosConMontoReal": 1061,
+  "excluidosPrefiltroIrrelevante": 7833,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 975,
-    "conMontoValido": 969,
-    "pctValidado": 99.4,
+    "total": 718,
+    "conMontoValido": 711,
+    "pctValidado": 99.0,
     "stats": {
-      "VALIDADO": 969,
+      "VALIDADO": 711,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 6
+      "MONTO_NO_ENCONTRADO": 7
     },
-    "montoOriginalSum": 298547921,
-    "montoFinalSum": 1498345578,
-    "montoRecuperadoSum": 1199797657
+    "montoOriginalSum": 178823307,
+    "montoFinalSum": 1236358844,
+    "montoRecuperadoSum": 1057535537
   },
   "categorias": {
-    "licitaciones": 626,
-    "comprasAgiles": 975,
+    "licitaciones": 644,
+    "comprasAgiles": 718,
     "convenioMarco": 0,
-    "ordenes_compra": 4,
+    "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 131,
-    "CO": 13,
-    "LE": 370,
+    "LP": 134,
+    "CO": 14,
+    "LE": 381,
     "B2": 3,
-    "L1": 74,
+    "L1": 76,
     "E2": 5,
     "I2": 3,
-    "LR": 38,
+    "LR": 40,
     "LS": 2,
-    "O1": 4,
-    "COT": 962
+    "O1": 5,
+    "COT": 704
   },
   "matchPorEmpresa": {
-    "Aminorte": 1379,
-    "V-MOCCS": 226
+    "Aminorte": 1153,
+    "V-MOCCS": 214
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1271,
-    "modificadosCount": 140,
-    "cerradosCount": 991,
+    "nuevosCount": 1031,
+    "modificadosCount": 143,
+    "cerradosCount": 989,
     "nuevos": [
       {
         "codigo": "1057539-85-LR26",
@@ -81,6 +81,24 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-07-15T16:00:00"
+      },
+      {
+        "codigo": "885-45-LR26",
+        "titulo": "Adquisición de servidores para plataforma CGR",
+        "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
+        "monto": 450000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-06-23T16:00:00"
+      },
+      {
+        "codigo": "2446-242-LR26",
+        "titulo": "ADQ E INST. DE CÁMARAS TELEVIGILANCIA T. BLANCAS",
+        "organismo": "I MUNICIPALIDAD DE COQUIMBO",
+        "monto": 400000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-28T15:30:00"
       },
       {
         "codigo": "2126-135-LR26",
@@ -144,6 +162,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-25T15:00:00"
+      },
+      {
+        "codigo": "2770-46-LP26",
+        "titulo": "SUMINISTRO INSTALACIÓN Y MANTENIMIENTO DE CLIMATIZACIÓN PARA EL EDIFICIO SMAPA",
+        "organismo": "I MUNICIPALIDAD DE MAIPU",
+        "monto": 241000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-05-04T15:01:00"
       },
       {
         "codigo": "2494-79-LP26",
@@ -269,7 +296,7 @@
         "monto": 140000000,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-09-08T17:30:00"
+        "fechaCierre": "2026-09-09T17:30:00"
       },
       {
         "codigo": "2109-10-LP26",
@@ -567,33 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-10T15:00:00"
-      },
-      {
-        "codigo": "2416-22-LE26",
-        "titulo": "SERVICIO DE PRODUCCIÓN DE EVENTOS PARA ACTIVIDADES DE LA OFICINA DE PERSONAS MAYORES 2026",
-        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
-        "monto": 33000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 98,
-        "fechaCierre": "2026-08-31T15:00:00"
-      },
-      {
-        "codigo": "618-9-LE26",
-        "titulo": "SERVICIO DE TRASLADO DE BIENES MUEBLES DE CORFO EN LA REGIÓN METROPOLITANA.",
-        "organismo": "CORPORACION DE FOMENTO DE LA PRODUCCION",
-        "monto": 33000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-06-26T12:00:00"
-      },
-      {
-        "codigo": "2460-89-LE26",
-        "titulo": "Adquisición de Ropa de oficina institucional  verano 2026-27",
-        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
-        "monto": 32280000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-10T17:00:00"
       }
     ],
     "modificados": [
@@ -868,9 +868,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-240-LE26",
-        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -878,9 +878,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1180740-6-LE26",
-        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -1138,6 +1138,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1499-174-LE26",
+        "titulo": "SAM SERVICIO DE DESARMADO TRASLADO Y ARMADO DE KARDEX VERTICAL MARCA GRIFOLS MODELO SYS 12012",
+        "organismo": "INSTITUTO NACIONAL DEL TORAX",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 8400000,
+        "montoNuevo": 8400000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "2710-50-LE26",
         "titulo": "EXÁMENES DE MONITOREO  DE PRESIÓN ARTERIAL",
         "organismo": "MUNICIPALIDAD DE OVALLE",
@@ -1158,6 +1168,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "5642-15-LE26",
+        "titulo": "PROD. GENERAL MEMORIA Y DD.HH. 2026 ARICA",
+        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 7500000,
+        "montoNuevo": 7500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "898-156-LE26",
         "titulo": "Suministro e instalacion mampara puerta corredera",
         "organismo": "SERVICIO DE SALUD VALPARAISO SAN ANTONIO",
@@ -1175,26 +1195,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 7200000,
         "montoNuevo": 7200000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4055-55-L126",
-        "titulo": "ADQUISICIÓN DE SILLAS DE SALÓN DAF",
-        "organismo": "I MUNICIPALIDAD DE YUMBEL",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 7000000,
-        "montoNuevo": 7000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1725-186-LE26",
-        "titulo": "ADQUISICION UPS DE 10 KVA PARA MINISTERIO CULTURA",
-        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 7000000,
-        "montoNuevo": 7000000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 257.8,
+  "tiempoEjecucionSegundos": 3414.1,
   "errores": [],
   "advertencias": []
 }
