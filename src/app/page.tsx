@@ -474,6 +474,39 @@ export default function Home() {
     );
   };
 
+  const handleUpdatePostulacion = (
+    postulacionId: string,
+    changes: Pick<Postulacion, 'responsable' | 'proximaAccion' | 'fechaProximaAccion'>
+  ) => {
+    const ahora = new Date().toISOString();
+    setPostulaciones(prev =>
+      prev.map(p => {
+        if (p.id !== postulacionId) return p;
+
+        const cambios: string[] = [];
+        if (p.responsable !== changes.responsable) cambios.push(`Responsable: ${changes.responsable || 'Sin asignar'}`);
+        if (p.proximaAccion !== changes.proximaAccion) cambios.push(`Próxima acción: ${changes.proximaAccion || 'Sin definir'}`);
+        if (p.fechaProximaAccion !== changes.fechaProximaAccion) cambios.push(`Fecha próxima acción: ${changes.fechaProximaAccion || 'Sin definir'}`);
+
+        return {
+          ...p,
+          ...changes,
+          fechaActualizacion: ahora.split('T')[0],
+          historialSeguimiento: cambios.length > 0
+            ? [
+                ...(p.historialSeguimiento || []),
+                {
+                  fecha: ahora,
+                  usuario: currentUser.email || currentUser.nombre || 'Usuario autenticado',
+                  cambios
+                }
+              ]
+            : p.historialSeguimiento
+        };
+      })
+    );
+  };
+
   const handleAddComment = (opId: string, texto: string) => {
     const newComment = {
       id: `comm-${Date.now()}`,
@@ -838,6 +871,7 @@ export default function Home() {
               onNavigateToTab={handleNavigateView}
               activeCompany={activeCompany}
               selectedAdjudicacionCodigo={selectedAdjudicacionCodigo}
+              onUpdatePostulacion={handleUpdatePostulacion}
             />
           )}
 

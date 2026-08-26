@@ -173,6 +173,15 @@ export interface Postulacion {
   // son el registro de auditoría de esa confirmación — nunca inferidos.
   confirmadoPor?: string;
   confirmadoEn?: string;
+  // Seguimiento comercial interno. Estos campos no modifican ni representan
+  // acciones realizadas en Mercado Público; solo organizan el trabajo del equipo.
+  proximaAccion?: string;
+  fechaProximaAccion?: string;
+  historialSeguimiento?: Array<{
+    fecha: string;
+    usuario: string;
+    cambios: string[];
+  }>;
 }
 
 export interface ParticipanteAdjudicacion {

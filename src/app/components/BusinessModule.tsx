@@ -17,6 +17,10 @@ interface BusinessModuleProps {
   onNavigateToTab: (module: string, subSection: string) => void;
   activeCompany?: Empresa;
   selectedAdjudicacionCodigo?: string | null;
+  onUpdatePostulacion: (
+    postulacionId: string,
+    changes: Pick<Postulacion, 'responsable' | 'proximaAccion' | 'fechaProximaAccion'>
+  ) => void;
 }
 
 export default function BusinessModule({
@@ -27,7 +31,8 @@ export default function BusinessModule({
   onSelectOpportunity,
   onNavigateToTab,
   activeCompany = 'Consolidado',
-  selectedAdjudicacionCodigo = null
+  selectedAdjudicacionCodigo = null,
+  onUpdatePostulacion
 }: BusinessModuleProps) {
   // Forma real de un ítem del Kanban: puede ser una Oportunidad completa o un
   // objeto parcial reconstruido desde una postulación cuya oportunidad ya no
@@ -69,6 +74,27 @@ export default function BusinessModule({
   // Postulaciones Filters State
   const [filterModality, setFilterModality] = useState<'Todas' | 'Compra Ágil' | 'Grandes Compras'>('Todas');
   const [filterCompany, setFilterCompany] = useState<'Todas' | 'Aminorte' | 'V-MOCCS'>('Todas');
+  const [editingPostulacionId, setEditingPostulacionId] = useState<string | null>(null);
+  const [editResponsable, setEditResponsable] = useState('');
+  const [editProximaAccion, setEditProximaAccion] = useState('');
+  const [editFechaProximaAccion, setEditFechaProximaAccion] = useState('');
+
+  const startEditingPostulacion = (postulacion: Postulacion) => {
+    setEditingPostulacionId(postulacion.id);
+    setEditResponsable(postulacion.responsable || '');
+    setEditProximaAccion(postulacion.proximaAccion || '');
+    setEditFechaProximaAccion(postulacion.fechaProximaAccion || '');
+  };
+
+  const savePostulacionTracking = () => {
+    if (!editingPostulacionId) return;
+    onUpdatePostulacion(editingPostulacionId, {
+      responsable: editResponsable.trim(),
+      proximaAccion: editProximaAccion.trim(),
+      fechaProximaAccion: editFechaProximaAccion
+    });
+    setEditingPostulacionId(null);
+  };
 
 
   // Logistics & Margin Simulator State
@@ -610,6 +636,7 @@ export default function BusinessModule({
                     <th className="p-3 font-black text-slate-400">Empresa</th>
                     <th className="p-3 font-black text-slate-400">Título & Organismo</th>
                     <th className="p-3 font-black text-slate-400">Responsable</th>
+                    <th className="p-3 font-black text-slate-400">Próxima acción</th>
                     <th className="p-3 font-black text-slate-400 text-right">Monto Oferta</th>
                     <th className="p-3 font-black text-slate-400 text-center">Estado</th>
                     <th className="p-3 font-black text-slate-400 text-center">Acciones</th>
@@ -618,7 +645,7 @@ export default function BusinessModule({
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
                   {filteredPostulaciones.length === 0 ? (
                     <tr>
-                      <td colSpan={7} className="py-8 text-center text-slate-400 font-medium">
+                      <td colSpan={8} className="py-8 text-center text-slate-400 font-medium">
                         No se encontraron postulaciones con los filtros seleccionados.
                       </td>
                     </tr>
@@ -627,8 +654,12 @@ export default function BusinessModule({
                       const pCompany = p.empresaMatch || (p.oportunidadCodigo?.startsWith('COT-') || p.oportunidadCodigo?.startsWith('GC-6012') || p.oportunidadCodigo?.startsWith('GC-1105') ? 'Aminorte' : 'V-MOCCS');
                       const pModality = p.modalidad || (p.oportunidadCodigo?.startsWith('COT-') ? 'Compra Ágil' : 'Grandes Compras');
 
+                      const fechaAccion = p.fechaProximaAccion ? new Date(`${p.fechaProximaAccion}T23:59:59`) : null;
+                      const accionVencida = fechaAccion ? fechaAccion.getTime() < Date.now() : false;
+
                       return (
-                        <tr key={p.id} className="hover:bg-slate-50/50 dark:hover:bg-slate-850/15">
+                        <React.Fragment key={p.id}>
+                        <tr className="hover:bg-slate-50/50 dark:hover:bg-slate-850/15">
                           <td className="p-3">
                             <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase inline-block mb-1 ${
                               pModality === 'Compra Ágil'
@@ -668,6 +699,17 @@ export default function BusinessModule({
                             {p.responsable}
                           </td>
 
+                          <td className="p-3 min-w-48">
+                            <span className="font-semibold text-slate-700 dark:text-slate-300 block line-clamp-2">
+                              {p.proximaAccion || 'Sin próxima acción'}
+                            </span>
+                            <span className={`text-[9px] block mt-1 font-bold ${accionVencida ? 'text-red-600 dark:text-red-400' : 'text-slate-400'}`}>
+                              {p.fechaProximaAccion
+                                ? `${accionVencida ? '⚠️ Vencida: ' : '📅 '}${new Date(`${p.fechaProximaAccion}T12:00:00`).toLocaleDateString('es-CL')}`
+                                : 'Sin fecha definida'}
+                            </span>
+                          </td>
+
                           <td className="p-3 text-right font-black text-slate-900 dark:text-white">
                             ${p.montoOferta.toLocaleString('es-CL')}
                           </td>
@@ -689,17 +731,74 @@ export default function BusinessModule({
                           </td>
 
                           <td className="p-3 text-center">
-                            <button
-                              onClick={() => {
-                                const op = oportunidades.find(o => o.id === p.oportunidadId);
-                                if (op) onSelectOpportunity(op);
-                              }}
-                              className="px-2.5 py-1 bg-slate-100 hover:bg-blue-600 hover:text-white dark:bg-slate-800 dark:hover:bg-blue-600 rounded text-[10px] font-bold transition cursor-pointer"
-                            >
-                              Inspeccionar
-                            </button>
+                            <div className="flex flex-col gap-1.5 items-center">
+                              <button
+                                onClick={() => startEditingPostulacion(p)}
+                                className="px-2.5 py-1 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white dark:bg-blue-950/40 dark:text-blue-300 dark:hover:bg-blue-600 rounded text-[10px] font-bold transition cursor-pointer"
+                              >
+                                Editar seguimiento
+                              </button>
+                              <button
+                                onClick={() => {
+                                  const op = oportunidades.find(o => o.id === p.oportunidadId);
+                                  if (op) onSelectOpportunity(op);
+                                }}
+                                className="px-2.5 py-1 bg-slate-100 hover:bg-blue-600 hover:text-white dark:bg-slate-800 dark:hover:bg-blue-600 rounded text-[10px] font-bold transition cursor-pointer"
+                              >
+                                Inspeccionar
+                              </button>
+                            </div>
                           </td>
                         </tr>
+                        {editingPostulacionId === p.id && (
+                          <tr className="bg-blue-50/70 dark:bg-blue-950/20">
+                            <td colSpan={8} className="p-4">
+                              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 items-end">
+                                <label className="text-[10px] font-black uppercase text-slate-500">
+                                  Responsable
+                                  <input
+                                    value={editResponsable}
+                                    onChange={(e) => setEditResponsable(e.target.value)}
+                                    className="mt-1 w-full p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-xs normal-case"
+                                  />
+                                </label>
+                                <label className="text-[10px] font-black uppercase text-slate-500">
+                                  Próxima acción
+                                  <input
+                                    value={editProximaAccion}
+                                    onChange={(e) => setEditProximaAccion(e.target.value)}
+                                    placeholder="Ej.: solicitar cotización al proveedor"
+                                    className="mt-1 w-full p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-xs normal-case"
+                                  />
+                                </label>
+                                <label className="text-[10px] font-black uppercase text-slate-500">
+                                  Fecha próxima acción
+                                  <input
+                                    type="date"
+                                    value={editFechaProximaAccion}
+                                    onChange={(e) => setEditFechaProximaAccion(e.target.value)}
+                                    className="mt-1 w-full p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-xs normal-case"
+                                  />
+                                </label>
+                              </div>
+                              <div className="flex justify-end gap-2 mt-3">
+                                <button
+                                  onClick={() => setEditingPostulacionId(null)}
+                                  className="px-3 py-1.5 rounded-lg text-[10px] font-black text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800"
+                                >
+                                  Cancelar
+                                </button>
+                                <button
+                                  onClick={savePostulacionTracking}
+                                  className="px-3 py-1.5 rounded-lg text-[10px] font-black bg-blue-600 text-white hover:bg-blue-700"
+                                >
+                                  Guardar seguimiento
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        )}
+                        </React.Fragment>
                       );
                     })
                   )}
