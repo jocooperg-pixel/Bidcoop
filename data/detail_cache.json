@@ -469842,5 +469842,3387 @@
     },
     "ts": 1788031316.664275,
     "fetchedAt": "2026-08-29T18:56:48.126890+00:00"
+  },
+  "4375-40-LP26": {
+    "data": {
+      "CodigoExterno": "4375-40-LP26",
+      "Nombre": "Conv. Suministro TintaTóner e Insumos Computacionales",
+      "CodigoEstado": 8,
+      "Descripcion": "Las presentes bases, tienen por objetivo la adquisición mediante llamado a licitación pública para Conv. Suministro Tinta/Tóner e Insumos Computacionales, con vigencia de 24 meses, solicitados según programación anual de compras, año 2026 de los diferentes servicios y unidades del HGGB.",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "7324",
+        "NombreOrganismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+        "RutUnidad": "61.602.189-3",
+        "CodigoUnidad": "5291",
+        "NombreUnidad": "Abastecimiento General",
+        "DireccionUnidad": "San Martin 1436 Bodegas de Abastecimiento General",
+        "ComunaUnidad": "Concepción",
+        "RegionUnidad": "Región del Biobío ",
+        "RutUsuario": "",
+        "CodigoUsuario": "1482271",
+        "NombreUsuario": "Karina Saavedra Luna",
+        "CargoUsuario": "Ejecutiva de Compras"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LP",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 2254,
+      "Fechas": {
+        "FechaCreacion": "2026-03-25T00:00:00",
+        "FechaCierre": "2026-05-05T15:30:00",
+        "FechaInicio": "2026-04-21T18:01:00",
+        "FechaFinal": "2026-04-24T17:00:00",
+        "FechaPubRespuestas": "2026-04-28T17:01:00",
+        "FechaActoAperturaTecnica": "2026-05-05T15:31:00",
+        "FechaActoAperturaEconomica": "2026-05-05T15:31:00",
+        "FechaPublicacion": "2026-04-21T15:12:08.3",
+        "FechaAdjudicacion": "2026-08-29T16:05:16.63",
+        "FechaEstimadaAdjudicacion": "2026-07-06T17:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "PRESUPUESTO DEL HOSPITAL GUILLERMO GRANT BENAVENTE",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 131115000,
+      "Tiempo": "24",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "LORETO RODRIGUEZ NEIRA ",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "KARINA SAAVEDRA",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "24",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-08-28T00:00:00",
+        "Numero": "9030",
+        "NumeroOferentes": 6,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=n4Kk2GrAXaCeMKAEPFb3cZuAXu+zh3gBflm0RruvJI4="
+      },
+      "Items": {
+        "Cantidad": 34,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-194-00 TONER EQUIVALENTE O SIMILAR A MODELO MANCHESTER HP CF 411A CYAN/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 6,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-824-00 CARTRIDGE EQUIVALENTE O SIMILAR A MODELO CANON CLI-151 YELLOWW/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 16,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 3,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-885-00 TINTA EQUIVALENTE O SIMILAR A MODELO EPSON NEGRO T544120/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 18,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 4,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-582-00 TONER EQUIVALENTE O SIMILAR A MODELO HP CE 313 A ROJO/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 14,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 5,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-769-00 TONER EQUIVALENTE O SIMILAR A MODELO BROTHER TN-1060 BK/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 30,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 6,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-581-00 TONER EQUIVALENTE O SIMILAR A MODELO HP CE 312 A AMARILLO/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 12,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 7,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-579-00 TONER EQUIVALENTE O SIMILAR A MODELO HP CE 310 A NEGRO/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 14,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 8,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-758-00 TONER EQUIVALENTE O SIMILAR A MODELO XEROX 106R02773/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 9,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-580-00 TONER EQUIVALENTE O SIMILAR A MODELO HP CE 311 A AZUL/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 14,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 10,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-124-00 TINTA T664120 AL EQUIVALENTE O SIMILAR A MODELO EPSON NEGRO/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 11,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-886-00 TONER EQUIVALENTE O SIMILAR A MODELO LEXMARK MX317/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 8,
+            "Adjudicacion": {
+              "RutProveedor": "76.596.570-5",
+              "NombreProveedor": "SOCIEDAD COMERCIAL ALCA LIMITADA",
+              "Cantidad": 8,
+              "MontoUnitario": 124900
+            }
+          },
+          {
+            "Correlativo": 12,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-698-00 CARTRIDGE CN047AL, EQUIVALENTE O SIMILAR A MODELO HP 951 XL MAGENTA OFFICE JET INK/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 13,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-823-00 CARTRIDGE EQUIVALENTE O SIMILAR A MODELO CANON CLI-151 MAGENTA/SEGÚN EE.TT. ",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 12,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 14,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-770-00 TONER EQUIVALENTE O SIMILAR A MODELO HP CF217 NEGRO/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 12,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 15,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-697-00 CARTRIDGE EQUIVALENTE O SIMILAR A MODELO CN045AL HP 950 XL BLACK OFFICE JET INK/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 4,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 16,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-753-00 TONER MANCHESTER, EQUIVALENTE O SIMILAR A MODELO HP CF 412A YELLOW/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 6,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 17,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-179-00 TONER EQUIVALENTE O SIMILAR HP CF 410A NEGRO/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 4,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 18,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-936-00 TONER EQUIVALENTE O SIMILAR A MODELO SAMSUNG MLT-D203U NEGRO/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 78,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 19,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-638-00 TONER EQUIVALENTE O SIMILAR A MODELO CANON 103/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 4,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 20,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-884-00 TINTA EQUIVALENTE O SIMILAR A MODELO EPSON MAGENTA T544320/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 18,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 21,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-816-00 TONER EQUIVALENTE O SIMILAR A MODELO LEXMARK 50F4H00/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 12,
+            "Adjudicacion": {
+              "RutProveedor": "76.596.570-5",
+              "NombreProveedor": "SOCIEDAD COMERCIAL ALCA LIMITADA",
+              "Cantidad": 12,
+              "MontoUnitario": 168900
+            }
+          },
+          {
+            "Correlativo": 22,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-821-00 CARTRIDGE EQUIVALENTE O SIMILAR A MODELO CANON CLI-151 BLACK/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 6,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 23,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-700-00 CARTRIDGE CN046AL, EQUIVALENTE O SIMILAR A MODELO HP 951 XL CYAN OFFICE JET INK/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 24,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-838-00 TONER EQUIVALENTE O SIMILAR A MODELO HP CF248A/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 512,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 25,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-699-00 CARTRIDGE CN048AL, EQUIVALENTE O SIMILAR A MODELO HP 951 XL YELLOW OFFICE JET INK/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 62,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 26,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-822-00 CARTRIDGE EQUIVALENTE O SIMILAR A MODELO CANON CLI-151 CYAN/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 12,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 27,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-839-00 TONER EQUIVALENTE O SIMILAR A MODELO BROTHER TN-3479/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 28,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-545-00 TONER, EQUIVALENTE O SIMILAR A MODELO HP CE505 (05A)/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 8,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 29,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-654-00 TONER, EQUIVALENTE O SIMILAR A MODELO HP CE285A/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 912,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 30,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-754-00 TONER MANCHESTER, EQUIVALENTE O SIMILAR A MODELO HP CF 413A MAGENTA/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 8,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 31,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-829-00 TONER, EQUIVALENTE O SIMILAR A MODELO HP 305A CYAN/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 32,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-887-00 TONER EQUIVALENTE O SIMILAR A MODELO LEXMARK MX315/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 4,
+            "Adjudicacion": {
+              "RutProveedor": "76.596.570-5",
+              "NombreProveedor": "SOCIEDAD COMERCIAL ALCA LIMITADA",
+              "Cantidad": 4,
+              "MontoUnitario": 168900
+            }
+          },
+          {
+            "Correlativo": 33,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-734-00 CARTUCHO DE TONER 305X, EQUIVALETE O SIMILAR LASER JET NEGRO/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 4,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 34,
+            "CodigoProducto": 44103103,
+            "CodigoCategoria": "44103100",
+            "Categoria": "Equipos, accesorios y suministros de oficina / Maquinarias, suministros y accesorios de oficina / Suministros para impresora, fax y fotocopiadora",
+            "NombreProducto": "Tóner",
+            "Descripcion": "20-045-132-155-00 TONER, EQUIVALENTE O SIMILAR A MODELO  HP CF280A/SEGÚN EE.TT.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 4,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1788041036.710072,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:2026-453-COT26": {
+    "data": {
+      "codigo": "2026-453-COT26",
+      "nombre": "Tintas Impresoras para Plotter Subdirección de Inversiones del DSSVQP",
+      "descripcion": "DEBE PRESENTAR FICHA Y DESCRIPCIÓN COMPLETA DE LOS PRODUCTOS SOLICITADOS, DATOS DE CONTACTO PARA EL PAGO DE FACTURA, DEBE PRESENTAR OBLIGATORIO EL CERTIFICADO F-30",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 11:00",
+        "fecha_cierre_segundo_llamado": "2026-09-02 04:18"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-29 17:41",
+        "fecha_cierre": "2026-08-31 11:00",
+        "fecha_ultimo_cambio": "2026-08-29 17:45",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Calle Montaña #834, Viña del Mar, Viña del Mar, ",
+        "plazo_entrega_dias": 7
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 600000,
+        "monto_disponible": 600000,
+        "monto_disponible_clp": 600000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "SERVICIO SALUD VINA DEL MAR QUILLOTA",
+        "rut": "61.606.600-5",
+        "unidad_compra": "Servicio de Salud Viña del Mar - Quillota",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "C9403A Cartucho de tinta HP O SIMILAR 72 negro mate de 130 ml (3 unidades).",
+          "cantidad": 3,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "C9374A Cartucho de tinta gris HP O SIMILAR 72 de 130 ml (2 unidades).",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 12,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042156.5150669,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:2429-958-COT26": {
+    "data": {
+      "codigo": "2429-958-COT26",
+      "nombre": "TONER  Y TINTAS",
+      "descripcion": "ADQUISICION DE TONER Y TINTAS PARA EL DEPARTAMENTO DE CONTABILIDAD Y TESORERIA, SE DEBERA ADJUNTAR COTIZACION Y FICHA TECNICA DE CADA INSUMO",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-30 15:30",
+        "fecha_cierre_segundo_llamado": "2026-08-31 15:43"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-29 15:16",
+        "fecha_cierre": "2026-08-30 15:30",
+        "fecha_ultimo_cambio": "2026-08-29 15:20",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "PARQUE NICOLAS TIRADO FRENTE AL N°20",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 5259800,
+        "monto_disponible": 5259800,
+        "monto_disponible_clp": 5259800,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE ANTOFAGASTA",
+        "rut": "69.020.300-6",
+        "unidad_compra": "I MUNICIPALIDAD DE ANTOFAGASTA - FINANZAS",
+        "region": 2,
+        "nombre_region": "Región de Antofagasta "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTA EPSON 504 COLOR NEGRO O EQUIVALENTE",
+          "cantidad": 12,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTA EPSON 504 COLOR AMARILLO O EQUIVALENTE",
+          "cantidad": 12,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTA EPSON 504 COLOR MAGENTA O EQUIVALENTE",
+          "cantidad": 12,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTA EPSON 504 COLOR CYAN O EQUIVALENTE",
+          "cantidad": 12,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTAS HP 954 XL COLOR MAGENTA O EQUIVALENTE",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTAS HP 954 XL COLOR YELLOW O EQUIVALENTE",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTAS HP 954 XL COLOR BLACK O EQUIVALENTE",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTAS HP 954 XL COLOR CYAN O EQUIVALENTE",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTAS EPSON T11B120-AL COLOR BLACK O EQUIVALENTE",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTAS EPSON T11A220-AL COLOR CYAN O EQUIVALENTE",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTAS EPSON T11A320-AL COLOR MAGENTA O EQUIVALENTE",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "TINTAS EPSON T11A420-AL COLOR YELLOW O EQUIVALENTE",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44103103,
+          "nombre": "Tóner",
+          "descripcion": "TONER TN 2370 (2600) BROTHER DCP - L2540 DW O EQUIVALENTE",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042162.8589709,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:2107-214-COT26": {
+    "data": {
+      "codigo": "2107-214-COT26",
+      "nombre": "BIOMBOS (HOSP. AMIGO)",
+      "descripcion": "SE SOLICITA COMPRA DE ACUERDO CON LA APROBACIÓN DE RECURSOS DEL PROGRAMA HOSPITAL AMIGO 2026, FUNDAMENTADA EN LA GESTIÓN PARTICIPATIVA ENTRE EQUIPOS CLÍNICOS DE LAS ÁREAS DE HOSPITALIZACIÓN DEL HOSPITAL SANTA CRUZ EN CONJUNTO A REFERENTE LOCAL DE ESTA ESTRATEGIA. SOLICITUD N° 830\n",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-01 12:00",
+        "fecha_cierre_segundo_llamado": "2026-09-04 09:04"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-29 14:55",
+        "fecha_cierre": "2026-09-01 12:00",
+        "fecha_ultimo_cambio": "2026-08-29 15:00",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "AV. ERRAZURIZ 921",
+        "plazo_entrega_dias": 2
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 197000,
+        "monto_disponible": 197000,
+        "monto_disponible_clp": 197000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "SERVICIO DE SALUD HOSPITAL DE SANTA CRUZ",
+        "rut": "61.602.148-6",
+        "unidad_compra": "Hospital de Santa Cruz",
+        "region": 6,
+        "nombre_region": "Región del Libertador General Bernardo O´Higgins"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 42191607,
+          "nombre": "Hardware de vías carriles de cortina o biombos o cortinas de cubículo del paciente",
+          "descripcion": "BIOMBOS CLÍNICOS DE 3 CUERPOS. CARACTERÍSTICAS: BIOMBO CLÍNICO DE 3 CUERPOS CON PANELES AJUSTABLES Y PLEGABLES PARA SU FÁCIL ALMACENAMIENTO Y TRANSPORTE. MEDIDAS: ANCHO TOTAL 150,8 CM ALTURA 180 CM PESO DEL PRODUCTO 4,7 KG ",
+          "cantidad": 3,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 16,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042221.217846,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1134432-629-COT26": {
+    "data": {
+      "codigo": "1134432-629-COT26",
+      "nombre": "Adquisición de materiales de cocina, lúdico y de papelería para talleres del Programa 4 a 7 Horcón 2° Publicación",
+      "descripcion": "La Municipalidad de Puchuncaví, a través del Director de Desarrollo Comunitario, requiere la adquisición de materiales de cocina, lúdico y de papelería para la realización del taller de cocina para talleres, actividades recreativas y artísticas del Programa 4 a 7 Horcón, de acuerdo a requerimiento adjunto. Se debe adjuntar cotización formal indicando fecha de entrega de los productos",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 15:00",
+        "fecha_cierre_segundo_llamado": "2026-09-02 19:04"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-29 10:55",
+        "fecha_cierre": "2026-08-31 15:00",
+        "fecha_ultimo_cambio": "2026-08-29 11:00",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": " Avenida Bernardo O'Higgins N°70 Puchuncaví",
+        "plazo_entrega_dias": 2
+      },
+      "documentos": [
+        {
+          "id": 1835756,
+          "nombre": "Requerimientos adquisicion material de cocina, ludico y de paquet.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 561699,
+        "monto_disponible": 561699,
+        "monto_disponible_clp": 561699,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE PUCHUNCAVI",
+        "rut": "69.060.800-6",
+        "unidad_compra": "Direccion de Adquisiciones",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 60121301,
+          "nombre": "Guillotinas",
+          "descripcion": "Guillotina cota papel con guías y corte recto 32 cm, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 45101903,
+          "nombre": "Perforadoras de papel",
+          "descripcion": "Perforadora redondeadora de esquinas tipo adix creative o equivalente y 3 tamaños, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 14111507,
+          "nombre": "Papel para fotocopiadora o impresora",
+          "descripcion": "Resma opalina lisa blanca tamaño A4, 50 hojas, 220 gramos tipo imprink o equivalente, de acuerdo a requerimiento adjunto\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 47131602,
+          "nombre": "Paños de limpieza absorbente",
+          "descripcion": "Paño esponja multiuso limpiador 18x20 cm (3 unidades cada pack), de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 3,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 47131502,
+          "nombre": "Paños de limpieza",
+          "descripcion": "Toalla húmedas desinfectantes multiuso de limón tipo viruex o equivalente (90 unidades cada paquete), de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 3,
+          "unidad_medida": "PK"
+        },
+        {
+          "codigo_producto": 47131803,
+          "nombre": "Desinfectantes domésticos",
+          "descripcion": "Desinfectante en spray de 360 ml tipo Lysoform o equivalente, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60141006,
+          "nombre": "Juguetes didácticos",
+          "descripcion": "Pistola lanza agua espuma verano piscina 30 cm (6 unidades por pack), de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 6,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 52141504,
+          "nombre": "Cocinas domésticas",
+          "descripcion": "Estufa de gas portátil con una cocinilla gas portátil camping, dimensiones 1.5 cm x 34 cm aproximadamente, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 83101601,
+          "nombre": "Suministro de gas natural",
+          "descripcion": "Gas de 227 grs tipo Doite o equivalente, de acuerdo a requerimiento adjunto",
+          "cantidad": 2,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 50181905,
+          "nombre": "Galletas dulces o pastelitos",
+          "descripcion": "Capsula para hornear cupcakes (200 und en pack), de acuerdo a requerimiento adjunto",
+          "cantidad": 1,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 52152006,
+          "nombre": "Bandejas o fuentes domésticas",
+          "descripcion": "Bowl tipo ensaladera multiuso de plástico resistente (2 por cada pack), de acuerdo a requerimiento adjunto",
+          "cantidad": 2,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 52141520,
+          "nombre": "Batidoras domésticas",
+          "descripcion": "Batidor francés manual de 30 cm, material de acero inoxidable, de acuerdo a requerimiento adjunto",
+          "cantidad": 3,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60121231,
+          "nombre": "Espátulas de paleta",
+          "descripcion": "Espátula de silicona tipo mothis mezquino o equivalente (4 por pack), de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 52151601,
+          "nombre": "Usleros",
+          "descripcion": "Usleros de plástico de 22 cm c/u, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 6,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 52151903,
+          "nombre": "Moldes domésticos para pasteles o tartas",
+          "descripcion": "Molde cortadores de galletas con diseño de corazón, estrella y flor (12 unidades en set), de acuerdo a requerimiento adjunto",
+          "cantidad": 2,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 52151903,
+          "nombre": "Moldes domésticos para pasteles o tartas",
+          "descripcion": "Moldes de silicona para queques, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60121242,
+          "nombre": "Delantales",
+          "descripcion": "Delantales o pechera para niños apto para sublimación (12 unidades por pack), de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 3,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 52121604,
+          "nombre": "Mantel de mesa",
+          "descripcion": "Mantel plástico desechable de colores cotillón, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 52141523,
+          "nombre": "Hervidores y teteras",
+          "descripcion": "Hervidor blanco de 3 litros tipo Family & Friends Th-4351 o equivalente, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 52152010,
+          "nombre": "Termos domésticos",
+          "descripcion": "Termo sifón térmico con dispensador de agua caliente de 3 litros, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 39121409,
+          "nombre": "Conectores de cables eléctricos",
+          "descripcion": "Cable extensión eléctrica 30 metros color naranja, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60141006,
+          "nombre": "Juguetes didácticos",
+          "descripcion": "Mini burbujas para niños con liquido incluido y material de plastico, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 48,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60141006,
+          "nombre": "Juguetes didácticos",
+          "descripcion": "Masitas de goma eva 12 gramos c/u, 180 pzs tipo glummy o equivalente, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 60141103,
+          "nombre": "Cartas para jugar",
+          "descripcion": "Juego de cartas Monster match en español, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60141006,
+          "nombre": "Juguetes didácticos",
+          "descripcion": "Set de té de metal pajarito rojo o equivalente para niños y niñas, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 60141006,
+          "nombre": "Juguetes didácticos",
+          "descripcion": "Juego de 14 pcs taza y tetera para fiesta del té, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 49181511,
+          "nombre": "Pelotas de Taca-Taca",
+          "descripcion": "Pelotas de taca-taca futbolito de mesa, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 16,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60141025,
+          "nombre": "Armas de juguete",
+          "descripcion": "Pistola lanza burbujas con 86 agujeros y luz, tipo Bazzoka o equivalente, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 60141111,
+          "nombre": "Accesorios de juegos",
+          "descripcion": "Líquido para burbujas sin olor de 1 litro c/u tipo Qatar shop o equivalente, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 3,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44102801,
+          "nombre": "Plastificadoras",
+          "descripcion": "Maquina Termolaminadora plastificadora tamaño A4, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44102801,
+          "nombre": "Plastificadoras",
+          "descripcion": "Laminas (micas) para termolaminadora plastificadora tamaño A4 (100 unidades por pack), de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "PACK"
+        },
+        {
+          "codigo_producto": 60121109,
+          "nombre": "Blocs de dibujo",
+          "descripcion": "Block papel lustre 24 hojas tipo artel o equivalente, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 3,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 11151507,
+          "nombre": "Fibras de algodón",
+          "descripcion": "Fibra de relleno para cojín 100 cm x 100 cm algodón sintético, de acuerdo a requerimiento adjunto\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 0,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042232.624248,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:2724-708-COT26": {
+    "data": {
+      "codigo": "2724-708-COT26",
+      "nombre": "MATERIALES DE OFICINA PARA LA DIRECCION DE SEGURIDAD PUBLICA",
+      "descripcion": "LA DIRECCION DE SEGURIDAD PUBLICA REQUIERE LA ADQUISICION DE MATERIALES DE OFICINA, SEGUN ESPECIFICACIONES ADJUNTAS. SE SOLICITA ADJUNTAR DETALLE DE LA OFERTA TECNICA.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-01 10:00",
+        "fecha_cierre_segundo_llamado": "2026-09-04 09:07"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-29 10:52",
+        "fecha_cierre": "2026-09-01 10:00",
+        "fecha_ultimo_cambio": "2026-08-29 10:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "CALLE EL CANELO 1037, POBLACION 11 DE SEPTIEMBRE",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835755,
+          "nombre": "MATERIALES DE OFICINA SEG PUBLICA.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 500000,
+        "monto_disponible": 500000,
+        "monto_disponible_clp": 500000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "ILUSTRE MUNICIPALIDAD DE SAN CARLOS",
+        "rut": "69.140.500-1",
+        "unidad_compra": " COMPRAS Y CONTRATACIONES MUNICIPALES",
+        "region": 16,
+        "nombre_region": "Región del Ñuble"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 14121503,
+          "nombre": "Cartulina",
+          "descripcion": "MATERIALES DE OFICINA PARA LA DIRECCION DE SEGURIDAD PUBLICA, SEGUN ESPECIFICACIONES ADJUNTAS",
+          "cantidad": 1,
+          "unidad_medida": "PACK"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 8,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042238.2989483,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:2429-955-COT26": {
+    "data": {
+      "codigo": "2429-955-COT26",
+      "nombre": "DISCO DURO 12 TB",
+      "descripcion": "SE REQUIERE DISCO DURO 12 TB, 7200 RPM, SATA3 3,5 PULGADAS COMPATIBLE CON WD EX4100/PR4100,QNAP TS-453E, SE DEBERA ADJUNTAR COTIZACION Y FICHA TECNICA EN ATENCION A ESPECIFICACIONES TECNICAS ADJUNTAS",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-30 11:00",
+        "fecha_cierre_segundo_llamado": "2026-08-31 11:13"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-29 10:46",
+        "fecha_cierre": "2026-08-30 11:00",
+        "fecha_ultimo_cambio": "2026-08-29 10:50",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "PARQUE NICOLAS TIRADO FRENTE AL N°20",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835753,
+          "nombre": "ESPECIFICACIONES TECNICAS DISCOS.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 7164895,
+        "monto_disponible": 7164895,
+        "monto_disponible_clp": 7164895,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE ANTOFAGASTA",
+        "rut": "69.020.300-6",
+        "unidad_compra": "I MUNICIPALIDAD DE ANTOFAGASTA - FINANZAS",
+        "region": 2,
+        "nombre_region": "Región de Antofagasta "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 43201803,
+          "nombre": "Discos duros",
+          "descripcion": "DISCO DURO 12 TB 7200 RPM, SATA3 3,5 PULGADAS COMPATIBLE CON WD EX4100/PR4100,QNAP TS-453E (SE ADJUNTAN ESPECIFICACIONES TECNICAS)",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 12,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042249.8891432,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1315764-49-COT26": {
+    "data": {
+      "codigo": "1315764-49-COT26",
+      "nombre": "ADQUISICIÓN DE ARTÍCULOS DE ESCRITORIO PARA CARGO DE NAVEGACIÓN ",
+      "descripcion": "ADQUISICIÓN DE COMPAS PARA NAVEGACIÓN.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-01 08:00",
+        "fecha_cierre_segundo_llamado": "2026-09-04 10:25"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-29 05:34",
+        "fecha_cierre": "2026-09-01 08:00",
+        "fecha_ultimo_cambio": "2026-08-29 05:35",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "AVENIDA MANUEL BULNES 05275, ASMAR PUNTA ARENAS.",
+        "plazo_entrega_dias": 10
+      },
+      "documentos": [
+        {
+          "id": 1835726,
+          "nombre": "ANEXO A (3).pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 300000,
+        "monto_disponible": 300000,
+        "monto_disponible_clp": 300000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "ATF-60 \"LIENTUR\"",
+        "rut": "62.000.990-3",
+        "unidad_compra": "LIENTUR",
+        "region": 12,
+        "nombre_region": "Región de Magallanes y de la Antártica"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44111803,
+          "nombre": "Compases",
+          "descripcion": "ADQUISICIÓN DE ARTÍCULOS DE ESCRITORIO PARA NAVEGACIÓN, SEGÚN \"ANEXO A\" ADJUNTO.",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 12,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042285.4430861,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:4280-326-COT26": {
+    "data": {
+      "codigo": "4280-326-COT26",
+      "nombre": "Arriendo Mobiliario - Actividad Recreativa \"Celebrando La Vida\"",
+      "descripcion": "La Municipalidad de Catemu requiere contratar el servicio de arriendo de mobiliario para la Actividad Recreativa “Celebrando la Vida”, a realizarse el día 04 de septiembre del presente año.\n\nEl traslado y retiro del mobiliario deberá efectuarse en las dependencias de la Escuela María Teresa del Canto.\n\nLos proveedores interesados deberán adjuntar una cotización detallada, de acuerdo con los requerimientos solicitados, para la correcta elaboración de sus ofertas.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 07:00",
+        "fecha_cierre_segundo_llamado": "2026-09-02 19:45"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 18:14",
+        "fecha_cierre": "2026-08-31 07:00",
+        "fecha_ultimo_cambio": "2026-08-28 18:15",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Ignacio Carrera Pinto S/N",
+        "plazo_entrega_dias": 3
+      },
+      "documentos": [
+        {
+          "id": 1835682,
+          "nombre": "ANEXO A ORDEN DE COMPRA.pdf"
+        },
+        {
+          "id": 1835681,
+          "nombre": "Especificaciones arriendo mobiliario.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 592620,
+        "monto_disponible": 592620,
+        "monto_disponible_clp": 592620,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE CATEMU",
+        "rut": "69.050.900-8",
+        "unidad_compra": "Finanzas",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 91111803,
+          "nombre": "Arriendo de casilleros",
+          "descripcion": "Arriendo de 20 mesas plegables y 200 sillas plegables, de acuerdo con las especificaciones técnicas adjuntas.\n\nLos proveedores interesados deberán dar cumplimiento a los requerimientos establecidos en las especificaciones técnicas, las cuales deberán ser consideradas para la elaboración y presentación de su oferta (cotización detallada).",
+          "cantidad": 1,
+          "unidad_medida": "GL"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 0,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042288.733609,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1391-528-COT26": {
+    "data": {
+      "codigo": "1391-528-COT26",
+      "nombre": "DIRREG-MAULE REQUIERE MUEBLES Y SILLAS ",
+      "descripcion": "La dirección regional requiere muebles y sillas, conforme a especificaciones adjuntas.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-01 10:00",
+        "fecha_cierre_segundo_llamado": "2026-09-05 02:05"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:54",
+        "fecha_cierre": "2026-09-01 10:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "4 norte 1246",
+        "plazo_entrega_dias": 10
+      },
+      "documentos": [
+        {
+          "id": 1835661,
+          "nombre": "1391-528-COT26 MOBILIARIO..pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 4466880,
+        "monto_disponible": 4466880,
+        "monto_disponible_clp": 4466880,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Dirección Regional de Gendarmeria - Talca",
+        "rut": "61.004.051-9",
+        "unidad_compra": "Región del Maule",
+        "region": 7,
+        "nombre_region": "Región del Maule "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 56101504,
+          "nombre": "Sillas",
+          "descripcion": "Silla Escritorio Oficina \nErgonómica Reclinable\n\nRespaldo reclinable, con soporte lumbar,\nMaya transpirable, y tela de alta resistencia\nApoyabrazos ajustables\nFuncionalidad: Respaldo reclinable\naltura ajustable (elevación por gas) \ny giro de 360º\nelevación ajustable\nbase giratoria con 5 ruedas  \n                        \nadjuntar ficha técnica",
+          "cantidad": 35,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 56111701,
+          "nombre": "Muebles o escritorio no modular",
+          "descripcion": "Cajonera;\n03 cajones, cerradura en primer cajón\nMedidas 62x40x40 (alto,ancho,fondo)\nColor; Cerezo\nEstructura; en melanina de alta resistencia de 18mm, y \ncubierta 25mm de espesor, (medidas mínimas)\nManillas metálicas\nCorrederas telescópicas\n04 ruedas\n\nNota; producto debe venir armado\n\nadjuntar ficha técnica\n",
+          "cantidad": 6,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 56111701,
+          "nombre": "Muebles o escritorio no modular",
+          "descripcion": "Escritorio Recto:\n\nCubierta de melamina de alta resistencia 25 mm de espesor (espesor mínimo)\nPatas y faldón de melamina de alta resistencia 18 mm. (espesor mínimo)\nColor: cerezo (cubierta, patas y faldón)\nMedidas: 120x60x75 (ancho, profundidad, alto)\nadjuntar ficha técnica",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 56111701,
+          "nombre": "Muebles o escritorio no modular",
+          "descripcion": "MUEBLE ORGANIZADOR;\nMateriales; Melamina con un espesor no inferior a 15 mm.\nColor: cerezo\nDimensiones; ancho 65cm; profundidad 46cm\naltura 200 cm\n\n\nadjuntar ficha técnica\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 56101504,
+          "nombre": "Sillas",
+          "descripcion": "Sillas visita\n•\tMaterial del tapizado: Tela.\n•\tColor tapiz; negro\n•\tEstructura de acero inoxidable color negro con resistencia de 120 kg para soportar pesos de personas adultas.\n•\tRelleno de espuma \n•\tMedidas; 41 cm de profundidad, altura 78 cm, ancho 47 cm\n",
+          "cantidad": 4,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 56111701,
+          "nombre": "Muebles o escritorio no modular",
+          "descripcion": "Gabinete 2 Puertas\nColor; cerezo \n Medidas:\nprofundidad; 40cm\nAncho; 80 cm\nAlto; 80 cm\nmelamina de alta resistencia de 15 mm de espesor  como mínimo\n\nadjuntar ficha técnica\n",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 7,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": true,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042331.7845767,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:2731-961-COT26": {
+    "data": {
+      "codigo": "2731-961-COT26",
+      "nombre": "SC. N°05.268-DIRECCIÓN DE DESARROLLO COMUNITARIO-UNIDAD DE PROGRAMAS SOCIALES-SENDA PREVIENE-PREPARA 2PARENTALIDAD-ARTÍCULOS DE LIBRERÍA",
+      "descripcion": "1. ARTICULOS DE LIBRERÍA: No serán consideradas las Cotizaciones que no cumplan con las características Técnicas requeridas y no Coticen la totalidad de los Servicios. Deberá adjuntar el Anexo N°1 y/o Cotización en formato propio que contenga toda la información requerida de los Productos Requeridos, e incluido el FLETE, caso contrario su oferta no será considerada válida. El plazo de entrega de los Productos deberá ser de 1 día hábil, una vez enviada la Orden de Compra.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 11:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 04:10"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:49",
+        "fecha_cierre": "2026-08-31 11:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:50",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "BODEGA MUNICIPAL: JAROMIR PRIDAL # 669 (FRENTE A ESTADIO BATA), Peñaflor, Región Metropolitana de Santiago.",
+        "plazo_entrega_dias": 1
+      },
+      "documentos": [
+        {
+          "id": 1835658,
+          "nombre": "Anexo N° 1....SC. N...05.268... ....docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 360000,
+        "monto_disponible": 360000,
+        "monto_disponible_clp": 360000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE PENAFLOR",
+        "rut": "69.071.700-K",
+        "unidad_compra": "DEPARTAMENTO DE ADQUISICIONES MUNICIPALES.-",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 14121812,
+          "nombre": "Papel fotográfico",
+          "descripcion": "° ARTÍCULOS DE LIBRERÍA, según especificaciones técnicas descritas en Anexo N°1 adjunto.",
+          "cantidad": 1,
+          "unidad_medida": "GL"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 10,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042342.8803663,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1549-3706-COT26": {
+    "data": {
+      "codigo": "1549-3706-COT26",
+      "nombre": "SE REQUIERE  COD. 103-2020\tCARTUCHO 1/4 KG BLANCO, PARA EL HOSPITAL SAN JOSE/PAC 2026",
+      "descripcion": "JIM / SE REQUIERE CARTUCHO 1/4 KG BLANCO, CON DESPACHO PARCIALIZADO, PARA EL HOSPITAL SAN JOSE/PAC 2026/\" FAVOR SE CONSIDERARÁ AL PROVEEDOR QUE ADJUNTE: FICHA TÉCNICA, COTIZACIÓN FORMAL CON FOTO Y FECHA DE ENTREGA, CON DESPACHO INCLUIDO.",
+      "estado": {
+        "id_estado": 3,
+        "codigo": "cerrada",
+        "glosa": "Cerrada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-29 18:00",
+        "fecha_cierre_segundo_llamado": "2026-08-30 18:19"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:40",
+        "fecha_cierre": "2026-08-29 18:00",
+        "fecha_ultimo_cambio": "2026-08-29 18:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "SAN JOSE 1030",
+        "plazo_entrega_dias": 1
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 7000000,
+        "monto_disponible": 7000000,
+        "monto_disponible_clp": 7000000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
+        "rut": "61.608.002-4",
+        "unidad_compra": "Hospital San  José",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 24111502,
+          "nombre": "Bolsas de papel",
+          "descripcion": "103-2020 CARTUCHO 1/4 KG BLANCO",
+          "cantidad": 1200000,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 13,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042397.7712083,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:4079-280-COT26": {
+    "data": {
+      "codigo": "4079-280-COT26",
+      "nombre": "TINTAS - PRLAC ",
+      "descripcion": "Se requiere set de tintas para impresora Epson WorkForce Pro WF-C5891 - adjuntar cotización, anexo n°1 firmado e indicar plazo de entrega",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-01 12:00",
+        "fecha_cierre_segundo_llamado": "2026-09-05 06:28"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:31",
+        "fecha_cierre": "2026-09-01 12:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:35",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "LAS DELICIAS 355",
+        "plazo_entrega_dias": 3
+      },
+      "documentos": [
+        {
+          "id": 1835644,
+          "nombre": "ANEXO Nº 01.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 319600,
+        "monto_disponible": 319600,
+        "monto_disponible_clp": 319600,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE CABRERO",
+        "rut": "69.151.000-k",
+        "unidad_compra": "Administración y Finanzas",
+        "region": 8,
+        "nombre_region": "Región del Biobío "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 12171703,
+          "nombre": "Tintas",
+          "descripcion": "set completo de tintas: NEGRO T11A1 - CIAN T11A2 - MAGENTA T11A3 - AMARILLO T11A4",
+          "cantidad": 2,
+          "unidad_medida": "PACK"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 13,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042407.8604553,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:746-13-COT26": {
+    "data": {
+      "codigo": "746-13-COT26",
+      "nombre": "Suministro e instalación de tabiquería vidriada para oficinas INE Maule",
+      "descripcion": "Suministro, fabricación e instalación de tabiquería vidriada en oficinas INE de Talca y Curicó, incluyendo perfilería de aluminio, vidrios simples de 6 mm, termopanel 4mm, puertas de vidrio templado, ventanas correderas, herrajes, anclajes, sellos, transporte, montaje, limpieza y puesta en servicio. Oferta debe considerar la totalidad de los requerimientos.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-02 12:00",
+        "fecha_cierre_segundo_llamado": "2026-09-07 06:32"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:27",
+        "fecha_cierre": "2026-09-02 12:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:30",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Calle 1 Norte 988. Talca. Calle Carmen 560, Curicó",
+        "plazo_entrega_dias": 15
+      },
+      "documentos": [
+        {
+          "id": 1835625,
+          "nombre": "Requerimiento_Tabiquería_Vidriada_INE_Maule.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 5000000,
+        "monto_disponible": 5000000,
+        "monto_disponible_clp": 5000000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "INSTITUTO NACIONAL DE ESTADISTICAS",
+        "rut": "60.703.000-6",
+        "unidad_compra": "INE  - VII Región",
+        "region": 7,
+        "nombre_region": "Región del Maule "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 30102306,
+          "nombre": "Perfiles de aluminio",
+          "descripcion": "Perfilería de aluminio para fabricación e instalación de tabiquería vidriada en oficinas INE Talca y Curicó. Incluye perfiles de aluminio color plata mate y titanio para paños de vidrio simple 6 mm, termopanel 4 mm y puertas (vidrio templado) con perfilería AM-35, considerando marcos, anclajes, uniones y elementos necesarios para la correcta instalación de las tabiquerías indicadas en las especificaciones técnicas.",
+          "cantidad": 1,
+          "unidad_medida": "GL"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 4,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042411.2990425,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1549-3705-COT26": {
+    "data": {
+      "codigo": "1549-3705-COT26",
+      "nombre": "SE REQUIERE  ARTICULOS DE OFICINA Y ESCRITORIO, PARA EL HOSPITAL SAN JOSE/PAC 2026",
+      "descripcion": "JIM / SE REQUIERE ARTICULOS DE OFICINA Y ESCRITORIO, CON DESPACHO PARCIALIZADO, PARA EL HOSPITAL SAN JOSE/PAC 2026/\" FAVOR SE CONSIDERARÁ AL PROVEEDOR QUE ADJUNTE: FICHA TÉCNICA, COTIZACIÓN FORMAL CON FOTO Y FECHA DE ENTREGA, CON DESPACHO INCLUIDO.",
+      "estado": {
+        "id_estado": 3,
+        "codigo": "cerrada",
+        "glosa": "Cerrada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-29 18:00",
+        "fecha_cierre_segundo_llamado": "2026-08-30 18:40"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:19",
+        "fecha_cierre": "2026-08-29 18:00",
+        "fecha_ultimo_cambio": "2026-08-29 18:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "SAN JOSE 1030",
+        "plazo_entrega_dias": 1
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 7000000,
+        "monto_disponible": 7000000,
+        "monto_disponible_clp": 7000000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
+        "rut": "61.608.002-4",
+        "unidad_compra": "Hospital San  José",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44121615,
+          "nombre": "Corcheteras",
+          "descripcion": "103-3150\tCORCHETERA SEMI-INDUSTRIAL MAS DE 30 HJS\n",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 24111502,
+          "nombre": "Bolsas de papel",
+          "descripcion": "103-6485\tPAPEL HILADO 140GRS(BLOCK 20HJ)\n",
+          "cantidad": 38000,
+          "unidad_medida": "HOJ"
+        },
+        {
+          "codigo_producto": 82121507,
+          "nombre": "Impresión de papelería o formularios comerciales",
+          "descripcion": "104-8725\tT.TROQ.HORIZ.4 TROQUEL\n",
+          "cantidad": 1200,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 14111518,
+          "nombre": "Fichas",
+          "descripcion": "104-9040\tTARJETON REEMPLAZO FICHA\n",
+          "cantidad": 18000,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 5,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042416.644557,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1413-416-COT26": {
+    "data": {
+      "codigo": "1413-416-COT26",
+      "nombre": "CDP DE CASTRO REQUIERE CURSO DE FABRICACION DE MUEBLES DE MADERA",
+      "descripcion": "Los productos deben ser despachados al Centro de Detención Preventiva de Castro. Dirección Calle Monjitas #733 Castro Chiloé. El oferente debe cotizar por la totalidad de los productos requeridos y cumplir con las características técnicas especificadas en Requerimiento Administrativo, incluir el recargo por flete  e IVA en valor de la oferta. No se evaluarán ofertas superiores al presupuesto disponible o que no cumplan con en el Requerimiento, que contiene información de los productos - E1O2RT9",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-01 09:00",
+        "fecha_cierre_segundo_llamado": "2026-09-05 00:41"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:18",
+        "fecha_cierre": "2026-09-01 09:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:20",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Calle Monjitas #733 Castro Chiloé",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835590,
+          "nombre": "FOSOAD 43.pdf"
+        },
+        {
+          "id": 1835591,
+          "nombre": "FORMULARIO N°1.docx"
+        },
+        {
+          "id": 1835587,
+          "nombre": "ANEXO VI.pdf"
+        },
+        {
+          "id": 1835588,
+          "nombre": "REQUERIMIENTO.pdf"
+        },
+        {
+          "id": 1835589,
+          "nombre": "P02PRO~1.DOC"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 2000000,
+        "monto_disponible": 2000000,
+        "monto_disponible_clp": 2000000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Dirección Regional de Gendarmeria - Puerto Montt",
+        "rut": "61.004.098-5",
+        "unidad_compra": "Región de Los Lagos",
+        "region": 10,
+        "nombre_region": "Región de los Lagos "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 80111504,
+          "nombre": "Formación, capacitación y entrenamiento de personal",
+          "descripcion": "CURSO DE FABRICACION DE MUEBLES DE MADERA PARA 10 ALUMNOS. LAS ESPECIFICACIONES Y DOCUMENTOS PARA INGRESAR LOS DATOS SE ENCUENTRAN ADJUNTOS EN LAS BASES.",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 3,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": true,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042419.2103946,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:3036-152-COT26": {
+    "data": {
+      "codigo": "3036-152-COT26",
+      "nombre": "ADQ SILLA DE OFICINA PARA DIRECTOR DAEM",
+      "descripcion": "Segun solicitud realizada por Director DAEM se hace presente la necesidad de adquirir un sillón de escritorio para reemplazar la existente ya que se encuentra en mal estado",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 11:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 04:45"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:14",
+        "fecha_cierre": "2026-08-31 11:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:15",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "GABRIELA MISTRAL 03",
+        "plazo_entrega_dias": 2
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 170000,
+        "monto_disponible": 170000,
+        "monto_disponible_clp": 170000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE LA CRUZ",
+        "rut": "69.060.200-8",
+        "unidad_compra": "EDUCACION",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 56101504,
+          "nombre": "Sillas",
+          "descripcion": "SILLA DE OFICINA TIPO GERENCIAL ERGONOMICA, ASIENTO TAPIZ DE CUERO SINTETICO NEGRO, SOPORTE PATAS DE ACERO CON RUEDAS,RECLINABLE, CON APOLLA BRAZOS Y RESPALDO ALTO HASTA EL CUELLO, PARA SER ENTREGADO A MAS TARDAR EL DIA JUEVES 3 DE SEPTIEMBRE DE 2026 (SE SOLICITA ENVIAR COTIZACION CON IMAGEN Y CARACTERISTICAS DEL PRODUCTO OFERTADO)",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 12,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042430.2470775,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:4377-429-COT26": {
+    "data": {
+      "codigo": "4377-429-COT26",
+      "nombre": "ADQUISICIÓN DE IMPRESORA LASER PARA OFICINA DE PARTES.-",
+      "descripcion": "ADQUISICIÓN DE IMPRESORA LASER PARA OFICINA DE PARTES.-\nVER REQUERIMIENTOS EN ARCHIVO ANEXO.-\nDEBE ANEXAR PATENTE MUNICIPAL EN SU OFERTA.-",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 09:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 00:47"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:12",
+        "fecha_cierre": "2026-08-31 09:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:15",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "IBIETA 225",
+        "plazo_entrega_dias": 7
+      },
+      "documentos": [
+        {
+          "id": 1835575,
+          "nombre": "SOLICITUD DE PEDIDO.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 70000,
+        "monto_disponible": 70000,
+        "monto_disponible_clp": 70000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE SAN ROSENDO",
+        "rut": "69.151.100-6",
+        "unidad_compra": "Ilustre Municipalidad de San Rosendo",
+        "region": 8,
+        "nombre_region": "Región del Biobío "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 43212105,
+          "nombre": "Impresoras de láser",
+          "descripcion": "ADQUISICIÓN DE IMPRESORA LASER PARA OFICINA DE PARTES.-\n\n",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042432.4551914,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:4201-501-COT26": {
+    "data": {
+      "codigo": "4201-501-COT26",
+      "nombre": "01 CORCHETERA ELECTRICA  PARA 26 HOJAS",
+      "descripcion": "SOLICITUD 839  EXPEDIENTE 21697 DIAFI POR 01 CORCHETERA ELECTRICA  PARA 26 HOJAS  QUE UTILICE CORCHETES 26/6. ENTREGAR EN BODEGA MUNICIPAL. ENVIAR COTIZACION FORMAL CON IMAGEN.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 11:30",
+        "fecha_cierre_segundo_llamado": "2026-09-03 05:47"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:12",
+        "fecha_cierre": "2026-08-31 11:30",
+        "fecha_ultimo_cambio": "2026-08-28 17:15",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "AVDA. AMBROSIO O\"HIGGINS 1305",
+        "plazo_entrega_dias": 1
+      },
+      "documentos": [
+        {
+          "id": 1835583,
+          "nombre": "SOLICITUD 839 DIAFI.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 100000,
+        "monto_disponible": 100000,
+        "monto_disponible_clp": 100000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE CURACAVI",
+        "rut": "69.073.900-3",
+        "unidad_compra": "DIAFI",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44101707,
+          "nombre": "Corcheteras",
+          "descripcion": "CORCHETERA ELECTRICA PARA 26 HOJAS QUE UTILICE CORCHETES 26/6. ENVIAR COTIZACION FORMAL CON IMAGEN.",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 2,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042434.9573627,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:3036-151-COT26": {
+    "data": {
+      "codigo": "3036-151-COT26",
+      "nombre": "ADQ ESTANTE METALICO BODEGA DAEM",
+      "descripcion": "Según solicitud realizada por Director DAEM se hace presente la necesidad de adquirir un estante tipo repisa para Bodega DAEM",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 11:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 04:51"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:08",
+        "fecha_cierre": "2026-08-31 11:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:10",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "GABRIELA MISTRAL 03",
+        "plazo_entrega_dias": 2
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 170000,
+        "monto_disponible": 170000,
+        "monto_disponible_clp": 170000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE LA CRUZ",
+        "rut": "69.060.200-8",
+        "unidad_compra": "EDUCACION",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 56121701,
+          "nombre": "Estantes",
+          "descripcion": "ESTANTE COMPLETAMENTE DE METAL, 4 NIVELES 60X176X150 CM APP COLOR GRIS CAPACIDAD 450 KG, PARA SER ENTREGADO A MAS TARDAR EL DIA JUEVES 3 DE SEPTIEMBRE DE 2026 (SE SOLICITA ENVIAR COTIZACION CON ESPECIFICACIONES DEL PRODUCTO OFERTADO)",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 4,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042439.32304,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:3544-240-COT26": {
+    "data": {
+      "codigo": "3544-240-COT26",
+      "nombre": "ADQ DE SHOWER DOOR Y PINTURA (PABELLÓN BETA)",
+      "descripcion": "Adquisición de shower door y pintura para el mantenimiento de las dependencias del pabellón de solteros beta de la unidad.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 17:10",
+        "fecha_cierre_segundo_llamado": "2026-09-03 17:12"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:07",
+        "fecha_cierre": "2026-08-31 17:10",
+        "fecha_ultimo_cambio": "2026-08-28 17:10",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "AV GENERAL DEL CANTO 1059",
+        "plazo_entrega_dias": 7
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 3134088,
+        "monto_disponible": 3134088,
+        "monto_disponible_clp": 3134088,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Ejercito de Chile",
+        "rut": "61.101.062-1",
+        "unidad_compra": "Destacamento Montaña Nº 3 Yungay - DESMÑA N° 3",
+        "region": 5,
+        "nombre_region": "Región de Valparaíso "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 30181503,
+          "nombre": "Duchas",
+          "descripcion": "SHOWER DOOR 200X80X80 MOSAICO",
+          "cantidad": 9,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 31211505,
+          "nombre": "Pinturas aceitosas",
+          "descripcion": "TINETA PINTURA VERDE MUSGO EXTERIOR FACHADA",
+          "cantidad": 9,
+          "unidad_medida": "TN"
+        },
+        {
+          "codigo_producto": 31211505,
+          "nombre": "Pinturas aceitosas",
+          "descripcion": "TINETA PINTURA PARA TECHO ROJO COLONIAL",
+          "cantidad": 4,
+          "unidad_medida": "TN"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 6,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042445.24788,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1376-213-COT26": {
+    "data": {
+      "codigo": "1376-213-COT26",
+      "nombre": "F193 ADQUISICIÓN DE MATERIALES DE OFICINA PARA EL C.R.S. DE COPIAPÓ DE GENDARMERÍA DE CHILE, REGIÓN DE ATACAMA",
+      "descripcion": "F193 ADQUISICIÓN DE MATERIALES DE OFICINA PARA EL C.R.S. DE COPIAPÓ DE GENDARMERÍA DE CHILE, REGIÓN DE ATACAMA",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 13:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 08:55"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:04",
+        "fecha_cierre": "2026-08-31 13:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "SOFIA BERMEDO 1151 FRENTE AL MÉDICO LEGAL",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835550,
+          "nombre": "FORM._N°2 ACEP.docx"
+        },
+        {
+          "id": 1835551,
+          "nombre": "FORMULARIO N° 1 SUSTENTABILIDAD.docx"
+        },
+        {
+          "id": 1835552,
+          "nombre": "FORMULARIO N°3 PROGRAMA_DE_INTEGRIDAD (1).docx"
+        },
+        {
+          "id": 1835553,
+          "nombre": "AG OFICINA C.R.S. FALTANTE.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 60000,
+        "monto_disponible": 60000,
+        "monto_disponible_clp": 60000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Dirección Regional de Gendarmeria - Copiapo",
+        "rut": "61.004.010-1",
+        "unidad_compra": "Región de Atacama",
+        "region": 3,
+        "nombre_region": "Región de Atacama "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 12161705,
+          "nombre": "Tampones básicos",
+          "descripcion": "HUELLEROS DACTILAR REDONDOS",
+          "cantidad": 5,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44122104,
+          "nombre": "Clips para papel",
+          "descripcion": "PORTACLIPS DE PLASTICO MAGNETICO REDONDO",
+          "cantidad": 10,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": true,
+        "considera_requisitos_impacto_social_economico": true
+      }
+    },
+    "ts": 1788042447.473644,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:4232-52-COT26": {
+    "data": {
+      "codigo": "4232-52-COT26",
+      "nombre": "MANTENCIÓN Y REPARACIÓN DE IMPRESORAS",
+      "descripcion": "MANTENCIÓN Y REPARACIÓN DE IMPRESORAS, DE LA ESCUELA DE FORMACIÓN DE CARABINEROS SEDE ARICA ",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 17:05",
+        "fecha_cierre_segundo_llamado": "2026-09-03 17:08"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 17:01",
+        "fecha_cierre": "2026-08-31 17:05",
+        "fecha_ultimo_cambio": "2026-08-28 17:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "AVDA. LAS DUNAS SIN NRO. SECTOR LAS MACHAS ESFOCAR ARICA ",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835557,
+          "nombre": "ANEXO Nº 2 CRITERIOS Y METODOLOGÍA EVALUACIÓN COMPRA AGIL, PL.docx"
+        },
+        {
+          "id": 1835558,
+          "nombre": "Anexo N°1, IMPRESORAS.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 500000,
+        "monto_disponible": 500000,
+        "monto_disponible_clp": 500000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Carabineros de Chile - Prefectura Arica",
+        "rut": "60.505.101-4",
+        "unidad_compra": "Escuela de Formación Grupo Arica",
+        "region": 15,
+        "nombre_region": "Región de Arica y Parinacota"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44101726,
+          "nombre": "Mejoras de emulación de impresora",
+          "descripcion": "MANTENCIÓN Y REPARACIÓN DE 02 IMPRESORAS, CONFORME A ESPECIFICACIONES TECNICAS Y CRITERIOS DE EVALUACIÓN ",
+          "cantidad": 2,
+          "unidad_medida": "000"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": true,
+        "considera_requisitos_impacto_social_economico": true
+      }
+    },
+    "ts": 1788042449.6441348,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:4232-51-COT26": {
+    "data": {
+      "codigo": "4232-51-COT26",
+      "nombre": "PARA LA MANTENCIÓN Y REPARACIÓN DE PORTÓN DE INGRESO, BARRAS MULTIPROPOSITO, BAÑO Y LUCES LED, PARA ESCUELA DE DE FORMACIÓN DE CARABINEROS GRUPO ARICA",
+      "descripcion": "PARA LA MANTENCIÓN Y REPARACIÓN DE PORTÓN DE INGRESO, BARRAS MULTIPROPOSITO, BAÑO Y LUCES LED, PARA ESCUELA DE DE FORMACIÓN DE CARABINEROS GRUPO ARICA",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 17:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 17:03"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:56",
+        "fecha_cierre": "2026-08-31 17:00",
+        "fecha_ultimo_cambio": "2026-08-28 17:00",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "AVDA. LAS DUNAS SIN NRO. SECTOR LAS MACHAS, ESFOCAR ARICA ",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835536,
+          "nombre": "ANEXO Nº 2 CRITERIOS Y METODOLOGÍA EVALUACIÓN COMPRA AGIL, PL.docx"
+        },
+        {
+          "id": 1835537,
+          "nombre": "Anexo N°1, MANTENCIÓN Y REPARACIÓN, PORTON,  BARRAS, BAÑO Y LUCES.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 3291464,
+        "monto_disponible": 3291464,
+        "monto_disponible_clp": 3291464,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Carabineros de Chile - Prefectura Arica",
+        "rut": "60.505.101-4",
+        "unidad_compra": "Escuela de Formación Grupo Arica",
+        "region": 15,
+        "nombre_region": "Región de Arica y Parinacota"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 72102401,
+          "nombre": "Servicios de pintura de exteriores",
+          "descripcion": "CONFORME A ESPECIFICACIONES TECNICAS Y CRITERIOS DE EVALUACIÓN ",
+          "cantidad": 1,
+          "unidad_medida": "000"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": true,
+        "considera_requisitos_impacto_social_economico": true
+      }
+    },
+    "ts": 1788042451.6957343,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1969-531-COT26": {
+    "data": {
+      "codigo": "1969-531-COT26",
+      "nombre": "MATERIALES DE OFICINA CDP LEBU",
+      "descripcion": "1O2RT9 SE REQUIERE COTIZAR MATERIALES:\n\nFLETE E IMPUESTOS INCLUIDOS, PUESTO EN GENDARMERIA DE CHILE – CENTRO DE DETENCIÓN PREVENTIVA DE LEBU DOMICILIO CALLE JOSÉ JOAQUÍN PÉREZ Nº 775 COMUNA DE LEBU LA COTIZACIÓN CON MONTO $ 0 O $1 PESO O SOBREPASEN PRESUPUESTO SERÁN DESESTIMADAS. \n",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 15:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 13:06"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:53",
+        "fecha_cierre": "2026-08-31 15:00",
+        "fecha_ultimo_cambio": "2026-08-28 16:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "CALLE JOSE JOAQUIN PEREZ N° 775,LEBU",
+        "plazo_entrega_dias": 3
+      },
+      "documentos": [
+        {
+          "id": 1835498,
+          "nombre": "1.COMPRA_AGIL_1969-531-COT26.docx"
+        },
+        {
+          "id": 1835499,
+          "nombre": ".FORMULARIO SUSTENTABILIDAD.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 120000,
+        "monto_disponible": 120000,
+        "monto_disponible_clp": 120000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Dirección Regional de Gendarmeria - Concepcion",
+        "rut": "61.004.068-3",
+        "unidad_compra": "Región del Bio Bío",
+        "region": 8,
+        "nombre_region": "Región del Biobío "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44102801,
+          "nombre": "Plastificadoras",
+          "descripcion": "TERMOLAMINADORA/ PLASTIFICADORA A4",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 14111610,
+          "nombre": "Cartulina",
+          "descripcion": "CARTULINA DOBLE FAZ COLOR VERDE",
+          "cantidad": 17,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 14111610,
+          "nombre": "Cartulina",
+          "descripcion": "CARTULINA DOBLE FAZ COLOR NARANJO",
+          "cantidad": 17,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 31162401,
+          "nombre": "Anillos de cuerda",
+          "descripcion": "CORDONES PLANOS COLOR NEGRO 60 CM",
+          "cantidad": 20,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 31162401,
+          "nombre": "Anillos de cuerda",
+          "descripcion": "CORDONES PLANOS COLOR ROJO 60 CM",
+          "cantidad": 20,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 44102001,
+          "nombre": "Lámina para plastificar",
+          "descripcion": "PACK 100 MICAS LAMINAS A4 PLASTIFICADORA TERMOLAMINADA",
+          "cantidad": 1,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 2,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": true,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042456.7947562,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:2887-95-COT26": {
+    "data": {
+      "codigo": "2887-95-COT26",
+      "nombre": "BIOMBOS CLINICOS",
+      "descripcion": "ADQUISICION DE BIOMBOS CLINICOS PARA  PROGRAMA EQUIDAD RURAL,  DEPTO. DE SALUD PUYEHUE",
+      "estado": {
+        "id_estado": 3,
+        "codigo": "cerrada",
+        "glosa": "Cerrada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-29 18:00",
+        "fecha_cierre_segundo_llamado": "2026-08-30 19:06"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:53",
+        "fecha_cierre": "2026-08-29 18:00",
+        "fecha_ultimo_cambio": "2026-08-29 18:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Luis Pasteur S/N",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835494,
+          "nombre": "Especificaciones Biombos.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 250000,
+        "monto_disponible": 250000,
+        "monto_disponible_clp": 250000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "I MUNICIPALIDAD DE PUYEHUE",
+        "rut": "69.210.600-8",
+        "unidad_compra": "DEPARTAMENTO DE SALUD",
+        "region": 10,
+        "nombre_region": "Región de los Lagos "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 42191607,
+          "nombre": "Hardware de vías carriles de cortina o biombos o cortinas de cubículo del paciente",
+          "descripcion": "BIOMBO 3 CUERPOS AC/ESMALTADO RODABLE (Especificaciones en Adjunto)",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 9,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042464.0298314,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:5153-1736-COT26": {
+    "data": {
+      "codigo": "5153-1736-COT26",
+      "nombre": " MFV_PINTURAS Y RODILLOS PARA TRABAJOS - MM 572",
+      "descripcion": "Subir cotización formal en dato adjunto indicando: plazo de pago a 30 días, despacho incluido, materiales puestos en bodega, descarga a piso, plazo de entrega una vez enviada la OC a proveedor. adjuntar especificaciones técnicas del producto, marca o imagen para VB° por parte de los requirentes. La falta de dicha información será causal para dejar fuera de la compra.",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-01 09:00",
+        "fecha_cierre_segundo_llamado": "2026-09-05 01:06"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:53",
+        "fecha_cierre": "2026-09-01 09:00",
+        "fecha_ultimo_cambio": "2026-08-28 16:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": " Av. La Paz 1000, ingreso Urgencia",
+        "plazo_entrega_dias": 2
+      },
+      "documentos": [],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 2300000,
+        "monto_disponible": 2300000,
+        "monto_disponible_clp": 2300000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "UNIVERSIDAD DE CHILE",
+        "rut": "60.910.000-1",
+        "unidad_compra": "Hospital Clínico Univ. de Chile-Insumos Generales",
+        "region": 13,
+        "nombre_region": "Región Metropolitana de Santiago"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 31211501,
+          "nombre": "Pinturas al esmalte",
+          "descripcion": "Tineta Esmalte al Agua Sherwin Williams Color 6525 (color institucional para continuidad)",
+          "cantidad": 20,
+          "unidad_medida": "TN"
+        },
+        {
+          "codigo_producto": 31211501,
+          "nombre": "Pinturas al esmalte",
+          "descripcion": "Tineta Esmalte al Agua Sherwin Williams Color 9065 (color institucional para continuidad)",
+          "cantidad": 5,
+          "unidad_medida": "TN"
+        },
+        {
+          "codigo_producto": 31211906,
+          "nombre": "Rodillos de pintar",
+          "descripcion": "Rodillo Chiporro Natural Lizcal Rojo 18Cm.",
+          "cantidad": 20,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 31211906,
+          "nombre": "Rodillos de pintar",
+          "descripcion": "Brocha 2\" pulgadas",
+          "cantidad": 20,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 6,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042472.230664,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1380-4221-COT26": {
+    "data": {
+      "codigo": "1380-4221-COT26",
+      "nombre": "SILLA ERGONOMÉTRICA EJECUTIVA, SE ADJUNTA ARCHIVO CON EETT LAS CUALES SON OBLIGATORIAS A EVALUAR, SE SOLICITA ADJUNTAR FICHA TECNICA O IMAGEN DEL PRODUCTO OFERTADO",
+      "descripcion": "SILLA ERGONOMÉTRICA EJECUTIVA, SE ADJUNTA ARCHIVO CON EETT LAS CUALES SON OBLIGATORIAS A EVALUAR, SE SOLICITA ADJUNTAR FICHA TECNICA O IMAGEN DEL PRODUCTO OFERTADO.\n\nEL PLAZO DE ENTREGA INDICADO EN LA OFERTA ES REFERENCIAL, POR LO CUAL SE SOLICITA A LOS PROVEEDORES A POSTULAR QUE DEBEN INDICAR CLARAMENTE EL PLAZO DE ENTREGA UNA VEZ ENVIADA SU ORDEN DE COMPRA.\n",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 11:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 05:08"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:51",
+        "fecha_cierre": "2026-08-31 11:00",
+        "fecha_ultimo_cambio": "2026-08-28 16:55",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "MANUEL MONTT 115.",
+        "plazo_entrega_dias": 3
+      },
+      "documentos": [
+        {
+          "id": 1835518,
+          "nombre": "EETT Silla ergonométrica ejecutiva.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 577980,
+        "monto_disponible": 577980,
+        "monto_disponible_clp": 577980,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "HOSPITAL DOCTOR HERNAN HENRIQUEZ ARAVENA",
+        "rut": "61.602.232-6",
+        "unidad_compra": "HOSPITAL DOCTOR HERNAN HENRIQUEZ ARAVENA",
+        "region": 9,
+        "nombre_region": "Región de la Araucanía "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 56112102,
+          "nombre": "Sillas para trabajar",
+          "descripcion": "SILLA ERGONOMÉTRICA EJECUTIVA, SE ADJUNTA ARCHIVO CON EETT LAS CUALES SON OBLIGATORIAS A EVALUAR, SE SOLICITA ADJUNTAR FICHA TECNICA O IMAGEN DEL PRODUCTO OFERTADO\n\n",
+          "cantidad": 3,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 14,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042490.10525,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1173431-45-COT26": {
+    "data": {
+      "codigo": "1173431-45-COT26",
+      "nombre": "E102RT9 batidora industrial   para area de Reposteria Cet Concepcion",
+      "descripcion": "Se necesita comprar batidora industrial para area de Reposteria de Cet Concepcion se evaluara Precio 40% Especificaciones Tecnicas 20% Garantia 20% Plazo de entrega 10% Sustentabilidad 10% las ofertas que se encuentren fuera de presupuesto seran declaradas inadmisibles no siendo evaludas",
+      "estado": {
+        "id_estado": 3,
+        "codigo": "cerrada",
+        "glosa": "Cerrada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-29 17:00",
+        "fecha_cierre_segundo_llamado": "2026-08-30 17:12"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:47",
+        "fecha_cierre": "2026-08-29 17:00",
+        "fecha_ultimo_cambio": "2026-08-29 17:05",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": " Avenida Cardenal Samore 521 Sector punta de Parra Tome",
+        "plazo_entrega_dias": 1
+      },
+      "documentos": [
+        {
+          "id": 1835465,
+          "nombre": "especificaciones tecnicas Batidora Industrial 30.docx"
+        },
+        {
+          "id": 1835466,
+          "nombre": "Batidora industrial   REQUERIMIENTOS_ADMINISTRATIVOS_COMPRA_Á (2).docx"
+        },
+        {
+          "id": 1835467,
+          "nombre": "FORMULARIO SUSTENTABILIDAD (1) (1) (14) (3).docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 1458639,
+        "monto_disponible": 1458639,
+        "monto_disponible_clp": 1458639,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Gendarmeria de Chile Centro de Educación y Trabajo",
+        "rut": "61.004.114-0",
+        "unidad_compra": "CET Concepción",
+        "region": 8,
+        "nombre_region": "Región del Biobío "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 52151641,
+          "nombre": "Batidora para crema",
+          "descripcion": "Batidora Industrial 30 Litros\nPeso neto\t130 kg\nPeso bruto\t135 kg\nCapacidad del Bowl: 30 litros\nPotencia: 1500 W\nVoltaje: 220V / 50Hz\nVelocidades: 3 ajustables\nDimensiones:\nAncho: 44 cm\nProfundidad: 55 cm\nAlto: 90 cm\n",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 22,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042502.8836634,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:5662-16-COT26": {
+    "data": {
+      "codigo": "5662-16-COT26",
+      "nombre": "Servicio de reparación de equipos de aire acondicionado de la Inspección Provincial del Trabajo de Arica.",
+      "descripcion": "La Dirección Regional del Trabajo de Arica y Parinacota requiere contratar el servicio de reparación de dos equipos de aire acondicionado de la Inspección Provincial del Trabajo de Arica, ubicada en Avda. 18 de septiembre N° 1352 de la ciudad de Arica.\n\nLo anterior, con el fin de asegurar el correcto y eficiente funcionamiento de los equipos de climatización de las dependencias.\n",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-02 13:00",
+        "fecha_cierre_segundo_llamado": "2026-09-07 09:13"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:46",
+        "fecha_cierre": "2026-09-02 13:00",
+        "fecha_ultimo_cambio": "2026-08-28 16:50",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Avda. 18 de septiembre N° 1352, Arica",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835488,
+          "nombre": "REQUERIMIENTOS TÉCNICOS - Serv de reparacion equipos A.Acondicion.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 220000,
+        "monto_disponible": 220000,
+        "monto_disponible_clp": 220000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "DIRECCION DEL TRABAJO",
+        "rut": "61.502.000-1",
+        "unidad_compra": "Región Arica Parinacota",
+        "region": 15,
+        "nombre_region": "Región de Arica y Parinacota"
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 72102305,
+          "nombre": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
+          "descripcion": "Servicio de reparación de dos equipos de aire acondicionado de la Inspección Provincial del Trabajo de Arica, segun requerimiento técnico adjunto",
+          "cantidad": 1,
+          "unidad_medida": "000"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 1,
+        "total_ofertas_recibidas": 0,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": true,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042505.0401433,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1485930-29-COT26": {
+    "data": {
+      "codigo": "1485930-29-COT26",
+      "nombre": "Insumos para consumo oficina",
+      "descripcion": "Adquisición de insumos de cafetería destinados al consumo de los trabajadores y a la realización de reuniones, capacitaciones, jornadas de trabajo y otras actividades institucionales desarrolladas en dependencias de la oficina. ",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-08-31 11:00",
+        "fecha_cierre_segundo_llamado": "2026-09-03 05:14"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:45",
+        "fecha_cierre": "2026-08-31 11:00",
+        "fecha_ultimo_cambio": "2026-08-28 16:50",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "Capitán Arturo Prat 712,  cuarto piso",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835464,
+          "nombre": "ID 1485930-29-COT26.pdf"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Estimado",
+        "moneda": "CLP",
+        "presupuesto_estimado": 220000,
+        "monto_disponible": 220000,
+        "monto_disponible_clp": 220000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "BAJ Antofagasta",
+        "rut": "73.108.000-3",
+        "unidad_compra": "Dirección Regional de Antofagasta",
+        "region": 2,
+        "nombre_region": "Región de Antofagasta "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 50201706,
+          "nombre": "Café",
+          "descripcion": "10 bolsas de Café de grano molido marca Haití o similar de 250 grs\n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 10,
+          "unidad_medida": "BG"
+        },
+        {
+          "codigo_producto": 50201713,
+          "nombre": "Bolsitas de te",
+          "descripcion": "6 cajas de te canela\n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 6,
+          "unidad_medida": "BX"
+        },
+        {
+          "codigo_producto": 50201713,
+          "nombre": "Bolsitas de te",
+          "descripcion": "3 cajas de 100 bolsita cada una de té supremo \n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 3,
+          "unidad_medida": "BX"
+        },
+        {
+          "codigo_producto": 14111705,
+          "nombre": "Servilletas de papel",
+          "descripcion": "4 paquetes de servilletas de coctel 200\n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 4,
+          "unidad_medida": "PK"
+        },
+        {
+          "codigo_producto": 14111703,
+          "nombre": "Toallas de papel",
+          "descripcion": "8 unidades de Toalla de papel jumbo \n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 8,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 52151504,
+          "nombre": "Tazas o vasos desechables domésticos",
+          "descripcion": "300 vasos desechables para café o té poli papel\n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 300,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 52151504,
+          "nombre": "Tazas o vasos desechables domésticos",
+          "descripcion": "300 vasos plásticos desechables 250 cc \n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 300,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 50181905,
+          "nombre": "Galletas dulces o pastelitos",
+          "descripcion": "5 paquetes de galletas surtidas \n\n5 paquetes de galletas duo chocolate\n\n5 paquetes de galleta duo vainilla\n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 15,
+          "unidad_medida": "PK"
+        },
+        {
+          "codigo_producto": 52151503,
+          "nombre": "Cubertería desechable doméstica",
+          "descripcion": "200 cucharas plásticas para Coffe\n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 200,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 52151503,
+          "nombre": "Cubertería desechable doméstica",
+          "descripcion": "1 caja de 1000 unidades de revolvedor de madera de 14 cm \n\nEl detalle del producto está en el adjunto ",
+          "cantidad": 1000,
+          "unidad_medida": "EA"
+        },
+        {
+          "codigo_producto": 23181801,
+          "nombre": "Equipo y suministros para elaboración de café",
+          "descripcion": "2 paquetes de filtro de café \n\nEl detalle del producto está en el adjunto.",
+          "cantidad": 2,
+          "unidad_medida": "PK"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 1,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": false,
+        "considera_requisitos_impacto_social_economico": false
+      }
+    },
+    "ts": 1788042510.1378608,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
+  },
+  "CA:1376-212-COT26": {
+    "data": {
+      "codigo": "1376-212-COT26",
+      "nombre": "F192 ADQUISICIÓN DE EQUIPOS DE OFICINA PARA LA DIRECCIÓN REGIONAL, DE GENDARMERÍA DE CHILE, REGIÓN DE ATACAMA",
+      "descripcion": "F192 ADQUISICIÓN DE EQUIPOS DE OFICINA PARA LA DIRECCIÓN REGIONAL, DE GENDARMERÍA DE CHILE, REGIÓN DE ATACAMA",
+      "estado": {
+        "id_estado": 2,
+        "codigo": "publicada",
+        "glosa": "Publicada"
+      },
+      "convocatoria": {
+        "estado_convocatoria": 1,
+        "descripcion": "Primer llamado",
+        "fecha_cierre_primer_llamado": "2026-09-01 15:00",
+        "fecha_cierre_segundo_llamado": "2026-09-05 13:16"
+      },
+      "fechas": {
+        "fecha_publicacion": "2026-08-28 16:43",
+        "fecha_cierre": "2026-09-01 15:00",
+        "fecha_ultimo_cambio": "2026-08-28 16:45",
+        "fecha_cancelacion": null
+      },
+      "entrega": {
+        "direccion_entrega": "RANCAGUA #499, 3 PISO, EDIFICIO MINJU",
+        "plazo_entrega_dias": 5
+      },
+      "documentos": [
+        {
+          "id": 1835440,
+          "nombre": "AG MAQUINAS Y EQUIPOS.docx"
+        },
+        {
+          "id": 1835441,
+          "nombre": "FORMULARIO N° 1 SUSTENTABILIDAD.docx"
+        },
+        {
+          "id": 1835442,
+          "nombre": "FORMULARIO N° 1 SUSTENTABILIDAD.docx"
+        },
+        {
+          "id": 1835443,
+          "nombre": "FORM._N°2 ACEP.docx"
+        }
+      ],
+      "presupuesto": {
+        "tipo_presupuesto": "Disponible",
+        "moneda": "CLP",
+        "presupuesto_estimado": 1800000,
+        "monto_disponible": 1800000,
+        "monto_disponible_clp": 1800000,
+        "valor_cambio_moneda": null,
+        "fecha_cambio_moneda": null
+      },
+      "id_orden_compra": null,
+      "institucion": {
+        "organismo_comprador": "Dirección Regional de Gendarmeria - Copiapo",
+        "rut": "61.004.010-1",
+        "unidad_compra": "Región de Atacama",
+        "region": 3,
+        "nombre_region": "Región de Atacama "
+      },
+      "productos_solicitados": [
+        {
+          "codigo_producto": 44101501,
+          "nombre": "Fotocopiadoras",
+          "descripcion": "FOTOCOPIADORA MULTIFUNCIONAL HP LASERJET, CON PANTALLA DE 8 PULGADAS, LCD EN COLOR CON PANTALLA TÁCTIL, ROTATIVA Y ÁNGULO AJUSTABLE, BOTÓN DE INICIO ILUMINADA",
+          "cantidad": 2,
+          "unidad_medida": "EA"
+        }
+      ],
+      "proveedores_cotizando": [],
+      "resumen": {
+        "multa_sancion": 0,
+        "total_ofertas_recibidas": 0,
+        "total_demandas": 0
+      },
+      "motivos": {
+        "motivo_cancelacion": null,
+        "motivo_desierta": null
+      },
+      "flags": {
+        "considera_requisitos_medioambientales": true,
+        "considera_requisitos_impacto_social_economico": true
+      }
+    },
+    "ts": 1788042512.4553795,
+    "fetchedAt": "2026-08-29T22:03:35.999247+00:00"
   }
 }

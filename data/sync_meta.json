@@ -1,39 +1,39 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-29T18:56:48.126890+00:00",
-  "ultimoIntentoRealizado": "2026-08-29T18:56:48.126890+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-29T22:03:35.999247+00:00",
+  "ultimoIntentoRealizado": "2026-08-29T22:03:35.999247+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1482,
-  "registrosConfirmados": 1482,
+  "registrosEnPlataforma": 1486,
+  "registrosConfirmados": 1486,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1175,
-  "excluidosPrefiltroIrrelevante": 7946,
+  "registrosConMontoReal": 1179,
+  "excluidosPrefiltroIrrelevante": 7948,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 815,
-    "conMontoValido": 809,
+    "total": 818,
+    "conMontoValido": 812,
     "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 809,
+      "VALIDADO": 812,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 173366721,
-    "montoFinalSum": 1311511000,
-    "montoRecuperadoSum": 1138144279
+    "montoOriginalSum": 229131386,
+    "montoFinalSum": 1317841538,
+    "montoRecuperadoSum": 1088710152
   },
   "categorias": {
-    "licitaciones": 661,
-    "comprasAgiles": 815,
+    "licitaciones": 662,
+    "comprasAgiles": 818,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 139,
+    "LP": 140,
     "CO": 11,
     "LE": 376,
     "LR": 45,
@@ -43,15 +43,15 @@
     "O1": 6,
     "LS": 2,
     "E2": 3,
-    "COT": 804
+    "COT": 807
   },
   "matchPorEmpresa": {
-    "Aminorte": 1251,
-    "V-MOCCS": 231
+    "Aminorte": 1253,
+    "V-MOCCS": 233
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1185,
+    "nuevosCount": 1189,
     "modificadosCount": 183,
     "cerradosCount": 1028,
     "nuevos": [
@@ -389,6 +389,15 @@
         "fechaCierre": "2026-09-04T19:00:00"
       },
       {
+        "codigo": "4375-40-LP26",
+        "titulo": "Conv. Suministro TintaTóner e Insumos Computacionales",
+        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+        "monto": 131115000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-05-05T15:30:00"
+      },
+      {
         "codigo": "539119-80-LP26",
         "titulo": "CONTRATACIÓN DE SERVICIOS DE EMERGENCIAS SANITARIAS REPARACIÓN YO REPOSICIÓN DE REDES DE ALCANTARILLADO AGUA POTABLE Y REDES DE GAS EN INMUEBLES UBICADOS EN LA REGIÓN METROPOLITANA DEPENDIENTE DE LA DIRECCIÓN DE BIENESTAR DE CARABINEROS",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-07T15:00:00"
-      },
-      {
-        "codigo": "1057489-251-LE26",
-        "titulo": "Convenio de Suministro de Kits para la detección de Marcadores tumorales y Niveles de Fármacos y con incorporación de equipamiento por 12 meses para Hospital del Salvador ",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "monto": 57774269,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-08-31T17:00:00"
       }
     ],
     "modificados": [
@@ -988,9 +988,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1180740-6-LE26",
-        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -998,9 +998,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-240-LE26",
-        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1512.7,
+  "tiempoEjecucionSegundos": 1543.0,
   "errores": [],
   "advertencias": []
 }
