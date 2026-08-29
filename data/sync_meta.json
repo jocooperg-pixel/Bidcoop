@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-29T15:47:33.651535+00:00",
-  "ultimoIntentoRealizado": "2026-08-29T15:47:33.651535+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-29T18:56:48.126890+00:00",
+  "ultimoIntentoRealizado": "2026-08-29T18:56:48.126890+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1454,
-  "registrosConfirmados": 1454,
+  "registrosEnPlataforma": 1482,
+  "registrosConfirmados": 1482,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1160,
+  "registrosConMontoReal": 1175,
   "excluidosPrefiltroIrrelevante": 7946,
-  "excluidosSinDatosReales": 30,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 817,
-    "conMontoValido": 811,
+    "total": 815,
+    "conMontoValido": 809,
     "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 811,
+      "VALIDADO": 809,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 135674314,
-    "montoFinalSum": 1310564520,
-    "montoRecuperadoSum": 1174890206
+    "montoOriginalSum": 173366721,
+    "montoFinalSum": 1311511000,
+    "montoRecuperadoSum": 1138144279
   },
   "categorias": {
-    "licitaciones": 631,
-    "comprasAgiles": 817,
+    "licitaciones": 661,
+    "comprasAgiles": 815,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 137,
+    "LP": 139,
     "CO": 11,
-    "LE": 355,
-    "LR": 43,
+    "LE": 376,
+    "LR": 45,
     "B2": 3,
-    "L1": 85,
+    "L1": 90,
     "I2": 3,
     "O1": 6,
     "LS": 2,
     "E2": 3,
-    "COT": 806
+    "COT": 804
   },
   "matchPorEmpresa": {
-    "Aminorte": 1230,
-    "V-MOCCS": 224
+    "Aminorte": 1251,
+    "V-MOCCS": 231
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1176,
-    "modificadosCount": 164,
-    "cerradosCount": 1047,
+    "nuevosCount": 1185,
+    "modificadosCount": 183,
+    "cerradosCount": 1028,
     "nuevos": [
       {
         "codigo": "621-768-LR26",
@@ -628,6 +628,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2307-36-LR26",
+        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "I MUNICIPALIDAD DE OSORNO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 418569330,
+        "montoNuevo": 418569330,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1057387-41-LR26",
         "titulo": "SERVICIO INTEGRAL VIGILANCIA y MONITOREO CCTV",
         "organismo": "SERVICIO SALUD ARAUCANIA HOSPITAL DE COLLIPULLI",
@@ -1008,6 +1018,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1434-22-LE26",
+        "titulo": "SEGUROS INMUEBLES BIENESTAR SOCIAL DGAC",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 26007000,
+        "montoNuevo": 26007000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1147293-21-LE26",
         "titulo": "Adopción de un nuevo cultivo de alto valor",
         "organismo": "Fundación para la Innovación Agraria",
@@ -1016,6 +1036,26 @@
         "montoAnterior": 25000000,
         "montoNuevo": 25000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "520149-37-LE26",
+        "titulo": "Banderas de distintos países-DESERVI-PC 6471-mvg",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 25000000,
+        "montoNuevo": 25000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1080286-21-LE26",
+        "titulo": "ADQUISICIÓN DE MOBILIARIO ZONA METROPOLITANA",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 24777000,
+        "montoNuevo": 24777000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "5586-121-LE26",
@@ -1045,6 +1085,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 22000260,
         "montoNuevo": 22000260,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3326-42-LE26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 20000000,
+        "montoNuevo": 20000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1085,6 +1135,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 16000000,
         "montoNuevo": 16000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "316-50-LE26",
+        "titulo": "“SERVICIO DE MANTENIMIENTO DE PINTURAS DE SECTORES DE LA FACHADA DEL TEATRO MUNICIPAL POMPEYA Y SUS PORTALES DE VILLA ALEMANA”",
+        "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 15830000,
+        "montoNuevo": 15830000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1135,66 +1195,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 12400000,
         "montoNuevo": 12400000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4629-25-LE26",
-        "titulo": "SERVICIO DE MONITOREO Y REPORTE DE PRENSA",
-        "organismo": "DIRECCION DEL TRABAJO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 11900000,
-        "montoNuevo": 11900000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1208541-11-LE26",
-        "titulo": "ADQUISICIÓN DE MOBILIARIO PARA RESIDENCIAS FAMILIA",
-        "organismo": "SERVICIO NACIONAL DE PROTECCIÓN ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCI",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 11835000,
-        "montoNuevo": 11835000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "986278-15-LE26",
-        "titulo": "PROYECTO EQUIPAMIENTO Y MOBILIARIO DECRETO EXENTO N°888 DEL 24.10.2025 CLÍNICA DE EMPRENDIMIENTO ESCUELA DE NEGOCIOS Y TECNOLOGÍA SEDE ANGOL",
-        "organismo": "CENTRO DE FORMACION TECNICA DE LA REGION DE LA ARAUCANIA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 11667827,
-        "montoNuevo": 11667827,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "3268-17-LE26",
-        "titulo": "400 413 SB 109-2026 ADQ. DE TAMBORES PLASTICOS",
-        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 10244859,
-        "montoNuevo": 10244859,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2322-66-LE26",
-        "titulo": "Adquisición de Equipamiento Redundante UniFi para ciberseguridad y continuidad para servidores",
-        "organismo": "I MUNICIPALIDAD DE VALLENAR",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 10000000,
-        "montoNuevo": 10000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057387-47-LE26",
-        "titulo": "SERVICIO DE ARRIENDO IMPRESORAS MULTIFUNCIONALES",
-        "organismo": "SERVICIO SALUD ARAUCANIA HOSPITAL DE COLLIPULLI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 9000000,
-        "montoNuevo": 9000000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1277,14 +1277,6 @@
         "organismo": "CENTRO DE REFERENCIA DE SALUD HOSPITAL PROVINCIA CORDILLERA",
         "estadoAnterior": "Adjudicada",
         "monto": 537500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2307-36-LR26",
-        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
-        "organismo": "I MUNICIPALIDAD DE OSORNO",
-        "estadoAnterior": "Publicada",
-        "monto": 418569330,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Publicada",
         "monto": 40000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "520149-34-LE26",
+        "titulo": "Mantención y limpieza acomulador de agua-DINFRA-PC 6417",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "estadoAnterior": "Adjudicada",
+        "monto": 40000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1839.3,
+  "tiempoEjecucionSegundos": 1512.7,
   "errores": [],
   "advertencias": []
 }
