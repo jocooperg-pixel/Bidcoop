@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-30T17:48:34.885890+00:00",
-  "ultimoIntentoRealizado": "2026-08-30T17:48:34.885890+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-30T20:08:38.091745+00:00",
+  "ultimoIntentoRealizado": "2026-08-30T20:08:38.091745+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1483,
-  "registrosConfirmados": 1483,
+  "registrosEnPlataforma": 1487,
+  "registrosConfirmados": 1487,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1179,
+  "registrosConMontoReal": 1182,
   "excluidosPrefiltroIrrelevante": 7951,
-  "excluidosSinDatosReales": 6,
+  "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 821,
@@ -21,24 +21,24 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 367936242,
+    "montoOriginalSum": 382440642,
     "montoFinalSum": 1325536838,
-    "montoRecuperadoSum": 957600596
+    "montoRecuperadoSum": 943096196
   },
   "categorias": {
-    "licitaciones": 656,
+    "licitaciones": 660,
     "comprasAgiles": 821,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 139,
+    "LP": 140,
     "CO": 11,
-    "LE": 373,
+    "LE": 374,
     "LR": 45,
     "B2": 3,
-    "L1": 88,
+    "L1": 90,
     "I2": 3,
     "O1": 6,
     "LS": 2,
@@ -46,14 +46,14 @@
     "COT": 810
   },
   "matchPorEmpresa": {
-    "Aminorte": 1253,
+    "Aminorte": 1257,
     "V-MOCCS": 230
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1189,
-    "modificadosCount": 180,
-    "cerradosCount": 1031,
+    "nuevosCount": 1191,
+    "modificadosCount": 182,
+    "cerradosCount": 1029,
     "nuevos": [
       {
         "codigo": "621-768-LR26",
@@ -698,6 +698,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1592-9-LP26",
+        "titulo": "XXII FEP Difusión sobre Sistema de Pensiones",
+        "organismo": "SUBSECRETARIA DE PREVISION SOCIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 100000000,
+        "montoNuevo": 100000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "721703-32-LP26",
         "titulo": "SERVICIO DE ASEO IQUIQUE CONCEPCIÓN Y PTO MONTT",
         "organismo": "AGENCIA DE CALIDAD DE LA EDUCACION",
@@ -978,9 +988,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1180740-6-LE26",
-        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -988,9 +998,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-240-LE26",
-        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -1185,16 +1195,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 12400000,
         "montoNuevo": 12400000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4629-25-LE26",
-        "titulo": "SERVICIO DE MONITOREO Y REPORTE DE PRENSA",
-        "organismo": "DIRECCION DEL TRABAJO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 11900000,
-        "montoNuevo": 11900000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1430,14 +1430,6 @@
         "estadoAnterior": "Adjudicada",
         "monto": 100757707,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1592-9-LP26",
-        "titulo": "XXII FEP Difusión sobre Sistema de Pensiones",
-        "organismo": "SUBSECRETARIA DE PREVISION SOCIAL",
-        "estadoAnterior": "Publicada",
-        "monto": 100000000,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2710-47-LP26",
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Publicada",
         "monto": 40000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "520149-34-LE26",
+        "titulo": "Mantención y limpieza acomulador de agua-DINFRA-PC 6417",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "estadoAnterior": "Adjudicada",
+        "monto": 40000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1503.5,
+  "tiempoEjecucionSegundos": 1513.5,
   "errores": [],
   "advertencias": []
 }
