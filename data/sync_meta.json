@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-30T20:08:38.091745+00:00",
-  "ultimoIntentoRealizado": "2026-08-30T20:08:38.091745+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-30T23:06:52.609651+00:00",
+  "ultimoIntentoRealizado": "2026-08-30T23:06:52.609651+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1487,
-  "registrosConfirmados": 1487,
+  "registrosEnPlataforma": 1488,
+  "registrosConfirmados": 1488,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1182,
-  "excluidosPrefiltroIrrelevante": 7951,
-  "excluidosSinDatosReales": 2,
+  "registrosConMontoReal": 1181,
+  "excluidosPrefiltroIrrelevante": 7952,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 821,
-    "conMontoValido": 815,
+    "total": 820,
+    "conMontoValido": 814,
     "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 815,
+      "VALIDADO": 814,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 382440642,
-    "montoFinalSum": 1325536838,
-    "montoRecuperadoSum": 943096196
+    "montoOriginalSum": 587833113,
+    "montoFinalSum": 1321231838,
+    "montoRecuperadoSum": 733398725
   },
   "categorias": {
-    "licitaciones": 660,
-    "comprasAgiles": 821,
+    "licitaciones": 662,
+    "comprasAgiles": 820,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
@@ -35,7 +35,7 @@
   "tiposOficiales": {
     "LP": 140,
     "CO": 11,
-    "LE": 374,
+    "LE": 376,
     "LR": 45,
     "B2": 3,
     "L1": 90,
@@ -43,17 +43,17 @@
     "O1": 6,
     "LS": 2,
     "E2": 3,
-    "COT": 810
+    "COT": 809
   },
   "matchPorEmpresa": {
-    "Aminorte": 1257,
-    "V-MOCCS": 230
+    "Aminorte": 1264,
+    "V-MOCCS": 224
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
     "nuevosCount": 1191,
-    "modificadosCount": 182,
-    "cerradosCount": 1029,
+    "modificadosCount": 183,
+    "cerradosCount": 1028,
     "nuevos": [
       {
         "codigo": "621-768-LR26",
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1513.5,
+  "tiempoEjecucionSegundos": 1506.3,
   "errores": [],
   "advertencias": []
 }
