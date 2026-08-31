@@ -1,44 +1,44 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-30T23:06:52.609651+00:00",
-  "ultimoIntentoRealizado": "2026-08-30T23:06:52.609651+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-30T23:57:50.501759+00:00",
+  "ultimoIntentoRealizado": "2026-08-30T23:57:50.501759+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1488,
-  "registrosConfirmados": 1488,
+  "registrosEnPlataforma": 1449,
+  "registrosConfirmados": 1449,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1181,
+  "registrosConMontoReal": 1159,
   "excluidosPrefiltroIrrelevante": 7952,
-  "excluidosSinDatosReales": 0,
+  "excluidosSinDatosReales": 39,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 820,
-    "conMontoValido": 814,
+    "total": 819,
+    "conMontoValido": 813,
     "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 814,
+      "VALIDADO": 813,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 587833113,
-    "montoFinalSum": 1321231838,
+    "montoOriginalSum": 561833113,
+    "montoFinalSum": 1295231838,
     "montoRecuperadoSum": 733398725
   },
   "categorias": {
-    "licitaciones": 662,
-    "comprasAgiles": 820,
+    "licitaciones": 624,
+    "comprasAgiles": 819,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 140,
-    "CO": 11,
-    "LE": 376,
-    "LR": 45,
+    "LP": 133,
+    "CO": 10,
+    "LE": 357,
+    "LR": 43,
     "B2": 3,
-    "L1": 90,
+    "L1": 80,
     "I2": 3,
     "O1": 6,
     "LS": 2,
@@ -46,14 +46,14 @@
     "COT": 809
   },
   "matchPorEmpresa": {
-    "Aminorte": 1264,
-    "V-MOCCS": 224
+    "Aminorte": 1232,
+    "V-MOCCS": 217
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1191,
+    "nuevosCount": 1156,
     "modificadosCount": 183,
-    "cerradosCount": 1028,
+    "cerradosCount": 1032,
     "nuevos": [
       {
         "codigo": "621-768-LR26",
@@ -108,15 +108,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-07-15T16:00:00"
-      },
-      {
-        "codigo": "886954-208-LR26",
-        "titulo": "Conv. Suministro Audífonos Retroauricular Adultos GES y no GES",
-        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
-        "monto": 697170000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-28T17:00:00"
       },
       {
         "codigo": "885-45-LR26",
@@ -216,15 +207,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-05-04T15:01:00"
-      },
-      {
-        "codigo": "2494-79-LP26",
-        "titulo": "MEJORAMIENTO OFICINA LOCAL DE LA NIÑEZ COYHAIQUE",
-        "organismo": "I MUNICIPALIDAD DE COYHAIQUE",
-        "monto": 235695000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-23T16:00:00"
       },
       {
         "codigo": "837-88-LP26",
@@ -434,15 +416,6 @@
         "fechaCierre": "2026-09-10T10:03:00"
       },
       {
-        "codigo": "3623-33-LP26",
-        "titulo": "CÁMARAS DE TELEVIGILANCIA Y CENTRAL DE MONITOREO",
-        "organismo": "I MUNICIPALIDAD DE MAFIL",
-        "monto": 102876494,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-09-17T10:00:00"
-      },
-      {
         "codigo": "4988-32-LP26",
         "titulo": "ADQUISICIÓN 10 MOTOCICLETAS PARA USO POLICIAL. MUNICIPALIDAD DE CONCEPCIÓN. 2° Llamado",
         "organismo": "I MUNICIPALIDAD DE CONCEPCION",
@@ -587,13 +560,40 @@
         "fechaCierre": "2026-09-04T12:00:00"
       },
       {
-        "codigo": "799512-57-LE26",
-        "titulo": "SUMINISTRO Y SERVICIOS DE AUDIFONOS CLÍNICOS",
-        "organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
-        "monto": 59400000,
+        "codigo": "1057489-251-LE26",
+        "titulo": "Convenio de Suministro de Kits para la detección de Marcadores tumorales y Niveles de Fármacos y con incorporación de equipamiento por 12 meses para Hospital del Salvador ",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "monto": 57774269,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-08-31T17:00:00"
+      },
+      {
+        "codigo": "2289-46-LE26",
+        "titulo": "AMPLIACION SISTEMA CAMARAS DE TELEVIGILANCIA COMUNA DE FRUTILLAR",
+        "organismo": "I MUNICIPALIDAD DE FRUTILLAR",
+        "monto": 49999992,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-07T15:00:00"
+      },
+      {
+        "codigo": "1552-73-LE26",
+        "titulo": "REPOSICIÓN CESFAM MANUEL RODRIGUEZ CLASE  MOBILIARIO NO CLINICO",
+        "organismo": "SERVICIO DE SALUD ATACAMA",
+        "monto": 44410000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-07T15:00:00"
+      },
+      {
+        "codigo": "1035-21-LE26",
+        "titulo": "Servicio Aseo Oficinas Conaf",
+        "organismo": "CORP NACIONAL FORESTAL",
+        "monto": 43200000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-04T15:00:00"
       }
     ],
     "modificados": [
@@ -988,9 +988,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-240-LE26",
-        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1180740-6-LE26",
+        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -998,9 +998,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1180740-6-LE26",
-        "titulo": "COMPRA MONITOR PANI Y COMPUTADORES PSR QUINQUEN",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "codigo": "1057489-240-LE26",
+        "titulo": "Convenio de Suministro de Mangas Laparoscópicas para campo estéril en torno al cabezal y cable de cámara del Equipo de Laparoscopia para el Hospital del Salvador",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 31000000,
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1506.3,
+  "tiempoEjecucionSegundos": 1589.0,
   "errores": [],
   "advertencias": []
 }
