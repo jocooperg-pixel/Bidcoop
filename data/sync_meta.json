@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-08-31T18:15:50.678904+00:00",
-  "ultimoIntentoRealizado": "2026-08-31T18:15:50.678904+00:00",
+  "ultimaSincronizacionExitosa": "2026-08-31T23:27:15.161095+00:00",
+  "ultimoIntentoRealizado": "2026-08-31T23:27:15.161095+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1650,
-  "registrosConfirmados": 1650,
+  "registrosEnPlataforma": 1325,
+  "registrosConfirmados": 1325,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1373,
-  "excluidosPrefiltroIrrelevante": 7364,
-  "excluidosSinDatosReales": 4,
+  "registrosConMontoReal": 1039,
+  "excluidosPrefiltroIrrelevante": 7713,
+  "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 1044,
-    "conMontoValido": 1035,
-    "pctValidado": 99.1,
+    "total": 696,
+    "conMontoValido": 687,
+    "pctValidado": 98.7,
     "stats": {
-      "VALIDADO": 1035,
+      "VALIDADO": 687,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 9
     },
-    "montoOriginalSum": 592039132,
-    "montoFinalSum": 1630238221,
-    "montoRecuperadoSum": 1038199089
+    "montoOriginalSum": 165088689,
+    "montoFinalSum": 1095459653,
+    "montoRecuperadoSum": 930370964
   },
   "categorias": {
-    "licitaciones": 600,
-    "comprasAgiles": 1044,
+    "licitaciones": 623,
+    "comprasAgiles": 696,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 128,
-    "CO": 14,
-    "LE": 335,
-    "LR": 43,
+    "LP": 131,
+    "LE": 347,
+    "LR": 44,
     "B2": 3,
-    "L1": 85,
+    "L1": 91,
+    "CO": 14,
     "I2": 3,
     "O1": 6,
     "LS": 2,
-    "E2": 1,
-    "COT": 1030
+    "E2": 2,
+    "COT": 682
   },
   "matchPorEmpresa": {
-    "Aminorte": 1389,
-    "V-MOCCS": 261
+    "Aminorte": 1107,
+    "V-MOCCS": 218
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1402,
-    "modificadosCount": 134,
-    "cerradosCount": 1077,
+    "nuevosCount": 1072,
+    "modificadosCount": 139,
+    "cerradosCount": 1072,
     "nuevos": [
       {
         "codigo": "621-768-LR26",
@@ -108,6 +108,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-28T17:00:00"
+      },
+      {
+        "codigo": "2684-45-LR26",
+        "titulo": "Pp 44-2026 Servicio de arriendo de equipos multifuncionales impresoras fotocopiadoras y escáner para las unidades municipales",
+        "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
+        "monto": 615600000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 98,
+        "fechaCierre": "2026-10-01T15:00:00"
       },
       {
         "codigo": "885-45-LR26",
@@ -252,6 +261,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-07T15:01:00"
+      },
+      {
+        "codigo": "2963-31-LP26",
+        "titulo": "ARRIENDO SERVIDOR SQL Y LICENCIAMIENTO ASOCIADO",
+        "organismo": "I MUNICIPALIDAD DE LA GRANJA",
+        "monto": 201277871,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-11T10:00:00"
       },
       {
         "codigo": "2345-138-LP26",
@@ -479,6 +497,15 @@
         "fechaCierre": "2026-08-04T17:00:00"
       },
       {
+        "codigo": "2563-32-LP26",
+        "titulo": "Adquisición de cámaras de videovigilancia",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "monto": 78196438,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-08T15:00:00"
+      },
+      {
         "codigo": "1392-30-LP26",
         "titulo": "Servicio de Detección Monitoreo y alertamiento",
         "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
@@ -567,33 +594,6 @@
         "empresaMatch": "V-MOCCS",
         "matchScore": 60,
         "fechaCierre": "2026-06-26T15:24:00"
-      },
-      {
-        "codigo": "1607-12-LE26",
-        "titulo": "Servicio mantención equipos de climatización",
-        "organismo": "SUPERINTENDENCIA DE SEGURIDAD SOCIAL",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-07T15:30:00"
-      },
-      {
-        "codigo": "1754-37-LE26",
-        "titulo": "ADQUISICION POLIZAS DE SEGURO SOAP Y MONITOREO GPS",
-        "organismo": "Departamento de Salud Parral",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-04T12:00:00"
-      },
-      {
-        "codigo": "799512-57-LE26",
-        "titulo": "SUMINISTRO Y SERVICIOS DE AUDIFONOS CLÍNICOS",
-        "organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
-        "monto": 59400000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-07T15:00:00"
       }
     ],
     "modificados": [
@@ -908,6 +908,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "3109-4-LE26",
+        "titulo": "HARDWARE PARA SERVIDORES SUBDEPTO. T.I",
+        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 28000000,
+        "montoNuevo": 28000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2324-97-LE26",
         "titulo": "LICITACION PÚBLICA N° 112026 SERVICIO DE RECEPCIÓN Y DISPOSICIÓN FINAL DE ESCOMBROS CALCINADOS PROVENIENTES DE INCENDIOS EN LA COMUNA DE PUERTO MONTT DIMAO",
         "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
@@ -1185,16 +1195,6 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 7000000,
         "montoNuevo": 7000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1196-14-L126",
-        "titulo": "Seguros incendio, sismo, inundación, tsunami, riesgos de la naturaleza, riesgos políticos , robos , incluye el resguardo de muebles, equipos y máquinas de todo el edificio CER",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 6350000,
-        "montoNuevo": 6350000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 3123.1,
+  "tiempoEjecucionSegundos": 3593.3,
   "errores": [],
   "advertencias": []
 }
