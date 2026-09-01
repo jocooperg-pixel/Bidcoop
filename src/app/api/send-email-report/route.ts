@@ -26,7 +26,9 @@ export async function POST(request: Request) {
     const REPORT_RECIPIENTS = [
       'mviguera@aminorte.cl',
       'lizgamarra@aminorte.cl',
-      'jonathan.cooper.g@gmail.com'
+      'jonathan.cooper.g@gmail.com',
+      'efarias@aminorte.cl',
+      'domfuentes@aminorte.cl'
     ];
 
     // Helper for exact Chilean region resolution from organism & description
