@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-01T02:11:43.963987+00:00",
-  "ultimoIntentoRealizado": "2026-09-01T02:11:43.963987+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-01T08:56:34.339275+00:00",
+  "ultimoIntentoRealizado": "2026-09-01T08:56:34.339275+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1291,
-  "registrosConfirmados": 1291,
+  "registrosEnPlataforma": 1320,
+  "registrosConfirmados": 1320,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1025,
+  "registrosConMontoReal": 1053,
   "excluidosPrefiltroIrrelevante": 7102,
-  "excluidosSinDatosReales": 4,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 712,
-    "conMontoValido": 703,
-    "pctValidado": 98.7,
+    "total": 738,
+    "conMontoValido": 729,
+    "pctValidado": 98.8,
     "stats": {
-      "VALIDADO": 703,
+      "VALIDADO": 729,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 9
     },
-    "montoOriginalSum": 144506689,
-    "montoFinalSum": 1140265583,
-    "montoRecuperadoSum": 995758894
+    "montoOriginalSum": 134759609,
+    "montoFinalSum": 1169288393,
+    "montoRecuperadoSum": 1034528784
   },
   "categorias": {
-    "licitaciones": 573,
-    "comprasAgiles": 712,
+    "licitaciones": 576,
+    "comprasAgiles": 738,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 117,
+    "LP": 119,
     "LE": 321,
     "LR": 42,
     "B2": 3,
     "L1": 85,
     "CO": 14,
-    "I2": 2,
+    "I2": 3,
     "O1": 6,
     "LS": 2,
     "E2": 1,
-    "COT": 698
+    "COT": 724
   },
   "matchPorEmpresa": {
-    "Aminorte": 1075,
-    "V-MOCCS": 216
+    "Aminorte": 1101,
+    "V-MOCCS": 219
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1065,
-    "modificadosCount": 142,
-    "cerradosCount": 1099,
+    "nuevosCount": 1091,
+    "modificadosCount": 146,
+    "cerradosCount": 1096,
     "nuevos": [
       {
         "codigo": "621-768-LR26",
@@ -598,6 +598,16 @@
     ],
     "modificados": [
       {
+        "codigo": "1057489-211-I226",
+        "titulo": "Suministro de reactivos e insumos para análisis automatizado en bioquímica clínica inmunología marcadores tumorales serología marcadores cardíacos y farmacocinética por sesenta 60 meses con incorporación de equipamiento para Laboratorio Clínico de",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 10674771238,
+        "montoNuevo": 10674771238,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "520149-29-I226",
         "titulo": "MVG-Mantención de Equipos de Climatización_DINFRA-PC N°6378",
         "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
@@ -1088,6 +1098,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2320-25-LE26",
+        "titulo": "ADQUISICIÓN DE MUEBLES",
+        "organismo": "I MUNICIPALIDAD DE SAN JAVIER",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 15591861,
+        "montoNuevo": 15591861,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1221016-31-LE26",
         "titulo": "ADQUISICIÓN MOBILIARIO PARA E.EDUCACIONALES Y AC",
         "organismo": "Corporación de Desarrollo de La Reina",
@@ -1176,26 +1196,6 @@
         "montoAnterior": 9000000,
         "montoNuevo": 9000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057387-47-LE26",
-        "titulo": "SERVICIO DE ARRIENDO IMPRESORAS MULTIFUNCIONALES",
-        "organismo": "SERVICIO SALUD ARAUCANIA HOSPITAL DE COLLIPULLI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 9000000,
-        "montoNuevo": 9000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2448-115-LE26",
-        "titulo": "IMPRESORA TERMICA PULSERA O BRAZALETE DE IDENTIFIC",
-        "organismo": "I MUNICIPALIDAD DE COQUIMBO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 9000000,
-        "montoNuevo": 9000000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1205,14 +1205,6 @@
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
         "estadoAnterior": "Adjudicada",
         "monto": 20879206790,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057489-211-I226",
-        "titulo": "Suministro de reactivos e insumos para análisis automatizado en bioquímica clínica inmunología marcadores tumorales serología marcadores cardíacos y farmacocinética por sesenta 60 meses con incorporación de equipamiento para Laboratorio Clínico de",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "estadoAnterior": "Publicada",
-        "monto": 10674771238,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Cerrada",
         "monto": 53900000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1490160-39-LE26",
+        "titulo": "SUMINISTRO DE PROYECTORES Y RADIOS EE",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS PARQUES",
+        "estadoAnterior": "Adjudicada",
+        "monto": 53500000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 3333.5,
+  "tiempoEjecucionSegundos": 1503.7,
   "errores": [],
   "advertencias": []
 }
