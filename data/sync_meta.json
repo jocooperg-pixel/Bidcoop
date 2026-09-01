@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-01T18:54:26.818275+00:00",
-  "ultimoIntentoRealizado": "2026-09-01T18:54:26.818275+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-01T22:07:45.259099+00:00",
+  "ultimoIntentoRealizado": "2026-09-01T22:07:45.259099+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1140,
-  "registrosConfirmados": 1140,
+  "registrosEnPlataforma": 1173,
+  "registrosConfirmados": 1173,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 865,
-  "excluidosPrefiltroIrrelevante": 7524,
-  "excluidosSinDatosReales": 10,
+  "registrosConMontoReal": 881,
+  "excluidosPrefiltroIrrelevante": 7787,
+  "excluidosSinDatosReales": 5,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 534,
-    "conMontoValido": 525,
+    "total": 536,
+    "conMontoValido": 527,
     "pctValidado": 98.3,
     "stats": {
-      "VALIDADO": 525,
+      "VALIDADO": 527,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 9
     },
-    "montoOriginalSum": 128832314,
-    "montoFinalSum": 844005600,
+    "montoOriginalSum": 187711660,
+    "montoFinalSum": 902884946,
     "montoRecuperadoSum": 715173286
   },
   "categorias": {
-    "licitaciones": 600,
-    "comprasAgiles": 534,
+    "licitaciones": 630,
+    "comprasAgiles": 536,
     "convenioMarco": 0,
-    "ordenes_compra": 6,
+    "ordenes_compra": 7,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 124,
-    "LE": 337,
-    "LR": 41,
+    "LP": 129,
+    "LR": 42,
+    "LE": 356,
     "B2": 3,
-    "L1": 89,
-    "CO": 15,
+    "L1": 94,
+    "CO": 17,
     "I2": 3,
+    "O1": 7,
     "LS": 2,
-    "O1": 6,
     "E2": 1,
     "COT": 519
   },
   "matchPorEmpresa": {
-    "Aminorte": 954,
-    "V-MOCCS": 186
+    "Aminorte": 981,
+    "V-MOCCS": 192
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 909,
-    "modificadosCount": 153,
-    "cerradosCount": 1094,
+    "nuevosCount": 937,
+    "modificadosCount": 156,
+    "cerradosCount": 1089,
     "nuevos": [
       {
         "codigo": "621-768-LR26",
@@ -317,6 +317,15 @@
         "fechaCierre": "2026-09-21T15:01:00"
       },
       {
+        "codigo": "809-54-LP26",
+        "titulo": "Constitución e Inscripción de Derechos Reales de Uso Segundo Llamado Región de La Araucanía año 2026",
+        "organismo": "CORP NACIONAL DE DESARROLLO INDIGENA",
+        "monto": 175000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-21T15:01:00"
+      },
+      {
         "codigo": "2963-33-LP26",
         "titulo": "MANTENCIÓN DE PISCINA Y CLIMATIZACIÓN POZOS",
         "organismo": "I MUNICIPALIDAD DE LA GRANJA",
@@ -569,6 +578,15 @@
         "fechaCierre": "2026-06-26T15:24:00"
       },
       {
+        "codigo": "1057404-76-LE26",
+        "titulo": "CONVENIO MANTENCION PREVENTIVA Y CORRECTIVA DE CAMARA HIPERBARICA DEL HOSPITAL ARAUCO",
+        "organismo": "SERVICIO DE SALUD ARAUCO HOSPITAL DE ARAUCO",
+        "monto": 60000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-10T13:20:00"
+      },
+      {
         "codigo": "1607-12-LE26",
         "titulo": "Servicio mantención equipos de climatización",
         "organismo": "SUPERINTENDENCIA DE SEGURIDAD SOCIAL",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-07T15:30:00"
-      },
-      {
-        "codigo": "1754-37-LE26",
-        "titulo": "ADQUISICION POLIZAS DE SEGURO SOAP Y MONITOREO GPS",
-        "organismo": "Departamento de Salud Parral",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-04T12:00:00"
-      },
-      {
-        "codigo": "417-3-LE26",
-        "titulo": "LE-5175 SERVICIO DE MONITOREO DE ALARMA CONTRA ROBO E INCENDIO PARA LA VII DR TALCA",
-        "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-22T12:00:00"
       }
     ],
     "modificados": [
@@ -1178,19 +1178,19 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1288505-7-LE26",
+        "titulo": "Fabricación e instalación mobiliario Serpat",
+        "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 12243000,
+        "montoNuevo": 12243000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1020-39-LE26",
         "titulo": "Pendones LED P2.5 Indoor SMD TB40 o equivalente",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 12000000,
-        "montoNuevo": 12000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2392-48-LE26",
-        "titulo": "Adquisición de autoclave de sobremesa con atril",
-        "organismo": "I MUNICIPALIDAD PEDRO AGUIRRE CERDA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 12000000,
@@ -1325,14 +1325,6 @@
         "organismo": "SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
         "estadoAnterior": "Cerrada",
         "monto": 249122440,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "896-13-LP26",
-        "titulo": "AMPLIACIÓN RED DE MONITOREO AGUAS SUBTERRÁNEAS III",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "estadoAnterior": "Publicada",
-        "monto": 225000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Adjudicada",
         "monto": 53500000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4511-41-LE26",
+        "titulo": "“Instalación Cámaras de Teleprotección para la Comuna de Retiro y su Difusión”",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE RETIRO",
+        "estadoAnterior": "Adjudicada",
+        "monto": 50342270,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 675.8,
+  "tiempoEjecucionSegundos": 228.9,
   "errores": [],
   "advertencias": []
 }
