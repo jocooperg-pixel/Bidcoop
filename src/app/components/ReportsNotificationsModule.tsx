@@ -353,7 +353,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Correo RM</div>
-                <div className="text-[10px] text-brand-100 font-medium">3 Destinatarios RM</div>
+                <div className="text-[10px] text-brand-100 font-medium">5 Destinatarios RM</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
@@ -373,7 +373,7 @@ export default function ReportsNotificationsModule({
               </div>
               <div className="text-left">
                 <div className="font-extrabold text-xs leading-snug">Enviar Regiones (IV-X)</div>
-                <div className="text-[10px] text-teal-100 font-medium">3 Destinatarios IV-X</div>
+                <div className="text-[10px] text-teal-100 font-medium">5 Destinatarios IV-X</div>
               </div>
             </div>
             <span className="bg-white/20 text-white font-black text-[10px] px-2 py-1 rounded-full backdrop-blur-md border border-white/20 shrink-0">
