@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-02T01:34:40.857770+00:00",
-  "ultimoIntentoRealizado": "2026-09-02T01:34:40.857770+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-02T06:29:52.280728+00:00",
+  "ultimoIntentoRealizado": "2026-09-02T06:29:52.280728+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1342,
-  "registrosConfirmados": 1342,
+  "registrosEnPlataforma": 1365,
+  "registrosConfirmados": 1365,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1076,
-  "excluidosPrefiltroIrrelevante": 7249,
-  "excluidosSinDatosReales": 5,
+  "registrosConMontoReal": 1099,
+  "excluidosPrefiltroIrrelevante": 7251,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 757,
-    "conMontoValido": 748,
+    "total": 775,
+    "conMontoValido": 766,
     "pctValidado": 98.8,
     "stats": {
-      "VALIDADO": 748,
+      "VALIDADO": 766,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 9
     },
-    "montoOriginalSum": 187711660,
-    "montoFinalSum": 1294352419,
-    "montoRecuperadoSum": 1106640759
+    "montoOriginalSum": 169711660,
+    "montoFinalSum": 1310990127,
+    "montoRecuperadoSum": 1141278467
   },
   "categorias": {
-    "licitaciones": 579,
-    "comprasAgiles": 757,
+    "licitaciones": 584,
+    "comprasAgiles": 775,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 124,
+    "LP": 125,
     "LR": 41,
-    "LE": 322,
+    "LE": 325,
     "B2": 3,
-    "L1": 83,
-    "CO": 17,
+    "L1": 84,
+    "CO": 16,
     "I2": 3,
     "O1": 6,
     "LS": 2,
     "E2": 1,
-    "COT": 740
+    "COT": 759
   },
   "matchPorEmpresa": {
-    "Aminorte": 1134,
-    "V-MOCCS": 208
+    "Aminorte": 1155,
+    "V-MOCCS": 210
   },
   "cambios": {
     "comparadoContra": "2026-08-20T02:16:57.931700+00:00",
-    "nuevosCount": 1129,
-    "modificadosCount": 138,
-    "cerradosCount": 1112,
+    "nuevosCount": 1151,
+    "modificadosCount": 142,
+    "cerradosCount": 1111,
     "nuevos": [
       {
         "codigo": "621-768-LR26",
@@ -648,6 +648,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "4301-55-LP26",
+        "titulo": "Suministro de Fotocopiadoras Multifuncionales",
+        "organismo": "I MUNICIPALIDAD DE ZAPALLAR",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 297000000,
+        "montoNuevo": 297000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "622847-10-LP26",
         "titulo": "Diseño provisión e instalación de mobiliario BRA",
         "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
@@ -888,6 +898,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1160-15-LE26",
+        "titulo": "8101REPARACION Y MANTENCIÓN OFICINAS CONCEPCIÓN",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 40000000,
+        "montoNuevo": 40000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "586-47-LE26",
         "titulo": "Adq. e impl. de dos switch de agregación Cisco",
         "organismo": "SERVICIO NACIONAL DE ADUANAS",
@@ -998,6 +1018,16 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "4022-17-LE26",
+        "titulo": "ADQ. DE PLOTTER DE IMPRESION Y CORTE.",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE PUTRE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 25000000,
+        "montoNuevo": 25000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1147293-21-LE26",
         "titulo": "Adopción de un nuevo cultivo de alto valor",
         "organismo": "Fundación para la Innovación Agraria",
@@ -1048,6 +1078,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1457281-13-LE26",
+        "titulo": "Remoción y Reemplazo Sistema Climatización M100",
+        "organismo": "CORP CULTURAL MATUCANA CIEN",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 18500000,
+        "montoNuevo": 18500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1499-170-LE26",
         "titulo": "SAM MONITOR DESFIBRILADOR CAMILLA DE TRASLADO DE PACIENTES Y OXÍMETRO DE PULSO",
         "organismo": "INSTITUTO NACIONAL DEL TORAX",
@@ -1055,16 +1095,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 18200000,
         "montoNuevo": 18200000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1049-65-CO26",
-        "titulo": "SERVICIO DE ARRIENDO DE EMBARCACION PARA MONITOREO DEL PROCESO DE DESOVE DE ANCHOVETA DURANTE LA VEDA BIOLÓGICA REGION DE ARICA Y PARINACOTA 2026.",
-        "organismo": "INSTITUTO DE FOMENTO PESQUERO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 18000000,
-        "montoNuevo": 18000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1148,16 +1178,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1020-39-LE26",
-        "titulo": "Pendones LED P2.5 Indoor SMD TB40 o equivalente",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 12000000,
-        "montoNuevo": 12000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2392-48-LE26",
         "titulo": "Adquisición de autoclave de sobremesa con atril",
         "organismo": "I MUNICIPALIDAD PEDRO AGUIRRE CERDA",
@@ -1168,33 +1188,13 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4629-25-LE26",
-        "titulo": "SERVICIO DE MONITOREO Y REPORTE DE PRENSA",
-        "organismo": "DIRECCION DEL TRABAJO",
+        "codigo": "1020-39-LE26",
+        "titulo": "Pendones LED P2.5 Indoor SMD TB40 o equivalente",
+        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 11900000,
-        "montoNuevo": 11900000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5562-6-LE26",
-        "titulo": "SERVICIO DE VIGILANCIA Y MONITOREO DPP TAMARUGAL",
-        "organismo": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DEL TAMARUGAL",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 11000000,
-        "montoNuevo": 11000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3268-17-LE26",
-        "titulo": "400 413 SB 109-2026 ADQ. DE TAMBORES PLASTICOS",
-        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 10244859,
-        "montoNuevo": 10244859,
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 12000000,
+        "montoNuevo": 12000000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 3073.5,
+  "tiempoEjecucionSegundos": 2185.4,
   "errores": [],
   "advertencias": []
 }
