@@ -235,6 +235,11 @@ export default function SearchModule({
   };
 
   const getFichaUrl = (opportunity: Oportunidad) => {
+    // sourceUrl ya viene resuelto por el motor de sync (Compra Ágil vive en
+    // buscador.mercadopublico.cl, licitaciones en el portal legacy) — solo
+    // se usa la fórmula legacy como último recurso si por algún motivo no
+    // llegó sourceUrl para ese proceso.
+    if (opportunity.sourceUrl) return opportunity.sourceUrl;
     const code = (opportunity.codigo || '').toUpperCase();
     return `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${code}`;
   };
@@ -748,6 +753,7 @@ export default function SearchModule({
   };
 
   const [confirmacionMarcada, setConfirmacionMarcada] = useState(false);
+  const [codigoCopiadoParaExtension, setCodigoCopiadoParaExtension] = useState(false);
 
   const handleAddCommentSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -1705,6 +1711,24 @@ export default function SearchModule({
                       <p className="text-xs text-slate-500 dark:text-slate-400">
                         Ya guardaste una preparación de oferta por ${postulacionActual.montoOferta.toLocaleString('es-CL')} CLP. BidCoop no puede enviarla a Mercado Público — cuando la hayas postulado de verdad en el portal oficial, confírmalo aquí.
                       </p>
+                    </div>
+                    <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900/40 rounded-2xl p-5 space-y-3">
+                      <h3 className="text-xs font-black text-slate-900 dark:text-white">Preparar en el Portal</h3>
+                      <p className="text-xs text-slate-600 dark:text-slate-300">
+                        Copia el código de este proceso y ábrelo en Mercado Público para postular. Si tienes instalada la extensión de BidCoop, ella traerá los datos de esta cotización directamente en el formulario oficial — el envío siempre lo confirmas tú, ahí mismo.
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          navigator.clipboard?.writeText(selectedOpportunity.codigo || '').catch(() => {});
+                          window.open(getFichaUrl(selectedOpportunity), '_blank', 'noopener,noreferrer');
+                          setCodigoCopiadoParaExtension(true);
+                          setTimeout(() => setCodigoCopiadoParaExtension(false), 3000);
+                        }}
+                        className="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-black text-xs rounded-xl shadow-sm transition cursor-pointer"
+                      >
+                        {codigoCopiadoParaExtension ? '✓ Código copiado — abriendo ficha oficial…' : `Copiar Código (${selectedOpportunity.codigo}) y Abrir Ficha Oficial`}
+                      </button>
                     </div>
                     <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/40 rounded-2xl p-5 space-y-4">
                       <label className="flex items-start gap-3 cursor-pointer">
