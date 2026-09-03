@@ -441,7 +441,14 @@ def calculate_company_match(title: str, desc: str = "", source_hint: str = "") -
                 is_tech = any(k in full_text for k in ["toner", "impresora", "mouse", "teclado", "usb", "hdmi", "laser"])
                 is_aseo = any(k in full_text for k in ["aseo", "higiene", "limpieza", "cloro", "detergente"])
                 is_mobiliario = any(k in full_text for k in ["silla", "escritorio", "mueble", "mesa"])
-                if is_tech and "Tecnología y Hardware" in rubros:
+                # Términos cortos como "sast" colisionan con substrings de palabras
+                # comunes (ej. "desastres") y frases genéricas como "seguridad de la
+                # información" aparecen como boilerplate legal en licitaciones sin
+                # relación a ciberseguridad — se usan solo frases compuestas específicas.
+                is_ciber = any(k in full_text for k in ["hacking", "pentest", "phishing", "ciberseguridad", "attack surface", "codigo estatico", "auditoria de codigo fuente", "revision de codigo fuente", "analisis de vulnerabilidades", "evaluacion de vulnerabilidades", "vulnerability assessment", "escaneo de vulnerabilidades", "gestion de vulnerabilidades"])
+                if is_ciber and "Servicios de Ciberseguridad" in rubros:
+                    best_rubro = "Servicios de Ciberseguridad"
+                elif is_tech and "Tecnología y Hardware" in rubros:
                     best_rubro = "Tecnología y Hardware"
                 elif is_aseo and "Aseo e Higiene" in rubros:
                     best_rubro = "Aseo e Higiene"
