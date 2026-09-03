@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "BidCoop — Postulación Asistida",
+  "version": "0.1.0",
+  "description": "Trae los datos de cotización ya preparados en BidCoop (organismo, monto, ítems, precio de referencia) a un panel dentro de Mercado Público, para copiarlos al formulario oficial. Nunca envía nada por su cuenta — el clic en Enviar cotización siempre es tuyo, dentro del portal oficial.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.mercadopublico.cl/*",
+    "https://buscador.mercadopublico.cl/*"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.mercadopublico.cl/*",
+        "https://buscador.mercadopublico.cl/*"
+      ],
+      "js": ["content-script.js"],
+      "css": ["panel.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

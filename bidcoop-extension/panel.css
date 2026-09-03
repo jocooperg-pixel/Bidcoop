@@ -1,0 +1,101 @@
+#bidcoop-panel-launcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999999;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font: 700 13px -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+  cursor: pointer;
+}
+#bidcoop-panel-launcher:hover { background: #1d4ed8; }
+
+#bidcoop-panel {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999999;
+  width: 340px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.25);
+  font: 13px -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #0f172a;
+}
+#bidcoop-panel .bc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: #2563eb;
+  color: white;
+  border-radius: 16px 16px 0 0;
+}
+#bidcoop-panel .bc-header strong { font-size: 13px; }
+#bidcoop-panel .bc-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1;
+}
+#bidcoop-panel .bc-body { padding: 14px 16px; }
+#bidcoop-panel .bc-field { margin-bottom: 10px; }
+#bidcoop-panel .bc-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#bidcoop-panel .bc-value {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+  word-break: break-word;
+}
+#bidcoop-panel .bc-copy {
+  border: none;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#bidcoop-panel .bc-copy:hover { background: #dbeafe; }
+#bidcoop-panel .bc-item-row {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+}
+#bidcoop-panel .bc-note {
+  font-size: 10px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+#bidcoop-panel .bc-error {
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+}
+#bidcoop-panel .bc-disclaimer {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 10.5px;
+  color: #92400e;
+  margin-top: 10px;
+}
