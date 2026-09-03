@@ -706,9 +706,17 @@ def fetch_compraagil_detail(code: str, detail_cache: dict) -> Optional[Dict]:
     cache_key = f"CA:{code}"
     cached = detail_cache.get(cache_key)
     if cached:
-        close_str = ((cached.get("data") or {}).get("fechas") or {}).get("fecha_cierre")
-        if is_cache_valid(cached, close_str):
-            return cached.get("data")
+        cached_data = cached.get("data") or {}
+        close_str = (cached_data.get("fechas") or {}).get("fecha_cierre")
+        # Un detalle cacheado con productos_solicitados vacío casi siempre es
+        # una respuesta incompleta de una consulta que coincidió con una falla
+        # parcial de la API (frecuente en api2.mercadopublico.cl) — no un
+        # proceso genuinamente sin ítems (esos casos reales existen, pero son
+        # la minoría). Confiar en ese caché por 48h propagaba el ítem
+        # genérico "ITEM-1"/sku sintético en cada sync posterior en vez de
+        # reintentar. Se fuerza un reintento en vez de servir el caché vacío.
+        if is_cache_valid(cached, close_str) and cached_data.get("productos_solicitados"):
+            return cached_data
 
     elapsed = time.time() - START_TIME
     if elapsed > MAX_EXEC_SECONDS:
@@ -1096,7 +1104,13 @@ def build_compraagil_record(
     items_list = []
     for p in ((detail or {}).get("productos_solicitados") or []):
         items_list.append({
-            "sku": f"SKU-{p.get('codigo_producto', 1)}",
+            # ID real del producto (catálogo ChileCompra) — antes se guardaba
+            # con prefijo sintético "SKU-", pero este es el mismo número que
+            # el formulario oficial de postulación muestra como "ID: {n}" en
+            # cada línea de cotización. Guardarlo tal cual permite emparejar
+            # con certeza cada ítem de BidCoop con su fila real en el portal
+            # (confirmado en vivo el 2026-09-03 revisando el formulario real).
+            "sku": str(p.get("codigo_producto") or "SIN-ID"),
             "producto": p.get("nombre") or title,
             "cantidad": float(p.get("cantidad") or 1),
             # La API no informa precio unitario del lado solicitado (solo del
