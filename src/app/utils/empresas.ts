@@ -19,7 +19,7 @@ export const EMPRESAS: Record<string, EmpresaInfo> = {
     rut: '99.533.780-0',
     emailContacto: 'mviguera@aminorte.cl',
     activa: true,
-    rubros: ['Artículos de Escritorio y Oficina', 'Tecnología y Hardware', 'Servicios de Climatización y Maquinaria', 'Servicios de Ciberseguridad']
+    rubros: ['Artículos de Escritorio y Oficina', 'Tecnología y Hardware', 'Servicios de Climatización y Maquinaria', 'Servicios de Ciberseguridad', 'Ropa y Equipamiento Deportivo']
   },
   'V-MOCCS': {
     nombre: 'V-MOCCS',

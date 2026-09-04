@@ -446,8 +446,11 @@ def calculate_company_match(title: str, desc: str = "", source_hint: str = "") -
                 # información" aparecen como boilerplate legal en licitaciones sin
                 # relación a ciberseguridad — se usan solo frases compuestas específicas.
                 is_ciber = any(k in full_text for k in ["hacking", "pentest", "phishing", "ciberseguridad", "attack surface", "codigo estatico", "auditoria de codigo fuente", "revision de codigo fuente", "analisis de vulnerabilidades", "evaluacion de vulnerabilidades", "vulnerability assessment", "escaneo de vulnerabilidades", "gestion de vulnerabilidades"])
+                is_deportivo = "deportiv" in full_text
                 if is_ciber and "Servicios de Ciberseguridad" in rubros:
                     best_rubro = "Servicios de Ciberseguridad"
+                elif is_deportivo and "Ropa y Equipamiento Deportivo" in rubros:
+                    best_rubro = "Ropa y Equipamiento Deportivo"
                 elif is_tech and "Tecnología y Hardware" in rubros:
                     best_rubro = "Tecnología y Hardware"
                 elif is_aseo and "Aseo e Higiene" in rubros:
