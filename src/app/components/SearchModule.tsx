@@ -142,18 +142,38 @@ export default function SearchModule({
     }
   };
 
-  // Column visibility
+  // Column visibility — tabla estilo LicitaPyme: más columnas visibles por
+  // defecto (región, procedencia, etiquetas), no solo lo mínimo.
   const [visibleColumns, setVisibleColumns] = useState({
     codigo: true,
     organismo: true,
     titulo: true,
+    region: true,
+    modalidad: true,
     monto: true,
     match: true,
     semaforo: true,
-    cierre: true
+    cierre: true,
+    etiquetas: true
   });
   const [showColumnSelector, setShowColumnSelector] = useState(false);
-  const [viewMode, setViewMode] = useState<'cards' | 'table'>('cards');
+  // Vista por defecto = tabla densa (estilo LicitaPyme), no tarjetas.
+  const [viewMode, setViewMode] = useState<'cards' | 'table'>('table');
+
+  // Orden por columna en la vista de tabla (estilo LicitaPyme, click en el
+  // encabezado). null = mantiene el orden ya calculado en filteredOportunidades
+  // (fecha de publicación/cierre, o relevancia de la IA).
+  type ColumnaOrdenable = 'codigo' | 'organismo' | 'titulo' | 'region' | 'modalidad' | 'monto' | 'match' | 'cierre';
+  const [sortColumn, setSortColumn] = useState<ColumnaOrdenable | null>(null);
+  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
+  const handleSortColumn = (col: ColumnaOrdenable) => {
+    if (sortColumn === col) {
+      setSortDirection(prev => (prev === 'asc' ? 'desc' : 'asc'));
+    } else {
+      setSortColumn(col);
+      setSortDirection('asc');
+    }
+  };
 
   // Saved view creation
   const [newViewName, setNewViewName] = useState('');
@@ -767,10 +787,37 @@ export default function SearchModule({
   }, [oportunidades, searchText, filterRubro, filterRegion, filterRiesgo, filterMontoMin, filterMontoMax, filterModalidad, filterProcedencias, filterEstado, filterIncludeKeywords, filterExcludeKeywords, aiSearchMode, aiSearchCodes]);
 
   // Paginated opportunities
+  // Orden por columna (tabla estilo LicitaPyme) aplicado sobre la lista ya
+  // filtrada, sin reemplazar el orden por defecto salvo que el usuario haga
+  // click en un encabezado.
+  const oportunidadesOrdenadas = useMemo(() => {
+    if (!sortColumn) return filteredOportunidades;
+    const dir = sortDirection === 'asc' ? 1 : -1;
+    const valorDe = (op: Oportunidad): string | number => {
+      switch (sortColumn) {
+        case 'codigo': return op.officialCode || op.codigo;
+        case 'organismo': return op.organismo || '';
+        case 'titulo': return op.titulo || '';
+        case 'region': return op.region || '';
+        case 'modalidad': return op.modalidad || '';
+        case 'monto': return op.amount ?? op.monto ?? 0;
+        case 'match': return op.matchScore ?? 0;
+        case 'cierre': return op.fechaCierre || '';
+        default: return '';
+      }
+    };
+    return [...filteredOportunidades].sort((a, b) => {
+      const va = valorDe(a);
+      const vb = valorDe(b);
+      if (typeof va === 'number' && typeof vb === 'number') return (va - vb) * dir;
+      return String(va).localeCompare(String(vb)) * dir;
+    });
+  }, [filteredOportunidades, sortColumn, sortDirection]);
+
   const paginatedOportunidades = useMemo(() => {
     const start = (currentPage - 1) * itemsPerPage;
-    return filteredOportunidades.slice(start, start + itemsPerPage);
-  }, [filteredOportunidades, currentPage]);
+    return oportunidadesOrdenadas.slice(start, start + itemsPerPage);
+  }, [oportunidadesOrdenadas, currentPage]);
 
   const totalPages = Math.ceil(filteredOportunidades.length / itemsPerPage) || 1;
 
@@ -2734,7 +2781,14 @@ export default function SearchModule({
                             onChange={(e) => setVisibleColumns(prev => ({ ...prev, [col]: e.target.checked }))}
                             className="rounded text-blue-600"
                           />
-                          <span className="font-bold capitalize">{col === 'cierre' ? 'Fecha Límite' : col === 'match' ? 'Match %' : col}</span>
+                          <span className="font-bold capitalize">
+                            {col === 'cierre' ? 'Fecha Límite'
+                              : col === 'match' ? 'Match %'
+                              : col === 'region' ? 'Región'
+                              : col === 'modalidad' ? 'Procedencia'
+                              : col === 'etiquetas' ? 'Etiquetas'
+                              : col}
+                          </span>
                         </label>
                       ))}
                     </div>
@@ -3073,24 +3127,46 @@ export default function SearchModule({
 
             {/* RESULTS TABLE */}
             {viewMode === 'table' && (
-            <div className="overflow-x-auto flex-1">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="border-b border-slate-100 dark:border-slate-800">
-                    {visibleColumns.codigo && <th className="py-3 text-[9px] uppercase font-black text-slate-400">Código</th>}
-                    {visibleColumns.organismo && <th className="py-3 text-[9px] uppercase font-black text-slate-400">Comprador</th>}
-                    {visibleColumns.titulo && <th className="py-3 text-[9px] uppercase font-black text-slate-400">Oportunidad</th>}
-                    {visibleColumns.monto && <th className="py-3 text-[9px] uppercase font-black text-slate-400 text-right">Monto</th>}
-                    {visibleColumns.match && <th className="py-3 text-[9px] uppercase font-black text-slate-400 text-center">Match</th>}
-                    {visibleColumns.semaforo && <th className="py-3 text-[9px] uppercase font-black text-slate-400 text-center">Semáforo</th>}
-                    {visibleColumns.cierre && <th className="py-3 text-[9px] uppercase font-black text-slate-400">Fecha Límite</th>}
-                    <th className="py-3 text-[9px] uppercase font-black text-slate-400 text-center">Detalle</th>
+            <div className="overflow-x-auto flex-1 max-h-[70vh] overflow-y-auto rounded-xl border border-slate-100 dark:border-slate-800">
+              <table className="w-full text-left border-collapse text-xs">
+                <thead className="sticky top-0 z-10 bg-slate-50 dark:bg-slate-900 shadow-sm">
+                  <tr className="border-b border-slate-200 dark:border-slate-800">
+                    {([
+                      visibleColumns.codigo && { key: 'codigo' as const, label: 'Código', align: 'left' },
+                      visibleColumns.organismo && { key: 'organismo' as const, label: 'Comprador', align: 'left' },
+                      visibleColumns.titulo && { key: 'titulo' as const, label: 'Oportunidad', align: 'left' },
+                      visibleColumns.region && { key: 'region' as const, label: 'Región', align: 'left' },
+                      visibleColumns.modalidad && { key: 'modalidad' as const, label: 'Procedencia', align: 'left' },
+                      visibleColumns.monto && { key: 'monto' as const, label: 'Monto', align: 'right' },
+                      visibleColumns.match && { key: 'match' as const, label: 'Match', align: 'center' }
+                    ].filter(Boolean) as Array<{ key: ColumnaOrdenable; label: string; align: string }>).map(col => (
+                      <th
+                        key={col.key}
+                        onClick={() => handleSortColumn(col.key)}
+                        className={`py-2.5 px-2.5 text-[9px] uppercase font-black text-slate-400 whitespace-nowrap cursor-pointer select-none hover:text-slate-700 dark:hover:text-slate-200 transition ${
+                          col.align === 'right' ? 'text-right' : col.align === 'center' ? 'text-center' : 'text-left'
+                        }`}
+                      >
+                        {col.label} {sortColumn === col.key ? (sortDirection === 'asc' ? '▲' : '▼') : ''}
+                      </th>
+                    ))}
+                    {visibleColumns.semaforo && <th className="py-2.5 px-2.5 text-[9px] uppercase font-black text-slate-400 text-center whitespace-nowrap">Semáforo</th>}
+                    {visibleColumns.cierre && (
+                      <th
+                        onClick={() => handleSortColumn('cierre')}
+                        className="py-2.5 px-2.5 text-[9px] uppercase font-black text-slate-400 whitespace-nowrap cursor-pointer select-none hover:text-slate-700 dark:hover:text-slate-200 transition"
+                      >
+                        F. Cierre {sortColumn === 'cierre' ? (sortDirection === 'asc' ? '▲' : '▼') : ''}
+                      </th>
+                    )}
+                    {visibleColumns.etiquetas && <th className="py-2.5 px-2.5 text-[9px] uppercase font-black text-slate-400 whitespace-nowrap">Etiquetas</th>}
+                    <th className="py-2.5 px-2.5 text-[9px] uppercase font-black text-slate-400 text-center whitespace-nowrap">Acciones</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
                   {paginatedOportunidades.length === 0 ? (
                     <tr>
-                      <td colSpan={7} className="py-12 text-center text-slate-400 text-xs">
+                      <td colSpan={12} className="py-12 text-center text-slate-400 text-xs">
                         No se encontraron oportunidades bajo este criterio de búsqueda.
                       </td>
                     </tr>
@@ -3102,7 +3178,7 @@ export default function SearchModule({
                         onClick={() => handleOpenDetail(op)}
                       >
                         {visibleColumns.codigo && (
-                          <td className="py-3.5">
+                          <td className="py-2 px-2.5 whitespace-nowrap">
                             <div className="flex items-center gap-1.5">
                               <span className="text-[10px] font-black text-slate-900 dark:text-white">{op.officialCode || op.codigo}</span>
                               {op.validationStatus === 'confirmado' ? (
@@ -3128,19 +3204,6 @@ export default function SearchModule({
                                   {op.empresaMatch}
                                 </span>
                               )}
-                              {op.modalidad && (
-                                <span className={`text-[8px] font-black px-1.5 py-0.2 rounded uppercase ${
-                                  op.modalidad === 'Grandes Compras' || op.esInvitacionGrandesCompras
-                                    ? 'bg-purple-600 text-white font-extrabold shadow-xs'
-                                    : op.modalidad === 'Compra Ágil'
-                                    ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/30 dark:text-orange-400'
-                                    : op.modalidad === 'Convenio Marco'
-                                    ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400'
-                                    : 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400'
-                                }`}>
-                                  {op.modalidad === 'Grandes Compras' ? '🛍️ Grande Compra' : op.modalidad}
-                                </span>
-                              )}
                               {op.estado && (
                                 <span className={`text-[8px] font-black px-1.5 py-0.2 rounded uppercase ${
                                   op.estado === 'Publicada'
@@ -3164,20 +3227,42 @@ export default function SearchModule({
                           </td>
                         )}
                         {visibleColumns.organismo && (
-                          <td className="py-3.5 max-w-[150px] truncate text-[11px] font-bold text-slate-600 dark:text-slate-400">
+                          <td className="py-2 px-2.5 max-w-[150px] truncate text-[11px] font-bold text-slate-600 dark:text-slate-400">
                             {op.organismo}
                           </td>
                         )}
                         {visibleColumns.titulo && (
-                          <td className="py-3.5 max-w-[280px]">
+                          <td className="py-2 px-2.5 max-w-[240px]">
                             <span className="text-xs font-black text-slate-800 dark:text-slate-200 line-clamp-1 group-hover:text-blue-500 transition-colors">
                               {op.titulo}
                             </span>
                             <span className="text-[9px] text-slate-400 block mt-0.5 line-clamp-1">{op.descripcion}</span>
                           </td>
                         )}
+                        {visibleColumns.region && (
+                          <td className="py-2 px-2.5 whitespace-nowrap text-[10px] font-bold text-slate-500 dark:text-slate-400">
+                            {op.region || 'No informado'}
+                          </td>
+                        )}
+                        {visibleColumns.modalidad && (
+                          <td className="py-2 px-2.5 whitespace-nowrap">
+                            {op.modalidad && (
+                              <span className={`text-[9px] font-black px-1.5 py-0.5 rounded uppercase ${
+                                op.modalidad === 'Grandes Compras' || op.esInvitacionGrandesCompras
+                                  ? 'bg-purple-600 text-white font-extrabold'
+                                  : op.modalidad === 'Compra Ágil'
+                                  ? 'bg-orange-50 text-orange-700 dark:bg-orange-950/30 dark:text-orange-400'
+                                  : op.modalidad === 'Convenio Marco'
+                                  ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400'
+                                  : 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400'
+                              }`}>
+                                {op.modalidad}
+                              </span>
+                            )}
+                          </td>
+                        )}
                         {visibleColumns.monto && (
-                          <td className="py-3.5 text-right font-black text-xs text-slate-900 dark:text-white">
+                          <td className="py-2 px-2.5 text-right font-black text-xs text-slate-900 dark:text-white whitespace-nowrap">
                             {op.amountType === 'no_informado' || op.amount === null || (!op.amount && op.monto === 0) ? (
                               <span className="text-[10px] font-semibold italic text-slate-400 dark:text-slate-500">Monto no informado</span>
                             ) : (
@@ -3186,14 +3271,14 @@ export default function SearchModule({
                           </td>
                         )}
                         {visibleColumns.match && (
-                          <td className="py-3.5 text-center">
+                          <td className="py-2 px-2.5 text-center">
                             <span className={`text-[10px] font-black px-2 py-0.5 rounded-full border ${getMatchScoreBadgeStyle(op.matchScore).badgeBg}`}>
                               {op.matchScore}%
                             </span>
                           </td>
                         )}
                         {visibleColumns.semaforo && (
-                          <td className="py-3.5 text-center">
+                          <td className="py-2 px-2.5 text-center">
                             {(() => {
                               const semaforo = getSemaforoBidCoop(op);
                               return (
@@ -3205,11 +3290,26 @@ export default function SearchModule({
                           </td>
                         )}
                         {visibleColumns.cierre && (
-                          <td className="py-3.5 text-[10px] font-bold text-slate-500">
+                          <td className="py-2 px-2.5 text-[10px] font-bold text-slate-500 whitespace-nowrap">
                             {op.fechaCierre}
                           </td>
                         )}
-                        <td className="py-3.5 text-center">
+                        {visibleColumns.etiquetas && (
+                          <td className="py-2 px-2.5 max-w-[140px]" onClick={(e) => e.stopPropagation()}>
+                            <div className="flex flex-wrap gap-1">
+                              {(etiquetasPorCodigo.get(op.codigo) || []).map(et => (
+                                <span
+                                  key={et.id}
+                                  className="text-[8px] font-bold rounded-full px-1.5 py-0.5 whitespace-nowrap"
+                                  style={{ backgroundColor: `${et.color}22`, color: et.color }}
+                                >
+                                  {et.nombre}
+                                </span>
+                              ))}
+                            </div>
+                          </td>
+                        )}
+                        <td className="py-2 px-2.5 text-center">
                           <button className="p-1 px-2 text-[10px] rounded-lg bg-slate-100 hover:bg-blue-600 dark:bg-slate-800 dark:hover:bg-blue-600 text-slate-600 dark:text-slate-300 hover:text-white font-extrabold transition">
                             Ver
                           </button>
