@@ -4,8 +4,6 @@ import { FLETES_REGIONALES_CHILE } from '../mockData';
 import { calcularCentroAlertas } from '../utils/alertasEngine';
 import AdjudicacionesModule from './AdjudicacionesModule';
 
-// We import productCatalogRaw from catalog.ts to parse it
-import { productCatalogRaw as rawData } from '../catalog';
 
 
 interface BusinessModuleProps {
@@ -54,28 +52,62 @@ export default function BusinessModule({
     }
   }, [activeSubSection]);
 
-  // Parse products from catalog.ts and filter by active company context
-  const catalogProducts = useMemo(() => {
-    const lines = rawData.trim().split('\n');
-    const parsed = lines.map((line, idx) => {
-      const parts = line.split('|');
-      return {
-        id: `p-${idx + 1}`,
-        sku: parts[0] || 'SKU-000',
-        nombre: parts[1] || 'Producto sin nombre',
-        proveedor: parts[2] || 'Aminorte',
-        categoria: parts[3] || 'General',
-        detalle: parts[4] || '',
-        precioBase: parseFloat(parts[5]) || 1000,
-        estado: parts[6] || 'Activo'
-      };
-    });
+  // Catálogo real de productos propios, persistido en Postgres (modelo
+  // Producto) — reemplaza el catálogo hardcodeado de 22 productos de
+  // ejemplo que vivía en catalog.ts. Se filtra por empresa activa en el
+  // propio fetch de datos, no acá.
+  interface CatalogoProductoReal {
+    id: string;
+    sku: string;
+    nombre: string;
+    categoria: string | null;
+    precioBase: number | null;
+    costoActual: number | null;
+    stock: number | null;
+    empresa: string;
+    actualizadoEn: string;
+  }
+  const [catalogProducts, setCatalogProducts] = useState<CatalogoProductoReal[]>([]);
+  const [catalogLoading, setCatalogLoading] = useState(true);
+  const [importandoCatalogo, setImportandoCatalogo] = useState(false);
+  const [importCatalogoMsg, setImportCatalogoMsg] = useState<string | null>(null);
 
-    if (activeCompany === 'Consolidado') return parsed.slice(0, 100);
-    return parsed.filter(p => p.proveedor === activeCompany || p.proveedor === 'Aminorte').slice(0, 100);
+  const cargarCatalogo = () => {
+    setCatalogLoading(true);
+    fetch('/api/db-productos')
+      .then(res => res.json())
+      .then(data => setCatalogProducts(data.productos ?? []))
+      .catch(() => setCatalogProducts([]))
+      .finally(() => setCatalogLoading(false));
+  };
 
+  useEffect(() => {
+    cargarCatalogo();
+  }, []);
 
-  }, [activeCompany]);
+  const catalogProductsFiltrados = useMemo(() => {
+    if (activeCompany === 'Consolidado') return catalogProducts;
+    return catalogProducts.filter(p => p.empresa === activeCompany);
+  }, [catalogProducts, activeCompany]);
+
+  const handleImportarCatalogo = async (file: File, empresaNombre: string) => {
+    setImportandoCatalogo(true);
+    setImportCatalogoMsg(null);
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('empresaNombre', empresaNombre);
+      const res = await fetch('/api/db-productos/importar', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error al importar.');
+      setImportCatalogoMsg(`✓ ${data.importados} productos importados de ${data.totalFilas} filas.${data.erroresFila?.length ? ` ${data.erroresFila.length} filas omitidas.` : ''}`);
+      cargarCatalogo();
+    } catch (err: unknown) {
+      setImportCatalogoMsg(`Error: ${err instanceof Error ? err.message : String(err)}`);
+    } finally {
+      setImportandoCatalogo(false);
+    }
+  };
 
   // Postulaciones Filters State
   const [filterModality, setFilterModality] = useState<'Todas' | 'Compra Ágil' | 'Grandes Compras'>('Todas');
@@ -1203,51 +1235,93 @@ export default function BusinessModule({
           ======================================================================= */}
       {currentSub === 'catalogo' && (
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
-          <div>
-            <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Catálogo de Productos Propios</h3>
-            <p className="text-[10px] text-slate-400 mt-0.5">Listado de insumos homologados disponibles para match automático de licitaciones.</p>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div>
+              <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Catálogo de Productos Propios</h3>
+              <p className="text-[10px] text-slate-400 mt-0.5">Catálogo real, persistido — base para preparar tu oferta de Convenio Marco (la carga al portal la haces tú mismo).</p>
+            </div>
+            <label className="shrink-0 flex items-center gap-2 px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white text-[10px] font-black rounded-xl cursor-pointer transition">
+              {importandoCatalogo ? 'Importando…' : '📥 Importar Excel'}
+              <input
+                type="file"
+                accept=".xlsx,.xls"
+                className="hidden"
+                disabled={importandoCatalogo}
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (!file) return;
+                  const empresaDestino = activeCompany === 'Consolidado' ? 'Aminorte' : activeCompany;
+                  handleImportarCatalogo(file, empresaDestino);
+                  e.target.value = '';
+                }}
+              />
+            </label>
           </div>
 
-          <div className="overflow-y-auto max-h-[450px] border border-slate-100 dark:border-slate-800 rounded-xl">
-            <table className="w-full text-left text-xs border-collapse">
-              <thead className="bg-slate-50 dark:bg-slate-850 sticky top-0">
-                <tr>
-                  <th className="p-3 font-black text-slate-400">SKU</th>
-                  <th className="p-3 font-black text-slate-400">Nombre del Producto</th>
-                  <th className="p-3 font-black text-slate-400">Convenio / Empresa</th>
-                  <th className="p-3 font-black text-slate-400">Categoría</th>
-                  <th className="p-3 font-black text-slate-400">Detalle</th>
-                  <th className="p-3 font-black text-slate-400 text-right">Precio Base Neto</th>
-                  <th className="p-3 font-black text-slate-400 text-center">Estado</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
-                {catalogProducts.map((p) => (
-                  <tr key={p.id} className="hover:bg-slate-50/50 dark:hover:bg-slate-850/10">
-                    <td className="p-3 font-bold text-slate-900 dark:text-white">{p.sku}</td>
-                    <td className="p-3 font-semibold text-slate-850 dark:text-slate-350">{p.nombre}</td>
-                    <td className="p-3">
-                      <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase ${
-                        p.proveedor === 'V-MOCCS'
-                          ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400'
-                          : 'bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400'
-                      }`}>
-                        {p.proveedor === 'V-MOCCS' ? 'Mobiliario (V-MOCCS)' : 'Escritorio (Aminorte)'}
-                      </span>
-                    </td>
-                    <td className="p-3">
-                      <span className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-[10px] text-slate-500 font-bold">{p.categoria}</span>
-                    </td>
-                    <td className="p-3 text-[10px] text-slate-400">{p.detalle}</td>
-                    <td className="p-3 text-right font-black text-slate-900 dark:text-white">${p.precioBase.toLocaleString('es-CL')}</td>
-                    <td className="p-3 text-center">
-                      <span className="text-[9px] font-black text-green-500">Activo</span>
-                    </td>
+          {importCatalogoMsg && (
+            <p className={`text-[11px] font-semibold ${importCatalogoMsg.startsWith('Error') ? 'text-red-500' : 'text-emerald-600'}`}>{importCatalogoMsg}</p>
+          )}
+          <p className="text-[9px] text-slate-400">Formato: columnas <code>sku, nombre, categoria, precioBase, costoActual, stock</code> en la primera fila.</p>
+
+          {catalogLoading && <p className="text-xs text-slate-400">Cargando catálogo…</p>}
+          {!catalogLoading && catalogProductsFiltrados.length === 0 && (
+            <p className="text-xs text-slate-400 italic py-6 text-center">Sin productos cargados todavía — importa un Excel para empezar.</p>
+          )}
+
+          {!catalogLoading && catalogProductsFiltrados.length > 0 && (
+            <div className="overflow-y-auto max-h-[450px] border border-slate-100 dark:border-slate-800 rounded-xl">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead className="bg-slate-50 dark:bg-slate-850 sticky top-0">
+                  <tr>
+                    <th className="p-3 font-black text-slate-400">SKU</th>
+                    <th className="p-3 font-black text-slate-400">Nombre del Producto</th>
+                    <th className="p-3 font-black text-slate-400">Empresa</th>
+                    <th className="p-3 font-black text-slate-400">Categoría</th>
+                    <th className="p-3 font-black text-slate-400 text-right">Precio Base</th>
+                    <th className="p-3 font-black text-slate-400 text-right">Costo Actual</th>
+                    <th className="p-3 font-black text-slate-400 text-right">Stock</th>
+                    <th className="p-3 font-black text-slate-400 text-center">Acciones</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
+                  {catalogProductsFiltrados.map((p) => (
+                    <tr key={p.id} className="hover:bg-slate-50/50 dark:hover:bg-slate-850/10">
+                      <td className="p-3 font-bold text-slate-900 dark:text-white">{p.sku}</td>
+                      <td className="p-3 font-semibold text-slate-850 dark:text-slate-350">{p.nombre}</td>
+                      <td className="p-3">
+                        <span className={`px-2 py-0.5 rounded text-[9px] font-black uppercase ${
+                          p.empresa === 'V-MOCCS'
+                            ? 'bg-purple-50 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400'
+                            : 'bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-400'
+                        }`}>
+                          {p.empresa}
+                        </span>
+                      </td>
+                      <td className="p-3">
+                        <span className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-[10px] text-slate-500 font-bold">{p.categoria || 'Sin categoría'}</span>
+                      </td>
+                      <td className="p-3 text-right font-black text-slate-900 dark:text-white">{p.precioBase !== null ? `$${p.precioBase.toLocaleString('es-CL')}` : 'No disponible'}</td>
+                      <td className="p-3 text-right text-slate-500">{p.costoActual !== null ? `$${p.costoActual.toLocaleString('es-CL')}` : 'No disponible'}</td>
+                      <td className="p-3 text-right text-slate-500">{p.stock !== null ? p.stock.toLocaleString('es-CL') : 'No disponible'}</td>
+                      <td className="p-3 text-center">
+                        <button
+                          type="button"
+                          onClick={async () => {
+                            if (!confirm(`¿Eliminar "${p.nombre}" del catálogo?`)) return;
+                            await fetch(`/api/db-productos?id=${p.id}`, { method: 'DELETE' });
+                            cargarCatalogo();
+                          }}
+                          className="text-[9px] font-black text-red-500 hover:text-red-600"
+                        >
+                          Eliminar
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </div>
       )}
 
