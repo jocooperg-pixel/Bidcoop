@@ -11,6 +11,18 @@ interface UsuarioBasico {
   nombre: string;
 }
 
+interface ContratoResumen {
+  id: string;
+  oportunidadCodigo: string;
+  oportunidadTitulo: string;
+  empresa: string;
+  comprador: { id: string; nombre: string; riesgo: string } | null;
+  totalEntregas: number;
+  entregasPendientes: number;
+  totalFacturas: number;
+  facturasPendientes: number;
+}
+
 interface TareaResumen {
   id: string;
   titulo: string;
@@ -455,6 +467,29 @@ export default function BusinessModule({
       .catch(() => setTareasCalendario([]));
   }, []);
 
+  // Clientes reales dentro de Gestión de Contratos: se derivan directo de
+  // los contratos reales (/api/db-contratos, ya incluye el comprador
+  // resuelto) — solo aparecen compradores con al menos un Contrato real,
+  // nunca el directorio completo de organismos.
+  const [contratosClientes, setContratosClientes] = useState<ContratoResumen[]>([]);
+  useEffect(() => {
+    fetch('/api/db-contratos')
+      .then(res => (res.ok ? res.json() : { contratos: [] }))
+      .then(data => setContratosClientes(Array.isArray(data.contratos) ? data.contratos : []))
+      .catch(() => setContratosClientes([]));
+  }, []);
+
+  const clientesConContrato = useMemo(() => {
+    const porComprador = new Map<string, { id: string; nombre: string; riesgo: string; contratos: ContratoResumen[] }>();
+    contratosClientes.forEach(c => {
+      if (!c.comprador) return;
+      const entry = porComprador.get(c.comprador.id) || { id: c.comprador.id, nombre: c.comprador.nombre, riesgo: c.comprador.riesgo, contratos: [] };
+      entry.contratos.push(c);
+      porComprador.set(c.comprador.id, entry);
+    });
+    return Array.from(porComprador.values()).sort((a, b) => b.contratos.length - a.contratos.length);
+  }, [contratosClientes]);
+
   // Seed dates on calendar: 1 to 31
   const calendarDays = useMemo(() => {
     const year = calendarMonth.getFullYear();
@@ -544,6 +579,7 @@ export default function BusinessModule({
           { id: 'logistica', label: '🚚 Flete y Márgenes Regionales' },
           { id: 'alertas', label: '🚨 Centro de Alertas' },
           { id: 'calendario', label: 'Calendario Clave' },
+          { id: 'clientes', label: '👥 Clientes' },
           { id: 'catalogo', label: 'Catálogo de Insumos' },
           { id: 'documentos', label: 'Repositorio Legal' }
         ].map((tab) => (
@@ -1269,6 +1305,63 @@ export default function BusinessModule({
               );
             })}
           </div>
+        </div>
+      )}
+
+      {/* =======================================================================
+          TAB: CLIENTES (compradores reales con al menos un Contrato)
+          ======================================================================= */}
+      {currentSub === 'clientes' && (
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
+          <div>
+            <h3 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wider">Clientes</h3>
+            <p className="text-[10px] text-slate-400 mt-0.5">
+              Organismos compradores con al menos un Contrato real de seguimiento post-adjudicación (ver &quot;Seguimiento de Contrato&quot; en Adjudicaciones).
+            </p>
+          </div>
+
+          {clientesConContrato.length === 0 ? (
+            <div className="py-10 text-center text-xs text-slate-400">
+              Aún no hay contratos vinculados a un comprador real. Se completa automáticamente al crear un &quot;Seguimiento de Contrato&quot; para un proceso adjudicado cuyo comprador ya esté registrado en la base.
+            </div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs">
+                <thead>
+                  <tr className="text-left text-[9px] uppercase font-black text-slate-400 border-b border-slate-100 dark:border-slate-800">
+                    <th className="py-2 pr-3">Comprador</th>
+                    <th className="py-2 pr-3">Riesgo</th>
+                    <th className="py-2 pr-3">Contratos</th>
+                    <th className="py-2 pr-3">Procesos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {clientesConContrato.map(cliente => (
+                    <tr key={cliente.id} className="border-b border-slate-50 dark:border-slate-800/60 hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                      <td className="py-2.5 pr-3 font-bold text-slate-800 dark:text-slate-200">{cliente.nombre}</td>
+                      <td className="py-2.5 pr-3">
+                        <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
+                          cliente.riesgo === 'Bajo'
+                            ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/30 dark:text-emerald-400'
+                            : cliente.riesgo === 'Medio'
+                              ? 'bg-amber-50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400'
+                              : cliente.riesgo === 'Alto'
+                                ? 'bg-red-50 text-red-600 dark:bg-red-950/30 dark:text-red-400'
+                                : 'bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400'
+                        }`}>
+                          {cliente.riesgo}
+                        </span>
+                      </td>
+                      <td className="py-2.5 pr-3 font-black text-slate-900 dark:text-white">{cliente.contratos.length}</td>
+                      <td className="py-2.5 pr-3 text-slate-500 dark:text-slate-400 truncate max-w-xs">
+                        {cliente.contratos.map(c => c.oportunidadCodigo).join(', ')}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </div>
       )}
 

@@ -364,6 +364,7 @@ model Comprador {
 
   oportunidades Oportunidad[]
   notas         Comentario[]
+  contratos     Contrato[]
 
   @@index([workspaceId])
 }
@@ -524,6 +525,14 @@ model Contrato {
   empresaId         String
   empresa           Empresa @relation(fields: [empresaId], references: [id])
 
+  // Resuelto automáticamente al crear el contrato, buscando la Oportunidad
+  // real por oportunidadCodigo en Postgres y tomando su compradorId — esa
+  // tabla es una copia parcial (ver comentario más arriba), así que puede
+  // quedar en null si el código no está ahí o si esa oportunidad no tiene
+  // comprador asociado. Nunca se resuelve a mano ni se inventa un comprador.
+  compradorId String?
+  comprador   Comprador? @relation(fields: [compradorId], references: [id])
+
   fechaInicio DateTime?
   // Ingresado por el usuario a partir del documento real de adjudicación —
   // nunca inferido ni copiado de AdjudicacionDetalle.plazoEntrega (que hoy
@@ -543,6 +552,7 @@ model Contrato {
 
   @@unique([oportunidadCodigo, empresaId])
   @@index([empresaId])
+  @@index([compradorId])
 }
 
 model Entrega {

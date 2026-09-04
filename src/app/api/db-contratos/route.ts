@@ -30,7 +30,8 @@ export async function GET(req: NextRequest) {
           entregas: { orderBy: { fecha: 'asc' } },
           facturas: { orderBy: { fecha: 'asc' } },
           empresa: { select: { nombre: true } },
-          creadoPor: { select: { nombre: true, email: true } }
+          creadoPor: { select: { nombre: true, email: true } },
+          comprador: { select: { id: true, nombre: true, riesgo: true } }
         }
       });
       return NextResponse.json({ contrato });
@@ -41,7 +42,8 @@ export async function GET(req: NextRequest) {
       include: {
         entregas: { select: { estado: true } },
         facturas: { select: { estado: true } },
-        empresa: { select: { nombre: true } }
+        empresa: { select: { nombre: true } },
+        comprador: { select: { id: true, nombre: true, riesgo: true } }
       },
       orderBy: { createdAt: 'desc' }
     });
@@ -55,6 +57,7 @@ export async function GET(req: NextRequest) {
         empresa: c.empresa.nombre,
         fechaInicio: c.fechaInicio,
         plazoEntregaReal: c.plazoEntregaReal,
+        comprador: c.comprador ? { id: c.comprador.id, nombre: c.comprador.nombre, riesgo: c.comprador.riesgo } : null,
         totalEntregas: c.entregas.length,
         entregasPendientes: c.entregas.filter(e => e.estado === 'PENDIENTE').length,
         totalFacturas: c.facturas.length,
@@ -101,6 +104,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'No autorizado para esta empresa.' }, { status: 403 });
     }
 
+    // Resuelve compradorId automáticamente desde la Oportunidad real en
+    // Postgres, si existe — esa tabla es una copia parcial (ver comentario
+    // en schema.prisma), así que muchos códigos no van a estar ahí; en ese
+    // caso o si la oportunidad no tiene comprador asociado, queda null.
+    // Nunca se inventa un comprador ni se resuelve por nombre/heurística.
+    const oportunidadReal = await prisma.oportunidad.findFirst({
+      where: { codigo: oportunidadCodigo.trim(), workspaceId: sesion.workspaceId },
+      select: { compradorId: true }
+    });
+
     const contrato = await prisma.contrato.create({
       data: {
         oportunidadCodigo: oportunidadCodigo.trim(),
@@ -108,9 +121,10 @@ export async function POST(req: NextRequest) {
         empresaId: empresa.id,
         fechaInicio: typeof fechaInicio === 'string' && fechaInicio ? new Date(fechaInicio) : null,
         plazoEntregaReal: typeof plazoEntregaReal === 'string' && plazoEntregaReal.trim() ? plazoEntregaReal.trim() : null,
-        creadoPorUsuarioId: sesion.usuarioId
+        creadoPorUsuarioId: sesion.usuarioId,
+        compradorId: oportunidadReal?.compradorId ?? null
       },
-      include: { entregas: true, facturas: true, empresa: { select: { nombre: true } } }
+      include: { entregas: true, facturas: true, empresa: { select: { nombre: true } }, comprador: { select: { id: true, nombre: true, riesgo: true } } }
     });
 
     return NextResponse.json({ contrato });
