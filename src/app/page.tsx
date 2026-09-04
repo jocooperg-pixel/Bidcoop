@@ -23,7 +23,6 @@ import { rolLabel, inicialesDe } from './utils/roles';
 import {
   mockOportunidades,
   mockNotificaciones,
-  mockVistasGuardadas,
   mockOrdenesCompra,
   mockPostulaciones
 } from './mockData';
@@ -290,7 +289,11 @@ export default function Home() {
 
   const [ordenesCompra, setOrdenesCompra] = useState(mockOrdenesCompra);
   const [notifications, setNotifications] = useState<Notificacion[]>(mockNotificaciones);
-  const [vistasGuardadas, setVistasGuardadas] = useState<VistaGuardada[]>(mockVistasGuardadas);
+  // Búsquedas guardadas reales, persistidas en Postgres (/api/db-busquedas) —
+  // antes vivían solo en memoria de React (mockVistasGuardadas) y se perdían
+  // al recargar la página, aunque la UI daba a entender que habían quedado
+  // guardadas. Arranca vacío hasta que responda el fetch real al montar.
+  const [vistasGuardadas, setVistasGuardadas] = useState<VistaGuardada[]>([]);
   const [selectedOpportunity, setSelectedOpportunity] = useState<Oportunidad | null>(null);
 
   // Contexto activo del Asistente IA cuando el usuario pregunta sobre un
@@ -395,6 +398,26 @@ export default function Home() {
     handleCheckSyncStatus(true);
   }, []);
 
+  // Búsquedas guardadas reales — carga la lista real de Postgres al
+  // autenticarse (antes esto arrancaba con un array de ejemplo que nunca
+  // tocaba la base).
+  useEffect(() => {
+    if (!isAuthenticated) return;
+    fetch('/api/db-busquedas')
+      .then(res => (res.ok ? res.json() : { busquedas: [] }))
+      .then(data => {
+        const vistas: VistaGuardada[] = Array.isArray(data.busquedas)
+          ? data.busquedas.map((b: { id: string; nombre: string; filtros: VistaGuardada['filters'] }) => ({
+              id: b.id,
+              nombre: b.nombre,
+              filters: b.filtros
+            }))
+          : [];
+        setVistasGuardadas(vistas);
+      })
+      .catch(() => setVistasGuardadas([]));
+  }, [isAuthenticated]);
+
   const toggleDarkMode = (dark: boolean) => {
     setDarkMode(dark);
     localStorage.setItem('theme', dark ? 'dark' : 'light');
@@ -429,8 +452,39 @@ export default function Home() {
     setSelectedOpportunity(null);
   };
 
-  const handleSaveVistaGuardada = (view: VistaGuardada) => {
-    setVistasGuardadas(prev => [view, ...prev]);
+  const handleSaveVistaGuardada = async (view: VistaGuardada) => {
+    try {
+      const res = await fetch('/api/db-busquedas', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nombre: view.nombre, filtros: view.filters })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        alert(data?.error || 'No se pudo guardar la búsqueda.');
+        return;
+      }
+      const guardada: VistaGuardada = { id: data.busqueda.id, nombre: data.busqueda.nombre, filters: data.busqueda.filtros };
+      setVistasGuardadas(prev => [guardada, ...prev]);
+    } catch {
+      alert('No se pudo conectar para guardar la búsqueda.');
+    }
+  };
+
+  const handleDeleteVistaGuardada = async (id: string) => {
+    const anterior = vistasGuardadas;
+    setVistasGuardadas(prev => prev.filter(v => v.id !== id));
+    try {
+      const res = await fetch(`/api/db-busquedas?id=${encodeURIComponent(id)}`, { method: 'DELETE' });
+      if (!res.ok) {
+        setVistasGuardadas(anterior);
+        const data = await res.json().catch(() => null);
+        alert(data?.error || 'No se pudo eliminar la búsqueda guardada.');
+      }
+    } catch {
+      setVistasGuardadas(anterior);
+      alert('No se pudo conectar para eliminar la búsqueda guardada.');
+    }
   };
 
   // BidCoop no tiene integración de escritura con Mercado Público — esto
@@ -839,6 +893,7 @@ export default function Home() {
               selectedOpportunity={selectedOpportunity}
               onSelectOpportunity={setSelectedOpportunity}
               onSaveVistaGuardada={handleSaveVistaGuardada}
+              onDeleteVistaGuardada={handleDeleteVistaGuardada}
               onPostular={handlePostularOpportunity}
               postulaciones={postulaciones}
               currentUser={currentUser}

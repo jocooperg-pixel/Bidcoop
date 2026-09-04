@@ -161,6 +161,7 @@ model Empresa {
   postulaciones  Postulacion[]
   documentos     Documento[]
   contratos      Contrato[]
+  busquedasGuardadas BusquedaGuardada[]
 
   @@index([workspaceId])
 }
@@ -190,6 +191,7 @@ model Usuario {
   auditoria         RegistroAuditoria[]
   documentosSubidos Documento[]          @relation("DocumentoResponsable")
   contratosCreados  Contrato[]
+  busquedasGuardadas BusquedaGuardada[]
 
   @@index([workspaceId])
 }
@@ -570,6 +572,33 @@ model Factura {
   updatedAt DateTime @updatedAt
 
   @@index([contratoId])
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// BÚSQUEDAS GUARDADAS (buscador estilo LicitaPyme)
+// ═══════════════════════════════════════════════════════════════════════
+
+// Arregla un bug real: VistaGuardada (src/app/types.ts) hoy solo vive en
+// memoria de React (mockVistasGuardadas en page.tsx) — se pierde al
+// recargar la página aunque la UI da a entender que quedó guardada.
+// "filtros" guarda el mismo shape que ya arma SearchModule.tsx al
+// construir una vista (rubro, región, riesgo, montoMin/Max, palabras
+// incluir/excluir, procedencias, modo de búsqueda con IA) — sin validar
+// campo por campo en el backend, igual que cualquier preferencia de UI.
+model BusquedaGuardada {
+  id        String  @id @default(uuid())
+  empresaId String
+  empresa   Empresa @relation(fields: [empresaId], references: [id], onDelete: Cascade)
+  usuarioId String
+  usuario   Usuario @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+
+  nombre  String
+  filtros Json
+
+  createdAt DateTime @default(now())
+
+  @@index([empresaId])
+  @@index([usuarioId])
 }
 
 // ═══════════════════════════════════════════════════════════════════════

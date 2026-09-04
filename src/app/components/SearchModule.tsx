@@ -20,7 +20,8 @@ interface SearchModuleProps {
   activeSubSection: string;
   selectedOpportunity: Oportunidad | null;
   onSelectOpportunity: (op: Oportunidad | null) => void;
-  onSaveVistaGuardada: (vista: VistaGuardada) => void;
+  onSaveVistaGuardada: (vista: VistaGuardada) => void | Promise<void>;
+  onDeleteVistaGuardada?: (id: string) => void | Promise<void>;
   onPostular: (postulacion: Postulacion) => void;
   postulaciones: Postulacion[];
   currentUser: { nombre: string; email: string; rol: string };
@@ -44,6 +45,7 @@ export default function SearchModule({
   selectedOpportunity,
   onSelectOpportunity,
   onSaveVistaGuardada,
+  onDeleteVistaGuardada,
   onPostular,
   postulaciones,
   currentUser,
@@ -2340,14 +2342,31 @@ export default function SearchModule({
               )}
 
               <div className="flex flex-col gap-1.5 max-h-48 overflow-y-auto pr-1">
+                {vistasGuardadas.length === 0 && !showSaveViewModal && (
+                  <span className="text-[10px] text-slate-400 px-2.5 py-1">Aún no guardas ninguna búsqueda.</span>
+                )}
                 {vistasGuardadas.map((view) => (
-                  <button
-                    key={view.id}
-                    onClick={() => handleApplySavedView(view)}
-                    className="w-full text-left text-xs font-bold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white px-2.5 py-1.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition border border-transparent hover:border-slate-100 dark:hover:border-slate-800"
-                  >
-                    🔍 {view.nombre}
-                  </button>
+                  <div key={view.id} className="flex items-center gap-1 group">
+                    <button
+                      onClick={() => handleApplySavedView(view)}
+                      className="flex-1 text-left text-xs font-bold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white px-2.5 py-1.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition border border-transparent hover:border-slate-100 dark:hover:border-slate-800 truncate"
+                    >
+                      🔍 {view.nombre}
+                    </button>
+                    {onDeleteVistaGuardada && (
+                      <button
+                        onClick={() => {
+                          if (confirm(`¿Eliminar la búsqueda guardada "${view.nombre}"?`)) {
+                            onDeleteVistaGuardada(view.id);
+                          }
+                        }}
+                        title="Eliminar búsqueda guardada"
+                        className="shrink-0 opacity-0 group-hover:opacity-100 text-slate-300 hover:text-rose-500 text-[10px] px-1.5 py-1.5 transition"
+                      >
+                        ✕
+                      </button>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
