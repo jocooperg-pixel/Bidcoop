@@ -23,6 +23,12 @@ interface EtiquetaReal {
   createdAt: string;
 }
 
+interface TareaResumenBusqueda {
+  id: string;
+  estado: 'PENDIENTE' | 'EN_PROGRESO' | 'COMPLETADA' | 'VENCIDA';
+  oportunidad: { codigo: string; tituloOficial: string } | null;
+}
+
 interface SearchModuleProps {
   oportunidades: Oportunidad[];
   vistasGuardadas: VistaGuardada[];
@@ -103,6 +109,11 @@ export default function SearchModule({
   const [aiSearchLoading, setAiSearchLoading] = useState(false);
   const [aiSearchError, setAiSearchError] = useState<string | null>(null);
   const [aiSearchCodes, setAiSearchCodes] = useState<string[] | null>(null);
+  // Configuración de Búsqueda con IA (estilo LicitaPyme): slider 0.0
+  // "Creativo" a 1.0 "Conservador", mapeado directo al parámetro
+  // "temperature" de la API de Anthropic (rango real 0-1).
+  const [showAiSearchConfig, setShowAiSearchConfig] = useState(false);
+  const [aiSearchTemperatura, setAiSearchTemperatura] = useState(0.5);
 
   const handleAiSearch = async () => {
     const consulta = searchText.trim();
@@ -115,6 +126,7 @@ export default function SearchModule({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           consulta,
+          temperatura: aiSearchTemperatura,
           oportunidades: oportunidades.map(o => ({
             codigo: o.codigo,
             titulo: o.titulo,
@@ -154,6 +166,7 @@ export default function SearchModule({
     match: true,
     semaforo: true,
     cierre: true,
+    tareas: true,
     etiquetas: true
   });
   const [showColumnSelector, setShowColumnSelector] = useState(false);
@@ -173,6 +186,30 @@ export default function SearchModule({
       setSortColumn(col);
       setSortDirection('asc');
     }
+  };
+
+  // Selección masiva de filas (tabla estilo LicitaPyme) — persiste entre
+  // páginas (un Set de ids), solo para acciones en lote (por ahora,
+  // exportar la selección); no altera ningún dato real.
+  const [selectedRowIds, setSelectedRowIds] = useState<Set<string>>(new Set());
+  const toggleSelectRow = (id: string) => {
+    setSelectedRowIds(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return next;
+    });
+  };
+  const toggleSelectAllVisible = (ids: string[]) => {
+    setSelectedRowIds(prev => {
+      const todosSeleccionados = ids.length > 0 && ids.every(id => prev.has(id));
+      const next = new Set(prev);
+      if (todosSeleccionados) {
+        ids.forEach(id => next.delete(id));
+      } else {
+        ids.forEach(id => next.add(id));
+      }
+      return next;
+    });
   };
 
   // Saved view creation
@@ -240,7 +277,8 @@ export default function SearchModule({
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+  // Selector de tamaño de página (estilo LicitaPyme: "Mostrar 10 por página").
+  const [itemsPerPage, setItemsPerPage] = useState(10);
 
   // --- DETAIL VIEW STATE ---
   const [detailGroup, setDetailGroup] = useState<'general' | 'inteligencia' | 'postulacion' | 'gestion'>('general');
@@ -319,6 +357,26 @@ export default function SearchModule({
     }
     return map;
   }, [etiquetas]);
+
+  // Tareas reales por oportunidad (mismo endpoint que TasksModule.tsx/
+  // BusinessModule.tsx) — columna "Tareas" de la tabla, estilo LicitaPyme.
+  // Solo cuenta tareas no completadas; si no hay ninguna, no se muestra nada.
+  const [tareasBusqueda, setTareasBusqueda] = useState<TareaResumenBusqueda[]>([]);
+  useEffect(() => {
+    fetch('/api/tareas')
+      .then(res => (res.ok ? res.json() : { tareas: [] }))
+      .then(data => setTareasBusqueda(Array.isArray(data.tareas) ? data.tareas : []))
+      .catch(() => setTareasBusqueda([]));
+  }, []);
+
+  const tareasPendientesPorCodigo = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const t of tareasBusqueda) {
+      if (!t.oportunidad || t.estado === 'COMPLETADA') continue;
+      map.set(t.oportunidad.codigo, (map.get(t.oportunidad.codigo) || 0) + 1);
+    }
+    return map;
+  }, [tareasBusqueda]);
 
   const handleAddEtiqueta = async (codigo: string) => {
     const nombre = nuevaEtiquetaNombre.trim();
@@ -822,10 +880,10 @@ export default function SearchModule({
   const totalPages = Math.ceil(filteredOportunidades.length / itemsPerPage) || 1;
 
   // Exports
-  const handleExportData = (format: 'csv' | 'json') => {
+  const handleExportData = (format: 'csv' | 'json', lista: Oportunidad[] = filteredOportunidades) => {
     const exportString = format === 'csv'
-      ? 'Código,Organismo,Título,Monto,Match,Cierre\n' + filteredOportunidades.map(o => `"${o.codigo}","${o.organismo}","${o.titulo}",${o.monto},${o.matchScore},"${o.fechaCierre}"`).join('\n')
-      : JSON.stringify(filteredOportunidades, null, 2);
+      ? 'Código,Organismo,Título,Monto,Match,Cierre\n' + lista.map(o => `"${o.codigo}","${o.organismo}","${o.titulo}",${o.monto},${o.matchScore},"${o.fechaCierre}"`).join('\n')
+      : JSON.stringify(lista, null, 2);
 
     const blob = new Blob([exportString], { type: format === 'csv' ? 'text/csv' : 'application/json' });
     const url = URL.createObjectURL(blob);
@@ -2787,6 +2845,7 @@ export default function SearchModule({
                               : col === 'region' ? 'Región'
                               : col === 'modalidad' ? 'Procedencia'
                               : col === 'etiquetas' ? 'Etiquetas'
+                              : col === 'tareas' ? 'Tareas'
                               : col}
                           </span>
                         </label>
@@ -2872,12 +2931,46 @@ export default function SearchModule({
                   {aiSearchLoading ? '🤖 Buscando...' : '🤖 Buscar con IA'}
                 </button>
               )}
+              {aiSearchMode && (
+                <div className="relative">
+                  <button
+                    type="button"
+                    onClick={() => setShowAiSearchConfig(prev => !prev)}
+                    title="Configuración de Búsqueda con IA"
+                    className="px-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-500 hover:text-indigo-600 hover:border-indigo-300 transition cursor-pointer"
+                  >
+                    ⚙️
+                  </button>
+                  {showAiSearchConfig && (
+                    <div className="absolute right-0 top-11 w-64 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl shadow-2xl z-50 p-3 text-xs space-y-2">
+                      <span className="text-[10px] uppercase font-black text-slate-400 tracking-wider block">Configuración de Búsqueda</span>
+                      <div className="flex items-center justify-between text-[9px] font-bold text-slate-400">
+                        <span>Creativo</span>
+                        <span>Conservador</span>
+                      </div>
+                      <input
+                        type="range"
+                        min={0}
+                        max={1}
+                        step={0.1}
+                        value={aiSearchTemperatura}
+                        onChange={(e) => setAiSearchTemperatura(parseFloat(e.target.value))}
+                        className="w-full cursor-pointer accent-indigo-600"
+                      />
+                      <span className="text-[9px] text-slate-400 block">
+                        Valor actual: {aiSearchTemperatura.toFixed(1)} — más bajo prioriza coincidencias literales, más alto amplía a interpretaciones semánticas más libres. Solo afecta cómo ordena/selecciona la IA entre los mismos procesos reales.
+                      </span>
+                    </div>
+                  )}
+                </div>
+              )}
               <button
                 type="button"
                 onClick={() => {
                   setAiSearchMode(prev => !prev);
                   setAiSearchCodes(null);
                   setAiSearchError(null);
+                  setShowAiSearchConfig(false);
                   setCurrentPage(1);
                 }}
                 title="Búsqueda interpretada por IA sobre las mismas oportunidades que ya matchean tu catálogo — nunca amplía el universo de datos ni inventa procesos."
@@ -3127,10 +3220,43 @@ export default function SearchModule({
 
             {/* RESULTS TABLE */}
             {viewMode === 'table' && (
+            <>
+            {selectedRowIds.size > 0 && (
+              <div className="flex items-center justify-between gap-3 mb-2 px-3 py-2 rounded-xl bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/40">
+                <span className="text-[10px] font-black text-indigo-700 dark:text-indigo-300">
+                  {selectedRowIds.size} seleccionado(s)
+                </span>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => handleExportData('csv', filteredOportunidades.filter(o => selectedRowIds.has(o.id)))}
+                    className="px-3 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-[10px] font-black transition cursor-pointer"
+                  >
+                    📥 Exportar selección
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedRowIds(new Set())}
+                    className="px-3 py-1 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-500 text-[10px] font-bold transition cursor-pointer"
+                  >
+                    Limpiar
+                  </button>
+                </div>
+              </div>
+            )}
             <div className="overflow-x-auto flex-1 max-h-[70vh] overflow-y-auto rounded-xl border border-slate-100 dark:border-slate-800">
               <table className="w-full text-left border-collapse text-xs">
                 <thead className="sticky top-0 z-10 bg-slate-50 dark:bg-slate-900 shadow-sm">
                   <tr className="border-b border-slate-200 dark:border-slate-800">
+                    <th className="py-2.5 px-2.5 w-8">
+                      <input
+                        type="checkbox"
+                        checked={paginatedOportunidades.length > 0 && paginatedOportunidades.every(op => selectedRowIds.has(op.id))}
+                        onChange={() => toggleSelectAllVisible(paginatedOportunidades.map(op => op.id))}
+                        className="rounded cursor-pointer"
+                        title="Seleccionar todos los de esta página"
+                      />
+                    </th>
                     {([
                       visibleColumns.codigo && { key: 'codigo' as const, label: 'Código', align: 'left' },
                       visibleColumns.organismo && { key: 'organismo' as const, label: 'Comprador', align: 'left' },
@@ -3159,6 +3285,7 @@ export default function SearchModule({
                         F. Cierre {sortColumn === 'cierre' ? (sortDirection === 'asc' ? '▲' : '▼') : ''}
                       </th>
                     )}
+                    {visibleColumns.tareas && <th className="py-2.5 px-2.5 text-[9px] uppercase font-black text-slate-400 text-center whitespace-nowrap">Tareas</th>}
                     {visibleColumns.etiquetas && <th className="py-2.5 px-2.5 text-[9px] uppercase font-black text-slate-400 whitespace-nowrap">Etiquetas</th>}
                     <th className="py-2.5 px-2.5 text-[9px] uppercase font-black text-slate-400 text-center whitespace-nowrap">Acciones</th>
                   </tr>
@@ -3166,7 +3293,7 @@ export default function SearchModule({
                 <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
                   {paginatedOportunidades.length === 0 ? (
                     <tr>
-                      <td colSpan={12} className="py-12 text-center text-slate-400 text-xs">
+                      <td colSpan={14} className="py-12 text-center text-slate-400 text-xs">
                         No se encontraron oportunidades bajo este criterio de búsqueda.
                       </td>
                     </tr>
@@ -3177,6 +3304,14 @@ export default function SearchModule({
                         className="hover:bg-slate-50/50 dark:hover:bg-slate-850/15 group cursor-pointer transition-colors duration-150"
                         onClick={() => handleOpenDetail(op)}
                       >
+                        <td className="py-2 px-2.5" onClick={(e) => e.stopPropagation()}>
+                          <input
+                            type="checkbox"
+                            checked={selectedRowIds.has(op.id)}
+                            onChange={() => toggleSelectRow(op.id)}
+                            className="rounded cursor-pointer"
+                          />
+                        </td>
                         {visibleColumns.codigo && (
                           <td className="py-2 px-2.5 whitespace-nowrap">
                             <div className="flex items-center gap-1.5">
@@ -3294,6 +3429,20 @@ export default function SearchModule({
                             {op.fechaCierre}
                           </td>
                         )}
+                        {visibleColumns.tareas && (
+                          <td className="py-2 px-2.5 text-center">
+                            {(tareasPendientesPorCodigo.get(op.codigo) || 0) > 0 ? (
+                              <span
+                                className="text-[9px] font-black px-1.5 py-0.5 rounded-full bg-amber-50 text-amber-600 dark:bg-amber-950/30 dark:text-amber-400"
+                                title="Tareas reales pendientes vinculadas a este proceso"
+                              >
+                                📋 {tareasPendientesPorCodigo.get(op.codigo)}
+                              </span>
+                            ) : (
+                              <span className="text-[10px] text-slate-300 dark:text-slate-700">—</span>
+                            )}
+                          </td>
+                        )}
                         {visibleColumns.etiquetas && (
                           <td className="py-2 px-2.5 max-w-[140px]" onClick={(e) => e.stopPropagation()}>
                             <div className="flex flex-wrap gap-1">
@@ -3320,14 +3469,30 @@ export default function SearchModule({
                 </tbody>
               </table>
             </div>
+            </>
             )}
 
             {/* PAGINATION PANEL */}
-            <div className="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4 mt-4">
-              <span className="text-[10px] font-bold text-slate-400">
-                Mostrando {paginatedOportunidades.length} de {filteredOportunidades.length} registros
-              </span>
-              
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-100 dark:border-slate-800 pt-4 mt-4">
+              <div className="flex items-center gap-3">
+                <span className="text-[10px] font-bold text-slate-400">
+                  Mostrando {paginatedOportunidades.length} de {filteredOportunidades.length} registros
+                </span>
+                <label className="flex items-center gap-1.5 text-[10px] font-bold text-slate-400">
+                  Mostrar
+                  <select
+                    value={itemsPerPage}
+                    onChange={(e) => { setItemsPerPage(parseInt(e.target.value, 10)); setCurrentPage(1); }}
+                    className="text-[10px] font-bold px-1.5 py-1 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 outline-none cursor-pointer"
+                  >
+                    <option value={10}>10</option>
+                    <option value={25}>25</option>
+                    <option value={50}>50</option>
+                  </select>
+                  por página
+                </label>
+              </div>
+
               <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
             </div>
 

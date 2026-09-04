@@ -59,6 +59,12 @@ export async function POST(request: NextRequest) {
     const body = await request.json().catch(() => null);
     const consulta: string = typeof body?.consulta === 'string' ? body.consulta.trim() : '';
     const oportunidades: OportunidadLigera[] = Array.isArray(body?.oportunidades) ? body.oportunidades : [];
+    // Configuración de Búsqueda (estilo LicitaPyme): 0.0 "Creativo" a 1.0
+    // "Conservador", mapeado directo al parámetro real de la API de
+    // Anthropic (rango 0-1) — nunca cambia qué oportunidades existen, solo
+    // qué tan literal/libre es la interpretación semántica de la consulta.
+    const temperaturaRaw = typeof body?.temperatura === 'number' ? body.temperatura : 0.5;
+    const temperatura = Math.min(1, Math.max(0, temperaturaRaw));
 
     if (!consulta) {
       return NextResponse.json({ error: 'Falta la consulta de búsqueda.' }, { status: 400 });
@@ -93,6 +99,7 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         model: ANTHROPIC_MODEL,
         max_tokens: 2048,
+        temperature: temperatura,
         system: SYSTEM_PROMPT,
         messages: [
           {
