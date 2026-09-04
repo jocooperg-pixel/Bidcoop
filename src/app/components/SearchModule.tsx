@@ -70,6 +70,18 @@ export default function SearchModule({
   const [filterMontoMax, setFilterMontoMax] = useState(1000000000);
   const [filterModalidad, setFilterModalidad] = useState('Todos');
   const [filterEstado, setFilterEstado] = useState('Publicada');
+  // Filtros estilo LicitaPyme: multi-keyword incluir/excluir, sobre título +
+  // descripción de la oportunidad real — nada nuevo se calcula, solo se
+  // filtra sobre texto ya sincronizado.
+  const [filterIncludeKeywords, setFilterIncludeKeywords] = useState<string[]>([]);
+  const [filterExcludeKeywords, setFilterExcludeKeywords] = useState<string[]>([]);
+  const [includeKeywordInput, setIncludeKeywordInput] = useState('');
+  const [excludeKeywordInput, setExcludeKeywordInput] = useState('');
+  // "Procedencia" (LicitaPyme) = mismo dato que Modalidad, pero multi-select.
+  // Lista vacía = todas las procedencias, igual semántica que 'Todos'.
+  const [filterProcedencias, setFilterProcedencias] = useState<string[]>([]);
+  const [showProcedenciaDropdown, setShowProcedenciaDropdown] = useState(false);
+  const PROCEDENCIAS_DISPONIBLES = ['Compra Ágil', 'Licitación', 'Convenio Marco', 'Grandes Compras'];
 
   // Column visibility
   const [visibleColumns, setVisibleColumns] = useState({
@@ -544,6 +556,16 @@ export default function SearchModule({
   // Filtered opportunities
   const filteredOportunidades = useMemo(() => {
     const cleanSearch = searchText.toLowerCase().trim();
+    const includeKw = filterIncludeKeywords.map(k => k.toLowerCase());
+    const excludeKw = filterExcludeKeywords.map(k => k.toLowerCase());
+
+    const matchIncludeExclude = (op: Oportunidad) => {
+      const haystack = `${op.titulo} ${op.descripcion || ''} ${op.organismo}`.toLowerCase();
+      const matchInclude = includeKw.length === 0 || includeKw.some(k => haystack.includes(k));
+      const matchExclude = excludeKw.length === 0 || !excludeKw.some(k => haystack.includes(k));
+      return matchInclude && matchExclude;
+    };
+
     const list = !cleanSearch
 
       ? oportunidades.filter((op) => {
@@ -552,8 +574,9 @@ export default function SearchModule({
           const matchRiesgo = filterRiesgo === 'Todos' || op.riesgo === filterRiesgo;
           const matchMonto = op.monto >= filterMontoMin && op.monto <= filterMontoMax;
           const matchModalidad = filterModalidad === 'Todos' || op.modalidad === filterModalidad;
+          const matchProcedencia = filterProcedencias.length === 0 || filterProcedencias.includes(op.modalidad);
           const matchEstado = filterEstado === 'Todos' || op.estado === filterEstado;
-          return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchEstado;
+          return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchProcedencia && matchEstado && matchIncludeExclude(op);
         })
       : oportunidades.filter((op) => {
           const cleanSearchAlphanum = cleanSearch.replace(/[^a-z0-9]/g, '');
@@ -563,7 +586,7 @@ export default function SearchModule({
             opCodigoLower.replace(/[^a-z0-9]/g, '').includes(cleanSearchAlphanum);
 
           if (matchesCode) {
-            return true;
+            return matchIncludeExclude(op);
           }
 
           const matchesText =
@@ -577,8 +600,9 @@ export default function SearchModule({
             const matchRiesgo = filterRiesgo === 'Todos' || op.riesgo === filterRiesgo;
             const matchMonto = op.monto >= filterMontoMin && op.monto <= filterMontoMax;
             const matchModalidad = filterModalidad === 'Todos' || op.modalidad === filterModalidad;
+            const matchProcedencia = filterProcedencias.length === 0 || filterProcedencias.includes(op.modalidad);
             const matchEstado = filterEstado === 'Todos' || op.estado === filterEstado;
-            return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchEstado;
+            return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchProcedencia && matchEstado && matchIncludeExclude(op);
           }
 
           return false;
@@ -590,7 +614,7 @@ export default function SearchModule({
       return dateB.localeCompare(dateA);
     });
 
-  }, [oportunidades, searchText, filterRubro, filterRegion, filterRiesgo, filterMontoMin, filterMontoMax, filterModalidad, filterEstado]);
+  }, [oportunidades, searchText, filterRubro, filterRegion, filterRiesgo, filterMontoMin, filterMontoMax, filterModalidad, filterProcedencias, filterEstado, filterIncludeKeywords, filterExcludeKeywords]);
 
   // Paginated opportunities
   const paginatedOportunidades = useMemo(() => {
@@ -2315,19 +2339,123 @@ export default function SearchModule({
                 </select>
               </div>
 
-              <div>
-                <label className="text-[10px] uppercase font-black text-slate-400 block mb-1">Modalidad de Compra</label>
-                <select
-                  value={filterModalidad}
-                  onChange={(e) => { setFilterModalidad(e.target.value); setCurrentPage(1); }}
-                  className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white cursor-pointer"
+              <div className="relative">
+                <label className="text-[10px] uppercase font-black text-slate-400 block mb-1">Procedencia</label>
+                <button
+                  type="button"
+                  onClick={() => setShowProcedenciaDropdown(prev => !prev)}
+                  className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white cursor-pointer text-left flex items-center justify-between gap-2"
                 >
-                  <option value="Todos">Todas las Modalidades</option>
-                  <option value="Grandes Compras">🛍️ Grandes Compras (Convenio Marco)</option>
-                  <option value="Compra Ágil">Compra Ágil</option>
-                  <option value="Licitación">Licitaciones Públicas</option>
-                  <option value="Convenio Marco">Convenio Marco</option>
-                </select>
+                  <span className="truncate">
+                    {filterProcedencias.length === 0
+                      ? 'Todas las procedencias'
+                      : filterProcedencias.length === 1
+                        ? filterProcedencias[0]
+                        : `${filterProcedencias.length} procedencias seleccionadas`}
+                  </span>
+                  <span className="text-slate-400 shrink-0">{showProcedenciaDropdown ? '▲' : '▼'}</span>
+                </button>
+                {showProcedenciaDropdown && (
+                  <div className="absolute z-20 mt-1 w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg p-2 space-y-1">
+                    {PROCEDENCIAS_DISPONIBLES.map(proc => (
+                      <label key={proc} className="flex items-center gap-2 text-xs text-slate-700 dark:text-slate-200 px-2 py-1.5 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={filterProcedencias.includes(proc)}
+                          onChange={() => {
+                            setFilterProcedencias(prev =>
+                              prev.includes(proc) ? prev.filter(p => p !== proc) : [...prev, proc]
+                            );
+                            setCurrentPage(1);
+                          }}
+                          className="rounded border-slate-300 cursor-pointer"
+                        />
+                        {proc}
+                      </label>
+                    ))}
+                    {filterProcedencias.length > 0 && (
+                      <button
+                        type="button"
+                        onClick={() => { setFilterProcedencias([]); setCurrentPage(1); }}
+                        className="w-full text-[10px] font-bold text-blue-600 hover:text-blue-800 px-2 py-1 text-left"
+                      >
+                        Limpiar selección
+                      </button>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <label className="text-[10px] uppercase font-black text-slate-400 block mb-1">Incluir palabras clave</label>
+                <div className="flex flex-wrap gap-1.5 mb-1.5">
+                  {filterIncludeKeywords.map(kw => (
+                    <span key={kw} className="inline-flex items-center gap-1 text-[10px] font-bold bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-900/50 rounded-full px-2 py-0.5">
+                      {kw}
+                      <button
+                        type="button"
+                        onClick={() => { setFilterIncludeKeywords(prev => prev.filter(k => k !== kw)); setCurrentPage(1); }}
+                        className="hover:text-emerald-900 dark:hover:text-emerald-200"
+                      >
+                        ✕
+                      </button>
+                    </span>
+                  ))}
+                </div>
+                <input
+                  type="text"
+                  value={includeKeywordInput}
+                  onChange={(e) => setIncludeKeywordInput(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && includeKeywordInput.trim()) {
+                      e.preventDefault();
+                      const kw = includeKeywordInput.trim();
+                      if (!filterIncludeKeywords.includes(kw)) {
+                        setFilterIncludeKeywords(prev => [...prev, kw]);
+                        setCurrentPage(1);
+                      }
+                      setIncludeKeywordInput('');
+                    }
+                  }}
+                  placeholder="Escribe y presiona Enter..."
+                  className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white"
+                />
+              </div>
+
+              <div>
+                <label className="text-[10px] uppercase font-black text-slate-400 block mb-1">Excluir palabras clave</label>
+                <div className="flex flex-wrap gap-1.5 mb-1.5">
+                  {filterExcludeKeywords.map(kw => (
+                    <span key={kw} className="inline-flex items-center gap-1 text-[10px] font-bold bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-900/50 rounded-full px-2 py-0.5">
+                      {kw}
+                      <button
+                        type="button"
+                        onClick={() => { setFilterExcludeKeywords(prev => prev.filter(k => k !== kw)); setCurrentPage(1); }}
+                        className="hover:text-rose-900 dark:hover:text-rose-200"
+                      >
+                        ✕
+                      </button>
+                    </span>
+                  ))}
+                </div>
+                <input
+                  type="text"
+                  value={excludeKeywordInput}
+                  onChange={(e) => setExcludeKeywordInput(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && excludeKeywordInput.trim()) {
+                      e.preventDefault();
+                      const kw = excludeKeywordInput.trim();
+                      if (!filterExcludeKeywords.includes(kw)) {
+                        setFilterExcludeKeywords(prev => [...prev, kw]);
+                        setCurrentPage(1);
+                      }
+                      setExcludeKeywordInput('');
+                    }
+                  }}
+                  placeholder="Escribe y presiona Enter..."
+                  className="w-full text-xs p-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white"
+                />
               </div>
 
               <div>
