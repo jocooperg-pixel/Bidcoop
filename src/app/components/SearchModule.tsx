@@ -14,6 +14,15 @@ interface UsuarioBasico {
   nombre: string;
 }
 
+interface EtiquetaReal {
+  id: string;
+  oportunidadCodigo: string;
+  nombre: string;
+  color: string;
+  empresaId: string;
+  createdAt: string;
+}
+
 interface SearchModuleProps {
   oportunidades: Oportunidad[];
   vistasGuardadas: VistaGuardada[];
@@ -262,6 +271,69 @@ export default function SearchModule({
       .then(data => setUsuariosDirectorio(Array.isArray(data.usuarios) ? data.usuarios : []))
       .catch(() => setUsuariosDirectorio([]));
   }, []);
+
+  // Etiquetas reales por oportunidad (Postgres, /api/db-etiquetas) — estilo
+  // LicitaPyme. Nunca se muestra una etiqueta que no exista realmente: sin
+  // datos, simplemente no se renderiza ningún chip.
+  const [etiquetas, setEtiquetas] = useState<EtiquetaReal[]>([]);
+  const [etiquetaFormFor, setEtiquetaFormFor] = useState<string | null>(null);
+  const [nuevaEtiquetaNombre, setNuevaEtiquetaNombre] = useState('');
+  const [nuevaEtiquetaColor, setNuevaEtiquetaColor] = useState('#3b82f6');
+
+  const cargarEtiquetas = () => {
+    fetch('/api/db-etiquetas')
+      .then(res => (res.ok ? res.json() : { etiquetas: [] }))
+      .then(data => setEtiquetas(Array.isArray(data.etiquetas) ? data.etiquetas : []))
+      .catch(() => setEtiquetas([]));
+  };
+  useEffect(() => {
+    cargarEtiquetas();
+  }, []);
+
+  const etiquetasPorCodigo = useMemo(() => {
+    const map = new Map<string, EtiquetaReal[]>();
+    for (const et of etiquetas) {
+      const lista = map.get(et.oportunidadCodigo) || [];
+      lista.push(et);
+      map.set(et.oportunidadCodigo, lista);
+    }
+    return map;
+  }, [etiquetas]);
+
+  const handleAddEtiqueta = async (codigo: string) => {
+    const nombre = nuevaEtiquetaNombre.trim();
+    if (!nombre) return;
+    try {
+      const res = await fetch('/api/db-etiquetas', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ oportunidadCodigo: codigo, nombre, color: nuevaEtiquetaColor })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        alert(data?.error || 'No se pudo crear la etiqueta.');
+        return;
+      }
+      setEtiquetas(prev => [data.etiqueta, ...prev]);
+      setNuevaEtiquetaNombre('');
+      setEtiquetaFormFor(null);
+    } catch {
+      alert('No se pudo conectar para crear la etiqueta.');
+    }
+  };
+
+  const handleRemoveEtiqueta = async (id: string) => {
+    const anterior = etiquetas;
+    setEtiquetas(prev => prev.filter(e => e.id !== id));
+    try {
+      const res = await fetch(`/api/db-etiquetas?id=${encodeURIComponent(id)}`, { method: 'DELETE' });
+      if (!res.ok) {
+        setEtiquetas(anterior);
+      }
+    } catch {
+      setEtiquetas(anterior);
+    }
+  };
 
   // Synchronize local search state with Topbar global search input
   useEffect(() => {
@@ -2909,6 +2981,66 @@ export default function SearchModule({
                               {restante && <span className="text-brand-600 dark:text-brand-400">· cierra en {restante}</span>}
                             </div>
                           </div>
+
+                          {/* Etiquetas reales (Postgres) — solo se muestra lo que existe de verdad */}
+                          <div className="flex flex-wrap items-center gap-1">
+                            {(etiquetasPorCodigo.get(op.codigo) || []).map(et => (
+                              <span
+                                key={et.id}
+                                className="inline-flex items-center gap-1 text-[9px] font-bold rounded-full px-2 py-0.5"
+                                style={{ backgroundColor: `${et.color}22`, color: et.color }}
+                              >
+                                {et.nombre}
+                                <button
+                                  type="button"
+                                  onClick={() => handleRemoveEtiqueta(et.id)}
+                                  className="hover:opacity-60"
+                                  title="Quitar etiqueta"
+                                >
+                                  ✕
+                                </button>
+                              </span>
+                            ))}
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setEtiquetaFormFor(prev => (prev === op.codigo ? null : op.codigo));
+                                setNuevaEtiquetaNombre('');
+                              }}
+                              className="text-[9px] font-bold text-slate-400 hover:text-blue-600 px-1.5 py-0.5 rounded-full border border-dashed border-slate-300 dark:border-slate-700"
+                            >
+                              + etiqueta
+                            </button>
+                          </div>
+                          {etiquetaFormFor === op.codigo && (
+                            <form
+                              onSubmit={(e) => { e.preventDefault(); handleAddEtiqueta(op.codigo); }}
+                              className="flex items-center gap-1.5"
+                            >
+                              <input
+                                type="text"
+                                autoFocus
+                                value={nuevaEtiquetaNombre}
+                                onChange={(e) => setNuevaEtiquetaNombre(e.target.value)}
+                                placeholder="Nombre de la etiqueta"
+                                className="flex-1 min-w-0 text-[10px] p-1.5 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white"
+                              />
+                              <input
+                                type="color"
+                                value={nuevaEtiquetaColor}
+                                onChange={(e) => setNuevaEtiquetaColor(e.target.value)}
+                                className="w-6 h-6 rounded cursor-pointer shrink-0 border border-slate-200 dark:border-slate-700"
+                                title="Color de la etiqueta"
+                              />
+                              <button
+                                type="submit"
+                                disabled={!nuevaEtiquetaNombre.trim()}
+                                className="shrink-0 px-2 py-1 rounded-lg bg-blue-600 hover:bg-blue-700 disabled:opacity-40 text-white text-[9px] font-black"
+                              >
+                                Agregar
+                              </button>
+                            </form>
+                          )}
 
                           {/* Acciones rápidas */}
                           <div className="grid grid-cols-3 gap-1.5 pt-2.5 border-t border-slate-100 dark:border-slate-800">

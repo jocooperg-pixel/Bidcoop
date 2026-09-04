@@ -162,6 +162,7 @@ model Empresa {
   documentos     Documento[]
   contratos      Contrato[]
   busquedasGuardadas BusquedaGuardada[]
+  etiquetas      Etiqueta[]
 
   @@index([workspaceId])
 }
@@ -192,6 +193,7 @@ model Usuario {
   documentosSubidos Documento[]          @relation("DocumentoResponsable")
   contratosCreados  Contrato[]
   busquedasGuardadas BusquedaGuardada[]
+  etiquetasCreadas  Etiqueta[]
 
   @@index([workspaceId])
 }
@@ -599,6 +601,33 @@ model BusquedaGuardada {
 
   @@index([empresaId])
   @@index([usuarioId])
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// ETIQUETAS (buscador estilo LicitaPyme)
+// ═══════════════════════════════════════════════════════════════════════
+
+// oportunidadCodigo es texto plano (no FK a Oportunidad) por el mismo
+// motivo que Contrato: esa tabla es una copia parcial y desactualizada
+// (538 registros vs. más de 1300 procesos activos en mockData.ts) —
+// forzar la relación dejaría sin poder etiquetar a la mayoría de los
+// procesos reales que ve el buscador.
+model Etiqueta {
+  id                String  @id @default(uuid())
+  oportunidadCodigo String
+  nombre            String
+  color             String
+
+  empresaId String
+  empresa   Empresa @relation(fields: [empresaId], references: [id], onDelete: Cascade)
+
+  creadoPorUsuarioId String
+  creadoPor          Usuario @relation(fields: [creadoPorUsuarioId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@index([empresaId])
+  @@index([oportunidadCodigo])
 }
 
 // ═══════════════════════════════════════════════════════════════════════
