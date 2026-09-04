@@ -193,6 +193,100 @@ export default function AdjudicacionesModule({
     window.print();
   };
 
+  // Seguimiento de Contrato (Módulo 3) — solo aplica cuando el proceso está
+  // adjudicado a nuestra propia empresa (esNuestraEmpresa=true en algún
+  // participante real). Todo dato de entregas/facturas lo ingresa el
+  // usuario; nunca se infiere.
+  interface EntregaReal { id: string; fecha: string; descripcion: string; estado: 'PENDIENTE' | 'ENTREGADO' | 'ATRASADO'; }
+  interface FacturaReal { id: string; numero: string; fecha: string; monto: number; estado: 'PENDIENTE' | 'PAGADA' | 'VENCIDA'; }
+  interface ContratoReal { id: string; oportunidadCodigo: string; fechaInicio: string | null; plazoEntregaReal: string | null; entregas: EntregaReal[]; facturas: FacturaReal[]; }
+
+  const esNuestraAdjudicacion = !!currentAdjudicacion?.participantes.some(p => p.esNuestraEmpresa);
+  const [contrato, setContrato] = useState<ContratoReal | null | undefined>(undefined); // undefined = aún no consultado
+  const [creandoContrato, setCreandoContrato] = useState(false);
+  const [plazoEntregaInput, setPlazoEntregaInput] = useState('');
+  const [nuevaEntregaFecha, setNuevaEntregaFecha] = useState('');
+  const [nuevaEntregaDesc, setNuevaEntregaDesc] = useState('');
+  const [nuevaFacturaNumero, setNuevaFacturaNumero] = useState('');
+  const [nuevaFacturaFecha, setNuevaFacturaFecha] = useState('');
+  const [nuevaFacturaMonto, setNuevaFacturaMonto] = useState('');
+
+  useEffect(() => {
+    if (!currentAdjudicacion || !esNuestraAdjudicacion) {
+      setContrato(undefined);
+      return;
+    }
+    setContrato(undefined);
+    fetch(`/api/db-contratos?oportunidadCodigo=${encodeURIComponent(currentAdjudicacion.codigo)}`)
+      .then(res => res.json())
+      .then(data => setContrato(data.contrato ?? null))
+      .catch(() => setContrato(null));
+  }, [currentAdjudicacion, esNuestraAdjudicacion]);
+
+  const recargarContrato = () => {
+    if (!currentAdjudicacion) return;
+    fetch(`/api/db-contratos?oportunidadCodigo=${encodeURIComponent(currentAdjudicacion.codigo)}`)
+      .then(res => res.json())
+      .then(data => setContrato(data.contrato ?? null));
+  };
+
+  const handleCrearContrato = async () => {
+    if (!currentAdjudicacion) return;
+    setCreandoContrato(true);
+    try {
+      const empresaGanadora = currentAdjudicacion.participantes.find(p => p.esNuestraEmpresa);
+      const res = await fetch('/api/db-contratos', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          oportunidadCodigo: currentAdjudicacion.codigo,
+          oportunidadTitulo: currentAdjudicacion.titulo,
+          empresaNombre: currentAdjudicacion.empresaMatch || activeCompany,
+          plazoEntregaReal: plazoEntregaInput.trim() || null
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setContrato(data.contrato);
+    } catch (err: unknown) {
+      alert(`Error al crear el seguimiento: ${err instanceof Error ? err.message : String(err)}`);
+    } finally {
+      setCreandoContrato(false);
+    }
+  };
+
+  const handleAgregarEntrega = async () => {
+    if (!contrato || !nuevaEntregaFecha || !nuevaEntregaDesc.trim()) return;
+    const res = await fetch(`/api/db-contratos/${contrato.id}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tipo: 'entrega', fecha: nuevaEntregaFecha, descripcion: nuevaEntregaDesc })
+    });
+    if (res.ok) { setNuevaEntregaFecha(''); setNuevaEntregaDesc(''); recargarContrato(); }
+  };
+
+  const handleAgregarFactura = async () => {
+    if (!contrato || !nuevaFacturaNumero.trim() || !nuevaFacturaFecha || !nuevaFacturaMonto) return;
+    const monto = parseFloat(nuevaFacturaMonto);
+    if (!(monto > 0)) return;
+    const res = await fetch(`/api/db-contratos/${contrato.id}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tipo: 'factura', numero: nuevaFacturaNumero, fecha: nuevaFacturaFecha, monto })
+    });
+    if (res.ok) { setNuevaFacturaNumero(''); setNuevaFacturaFecha(''); setNuevaFacturaMonto(''); recargarContrato(); }
+  };
+
+  const handleCambiarEstadoItem = async (tipo: 'entrega' | 'factura', itemId: string, estado: string) => {
+    if (!contrato) return;
+    const res = await fetch(`/api/db-contratos/${contrato.id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tipo, itemId, estado })
+    });
+    if (res.ok) recargarContrato();
+  };
+
   const activePortalName = activeCompany === 'Consolidado' ? 'AMINORTE / V-MOCCS / BIDCOOP' : activeCompany;
   const activeDomain = activeCompany === 'Consolidado' ? 'WWW.BIDCOOP.CL' : `WWW.${activeCompany.toLowerCase()}.CL`;
 
@@ -321,7 +415,7 @@ export default function AdjudicacionesModule({
             
             <div className="bg-white border border-slate-300 rounded-2xl p-6 md:p-8 shadow-sm">
               <h2 className="text-xl font-bold text-center text-slate-900 mb-6 font-sans">
-                Antecedentes Generales (<a href={`https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${currentAdjudicacion.codigo}`} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">{currentAdjudicacion.codigo}</a>)
+                Antecedentes Generales (<a href={oportunidades.find(o => o.codigo === currentAdjudicacion.codigo)?.sourceUrl || `https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?qs=PD94lVIVFUe5Sth1FXBBAA==&IdLicitacion=${currentAdjudicacion.codigo}`} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">{currentAdjudicacion.codigo}</a>)
               </h2>
 
               <div className="flex flex-col md:flex-row items-start gap-6">
@@ -472,6 +566,107 @@ export default function AdjudicacionesModule({
                 </table>
               </div>
             </div>
+
+            {/* 4.5 CARD: SEGUIMIENTO DE CONTRATO (solo si el ganador es nuestra empresa) */}
+            {esNuestraAdjudicacion && (
+              <div className="bg-white border border-slate-300 rounded-2xl p-6 md:p-8 shadow-sm print:hidden">
+                <h2 className="text-2xl font-bold text-center text-slate-900 mb-6 font-sans">
+                  Seguimiento de Contrato
+                </h2>
+
+                {contrato === undefined && (
+                  <p className="text-center text-sm text-slate-400">Cargando seguimiento…</p>
+                )}
+
+                {contrato === null && (
+                  <div className="space-y-3 max-w-md mx-auto text-center">
+                    <p className="text-sm text-slate-600">Aún no hay seguimiento de contrato para este proceso. El plazo de entrega real (según el documento de adjudicación) lo ingresas tú — BidCoop no lo inventa.</p>
+                    <input
+                      type="text"
+                      placeholder="Plazo de entrega real (ej. 15 días hábiles)"
+                      value={plazoEntregaInput}
+                      onChange={(e) => setPlazoEntregaInput(e.target.value)}
+                      className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                    />
+                    <button
+                      type="button"
+                      onClick={handleCrearContrato}
+                      disabled={creandoContrato}
+                      className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white font-bold text-sm rounded-xl transition"
+                    >
+                      {creandoContrato ? 'Creando…' : 'Crear seguimiento de contrato'}
+                    </button>
+                  </div>
+                )}
+
+                {contrato && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Entregas */}
+                    <div className="space-y-3">
+                      <h3 className="text-sm font-black text-slate-800">Entregas {contrato.plazoEntregaReal && <span className="font-normal text-slate-400">— plazo: {contrato.plazoEntregaReal}</span>}</h3>
+                      <div className="space-y-2 max-h-64 overflow-y-auto">
+                        {contrato.entregas.length === 0 && <p className="text-xs text-slate-400 italic">Sin entregas registradas.</p>}
+                        {contrato.entregas.map(e => (
+                          <div key={e.id} className="p-2.5 border border-slate-200 rounded-lg text-xs flex items-center justify-between gap-2">
+                            <div>
+                              <div className="font-bold">{new Date(e.fecha).toLocaleDateString('es-CL')}</div>
+                              <div className="text-slate-500">{e.descripcion}</div>
+                            </div>
+                            <select
+                              value={e.estado}
+                              onChange={(ev) => handleCambiarEstadoItem('entrega', e.id, ev.target.value)}
+                              className={`text-[10px] font-black rounded px-1.5 py-1 border ${e.estado === 'ENTREGADO' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : e.estado === 'ATRASADO' ? 'bg-red-50 text-red-700 border-red-200' : 'bg-amber-50 text-amber-700 border-amber-200'}`}
+                            >
+                              <option value="PENDIENTE">Pendiente</option>
+                              <option value="ENTREGADO">Entregado</option>
+                              <option value="ATRASADO">Atrasado</option>
+                            </select>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex flex-col gap-1.5 pt-2 border-t border-slate-100">
+                        <input type="date" value={nuevaEntregaFecha} onChange={(e) => setNuevaEntregaFecha(e.target.value)} className="px-2 py-1.5 border border-slate-300 rounded text-xs" />
+                        <input type="text" placeholder="Descripción de la entrega" value={nuevaEntregaDesc} onChange={(e) => setNuevaEntregaDesc(e.target.value)} className="px-2 py-1.5 border border-slate-300 rounded text-xs" />
+                        <button type="button" onClick={handleAgregarEntrega} className="px-3 py-1.5 bg-slate-800 hover:bg-slate-900 text-white text-[10px] font-black rounded-lg">+ Agregar entrega</button>
+                      </div>
+                    </div>
+
+                    {/* Facturas */}
+                    <div className="space-y-3">
+                      <h3 className="text-sm font-black text-slate-800">Facturas</h3>
+                      <div className="space-y-2 max-h-64 overflow-y-auto">
+                        {contrato.facturas.length === 0 && <p className="text-xs text-slate-400 italic">Sin facturas registradas.</p>}
+                        {contrato.facturas.map(f => (
+                          <div key={f.id} className="p-2.5 border border-slate-200 rounded-lg text-xs flex items-center justify-between gap-2">
+                            <div>
+                              <div className="font-bold">Nº {f.numero} — ${f.monto.toLocaleString('es-CL')}</div>
+                              <div className="text-slate-500">{new Date(f.fecha).toLocaleDateString('es-CL')}</div>
+                            </div>
+                            <select
+                              value={f.estado}
+                              onChange={(ev) => handleCambiarEstadoItem('factura', f.id, ev.target.value)}
+                              className={`text-[10px] font-black rounded px-1.5 py-1 border ${f.estado === 'PAGADA' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : f.estado === 'VENCIDA' ? 'bg-red-50 text-red-700 border-red-200' : 'bg-amber-50 text-amber-700 border-amber-200'}`}
+                            >
+                              <option value="PENDIENTE">Pendiente</option>
+                              <option value="PAGADA">Pagada</option>
+                              <option value="VENCIDA">Vencida</option>
+                            </select>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex flex-col gap-1.5 pt-2 border-t border-slate-100">
+                        <input type="text" placeholder="Número de factura" value={nuevaFacturaNumero} onChange={(e) => setNuevaFacturaNumero(e.target.value)} className="px-2 py-1.5 border border-slate-300 rounded text-xs" />
+                        <div className="flex gap-1.5">
+                          <input type="date" value={nuevaFacturaFecha} onChange={(e) => setNuevaFacturaFecha(e.target.value)} className="flex-1 px-2 py-1.5 border border-slate-300 rounded text-xs" />
+                          <input type="number" placeholder="Monto $" value={nuevaFacturaMonto} onChange={(e) => setNuevaFacturaMonto(e.target.value)} className="flex-1 px-2 py-1.5 border border-slate-300 rounded text-xs" />
+                        </div>
+                        <button type="button" onClick={handleAgregarFactura} className="px-3 py-1.5 bg-slate-800 hover:bg-slate-900 text-white text-[10px] font-black rounded-lg">+ Agregar factura</button>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
 
           </div>
 

@@ -100,6 +100,18 @@ enum PrioridadAlerta {
   CRITICA
 }
 
+enum EstadoEntrega {
+  PENDIENTE
+  ENTREGADO
+  ATRASADO
+}
+
+enum EstadoFactura {
+  PENDIENTE
+  PAGADA
+  VENCIDA
+}
+
 enum ResultadoSync {
   EXITOSO
   PARCIAL
@@ -148,6 +160,7 @@ model Empresa {
   oportunidades  OportunidadEmpresa[]
   postulaciones  Postulacion[]
   documentos     Documento[]
+  contratos      Contrato[]
 
   @@index([workspaceId])
 }
@@ -176,6 +189,7 @@ model Usuario {
   cambiosEstado     CambioEstado[]
   auditoria         RegistroAuditoria[]
   documentosSubidos Documento[]          @relation("DocumentoResponsable")
+  contratosCreados  Contrato[]
 
   @@index([workspaceId])
 }
@@ -487,6 +501,75 @@ model CotizacionProveedor {
 
   @@index([oportunidadId])
   @@index([proveedorId])
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// GESTIÓN DE CONTRATOS (POST-ADJUDICACIÓN)
+// ═══════════════════════════════════════════════════════════════════════
+
+// oportunidadCodigo es texto plano (no FK a Oportunidad) a propósito: la
+// tabla Oportunidad hoy es una copia parcial y desactualizada (538
+// registros vs. más de 1300 procesos activos en la fuente real de la UI,
+// mockData.ts) — forzar una relación dejaría sin seguimiento a la mayoría
+// de los contratos reales. Se relaciona por código, igual que Postulacion
+// en el modelo Blob (src/app/types.ts).
+model Contrato {
+  id                String  @id @default(uuid())
+  oportunidadCodigo String
+  oportunidadTitulo String
+  empresaId         String
+  empresa           Empresa @relation(fields: [empresaId], references: [id])
+
+  fechaInicio DateTime?
+  // Ingresado por el usuario a partir del documento real de adjudicación —
+  // nunca inferido ni copiado de AdjudicacionDetalle.plazoEntrega (que hoy
+  // siempre muestra "No disponible" por falta de fuente real, ver
+  // AdjudicacionesModule.tsx — no hay que repetir ese vacío acá con un
+  // valor inventado).
+  plazoEntregaReal String?
+
+  creadoPorUsuarioId String
+  creadoPor          Usuario @relation(fields: [creadoPorUsuarioId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  entregas Entrega[]
+  facturas Factura[]
+
+  @@unique([oportunidadCodigo, empresaId])
+  @@index([empresaId])
+}
+
+model Entrega {
+  id         String   @id @default(uuid())
+  contratoId String
+  contrato   Contrato @relation(fields: [contratoId], references: [id], onDelete: Cascade)
+
+  fecha       DateTime
+  descripcion String
+  estado      EstadoEntrega @default(PENDIENTE)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([contratoId])
+}
+
+model Factura {
+  id         String   @id @default(uuid())
+  contratoId String
+  contrato   Contrato @relation(fields: [contratoId], references: [id], onDelete: Cascade)
+
+  numero String
+  fecha  DateTime
+  monto  Decimal
+  estado EstadoFactura @default(PENDIENTE)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([contratoId])
 }
 
 // ═══════════════════════════════════════════════════════════════════════
