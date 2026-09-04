@@ -34,6 +34,7 @@ interface SearchModuleProps {
   onGlobalSearchTextChange?: (text: string) => void;
   followedOps: Record<string, boolean>;
   onToggleFollow: (opId: string) => void;
+  onAskAssistant?: (codigo: string, titulo: string) => void;
 }
 
 export default function SearchModule({
@@ -54,6 +55,7 @@ export default function SearchModule({
   onUpdateOpportunityItems,
   globalSearchText = '',
   onGlobalSearchTextChange,
+  onAskAssistant,
   followedOps,
   onToggleFollow
 }: SearchModuleProps) {
@@ -826,6 +828,17 @@ export default function SearchModule({
                 >
                   <span>🌐 Ir a Ficha Oficial</span>
                 </a>
+
+                {onAskAssistant && (
+                  <button
+                    type="button"
+                    onClick={() => onAskAssistant(selectedOpportunity.codigo, selectedOpportunity.titulo)}
+                    className="w-full text-center py-2 px-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-750 text-slate-700 dark:text-slate-200 rounded-xl text-[10px] font-black shadow-sm flex items-center justify-center gap-1.5 transition mt-1.5 cursor-pointer"
+                    title="Abre el Asistente IA con los datos reales de este proceso (descripción, ítems, criterios) — sin PDF de bases."
+                  >
+                    <span>🤖 Preguntar a la IA sobre este proceso</span>
+                  </button>
+                )}
               </div>
 
               {/* Bloques de navegación del detalle — reorganizados en 7 bloques

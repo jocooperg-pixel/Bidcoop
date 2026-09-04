@@ -141,6 +141,48 @@ async function buildContext(
   return JSON.stringify(resumen, null, 2);
 }
 
+// Módulo "Preguntas IA con datos reales del proceso": la API pública de
+// Mercado Público NO expone URLs descargables de bases técnicas/anexos
+// (confirmado leyendo el diccionario de datos oficial completo, 97 campos)
+// — así que este bloque nunca incluye ni pretende haber leído un PDF. Solo
+// arma los campos estructurados reales que BidCoop ya capturó para ese
+// proceso específico (descripción, ítems, criterios, cronograma), para que
+// el asistente pueda responder preguntas puntuales sobre ese proceso en
+// vez de solo agregados generales.
+function buildOportunidadDetailContext(codigo: string): string | null {
+  const op = mockOportunidades.find(o => o.codigo.toUpperCase() === codigo.toUpperCase());
+  if (!op) return null;
+
+  const detalle = {
+    codigo: op.codigo,
+    titulo: op.titulo,
+    organismo: op.organismo,
+    organismoRut: op.organismoRut || null,
+    modalidad: op.modalidad,
+    estado: op.estado,
+    region: op.region,
+    monto: op.monto || null,
+    fechaPublicacion: op.fechaPublicacion,
+    fechaCierre: op.fechaCierre,
+    descripcion: op.descripcion || 'No informado por Mercado Público.',
+    items: (op.items || []).map(it => ({
+      sku: it.sku,
+      producto: it.producto,
+      cantidad: it.cantidad,
+      unidadMedida: it.unidadMedida || null,
+      especificacionTecnica: it.especificacionTecnica || null
+    })),
+    criteriosEvaluacion: op.criteriosEvaluacion || [],
+    cronograma: op.cronograma || [],
+    fichaOficialUrl: op.sourceUrl || null,
+    // Límite explícito para que el asistente nunca dé a entender que leyó
+    // un PDF de bases o hizo un análisis legal de admisibilidad.
+    limitacionReal: 'Este bloque contiene solo los campos estructurados que la API pública de Mercado Público entrega — no incluye el PDF de bases técnicas ni anexos (esa API no los expone). No es un análisis legal de admisibilidad.'
+  };
+
+  return JSON.stringify(detalle, null, 2);
+}
+
 const SYSTEM_PROMPT = `Eres el Asistente BidCoop, integrado en una plataforma real de inteligencia comercial para licitaciones de Mercado Público (Chile).
 
 REGLA ABSOLUTA — NUNCA LA ROMPAS: solo puedes usar los datos que aparecen literalmente en el bloque "CONTEXTO REAL" que recibes en cada mensaje. Ese bloque viene directo de la sincronización real con Mercado Público y de la base de datos de la plataforma — nunca de tu conocimiento general ni de tu entrenamiento.
@@ -149,7 +191,9 @@ REGLA ABSOLUTA — NUNCA LA ROMPAS: solo puedes usar los datos que aparecen lite
 - No des consejos de precios, montos a ofertar ni probabilidades de adjudicación — no hay datos reales para respaldar eso.
 - Responde en español, de forma breve y orientada a la acción: qué pasó, qué significa, y qué debería hacer el usuario hoy.
 - Usa los códigos de licitación reales cuando los menciones, no los inventes.
-- Si el usuario pregunta algo fuera del ámbito de licitaciones/compras públicas, redirígelo amablemente al propósito de la plataforma.`;
+- Si el usuario pregunta algo fuera del ámbito de licitaciones/compras públicas, redirígelo amablemente al propósito de la plataforma.
+
+Cuando el mensaje incluya un bloque "DETALLE DEL PROCESO" (datos reales de un proceso específico): puedes responder con esos campos (descripción, ítems, criterios de evaluación, cronograma). IMPORTANTE — nunca digas que "leíste las bases" ni que hiciste un "análisis de admisibilidad" o "de riesgos legales": la API pública de Mercado Público no expone el PDF de bases técnicas ni anexos, así que ese bloque solo trae los campos estructurados oficiales, nunca el documento completo. Si te preguntan por riesgos de inadmisibilidad, solo puedes señalar algo verificable en esos campos (ej. el proceso cierra en menos de 48 horas, o el monto no está informado) — nunca una lista genérica de riesgos legales que no puedas respaldar con ese dato real.`;
 
 export async function POST(request: NextRequest) {
   try {
@@ -164,6 +208,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json().catch(() => null);
     const message: string = body?.message;
     const history: Array<{ role: 'user' | 'assistant'; content: string }> = Array.isArray(body?.history) ? body.history : [];
+    const codigo: string | undefined = typeof body?.codigo === 'string' && body.codigo.trim() ? body.codigo.trim() : undefined;
 
     if (!message || typeof message !== 'string') {
       return NextResponse.json({ error: 'Falta el mensaje.' }, { status: 400 });
@@ -183,11 +228,18 @@ export async function POST(request: NextRequest) {
       totalProveedores
     );
 
+    const detalleProceso = codigo ? buildOportunidadDetailContext(codigo) : null;
+    const bloqueDetalle = detalleProceso
+      ? `\n\nDETALLE DEL PROCESO (código ${codigo}, datos reales de Mercado Público, JSON):\n${detalleProceso}`
+      : codigo
+        ? `\n\nDETALLE DEL PROCESO: el código ${codigo} no se encontró en la base actual de BidCoop.`
+        : '';
+
     const messages = [
       ...history.slice(-10).map(h => ({ role: h.role, content: h.content })),
       {
         role: 'user' as const,
-        content: `CONTEXTO REAL (datos sincronizados de Mercado Público, JSON):\n${contexto}\n\nPregunta del usuario: ${message}`
+        content: `CONTEXTO REAL (datos sincronizados de Mercado Público, JSON):\n${contexto}${bloqueDetalle}\n\nPregunta del usuario: ${message}`
       }
     ];
 

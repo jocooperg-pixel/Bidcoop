@@ -7,12 +7,23 @@ interface ChatMessage {
   content: string;
 }
 
-export default function AssistantWidget() {
+interface AssistantWidgetProps {
+  // Cuando se setea (ej. desde "Preguntar a la IA sobre este proceso" en
+  // SearchModule), el widget se abre solo y adjunta el detalle real de ese
+  // proceso (descripción, ítems, criterios) a cada pregunta — hasta que el
+  // usuario lo quite manualmente.
+  contextCodigo?: string;
+  contextTitulo?: string;
+  onContextConsumed?: () => void;
+}
+
+export default function AssistantWidget({ contextCodigo, contextTitulo, onContextConsumed }: AssistantWidgetProps = {}) {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [notConfigured, setNotConfigured] = useState(false);
+  const [activeContext, setActiveContext] = useState<{ codigo: string; titulo?: string } | undefined>(undefined);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -20,6 +31,15 @@ export default function AssistantWidget() {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
   }, [messages, loading]);
+
+  useEffect(() => {
+    if (contextCodigo) {
+      setActiveContext({ codigo: contextCodigo, titulo: contextTitulo });
+      setOpen(true);
+      onContextConsumed?.();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [contextCodigo]);
 
   const handleSend = async () => {
     const text = input.trim();
@@ -34,7 +54,7 @@ export default function AssistantWidget() {
       const res = await fetch('/api/assistant', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text, history: messages })
+        body: JSON.stringify({ message: text, history: messages, codigo: activeContext?.codigo })
       });
       const data = await res.json();
 
@@ -71,6 +91,22 @@ export default function AssistantWidget() {
             <h3 className="text-sm font-black">🤖 Asistente BidCoop</h3>
             <p className="text-[10px] text-blue-100 font-semibold">Responde solo con datos reales sincronizados — nunca inventa cifras.</p>
           </div>
+
+          {activeContext && (
+            <div className="px-4 py-2 bg-amber-50 dark:bg-amber-950/30 border-b border-amber-200 dark:border-amber-900/40 flex items-center justify-between gap-2 shrink-0">
+              <span className="text-[10px] font-bold text-amber-800 dark:text-amber-300 truncate">
+                📌 Preguntando sobre {activeContext.codigo}{activeContext.titulo ? `: ${activeContext.titulo}` : ''}
+              </span>
+              <button
+                type="button"
+                onClick={() => setActiveContext(undefined)}
+                className="shrink-0 text-[10px] font-black text-amber-600 hover:text-amber-800 dark:text-amber-400"
+                title="Quitar contexto — volver a preguntas generales"
+              >
+                ✕
+              </button>
+            </div>
+          )}
 
           {/* Messages */}
           <div ref={scrollRef} className="flex-1 overflow-y-auto p-3 space-y-2.5 bg-slate-50 dark:bg-slate-950">

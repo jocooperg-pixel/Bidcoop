@@ -293,6 +293,12 @@ export default function Home() {
   const [vistasGuardadas, setVistasGuardadas] = useState<VistaGuardada[]>(mockVistasGuardadas);
   const [selectedOpportunity, setSelectedOpportunity] = useState<Oportunidad | null>(null);
 
+  // Contexto activo del Asistente IA cuando el usuario pregunta sobre un
+  // proceso específico (botón "Preguntar a la IA sobre este proceso" en
+  // SearchModule) — se pasa a AssistantWidget para que abra y adjunte el
+  // detalle real de ese código a la conversación.
+  const [assistantContext, setAssistantContext] = useState<{ codigo: string; titulo: string } | null>(null);
+
   // Global search preferences state
   const [globalPrefs, setGlobalPrefs] = useState({
     rubros: [
@@ -841,6 +847,7 @@ export default function Home() {
               onAddComment={handleAddComment}
               onImportFromApi={handleQueryApiBidding}
               onSyncRealTime={handleCheckSyncStatus}
+              onAskAssistant={(codigo, titulo) => setAssistantContext({ codigo, titulo })}
               onUpdateOpportunityItems={(opId, newItems) => {
                 setOportunidades(prev => prev.map(op => {
                   if (op.id === opId || op.codigo === opId) {
@@ -918,7 +925,11 @@ export default function Home() {
         </main>
       </div>
 
-      <AssistantWidget />
+      <AssistantWidget
+        contextCodigo={assistantContext?.codigo}
+        contextTitulo={assistantContext?.titulo}
+        onContextConsumed={() => setAssistantContext(null)}
+      />
     </div>
   );
 }
