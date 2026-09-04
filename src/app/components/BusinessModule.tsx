@@ -6,6 +6,22 @@ import AdjudicacionesModule from './AdjudicacionesModule';
 
 
 
+interface UsuarioBasico {
+  id: string;
+  nombre: string;
+}
+
+interface TareaResumen {
+  id: string;
+  titulo: string;
+  descripcion: string | null;
+  estado: 'PENDIENTE' | 'EN_PROGRESO' | 'COMPLETADA' | 'VENCIDA';
+  fechaLimite: string | null;
+  asignadoA: UsuarioBasico | null;
+  oportunidad: { codigo: string; tituloOficial: string } | null;
+  createdAt: string;
+}
+
 interface BusinessModuleProps {
   activeSubSection: string;
   oportunidades: Oportunidad[];
@@ -427,7 +443,18 @@ export default function BusinessModule({
   const currentMonthLabel = calendarMonth
     .toLocaleDateString('es-CL', { month: 'long', year: 'numeric' })
     .replace(/^\w/, c => c.toUpperCase());
-  
+
+  // Tareas reales (/api/tareas, ya usado por TasksModule.tsx/Sidebar.tsx) —
+  // se cargan acá también para poder plotear sus fechaLimite en el
+  // calendario, sin duplicar el módulo de gestión de tareas.
+  const [tareasCalendario, setTareasCalendario] = useState<TareaResumen[]>([]);
+  useEffect(() => {
+    fetch('/api/tareas')
+      .then(res => (res.ok ? res.json() : { tareas: [] }))
+      .then(data => setTareasCalendario(Array.isArray(data.tareas) ? data.tareas : []))
+      .catch(() => setTareasCalendario([]));
+  }, []);
+
   // Seed dates on calendar: 1 to 31
   const calendarDays = useMemo(() => {
     const year = calendarMonth.getFullYear();
@@ -438,13 +465,14 @@ export default function BusinessModule({
     const firstWeekday = new Date(year, month, 1).getDay(); // 0=Dom..6=Sáb
     const leadingEmpty = (firstWeekday + 6) % 7;
 
-    const days: Array<{ dayNum: number | null; events: Array<{ titulo: string; tipo: 'cierre' | 'pregunta' | 'adjudicacion'; op: Oportunidad }> }> = [];
+    type EventoCalendario = { titulo: string; tipo: 'cierre' | 'pregunta' | 'adjudicacion' | 'tarea'; op?: Oportunidad };
+    const days: Array<{ dayNum: number | null; events: EventoCalendario[] }> = [];
     for (let i = 0; i < leadingEmpty; i++) {
       days.push({ dayNum: null, events: [] });
     }
 
     for (let d = 1; d <= daysInMonth; d++) {
-      const events: Array<{ titulo: string; tipo: 'cierre' | 'pregunta' | 'adjudicacion'; op: Oportunidad }> = [];
+      const events: EventoCalendario[] = [];
 
       oportunidades.forEach(op => {
         if (op.fechaCierre) {
@@ -461,10 +489,19 @@ export default function BusinessModule({
         }
       });
 
+      tareasCalendario.forEach(tarea => {
+        if (!tarea.fechaLimite || tarea.estado === 'COMPLETADA') return;
+        const limite = new Date(tarea.fechaLimite);
+        if (!isNaN(limite.getTime()) && limite.getFullYear() === year && limite.getMonth() === month && limite.getDate() === d) {
+          const op = tarea.oportunidad ? oportunidades.find(o => o.codigo === tarea.oportunidad!.codigo) : undefined;
+          events.push({ titulo: `Tarea: ${tarea.titulo}`, tipo: 'tarea', op });
+        }
+      });
+
       days.push({ dayNum: d, events });
     }
     return days;
-  }, [oportunidades, calendarMonth]);
+  }, [oportunidades, tareasCalendario, calendarMonth]);
 
   const handleUploadDoc = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -1196,8 +1233,9 @@ export default function BusinessModule({
                       : 'bg-white border-slate-100 dark:bg-slate-900 dark:border-slate-800 hover:border-blue-400 transition cursor-pointer'
                   }`}
                   onClick={() => {
-                    if (slot.events.length > 0) {
-                      onSelectOpportunity(slot.events[0].op);
+                    const primerConOportunidad = slot.events.find(e => e.op);
+                    if (primerConOportunidad?.op) {
+                      onSelectOpportunity(primerConOportunidad.op);
                     }
                   }}
                 >
@@ -1215,7 +1253,11 @@ export default function BusinessModule({
                       <div
                         key={eIdx}
                         className={`text-[8px] font-black rounded p-0.5 px-1 truncate leading-tight ${
-                          e.tipo === 'cierre' ? 'bg-red-50 text-red-600 dark:bg-red-950/20 dark:text-red-400' : 'bg-green-50 text-green-600 dark:bg-green-950/20'
+                          e.tipo === 'cierre'
+                            ? 'bg-red-50 text-red-600 dark:bg-red-950/20 dark:text-red-400'
+                            : e.tipo === 'tarea'
+                              ? 'bg-amber-50 text-amber-600 dark:bg-amber-950/20 dark:text-amber-400'
+                              : 'bg-green-50 text-green-600 dark:bg-green-950/20'
                         }`}
                         title={e.titulo}
                       >
