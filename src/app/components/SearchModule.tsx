@@ -83,6 +83,54 @@ export default function SearchModule({
   const [showProcedenciaDropdown, setShowProcedenciaDropdown] = useState(false);
   const PROCEDENCIAS_DISPONIBLES = ['Compra Ágil', 'Licitación', 'Convenio Marco', 'Grandes Compras'];
 
+  // Búsqueda con IA (estilo LicitaPyme): reordena/filtra por relevancia
+  // semántica sobre las mismas oportunidades ya matcheadas por catálogo —
+  // nunca amplía el universo de datos. aiSearchCodes=null significa "no se
+  // ha ejecutado ninguna búsqueda con IA todavía" (se usa el filtro de
+  // texto normal); un array (incluso vacío) significa que ya se ejecutó.
+  const [aiSearchMode, setAiSearchMode] = useState(false);
+  const [aiSearchLoading, setAiSearchLoading] = useState(false);
+  const [aiSearchError, setAiSearchError] = useState<string | null>(null);
+  const [aiSearchCodes, setAiSearchCodes] = useState<string[] | null>(null);
+
+  const handleAiSearch = async () => {
+    const consulta = searchText.trim();
+    if (!consulta) return;
+    setAiSearchLoading(true);
+    setAiSearchError(null);
+    try {
+      const res = await fetch('/api/buscar-ia', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          consulta,
+          oportunidades: oportunidades.map(o => ({
+            codigo: o.codigo,
+            titulo: o.titulo,
+            organismo: o.organismo,
+            rubro: o.rubro,
+            region: o.region,
+            monto: o.monto,
+            modalidad: o.modalidad
+          }))
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setAiSearchError(data?.error || 'No se pudo completar la búsqueda con IA.');
+        setAiSearchCodes([]);
+      } else {
+        setAiSearchCodes(Array.isArray(data.codigos) ? data.codigos : []);
+      }
+    } catch {
+      setAiSearchError('No se pudo conectar con la búsqueda con IA.');
+      setAiSearchCodes([]);
+    } finally {
+      setAiSearchLoading(false);
+      setCurrentPage(1);
+    }
+  };
+
   // Column visibility
   const [visibleColumns, setVisibleColumns] = useState({
     codigo: true,
@@ -243,6 +291,10 @@ export default function SearchModule({
   const handleLocalSearchChange = (val: string) => {
     setSearchText(val);
     setCurrentPage(1);
+    // Un resultado de búsqueda con IA queda obsoleto en cuanto el texto
+    // cambia — se vuelve a pedir explícitamente con el botón "Buscar con IA".
+    setAiSearchCodes(null);
+    setAiSearchError(null);
     if (onGlobalSearchTextChange) {
       onGlobalSearchTextChange(val);
     }
@@ -566,6 +618,30 @@ export default function SearchModule({
       return matchInclude && matchExclude;
     };
 
+    // Búsqueda con IA activa y ya ejecutada: la base ya no es "todas las
+    // oportunidades" ni el filtro de substring — es la lista de códigos
+    // reales que la IA seleccionó (siempre validados contra el universo
+    // real en el backend), en su mismo orden de relevancia. Los filtros
+    // facetados (rubro/región/riesgo/monto/procedencia/estado) se siguen
+    // aplicando encima, igual que en la búsqueda normal.
+    if (aiSearchMode && aiSearchCodes !== null) {
+      const porCodigo = new Map(oportunidades.map(op => [op.codigo, op]));
+      const enOrden = aiSearchCodes
+        .map(codigo => porCodigo.get(codigo))
+        .filter((op): op is Oportunidad => !!op)
+        .filter((op) => {
+          const matchRubro = filterRubro === 'Todos' || op.rubro === filterRubro;
+          const matchRegion = filterRegion === 'Todos' || op.region === filterRegion;
+          const matchRiesgo = filterRiesgo === 'Todos' || op.riesgo === filterRiesgo;
+          const matchMonto = op.monto >= filterMontoMin && op.monto <= filterMontoMax;
+          const matchModalidad = filterModalidad === 'Todos' || op.modalidad === filterModalidad;
+          const matchProcedencia = filterProcedencias.length === 0 || filterProcedencias.includes(op.modalidad);
+          const matchEstado = filterEstado === 'Todos' || op.estado === filterEstado;
+          return matchRubro && matchRegion && matchRiesgo && matchMonto && matchModalidad && matchProcedencia && matchEstado && matchIncludeExclude(op);
+        });
+      return enOrden;
+    }
+
     const list = !cleanSearch
 
       ? oportunidades.filter((op) => {
@@ -614,7 +690,7 @@ export default function SearchModule({
       return dateB.localeCompare(dateA);
     });
 
-  }, [oportunidades, searchText, filterRubro, filterRegion, filterRiesgo, filterMontoMin, filterMontoMax, filterModalidad, filterProcedencias, filterEstado, filterIncludeKeywords, filterExcludeKeywords]);
+  }, [oportunidades, searchText, filterRubro, filterRegion, filterRiesgo, filterMontoMin, filterMontoMax, filterModalidad, filterProcedencias, filterEstado, filterIncludeKeywords, filterExcludeKeywords, aiSearchMode, aiSearchCodes]);
 
   // Paginated opportunities
   const paginatedOportunidades = useMemo(() => {
@@ -2627,14 +2703,47 @@ export default function SearchModule({
             </div>
 
             {/* FREE TEXT SEARCH BAR IN CORE */}
-            <div className="mb-4 flex gap-2">
+            <div className="mb-2 flex gap-2">
               <input
                 type="text"
-                placeholder="Filtrar por texto o ingresar código de licitación real (ej. 3047-10-L115)..."
+                placeholder={aiSearchMode ? 'Describe lo que buscas (ej. insumos de oficina para colegios)...' : 'Filtrar por texto o ingresar código de licitación real (ej. 3047-10-L115)...'}
                 value={searchText}
                 onChange={(e) => handleLocalSearchChange(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && aiSearchMode) {
+                    e.preventDefault();
+                    handleAiSearch();
+                  }
+                }}
                 className="flex-1 text-xs p-2.5 rounded-xl bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-700 outline-none text-slate-900 dark:text-white focus:border-blue-500 transition-all"
               />
+              {aiSearchMode && (
+                <button
+                  type="button"
+                  onClick={handleAiSearch}
+                  disabled={aiSearchLoading || !searchText.trim()}
+                  className="px-4 bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold text-xs rounded-xl shadow-lg shadow-indigo-600/10 transition whitespace-nowrap cursor-pointer"
+                >
+                  {aiSearchLoading ? '🤖 Buscando...' : '🤖 Buscar con IA'}
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => {
+                  setAiSearchMode(prev => !prev);
+                  setAiSearchCodes(null);
+                  setAiSearchError(null);
+                  setCurrentPage(1);
+                }}
+                title="Búsqueda interpretada por IA sobre las mismas oportunidades que ya matchean tu catálogo — nunca amplía el universo de datos ni inventa procesos."
+                className={`px-3 rounded-xl font-bold text-[10px] transition whitespace-nowrap cursor-pointer border ${
+                  aiSearchMode
+                    ? 'bg-indigo-600 border-indigo-600 text-white'
+                    : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-slate-500 hover:text-indigo-600 hover:border-indigo-300'
+                }`}
+              >
+                🔍 Búsqueda con IA {aiSearchMode ? 'ON' : 'OFF'}
+              </button>
               {onImportFromApi && /^\d+-\d+-[a-zA-Z\d]+$/i.test(searchText.trim()) && (
                 <button
                   type="button"
@@ -2645,6 +2754,16 @@ export default function SearchModule({
                 </button>
               )}
             </div>
+            {aiSearchMode && (
+              <div className="mb-4 text-[10px] text-slate-400">
+                {aiSearchError
+                  ? <span className="text-rose-500 font-bold">⚠️ {aiSearchError}</span>
+                  : aiSearchCodes !== null
+                    ? `IA seleccionó ${aiSearchCodes.length} proceso(s) reales relevantes para "${searchText}" — ordenados por relevancia.`
+                    : 'Escribe una consulta en lenguaje libre y presiona Enter o "Buscar con IA". Solo busca entre procesos reales ya sincronizados.'}
+              </div>
+            )}
+            {!aiSearchMode && <div className="mb-4" />}
 
             {/* RESULTS — CARD VIEW (default) */}
             {viewMode === 'cards' && (
