@@ -28,7 +28,8 @@ export async function POST(request: Request) {
       'lizgamarra@aminorte.cl',
       'jonathan.cooper.g@gmail.com',
       'efarias@aminorte.cl',
-      'domfuentes@aminorte.cl'
+      'domfuentes@aminorte.cl',
+      'fsantander@vmoccs.cl'
     ];
 
     // Helper for exact Chilean region resolution from organism & description
