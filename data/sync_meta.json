@@ -1,58 +1,58 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-05T19:36:37.081336+00:00",
-  "ultimoIntentoRealizado": "2026-09-05T19:36:37.081336+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-05T21:44:55.324185+00:00",
+  "ultimoIntentoRealizado": "2026-09-05T21:44:55.324185+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1402,
-  "registrosConfirmados": 1402,
+  "registrosEnPlataforma": 1397,
+  "registrosConfirmados": 1397,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1120,
-  "excluidosPrefiltroIrrelevante": 7944,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 1115,
+  "excluidosPrefiltroIrrelevante": 7947,
+  "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 728,
-    "conMontoValido": 718,
+    "total": 725,
+    "conMontoValido": 715,
     "pctValidado": 98.6,
     "stats": {
-      "VALIDADO": 718,
+      "VALIDADO": 715,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 10
     },
-    "montoOriginalSum": 728590171,
-    "montoFinalSum": 1301119700,
-    "montoRecuperadoSum": 572529529
+    "montoOriginalSum": 837315004,
+    "montoFinalSum": 1293274670,
+    "montoRecuperadoSum": 455959666
   },
   "categorias": {
-    "licitaciones": 670,
-    "comprasAgiles": 728,
+    "licitaciones": 668,
+    "comprasAgiles": 725,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 377,
+    "LE": 376,
     "LR": 40,
     "LP": 137,
     "B2": 2,
     "I2": 3,
-    "L1": 109,
+    "L1": 108,
     "O1": 4,
     "CO": 19,
     "LS": 2,
-    "COT": 709
+    "COT": 706
   },
   "matchPorEmpresa": {
-    "Aminorte": 1185,
+    "Aminorte": 1180,
     "V-MOCCS": 217
   },
   "cambios": {
     "comparadoContra": "2026-09-04T12:02:00.072235+00:00",
-    "nuevosCount": 581,
+    "nuevosCount": 584,
     "modificadosCount": 131,
-    "cerradosCount": 526,
+    "cerradosCount": 534,
     "nuevos": [
       {
         "codigo": "621-467-LR26",
@@ -582,7 +582,7 @@
         "organismo": "I MUNICIPALIDAD DE RENCA",
         "monto": 6843000,
         "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
+        "matchScore": 90,
         "fechaCierre": "2026-09-07T11:05"
       },
       {
@@ -667,16 +667,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3787-12-LE26",
-        "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 24000000,
-        "montoNuevo": 24000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2408-162-LE26",
         "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -685,6 +675,16 @@
         "montoAnterior": 24000000,
         "montoNuevo": 24000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3787-12-LE26",
+        "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 24000000,
+        "montoNuevo": 24000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "4174-30-CO26",
@@ -797,16 +797,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2408-192-L126",
-        "titulo": "MOBILIARIO Y EQUIPAMIENTO INFANTIL, DIDACTICO Y DE ESTIMULACION-CRECER EN COMUNIDAD 2026",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 6000000,
-        "montoNuevo": 6000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "929-23-L126",
         "titulo": "Mantenimiento de Instalaciones y Equipos Eléctricos, Oficinas DRM",
         "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
@@ -815,6 +805,16 @@
         "montoAnterior": 6000000,
         "montoNuevo": 6000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2408-192-L126",
+        "titulo": "MOBILIARIO Y EQUIPAMIENTO INFANTIL, DIDACTICO Y DE ESTIMULACION-CRECER EN COMUNIDAD 2026",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 6000000,
+        "montoNuevo": 6000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "2109-616-COT26",
@@ -927,16 +927,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1952-1177-COT26",
-        "titulo": "INSUMOS PARA IMPRESORA ZEBRA ZT-231 PROCESOS DE ESTERILIZACIÓN",
-        "organismo": "Hospital Villarrica",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 4000000,
-        "montoNuevo": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2296-543-COT26",
         "titulo": "Adquisición de Sillas de Ruedas convencionales y Andadores de 4 ruedas",
         "organismo": "I MUNICIPALIDAD DE CONCHALI",
@@ -954,6 +944,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 3170000,
         "montoNuevo": 3170000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1171142-2099-COT26",
+        "titulo": " Exámen IGG, PCR Asperguillis, Velocidad de hemosedimentación,",
+        "organismo": "HOSPITAL COMPLEJO ASISTENCIAL PADRE LAS CASAS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 3000000,
+        "montoNuevo": 3000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -990,16 +990,6 @@
         "codigo": "3515-420-COT26",
         "titulo": "ARRIENDO DE MOVILIZACION PARA MONITORES DEL PROGRAMA RUTA SOCIAL",
         "organismo": "I MUNICIPALIDAD DE LA CALERA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 2500000,
-        "montoNuevo": 2500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3244-328-COT26",
-        "titulo": "EQUIPO MULTIFUNCIONAL LÁSER A COLOR DE ALTO TRÁFICO PARA COLEGIO BPHP",
-        "organismo": "I MUNICIPALIDAD DE SANTO DOMINGO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 2500000,
@@ -1195,9 +1185,27 @@
         "montoAnterior": 1000000,
         "montoNuevo": 1000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "608-5610-COT26",
+        "titulo": "(SOB) PCR para Bartonella Henselae en sangre",
+        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 1000000,
+        "montoNuevo": 1000000,
+        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
+      {
+        "codigo": "3000-30-LE26",
+        "titulo": "Toner y Tintas INFORMÁTICA",
+        "organismo": "I MUNICIPALIDAD DE MONTEPATRIA",
+        "estadoAnterior": "Publicada",
+        "monto": 12000000,
+        "empresaMatch": "Aminorte"
+      },
       {
         "codigo": "3833-531-COT26",
         "titulo": "COMPUTADORES y OTROS-OFICINAS MUNICIPALES",
@@ -1375,6 +1383,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "4294-57-COT26",
+        "titulo": "Unidades SSD IBM 2,5\" 1,92TB 12GB SAS para IBM FlashSystem 5000 Tipo 2072.",
+        "organismo": "Ejercito de Chile",
+        "estadoAnterior": "Publicada",
+        "monto": 6900000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2411-28-COT26",
         "titulo": "ID: 3023 NOMBRE DEL REQUERIMIENTO: Adquisicion de Cámaras de Vigilancia Departamento Cementerio",
         "organismo": "Municipalidad Los Angeles Unidad Cementerio",
@@ -1413,6 +1429,14 @@
         "estadoAnterior": "Publicada",
         "monto": 6788193,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "742-8-L126",
+        "titulo": "Mantención Oficina de INDAP Coyhaique, región de Aysén",
+        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
+        "estadoAnterior": "Publicada",
+        "monto": 6700000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2294-1932-COT26",
@@ -1639,48 +1663,24 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1952-1177-COT26",
+        "titulo": "INSUMOS PARA IMPRESORA ZEBRA ZT-231 PROCESOS DE ESTERILIZACIÓN",
+        "organismo": "Hospital Villarrica",
+        "estadoAnterior": "Publicada",
+        "monto": 4000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1563-42-COT26",
         "titulo": "Adquisición Materiales de aseo y oficina para Sucursales DZCS-Fonasa",
         "organismo": "FONDO NACIONAL DE SALUD",
         "estadoAnterior": "Publicada",
         "monto": 4000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2440-1469-COT26",
-        "titulo": " ACCESORIOS Y  SUMINISTROS  PARA IMPRESORAS ORIGINALES ESCUELA  PADRE ALNERTO HURTADO  DE CURICÓ",
-        "organismo": "I MUNICIPALIDAD DE CURICO",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1214103-221-COT26",
-        "titulo": "MATERIALES DE OFICINA ",
-        "organismo": "Corporación Cultural Municipal de Puente Alto",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "229-131-COT26",
-        "titulo": "ADQUISICIÓN DE MATERIALES DE OFICINA Y OTROS PARA PROGRAMAS Y/O CONVENIOS DE LA ILUSTRE MUNICIPALIDAD DE COIHUECO",
-        "organismo": "I MUNICIPALIDAD DE COIHUECO",
-        "estadoAnterior": "Publicada",
-        "monto": 3947056,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "813685-109-COT26",
-        "titulo": "SUSCRIPCIÓN SERVICIO DE CONSULTA NORMATIVA Y JURISPRUDENCIA",
-        "organismo": "DIRECCION GENERAL DEL TERRITORIO MARIT Y MM (AB)",
-        "estadoAnterior": "Publicada",
-        "monto": 3936400,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1513.0,
+  "tiempoEjecucionSegundos": 1501.9,
   "errores": [],
   "advertencias": []
 }
