@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-05T06:22:26.662574+00:00",
-  "ultimoIntentoRealizado": "2026-09-05T06:22:26.662574+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-05T11:24:57.202896+00:00",
+  "ultimoIntentoRealizado": "2026-09-05T11:24:57.202896+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1413,
-  "registrosConfirmados": 1413,
+  "registrosEnPlataforma": 1405,
+  "registrosConfirmados": 1405,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1131,
+  "registrosConMontoReal": 1127,
   "excluidosPrefiltroIrrelevante": 7935,
-  "excluidosSinDatosReales": 0,
+  "excluidosSinDatosReales": 8,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 740,
@@ -21,38 +21,38 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 10
     },
-    "montoOriginalSum": 292107298,
+    "montoOriginalSum": 421981217,
     "montoFinalSum": 1326663909,
-    "montoRecuperadoSum": 1034556611
+    "montoRecuperadoSum": 904682692
   },
   "categorias": {
-    "licitaciones": 669,
+    "licitaciones": 661,
     "comprasAgiles": 740,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 377,
-    "LR": 40,
-    "LP": 137,
+    "LE": 375,
+    "LR": 37,
+    "LP": 136,
     "B2": 2,
     "I2": 3,
-    "L1": 108,
+    "L1": 106,
     "O1": 4,
     "CO": 19,
     "LS": 2,
     "COT": 721
   },
   "matchPorEmpresa": {
-    "Aminorte": 1192,
+    "Aminorte": 1184,
     "V-MOCCS": 221
   },
   "cambios": {
     "comparadoContra": "2026-09-04T12:02:00.072235+00:00",
     "nuevosCount": 567,
-    "modificadosCount": 127,
-    "cerradosCount": 501,
+    "modificadosCount": 136,
+    "cerradosCount": 509,
     "nuevos": [
       {
         "codigo": "621-467-LR26",
@@ -393,7 +393,7 @@
         "organismo": "Agencia Nacional de Investigación y Desarrollo (ANID)",
         "monto": 7150000,
         "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
+        "matchScore": 80,
         "fechaCierre": "2026-09-07T15:00"
       },
       {
@@ -607,6 +607,26 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1057937-12-LP26",
+        "titulo": "COMPRA 4 MICROTOMO SEMIAUTOMATICO 1 IMPRESORA DE LAMINAS Y 1 IMPRESORA DE CASSETTES ",
+        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL BASE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 135636000,
+        "montoNuevo": 135636000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1754-37-LE26",
+        "titulo": "ADQUISICION POLIZAS DE SEGURO SOAP Y MONITOREO GPS",
+        "organismo": "Departamento de Salud Parral",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 60000000,
+        "montoNuevo": 60000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "188-79-LE26",
         "titulo": "Adquisición e instalación de separadores clínicos",
         "organismo": "CORP MUNICIPAL DE EDUC SALUD CULTURA Y RECREACION DE LA FLORIDA",
@@ -684,6 +704,26 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 16430059,
         "montoNuevo": 16430059,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "707427-33-LE26",
+        "titulo": "MEJORAS INTEGRALES EN PINTURAS INTERIORES DE SALAS",
+        "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 15000000,
+        "montoNuevo": 15000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2402-75-LE26",
+        "titulo": "ARRIENDO E INST. TEMPORAL CAMARAS DE SEGURIDAD",
+        "organismo": "I MUNICIPALIDAD DE RANCAGUA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 9000000,
+        "montoNuevo": 9000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -835,6 +875,26 @@
         "montoAnterior": 4522000,
         "montoNuevo": 4522000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2287-21-L126",
+        "titulo": "APLICACIÓN, DIGITACIÓN Y ANÁLISIS DE ENCUESTA DE CARACTERIZACIÓN, PERCEPCIÓN Y SATISFACCIÓN VECINAL FASE III, ",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE MACUL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 4500000,
+        "montoNuevo": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2658-281-L126",
+        "titulo": "PINTURA ACRÍLICA ALTO TRÁFICO Y OTROS",
+        "organismo": "I MUNICIPALIDAD DE ANCUD",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 4000000,
+        "montoNuevo": 4000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2341-445-COT26",
@@ -1135,69 +1195,33 @@
         "montoAnterior": 1000000,
         "montoNuevo": 1000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "608-5610-COT26",
-        "titulo": "(SOB) PCR para Bartonella Henselae en sangre",
-        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1000000,
-        "montoNuevo": 1000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "986278-91-COT26",
-        "titulo": "Escáner dúplex de documentos para digitalización / CFT de la región de la Araucania",
-        "organismo": "CENTRO DE FORMACION TECNICA DE LA REGION DE LA ARAUCANIA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 991549,
-        "montoNuevo": 991549,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2360-280-COT26",
-        "titulo": "ADQUISICION DE MATERIALES DE ESCRITORIO HPV",
-        "organismo": "I MUNICIPALIDAD DE TALCAHUANO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 873962,
-        "montoNuevo": 873962,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1058097-838-COT26",
-        "titulo": "ACIDO ZOLEDRONICO 4 MG/5ML AM/BO SOL INY",
-        "organismo": "HOSPITAL PADRE ALBERTO HURTADO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 862000,
-        "montoNuevo": 862000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3873-296-COT26",
-        "titulo": "Conjunto de tensor, pares cable UTP CAT 6, Cable USB-C A USB-C, Cargador Rápido, se adjunta imagen (Adjuntar especificaciones e imagen)",
-        "organismo": "I MUNICIPALIDAD DE PUNITAQUI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 857139,
-        "montoNuevo": 857139,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1733-116-COT26",
-        "titulo": "Smart TV LG de 75\" o superior según especificaciones adjuntas.",
-        "organismo": "INSTITUTO FORESTAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 800000,
-        "montoNuevo": 800000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
+      {
+        "codigo": "2430-62-LR26",
+        "titulo": "REPOSICIÓN DE PANTALLAS ESTADIO CALVO Y BASCUÑÁN CIUDAD DE ANTOFAGASTA",
+        "organismo": "I MUNICIPALIDAD DE ANTOFAGASTA",
+        "estadoAnterior": "Publicada",
+        "monto": 491000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057432-73-LP26",
+        "titulo": "SERVICIO DE ARRIENDO DE 2 SERVIDORES PARA SSC",
+        "organismo": "SERVICIO DE SALUD CONCEPCION",
+        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "monto": 99067500,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4803-28-LE26",
+        "titulo": "PROVISIÓN DE UN SERVIDOR Y SERVICIOS DE IMPLEMENTA",
+        "organismo": "SENADO DE LA REPUBLICA",
+        "estadoAnterior": "Publicada",
+        "monto": 27000000,
+        "empresaMatch": "Aminorte"
+      },
       {
         "codigo": "3833-531-COT26",
         "titulo": "COMPUTADORES y OTROS-OFICINAS MUNICIPALES",
@@ -1653,34 +1677,10 @@
         "estadoAnterior": "Publicada",
         "monto": 3947056,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "813685-109-COT26",
-        "titulo": "SUSCRIPCIÓN SERVICIO DE CONSULTA NORMATIVA Y JURISPRUDENCIA",
-        "organismo": "DIRECCION GENERAL DEL TERRITORIO MARIT Y MM (AB)",
-        "estadoAnterior": "Publicada",
-        "monto": 3936400,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2440-1468-COT26",
-        "titulo": " MATERIALES DE LIBRERÍA   ESCUELA ERNESTO CASTRO ARELLANO  DE CURICÓ",
-        "organismo": "I MUNICIPALIDAD DE CURICO",
-        "estadoAnterior": "Publicada",
-        "monto": 3900000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5060-765-COT26",
-        "titulo": "S402.SEP. ADQ DE SERVICIO DE MANTENIMIENTO Y REPARACION DE IMPRESORA.",
-        "organismo": "I MUNICIPALIDAD DE TEMUCO",
-        "estadoAnterior": "Publicada",
-        "monto": 3890000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1503.5,
+  "tiempoEjecucionSegundos": 1515.3,
   "errores": [],
   "advertencias": []
 }
