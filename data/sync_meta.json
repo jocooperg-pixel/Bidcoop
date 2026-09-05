@@ -1,58 +1,58 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-05T21:44:55.324185+00:00",
-  "ultimoIntentoRealizado": "2026-09-05T21:44:55.324185+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-05T23:25:01.465723+00:00",
+  "ultimoIntentoRealizado": "2026-09-05T23:25:01.465723+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1397,
-  "registrosConfirmados": 1397,
+  "registrosEnPlataforma": 1400,
+  "registrosConfirmados": 1400,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1115,
+  "registrosConMontoReal": 1118,
   "excluidosPrefiltroIrrelevante": 7947,
-  "excluidosSinDatosReales": 2,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 725,
-    "conMontoValido": 715,
+    "total": 726,
+    "conMontoValido": 716,
     "pctValidado": 98.6,
     "stats": {
-      "VALIDADO": 715,
+      "VALIDADO": 716,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 10
     },
-    "montoOriginalSum": 837315004,
-    "montoFinalSum": 1293274670,
-    "montoRecuperadoSum": 455959666
+    "montoOriginalSum": 1132509871,
+    "montoFinalSum": 1296924670,
+    "montoRecuperadoSum": 164414799
   },
   "categorias": {
-    "licitaciones": 668,
-    "comprasAgiles": 725,
+    "licitaciones": 670,
+    "comprasAgiles": 726,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 376,
+    "LE": 377,
     "LR": 40,
     "LP": 137,
     "B2": 2,
     "I2": 3,
-    "L1": 108,
+    "L1": 109,
     "O1": 4,
     "CO": 19,
     "LS": 2,
-    "COT": 706
+    "COT": 707
   },
   "matchPorEmpresa": {
-    "Aminorte": 1180,
-    "V-MOCCS": 217
+    "Aminorte": 1188,
+    "V-MOCCS": 212
   },
   "cambios": {
     "comparadoContra": "2026-09-04T12:02:00.072235+00:00",
-    "nuevosCount": 584,
+    "nuevosCount": 585,
     "modificadosCount": 131,
-    "cerradosCount": 534,
+    "cerradosCount": 532,
     "nuevos": [
       {
         "codigo": "621-467-LR26",
@@ -667,16 +667,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2408-162-LE26",
-        "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 24000000,
-        "montoNuevo": 24000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "3787-12-LE26",
         "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -685,6 +675,16 @@
         "montoAnterior": 24000000,
         "montoNuevo": 24000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2408-162-LE26",
+        "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 24000000,
+        "montoNuevo": 24000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "4174-30-CO26",
@@ -744,7 +744,7 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 7000000,
         "montoNuevo": 7000000,
-        "empresaMatch": "V-MOCCS"
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1641-5075-COT26",
@@ -797,16 +797,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "929-23-L126",
-        "titulo": "Mantenimiento de Instalaciones y Equipos Eléctricos, Oficinas DRM",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 6000000,
-        "montoNuevo": 6000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2408-192-L126",
         "titulo": "MOBILIARIO Y EQUIPAMIENTO INFANTIL, DIDACTICO Y DE ESTIMULACION-CRECER EN COMUNIDAD 2026",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -815,6 +805,16 @@
         "montoAnterior": 6000000,
         "montoNuevo": 6000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "929-23-L126",
+        "titulo": "Mantenimiento de Instalaciones y Equipos Eléctricos, Oficinas DRM",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 6000000,
+        "montoNuevo": 6000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2109-616-COT26",
@@ -934,7 +934,7 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 3550000,
         "montoNuevo": 3550000,
-        "empresaMatch": "V-MOCCS"
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2825-206-COT26",
@@ -1014,7 +1014,7 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 2146600,
         "montoNuevo": 2146600,
-        "empresaMatch": "V-MOCCS"
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "630424-526-COT26",
@@ -1198,14 +1198,6 @@
       }
     ],
     "cerrados": [
-      {
-        "codigo": "3000-30-LE26",
-        "titulo": "Toner y Tintas INFORMÁTICA",
-        "organismo": "I MUNICIPALIDAD DE MONTEPATRIA",
-        "estadoAnterior": "Publicada",
-        "monto": 12000000,
-        "empresaMatch": "Aminorte"
-      },
       {
         "codigo": "3833-531-COT26",
         "titulo": "COMPUTADORES y OTROS-OFICINAS MUNICIPALES",
@@ -1429,14 +1421,6 @@
         "estadoAnterior": "Publicada",
         "monto": 6788193,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "742-8-L126",
-        "titulo": "Mantención Oficina de INDAP Coyhaique, región de Aysén",
-        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
-        "estadoAnterior": "Publicada",
-        "monto": 6700000,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2294-1932-COT26",
@@ -1677,10 +1661,26 @@
         "estadoAnterior": "Publicada",
         "monto": 4000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2440-1469-COT26",
+        "titulo": " ACCESORIOS Y  SUMINISTROS  PARA IMPRESORAS ORIGINALES ESCUELA  PADRE ALNERTO HURTADO  DE CURICÓ",
+        "organismo": "I MUNICIPALIDAD DE CURICO",
+        "estadoAnterior": "Publicada",
+        "monto": 4000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1214103-221-COT26",
+        "titulo": "MATERIALES DE OFICINA ",
+        "organismo": "Corporación Cultural Municipal de Puente Alto",
+        "estadoAnterior": "Publicada",
+        "monto": 4000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1501.9,
+  "tiempoEjecucionSegundos": 1511.2,
   "errores": [],
   "advertencias": []
 }
