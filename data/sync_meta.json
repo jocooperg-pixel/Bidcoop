@@ -1,13 +1,13 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-05T11:24:57.202896+00:00",
-  "ultimoIntentoRealizado": "2026-09-05T11:24:57.202896+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-05T14:03:13.351315+00:00",
+  "ultimoIntentoRealizado": "2026-09-05T14:03:13.351315+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1405,
   "registrosConfirmados": 1405,
   "registrosPendientesVerificacion": 0,
   "registrosConMontoReal": 1127,
-  "excluidosPrefiltroIrrelevante": 7935,
+  "excluidosPrefiltroIrrelevante": 7937,
   "excluidosSinDatosReales": 8,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
@@ -21,9 +21,9 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 10
     },
-    "montoOriginalSum": 421981217,
-    "montoFinalSum": 1326663909,
-    "montoRecuperadoSum": 904682692
+    "montoOriginalSum": 496799407,
+    "montoFinalSum": 1325733909,
+    "montoRecuperadoSum": 828934502
   },
   "categorias": {
     "licitaciones": 661,
@@ -33,26 +33,26 @@
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 375,
-    "LR": 37,
-    "LP": 136,
+    "LE": 374,
+    "LR": 40,
+    "LP": 133,
     "B2": 2,
     "I2": 3,
-    "L1": 106,
+    "L1": 107,
     "O1": 4,
     "CO": 19,
     "LS": 2,
     "COT": 721
   },
   "matchPorEmpresa": {
-    "Aminorte": 1184,
-    "V-MOCCS": 221
+    "Aminorte": 1188,
+    "V-MOCCS": 217
   },
   "cambios": {
     "comparadoContra": "2026-09-04T12:02:00.072235+00:00",
-    "nuevosCount": 567,
-    "modificadosCount": 136,
-    "cerradosCount": 509,
+    "nuevosCount": 570,
+    "modificadosCount": 135,
+    "cerradosCount": 512,
     "nuevos": [
       {
         "codigo": "621-467-LR26",
@@ -411,7 +411,7 @@
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA ANTOFAGASTA",
         "monto": 7140000,
         "empresaMatch": "Aminorte",
-        "matchScore": 90,
+        "matchScore": 98,
         "fechaCierre": "2026-09-08T10:00"
       },
       {
@@ -667,16 +667,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3787-12-LE26",
-        "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 24000000,
-        "montoNuevo": 24000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2408-162-LE26",
         "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -685,6 +675,16 @@
         "montoAnterior": 24000000,
         "montoNuevo": 24000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3787-12-LE26",
+        "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 24000000,
+        "montoNuevo": 24000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "4174-30-CO26",
@@ -861,9 +861,19 @@
         "titulo": "SERVICIO DE PRODUCCION DE EVENTOS ( AMPLIFICACION, ESCENARIO, GENERADOR, PANTALLA LED, VALLAS PAPALES) PARA ACTOS DIFERENTES SECTORES DE LA COMUNA DE MARIQUINA. DIAS 11,14,15,16, 17 Y 18.09.2026.",
         "organismo": "I MUNICIPALIDAD DE MARIQUINA",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 5000000,
         "montoNuevo": 5000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057439-5089-COT26",
+        "titulo": "MARCADOR DE TEJIDO (ULTRACLIP DUAL TRIGGER)",
+        "organismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL LA SERENA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 4890900,
+        "montoNuevo": 4890900,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1185,27 +1195,9 @@
         "montoAnterior": 1000000,
         "montoNuevo": 1000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5490-104-COT26",
-        "titulo": "Adquisición de Notebook",
-        "organismo": "UNIVERSIDAD DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1000000,
-        "montoNuevo": 1000000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
-      {
-        "codigo": "2430-62-LR26",
-        "titulo": "REPOSICIÓN DE PANTALLAS ESTADIO CALVO Y BASCUÑÁN CIUDAD DE ANTOFAGASTA",
-        "organismo": "I MUNICIPALIDAD DE ANTOFAGASTA",
-        "estadoAnterior": "Publicada",
-        "monto": 491000000,
-        "empresaMatch": "Aminorte"
-      },
       {
         "codigo": "1057432-73-LP26",
         "titulo": "SERVICIO DE ARRIENDO DE 2 SERVIDORES PARA SSC",
@@ -1220,6 +1212,14 @@
         "organismo": "SENADO DE LA REPUBLICA",
         "estadoAnterior": "Publicada",
         "monto": 27000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057489-250-LE26",
+        "titulo": "SERVICIO DE MONITOREO Y ANÁLISIS DE RILES PARA EL HOSPITAL DEL SALVADOR.",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "monto": 15000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1680,7 +1680,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1515.3,
+  "tiempoEjecucionSegundos": 1505.9,
   "errores": [],
   "advertencias": []
 }
