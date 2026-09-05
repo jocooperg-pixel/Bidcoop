@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-05T17:44:49.676233+00:00",
-  "ultimoIntentoRealizado": "2026-09-05T17:44:49.676233+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-05T19:36:37.081336+00:00",
+  "ultimoIntentoRealizado": "2026-09-05T19:36:37.081336+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1406,
-  "registrosConfirmados": 1406,
+  "registrosEnPlataforma": 1402,
+  "registrosConfirmados": 1402,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1124,
-  "excluidosPrefiltroIrrelevante": 7943,
+  "registrosConMontoReal": 1120,
+  "excluidosPrefiltroIrrelevante": 7944,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 732,
-    "conMontoValido": 722,
+    "total": 728,
+    "conMontoValido": 718,
     "pctValidado": 98.6,
     "stats": {
-      "VALIDADO": 722,
+      "VALIDADO": 718,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 10
     },
-    "montoOriginalSum": 601573352,
-    "montoFinalSum": 1309912100,
-    "montoRecuperadoSum": 708338748
+    "montoOriginalSum": 728590171,
+    "montoFinalSum": 1301119700,
+    "montoRecuperadoSum": 572529529
   },
   "categorias": {
     "licitaciones": 670,
-    "comprasAgiles": 732,
+    "comprasAgiles": 728,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
@@ -42,17 +42,17 @@
     "O1": 4,
     "CO": 19,
     "LS": 2,
-    "COT": 713
+    "COT": 709
   },
   "matchPorEmpresa": {
-    "Aminorte": 1188,
-    "V-MOCCS": 218
+    "Aminorte": 1185,
+    "V-MOCCS": 217
   },
   "cambios": {
     "comparadoContra": "2026-09-04T12:02:00.072235+00:00",
-    "nuevosCount": 579,
-    "modificadosCount": 130,
-    "cerradosCount": 520,
+    "nuevosCount": 581,
+    "modificadosCount": 131,
+    "cerradosCount": 526,
     "nuevos": [
       {
         "codigo": "621-467-LR26",
@@ -537,7 +537,7 @@
         "organismo": "Servicio Local de Educación Pública del Tamarugal",
         "monto": 7000000,
         "empresaMatch": "Aminorte",
-        "matchScore": 70,
+        "matchScore": 90,
         "fechaCierre": "2026-09-07T10:00"
       },
       {
@@ -667,16 +667,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2408-162-LE26",
-        "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 24000000,
-        "montoNuevo": 24000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "3787-12-LE26",
         "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -685,6 +675,16 @@
         "montoAnterior": 24000000,
         "montoNuevo": 24000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2408-162-LE26",
+        "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 24000000,
+        "montoNuevo": 24000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "4174-30-CO26",
@@ -797,16 +797,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "929-23-L126",
-        "titulo": "Mantenimiento de Instalaciones y Equipos Eléctricos, Oficinas DRM",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 6000000,
-        "montoNuevo": 6000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2408-192-L126",
         "titulo": "MOBILIARIO Y EQUIPAMIENTO INFANTIL, DIDACTICO Y DE ESTIMULACION-CRECER EN COMUNIDAD 2026",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -815,6 +805,16 @@
         "montoAnterior": 6000000,
         "montoNuevo": 6000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "929-23-L126",
+        "titulo": "Mantenimiento de Instalaciones y Equipos Eléctricos, Oficinas DRM",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 6000000,
+        "montoNuevo": 6000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2109-616-COT26",
@@ -927,6 +927,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1952-1177-COT26",
+        "titulo": "INSUMOS PARA IMPRESORA ZEBRA ZT-231 PROCESOS DE ESTERILIZACIÓN",
+        "organismo": "Hospital Villarrica",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 4000000,
+        "montoNuevo": 4000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2296-543-COT26",
         "titulo": "Adquisición de Sillas de Ruedas convencionales y Andadores de 4 ruedas",
         "organismo": "I MUNICIPALIDAD DE CONCHALI",
@@ -1004,6 +1014,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 2300000,
         "montoNuevo": 2300000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2680-205-COT26",
+        "titulo": "ADQUSICION MOBILIARIO DEPORTIVO, PTTO SEP,LSFQ ",
+        "organismo": "I MUNICIPALIDAD DE INDEPENDENCIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 2146600,
+        "montoNuevo": 2146600,
         "empresaMatch": "V-MOCCS"
       },
       {
@@ -1137,16 +1157,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1075337-1853-COT26",
-        "titulo": "pca Compra de Insumos Química Clínica (TEST RP 500 MCART LAC DE 400 )Pedido de Laboratorio, mes de Septiembre 2026",
-        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE HOSPITAL DE ANGOL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1142400,
-        "montoNuevo": 1142400,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2704-1581-COT26",
         "titulo": "5667 televisores",
         "organismo": "UNIVERSIDAD DEL BIO BIO",
@@ -1180,16 +1190,6 @@
         "codigo": "5490-104-COT26",
         "titulo": "Adquisición de Notebook",
         "organismo": "UNIVERSIDAD DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1000000,
-        "montoNuevo": 1000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "608-5610-COT26",
-        "titulo": "(SOB) PCR para Bartonella Henselae en sangre",
-        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 1000000,
@@ -1308,6 +1308,14 @@
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
         "estadoAnterior": "Publicada",
         "monto": 7014600,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3731-135-COT26",
+        "titulo": "COMPUTADORES ALL-IN -ONE",
+        "organismo": "I MUNICIPALIDAD DE CHIMBARONGO",
+        "estadoAnterior": "Publicada",
+        "monto": 7000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1669,18 +1677,10 @@
         "estadoAnterior": "Publicada",
         "monto": 3936400,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2440-1468-COT26",
-        "titulo": " MATERIALES DE LIBRERÍA   ESCUELA ERNESTO CASTRO ARELLANO  DE CURICÓ",
-        "organismo": "I MUNICIPALIDAD DE CURICO",
-        "estadoAnterior": "Publicada",
-        "monto": 3900000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1507.1,
+  "tiempoEjecucionSegundos": 1513.0,
   "errores": [],
   "advertencias": []
 }
