@@ -1,58 +1,58 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-06T01:27:41.613528+00:00",
-  "ultimoIntentoRealizado": "2026-09-06T01:27:41.613528+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-06T06:33:17.803639+00:00",
+  "ultimoIntentoRealizado": "2026-09-06T06:33:17.803639+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1397,
-  "registrosConfirmados": 1397,
+  "registrosEnPlataforma": 1386,
+  "registrosConfirmados": 1386,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1115,
-  "excluidosPrefiltroIrrelevante": 7943,
-  "excluidosSinDatosReales": 2,
+  "registrosConMontoReal": 1110,
+  "excluidosPrefiltroIrrelevante": 7944,
+  "excluidosSinDatosReales": 13,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 725,
-    "conMontoValido": 715,
-    "pctValidado": 98.6,
+    "total": 723,
+    "conMontoValido": 714,
+    "pctValidado": 98.8,
     "stats": {
-      "VALIDADO": 715,
+      "VALIDADO": 714,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 10
+      "MONTO_NO_ENCONTRADO": 9
     },
-    "montoOriginalSum": 1172617445,
-    "montoFinalSum": 1296477506,
-    "montoRecuperadoSum": 123860061
+    "montoOriginalSum": 1236948700,
+    "montoFinalSum": 1252598160,
+    "montoRecuperadoSum": 15649460
   },
   "categorias": {
-    "licitaciones": 668,
-    "comprasAgiles": 725,
+    "licitaciones": 659,
+    "comprasAgiles": 723,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 375,
+    "LE": 369,
     "LR": 40,
-    "LP": 137,
+    "LP": 136,
     "B2": 2,
     "I2": 3,
-    "L1": 109,
+    "L1": 107,
     "O1": 4,
-    "CO": 19,
+    "CO": 17,
     "LS": 2,
     "COT": 706
   },
   "matchPorEmpresa": {
-    "Aminorte": 1187,
-    "V-MOCCS": 210
+    "Aminorte": 1179,
+    "V-MOCCS": 207
   },
   "cambios": {
     "comparadoContra": "2026-09-04T12:02:00.072235+00:00",
-    "nuevosCount": 585,
-    "modificadosCount": 130,
-    "cerradosCount": 535,
+    "nuevosCount": 583,
+    "modificadosCount": 129,
+    "cerradosCount": 544,
     "nuevos": [
       {
         "codigo": "621-467-LR26",
@@ -89,15 +89,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-14T16:00:00"
-      },
-      {
-        "codigo": "3436-83-LP26",
-        "titulo": "AJUAR EGRESO - VESTUARIO DEPORTIVO Y OTROS  CC 1100065012",
-        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
-        "monto": 79927000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-10T15:05:00"
       },
       {
         "codigo": "2427-87-LE26",
@@ -593,6 +584,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-09-06T10:20"
+      },
+      {
+        "codigo": "5153-1777-COT26",
+        "titulo": "MFV_Materiales Aire Acondicionado Respiratorio - MM 691",
+        "organismo": "UNIVERSIDAD DE CHILE",
+        "monto": 6700000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-08T09:00"
       }
     ],
     "modificados": [
@@ -667,16 +667,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2408-162-LE26",
-        "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 24000000,
-        "montoNuevo": 24000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "3787-12-LE26",
         "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -685,6 +675,16 @@
         "montoAnterior": 24000000,
         "montoNuevo": 24000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2408-162-LE26",
+        "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 24000000,
+        "montoNuevo": 24000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "4174-30-CO26",
@@ -1199,20 +1199,36 @@
     ],
     "cerrados": [
       {
+        "codigo": "1159-6-LE26",
+        "titulo": "Arriendo notebooks y monitores EMF Coquimbo",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "estadoAnterior": "Adjudicada",
+        "monto": 71640000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057509-198-LE26",
+        "titulo": "CONVENIO SERVICIO DE FOTOCOPIADO ANILLADO Y PLASTIFICADO",
+        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
+        "estadoAnterior": "Adjudicada",
+        "monto": 58510136,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "867990-14-CO26",
+        "titulo": "Adquisición Mobiliario-CDP.82443 CC102",
+        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
+        "estadoAnterior": "Adjudicada",
+        "monto": 43879346,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "609-25-LE26",
         "titulo": "ACTUALIZACIÓN DEL SGSI DE INDAP- CIBERSEGURIDAD",
         "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
         "estadoAnterior": "Cerrada",
         "monto": 22000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3928-50-LE26",
-        "titulo": "ADQUISICION MATERIALES DE ENSEÑANZA DIDACTICOS MOBILIARIO Y OTROS PARA PIE COLEGIO DIVINO MAESTRO",
-        "organismo": "ILUSTRE MUNICIPALIDAD DE PICHILEMU",
-        "estadoAnterior": "Adjudicada",
-        "monto": 11100000,
-        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "3833-531-COT26",
@@ -1661,26 +1677,10 @@
         "estadoAnterior": "Publicada",
         "monto": 4064000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1952-1177-COT26",
-        "titulo": "INSUMOS PARA IMPRESORA ZEBRA ZT-231 PROCESOS DE ESTERILIZACIÓN",
-        "organismo": "Hospital Villarrica",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1563-42-COT26",
-        "titulo": "Adquisición Materiales de aseo y oficina para Sucursales DZCS-Fonasa",
-        "organismo": "FONDO NACIONAL DE SALUD",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1513.2,
+  "tiempoEjecucionSegundos": 1463.0,
   "errores": [],
   "advertencias": []
 }
