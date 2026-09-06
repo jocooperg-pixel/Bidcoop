@@ -1,39 +1,39 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-05T23:25:01.465723+00:00",
-  "ultimoIntentoRealizado": "2026-09-05T23:25:01.465723+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-06T01:27:41.613528+00:00",
+  "ultimoIntentoRealizado": "2026-09-06T01:27:41.613528+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1400,
-  "registrosConfirmados": 1400,
+  "registrosEnPlataforma": 1397,
+  "registrosConfirmados": 1397,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1118,
-  "excluidosPrefiltroIrrelevante": 7947,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 1115,
+  "excluidosPrefiltroIrrelevante": 7943,
+  "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 726,
-    "conMontoValido": 716,
+    "total": 725,
+    "conMontoValido": 715,
     "pctValidado": 98.6,
     "stats": {
-      "VALIDADO": 716,
+      "VALIDADO": 715,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 10
     },
-    "montoOriginalSum": 1132509871,
-    "montoFinalSum": 1296924670,
-    "montoRecuperadoSum": 164414799
+    "montoOriginalSum": 1172617445,
+    "montoFinalSum": 1296477506,
+    "montoRecuperadoSum": 123860061
   },
   "categorias": {
-    "licitaciones": 670,
-    "comprasAgiles": 726,
+    "licitaciones": 668,
+    "comprasAgiles": 725,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 377,
+    "LE": 375,
     "LR": 40,
     "LP": 137,
     "B2": 2,
@@ -42,17 +42,17 @@
     "O1": 4,
     "CO": 19,
     "LS": 2,
-    "COT": 707
+    "COT": 706
   },
   "matchPorEmpresa": {
-    "Aminorte": 1188,
-    "V-MOCCS": 212
+    "Aminorte": 1187,
+    "V-MOCCS": 210
   },
   "cambios": {
     "comparadoContra": "2026-09-04T12:02:00.072235+00:00",
     "nuevosCount": 585,
-    "modificadosCount": 131,
-    "cerradosCount": 532,
+    "modificadosCount": 130,
+    "cerradosCount": 535,
     "nuevos": [
       {
         "codigo": "621-467-LR26",
@@ -667,16 +667,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3787-12-LE26",
-        "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 24000000,
-        "montoNuevo": 24000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2408-162-LE26",
         "titulo": "ENTREGA E INSTALACIÓN DE MOBILIARIO 2026 MUNICIPALIDAD DE LOS ÁNGELES.",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -685,6 +675,16 @@
         "montoAnterior": 24000000,
         "montoNuevo": 24000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3787-12-LE26",
+        "titulo": "SERV. SUSCRIPCIÓN SATELITAL EQUIPOS GARMIN",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 24000000,
+        "montoNuevo": 24000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "4174-30-CO26",
@@ -1199,6 +1199,22 @@
     ],
     "cerrados": [
       {
+        "codigo": "609-25-LE26",
+        "titulo": "ACTUALIZACIÓN DEL SGSI DE INDAP- CIBERSEGURIDAD",
+        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
+        "estadoAnterior": "Cerrada",
+        "monto": 22000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3928-50-LE26",
+        "titulo": "ADQUISICION MATERIALES DE ENSEÑANZA DIDACTICOS MOBILIARIO Y OTROS PARA PIE COLEGIO DIVINO MAESTRO",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE PICHILEMU",
+        "estadoAnterior": "Adjudicada",
+        "monto": 11100000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "3833-531-COT26",
         "titulo": "COMPUTADORES y OTROS-OFICINAS MUNICIPALES",
         "organismo": "I MUNICIPALIDAD DE RIO BUENO",
@@ -1661,26 +1677,10 @@
         "estadoAnterior": "Publicada",
         "monto": 4000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2440-1469-COT26",
-        "titulo": " ACCESORIOS Y  SUMINISTROS  PARA IMPRESORAS ORIGINALES ESCUELA  PADRE ALNERTO HURTADO  DE CURICÓ",
-        "organismo": "I MUNICIPALIDAD DE CURICO",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1214103-221-COT26",
-        "titulo": "MATERIALES DE OFICINA ",
-        "organismo": "Corporación Cultural Municipal de Puente Alto",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1511.2,
+  "tiempoEjecucionSegundos": 1513.2,
   "errores": [],
   "advertencias": []
 }
