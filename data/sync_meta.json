@@ -1,58 +1,58 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-06T23:17:54.711119+00:00",
-  "ultimoIntentoRealizado": "2026-09-06T23:17:54.711119+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-07T00:37:21.463333+00:00",
+  "ultimoIntentoRealizado": "2026-09-07T00:37:21.463333+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1399,
-  "registrosConfirmados": 1399,
+  "registrosEnPlataforma": 1319,
+  "registrosConfirmados": 1319,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1117,
-  "excluidosPrefiltroIrrelevante": 7952,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 1069,
+  "excluidosPrefiltroIrrelevante": 7363,
+  "excluidosSinDatosReales": 26,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 725,
-    "conMontoValido": 715,
+    "total": 723,
+    "conMontoValido": 713,
     "pctValidado": 98.6,
     "stats": {
-      "VALIDADO": 715,
+      "VALIDADO": 713,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 10
     },
-    "montoOriginalSum": 1293287717,
-    "montoFinalSum": 1304637177,
-    "montoRecuperadoSum": 11349460
+    "montoOriginalSum": 1140189032,
+    "montoFinalSum": 1234757831,
+    "montoRecuperadoSum": 94568799
   },
   "categorias": {
-    "licitaciones": 670,
-    "comprasAgiles": 725,
+    "licitaciones": 594,
+    "comprasAgiles": 723,
     "convenioMarco": 0,
-    "ordenes_compra": 4,
+    "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 377,
-    "LR": 40,
-    "LP": 137,
+    "LE": 335,
+    "LR": 37,
+    "LP": 122,
     "B2": 2,
     "I2": 3,
-    "L1": 109,
-    "O1": 4,
-    "CO": 19,
+    "L1": 93,
+    "O1": 2,
+    "CO": 17,
     "LS": 2,
     "COT": 706
   },
   "matchPorEmpresa": {
-    "Aminorte": 1190,
-    "V-MOCCS": 209
+    "Aminorte": 1120,
+    "V-MOCCS": 199
   },
   "cambios": {
     "comparadoContra": "2026-09-04T12:02:00.072235+00:00",
-    "nuevosCount": 588,
-    "modificadosCount": 127,
-    "cerradosCount": 536,
+    "nuevosCount": 577,
+    "modificadosCount": 128,
+    "cerradosCount": 605,
     "nuevos": [
       {
         "codigo": "621-467-LR26",
@@ -80,15 +80,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-28T11:00:00"
-      },
-      {
-        "codigo": "885-86-LP26",
-        "titulo": "Adquisición de impresora digital para Unidad de Servicios Gráficos ",
-        "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
-        "monto": 80000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-14T16:00:00"
       },
       {
         "codigo": "3436-83-LP26",
@@ -181,24 +172,6 @@
         "fechaCierre": "2026-07-20T15:16:00"
       },
       {
-        "codigo": "3016-50-LE26",
-        "titulo": "Servicio Integral de Poda Manejo de Arbolado y Servicio de Traslado de Mobiliario Armado de Escenarios para Actividades Municipales",
-        "organismo": "I MUNICIPALIDAD DE LOLOL",
-        "monto": 34113600,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-14T15:05:00"
-      },
-      {
-        "codigo": "1415861-11-LE26",
-        "titulo": "SERVICIO DE SEGUROS GENERALES PARA BIENES MUEBLES INMUEBLE Y VEHÍCULO INSTITUCIONAL NIVEL CENTRAL Y RED DE SUCURSALES REGIONALES",
-        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
-        "monto": 34000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-21T15:01:00"
-      },
-      {
         "codigo": "2460-120-LE26",
         "titulo": "PROVISIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA DEPENDENCIAS DE LA MUNICIPALIDAD DE PROVIDENCIA",
         "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
@@ -289,15 +262,6 @@
         "fechaCierre": "2026-09-14T15:10:00"
       },
       {
-        "codigo": "1099-1-LE26",
-        "titulo": "CONTRATACIÓN DE SERVICIO DE ASEO Y OTROS DE LIMPIEZA DE LA OFICINA DE LA DIRECCIÓN REGIONAL DE ARICA Y PARINACOTA",
-        "organismo": "SERVICIO DE COOPERACION TECNICA",
-        "monto": 11400000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-14T15:30:00"
-      },
-      {
         "codigo": "539119-73-LE26",
         "titulo": "SERVICIO DE MANTENCIÓN PREVENTIVA Y REPARACIÓN DE LAVADORAS Y SECADORA POR UN PERIODO DE 12 MESES EN LÍNEAS PARA LAS DISTINTAS COMISIONES ADMINISTRATIVAS DEPENDIENTE DEL DEPARTAMENTO RECREACIONAL Y GASTRONÓMICO B.1.",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -307,15 +271,6 @@
         "fechaCierre": "2026-08-18T16:00:00"
       },
       {
-        "codigo": "5155-33-LE26",
-        "titulo": "510 - Adquisición de pendrives para Servel",
-        "organismo": "SERVICIO ELECTORAL",
-        "monto": 9500000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-10T15:00:00"
-      },
-      {
         "codigo": "1057387-47-LE26",
         "titulo": "SERVICIO DE ARRIENDO IMPRESORAS MULTIFUNCIONALES",
         "organismo": "SERVICIO SALUD ARAUCANIA HOSPITAL DE COLLIPULLI",
@@ -323,15 +278,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 90,
         "fechaCierre": "2026-08-28T15:30:00"
-      },
-      {
-        "codigo": "1076403-12-LE26",
-        "titulo": "SLA_PC 6626_DIRAC_Servicio Impresión de 200 libros",
-        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
-        "monto": 8000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-11T11:00:00"
       },
       {
         "codigo": "5423-15-LE26",
@@ -593,6 +539,60 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-09-06T10:20"
+      },
+      {
+        "codigo": "5153-1777-COT26",
+        "titulo": "MFV_Materiales Aire Acondicionado Respiratorio - MM 691",
+        "organismo": "UNIVERSIDAD DE CHILE",
+        "monto": 6700000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-08T09:00"
+      },
+      {
+        "codigo": "1395865-79-COT26",
+        "titulo": "SERVICIO PRODUCCIÓN TÉCNICA - LOS TRES TENORES CHILENOS - OBRA DE TEATRO GALILEI: ALGUNAS MENTIRAS SOBRE LA VERDAD",
+        "organismo": "ASOCIACIÓN PATRIMONIAL CULTURAL DE LA REGION DE LOS RIOS",
+        "monto": 6700000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-07T15:00"
+      },
+      {
+        "codigo": "4284-146-L126",
+        "titulo": "Adquisición de materiales de oficina alimentos merchandising galvanos y contratación servicio de alimentación Coffe break para actividades programas 4 a 7 mujeres jefas de hogar Cultura de la mujer y OMIL según NUMERAL 5 B.A.G Bases administrativas",
+        "organismo": "I MUNICIPALIDAD DE CUNCO",
+        "monto": 6649300,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-09-11T13:20:00"
+      },
+      {
+        "codigo": "1305527-39-COT26",
+        "titulo": "Adquisición de Plotter y Complementos",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DEL PINO",
+        "monto": 6440000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-09-05T13:00"
+      },
+      {
+        "codigo": "1375746-65-COT26",
+        "titulo": "Servicio de suscripción de licencias de software de diseño gráfico, información geográfica y edición de video.",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA ACONCAGUA",
+        "monto": 6369600,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-07T12:00"
+      },
+      {
+        "codigo": "2380-1918-COT26",
+        "titulo": "SERVICIO PARA REAPERTURA DE ESPACIO CENTRO CULTURAL, TEATRO, SALAS Y OFICINAS - ADMINISTRACIÓN, CULTURA - OS 154444 - G.A.C",
+        "organismo": "I MUNICIPALIDAD DE COPIAPO",
+        "monto": 6000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-09-05T14:00"
       }
     ],
     "modificados": [
@@ -744,7 +744,7 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 7000000,
         "montoNuevo": 7000000,
-        "empresaMatch": "Aminorte"
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "1641-5075-COT26",
@@ -797,16 +797,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "929-23-L126",
-        "titulo": "Mantenimiento de Instalaciones y Equipos Eléctricos, Oficinas DRM",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 6000000,
-        "montoNuevo": 6000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2408-192-L126",
         "titulo": "MOBILIARIO Y EQUIPAMIENTO INFANTIL, DIDACTICO Y DE ESTIMULACION-CRECER EN COMUNIDAD 2026",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -815,6 +805,16 @@
         "montoAnterior": 6000000,
         "montoNuevo": 6000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "929-23-L126",
+        "titulo": "Mantenimiento de Instalaciones y Equipos Eléctricos, Oficinas DRM",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 6000000,
+        "montoNuevo": 6000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2109-616-COT26",
@@ -934,7 +934,7 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 3550000,
         "montoNuevo": 3550000,
-        "empresaMatch": "Aminorte"
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "2825-206-COT26",
@@ -1014,7 +1014,7 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 2146600,
         "montoNuevo": 2146600,
-        "empresaMatch": "Aminorte"
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "630424-526-COT26",
@@ -1198,6 +1198,214 @@
       }
     ],
     "cerrados": [
+      {
+        "codigo": "621-782-LR26",
+        "titulo": "AEROCAMARA ADULTO BIVAL PINH 100A350 ML 1000022782",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "estadoAnterior": "Publicada",
+        "monto": 2910784649,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1562-49-LR26",
+        "titulo": "Sistema de monitoreo integral de ciberseguridad",
+        "organismo": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA",
+        "estadoAnterior": "Publicada",
+        "monto": 366678654,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4301-55-LP26",
+        "titulo": "Suministro de Fotocopiadoras Multifuncionales",
+        "organismo": "I MUNICIPALIDAD DE ZAPALLAR",
+        "estadoAnterior": "Cerrada",
+        "monto": 297000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "837-88-LP26",
+        "titulo": "CDP422 Serv. Mantención de sistemas de renovación de Aérea y Climatización de las sedes del Servicio Médico Legal de Rancagua San Fernando Santa Cruz Puerto Montt Valdivia La Unión y Osorno de la Zona Sur.",
+        "organismo": "SERVICIO MEDICO LEGAL",
+        "estadoAnterior": "Publicada",
+        "monto": 234721740,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2704-60-LP26",
+        "titulo": "SC 3156 SERVICIO DE FOTOCOPIADO Y ARRIENDO DE EQUIPOS MULTIFUNCIONALES PARA LA UNIVERSIDAD DEL BÍO-BÍO SEDE CONCEPCIÓN ",
+        "organismo": "UNIVERSIDAD DEL BIO BIO",
+        "estadoAnterior": "Publicada",
+        "monto": 168000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "539119-85-LP26",
+        "titulo": "SUMINISTRO POR LÍNEA DE ARTÍCULOS DE ESCRITORIO Y MATERIALES PEDAGÓGICOS PARA JARDINES INFANTILES ADMINISTRADOS POR EL DEPARTAMENTO DE PLANIFICACIÓN Y DESARROLLO SOCIAL B.6 DE LA DIRECCIÓN DE BIENESTAR DE CARABINEROS POR UN PERIODO 12 MESES.",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "monto": 78283150,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1552-74-LP26",
+        "titulo": "REP CESFAM MANUEL RODRIGUEZ CLASE MONITOREO",
+        "organismo": "SERVICIO DE SALUD ATACAMA",
+        "estadoAnterior": "Publicada",
+        "monto": 72351000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1159-6-LE26",
+        "titulo": "Arriendo notebooks y monitores EMF Coquimbo",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "estadoAnterior": "Adjudicada",
+        "monto": 71640000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5053-57-LP26",
+        "titulo": "Provisión e instalación de vidrios termopaneles laminas de seguridad reparación mamparas",
+        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE TALCA",
+        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "monto": 69752000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1057509-198-LE26",
+        "titulo": "CONVENIO SERVICIO DE FOTOCOPIADO ANILLADO Y PLASTIFICADO",
+        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
+        "estadoAnterior": "Adjudicada",
+        "monto": 58510136,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3420-5-LE26",
+        "titulo": "Servicio de Mant. y Reparación de 01 Inmueble",
+        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
+        "estadoAnterior": "Adjudicada",
+        "monto": 49112312,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "867990-14-CO26",
+        "titulo": "Adquisición Mobiliario-CDP.82443 CC102",
+        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
+        "estadoAnterior": "Adjudicada",
+        "monto": 43879346,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1160-15-LE26",
+        "titulo": "8101REPARACION Y MANTENCIÓN OFICINAS CONCEPCIÓN",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "estadoAnterior": "Cerrada",
+        "monto": 40000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "771555-10-LE26",
+        "titulo": "Aumento de Cámaras de Televigilancia en Puntos Est",
+        "organismo": "I MUNICIPALIDAD DE RIO HURTADO",
+        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "monto": 33126615,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2460-92-LE26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA LA MUNICIPALIDAD DE PROVIDENCIA",
+        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "estadoAnterior": "Revocada",
+        "monto": 26550000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1422259-9-CO26",
+        "titulo": "SERVICIO DE ARRIENDO DE OFICINA CORPORATIVA EN MATO GROSSO DO SUL BRASIL PARA LA CORPORACIÓN REGIONAL DE DESARROLLO DE LA REGIÓN DE TARAPACÁ",
+        "organismo": "CORPORACION REGIONAL DE DESARROLLO DE LA REGION DE TARAPACA",
+        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "monto": 26000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4022-17-LE26",
+        "titulo": "ADQ. DE PLOTTER DE IMPRESION Y CORTE.",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE PUTRE",
+        "estadoAnterior": "Cerrada",
+        "monto": 25000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2410-83-LE26",
+        "titulo": "Adquisición de artículos hidráulicos para mantención de inmuebles DMI",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "estadoAnterior": "Cerrada",
+        "monto": 21817950,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1147293-22-LE26",
+        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
+        "organismo": "Fundación para la Innovación Agraria",
+        "estadoAnterior": "Publicada",
+        "monto": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "514862-108-LE26",
+        "titulo": "10032857 ADQ.MOBILIARIO PARA LOS CENTROS DE SALUD",
+        "organismo": "CORPORACION MUNICIPAL DE PENALOLEN PARA EL DESARROLO SOCIAL CORMUP",
+        "estadoAnterior": "Cerrada",
+        "monto": 20000000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1457281-13-LE26",
+        "titulo": "Remoción y Reemplazo Sistema Climatización M100",
+        "organismo": "CORP CULTURAL MATUCANA CIEN",
+        "estadoAnterior": "Revocada",
+        "monto": 18500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "316-50-LE26",
+        "titulo": "“SERVICIO DE MANTENIMIENTO DE PINTURAS DE SECTORES DE LA FACHADA DEL TEATRO MUNICIPAL POMPEYA Y SUS PORTALES DE VILLA ALEMANA”",
+        "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
+        "estadoAnterior": "Adjudicada",
+        "monto": 15830000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2467-79-LE26",
+        "titulo": "ADQUISICIÓN DE CAMARAS DE SEGURIDAD PARA RECAMBIO",
+        "organismo": "I MUNICIPALIDAD DE CHILLAN",
+        "estadoAnterior": "Adjudicada",
+        "monto": 15000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1288505-7-LE26",
+        "titulo": "Fabricación e instalación mobiliario Serpat",
+        "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
+        "estadoAnterior": "Adjudicada",
+        "monto": 12243000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "5562-6-LE26",
+        "titulo": "SERVICIO DE VIGILANCIA Y MONITOREO DPP TAMARUGAL",
+        "organismo": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DEL TAMARUGAL",
+        "estadoAnterior": "Adjudicada",
+        "monto": 11000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1499-174-LE26",
+        "titulo": "SAM SERVICIO DE DESARMADO TRASLADO Y ARMADO DE KARDEX VERTICAL MARCA GRIFOLS MODELO SYS 12012",
+        "organismo": "INSTITUTO NACIONAL DEL TORAX",
+        "estadoAnterior": "Adjudicada",
+        "monto": 8400000,
+        "empresaMatch": "V-MOCCS"
+      },
       {
         "codigo": "3833-531-COT26",
         "titulo": "COMPUTADORES y OTROS-OFICINAS MUNICIPALES",
@@ -1431,6 +1639,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "3415-20-L126",
+        "titulo": "ADQUISICIÓN, INSTALACIÓN Y CAPACITACIÓN PARA USO IMPRESORAS  Y SCANNER 3D ",
+        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
+        "estadoAnterior": "Cerrada",
+        "monto": 6500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2585-1135-COT26",
         "titulo": "ADQ. DE VESTUARIO DEPORTIVO, DIDECO, ORD N°4000, BSS, IMA ",
         "organismo": "I MUNICIPALIDAD DE ARICA",
@@ -1455,232 +1671,16 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "868-75-COT26",
-        "titulo": "ADQUISICIÓN DE 2 CÁMARAS FOTOGRÁFICAS PROFESIONALES – GOBIERNO REGIONAL DE AYSÉN",
-        "organismo": "GOBIERNO REGIONAL DE AYSEN",
-        "estadoAnterior": "Publicada",
-        "monto": 6200000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2288-607-COT26",
-        "titulo": "IMPRESORA MULTIFUNCIONAL PARA OFICINA DE LA MUJER MAS TONER. ",
-        "organismo": "I MUNICIPALIDAD DE CANELA",
-        "estadoAnterior": "Publicada",
-        "monto": 6000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2176-254-COT26",
-        "titulo": "Mantenimiento Equipos Climatizacion ",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
-        "estadoAnterior": "Publicada",
-        "monto": 6000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3713-158-COT26",
-        "titulo": " Contenedor Modular y mobiliario para COMEDOR DE FUNCIONARIOS DE LA ESTACION MEDICO RURAL DE LOS MAQUIS ",
-        "organismo": "I MUNICIPALIDAD DE LOS VILOS",
-        "estadoAnterior": "Publicada",
-        "monto": 6000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1655-145-COT26",
-        "titulo": " FOLIO N°165+ SILLAS PLEGABLE+AGM",
-        "organismo": "SERVICIO DE SALUD METROPOLI CENTRAL DIRECCION DE ATENCION PRIMARIA",
-        "estadoAnterior": "Publicada",
-        "monto": 5783400,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2294-1945-COT26",
-        "titulo": "TINTAS Y TONER LICEO BICENTENARIO ORIENTE // SEP",
-        "organismo": "I MUNICIPALIDAD DE TALCA",
-        "estadoAnterior": "Publicada",
-        "monto": 5689110,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1271178-173-COT26",
-        "titulo": "Memo349(f)_Computadores",
-        "organismo": "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE MACUL",
-        "estadoAnterior": "Publicada",
-        "monto": 5200000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5066-205-COT26",
-        "titulo": "Proyector led 500 watts SA N°14 GRED",
-        "organismo": "I MUNICIPALIDAD DE PITRUFQUEN",
-        "estadoAnterior": "Publicada",
-        "monto": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1070620-3184-COT26",
-        "titulo": "YHC. TEST EN AIRE ESPIRADO PARA SOBRECRECIMIENTO BACTERIANO",
-        "organismo": "HOSPITAL DOCTOR ERNESTO TORRES GALDAMES",
-        "estadoAnterior": "Publicada",
-        "monto": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2409-1382-COT26",
-        "titulo": "ADQUISICION DE IMPRESORAS PARA ESCUELA F-900 REPUBLICA DE ALEMANIA.",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES DEPTO DE",
-        "estadoAnterior": "Publicada",
-        "monto": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1063538-1957-COT26",
-        "titulo": "ADQUISICION DE CATETER PARA MONITOREO CONTINUO DE GASTO CARDIACO TIPO PICCO",
-        "organismo": "HOSPITAL BASE OSORNO",
-        "estadoAnterior": "Publicada",
-        "monto": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "744835-538-COT26",
-        "titulo": "MOUSE - TECLADOS - MEMORIAS RAM Y OTROS INSUMOS (ADMINIST. MUNICIPAL - Dpto. Informática)",
-        "organismo": "I MUNICIPALIDAD DE LO ESPEJO",
-        "estadoAnterior": "Publicada",
-        "monto": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2281-1585-COT26",
-        "titulo": "ADQUISICION DE 01 TAMBOR DE 208 LITROS DE ACEITE MOTOR 10W30, 01 TAMBOR DE ACEITE MOTOR 10W40 Y 01 TAMBOR DE ACEITE MOTOR 5W30",
-        "organismo": "I MUNICIPALIDAD VALDIVIA",
-        "estadoAnterior": "Publicada",
-        "monto": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "898-1047-COT26",
-        "titulo": " kit de jeringas inyectoras debe contar con dos jeringas de 65 ml cada una, 1 conector, las cuales deben soportar una presión hasta 305 psi. El kit debe presentar una fecha de vencimiento sobre 12 mes",
-        "organismo": "HOSPITAL CLAUDIO VICUNA",
-        "estadoAnterior": "Publicada",
-        "monto": 4995000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057439-5089-COT26",
-        "titulo": "MARCADOR DE TEJIDO (ULTRACLIP DUAL TRIGGER)",
-        "organismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL LA SERENA",
-        "estadoAnterior": "Publicada",
-        "monto": 4890900,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1349-59-COT26",
-        "titulo": "OBRAS DE MEJORAMIENTO ELECTRICO OFICINA DE CONCEPCIÓN.-",
-        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
-        "estadoAnterior": "Publicada",
-        "monto": 4834161,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "928-233-COT26",
-        "titulo": "REQ 84 PINTURAS (J MIRANDA)",
+        "codigo": "1196-17-L126",
+        "titulo": "Seguros incendio, sismo, inundación, tsunami, riesgos de la naturaleza, riesgos políticos , robos , incluye el resguardo de muebles, equipos y máquinas de todo el edificio CER",
         "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "monto": 4800000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5519-136-COT26",
-        "titulo": "Compra de 2 computadores armados de alto rendimiento para conexión a simulador en tiempo real para el proyecto FONDEF TA25I10090",
-        "organismo": "UNIVERSIDAD DE CHILE",
-        "estadoAnterior": "Publicada",
-        "monto": 4800000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2129-74-COT26",
-        "titulo": "Totem Led Indoor P2.5 SMD Full Color, para la Municipalidad de Ránquil.",
-        "organismo": "Ilustre Municipalidad de Ranquil",
-        "estadoAnterior": "Publicada",
-        "monto": 4500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1271178-175-COT26",
-        "titulo": "MEMORANDUM Nº 00162/2026 SOLICITA COMPRA MOBILIARIO PARA LA HABILITACIÓN DE BOXES INFANTOJUVENIL COSAM",
-        "organismo": "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE MACUL",
-        "estadoAnterior": "Publicada",
-        "monto": 4500000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1305527-38-COT26",
-        "titulo": "Adquisición de Plotter y Complementos",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DEL PINO",
-        "estadoAnterior": "Publicada",
-        "monto": 4500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3982-190-COT26",
-        "titulo": "pizarras para Nueva Escuela Unión de Mujeres Americanas ",
-        "organismo": "I MUNICIPALIDAD DE PAREDONES",
-        "estadoAnterior": "Publicada",
-        "monto": 4200000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2483-407-COT26",
-        "titulo": "ADQUISICIÓN DE EQUIPAMIENTO DE RED Y SWITCHES POE PARA INFRAESTRUCTURA TECNOLÓGICA",
-        "organismo": "I MUNICIPALIDAD DE QUILICURA",
         "estadoAnterior": "Cerrada",
-        "monto": 4100000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1380-4263-COT26",
-        "titulo": "MONITOR MULTIPARÁMETROS RN, SE SOLICITA ADJUNTAR FICHA TECNICA DE LOS PRODUCTOS OFERTADOS, POR FAVOR REVISAR LAS EETT ADJUNTAS.",
-        "organismo": "HOSPITAL DOCTOR HERNAN HENRIQUEZ ARAVENA",
-        "estadoAnterior": "Publicada",
-        "monto": 4064000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1952-1177-COT26",
-        "titulo": "INSUMOS PARA IMPRESORA ZEBRA ZT-231 PROCESOS DE ESTERILIZACIÓN",
-        "organismo": "Hospital Villarrica",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1563-42-COT26",
-        "titulo": "Adquisición Materiales de aseo y oficina para Sucursales DZCS-Fonasa",
-        "organismo": "FONDO NACIONAL DE SALUD",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2440-1469-COT26",
-        "titulo": " ACCESORIOS Y  SUMINISTROS  PARA IMPRESORAS ORIGINALES ESCUELA  PADRE ALNERTO HURTADO  DE CURICÓ",
-        "organismo": "I MUNICIPALIDAD DE CURICO",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1214103-221-COT26",
-        "titulo": "MATERIALES DE OFICINA ",
-        "organismo": "Corporación Cultural Municipal de Puente Alto",
-        "estadoAnterior": "Publicada",
-        "monto": 4000000,
+        "monto": 6350000,
         "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 594.3,
+  "tiempoEjecucionSegundos": 1558.9,
   "errores": [],
   "advertencias": []
 }
