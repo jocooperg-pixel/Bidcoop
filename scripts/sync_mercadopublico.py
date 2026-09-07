@@ -18,6 +18,7 @@ Implementa las reglas estrictas de cruce y reconciliación de Compras Ágiles:
 import json
 import os
 import sys
+import socket
 import datetime
 import time
 import urllib.request
@@ -25,6 +26,19 @@ import urllib.error
 import re
 import unicodedata
 from typing import Optional, List, Dict, Tuple
+
+# Salvaguarda de red a nivel de proceso: el timeout que se pasa a
+# urlopen(..., timeout=N) NO cubre la resolución DNS (socket.getaddrinfo
+# no soporta timeout por sí solo) — si el DNS local se cuelga (Wi-Fi
+# reconectando, VPN, resolver caído), el proceso completo puede quedar
+# bloqueado indefinidamente sin usar CPU, incluso con retries y timeouts
+# bien configurados en cada llamada. Confirmado en vivo el 2026-09-07:
+# una corrida manual quedó colgada 35+ minutos con CPU prácticamente en
+# cero (0.17s de CPU en 4 minutos de reloj) — patrón clásico de bloqueo
+# en resolución DNS, no de una API lenta. socket.setdefaulttimeout()
+# aplica un límite global a TODAS las operaciones de socket del proceso,
+# incluida la resolución DNS, como red de seguridad final.
+socket.setdefaulttimeout(90)
 
 try:
     import pandas as pd
