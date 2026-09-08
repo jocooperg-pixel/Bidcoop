@@ -25,20 +25,49 @@ import urllib.request
 import urllib.error
 import re
 import unicodedata
+import threading
 from typing import Optional, List, Dict, Tuple
 
-# Salvaguarda de red a nivel de proceso: el timeout que se pasa a
-# urlopen(..., timeout=N) NO cubre la resolución DNS (socket.getaddrinfo
-# no soporta timeout por sí solo) — si el DNS local se cuelga (Wi-Fi
-# reconectando, VPN, resolver caído), el proceso completo puede quedar
-# bloqueado indefinidamente sin usar CPU, incluso con retries y timeouts
-# bien configurados en cada llamada. Confirmado en vivo el 2026-09-07:
-# una corrida manual quedó colgada 35+ minutos con CPU prácticamente en
-# cero (0.17s de CPU en 4 minutos de reloj) — patrón clásico de bloqueo
-# en resolución DNS, no de una API lenta. socket.setdefaulttimeout()
-# aplica un límite global a TODAS las operaciones de socket del proceso,
-# incluida la resolución DNS, como red de seguridad final.
+# Salvaguarda de red a nivel de proceso — INTENTO 1 (insuficiente, dejado
+# como piso mínimo): socket.setdefaulttimeout() solo fija el timeout de
+# sockets creados sin uno explícito. urlopen(..., timeout=N) YA pasa un
+# timeout explícito, así que esta línea nunca cubrió el punto real de
+# riesgo: socket.getaddrinfo() (resolución DNS) es una llamada bloqueante
+# a nivel de C que NO acepta timeout en absoluto, la fije o no acá — si el
+# DNS local se cuelga, el proceso queda bloqueado indefinidamente sin usar
+# CPU pase lo que pase con setdefaulttimeout(). Confirmado en vivo:
+# colgado 35+ min el 2026-09-07 (0.17s CPU en 4 min), y otra vez el
+# 2026-09-08 (0.8s CPU en 16+ min) — CON este "fix" ya aplicado, o sea que
+# nunca funcionó. Se mantiene como piso por si algo no pasa timeout
+# explícito, pero el fix real es _fetch_url_con_limite_duro() abajo.
 socket.setdefaulttimeout(90)
+
+def _fetch_url_con_limite_duro(req: "urllib.request.Request", timeout: int) -> bytes:
+    """urlopen() en un hilo daemon aparte con límite duro real, incluida la
+    resolución DNS. Deliberadamente NO usa concurrent.futures.ThreadPoolExecutor:
+    ese pool registra sus hilos para que el intérprete los espere (join) al
+    salir, así que si un hilo queda colgado en getaddrinfo, el proceso
+    tampoco podría terminar nunca — el mismo problema, solo que al final en
+    vez de en el medio. Un threading.Thread(daemon=True) sí se abandona de
+    verdad: si queda colgado, el proceso lo ignora y termina igual."""
+    resultado: Dict[str, object] = {}
+
+    def _worker():
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                resultado["data"] = resp.read()
+        except Exception as e:
+            resultado["error"] = e
+
+    hilo = threading.Thread(target=_worker, daemon=True)
+    hilo.start()
+    hilo.join(timeout=timeout + 5)
+
+    if hilo.is_alive():
+        raise TimeoutError(f"Límite duro de {timeout + 5}s excedido (probable cuelgue de DNS/red) en {req.full_url} — hilo abandonado, sync continúa.")
+    if "error" in resultado:
+        raise resultado["error"]  # type: ignore[misc]
+    return resultado.get("data", b"")  # type: ignore[return-value]
 
 try:
     import pandas as pd
@@ -510,13 +539,13 @@ def fetch_json(url: str, timeout: int = 20, max_retries: int = 3) -> Optional[di
                 "User-Agent": "BidCoop/7.6 (+https://bidcoop.cl)",
                 "Accept": "application/json"
             })
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
-                data = json.loads(resp.read().decode('utf-8'))
-                if isinstance(data, dict) and data.get("Codigo") == 10500:
-                    wait = 4.0 * attempt
-                    time.sleep(wait)
-                    continue
-                return data
+            raw = _fetch_url_con_limite_duro(req, timeout)
+            data = json.loads(raw.decode('utf-8'))
+            if isinstance(data, dict) and data.get("Codigo") == 10500:
+                wait = 4.0 * attempt
+                time.sleep(wait)
+                continue
+            return data
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 wait = 12.0 * attempt
@@ -642,8 +671,8 @@ def fetch_compraagil_json(url: str, timeout: int = 20, max_retries: int = 3) -> 
                 "Accept": "application/json",
                 "ticket": COMPRAAGIL_TICKET
             })
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
-                return json.loads(resp.read().decode('utf-8'))
+            raw = _fetch_url_con_limite_duro(req, timeout)
+            return json.loads(raw.decode('utf-8'))
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 # Cuota diaria agotada — reintentar en la misma corrida no sirve
