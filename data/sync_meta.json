@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-12T21:43:52.158108+00:00",
-  "ultimoIntentoRealizado": "2026-09-12T21:43:52.158108+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-12T23:28:22.909673+00:00",
+  "ultimoIntentoRealizado": "2026-09-12T23:28:22.909673+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1440,
-  "registrosConfirmados": 1440,
+  "registrosEnPlataforma": 1451,
+  "registrosConfirmados": 1451,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1161,
+  "registrosConMontoReal": 1169,
   "excluidosPrefiltroIrrelevante": 8200,
-  "excluidosSinDatosReales": 10,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 771,
-    "conMontoValido": 765,
+    "total": 772,
+    "conMontoValido": 766,
     "pctValidado": 99.2,
     "stats": {
-      "VALIDADO": 765,
+      "VALIDADO": 766,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 19818000,
-    "montoFinalSum": 1195773513,
-    "montoRecuperadoSum": 1175955513
+    "montoOriginalSum": 92028906,
+    "montoFinalSum": 1200729863,
+    "montoRecuperadoSum": 1108700957
   },
   "categorias": {
-    "licitaciones": 667,
-    "comprasAgiles": 771,
+    "licitaciones": 677,
+    "comprasAgiles": 772,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 378,
+    "LE": 382,
     "LR": 40,
-    "LP": 132,
+    "LP": 138,
     "L1": 110,
     "I2": 1,
     "O1": 2,
@@ -43,17 +43,17 @@
     "LS": 2,
     "CO": 9,
     "B2": 2,
-    "COT": 762
+    "COT": 763
   },
   "matchPorEmpresa": {
-    "Aminorte": 1223,
-    "V-MOCCS": 217
+    "Aminorte": 1233,
+    "V-MOCCS": 218
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 655,
-    "modificadosCount": 119,
-    "cerradosCount": 554,
+    "nuevosCount": 657,
+    "modificadosCount": 120,
+    "cerradosCount": 545,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -529,7 +529,7 @@
         "organismo": "HOSPITAL PADRE ALBERTO HURTADO",
         "monto": 6909140,
         "empresaMatch": "Aminorte",
-        "matchScore": 60,
+        "matchScore": 70,
         "fechaCierre": "2026-09-13T22:00"
       },
       {
@@ -1200,46 +1200,6 @@
     ],
     "cerrados": [
       {
-        "codigo": "2405-91-LP26",
-        "titulo": "DIAGNOSTICO TRATAMIENTO PREVENTIVO TRATAMIENTO CORRECTIVO Y MONITOREO PARA CONTROL DE XILOFAGOS DEL TEATRO MUNICIPAL DE IQUIQUE 2026 – 2028",
-        "organismo": "I MUNICIPALIDAD DE IQUIQUE",
-        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "monto": 236250000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057489-285-LP26",
-        "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "estadoAnterior": "Publicada",
-        "monto": 160000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2770-85-LP26",
-        "titulo": "SUMINISTRO DE MOBILIARIO URBANO DE HORMIGÓN  PARA ÁREAS VERDES DE LA COMUNA DE MAIPÚ",
-        "organismo": "I MUNICIPALIDAD DE MAIPU",
-        "estadoAnterior": "Adjudicada",
-        "monto": 100000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "4127-31-LE26",
-        "titulo": "TIC. SUSCRIPCIÓN LICENCIAS Y SERVICIOS WAF",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "estadoAnterior": "Adjudicada",
-        "monto": 70000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057489-175-LE26",
-        "titulo": "Convenio de Suministro de Primer PCR Sonda Taqman y Oligonucleótido Fluorescente por 36 meses para el Área Técnica de Biología Molecular en el Hospital del Salvador",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "estadoAnterior": "Adjudicada",
-        "monto": 45569955,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "800-6679-COT26",
         "titulo": "131198 TIJERA LAPAROSCOPICA DESECHABLE / Equivalente a Pinza EndoShears™ 5mm - Color Gris",
         "organismo": "UNIVERSIDAD DE CHILE",
@@ -1678,10 +1638,50 @@
         "estadoAnterior": "Publicada",
         "monto": 4500000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2505-98-COT26",
+        "titulo": "COMPUTADORES AIO PARA DPTO. DE SALUD DE RIO CLARO",
+        "organismo": "I MUNICIPALIDAD DE RIO CLARO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "931-110-COT26",
+        "titulo": "IMPLEMENTACION DEPORTIVA GAF PROMESAS CHILE",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "697057-116-COT26",
+        "titulo": "HABILITACIÓN DE OFICINAS EN LA FISCALÍA LOCAL DE SAN FERNANDO",
+        "organismo": "MINISTERIO PUBLICO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2366-472-COT26",
+        "titulo": "UPS, IGUAL O SIMILAR A BACK-UPS APC BX1200ML-MS // SC N°178 - INFORMÁTICA Y SISTEMAS ",
+        "organismo": "I MUNICIPALIDAD DE ARICA",
+        "estadoAnterior": "Publicada",
+        "monto": 4462500,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5586-2365-COT26",
+        "titulo": "J/T Carros tecnológicos porta notebook",
+        "organismo": "UNIVERSIDAD DE LA FRONTERA",
+        "estadoAnterior": "Publicada",
+        "monto": 4200000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1802.7,
+  "tiempoEjecucionSegundos": 1506.0,
   "errores": [],
   "advertencias": []
 }
