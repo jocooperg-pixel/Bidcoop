@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-12T11:44:37.048499+00:00",
-  "ultimoIntentoRealizado": "2026-09-12T11:44:37.048499+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-12T14:27:20.445649+00:00",
+  "ultimoIntentoRealizado": "2026-09-12T14:27:20.445649+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1435,
-  "registrosConfirmados": 1435,
+  "registrosEnPlataforma": 1430,
+  "registrosConfirmados": 1430,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1157,
-  "excluidosPrefiltroIrrelevante": 8188,
-  "excluidosSinDatosReales": 5,
+  "registrosConMontoReal": 1155,
+  "excluidosPrefiltroIrrelevante": 8191,
+  "excluidosSinDatosReales": 11,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 765,
@@ -26,34 +26,34 @@
     "montoRecuperadoSum": 1146801826
   },
   "categorias": {
-    "licitaciones": 668,
+    "licitaciones": 664,
     "comprasAgiles": 765,
     "convenioMarco": 0,
-    "ordenes_compra": 2,
+    "ordenes_compra": 1,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 376,
+    "LE": 374,
     "LR": 40,
     "LP": 138,
-    "L1": 107,
+    "L1": 105,
     "I2": 1,
-    "O1": 2,
     "E2": 2,
     "LS": 2,
     "CO": 9,
     "B2": 2,
+    "O1": 1,
     "COT": 756
   },
   "matchPorEmpresa": {
-    "Aminorte": 1219,
-    "V-MOCCS": 216
+    "Aminorte": 1211,
+    "V-MOCCS": 219
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 610,
-    "modificadosCount": 125,
-    "cerradosCount": 514,
+    "nuevosCount": 611,
+    "modificadosCount": 129,
+    "cerradosCount": 520,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -608,6 +608,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2427-87-LE26",
+        "titulo": "ADQUISICION DE CONTENEDORES CUARTEL DE ASEO LUCUMO INMUEBLE EX TEATRO PACIFICO DAT.",
+        "organismo": "I MUNICIPALIDAD DE VALPARAISO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 64617000,
+        "montoNuevo": 64617000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "4610-70-LE26",
         "titulo": "ADQUISICION DE SITEMA INTEGRAL DE PANTALLA Y AUDIO",
         "organismo": "I MUNICIPALIDAD DE CHILE CHICO",
@@ -635,6 +645,16 @@
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
         "montoNuevo": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "763003-8-LE26",
+        "titulo": "MATERIALES PARA ACONDICIONAMIENTO DE OFICINAS.",
+        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 16500000,
+        "montoNuevo": 16500000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -725,6 +745,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 7000000,
         "montoNuevo": 7000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4284-146-L126",
+        "titulo": "Adquisición de materiales de oficina alimentos merchandising galvanos y contratación servicio de alimentación Coffe break para actividades programas 4 a 7 mujeres jefas de hogar Cultura de la mujer y OMIL según NUMERAL 5 B.A.G Bases administrativas",
+        "organismo": "I MUNICIPALIDAD DE CUNCO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 6649300,
+        "montoNuevo": 6649300,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1166,39 +1196,17 @@
         "montoAnterior": 1300000,
         "montoNuevo": 1300000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3309-322-COT26",
-        "titulo": "SMART TV Y SOPORTE ",
-        "organismo": "Departamento Comunal de Salud",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1200000,
-        "montoNuevo": 1200000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2910-122-COT26",
-        "titulo": "MOBILIARIO PARA ESTABLECIMIENTO SAR - CONVENIO SAR, SPI (1930/2026)",
-        "organismo": "I MUNICIPALIDAD DE FUTRONO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1200000,
-        "montoNuevo": 1200000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "3244-339-COT26",
-        "titulo": "ARTICULOS DE OFICINA ESC. CLAUDIO VICUÑA",
-        "organismo": "I MUNICIPALIDAD DE SANTO DOMINGO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1200000,
-        "montoNuevo": 1200000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
+      {
+        "codigo": "3929-61-LE26",
+        "titulo": "Proyecto de adquisición e instalación de mobiliario Programa Somos Barrio Comercial borde plaza José Francisco Vergara y Sucre comuna de Viña del Mar código BCP23-REP-0004",
+        "organismo": "I MUNICIPALIDAD DE VINA DEL MAR",
+        "estadoAnterior": "Publicada",
+        "monto": 28500000,
+        "empresaMatch": "V-MOCCS"
+      },
       {
         "codigo": "800-6679-COT26",
         "titulo": "131198 TIJERA LAPAROSCOPICA DESECHABLE / Equivalente a Pinza EndoShears™ 5mm - Color Gris",
@@ -1237,14 +1245,6 @@
         "organismo": "Dirección de Educación Municipal",
         "estadoAnterior": "Publicada",
         "monto": 7170000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "742475-4-LE26",
-        "titulo": "Adquisición de equipos informáticos para el programa Oficina Local de la Niñez",
-        "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
-        "estadoAnterior": "Cerrada",
-        "monto": 7167631,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1432,12 +1432,12 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1110404-175-L126",
-        "titulo": "ADQUISICION DE MUEBLES, SILLAS Y MOBILIARIO ESCOLAR PARA E.E PERT. DEL SLEP CHINCHORRO, ARICA",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
+        "codigo": "742-8-L126",
+        "titulo": "Mantención Oficina de INDAP Coyhaique, región de Aysén",
+        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
         "estadoAnterior": "Cerrada",
-        "monto": 6732583,
-        "empresaMatch": "V-MOCCS"
+        "monto": 6700000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1058024-1405-COT26",
@@ -1533,6 +1533,14 @@
         "organismo": "SERVICIO DE SALUD CONCEPCION",
         "estadoAnterior": "Publicada",
         "monto": 5999999,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1232565-25-L126",
+        "titulo": "Adquisición de Equipamiento Deportivos Proyecto ULS 2595",
+        "organismo": "UNIVERSIDAD DE LA SERENA",
+        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "monto": 5911000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1670,18 +1678,10 @@
         "estadoAnterior": "Publicada",
         "monto": 4462500,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5586-2365-COT26",
-        "titulo": "J/T Carros tecnológicos porta notebook",
-        "organismo": "UNIVERSIDAD DE LA FRONTERA",
-        "estadoAnterior": "Publicada",
-        "monto": 4200000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2441.1,
+  "tiempoEjecucionSegundos": 285.7,
   "errores": [],
   "advertencias": []
 }
