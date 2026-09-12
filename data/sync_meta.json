@@ -1,33 +1,33 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-12T17:54:57.553251+00:00",
-  "ultimoIntentoRealizado": "2026-09-12T17:54:57.553251+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-12T19:43:25.968148+00:00",
+  "ultimoIntentoRealizado": "2026-09-12T19:43:25.968148+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1449,
-  "registrosConfirmados": 1449,
+  "registrosEnPlataforma": 1451,
+  "registrosConfirmados": 1451,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1167,
-  "excluidosPrefiltroIrrelevante": 8198,
+  "registrosConMontoReal": 1169,
+  "excluidosPrefiltroIrrelevante": 8200,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 770,
-    "conMontoValido": 764,
+    "total": 772,
+    "conMontoValido": 766,
     "pctValidado": 99.2,
     "stats": {
-      "VALIDADO": 764,
+      "VALIDADO": 766,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
     "montoOriginalSum": 19818000,
-    "montoFinalSum": 1186256793,
-    "montoRecuperadoSum": 1166438793
+    "montoFinalSum": 1183179113,
+    "montoRecuperadoSum": 1163361113
   },
   "categorias": {
     "licitaciones": 677,
-    "comprasAgiles": 770,
+    "comprasAgiles": 772,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
@@ -43,17 +43,17 @@
     "LS": 2,
     "CO": 9,
     "B2": 2,
-    "COT": 761
+    "COT": 763
   },
   "matchPorEmpresa": {
-    "Aminorte": 1229,
-    "V-MOCCS": 220
+    "Aminorte": 1232,
+    "V-MOCCS": 219
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 643,
-    "modificadosCount": 122,
-    "cerradosCount": 533,
+    "nuevosCount": 647,
+    "modificadosCount": 124,
+    "cerradosCount": 535,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -542,6 +542,15 @@
         "fechaCierre": "2026-08-10T15:00:00"
       },
       {
+        "codigo": "542343-36-COT26",
+        "titulo": "WD 4714 Arriendo de notebook",
+        "organismo": "UNIVERSIDAD DE CHILE",
+        "monto": 6900000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-15T12:00"
+      },
+      {
         "codigo": "921831-21-L126",
         "titulo": "Suministro e instalación de una mampara para el EAM",
         "organismo": "DIVISION LOGISTICA DEL EJERCITO",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-09-13T12:00"
-      },
-      {
-        "codigo": "2663-328-COT26",
-        "titulo": "Servicio de producción de eventos (amplificación iluminación pantalla)",
-        "organismo": "ILUSTRE MUNICIPALIDAD DE NATALES",
-        "monto": 6545000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-12T20:00"
       }
     ],
     "modificados": [
@@ -762,7 +762,7 @@
         "titulo": "Servicio de acondicionamiento de espacio con tabiques y puertas.",
         "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
+        "estadoNuevo": "Desierta",
         "montoAnterior": 6592838,
         "montoNuevo": 6592838,
         "empresaMatch": "V-MOCCS"
@@ -785,6 +785,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 6020000,
         "montoNuevo": 6020000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1171142-2138-COT26",
+        "titulo": "Compra Prestaciones Horas Médicas para distintas especialidades",
+        "organismo": "HOSPITAL COMPLEJO ASISTENCIAL PADRE LAS CASAS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 5713800,
+        "montoNuevo": 5713800,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1186,16 +1196,6 @@
         "montoAnterior": 1000032,
         "montoNuevo": 1000032,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "324-505-COT26",
-        "titulo": " INSPECCIÓN Y FISCALIZACIÓN MUNICIPAL/ impresora térmica para emisión de partes",
-        "organismo": "I MUNICIPALIDAD DE CERRILLOS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1000000,
-        "montoNuevo": 1000000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1472,6 +1472,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "5403-29-COT26",
+        "titulo": "ADQUISICIÓN DE DOS ARCHIVADORES IGNÍFUGOS PARA LA COMISIÓN NACIONAL DE ACREDITACIÓN (CNA)",
+        "organismo": "COMISION NACIONAL DE ACREDITACION",
+        "estadoAnterior": "Publicada",
+        "monto": 6000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "4922-355-COT26",
         "titulo": "SERVICIO DE ALIMENTACIÓN OFICINA ADULTO MAYOR",
         "organismo": "I MUNICIPALIDAD DE FUTRONO",
@@ -1670,18 +1678,10 @@
         "estadoAnterior": "Publicada",
         "monto": 4200000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3532-109-COT26",
-        "titulo": "F.I. CC. MANTENIMIENTO CASINO DE SUBOFICIALES: ADQ. DE SILLAS, MENAJE Y ART. FERRET.",
-        "organismo": "Ejercito de Chile",
-        "estadoAnterior": "Publicada",
-        "monto": 4200000,
-        "empresaMatch": "V-MOCCS"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2450.0,
+  "tiempoEjecucionSegundos": 2119.0,
   "errores": [],
   "advertencias": []
 }
