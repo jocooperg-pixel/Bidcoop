@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-12T01:43:38.966789+00:00",
-  "ultimoIntentoRealizado": "2026-09-12T01:43:38.966789+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-12T06:34:53.680053+00:00",
+  "ultimoIntentoRealizado": "2026-09-12T06:34:53.680053+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1385,
-  "registrosConfirmados": 1385,
+  "registrosEnPlataforma": 1454,
+  "registrosConfirmados": 1454,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1117,
-  "excluidosPrefiltroIrrelevante": 8187,
-  "excluidosSinDatosReales": 29,
+  "registrosConMontoReal": 1173,
+  "excluidosPrefiltroIrrelevante": 8188,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 738,
-    "conMontoValido": 732,
+    "total": 779,
+    "conMontoValido": 773,
     "pctValidado": 99.2,
     "stats": {
-      "VALIDADO": 732,
+      "VALIDADO": 773,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 19800000,
-    "montoFinalSum": 1121860959,
-    "montoRecuperadoSum": 1102060959
+    "montoOriginalSum": 19818000,
+    "montoFinalSum": 1178556733,
+    "montoRecuperadoSum": 1158738733
   },
   "categorias": {
-    "licitaciones": 645,
-    "comprasAgiles": 738,
+    "licitaciones": 673,
+    "comprasAgiles": 779,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 364,
-    "LR": 36,
-    "LP": 132,
-    "L1": 106,
+    "LE": 380,
+    "LR": 40,
+    "LP": 138,
+    "L1": 108,
     "I2": 1,
     "O1": 2,
     "E2": 2,
     "LS": 2,
-    "CO": 8,
+    "CO": 9,
     "B2": 2,
-    "COT": 730
+    "COT": 770
   },
   "matchPorEmpresa": {
-    "Aminorte": 1174,
-    "V-MOCCS": 211
+    "Aminorte": 1234,
+    "V-MOCCS": 220
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 578,
-    "modificadosCount": 115,
-    "cerradosCount": 532,
+    "nuevosCount": 619,
+    "modificadosCount": 120,
+    "cerradosCount": 504,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -578,6 +578,15 @@
         "fechaCierre": "2026-09-22T10:00"
       },
       {
+        "codigo": "3363-33-COT26",
+        "titulo": "ADQUISICION DE EQUIPOS DE AIRE ACONDICIONADO",
+        "organismo": "Ejercito de Chile",
+        "monto": 6310765,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-17T16:00"
+      },
+      {
         "codigo": "2730-289-COT26",
         "titulo": "Adquisición de licencias / suscripciones Claude Max 20x y OpenAI ChatGPT Pro 20X",
         "organismo": "I MUNICIPALIDAD DE CASTRO",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-16T13:00"
-      },
-      {
-        "codigo": "564162-900-COT26",
-        "titulo": "Muebles oficina Vicerrectoría de Postgrado",
-        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
-        "monto": 6249521,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-12T09:00"
       }
     ],
     "modificados": [
@@ -645,6 +645,26 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 12000000,
         "montoNuevo": 12000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1965-13-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
+        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 11000000,
+        "montoNuevo": 11000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2279-58-LE26",
+        "titulo": "SP 592 ADQUISICION DE MATERIALES DE OFICINA CORPORATIVOS",
+        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 11000000,
+        "montoNuevo": 11000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1176,133 +1196,9 @@
         "montoAnterior": 1000000,
         "montoNuevo": 1000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1746-207-COT26",
-        "titulo": "RESMAS PAPEL TAMAÑO OFICIO                 P. 422 DAF",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1000000,
-        "montoNuevo": 1000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2380-1993-COT26",
-        "titulo": "ADQUISICIÓN DE IMPLEMENTOS PARA MÓVIL DESTINADO A OFICINA RURAL Y VISITAS A PRECORDILLERA - DIDECO - OS 154535 - G.A.C",
-        "organismo": "I MUNICIPALIDAD DE COPIAPO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1000000,
-        "montoNuevo": 1000000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
-      {
-        "codigo": "2307-36-LR26",
-        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
-        "organismo": "I MUNICIPALIDAD DE OSORNO",
-        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "monto": 418569330,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "809-54-LP26",
-        "titulo": "Constitución e Inscripción de Derechos Reales de Uso Segundo Llamado Región de La Araucanía año 2026",
-        "organismo": "CORP NACIONAL DE DESARROLLO INDIGENA",
-        "estadoAnterior": "Publicada",
-        "monto": 175000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4295-67-LP26",
-        "titulo": "Servicio de enlace de datos voz IP y CCTV para oficinas remotas",
-        "organismo": "ILUSTRE MUNICIPALIDAD DE LA SERENA",
-        "estadoAnterior": "Publicada",
-        "monto": 108000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1431841-56-LP26",
-        "titulo": "Habilitación Sala de Monitoreo y Punto de Cámaras",
-        "organismo": "I MUNICIPALIDAD DE RECOLETA",
-        "estadoAnterior": "Publicada",
-        "monto": 98186892,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1392-30-LP26",
-        "titulo": "Servicio de Detección Monitoreo y alertamiento",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "estadoAnterior": "Publicada",
-        "monto": 76000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057491-171-LE26",
-        "titulo": "ADQUISICION EN MODALIDAD DE SUMINISTRO DE PCA Y BA",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
-        "estadoAnterior": "Publicada",
-        "monto": 28000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4494-63-LE26",
-        "titulo": "EQUIPOS COMUNICACIÓN RED CAMARAS DE VIGILANCIAS SEGUNDO LLAMADO",
-        "organismo": "I MUNICIPALIDAD DE PENCO",
-        "estadoAnterior": "Publicada",
-        "monto": 27660000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "883-31-LE26",
-        "titulo": "ADQ. PINTURA DE ALTO TRAFICO PARA EL AP.AMB.",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "estadoAnterior": "Cerrada",
-        "monto": 19522980,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1552-79-LE26",
-        "titulo": "CONSTRUCCIÓN CES HUASCO BAJO - MOBILIARIO CLINICO",
-        "organismo": "SERVICIO DE SALUD ATACAMA",
-        "estadoAnterior": "Publicada",
-        "monto": 14500000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "634-83-LE26",
-        "titulo": "ADQUISICIÓN DE PAPELERÍA PARA DIFUSIÓN",
-        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
-        "estadoAnterior": "Publicada",
-        "monto": 11468625,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1965-13-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
-        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
-        "estadoAnterior": "Publicada",
-        "monto": 11000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2279-58-LE26",
-        "titulo": "SP 592 ADQUISICION DE MATERIALES DE OFICINA CORPORATIVOS",
-        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
-        "estadoAnterior": "Publicada",
-        "monto": 11000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1561-23-LE26",
-        "titulo": "ADQUISICIÓN Y DESPACHO DE IMPRESORAS PARA DICREP.",
-        "organismo": "DIRECCION GENERAL DEL CREDITO PRENDARIO",
-        "estadoAnterior": "Publicada",
-        "monto": 10000000,
-        "empresaMatch": "Aminorte"
-      },
       {
         "codigo": "800-6679-COT26",
         "titulo": "131198 TIJERA LAPAROSCOPICA DESECHABLE / Equivalente a Pinza EndoShears™ 5mm - Color Gris",
@@ -1552,14 +1448,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "5061-29-L126",
-        "titulo": "SCHC N139 Suministro e instalación de placa microperforada sobre cierre perimetral de más Alored, Según especificaciones técnicas adjuntas.",
-        "organismo": "I MUNICIPALIDAD DE TEMUCO",
-        "estadoAnterior": "Cerrada",
-        "monto": 6400000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "4619-29-COT26",
         "titulo": "“SERVICIO DE SUMINISTRO DE MANTENCIÓN Y REPARACIÓN DE OBRAS MENORES PARA OFICINAS DEPENDIENTES DE LA DIRECCIÓN REGIONAL DEL TRABAJO DE COQUIMBO”",
         "organismo": "DIRECCION DEL TRABAJO",
@@ -1678,10 +1566,122 @@
         "estadoAnterior": "Publicada",
         "monto": 5200000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5434-407-COT26",
+        "titulo": "Mantención sistema climatización Edif. Milenio - Dpto Biología",
+        "organismo": "UNIVERSIDAD DE CHILE",
+        "estadoAnterior": "Publicada",
+        "monto": 5000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057432-371-COT26",
+        "titulo": "MANTENCIÓN 4 DE AMBULANCIAS SAMU DEL SERVICIO DE SALUD CONCEPCIÓN ",
+        "organismo": "SERVICIO DE SALUD CONCEPCION",
+        "estadoAnterior": "Cerrada",
+        "monto": 5000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057432-370-COT26",
+        "titulo": "MANTENCIÓN 4 DE AMBULANCIAS SAMU DEL SERVICIO DE SALUD CONCEPCIÓN ",
+        "organismo": "SERVICIO DE SALUD CONCEPCION",
+        "estadoAnterior": "Cancelada",
+        "monto": 5000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1079969-145-COT26",
+        "titulo": "\"ADQUISICIÓN DE DETECTORES DE HUMO PARA LA ZOSEPCAR”",
+        "organismo": "SECCIÓN COMPRAS ZONA SEG PRIV CONTROL ARMAS Y EXPL",
+        "estadoAnterior": "Publicada",
+        "monto": 4780000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057432-373-COT26",
+        "titulo": "ADQUISICIÓN DE MATERIALES DEPORTIVOS PARA PROGRAMA REHABILITACIÓN PULMONAR PARA DEPTO. DE ATENCIÓN PRIMARIA DE SALUD-SERVICIO SALUD CONCEPCIÓN -2026",
+        "organismo": "SERVICIO DE SALUD CONCEPCION",
+        "estadoAnterior": "Publicada",
+        "monto": 4688600,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2854-735-COT26",
+        "titulo": "COTIZACION INSUMOS DE OFICINA CESFAM PTO VARAS",
+        "organismo": "I MUNICIPALIDAD DE PUERTO VARAS",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3694-356-COT26",
+        "titulo": "ADQUISICIÓN DE TOLDOS, MANTELES, SILLAS, MESAS PLEGABLES, PROGRAMA FOMENTO PRODUCTIVO, DIRECCIÓN DE TURISMO.",
+        "organismo": "I MUNICIPALIDAD DE EL QUISCO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2505-98-COT26",
+        "titulo": "COMPUTADORES AIO PARA DPTO. DE SALUD DE RIO CLARO",
+        "organismo": "I MUNICIPALIDAD DE RIO CLARO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "931-110-COT26",
+        "titulo": "IMPLEMENTACION DEPORTIVA GAF PROMESAS CHILE",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "697057-116-COT26",
+        "titulo": "HABILITACIÓN DE OFICINAS EN LA FISCALÍA LOCAL DE SAN FERNANDO",
+        "organismo": "MINISTERIO PUBLICO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2366-472-COT26",
+        "titulo": "UPS, IGUAL O SIMILAR A BACK-UPS APC BX1200ML-MS // SC N°178 - INFORMÁTICA Y SISTEMAS ",
+        "organismo": "I MUNICIPALIDAD DE ARICA",
+        "estadoAnterior": "Publicada",
+        "monto": 4462500,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5586-2365-COT26",
+        "titulo": "J/T Carros tecnológicos porta notebook",
+        "organismo": "UNIVERSIDAD DE LA FRONTERA",
+        "estadoAnterior": "Publicada",
+        "monto": 4200000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3532-109-COT26",
+        "titulo": "F.I. CC. MANTENIMIENTO CASINO DE SUBOFICIALES: ADQ. DE SILLAS, MENAJE Y ART. FERRET.",
+        "organismo": "Ejercito de Chile",
+        "estadoAnterior": "Publicada",
+        "monto": 4200000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1016-50-COT26",
+        "titulo": "Sillas Ergonómicas, según ficha adjunta.",
+        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+        "estadoAnterior": "Publicada",
+        "monto": 4066000,
+        "empresaMatch": "V-MOCCS"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 3782.5,
+  "tiempoEjecucionSegundos": 1781.9,
   "errores": [],
   "advertencias": []
 }
