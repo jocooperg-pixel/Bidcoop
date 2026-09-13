@@ -1,39 +1,39 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-12T23:28:22.909673+00:00",
-  "ultimoIntentoRealizado": "2026-09-12T23:28:22.909673+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-13T01:33:53.901766+00:00",
+  "ultimoIntentoRealizado": "2026-09-13T01:33:53.901766+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1451,
   "registrosConfirmados": 1451,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1169,
-  "excluidosPrefiltroIrrelevante": 8200,
+  "registrosConMontoReal": 1168,
+  "excluidosPrefiltroIrrelevante": 8199,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 772,
-    "conMontoValido": 766,
+    "total": 771,
+    "conMontoValido": 765,
     "pctValidado": 99.2,
     "stats": {
-      "VALIDADO": 766,
+      "VALIDADO": 765,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 92028906,
-    "montoFinalSum": 1200729863,
-    "montoRecuperadoSum": 1108700957
+    "montoOriginalSum": 103813033,
+    "montoFinalSum": 1200513765,
+    "montoRecuperadoSum": 1096700732
   },
   "categorias": {
-    "licitaciones": 677,
-    "comprasAgiles": 772,
+    "licitaciones": 678,
+    "comprasAgiles": 771,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 382,
+    "LE": 383,
     "LR": 40,
     "LP": 138,
     "L1": 110,
@@ -43,7 +43,7 @@
     "LS": 2,
     "CO": 9,
     "B2": 2,
-    "COT": 763
+    "COT": 762
   },
   "matchPorEmpresa": {
     "Aminorte": 1233,
@@ -51,9 +51,9 @@
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 657,
+    "nuevosCount": 658,
     "modificadosCount": 120,
-    "cerradosCount": 545,
+    "cerradosCount": 546,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1506.0,
+  "tiempoEjecucionSegundos": 1505.0,
   "errores": [],
   "advertencias": []
 }
