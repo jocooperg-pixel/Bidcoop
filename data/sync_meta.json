@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-13T06:50:50.799001+00:00",
-  "ultimoIntentoRealizado": "2026-09-13T06:50:50.799001+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-13T12:52:19.677319+00:00",
+  "ultimoIntentoRealizado": "2026-09-13T12:52:19.677319+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1451,
-  "registrosConfirmados": 1451,
+  "registrosEnPlataforma": 1449,
+  "registrosConfirmados": 1449,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1170,
+  "registrosConMontoReal": 1167,
   "excluidosPrefiltroIrrelevante": 8199,
-  "excluidosSinDatosReales": 3,
+  "excluidosSinDatosReales": 5,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 774,
@@ -21,21 +21,21 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 103813033,
+    "montoOriginalSum": 156256781,
     "montoFinalSum": 1202060765,
-    "montoRecuperadoSum": 1098247732
+    "montoRecuperadoSum": 1045803984
   },
   "categorias": {
-    "licitaciones": 675,
+    "licitaciones": 673,
     "comprasAgiles": 774,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 381,
+    "LE": 380,
     "LR": 40,
-    "LP": 138,
+    "LP": 137,
     "L1": 109,
     "I2": 1,
     "O1": 2,
@@ -46,14 +46,14 @@
     "COT": 765
   },
   "matchPorEmpresa": {
-    "Aminorte": 1233,
+    "Aminorte": 1231,
     "V-MOCCS": 218
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
     "nuevosCount": 661,
     "modificadosCount": 120,
-    "cerradosCount": 549,
+    "cerradosCount": 551,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -457,7 +457,7 @@
         "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE LINARES",
         "monto": 7120000,
         "empresaMatch": "Aminorte",
-        "matchScore": 60,
+        "matchScore": 70,
         "fechaCierre": "2026-09-14T15:00"
       },
       {
@@ -688,9 +688,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1965-13-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
-        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+        "codigo": "2279-58-LE26",
+        "titulo": "SP 592 ADQUISICION DE MATERIALES DE OFICINA CORPORATIVOS",
+        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 11000000,
@@ -698,9 +698,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2279-58-LE26",
-        "titulo": "SP 592 ADQUISICION DE MATERIALES DE OFICINA CORPORATIVOS",
-        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
+        "codigo": "1965-13-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
+        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 11000000,
@@ -1200,11 +1200,27 @@
     ],
     "cerrados": [
       {
-        "codigo": "1099-1-LE26",
-        "titulo": "CONTRATACIÓN DE SERVICIO DE ASEO Y OTROS DE LIMPIEZA DE LA OFICINA DE LA DIRECCIÓN REGIONAL DE ARICA Y PARINACOTA",
-        "organismo": "SERVICIO DE COOPERACION TECNICA",
+        "codigo": "1348-5-LP26",
+        "titulo": "HABILITACIÓN OFICINA REGISTRO CIVIL PURRANQUE",
+        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
         "estadoAnterior": "Publicada",
-        "monto": 11400000,
+        "monto": 103172524,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057461-57-LE26",
+        "titulo": "CONVENIO DE SUMINISTRO PARA LA ADQUISICIÓN DE UTILES DE ESCRITORIO Y PAPELERÍA PARA HOSPITAL CAUQUENES ",
+        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE CAUQUENES",
+        "estadoAnterior": "Publicada",
+        "monto": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1947-155-LE26",
+        "titulo": "244 ADQUISICIÓN DE MARCADORES PARA TÉCNICA DE INMUNOHISTOQUÍMICA PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RIO CFO",
+        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
+        "estadoAnterior": "Cerrada",
+        "monto": 15000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1662,26 +1678,10 @@
         "estadoAnterior": "Publicada",
         "monto": 4500000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "697057-116-COT26",
-        "titulo": "HABILITACIÓN DE OFICINAS EN LA FISCALÍA LOCAL DE SAN FERNANDO",
-        "organismo": "MINISTERIO PUBLICO",
-        "estadoAnterior": "Publicada",
-        "monto": 4500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2366-472-COT26",
-        "titulo": "UPS, IGUAL O SIMILAR A BACK-UPS APC BX1200ML-MS // SC N°178 - INFORMÁTICA Y SISTEMAS ",
-        "organismo": "I MUNICIPALIDAD DE ARICA",
-        "estadoAnterior": "Publicada",
-        "monto": 4462500,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1919.1,
+  "tiempoEjecucionSegundos": 1503.4,
   "errores": [],
   "advertencias": []
 }
