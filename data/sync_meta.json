@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-13T17:06:12.433034+00:00",
-  "ultimoIntentoRealizado": "2026-09-13T17:06:12.433034+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-13T19:54:53.434498+00:00",
+  "ultimoIntentoRealizado": "2026-09-13T19:54:53.434498+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1450,
-  "registrosConfirmados": 1450,
+  "registrosEnPlataforma": 1451,
+  "registrosConfirmados": 1451,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1169,
-  "excluidosPrefiltroIrrelevante": 8200,
-  "excluidosSinDatosReales": 5,
+  "registrosConMontoReal": 1171,
+  "excluidosPrefiltroIrrelevante": 8201,
+  "excluidosSinDatosReales": 4,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 775,
@@ -26,17 +26,17 @@
     "montoRecuperadoSum": 974338084
   },
   "categorias": {
-    "licitaciones": 673,
+    "licitaciones": 674,
     "comprasAgiles": 775,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 381,
+    "LE": 379,
     "LR": 40,
-    "LP": 137,
-    "L1": 108,
+    "LP": 138,
+    "L1": 110,
     "I2": 1,
     "O1": 2,
     "E2": 2,
@@ -47,13 +47,13 @@
   },
   "matchPorEmpresa": {
     "Aminorte": 1236,
-    "V-MOCCS": 214
+    "V-MOCCS": 215
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 664,
-    "modificadosCount": 121,
-    "cerradosCount": 553,
+    "nuevosCount": 662,
+    "modificadosCount": 120,
+    "cerradosCount": 550,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -198,15 +198,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-07T15:00:00"
-      },
-      {
-        "codigo": "1019-110-LE26",
-        "titulo": "Monitoreo Glaciar Volcan Mocho 2026-2027",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "monto": 46406000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-28T16:21:00"
       },
       {
         "codigo": "1035-21-LE26",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-09-13T12:00"
+      },
+      {
+        "codigo": "867990-525-COT26",
+        "titulo": "Servicio de acondicionamiento de espacio con tabiques y puertas Sol. 93180 CC 102",
+        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
+        "monto": 6592838,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-14T16:00"
       }
     ],
     "modificados": [
@@ -1200,14 +1200,6 @@
     ],
     "cerrados": [
       {
-        "codigo": "548874-59-LE26",
-        "titulo": "SERVICIO DE MONITOREO Y REPORTE DE MEDIOS IPS",
-        "organismo": "INSTITUTO DE PREVISION SOCIAL",
-        "estadoAnterior": "Adjudicada",
-        "monto": 18000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "800-6679-COT26",
         "titulo": "131198 TIJERA LAPAROSCOPICA DESECHABLE / Equivalente a Pinza EndoShears™ 5mm - Color Gris",
         "organismo": "UNIVERSIDAD DE CHILE",
@@ -1254,14 +1246,6 @@
         "estadoAnterior": "Publicada",
         "monto": 7162264,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "3958-51-L126",
-        "titulo": "Adquisición de notebooks para Escuela María Williams",
-        "organismo": "I MUNICIPALIDAD DE NAVIDAD",
-        "estadoAnterior": "Adjudicada",
-        "monto": 7150000,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "3603-478-COT26",
@@ -1678,10 +1662,26 @@
         "estadoAnterior": "Publicada",
         "monto": 4500000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2366-472-COT26",
+        "titulo": "UPS, IGUAL O SIMILAR A BACK-UPS APC BX1200ML-MS // SC N°178 - INFORMÁTICA Y SISTEMAS ",
+        "organismo": "I MUNICIPALIDAD DE ARICA",
+        "estadoAnterior": "Publicada",
+        "monto": 4462500,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5586-2365-COT26",
+        "titulo": "J/T Carros tecnológicos porta notebook",
+        "organismo": "UNIVERSIDAD DE LA FRONTERA",
+        "estadoAnterior": "Publicada",
+        "monto": 4200000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1523.4,
+  "tiempoEjecucionSegundos": 1581.4,
   "errores": [],
   "advertencias": []
 }
