@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-13T12:52:19.677319+00:00",
-  "ultimoIntentoRealizado": "2026-09-13T12:52:19.677319+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-13T17:06:12.433034+00:00",
+  "ultimoIntentoRealizado": "2026-09-13T17:06:12.433034+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1449,
-  "registrosConfirmados": 1449,
+  "registrosEnPlataforma": 1450,
+  "registrosConfirmados": 1450,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1167,
-  "excluidosPrefiltroIrrelevante": 8199,
+  "registrosConMontoReal": 1169,
+  "excluidosPrefiltroIrrelevante": 8200,
   "excluidosSinDatosReales": 5,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 774,
-    "conMontoValido": 768,
+    "total": 775,
+    "conMontoValido": 769,
     "pctValidado": 99.2,
     "stats": {
-      "VALIDADO": 768,
+      "VALIDADO": 769,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 156256781,
-    "montoFinalSum": 1202060765,
-    "montoRecuperadoSum": 1045803984
+    "montoOriginalSum": 231620456,
+    "montoFinalSum": 1205958540,
+    "montoRecuperadoSum": 974338084
   },
   "categorias": {
     "licitaciones": 673,
-    "comprasAgiles": 774,
+    "comprasAgiles": 775,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 380,
+    "LE": 381,
     "LR": 40,
     "LP": 137,
-    "L1": 109,
+    "L1": 108,
     "I2": 1,
     "O1": 2,
     "E2": 2,
     "LS": 2,
     "CO": 9,
     "B2": 2,
-    "COT": 765
+    "COT": 766
   },
   "matchPorEmpresa": {
-    "Aminorte": 1231,
-    "V-MOCCS": 218
+    "Aminorte": 1236,
+    "V-MOCCS": 214
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 661,
-    "modificadosCount": 120,
-    "cerradosCount": 551,
+    "nuevosCount": 664,
+    "modificadosCount": 121,
+    "cerradosCount": 553,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -520,7 +520,7 @@
         "organismo": "I MUNICIPALIDAD DE TALCA",
         "monto": 6959000,
         "empresaMatch": "Aminorte",
-        "matchScore": 70,
+        "matchScore": 80,
         "fechaCierre": "2026-09-14T14:00"
       },
       {
@@ -688,9 +688,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2279-58-LE26",
-        "titulo": "SP 592 ADQUISICION DE MATERIALES DE OFICINA CORPORATIVOS",
-        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
+        "codigo": "1965-13-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
+        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 11000000,
@@ -698,9 +698,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1965-13-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
-        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+        "codigo": "2279-58-LE26",
+        "titulo": "SP 592 ADQUISICION DE MATERIALES DE OFICINA CORPORATIVOS",
+        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 11000000,
@@ -968,6 +968,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1079580-315-COT26",
+        "titulo": "REQUERIMIENTOS TÉCNICOS ADQUISICIÓN DE COMEDOR Y MUEBLES PARA UNIDADES DEPENDIENTES DE LA PREFECTURA ÑUBLE.",
+        "organismo": "SECCIÓN COMPRAS XVI ZONA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 2140950,
+        "montoNuevo": 2140950,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1411-1139-COT26",
         "titulo": "COLINA I COMPRA DE SILLAS",
         "organismo": "Dirección Regional de Gendarmeria - Metropolitana",
@@ -1186,41 +1196,15 @@
         "montoAnterior": 1170000,
         "montoNuevo": 1170000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1411-1137-COT26",
-        "titulo": " Adquisición de Discos de Estado Sólido (SSD) para el C.R.S. Santiago Occidente.",
-        "organismo": "Dirección Regional de Gendarmeria - Metropolitana",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1000032,
-        "montoNuevo": 1000032,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
       {
-        "codigo": "1348-5-LP26",
-        "titulo": "HABILITACIÓN OFICINA REGISTRO CIVIL PURRANQUE",
-        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
-        "estadoAnterior": "Publicada",
-        "monto": 103172524,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057461-57-LE26",
-        "titulo": "CONVENIO DE SUMINISTRO PARA LA ADQUISICIÓN DE UTILES DE ESCRITORIO Y PAPELERÍA PARA HOSPITAL CAUQUENES ",
-        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE CAUQUENES",
-        "estadoAnterior": "Publicada",
-        "monto": 20000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1947-155-LE26",
-        "titulo": "244 ADQUISICIÓN DE MARCADORES PARA TÉCNICA DE INMUNOHISTOQUÍMICA PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RIO CFO",
-        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
-        "estadoAnterior": "Cerrada",
-        "monto": 15000000,
+        "codigo": "548874-59-LE26",
+        "titulo": "SERVICIO DE MONITOREO Y REPORTE DE MEDIOS IPS",
+        "organismo": "INSTITUTO DE PREVISION SOCIAL",
+        "estadoAnterior": "Adjudicada",
+        "monto": 18000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1270,6 +1254,14 @@
         "estadoAnterior": "Publicada",
         "monto": 7162264,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3958-51-L126",
+        "titulo": "Adquisición de notebooks para Escuela María Williams",
+        "organismo": "I MUNICIPALIDAD DE NAVIDAD",
+        "estadoAnterior": "Adjudicada",
+        "monto": 7150000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "3603-478-COT26",
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Publicada",
         "monto": 4500000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "697057-116-COT26",
+        "titulo": "HABILITACIÓN DE OFICINAS EN LA FISCALÍA LOCAL DE SAN FERNANDO",
+        "organismo": "MINISTERIO PUBLICO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1503.4,
+  "tiempoEjecucionSegundos": 1523.4,
   "errores": [],
   "advertencias": []
 }
