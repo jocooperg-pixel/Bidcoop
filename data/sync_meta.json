@@ -1,13 +1,13 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-14T01:52:16.188573+00:00",
-  "ultimoIntentoRealizado": "2026-09-14T01:52:16.188573+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-14T07:15:02.426593+00:00",
+  "ultimoIntentoRealizado": "2026-09-14T07:15:02.426593+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1358,
   "registrosConfirmados": 1358,
   "registrosPendientesVerificacion": 0,
   "registrosConMontoReal": 1126,
-  "excluidosPrefiltroIrrelevante": 7248,
+  "excluidosPrefiltroIrrelevante": 7251,
   "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
@@ -21,9 +21,9 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 2
     },
-    "montoOriginalSum": 260299496,
+    "montoOriginalSum": 273208636,
     "montoFinalSum": 1205958540,
-    "montoRecuperadoSum": 945659044
+    "montoRecuperadoSum": 932749904
   },
   "categorias": {
     "licitaciones": 585,
@@ -493,7 +493,7 @@
         "organismo": "HOSPITAL PADRE ALBERTO HURTADO",
         "monto": 6909140,
         "empresaMatch": "Aminorte",
-        "matchScore": 60,
+        "matchScore": 70,
         "fechaCierre": "2026-09-13T22:00"
       },
       {
@@ -1240,6 +1240,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1431841-56-LP26",
+        "titulo": "Habilitación Sala de Monitoreo y Punto de Cámaras",
+        "organismo": "I MUNICIPALIDAD DE RECOLETA",
+        "estadoAnterior": "Publicada",
+        "monto": 98186892,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "752-27-LP26",
         "titulo": "Monitoreo Evaluación y Sistematización para el Fortalecimiento de la Gestión Municipal",
         "organismo": "GOBIERNO REGIONAL DECIMA REGION LOS LAGOS",
@@ -1421,14 +1429,6 @@
         "organismo": "FUND CENTRO CULTURAL PALACIO DE LA MONEDA",
         "estadoAnterior": "Cerrada",
         "monto": 10500000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2710-50-LE26",
-        "titulo": "EXÁMENES DE MONITOREO  DE PRESIÓN ARTERIAL",
-        "organismo": "MUNICIPALIDAD DE OVALLE",
-        "estadoAnterior": "Adjudicada",
-        "monto": 8330000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1575.9,
+  "tiempoEjecucionSegundos": 1551.7,
   "errores": [],
   "advertencias": []
 }
