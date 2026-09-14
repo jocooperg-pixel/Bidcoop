@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-13T21:50:28.263328+00:00",
-  "ultimoIntentoRealizado": "2026-09-13T21:50:28.263328+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-13T23:42:01.434876+00:00",
+  "ultimoIntentoRealizado": "2026-09-13T23:42:01.434876+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1435,
-  "registrosConfirmados": 1435,
+  "registrosEnPlataforma": 1451,
+  "registrosConfirmados": 1451,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1159,
+  "registrosConMontoReal": 1170,
   "excluidosPrefiltroIrrelevante": 8201,
-  "excluidosSinDatosReales": 20,
+  "excluidosSinDatosReales": 4,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 774,
-    "conMontoValido": 768,
+    "total": 775,
+    "conMontoValido": 769,
     "pctValidado": 99.2,
     "stats": {
-      "VALIDADO": 768,
+      "VALIDADO": 769,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 6
     },
-    "montoOriginalSum": 226820456,
-    "montoFinalSum": 1201158540,
-    "montoRecuperadoSum": 974338084
+    "montoOriginalSum": 273208636,
+    "montoFinalSum": 1205958540,
+    "montoRecuperadoSum": 932749904
   },
   "categorias": {
-    "licitaciones": 659,
-    "comprasAgiles": 774,
+    "licitaciones": 674,
+    "comprasAgiles": 775,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 374,
-    "LR": 38,
-    "LP": 136,
-    "L1": 104,
+    "LE": 382,
+    "LR": 39,
+    "LP": 137,
+    "L1": 109,
     "I2": 1,
     "O1": 2,
     "E2": 2,
     "LS": 2,
-    "CO": 8,
+    "CO": 9,
     "B2": 2,
     "COT": 766
   },
   "matchPorEmpresa": {
-    "Aminorte": 1223,
-    "V-MOCCS": 212
+    "Aminorte": 1237,
+    "V-MOCCS": 214
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 661,
+    "nuevosCount": 662,
     "modificadosCount": 121,
-    "cerradosCount": 565,
+    "cerradosCount": 550,
     "nuevos": [
       {
         "codigo": "2591-106-LR26",
@@ -252,6 +252,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-03T15:01:00"
+      },
+      {
+        "codigo": "1978-44-LE26",
+        "titulo": "ADQUISICIÓN DE SOLUCIÓN XDR PARA CIBERSEGURIDAD AVANZADA SERVICIO DE SALUD MAULE",
+        "organismo": "SERVICIO DE SALUD DEL MAULE",
+        "monto": 21500000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-09-07T15:30:00"
       },
       {
         "codigo": "854-26-LE26",
@@ -475,7 +484,7 @@
         "organismo": "FISCALIZACION Y CONTROL",
         "monto": 7000000,
         "empresaMatch": "Aminorte",
-        "matchScore": 60,
+        "matchScore": 90,
         "fechaCierre": "2026-09-17T10:00"
       },
       {
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-09-13T12:00"
-      },
-      {
-        "codigo": "867990-525-COT26",
-        "titulo": "Servicio de acondicionamiento de espacio con tabiques y puertas Sol. 93180 CC 102",
-        "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
-        "monto": 6592838,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-14T16:00"
       }
     ],
     "modificados": [
@@ -688,9 +688,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2279-58-LE26",
-        "titulo": "SP 592 ADQUISICION DE MATERIALES DE OFICINA CORPORATIVOS",
-        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
+        "codigo": "1965-13-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
+        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 11000000,
@@ -698,9 +698,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1965-13-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
-        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+        "codigo": "2279-58-LE26",
+        "titulo": "SP 592 ADQUISICION DE MATERIALES DE OFICINA CORPORATIVOS",
+        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 11000000,
@@ -1200,59 +1200,11 @@
     ],
     "cerrados": [
       {
-        "codigo": "2109-10-LP26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE FOTOCOPIADO IMPRESIÓN Y ESCANEO CON EQUIPOS EN COMODATO",
-        "organismo": "SERVICIO DE SALUD OCCIDENTE INSTITUTO TRAUMATOLOGICO DE SANTIAGO",
-        "estadoAnterior": "Publicada",
-        "monto": 140000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "752-27-LP26",
         "titulo": "Monitoreo Evaluación y Sistematización para el Fortalecimiento de la Gestión Municipal",
         "organismo": "GOBIERNO REGIONAL DECIMA REGION LOS LAGOS",
         "estadoAnterior": "Cerrada",
         "monto": 93600000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "948354-134-LE26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE MANTENIMIENTO PREVENTIVO Y CORRECTIVO PARA EQUIPOS KARDEX POR UN PERIODO DE 24 MESES PARA EL HOSPITAL DIPRECA",
-        "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
-        "estadoAnterior": "Publicada",
-        "monto": 77000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1723-40-LE26",
-        "titulo": "Arriendo impresoras fotocopiadoras scanner multi",
-        "organismo": "I MUNICIPALIDAD DE LOS LAGOS",
-        "estadoAnterior": "Publicada",
-        "monto": 26000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3729-74-LE26",
-        "titulo": "SUMINISTRO MATERIALES Y ARTÍCULOS DE OFICINA PARA EL DEPARTAMENTO DE SALUD",
-        "organismo": "I MUNICIPALIDAD DE CHIMBARONGO",
-        "estadoAnterior": "Cerrada",
-        "monto": 25200000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5613-2-LE26",
-        "titulo": "ARRIENDO DE IMPRESORAS MULTIFUNCIONALES - FCFCN",
-        "organismo": "UNIVERSIDAD DE CHILE",
-        "estadoAnterior": "Adjudicada",
-        "monto": 20000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2410-41-LE26",
-        "titulo": "Adquisición de máquinas de oficina ",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "estadoAnterior": "Publicada",
-        "monto": 11800000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1664,12 +1616,12 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4895-12-CO26",
-        "titulo": "Pendón Led y podio interactivo Led",
-        "organismo": "UNIVERSIDAD DE VALPARAISO",
+        "codigo": "1057536-123-L126",
+        "titulo": "ADQUISICION SILLAS ERGONOMICAS",
+        "organismo": "SERVICIO SALUD DEL RELONCAVI",
         "estadoAnterior": "Publicada",
-        "monto": 4800000,
-        "empresaMatch": "Aminorte"
+        "monto": 4855200,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "1079969-145-COT26",
@@ -1678,10 +1630,58 @@
         "estadoAnterior": "Publicada",
         "monto": 4780000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057432-373-COT26",
+        "titulo": "ADQUISICIÓN DE MATERIALES DEPORTIVOS PARA PROGRAMA REHABILITACIÓN PULMONAR PARA DEPTO. DE ATENCIÓN PRIMARIA DE SALUD-SERVICIO SALUD CONCEPCIÓN -2026",
+        "organismo": "SERVICIO DE SALUD CONCEPCION",
+        "estadoAnterior": "Publicada",
+        "monto": 4688600,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2854-735-COT26",
+        "titulo": "COTIZACION INSUMOS DE OFICINA CESFAM PTO VARAS",
+        "organismo": "I MUNICIPALIDAD DE PUERTO VARAS",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3694-356-COT26",
+        "titulo": "ADQUISICIÓN DE TOLDOS, MANTELES, SILLAS, MESAS PLEGABLES, PROGRAMA FOMENTO PRODUCTIVO, DIRECCIÓN DE TURISMO.",
+        "organismo": "I MUNICIPALIDAD DE EL QUISCO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2505-98-COT26",
+        "titulo": "COMPUTADORES AIO PARA DPTO. DE SALUD DE RIO CLARO",
+        "organismo": "I MUNICIPALIDAD DE RIO CLARO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "931-110-COT26",
+        "titulo": "IMPLEMENTACION DEPORTIVA GAF PROMESAS CHILE",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "697057-116-COT26",
+        "titulo": "HABILITACIÓN DE OFICINAS EN LA FISCALÍA LOCAL DE SAN FERNANDO",
+        "organismo": "MINISTERIO PUBLICO",
+        "estadoAnterior": "Publicada",
+        "monto": 4500000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1515.6,
+  "tiempoEjecucionSegundos": 1543.9,
   "errores": [],
   "advertencias": []
 }
