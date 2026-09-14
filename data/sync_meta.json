@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-14T07:15:02.426593+00:00",
-  "ultimoIntentoRealizado": "2026-09-14T07:15:02.426593+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-14T11:54:19.297810+00:00",
+  "ultimoIntentoRealizado": "2026-09-14T11:54:19.297810+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1358,
-  "registrosConfirmados": 1358,
+  "registrosEnPlataforma": 1382,
+  "registrosConfirmados": 1382,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1126,
-  "excluidosPrefiltroIrrelevante": 7251,
+  "registrosConMontoReal": 1148,
+  "excluidosPrefiltroIrrelevante": 7272,
   "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 771,
-    "conMontoValido": 769,
+    "total": 792,
+    "conMontoValido": 790,
     "pctValidado": 99.7,
     "stats": {
-      "VALIDADO": 769,
+      "VALIDADO": 790,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 2
     },
-    "montoOriginalSum": 273208636,
-    "montoFinalSum": 1205958540,
-    "montoRecuperadoSum": 932749904
+    "montoOriginalSum": 306284936,
+    "montoFinalSum": 1239896281,
+    "montoRecuperadoSum": 933611345
   },
   "categorias": {
-    "licitaciones": 585,
-    "comprasAgiles": 771,
+    "licitaciones": 588,
+    "comprasAgiles": 792,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 322,
-    "LR": 37,
-    "LP": 124,
+    "LE": 323,
+    "LR": 38,
+    "LP": 125,
     "L1": 95,
     "I2": 1,
     "O1": 2,
@@ -43,18 +43,27 @@
     "LS": 2,
     "CO": 5,
     "B2": 2,
-    "COT": 766
+    "COT": 787
   },
   "matchPorEmpresa": {
-    "Aminorte": 1156,
-    "V-MOCCS": 202
+    "Aminorte": 1176,
+    "V-MOCCS": 206
   },
   "cambios": {
     "comparadoContra": "2026-09-11T13:16:58.306984+00:00",
-    "nuevosCount": 653,
+    "nuevosCount": 676,
     "modificadosCount": 121,
-    "cerradosCount": 634,
+    "cerradosCount": 633,
     "nuevos": [
+      {
+        "codigo": "2627-11-LR26",
+        "titulo": "SERVICIO DE RECEPCION DE RSD PUTAENDO",
+        "organismo": "I MUNICIPALIDAD DE PUTAENDO",
+        "monto": 635000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-31T16:00:00"
+      },
       {
         "codigo": "2591-106-LR26",
         "titulo": "REPOSICION OFICINA SRCEI POZO ALMONTE",
@@ -434,6 +443,15 @@
         "fechaCierre": "2026-09-12T16:10"
       },
       {
+        "codigo": "2656-1010-COT26",
+        "titulo": "ADQUISICIÓN DE TONER ",
+        "organismo": "I MUNICIPALIDAD DE TOME",
+        "monto": 7000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-09-15T09:00"
+      },
+      {
         "codigo": "85-58-COT26",
         "titulo": "Servicio de Pintura",
         "organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
@@ -569,31 +587,13 @@
         "fechaCierre": "2026-09-14T16:00"
       },
       {
-        "codigo": "2663-328-COT26",
-        "titulo": "Servicio de producción de eventos (amplificación iluminación pantalla)",
-        "organismo": "ILUSTRE MUNICIPALIDAD DE NATALES",
-        "monto": 6545000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-12T20:00"
-      },
-      {
-        "codigo": "980-42-COT26",
-        "titulo": "COMPUTADORES PORTÁTILES TIPO WOKSTATION",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "monto": 6450000,
+        "codigo": "548872-10-COT26",
+        "titulo": "Adquisición materiales de oficina E1ORT8",
+        "organismo": "INSTITUTO DE PREVISION SOCIAL",
+        "monto": 6548332,
         "empresaMatch": "Aminorte",
         "matchScore": 70,
-        "fechaCierre": "2026-09-14T17:00"
-      },
-      {
-        "codigo": "542753-27-COT26",
-        "titulo": "Cambio de pisos oficina de fiscalización y atención de usuario Inspección Provincial del Trabajo Talagante, oficina dependiente de la Dirección Regional del Trabajo Metropolitana Poniente",
-        "organismo": "DIRECCION DEL TRABAJO",
-        "monto": 6376020,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-22T10:00"
+        "fechaCierre": "2026-09-16T10:00"
       }
     ],
     "modificados": [
@@ -1240,14 +1240,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1431841-56-LP26",
-        "titulo": "Habilitación Sala de Monitoreo y Punto de Cámaras",
-        "organismo": "I MUNICIPALIDAD DE RECOLETA",
-        "estadoAnterior": "Publicada",
-        "monto": 98186892,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "752-27-LP26",
         "titulo": "Monitoreo Evaluación y Sistematización para el Fortalecimiento de la Gestión Municipal",
         "organismo": "GOBIERNO REGIONAL DECIMA REGION LOS LAGOS",
@@ -1286,6 +1278,14 @@
         "estadoAnterior": "Cerrada",
         "monto": 44410000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1019-106-LE26",
+        "titulo": "REGLAS LIMNIMÉTRICAS Y FICHAS DE FIERRO",
+        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+        "estadoAnterior": "Publicada",
+        "monto": 40000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "5539-24-LE26",
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1551.7,
+  "tiempoEjecucionSegundos": 1096.0,
   "errores": [],
   "advertencias": []
 }
