@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-16T01:52:22.014061+00:00",
-  "ultimoIntentoRealizado": "2026-09-16T01:52:22.014061+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-16T06:53:57.002932+00:00",
+  "ultimoIntentoRealizado": "2026-09-16T06:53:57.002932+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1321,
-  "registrosConfirmados": 1321,
+  "registrosEnPlataforma": 1352,
+  "registrosConfirmados": 1352,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1067,
-  "excluidosPrefiltroIrrelevante": 7289,
-  "excluidosSinDatosReales": 2,
+  "registrosConMontoReal": 1099,
+  "excluidosPrefiltroIrrelevante": 7292,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 685,
-    "conMontoValido": 680,
+    "total": 717,
+    "conMontoValido": 712,
     "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 680,
+      "VALIDADO": 712,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
     "montoOriginalSum": 19818000,
-    "montoFinalSum": 1110877538,
-    "montoRecuperadoSum": 1091059538
+    "montoFinalSum": 1152627275,
+    "montoRecuperadoSum": 1132809275
   },
   "categorias": {
-    "licitaciones": 634,
-    "comprasAgiles": 685,
+    "licitaciones": 633,
+    "comprasAgiles": 717,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 352,
+    "LE": 350,
     "LR": 34,
-    "LP": 135,
+    "LP": 136,
     "I2": 1,
     "L1": 106,
     "O1": 2,
@@ -43,17 +43,17 @@
     "E2": 2,
     "LS": 2,
     "CO": 8,
-    "COT": 677
+    "COT": 709
   },
   "matchPorEmpresa": {
-    "Aminorte": 1112,
-    "V-MOCCS": 209
+    "Aminorte": 1140,
+    "V-MOCCS": 212
   },
   "cambios": {
     "comparadoContra": "2026-09-14T11:54:19.297810+00:00",
-    "nuevosCount": 824,
-    "modificadosCount": 80,
-    "cerradosCount": 885,
+    "nuevosCount": 857,
+    "modificadosCount": 78,
+    "cerradosCount": 887,
     "nuevos": [
       {
         "codigo": "2670-3-LR26",
@@ -848,9 +848,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "612-40-LE26",
-        "titulo": "Adquisición de impresoras",
-        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "codigo": "1485465-3-LE26",
+        "titulo": "Tintas y Tóner ",
+        "organismo": "I MUNICIPALIDAD DE O HIGGINS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 14000000,
@@ -858,9 +858,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1485465-3-LE26",
-        "titulo": "Tintas y Tóner ",
-        "organismo": "I MUNICIPALIDAD DE O HIGGINS",
+        "codigo": "612-40-LE26",
+        "titulo": "Adquisición de impresoras",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 14000000,
@@ -908,6 +908,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "450-15-LE26",
+        "titulo": "ADQUISICION E INSTALACION DE SISTEMA DE CAMARAS DE TELEVIGILANCIA PROYECTO RIO NEGRO MAS SEGURO 2025",
+        "organismo": "I MUNICIPALIDAD DE RIO NEGRO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 9700000,
+        "montoNuevo": 9700000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2974-70-LE26",
         "titulo": "ADQUISICIÓN DE MOTORES Y MÓDULOS DE RECEPCIÓN DE FRECUENCIA PARA APERTURA Y CIERRE DE PORTONES DE CORREDERA",
         "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
@@ -915,6 +925,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 9000000,
         "montoNuevo": 9000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3630-9-LE26",
+        "titulo": "Suministro Fotocopiadoras DESAM",
+        "organismo": "I MUNICIPALIDAD DE MAFIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 8000000,
+        "montoNuevo": 8000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -926,16 +946,6 @@
         "montoAnterior": 8000000,
         "montoNuevo": 8000000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "3630-9-LE26",
-        "titulo": "Suministro Fotocopiadoras DESAM",
-        "organismo": "I MUNICIPALIDAD DE MAFIL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 8000000,
-        "montoNuevo": 8000000,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2292-57-L126",
@@ -995,16 +1005,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 5000000,
         "montoNuevo": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4888-19-LE26",
-        "titulo": "Edic diseño diagram. e impresion de catalogo PCC",
-        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 4956525,
-        "montoNuevo": 4956525,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1148,16 +1148,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "619133-109-LE26",
-        "titulo": "ARRIENDO CON COMPROMISO DE COMPRA DE LA ADQUISICIÓN DE “1 EQUIPO SERVIDOR” PARA LA UNIDAD DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN DEL HOSPITAL SAN CAMILO DE SAN FELIPE",
-        "organismo": "SERVICIO SALUD SAN FELIPE LOS ANDES HOSP",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2563-38-LP26",
         "titulo": "SUMINISTRO DE COMBUSTIBLE JET A-1 Y AVGAS100LL",
         "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
@@ -1178,6 +1168,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "619133-109-LE26",
+        "titulo": "ARRIENDO CON COMPROMISO DE COMPRA DE LA ADQUISICIÓN DE “1 EQUIPO SERVIDOR” PARA LA UNIDAD DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN DEL HOSPITAL SAN CAMILO DE SAN FELIPE",
+        "organismo": "SERVICIO SALUD SAN FELIPE LOS ANDES HOSP",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2448-125-LE26",
         "titulo": "MONITOR DESFIBRILADOR BIFASICO PROFESIONAL",
         "organismo": "I MUNICIPALIDAD DE COQUIMBO",
@@ -1188,9 +1188,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057548-21-LE26",
-        "titulo": "Convenio Suministro de Servicio de Fotocopiado Impresion y Digitalizacion con Entrega de Equipos",
-        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL LA U",
+        "codigo": "1057384-138-L126",
+        "titulo": "Compra de Tinta Riso para duplicadora",
+        "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL M",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 3498.8,
+  "tiempoEjecucionSegundos": 2895.9,
   "errores": [],
   "advertencias": []
 }
