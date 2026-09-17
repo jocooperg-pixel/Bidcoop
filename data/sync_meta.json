@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-17T08:56:57.696249+00:00",
-  "ultimoIntentoRealizado": "2026-09-17T08:56:57.696249+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-17T14:29:34.250546+00:00",
+  "ultimoIntentoRealizado": "2026-09-17T14:29:34.250546+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1387,
-  "registrosConfirmados": 1387,
+  "registrosEnPlataforma": 1417,
+  "registrosConfirmados": 1417,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1144,
-  "excluidosPrefiltroIrrelevante": 7246,
-  "excluidosSinDatosReales": 2,
+  "registrosConMontoReal": 1167,
+  "excluidosPrefiltroIrrelevante": 7462,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 760,
-    "conMontoValido": 756,
+    "total": 775,
+    "conMontoValido": 771,
     "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 756,
+      "VALIDADO": 771,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 74244285,
-    "montoFinalSum": 1235721711,
+    "montoOriginalSum": 100977618,
+    "montoFinalSum": 1262455044,
     "montoRecuperadoSum": 1161477426
   },
   "categorias": {
-    "licitaciones": 625,
-    "comprasAgiles": 760,
+    "licitaciones": 640,
+    "comprasAgiles": 775,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 349,
-    "LR": 34,
-    "LP": 135,
-    "L1": 100,
+    "LE": 358,
+    "LR": 35,
+    "LP": 138,
+    "L1": 102,
     "O1": 2,
     "B2": 2,
     "E2": 2,
     "LS": 2,
-    "CO": 8,
+    "CO": 7,
     "I2": 1,
-    "COT": 752
+    "COT": 768
   },
   "matchPorEmpresa": {
-    "Aminorte": 1171,
-    "V-MOCCS": 216
+    "Aminorte": 1200,
+    "V-MOCCS": 217
   },
   "cambios": {
     "comparadoContra": "2026-09-14T11:54:19.297810+00:00",
-    "nuevosCount": 942,
-    "modificadosCount": 113,
-    "cerradosCount": 937,
+    "nuevosCount": 971,
+    "modificadosCount": 118,
+    "cerradosCount": 936,
     "nuevos": [
       {
         "codigo": "2670-3-LR26",
@@ -72,6 +72,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-16T16:00:00"
+      },
+      {
+        "codigo": "2126-109-LR26",
+        "titulo": "SERVICIO DE MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE LOS SISTEMAS DE CLIMATIZACIÓN DEL HOSPITAL SAN PABLO DE COQUIMBO",
+        "organismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL DE COQUIMBO",
+        "monto": 518679945,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-26T16:00:00"
       },
       {
         "codigo": "1499-181-LR26",
@@ -198,6 +207,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-13T15:01:00"
+      },
+      {
+        "codigo": "2597-26-LP26",
+        "titulo": "Conservación Plazoleta y Multicancha Población ExRPC Comuna de Concón",
+        "organismo": "I MUNICIPALIDAD DE CONCON",
+        "monto": 102878752,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-14T13:00:00"
       },
       {
         "codigo": "1592-9-LP26",
@@ -371,6 +389,15 @@
         "fechaCierre": "2026-09-24T15:30:00"
       },
       {
+        "codigo": "2460-130-LE26",
+        "titulo": "PROVISIÓN Y APLICACIÓN DE PINTURAS PARA LOS CENTROS INTEGRALES DE ADULTO MAYOR DE PROVIDENCIA",
+        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "monto": 32430000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-02T12:00:00"
+      },
+      {
         "codigo": "2378-81-LE26",
         "titulo": "EQUIPAMIENTO Y MOBILIARIO PARA PARQUES CANINOS",
         "organismo": "I MUNICIPALIDAD DE LA FLORIDA",
@@ -524,6 +551,15 @@
         "fechaCierre": "2026-08-24T15:30:00"
       },
       {
+        "codigo": "1607-14-LE26",
+        "titulo": "aseo y gestor de usuarios oficina de Chillán",
+        "organismo": "SUPERINTENDENCIA DE SEGURIDAD SOCIAL",
+        "monto": 20400000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-01T15:30:00"
+      },
+      {
         "codigo": "4737-8-LE26",
         "titulo": "“Adquisición de Artículos e Implementación Deportiva para los Establecimientos Educacionales de la Comuna de Codegua”",
         "organismo": "I MUNICIPALIDAD DE CODEGUA",
@@ -558,42 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-29T15:00:00"
-      },
-      {
-        "codigo": "591-28-LE26",
-        "titulo": "“ENCUESTA TELEFÓNICA SOBRE ELSISTEMA DE SALUD.",
-        "organismo": "FONDO NACIONAL DE SALUD",
-        "monto": 17000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-05T15:00:00"
-      },
-      {
-        "codigo": "3954-13-LE26",
-        "titulo": "Mobiliario a medida Biblioteca de Peralillo",
-        "organismo": "I MUNICIPALIDAD DE PERALILLO",
-        "monto": 15548540,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 70,
-        "fechaCierre": "2026-09-24T17:30:00"
-      },
-      {
-        "codigo": "4306-34-LE26",
-        "titulo": "ARRIENDO DE INMUEBLE PARA GABINETE PSICOTECNICO",
-        "organismo": "I MUNICIPALIDAD DE ERCILLA",
-        "monto": 14400000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-24T15:00:00"
-      },
-      {
-        "codigo": "1057062-8-LE26",
-        "titulo": "Equipamiento medición y monitoreo - URY 21991",
-        "organismo": "UNIVERSIDAD DE AYSEN",
-        "monto": 14305796,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-23T15:35:00"
       }
     ],
     "modificados": [
@@ -928,6 +928,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1552-79-LE26",
+        "titulo": "CONSTRUCCIÓN CES HUASCO BAJO - MOBILIARIO CLINICO",
+        "organismo": "SERVICIO DE SALUD ATACAMA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 14500000,
+        "montoNuevo": 14500000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "3415-24-LE26",
         "titulo": "MOBILIARIO ARMADO E INSTALADO PARA ESCSERV",
         "organismo": "DIVISION LOGISTICA DEL EJERCITO",
@@ -1186,16 +1196,6 @@
         "montoAnterior": 4000000,
         "montoNuevo": 4000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3890-192-L126",
-        "titulo": "ADQ. TINTAS Y TONER UNIDADES MUNICIPALES",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 4000000,
-        "montoNuevo": 4000000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1432,6 +1432,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1271359-118-LE26",
+        "titulo": "ADQ E INST PANTALLAS INTERACTIVAS Y PIZARRAS DESL",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE LAMPA",
+        "estadoAnterior": "Publicada",
+        "monto": 35000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "707420-20-LE26",
         "titulo": "SERVICIOS DE MANTENCIÓN DE ÁREAS VERDES PARA JARDINES INFANTILES SALAS CUNA Y OFICINAS TERRITORIALES DE FUNDACIÓN INTEGRA REGIÓN DEL MAULE.",
         "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
@@ -1664,14 +1672,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "742475-4-LE26",
-        "titulo": "Adquisición de equipos informáticos para el programa Oficina Local de la Niñez",
-        "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
-        "estadoAnterior": "Cerrada",
-        "monto": 7167631,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2380-1997-COT26",
         "titulo": "SERVICIO DE ARRIENDO DE CARPA CEREMONIAL, SILLA Y AMPLIFICACION PARA CEREMONIA DE PARADA MILITAR 2026, PRO CONVENIO CON EL EJERCITO DE CHILE, ALCALDIA, SEGUN OS 154612 (A.T.A)",
         "organismo": "I MUNICIPALIDAD DE COPIAPO",
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2832.5,
+  "tiempoEjecucionSegundos": 964.9,
   "errores": [],
   "advertencias": []
 }
