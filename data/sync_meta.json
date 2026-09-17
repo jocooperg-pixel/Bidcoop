@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-17T19:20:31.591804+00:00",
-  "ultimoIntentoRealizado": "2026-09-17T19:20:31.591804+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-17T22:28:58.401705+00:00",
+  "ultimoIntentoRealizado": "2026-09-17T22:28:58.401705+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1327,
-  "registrosConfirmados": 1327,
+  "registrosEnPlataforma": 1396,
+  "registrosConfirmados": 1396,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1077,
-  "excluidosPrefiltroIrrelevante": 7598,
-  "excluidosSinDatosReales": 12,
+  "registrosConMontoReal": 1141,
+  "excluidosPrefiltroIrrelevante": 7608,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 679,
-    "conMontoValido": 674,
+    "total": 738,
+    "conMontoValido": 733,
     "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 674,
+      "VALIDADO": 733,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
     "montoOriginalSum": 100995618,
-    "montoFinalSum": 1096381324,
-    "montoRecuperadoSum": 995385706
+    "montoFinalSum": 1218949790,
+    "montoRecuperadoSum": 1117954172
   },
   "categorias": {
-    "licitaciones": 646,
-    "comprasAgiles": 679,
+    "licitaciones": 656,
+    "comprasAgiles": 738,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 365,
+    "LE": 370,
     "LR": 35,
-    "LP": 137,
+    "LP": 142,
     "L1": 102,
     "CO": 9,
     "O1": 2,
@@ -43,17 +43,17 @@
     "E2": 2,
     "LS": 2,
     "I2": 1,
-    "COT": 670
+    "COT": 729
   },
   "matchPorEmpresa": {
-    "Aminorte": 1123,
-    "V-MOCCS": 204
+    "Aminorte": 1181,
+    "V-MOCCS": 215
   },
   "cambios": {
     "comparadoContra": "2026-09-14T11:54:19.297810+00:00",
-    "nuevosCount": 884,
-    "modificadosCount": 122,
-    "cerradosCount": 939,
+    "nuevosCount": 949,
+    "modificadosCount": 124,
+    "cerradosCount": 935,
     "nuevos": [
       {
         "codigo": "2670-3-LR26",
@@ -108,6 +108,15 @@
         "empresaMatch": "V-MOCCS",
         "matchScore": 60,
         "fechaCierre": "2026-10-07T12:00:00"
+      },
+      {
+        "codigo": "1126922-36-LP26",
+        "titulo": "CONTRATO SUMINISTRO MAT PEDAGOGICOS Y OFICINA",
+        "organismo": "SERVICIO LOCAL DE EDUCACION PUBLICA DE LLANQUIHUE",
+        "monto": 320000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-28T15:01:00"
       },
       {
         "codigo": "2430-38-LP26",
@@ -261,6 +270,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-06T12:00:00"
+      },
+      {
+        "codigo": "1562-65-LP26",
+        "titulo": "ARRIENDO DE 7 COMPUTADORES DE ALTO RENDIMIENTO",
+        "organismo": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA",
+        "monto": 75040000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-08T15:01:00"
       },
       {
         "codigo": "1596-50-LP26",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-29T13:19:00"
-      },
-      {
-        "codigo": "609-25-LE26",
-        "titulo": "ACTUALIZACIÓN DEL SGSI DE INDAP- CIBERSEGURIDAD",
-        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-02T15:30:00"
-      },
-      {
-        "codigo": "1067455-11-LE26",
-        "titulo": "Consultoría para Levantamiento y Análisis de Evidencia sobre la Explotación Sexual de Niños Niñas y Adolescentes",
-        "organismo": "SUBSECRETARIA DE LA NIÑEZ",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-10T15:30:00"
       }
     ],
     "modificados": [
@@ -758,6 +758,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1375757-28-LE26",
+        "titulo": "ADQUISICIÓN DE IMPRESORAS Y PROYECTORES",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA PUELCHE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 46200000,
+        "montoNuevo": 46200000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3268-24-LE26",
         "titulo": "003 002 000 ADQ. DE MOBILIARIO Y ELECTRODOMÉSTICOS",
         "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
@@ -868,9 +878,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1147293-22-LE26",
-        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
-        "organismo": "Fundación para la Innovación Agraria",
+        "codigo": "3326-45-LE26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
@@ -878,9 +888,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3326-45-LE26",
-        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "codigo": "1147293-22-LE26",
+        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
+        "organismo": "Fundación para la Innovación Agraria",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
@@ -1038,16 +1048,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4123-6-LE26",
-        "titulo": "SEGUROS BIENES MUEBLES INMUEBLE VEHÍCULOS DEPTO",
-        "organismo": "I MUNICIPALIDAD DE NINHUE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 8000000,
-        "montoNuevo": 8000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "3630-9-LE26",
         "titulo": "Suministro Fotocopiadoras DESAM",
         "organismo": "I MUNICIPALIDAD DE MAFIL",
@@ -1056,6 +1056,16 @@
         "montoAnterior": 8000000,
         "montoNuevo": 8000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4123-6-LE26",
+        "titulo": "SEGUROS BIENES MUEBLES INMUEBLE VEHÍCULOS DEPTO",
+        "organismo": "I MUNICIPALIDAD DE NINHUE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 8000000,
+        "montoNuevo": 8000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "2292-57-L126",
@@ -1085,16 +1095,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 7000000,
         "montoNuevo": 7000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "921831-21-L126",
-        "titulo": "Suministro e instalación de una mampara para el EAM",
-        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 6800000,
-        "montoNuevo": 6800000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1178,21 +1178,21 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3890-192-L126",
-        "titulo": "ADQ. TINTAS Y TONER UNIDADES MUNICIPALES",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 4000000,
-        "montoNuevo": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1197-20-L126",
         "titulo": "MANTENCIONES Y REPARACIONES MENORES OFICINA DR DE ATACAMA",
         "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
         "estadoAnterior": "Cerrada",
         "estadoNuevo": "Revocada",
+        "montoAnterior": 4000000,
+        "montoNuevo": 4000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3890-192-L126",
+        "titulo": "ADQ. TINTAS Y TONER UNIDADES MUNICIPALES",
+        "organismo": "I MUNICIPALIDAD DE FREIRE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 4000000,
         "montoNuevo": 4000000,
         "empresaMatch": "Aminorte"
@@ -1269,14 +1269,6 @@
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
         "estadoAnterior": "Cerrada",
         "monto": 180000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1574-33-LP26",
-        "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 1",
-        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
-        "estadoAnterior": "Publicada",
-        "monto": 150000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1405,14 +1397,6 @@
         "organismo": "I MUNICIPALIDAD DE CONCEPCION",
         "estadoAnterior": "Adjudicada",
         "monto": 53900000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1375757-28-LE26",
-        "titulo": "ADQUISICIÓN DE IMPRESORAS Y PROYECTORES",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA PUELCHE",
-        "estadoAnterior": "Publicada",
-        "monto": 46200000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1662,26 @@
         "estadoAnterior": "Cerrada",
         "monto": 7170000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2380-1997-COT26",
+        "titulo": "SERVICIO DE ARRIENDO DE CARPA CEREMONIAL, SILLA Y AMPLIFICACION PARA CEREMONIA DE PARADA MILITAR 2026, PRO CONVENIO CON EL EJERCITO DE CHILE, ALCALDIA, SEGUN OS 154612 (A.T.A)",
+        "organismo": "I MUNICIPALIDAD DE COPIAPO",
+        "estadoAnterior": "Cerrada",
+        "monto": 7164900,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2859-972-COT26",
+        "titulo": "Adquisición materiales e insumo de oficina",
+        "organismo": "UNIVERSIDAD DE ATACAMA",
+        "estadoAnterior": "Publicada",
+        "monto": 7163705,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 4064.2,
+  "tiempoEjecucionSegundos": 2599.4,
   "errores": [],
   "advertencias": []
 }
