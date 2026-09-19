@@ -1,39 +1,39 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-19T19:39:02.425496+00:00",
-  "ultimoIntentoRealizado": "2026-09-19T19:39:02.425496+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-19T21:49:25.733102+00:00",
+  "ultimoIntentoRealizado": "2026-09-19T21:49:25.733102+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1342,
-  "registrosConfirmados": 1342,
+  "registrosEnPlataforma": 1344,
+  "registrosConfirmados": 1344,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1113,
+  "registrosConMontoReal": 1114,
   "excluidosPrefiltroIrrelevante": 6894,
-  "excluidosSinDatosReales": 1,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 748,
-    "conMontoValido": 743,
+    "total": 749,
+    "conMontoValido": 744,
     "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 743,
+      "VALIDADO": 744,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 543858771,
-    "montoFinalSum": 1207034500,
-    "montoRecuperadoSum": 663175729
+    "montoOriginalSum": 754942306,
+    "montoFinalSum": 1210234500,
+    "montoRecuperadoSum": 455292194
   },
   "categorias": {
-    "licitaciones": 592,
-    "comprasAgiles": 748,
+    "licitaciones": 593,
+    "comprasAgiles": 749,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 328,
+    "LE": 329,
     "LR": 35,
     "LP": 134,
     "L1": 89,
@@ -43,17 +43,17 @@
     "E2": 1,
     "LS": 2,
     "I2": 1,
-    "COT": 741
+    "COT": 742
   },
   "matchPorEmpresa": {
-    "Aminorte": 1142,
-    "V-MOCCS": 200
+    "Aminorte": 1147,
+    "V-MOCCS": 197
   },
   "cambios": {
     "comparadoContra": "2026-09-14T11:54:19.297810+00:00",
-    "nuevosCount": 962,
-    "modificadosCount": 133,
-    "cerradosCount": 1002,
+    "nuevosCount": 963,
+    "modificadosCount": 134,
+    "cerradosCount": 1001,
     "nuevos": [
       {
         "codigo": "2670-3-LR26",
@@ -888,21 +888,21 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "434-104-LE26",
-        "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
-        "organismo": "I MUNICIPALIDAD DE CAUQUENES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 20000000,
-        "montoNuevo": 20000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3135-42-LE26",
         "titulo": "CONV. SUMINISTRO Y MANT. DEAIRE ACONDICIONADO",
         "organismo": "I MUNICIPALIDAD DE MARIA ELENA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 20000000,
+        "montoNuevo": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "434-104-LE26",
+        "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
+        "organismo": "I MUNICIPALIDAD DE CAUQUENES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 20000000,
         "montoNuevo": 20000000,
         "empresaMatch": "Aminorte"
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1506.6,
+  "tiempoEjecucionSegundos": 1516.0,
   "errores": [],
   "advertencias": []
 }
