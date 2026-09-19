@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-18T20:02:55.305655+00:00",
-  "ultimoIntentoRealizado": "2026-09-18T20:02:55.305655+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-18T23:40:59.705160+00:00",
+  "ultimoIntentoRealizado": "2026-09-18T23:40:59.705160+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1336,
-  "registrosConfirmados": 1336,
+  "registrosEnPlataforma": 1341,
+  "registrosConfirmados": 1341,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1107,
+  "registrosConMontoReal": 1111,
   "excluidosPrefiltroIrrelevante": 6898,
-  "excluidosSinDatosReales": 6,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 745,
@@ -21,19 +21,19 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 52901647,
+    "montoOriginalSum": 278198078,
     "montoFinalSum": 1200907010,
-    "montoRecuperadoSum": 1148005363
+    "montoRecuperadoSum": 922708932
   },
   "categorias": {
-    "licitaciones": 589,
+    "licitaciones": 594,
     "comprasAgiles": 745,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 325,
+    "LE": 330,
     "LR": 35,
     "LP": 133,
     "L1": 90,
@@ -46,14 +46,14 @@
     "COT": 738
   },
   "matchPorEmpresa": {
-    "Aminorte": 1128,
-    "V-MOCCS": 208
+    "Aminorte": 1136,
+    "V-MOCCS": 205
   },
   "cambios": {
     "comparadoContra": "2026-09-14T11:54:19.297810+00:00",
-    "nuevosCount": 955,
+    "nuevosCount": 959,
     "modificadosCount": 134,
-    "cerradosCount": 1001,
+    "cerradosCount": 1000,
     "nuevos": [
       {
         "codigo": "2670-3-LR26",
@@ -488,6 +488,15 @@
         "fechaCierre": "2026-09-24T16:00:00"
       },
       {
+        "codigo": "1350-7-LE26",
+        "titulo": "SERVICIO MANTENCIÓN DE ÁREAS VERDES PARA OFICINAS",
+        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
+        "monto": 28000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-31T20:00:00"
+      },
+      {
         "codigo": "1348-6-LE26",
         "titulo": "SERVICIO DE ASEO OFICINA REGISTRO CIVIL DE RAHUE",
         "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-29T13:19:00"
-      },
-      {
-        "codigo": "609-25-LE26",
-        "titulo": "ACTUALIZACIÓN DEL SGSI DE INDAP- CIBERSEGURIDAD",
-        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-02T15:30:00"
       }
     ],
     "modificados": [
@@ -888,21 +888,21 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "434-104-LE26",
-        "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
-        "organismo": "I MUNICIPALIDAD DE CAUQUENES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 20000000,
-        "montoNuevo": 20000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3135-42-LE26",
         "titulo": "CONV. SUMINISTRO Y MANT. DEAIRE ACONDICIONADO",
         "organismo": "I MUNICIPALIDAD DE MARIA ELENA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 20000000,
+        "montoNuevo": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "434-104-LE26",
+        "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
+        "organismo": "I MUNICIPALIDAD DE CAUQUENES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 20000000,
         "montoNuevo": 20000000,
         "empresaMatch": "Aminorte"
@@ -918,9 +918,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3326-45-LE26",
-        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "codigo": "1147293-22-LE26",
+        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
+        "organismo": "Fundación para la Innovación Agraria",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
@@ -928,9 +928,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1147293-22-LE26",
-        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
-        "organismo": "Fundación para la Innovación Agraria",
+        "codigo": "3326-45-LE26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
@@ -988,9 +988,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1485465-3-LE26",
-        "titulo": "Tintas y Tóner ",
-        "organismo": "I MUNICIPALIDAD DE O HIGGINS",
+        "codigo": "612-40-LE26",
+        "titulo": "Adquisición de impresoras",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 14000000,
@@ -998,9 +998,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "612-40-LE26",
-        "titulo": "Adquisición de impresoras",
-        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "codigo": "1485465-3-LE26",
+        "titulo": "Tintas y Tóner ",
+        "organismo": "I MUNICIPALIDAD DE O HIGGINS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 14000000,
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1690.4,
+  "tiempoEjecucionSegundos": 1515.1,
   "errores": [],
   "advertencias": []
 }
