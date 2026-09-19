@@ -1,12 +1,12 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-19T16:50:38.019537+00:00",
-  "ultimoIntentoRealizado": "2026-09-19T16:50:38.019537+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-19T19:39:02.425496+00:00",
+  "ultimoIntentoRealizado": "2026-09-19T19:39:02.425496+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1342,
   "registrosConfirmados": 1342,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1112,
+  "registrosConMontoReal": 1113,
   "excluidosPrefiltroIrrelevante": 6894,
   "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
@@ -21,9 +21,9 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 416059651,
+    "montoOriginalSum": 543858771,
     "montoFinalSum": 1207034500,
-    "montoRecuperadoSum": 790974849
+    "montoRecuperadoSum": 663175729
   },
   "categorias": {
     "licitaciones": 592,
@@ -33,10 +33,10 @@
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 329,
+    "LE": 328,
     "LR": 35,
     "LP": 134,
-    "L1": 88,
+    "L1": 89,
     "CO": 7,
     "O1": 2,
     "B2": 2,
@@ -888,21 +888,21 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "3135-42-LE26",
-        "titulo": "CONV. SUMINISTRO Y MANT. DEAIRE ACONDICIONADO",
-        "organismo": "I MUNICIPALIDAD DE MARIA ELENA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 20000000,
-        "montoNuevo": 20000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "434-104-LE26",
         "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
         "organismo": "I MUNICIPALIDAD DE CAUQUENES",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
+        "montoAnterior": 20000000,
+        "montoNuevo": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3135-42-LE26",
+        "titulo": "CONV. SUMINISTRO Y MANT. DEAIRE ACONDICIONADO",
+        "organismo": "I MUNICIPALIDAD DE MARIA ELENA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
         "montoNuevo": 20000000,
         "empresaMatch": "Aminorte"
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1511.5,
+  "tiempoEjecucionSegundos": 1506.6,
   "errores": [],
   "advertencias": []
 }
