@@ -1,13 +1,13 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-20T19:52:06.512674+00:00",
-  "ultimoIntentoRealizado": "2026-09-20T19:52:06.512674+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-20T21:57:13.889313+00:00",
+  "ultimoIntentoRealizado": "2026-09-20T21:57:13.889313+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1342,
   "registrosConfirmados": 1342,
   "registrosPendientesVerificacion": 0,
   "registrosConMontoReal": 1112,
-  "excluidosPrefiltroIrrelevante": 6894,
+  "excluidosPrefiltroIrrelevante": 6895,
   "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
@@ -21,9 +21,9 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 1145433919,
+    "montoOriginalSum": 1134137842,
     "montoFinalSum": 1208115531,
-    "montoRecuperadoSum": 62681612
+    "montoRecuperadoSum": 73977689
   },
   "categorias": {
     "licitaciones": 593,
@@ -46,8 +46,8 @@
     "COT": 740
   },
   "matchPorEmpresa": {
-    "Aminorte": 1147,
-    "V-MOCCS": 195
+    "Aminorte": 1148,
+    "V-MOCCS": 194
   },
   "cambios": {
     "comparadoContra": "2026-09-14T11:54:19.297810+00:00",
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1581.8,
+  "tiempoEjecucionSegundos": 1552.5,
   "errores": [],
   "advertencias": []
 }
