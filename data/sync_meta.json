@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-19T23:41:29.260252+00:00",
-  "ultimoIntentoRealizado": "2026-09-19T23:41:29.260252+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-20T01:50:58.218580+00:00",
+  "ultimoIntentoRealizado": "2026-09-20T01:50:58.218580+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1342,
-  "registrosConfirmados": 1342,
+  "registrosEnPlataforma": 1335,
+  "registrosConfirmados": 1335,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1112,
+  "registrosConMontoReal": 1111,
   "excluidosPrefiltroIrrelevante": 6894,
-  "excluidosSinDatosReales": 0,
+  "excluidosSinDatosReales": 9,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 747,
-    "conMontoValido": 742,
+    "total": 749,
+    "conMontoValido": 744,
     "pctValidado": 99.3,
     "stats": {
-      "VALIDADO": 742,
+      "VALIDADO": 744,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 1052296385,
-    "montoFinalSum": 1207834500,
+    "montoOriginalSum": 1053116385,
+    "montoFinalSum": 1208654500,
     "montoRecuperadoSum": 155538115
   },
   "categorias": {
-    "licitaciones": 593,
-    "comprasAgiles": 747,
+    "licitaciones": 584,
+    "comprasAgiles": 749,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 329,
+    "LE": 323,
     "LR": 35,
-    "LP": 134,
-    "L1": 89,
+    "LP": 132,
+    "L1": 88,
     "CO": 7,
     "O1": 2,
     "B2": 2,
     "E2": 1,
     "LS": 2,
     "I2": 1,
-    "COT": 740
+    "COT": 742
   },
   "matchPorEmpresa": {
-    "Aminorte": 1148,
-    "V-MOCCS": 194
+    "Aminorte": 1143,
+    "V-MOCCS": 192
   },
   "cambios": {
     "comparadoContra": "2026-09-14T11:54:19.297810+00:00",
-    "nuevosCount": 961,
+    "nuevosCount": 959,
     "modificadosCount": 134,
-    "cerradosCount": 1001,
+    "cerradosCount": 1006,
     "nuevos": [
       {
         "codigo": "2670-3-LR26",
@@ -126,15 +126,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-06-09T15:00:00"
-      },
-      {
-        "codigo": "593951-32-LP26",
-        "titulo": "ADQUISICIÓN DE EQUIPAMIENTO Y MOBILIARIO PARA JARDINES INFANTILES SALAS CUNA Y MODALIDAD NO CONVENCIONAL DE ATENCIÓN 2026 DE FUNDACIÓN INTEGRA.",
-        "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
-        "monto": 288331500,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-06T15:01:00"
       },
       {
         "codigo": "1422256-1-LP26",
@@ -324,15 +315,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-12T15:00:00"
-      },
-      {
-        "codigo": "1540-98-LE26",
-        "titulo": "REPUESTOS PARA MANTENIMIENTO MOBILIARIO CLINICO",
-        "organismo": "SERVICIO DE SALUD MAGALLANES HOSPITAL DE PTO NATALES",
-        "monto": 59500000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-28T15:00:00"
       },
       {
         "codigo": "2157-141-LE26",
@@ -594,6 +576,24 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-29T13:19:00"
+      },
+      {
+        "codigo": "609-25-LE26",
+        "titulo": "ACTUALIZACIÓN DEL SGSI DE INDAP- CIBERSEGURIDAD",
+        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
+        "monto": 22000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-02T15:30:00"
+      },
+      {
+        "codigo": "1067455-11-LE26",
+        "titulo": "Consultoría para Levantamiento y Análisis de Evidencia sobre la Explotación Sexual de Niños Niñas y Adolescentes",
+        "organismo": "SUBSECRETARIA DE LA NIÑEZ",
+        "monto": 22000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-10T15:30:00"
       }
     ],
     "modificados": [
@@ -918,9 +918,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1147293-22-LE26",
-        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
-        "organismo": "Fundación para la Innovación Agraria",
+        "codigo": "3326-45-LE26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
@@ -928,9 +928,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3326-45-LE26",
-        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "codigo": "1147293-22-LE26",
+        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
+        "organismo": "Fundación para la Innovación Agraria",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
@@ -1088,16 +1088,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3630-9-LE26",
-        "titulo": "Suministro Fotocopiadoras DESAM",
-        "organismo": "I MUNICIPALIDAD DE MAFIL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 8000000,
-        "montoNuevo": 8000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "4123-6-LE26",
         "titulo": "SEGUROS BIENES MUEBLES INMUEBLE VEHÍCULOS DEPTO",
         "organismo": "I MUNICIPALIDAD DE NINHUE",
@@ -1106,6 +1096,16 @@
         "montoAnterior": 8000000,
         "montoNuevo": 8000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3630-9-LE26",
+        "titulo": "Suministro Fotocopiadoras DESAM",
+        "organismo": "I MUNICIPALIDAD DE MAFIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 8000000,
+        "montoNuevo": 8000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "742475-4-LE26",
@@ -1456,6 +1456,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "5865-11-LE26",
+        "titulo": "COMPUTADORES DE ALTO RENDIMIENTO - JAYMA UTA",
+        "organismo": "UNIVERSIDAD DE TARAPACA",
+        "estadoAnterior": "Publicada",
+        "monto": 47000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "4610-70-LE26",
         "titulo": "ADQUISICION DE SITEMA INTEGRAL DE PANTALLA Y AUDIO",
         "organismo": "I MUNICIPALIDAD DE CHILE CHICO",
@@ -1670,18 +1678,10 @@
         "estadoAnterior": "Adjudicada",
         "monto": 15000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1947-155-LE26",
-        "titulo": "244 ADQUISICIÓN DE MARCADORES PARA TÉCNICA DE INMUNOHISTOQUÍMICA PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RIO CFO",
-        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
-        "estadoAnterior": "Cerrada",
-        "monto": 15000000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1531.8,
+  "tiempoEjecucionSegundos": 1504.4,
   "errores": [],
   "advertencias": []
 }
