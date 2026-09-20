@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-20T01:50:58.218580+00:00",
-  "ultimoIntentoRealizado": "2026-09-20T01:50:58.218580+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-20T07:09:17.476610+00:00",
+  "ultimoIntentoRealizado": "2026-09-20T07:09:17.476610+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1335,
-  "registrosConfirmados": 1335,
+  "registrosEnPlataforma": 1341,
+  "registrosConfirmados": 1341,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1111,
+  "registrosConMontoReal": 1113,
   "excluidosPrefiltroIrrelevante": 6894,
-  "excluidosSinDatosReales": 9,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 749,
@@ -21,22 +21,22 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 1053116385,
+    "montoOriginalSum": 1103023173,
     "montoFinalSum": 1208654500,
-    "montoRecuperadoSum": 155538115
+    "montoRecuperadoSum": 105631327
   },
   "categorias": {
-    "licitaciones": 584,
+    "licitaciones": 590,
     "comprasAgiles": 749,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 323,
+    "LE": 326,
     "LR": 35,
-    "LP": 132,
-    "L1": 88,
+    "LP": 134,
+    "L1": 89,
     "CO": 7,
     "O1": 2,
     "B2": 2,
@@ -46,14 +46,14 @@
     "COT": 742
   },
   "matchPorEmpresa": {
-    "Aminorte": 1143,
-    "V-MOCCS": 192
+    "Aminorte": 1147,
+    "V-MOCCS": 194
   },
   "cambios": {
     "comparadoContra": "2026-09-14T11:54:19.297810+00:00",
-    "nuevosCount": 959,
+    "nuevosCount": 962,
     "modificadosCount": 134,
-    "cerradosCount": 1006,
+    "cerradosCount": 1003,
     "nuevos": [
       {
         "codigo": "2670-3-LR26",
@@ -126,6 +126,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-06-09T15:00:00"
+      },
+      {
+        "codigo": "593951-32-LP26",
+        "titulo": "ADQUISICIÓN DE EQUIPAMIENTO Y MOBILIARIO PARA JARDINES INFANTILES SALAS CUNA Y MODALIDAD NO CONVENCIONAL DE ATENCIÓN 2026 DE FUNDACIÓN INTEGRA.",
+        "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+        "monto": 288331500,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-06T15:01:00"
       },
       {
         "codigo": "1422256-1-LP26",
@@ -315,6 +324,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-12T15:00:00"
+      },
+      {
+        "codigo": "1540-98-LE26",
+        "titulo": "REPUESTOS PARA MANTENIMIENTO MOBILIARIO CLINICO",
+        "organismo": "SERVICIO DE SALUD MAGALLANES HOSPITAL DE PTO NATALES",
+        "monto": 59500000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-28T15:00:00"
       },
       {
         "codigo": "2157-141-LE26",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-09-29T13:19:00"
-      },
-      {
-        "codigo": "609-25-LE26",
-        "titulo": "ACTUALIZACIÓN DEL SGSI DE INDAP- CIBERSEGURIDAD",
-        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-02T15:30:00"
-      },
-      {
-        "codigo": "1067455-11-LE26",
-        "titulo": "Consultoría para Levantamiento y Análisis de Evidencia sobre la Explotación Sexual de Niños Niñas y Adolescentes",
-        "organismo": "SUBSECRETARIA DE LA NIÑEZ",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-10T15:30:00"
       }
     ],
     "modificados": [
@@ -888,21 +888,21 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "434-104-LE26",
-        "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
-        "organismo": "I MUNICIPALIDAD DE CAUQUENES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 20000000,
-        "montoNuevo": 20000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3135-42-LE26",
         "titulo": "CONV. SUMINISTRO Y MANT. DEAIRE ACONDICIONADO",
         "organismo": "I MUNICIPALIDAD DE MARIA ELENA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 20000000,
+        "montoNuevo": 20000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "434-104-LE26",
+        "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
+        "organismo": "I MUNICIPALIDAD DE CAUQUENES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 20000000,
         "montoNuevo": 20000000,
         "empresaMatch": "Aminorte"
@@ -918,9 +918,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3326-45-LE26",
-        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "codigo": "1147293-22-LE26",
+        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
+        "organismo": "Fundación para la Innovación Agraria",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
@@ -928,9 +928,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1147293-22-LE26",
-        "titulo": "ADOPCIÓN Y VALIDACIÓN DE PAQUETE TECNOLÓGICO",
-        "organismo": "Fundación para la Innovación Agraria",
+        "codigo": "3326-45-LE26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE ACCESORIOS PARA LOS VEHÍCULOS FISCALES VPC-1995 Y VPC-1996 MARCA CHEVROLET MODELO TAHOE AÑO 2026 DE CARGO DE CARABINEROS DE CHILE SEGÚN BASES ADMINISTRATIVAS Y TÉCNICAS",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 20000000,
@@ -1088,16 +1088,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4123-6-LE26",
-        "titulo": "SEGUROS BIENES MUEBLES INMUEBLE VEHÍCULOS DEPTO",
-        "organismo": "I MUNICIPALIDAD DE NINHUE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 8000000,
-        "montoNuevo": 8000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "3630-9-LE26",
         "titulo": "Suministro Fotocopiadoras DESAM",
         "organismo": "I MUNICIPALIDAD DE MAFIL",
@@ -1106,6 +1096,16 @@
         "montoAnterior": 8000000,
         "montoNuevo": 8000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4123-6-LE26",
+        "titulo": "SEGUROS BIENES MUEBLES INMUEBLE VEHÍCULOS DEPTO",
+        "organismo": "I MUNICIPALIDAD DE NINHUE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 8000000,
+        "montoNuevo": 8000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "742475-4-LE26",
@@ -1448,19 +1448,19 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1552-88-LE26",
+        "titulo": "REP. CESFAM MANUEL RODRIGUEZ CLASE MOBILIARIO CLI",
+        "organismo": "SERVICIO DE SALUD ATACAMA",
+        "estadoAnterior": "Publicada",
+        "monto": 57587000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "2415-11-LE26",
         "titulo": "Servicio de Suministro de Impresiones gráficas para Municipalidad de Concepción",
         "organismo": "I MUNICIPALIDAD DE CONCEPCION",
         "estadoAnterior": "Adjudicada",
         "monto": 53900000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5865-11-LE26",
-        "titulo": "COMPUTADORES DE ALTO RENDIMIENTO - JAYMA UTA",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "estadoAnterior": "Publicada",
-        "monto": 47000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1504.4,
+  "tiempoEjecucionSegundos": 1508.1,
   "errores": [],
   "advertencias": []
 }
