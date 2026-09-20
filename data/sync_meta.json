@@ -1,7 +1,7 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-20T21:57:13.889313+00:00",
-  "ultimoIntentoRealizado": "2026-09-20T21:57:13.889313+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-20T22:36:00.059287+00:00",
+  "ultimoIntentoRealizado": "2026-09-20T22:36:00.059287+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1342,
   "registrosConfirmados": 1342,
@@ -988,9 +988,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1485465-3-LE26",
-        "titulo": "Tintas y Tóner ",
-        "organismo": "I MUNICIPALIDAD DE O HIGGINS",
+        "codigo": "612-40-LE26",
+        "titulo": "Adquisición de impresoras",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 14000000,
@@ -998,9 +998,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "612-40-LE26",
-        "titulo": "Adquisición de impresoras",
-        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "codigo": "1485465-3-LE26",
+        "titulo": "Tintas y Tóner ",
+        "organismo": "I MUNICIPALIDAD DE O HIGGINS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 14000000,
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1552.5,
+  "tiempoEjecucionSegundos": 2088.0,
   "errores": [],
   "advertencias": []
 }
