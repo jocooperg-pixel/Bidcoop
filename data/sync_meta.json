@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-21T01:51:49.052630+00:00",
-  "ultimoIntentoRealizado": "2026-09-21T01:51:49.052630+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-21T07:18:29.562965+00:00",
+  "ultimoIntentoRealizado": "2026-09-21T07:18:29.562965+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1244,
-  "registrosConfirmados": 1244,
+  "registrosEnPlataforma": 1227,
+  "registrosConfirmados": 1227,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1057,
-  "excluidosPrefiltroIrrelevante": 5884,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 1049,
+  "excluidosPrefiltroIrrelevante": 5885,
+  "excluidosSinDatosReales": 16,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 745,
-    "conMontoValido": 742,
+    "total": 744,
+    "conMontoValido": 741,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 742,
+      "VALIDADO": 741,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 971530887,
-    "montoFinalSum": 1203715531,
-    "montoRecuperadoSum": 232184644
+    "montoOriginalSum": 1060361056,
+    "montoFinalSum": 1203595531,
+    "montoRecuperadoSum": 143234475
   },
   "categorias": {
-    "licitaciones": 497,
-    "comprasAgiles": 745,
+    "licitaciones": 481,
+    "comprasAgiles": 744,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 274,
+    "LE": 263,
     "LR": 31,
-    "LP": 113,
-    "L1": 73,
+    "LP": 111,
+    "L1": 70,
     "CO": 4,
     "O1": 2,
     "B2": 2,
     "E2": 1,
     "LS": 2,
     "I2": 1,
-    "COT": 741
+    "COT": 740
   },
   "matchPorEmpresa": {
-    "Aminorte": 1061,
-    "V-MOCCS": 183
+    "Aminorte": 1047,
+    "V-MOCCS": 180
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
     "nuevosCount": 2,
     "modificadosCount": 5,
-    "cerradosCount": 100,
+    "cerradosCount": 117,
     "nuevos": [
       {
         "codigo": "4950-83-COT26",
@@ -157,6 +157,14 @@
         "organismo": "I MUNICIPALIDAD DE ANTOFAGASTA",
         "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "monto": 306000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1422256-1-LP26",
+        "titulo": "SERVICIO DE SEGURIDAD Y VIGILANCIA PCDV",
+        "organismo": "ASOCIACION PARQUE CULTURAL DE VALPARAISO",
+        "estadoAnterior": "Adjudicada",
+        "monto": 270000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -280,11 +288,27 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1271359-92-LE26",
+        "titulo": "ADQUIS. DE MOBILIARIO Y HABILITACIÓN DE ESPACIOS",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE LAMPA",
+        "estadoAnterior": "Adjudicada",
+        "monto": 39317600,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1423921-18-LE26",
         "titulo": "Servicio de Aseo para Oficina Provincial - Punilla",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
         "estadoAnterior": "Cerrada",
         "monto": 36000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "696217-4-LE26",
+        "titulo": "Serv de Mantencion de inmueble Oficina Colchane",
+        "organismo": "MINISTERIO PUBLICO",
+        "estadoAnterior": "Publicada",
+        "monto": 35000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -349,6 +373,22 @@
         "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
         "estadoAnterior": "Adjudicada",
         "monto": 24800000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "721-34-LE26",
+        "titulo": "Serv. Mant. equipos de aire acondicionado",
+        "organismo": "CAJA DE PREVISION DE LA DEFENSA NACIONAL",
+        "estadoAnterior": "Publicada",
+        "monto": 21000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "434-104-LE26",
+        "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
+        "organismo": "I MUNICIPALIDAD DE CAUQUENES",
+        "estadoAnterior": "Cerrada",
+        "monto": 20000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -504,11 +544,27 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "707418-44-L126",
+        "titulo": "SERVICIO DE PODA, TALA Y RETIRO DE ÁRBOLES ALTOS PARA JARDINES INFANTILES, SALAS CUNA Y OFICINAS REGIONALES DE FUNDACIÓN INTEGRA, REGIÓN DE COQUIMBO",
+        "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+        "estadoAnterior": "Cerrada",
+        "monto": 3800000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1978-112-L126",
         "titulo": "CONVENIO MONITOREO SISTEMA DE ALARMA EN BODEGA REGIONAL SSMAULE",
         "organismo": "SERVICIO DE SALUD DEL MAULE",
         "estadoAnterior": "Cerrada",
         "monto": 3120000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2548-85-L126",
+        "titulo": "ADQUISICIÓN EQUIPAMIENTO DEPORTIVO PROGRAMA AIDIA",
+        "organismo": "I MUNICIPALIDAD DE PADRE LAS CASAS",
+        "estadoAnterior": "Cerrada",
+        "monto": 2815366,
         "empresaMatch": "Aminorte"
       },
       {
@@ -550,66 +606,10 @@
         "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "monto": 2000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2658-273-L126",
-        "titulo": "MOBILIARIO OTEC MUNICIPAL",
-        "organismo": "I MUNICIPALIDAD DE ANCUD",
-        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "monto": 2000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "900-38-L126",
-        "titulo": "HDS - COMPRA DE LAPICES PARA U.P.F.T.",
-        "organismo": "SERVICIO DE SALUD VALPARAISO SAN ANTONIO",
-        "estadoAnterior": "Cerrada",
-        "monto": 550000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1274907-161-COT26",
-        "titulo": "Sillas Escritorio Sigges ",
-        "organismo": "CORPORACIÓN MUNICIPAL DE EDUCACIÓN, SALUD Y ATENCIÓN DE MENORES CHONCHI",
-        "estadoAnterior": "Cerrada",
-        "monto": 100000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2704-63-LP26",
-        "titulo": "SC 3445 SEGUROS  BIENES MUEBLES  E INMUEBLES",
-        "organismo": "UNIVERSIDAD DEL BIO BIO",
-        "estadoAnterior": "Cerrada",
-        "monto": 5000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057384-138-L126",
-        "titulo": "Compra de Tinta Riso para duplicadora",
-        "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL M",
-        "estadoAnterior": "Cerrada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057509-260-LP26",
-        "titulo": "COMPRA DE SERVICIOS PROFESIONALES PARA MANTENIMIENTO DE CLIMATIZACIÓN INDUSTRIAL vps",
-        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
-        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057490-38-LP26",
-        "titulo": "SERVICIO DE ARRIENDO DE EQUIPO DE NEUROMONITOREO I",
-        "organismo": "Instituto de Neurocirugía",
-        "estadoAnterior": "Revocada",
-        "monto": 0,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1613.4,
+  "tiempoEjecucionSegundos": 1517.8,
   "errores": [],
   "advertencias": []
 }
