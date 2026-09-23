@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-22T20:32:02.067567+00:00",
-  "ultimoIntentoRealizado": "2026-09-22T20:32:02.067567+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-22T23:53:01.940722+00:00",
+  "ultimoIntentoRealizado": "2026-09-22T23:53:01.940722+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1360,
-  "registrosConfirmados": 1360,
+  "registrosEnPlataforma": 1461,
+  "registrosConfirmados": 1461,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1151,
-  "excluidosPrefiltroIrrelevante": 6495,
-  "excluidosSinDatosReales": 5,
+  "registrosConMontoReal": 1250,
+  "excluidosPrefiltroIrrelevante": 6554,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 790,
-    "conMontoValido": 788,
-    "pctValidado": 99.7,
+    "total": 885,
+    "conMontoValido": 883,
+    "pctValidado": 99.8,
     "stats": {
-      "VALIDADO": 788,
+      "VALIDADO": 883,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 2
     },
-    "montoOriginalSum": 99763265,
-    "montoFinalSum": 1209959847,
-    "montoRecuperadoSum": 1110196582
+    "montoOriginalSum": 138681193,
+    "montoFinalSum": 1344767813,
+    "montoRecuperadoSum": 1206086620
   },
   "categorias": {
-    "licitaciones": 567,
-    "comprasAgiles": 790,
+    "licitaciones": 573,
+    "comprasAgiles": 885,
     "convenioMarco": 0,
     "ordenes_compra": 3,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 320,
+    "LE": 324,
     "LR": 37,
-    "LP": 125,
-    "L1": 77,
+    "LP": 126,
+    "L1": 78,
     "CO": 5,
     "O1": 3,
     "B2": 2,
     "LS": 2,
     "E2": 2,
     "I2": 2,
-    "COT": 785
+    "COT": 880
   },
   "matchPorEmpresa": {
-    "Aminorte": 1186,
-    "V-MOCCS": 174
+    "Aminorte": 1271,
+    "V-MOCCS": 190
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 849,
-    "modificadosCount": 128,
-    "cerradosCount": 831,
+    "nuevosCount": 947,
+    "modificadosCount": 137,
+    "cerradosCount": 828,
     "nuevos": [
       {
         "codigo": "621-549-LR26",
@@ -542,6 +542,15 @@
         "fechaCierre": "2026-10-05T15:00:00"
       },
       {
+        "codigo": "1134432-63-LE26",
+        "titulo": "ADQUISICIÓN DE EQUIPAMIENTO DEPORTIVO PARA LOS TALLERES RECREATIVOS Y DEPORTIVOS DE LA COMUNA DE PUCHUNCAVÍ",
+        "organismo": "I MUNICIPALIDAD DE PUCHUNCAVI",
+        "monto": 10000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-17T15:30:00"
+      },
+      {
         "codigo": "1079650-39-LE26",
         "titulo": "ESCÁNER INTRAORAL PARA HOSPITAL SAN JOSÉ DE CORONEL - COLDAS -USS",
         "organismo": "SERVICIO DE SALUD CONCEPCION",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-01T16:00:00"
-      },
-      {
-        "codigo": "1076403-12-LE26",
-        "titulo": "SLA_PC 6626_DIRAC_Servicio Impresión de 200 libros",
-        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
-        "monto": 8000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-11T11:00:00"
       }
     ],
     "modificados": [
@@ -658,6 +658,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2963-33-LP26",
+        "titulo": "MANTENCIÓN DE PISCINA Y CLIMATIZACIÓN POZOS",
+        "organismo": "I MUNICIPALIDAD DE LA GRANJA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 172640000,
+        "montoNuevo": 172640000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1461054-39-LP26",
         "titulo": "CONSERVACION COLEGIO HEROES DE LA CONCEPCION",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DEL ELQUI",
@@ -718,6 +728,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1305525-39-LE26",
+        "titulo": "SERVICIO DE LEVANTAMIENTO FÍSICO CUANTITATIVO Y VALORIZACIÓN REFERENCIAL DE BIENES MUEBLES PARA ESTABLECIMIENTOS",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 60000000,
+        "montoNuevo": 60000000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1057415-55-LE26",
         "titulo": "CONVENIO DE SUMINISTRO DE LIBRERIA",
         "organismo": "SERVICIO SALUD BIO BIO HOSPITAL NACIMIENTO",
@@ -728,14 +748,14 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1305525-39-LE26",
-        "titulo": "SERVICIO DE LEVANTAMIENTO FÍSICO CUANTITATIVO Y VALORIZACIÓN REFERENCIAL DE BIENES MUEBLES PARA ESTABLECIMIENTOS",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
+        "codigo": "1552-80-LE26",
+        "titulo": "CONSTRUCCIÓN CES HUASCO BAJO CLASE MONITOREO",
+        "organismo": "SERVICIO DE SALUD ATACAMA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
-        "montoAnterior": 60000000,
-        "montoNuevo": 60000000,
-        "empresaMatch": "V-MOCCS"
+        "montoAnterior": 58000000,
+        "montoNuevo": 58000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "5556-1-LE26",
@@ -785,6 +805,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 43177660,
         "montoNuevo": 43177660,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1079967-23-LE26",
+        "titulo": "ADQUISICIÓN DE SUSCRIPCIÓN INSEYETS",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 39930001,
+        "montoNuevo": 39930001,
         "empresaMatch": "Aminorte"
       },
       {
@@ -905,6 +935,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 26550000,
         "montoNuevo": 26550000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1980-10-LE26",
+        "titulo": "ADQUISICION DE PROVISION SISTEMAS DE ALIMENTACIÓN ININTERRUPIBLES UPS PARA EL AEROPUERTO CHACALLUTA",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 25500000,
+        "montoNuevo": 25500000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1038,6 +1078,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1561-23-LE26",
+        "titulo": "ADQUISICIÓN Y DESPACHO DE IMPRESORAS PARA DICREP.",
+        "organismo": "DIRECCION GENERAL DEL CREDITO PRENDARIO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 10000000,
+        "montoNuevo": 10000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1079580-31-LE26",
         "titulo": "ADQUISICIÓN DE MOBILIARIO PARA LA SECCIÓN LABOCAR ÑUBLE POR LÍNEA DE ADJUDICACIÓN",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -1146,56 +1196,6 @@
         "montoAnterior": 6000000,
         "montoNuevo": 6000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4888-18-LE26",
-        "titulo": "Serv.Capacitacion y asesorias P.PCC",
-        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 5000000,
-        "montoNuevo": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2310-98-COT26",
-        "titulo": "INDUMENTARIA DEPORTIVA ESTABLECIMIENTOS - DAEM",
-        "organismo": "IMunicipalidad de Molina",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 4978960,
-        "montoNuevo": 4978960,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4888-19-LE26",
-        "titulo": "Edic diseño diagram. e impresion de catalogo PCC",
-        "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 4956525,
-        "montoNuevo": 4956525,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057536-1034-COT26",
-        "titulo": "SE REQUIERE LA COMPRA DE  57 EBOOK PARA CURSOS EPC",
-        "organismo": "SERVICIO SALUD DEL RELONCAVI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 4275000,
-        "montoNuevo": 4275000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3882-313-COT26",
-        "titulo": "SILLAS ERGONOMICAS PARA OFICINAS ",
-        "organismo": "I MUNICIPALIDAD DE LLAY LLAY",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 4275000,
-        "montoNuevo": 4275000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1269,14 +1269,6 @@
         "organismo": "I MUNICIPALIDAD DE LAS CONDES",
         "estadoAnterior": "Cerrada",
         "monto": 200000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2963-33-LP26",
-        "titulo": "MANTENCIÓN DE PISCINA Y CLIMATIZACIÓN POZOS",
-        "organismo": "I MUNICIPALIDAD DE LA GRANJA",
-        "estadoAnterior": "Publicada",
-        "monto": 172640000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1373,14 +1365,6 @@
         "organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
         "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "monto": 59400000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1552-80-LE26",
-        "titulo": "CONSTRUCCIÓN CES HUASCO BAJO CLASE MONITOREO",
-        "organismo": "SERVICIO DE SALUD ATACAMA",
-        "estadoAnterior": "Publicada",
-        "monto": 58000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1662,26 @@
         "estadoAnterior": "Cerrada",
         "monto": 8000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3630-9-LE26",
+        "titulo": "Suministro Fotocopiadoras DESAM",
+        "organismo": "I MUNICIPALIDAD DE MAFIL",
+        "estadoAnterior": "Cerrada",
+        "monto": 8000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1549-3972-COT26",
+        "titulo": " XPP/EXT/ SE REQUIERE DESINTALACION, SUMINISTRO E INSTALACION DE AIRE ACONDICIONADO 24.000 BTU",
+        "organismo": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
+        "estadoAnterior": "Publicada",
+        "monto": 7172100,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 363.7,
+  "tiempoEjecucionSegundos": 1507.2,
   "errores": [],
   "advertencias": []
 }
