@@ -1,13 +1,13 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-24T18:00:47.405084+00:00",
-  "ultimoIntentoRealizado": "2026-09-24T18:00:47.405084+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-24T22:45:18.706934+00:00",
+  "ultimoIntentoRealizado": "2026-09-24T22:45:18.706934+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1494,
-  "registrosConfirmados": 1494,
+  "registrosEnPlataforma": 1529,
+  "registrosConfirmados": 1529,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1272,
-  "excluidosPrefiltroIrrelevante": 6557,
+  "registrosConMontoReal": 1293,
+  "excluidosPrefiltroIrrelevante": 6819,
   "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
@@ -26,34 +26,34 @@
     "montoRecuperadoSum": 1095842077
   },
   "categorias": {
-    "licitaciones": 601,
+    "licitaciones": 636,
     "comprasAgiles": 891,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 343,
-    "LR": 38,
-    "LP": 134,
-    "L1": 78,
+    "LE": 367,
+    "LR": 39,
+    "LP": 136,
+    "L1": 85,
     "CO": 6,
     "O1": 2,
     "B2": 2,
     "LS": 2,
     "E2": 2,
-    "I2": 2,
+    "I2": 3,
     "COT": 885
   },
   "matchPorEmpresa": {
-    "Aminorte": 1284,
-    "V-MOCCS": 210
+    "Aminorte": 1315,
+    "V-MOCCS": 214
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1131,
+    "nuevosCount": 1167,
     "modificadosCount": 154,
-    "cerradosCount": 979,
+    "cerradosCount": 980,
     "nuevos": [
       {
         "codigo": "621-549-LR26",
@@ -90,6 +90,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-26T15:30:00"
+      },
+      {
+        "codigo": "2308-67-LR26",
+        "titulo": "CONTINUIDAD DE SERVICIOS Y AMPLIACIÓN DE SISTEMA DE MONITOREO Y TELEVIGILANCIA SEGURIDAD CIUDADANA OSORNO",
+        "organismo": "I MUNICIPALIDAD DE OSORNO",
+        "monto": 1426698000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-09-03T10:00:00"
       },
       {
         "codigo": "621-855-I226",
@@ -335,6 +344,15 @@
         "fechaCierre": "2026-08-31T16:00:00"
       },
       {
+        "codigo": "514862-106-LP26",
+        "titulo": "10032694 ADQ.COMPUTADORES NOTEBOOK Y LICENCIAS",
+        "organismo": "CORPORACION MUNICIPAL DE PENALOLEN PARA EL DESARROLO SOCIAL CORMUP",
+        "monto": 75218896,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-08-24T15:10:00"
+      },
+      {
         "codigo": "1110404-205-LP26",
         "titulo": "MANTENCIÓN SS.HH. Y COCINAS DE CASAS DE PROFESORES Y REPOSICION DE CUBICULOS SEPARADORES EN SS.HH. DEL ESTABLECIMIENTO LICEO GRANADEROS DE PUTRE PERTENECIENTE A SLEP DE CHINCHORRO",
         "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
@@ -443,6 +461,15 @@
         "fechaCierre": "2026-10-05T18:00:00"
       },
       {
+        "codigo": "2772-23-LE26",
+        "titulo": "HABILITACION CENTRAL DE MONITOREO CHIGUAYANTE.",
+        "organismo": "I MUNICIPALIDAD DE CHIGUAYANTE",
+        "monto": 50500000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 98,
+        "fechaCierre": "2026-10-05T19:47:00"
+      },
+      {
         "codigo": "1549-91-LE26",
         "titulo": "ADQUISICIÓN DE 13 MONITORES CARDIO FETALES",
         "organismo": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
@@ -470,6 +497,24 @@
         "fechaCierre": "2026-10-07T12:00:00"
       },
       {
+        "codigo": "1377-1-LE26",
+        "titulo": "SERVICIO DE OOMM PARA OFICINAS DEL CDPR BIOBIO",
+        "organismo": "CORPORACION DE FOMENTO DE LA PRODUCCION",
+        "monto": 45000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-26T15:01:00"
+      },
+      {
+        "codigo": "1242125-5-LE26",
+        "titulo": "Arriendo de lockers inteligentes con soporte hardware y software para el Hospital Provincial de Ovalle",
+        "organismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL DE O",
+        "monto": 44400000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-28T15:25:00"
+      },
+      {
         "codigo": "1725-212-LE26",
         "titulo": "PRODUCCIÓN GIRA BIOBÍO DE LA ORQUESTA CÁMARA.",
         "organismo": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
@@ -477,6 +522,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-06T12:00:00"
+      },
+      {
+        "codigo": "1360-11-LE26",
+        "titulo": "SERVICIOS DE DESINSECTACIÓN y DESRATIZACIÓN DE OFICINAS COMUNALES Y DEPENDENCIAS DE LA DIRECCIÓN REGIONAL METROPOLITANA DEL SERVICIO DE REGISTRO CIVIL E IDENTIFICACIÓN",
+        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
+        "monto": 38000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-08T15:00:00"
       },
       {
         "codigo": "660872-22-LE26",
@@ -515,6 +569,15 @@
         "fechaCierre": "2026-10-01T10:00:00"
       },
       {
+        "codigo": "2663-91-LE26",
+        "titulo": "CONTRATO DE EJECUCIÓN EN EL TIEMPO DE SERVICIO DE ARRIENDO DE IMPRESORAS PARA LA MUNICIPALIDAD DE NATALES”. ",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE NATALES",
+        "monto": 32130000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-07T16:00:00"
+      },
+      {
         "codigo": "3697-45-LE26",
         "titulo": "CONTRATO DE SUMINISTRO DE CONFECCIÓN E IMPRESIÓN DE TALONARIOS Y OTROS MUNICIPALIDAD DE VICTORIA AÑO 2026-2028",
         "organismo": "I MUNICIPALIDAD DE VICTORIA",
@@ -531,69 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-08-24T15:00:00"
-      },
-      {
-        "codigo": "1048-72-LE26",
-        "titulo": "Suministro e instalacion de camaras barriales inalambricas e inteligentes EL TABO",
-        "organismo": "I MUNICIPALIDAD DE EL TABO",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-07T13:00:00"
-      },
-      {
-        "codigo": "2345-165-LE26",
-        "titulo": "ADQUISICIÓN DE TABLETS CON SUS ACCESORIOS",
-        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-10-05T15:01:00"
-      },
-      {
-        "codigo": "3880-66-LE26",
-        "titulo": "MANTENCION LUMINARIAS LED DE LA COMUNA 2026 DOM",
-        "organismo": "I MUNICIPALIDAD DE MAULE",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-01T11:00:00"
-      },
-      {
-        "codigo": "2981-146-LE26",
-        "titulo": "JENAMIG - ADQUISICIÓN DE 200 SEPARADORES DE FILA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-06-11T15:00:00"
-      },
-      {
-        "codigo": "1048-58-LE26",
-        "titulo": "Suministro e instalacion de camaras barriales inalambricas e inteligentes EL TABO",
-        "organismo": "I MUNICIPALIDAD DE EL TABO",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-08-12T15:00:00"
-      },
-      {
-        "codigo": "2385-39-LE26",
-        "titulo": "ADQUISICIÓN FORMULARIOS LICENCIAS DE CONDUCIR DIGITAL CON SOBRE TERMOSELLABLE",
-        "organismo": "I MUNICIPALIDAD DE CALAMA",
-        "monto": 30000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-17T15:00:00"
-      },
-      {
-        "codigo": "2974-77-LE26",
-        "titulo": "SERVICIO DE PROVISION E INSTALACION DE AIRE ACONDICIONADO Y SOBRETABIQUES EN CASA DE HUESPEDES MANUTARA DEPENDIENTE DE LA D.B.S.",
-        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
-        "monto": 28461538,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-05T16:01:00"
       }
     ],
     "modificados": [
@@ -848,16 +848,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057415-55-LE26",
-        "titulo": "CONVENIO DE SUMINISTRO DE LIBRERIA",
-        "organismo": "SERVICIO SALUD BIO BIO HOSPITAL NACIMIENTO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 60000000,
-        "montoNuevo": 60000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1305525-39-LE26",
         "titulo": "SERVICIO DE LEVANTAMIENTO FÍSICO CUANTITATIVO Y VALORIZACIÓN REFERENCIAL DE BIENES MUEBLES PARA ESTABLECIMIENTOS",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
@@ -866,6 +856,16 @@
         "montoAnterior": 60000000,
         "montoNuevo": 60000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1057415-55-LE26",
+        "titulo": "CONVENIO DE SUMINISTRO DE LIBRERIA",
+        "organismo": "SERVICIO SALUD BIO BIO HOSPITAL NACIMIENTO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 60000000,
+        "montoNuevo": 60000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1552-80-LE26",
@@ -988,16 +988,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1271359-118-LE26",
-        "titulo": "ADQ E INST PANTALLAS INTERACTIVAS Y PIZARRAS DESL",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE LAMPA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 35000000,
-        "montoNuevo": 35000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3453-81-LE26",
         "titulo": "CONTRATACIÓN DEL SERVICIO CAMARAS DE SEGURIDAD",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -1108,16 +1098,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2460-120-LE26",
-        "titulo": "PROVISIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA DEPENDENCIAS DE LA MUNICIPALIDAD DE PROVIDENCIA",
-        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 26550000,
-        "montoNuevo": 26550000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1980-10-LE26",
         "titulo": "ADQUISICION DE PROVISION SISTEMAS DE ALIMENTACIÓN ININTERRUPIBLES UPS PARA EL AEROPUERTO CHACALLUTA",
         "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
@@ -1195,6 +1175,26 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 19800000,
         "montoNuevo": 19800000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2324-112-LE26",
+        "titulo": "LICITACION PÚBLICA N° 107 2026 SERVICIO ARRIENDO DE 3 EQUIPOS STARLINK MINI O EQUIVALENTE PLAN ITINERANTE ADAPTADOR USB-C Y BATERÍA EXTERNA POR 36 MESES.-   ",
+        "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 16200000,
+        "montoNuevo": 16200000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2462-36-LE26",
+        "titulo": "PRODUCCION JORNADA DE ADOPCION 2026",
+        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 16000000,
+        "montoNuevo": 16000000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1512,6 +1512,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1271359-118-LE26",
+        "titulo": "ADQ E INST PANTALLAS INTERACTIVAS Y PIZARRAS DESL",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE LAMPA",
+        "estadoAnterior": "Publicada",
+        "monto": 35000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1057822-46-LE26",
         "titulo": "MINIBÚS PARA CESFAM O’HIGGINS DE CONCEPCIÓN",
         "organismo": "SERVICIO DE SALUD CONCEPCION",
@@ -1565,6 +1573,14 @@
         "organismo": "I MUNICIPALIDAD DE NANCAGUA",
         "estadoAnterior": "Adjudicada",
         "monto": 27179714,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2460-120-LE26",
+        "titulo": "PROVISIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA DEPENDENCIAS DE LA MUNICIPALIDAD DE PROVIDENCIA",
+        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "estadoAnterior": "Publicada",
+        "monto": 26550000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1662,26 +1678,10 @@
         "estadoAnterior": "Adjudicada",
         "monto": 22000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1145-60-LE26",
-        "titulo": "Adquisición de monitores 49 y 65",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "estadoAnterior": "Cerrada",
-        "monto": 21979300,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4174-30-CO26",
-        "titulo": "CÁMARAS DE SEGURIDAD PARA LA COMUNA DE QUIRIHUE",
-        "organismo": "Ilustre Municipalidad de Quirihue",
-        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "monto": 21350314,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 387.3,
+  "tiempoEjecucionSegundos": 465.5,
   "errores": [],
   "advertencias": []
 }
