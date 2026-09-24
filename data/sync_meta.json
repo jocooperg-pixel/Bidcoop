@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-24T06:50:01.199630+00:00",
-  "ultimoIntentoRealizado": "2026-09-24T06:50:01.199630+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-24T12:56:26.695700+00:00",
+  "ultimoIntentoRealizado": "2026-09-24T12:56:26.695700+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1450,
-  "registrosConfirmados": 1450,
+  "registrosEnPlataforma": 1443,
+  "registrosConfirmados": 1443,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1244,
-  "excluidosPrefiltroIrrelevante": 6206,
-  "excluidosSinDatosReales": 3,
+  "registrosConMontoReal": 1239,
+  "excluidosPrefiltroIrrelevante": 6261,
+  "excluidosSinDatosReales": 16,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 889,
@@ -26,17 +26,17 @@
     "montoRecuperadoSum": 1095842077
   },
   "categorias": {
-    "licitaciones": 559,
+    "licitaciones": 552,
     "comprasAgiles": 889,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 317,
-    "LR": 34,
-    "LP": 126,
-    "L1": 74,
+    "LE": 314,
+    "LR": 35,
+    "LP": 125,
+    "L1": 70,
     "CO": 4,
     "O1": 2,
     "B2": 2,
@@ -46,14 +46,14 @@
     "COT": 885
   },
   "matchPorEmpresa": {
-    "Aminorte": 1246,
+    "Aminorte": 1239,
     "V-MOCCS": 204
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1091,
-    "modificadosCount": 147,
-    "cerradosCount": 983,
+    "nuevosCount": 1093,
+    "modificadosCount": 143,
+    "cerradosCount": 992,
     "nuevos": [
       {
         "codigo": "621-549-LR26",
@@ -119,15 +119,6 @@
         "fechaCierre": "2026-08-28T15:00:00"
       },
       {
-        "codigo": "45-30-LP26",
-        "titulo": "SERVICIO DE MANTENCIÓN PREDICTIVA PREVENTIVA Y CORRECTIVA DE SISTEMAS DE CLIMATIZACIÓN VENTILACIÓN Y CALEFACCIÓN HVAC PARA LAS DEPENDENCIAS DE SENCE A NIVEL NACIONAL",
-        "organismo": "SERVICIO NACIONAL DE CAPACITACION Y EMPLEO",
-        "monto": 307472523,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-11T15:00:00"
-      },
-      {
         "codigo": "2378-68-LP26",
         "titulo": "MANTENCIÓN SISTEMA CÁMARAS DE TELEVIGILANCIA",
         "organismo": "I MUNICIPALIDAD DE LA FLORIDA",
@@ -191,6 +182,15 @@
         "fechaCierre": "2026-09-10T15:30:00"
       },
       {
+        "codigo": "1175-27-LP26",
+        "titulo": "Lic. 37.26 Adq. estanterías full space CAPLC",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA SUR",
+        "monto": 175000000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-04-16T15:30:00"
+      },
+      {
         "codigo": "935-25-LP26",
         "titulo": "MEJORAMIENTO CUBIERTA ZONA OFICINA GIMNASIO FISCAL",
         "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
@@ -245,6 +245,15 @@
         "fechaCierre": "2026-10-22T15:30:00"
       },
       {
+        "codigo": "1057935-13-LP26",
+        "titulo": "Adquisición de monitores desfibriladores para establecimientos dependientes del Servicio de Salud Los Ríos UHCIP SAMU y Hospitales Corral Paillaco y Mariquina",
+        "organismo": "SERVICIO DE SALUD LOS RIOS",
+        "monto": 109144940,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-08-03T15:01:00"
+      },
+      {
         "codigo": "3573-57-LP26",
         "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS MULTIFUNCIONES Y MONOCROMATICAS PARA USO DE DISTINTAS UNIDADES DE LA MUNICIPALIDAD DE PANGUIPULLI",
         "organismo": "I MUNICIPALIDAD DE PANGUIPULLI",
@@ -270,15 +279,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-14T15:00:00"
-      },
-      {
-        "codigo": "885-67-LP26",
-        "titulo": "CONTRALORIA GENERAL DE LA REPÚBLICA REQUIERE LA ADQUISICIÓN DE SUSCRIPCIONES PARA SU PLATAFORMA INSTALADA Y PRODUCTIVA POSTGRES SQL.",
-        "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
-        "monto": 83000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-11T16:00:00"
       },
       {
         "codigo": "1057495-17-LP26",
@@ -360,15 +360,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-06T16:00:00"
-      },
-      {
-        "codigo": "1360-8-LE26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE MONITOREO DE ALARMAS PARA LAS OFICINAS DE LA DIRECCIÓN REGIÓN METROPOLITANA DEL SERVICIO DE REGISTRO CIVIL E IDENTIFICACIÓN",
-        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-08-25T15:00:00"
       },
       {
         "codigo": "1057387-51-CO26",
@@ -495,6 +486,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-08-17T15:00:00"
+      },
+      {
+        "codigo": "2974-77-LE26",
+        "titulo": "SERVICIO DE PROVISION E INSTALACION DE AIRE ACONDICIONADO Y SOBRETABIQUES EN CASA DE HUESPEDES MANUTARA DEPENDIENTE DE LA D.B.S.",
+        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
+        "monto": 28461538,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-05T16:01:00"
       },
       {
         "codigo": "3191-89-LE26",
@@ -735,16 +735,6 @@
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 145000000,
         "montoNuevo": 145000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1461054-39-LP26",
-        "titulo": "CONSERVACION COLEGIO HEROES DE LA CONCEPCION",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DEL ELQUI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 138881000,
-        "montoNuevo": 138881000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1028,6 +1018,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1415861-11-LE26",
+        "titulo": "SERVICIO DE SEGUROS GENERALES PARA BIENES MUEBLES INMUEBLE Y VEHÍCULO INSTITUCIONAL NIVEL CENTRAL Y RED DE SUCURSALES REGIONALES",
+        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 34000000,
+        "montoNuevo": 34000000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "771555-14-LE26",
         "titulo": "Aumento de Cámaras de Televigilancia en Puntos Estratégicos Comuna de Rio Hurtado",
         "organismo": "I MUNICIPALIDAD DE RIO HURTADO",
@@ -1065,6 +1065,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 27660000,
         "montoNuevo": 27660000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2279-56-LE26",
+        "titulo": "SP 567 ADQUISICION E INSTALACION DE MODULOS DE OFICINA",
+        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 27000000,
+        "montoNuevo": 27000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1186,16 +1196,6 @@
         "montoAnterior": 15600000,
         "montoNuevo": 15600000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3537-55-LE26",
-        "titulo": "Adquisición insumos de desgaste para perforadoras",
-        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 12300000,
-        "montoNuevo": 12300000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1245,14 +1245,6 @@
         "organismo": "INSTITUTO NACIONAL DEL TORAX",
         "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "monto": 400891960,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1191688-68-LR26",
-        "titulo": "ADQUISICIÓN E INSTALACIÓN DE LUMINARIAS LED",
-        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
-        "estadoAnterior": "Publicada",
-        "monto": 383231755,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1341,6 +1333,14 @@
         "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Adjudicada",
         "monto": 139670000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1461054-39-LP26",
+        "titulo": "CONSERVACION COLEGIO HEROES DE LA CONCEPCION",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DEL ELQUI",
+        "estadoAnterior": "Publicada",
+        "monto": 138881000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1536,14 +1536,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1415861-11-LE26",
-        "titulo": "SERVICIO DE SEGUROS GENERALES PARA BIENES MUEBLES INMUEBLE Y VEHÍCULO INSTITUCIONAL NIVEL CENTRAL Y RED DE SUCURSALES REGIONALES",
-        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
-        "estadoAnterior": "Publicada",
-        "monto": 34000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "1057822-46-LE26",
         "titulo": "MINIBÚS PARA CESFAM O’HIGGINS DE CONCEPCIÓN",
         "organismo": "SERVICIO DE SALUD CONCEPCION",
@@ -1606,6 +1598,14 @@
         "estadoAnterior": "Adjudicada",
         "monto": 26007000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1723-40-LE26",
+        "titulo": "Arriendo impresoras fotocopiadoras scanner multi",
+        "organismo": "I MUNICIPALIDAD DE LOS LAGOS",
+        "estadoAnterior": "Publicada",
+        "monto": 26000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1499-158-LE26",
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1516.5,
+  "tiempoEjecucionSegundos": 384.7,
   "errores": [],
   "advertencias": []
 }
