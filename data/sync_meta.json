@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-24T00:02:57.527755+00:00",
-  "ultimoIntentoRealizado": "2026-09-24T00:02:57.527755+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-24T06:50:01.199630+00:00",
+  "ultimoIntentoRealizado": "2026-09-24T06:50:01.199630+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1360,
-  "registrosConfirmados": 1360,
+  "registrosEnPlataforma": 1450,
+  "registrosConfirmados": 1450,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1154,
-  "excluidosPrefiltroIrrelevante": 6201,
-  "excluidosSinDatosReales": 1,
+  "registrosConMontoReal": 1244,
+  "excluidosPrefiltroIrrelevante": 6206,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 797,
-    "conMontoValido": 795,
-    "pctValidado": 99.7,
+    "total": 889,
+    "conMontoValido": 887,
+    "pctValidado": 99.8,
     "stats": {
-      "VALIDADO": 795,
+      "VALIDADO": 887,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 2
     },
-    "montoOriginalSum": 120841346,
-    "montoFinalSum": 1086027633,
-    "montoRecuperadoSum": 965186287
+    "montoOriginalSum": 123017346,
+    "montoFinalSum": 1218859423,
+    "montoRecuperadoSum": 1095842077
   },
   "categorias": {
-    "licitaciones": 561,
-    "comprasAgiles": 797,
+    "licitaciones": 559,
+    "comprasAgiles": 889,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
     "LE": 317,
-    "LR": 35,
-    "LP": 127,
+    "LR": 34,
+    "LP": 126,
     "L1": 74,
     "CO": 4,
     "O1": 2,
@@ -43,17 +43,17 @@
     "LS": 2,
     "E2": 2,
     "I2": 2,
-    "COT": 793
+    "COT": 885
   },
   "matchPorEmpresa": {
-    "Aminorte": 1164,
-    "V-MOCCS": 196
+    "Aminorte": 1246,
+    "V-MOCCS": 204
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 999,
-    "modificadosCount": 144,
-    "cerradosCount": 981,
+    "nuevosCount": 1091,
+    "modificadosCount": 147,
+    "cerradosCount": 983,
     "nuevos": [
       {
         "codigo": "621-549-LR26",
@@ -658,6 +658,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2494-79-LP26",
+        "titulo": "MEJORAMIENTO OFICINA LOCAL DE LA NIÑEZ COYHAIQUE",
+        "organismo": "I MUNICIPALIDAD DE COYHAIQUE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 235695000,
+        "montoNuevo": 235695000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "896-13-LP26",
         "titulo": "AMPLIACIÓN RED DE MONITOREO AGUAS SUBTERRÁNEAS III",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -828,16 +838,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1305525-39-LE26",
-        "titulo": "SERVICIO DE LEVANTAMIENTO FÍSICO CUANTITATIVO Y VALORIZACIÓN REFERENCIAL DE BIENES MUEBLES PARA ESTABLECIMIENTOS",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 60000000,
-        "montoNuevo": 60000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "1057415-55-LE26",
         "titulo": "CONVENIO DE SUMINISTRO DE LIBRERIA",
         "organismo": "SERVICIO SALUD BIO BIO HOSPITAL NACIMIENTO",
@@ -846,6 +846,16 @@
         "montoAnterior": 60000000,
         "montoNuevo": 60000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1305525-39-LE26",
+        "titulo": "SERVICIO DE LEVANTAMIENTO FÍSICO CUANTITATIVO Y VALORIZACIÓN REFERENCIAL DE BIENES MUEBLES PARA ESTABLECIMIENTOS",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 60000000,
+        "montoNuevo": 60000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "1552-80-LE26",
@@ -905,6 +915,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 47000000,
         "montoNuevo": 47000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1970-5-LE26",
+        "titulo": "CONTENEDORES MODULARES PARA OFICINA",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 46807500,
+        "montoNuevo": 46807500,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1006,16 +1026,6 @@
         "montoAnterior": 34065684,
         "montoNuevo": 34065684,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1415861-11-LE26",
-        "titulo": "SERVICIO DE SEGUROS GENERALES PARA BIENES MUEBLES INMUEBLE Y VEHÍCULO INSTITUCIONAL NIVEL CENTRAL Y RED DE SUCURSALES REGIONALES",
-        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 34000000,
-        "montoNuevo": 34000000,
-        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "771555-14-LE26",
@@ -1186,16 +1196,6 @@
         "montoAnterior": 12300000,
         "montoNuevo": 12300000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2697-42-LE26",
-        "titulo": "ADQUISICIÓN DE IMPLEMENTACIÓN DEPORTIVA AÑO 2026",
-        "organismo": "I MUNICIPALIDAD DE CARTAGENA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 12000000,
-        "montoNuevo": 12000000,
-        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1245,6 +1245,14 @@
         "organismo": "INSTITUTO NACIONAL DEL TORAX",
         "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "monto": 400891960,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1191688-68-LR26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE LUMINARIAS LED",
+        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "estadoAnterior": "Publicada",
+        "monto": 383231755,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1384,6 +1392,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1596-50-LP26",
+        "titulo": "PANTALLA LED PARA EL EDIFICIO DEL GORE MAULE",
+        "organismo": "GOBIERNO REGIONAL VII REGION",
+        "estadoAnterior": "Publicada",
+        "monto": 75000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1552-74-LP26",
         "titulo": "REP CESFAM MANUEL RODRIGUEZ CLASE MONITOREO",
         "organismo": "SERVICIO DE SALUD ATACAMA",
@@ -1445,14 +1461,6 @@
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Adjudicada",
         "monto": 56447170,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1970-5-LE26",
-        "titulo": "CONTENEDORES MODULARES PARA OFICINA",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "estadoAnterior": "Publicada",
-        "monto": 46807500,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1526,6 +1534,14 @@
         "estadoAnterior": "Cerrada",
         "monto": 36000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1415861-11-LE26",
+        "titulo": "SERVICIO DE SEGUROS GENERALES PARA BIENES MUEBLES INMUEBLE Y VEHÍCULO INSTITUCIONAL NIVEL CENTRAL Y RED DE SUCURSALES REGIONALES",
+        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
+        "estadoAnterior": "Publicada",
+        "monto": 34000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "1057822-46-LE26",
@@ -1662,26 +1678,10 @@
         "estadoAnterior": "Cerrada",
         "monto": 23121000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "609-25-LE26",
-        "titulo": "ACTUALIZACIÓN DEL SGSI DE INDAP- CIBERSEGURIDAD",
-        "organismo": "INSTITUTO DE DESARROLLO AGROPECUARIO",
-        "estadoAnterior": "Adjudicada",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1067455-11-LE26",
-        "titulo": "Consultoría para Levantamiento y Análisis de Evidencia sobre la Explotación Sexual de Niños Niñas y Adolescentes",
-        "organismo": "SUBSECRETARIA DE LA NIÑEZ",
-        "estadoAnterior": "Adjudicada",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 214.5,
+  "tiempoEjecucionSegundos": 1516.5,
   "errores": [],
   "advertencias": []
 }
