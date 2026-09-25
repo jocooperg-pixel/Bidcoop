@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-25T02:03:41.697019+00:00",
-  "ultimoIntentoRealizado": "2026-09-25T02:03:41.697019+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-25T09:07:56.480285+00:00",
+  "ultimoIntentoRealizado": "2026-09-25T09:07:56.480285+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1057,
-  "registrosConfirmados": 1057,
+  "registrosEnPlataforma": 1061,
+  "registrosConfirmados": 1061,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 822,
+  "registrosConMontoReal": 823,
   "excluidosPrefiltroIrrelevante": 6821,
-  "excluidosSinDatosReales": 4,
+  "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 418,
@@ -26,16 +26,16 @@
     "montoRecuperadoSum": 539574947
   },
   "categorias": {
-    "licitaciones": 637,
+    "licitaciones": 641,
     "comprasAgiles": 418,
     "convenioMarco": 0,
     "ordenes_compra": 2,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 369,
-    "LR": 40,
-    "LP": 134,
+    "LE": 371,
+    "LR": 39,
+    "LP": 137,
     "L1": 85,
     "CO": 6,
     "O1": 2,
@@ -46,14 +46,14 @@
     "COT": 412
   },
   "matchPorEmpresa": {
-    "Aminorte": 907,
-    "V-MOCCS": 150
+    "Aminorte": 910,
+    "V-MOCCS": 151
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 696,
-    "modificadosCount": 170,
-    "cerradosCount": 981,
+    "nuevosCount": 699,
+    "modificadosCount": 172,
+    "cerradosCount": 980,
     "nuevos": [
       {
         "codigo": "621-549-LR26",
@@ -638,6 +638,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "621-772-LP26",
+        "titulo": "AEROCAMARA PEDIA BIVAL PIN 0 A 18 MESES 1000022785",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 302696873,
+        "montoNuevo": 302696873,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "528208-40-LP26",
         "titulo": "SUMINISTROS DE PINTURA Y SERVICIOS DE EQUIPAMIENTO MULTICANCHAS EN VARIAS UNIDADES VECINALES COMUNA DE CERRO NAVIA",
         "organismo": "I.MUNICIPALIDAD DE CERRO NAVIA",
@@ -891,16 +901,6 @@
         "codigo": "3499-23-LE26",
         "titulo": "TELEVIGILANDO COMUNA: INSTALACION CAMARAS LECTORAS",
         "organismo": "I MUNICIPALIDAD DE QUINTA DE TILCOCO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 50000000,
-        "montoNuevo": 50000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2020-19-LE26",
-        "titulo": "SERVICIOS MULTITÉCNICOS DE MANTENCIÓN DE OFICINAS",
-        "organismo": "Biblioteca del Congreso Nacional",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 50000000,
@@ -1264,14 +1264,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "621-772-LP26",
-        "titulo": "AEROCAMARA PEDIA BIVAL PIN 0 A 18 MESES 1000022785",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "estadoAnterior": "Publicada",
-        "monto": 302696873,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "593951-32-LP26",
         "titulo": "ADQUISICIÓN DE EQUIPAMIENTO Y MOBILIARIO PARA JARDINES INFANTILES SALAS CUNA Y MODALIDAD NO CONVENCIONAL DE ATENCIÓN 2026 DE FUNDACIÓN INTEGRA.",
         "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
@@ -1341,14 +1333,6 @@
         "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Adjudicada",
         "monto": 139670000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1736-104-LP26",
-        "titulo": "ADQUISICIÓN DE EQUIPOS COMPUTACIONALES ALL IN ONE",
-        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
-        "estadoAnterior": "Publicada",
-        "monto": 129640000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1453,6 +1437,14 @@
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Adjudicada",
         "monto": 56447170,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2020-19-LE26",
+        "titulo": "SERVICIOS MULTITÉCNICOS DE MANTENCIÓN DE OFICINAS",
+        "organismo": "Biblioteca del Congreso Nacional",
+        "estadoAnterior": "Publicada",
+        "monto": 50000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Adjudicada",
         "monto": 22000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1145-60-LE26",
+        "titulo": "Adquisición de monitores 49 y 65",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Cerrada",
+        "monto": 21979300,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 4040.9,
+  "tiempoEjecucionSegundos": 287.4,
   "errores": [],
   "advertencias": []
 }
