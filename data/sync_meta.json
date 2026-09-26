@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-26T17:26:24.541980+00:00",
-  "ultimoIntentoRealizado": "2026-09-26T17:26:24.541980+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-26T20:14:49.219380+00:00",
+  "ultimoIntentoRealizado": "2026-09-26T20:14:49.219380+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1508,
-  "registrosConfirmados": 1508,
+  "registrosEnPlataforma": 1481,
+  "registrosConfirmados": 1481,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1241,
-  "excluidosPrefiltroIrrelevante": 7553,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 1220,
+  "excluidosPrefiltroIrrelevante": 7556,
+  "excluidosSinDatosReales": 12,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 794,
-    "conMontoValido": 791,
+    "total": 778,
+    "conMontoValido": 775,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 791,
+      "VALIDADO": 775,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
     "montoOriginalSum": 155976407,
-    "montoFinalSum": 1259310020,
-    "montoRecuperadoSum": 1103333613
+    "montoFinalSum": 1205173167,
+    "montoRecuperadoSum": 1049196760
   },
   "categorias": {
-    "licitaciones": 711,
-    "comprasAgiles": 794,
+    "licitaciones": 700,
+    "comprasAgiles": 778,
     "convenioMarco": 0,
     "ordenes_compra": 3,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 413,
-    "LR": 42,
-    "LP": 146,
-    "L1": 101,
+    "LE": 405,
+    "LR": 41,
+    "LP": 147,
+    "L1": 98,
     "CO": 7,
     "O1": 3,
     "B2": 2,
     "LS": 2,
     "E2": 2,
     "I2": 3,
-    "COT": 787
+    "COT": 771
   },
   "matchPorEmpresa": {
-    "Aminorte": 1308,
-    "V-MOCCS": 200
+    "Aminorte": 1287,
+    "V-MOCCS": 194
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1141,
-    "modificadosCount": 221,
-    "cerradosCount": 975,
+    "nuevosCount": 1123,
+    "modificadosCount": 212,
+    "cerradosCount": 984,
     "nuevos": [
       {
         "codigo": "621-549-LR26",
@@ -171,6 +171,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-26T15:01:00"
+      },
+      {
+        "codigo": "1057489-241-LP26",
+        "titulo": "CONVENIO DE SUMINISTROS DE REACTIVOS PARA DETERMINACIÓN DE ENFERMEDADES INFECCIOSAS POR PCR MULTIPLEX AUTOMATIZADO CON INCORPORACIÓN DE EQUIPAMIENTO PARA EL ÁREA TÉCNICA DE MICROBIOLOGÍA POR 36 MESES DEL HOSPITAL SALVADOR.",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "monto": 353163553,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-09-02T16:00:00"
       },
       {
         "codigo": "45-30-LP26",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-01T15:00:00"
-      },
-      {
-        "codigo": "2410-78-LE26",
-        "titulo": "Suministro de Insumos de Impresión.",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "monto": 48945299,
-        "empresaMatch": "Aminorte",
-        "matchScore": 98,
-        "fechaCierre": "2026-10-07T12:00:00"
       }
     ],
     "modificados": [
@@ -858,16 +858,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-284-LE26",
-        "titulo": "Servicio de Fabricación Instalación e Implementación de Mobiliario para la nueva Bodega del Hospital del Salvador ",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 67800453,
-        "montoNuevo": 67800453,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2817-63-LE26",
         "titulo": "MEJ. OFICINA SEC. MUNICIPAL Y SALA DE CONCEJO",
         "organismo": "I MUNICIPALIDAD DE SAN FERNANDO",
@@ -916,16 +906,6 @@
         "montoAnterior": 58000000,
         "montoNuevo": 58000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1552-88-LE26",
-        "titulo": "REP. CESFAM MANUEL RODRIGUEZ CLASE MOBILIARIO CLI",
-        "organismo": "SERVICIO DE SALUD ATACAMA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 57587000,
-        "montoNuevo": 57587000,
-        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "5556-1-LE26",
@@ -1025,16 +1005,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 35750000,
         "montoNuevo": 35750000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1028897-38-LE26",
-        "titulo": "ADQUISICIÓN DE EQUIPAMIENTO TECNOLÓGICO EE SLEPCA.",
-        "organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 35154857,
-        "montoNuevo": 35154857,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1195,6 +1165,36 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 27136493,
         "montoNuevo": 27136493,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2279-56-LE26",
+        "titulo": "SP 567 ADQUISICION E INSTALACION DE MODULOS DE OFICINA",
+        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 27000000,
+        "montoNuevo": 27000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2460-120-LE26",
+        "titulo": "PROVISIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA DEPENDENCIAS DE LA MUNICIPALIDAD DE PROVIDENCIA",
+        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 26550000,
+        "montoNuevo": 26550000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1980-10-LE26",
+        "titulo": "ADQUISICION DE PROVISION SISTEMAS DE ALIMENTACIÓN ININTERRUPIBLES UPS PARA EL AEROPUERTO CHACALLUTA",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 25500000,
+        "montoNuevo": 25500000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1416,6 +1416,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1057489-284-LE26",
+        "titulo": "Servicio de Fabricación Instalación e Implementación de Mobiliario para la nueva Bodega del Hospital del Salvador ",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "estadoAnterior": "Publicada",
+        "monto": 67800453,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "777304-39-LP26",
         "titulo": "INSUMOS MONITORIZACIÓN PEDIÁTRICA PARA EL HLF",
         "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
@@ -1430,6 +1438,14 @@
         "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "monto": 59400000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1552-88-LE26",
+        "titulo": "REP. CESFAM MANUEL RODRIGUEZ CLASE MOBILIARIO CLI",
+        "organismo": "SERVICIO DE SALUD ATACAMA",
+        "estadoAnterior": "Publicada",
+        "monto": 57587000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "539119-69-LE26",
@@ -1509,6 +1525,14 @@
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
         "estadoAnterior": "Cerrada",
         "monto": 36000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1028897-38-LE26",
+        "titulo": "ADQUISICIÓN DE EQUIPAMIENTO TECNOLÓGICO EE SLEPCA.",
+        "organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
+        "estadoAnterior": "Publicada",
+        "monto": 35154857,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1654,34 +1678,10 @@
         "estadoAnterior": "Adjudicada",
         "monto": 22000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1067455-11-LE26",
-        "titulo": "Consultoría para Levantamiento y Análisis de Evidencia sobre la Explotación Sexual de Niños Niñas y Adolescentes",
-        "organismo": "SUBSECRETARIA DE LA NIÑEZ",
-        "estadoAnterior": "Adjudicada",
-        "monto": 22000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1145-60-LE26",
-        "titulo": "Adquisición de monitores 49 y 65",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "estadoAnterior": "Cerrada",
-        "monto": 21979300,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4174-30-CO26",
-        "titulo": "CÁMARAS DE SEGURIDAD PARA LA COMUNA DE QUIRIHUE",
-        "organismo": "Ilustre Municipalidad de Quirihue",
-        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "monto": 21350314,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 3326.9,
+  "tiempoEjecucionSegundos": 3377.6,
   "errores": [],
   "advertencias": []
 }
