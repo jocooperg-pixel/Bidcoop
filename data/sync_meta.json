@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-26T13:55:17.121122+00:00",
-  "ultimoIntentoRealizado": "2026-09-26T13:55:17.121122+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-26T17:26:24.541980+00:00",
+  "ultimoIntentoRealizado": "2026-09-26T17:26:24.541980+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1544,
-  "registrosConfirmados": 1544,
+  "registrosEnPlataforma": 1508,
+  "registrosConfirmados": 1508,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1281,
-  "excluidosPrefiltroIrrelevante": 7543,
-  "excluidosSinDatosReales": 4,
+  "registrosConMontoReal": 1241,
+  "excluidosPrefiltroIrrelevante": 7553,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 835,
-    "conMontoValido": 832,
+    "total": 794,
+    "conMontoValido": 791,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 832,
+      "VALIDADO": 791,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
     "montoOriginalSum": 155976407,
-    "montoFinalSum": 1288997857,
-    "montoRecuperadoSum": 1133021450
+    "montoFinalSum": 1259310020,
+    "montoRecuperadoSum": 1103333613
   },
   "categorias": {
-    "licitaciones": 706,
-    "comprasAgiles": 835,
+    "licitaciones": 711,
+    "comprasAgiles": 794,
     "convenioMarco": 0,
     "ordenes_compra": 3,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 412,
+    "LE": 413,
     "LR": 42,
-    "LP": 142,
+    "LP": 146,
     "L1": 101,
     "CO": 7,
     "O1": 3,
@@ -43,17 +43,17 @@
     "LS": 2,
     "E2": 2,
     "I2": 3,
-    "COT": 828
+    "COT": 787
   },
   "matchPorEmpresa": {
-    "Aminorte": 1334,
-    "V-MOCCS": 210
+    "Aminorte": 1308,
+    "V-MOCCS": 200
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1180,
-    "modificadosCount": 220,
-    "cerradosCount": 978,
+    "nuevosCount": 1141,
+    "modificadosCount": 221,
+    "cerradosCount": 975,
     "nuevos": [
       {
         "codigo": "621-549-LR26",
@@ -888,16 +888,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1305525-39-LE26",
-        "titulo": "SERVICIO DE LEVANTAMIENTO FÍSICO CUANTITATIVO Y VALORIZACIÓN REFERENCIAL DE BIENES MUEBLES PARA ESTABLECIMIENTOS",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 60000000,
-        "montoNuevo": 60000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "1057415-55-LE26",
         "titulo": "CONVENIO DE SUMINISTRO DE LIBRERIA",
         "organismo": "SERVICIO SALUD BIO BIO HOSPITAL NACIMIENTO",
@@ -906,6 +896,16 @@
         "montoAnterior": 60000000,
         "montoNuevo": 60000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1305525-39-LE26",
+        "titulo": "SERVICIO DE LEVANTAMIENTO FÍSICO CUANTITATIVO Y VALORIZACIÓN REFERENCIAL DE BIENES MUEBLES PARA ESTABLECIMIENTOS",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE COSTA CENTRAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 60000000,
+        "montoNuevo": 60000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "1552-80-LE26",
@@ -1038,9 +1038,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "696217-4-LE26",
-        "titulo": "Serv de Mantencion de inmueble Oficina Colchane",
-        "organismo": "MINISTERIO PUBLICO",
+        "codigo": "608897-57-LE26",
+        "titulo": "REPRESENTACIÓN EN PROCESO DE MANTENCIÓN DE LA ACREDITACIÓN ENAC ISOIEC17025:2017 DEL SISTEMA DE GESTIÓN DE CALIDAD DEL DEPARTAMENTO REDES DE MONITOREO",
+        "organismo": "SUBSECRETARIA DEL MEDIO AMBIENTE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 35000000,
@@ -1048,9 +1048,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "608897-57-LE26",
-        "titulo": "REPRESENTACIÓN EN PROCESO DE MANTENCIÓN DE LA ACREDITACIÓN ENAC ISOIEC17025:2017 DEL SISTEMA DE GESTIÓN DE CALIDAD DEL DEPARTAMENTO REDES DE MONITOREO",
-        "organismo": "SUBSECRETARIA DEL MEDIO AMBIENTE",
+        "codigo": "696217-4-LE26",
+        "titulo": "Serv de Mantencion de inmueble Oficina Colchane",
+        "organismo": "MINISTERIO PUBLICO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 35000000,
@@ -1309,14 +1309,6 @@
         "organismo": "I MUNICIPALIDAD DE LAS CONDES",
         "estadoAnterior": "Cerrada",
         "monto": 200000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "777304-58-LP26",
-        "titulo": "AUDÍFONO PEDIÁTRICO HIPOACUSIA PARA EL HLF",
-        "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
-        "estadoAnterior": "Publicada",
-        "monto": 176700720,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Cerrada",
         "monto": 21979300,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4174-30-CO26",
+        "titulo": "CÁMARAS DE SEGURIDAD PARA LA COMUNA DE QUIRIHUE",
+        "organismo": "Ilustre Municipalidad de Quirihue",
+        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "monto": 21350314,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 390.6,
+  "tiempoEjecucionSegundos": 3326.9,
   "errores": [],
   "advertencias": []
 }
