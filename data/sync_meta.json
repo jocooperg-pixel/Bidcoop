@@ -1,39 +1,39 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-09-27T09:33:53.957630+00:00",
-  "ultimoIntentoRealizado": "2026-09-27T09:33:53.957630+00:00",
+  "ultimaSincronizacionExitosa": "2026-09-27T14:50:59.308885+00:00",
+  "ultimoIntentoRealizado": "2026-09-27T14:50:59.308885+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1539,
-  "registrosConfirmados": 1539,
+  "registrosEnPlataforma": 1538,
+  "registrosConfirmados": 1538,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1272,
+  "registrosConMontoReal": 1271,
   "excluidosPrefiltroIrrelevante": 7561,
-  "excluidosSinDatosReales": 0,
+  "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 823,
-    "conMontoValido": 820,
+    "total": 824,
+    "conMontoValido": 821,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 820,
+      "VALIDADO": 821,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
     "montoOriginalSum": 241073438,
-    "montoFinalSum": 1286677465,
-    "montoRecuperadoSum": 1045604027
+    "montoFinalSum": 1287027465,
+    "montoRecuperadoSum": 1045954027
   },
   "categorias": {
-    "licitaciones": 713,
-    "comprasAgiles": 823,
+    "licitaciones": 711,
+    "comprasAgiles": 824,
     "convenioMarco": 0,
     "ordenes_compra": 3,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 414,
+    "LE": 412,
     "LR": 42,
     "LP": 147,
     "L1": 101,
@@ -43,17 +43,17 @@
     "LS": 2,
     "E2": 2,
     "I2": 3,
-    "COT": 816
+    "COT": 817
   },
   "matchPorEmpresa": {
     "Aminorte": 1331,
-    "V-MOCCS": 208
+    "V-MOCCS": 207
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1172,
-    "modificadosCount": 221,
-    "cerradosCount": 975,
+    "nuevosCount": 1173,
+    "modificadosCount": 219,
+    "cerradosCount": 977,
     "nuevos": [
       {
         "codigo": "621-549-LR26",
@@ -968,16 +968,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1970-5-LE26",
-        "titulo": "CONTENEDORES MODULARES PARA OFICINA",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 46807500,
-        "montoNuevo": 46807500,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1480972-29-LE26",
         "titulo": "ADQUISICIÓN DE TINTAS Y TÓNER PARA IMPRESORAS",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE MARGA MARGA",
@@ -1195,6 +1185,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 27136493,
         "montoNuevo": 27136493,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2279-56-LE26",
+        "titulo": "SP 567 ADQUISICION E INSTALACION DE MODULOS DE OFICINA",
+        "organismo": "MUNICIPALIDAD DE PUDAHUEL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 27000000,
+        "montoNuevo": 27000000,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1440,6 +1440,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1970-5-LE26",
+        "titulo": "CONTENEDORES MODULARES PARA OFICINA",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Publicada",
+        "monto": 46807500,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1375757-28-LE26",
         "titulo": "ADQUISICIÓN DE IMPRESORAS Y PROYECTORES",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA PUELCHE",
@@ -1670,18 +1678,10 @@
         "estadoAnterior": "Cerrada",
         "monto": 21979300,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4174-30-CO26",
-        "titulo": "CÁMARAS DE SEGURIDAD PARA LA COMUNA DE QUIRIHUE",
-        "organismo": "Ilustre Municipalidad de Quirihue",
-        "estadoAnterior": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "monto": 21350314,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1506.9,
+  "tiempoEjecucionSegundos": 1645.1,
   "errores": [],
   "advertencias": []
 }
