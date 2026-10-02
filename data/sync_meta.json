@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-02T07:36:01.254508+00:00",
-  "ultimoIntentoRealizado": "2026-10-02T07:36:01.254508+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-02T14:12:03.382818+00:00",
+  "ultimoIntentoRealizado": "2026-10-02T14:12:03.382818+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1304,
-  "registrosConfirmados": 1304,
+  "registrosEnPlataforma": 1299,
+  "registrosConfirmados": 1299,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1091,
-  "excluidosPrefiltroIrrelevante": 6089,
-  "excluidosSinDatosReales": 1,
+  "registrosConMontoReal": 1095,
+  "excluidosPrefiltroIrrelevante": 6292,
+  "excluidosSinDatosReales": 25,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 738,
+    "total": 737,
     "conMontoValido": 737,
-    "pctValidado": 99.9,
+    "pctValidado": 100.0,
     "stats": {
       "VALIDADO": 737,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 1
+      "MONTO_NO_ENCONTRADO": 0
     },
     "montoOriginalSum": 65347000,
     "montoFinalSum": 1105077791,
     "montoRecuperadoSum": 1039730791
   },
   "categorias": {
-    "licitaciones": 562,
-    "comprasAgiles": 738,
+    "licitaciones": 558,
+    "comprasAgiles": 737,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
     "LE": 299,
-    "LP": 132,
+    "LP": 128,
     "L1": 90,
     "LR": 33,
     "E2": 2,
     "B2": 2,
     "LS": 2,
-    "CO": 3,
+    "CO": 2,
     "O1": 4,
     "I2": 2,
     "COT": 735
   },
   "matchPorEmpresa": {
-    "Aminorte": 1131,
-    "V-MOCCS": 173
+    "Aminorte": 1127,
+    "V-MOCCS": 172
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1151,
-    "modificadosCount": 96,
-    "cerradosCount": 1189,
+    "nuevosCount": 1153,
+    "modificadosCount": 91,
+    "cerradosCount": 1196,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -182,15 +182,6 @@
         "fechaCierre": "2026-10-26T15:01:00"
       },
       {
-        "codigo": "1057489-241-LP26",
-        "titulo": "CONVENIO DE SUMINISTROS DE REACTIVOS PARA DETERMINACIÓN DE ENFERMEDADES INFECCIOSAS POR PCR MULTIPLEX AUTOMATIZADO CON INCORPORACIÓN DE EQUIPAMIENTO PARA EL ÁREA TÉCNICA DE MICROBIOLOGÍA POR 36 MESES DEL HOSPITAL SALVADOR.",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "monto": 353163553,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-09-02T16:00:00"
-      },
-      {
         "codigo": "707419-31-LP26",
         "titulo": "Servicio de contratación de suministro de Mantención y Reparación de Jardines Infantiles Salas cunas y Oficinas Regionales Fundación Integra Valparaíso",
         "organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
@@ -279,6 +270,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 98,
         "fechaCierre": "2026-10-13T17:59:00"
+      },
+      {
+        "codigo": "1057780-8-LP26",
+        "titulo": "ADQ. COMPUTADORES ALL IN ONE H. CURACAUTÍN",
+        "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+        "monto": 170000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-10-22T15:30:00"
       },
       {
         "codigo": "4619-2-LP26",
@@ -542,6 +542,15 @@
         "fechaCierre": "2026-10-09T16:00:00"
       },
       {
+        "codigo": "2724-37-LE26",
+        "titulo": "ADQ. EQUIPOS AMPLIFICACION ILUMINACION Y PANTALLAS",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE SAN CARLOS",
+        "monto": 65000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-08-31T16:30:00"
+      },
+      {
         "codigo": "2427-87-LE26",
         "titulo": "ADQUISICION DE CONTENEDORES CUARTEL DE ASEO LUCUMO INMUEBLE EX TEATRO PACIFICO DAT.",
         "organismo": "I MUNICIPALIDAD DE VALPARAISO",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-06-25T11:30:00"
-      },
-      {
-        "codigo": "520149-46-LE26",
-        "titulo": "CEA-PC 6722- Estrategia de comunicación Interna",
-        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
-        "monto": 59868900,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-16T11:00:00"
       }
     ],
     "modificados": [
@@ -625,6 +625,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 319642573,
         "montoNuevo": 319642573,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5586-140-LP26",
+        "titulo": "SERVICIO DE ARRIENDO DE MAQUINAS FOTOCOPIADORAS PARA UNIDADES DE LA UNIVERSIDAD DE LA FRONTERA",
+        "organismo": "UNIVERSIDAD DE LA FRONTERA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 300000000,
+        "montoNuevo": 300000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -818,6 +828,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1375757-28-LE26",
+        "titulo": "ADQUISICIÓN DE IMPRESORAS Y PROYECTORES",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA PUELCHE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 46200000,
+        "montoNuevo": 46200000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1423921-18-LE26",
         "titulo": "Servicio de Aseo para Oficina Provincial - Punilla",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -825,16 +845,6 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 36000000,
         "montoNuevo": 36000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1016-9-LE26",
-        "titulo": "Equipamiento Informático 11 Notebook Workstation",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 35750000,
-        "montoNuevo": 35750000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -865,16 +875,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 26711199,
         "montoNuevo": 26711199,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1723-40-LE26",
-        "titulo": "Arriendo impresoras fotocopiadoras scanner multi",
-        "organismo": "I MUNICIPALIDAD DE LOS LAGOS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 26000000,
-        "montoNuevo": 26000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1048,16 +1048,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1153624-19-L126",
-        "titulo": "SERVICIO DE MANTENCIÓN PREVENTIVA, CORRECTIVA Y EVENTUALES REPARACIONES DE GENERADOR ELÉCTRICO Y UPS",
-        "organismo": "SUBSECRETARIA DE RELACIONES ECONOMICAS INTERNACIONALES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 7000000,
-        "montoNuevo": 7000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3117-93-L126",
         "titulo": "PARTIDA J PRORECAF 4 - MUEBLES DE COCINA",
         "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
@@ -1115,16 +1105,6 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 1749978,
         "montoNuevo": 1749978,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2332-114-L126",
-        "titulo": "ADQUISICIÓN DE TALONARIOS DE BITÁCORAS PARA VEHÍCULOS DEL DEPARTAMENTO DE SALUD MUNICIPAL DE PUERTO MONTT",
-        "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 1499400,
-        "montoNuevo": 1499400,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1195,6 +1175,26 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 78500,
         "montoNuevo": 78500,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2704-63-LP26",
+        "titulo": "SC 3445 SEGUROS  BIENES MUEBLES  E INMUEBLES",
+        "organismo": "UNIVERSIDAD DEL BIO BIO",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 5000,
+        "montoNuevo": 5000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "520149-43-LP26",
+        "titulo": "SLA_PC 6653_DICOMPRAS_Gestor Documental",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 2460,
+        "montoNuevo": 2460,
         "empresaMatch": "Aminorte"
       }
     ],
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 3044.6,
+  "tiempoEjecucionSegundos": 265.0,
   "errores": [],
   "advertencias": []
 }
