@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-01T20:36:22.826613+00:00",
-  "ultimoIntentoRealizado": "2026-10-01T20:36:22.826613+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-02T01:07:31.390441+00:00",
+  "ultimoIntentoRealizado": "2026-10-02T01:07:31.390441+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1437,
-  "registrosConfirmados": 1437,
+  "registrosEnPlataforma": 1372,
+  "registrosConfirmados": 1372,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1174,
-  "excluidosPrefiltroIrrelevante": 7487,
-  "excluidosSinDatosReales": 8,
+  "registrosConMontoReal": 1143,
+  "excluidosPrefiltroIrrelevante": 6902,
+  "excluidosSinDatosReales": 12,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 751,
@@ -26,17 +26,17 @@
     "montoRecuperadoSum": 1094950756
   },
   "categorias": {
-    "licitaciones": 682,
+    "licitaciones": 617,
     "comprasAgiles": 751,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 370,
-    "LP": 145,
-    "L1": 117,
-    "LR": 41,
+    "LE": 328,
+    "LP": 140,
+    "L1": 100,
+    "LR": 40,
     "E2": 2,
     "B2": 3,
     "LS": 2,
@@ -46,14 +46,14 @@
     "COT": 748
   },
   "matchPorEmpresa": {
-    "Aminorte": 1237,
-    "V-MOCCS": 200
+    "Aminorte": 1181,
+    "V-MOCCS": 191
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1209,
-    "modificadosCount": 163,
-    "cerradosCount": 1114,
+    "nuevosCount": 1185,
+    "modificadosCount": 129,
+    "cerradosCount": 1155,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -252,15 +252,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-14T15:00:00"
-      },
-      {
-        "codigo": "1049-64-LP26",
-        "titulo": "SERVICIO DE VIGILANCIA EN OFICINAS IFOP",
-        "organismo": "INSTITUTO DE FOMENTO PESQUERO",
-        "monto": 219720000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-07T15:30:00"
       },
       {
         "codigo": "2928-21-LP26",
@@ -515,15 +506,6 @@
         "fechaCierre": "2026-06-17T15:03:00"
       },
       {
-        "codigo": "3709-37-LP26",
-        "titulo": "SUMINISTRO TINTAS DEM VICTORIA",
-        "organismo": "I MUNICIPALIDAD DE VICTORIA",
-        "monto": 80000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 98,
-        "fechaCierre": "2026-08-07T16:38:00"
-      },
-      {
         "codigo": "1110404-205-LP26",
         "titulo": "MANTENCIÓN SS.HH. Y COCINAS DE CASAS DE PROFESORES Y REPOSICION DE CUBICULOS SEPARADORES EN SS.HH. DEL ESTABLECIMIENTO LICEO GRANADEROS DE PUTRE PERTENECIENTE A SLEP DE CHINCHORRO",
         "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
@@ -549,15 +531,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 80,
         "fechaCierre": "2026-08-28T15:15:00"
-      },
-      {
-        "codigo": "3453-78-LE26",
-        "titulo": "ADQ SERV. REP. Y MANT DE OFICINAS PASILLOS Y BAÑOS",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "monto": 70500000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-08-27T19:00:00"
       },
       {
         "codigo": "5514-4-LP26",
@@ -594,6 +567,33 @@
         "empresaMatch": "Aminorte",
         "matchScore": 80,
         "fechaCierre": "2026-10-09T16:00:00"
+      },
+      {
+        "codigo": "2427-87-LE26",
+        "titulo": "ADQUISICION DE CONTENEDORES CUARTEL DE ASEO LUCUMO INMUEBLE EX TEATRO PACIFICO DAT.",
+        "organismo": "I MUNICIPALIDAD DE VALPARAISO",
+        "monto": 64617000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-11T14:00:00"
+      },
+      {
+        "codigo": "1180730-44-LE26",
+        "titulo": "REPOSICION MAQUINA DE ANESTESIA CON MONITOR HPN",
+        "organismo": "SERVICIO DE SALUD MAGALLANES",
+        "monto": 64438500,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-06T16:00:00"
+      },
+      {
+        "codigo": "727202-75-LE26",
+        "titulo": "HABILITACIÓN PUNTOS DE CÁMARAS Y SALA DE MONITOREO",
+        "organismo": "I MUNICIPALIDAD DE VICUNA",
+        "monto": 61000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-09T15:00:00"
       }
     ],
     "modificados": [
@@ -618,16 +618,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1028897-37-LR26",
-        "titulo": "REPOSICIÓN VEHÍCULOS TRANSPORTE ESCOLAR SLEPCA",
-        "organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 991328000,
-        "montoNuevo": 991328000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "886954-208-LR26",
         "titulo": "Conv. Suministro Audífonos Retroauricular Adultos GES y no GES",
         "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
@@ -635,6 +625,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 697170000,
         "montoNuevo": 697170000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2684-45-LR26",
+        "titulo": "Pp 44-2026 Servicio de arriendo de equipos multifuncionales impresoras fotocopiadoras y escáner para las unidades municipales",
+        "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 615600000,
+        "montoNuevo": 615600000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -668,16 +668,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "324-48-LP26",
-        "titulo": "HABILITACION OFICINAS DIRECCION DE TRÁNSITO",
-        "organismo": "I MUNICIPALIDAD DE CERRILLOS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 249300000,
-        "montoNuevo": 249300000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "777304-58-LP26",
         "titulo": "AUDÍFONO PEDIÁTRICO HIPOACUSIA PARA EL HLF",
         "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
@@ -685,6 +675,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 176700720,
         "montoNuevo": 176700720,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "809-54-LP26",
+        "titulo": "Constitución e Inscripción de Derechos Reales de Uso Segundo Llamado Región de La Araucanía año 2026",
+        "organismo": "CORP NACIONAL DE DESARROLLO INDIGENA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 175000000,
+        "montoNuevo": 175000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -698,6 +698,26 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1330174-1-LP26",
+        "titulo": "Servicios de Seguridad y Monitoreo de Cámaras.",
+        "organismo": "CORPORACION MUNICIPAL CULTURAL DE MUSEO DE BELLAS ARTES DE VALPARAISO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 156000000,
+        "montoNuevo": 156000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5190-17-LP26",
+        "titulo": "JENABIEN - CONFECCION E INSTALACION DE MOBILIARIO",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 150000000,
+        "montoNuevo": 150000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1280-45-LP26",
         "titulo": "EMULSIONES ASFALTICAS EN TAMBORES",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -708,14 +728,14 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1574-33-LP26",
-        "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 1",
-        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
+        "codigo": "3833-59-LP26",
+        "titulo": "SEGUROS BIENES MUEBLES E INMUEBLES Y OTROS",
+        "organismo": "I MUNICIPALIDAD DE RIO BUENO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
-        "montoAnterior": 150000000,
-        "montoNuevo": 150000000,
-        "empresaMatch": "Aminorte"
+        "montoAnterior": 130000000,
+        "montoNuevo": 130000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "696961-4-LP26",
@@ -725,6 +745,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 120000000,
         "montoNuevo": 120000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4295-67-LP26",
+        "titulo": "Servicio de enlace de datos voz IP y CCTV para oficinas remotas",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE LA SERENA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 108000000,
+        "montoNuevo": 108000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -763,16 +793,6 @@
         "organismo": "CORP MUNICIPAL DE CONCHALI DE EDUCACION SALUD Y ATENCION DE MENORES",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Revocada",
-        "montoAnterior": 80000000,
-        "montoNuevo": 80000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1431841-62-LP26",
-        "titulo": "SUMINISTRO MATERIAL DE PINTURA VIAl",
-        "organismo": "I MUNICIPALIDAD DE RECOLETA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
         "montoAnterior": 80000000,
         "montoNuevo": 80000000,
         "empresaMatch": "Aminorte"
@@ -818,16 +838,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2408-132-LE26",
-        "titulo": "CONSTRUCCIÓN PUENTE AVENIDA ORIENTE SOBRE ESTERO QUILQUE LOS ÁNGELES.",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 70000000,
-        "montoNuevo": 70000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "417-3-LE26",
         "titulo": "LE-5175 SERVICIO DE MONITOREO DE ALARMA CONTRA ROBO E INCENDIO PARA LA VII DR TALCA",
         "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
@@ -866,16 +876,6 @@
         "montoAnterior": 59500000,
         "montoNuevo": 59500000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1970-5-LE26",
-        "titulo": "CONTENEDORES MODULARES PARA OFICINA",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 46807500,
-        "montoNuevo": 46807500,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1019-110-LE26",
@@ -935,16 +935,6 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 35750000,
         "montoNuevo": 35750000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1380-190-LE26",
-        "titulo": "PPTA 317-26 “ADQUISICIÓN DE IMPRESORA DE CASSETTES”",
-        "organismo": "HOSPITAL DOCTOR HERNAN HENRIQUEZ ARAVENA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 33296000,
-        "montoNuevo": 33296000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1018,6 +1008,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1607-14-LE26",
+        "titulo": "aseo y gestor de usuarios oficina de Chillán",
+        "organismo": "SUPERINTENDENCIA DE SEGURIDAD SOCIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 20400000,
+        "montoNuevo": 20400000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "434-104-LE26",
         "titulo": "SERVIDOR DE DATOS SEGUN FORMULARIO N°14 INFORMATICA",
         "organismo": "I MUNICIPALIDAD DE CAUQUENES",
@@ -1088,16 +1088,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1576-16-LE26",
-        "titulo": "SERVICIOS DE MANTENCIÓN Y REPARACIÓN DE COMPUTADORES DE ESCRITORIO TODO EN UNO NOTEBOOKS IMPRESORAS ESCANERS PLOTTERS PROYECTORES Y MONITORES DE LA JUNTA NACIONAL DE JARDINES INFANTILES REGIÓN DEL BIOBÍO",
-        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 15000000,
-        "montoNuevo": 15000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3415-24-LE26",
         "titulo": "MOBILIARIO ARMADO E INSTALADO PARA ESCSERV",
         "organismo": "DIVISION LOGISTICA DEL EJERCITO",
@@ -1108,29 +1098,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2697-47-LE26",
-        "titulo": "ADQ. CAMARAS CORPORALES BODYCAM PROYECTO...",
-        "organismo": "I MUNICIPALIDAD DE CARTAGENA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 13377636,
-        "montoNuevo": 13377636,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1301883-24-LE26",
-        "titulo": "SERVICIO DE MONITOREO DE INFORMACIONES",
-        "organismo": "SERVICIO NACIONAL DE REINSERCION SOCIAL JUVENIL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 13000000,
-        "montoNuevo": 13000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3858-35-LE26",
-        "titulo": "Servicio de Mantención y Reparación de Impresoras",
-        "organismo": "I MUNICIPALIDAD DE MEJILLONES",
+        "codigo": "979-56-LE26",
+        "titulo": "Adquisición de 52 monitores de 27 pulgadas FHD para la Dirección de Vialidad",
+        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 13000000,
@@ -1178,6 +1148,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "3084-33-LE26",
+        "titulo": "ADQUISICIÓN DE VEINTITRÉS 23 EQUIPOS UPS 3KVA .",
+        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 11000000,
+        "montoNuevo": 11000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1075963-370-LE26",
         "titulo": "ARRIENDO CON OPCION DE COMPRA SECADOR KAESER REFRIGERATIVO KYOSEC POR 3 MESES",
         "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
@@ -1196,9 +1176,37 @@
         "montoAnterior": 9017070,
         "montoNuevo": 9017070,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5184-102-LE26",
+        "titulo": "SERVICIOS MEDICOS PARA UPC ADUTO",
+        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE LINARES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 9000000,
+        "montoNuevo": 9000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4037-65-LE26",
+        "titulo": "RENOVACION SERVICIO  DE SERVIDOR VIRTUAL HOSTING munifresia.cl.",
+        "organismo": "I MUNICIPALIDAD DE FRESIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 9000000,
+        "montoNuevo": 9000000,
+        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
+      {
+        "codigo": "1028897-37-LR26",
+        "titulo": "REPOSICIÓN VEHÍCULOS TRANSPORTE ESCOLAR SLEPCA",
+        "organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
+        "estadoAnterior": "Publicada",
+        "monto": 991328000,
+        "empresaMatch": "Aminorte"
+      },
       {
         "codigo": "2157-120-LR26",
         "titulo": "SUMINISTRO KIT NEUROMONITOREO",
@@ -1336,6 +1344,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "324-48-LP26",
+        "titulo": "HABILITACION OFICINAS DIRECCION DE TRÁNSITO",
+        "organismo": "I MUNICIPALIDAD DE CERRILLOS",
+        "estadoAnterior": "Publicada",
+        "monto": 249300000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2494-79-LP26",
         "titulo": "MEJORAMIENTO OFICINA LOCAL DE LA NIÑEZ COYHAIQUE",
         "organismo": "I MUNICIPALIDAD DE COYHAIQUE",
@@ -1392,14 +1408,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "809-54-LP26",
-        "titulo": "Constitución e Inscripción de Derechos Reales de Uso Segundo Llamado Región de La Araucanía año 2026",
-        "organismo": "CORP NACIONAL DE DESARROLLO INDIGENA",
-        "estadoAnterior": "Publicada",
-        "monto": 175000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2963-33-LP26",
         "titulo": "MANTENCIÓN DE PISCINA Y CLIMATIZACIÓN POZOS",
         "organismo": "I MUNICIPALIDAD DE LA GRANJA",
@@ -1416,11 +1424,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1330174-1-LP26",
-        "titulo": "Servicios de Seguridad y Monitoreo de Cámaras.",
-        "organismo": "CORPORACION MUNICIPAL CULTURAL DE MUSEO DE BELLAS ARTES DE VALPARAISO",
+        "codigo": "1574-33-LP26",
+        "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 1",
+        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
         "estadoAnterior": "Publicada",
-        "monto": 156000000,
+        "monto": 150000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1528,6 +1536,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1431841-62-LP26",
+        "titulo": "SUMINISTRO MATERIAL DE PINTURA VIAl",
+        "organismo": "I MUNICIPALIDAD DE RECOLETA",
+        "estadoAnterior": "Publicada",
+        "monto": 80000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "885-86-LP26",
         "titulo": "Adquisición de impresora digital para Unidad de Servicios Gráficos ",
         "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
@@ -1573,6 +1589,14 @@
         "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
         "estadoAnterior": "Adjudicada",
         "monto": 71280000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2408-132-LE26",
+        "titulo": "CONSTRUCCIÓN PUENTE AVENIDA ORIENTE SOBRE ESTERO QUILQUE LOS ÁNGELES.",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "estadoAnterior": "Publicada",
+        "monto": 70000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1654,34 +1678,10 @@
         "estadoAnterior": "Publicada",
         "monto": 57587000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "539119-69-LE26",
-        "titulo": "ADQUISICIÓN POR LÍNEAS DE EQUIPOS COMPUTACIONALES PERIFÉRICOS INSUMOS REPUESTOS ACCESORIOS COMPUTACIONALES Y OTROS PARA LAS DISTINTAS DEPENDENCIAS DE LA DIRECCIÓN DE BIENESTAR DE CARABINEROS.",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Adjudicada",
-        "monto": 56447170,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5556-1-LE26",
-        "titulo": "Servicio de Aseo en Oficinas Talca y Constitución",
-        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
-        "estadoAnterior": "Publicada",
-        "monto": 51600000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2020-19-LE26",
-        "titulo": "SERVICIOS MULTITÉCNICOS DE MANTENCIÓN DE OFICINAS",
-        "organismo": "Biblioteca del Congreso Nacional",
-        "estadoAnterior": "Publicada",
-        "monto": 50000000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 470.3,
+  "tiempoEjecucionSegundos": 564.5,
   "errores": [],
   "advertencias": []
 }
