@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-04T17:52:58.934434+00:00",
-  "ultimoIntentoRealizado": "2026-10-04T17:52:58.934434+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-04T20:31:47.060569+00:00",
+  "ultimoIntentoRealizado": "2026-10-04T20:31:47.060569+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1494,
-  "registrosConfirmados": 1494,
+  "registrosEnPlataforma": 1480,
+  "registrosConfirmados": 1480,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1232,
+  "registrosConMontoReal": 1224,
   "excluidosPrefiltroIrrelevante": 7682,
-  "excluidosSinDatosReales": 2,
+  "excluidosSinDatosReales": 13,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 782,
-    "conMontoValido": 781,
+    "total": 779,
+    "conMontoValido": 778,
     "pctValidado": 99.9,
     "stats": {
-      "VALIDADO": 781,
+      "VALIDADO": 778,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 1
     },
     "montoOriginalSum": 85347000,
-    "montoFinalSum": 1186270724,
-    "montoRecuperadoSum": 1100923724
+    "montoFinalSum": 1178236870,
+    "montoRecuperadoSum": 1092889870
   },
   "categorias": {
-    "licitaciones": 708,
-    "comprasAgiles": 782,
+    "licitaciones": 697,
+    "comprasAgiles": 779,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 383,
+    "LE": 375,
     "LP": 150,
-    "L1": 120,
-    "LR": 44,
+    "L1": 118,
+    "LR": 43,
     "CO": 4,
     "E2": 3,
     "B2": 3,
     "LS": 2,
     "O1": 4,
     "I2": 3,
-    "COT": 778
+    "COT": 775
   },
   "matchPorEmpresa": {
-    "Aminorte": 1288,
+    "Aminorte": 1274,
     "V-MOCCS": 206
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1288,
-    "modificadosCount": 158,
-    "cerradosCount": 1136,
+    "nuevosCount": 1279,
+    "modificadosCount": 153,
+    "cerradosCount": 1141,
     "nuevos": [
       {
         "codigo": "1057489-211-I226",
@@ -838,6 +838,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1431841-62-LP26",
+        "titulo": "SUMINISTRO MATERIAL DE PINTURA VIAl",
+        "organismo": "I MUNICIPALIDAD DE RECOLETA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 80000000,
+        "montoNuevo": 80000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "948354-134-LE26",
         "titulo": "CONTRATACIÓN DEL SERVICIO DE MANTENIMIENTO PREVENTIVO Y CORRECTIVO PARA EQUIPOS KARDEX POR UN PERIODO DE 24 MESES PARA EL HOSPITAL DIPRECA",
         "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
@@ -1178,16 +1188,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2981-257-LE26",
-        "titulo": "ADQUISICION DE EQUIPOS TIPO NOTEBOOK ESTANDAR CON PERIFERICOS INCLUIDOS - PLAN FRONTERA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 17677000,
-        "montoNuevo": 17677000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1375761-48-LE26",
         "titulo": "PANTALLA INTERACTIVA EDUCATIVA - P02 EFB",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA VALLE DIGUILLÍN",
@@ -1520,14 +1520,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1431841-62-LP26",
-        "titulo": "SUMINISTRO MATERIAL DE PINTURA VIAl",
-        "organismo": "I MUNICIPALIDAD DE RECOLETA",
-        "estadoAnterior": "Publicada",
-        "monto": 80000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "885-86-LP26",
         "titulo": "Adquisición de impresora digital para Unidad de Servicios Gráficos ",
         "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Publicada",
         "monto": 51600000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2020-19-LE26",
+        "titulo": "SERVICIOS MULTITÉCNICOS DE MANTENCIÓN DE OFICINAS",
+        "organismo": "Biblioteca del Congreso Nacional",
+        "estadoAnterior": "Publicada",
+        "monto": 50000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2829.3,
+  "tiempoEjecucionSegundos": 2467.6,
   "errores": [],
   "advertencias": []
 }
