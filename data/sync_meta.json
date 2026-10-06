@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-06T03:26:52.510646+00:00",
-  "ultimoIntentoRealizado": "2026-10-06T03:26:52.510646+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-06T10:49:45.329427+00:00",
+  "ultimoIntentoRealizado": "2026-10-06T10:49:45.329427+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1456,
-  "registrosConfirmados": 1456,
+  "registrosEnPlataforma": 1449,
+  "registrosConfirmados": 1449,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1223,
+  "registrosConMontoReal": 1222,
   "excluidosPrefiltroIrrelevante": 6998,
-  "excluidosSinDatosReales": 18,
+  "excluidosSinDatosReales": 30,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 825,
-    "conMontoValido": 825,
+    "total": 830,
+    "conMontoValido": 830,
     "pctValidado": 100.0,
     "stats": {
-      "VALIDADO": 825,
+      "VALIDADO": 830,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 0
     },
-    "montoOriginalSum": 85347000,
-    "montoFinalSum": 1261376891,
-    "montoRecuperadoSum": 1176029891
+    "montoOriginalSum": 96817001,
+    "montoFinalSum": 1271076892,
+    "montoRecuperadoSum": 1174259891
   },
   "categorias": {
-    "licitaciones": 626,
-    "comprasAgiles": 825,
+    "licitaciones": 614,
+    "comprasAgiles": 830,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 348,
-    "LP": 127,
-    "LR": 37,
+    "LE": 335,
+    "LP": 129,
+    "LR": 36,
     "CO": 3,
-    "L1": 106,
+    "E2": 3,
+    "L1": 105,
     "B2": 1,
     "LS": 2,
     "O1": 5,
     "I2": 3,
-    "E2": 2,
-    "COT": 822
+    "COT": 827
   },
   "matchPorEmpresa": {
-    "V-MOCCS": 201,
-    "Aminorte": 1255
+    "V-MOCCS": 196,
+    "Aminorte": 1253
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1313,
-    "modificadosCount": 100,
-    "cerradosCount": 1199,
+    "nuevosCount": 1308,
+    "modificadosCount": 105,
+    "cerradosCount": 1201,
     "nuevos": [
       {
         "codigo": "1057489-211-I226",
@@ -144,15 +144,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-02T16:00:00"
-      },
-      {
-        "codigo": "621-888-LR26",
-        "titulo": "FLUCLOXACILINA 500 MG CPCM REC. 1000023023",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "monto": 519551556,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-27T16:00:00"
       },
       {
         "codigo": "1477-14-LR26",
@@ -263,6 +254,15 @@
         "fechaCierre": "2026-10-14T15:00:00"
       },
       {
+        "codigo": "2928-21-LP26",
+        "titulo": "CONSTRUCCIÓN CÁMARAS DE TELEVIGILANCIA QUELLÓN",
+        "organismo": "Ilustre Municipalidad De Quellón",
+        "monto": 195000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-21T12:00:00"
+      },
+      {
         "codigo": "2563-43-LP26",
         "titulo": "Adquisición de cámaras IA y radares de seguridad",
         "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
@@ -333,6 +333,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-10-08T16:00:00"
+      },
+      {
+        "codigo": "2199-17-LP26",
+        "titulo": "ARRIENDO DE COMPUTADORES Y MONITORES POR 36 MESES",
+        "organismo": "INSTITUTO NACIONAL DE GERIATRIA PRESIDENTE EDO FREI MONTALVA",
+        "monto": 150000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 90,
+        "fechaCierre": "2026-10-05T15:00:00"
       },
       {
         "codigo": "5027-1-LP26",
@@ -470,6 +479,15 @@
         "fechaCierre": "2026-10-19T15:00:00"
       },
       {
+        "codigo": "2483-131-LP26",
+        "titulo": "SUMINISTRO DE MATERIALES DE OFICINA PARA DEPARTAMENTO Y CENTROS DE SALUD MUNICIPALIDAD DE QUILICURA",
+        "organismo": "I MUNICIPALIDAD DE QUILICURA",
+        "monto": 80000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-06-17T15:03:00"
+      },
+      {
         "codigo": "1110404-205-LP26",
         "titulo": "MANTENCIÓN SS.HH. Y COCINAS DE CASAS DE PROFESORES Y REPOSICION DE CUBICULOS SEPARADORES EN SS.HH. DEL ESTABLECIMIENTO LICEO GRANADEROS DE PUTRE PERTENECIENTE A SLEP DE CHINCHORRO",
         "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-08T09:01:00"
-      },
-      {
-        "codigo": "434-105-LE26",
-        "titulo": "SERVICIO DE TELEFONIA FIJA IP PARA OFICINAS DE LA MUNICIPALIDAD DE CAUQUENES",
-        "organismo": "I MUNICIPALIDAD DE CAUQUENES",
-        "monto": 60000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-08T12:27:00"
-      },
-      {
-        "codigo": "520149-46-LE26",
-        "titulo": "CEA-PC 6722- Estrategia de comunicación Interna",
-        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
-        "monto": 59868900,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-16T11:00:00"
       }
     ],
     "modificados": [
@@ -625,6 +625,16 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 615600000,
         "montoNuevo": 615600000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1191688-68-LR26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE LUMINARIAS LED",
+        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 383231755,
+        "montoNuevo": 383231755,
         "empresaMatch": "Aminorte"
       },
       {
@@ -681,6 +691,16 @@
         "codigo": "1574-35-LP26",
         "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 2",
         "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 150000000,
+        "montoNuevo": 150000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1049-74-LP26",
+        "titulo": "MONITOREO ERIZO ALMEJA Y LUGA ROJA LOS LAGOS AYSÉN",
+        "organismo": "INSTITUTO DE FOMENTO PESQUERO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 150000000,
@@ -758,13 +778,13 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "417-3-LE26",
-        "titulo": "LE-5175 SERVICIO DE MONITOREO DE ALARMA CONTRA ROBO E INCENDIO PARA LA VII DR TALCA",
-        "organismo": "SERVICIO DE IMPUESTOS INTERNOS DIRECCION",
+        "codigo": "1596-50-LP26",
+        "titulo": "PANTALLA LED PARA EL EDIFICIO DEL GORE MAULE",
+        "organismo": "GOBIERNO REGIONAL VII REGION",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 60000000,
-        "montoNuevo": 60000000,
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 75000000,
+        "montoNuevo": 75000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -792,7 +812,7 @@
         "titulo": "Monitoreo Glaciar Tapado Coquimbo 2026-2027",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
+        "estadoNuevo": "Revocada",
         "montoAnterior": 46406000,
         "montoNuevo": 46406000,
         "empresaMatch": "Aminorte"
@@ -918,16 +938,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3929-61-LE26",
-        "titulo": "Proyecto de adquisición e instalación de mobiliario Programa Somos Barrio Comercial borde plaza José Francisco Vergara y Sucre comuna de Viña del Mar código BCP23-REP-0004",
-        "organismo": "I MUNICIPALIDAD DE VINA DEL MAR",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 28500000,
-        "montoNuevo": 28500000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "1348-6-LE26",
         "titulo": "SERVICIO DE ASEO OFICINA REGISTRO CIVIL DE RAHUE",
         "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
@@ -1008,6 +1018,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "591-28-LE26",
+        "titulo": "“ENCUESTA TELEFÓNICA SOBRE ELSISTEMA DE SALUD.",
+        "organismo": "FONDO NACIONAL DE SALUD",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 17000000,
+        "montoNuevo": 17000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3415-24-LE26",
         "titulo": "MOBILIARIO ARMADO E INSTALADO PARA ESCSERV",
         "organismo": "DIVISION LOGISTICA DEL EJERCITO",
@@ -1042,7 +1062,7 @@
         "titulo": "ARRIENDO DE CONTENEDORES PARA OFICINAS Y BODEGAS",
         "organismo": "HOSPITAL VILCUN",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 12000000,
         "montoNuevo": 12000000,
         "empresaMatch": "Aminorte"
@@ -1176,26 +1196,6 @@
         "montoAnterior": 2815366,
         "montoNuevo": 2815366,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1110404-199-L126",
-        "titulo": "ADQUISICION DE RECURSOS DE ILUMINACIÓN PARA LICEO B. ARTISTICO PERT. SLEPCH",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 2733870,
-        "montoNuevo": 2733870,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1428275-13-L126",
-        "titulo": "ADQUISICIÓN DE MOBILIARIO Y EQUIPOS PARA EL SERVICIO NACIONAL DEL PATRIMONIO CULTURAL REGIÓN DE AYSÉN",
-        "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 2250000,
-        "montoNuevo": 2250000,
-        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
@@ -1464,14 +1464,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1049-74-LP26",
-        "titulo": "MONITOREO ERIZO ALMEJA Y LUGA ROJA LOS LAGOS AYSÉN",
-        "organismo": "INSTITUTO DE FOMENTO PESQUERO",
-        "estadoAnterior": "Publicada",
-        "monto": 150000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1574-33-LP26",
         "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 1",
         "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
@@ -1678,10 +1670,18 @@
         "estadoAnterior": "Publicada",
         "monto": 72000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "586-25-LP26",
+        "titulo": "Adquisición de 70 impresoras láser",
+        "organismo": "SERVICIO NACIONAL DE ADUANAS",
+        "estadoAnterior": "Adjudicada",
+        "monto": 71500000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1503.6,
+  "tiempoEjecucionSegundos": 1530.3,
   "errores": [],
   "advertencias": []
 }
