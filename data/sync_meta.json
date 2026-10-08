@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-08T01:22:38.693632+00:00",
-  "ultimoIntentoRealizado": "2026-10-08T01:22:38.693632+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-08T08:04:08.397173+00:00",
+  "ultimoIntentoRealizado": "2026-10-08T08:04:08.397173+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1520,
-  "registrosConfirmados": 1520,
+  "registrosEnPlataforma": 1361,
+  "registrosConfirmados": 1361,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1283,
-  "excluidosPrefiltroIrrelevante": 7181,
-  "excluidosSinDatosReales": 48,
+  "registrosConMontoReal": 1115,
+  "excluidosPrefiltroIrrelevante": 7184,
+  "excluidosSinDatosReales": 36,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 898,
-    "conMontoValido": 897,
+    "total": 726,
+    "conMontoValido": 725,
     "pctValidado": 99.9,
     "stats": {
-      "VALIDADO": 897,
+      "VALIDADO": 725,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 1
     },
-    "montoOriginalSum": 149700050,
-    "montoFinalSum": 1338289050,
-    "montoRecuperadoSum": 1188589000
+    "montoOriginalSum": 124353050,
+    "montoFinalSum": 1144329402,
+    "montoRecuperadoSum": 1019976352
   },
   "categorias": {
-    "licitaciones": 617,
-    "comprasAgiles": 898,
+    "licitaciones": 630,
+    "comprasAgiles": 726,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 343,
-    "LR": 35,
-    "L1": 103,
+    "LE": 352,
+    "LP": 125,
+    "LR": 37,
+    "L1": 104,
     "B2": 2,
-    "LP": 124,
-    "CO": 7,
+    "CO": 6,
     "E2": 4,
     "LS": 3,
     "O1": 5,
     "I2": 3,
-    "COT": 891
+    "COT": 720
   },
   "matchPorEmpresa": {
-    "Aminorte": 1301,
-    "V-MOCCS": 219
+    "Aminorte": 1171,
+    "V-MOCCS": 190
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1411,
-    "modificadosCount": 83,
-    "cerradosCount": 1233,
+    "nuevosCount": 1250,
+    "modificadosCount": 84,
+    "cerradosCount": 1231,
     "nuevos": [
       {
         "codigo": "1057489-211-I226",
@@ -191,6 +191,15 @@
         "fechaCierre": "2026-08-12T09:00:00"
       },
       {
+        "codigo": "1110404-227-LR26",
+        "titulo": "ARRIENDO DE EQUIPOS DE IMPRESIÓN Y FOTOCOPIADO CON SERVICIOS ASOCIADOS PARA ESTABLECIMIENTOS EDUCACIONALES DEL SLEP CHINCHORRO SUBVENCIÓN SEP Y GENERAL",
+        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
+        "monto": 361926262,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-09T15:00:00"
+      },
+      {
         "codigo": "3929-53-LP26",
         "titulo": "SUSCRIPCIÓN DE LICENCIAS DE SOFTWARE DE DISEÑO ASISTIDO POR COMPUTADOR CAD",
         "organismo": "I MUNICIPALIDAD DE VINA DEL MAR",
@@ -234,6 +243,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-10-19T16:00:00"
+      },
+      {
+        "codigo": "1002588-102-LP26",
+        "titulo": "Adquisición de Mobiliario destinado a los EE",
+        "organismo": "SERVICIO LOCAL DE EDUCACION DE PUERTO CORDILLERA",
+        "monto": 233394596,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-26T17:20:00"
       },
       {
         "codigo": "1057448-46-LP26",
@@ -576,37 +594,9 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-19T15:15:00"
-      },
-      {
-        "codigo": "1230848-60-LE26",
-        "titulo": "CANASTAS OTORRINOLARINGOLOGÍA Y AUDÍFONOS",
-        "organismo": "Corporación Municipal de Desarrollo Social de Calama",
-        "monto": 66761400,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-03T15:00:00"
-      },
-      {
-        "codigo": "4063-17-LP26",
-        "titulo": "HABILITACIÓN DE MOBILIARIO URBANO DISTINTOS SECTORES DE LA COMUNA DE MARIQUINA",
-        "organismo": "I MUNICIPALIDAD DE MARIQUINA",
-        "monto": 66760300,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-02T15:30:00"
       }
     ],
     "modificados": [
-      {
-        "codigo": "621-782-LR26",
-        "titulo": "AEROCAMARA ADULTO BIVAL PINH 100A350 ML 1000022782",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 2910784649,
-        "montoNuevo": 2910784649,
-        "empresaMatch": "Aminorte"
-      },
       {
         "codigo": "1191688-68-LR26",
         "titulo": "ADQUISICIÓN E INSTALACIÓN DE LUMINARIAS LED",
@@ -768,6 +758,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1375757-28-LE26",
+        "titulo": "ADQUISICIÓN DE IMPRESORAS Y PROYECTORES",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA PUELCHE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 46200000,
+        "montoNuevo": 46200000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1574-34-LE26",
         "titulo": "CHEE MANT. EMERGENCIA ELQUI REG. COQUIMBO J.I. Y OFICINAS - SC 61183",
         "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
@@ -788,13 +788,13 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "771555-14-LE26",
-        "titulo": "Aumento de Cámaras de Televigilancia en Puntos Estratégicos Comuna de Rio Hurtado",
-        "organismo": "I MUNICIPALIDAD DE RIO HURTADO",
+        "codigo": "696217-4-LE26",
+        "titulo": "Serv de Mantencion de inmueble Oficina Colchane",
+        "organismo": "MINISTERIO PUBLICO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 33126615,
-        "montoNuevo": 33126615,
+        "montoAnterior": 35000000,
+        "montoNuevo": 35000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -836,6 +836,26 @@
         "montoAnterior": 28500000,
         "montoNuevo": 28500000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1348-6-LE26",
+        "titulo": "SERVICIO DE ASEO OFICINA REGISTRO CIVIL DE RAHUE",
+        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 27812592,
+        "montoNuevo": 27812592,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2460-120-LE26",
+        "titulo": "PROVISIÓN E INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO PARA DEPENDENCIAS DE LA MUNICIPALIDAD DE PROVIDENCIA",
+        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 26550000,
+        "montoNuevo": 26550000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1980-10-LE26",
@@ -1078,16 +1098,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "3890-192-L126",
-        "titulo": "ADQ. TINTAS Y TONER UNIDADES MUNICIPALES",
-        "organismo": "I MUNICIPALIDAD DE FREIRE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 4000000,
-        "montoNuevo": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1110404-199-L126",
         "titulo": "ADQUISICION DE RECURSOS DE ILUMINACIÓN PARA LICEO B. ARTISTICO PERT. SLEPCH",
         "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
@@ -1108,16 +1118,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2658-315-L126",
-        "titulo": "MOBILIARIO OTEC MUNICIPAL",
-        "organismo": "I MUNICIPALIDAD DE ANCUD",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 2000000,
-        "montoNuevo": 2000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "923000-18-L126",
         "titulo": "SERVICIO TASACIÓN COMERCIAL INMUEBLE DAEM OLIVAR",
         "organismo": "I MUNICIPALIDAD DE OLIVAR",
@@ -1126,6 +1126,16 @@
         "montoAnterior": 2000000,
         "montoNuevo": 2000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2658-315-L126",
+        "titulo": "MOBILIARIO OTEC MUNICIPAL",
+        "organismo": "I MUNICIPALIDAD DE ANCUD",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 2000000,
+        "montoNuevo": 2000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "2562-18-LR26",
@@ -1145,6 +1155,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 1700000,
         "montoNuevo": 1700000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "900-38-L126",
+        "titulo": "HDS - COMPRA DE LAPICES PARA U.P.F.T.",
+        "organismo": "SERVICIO DE SALUD VALPARAISO SAN ANTONIO",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 550000,
+        "montoNuevo": 550000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1176,29 +1196,17 @@
         "montoAnterior": 2367,
         "montoNuevo": 2367,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1057056-9-LE26",
-        "titulo": "APC - ADQUISICIÓN DE 01 ECOGRAFO OCULAR",
-        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2369-81-LP26",
-        "titulo": "PP 92 Adq. mobiliario ropa cama y utensilios aseo",
-        "organismo": "I MUNICIPALIDAD DE ARICA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
+      {
+        "codigo": "621-782-LR26",
+        "titulo": "AEROCAMARA ADULTO BIVAL PINH 100A350 ML 1000022782",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "estadoAnterior": "Publicada",
+        "monto": 2910784649,
+        "empresaMatch": "Aminorte"
+      },
       {
         "codigo": "621-768-LR26",
         "titulo": "HIDROXICARBAMIDA 500 MG CPCMCM REC 1000023106",
@@ -1261,14 +1269,6 @@
         "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
         "estadoAnterior": "Publicada",
         "monto": 615600000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2591-106-LR26",
-        "titulo": "REPOSICION OFICINA SRCEI POZO ALMONTE",
-        "organismo": "ILUSTRE MUNICIPALIDAD DE POZO ALMONTE",
-        "estadoAnterior": "Publicada",
-        "monto": 540454000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2722.6,
+  "tiempoEjecucionSegundos": 4150.4,
   "errores": [],
   "advertencias": []
 }
