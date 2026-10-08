@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-08T08:04:08.397173+00:00",
-  "ultimoIntentoRealizado": "2026-10-08T08:04:08.397173+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-08T17:00:36.386389+00:00",
+  "ultimoIntentoRealizado": "2026-10-08T17:00:36.386389+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1361,
-  "registrosConfirmados": 1361,
+  "registrosEnPlataforma": 1376,
+  "registrosConfirmados": 1376,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1115,
-  "excluidosPrefiltroIrrelevante": 7184,
-  "excluidosSinDatosReales": 36,
+  "registrosConMontoReal": 1126,
+  "excluidosPrefiltroIrrelevante": 7326,
+  "excluidosSinDatosReales": 34,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 726,
@@ -21,39 +21,39 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 1
     },
-    "montoOriginalSum": 124353050,
-    "montoFinalSum": 1144329402,
+    "montoOriginalSum": 149682050,
+    "montoFinalSum": 1169658402,
     "montoRecuperadoSum": 1019976352
   },
   "categorias": {
-    "licitaciones": 630,
+    "licitaciones": 646,
     "comprasAgiles": 726,
     "convenioMarco": 0,
-    "ordenes_compra": 5,
+    "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 352,
-    "LP": 125,
+    "LE": 360,
+    "LP": 132,
     "LR": 37,
     "L1": 104,
     "B2": 2,
     "CO": 6,
-    "E2": 4,
+    "E2": 5,
     "LS": 3,
-    "O1": 5,
+    "O1": 4,
     "I2": 3,
     "COT": 720
   },
   "matchPorEmpresa": {
-    "Aminorte": 1171,
-    "V-MOCCS": 190
+    "Aminorte": 1180,
+    "V-MOCCS": 196
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1250,
-    "modificadosCount": 84,
-    "cerradosCount": 1231,
+    "nuevosCount": 1269,
+    "modificadosCount": 80,
+    "cerradosCount": 1235,
     "nuevos": [
       {
         "codigo": "1057489-211-I226",
@@ -261,6 +261,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-14T15:00:00"
+      },
+      {
+        "codigo": "886954-322-LP26",
+        "titulo": "CONVENIO SUMINISTRO CLIP DE ANEURISMA TIPO YASARGIL Y DE BAJO PERFIL EN CONSIGNACIÓN",
+        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+        "monto": 200000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-28T16:00:00"
       },
       {
         "codigo": "2928-21-LP26",
@@ -585,28 +594,9 @@
         "empresaMatch": "V-MOCCS",
         "matchScore": 60,
         "fechaCierre": "2026-10-13T17:00:00"
-      },
-      {
-        "codigo": "1750-6-LE26",
-        "titulo": "SERVICIO DE DISEÑO Y EJECUCIÓN DE TALLERES SOBRE LIDERAZGO EFECTIVO PARA EL ALTO DESEMPEÑO DIRIGIDO A ALTOS DIRECTIVOS PÚBLICOS",
-        "organismo": "DIRECCION NACIONAL DEL SERVICIO CIVIL",
-        "monto": 68000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-19T15:15:00"
       }
     ],
     "modificados": [
-      {
-        "codigo": "1191688-68-LR26",
-        "titulo": "ADQUISICIÓN E INSTALACIÓN DE LUMINARIAS LED",
-        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 383231755,
-        "montoNuevo": 383231755,
-        "empresaMatch": "Aminorte"
-      },
       {
         "codigo": "1562-49-LR26",
         "titulo": "Sistema de monitoreo integral de ciberseguridad",
@@ -666,6 +656,16 @@
         "montoAnterior": 150000000,
         "montoNuevo": 150000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1110404-188-LP26",
+        "titulo": "CONVENIO DE SUMINISTRO DE MOBILIARIO Y EQUIPAMIENTO COMPLEMENTARIO PARA ESTABLECIMIENTOS EDUCACIONALES Y ADMINISTRACIÓN CENTRAL DEL SLEP CHINCHORRO",
+        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 150000000,
+        "montoNuevo": 150000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "1736-104-LP26",
@@ -908,16 +908,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2785-78-LE26",
-        "titulo": "SDA 6375 SERVICIOS DE PUBLICIDAD Y DIFUSIÓN GESTIÓN MUNICIPAL EN MEDIOS DIGITALES Y PANTALLA LED",
-        "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE LA PAZ",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 19800000,
-        "montoNuevo": 19800000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "4737-8-LE26",
         "titulo": "“Adquisición de Artículos e Implementación Deportiva para los Establecimientos Educacionales de la Comuna de Codegua”",
         "organismo": "I MUNICIPALIDAD DE CODEGUA",
@@ -1058,16 +1048,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2408-228-L126",
-        "titulo": "SUSCRIPCIÓN ANUAL CAPCUT PRO Y CANVA PRO.",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 5000000,
-        "montoNuevo": 5000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1110404-194-L126",
         "titulo": "ADQUISICIÓN DE SERVICIO DE CONTROL Y MONITOREO GPS PARA VEHÍCULOS DE ZONAS URBANAS Y RURALES DEL SLEP CHINCHORRO",
         "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
@@ -1088,14 +1068,14 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "3117-93-L126",
-        "titulo": "PARTIDA J PRORECAF 4 - MUEBLES DE COCINA",
-        "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 4121000,
-        "montoNuevo": 4121000,
-        "empresaMatch": "V-MOCCS"
+        "codigo": "3890-192-L126",
+        "titulo": "ADQ. TINTAS Y TONER UNIDADES MUNICIPALES",
+        "organismo": "I MUNICIPALIDAD DE FREIRE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 4000000,
+        "montoNuevo": 4000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1110404-199-L126",
@@ -1118,16 +1098,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "923000-18-L126",
-        "titulo": "SERVICIO TASACIÓN COMERCIAL INMUEBLE DAEM OLIVAR",
-        "organismo": "I MUNICIPALIDAD DE OLIVAR",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 2000000,
-        "montoNuevo": 2000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2658-315-L126",
         "titulo": "MOBILIARIO OTEC MUNICIPAL",
         "organismo": "I MUNICIPALIDAD DE ANCUD",
@@ -1136,6 +1106,16 @@
         "montoAnterior": 2000000,
         "montoNuevo": 2000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "923000-18-L126",
+        "titulo": "SERVICIO TASACIÓN COMERCIAL INMUEBLE DAEM OLIVAR",
+        "organismo": "I MUNICIPALIDAD DE OLIVAR",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 2000000,
+        "montoNuevo": 2000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2562-18-LR26",
@@ -1196,6 +1176,26 @@
         "montoAnterior": 2367,
         "montoNuevo": 2367,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3663-34-LE26",
+        "titulo": "CONTRATO SUMINISTRO DE ARTICULOS DE ESCRITORIO",
+        "organismo": "I MUNICIPALIDAD DE REQUINOA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057056-9-LE26",
+        "titulo": "APC - ADQUISICIÓN DE 01 ECOGRAFO OCULAR",
+        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       }
     ],
     "cerrados": [
@@ -1325,6 +1325,14 @@
         "organismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL DE COQUIMBO",
         "estadoAnterior": "Publicada",
         "monto": 384000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1191688-68-LR26",
+        "titulo": "ADQUISICIÓN E INSTALACIÓN DE LUMINARIAS LED",
+        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "estadoAnterior": "Publicada",
+        "monto": 383231755,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1512,14 +1520,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1110404-188-LP26",
-        "titulo": "CONVENIO DE SUMINISTRO DE MOBILIARIO Y EQUIPAMIENTO COMPLEMENTARIO PARA ESTABLECIMIENTOS EDUCACIONALES Y ADMINISTRACIÓN CENTRAL DEL SLEP CHINCHORRO",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
-        "estadoAnterior": "Publicada",
-        "monto": 150000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "1280-45-LP26",
         "titulo": "EMULSIONES ASFALTICAS EN TAMBORES",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 4150.4,
+  "tiempoEjecucionSegundos": 545.4,
   "errores": [],
   "advertencias": []
 }
