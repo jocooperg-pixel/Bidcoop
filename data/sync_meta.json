@@ -1,41 +1,41 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-10T19:34:44.584458+00:00",
-  "ultimoIntentoRealizado": "2026-10-10T19:34:44.584458+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-10T22:59:30.440112+00:00",
+  "ultimoIntentoRealizado": "2026-10-10T22:59:30.440112+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1574,
-  "registrosConfirmados": 1574,
+  "registrosEnPlataforma": 1526,
+  "registrosConfirmados": 1526,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1279,
-  "excluidosPrefiltroIrrelevante": 8217,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 1238,
+  "excluidosPrefiltroIrrelevante": 8220,
+  "excluidosSinDatosReales": 25,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 815,
-    "conMontoValido": 812,
+    "total": 792,
+    "conMontoValido": 789,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 812,
+      "VALIDADO": 789,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
     "montoOriginalSum": 149700050,
-    "montoFinalSum": 1255948310,
-    "montoRecuperadoSum": 1106248260
+    "montoFinalSum": 1216353913,
+    "montoRecuperadoSum": 1066653863
   },
   "categorias": {
-    "licitaciones": 753,
-    "comprasAgiles": 815,
+    "licitaciones": 728,
+    "comprasAgiles": 792,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 415,
-    "LP": 154,
-    "L1": 129,
+    "LE": 397,
+    "LP": 151,
+    "L1": 125,
     "LR": 41,
     "B2": 2,
     "CO": 9,
@@ -43,17 +43,17 @@
     "LS": 3,
     "O1": 6,
     "I2": 2,
-    "COT": 806
+    "COT": 783
   },
   "matchPorEmpresa": {
-    "Aminorte": 1345,
-    "V-MOCCS": 229
+    "Aminorte": 1306,
+    "V-MOCCS": 220
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1454,
-    "modificadosCount": 102,
-    "cerradosCount": 1222,
+    "nuevosCount": 1409,
+    "modificadosCount": 100,
+    "cerradosCount": 1225,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -306,15 +306,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 98,
         "fechaCierre": "2026-10-13T17:59:00"
-      },
-      {
-        "codigo": "2263-72-LP26",
-        "titulo": "SERVICIO DE VIGILANCIA OFICINA PROVINCIAL DE LA DIRECCIÓN DE VIALIDAD PROVINCIA DE MALLECO",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "monto": 180000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-06T15:00:00"
       },
       {
         "codigo": "1389183-51-LP26",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-28T15:00:00"
+      },
+      {
+        "codigo": "2563-32-LP26",
+        "titulo": "Adquisición de cámaras de videovigilancia",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "monto": 78196438,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-08T15:00:00"
       }
     ],
     "modificados": [
@@ -668,16 +668,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1574-35-LP26",
-        "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 2",
-        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 150000000,
-        "montoNuevo": 150000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1049-74-LP26",
         "titulo": "MONITOREO ERIZO ALMEJA Y LUGA ROJA LOS LAGOS AYSÉN",
         "organismo": "INSTITUTO DE FOMENTO PESQUERO",
@@ -696,6 +686,16 @@
         "montoAnterior": 150000000,
         "montoNuevo": 150000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1574-35-LP26",
+        "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 2",
+        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 150000000,
+        "montoNuevo": 150000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1736-104-LP26",
@@ -828,16 +828,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2585-105-LE26",
-        "titulo": "ADQUISICION DE ARTICULOS DEPORTIVOS DIDECO ORD N°2752 ",
-        "organismo": "I MUNICIPALIDAD DE ARICA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 47989600,
-        "montoNuevo": 47989600,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1019-110-LE26",
         "titulo": "Monitoreo Glaciar Volcan Mocho 2026-2027",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -956,16 +946,6 @@
         "montoAnterior": 23121000,
         "montoNuevo": 23121000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "3738-20-LE26",
-        "titulo": "PINTURA FARO MONUMENTAL COMUNA DE HUASCO",
-        "organismo": "I MUNICIPALIDAD DE HUASCO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 22881072,
-        "montoNuevo": 22881072,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1705-20-LE26",
@@ -1196,6 +1176,26 @@
         "montoAnterior": 2733870,
         "montoNuevo": 2733870,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4469-167-L126",
+        "titulo": "SC 40512 (CS) MACBOOK Y TABLET PARA LAETEC PROGRAMA PERMANENTE DE VCM",
+        "organismo": "UNIVERSIDAD DE PLAYA ANCHA DE CIENCIAS DE LA EDUCACION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 2548990,
+        "montoNuevo": 2548990,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2658-315-L126",
+        "titulo": "MOBILIARIO OTEC MUNICIPAL",
+        "organismo": "I MUNICIPALIDAD DE ANCUD",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 2000000,
+        "montoNuevo": 2000000,
+        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
@@ -1608,6 +1608,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2597-26-LP26",
+        "titulo": "Conservación Plazoleta y Multicancha Población ExRPC Comuna de Concón",
+        "organismo": "I MUNICIPALIDAD DE CONCON",
+        "estadoAnterior": "Publicada",
+        "monto": 102878752,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "4988-32-LP26",
         "titulo": "ADQUISICIÓN 10 MOTOCICLETAS PARA USO POLICIAL. MUNICIPALIDAD DE CONCEPCIÓN. 2° Llamado",
         "organismo": "I MUNICIPALIDAD DE CONCEPCION",
@@ -1670,18 +1678,10 @@
         "estadoAnterior": "Publicada",
         "monto": 80000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1431841-62-LP26",
-        "titulo": "SUMINISTRO MATERIAL DE PINTURA VIAl",
-        "organismo": "I MUNICIPALIDAD DE RECOLETA",
-        "estadoAnterior": "Publicada",
-        "monto": 80000000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1935.9,
+  "tiempoEjecucionSegundos": 2263.2,
   "errores": [],
   "advertencias": []
 }
