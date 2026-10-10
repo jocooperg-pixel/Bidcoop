@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-10T07:47:36.273651+00:00",
-  "ultimoIntentoRealizado": "2026-10-10T07:47:36.273651+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-10T14:00:35.990214+00:00",
+  "ultimoIntentoRealizado": "2026-10-10T14:00:35.990214+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1521,
-  "registrosConfirmados": 1521,
+  "registrosEnPlataforma": 1548,
+  "registrosConfirmados": 1548,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1236,
-  "excluidosPrefiltroIrrelevante": 8209,
-  "excluidosSinDatosReales": 28,
+  "registrosConMontoReal": 1254,
+  "excluidosPrefiltroIrrelevante": 8213,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 790,
@@ -26,17 +26,17 @@
     "montoRecuperadoSum": 1082173863
   },
   "categorias": {
-    "licitaciones": 725,
+    "licitaciones": 752,
     "comprasAgiles": 790,
     "convenioMarco": 0,
     "ordenes_compra": 6,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 401,
-    "LP": 147,
-    "L1": 124,
-    "LR": 39,
+    "LE": 415,
+    "LP": 153,
+    "L1": 129,
+    "LR": 41,
     "B2": 2,
     "CO": 9,
     "E2": 7,
@@ -46,15 +46,24 @@
     "COT": 781
   },
   "matchPorEmpresa": {
-    "Aminorte": 1298,
-    "V-MOCCS": 223
+    "Aminorte": 1322,
+    "V-MOCCS": 226
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1408,
-    "modificadosCount": 96,
-    "cerradosCount": 1229,
+    "nuevosCount": 1428,
+    "modificadosCount": 102,
+    "cerradosCount": 1222,
     "nuevos": [
+      {
+        "codigo": "621-884-LR26",
+        "titulo": "TRAMADOL 50 MG CPCM REC 100001465",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 2697670386,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-26T16:00:00"
+      },
       {
         "codigo": "621-863-LR26",
         "titulo": "INSUL GLULI 100UML SIN LAPIZ REUTIL+AG 10000023063",
@@ -479,6 +488,15 @@
         "fechaCierre": "2026-10-19T16:00:00"
       },
       {
+        "codigo": "1467-7-LP26",
+        "titulo": "Escáner de RX para el Complejo Fronterizo Vergara",
+        "organismo": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DE CURICÓ",
+        "monto": 100000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-27T14:27:00"
+      },
+      {
         "codigo": "2709-81-LP26",
         "titulo": "ADQUISICION INSTALACION Y CONFIGURACION DE SERVIDOR Y CAMARAS DE TELEVIGILANCIA EN LA COMUNA DE OVALLE",
         "organismo": "MUNICIPALIDAD DE OVALLE",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-28T15:00:00"
-      },
-      {
-        "codigo": "2563-32-LP26",
-        "titulo": "Adquisición de cámaras de videovigilancia",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "monto": 78196438,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-07-08T15:00:00"
-      },
-      {
-        "codigo": "1110404-205-LP26",
-        "titulo": "MANTENCIÓN SS.HH. Y COCINAS DE CASAS DE PROFESORES Y REPOSICION DE CUBICULOS SEPARADORES EN SS.HH. DEL ESTABLECIMIENTO LICEO GRANADEROS DE PUTRE PERTENECIENTE A SLEP DE CHINCHORRO",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
-        "monto": 73000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-19T15:00:00"
       }
     ],
     "modificados": [
@@ -658,13 +658,13 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1574-35-LP26",
-        "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 2",
-        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 150000000,
-        "montoNuevo": 150000000,
+        "codigo": "2704-60-LP26",
+        "titulo": "SC 3156 SERVICIO DE FOTOCOPIADO Y ARRIENDO DE EQUIPOS MULTIFUNCIONALES PARA LA UNIVERSIDAD DEL BÍO-BÍO SEDE CONCEPCIÓN ",
+        "organismo": "UNIVERSIDAD DEL BIO BIO",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 168000000,
+        "montoNuevo": 168000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -681,6 +681,16 @@
         "codigo": "1049-74-LP26",
         "titulo": "MONITOREO ERIZO ALMEJA Y LUGA ROJA LOS LAGOS AYSÉN",
         "organismo": "INSTITUTO DE FOMENTO PESQUERO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 150000000,
+        "montoNuevo": 150000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1574-35-LP26",
+        "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE ELQUI ZONA 2",
+        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 150000000,
@@ -998,6 +1008,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "4737-8-LE26",
+        "titulo": "“Adquisición de Artículos e Implementación Deportiva para los Establecimientos Educacionales de la Comuna de Codegua”",
+        "organismo": "I MUNICIPALIDAD DE CODEGUA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 18200000,
+        "montoNuevo": 18200000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2981-257-LE26",
         "titulo": "ADQUISICION DE EQUIPOS TIPO NOTEBOOK ESTANDAR CON PERIFERICOS INCLUIDOS - PLAN FRONTERA",
         "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
@@ -1043,6 +1063,16 @@
         "organismo": "SERVICIO SALUD COQUIMBO HOSP DE SALAMANC",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
+        "montoAnterior": 13000000,
+        "montoNuevo": 13000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3858-35-LE26",
+        "titulo": "Servicio de Mantención y Reparación de Impresoras",
+        "organismo": "I MUNICIPALIDAD DE MEJILLONES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 13000000,
         "montoNuevo": 13000000,
         "empresaMatch": "Aminorte"
@@ -1166,36 +1196,6 @@
         "montoAnterior": 2733870,
         "montoNuevo": 2733870,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4469-167-L126",
-        "titulo": "SC 40512 (CS) MACBOOK Y TABLET PARA LAETEC PROGRAMA PERMANENTE DE VCM",
-        "organismo": "UNIVERSIDAD DE PLAYA ANCHA DE CIENCIAS DE LA EDUCACION",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 2548990,
-        "montoNuevo": 2548990,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "923000-18-L126",
-        "titulo": "SERVICIO TASACIÓN COMERCIAL INMUEBLE DAEM OLIVAR",
-        "organismo": "I MUNICIPALIDAD DE OLIVAR",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 2000000,
-        "montoNuevo": 2000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2658-315-L126",
-        "titulo": "MOBILIARIO OTEC MUNICIPAL",
-        "organismo": "I MUNICIPALIDAD DE ANCUD",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 2000000,
-        "montoNuevo": 2000000,
-        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
@@ -1301,14 +1301,6 @@
         "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Cerrada",
         "monto": 464171400,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1499-181-LR26",
-        "titulo": "RBV Medicamentos EVEROLIMUS distintas presentaciones Desierta 1499-160-LR26",
-        "organismo": "INSTITUTO NACIONAL DEL TORAX",
-        "estadoAnterior": "Publicada",
-        "monto": 400891960,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1504,14 +1496,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2704-60-LP26",
-        "titulo": "SC 3156 SERVICIO DE FOTOCOPIADO Y ARRIENDO DE EQUIPOS MULTIFUNCIONALES PARA LA UNIVERSIDAD DEL BÍO-BÍO SEDE CONCEPCIÓN ",
-        "organismo": "UNIVERSIDAD DEL BIO BIO",
-        "estadoAnterior": "Cerrada",
-        "monto": 168000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1057489-285-LP26",
         "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
         "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
@@ -1678,10 +1662,26 @@
         "estadoAnterior": "Publicada",
         "monto": 89000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1247197-66-LP26",
+        "titulo": "SUMINISTRO DE PRODUCTOS DE OFICINA PARA LA CORESAM",
+        "organismo": "CORP MUNICIPAL DE CONCHALI DE EDUCACION SALUD Y ATENCION DE MENORES",
+        "estadoAnterior": "Publicada",
+        "monto": 80000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1431841-62-LP26",
+        "titulo": "SUMINISTRO MATERIAL DE PINTURA VIAl",
+        "organismo": "I MUNICIPALIDAD DE RECOLETA",
+        "estadoAnterior": "Publicada",
+        "monto": 80000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2799.9,
+  "tiempoEjecucionSegundos": 439.3,
   "errores": [],
   "advertencias": []
 }
