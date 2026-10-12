@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-12T00:46:48.237055+00:00",
-  "ultimoIntentoRealizado": "2026-10-12T00:46:48.237055+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-12T08:08:58.222073+00:00",
+  "ultimoIntentoRealizado": "2026-10-12T08:08:58.222073+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1434,
-  "registrosConfirmados": 1434,
+  "registrosEnPlataforma": 1457,
+  "registrosConfirmados": 1457,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1185,
+  "registrosConMontoReal": 1202,
   "excluidosPrefiltroIrrelevante": 7353,
-  "excluidosSinDatosReales": 18,
+  "excluidosSinDatosReales": 1,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 789,
-    "conMontoValido": 786,
+    "total": 795,
+    "conMontoValido": 792,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 786,
+      "VALIDADO": 792,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
     "montoOriginalSum": 149700050,
-    "montoFinalSum": 1225094923,
-    "montoRecuperadoSum": 1075394873
+    "montoFinalSum": 1233836913,
+    "montoRecuperadoSum": 1084136863
   },
   "categorias": {
-    "licitaciones": 640,
-    "comprasAgiles": 789,
+    "licitaciones": 657,
+    "comprasAgiles": 795,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 349,
-    "LP": 137,
-    "L1": 105,
-    "LR": 36,
+    "LE": 358,
+    "LP": 140,
+    "L1": 108,
+    "LR": 38,
     "B2": 2,
     "CO": 9,
     "E2": 6,
     "LS": 3,
     "O1": 5,
     "I2": 2,
-    "COT": 780
+    "COT": 786
   },
   "matchPorEmpresa": {
-    "Aminorte": 1225,
-    "V-MOCCS": 209
+    "Aminorte": 1243,
+    "V-MOCCS": 214
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1344,
-    "modificadosCount": 73,
-    "cerradosCount": 1252,
+    "nuevosCount": 1364,
+    "modificadosCount": 76,
+    "cerradosCount": 1249,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -162,6 +162,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-10-27T16:30:00"
+      },
+      {
+        "codigo": "621-908-LR26",
+        "titulo": "SILLA RUED NEUR ADT RECL-BASC AS VARIOS CM 1000023259",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 391716108,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-30T16:00:00"
       },
       {
         "codigo": "2345-159-LR26",
@@ -306,6 +315,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-06T15:00:00"
+      },
+      {
+        "codigo": "837-78-LP26",
+        "titulo": "CDP 372 SERVICIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO CONVENIO DE SUMINISTROS DE SISTEMA DE RENOVACIÓN DE AIRE SALA DE AUTOPSIAS Y CLIMATIZACION DE SERVICIO MEDICO LEGAL DE CAÑETE.",
+        "organismo": "SERVICIO MEDICO LEGAL",
+        "monto": 172797234,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-28T15:30:00"
       },
       {
         "codigo": "1057780-8-LP26",
@@ -524,6 +542,15 @@
         "fechaCierre": "2026-10-13T15:01:00"
       },
       {
+        "codigo": "3337-16-LP26",
+        "titulo": "SERVICIO RECEPCIÓN LICENCIAS MÉDICAS ELECTRÓNICAS",
+        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
+        "monto": 89000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-14T15:00:00"
+      },
+      {
         "codigo": "1261-35-LP26",
         "titulo": "ARRIENDO NOTEBOOKS PARA PROGRAMA GORE RM",
         "organismo": "GOBIERNO REGIONAL REGION METROPOLITANA",
@@ -567,33 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-19T15:00:00"
-      },
-      {
-        "codigo": "1053139-5-LE26",
-        "titulo": "ADQ. EQUIPOS COMPUTACIONALES TABLET PRO 11 Y LAPTOP PRO 16” PARA LAB. DEL DICI DE LA FAC. DE INGENIERÍA - UTA",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "monto": 71500000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-06-23T16:30:00"
-      },
-      {
-        "codigo": "2981-292-LE26",
-        "titulo": "14 KITS DE IRRUPCION TACTICA - JENACO ",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "monto": 70000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-19T15:05:00"
-      },
-      {
-        "codigo": "1057472-128-LE26",
-        "titulo": "“Adquisición de Mobiliario”",
-        "organismo": "HOSPITAL CLINICO METROPOLITANO EL CARMEN DOCTOR LUIS VALENTIN FERRADA",
-        "monto": 69751000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-13T17:00:00"
       }
     ],
     "modificados": [
@@ -1008,6 +1008,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "520149-42-LE26",
+        "titulo": "CEA-PC 6635-Coaching ejecutivo para jefaturas",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 7500000,
+        "montoNuevo": 7500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2790-55-L126",
         "titulo": "SERVICIO DE ARRIENDO DE EQUIPOS MULTIFUNCIONALES DE IMPRESIÓN, FOTOCOPIADO Y SCANNER CON SUMINISTROS- DESAM",
         "organismo": "I MUNICIPALIDAD DE PAINE",
@@ -1058,16 +1068,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "923000-18-L126",
-        "titulo": "SERVICIO TASACIÓN COMERCIAL INMUEBLE DAEM OLIVAR",
-        "organismo": "I MUNICIPALIDAD DE OLIVAR",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 2000000,
-        "montoNuevo": 2000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2658-315-L126",
         "titulo": "MOBILIARIO OTEC MUNICIPAL",
         "organismo": "I MUNICIPALIDAD DE ANCUD",
@@ -1076,6 +1076,16 @@
         "montoAnterior": 2000000,
         "montoNuevo": 2000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "923000-18-L126",
+        "titulo": "SERVICIO TASACIÓN COMERCIAL INMUEBLE DAEM OLIVAR",
+        "organismo": "I MUNICIPALIDAD DE OLIVAR",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 2000000,
+        "montoNuevo": 2000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "915-4-L126",
@@ -1095,6 +1105,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 144546,
         "montoNuevo": 144546,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "548874-77-LR26",
+        "titulo": "MANTENCIÓN Y MEJORA SISTEMA CIBERSEGURIDAD NCH ISO",
+        "organismo": "INSTITUTO DE PREVISION SOCIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 11000,
+        "montoNuevo": 11000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1138,9 +1158,29 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "612-38-LE26",
+        "titulo": "Adquisición Switch 24 bocas PoE+ de comunicaciones",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "425-36-LP26",
         "titulo": "ITO Reemplazo sist de Climatización VRF Juzg Stgo",
         "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "507428-108-LP26",
+        "titulo": "ARRIENDO SERVIDOR DE ALMACENAMIENTO RISPACS DSSCH",
+        "organismo": "SERVICIO DE SALUD CHILOE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
@@ -1156,46 +1196,6 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "299-18-LP26",
-        "titulo": "E102RT9 EQUIPAMIENTO DEPORTIVO IND LOS RIOS",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057548-21-LE26",
-        "titulo": "Convenio Suministro de Servicio de Fotocopiado Impresion y Digitalizacion con Entrega de Equipos",
-        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL LA U",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1208100-8-LP26",
-        "titulo": "SERVICIO DE TRANSPORTE Y TRASLADO DE PASAJEROS PARA LA UNIDAD DE EVALUACIÓN FORMATIVA PARA LA ADOPCIÓN Y EL ACOGIMIENTO UEFAA Y RESIDENCIA FAMILIAR DE ADOLESCENTES DE MACHALÍ ",
-        "organismo": "SERVICIO NACIONAL DE PROTECCIÓN ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "622847-14-LE26",
-        "titulo": "PROVISIÓN E INTALACION MOBILIARIO DE ACERO MEGM",
-        "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2568.1,
+  "tiempoEjecucionSegundos": 2135.8,
   "errores": [],
   "advertencias": []
 }
