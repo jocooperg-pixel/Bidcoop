@@ -1,40 +1,40 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-12T08:08:58.222073+00:00",
-  "ultimoIntentoRealizado": "2026-10-12T08:08:58.222073+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-12T19:26:12.770970+00:00",
+  "ultimoIntentoRealizado": "2026-10-12T19:26:12.770970+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1457,
-  "registrosConfirmados": 1457,
+  "registrosEnPlataforma": 1409,
+  "registrosConfirmados": 1409,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1202,
+  "registrosConMontoReal": 1153,
   "excluidosPrefiltroIrrelevante": 7353,
-  "excluidosSinDatosReales": 1,
+  "excluidosSinDatosReales": 0,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 795,
-    "conMontoValido": 792,
+    "total": 746,
+    "conMontoValido": 743,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 792,
+      "VALIDADO": 743,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
     "montoOriginalSum": 149700050,
-    "montoFinalSum": 1233836913,
-    "montoRecuperadoSum": 1084136863
+    "montoFinalSum": 1169513731,
+    "montoRecuperadoSum": 1019813681
   },
   "categorias": {
-    "licitaciones": 657,
-    "comprasAgiles": 795,
+    "licitaciones": 658,
+    "comprasAgiles": 746,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
     "LE": 358,
-    "LP": 140,
+    "LP": 141,
     "L1": 108,
     "LR": 38,
     "B2": 2,
@@ -43,15 +43,15 @@
     "LS": 3,
     "O1": 5,
     "I2": 2,
-    "COT": 786
+    "COT": 737
   },
   "matchPorEmpresa": {
-    "Aminorte": 1243,
-    "V-MOCCS": 214
+    "Aminorte": 1200,
+    "V-MOCCS": 209
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1364,
+    "nuevosCount": 1316,
     "modificadosCount": 76,
     "cerradosCount": 1249,
     "nuevos": [
@@ -1178,11 +1178,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "507428-108-LP26",
-        "titulo": "ARRIENDO SERVIDOR DE ALMACENAMIENTO RISPACS DSSCH",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
+        "codigo": "2563-38-LP26",
+        "titulo": "SUMINISTRO DE COMBUSTIBLE JET A-1 Y AVGAS100LL",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1681,7 +1681,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2135.8,
+  "tiempoEjecucionSegundos": 3636.7,
   "errores": [],
   "advertencias": []
 }
