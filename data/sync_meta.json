@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-15T01:59:21.654191+00:00",
-  "ultimoIntentoRealizado": "2026-10-15T01:59:21.654191+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-15T06:57:58.656791+00:00",
+  "ultimoIntentoRealizado": "2026-10-15T06:57:58.656791+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1507,
-  "registrosConfirmados": 1507,
+  "registrosEnPlataforma": 1486,
+  "registrosConfirmados": 1486,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1257,
-  "excluidosPrefiltroIrrelevante": 6874,
-  "excluidosSinDatosReales": 12,
+  "registrosConMontoReal": 1245,
+  "excluidosPrefiltroIrrelevante": 6866,
+  "excluidosSinDatosReales": 33,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 879,
@@ -26,34 +26,34 @@
     "montoRecuperadoSum": 1195171898
   },
   "categorias": {
-    "licitaciones": 625,
+    "licitaciones": 603,
     "comprasAgiles": 879,
     "convenioMarco": 0,
-    "ordenes_compra": 3,
+    "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 347,
-    "LP": 127,
-    "L1": 103,
-    "LR": 39,
+    "LE": 326,
+    "LP": 129,
+    "L1": 99,
+    "LR": 40,
     "B2": 1,
     "E2": 3,
     "CO": 5,
     "LS": 3,
-    "O1": 3,
+    "O1": 4,
     "I2": 2,
     "COT": 874
   },
   "matchPorEmpresa": {
-    "Aminorte": 1282,
-    "V-MOCCS": 225
+    "Aminorte": 1265,
+    "V-MOCCS": 221
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1459,
-    "modificadosCount": 38,
-    "cerradosCount": 1294,
+    "nuevosCount": 1439,
+    "modificadosCount": 36,
+    "cerradosCount": 1295,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -452,6 +452,15 @@
         "fechaCierre": "2026-10-19T17:00:00"
       },
       {
+        "codigo": "640-2-LP26",
+        "titulo": "MANTENCIÓN Y REPARACIONES OBRAS MENORES OFICINAS",
+        "organismo": "SUBSECRETARIA DEL MINISTERIO DE LA VIVIENDA Y URBANISMO",
+        "monto": 114000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-08-25T15:00:00"
+      },
+      {
         "codigo": "4063-13-LP26",
         "titulo": "NORMALIZACIÓN CÁMARAS TELEVIGILANCIA Y REPOSICIÓN SEÑALÉTICA DE CALLES DISTINTOS SECTORES",
         "organismo": "I MUNICIPALIDAD DE MARIQUINA",
@@ -551,15 +560,6 @@
         "fechaCierre": "2026-10-23T15:40:00"
       },
       {
-        "codigo": "4301-62-LP26",
-        "titulo": "Adquisición de 2.000 cámaras de seguridad",
-        "organismo": "I MUNICIPALIDAD DE ZAPALLAR",
-        "monto": 90000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-13T15:01:00"
-      },
-      {
         "codigo": "3337-16-LP26",
         "titulo": "SERVICIO RECEPCIÓN LICENCIAS MÉDICAS ELECTRÓNICAS",
         "organismo": "DIVISION LOGISTICA DEL EJERCITO",
@@ -638,16 +638,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1549-87-LP26",
-        "titulo": "INSUMOS DENTALES ADITAMENTOS DE SOBREDENTADURA",
-        "organismo": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 127731093,
-        "montoNuevo": 127731093,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1348-5-LP26",
         "titulo": "HABILITACIÓN OFICINA REGISTRO CIVIL PURRANQUE",
         "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
@@ -655,6 +645,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 103172524,
         "montoNuevo": 103172524,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2597-26-LP26",
+        "titulo": "Conservación Plazoleta y Multicancha Población ExRPC Comuna de Concón",
+        "organismo": "I MUNICIPALIDAD DE CONCON",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 102878752,
+        "montoNuevo": 102878752,
         "empresaMatch": "Aminorte"
       },
       {
@@ -676,16 +676,6 @@
         "montoAnterior": 85000000,
         "montoNuevo": 85000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "5596-5-LP26",
-        "titulo": "INVENTARIO PATRIMONIO CULTURAL INMUEBLE AYP.",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 81684000,
-        "montoNuevo": 81684000,
-        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "3499-23-LE26",
@@ -788,16 +778,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1660-142-LE26",
-        "titulo": "MANTENCION PREVENTIVA Y CORRECTIVA 2 SALA UPS",
-        "organismo": "SERVICIO SALUD COQUIMBO HOSP DE SALAMANC",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 13000000,
-        "montoNuevo": 13000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1079580-31-LE26",
         "titulo": "ADQUISICIÓN DE MOBILIARIO PARA LA SECCIÓN LABOCAR ÑUBLE POR LÍNEA DE ADJUDICACIÓN",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -838,16 +818,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1075963-403-L126",
-        "titulo": "ARRIENDO SISTEMA MONITOREO EN LINEA PARA REFRIGERADORES DE FARMACOS ONCOLOGICOS",
-        "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 4000000,
-        "montoNuevo": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2332-114-L126",
         "titulo": "ADQUISICIÓN DE TALONARIOS DE BITÁCORAS PARA VEHÍCULOS DEL DEPARTAMENTO DE SALUD MUNICIPAL DE PUERTO MONTT",
         "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
@@ -868,6 +838,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1057552-19-LE26",
+        "titulo": "Convenio de Suministro Materiales de Oficina",
+        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL DE R",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1057544-312-LE26",
         "titulo": "Suministro de Artículos de Papelería y Escritorio",
         "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
@@ -878,19 +858,19 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1080303-3-LP26",
-        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "codigo": "1134384-10-LR26",
+        "titulo": "Recepción de Rescon y limpieza de micro basurales en la comuna de San Pedro de Atacama",
+        "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE ATACAMA",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057552-19-LE26",
-        "titulo": "Convenio de Suministro Materiales de Oficina",
-        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL DE R",
+        "codigo": "1080303-3-LP26",
+        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -938,16 +918,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1417913-118-LE26",
-        "titulo": "SERVICIO DE EXÁMENES DE MONITOREO AMBULATORIO DE PRESIÓN ARTERIAL DE 24 HORAS MAPA PARA USUARIOS DE LA ATENCIÓN PRIMARIA DE SALUD DE CORMUDESI POR 24 MESES",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE IQUIQUE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2585-95-LE26",
         "titulo": "SERVICIO DE ARRIENDO DE FOTOCOPIADORAS OF N° 249 PRIMER JUZGADO MZJ IMA",
         "organismo": "I MUNICIPALIDAD DE ARICA",
@@ -958,11 +928,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "425-36-LP26",
-        "titulo": "ITO Reemplazo sist de Climatización VRF Juzg Stgo",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
+        "codigo": "1417913-118-LE26",
+        "titulo": "SERVICIO DE EXÁMENES DE MONITOREO AMBULATORIO DE PRESIÓN ARTERIAL DE 24 HORAS MAPA PARA USUARIOS DE LA ATENCIÓN PRIMARIA DE SALUD DE CORMUDESI POR 24 MESES",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE IQUIQUE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -973,6 +943,16 @@
         "organismo": "SERVICIO AGRICOLA Y GANADERO",
         "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "425-36-LP26",
+        "titulo": "ITO Reemplazo sist de Climatización VRF Juzg Stgo",
+        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1252,14 +1232,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "941739-11-LP26",
-        "titulo": "SUMINISTRO DE MUEBLES Y MOBILIARIO A MEDIDA - UTA.",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "estadoAnterior": "Publicada",
-        "monto": 200000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "2345-138-LP26",
         "titulo": "SERVICIO DE DESARROLLO E IMPLEMENTACIÓN DE LA SEGUNDA ENCUESTA DE VICTIMIZACIÓN Y PERCEPCIÓN DE SEGURIDAD PARA VECINOS DE LA COMUNA DE LAS CONDES",
         "organismo": "I MUNICIPALIDAD DE LAS CONDES",
@@ -1436,6 +1408,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1549-87-LP26",
+        "titulo": "INSUMOS DENTALES ADITAMENTOS DE SOBREDENTADURA",
+        "organismo": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
+        "estadoAnterior": "Publicada",
+        "monto": 127731093,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "539119-80-LP26",
         "titulo": "CONTRATACIÓN DE SERVICIOS DE EMERGENCIAS SANITARIAS REPARACIÓN YO REPOSICIÓN DE REDES DE ALCANTARILLADO AGUA POTABLE Y REDES DE GAS EN INMUEBLES UBICADOS EN LA REGIÓN METROPOLITANA DEPENDIENTE DE LA DIRECCIÓN DE BIENESTAR DE CARABINEROS",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -1461,7 +1441,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 502.6,
+  "tiempoEjecucionSegundos": 587.5,
   "errores": [],
   "advertencias": []
 }
