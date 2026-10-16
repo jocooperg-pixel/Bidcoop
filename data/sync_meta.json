@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-15T20:35:16.095678+00:00",
-  "ultimoIntentoRealizado": "2026-10-15T20:35:16.095678+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-15T23:56:29.224449+00:00",
+  "ultimoIntentoRealizado": "2026-10-15T23:56:29.224449+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1553,
-  "registrosConfirmados": 1553,
+  "registrosEnPlataforma": 1570,
+  "registrosConfirmados": 1570,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1281,
-  "excluidosPrefiltroIrrelevante": 7605,
-  "excluidosSinDatosReales": 40,
+  "registrosConMontoReal": 1299,
+  "excluidosPrefiltroIrrelevante": 7697,
+  "excluidosSinDatosReales": 31,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 880,
@@ -26,34 +26,34 @@
     "montoRecuperadoSum": 1195171898
   },
   "categorias": {
-    "licitaciones": 669,
+    "licitaciones": 685,
     "comprasAgiles": 880,
     "convenioMarco": 0,
-    "ordenes_compra": 4,
+    "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 372,
+    "LE": 383,
     "LP": 140,
-    "L1": 107,
-    "LR": 41,
+    "L1": 110,
+    "LR": 42,
     "B2": 1,
     "LS": 3,
     "CO": 6,
-    "E2": 3,
-    "O1": 4,
+    "E2": 4,
+    "O1": 5,
     "I2": 2,
     "COT": 874
   },
   "matchPorEmpresa": {
-    "Aminorte": 1317,
-    "V-MOCCS": 236
+    "Aminorte": 1333,
+    "V-MOCCS": 237
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1489,
-    "modificadosCount": 53,
-    "cerradosCount": 1278,
+    "nuevosCount": 1507,
+    "modificadosCount": 52,
+    "cerradosCount": 1279,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -81,15 +81,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-26T15:30:00"
-      },
-      {
-        "codigo": "621-603-LR26",
-        "titulo": "DOXICICLINA 100 MG CPCM 1000022726",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "monto": 1862921330,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-07-27T16:00:00"
       },
       {
         "codigo": "2981-159-LR26",
@@ -137,6 +128,15 @@
         "fechaCierre": "2026-10-22T16:00:00"
       },
       {
+        "codigo": "621-862-LR26",
+        "titulo": "IMATINIB 100 MG CPCM REC. 1000023062",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 629770935,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-21T16:00:00"
+      },
+      {
         "codigo": "1057509-303-LR26",
         "titulo": "CONVENIO PROVEEDURÍA DE AUDÍFONOS Y EQUIPAMIENTO ASOCIADO EN COMODATO fgh",
         "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
@@ -153,6 +153,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-02T16:00:00"
+      },
+      {
+        "codigo": "621-888-LR26",
+        "titulo": "FLUCLOXACILINA 500 MG CPCM REC. 1000023023",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 519551556,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-27T16:00:00"
       },
       {
         "codigo": "1477-14-LR26",
@@ -416,6 +425,15 @@
         "fechaCierre": "2026-10-14T11:00:00"
       },
       {
+        "codigo": "4031-17-LP26",
+        "titulo": "SISTEMA DE CAMARAS DE TELEVIGILANCIA COMUNA CAMIÑA",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE CAMINA",
+        "monto": 122000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-30T15:00:00"
+      },
+      {
         "codigo": "1574-38-LP26",
         "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE LIMARI",
         "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
@@ -486,6 +504,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 98,
         "fechaCierre": "2026-10-19T17:00:00"
+      },
+      {
+        "codigo": "1095439-29-LP26",
+        "titulo": "1 ESCÁNER LÁSER CON CÁMARAS 3D PARA PDI AYSÉN",
+        "organismo": "GOBIERNO REGIONAL DE AYSEN",
+        "monto": 101388000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-11-02T15:01:00"
       },
       {
         "codigo": "1488587-34-LP26",
@@ -567,33 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-10-13T15:01:00"
-      },
-      {
-        "codigo": "3337-16-LP26",
-        "titulo": "SERVICIO RECEPCIÓN LICENCIAS MÉDICAS ELECTRÓNICAS",
-        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
-        "monto": 89000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-14T15:00:00"
-      },
-      {
-        "codigo": "1261-35-LP26",
-        "titulo": "ARRIENDO NOTEBOOKS PARA PROGRAMA GORE RM",
-        "organismo": "GOBIERNO REGIONAL REGION METROPOLITANA",
-        "monto": 87203000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-10-19T15:00:00"
-      },
-      {
-        "codigo": "1180730-49-LP26",
-        "titulo": "REPOSICION BOMBAS DE INFUSION UPC HCM",
-        "organismo": "SERVICIO DE SALUD MAGALLANES",
-        "monto": 85680000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-27T16:00:00"
       }
     ],
     "modificados": [
@@ -608,14 +608,14 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2282-109-LP26",
-        "titulo": "Contratación de seguros para inmuebles vehículos municipales equipamiento y de responsabilidad civil",
-        "organismo": "I MUNICIPALIDAD VALDIVIA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 231033309,
-        "montoNuevo": 231033309,
-        "empresaMatch": "V-MOCCS"
+        "codigo": "2409-53-LP26",
+        "titulo": "MEJORAMIENTO DE SISTEMA DE CLIMATIZACIÓN PARA ESTABLECIMIENTOS EDUCACIONALES",
+        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 230000000,
+        "montoNuevo": 230000000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "5190-17-LP26",
@@ -775,6 +775,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 32430000,
         "montoNuevo": 32430000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3708-40-LE26",
+        "titulo": "HABILITACION OFICINAS TRANSITO OBRAS Y OTRAS",
+        "organismo": "I MUNICIPALIDAD DE PITRUFQUEN",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 30000000,
+        "montoNuevo": 30000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -958,26 +968,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1393093-107-LP26",
-        "titulo": "Suministro de cámaras de seguridad",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE CHILOÉ",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3542-26-LE26",
-        "titulo": "SERVICIO DE REMODELACIÓN DE OFICINAS DEL TALLER DE MANTENIMIENTO",
-        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "4404-57-LE26",
         "titulo": "LICITACIÓN PÚBLICA “ADQUISICIÓN DE TELEVISORES PARA ESTABLECIMIENTOS EDUCACIONALES DE LA COMUNA DE SAN CLEMENTE”.  ",
         "organismo": "I MUNICIPALIDAD DE SAN CLEMENTE",
@@ -998,6 +988,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1393093-107-LP26",
+        "titulo": "Suministro de cámaras de seguridad",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE CHILOÉ",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3474-53-LE26",
         "titulo": "SERVICIO DE ARRIENDO Y MANT. MAQUINAS FOTOCOPIADO",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -1008,9 +1008,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057552-19-LE26",
-        "titulo": "Convenio de Suministro Materiales de Oficina",
-        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL DE R",
+        "codigo": "3542-26-LE26",
+        "titulo": "SERVICIO DE REMODELACIÓN DE OFICINAS DEL TALLER DE MANTENIMIENTO",
+        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1018,9 +1018,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1080303-3-LP26",
-        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "codigo": "1057552-19-LE26",
+        "titulo": "Convenio de Suministro Materiales de Oficina",
+        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL DE R",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1068,31 +1068,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2825-53-L126",
-        "titulo": "MOBILIARIO POSTA PUTÚ",
-        "organismo": "I MUNICIPALIDAD DE CONSTITUCION",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2585-95-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE FOTOCOPIADORAS OF N° 249 PRIMER JUZGADO MZJ IMA",
-        "organismo": "I MUNICIPALIDAD DE ARICA",
+        "codigo": "425-36-LP26",
+        "titulo": "ITO Reemplazo sist de Climatización VRF Juzg Stgo",
+        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "612-38-LE26",
-        "titulo": "Adquisición Switch 24 bocas PoE+ de comunicaciones",
-        "organismo": "SERVICIO AGRICOLA Y GANADERO",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1118,11 +1098,21 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "425-36-LP26",
-        "titulo": "ITO Reemplazo sist de Climatización VRF Juzg Stgo",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "codigo": "2585-95-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE FOTOCOPIADORAS OF N° 249 PRIMER JUZGADO MZJ IMA",
+        "organismo": "I MUNICIPALIDAD DE ARICA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Cerrada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "612-38-LE26",
+        "titulo": "Adquisición Switch 24 bocas PoE+ de comunicaciones",
+        "organismo": "SERVICIO AGRICOLA Y GANADERO",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1386,12 +1376,12 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2409-53-LP26",
-        "titulo": "MEJORAMIENTO DE SISTEMA DE CLIMATIZACIÓN PARA ESTABLECIMIENTOS EDUCACIONALES",
-        "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
-        "estadoAnterior": "Cerrada",
-        "monto": 230000000,
-        "empresaMatch": "Aminorte"
+        "codigo": "2282-109-LP26",
+        "titulo": "Contratación de seguros para inmuebles vehículos municipales equipamiento y de responsabilidad civil",
+        "organismo": "I MUNICIPALIDAD VALDIVIA",
+        "estadoAnterior": "Publicada",
+        "monto": 231033309,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "896-13-LP26",
@@ -1611,7 +1601,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 545.2,
+  "tiempoEjecucionSegundos": 612.9,
   "errores": [],
   "advertencias": []
 }
