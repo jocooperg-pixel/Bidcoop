@@ -1,43 +1,43 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-17T17:59:31.176396+00:00",
-  "ultimoIntentoRealizado": "2026-10-17T17:59:31.176396+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-17T20:10:12.471536+00:00",
+  "ultimoIntentoRealizado": "2026-10-17T20:10:12.471536+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 2083,
-  "registrosConfirmados": 2083,
+  "registrosEnPlataforma": 2076,
+  "registrosConfirmados": 2076,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1793,
-  "excluidosPrefiltroIrrelevante": 7731,
-  "excluidosSinDatosReales": 4,
+  "registrosConMontoReal": 1788,
+  "excluidosPrefiltroIrrelevante": 7734,
+  "excluidosSinDatosReales": 11,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 1354,
-    "conMontoValido": 1351,
+    "total": 1353,
+    "conMontoValido": 1350,
     "pctValidado": 99.8,
     "stats": {
-      "VALIDADO": 1351,
+      "VALIDADO": 1350,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 202792857,
-    "montoFinalSum": 2099939577,
+    "montoOriginalSum": 168247807,
+    "montoFinalSum": 2065394527,
     "montoRecuperadoSum": 1897146720
   },
   "categorias": {
-    "licitaciones": 725,
-    "comprasAgiles": 1354,
+    "licitaciones": 719,
+    "comprasAgiles": 1353,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 402,
-    "LP": 143,
-    "L1": 123,
+    "LE": 400,
+    "LP": 141,
+    "L1": 121,
     "LR": 46,
-    "CO": 8,
+    "CO": 7,
     "LS": 3,
     "E2": 5,
     "O1": 4,
@@ -47,13 +47,13 @@
   },
   "matchPorEmpresa": {
     "V-MOCCS": 331,
-    "Aminorte": 1752
+    "Aminorte": 1745
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 2020,
-    "modificadosCount": 56,
-    "cerradosCount": 1279,
+    "nuevosCount": 2015,
+    "modificadosCount": 54,
+    "cerradosCount": 1281,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -380,15 +380,6 @@
         "fechaCierre": "2026-10-26T15:30:00"
       },
       {
-        "codigo": "935-25-LP26",
-        "titulo": "MEJORAMIENTO CUBIERTA ZONA OFICINA GIMNASIO FISCAL",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "monto": 157000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-14T09:00:00"
-      },
-      {
         "codigo": "1191688-75-LP26",
         "titulo": "Adquisición de Mobiliario Urbano",
         "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-10-13T15:01:00"
+      },
+      {
+        "codigo": "3337-16-LP26",
+        "titulo": "SERVICIO RECEPCIÓN LICENCIAS MÉDICAS ELECTRÓNICAS",
+        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
+        "monto": 89000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-14T15:00:00"
       }
     ],
     "modificados": [
@@ -868,16 +868,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1562-58-LE26",
-        "titulo": "insumos impresora de credenciales MC210 DS DLamin",
-        "organismo": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 9900000,
-        "montoNuevo": 9900000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1079580-31-LE26",
         "titulo": "ADQUISICIÓN DE MOBILIARIO PARA LA SECCIÓN LABOCAR ÑUBLE POR LÍNEA DE ADJUDICACIÓN",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -988,26 +978,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1217357-2-LE26",
-        "titulo": "ADQUISICIÓN DE 416 CONJUNTOS DEPORTIVOS",
-        "organismo": "CORPORACION MUNICIPAL DE DEPORTES DE LA PINTANA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "673663-31-LE26",
-        "titulo": "ADQUISICIÓN DE PANTALLA LED EXTERIOR Y TRES TOTEM",
-        "organismo": "I MUNICIPALIDAD DE ANDACOLLO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1692-25-LE26",
         "titulo": "MANTENCION PREVENTIVA DEL SISTEMA DE CLIMATIZACION",
         "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE COCHRANE",
@@ -1026,6 +996,26 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1217357-2-LE26",
+        "titulo": "ADQUISICIÓN DE 416 CONJUNTOS DEPORTIVOS",
+        "organismo": "CORPORACION MUNICIPAL DE DEPORTES DE LA PINTANA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "673663-31-LE26",
+        "titulo": "ADQUISICIÓN DE PANTALLA LED EXTERIOR Y TRES TOTEM",
+        "organismo": "I MUNICIPALIDAD DE ANDACOLLO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1247197-63-LE26",
@@ -1058,16 +1048,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4404-57-LE26",
-        "titulo": "LICITACIÓN PÚBLICA “ADQUISICIÓN DE TELEVISORES PARA ESTABLECIMIENTOS EDUCACIONALES DE LA COMUNA DE SAN CLEMENTE”.  ",
-        "organismo": "I MUNICIPALIDAD DE SAN CLEMENTE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "3542-26-LE26",
         "titulo": "SERVICIO DE REMODELACIÓN DE OFICINAS DEL TALLER DE MANTENIMIENTO",
         "organismo": "DIVISION LOGISTICA DEL EJERCITO",
@@ -1088,9 +1068,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1080303-3-LP26",
-        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "codigo": "1057552-19-LE26",
+        "titulo": "Convenio de Suministro Materiales de Oficina",
+        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL DE R",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1098,11 +1078,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1134384-10-LR26",
-        "titulo": "Recepción de Rescon y limpieza de micro basurales en la comuna de San Pedro de Atacama",
-        "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE ATACAMA",
+        "codigo": "1080303-3-LP26",
+        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1118,11 +1098,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057552-19-LE26",
-        "titulo": "Convenio de Suministro Materiales de Oficina",
-        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL DE R",
+        "codigo": "1134384-10-LR26",
+        "titulo": "Recepción de Rescon y limpieza de micro basurales en la comuna de San Pedro de Atacama",
+        "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE ATACAMA",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1641,7 +1621,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 259.1,
+  "tiempoEjecucionSegundos": 198.2,
   "errores": [],
   "advertencias": []
 }

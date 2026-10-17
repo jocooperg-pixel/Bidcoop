@@ -145522,224 +145522,6 @@
     "ts": 1786312468.1544478,
     "fetchedAt": "2026-08-09T17:37:51.604625"
   },
-  "1271359-101-LE26": {
-    "data": {
-      "CodigoExterno": "1271359-101-LE26",
-      "Nombre": "MATERIALES DIDACTICOS OFICINA DEPORTIVOS Y OTROS",
-      "CodigoEstado": 8,
-      "Descripcion": "La corporación de desarrollo social de Lampa a través del departamento de abastecimiento solicita la adquisición de materiales varios para el programa promoción de la salud.",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "1803800",
-        "NombreOrganismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE LAMPA",
-        "RutUnidad": "70.954.200-1",
-        "CodigoUnidad": "1271359",
-        "NombreUnidad": "LICITACIONES",
-        "DireccionUnidad": "Sargento aldea 898",
-        "ComunaUnidad": "Lampa",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "2099085",
-        "NombreUsuario": "Cristian Ignacio Pantoja Rojas",
-        "CargoUsuario": "Analista de compras"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "2",
-      "Obras": "0",
-      "CantidadReclamos": 20,
-      "Fechas": {
-        "FechaCreacion": "2026-06-25T16:47:48.11",
-        "FechaCierre": "2026-08-11T15:10:00",
-        "FechaInicio": "2026-07-29T20:01:00",
-        "FechaFinal": "2026-08-03T12:00:00",
-        "FechaPubRespuestas": "2026-08-06T20:00:00",
-        "FechaActoAperturaTecnica": "2026-08-11T15:10:00",
-        "FechaActoAperturaEconomica": "2026-08-11T15:10:00",
-        "FechaPublicacion": "2026-07-29T13:27:47.19",
-        "FechaAdjudicacion": "2026-10-15T11:43:31.867",
-        "FechaEstimadaAdjudicacion": "2026-10-21T20:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "Según CDP",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 23112306,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "NICOLAS GUAJADO",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Claudia Gonzalez",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "El adjudicatario no podrá subcontratar, ceder ni transferir en forma alguna, total ni parcialmente, los derechos y obligaciones que nacen del desarrollo de esta licitación y, en especial, los establecidos en el respectivo contrato que se celebre con la",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-10-14T00:00:00",
-        "Numero": "693",
-        "NumeroOferentes": 8,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=mnoriCpxwvYponjleNBWuz0UgHGt4WRi3jopuyWNOgM="
-      },
-      "Items": {
-        "Cantidad": 8,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 10152001,
-            "CodigoCategoria": "10152000",
-            "Categoria": "Artículos para plantas y animales / Semillas, bulbos y almácigos / Semillas y tallos de árboles y arbustos",
-            "NombreProducto": "Semillas o esquejes de árboles frutales",
-            "Descripcion": "CANASTA Nº1",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 48101601,
-            "CodigoCategoria": "48101600",
-            "Categoria": "Maquinarias, equipos y suministros para la industria de servicios / Equipos para servicios de alimentación institucional / Equipos para preparado de alimentos",
-            "NombreProducto": "Juguera de uso comercial",
-            "Descripcion": "CANASTA Nº2",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "77.544.792-3",
-              "NombreProveedor": "SOCIEDAD DE INVERSIONES JACH LIMITADA",
-              "Cantidad": 1,
-              "MontoUnitario": 1758800
-            }
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 30151901,
-            "CodigoCategoria": "30151900",
-            "Categoria": "Artículos para estructuras, obras y construcciones / Materiales para terminaciones exteriores / Materiales para acabado",
-            "NombreProducto": "Toldos",
-            "Descripcion": "CANASTA Nº3",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "77.544.792-3",
-              "NombreProveedor": "SOCIEDAD DE INVERSIONES JACH LIMITADA",
-              "Cantidad": 1,
-              "MontoUnitario": 696800
-            }
-          },
-          {
-            "Correlativo": 4,
-            "CodigoProducto": 56101812,
-            "CodigoCategoria": "56101800",
-            "Categoria": "Muebles y mobiliario / Muebles de alojamiento / Accesorios y muebles de bebé y niño",
-            "NombreProducto": "mudadores o accesorios",
-            "Descripcion": "CANASTA N°4",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "76.008.969-9",
-              "NombreProveedor": "EDICIONES R & RED SPA.",
-              "Cantidad": 1,
-              "MontoUnitario": 671000
-            }
-          },
-          {
-            "Correlativo": 5,
-            "CodigoProducto": 82121504,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión tipográfica o impresión por serigrafía",
-            "Descripcion": "CANASTA Nº5",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 6,
-            "CodigoProducto": 44121701,
-            "CodigoCategoria": "44121700",
-            "Categoria": "Equipos, accesorios y suministros de oficina / Suministros de oficina / Instrumentos de escritura",
-            "NombreProducto": "Lápiz pasta",
-            "Descripcion": "CANASTA Nº6 ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "77.544.792-3",
-              "NombreProveedor": "SOCIEDAD DE INVERSIONES JACH LIMITADA",
-              "Cantidad": 1,
-              "MontoUnitario": 839800
-            }
-          },
-          {
-            "Correlativo": 7,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "CANASTA Nº7",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "77.267.947-5",
-              "NombreProveedor": "COMERCIALIZADORA RB SPA",
-              "Cantidad": 1,
-              "MontoUnitario": 963648
-            }
-          },
-          {
-            "Correlativo": 8,
-            "CodigoProducto": 43212104,
-            "CodigoCategoria": "43212100",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
-            "NombreProducto": "Impresoras de chorro de tinta",
-            "Descripcion": "CANASTA Nº8 ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "77.544.792-3",
-              "NombreProveedor": "SOCIEDAD DE INVERSIONES JACH LIMITADA",
-              "Cantidad": 1,
-              "MontoUnitario": 1149800
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1792177689.017402,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
-  },
   "1271359-111-CO26": {
     "data": {
       "CodigoExterno": "1271359-111-CO26",
@@ -279457,122 +279239,6 @@
     },
     "ts": 1788112393.3426337,
     "fetchedAt": "2026-08-30T17:48:34.885890+00:00"
-  },
-  "2423-53-LP26": {
-    "data": {
-      "CodigoExterno": "2423-53-LP26",
-      "Nombre": "ADQUISICIÓN DE SWITCH ARUBA O EQUIVALENTE TÉCNICO",
-      "CodigoEstado": 8,
-      "Descripcion": "adquisición de doce 12 switches de red, de alta eficiencia energética, correspondiente al modelo HPE Aruba línea 6200 Switch o equivalente, destinados a la renovación del parque de equipamiento de conmutación actualmente en operación, el cual ha alcanzado el fin de su vida útil",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "87388",
-        "NombreOrganismo": "I MUNICIPALIDAD DE PUENTE ALTO",
-        "RutUnidad": "69.072.100-7",
-        "CodigoUnidad": "3415",
-        "NombreUnidad": "SECPLAC",
-        "DireccionUnidad": "Concha y Toro 1820",
-        "ComunaUnidad": "Puente Alto",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "1820338",
-        "NombreUsuario": "ISRAEL GAETE",
-        "CargoUsuario": "PROFESIONAL SECPLA "
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 148,
-      "Fechas": {
-        "FechaCreacion": "2026-08-04T16:39:17.5",
-        "FechaCierre": "2026-08-24T15:30:00",
-        "FechaInicio": "2026-08-05T14:00:00",
-        "FechaFinal": "2026-08-11T15:30:00",
-        "FechaPubRespuestas": "2026-08-19T15:30:00",
-        "FechaActoAperturaTecnica": "2026-08-24T15:30:00",
-        "FechaActoAperturaEconomica": "2026-08-24T15:30:00",
-        "FechaPublicacion": "2026-08-05T13:38:45.097",
-        "FechaAdjudicacion": "2026-10-15T11:47:36.55",
-        "FechaEstimadaAdjudicacion": "2026-11-23T15:30:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": "1900-01-02T00:00:00",
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "MUNICIPAL ",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "MARIELA MARIN ",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "PAUL FUENTES GARCIA ",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "NECESIDAD DE LA MUNICIPALIDAD",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 4,
-        "Fecha": "2026-10-15T00:00:00",
-        "Numero": "2291",
-        "NumeroOferentes": 1,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=DrcoOZx654VsJu7M/68Bg8IWxJLFrWfQ7tRMvm/vNv8="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 80111801,
-            "CodigoCategoria": "80111800",
-            "Categoria": "Servicios profesionales, administrativos y consultorías de gestión empresarial / Servicios de recursos humanos / Contratistas en tecnologías de la información",
-            "NombreProducto": "Contratistas en tecnología de información",
-            "Descripcion": "ADQUISICIÓN DE SWITCH ARUBA O EQUIVALENTE TÉCNICO",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "96.930.550-k",
-              "NombreProveedor": "E BUSINESS DISTRIBUTION S A",
-              "Cantidad": 1,
-              "MontoUnitario": 33944029
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1792177706.0947533,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
   },
   "2724-37-LE26": {
     "data": {
@@ -523620,138 +523286,6 @@
     "ts": 1789541780.9880466,
     "fetchedAt": "2026-09-16T06:53:57.002932+00:00"
   },
-  "1554-49-LP26": {
-    "data": {
-      "CodigoExterno": "1554-49-LP26",
-      "Nombre": "Servicio Arriendo de Impresoras para Oficinas y Servicios",
-      "CodigoEstado": 8,
-      "Descripcion": "El objetivo de esta licitación es satisfacer de manera oportuna las necesidades del Hospital Regional de Copiapó y de la población beneficiaria, que recibe asistencia sanitaria a través de este establecimiento, con observancia de la Ley N°19.886 y su reglamento que prevén los procedimientos de contratación pública, los cuales se rigen por principios de libre acceso a las licitaciones, competencia, publicidad, transparencia, igualdad de trato, no discriminación, probidad y valor por el dinero.\r\n\r\nPara cumplir con este objetivo se efectúa el llamado a licitación pública, estableciendo en sus bases, administrativas y técnicas, el conjunto, claro y objetivo, de requisitos, condiciones y especificaciones que describen los bienes y/o servicios a contratar y que permitan alcanzar la combinación más ventajosa entre todos lo beneficios del bien o servicio por adquirir y todos sus costos asociados, presente y futuros. Este proceso regulará tanto la adquisición como el contrato definitivo, asegurando así que se mantenga la calidad y eficiencia en la atención sanitaria proporcionada por el hospital.",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "7411",
-        "NombreOrganismo": "SERVICIO DE SALUD ATACAMA HOSPITAL COPIA",
-        "RutUnidad": "61.606.307-3",
-        "CodigoUnidad": "2550",
-        "NombreUnidad": "Abastecimiento Hospital de Copiapó",
-        "DireccionUnidad": "Los Carreras 1320",
-        "ComunaUnidad": "Copiapó",
-        "RegionUnidad": "Región de Atacama ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1858410",
-        "NombreUsuario": "SUYIN WAY BARRERA",
-        "CargoUsuario": "Operadora de compras"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 1011,
-      "Fechas": {
-        "FechaCreacion": "2026-08-03T00:00:00",
-        "FechaCierre": "2026-09-03T20:00:00",
-        "FechaInicio": "2026-08-07T16:00:00",
-        "FechaFinal": "2026-08-13T17:00:00",
-        "FechaPubRespuestas": "2026-08-19T17:00:00",
-        "FechaActoAperturaTecnica": "2026-09-04T08:00:00",
-        "FechaActoAperturaEconomica": "2026-09-04T08:00:00",
-        "FechaPublicacion": "2026-08-07T15:17:59.717",
-        "FechaAdjudicacion": "2026-10-14T09:35:47.71",
-        "FechaEstimadaAdjudicacion": "2026-10-20T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": "24",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "Danary Vera Moreta",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Maria Ofelia Alavarez Alvarez",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "24",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-10-09T00:00:00",
-        "Numero": "10249",
-        "NumeroOferentes": 7,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=XtGOr2usvv5YKfC5dMnh4Kl61x5bmBOF8yXeq6Ul54s="
-      },
-      "Items": {
-        "Cantidad": 2,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 43212110,
-            "CodigoCategoria": "43212100",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
-            "NombreProducto": "Impresoras multifunción o multifuncionales",
-            "Descripcion": "Tipo 1: Impresora Monocromática",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "76.128.275-1",
-              "NombreProveedor": "INTEGRACION DE SOLUCIONES LIMITADA",
-              "Cantidad": 1,
-              "MontoUnitario": 62567280
-            }
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 43212110,
-            "CodigoCategoria": "43212100",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
-            "NombreProducto": "Impresoras multifunción o multifuncionales",
-            "Descripcion": "Tipo 2: Impresoras Multifuncional Monocromática",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "76.128.275-1",
-              "NombreProveedor": "INTEGRACION DE SOLUCIONES LIMITADA",
-              "Cantidad": 1,
-              "MontoUnitario": 57404880
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1792177731.0627687,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
-  },
   "1012975-9-L126": {
     "data": {
       "CodigoExterno": "1012975-9-L126",
@@ -551381,8 +550915,8 @@
         ]
       }
     },
-    "ts": 1792177721.9551556,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267891.8381379,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "1481-17-L126": {
     "data": {
@@ -552547,7 +552081,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 2195,
+      "CantidadReclamos": 2196,
       "Fechas": {
         "FechaCreacion": "2026-08-17T14:23:39.713",
         "FechaCierre": "2026-09-07T16:00:00",
@@ -552625,8 +552159,8 @@
         ]
       }
     },
-    "ts": 1792177685.2638113,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267887.5126655,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "4053-41-LE26": {
     "data": {
@@ -681602,122 +681136,6 @@
     "ts": 1791479236.9262753,
     "fetchedAt": "2026-10-08T17:00:36.386389+00:00"
   },
-  "1562-58-LE26": {
-    "data": {
-      "CodigoExterno": "1562-58-LE26",
-      "Nombre": "insumos impresora de credenciales MC210 DS DLamin",
-      "CodigoEstado": 8,
-      "Descripcion": "Se requiere la compra de insumos para la impresión de 4.000 credenciales por ambas caras en la impresora de credenciales MC210 DS DLamin asociada a los cursos que desarrolla, cambios de categoría y renovación de credenciales del Centro de Capacitación de Minería y Geología del SERNAGEOMIN.",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "7210",
-        "NombreOrganismo": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA",
-        "RutUnidad": "61.702.000-9",
-        "CodigoUnidad": "2558",
-        "NombreUnidad": "Servicio Nacional de Geología y Minería",
-        "DireccionUnidad": "Avda. Santa María Nº 0180",
-        "ComunaUnidad": "Providencia",
-        "RegionUnidad": "Región Metropolitana de Santiago",
-        "RutUsuario": "",
-        "CodigoUsuario": "2175426",
-        "NombreUsuario": "Carlos Alberto Guzmán Gutiérrez",
-        "CargoUsuario": "Analista de Compras y Contrataciones"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 110,
-      "Fechas": {
-        "FechaCreacion": "2026-09-07T16:26:07.867",
-        "FechaCierre": "2026-09-23T15:01:00",
-        "FechaInicio": "2026-09-07T17:25:00",
-        "FechaFinal": "2026-09-10T15:00:00",
-        "FechaPubRespuestas": "2026-09-14T18:00:00",
-        "FechaActoAperturaTecnica": "2026-09-23T15:02:00",
-        "FechaActoAperturaEconomica": "2026-09-23T15:02:00",
-        "FechaPublicacion": "2026-09-07T17:23:32.413",
-        "FechaAdjudicacion": "2026-10-15T11:11:36.943",
-        "FechaEstimadaAdjudicacion": "2026-10-20T18:48:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA ",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 9900000,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Ximena Hidalgo",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Rodrigo Beas",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 1,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-10-14T00:00:00",
-        "Numero": "2146",
-        "NumeroOferentes": 3,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=RjB0SI0QaF/uI2HsTrG2acstMl9howAcPckNQjtYBz8="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 82121503,
-            "CodigoCategoria": "82121500",
-            "Categoria": "Servicios editoriales, de diseño, publicidad, gráficos y artistas / Servicios de impresión y reproducción / Impresión",
-            "NombreProducto": "Impresión digital",
-            "Descripcion": "El Centro de Capacitación de Minería y Geología del SERNAGEOMIN requiere la compra de insumos para la impresora de credenciales MC210 DS DLamin asociada a los cursos que desarrolla, cambios de categoría y renovación de credenciales.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "76.403.327-2",
-              "NombreProveedor": "TECNOCARD SPA",
-              "Cantidad": 1,
-              "MontoUnitario": 9860959
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1792177715.157633,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
-  },
   "3084-31-LE26": {
     "data": {
       "CodigoExterno": "3084-31-LE26",
@@ -682058,8 +681476,8 @@
         ]
       }
     },
-    "ts": 1792177707.4663134,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267873.694883,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "3775-30-LP26": {
     "data": {
@@ -688876,122 +688294,6 @@
     },
     "ts": 1791146133.7579346,
     "fetchedAt": "2026-10-04T20:31:47.060569+00:00"
-  },
-  "4404-57-LE26": {
-    "data": {
-      "CodigoExterno": "4404-57-LE26",
-      "Nombre": "LICITACIÓN PÚBLICA “ADQUISICIÓN DE TELEVISORES PARA ESTABLECIMIENTOS EDUCACIONALES DE LA COMUNA DE SAN CLEMENTE”.  ",
-      "CodigoEstado": 8,
-      "Descripcion": "LICITACIÓN PÚBLICA\r\n“ADQUISICIÓN DE TELEVISORES PARA ESTABLECIMIENTOS EDUCACIONALES DE LA COMUNA DE SAN CLEMENTE”.  \r\n",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "93774",
-        "NombreOrganismo": "I MUNICIPALIDAD DE SAN CLEMENTE",
-        "RutUnidad": "69.110.500-8",
-        "CodigoUnidad": "5320",
-        "NombreUnidad": "DEPARTAMENTO EDUCACION MUNICIPALIDAD DE SAN CLEMENTE",
-        "DireccionUnidad": "",
-        "ComunaUnidad": "",
-        "RegionUnidad": "Región del Maule ",
-        "RutUsuario": "",
-        "CodigoUsuario": "280253",
-        "NombreUsuario": "BRAULIO ESTEBAN HORMAZABAL LARA",
-        "CargoUsuario": "CONTADOR"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 285,
-      "Fechas": {
-        "FechaCreacion": "2026-09-10T00:00:00",
-        "FechaCierre": "2026-09-21T15:02:00",
-        "FechaInicio": "2026-09-10T14:02:00",
-        "FechaFinal": "2026-09-15T10:02:00",
-        "FechaPubRespuestas": "2026-09-16T18:02:00",
-        "FechaActoAperturaTecnica": "2026-09-21T15:03:00",
-        "FechaActoAperturaEconomica": "2026-09-21T15:03:00",
-        "FechaPublicacion": "2026-09-10T10:24:00",
-        "FechaAdjudicacion": "2026-10-15T14:54:05.98",
-        "FechaEstimadaAdjudicacion": "2026-10-22T15:03:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "LEY SEP",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "RUTH QUINTANA",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Juan Aranguiz Sepulveda",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 1,
-        "Fecha": "2026-10-15T00:00:00",
-        "Numero": "3203",
-        "NumeroOferentes": 10,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=+QMHXHOSxthFbd4Pt96EeWgdYOmqAnIfv4FnAJtz1Bo="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 52161505,
-            "CodigoCategoria": "52161500",
-            "Categoria": "Muebles, accesorios, electrodomésticos y productos electrónicos / Equipos y accesorios audiovisuales / Equipos audiovisuales y de electrónica menor",
-            "NombreProducto": "Televisores convencionales, de plasma y LCD",
-            "Descripcion": "ADQ. de Televisiores para el Departamento de Educacion S/C 605 y 610 DAEM, por volumen completo, segun Bases administrativas y anexos adjuntos.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "77.624.823-1",
-              "NombreProveedor": "COMERCIAL AUSTIN SPA",
-              "Cantidad": 1,
-              "MontoUnitario": 15185261
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1792177697.1722536,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
   },
   "4888-18-LE26": {
     "data": {
@@ -731308,8 +730610,8 @@
         ]
       }
     },
-    "ts": 1792177701.3320675,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267888.2570112,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "1002584-12-LE26": {
     "data": {
@@ -742197,8 +741499,8 @@
         ]
       }
     },
-    "ts": 1792177726.2725425,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267897.917091,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "1217357-2-LE26": {
     "data": {
@@ -750308,111 +749610,6 @@
     "ts": 1792018380.9911964,
     "fetchedAt": "2026-10-14T22:44:14.742322+00:00"
   },
-  "935-25-LP26": {
-    "data": {
-      "CodigoExterno": "935-25-LP26",
-      "Nombre": "MEJORAMIENTO CUBIERTA ZONA OFICINA GIMNASIO FISCAL",
-      "CodigoEstado": 6,
-      "Descripcion": "LICITACIÓN PÚBLICA PARA MEJORAMIENTO DE CUBIERTA ZONA DE OFICINAS GIMNASIO FISCAL PUNTA ARENAS.",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "7216",
-        "NombreOrganismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "RutUnidad": "61.107.000-4",
-        "CodigoUnidad": "1931",
-        "NombreUnidad": "I.N.D. REGION XII",
-        "DireccionUnidad": "",
-        "ComunaUnidad": "",
-        "RegionUnidad": "Región de Magallanes y de la Antártica",
-        "RutUsuario": "",
-        "CodigoUsuario": "1113298",
-        "NombreUsuario": "Jimena Barria Barrientos",
-        "CargoUsuario": "Comprador"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LP",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 2,
-      "EstadoEtapas": "2",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 384,
-      "Fechas": {
-        "FechaCreacion": "2026-09-21T00:00:00",
-        "FechaCierre": "2026-10-14T09:00:00",
-        "FechaInicio": "2026-09-22T20:00:00",
-        "FechaFinal": "2026-10-02T20:00:00",
-        "FechaPubRespuestas": "2026-10-06T20:00:00",
-        "FechaActoAperturaTecnica": "2026-10-14T09:05:00",
-        "FechaActoAperturaEconomica": "2026-10-14T09:10:00",
-        "FechaPublicacion": "2026-09-22T16:28:26.42",
-        "FechaAdjudicacion": "2026-11-04T20:00:00",
-        "FechaEstimadaAdjudicacion": "2026-11-04T20:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "RECINTOS",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 157000000,
-      "Tiempo": "60",
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "ROSANA MONTAÑA RICARDI",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "MICHEL MORA  MIRANDA",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 2,
-      "TiempoDuracionContrato": "60",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "2",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 72131702,
-            "CodigoCategoria": "72131700",
-            "Categoria": "Servicios de construcción y mantenimiento / Construcción de edificios en general / Construcción de obras civiles y infraestructuras",
-            "NombreProducto": "Construcción de obras civiles",
-            "Descripcion": "LICITACIÓN PÚBLICA PARA MEJORAMIENTO DE CUBIERTA ZONA DE OFICINAS GIMNASIO FISCAL PUNTA ARENAS”, SEGUN BASES Y ANEXOS ADJUNTOS.",
-            "UnidadMedida": "Global",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1792177727.2772465,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
-  },
   "1057532-73-L126": {
     "data": {
       "CodigoExterno": "1057532-73-L126",
@@ -753323,8 +752520,8 @@
         ]
       }
     },
-    "ts": 1792177705.2853813,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267869.8198643,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "1423921-18-LE26": {
     "data": {
@@ -776775,7 +775972,7 @@
       "JustificacionPublicidad": "",
       "Contrato": "1",
       "Obras": "0",
-      "CantidadReclamos": 1152,
+      "CantidadReclamos": 1153,
       "Fechas": {
         "FechaCreacion": "2026-09-30T16:35:12.467",
         "FechaCierre": "2026-10-14T15:00:00",
@@ -776842,8 +776039,8 @@
         ]
       }
     },
-    "ts": 1792177739.3594906,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267902.3493798,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "5054-20-LE26": {
     "data": {
@@ -810920,8 +810117,8 @@
         ]
       }
     },
-    "ts": 1792177689.6448653,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267862.40875,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "1389183-51-LP26": {
     "data": {
@@ -811964,8 +811161,8 @@
         ]
       }
     },
-    "ts": 1792177690.4723146,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267880.3795617,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "1417913-105-LE26": {
     "data": {
@@ -818540,8 +817737,8 @@
         ]
       }
     },
-    "ts": 1792177738.5040066,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267898.78943,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "3624-36-LE26": {
     "data": {
@@ -818647,133 +817844,6 @@
     },
     "ts": 1792160617.948242,
     "fetchedAt": "2026-10-16T14:21:51.610301+00:00"
-  },
-  "3934-44-L126": {
-    "data": {
-      "CodigoExterno": "3934-44-L126",
-      "Nombre": "ADQUISICION IMPRESORAS SCANNER Y UPS ESTABLECIMIENTOS DE SALUD",
-      "CodigoEstado": 6,
-      "Descripcion": "ADQUISICION DE IMPRESORAS, SCANNER Y UPS, PARA USO EN LOS ESTABLECIMIENTOS DEPENDIENTE DEL DEPARTAMENTO DE SALUD DE LA COMUNA DE FREIRE",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "118089",
-        "NombreOrganismo": "I MUNICIPALIDAD DE FREIRE",
-        "RutUnidad": "69.190.900-K",
-        "CodigoUnidad": "4854",
-        "NombreUnidad": "Departamento de Salud",
-        "DireccionUnidad": "Pedro Camalez Nº187",
-        "ComunaUnidad": "Freire",
-        "RegionUnidad": "Región de la Araucanía ",
-        "RutUsuario": "",
-        "CodigoUsuario": "423535",
-        "NombreUsuario": "Graciela Melissa  Riquelme Monsalve",
-        "CargoUsuario": "Encargada Adquisiciones Departamento de Salud"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "L1",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 215,
-      "Fechas": {
-        "FechaCreacion": "2026-10-05T00:00:00",
-        "FechaCierre": "2026-10-14T15:16:00",
-        "FechaInicio": "2026-10-05T15:16:00",
-        "FechaFinal": "2026-10-08T15:16:00",
-        "FechaPubRespuestas": "2026-10-09T15:16:00",
-        "FechaActoAperturaTecnica": "2026-10-14T15:17:00",
-        "FechaActoAperturaEconomica": "2026-10-14T15:17:00",
-        "FechaPublicacion": "2026-10-05T09:29:41.13",
-        "FechaAdjudicacion": "2026-11-30T15:17:00",
-        "FechaEstimadaAdjudicacion": "2026-11-30T15:17:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "FONDOS PROPIOS",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 5880000,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "DANIEL CALQUIN PAINEMIL",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "MARCELO RAMIREZ QUEZADA",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 4,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 3,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 43212104,
-            "CodigoCategoria": "43212100",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
-            "NombreProducto": "Impresoras de chorro de tinta",
-            "Descripcion": "Impresora multifuncional a color con sistema de tanque de tinta (o similar a Epson l4260) VER BASES ADJUNTAS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 43211711,
-            "CodigoCategoria": "43211700",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Dispositivos informáticos de entrada de datos",
-            "NombreProducto": "Escáner",
-            "Descripcion": "Scanner de documentos ADF ( o similar a workforce DS-530) VER BASES ADJUNTAS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 39121011,
-            "CodigoCategoria": "39121000",
-            "Categoria": "Artículos eléctricos y de iluminación / Equipamiento y artículos eléctricos / Equipamiento para distribución y transformación eléctrica",
-            "NombreProducto": "Fuentes de alimentación continua",
-            "Descripcion": "UPS 300 W / 500 VA, VER BASES ADJUNTAS",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 16,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1792177740.322923,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
   },
   "5394-23-LE26": {
     "data": {
@@ -833974,8 +833044,8 @@
         ]
       }
     },
-    "ts": 1792177711.140856,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267865.9397047,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "1003780-1-LE26": {
     "data": {
@@ -857029,1059 +856099,8 @@
         ]
       }
     },
-    "ts": 1792177672.8738234,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
-  },
-  "2446-295-CO26": {
-    "data": {
-      "CodigoExterno": "2446-295-CO26",
-      "Nombre": "ADQ MATERIALES DE ENSEÑANZA PARA OFICINA DEPORTES",
-      "CodigoEstado": 6,
-      "Descripcion": "ADQUISICIÓN MATERIALES DE ENSEÑANZA PARA OFICINA DE DEPORTES, conforme a listado de productos señalado en el punto n°2 de las bases de licitación.",
-      "FechaCierre": null,
-      "Estado": "Cerrada",
-      "Comprador": {
-        "CodigoOrganismo": "87901",
-        "NombreOrganismo": "I MUNICIPALIDAD DE COQUIMBO",
-        "RutUnidad": "69.040.300-5",
-        "CodigoUnidad": "3438",
-        "NombreUnidad": "IMUNI_COQUIMBO",
-        "DireccionUnidad": "BILBAO 348",
-        "ComunaUnidad": "Coquimbo",
-        "RegionUnidad": "Región de Coquimbo ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2292238",
-        "NombreUsuario": "Elizabeth Rojas Ordenes",
-        "CargoUsuario": "operador"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 3,
-      "Tipo": "CO",
-      "TipoConvocatoria": "0",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 4071,
-      "Fechas": {
-        "FechaCreacion": "2026-10-02T16:00:06.597",
-        "FechaCierre": "2026-10-15T09:00:00",
-        "FechaInicio": "2026-10-05T14:30:00",
-        "FechaFinal": "2026-10-09T09:00:00",
-        "FechaPubRespuestas": "2026-10-13T23:59:00",
-        "FechaActoAperturaTecnica": "2026-10-15T09:01:00",
-        "FechaActoAperturaEconomica": "2026-10-15T09:01:00",
-        "FechaPublicacion": "2026-10-05T14:07:07.657",
-        "FechaAdjudicacion": "2026-11-12T23:59:00",
-        "FechaEstimadaAdjudicacion": "2026-11-12T23:59:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "Presupuesto Municipal",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 34545050,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "1",
-      "NombreResponsablePago": "DIRECCIÓN DE ADMINISTRACIÓN Y FINANZAS",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "CRISTOBAL REYES BIELEFELD",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": null,
-      "Items": {
-        "Cantidad": 87,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Barra olímpica 20 kg. Marca HWM o equivalente. Fabricada en acero tipo A3, con revestimiento de cerámica y polímero en diseño camuflaje en negro y blanco (mayor resistencia a la oxidación) Con un largo de 220 cm. Y un diámetro de 28 mm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 2,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Set de mancuernas hexagonales de vinilo marca ironside o equivalente, fabricadas en hierro fundido macizo recubierto con vinilo rojo y azul, que van desde 1 kg hasta 5 kg. incorpora rack de almacenamiento de acero, forrado vinilo negro, con topes de gOMA",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 3,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Pesa rusa de 4 kg. Fabricada con bola de acero recubierta en masilla de cemento, forrada con policloruro de vinilo (PVC)de color gris con amarillo.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 4,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Pesa rusa de 6 kg. Fabricada con bola de acero recubierta en masilla de cemento, forrada con policloruro de vinilo (PVC)de color gris con amarillo.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 5,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Pesa rusa de 8 kg. Fabricada con bola de acero recubierta en masilla de cemento, forrada con policloruro de vinilo (PVC)de color gris con amarillo.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 6,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Pesa rusa de 10 kg. Fabricada con bola de acero recubierta en masilla de cemento, forrada con policloruro de vinilo (PVC)de color gris con amarillo.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 7,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Pesa rusa de 12 kg. Fabricada con bola de acero recubierta en masilla de cemento, forrada con policloruro de vinilo (PVC)de color gris con amarillo.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 8,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 2,5 kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 9,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 5 kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 10,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 7.5 kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 11,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 10 kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 12,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 12,5kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 13,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 15kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 14,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 17,5kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 15,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 20kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 16,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 22,5kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 17,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de mancuernas de 25kg. Marca HWM o equivalente. Fabricada con un núcleo de acero recubierto en caucho virgen color negro y un mango de agarre de 28 mm de diámetro en color plata.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 18,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Rack para almacenamiento marca HWM o equivalente. De tres niveles, Fabricado en acero color negro con tres bandejas antideslizantes.\r\nCon dimensiones de 135 cm de largo, 49 cm de ancho y 101 cm de alto. \r\nCon un peso máximo de carga de 450 kg. \r\nEl rack t",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 19,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Squat rack marca ironside o equivalente. Estructura de acero de alta resistencia en color negro con detalles rojo. de dimensiones 10,7 m de largo, 60 cm de ancho y 1,55 m de alto, con un peso máximo soportado de 200 kg.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 20,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de discos olímpicos de 10 libras marca HWM o equivalente, fabricados en caucho reciclado vulcanizado en color negro con detalles en gris, con un diámetro externo de 450 mm y 50,4 mm en su diámetro interno y un espesor de 28 mm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 21,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de discos olímpicos de 15 libras marca HWM o equivalente, fabricados en caucho reciclado vulcanizado en color negro con detalles en gris, con un diámetro externo de 450 mm y 50,4 mm en su diámetro interno y un espesor de 28 mm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 22,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de discos olímpicos de 25 libras marca HWM o equivalente, fabricados en caucho reciclado vulcanizado en color negro con detalles en verde, con un diámetro externo de 450 mm y 50,4 mm en su diámetro interno y un espesor de 28 mm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 23,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de discos olímpicos de 35 libras marca HWM o equivalente, fabricados en caucho reciclado vulcanizado en color negro con detalles en amarillo, con un diámetro externo de 450 mm y 50,4 mm en su diámetro interno y un espesor de 28 mm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 24,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de discos olímpicos de 45 libras marca HWM o equivalente, fabricados en caucho reciclado vulcanizado en color negro con detalles en azul, con un diámetro externo de 450 mm y 50,4 mm en su diámetro interno y un espesor de 28 mm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 25,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Banco regulable marca HWM o equivalente, estructura de acero en color negro con detalles en rojo, acolchado con tapicería de poliuretano en color negro equivalente a cuero sintético. Sus dimensiones son 150 cm de largo, 68 cm de ancho y 24 cm de alto.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 26,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Banco hip thrust marca HWM o equivalente fabricado en acero color negro con acabado mate, y tapicería de PVC microdiamantado anti deslizante y plataforma de caucho.\r\nSus dimensiones son 140 cm de largo, 59 cm de ancho y 40 cm de alto.\r\n",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 27,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de collarines de plástico de alta resistencia color rosado marca ironside o equivalente",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 28,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de collarines de plástico de alta resistencia color azul marca ironside o equivalente",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 29,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de collarines de plástico de alta resistencia color negro, marca ironside o equivalente",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 30,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Cuerda de entrenamiento marca HWM o equivalente, color negro con amarillo de nailon y poliester de un largo de 12,1 metro y 38 mm de diámetro.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 31,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Balón medicinal de 5 kg, marca HWM, o equivalente, fabricado de poliuretano color negro con detalles verdes, rellenado con arena, paños y algodón.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 32,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Balón medicinal de 10 kg, marca HWM, o equivalente, fabricado de poliuretano color negro con detalles rojos,  rellenado con arena, paños y algodón.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 33,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Tatami de goma eva con dimensiones de 100x100 cm y un grosor de 2,5 cm. En color negro.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 50,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 34,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Tatami de goma eva con dimensiones de 100x100 cm y un grosor de 2,5 cm. En color rojo.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 50,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 35,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Bicicleta estática infantil de estructura plástica rígida de colores vivos rojo, azul y amarillo con pantalla LCD que indica el tiempo, distancia recorrida y energía consumida. Asiento ajustable a altura del niño y regulador de resistencia.item n°35 bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 36,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Maquina remadora infantil de estructura de acero tubular de colores llamativos azul, rojo y amarillo, reforzada con espuma para una máxima seguridad. Cuenta con enganches para los pies y asiento antideslizante. Sus dimensiones son 18 cm de alto y 53 cm de",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 37,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Banco de ejercicio de fuerza infantil fabricado de metal lacado. cuenta con una barra recubierta de espuma de 2 kg y pesos adicionales de 2 kg. En total, en su parte inferior tiene la extensora y flexora de rodilla, según la posición en que el niño se sit",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 38,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Maquina trotadora infantil fabricada con una estructura metálica lacada con manillar plástico acolchado. La trotadora viene con un reloj que muestra el tiempo, distancia, velocidad y energía consumida, con función auto apagado. item n°38 bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 39,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Par de guantes de boxeo confeccionados en cuero sintético e interior de poliuretano de alto impacto color a elección. A demás cuentan con un bloqueo de pulgar para evitar lesiones. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 20,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 40,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Tallarín de espuma para piscina de dimensiones 152, 5 cm de largo y 6,5 cm de ancho. Colores sujetos a disponibilidad.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 39,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 41,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Tabla flotante para aprender natación, fabricada de material EVA de alta densidad y gran flotabilidad con dimensiones de 20 cm de largo, 8 cm de ancho y 28 cm de alto. Color sujeto a disponibilidad. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 30,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 42,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Soporte aro de basquetbol cuádruple hecho de material de polímeros de DHPE color azul, plástico de alta calidad roto modelado con protección UV, resistente a la humedad y golpes.item N°42 de las bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 43,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Bombín para balones de plástico resistente, color negro con detalles en gris, marca molten o equivalente. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 44,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Pack 100 agujas metálicas para inflar todo tipo de balones deportivo, marca DRB, o equivalente ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 45,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Stand up inflable 8´0´´, 10´0´´o 11´0´´ pies marca aquaforce o equivalente modelo sunrise doble capa, fabricado en nylon de alta tensión. item N°45 de las bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 46,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Traje de surf hombre manga larga, marca stoked o equivalente, modelo G1 4/3 talla S, hecho de neopreno de 4/3 mm de grosor. Color sujeto a disponibilidad de stock. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 47,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Traje de surf hombre manga larga, marca stoked o equivalente, modelo G1 4/3 talla M, hecho de neopreno de 4/3 mm de grosor. Color sujeto a disponibilidad de stock.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 48,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Traje de surf hombre manga larga, marca stoked o equivalente, modelo G1 4/3 talla L, hecho de neopreno de 4/3 mm de grosor. Color sujeto a disponibilidad de stock.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 49,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Traje de surf hombre manga larga, marca stoked o equivalente, modelo G1 4/3 talla XL, hecho de neopreno de 4/3 mm de grosor. Color sujeto a disponibilidad de stock.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 50,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Traje de surf niño manga larga, marca O´neill o equivalente, modelo YTH FOCUS BZ SEALED FULL 4/3 talla 16, hecho de neopreno de 4/3 mm de grosor Color negro.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 51,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Balón de voleibol playa n°5 multicolor, marca molten o equivalente, modelo new love vóley, dimensiones de 25x10x10 cm. Fabricado en cuero sintético.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 15,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 52,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Balón de futbol playa talla 5 color naranjo con detalles azules, marca molten o equivalente modelo FA3550 FIFA PR.Fabricado en cuero sintético.\r\n\r\n",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 25,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 53,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Silbato con cordón de uso profesional color azul, marca fox o equivalente, modelo fox 40 mini de materialidad ABS termoplástico de alto impacto, con una potencia de 115 decibeles, sin bolita y un peso de 24 gramos. Incluye cordón ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 54,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Silbato con cordón de uso profesional color amarillo, marca fox o equivalente, modelo fox 40 mini de materialidad ABS termoplástico de alto impacto, con una potencia de 115 decibeles, sin bolita y un peso de 24 gramos. Incluye cordón",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 55,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Silbato con cordón de uso profesional color rojo, marca fox o equivalente, modelo fox 40 mini de materialidad ABS termoplástico de alto impacto, con una potencia de 115 decibeles, sin bolita y un peso de 24 gramos. Incluye cordón",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 56,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Silbato con cordón de uso profesional color negro, marca fox o equivalente, modelo fox 40 mini de materialidad ABS termoplástico de alto impacto, con una potencia de 115 decibeles, sin bolita y un peso de 24 gramos. Incluye cordón",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 8,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 57,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Bolso porta balones de tela con malla negro con capacidad para 16 balones. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 58,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Banda de resistencia X-light 13 mm marca HWM o equivalente fabricado en latex color rojo 100% natural con un largo de 104 cm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 59,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Banda de resistencia Light 22 mm marca HWM o equivalente fabricado en latex color negro 100% natural con un largo de 104 cm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 60,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Banda de resistencia Medium 32 mm marca HWM o equivalente fabricado en latex color morado 100% natural con un largo de 104 cm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 61,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Carro porta balones de acero inoxidable, desarmable y con ruedas para almacenar de 30 a 40 balones.De dimensiones 80x90x90 cm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 62,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Set body pump marca fullfit o equivalente, compuesto por una barra tubular de acero con protector de goma espuma negro en la zona central y discos de interior de acero, recubiertos en caucho y un set de pinzas metálicas. item N°62 bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 15,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 63,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Rack almacenamiento discos body pump de acero negro, marca fullfit o equivalente. De dimensiones 160 cm de largo, 90 cm de ancho y 150 cm de alto. Tiene una capacidad de almacenamiento de hasta 10 set de body pump.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 64,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Set de cajones Pliometría 3 alturas, 50 cm, 60 cm y 75 cm de altura, fabricado en madera terciada de 20 mm de espeso con doble refuerzo, que incluya pernos de ensamblaje. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 65,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Balón fitball 65 cm de diámetro con sistema antiburst e inflador color azul de materialidad PVC DINP (sin latex)",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 66,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Almohadilla de barra Pink piton marca fullfit o equivalente, construida de espuma de gran resistencia, cubierta con una superficie de cuero sintético que no absorbe la humedad, es antideslizante y antibacterial. De dimensiones 40 cm de largo y 9cm diametr",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 67,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Balón multipropósito multicolor N°1 de iniciación, marca UK time, o equivalente. Confeccionado en PVC texturizado con un peso de 180g.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 68,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Balón rugby squad blanco/azul marino N°5, Marca Mitre o Equivalente. Resistente, excelente agrre, ideal para entrenamientos y juegos recreativos. Con superficie texturizada para facilitar control y manejo, diseño de color blanco y azul.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 16,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 69,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Bandas de Suspensión.Las bandas de suspensión TRX, diseñada para soportar un peso máximo de 300 Kg.y ofrecer una amplia gama de ajustes de altura de 150 a 240 cm. con un soporte para puerta y un bolso de transporte incluido.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 70,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Escalera de Coordinación.un largo de 4 mts, 8 peldaños. item N°70 de las bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 10,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 71,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Piso caucho Gimnasio, marca Hobby Market o equivalente.Medida: 100x100x08.Plancha fabricada en caucho EPDM de alta resistencia al impacto y aglomerante en base a PU, para uso de piso en gimnasios y zonas de actividad física.Densidad: 1000kg/m3\r\n",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 30,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 72,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Tabla Bodyboard.Marca OLAIAN o equivalentes. Material Polietileno y 80% Poliolefina expandida. Talla 40”.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 15,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 73,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Columpio de aeroyoga de nylon transpirable, doble capa y capacidad de hasta 180 kg. mangos acolchados, accesorios incluidos. item N°73 de las bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 18,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 74,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Step Aeróbica.78 x 29 x 10 | 15 | 20.Ajustable a 3 alturas. Muy resistente y firme. Polipropileno y polietileno son los materiales más comunes para la fabricación de la plataforma debido a su durabilidad y resistencia. item n°74 de las bases.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 25,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 75,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Reboteador de arquero.Materiales de fabricación: metal (estructura) / poliéster (red). Diámetro del tubo: 25 mm. Dimensiones: 100 x 100 cm. Peso neto: 3.2 kg.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 76,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Cabezal protector de boxeo. Marca Outshock o equivalente. Casco de boxeo protección pómulos mentón orejas negro. El casco integral proporciona una protección completa en las principales zonas de impacto: frente, orejas, barbilla, pómulos",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 15,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 77,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Mat de Yoga. Material: nbr calidad, antideslizante, a prueba de agua, plegable y biodegradable. Dimensiones: 60cm x 1.8 m x 1 cm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 150,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 78,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Dominó Gigante Madera. Medida piezas 13x28cm. Entrega sujeta al tiempo de fabricación del producto.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 79,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Set Pelotas de Paddle, Set de 3 pelotas de color amarillos. El peso de la pelota debe estar comprendido entre 56 y 59,5 gramos. El rebote de la pelota debe ser entre 135 y 147 cm. El diámetro de la misma debe ser mayor de 6,35cm y menor que 6,77 cm.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 20,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 80,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Juego de Mesa Jenga Madera XL, 54 Piezas 75x20x20cm con Bolso",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 81,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Bombín Eléctrico. Marca Oxford o equivalente. Infla hasta 120PSI, compatibilidad universal, con adaptador y extensor, infla diferentes tipos de válvulas, permite inflar variados artículos deportivo, pantalla digital.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 3,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 82,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Raqueta de tenis junior. Fabricada con una construcción de aluminio, peso 240 g / 8.5 oz.Patrón Encordado: 16/19.Tamaño de cabeza: 680 cm² / 105 in², equilibrio 305 mm / 0.5 in HL.Longitud: 635 mm / 25 in",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 20,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 83,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Raquetas de Tenis Adulto, marca Babolat o equivalente, 8.0% Madera, 51.0% Fibra de carbono, 41.0% Resina epoxi; Mango de raqueta: 75.0% Poliuretano.",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 12,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 84,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Set Pelotas de Tenis Profesional. Marca Wilson o equivalentes. Tarro con 3 pelotas- Peso de la pelota debe ser entre 56,7 y 58,5 gramos. El rebote de la pelota no debe ser superior a 147 cm y como poco debe rebotar 135 cm. item N°84 de las bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 50,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 85,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Mini Tramp Adulto. Marca Tunking o equivalentes, 40 pulgadas, resortes y patas de acero, soporte 200 kilos, patas ante deslizantes con tapones de goma, malla polipropileno, borde de pvc impermeable. ",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 6,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 86,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Deluxe Bingo Game.Jaula de bingo mide 15.5 pulgadas de largo x 15.5 pulgadas de ancho x 19 pulgadas de alto. La jaula mide 13 pulgadas de diámetro y 11 pulgadas de ancho, 75 # de 1.5 pulgadas de color doble número profesional. item N°86 de las bases\r\n",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          },
-          {
-            "Correlativo": 87,
-            "CodigoProducto": 49211806,
-            "CodigoCategoria": "49211800",
-            "Categoria": "Equipos, suministros y accesorios deportivos y recreativos / Otros deportes / Equipos para educación física",
-            "NombreProducto": "Tienda de deporte",
-            "Descripcion": "Nano Timer Magnético.Cronometro, Temporizador de centrif. Multifunción. Ajuste giratorio, volumen de la 1ª marcha: 80-90 decibelios.Volumen de la 2ª marcha 60-70 decibelios.3 marchas se silencian a 0 decibelios. item N°87 de las bases",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 4,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1792177680.9466255,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
+    "ts": 1792267858.7258005,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "1057402-188-LE26": {
     "data": {
@@ -877869,117 +875888,6 @@
     "ts": 1792177668.919279,
     "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
   },
-  "2018-34-L126": {
-    "data": {
-      "CodigoExterno": "2018-34-L126",
-      "Nombre": "MANTENIMIENTO PARA SISTEMAS DE RESPALDO DE ENERGÍA (UPS) DEL CENTRO DE CONTROL DE ÁREA SANTIAGO",
-      "CodigoEstado": 7,
-      "Descripcion": "MANTENIMIENTO PARA SISTEMAS DE RESPALDO DE ENERGÍA (UPS) DEL CENTRO DE CONTROL DE ÁREA SANTIAGO",
-      "FechaCierre": null,
-      "Estado": "Desierta (o art. 3 ó 9 Ley 19.886)",
-      "Comprador": {
-        "CodigoOrganismo": "7202",
-        "NombreOrganismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "RutUnidad": "61.104.000-8",
-        "CodigoUnidad": "3013",
-        "NombreUnidad": "UNIDAD DE COMPRA DASA",
-        "DireccionUnidad": "AERODROMO CARRIEL SUR, CONCEPCIÓN",
-        "ComunaUnidad": "Concepción",
-        "RegionUnidad": "Región del Biobío ",
-        "RutUsuario": "",
-        "CodigoUsuario": "2113293",
-        "NombreUsuario": "Jean Galleguillos Coñoepan",
-        "CargoUsuario": ""
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "L1",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "0",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
-      "Contrato": "0",
-      "Obras": "0",
-      "CantidadReclamos": 206,
-      "Fechas": {
-        "FechaCreacion": "2026-10-02T10:51:50.843",
-        "FechaCierre": "2026-10-15T15:00:00",
-        "FechaInicio": "2026-10-06T13:58:29.657",
-        "FechaFinal": "2026-10-09T17:00:00",
-        "FechaPubRespuestas": "2026-10-13T17:00:00",
-        "FechaActoAperturaTecnica": "2026-10-15T15:05:00",
-        "FechaActoAperturaEconomica": "2026-10-15T15:05:00",
-        "FechaPublicacion": "2026-10-06T13:58:29.657",
-        "FechaAdjudicacion": "2026-11-13T17:00:00",
-        "FechaEstimadaAdjudicacion": "2026-11-13T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 2,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 1,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 1,
-      "MontoEstimado": 2781413,
-      "Tiempo": null,
-      "UnidadTiempo": "2",
-      "Modalidad": 0,
-      "TipoPago": "-1",
-      "NombreResponsablePago": "",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "1",
-      "UnidadTiempoDuracionContrato": 0,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "1",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "0",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": null,
-        "Fecha": null,
-        "Numero": null,
-        "NumeroOferentes": 0,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=ZNXZU5zcyoO4AAT6b3f+1LMxABy1ekLqzbb3LKL3lco="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 39121004,
-            "CodigoCategoria": "39121000",
-            "Categoria": "Artículos eléctricos y de iluminación / Equipamiento y artículos eléctricos / Equipamiento para distribución y transformación eléctrica",
-            "NombreProducto": "Unidades de suministro de energía",
-            "Descripcion": "servicio de Mantenimiento Preventivo para UPS y Banco de Baterías en Centro De Control De Área Santiago que permita mantener y prolongar la vida útil de los equipos",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 2,
-            "Adjudicacion": null
-          }
-        ]
-      }
-    },
-    "ts": 1792177673.9350965,
-    "fetchedAt": "2026-10-16T19:04:26.753272+00:00"
-  },
   "1057049-381-LE26": {
     "data": {
       "CodigoExterno": "1057049-381-LE26",
@@ -892702,5 +890610,215 @@
     },
     "ts": 1792260132.6978252,
     "fetchedAt": "2026-10-17T17:59:31.176396+00:00"
+  },
+  "2981-287-LP26": {
+    "data": {
+      "CodigoExterno": "2981-287-LP26",
+      "Nombre": "CIBERSEGURIDAD- CONSULTORIA ",
+      "CodigoEstado": 5,
+      "Descripcion": "SE REQUIERE CONTRATAR LOS SERVICIOS DE CONSULTORIA SEGUN BASES ADMINISTRATIVAS, TECNICAS Y ANEXOS ADJUNTOS.",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "111880",
+        "NombreOrganismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "RutUnidad": "60.506.000-5",
+        "CodigoUnidad": "3945",
+        "NombreUnidad": "DEPARTAMENTO ADMINISTRATIVO",
+        "DireccionUnidad": "GENERAL MACKENNA  1370, Secc. Almacenes",
+        "ComunaUnidad": "Santiago Centro",
+        "RegionUnidad": "Región Metropolitana de Santiago",
+        "RutUsuario": "",
+        "CodigoUsuario": "1270672",
+        "NombreUsuario": "Paulina Soto Bravo",
+        "CargoUsuario": "COMPRADOR"
+      },
+      "DiasCierreLicitacion": "11",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LP",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 465,
+      "Fechas": {
+        "FechaCreacion": "2026-10-08T00:00:00",
+        "FechaCierre": "2026-10-28T15:00:00",
+        "FechaInicio": "2026-10-09T08:00:00",
+        "FechaFinal": "2026-10-13T16:00:00",
+        "FechaPubRespuestas": "2026-10-16T19:00:00",
+        "FechaActoAperturaTecnica": "2026-10-28T15:05:00",
+        "FechaActoAperturaEconomica": "2026-10-28T15:05:00",
+        "FechaPublicacion": "2026-10-08T15:48:00.733",
+        "FechaAdjudicacion": "2026-11-27T16:40:00",
+        "FechaEstimadaAdjudicacion": "2026-11-27T16:40:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "APORTE FISCAL",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 80000000,
+      "Tiempo": "12",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "DEPTO DE TESORERIA",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "CRISTOPHER SILVA GUZMAN",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "No permite subcontratacion, Art 53 de las bases",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "12",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 80101505,
+            "CodigoCategoria": "80101500",
+            "Categoria": "Servicios profesionales, administrativos y consultorías de gestión empresarial / Consultorías o asesorías en gestión empresarial / Servicios de consultoría en gestión de empresas",
+            "NombreProducto": "Asesorías en gestión estratégica",
+            "Descripcion": "CONTRATACION  DEL SERVICIO DE CONSULTORIA PARA LA IMPLEMENTACION DE UN SISTEMA DE SEGURIDAD DE LA INFORMACION PARA LA PDI.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1792267850.6252508,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+  },
+  "4404-63-LE26": {
+    "data": {
+      "CodigoExterno": "4404-63-LE26",
+      "Nombre": "Licitación publica adquisición de impresoras multifuncionales para establecimientos educacionales de la comuna de Clemente sc 986",
+      "CodigoEstado": 6,
+      "Descripcion": "Licitación publica adquisición de impresoras multifuncionales para establecimientos educacionales de la comuna de Clemente",
+      "FechaCierre": null,
+      "Estado": "Cerrada",
+      "Comprador": {
+        "CodigoOrganismo": "93774",
+        "NombreOrganismo": "I MUNICIPALIDAD DE SAN CLEMENTE",
+        "RutUnidad": "69.110.500-8",
+        "CodigoUnidad": "5320",
+        "NombreUnidad": "DEPARTAMENTO EDUCACION MUNICIPALIDAD DE SAN CLEMENTE",
+        "DireccionUnidad": "",
+        "ComunaUnidad": "",
+        "RegionUnidad": "Región del Maule ",
+        "RutUsuario": "",
+        "CodigoUsuario": "1331090",
+        "NombreUsuario": "CRISTIAN BERNABE CANALES SALAS",
+        "CargoUsuario": "ASISTENTE DE COMPRA"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 285,
+      "Fechas": {
+        "FechaCreacion": "2026-10-02T00:00:00",
+        "FechaCierre": "2026-10-13T15:02:00",
+        "FechaInicio": "2026-10-02T16:52:00",
+        "FechaFinal": "2026-10-06T16:52:00",
+        "FechaPubRespuestas": "2026-10-07T16:52:00",
+        "FechaActoAperturaTecnica": "2026-10-13T15:03:00",
+        "FechaActoAperturaEconomica": "2026-10-13T15:03:00",
+        "FechaPublicacion": "2026-10-02T14:15:00",
+        "FechaAdjudicacion": "2026-11-27T15:03:00",
+        "FechaEstimadaAdjudicacion": "2026-11-27T15:03:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "ley sep",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": null,
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Ruth Quintana fuentes",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Carolina Andrea Ulloa Arancibia",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "1",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 43212104,
+            "CodigoCategoria": "43212100",
+            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Impresoras",
+            "NombreProducto": "Impresoras de chorro de tinta",
+            "Descripcion": "adquisición de impresoras multifuncionales para establecimientos educacionales de la comuna de Clemente",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1792267912.7401628,
+    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   }
 }
