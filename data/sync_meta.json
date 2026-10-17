@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-17T14:30:02.757112+00:00",
-  "ultimoIntentoRealizado": "2026-10-17T14:30:02.757112+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-17T17:59:31.176396+00:00",
+  "ultimoIntentoRealizado": "2026-10-17T17:59:31.176396+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 2080,
-  "registrosConfirmados": 2080,
+  "registrosEnPlataforma": 2083,
+  "registrosConfirmados": 2083,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1794,
-  "excluidosPrefiltroIrrelevante": 7727,
-  "excluidosSinDatosReales": 6,
+  "registrosConMontoReal": 1793,
+  "excluidosPrefiltroIrrelevante": 7731,
+  "excluidosSinDatosReales": 4,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 1354,
@@ -26,14 +26,14 @@
     "montoRecuperadoSum": 1897146720
   },
   "categorias": {
-    "licitaciones": 722,
+    "licitaciones": 725,
     "comprasAgiles": 1354,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 399,
+    "LE": 402,
     "LP": 143,
     "L1": 123,
     "LR": 46,
@@ -46,12 +46,12 @@
     "COT": 1346
   },
   "matchPorEmpresa": {
-    "V-MOCCS": 332,
-    "Aminorte": 1748
+    "V-MOCCS": 331,
+    "Aminorte": 1752
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 2017,
+    "nuevosCount": 2020,
     "modificadosCount": 56,
     "cerradosCount": 1279,
     "nuevos": [
@@ -99,15 +99,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-27T16:00:00"
-      },
-      {
-        "codigo": "1658-257-LR26",
-        "titulo": "P.324-2026 SERVICIO DE ASEO PARA INMUEBLES DE USO DE LA MUNICIPALIDAD DE TEMUCO",
-        "organismo": "I MUNICIPALIDAD DE TEMUCO",
-        "monto": 1442441500,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-16T15:30:00"
       },
       {
         "codigo": "633-64-LR26",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-10-23T15:40:00"
+      },
+      {
+        "codigo": "4301-62-LP26",
+        "titulo": "Adquisición de 2.000 cámaras de seguridad",
+        "organismo": "I MUNICIPALIDAD DE ZAPALLAR",
+        "monto": 90000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-13T15:01:00"
       }
     ],
     "modificados": [
@@ -998,6 +998,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "673663-31-LE26",
+        "titulo": "ADQUISICIÓN DE PANTALLA LED EXTERIOR Y TRES TOTEM",
+        "organismo": "I MUNICIPALIDAD DE ANDACOLLO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1692-25-LE26",
         "titulo": "MANTENCION PREVENTIVA DEL SISTEMA DE CLIMATIZACION",
         "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE COCHRANE",
@@ -1018,26 +1028,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "673663-31-LE26",
-        "titulo": "ADQUISICIÓN DE PANTALLA LED EXTERIOR Y TRES TOTEM",
-        "organismo": "I MUNICIPALIDAD DE ANDACOLLO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3542-26-LE26",
-        "titulo": "SERVICIO DE REMODELACIÓN DE OFICINAS DEL TALLER DE MANTENIMIENTO",
-        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1247197-63-LE26",
         "titulo": "MEJORAMIENTO EN BOXES NUEVOS MUEBLES CLINICOS",
         "organismo": "CORP MUNICIPAL DE CONCHALI DE EDUCACION SALUD Y ATENCION DE MENORES",
@@ -1048,9 +1038,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "3474-53-LE26",
-        "titulo": "SERVICIO DE ARRIENDO Y MANT. MAQUINAS FOTOCOPIADO",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "codigo": "1393093-107-LP26",
+        "titulo": "Suministro de cámaras de seguridad",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE CHILOÉ",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1058,9 +1048,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1393093-107-LP26",
-        "titulo": "Suministro de cámaras de seguridad",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE CHILOÉ",
+        "codigo": "3474-53-LE26",
+        "titulo": "SERVICIO DE ARRIENDO Y MANT. MAQUINAS FOTOCOPIADO",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1078,9 +1068,29 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "3542-26-LE26",
+        "titulo": "SERVICIO DE REMODELACIÓN DE OFICINAS DEL TALLER DE MANTENIMIENTO",
+        "organismo": "DIVISION LOGISTICA DEL EJERCITO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "575924-11-LE26",
         "titulo": "CAJTA-CONTRATACIÓN DE HOSTING SERVIDOR DEDICADO",
         "organismo": "CORP DE ASISTENCIA JUDICIAL DE LAS REG T",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1080303-3-LP26",
+        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1118,14 +1128,14 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1080303-3-LP26",
-        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "codigo": "2825-53-L126",
+        "titulo": "MOBILIARIO POSTA PUTÚ",
+        "organismo": "I MUNICIPALIDAD DE CONSTITUCION",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "4053-41-LE26",
@@ -1146,16 +1156,6 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2825-53-L126",
-        "titulo": "MOBILIARIO POSTA PUTÚ",
-        "organismo": "I MUNICIPALIDAD DE CONSTITUCION",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
@@ -1641,7 +1641,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 2275.1,
+  "tiempoEjecucionSegundos": 259.1,
   "errores": [],
   "advertencias": []
 }
