@@ -550799,8 +550799,8 @@
         ]
       }
     },
-    "ts": 1792267891.8381379,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360795.598448,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "1481-17-L126": {
     "data": {
@@ -551929,122 +551929,6 @@
     },
     "ts": 1789329536.43428,
     "fetchedAt": "2026-09-13T19:54:53.434498+00:00"
-  },
-  "507428-104-LE26": {
-    "data": {
-      "CodigoExterno": "507428-104-LE26",
-      "Nombre": "ADQUISICION SERVIDOR GRABADOR DE LLAMADAS SAMU",
-      "CodigoEstado": 8,
-      "Descripcion": "Que, se requiere la adquisición de servidor grabador llamadas subcentro de despacho SAMU, dado que el servidor actual termino su vida útil.",
-      "FechaCierre": null,
-      "Estado": "Adjudicada",
-      "Comprador": {
-        "CodigoOrganismo": "16223",
-        "NombreOrganismo": "SERVICIO DE SALUD CHILOE",
-        "RutUnidad": "61.979.210-6",
-        "CodigoUnidad": "507428",
-        "NombreUnidad": "Servicio de Salud Chiloé",
-        "DireccionUnidad": "Avda. Bernardo O'Higgins 504, Castro",
-        "ComunaUnidad": "Castro",
-        "RegionUnidad": "Región de los Lagos ",
-        "RutUsuario": "",
-        "CodigoUsuario": "1026622",
-        "NombreUsuario": "Carlos Eduardo Hernandez Garrido",
-        "CargoUsuario": "Profesional Sub Departamento Abastecimiento"
-      },
-      "DiasCierreLicitacion": "0",
-      "Informada": 0,
-      "CodigoTipo": 1,
-      "Tipo": "LE",
-      "TipoConvocatoria": "1",
-      "Moneda": "CLP",
-      "Etapas": 1,
-      "EstadoEtapas": "1",
-      "TomaRazon": "0",
-      "EstadoPublicidadOfertas": 1,
-      "JustificacionPublicidad": "",
-      "Contrato": "1",
-      "Obras": "0",
-      "CantidadReclamos": 2196,
-      "Fechas": {
-        "FechaCreacion": "2026-08-17T14:23:39.713",
-        "FechaCierre": "2026-09-07T16:00:00",
-        "FechaInicio": "2026-08-27T10:01:00",
-        "FechaFinal": "2026-08-31T17:00:00",
-        "FechaPubRespuestas": "2026-09-01T17:00:00",
-        "FechaActoAperturaTecnica": "2026-09-08T09:00:00",
-        "FechaActoAperturaEconomica": "2026-09-08T09:00:00",
-        "FechaPublicacion": "2026-08-27T08:33:33.283",
-        "FechaAdjudicacion": "2026-10-15T11:57:48.187",
-        "FechaEstimadaAdjudicacion": "2026-10-07T17:00:00",
-        "FechaSoporteFisico": null,
-        "FechaTiempoEvaluacion": null,
-        "FechaEstimadaFirma": null,
-        "FechasUsuario": null,
-        "FechaVisitaTerreno": null,
-        "FechaEntregaAntecedentes": null
-      },
-      "UnidadTiempoEvaluacion": 1,
-      "DireccionVisita": "",
-      "DireccionEntrega": "",
-      "Estimacion": 2,
-      "FuenteFinanciamiento": "",
-      "VisibilidadMonto": 0,
-      "MontoEstimado": null,
-      "Tiempo": null,
-      "UnidadTiempo": "1",
-      "Modalidad": 1,
-      "TipoPago": "4",
-      "NombreResponsablePago": "Marcelo Momberg Suarez",
-      "EmailResponsablePago": "",
-      "NombreResponsableContrato": "Carlos Leviñanco Vera",
-      "EmailResponsableContrato": "",
-      "FonoResponsableContrato": "",
-      "ProhibicionContratacion": "",
-      "SubContratacion": "0",
-      "UnidadTiempoDuracionContrato": 1,
-      "TiempoDuracionContrato": "0",
-      "TipoDuracionContrato": " ",
-      "JustificacionMontoEstimado": "",
-      "ObservacionContract": null,
-      "ExtensionPlazo": 0,
-      "EsBaseTipo": 0,
-      "UnidadTiempoContratoLicitacion": "1",
-      "ValorTiempoRenovacion": "0",
-      "PeriodoTiempoRenovacion": " ",
-      "EsRenovable": 0,
-      "CodigoBIP": null,
-      "Adjudicacion": {
-        "Tipo": 2,
-        "Fecha": "2026-10-14T00:00:00",
-        "Numero": "11738",
-        "NumeroOferentes": 2,
-        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=WA3iVQbpWqqEKznmBCJ9quF1seU3ZfWai1cDG0ixpa0="
-      },
-      "Items": {
-        "Cantidad": 1,
-        "Listado": [
-          {
-            "Correlativo": 1,
-            "CodigoProducto": 43211501,
-            "CodigoCategoria": "43211500",
-            "Categoria": "Tecnologías de la información, telecomunicaciones y radiodifusión / Equipos informáticos y accesorios / Computadores",
-            "NombreProducto": "Servidores",
-            "Descripcion": "ADQUISICION SERVIDOR GRABADOR DE LLAMADAS SUBCENTRO SAMU",
-            "UnidadMedida": "Unidad",
-            "Cantidad": 1,
-            "Adjudicacion": {
-              "RutProveedor": "78.400.424-4",
-              "NombreProveedor": "COMERCIAL LEFCHAFE SPA",
-              "Cantidad": 1,
-              "MontoUnitario": 10500000
-            }
-          }
-        ]
-      }
-    },
-    "ts": 1792267887.5126655,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
   },
   "4053-41-LE26": {
     "data": {
@@ -681360,8 +681244,8 @@
         ]
       }
     },
-    "ts": 1792267873.694883,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360791.9372017,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "3775-30-LP26": {
     "data": {
@@ -729911,8 +729795,8 @@
         ]
       }
     },
-    "ts": 1792267888.2570112,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360788.2813957,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "1002584-12-LE26": {
     "data": {
@@ -739530,8 +739414,8 @@
         ]
       }
     },
-    "ts": 1792267897.917091,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360800.1507232,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "1217357-2-LE26": {
     "data": {
@@ -750435,8 +750319,8 @@
         ]
       }
     },
-    "ts": 1792267869.8198643,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360784.1827683,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "1423921-18-LE26": {
     "data": {
@@ -772546,8 +772430,8 @@
         ]
       }
     },
-    "ts": 1792267902.3493798,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360810.4418867,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "5054-20-LE26": {
     "data": {
@@ -803985,8 +803869,8 @@
         ]
       }
     },
-    "ts": 1792267862.40875,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360783.4354672,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "1389183-51-LP26": {
     "data": {
@@ -804924,8 +804808,8 @@
         ]
       }
     },
-    "ts": 1792267880.3795617,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360774.878852,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "1417913-105-LE26": {
     "data": {
@@ -810799,8 +810683,8 @@
         ]
       }
     },
-    "ts": 1792267898.78943,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360814.316935,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "3624-36-LE26": {
     "data": {
@@ -825222,8 +825106,8 @@
         ]
       }
     },
-    "ts": 1792267865.9397047,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360779.6562686,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "1003780-1-LE26": {
     "data": {
@@ -846951,8 +846835,8 @@
         ]
       }
     },
-    "ts": 1792267858.7258005,
-    "fetchedAt": "2026-10-17T20:10:12.471536+00:00"
+    "ts": 1792360776.0473812,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   },
   "1057402-188-LE26": {
     "data": {
@@ -891527,5 +891411,1550 @@
     },
     "ts": 1792352815.544914,
     "fetchedAt": "2026-10-18T19:44:11.567918+00:00"
+  },
+  "707423-71-L126": {
+    "data": {
+      "CodigoExterno": "707423-71-L126",
+      "Nombre": "Aniversario Jardines Infantiles, Oficina Regional.",
+      "CodigoEstado": 5,
+      "Descripcion": "La contratación tiene por finalidad disponer de un servicio de alimentación seguro y de calidad para el desarrollo de los eventos institucionales 2026 de Fundación Integra: Aniversario Institucional favoreciendo espacios de reconocimiento, convivencia, bienestar, encuentro y compañerismo.\n\n",
+      "FechaCierre": null,
+      "Estado": "Publicada",
+      "Comprador": {
+        "CodigoOrganismo": "1172700",
+        "NombreOrganismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+        "RutUnidad": "70.574.900-0",
+        "CodigoUnidad": "707423",
+        "NombreUnidad": "Regional Araucania",
+        "DireccionUnidad": "OHIGGINS 930",
+        "ComunaUnidad": "Vilcún",
+        "RegionUnidad": "Región de la Araucanía ",
+        "RutUsuario": "",
+        "CodigoUsuario": "2271183",
+        "NombreUsuario": "Rodrigo Mulato",
+        "CargoUsuario": "ANALISTA"
+      },
+      "DiasCierreLicitacion": "1",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "L1",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "0",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "Todas las ofertas técnicas serán visibles al público en general, través del portal www.mercadopublico.cl, desde el momento de la apertura electrónica.",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 31,
+      "Fechas": {
+        "FechaCreacion": "2026-10-13T11:42:34.49",
+        "FechaCierre": "2026-10-19T16:02:00",
+        "FechaInicio": "2026-10-14T10:46:10.127",
+        "FechaFinal": "2026-10-15T16:02:00",
+        "FechaPubRespuestas": "2026-10-16T16:02:00",
+        "FechaActoAperturaTecnica": "2026-10-20T10:00:00",
+        "FechaActoAperturaEconomica": "2026-10-20T10:00:00",
+        "FechaPublicacion": "2026-10-14T10:46:10.127",
+        "FechaAdjudicacion": "2026-10-21T16:30:00",
+        "FechaEstimadaAdjudicacion": "2026-10-21T16:30:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 2,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 6997000,
+      "Tiempo": null,
+      "UnidadTiempo": "2",
+      "Modalidad": 0,
+      "TipoPago": "-1",
+      "NombreResponsablePago": "",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 0,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "0",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "0",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 2,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 90101501,
+            "CodigoCategoria": "90101500",
+            "Categoria": "Servicios de Viajes, alimentación, alojamiento y entretenimiento / Restaurantes y catering / Establecimientos de comidas y bebidas",
+            "NombreProducto": "Restaurantes",
+            "Descripcion": "Servicio individual de alimentación, correspondiente a cena, según horario y modalidad que se defina para la realización del evento.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 547,
+            "Adjudicacion": null
+          },
+          {
+            "Correlativo": 3,
+            "CodigoProducto": 90101603,
+            "CodigoCategoria": "90101600",
+            "Categoria": "Servicios de Viajes, alimentación, alojamiento y entretenimiento / Restaurantes y catering / Servicios de comedor y banquetes",
+            "NombreProducto": "Servicios de catering",
+            "Descripcion": "servicio integral de coctelería y estaciones de alimentación para el Aniversario Institucional de Oficina Regional.",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 144,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1792360766.5974739,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
+  },
+  "2735-108-LR26": {
+    "data": {
+      "CodigoExterno": "2735-108-LR26",
+      "Nombre": "Mantención preventiva y correctiva climatización",
+      "CodigoEstado": 8,
+      "Descripcion": "Las presentes bases administrativas establecen las disposiciones, condiciones, procedimientos y términos que regirán las exigencias mínimas requeridas para la contratación del servicio de mantención preventiva y correctiva de los sistemas de climatización y ventilación de dependencias de la Municipalidad de Lo Barnechea.",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "100155",
+        "NombreOrganismo": "I MUNICIPALIDAD LO BARNECHEA",
+        "RutUnidad": "69.255.200-8",
+        "CodigoUnidad": "3724",
+        "NombreUnidad": "Municipalidad de lo Barnechea - Adquisiciones - Consistorial",
+        "DireccionUnidad": "El Rodeo N° 12.777",
+        "ComunaUnidad": "Lo Barnechea",
+        "RegionUnidad": "Región Metropolitana de Santiago",
+        "RutUsuario": "",
+        "CodigoUsuario": "1932736",
+        "NombreUsuario": "Gladys Natalia Arce Gomez",
+        "CargoUsuario": ""
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LR",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 345,
+      "Fechas": {
+        "FechaCreacion": "2026-06-04T13:13:26.4",
+        "FechaCierre": "2026-08-31T15:30:00",
+        "FechaInicio": "2026-07-30T20:31:00",
+        "FechaFinal": "2026-08-10T13:00:00",
+        "FechaPubRespuestas": "2026-08-24T23:59:00",
+        "FechaActoAperturaTecnica": "2026-08-31T15:31:00",
+        "FechaActoAperturaEconomica": "2026-08-31T15:31:00",
+        "FechaPublicacion": "2026-07-30T20:26:46.06",
+        "FechaAdjudicacion": "2026-10-17T13:22:34.207",
+        "FechaEstimadaAdjudicacion": "2026-11-12T20:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": "1900-01-02T00:00:00",
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 1,
+      "FuenteFinanciamiento": "Municipal, Salud y Educación",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "48",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Ariel Orellana Cabrera",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Ariel Orellana Cabrera",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "48",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 4,
+        "Fecha": "2026-10-16T00:00:00",
+        "Numero": "1020",
+        "NumeroOferentes": 5,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=uRWbhG9p4QuM2X5GxvZDFQxsy2OfKJMD6xjUwLyM3h0="
+      },
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 72102305,
+            "CodigoCategoria": "72102300",
+            "Categoria": "Servicios de construcción y mantenimiento / Servicios de atención, mantenimiento y reparaciones de edificios / Gasfitería, calefacción y aire acondicionado",
+            "NombreProducto": "Servicios de reparación, mantenimiento o reparación de aire acondicionado",
+            "Descripcion": "",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "99.588.050-4",
+              "NombreProveedor": "SISTEMA DE ENERGIA S A",
+              "Cantidad": 1,
+              "MontoUnitario": 92731728
+            }
+          }
+        ]
+      }
+    },
+    "ts": 1792360773.856743,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
+  },
+  "2585-91-LE26": {
+    "data": {
+      "CodigoExterno": "2585-91-LE26",
+      "Nombre": "ADQ. MATERIAL DE FERRETERIA Y PINTURAS ORD. N°66 Y N°85. ADMINISTRACION MUNICIPAL. NNR. IMA.",
+      "CodigoEstado": 8,
+      "Descripcion": "ADQ. MATERIAL DE FERRETERIA Y PINTURAS, ORD. N°66 Y N°85. ADMINISTRACION MUNICIPAL. NNR. IMA.",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "86624",
+        "NombreOrganismo": "I MUNICIPALIDAD DE ARICA",
+        "RutUnidad": "69.010.100-9",
+        "CodigoUnidad": "3576",
+        "NombreUnidad": "FINANZAS IMA",
+        "DireccionUnidad": "AV. RENATO ROCCA 1585",
+        "ComunaUnidad": "Arica",
+        "RegionUnidad": "Región de Arica y Parinacota",
+        "RutUsuario": "",
+        "CodigoUsuario": "1574429",
+        "NombreUsuario": "Nelson Nuñez Retamal",
+        "CargoUsuario": "Administrativo"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "2",
+      "Obras": "0",
+      "CantidadReclamos": 2719,
+      "Fechas": {
+        "FechaCreacion": "2026-06-27T00:00:00",
+        "FechaCierre": "2026-09-24T15:01:00",
+        "FechaInicio": "2026-09-14T18:01:00",
+        "FechaFinal": "2026-09-18T21:11:00",
+        "FechaPubRespuestas": "2026-09-22T21:11:00",
+        "FechaActoAperturaTecnica": "2026-09-24T18:06:00",
+        "FechaActoAperturaEconomica": "2026-09-24T18:06:00",
+        "FechaPublicacion": "2026-09-14T17:31:30.78",
+        "FechaAdjudicacion": "2026-10-14T16:15:50.25",
+        "FechaEstimadaAdjudicacion": "2026-12-29T18:44:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "FONDO MUNICIPAL",
+      "VisibilidadMonto": 1,
+      "MontoEstimado": 18000000,
+      "Tiempo": null,
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "4",
+      "NombreResponsablePago": "MAURICIO ALBANES GOMEZ",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "MAURICIO ALBANES GOMEZ",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "1",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "0",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "1",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 4,
+        "Fecha": "2026-10-07T00:00:00",
+        "Numero": "11236",
+        "NumeroOferentes": 5,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=WJdQmMgXoDTLUBu5ySaGuP43Oem6EzSKtGwuS0g0pKc="
+      },
+      "Items": {
+        "Cantidad": 60,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 27112103,
+            "CodigoCategoria": "27112100",
+            "Categoria": "Herramientas y maquinaria en general / Herramientas manuales / Prensas y herramientas especiales",
+            "NombreProducto": "Abrazaderas",
+            "Descripcion": "ABRAZADERA ACERO (BRONCE) 18MM\r\nPRESENTACIÓN: UNIDAD (ABRAZADERA METÁLICA).\r\nMATERIAL: ACERO CON ACABADO/BRONCEADO.\r\nMEDIDA: 18 MM DE DIÁMETRO.\r\nTIPO DE PIEZA: ABRAZADERA METÁLICA DE SUJECIÓN.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 20,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 20,
+              "MontoUnitario": 99
+            }
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 27112103,
+            "CodigoCategoria": "27112100",
+            "Categoria": "Herramientas y maquinaria en general / Herramientas manuales / Prensas y herramientas especiales",
+            "NombreProducto": "Abrazaderas",
+            "Descripcion": "ABRAZADERA ACERO (BRONCE) 22MM\r\n\r\nFORMATO: UNIDAD, ACERO/BRONCE, 22 MM.\r\nUSO: SUJECIÓN DE MANGUERAS Y TUBOS.\r\nAPLICACIÓN: AJUSTE EN SISTEMAS SANITARIOS, AGUA POTABLE\r\nCONTENIDO: 1 ABRAZADERA METÁLICA DE 22 MM.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 20,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 20,
+              "MontoUnitario": 849
+            }
+          },
+          {
+            "Correlativo": 3,
+            "CodigoProducto": 27112103,
+            "CodigoCategoria": "27112100",
+            "Categoria": "Herramientas y maquinaria en general / Herramientas manuales / Prensas y herramientas especiales",
+            "NombreProducto": "Abrazaderas",
+            "Descripcion": "ABRAZADERA ACERO (BRONCE) 28MM\r\n\r\nFORMATO: UNIDAD, ACERO/BRONCE, 28 MM.\r\nUSO: SUJECIÓN DE MANGUERAS Y TUBOS DE MAYOR DIÁMETRO.\r\nAPLICACIÓN: AJUSTE EN SISTEMAS SANITARIOS, AGUA POTABLE\r\nCONTENIDO: 1 ABRAZADERA METÁLICA DE 28 MM.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 20,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 20,
+              "MontoUnitario": 608
+            }
+          },
+          {
+            "Correlativo": 4,
+            "CodigoProducto": 27112103,
+            "CodigoCategoria": "27112100",
+            "Categoria": "Herramientas y maquinaria en general / Herramientas manuales / Prensas y herramientas especiales",
+            "NombreProducto": "Abrazaderas",
+            "Descripcion": "ABRAZADERA ACERO (BRONCE) 44MM\r\n\r\nFORMATO: UNIDAD, ACERO/BRONCE, 44 MM.\r\nUSO: SUJECIÓN DE MANGUERAS Y TUBOS DE GRAN DIÁMETRO.\r\nAPLICACIÓN: AJUSTE EN SISTEMAS SANITARIOS, AGUA POTABLE\r\nCONTENIDO: 1 ABRAZADERA METÁLICA DE 44 MM.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 1973
+            }
+          },
+          {
+            "Correlativo": 5,
+            "CodigoProducto": 27112103,
+            "CodigoCategoria": "27112100",
+            "Categoria": "Herramientas y maquinaria en general / Herramientas manuales / Prensas y herramientas especiales",
+            "NombreProducto": "Abrazaderas",
+            "Descripcion": "ABRAZADERA ACERO (BRONCE) 44MM\r\n\r\nFORMATO: UNIDAD, ACERO/BRONCE, 63 MM.\r\nUSO: SUJECIÓN DE MANGUERAS Y TUBOS DE GRAN DIÁMETRO.\r\nAPLICACIÓN: AJUSTE EN SISTEMAS SANITARIOS, AGUA POTABLE\r\nCONTENIDO: 1 ABRAZADERA METÁLICA DE 63 MM.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 1504
+            }
+          },
+          {
+            "Correlativo": 6,
+            "CodigoProducto": 31201601,
+            "CodigoCategoria": "31201600",
+            "Categoria": "Artículos de fabricación y producción / Cintas adhesivas y selladores / Adhesivos y selladores",
+            "NombreProducto": "Adhesivos químicos",
+            "Descripcion": "ADHESIVO HUMEDAD PVC 240 CC\r\nFORMATO: ENVASE DE 240 CC.\r\nUSO: UNIÓN DE TUBERÍAS Y ACCESORIOS DE PVC.\r\nAPLICACIÓN: DIRECTA SOBRE SUPERFICIES HÚMEDAS, PRESIÓN INMEDIATA.\r\nCONTENIDO: 240 CC DE ADHESIVO ESPECIALIZADO.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 4846
+            }
+          },
+          {
+            "Correlativo": 7,
+            "CodigoProducto": 15111505,
+            "CodigoCategoria": "15111500",
+            "Categoria": "Combustibles, lubricantes y anticorrosivos / Combustibles gaseosos y aditivos / Combustibles gaseosos",
+            "NombreProducto": "Butano",
+            "Descripcion": "BALON DE GAS BUTANO 190 GRS\r\n\r\nFORMATO: BALÓN METÁLICO PRESURIZADO, 190 G.\r\nUSO: EQUIPO PORTATIL PARA REPARACION DE CAÑERIAS DE COBRE Y OTROS.\r\nAPLICACIÓN: CONEXIÓN DIRECTA AL DISPOSITIVO, USO EN EXTERIORES.\r\nCONTENIDO: 190 G DE GAS BUTANO EN ENVASE SEGUR",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 2268
+            }
+          },
+          {
+            "Correlativo": 8,
+            "CodigoProducto": 39121303,
+            "CodigoCategoria": "39121300",
+            "Categoria": "Artículos eléctricos y de iluminación / Equipamiento y artículos eléctricos / Cajas y accesorios eléctricos",
+            "NombreProducto": "Cajas eléctricas",
+            "Descripcion": "CAJA CHUQUI CON PRECORTE\r\n\r\nFORMATO: CAJA DE DISTRIBUCIÓN SOBREPUESTA\r\nUSO: EMBALAJE Y TRANSPORTE DE PRODUCTOS.\r\nAPLICACIÓN: FACILITA APERTURA Y ACCESO AL CONTENIDO.\r\nCONTENIDO: 1 CAJA RESISTENTE, REUTILIZABLE Y RECICLABLE.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 30,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 30,
+              "MontoUnitario": 1012
+            }
+          },
+          {
+            "Correlativo": 9,
+            "CodigoProducto": 23171508,
+            "CodigoCategoria": "23171500",
+            "Categoria": "Maquinaria para fabricación y transformación industrial / Maquinaria y suministros para talleres / Maquinaria para soldadura directa o indirecta",
+            "NombreProducto": "Máquinas de soldar",
+            "Descripcion": "CAUTIN DE LAPIZ 80W\r\n\r\nFORMATO: HERRAMIENTA ELÉCTRICA TIPO LÁPIZ, 80W.\r\nUSO: SOLDADURA DE COMPONENTES ELÉCTRICOS Y ELECTRÓNICOS.\r\nAPLICACIÓN: CONEXIÓN DIRECTA A CORRIENTE, PUNTA CALIENTE PARA SOLDAR.\r\nCONTENIDO: 1 CAUTÍN DE LÁPIZ DE 80W.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 5606
+            }
+          },
+          {
+            "Correlativo": 10,
+            "CodigoProducto": 40142317,
+            "CodigoCategoria": "40142300",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Accesorios para tuberías",
+            "NombreProducto": "Codo de tubería",
+            "Descripcion": "CODO COBRE SO-SO 90° 1 ½”\r\n\r\nFORMATO: CODO DE COBRE SO-SO, 90°, 1 1/2”.\r\nUSO: CAMBIO DE DIRECCIÓN EN TUBERÍAS.\r\nAPLICACIÓN: SOLDADURA EN SISTEMAS DE AGUA, GAS O CALEFACCIÓN.\r\nCONTENIDO: 1 PIEZA DE COBRE RESISTENTE.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 5621
+            }
+          },
+          {
+            "Correlativo": 11,
+            "CodigoProducto": 40142317,
+            "CodigoCategoria": "40142300",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Accesorios para tuberías",
+            "NombreProducto": "Codo de tubería",
+            "Descripcion": "CODO COBRE SO-SO 90° 2”\r\n\r\nFORMATO: CODO DE COBRE SO-SO, 90°, 2”.\r\nUSO: CAMBIO DE DIRECCIÓN EN TUBERÍAS DE COBRE.\r\nAPLICACIÓN: SOLDADURA EN SISTEMAS DE AGUA, GAS O CALEFACCIÓN.\r\nCONTENIDO: 1 PIEZA DE COBRE RESISTENTE.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 11986
+            }
+          },
+          {
+            "Correlativo": 12,
+            "CodigoProducto": 26121635,
+            "CodigoCategoria": "26121600",
+            "Categoria": "Maquinaria para generación y distribución de energía / Alambres y cables eléctricos y electrónicos / Cables eléctricos y accesorios",
+            "NombreProducto": "Rollos de cable",
+            "Descripcion": "CORDÓN ELÉCTRICO H05VV-F 3X2,5 MM2 NEGRO 100 METROS\r\n\r\nFORMATO: ROLLO DE 100 M, NEGRO, H05VV-F.\r\nUSO: CABLEADO ELÉCTRICO DE BAJA TENSIÓN.\r\nAPLICACIÓN: INSTALACIONES DOMÉSTICAS E INDUSTRIALES LIGERAS, CON CONEXIÓN A TIERRA.\r\nCONTENIDO: 3 CONDUCTORES DE COB",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 1,
+              "MontoUnitario": 110882
+            }
+          },
+          {
+            "Correlativo": 13,
+            "CodigoProducto": 23171515,
+            "CodigoCategoria": "23171500",
+            "Categoria": "Maquinaria para fabricación y transformación industrial / Maquinaria y suministros para talleres / Maquinaria para soldadura directa o indirecta",
+            "NombreProducto": "Electrodos para soldar",
+            "Descripcion": "ELECTRODO 6011 3/32 1 KILO\r\n\r\nFORMATO: PAQUETE DE 1 KILO, DIÁMETRO 3/32”.\r\nUSO: SOLDADURA DE ACERO AL CARBONO EN MÚLTIPLES POSICIONES.\r\nAPLICACIÓN: CON CORRIENTE AC O DC, INCLUSO EN SUPERFICIES OXIDADAS.\r\nCONTENIDO: 1 KILO DE ELECTRODOS 6011 (APROX. 40–50",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 40,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 40,
+              "MontoUnitario": 4527
+            }
+          },
+          {
+            "Correlativo": 14,
+            "CodigoProducto": 39121402,
+            "CodigoCategoria": "39121400",
+            "Categoria": "Artículos eléctricos y de iluminación / Equipamiento y artículos eléctricos / Conectores, enchufes y terminales",
+            "NombreProducto": "Enchufes eléctricos",
+            "Descripcion": "ENCHUFE MACHO VOLANTE ARTICULADO 20+T 10 A GRIS\r\n\r\nFORMATO: UNIDAD, ENCHUFE MACHO ARTICULADO, GRIS, 2P+T, 10A.\r\nUSO: CONEXIÓN DE APARATOS ELÉCTRICOS A LA RED.\r\nAPLICACIÓN: INSTALACIÓN EN CORDONES ELÉCTRICOS, USO DOMÉSTICO Y DE OFICINA.\r\nCONTENIDO: 1 ENCHU",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 30,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 30,
+              "MontoUnitario": 4064
+            }
+          },
+          {
+            "Correlativo": 15,
+            "CodigoProducto": 31231313,
+            "CodigoCategoria": "31231300",
+            "Categoria": "Artículos de fabricación y producción / Materia prima en planchas, barras o tubos / Tubos y cañerías",
+            "NombreProducto": "Tubería de plástico",
+            "Descripcion": "FITTING UNIVERSAL PARA ESTANQUE RESPUESTO DE BAÑO\r\n\r\nFORMATO: UNIDAD, FITTING UNIVERSAL PARA ESTANQUE DE BAÑO.\r\nUSO: CONEXIÓN Y SELLADO DEL SISTEMA DE DESCARGA.\r\nAPLICACIÓN: INSTALACIÓN Y REPARACIÓN DE ESTANQUES SANITARIOS.\r\nCONTENIDO: 1 PIEZA RESISTENTE ",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 20,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 20,
+              "MontoUnitario": 6061
+            }
+          },
+          {
+            "Correlativo": 16,
+            "CodigoProducto": 40141702,
+            "CodigoCategoria": "40141700",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Materiales y accesorios de gasfitería",
+            "NombreProducto": "Grifos",
+            "Descripcion": "LLAVE DE PASO PPR 25 MM METLA MANILLA ALUMINIO ROJO\r\n\r\nFORMATO: LLAVE DE PASO PPR, 25 MM, MANILLA METÁLICA ROJA.\r\nUSO: CONTROL DE FLUJO EN TUBERÍAS DE AGUA.\r\nAPLICACIÓN: INSTALACIONES SANITARIAS, RIEGO Y CALEFACCIÓN.\r\nCONTENIDO: 1 UNIDAD RESISTENTE Y DURA",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 7580
+            }
+          },
+          {
+            "Correlativo": 17,
+            "CodigoProducto": 40141702,
+            "CodigoCategoria": "40141700",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Materiales y accesorios de gasfitería",
+            "NombreProducto": "Grifos",
+            "Descripcion": "LLAVE DE PASO PPR 40 MM METLA MANILLA ALUMINIO ROJO\r\n\r\nFORMATO: LLAVE DE PASO PPR, 40 MM, MANILLA METÁLICA ROJA.\r\nUSO: CONTROL DE FLUJO EN TUBERÍAS DE AGUA.\r\nAPLICACIÓN: INSTALACIONES SANITARIAS, RIEGO Y CALEFACCIÓN.\r\nCONTENIDO: 1 UNIDAD RESISTENTE Y DURA",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 16695
+            }
+          },
+          {
+            "Correlativo": 18,
+            "CodigoProducto": 40141702,
+            "CodigoCategoria": "40141700",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Materiales y accesorios de gasfitería",
+            "NombreProducto": "Grifos",
+            "Descripcion": "MONOMANDO\r\n\r\nDETALLE: MONOMANDO PARA LAVAMANOS CON TEMPORIZADOR\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 22,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 22,
+              "MontoUnitario": 15176
+            }
+          },
+          {
+            "Correlativo": 19,
+            "CodigoProducto": 31201502,
+            "CodigoCategoria": "31201500",
+            "Categoria": "Artículos de fabricación y producción / Cintas adhesivas y selladores / Cinta adhesiva",
+            "NombreProducto": "Cinta autoadhesiva aislante eléctrica",
+            "Descripcion": "CINTA AISLADORA ELECTRICA 19MM X 19M COLORES\r\n\r\nFORMATO: PACK DE CINTAS AISLADORAS DE 19 MM, COLORES VARIADOS.\r\nUSO: AISLAMIENTO Y CODIFICACIÓN DE CABLES ELÉCTRICOS.\r\nAPLICACIÓN: INSTALACIONES ELÉCTRICAS DOMÉSTICAS E INDUSTRIALES.\r\nCONTENIDO: PACK CON VAR",
+            "UnidadMedida": "Pack",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 7580
+            }
+          },
+          {
+            "Correlativo": 20,
+            "CodigoProducto": 23171522,
+            "CodigoCategoria": "23171500",
+            "Categoria": "Maquinaria para fabricación y transformación industrial / Maquinaria y suministros para talleres / Maquinaria para soldadura directa o indirecta",
+            "NombreProducto": "Fundentes para soldar",
+            "Descripcion": "PASTA PARA SOLDAR 500 GR.\r\n\r\nFORMATO: ENVASE DE 500 G.\r\nUSO: FACILITAR SOLDADURA EN COBRE Y METALES.\r\nAPLICACIÓN: SE COLOCA EN LA UNIÓN ANTES DE APLICAR CALOR Y ESTAÑO.\r\nCONTENIDO: 500 G DE PASTA FUNDENTE PARA SOLDAR.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 15,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 15,
+              "MontoUnitario": 11378
+            }
+          },
+          {
+            "Correlativo": 21,
+            "CodigoProducto": 31151505,
+            "CodigoCategoria": "31151500",
+            "Categoria": "Artículos de fabricación y producción / Cuerdas, cadenas, cables, alambres y correas / Cuerdas y cables",
+            "NombreProducto": "Cable de acero",
+            "Descripcion": "CABLE DE ACERO.\r\nFORMATO: ROLLO DE 100 M, CABLE DE ACERO FORRADO EN PVC, 6 MM.\r\nUSO: SUJECIÓN, AMARRES Y TENSADO EN MÚLTIPLES APLICACIONES.\r\nAPLICACIÓN: CORTE A MEDIDA Y FIJACIÓN CON ACCESORIOS METÁLICOS.\r\nCONTENIDO: 1 ROLLO RESISTENTE Y PROTEGIDO CONTRA ",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 1,
+              "MontoUnitario": 11849
+            }
+          },
+          {
+            "Correlativo": 22,
+            "CodigoProducto": 31162905,
+            "CodigoCategoria": "31162900",
+            "Categoria": "Artículos de fabricación y producción / Artículos de ferretería / Abrazaderas",
+            "NombreProducto": "Abrazadera para viga doble T",
+            "Descripcion": "SET DE ABRAZADERA PARA CABLE ¼”\r\n\r\nFORMATO: SET DE 2 ABRAZADERAS METÁLICAS, 1/4”.\r\nUSO: SUJECIÓN Y FIJACIÓN DE CABLES DE ACERO.\r\nAPLICACIÓN: INSTALACIONES DE SEGURIDAD, CERCOS Y AMARRES.\r\nCONTENIDO: 2 UNIDADES RESISTENTES Y REUTILIZABLES.\r\n",
+            "UnidadMedida": "Pack",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 3327
+            }
+          },
+          {
+            "Correlativo": 23,
+            "CodigoProducto": 12352310,
+            "CodigoCategoria": "12352300",
+            "Categoria": "Productos químicos industriales / Compuestos y mezclas / Compuestos inorgánicos",
+            "NombreProducto": "Siliconas",
+            "Descripcion": "SILICONA ACETICA COLOR BLANCO 300 ML\r\n\r\nFORMATO: CARTUCHO DE SILICONA ACÉTICA, BLANCO.\r\nUSO: SELLADO DE JUNTAS Y UNIONES EN CONSTRUCCIÓN Y MANTENIMIENTO.\r\nAPLICACIÓN: CON PISTOLA CALAFATERA EN SUPERFICIES NO POROSAS.\r\nCONTENIDO: 1 CARTUCHO DE SILICONA ACÉ",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 4050
+            }
+          },
+          {
+            "Correlativo": 24,
+            "CodigoProducto": 23171510,
+            "CodigoCategoria": "23171500",
+            "Categoria": "Maquinaria para fabricación y transformación industrial / Maquinaria y suministros para talleres / Maquinaria para soldadura directa o indirecta",
+            "NombreProducto": "Alambre soldador",
+            "Descripcion": "SOLDADURA DE ESTAÑO EN CARRETE 50%\r\n\r\nFORMATO: CARRETE DE SOLDADURA, ALEACIÓN 50% SN-PB.\r\nUSO: SOLDADURA DE METALES EN PLOMERÍA Y CALEFACCIÓN.\r\nAPLICACIÓN: CON CAUTÍN O SOPLETE, USANDO PASTA/FLUX.\r\nCONTENIDO: 1 CARRETE DE SOLDADURA DE ESTAÑO 50%.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 27329
+            }
+          },
+          {
+            "Correlativo": 25,
+            "CodigoProducto": 47121807,
+            "CodigoCategoria": "47121800",
+            "Categoria": "Equipos y suministros de limpieza / Equipo de limpieza / Equipos de limpieza",
+            "NombreProducto": "Émbolo buzo de desagüe o inodoro",
+            "Descripcion": "SOPAPO DESTAPADOR CAÑERIA PARA BAÑO ALTA PRESION DRENAJE\r\n\r\nFORMATO: SOPAPO DESTAPADOR DE ALTA PRESIÓN PARA BAÑO.\r\nUSO: DESTAPAR CAÑERÍAS Y DRENAJES OBSTRUIDOS.\r\nAPLICACIÓN: PRESIÓN Y SUCCIÓN MANUAL SOBRE EL DESAGÜE.\r\nCONTENIDO: 1 UNIDAD CON VENTOSA DE GO",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 5,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 5,
+              "MontoUnitario": 7471
+            }
+          },
+          {
+            "Correlativo": 26,
+            "CodigoProducto": 27121704,
+            "CodigoCategoria": "27121700",
+            "Categoria": "Herramientas y maquinaria en general / Maquinaria hidráulica / Accesorios para circuitos hidráulicos",
+            "NombreProducto": "Uniones Hidráulicas",
+            "Descripcion": "TEE PPR 40 X 25 X 40 MM\r\n\r\nFORMATO: TEE PPR 40 X 25 X 40 MM.\r\nUSO: DERIVACIÓN DE FLUJO EN TUBERÍAS.\r\nAPLICACIÓN: INSTALACIONES DE AGUA POTABLE, CALEFACCIÓN Y RIEGO CON TERMOFUSION.\r\nCONTENIDO: 1 UNIDAD RESISTENTE Y ADAPTABLE.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 1185
+            }
+          },
+          {
+            "Correlativo": 27,
+            "CodigoProducto": 27121704,
+            "CodigoCategoria": "27121700",
+            "Categoria": "Herramientas y maquinaria en general / Maquinaria hidráulica / Accesorios para circuitos hidráulicos",
+            "NombreProducto": "Uniones Hidráulicas",
+            "Descripcion": "TEE PPR 40 MM\r\n\r\nFORMATO: TEE PPR 40 MM.\r\nUSO: DERIVACIÓN DE FLUJO EN TUBERÍAS DEL MISMO DIÁMETRO.\r\nAPLICACIÓN: INSTALACIONES DE AGUA POTABLE, CALEFACCIÓN Y RIEGO CON TERMOFUSION\r\nCONTENIDO: 1 UNIDAD RESISTENTE Y DURADERA.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 1820
+            }
+          },
+          {
+            "Correlativo": 28,
+            "CodigoProducto": 31201519,
+            "CodigoCategoria": "31201500",
+            "Categoria": "Artículos de fabricación y producción / Cintas adhesivas y selladores / Cinta adhesiva",
+            "NombreProducto": "Cinta para reparar tubería o manguito",
+            "Descripcion": "TEFLON PREMIUM ½” 10M.\r\n\r\nFORMATO: ROLLO DE 10 M, ANCHO 1/2”.\r\nUSO: SELLADO DE UNIONES ROSCADAS.\r\nAPLICACIÓN: PLOMERÍA, GAS Y CALEFACCIÓN.\r\nCONTENIDO: 1 ROLLO DE CINTA DE TEFLÓN PREMIUM.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 479
+            }
+          },
+          {
+            "Correlativo": 29,
+            "CodigoProducto": 31201519,
+            "CodigoCategoria": "31201500",
+            "Categoria": "Artículos de fabricación y producción / Cintas adhesivas y selladores / Cinta adhesiva",
+            "NombreProducto": "Cinta para reparar tubería o manguito",
+            "Descripcion": "TEFLON PREMIUM 3/4” 10M.\r\n\r\nFORMATO: ROLLO DE 10 M, ANCHO 3/4”.\r\nUSO: SELLADO DE UNIONES ROSCADAS DE MAYOR DIÁMETRO.\r\nAPLICACIÓN: PLOMERÍA, GAS Y CALEFACCIÓN.\r\nCONTENIDO: 1 ROLLO DE CINTA DE TEFLÓN PREMIUM.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 454
+            }
+          },
+          {
+            "Correlativo": 30,
+            "CodigoProducto": 40142307,
+            "CodigoCategoria": "40142300",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Accesorios para tuberías",
+            "NombreProducto": "Extremos cortos de tubería para soldar",
+            "Descripcion": "TERMINAL HE 40 MM PPR\r\n\r\nFORMATO: TERMINAL HE PPR 40 MM.\r\nUSO: CONEXIÓN FINAL DE TUBERÍAS HACIA ACCESORIOS ROSCADOS.\r\nAPLICACIÓN: INSTALACIONES DE AGUA POTABLE, CALEFACCIÓN Y RIEGO.\r\nCONTENIDO: 1 UNIDAD RESISTENTE Y ADAPTABLE.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 3807
+            }
+          },
+          {
+            "Correlativo": 31,
+            "CodigoProducto": 40142307,
+            "CodigoCategoria": "40142300",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Accesorios para tuberías",
+            "NombreProducto": "Extremos cortos de tubería para soldar",
+            "Descripcion": "TERMINAL HI 40 MM PPR\r\n\r\nFORMATO: TERMINAL HI PPR 40 MM.\r\nUSO: CONEXIÓN FINAL DE TUBERÍAS HACIA ACCESORIOS CON ROSCA MACHO.\r\nAPLICACIÓN: INSTALACIONES DE AGUA POTABLE, CALEFACCIÓN Y RIEGO.\r\nCONTENIDO: 1 UNIDAD RESISTENTE Y ADAPTABLE.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 5758
+            }
+          },
+          {
+            "Correlativo": 32,
+            "CodigoProducto": 39121308,
+            "CodigoCategoria": "39121300",
+            "Categoria": "Artículos eléctricos y de iluminación / Equipamiento y artículos eléctricos / Cajas y accesorios eléctricos",
+            "NombreProducto": "Cajas de toma de corriente",
+            "Descripcion": "TOMACORRIENTE TRIPLE 10 A BLANCO\r\n\r\nFORMATO: TOMACORRIENTE TRIPLE, 10 A, BLANCO.\r\nUSO: CONECTAR HASTA TRES DISPOSITIVOS ELÉCTRICOS.\r\nAPLICACIÓN: HOGAR, OFICINA Y COMERCIO.\r\nCONTENIDO: 1 UNIDAD PRÁCTICA Y SEGURA\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 30,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 30,
+              "MontoUnitario": 2385
+            }
+          },
+          {
+            "Correlativo": 33,
+            "CodigoProducto": 31231313,
+            "CodigoCategoria": "31231300",
+            "Categoria": "Artículos de fabricación y producción / Materia prima en planchas, barras o tubos / Tubos y cañerías",
+            "NombreProducto": "Tubería de plástico",
+            "Descripcion": "TUBERIA PPR 25MM X 6 MTS\r\n\r\nFORMATO: TUBERÍA PPR 25 MM X 6 M.\r\nUSO: CONDUCCIÓN DE AGUA FRÍA Y CALIENTE.\r\nAPLICACIÓN: INSTALACIONES SANITARIAS, CALEFACCIÓN Y RIEGO.\r\nCONTENIDO: 1 TUBO DE POLIPROPILENO DE ALTA RESISTENCIA.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 8340
+            }
+          },
+          {
+            "Correlativo": 34,
+            "CodigoProducto": 31231313,
+            "CodigoCategoria": "31231300",
+            "Categoria": "Artículos de fabricación y producción / Materia prima en planchas, barras o tubos / Tubos y cañerías",
+            "NombreProducto": "Tubería de plástico",
+            "Descripcion": "TUBERIA PPR 40MM X 6 MTS\r\n\r\nFORMATO: TUBERÍA PPR 40 MM X 6 M.\r\nUSO: CONDUCCIÓN DE AGUA FRÍA Y CALIENTE.\r\nAPLICACIÓN: INSTALACIONES SANITARIAS, CALEFACCIÓN Y RIEGO.\r\nCONTENIDO: 1 TUBO DE POLIPROPILENO DE ALTA RESISTENCIA.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 40,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 40,
+              "MontoUnitario": 18063
+            }
+          },
+          {
+            "Correlativo": 35,
+            "CodigoProducto": 40142115,
+            "CodigoCategoria": "40142100",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Tuberías",
+            "NombreProducto": "Tubería de plástico",
+            "Descripcion": "UNION AMERICANA PPR 25MM\r\n\r\nFORMATO: UNIÓN AMERICANA PPR 25 MM.\r\nUSO: CONEXIÓN DESMONTABLE DE TUBERÍAS.\r\nAPLICACIÓN: AGUA POTABLE, CALEFACCIÓN Y RIEGO.\r\nCONTENIDO: 1 UNIDAD RESISTENTE Y REUTILIZABLE.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 805
+            }
+          },
+          {
+            "Correlativo": 36,
+            "CodigoProducto": 40142115,
+            "CodigoCategoria": "40142100",
+            "Categoria": "Equipamiento para el acondicionamiento, distribución y filtrado de fluidos / Control y distribución de líquidos y gases / Tuberías",
+            "NombreProducto": "Tubería de plástico",
+            "Descripcion": "UNION AMERICANA PPR 40MM\r\n\r\nFORMATO: UNIÓN AMERICANA PPR 40 MM.\r\nUSO: CONEXIÓN DESMONTABLE DE TUBERÍAS.\r\nAPLICACIÓN: AGUA POTABLE, CALEFACCIÓN Y RIEGO.\r\nCONTENIDO: 1 UNIDAD RESISTENTE Y REUTILIZABLE.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 25,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 25,
+              "MontoUnitario": 2112
+            }
+          },
+          {
+            "Correlativo": 37,
+            "CodigoProducto": 15121803,
+            "CodigoCategoria": "15121800",
+            "Categoria": "Combustibles, lubricantes y anticorrosivos / Lubricantes y anticorrosivos / Anticorrosivos",
+            "NombreProducto": "Antioxidantes",
+            "Descripcion": "ANTICORROSIVO\r\n\r\nDETALLE: ANTICORROSIVO SOQUINA GL. GRIS PERLA \r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 33406
+            }
+          },
+          {
+            "Correlativo": 38,
+            "CodigoProducto": 24121802,
+            "CodigoCategoria": "24121800",
+            "Categoria": "Equipamiento para manejo y estiba de materiales / Materiales para envasado / Latas para envasado",
+            "NombreProducto": "Latas de pintura o barniz",
+            "Descripcion": "BARNIZ MARINO BRILLANTE 1 GALON MAPLE\r\n\r\nDETALLE: BARNIZ MARINO BRILLANTE GALON MAPLE\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 30368
+            }
+          },
+          {
+            "Correlativo": 39,
+            "CodigoProducto": 31201601,
+            "CodigoCategoria": "31201600",
+            "Categoria": "Artículos de fabricación y producción / Cintas adhesivas y selladores / Adhesivos y selladores",
+            "NombreProducto": "Adhesivos químicos",
+            "Descripcion": "BIDON ADITIVO CAVE BOND\r\n\r\nDETALLE: BIDON ADITIVO ADHERENCIA CAVE BOND 5 LITROS \r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 2,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 2,
+              "MontoUnitario": 55433
+            }
+          },
+          {
+            "Correlativo": 40,
+            "CodigoProducto": 31211904,
+            "CodigoCategoria": "31211900",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Accesorios para pintar",
+            "NombreProducto": "Brochas",
+            "Descripcion": "BROCHA\r\n\r\nDETALLE: BROCHA CONDOR 1” IDEAL PARA DETALLE Y PRESICION \r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 100,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 100,
+              "MontoUnitario": 494
+            }
+          },
+          {
+            "Correlativo": 41,
+            "CodigoProducto": 31211904,
+            "CodigoCategoria": "31211900",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Accesorios para pintar",
+            "NombreProducto": "Brochas",
+            "Descripcion": "BROCHA\r\n\r\nDETALLE: BROCHA CONDOR 2” LA HERRAMIENTA PERFECTA PARA LOGRAR UN ACABADO PROFESIONAL \r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 100,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 100,
+              "MontoUnitario": 671
+            }
+          },
+          {
+            "Correlativo": 42,
+            "CodigoProducto": 53102102,
+            "CodigoCategoria": "53102100",
+            "Categoria": "Ropa, maletas y productos de aseo personal / Ropa / Batas y overoles",
+            "NombreProducto": "Overol y sobretodo para hombre",
+            "Descripcion": "BUZO PAPEL GOLD GUARD BLANCO \r\n\r\nDETALLE: BUZO GOLD BLANCO TALLA XL\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 1808
+            }
+          },
+          {
+            "Correlativo": 43,
+            "CodigoProducto": 31201507,
+            "CodigoCategoria": "31201500",
+            "Categoria": "Artículos de fabricación y producción / Cintas adhesivas y selladores / Cinta adhesiva",
+            "NombreProducto": "Cinta adhesiva de fibra de vidrio",
+            "Descripcion": "CINTA FIBRA\r\n\r\nDETALLE: CINTA DE FIBRA VIDREO JUNTAPLAC 5CM\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 1898
+            }
+          },
+          {
+            "Correlativo": 44,
+            "CodigoProducto": 31211803,
+            "CodigoCategoria": "31211800",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Disolventes para pinturas",
+            "NombreProducto": "Diluyentes para pinturas y barnices",
+            "Descripcion": "DILYENTE SINTETICO \r\n\r\nDETALLE: DILUYENTE SINTETICO BIDON DE 5 LTS. \r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 13,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 13,
+              "MontoUnitario": 16695
+            }
+          },
+          {
+            "Correlativo": 45,
+            "CodigoProducto": 42151805,
+            "CodigoCategoria": "42151800",
+            "Categoria": "Equipamiento y suministros médicos / Equipos y suministros odontológicos / Rellenos y acabados dentales y suministros para pulir",
+            "NombreProducto": "Discos de acabado o pulido",
+            "Descripcion": "DISCO LAMINADO\r\n\r\nDETALLE: DISCO LAMINADO 4,5 G. 80 SMT 624 115X22,23\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 30,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 30,
+              "MontoUnitario": 5689
+            }
+          },
+          {
+            "Correlativo": 46,
+            "CodigoProducto": 31211501,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas al esmalte",
+            "Descripcion": "ESMALTE\r\n\r\nDETALLE: ESMALTE AL AGUA TINETA 4 GALONES COLOR BLANCO\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 15,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 15,
+              "MontoUnitario": 57712
+            }
+          },
+          {
+            "Correlativo": 47,
+            "CodigoProducto": 31211501,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas al esmalte",
+            "Descripcion": "ESMALTE SINTETICO\r\n\r\nDETALLE: ESMALTE SINTETICO GL. TRICOLOR COLOR GRIS \r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 24291
+            }
+          },
+          {
+            "Correlativo": 48,
+            "CodigoProducto": 31211501,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas al esmalte",
+            "Descripcion": "ESMALTE SINTETICO\r\n\r\nDETALLE: ESMALTE SINTETICO GL. TRICOLOR COLOR NEGRO \r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 30368
+            }
+          },
+          {
+            "Correlativo": 49,
+            "CodigoProducto": 31191501,
+            "CodigoCategoria": "31191500",
+            "Categoria": "Artículos de fabricación y producción / Materiales para prensar y abrasivos / Productos abrasivos",
+            "NombreProducto": "Papeles de lija",
+            "Descripcion": "LIJA PARA MADERA\r\n\r\nDETALLE: LIJA PARA MADERA GRANO #120 ISESA\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 100,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 100,
+              "MontoUnitario": 160
+            }
+          },
+          {
+            "Correlativo": 50,
+            "CodigoProducto": 31201605,
+            "CodigoCategoria": "31201600",
+            "Categoria": "Artículos de fabricación y producción / Cintas adhesivas y selladores / Adhesivos y selladores",
+            "NombreProducto": "Masillas",
+            "Descripcion": "MASILLA BASE\r\n\r\nDETALLE: SACO DE MASILLA BASE ROMERAL DE 25 KG.\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 10,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 10,
+              "MontoUnitario": 23243
+            }
+          },
+          {
+            "Correlativo": 51,
+            "CodigoProducto": 31201602,
+            "CodigoCategoria": "31201600",
+            "Categoria": "Artículos de fabricación y producción / Cintas adhesivas y selladores / Adhesivos y selladores",
+            "NombreProducto": "Pastas",
+            "Descripcion": "PASTA MURO\r\n\r\nDETALLE: PASTA MURO IRIS TINETA 24KG\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 8,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 8,
+              "MontoUnitario": 25765
+            }
+          },
+          {
+            "Correlativo": 52,
+            "CodigoProducto": 31211507,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas en aerosol",
+            "Descripcion": "PINTURA SPRAY\r\n\r\nDETALLE: PINTURA SPRAY GENERAL 400 ML NEGRO BRILLANTE\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 2531
+            }
+          },
+          {
+            "Correlativo": 53,
+            "CodigoProducto": 31211507,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas en aerosol",
+            "Descripcion": "PINTURA SPRAY\r\n\r\nDETALLE: PINTURA SPRAY BRILLANTE GRIS SPUTNIK 400 ML\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 2531
+            }
+          },
+          {
+            "Correlativo": 54,
+            "CodigoProducto": 31211506,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas de látex",
+            "Descripcion": "PINTURA LATEX GL\r\n\r\nDETALLE: PINTURA LATEX GL. MATE COLOR AMARILLO BEIRA\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 16,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 16,
+              "MontoUnitario": 19734
+            }
+          },
+          {
+            "Correlativo": 55,
+            "CodigoProducto": 31211506,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas de látex",
+            "Descripcion": "PINTURA LATEX GL\r\n\r\nDETALLE: PINTURA LATEX GL. MATE COLOR BLANCO CAMBRIGDE\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 16,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 16,
+              "MontoUnitario": 19734
+            }
+          },
+          {
+            "Correlativo": 56,
+            "CodigoProducto": 31211506,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas de látex",
+            "Descripcion": "PINTURA LATEX GL\r\n\r\nDETALLE: PINTURA LATEX GL. MATE COLOR GRIS CALDAS\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 16,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 16,
+              "MontoUnitario": 19734
+            }
+          },
+          {
+            "Correlativo": 57,
+            "CodigoProducto": 31211506,
+            "CodigoCategoria": "31211500",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Pinturas",
+            "NombreProducto": "Pinturas de látex",
+            "Descripcion": "PINTURA LATEX\r\n\r\nDETALLE: PINTURA LATEX EXTRACUBRIENTES MATE 4 GALONES COLOR BLANCO SIPA\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 20,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 20,
+              "MontoUnitario": 60750
+            }
+          },
+          {
+            "Correlativo": 58,
+            "CodigoProducto": 31211906,
+            "CodigoCategoria": "31211900",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Accesorios para pintar",
+            "NombreProducto": "Rodillos de pintar",
+            "Descripcion": "RODILLO CHIPORRO NATURAL\r\n\r\nDETALLE: RODILLO CHIPORRO NATUAL LIZCAL 18 CMS\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 50,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 50,
+              "MontoUnitario": 6517
+            }
+          },
+          {
+            "Correlativo": 59,
+            "CodigoProducto": 31211704,
+            "CodigoCategoria": "31211700",
+            "Categoria": "Artículos de fabricación y producción / Pinturas, diluyentes y accesorios para pintado / Acabados en general",
+            "NombreProducto": "Selladores",
+            "Descripcion": "SELLADOR ACRILICO \r\n\r\nDETALLE: SELLADOR ACRILICO MULTIUSO 300 ML COLOR BLANCO\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 15,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 15,
+              "MontoUnitario": 2719
+            }
+          },
+          {
+            "Correlativo": 60,
+            "CodigoProducto": 30161509,
+            "CodigoCategoria": "30161500",
+            "Categoria": "Artículos para estructuras, obras y construcciones / Materiales para terminaciones de interiores / Materiales para acabados de paredes",
+            "NombreProducto": "Tablero de yeso",
+            "Descripcion": "YESO CARTON\r\n\r\nDETALLE: PLANCHA YESO CARTON ROMERAL MEDIDAS: 1,20 X 2,40 10MM\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 17,
+            "Adjudicacion": {
+              "RutProveedor": "77.205.925-6",
+              "NombreProveedor": "FERRETERIA Y COMERCIALIZADORA  SANTA MONICA SPA",
+              "Cantidad": 17,
+              "MontoUnitario": 9798
+            }
+          }
+        ]
+      }
+    },
+    "ts": 1792360796.5246513,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
+  },
+  "1058043-40-LP26": {
+    "data": {
+      "CodigoExterno": "1058043-40-LP26",
+      "Nombre": "C.S. Insulina Glargina 300 Ui Ml Lápices Desechables",
+      "CodigoEstado": 6,
+      "Descripcion": "Las presentes bases enmarcan los requerimientos de la Unidad de Farmacia del Hospital La Serena bajo la licitación “INSULINA GLARGINA 300 UI/ ML LAPICES DESECHABLES”, ID 1058043-40-LP26  con el fin de obtener el suministro de los servicios de mantenimiento y otros requerimientos señalados en punto B de las presentes bases de licitación, los cuales son necesarios para la adecuada y oportuna atención de todos los pacientes del Hospital de La Serena, tanto en Atención Abierta como en la Atención Cerrada. \r\n\r\n",
+      "FechaCierre": null,
+      "Estado": "Cerrada",
+      "Comprador": {
+        "CodigoOrganismo": "7312",
+        "NombreOrganismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL LA SERENA",
+        "RutUnidad": "61.606.402-9",
+        "CodigoUnidad": "1058043",
+        "NombreUnidad": "Fármacos",
+        "DireccionUnidad": "JOSE M. BALMACEDA 916",
+        "ComunaUnidad": "La Serena",
+        "RegionUnidad": "Región de Coquimbo ",
+        "RutUsuario": "",
+        "CodigoUsuario": "1826789",
+        "NombreUsuario": "Karla Parga Meza",
+        "CargoUsuario": "Ejecutivo Compras Públicas"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LP",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "0",
+      "Obras": "0",
+      "CantidadReclamos": 2841,
+      "Fechas": {
+        "FechaCreacion": "2026-09-14T00:00:00",
+        "FechaCierre": "2026-10-14T17:00:00",
+        "FechaInicio": "2026-09-24T17:01:00",
+        "FechaFinal": "2026-10-05T17:00:00",
+        "FechaPubRespuestas": "2026-10-09T17:00:00",
+        "FechaActoAperturaTecnica": "2026-10-14T17:01:00",
+        "FechaActoAperturaEconomica": "2026-10-14T17:01:00",
+        "FechaPublicacion": "2026-09-24T16:35:08.107",
+        "FechaAdjudicacion": "2026-12-14T17:00:00",
+        "FechaEstimadaAdjudicacion": "2026-12-14T17:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "Hospital La Serena",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "24",
+      "UnidadTiempo": "1",
+      "Modalidad": 1,
+      "TipoPago": "1",
+      "NombreResponsablePago": "Manuel Acuña Rojas",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "Felipe Gaete Vergara",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "Según indica numeral 32 Traspaso del contrato, de las bases administrativas de licitación.",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "24",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": null,
+      "Items": {
+        "Cantidad": 1,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 51181506,
+            "CodigoCategoria": "51181500",
+            "Categoria": "Medicamentos y productos farmacéuticos / Hormonas y antagonistas hormonales / Agentes antidiabéticos y agentes hiperglicémicos",
+            "NombreProducto": "Insulina",
+            "Descripcion": "262-0268 INSULINA GLARGINA 300 UI / ML LAPICES DESECHABLES\r\n",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": null
+          }
+        ]
+      }
+    },
+    "ts": 1792360801.4061399,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
+  },
+  "608-128-LE26": {
+    "data": {
+      "CodigoExterno": "608-128-LE26",
+      "Nombre": "ern CONVENIO SUMINISTRO CLIPERA CON CLIP HEMOSTASIA",
+      "CodigoEstado": 8,
+      "Descripcion": "ern CONVENIO SUMINISTRO (CLIPERA CON CLIP HEMOSTASIA)",
+      "FechaCierre": null,
+      "Estado": "Adjudicada",
+      "Comprador": {
+        "CodigoOrganismo": "6936",
+        "NombreOrganismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
+        "RutUnidad": "61.606.602-1",
+        "CodigoUnidad": "1604",
+        "NombreUnidad": "Hospital Dr. Gustavo Fricke",
+        "DireccionUnidad": "Alvarez 1532",
+        "ComunaUnidad": "Viña del Mar",
+        "RegionUnidad": "Región de Valparaíso ",
+        "RutUsuario": "",
+        "CodigoUsuario": "709",
+        "NombreUsuario": "Erika Rodríguez Núñez",
+        "CargoUsuario": "Administrativo Supervisor"
+      },
+      "DiasCierreLicitacion": "0",
+      "Informada": 0,
+      "CodigoTipo": 1,
+      "Tipo": "LE",
+      "TipoConvocatoria": "1",
+      "Moneda": "CLP",
+      "Etapas": 1,
+      "EstadoEtapas": "1",
+      "TomaRazon": "0",
+      "EstadoPublicidadOfertas": 1,
+      "JustificacionPublicidad": "",
+      "Contrato": "1",
+      "Obras": "0",
+      "CantidadReclamos": 3584,
+      "Fechas": {
+        "FechaCreacion": "2026-06-17T00:00:00",
+        "FechaCierre": "2026-07-27T15:01:00",
+        "FechaInicio": "2026-07-14T14:32:00",
+        "FechaFinal": "2026-07-20T11:00:00",
+        "FechaPubRespuestas": "2026-07-23T14:32:00",
+        "FechaActoAperturaTecnica": "2026-07-27T15:01:00",
+        "FechaActoAperturaEconomica": "2026-07-27T15:01:00",
+        "FechaPublicacion": "2026-07-14T10:47:00",
+        "FechaAdjudicacion": "2026-10-14T15:22:46.927",
+        "FechaEstimadaAdjudicacion": "2026-10-05T17:00:00",
+        "FechaSoporteFisico": null,
+        "FechaTiempoEvaluacion": null,
+        "FechaEstimadaFirma": null,
+        "FechasUsuario": null,
+        "FechaVisitaTerreno": null,
+        "FechaEntregaAntecedentes": null
+      },
+      "UnidadTiempoEvaluacion": 1,
+      "DireccionVisita": "",
+      "DireccionEntrega": "",
+      "Estimacion": 2,
+      "FuenteFinanciamiento": "",
+      "VisibilidadMonto": 0,
+      "MontoEstimado": null,
+      "Tiempo": "48",
+      "UnidadTiempo": "1",
+      "Modalidad": 11,
+      "TipoPago": "1",
+      "NombreResponsablePago": "GERMAN LAUREL CERDA",
+      "EmailResponsablePago": "",
+      "NombreResponsableContrato": "MARCO SILVA LIZAMA",
+      "EmailResponsableContrato": "",
+      "FonoResponsableContrato": "",
+      "ProhibicionContratacion": "",
+      "SubContratacion": "0",
+      "UnidadTiempoDuracionContrato": 4,
+      "TiempoDuracionContrato": "48",
+      "TipoDuracionContrato": " ",
+      "JustificacionMontoEstimado": "",
+      "ObservacionContract": null,
+      "ExtensionPlazo": 0,
+      "EsBaseTipo": 0,
+      "UnidadTiempoContratoLicitacion": "2",
+      "ValorTiempoRenovacion": "0",
+      "PeriodoTiempoRenovacion": " ",
+      "EsRenovable": 0,
+      "CodigoBIP": null,
+      "Adjudicacion": {
+        "Tipo": 2,
+        "Fecha": "2026-10-14T00:00:00",
+        "Numero": "4368",
+        "NumeroOferentes": 7,
+        "UrlActa": "http://www.mercadopublico.cl/Procurement/Modules/RFB/StepsProcessAward/PreviewAwardAct.aspx?qs=xuafxtYqevnzP44RWqO7NHgBhw75Y6mDKH/3ek3NCwc="
+      },
+      "Items": {
+        "Cantidad": 3,
+        "Listado": [
+          {
+            "Correlativo": 1,
+            "CodigoProducto": 42312008,
+            "CodigoCategoria": "42312000",
+            "Categoria": "Equipamiento y suministros médicos / Productos para el cuidado de heridas / Cierres médicos de tejidos y productos relacionados",
+            "NombreProducto": "Quita grapas o quita grampas médicas",
+            "Descripcion": "2240122 CLIPERA C/CLIP HEMOSTASIA PREMONTADO 16X230MM (Revisar bases)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "78.566.250-4",
+              "NombreProveedor": "PRODUCTOS MEDICOS PROMEDON CHILE S A",
+              "Cantidad": 480,
+              "MontoUnitario": 33500
+            }
+          },
+          {
+            "Correlativo": 2,
+            "CodigoProducto": 42312008,
+            "CodigoCategoria": "42312000",
+            "Categoria": "Equipamiento y suministros médicos / Productos para el cuidado de heridas / Cierres médicos de tejidos y productos relacionados",
+            "NombreProducto": "Quita grapas o quita grampas médicas",
+            "Descripcion": "2240123 CLIPERA C/CLIP HEMOSTASIA PREMONTADO 22X235MM (Revisar Bases)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "77.067.168-K",
+              "NombreProveedor": "FRIMED SPA",
+              "Cantidad": 260,
+              "MontoUnitario": 54800
+            }
+          },
+          {
+            "Correlativo": 3,
+            "CodigoProducto": 42312008,
+            "CodigoCategoria": "42312000",
+            "Categoria": "Equipamiento y suministros médicos / Productos para el cuidado de heridas / Cierres médicos de tejidos y productos relacionados",
+            "NombreProducto": "Quita grapas o quita grampas médicas",
+            "Descripcion": "2240121 CLIPERA C/CLIP HEMOSTASIA PREMONTADO 11X230MM (Revisar Bases)",
+            "UnidadMedida": "Unidad",
+            "Cantidad": 1,
+            "Adjudicacion": {
+              "RutProveedor": "78.566.250-4",
+              "NombreProveedor": "PRODUCTOS MEDICOS PROMEDON CHILE S A",
+              "Cantidad": 480,
+              "MontoUnitario": 31000
+            }
+          }
+        ]
+      }
+    },
+    "ts": 1792360807.248001,
+    "fetchedAt": "2026-10-18T21:57:52.567787+00:00"
   }
 }
