@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-22T02:03:35.993965+00:00",
-  "ultimoIntentoRealizado": "2026-10-22T02:03:35.993965+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-22T08:57:46.836433+00:00",
+  "ultimoIntentoRealizado": "2026-10-22T08:57:46.836433+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1461,
-  "registrosConfirmados": 1461,
+  "registrosEnPlataforma": 1486,
+  "registrosConfirmados": 1486,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1199,
-  "excluidosPrefiltroIrrelevante": 7568,
-  "excluidosSinDatosReales": 35,
+  "registrosConMontoReal": 1214,
+  "excluidosPrefiltroIrrelevante": 7569,
+  "excluidosSinDatosReales": 11,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 801,
@@ -21,39 +21,39 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1242015057,
-    "montoFinalSum": 1255703519,
-    "montoRecuperadoSum": 13688462
+    "montoOriginalSum": 1237978399,
+    "montoFinalSum": 1239933519,
+    "montoRecuperadoSum": 1955120
   },
   "categorias": {
-    "licitaciones": 656,
+    "licitaciones": 681,
     "comprasAgiles": 801,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 127,
-    "LE": 359,
-    "L1": 114,
-    "CO": 8,
-    "LR": 45,
+    "LP": 130,
+    "LE": 375,
+    "L1": 119,
+    "CO": 7,
+    "LR": 46,
     "LS": 3,
     "E2": 5,
     "O1": 4,
     "I2": 2,
     "B2": 1,
-    "COT": 793
+    "COT": 794
   },
   "matchPorEmpresa": {
-    "V-MOCCS": 230,
-    "Aminorte": 1231
+    "V-MOCCS": 236,
+    "Aminorte": 1250
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1405,
-    "modificadosCount": 49,
-    "cerradosCount": 1286,
+    "nuevosCount": 1431,
+    "modificadosCount": 48,
+    "cerradosCount": 1287,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -71,7 +71,7 @@
         "monto": 1977426564,
         "empresaMatch": "Aminorte",
         "matchScore": 70,
-        "fechaCierre": "2026-10-21T16:00:00"
+        "fechaCierre": "2026-10-23T16:00:00"
       },
       {
         "codigo": "2403-73-LR26",
@@ -81,6 +81,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-30T12:00:00"
+      },
+      {
+        "codigo": "621-890-LR26",
+        "titulo": "VALSARTAN 160 MG CPCM REC 1000023100",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 1530290097,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-27T16:00:00"
       },
       {
         "codigo": "1658-257-LR26",
@@ -117,6 +126,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-22T16:00:00"
+      },
+      {
+        "codigo": "2080-254-LR26",
+        "titulo": "SUMINISTRO DE AUDIFONOS DE PATOLOGIA GES",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "monto": 882551600,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-19T16:00:00"
       },
       {
         "codigo": "520149-48-LR26",
@@ -263,6 +281,15 @@
         "fechaCierre": "2026-11-10T16:00:00"
       },
       {
+        "codigo": "1351-7-LP26",
+        "titulo": "SERVICIOS EXTERNOS DE GUARDIAS DE SEGURIDAD PARA OFICINAS REGIÓN DE VALPARAISO ",
+        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
+        "monto": 273600000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-06T15:01:00"
+      },
+      {
         "codigo": "1641-396-LP26",
         "titulo": "RPH - SENSOR NEONATAL Y ADULTO OXIMETRIA CON MONITORES ASOCIADOS",
         "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
@@ -350,7 +377,7 @@
         "monto": 192000000,
         "empresaMatch": "Aminorte",
         "matchScore": 80,
-        "fechaCierre": "2026-10-26T15:00:00"
+        "fechaCierre": "2026-11-02T15:01:00"
       },
       {
         "codigo": "3765-37-LP26",
@@ -567,33 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-10-27T14:27:00"
-      },
-      {
-        "codigo": "2709-81-LP26",
-        "titulo": "ADQUISICION INSTALACION Y CONFIGURACION DE SERVIDOR Y CAMARAS DE TELEVIGILANCIA EN LA COMUNA DE OVALLE",
-        "organismo": "MUNICIPALIDAD DE OVALLE",
-        "monto": 100000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-27T14:00:00"
-      },
-      {
-        "codigo": "4956-70-LP26",
-        "titulo": "VEHÍCULO PARA OFICINA MÓVIL DE SEGURIDAD",
-        "organismo": "I MUNICIPALIDAD DE RENCA",
-        "monto": 93772000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-08T15:01:00"
-      },
-      {
-        "codigo": "1656-23-LP26",
-        "titulo": "SERVICIO DE ASEO OFICINAS RANCAGUA AÑO 2027",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "monto": 91000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-19T15:00:00"
       }
     ],
     "modificados": [
@@ -888,16 +888,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "735-6-LP26",
-        "titulo": "Suscripciones Invgate y servicios de procesamiento",
-        "organismo": "DIRECCION DE PRESUPUESTOS MINISTERIO DE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 78500,
-        "montoNuevo": 78500,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2494-85-LE26",
         "titulo": "Concesión espacio públ. mobiliario publicitario",
         "organismo": "I MUNICIPALIDAD DE COYHAIQUE",
@@ -906,46 +896,6 @@
         "montoAnterior": 360,
         "montoNuevo": 360,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "4127-36-LE26",
-        "titulo": "[TIC] Suscripción licencias de software escáner de",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3948-42-LE26",
-        "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO MUSEOGRAFICO",
-        "organismo": "I MUNICIPALIDAD DE NAVIDAD",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "624-27-LE26",
-        "titulo": "ADQUISICIÓN DE SERVIDOR PARA GOBIERNO REGIONAL",
-        "organismo": "GOBIERNO REGIONAL IV REGION COQUIMBO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "552975-72-LP26",
-        "titulo": "SUMINISTRO ARTÍCULOS DEPORTIVOS",
-        "organismo": "CORP DE DESARROLLO SOCIAL DE PROVIDENCIA",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "3612-19-LP26",
@@ -968,11 +918,41 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2981-266-LE26",
-        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "codigo": "3948-42-LE26",
+        "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO MUSEOGRAFICO",
+        "organismo": "I MUNICIPALIDAD DE NAVIDAD",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "552975-72-LP26",
+        "titulo": "SUMINISTRO ARTÍCULOS DEPORTIVOS",
+        "organismo": "CORP DE DESARROLLO SOCIAL DE PROVIDENCIA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4127-36-LE26",
+        "titulo": "[TIC] Suscripción licencias de software escáner de",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "624-27-LE26",
+        "titulo": "ADQUISICIÓN DE SERVIDOR PARA GOBIERNO REGIONAL",
+        "organismo": "GOBIERNO REGIONAL IV REGION COQUIMBO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -988,9 +968,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1339159-28-LE26",
-        "titulo": "DISPOSITIVOS DE IMPRESIÓN PROYECTORES Y TELONES",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA SANTA ROSA",
+        "codigo": "1057544-282-LR26",
+        "titulo": "Suministro de reactivos e insumos para la realización de exámenes de patógenos respiratorios por PCR en tiempo real en Hospital las Higueras de Talcahuano",
+        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1008,6 +988,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1339159-28-LE26",
+        "titulo": "DISPOSITIVOS DE IMPRESIÓN PROYECTORES Y TELONES",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA SANTA ROSA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "643-30-LE26",
         "titulo": "SERVICIO ASEO OFICINA ISLA DE PASCUA",
         "organismo": "SERVICIO DE VIVIENDA Y URBANIZACION V REGION",
@@ -1018,9 +1008,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057544-282-LR26",
-        "titulo": "Suministro de reactivos e insumos para la realización de exámenes de patógenos respiratorios por PCR en tiempo real en Hospital las Higueras de Talcahuano",
-        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1048,16 +1038,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1217357-2-LE26",
-        "titulo": "ADQUISICIÓN DE 416 CONJUNTOS DEPORTIVOS",
-        "organismo": "CORPORACION MUNICIPAL DE DEPORTES DE LA PINTANA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1692-25-LE26",
         "titulo": "MANTENCION PREVENTIVA DEL SISTEMA DE CLIMATIZACION",
         "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE COCHRANE",
@@ -1076,6 +1056,16 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1217357-2-LE26",
+        "titulo": "ADQUISICIÓN DE 416 CONJUNTOS DEPORTIVOS",
+        "organismo": "CORPORACION MUNICIPAL DE DEPORTES DE LA PINTANA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "673663-31-LE26",
@@ -1571,7 +1561,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1196.1,
+  "tiempoEjecucionSegundos": 866.7,
   "errores": [],
   "advertencias": []
 }
