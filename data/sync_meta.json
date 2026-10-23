@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-23T02:08:05.790385+00:00",
-  "ultimoIntentoRealizado": "2026-10-23T02:08:05.790385+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-23T08:52:39.354865+00:00",
+  "ultimoIntentoRealizado": "2026-10-23T08:52:39.354865+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1438,
-  "registrosConfirmados": 1438,
+  "registrosEnPlataforma": 1442,
+  "registrosConfirmados": 1442,
   "registrosPendientesVerificacion": 0,
   "registrosConMontoReal": 1164,
-  "excluidosPrefiltroIrrelevante": 7640,
-  "excluidosSinDatosReales": 18,
+  "excluidosPrefiltroIrrelevante": 7641,
+  "excluidosSinDatosReales": 16,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 771,
@@ -26,20 +26,20 @@
     "montoRecuperadoSum": 882480
   },
   "categorias": {
-    "licitaciones": 662,
+    "licitaciones": 666,
     "comprasAgiles": 771,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 128,
-    "LE": 370,
-    "L1": 106,
+    "LP": 131,
+    "LE": 371,
+    "L1": 107,
     "CO": 8,
     "LR": 47,
     "LS": 3,
-    "E2": 3,
+    "E2": 2,
     "O1": 5,
     "I2": 4,
     "B2": 1,
@@ -47,13 +47,13 @@
   },
   "matchPorEmpresa": {
     "V-MOCCS": 225,
-    "Aminorte": 1213
+    "Aminorte": 1217
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1388,
-    "modificadosCount": 43,
-    "cerradosCount": 1292,
+    "nuevosCount": 1389,
+    "modificadosCount": 46,
+    "cerradosCount": 1289,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -143,7 +143,7 @@
         "monto": 1009762005,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-10-22T16:00:00"
+        "fechaCierre": "2026-10-26T16:00:00"
       },
       {
         "codigo": "2080-254-LR26",
@@ -443,15 +443,6 @@
         "fechaCierre": "2026-10-26T15:30:00"
       },
       {
-        "codigo": "837-78-LP26",
-        "titulo": "CDP 372 SERVICIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO CONVENIO DE SUMINISTROS DE SISTEMA DE RENOVACIÓN DE AIRE SALA DE AUTOPSIAS Y CLIMATIZACION DE SERVICIO MEDICO LEGAL DE CAÑETE.",
-        "organismo": "SERVICIO MEDICO LEGAL",
-        "monto": 172797234,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-28T15:30:00"
-      },
-      {
         "codigo": "1057780-8-LP26",
         "titulo": "ADQ. COMPUTADORES ALL IN ONE H. CURACAUTÍN",
         "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-07-14T17:00:00"
+      },
+      {
+        "codigo": "2122-35-LP26",
+        "titulo": "Convenio de suministro arriendo de impresoras",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+        "monto": 108000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 90,
+        "fechaCierre": "2026-10-23T15:00:00"
       }
     ],
     "modificados": [
@@ -635,6 +635,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 138881000,
         "montoNuevo": 138881000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4988-32-LP26",
+        "titulo": "ADQUISICIÓN 10 MOTOCICLETAS PARA USO POLICIAL. MUNICIPALIDAD DE CONCEPCIÓN. 2° Llamado",
+        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 100000000,
+        "montoNuevo": 100000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -735,6 +745,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 14305796,
         "montoNuevo": 14305796,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1380-192-LE26",
+        "titulo": "PPTA 322-26 ADQUSIICION DE MICROSCOPIO CON CAMARA",
+        "organismo": "HOSPITAL DOCTOR HERNAN HENRIQUEZ ARAVENA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 13926000,
+        "montoNuevo": 13926000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -868,6 +888,16 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "2788-48-LE26",
+        "titulo": "CONCESIÓN DEL SERVICIO DE RETIRO TRASLADO BODEGAJE Y APARCADERO DE VEHÍCULOS Y OTROS BIENES MUEBLES RETIRADOS DE LA VÍA PÚBLICA DE LA COMUNA DE PAINE",
+        "organismo": "I MUNICIPALIDAD DE PAINE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "2656-65-LE26",
         "titulo": "PROVISIÓN INST. CONFIGURACIÓN Y MONTAJE CAMARAS",
         "organismo": "I MUNICIPALIDAD DE TOME",
@@ -886,46 +916,6 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2788-48-LE26",
-        "titulo": "CONCESIÓN DEL SERVICIO DE RETIRO TRASLADO BODEGAJE Y APARCADERO DE VEHÍCULOS Y OTROS BIENES MUEBLES RETIRADOS DE LA VÍA PÚBLICA DE LA COMUNA DE PAINE",
-        "organismo": "I MUNICIPALIDAD DE PAINE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "3612-19-LP26",
-        "titulo": "SPD AMPLIACIÓN CAMARAS DE TELEVIGILANCIA",
-        "organismo": "I MUNICIPALIDAD DE SAAVEDRA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4127-36-LE26",
-        "titulo": "[TIC] Suscripción licencias de software escáner de",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "527481-64-LP26",
-        "titulo": "ADQUISICION DE LUMINARIAS LED AP",
-        "organismo": "ILUSTRE MINICIPALIDAD DE COMBARBALA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "624-27-LE26",
@@ -948,11 +938,41 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "3612-19-LP26",
+        "titulo": "SPD AMPLIACIÓN CAMARAS DE TELEVIGILANCIA",
+        "organismo": "I MUNICIPALIDAD DE SAAVEDRA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "552975-72-LP26",
         "titulo": "SUMINISTRO ARTÍCULOS DEPORTIVOS",
         "organismo": "CORP DE DESARROLLO SOCIAL DE PROVIDENCIA",
         "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "527481-64-LP26",
+        "titulo": "ADQUISICION DE LUMINARIAS LED AP",
+        "organismo": "ILUSTRE MINICIPALIDAD DE COMBARBALA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4127-36-LE26",
+        "titulo": "[TIC] Suscripción licencias de software escáner de",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -968,9 +988,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057544-282-LR26",
-        "titulo": "Suministro de reactivos e insumos para la realización de exámenes de patógenos respiratorios por PCR en tiempo real en Hospital las Higueras de Talcahuano",
-        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
+        "codigo": "1947-168-LE26",
+        "titulo": "CONTRATACIÓN DEL SERVICIO DE ARRIENDO DE MONITORES DE SIGNOS VITALES PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RÍO GRS",
+        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1008,9 +1028,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1224957-55-LE26",
-        "titulo": "MANTENCION DE SISTEMAS DE AIRE ACONDICIONADO EST.",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE NUNOA",
+        "codigo": "1057544-282-LR26",
+        "titulo": "Suministro de reactivos e insumos para la realización de exámenes de patógenos respiratorios por PCR en tiempo real en Hospital las Higueras de Talcahuano",
+        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1021,6 +1041,16 @@
         "codigo": "1057049-336-LE26",
         "titulo": "BMC ADQ MARCADOR DE TEJIDO MAMARIO",
         "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1224957-55-LE26",
+        "titulo": "MANTENCION DE SISTEMAS DE AIRE ACONDICIONADO EST.",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE NUNOA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1511,7 +1541,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 847.4,
+  "tiempoEjecucionSegundos": 490.2,
   "errores": [],
   "advertencias": []
 }
