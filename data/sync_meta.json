@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-23T08:52:39.354865+00:00",
-  "ultimoIntentoRealizado": "2026-10-23T08:52:39.354865+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-23T14:29:34.209782+00:00",
+  "ultimoIntentoRealizado": "2026-10-23T14:29:34.209782+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1442,
-  "registrosConfirmados": 1442,
+  "registrosEnPlataforma": 1464,
+  "registrosConfirmados": 1464,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1164,
-  "excluidosPrefiltroIrrelevante": 7641,
-  "excluidosSinDatosReales": 16,
+  "registrosConMontoReal": 1178,
+  "excluidosPrefiltroIrrelevante": 7869,
+  "excluidosSinDatosReales": 15,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 771,
-    "conMontoValido": 767,
+    "total": 773,
+    "conMontoValido": 769,
     "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 767,
+      "VALIDADO": 769,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1264403656,
-    "montoFinalSum": 1265286136,
-    "montoRecuperadoSum": 882480
+    "montoOriginalSum": 1223164203,
+    "montoFinalSum": 1256863976,
+    "montoRecuperadoSum": 33699773
   },
   "categorias": {
-    "licitaciones": 666,
-    "comprasAgiles": 771,
+    "licitaciones": 686,
+    "comprasAgiles": 773,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 131,
-    "LE": 371,
-    "L1": 107,
+    "LP": 133,
+    "LE": 385,
+    "L1": 109,
     "CO": 8,
     "LR": 47,
     "LS": 3,
-    "E2": 2,
+    "E2": 4,
     "O1": 5,
     "I2": 4,
     "B2": 1,
-    "COT": 763
+    "COT": 765
   },
   "matchPorEmpresa": {
-    "V-MOCCS": 225,
-    "Aminorte": 1217
+    "V-MOCCS": 226,
+    "Aminorte": 1238
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1389,
-    "modificadosCount": 46,
-    "cerradosCount": 1289,
+    "nuevosCount": 1409,
+    "modificadosCount": 48,
+    "cerradosCount": 1287,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -389,6 +389,15 @@
         "fechaCierre": "2026-11-02T17:00:00"
       },
       {
+        "codigo": "1126922-43-LP26",
+        "titulo": "SUMINISTRO DE SERVICIOS DE CONTROL DE PLAGAS PARA ESTABLECIMIENTOS EDUCACIONALES JARDINES INFANTILES Y OFICINAS DEL SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE LLANQUIHUE",
+        "organismo": "SERVICIO LOCAL DE EDUCACION PUBLICA DE LLANQUIHUE",
+        "monto": 208000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-12T15:01:00"
+      },
+      {
         "codigo": "1469-294-LP26",
         "titulo": "FOTOCOPIADO IMPRESIÓN Y SERVICIOS COMPLEMENTARIOS",
         "organismo": "UNIVERSIDAD DE TALCA",
@@ -441,6 +450,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-10-26T15:30:00"
+      },
+      {
+        "codigo": "837-78-LP26",
+        "titulo": "CDP 372 SERVICIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO CONVENIO DE SUMINISTROS DE SISTEMA DE RENOVACIÓN DE AIRE SALA DE AUTOPSIAS Y CLIMATIZACION DE SERVICIO MEDICO LEGAL DE CAÑETE.",
+        "organismo": "SERVICIO MEDICO LEGAL",
+        "monto": 172797234,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-28T15:30:00"
       },
       {
         "codigo": "1057780-8-LP26",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-22T15:30:00"
-      },
-      {
-        "codigo": "758004-2-LP26",
-        "titulo": "Renovación sistema climatización Data Center CSN",
-        "organismo": "UNIVERSIDAD DE CHILE",
-        "monto": 110000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-07-14T17:00:00"
-      },
-      {
-        "codigo": "2122-35-LP26",
-        "titulo": "Convenio de suministro arriendo de impresoras",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "monto": 108000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 90,
-        "fechaCierre": "2026-10-23T15:00:00"
       }
     ],
     "modificados": [
@@ -695,6 +695,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 26000000,
         "montoNuevo": 26000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "721-34-LE26",
+        "titulo": "Serv. Mant. equipos de aire acondicionado",
+        "organismo": "CAJA DE PREVISION DE LA DEFENSA NACIONAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 21000000,
+        "montoNuevo": 21000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -888,10 +898,20 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2788-48-LE26",
-        "titulo": "CONCESIÓN DEL SERVICIO DE RETIRO TRASLADO BODEGAJE Y APARCADERO DE VEHÍCULOS Y OTROS BIENES MUEBLES RETIRADOS DE LA VÍA PÚBLICA DE LA COMUNA DE PAINE",
-        "organismo": "I MUNICIPALIDAD DE PAINE",
-        "estadoAnterior": "Publicada",
+        "codigo": "2026-69-LP26",
+        "titulo": "ADQUISICIÓN SERVICIO DE ARRIENDO IMPRESORAS",
+        "organismo": "SERVICIO SALUD VINA DEL MAR QUILLOTA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2794-20-LE26",
+        "titulo": "Instalacion Mobiliario Publico Los Andes",
+        "organismo": "MUNICIPALIDAD DE LOS ANDES",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -908,14 +928,54 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2794-20-LE26",
-        "titulo": "Instalacion Mobiliario Publico Los Andes",
-        "organismo": "MUNICIPALIDAD DE LOS ANDES",
-        "estadoAnterior": "Cerrada",
+        "codigo": "2788-48-LE26",
+        "titulo": "CONCESIÓN DEL SERVICIO DE RETIRO TRASLADO BODEGAJE Y APARCADERO DE VEHÍCULOS Y OTROS BIENES MUEBLES RETIRADOS DE LA VÍA PÚBLICA DE LA COMUNA DE PAINE",
+        "organismo": "I MUNICIPALIDAD DE PAINE",
+        "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "3612-19-LP26",
+        "titulo": "SPD AMPLIACIÓN CAMARAS DE TELEVIGILANCIA",
+        "organismo": "I MUNICIPALIDAD DE SAAVEDRA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4127-36-LE26",
+        "titulo": "[TIC] Suscripción licencias de software escáner de",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "527481-64-LP26",
+        "titulo": "ADQUISICION DE LUMINARIAS LED AP",
+        "organismo": "ILUSTRE MINICIPALIDAD DE COMBARBALA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "552975-72-LP26",
+        "titulo": "SUMINISTRO ARTÍCULOS DEPORTIVOS",
+        "organismo": "CORP DE DESARROLLO SOCIAL DE PROVIDENCIA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "624-27-LE26",
@@ -938,41 +998,11 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "3612-19-LP26",
-        "titulo": "SPD AMPLIACIÓN CAMARAS DE TELEVIGILANCIA",
-        "organismo": "I MUNICIPALIDAD DE SAAVEDRA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "552975-72-LP26",
-        "titulo": "SUMINISTRO ARTÍCULOS DEPORTIVOS",
-        "organismo": "CORP DE DESARROLLO SOCIAL DE PROVIDENCIA",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "527481-64-LP26",
-        "titulo": "ADQUISICION DE LUMINARIAS LED AP",
-        "organismo": "ILUSTRE MINICIPALIDAD DE COMBARBALA",
+        "codigo": "1947-168-LE26",
+        "titulo": "CONTRATACIÓN DEL SERVICIO DE ARRIENDO DE MONITORES DE SIGNOS VITALES PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RÍO GRS",
+        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4127-36-LE26",
-        "titulo": "[TIC] Suscripción licencias de software escáner de",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -981,16 +1011,6 @@
         "codigo": "1339159-28-LE26",
         "titulo": "DISPOSITIVOS DE IMPRESIÓN PROYECTORES Y TELONES",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA SANTA ROSA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1947-168-LE26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE ARRIENDO DE MONITORES DE SIGNOS VITALES PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RÍO GRS",
-        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1008,20 +1028,20 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2981-266-LE26",
-        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "estadoAnterior": "Publicada",
+        "codigo": "643-30-LE26",
+        "titulo": "SERVICIO ASEO OFICINA ISLA DE PASCUA",
+        "organismo": "SERVICIO DE VIVIENDA Y URBANIZACION V REGION",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "643-30-LE26",
-        "titulo": "SERVICIO ASEO OFICINA ISLA DE PASCUA",
-        "organismo": "SERVICIO DE VIVIENDA Y URBANIZACION V REGION",
-        "estadoAnterior": "Cerrada",
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1038,9 +1058,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057049-336-LE26",
-        "titulo": "BMC ADQ MARCADOR DE TEJIDO MAMARIO",
-        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
+        "codigo": "1224957-55-LE26",
+        "titulo": "MANTENCION DE SISTEMAS DE AIRE ACONDICIONADO EST.",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE NUNOA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1048,9 +1068,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1224957-55-LE26",
-        "titulo": "MANTENCION DE SISTEMAS DE AIRE ACONDICIONADO EST.",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE NUNOA",
+        "codigo": "1057049-336-LE26",
+        "titulo": "BMC ADQ MARCADOR DE TEJIDO MAMARIO",
+        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1541,7 +1561,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 490.2,
+  "tiempoEjecucionSegundos": 1586.2,
   "errores": [],
   "advertencias": []
 }
