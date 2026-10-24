@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-24T08:26:32.733445+00:00",
-  "ultimoIntentoRealizado": "2026-10-24T08:26:32.733445+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-24T13:40:21.387811+00:00",
+  "ultimoIntentoRealizado": "2026-10-24T13:40:21.387811+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1532,
-  "registrosConfirmados": 1532,
+  "registrosEnPlataforma": 1538,
+  "registrosConfirmados": 1538,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1247,
-  "excluidosPrefiltroIrrelevante": 8479,
-  "excluidosSinDatosReales": 45,
+  "registrosConMontoReal": 1245,
+  "excluidosPrefiltroIrrelevante": 8480,
+  "excluidosSinDatosReales": 32,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 805,
-    "conMontoValido": 801,
+    "total": 798,
+    "conMontoValido": 794,
     "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 801,
+      "VALIDADO": 794,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1281617061,
-    "montoFinalSum": 1292453899,
+    "montoOriginalSum": 1278922273,
+    "montoFinalSum": 1289759111,
     "montoRecuperadoSum": 10836838
   },
   "categorias": {
-    "licitaciones": 722,
-    "comprasAgiles": 805,
+    "licitaciones": 737,
+    "comprasAgiles": 798,
     "convenioMarco": 0,
-    "ordenes_compra": 5,
+    "ordenes_compra": 3,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 136,
-    "LE": 408,
-    "L1": 119,
+    "LP": 139,
+    "LE": 420,
+    "L1": 120,
     "CO": 9,
-    "LR": 47,
+    "LR": 46,
     "LS": 3,
     "E2": 4,
-    "O1": 5,
+    "O1": 3,
     "I2": 4,
     "B2": 1,
-    "COT": 796
+    "COT": 789
   },
   "matchPorEmpresa": {
-    "V-MOCCS": 237,
-    "Aminorte": 1295
+    "V-MOCCS": 235,
+    "Aminorte": 1303
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1480,
-    "modificadosCount": 45,
-    "cerradosCount": 1290,
+    "nuevosCount": 1483,
+    "modificadosCount": 48,
+    "cerradosCount": 1287,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -389,15 +389,6 @@
         "fechaCierre": "2026-10-28T15:00:00"
       },
       {
-        "codigo": "885-96-LP26",
-        "titulo": "Renovación de suscripciones Red Hat para la Contraloría General de la República",
-        "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
-        "monto": 230000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-02T16:00:00"
-      },
-      {
         "codigo": "885-98-LP26",
         "titulo": "Adquisición de servidores destinados a la actualización de plataforma de búsqueda e indexación para la Contraloría General de la República",
         "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-12T16:00:00"
+      },
+      {
+        "codigo": "1028897-42-LP26",
+        "titulo": "COMPRA DE EQUIPAMIENTO Y EQUIPOS EE SLEPCA",
+        "organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
+        "monto": 129641000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-29T15:01:00"
       }
     ],
     "modificados": [
@@ -658,16 +658,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4988-32-LP26",
-        "titulo": "ADQUISICIÓN 10 MOTOCICLETAS PARA USO POLICIAL. MUNICIPALIDAD DE CONCEPCIÓN. 2° Llamado",
-        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 100000000,
-        "montoNuevo": 100000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "948354-134-LE26",
         "titulo": "CONTRATACIÓN DEL SERVICIO DE MANTENIMIENTO PREVENTIVO Y CORRECTIVO PARA EQUIPOS KARDEX POR UN PERIODO DE 24 MESES PARA EL HOSPITAL DIPRECA",
         "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
@@ -676,6 +666,16 @@
         "montoAnterior": 77000000,
         "montoNuevo": 77000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1575-14-LE26",
+        "titulo": "MANTENCION DE OFICINAS",
+        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 69541389,
+        "montoNuevo": 69541389,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2020-19-LE26",
@@ -696,6 +696,16 @@
         "montoAnterior": 34000000,
         "montoNuevo": 34000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1380-190-LE26",
+        "titulo": "PPTA 317-26 “ADQUISICIÓN DE IMPRESORA DE CASSETTES”",
+        "organismo": "HOSPITAL DOCTOR HERNAN HENRIQUEZ ARAVENA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 33296000,
+        "montoNuevo": 33296000,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2408-98-LE26",
@@ -788,6 +798,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "721703-43-LE26",
+        "titulo": "Adquisición de 240 audífonos auriculares",
+        "organismo": "AGENCIA DE CALIDAD DE LA EDUCACION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 12000000,
+        "montoNuevo": 12000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2697-42-LE26",
         "titulo": "ADQUISICIÓN DE IMPLEMENTACIÓN DEPORTIVA AÑO 2026",
         "organismo": "I MUNICIPALIDAD DE CARTAGENA",
@@ -868,6 +888,16 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "4469-172-L126",
+        "titulo": "SC 40448 (JRA) - ADQUISICION INDUMENTARIA DEPORTIVA PARA OLIMPIADAS DGVCM UPA 2493",
+        "organismo": "UNIVERSIDAD DE PLAYA ANCHA DE CIENCIAS DE LA EDUCACION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 3403400,
+        "montoNuevo": 3403400,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2961-67-L126",
         "titulo": "CORCHETERA ELECTRICA",
         "organismo": "I MUNICIPALIDAD DE LA GRANJA",
@@ -908,16 +938,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2656-65-LE26",
-        "titulo": "PROVISIÓN INST. CONFIGURACIÓN Y MONTAJE CAMARAS",
-        "organismo": "I MUNICIPALIDAD DE TOME",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2794-20-LE26",
         "titulo": "Instalacion Mobiliario Publico Los Andes",
         "organismo": "MUNICIPALIDAD DE LOS ANDES",
@@ -936,6 +956,16 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2656-65-LE26",
+        "titulo": "PROVISIÓN INST. CONFIGURACIÓN Y MONTAJE CAMARAS",
+        "organismo": "I MUNICIPALIDAD DE TOME",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "624-27-LE26",
@@ -958,6 +988,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "3948-42-LE26",
+        "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO MUSEOGRAFICO",
+        "organismo": "I MUNICIPALIDAD DE NAVIDAD",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "527481-64-LP26",
         "titulo": "ADQUISICION DE LUMINARIAS LED AP",
         "organismo": "ILUSTRE MINICIPALIDAD DE COMBARBALA",
@@ -978,19 +1018,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3948-42-LE26",
-        "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO MUSEOGRAFICO",
-        "organismo": "I MUNICIPALIDAD DE NAVIDAD",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1947-168-LE26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE ARRIENDO DE MONITORES DE SIGNOS VITALES PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RÍO GRS",
-        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
+        "codigo": "1057544-282-LR26",
+        "titulo": "Suministro de reactivos e insumos para la realización de exámenes de patógenos respiratorios por PCR en tiempo real en Hospital las Higueras de Talcahuano",
+        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -998,9 +1028,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057544-282-LR26",
-        "titulo": "Suministro de reactivos e insumos para la realización de exámenes de patógenos respiratorios por PCR en tiempo real en Hospital las Higueras de Talcahuano",
-        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1018,9 +1048,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2981-266-LE26",
-        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "codigo": "2428-70-LP26",
+        "titulo": "SERVICIO DE ARRIENDO DE OFICINA MOVIL -SOCIAL",
+        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1531,7 +1561,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 611.9,
+  "tiempoEjecucionSegundos": 608.2,
   "errores": [],
   "advertencias": []
 }
