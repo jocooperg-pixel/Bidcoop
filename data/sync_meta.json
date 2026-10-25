@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-25T20:02:46.667731+00:00",
-  "ultimoIntentoRealizado": "2026-10-25T20:02:46.667731+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-25T23:38:19.724930+00:00",
+  "ultimoIntentoRealizado": "2026-10-25T23:38:19.724930+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1580,
-  "registrosConfirmados": 1580,
+  "registrosEnPlataforma": 1578,
+  "registrosConfirmados": 1578,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1271,
+  "registrosConMontoReal": 1270,
   "excluidosPrefiltroIrrelevante": 8495,
-  "excluidosSinDatosReales": 0,
+  "excluidosSinDatosReales": 2,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 805,
@@ -21,12 +21,12 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1290423469,
-    "montoFinalSum": 1301260307,
+    "montoOriginalSum": 1299553519,
+    "montoFinalSum": 1310390357,
     "montoRecuperadoSum": 10836838
   },
   "categorias": {
-    "licitaciones": 770,
+    "licitaciones": 768,
     "comprasAgiles": 805,
     "convenioMarco": 0,
     "ordenes_compra": 5,
@@ -34,8 +34,8 @@
   },
   "tiposOficiales": {
     "LP": 146,
-    "LE": 437,
-    "L1": 128,
+    "LE": 436,
+    "L1": 127,
     "CO": 9,
     "LR": 47,
     "LS": 3,
@@ -47,11 +47,11 @@
   },
   "matchPorEmpresa": {
     "V-MOCCS": 236,
-    "Aminorte": 1344
+    "Aminorte": 1342
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1520,
+    "nuevosCount": 1518,
     "modificadosCount": 53,
     "cerradosCount": 1282,
     "nuevos": [
@@ -1008,21 +1008,21 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "3948-42-LE26",
+        "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO MUSEOGRAFICO",
+        "organismo": "I MUNICIPALIDAD DE NAVIDAD",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "552975-72-LP26",
         "titulo": "SUMINISTRO ARTÍCULOS DEPORTIVOS",
         "organismo": "CORP DE DESARROLLO SOCIAL DE PROVIDENCIA",
         "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "624-27-LE26",
-        "titulo": "ADQUISICIÓN DE SERVIDOR PARA GOBIERNO REGIONAL",
-        "organismo": "GOBIERNO REGIONAL IV REGION COQUIMBO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1038,14 +1038,34 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3948-42-LE26",
-        "titulo": "ADQUISICION MOBILIARIO Y EQUIPAMIENTO MUSEOGRAFICO",
-        "organismo": "I MUNICIPALIDAD DE NAVIDAD",
+        "codigo": "624-27-LE26",
+        "titulo": "ADQUISICIÓN DE SERVIDOR PARA GOBIERNO REGIONAL",
+        "organismo": "GOBIERNO REGIONAL IV REGION COQUIMBO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1947-168-LE26",
+        "titulo": "CONTRATACIÓN DEL SERVICIO DE ARRIENDO DE MONITORES DE SIGNOS VITALES PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RÍO GRS",
+        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1339159-28-LE26",
+        "titulo": "DISPOSITIVOS DE IMPRESIÓN PROYECTORES Y TELONES",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA SANTA ROSA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1057544-282-LR26",
@@ -1058,9 +1078,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1339159-28-LE26",
-        "titulo": "DISPOSITIVOS DE IMPRESIÓN PROYECTORES Y TELONES",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA SANTA ROSA",
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1088,19 +1108,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2981-266-LE26",
-        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1947-168-LE26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE ARRIENDO DE MONITORES DE SIGNOS VITALES PARA EL HOSPITAL DE NIÑOS DR. ROBERTO DEL RÍO GRS",
-        "organismo": "SERVICIO DE SALUD NORTE HOSPITAL ROBERTO DEL RIO",
+        "codigo": "1057049-336-LE26",
+        "titulo": "BMC ADQ MARCADOR DE TEJIDO MAMARIO",
+        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1111,16 +1121,6 @@
         "codigo": "1224957-55-LE26",
         "titulo": "MANTENCION DE SISTEMAS DE AIRE ACONDICIONADO EST.",
         "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE NUNOA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057049-336-LE26",
-        "titulo": "BMC ADQ MARCADOR DE TEJIDO MAMARIO",
-        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -1611,7 +1611,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1016.0,
+  "tiempoEjecucionSegundos": 1044.7,
   "errores": [],
   "advertencias": []
 }
