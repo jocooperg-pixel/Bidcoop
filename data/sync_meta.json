@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-28T02:42:33.258537+00:00",
-  "ultimoIntentoRealizado": "2026-10-28T02:42:33.258537+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-28T10:04:35.376981+00:00",
+  "ultimoIntentoRealizado": "2026-10-28T10:04:35.376981+00:00",
   "exitosa": true,
   "registrosEnPlataforma": 1504,
   "registrosConfirmados": 1504,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1222,
+  "registrosConMontoReal": 1224,
   "excluidosPrefiltroIrrelevante": 7734,
-  "excluidosSinDatosReales": 36,
+  "excluidosSinDatosReales": 39,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 799,
-    "conMontoValido": 794,
+    "total": 802,
+    "conMontoValido": 797,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 794,
+      "VALIDADO": 797,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 1095667765,
-    "montoFinalSum": 1288417028,
-    "montoRecuperadoSum": 192749263
+    "montoOriginalSum": 1287387097,
+    "montoFinalSum": 1295432746,
+    "montoRecuperadoSum": 8045649
   },
   "categorias": {
-    "licitaciones": 701,
-    "comprasAgiles": 799,
+    "licitaciones": 699,
+    "comprasAgiles": 802,
     "convenioMarco": 0,
-    "ordenes_compra": 4,
+    "ordenes_compra": 3,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 121,
-    "LE": 408,
+    "LP": 124,
+    "LE": 410,
     "CO": 9,
-    "LR": 49,
-    "L1": 112,
+    "LR": 46,
+    "L1": 109,
     "LS": 3,
     "B2": 2,
-    "O1": 4,
-    "I2": 4,
+    "O1": 3,
+    "I2": 3,
     "E2": 2,
-    "COT": 790
+    "COT": 793
   },
   "matchPorEmpresa": {
-    "V-MOCCS": 235,
-    "Aminorte": 1269
+    "V-MOCCS": 233,
+    "Aminorte": 1271
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1458,
-    "modificadosCount": 40,
-    "cerradosCount": 1296,
+    "nuevosCount": 1459,
+    "modificadosCount": 39,
+    "cerradosCount": 1297,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -83,22 +83,13 @@
         "fechaCierre": "2026-10-23T16:00:00"
       },
       {
-        "codigo": "2403-73-LR26",
-        "titulo": "Servicios de conectividad telecomunicaciones operación de infraestructura y gestión de ciberseguridad.",
-        "organismo": "I MUNICIPALIDAD DE PENALOLEN",
-        "monto": 1910656000,
+        "codigo": "621-890-LR26",
+        "titulo": "VALSARTAN 160 MG CPCM REC 1000023100",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 1530290097,
         "empresaMatch": "Aminorte",
         "matchScore": 60,
-        "fechaCierre": "2026-10-30T12:00:00"
-      },
-      {
-        "codigo": "1658-257-LR26",
-        "titulo": "P.324-2026 SERVICIO DE ASEO PARA INMUEBLES DE USO DE LA MUNICIPALIDAD DE TEMUCO",
-        "organismo": "I MUNICIPALIDAD DE TEMUCO",
-        "monto": 1442441500,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-16T15:30:00"
+        "fechaCierre": "2026-10-27T16:00:00"
       },
       {
         "codigo": "633-64-LR26",
@@ -164,15 +155,6 @@
         "fechaCierre": "2026-11-19T15:30:00"
       },
       {
-        "codigo": "1057509-303-LR26",
-        "titulo": "CONVENIO PROVEEDURÍA DE AUDÍFONOS Y EQUIPAMIENTO ASOCIADO EN COMODATO fgh",
-        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
-        "monto": 611374400,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-30T18:00:00"
-      },
-      {
         "codigo": "621-1000-LR26",
         "titulo": "CETIRIZINA 10 MG CPCMCM REC. 1000022982",
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
@@ -227,15 +209,6 @@
         "fechaCierre": "2026-11-26T16:00:00"
       },
       {
-        "codigo": "5184-117-LR26",
-        "titulo": "RENOVACIÓN INFRAESTRUCTURA TECNOLÓGICA-SERVIDORES",
-        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE LINARES",
-        "monto": 400000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-23T15:30:00"
-      },
-      {
         "codigo": "621-908-LR26",
         "titulo": "SILLA RUED NEUR ADT RECL-BASC AS VARIOS CM 1000023259",
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
@@ -261,6 +234,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-09T15:00:00"
+      },
+      {
+        "codigo": "2307-47-LP26",
+        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "I MUNICIPALIDAD DE OSORNO",
+        "monto": 356274415,
+        "empresaMatch": "Aminorte",
+        "matchScore": 90,
+        "fechaCierre": "2026-11-12T15:15:00"
       },
       {
         "codigo": "1057503-150-LP26",
@@ -434,6 +416,15 @@
         "fechaCierre": "2026-11-02T15:01:00"
       },
       {
+        "codigo": "1469-294-LP26",
+        "titulo": "FOTOCOPIADO IMPRESIÓN Y SERVICIOS COMPLEMENTARIOS",
+        "organismo": "UNIVERSIDAD DE TALCA",
+        "monto": 200000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-09T15:01:00"
+      },
+      {
         "codigo": "886954-322-LP26",
         "titulo": "CONVENIO SUMINISTRO CLIP DE ANEURISMA TIPO YASARGIL Y DE BAJO PERFIL EN CONSIGNACIÓN",
         "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
@@ -506,6 +497,15 @@
         "fechaCierre": "2026-09-03T09:00:00"
       },
       {
+        "codigo": "712307-81-LP26",
+        "titulo": "Monitorización del Puente Treng Treng Kay Kay",
+        "organismo": "SERVICIO DE VIVIENDA Y URBANIZACION IX REGION",
+        "monto": 145000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-27T10:00:00"
+      },
+      {
         "codigo": "1657-20-LP26",
         "titulo": "SERVICIO DE DISEÑO CONFECCIÓN RESTAURACION YO REPARACIÓN DE INFRAESTRUCTURA EN OFICINA CENTRAL Y OFICINAS COMUNALES DE LA PROVINCIA DE ELQUI LIMARI Y CHOAPA DE LA SEREMI DE SALUD REGION DE COQUIMBO",
         "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
@@ -522,15 +522,6 @@
         "empresaMatch": "V-MOCCS",
         "matchScore": 60,
         "fechaCierre": "2026-11-09T16:21:00"
-      },
-      {
-        "codigo": "1057937-12-LP26",
-        "titulo": "COMPRA 4 MICROTOMO SEMIAUTOMATICO 1 IMPRESORA DE LAMINAS Y 1 IMPRESORA DE CASSETTES ",
-        "organismo": "SERVICIO DE SALUD VALDIVIA HOSPITAL BASE",
-        "monto": 135636000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-09-04T19:00:00"
       },
       {
         "codigo": "1436733-29-LP26",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-23T10:00:00"
+      },
+      {
+        "codigo": "2981-302-LP26",
+        "titulo": "JENAMTE-ADQUISICIÓN A LO MENOS 50 NOTEBOOK",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "monto": 114898443,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-16T15:00:00"
       }
     ],
     "modificados": [
@@ -605,16 +605,6 @@
         "estadoNuevo": "Cerrada",
         "montoAnterior": 954017064,
         "montoNuevo": 954017064,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057489-237-I226",
-        "titulo": "Servicio de Arriendo de Infraestructura Data Center y Servidores para el HDS",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 464171400,
-        "montoNuevo": 464171400,
         "empresaMatch": "Aminorte"
       },
       {
@@ -635,16 +625,6 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 177000000,
         "montoNuevo": 177000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2963-33-LP26",
-        "titulo": "MANTENCIÓN DE PISCINA Y CLIMATIZACIÓN POZOS",
-        "organismo": "I MUNICIPALIDAD DE LA GRANJA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 172640000,
-        "montoNuevo": 172640000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -716,16 +696,6 @@
         "montoAnterior": 72000000,
         "montoNuevo": 72000000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1415861-11-LE26",
-        "titulo": "SERVICIO DE SEGUROS GENERALES PARA BIENES MUEBLES INMUEBLE Y VEHÍCULO INSTITUCIONAL NIVEL CENTRAL Y RED DE SUCURSALES REGIONALES",
-        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 34000000,
-        "montoNuevo": 34000000,
-        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "2408-98-LE26",
@@ -888,6 +858,26 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "605-18-LE26",
+        "titulo": "SERVICIOS DE MONITOREO DE PRENSA Y COBERTURA NOTIC",
+        "organismo": "Consejo de Defensa del Estado",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 435,
+        "montoNuevo": 435,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1417913-108-LE26",
+        "titulo": "ADQUISICION DE MOBILIARIO A MEDIDA PARA DISTINTAS UNIDADES DE ATENCIÓN PRIMARIA DE SALUD DE CORMUDESI",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE IQUIQUE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2667-90-LE26",
         "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
         "organismo": "I MUNICIPALIDAD DE VITACURA",
@@ -908,16 +898,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1514-104-LP26",
-        "titulo": "Convenio de suministro de insumos para terapia de presión negativa en heridas terapia de presión negativa sobre incisiones cerradas y terapia de presión negativa con instilación",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1057490-61-LP26",
         "titulo": "MONITOREO INTRAOPERATORIO ELECTIVO Y DE URGENCIA",
         "organismo": "Instituto de Neurocirugía",
@@ -928,9 +908,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2080-284-LP26",
-        "titulo": "SUM. NEUROMONITORIZACIÓN Y MANEJO DE PRESIÓN HDFRZ",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "codigo": "2723-66-LE26",
+        "titulo": "Adquisición E Instalación De Containers Oficina Modular Nuevo Con Baño Simple Y Containers Sanitarios Modular Nuevos Para Dependencias Del Aparcadero Municipal Comuna De Buin Segundo Llamado",
+        "organismo": "I MUNICIPALIDAD DE BUIN",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -938,9 +918,19 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2723-66-LE26",
-        "titulo": "Adquisición E Instalación De Containers Oficina Modular Nuevo Con Baño Simple Y Containers Sanitarios Modular Nuevos Para Dependencias Del Aparcadero Municipal Comuna De Buin Segundo Llamado",
-        "organismo": "I MUNICIPALIDAD DE BUIN",
+        "codigo": "1514-104-LP26",
+        "titulo": "Convenio de suministro de insumos para terapia de presión negativa en heridas terapia de presión negativa sobre incisiones cerradas y terapia de presión negativa con instilación",
+        "organismo": "SERVICIO DE SALUD CHILOE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2080-284-LP26",
+        "titulo": "SUM. NEUROMONITORIZACIÓN Y MANEJO DE PRESIÓN HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -968,14 +958,14 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2788-48-LE26",
-        "titulo": "CONCESIÓN DEL SERVICIO DE RETIRO TRASLADO BODEGAJE Y APARCADERO DE VEHÍCULOS Y OTROS BIENES MUEBLES RETIRADOS DE LA VÍA PÚBLICA DE LA COMUNA DE PAINE",
-        "organismo": "I MUNICIPALIDAD DE PAINE",
+        "codigo": "2656-65-LE26",
+        "titulo": "PROVISIÓN INST. CONFIGURACIÓN Y MONTAJE CAMARAS",
+        "organismo": "I MUNICIPALIDAD DE TOME",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2794-20-LE26",
@@ -988,14 +978,14 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2656-65-LE26",
-        "titulo": "PROVISIÓN INST. CONFIGURACIÓN Y MONTAJE CAMARAS",
-        "organismo": "I MUNICIPALIDAD DE TOME",
+        "codigo": "2788-48-LE26",
+        "titulo": "CONCESIÓN DEL SERVICIO DE RETIRO TRASLADO BODEGAJE Y APARCADERO DE VEHÍCULOS Y OTROS BIENES MUEBLES RETIRADOS DE LA VÍA PÚBLICA DE LA COMUNA DE PAINE",
+        "organismo": "I MUNICIPALIDAD DE PAINE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
+        "empresaMatch": "V-MOCCS"
       }
     ],
     "cerrados": [
@@ -1109,6 +1099,14 @@
         "organismo": "I MUNICIPALIDAD DE ANTOFAGASTA",
         "estadoAnterior": "Publicada",
         "monto": 491000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057489-237-I226",
+        "titulo": "Servicio de Arriendo de Infraestructura Data Center y Servidores para el HDS",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "estadoAnterior": "Cerrada",
+        "monto": 464171400,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1336,6 +1334,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2963-33-LP26",
+        "titulo": "MANTENCIÓN DE PISCINA Y CLIMATIZACIÓN POZOS",
+        "organismo": "I MUNICIPALIDAD DE LA GRANJA",
+        "estadoAnterior": "Publicada",
+        "monto": 172640000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "813-111-LP26",
         "titulo": "PP 107 SISTEMAS DE CÁMARAS Y CONTROL DE ACCESO",
         "organismo": "INSTITUTO DE SALUD PUBLICA DE CHILE",
@@ -1462,26 +1468,10 @@
         "estadoAnterior": "Publicada",
         "monto": 127731093,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "539119-80-LP26",
-        "titulo": "CONTRATACIÓN DE SERVICIOS DE EMERGENCIAS SANITARIAS REPARACIÓN YO REPOSICIÓN DE REDES DE ALCANTARILLADO AGUA POTABLE Y REDES DE GAS EN INMUEBLES UBICADOS EN LA REGIÓN METROPOLITANA DEPENDIENTE DE LA DIRECCIÓN DE BIENESTAR DE CARABINEROS",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
-        "monto": 120000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "696961-4-LP26",
-        "titulo": "HABILITACIÓN DE OFICINAS PROYECTO CENTRALIZADO",
-        "organismo": "MINISTERIO PUBLICO",
-        "estadoAnterior": "Publicada",
-        "monto": 120000000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1514.7,
+  "tiempoEjecucionSegundos": 1012.1,
   "errores": [],
   "advertencias": []
 }
