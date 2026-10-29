@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-10-29T01:21:26.071456+00:00",
-  "ultimoIntentoRealizado": "2026-10-29T01:21:26.071456+00:00",
+  "ultimaSincronizacionExitosa": "2026-10-29T07:42:26.883087+00:00",
+  "ultimoIntentoRealizado": "2026-10-29T07:42:26.883087+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1527,
-  "registrosConfirmados": 1527,
+  "registrosEnPlataforma": 1487,
+  "registrosConfirmados": 1487,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1229,
+  "registrosConMontoReal": 1202,
   "excluidosPrefiltroIrrelevante": 7817,
-  "excluidosSinDatosReales": 5,
+  "excluidosSinDatosReales": 45,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 781,
@@ -21,23 +21,23 @@
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 941393336,
+    "montoOriginalSum": 1182701541,
     "montoFinalSum": 1183526155,
-    "montoRecuperadoSum": 242132819
+    "montoRecuperadoSum": 824614
   },
   "categorias": {
-    "licitaciones": 742,
+    "licitaciones": 702,
     "comprasAgiles": 781,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 432,
-    "LP": 124,
+    "LE": 405,
+    "LP": 120,
     "CO": 8,
-    "LR": 52,
-    "L1": 123,
+    "LR": 50,
+    "L1": 116,
     "LS": 3,
     "E2": 4,
     "B2": 1,
@@ -46,14 +46,14 @@
     "COT": 773
   },
   "matchPorEmpresa": {
-    "Aminorte": 1299,
-    "V-MOCCS": 228
+    "Aminorte": 1268,
+    "V-MOCCS": 219
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1484,
-    "modificadosCount": 39,
-    "cerradosCount": 1299,
+    "nuevosCount": 1446,
+    "modificadosCount": 37,
+    "cerradosCount": 1301,
     "nuevos": [
       {
         "codigo": "621-884-LR26",
@@ -254,15 +254,6 @@
         "fechaCierre": "2026-10-30T16:00:00"
       },
       {
-        "codigo": "2345-159-LR26",
-        "titulo": "Arriendo de Oficinas Modulares para el Proceso de Renovación de Permisos de Circulación para los años 2027-2029",
-        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
-        "monto": 381000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-26T15:01:00"
-      },
-      {
         "codigo": "1110404-227-LR26",
         "titulo": "ARRIENDO DE EQUIPOS DE IMPRESIÓN Y FOTOCOPIADO CON SERVICIOS ASOCIADOS PARA ESTABLECIMIENTOS EDUCACIONALES DEL SLEP CHINCHORRO SUBVENCIÓN SEP Y GENERAL",
         "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
@@ -369,15 +360,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-02T16:00:00"
-      },
-      {
-        "codigo": "885-98-LP26",
-        "titulo": "Adquisición de servidores destinados a la actualización de plataforma de búsqueda e indexación para la Contraloría General de la República",
-        "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
-        "monto": 220000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-11T16:00:00"
       },
       {
         "codigo": "885-108-LP26",
@@ -594,6 +576,24 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-14T11:00:00"
+      },
+      {
+        "codigo": "4031-17-LP26",
+        "titulo": "SISTEMA DE CAMARAS DE TELEVIGILANCIA COMUNA CAMIÑA",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE CAMINA",
+        "monto": 122000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-30T15:00:00"
+      },
+      {
+        "codigo": "1574-38-LP26",
+        "titulo": "SCHEE - CONTRATO SUMINISTRO MANTENCION J.I. Y OFICINAS PROVINCIA DE LIMARI",
+        "organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
+        "monto": 120000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-04T18:00:00"
       }
     ],
     "modificados": [
@@ -798,26 +798,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2697-47-LE26",
-        "titulo": "ADQ. CAMARAS CORPORALES BODYCAM PROYECTO...",
-        "organismo": "I MUNICIPALIDAD DE CARTAGENA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 13377636,
-        "montoNuevo": 13377636,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1301883-24-LE26",
-        "titulo": "SERVICIO DE MONITOREO DE INFORMACIONES",
-        "organismo": "SERVICIO NACIONAL DE REINSERCION SOCIAL JUVENIL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 13000000,
-        "montoNuevo": 13000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "450-15-LE26",
         "titulo": "ADQUISICION E INSTALACION DE SISTEMA DE CAMARAS DE TELEVIGILANCIA PROYECTO RIO NEGRO MAS SEGURO 2025",
         "organismo": "I MUNICIPALIDAD DE RIO NEGRO",
@@ -898,20 +878,20 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2667-90-LE26",
-        "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
-        "organismo": "I MUNICIPALIDAD DE VITACURA",
-        "estadoAnterior": "Publicada",
+        "codigo": "1417913-108-LE26",
+        "titulo": "ADQUISICION DE MOBILIARIO A MEDIDA PARA DISTINTAS UNIDADES DE ATENCIÓN PRIMARIA DE SALUD DE CORMUDESI",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE IQUIQUE",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1417913-108-LE26",
-        "titulo": "ADQUISICION DE MOBILIARIO A MEDIDA PARA DISTINTAS UNIDADES DE ATENCIÓN PRIMARIA DE SALUD DE CORMUDESI",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE IQUIQUE",
-        "estadoAnterior": "Cerrada",
+        "codigo": "2667-90-LE26",
+        "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
+        "organismo": "I MUNICIPALIDAD DE VITACURA",
+        "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -938,6 +918,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2080-284-LP26",
+        "titulo": "SUM. NEUROMONITORIZACIÓN Y MANEJO DE PRESIÓN HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2723-66-LE26",
         "titulo": "Adquisición E Instalación De Containers Oficina Modular Nuevo Con Baño Simple Y Containers Sanitarios Modular Nuevos Para Dependencias Del Aparcadero Municipal Comuna De Buin Segundo Llamado",
         "organismo": "I MUNICIPALIDAD DE BUIN",
@@ -952,16 +942,6 @@
         "titulo": "MONITOREO INTRAOPERATORIO ELECTIVO Y DE URGENCIA",
         "organismo": "Instituto de Neurocirugía",
         "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2080-284-LP26",
-        "titulo": "SUM. NEUROMONITORIZACIÓN Y MANEJO DE PRESIÓN HDFRZ",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
-        "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1471,7 +1451,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1506.0,
+  "tiempoEjecucionSegundos": 1044.3,
   "errores": [],
   "advertencias": []
 }
