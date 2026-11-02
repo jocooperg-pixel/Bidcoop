@@ -1,57 +1,57 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-01T21:24:18.567681+00:00",
-  "ultimoIntentoRealizado": "2026-11-01T21:24:18.567681+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-02T01:04:17.770867+00:00",
+  "ultimoIntentoRealizado": "2026-11-02T01:04:17.770867+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1538,
-  "registrosConfirmados": 1538,
+  "registrosEnPlataforma": 1569,
+  "registrosConfirmados": 1569,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1269,
+  "registrosConMontoReal": 1292,
   "excluidosPrefiltroIrrelevante": 7695,
-  "excluidosSinDatosReales": 50,
+  "excluidosSinDatosReales": 15,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 848,
-    "conMontoValido": 845,
-    "pctValidado": 99.6,
+    "total": 845,
+    "conMontoValido": 841,
+    "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 845,
+      "VALIDADO": 841,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 3
+      "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1355325026,
-    "montoFinalSum": 1355325026,
+    "montoOriginalSum": 1344530026,
+    "montoFinalSum": 1344530026,
     "montoRecuperadoSum": 0
   },
   "categorias": {
-    "licitaciones": 686,
-    "comprasAgiles": 848,
+    "licitaciones": 720,
+    "comprasAgiles": 845,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 387,
-    "LP": 116,
-    "LR": 54,
-    "L1": 123,
-    "CO": 9,
+    "LE": 412,
+    "LP": 119,
+    "LR": 55,
+    "L1": 127,
+    "CO": 10,
     "LS": 3,
+    "E2": 2,
     "B2": 1,
     "O1": 4,
     "I2": 1,
-    "E2": 1,
-    "COT": 839
+    "COT": 835
   },
   "matchPorEmpresa": {
-    "Aminorte": 1325,
-    "V-MOCCS": 213
+    "Aminorte": 1350,
+    "V-MOCCS": 219
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1500,
+    "nuevosCount": 1531,
     "modificadosCount": 34,
     "cerradosCount": 1304,
     "nuevos": [
@@ -128,6 +128,15 @@
         "fechaCierre": "2026-11-16T16:00:00"
       },
       {
+        "codigo": "2080-254-LR26",
+        "titulo": "SUMINISTRO DE AUDIFONOS DE PATOLOGIA GES",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "monto": 882551600,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-19T16:00:00"
+      },
+      {
         "codigo": "948356-109-LR26",
         "titulo": "Adquisición de Reactivos de Biología Molecular por PCR Múltiple con Equipo en Comodato por Sistema de Suministro para el Hospital de la Dirección de Previsión de Carabineros de Chile.",
         "organismo": "FONDO HOSPITAL DE LA DIRECCION DE PREVISION DE CARABINEROS DE CHILE",
@@ -162,6 +171,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-19T15:30:00"
+      },
+      {
+        "codigo": "1057509-303-LR26",
+        "titulo": "CONVENIO PROVEEDURÍA DE AUDÍFONOS Y EQUIPAMIENTO ASOCIADO EN COMODATO fgh",
+        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
+        "monto": 611374400,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-06T09:00:00"
       },
       {
         "codigo": "621-1000-LR26",
@@ -207,15 +225,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-23T15:01:00"
-      },
-      {
-        "codigo": "1477-14-LR26",
-        "titulo": "Arriendo multifuncionales CAJMETRO",
-        "organismo": "Corporación de Asistencia Judicial RM",
-        "monto": 420000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-27T16:30:00"
       },
       {
         "codigo": "621-993-LR26",
@@ -378,6 +387,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-17T16:00:00"
+      },
+      {
+        "codigo": "1057417-196-LP26",
+        "titulo": "CONVENIO PROVISIÓN E INSTALACIÓN DE VIDRIOS Y MANTENCIÓN DE PUERTAS Y MAMPARAS",
+        "organismo": "COMPLEJO ASISTENCIAL DR.VICTOR RIOS RUIZ",
+        "monto": 216000000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-02T17:00:00"
       },
       {
         "codigo": "1658-237-LP26",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-04T18:00:00"
-      },
-      {
-        "codigo": "5586-152-LP26",
-        "titulo": "PROVISIÓN DE SERVIDORES Y STORAGE PARA SERVICIOS LMS Y VIRTUALIZACIÓN EN PROXMOX",
-        "organismo": "UNIVERSIDAD DE LA FRONTERA",
-        "monto": 118000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-23T10:00:00"
-      },
-      {
-        "codigo": "2981-302-LP26",
-        "titulo": "JENAMTE-ADQUISICIÓN A LO MENOS 50 NOTEBOOK",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "monto": 114898443,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-16T15:00:00"
       }
     ],
     "modificados": [
@@ -656,6 +656,16 @@
         "montoAnterior": 130000000,
         "montoNuevo": 130000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "5413-72-LP26",
+        "titulo": "Cámaras digitales y lentes de cámara. Proyecto RED",
+        "organismo": "UNIVERSIDAD DE LOS LAGOS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 98588644,
+        "montoNuevo": 98588644,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1431841-56-LP26",
@@ -868,21 +878,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1208100-8-LP26",
-        "titulo": "SERVICIO DE TRANSPORTE Y TRASLADO DE PASAJEROS PARA LA UNIDAD DE EVALUACIÓN FORMATIVA PARA LA ADOPCIÓN Y EL ACOGIMIENTO UEFAA Y RESIDENCIA FAMILIAR DE ADOLESCENTES DE MACHALÍ ",
-        "organismo": "SERVICIO NACIONAL DE PROTECCIÓN ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCI",
+        "codigo": "2173-28-LR26",
+        "titulo": "MANTENCIÓN DE EQUIPOS DE AIRE ACONDICIONADO",
+        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "632-9-LE26",
-        "titulo": "SERVICIO DE GUARDIA DE SEGURIDAD PARA RECEPCIÓN",
-        "organismo": "SUBSECRETARIA DEL MINISTERIO DE LA VIVIENDA Y URBANISMO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -898,20 +898,10 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2173-28-LR26",
-        "titulo": "MANTENCIÓN DE EQUIPOS DE AIRE ACONDICIONADO",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "codigo": "632-9-LE26",
+        "titulo": "SERVICIO DE GUARDIA DE SEGURIDAD PARA RECEPCIÓN",
+        "organismo": "SUBSECRETARIA DEL MINISTERIO DE LA VIVIENDA Y URBANISMO",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1417913-108-LE26",
-        "titulo": "ADQUISICION DE MOBILIARIO A MEDIDA PARA DISTINTAS UNIDADES DE ATENCIÓN PRIMARIA DE SALUD DE CORMUDESI",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE IQUIQUE",
-        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -922,6 +912,16 @@
         "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
         "organismo": "I MUNICIPALIDAD DE VITACURA",
         "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1417913-108-LE26",
+        "titulo": "ADQUISICION DE MOBILIARIO A MEDIDA PARA DISTINTAS UNIDADES DE ATENCIÓN PRIMARIA DE SALUD DE CORMUDESI",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE IQUIQUE",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1421,7 +1421,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 909.2,
+  "tiempoEjecucionSegundos": 634.5,
   "errores": [],
   "advertencias": []
 }
