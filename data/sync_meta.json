@@ -1,60 +1,69 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-03T08:41:54.602725+00:00",
-  "ultimoIntentoRealizado": "2026-11-03T08:41:54.602725+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-03T17:23:50.272700+00:00",
+  "ultimoIntentoRealizado": "2026-11-03T17:23:50.272700+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1498,
-  "registrosConfirmados": 1498,
+  "registrosEnPlataforma": 1600,
+  "registrosConfirmados": 1600,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1223,
-  "excluidosPrefiltroIrrelevante": 7813,
-  "excluidosSinDatosReales": 25,
+  "registrosConMontoReal": 1305,
+  "excluidosPrefiltroIrrelevante": 8207,
+  "excluidosSinDatosReales": 22,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 778,
-    "conMontoValido": 775,
-    "pctValidado": 99.6,
+    "total": 843,
+    "conMontoValido": 839,
+    "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 775,
+      "VALIDADO": 839,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 3
+      "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1121667261,
-    "montoFinalSum": 1329835806,
-    "montoRecuperadoSum": 208168545
+    "montoOriginalSum": 857270181,
+    "montoFinalSum": 1383335813,
+    "montoRecuperadoSum": 526065632
   },
   "categorias": {
-    "licitaciones": 716,
-    "comprasAgiles": 778,
+    "licitaciones": 753,
+    "comprasAgiles": 843,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 406,
-    "LP": 119,
-    "LR": 55,
-    "L1": 129,
-    "CO": 11,
+    "LE": 426,
+    "LP": 126,
+    "CO": 13,
+    "LR": 56,
+    "L1": 137,
+    "B2": 2,
     "LS": 3,
     "E2": 2,
-    "B2": 1,
     "O1": 4,
     "I2": 1,
-    "COT": 767
+    "COT": 830
   },
   "matchPorEmpresa": {
-    "Aminorte": 1288,
-    "V-MOCCS": 210
+    "Aminorte": 1372,
+    "V-MOCCS": 228
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1461,
-    "modificadosCount": 33,
-    "cerradosCount": 1305,
+    "nuevosCount": 1562,
+    "modificadosCount": 34,
+    "cerradosCount": 1304,
     "nuevos": [
+      {
+        "codigo": "1057499-22-LR26",
+        "titulo": "COMPRA CONJUNTA SERVICIOS DE ARRIENDO DE IMPRESORA",
+        "organismo": "SERVICIO DE SALUD SUR UNIDAD HOSPITALARI",
+        "monto": 3271978920,
+        "empresaMatch": "Aminorte",
+        "matchScore": 98,
+        "fechaCierre": "2026-08-05T09:00:00"
+      },
       {
         "codigo": "621-884-LR26",
         "titulo": "TRAMADOL 50 MG CPCM REC 100001465",
@@ -461,15 +470,6 @@
         "fechaCierre": "2026-11-24T17:00:00"
       },
       {
-        "codigo": "3765-37-LP26",
-        "titulo": "CONVENIO PARA EL SERVICIO DE MANTENIMIENTO PREVENTIVO Y CORRECTIVO DEL SISTEMA DE CLIMATIZACIÓN HLOR",
-        "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE C",
-        "monto": 180000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-03T15:30:00"
-      },
-      {
         "codigo": "387-58-LP26",
         "titulo": "CONSTRUCCIÓN CENTRAL DE CÁMARAS DE TELEVIGILANCIA",
         "organismo": "I MUNICIPALIDAD DE LOS MUERMOS",
@@ -569,6 +569,15 @@
         "fechaCierre": "2026-11-09T17:00:00"
       },
       {
+        "codigo": "2308-98-LP26",
+        "titulo": "CONSTRUCCIÓN INSTALACIÓN E IMPLEMENTACIÓN DE CÁMARAS DE TELEVIGILANCIA EN PARQUES PÚBLICOS",
+        "organismo": "I MUNICIPALIDAD DE OSORNO",
+        "monto": 129063735,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-12-04T10:00:00"
+      },
+      {
         "codigo": "4031-17-LP26",
         "titulo": "SISTEMA DE CAMARAS DE TELEVIGILANCIA COMUNA CAMIÑA",
         "organismo": "ILUSTRE MUNICIPALIDAD DE CAMINA",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-04T18:00:00"
-      },
-      {
-        "codigo": "5586-152-LP26",
-        "titulo": "PROVISIÓN DE SERVIDORES Y STORAGE PARA SERVICIOS LMS Y VIRTUALIZACIÓN EN PROXMOX",
-        "organismo": "UNIVERSIDAD DE LA FRONTERA",
-        "monto": 118000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-23T10:00:00"
       }
     ],
     "modificados": [
@@ -625,6 +625,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 320000000,
         "montoNuevo": 320000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "528208-40-LP26",
+        "titulo": "SUMINISTROS DE PINTURA Y SERVICIOS DE EQUIPAMIENTO MULTICANCHAS EN VARIAS UNIDADES VECINALES COMUNA DE CERRO NAVIA",
+        "organismo": "I.MUNICIPALIDAD DE CERRO NAVIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 300000000,
+        "montoNuevo": 300000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -848,21 +858,21 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "3756-46-LE26",
-        "titulo": "PROYECTO DE INSTALACIÓN DE PÓRTICOS LECTURAS DE PATENTE Y CÁMARAS DE VIGILANCIA Y EQUIPAMIENTOS DEPARTAMENTO DE SEGURIDAD PÚBLICA 2026",
-        "organismo": "I MUNICIPALIDAD DE PELARCO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "29-63-LP26",
         "titulo": "GTM  57-2026 SISTEMAS DE CLIMATIZACIÓN.",
         "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3756-46-LE26",
+        "titulo": "PROYECTO DE INSTALACIÓN DE PÓRTICOS LECTURAS DE PATENTE Y CÁMARAS DE VIGILANCIA Y EQUIPAMIENTOS DEPARTAMENTO DE SEGURIDAD PÚBLICA 2026",
+        "organismo": "I MUNICIPALIDAD DE PELARCO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -908,21 +918,21 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2173-28-LR26",
-        "titulo": "MANTENCIÓN DE EQUIPOS DE AIRE ACONDICIONADO",
-        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "632-9-LE26",
         "titulo": "SERVICIO DE GUARDIA DE SEGURIDAD PARA RECEPCIÓN",
         "organismo": "SUBSECRETARIA DEL MINISTERIO DE LA VIVIENDA Y URBANISMO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2173-28-LR26",
+        "titulo": "MANTENCIÓN DE EQUIPOS DE AIRE ACONDICIONADO",
+        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1127,14 +1137,6 @@
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
         "estadoAnterior": "Publicada",
         "monto": 302696873,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "528208-40-LP26",
-        "titulo": "SUMINISTROS DE PINTURA Y SERVICIOS DE EQUIPAMIENTO MULTICANCHAS EN VARIAS UNIDADES VECINALES COMUNA DE CERRO NAVIA",
-        "organismo": "I.MUNICIPALIDAD DE CERRO NAVIA",
-        "estadoAnterior": "Publicada",
-        "monto": 300000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1408,10 +1410,18 @@
         "estadoAnterior": "Publicada",
         "monto": 120000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "696961-4-LP26",
+        "titulo": "HABILITACIÓN DE OFICINAS PROYECTO CENTRALIZADO",
+        "organismo": "MINISTERIO PUBLICO",
+        "estadoAnterior": "Publicada",
+        "monto": 120000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1503.3,
+  "tiempoEjecucionSegundos": 1544.7,
   "errores": [],
   "advertencias": []
 }
