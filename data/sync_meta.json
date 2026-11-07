@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-06T23:50:38.132045+00:00",
-  "ultimoIntentoRealizado": "2026-11-06T23:50:38.132045+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-07T03:22:48.609631+00:00",
+  "ultimoIntentoRealizado": "2026-11-07T03:22:48.609631+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1533,
-  "registrosConfirmados": 1533,
+  "registrosEnPlataforma": 1531,
+  "registrosConfirmados": 1531,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1230,
-  "excluidosPrefiltroIrrelevante": 7999,
-  "excluidosSinDatosReales": 33,
+  "registrosConMontoReal": 1225,
+  "excluidosPrefiltroIrrelevante": 8006,
+  "excluidosSinDatosReales": 35,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 801,
@@ -26,18 +26,18 @@
     "montoRecuperadoSum": 1034304258
   },
   "categorias": {
-    "licitaciones": 727,
+    "licitaciones": 725,
     "comprasAgiles": 801,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 416,
-    "LP": 127,
+    "LE": 420,
+    "LP": 124,
     "CO": 8,
-    "LR": 49,
-    "L1": 127,
+    "LR": 50,
+    "L1": 123,
     "B2": 2,
     "LS": 3,
     "O1": 5,
@@ -46,12 +46,12 @@
     "COT": 793
   },
   "matchPorEmpresa": {
-    "Aminorte": 1293,
-    "V-MOCCS": 240
+    "Aminorte": 1285,
+    "V-MOCCS": 246
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1506,
+    "nuevosCount": 1504,
     "modificadosCount": 23,
     "cerradosCount": 1315,
     "nuevos": [
@@ -83,6 +83,15 @@
         "fechaCierre": "2026-11-23T16:00:00"
       },
       {
+        "codigo": "1561228-3-LR26",
+        "titulo": "SUMINISTRO ARTÍCULOS ESCOLARES Y DE OFICINA SLEP",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA ANTOFAGASTA",
+        "monto": 1700000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-04T15:01:00"
+      },
+      {
         "codigo": "1658-257-LR26",
         "titulo": "P.324-2026 SERVICIO DE ASEO PARA INMUEBLES DE USO DE LA MUNICIPALIDAD DE TEMUCO",
         "organismo": "I MUNICIPALIDAD DE TEMUCO",
@@ -99,15 +108,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-02T16:00:00"
-      },
-      {
-        "codigo": "621-943-LR26",
-        "titulo": "CLONIXINATO DE LISINA 125 MG CPCM REC 1000023292",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "monto": 1195017139,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-16T16:00:00"
       },
       {
         "codigo": "2080-254-LR26",
@@ -748,16 +748,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2080-283-LE26",
-        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2258-163-LE26",
         "titulo": "ADQUISICIÓN REFRIGERADOR PARA DISTINTAS UNIDADES DEL HRA",
         "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL L",
@@ -771,6 +761,16 @@
         "codigo": "2667-90-LE26",
         "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
         "organismo": "I MUNICIPALIDAD DE VITACURA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2080-283-LE26",
+        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -798,11 +798,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2428-62-LE26",
-        "titulo": "EQUIPAMIENTO DEPORTIVO - DEPTO DE DEPORTE",
-        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
+        "codigo": "29-63-LP26",
+        "titulo": "GTM  57-2026 SISTEMAS DE CLIMATIZACIÓN.",
+        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -818,11 +818,11 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "29-63-LP26",
-        "titulo": "GTM  57-2026 SISTEMAS DE CLIMATIZACIÓN.",
-        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "codigo": "2428-62-LE26",
+        "titulo": "EQUIPAMIENTO DEPORTIVO - DEPTO DE DEPORTE",
+        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1311,7 +1311,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 486.3,
+  "tiempoEjecucionSegundos": 436.8,
   "errores": [],
   "advertencias": []
 }
