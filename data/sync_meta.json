@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-07T03:22:48.609631+00:00",
-  "ultimoIntentoRealizado": "2026-11-07T03:22:48.609631+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-07T10:43:49.368567+00:00",
+  "ultimoIntentoRealizado": "2026-11-07T10:43:49.368567+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1531,
-  "registrosConfirmados": 1531,
+  "registrosEnPlataforma": 1523,
+  "registrosConfirmados": 1523,
   "registrosPendientesVerificacion": 0,
   "registrosConMontoReal": 1225,
   "excluidosPrefiltroIrrelevante": 8006,
-  "excluidosSinDatosReales": 35,
+  "excluidosSinDatosReales": 43,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 801,
@@ -26,18 +26,18 @@
     "montoRecuperadoSum": 1034304258
   },
   "categorias": {
-    "licitaciones": 725,
+    "licitaciones": 717,
     "comprasAgiles": 801,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 420,
+    "LE": 411,
     "LP": 124,
     "CO": 8,
     "LR": 50,
-    "L1": 123,
+    "L1": 124,
     "B2": 2,
     "LS": 3,
     "O1": 5,
@@ -46,15 +46,24 @@
     "COT": 793
   },
   "matchPorEmpresa": {
-    "Aminorte": 1285,
-    "V-MOCCS": 246
+    "Aminorte": 1276,
+    "V-MOCCS": 247
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1504,
-    "modificadosCount": 23,
-    "cerradosCount": 1315,
+    "nuevosCount": 1497,
+    "modificadosCount": 22,
+    "cerradosCount": 1316,
     "nuevos": [
+      {
+        "codigo": "621-1055-LR26",
+        "titulo": "ACIDO VALPROICO 200 MG CPCM REC ENT 1000023413",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 4840329266,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-09T16:00:00"
+      },
       {
         "codigo": "1057499-22-LR26",
         "titulo": "COMPRA CONJUNTA SERVICIOS DE ARRIENDO DE IMPRESORA",
@@ -110,6 +119,15 @@
         "fechaCierre": "2026-11-02T16:00:00"
       },
       {
+        "codigo": "621-943-LR26",
+        "titulo": "CLONIXINATO DE LISINA 125 MG CPCM REC 1000023292",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 1195017139,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-16T16:00:00"
+      },
+      {
         "codigo": "2080-254-LR26",
         "titulo": "SUMINISTRO DE AUDIFONOS DE PATOLOGIA GES",
         "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
@@ -144,15 +162,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-19T15:30:00"
-      },
-      {
-        "codigo": "1057509-303-LR26",
-        "titulo": "CONVENIO PROVEEDURÍA DE AUDÍFONOS Y EQUIPAMIENTO ASOCIADO EN COMODATO fgh",
-        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
-        "monto": 611374400,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-06T09:00:00"
       },
       {
         "codigo": "621-1000-LR26",
@@ -218,15 +227,6 @@
         "fechaCierre": "2026-11-03T16:00:00"
       },
       {
-        "codigo": "1110404-227-LR26",
-        "titulo": "ARRIENDO DE EQUIPOS DE IMPRESIÓN Y FOTOCOPIADO CON SERVICIOS ASOCIADOS PARA ESTABLECIMIENTOS EDUCACIONALES DEL SLEP CHINCHORRO SUBVENCIÓN SEP Y GENERAL",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
-        "monto": 361926262,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-09T15:00:00"
-      },
-      {
         "codigo": "2307-47-LP26",
         "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
         "organismo": "I MUNICIPALIDAD DE OSORNO",
@@ -288,15 +288,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-10T16:00:00"
-      },
-      {
-        "codigo": "1351-7-LP26",
-        "titulo": "SERVICIOS EXTERNOS DE GUARDIAS DE SEGURIDAD PARA OFICINAS REGIÓN DE VALPARAISO ",
-        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
-        "monto": 273600000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-06T15:01:00"
       },
       {
         "codigo": "1447790-13-LP26",
@@ -371,6 +362,15 @@
         "fechaCierre": "2026-11-12T15:01:00"
       },
       {
+        "codigo": "622847-17-LP26",
+        "titulo": "Provisión e instalación mobiliario acero Magallane",
+        "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
+        "monto": 206572900,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T15:00:00"
+      },
+      {
         "codigo": "883-38-LP26",
         "titulo": "SERVICIO DE CONTROL DE AVIFAUNA A TRAVES DE VUELOS DISUASIVOS CON AVES RAPACES ADIESTRADAS Y MONITOREO DE FOCOS DE ATRACCIÓN DE AVES MEDIANTE EL USO DE RPA EN EL AEROPUERTO ARTURO MERINO BENITEZ",
         "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
@@ -432,15 +432,6 @@
         "empresaMatch": "V-MOCCS",
         "matchScore": 60,
         "fechaCierre": "2026-11-24T17:00:00"
-      },
-      {
-        "codigo": "387-58-LP26",
-        "titulo": "CONSTRUCCIÓN CENTRAL DE CÁMARAS DE TELEVIGILANCIA",
-        "organismo": "I MUNICIPALIDAD DE LOS MUERMOS",
-        "monto": 180000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-11-16T15:00:00"
       },
       {
         "codigo": "3765-37-LP26",
@@ -506,6 +497,15 @@
         "fechaCierre": "2026-11-18T15:00:00"
       },
       {
+        "codigo": "3587-24-LP26",
+        "titulo": "ADQUISICIÓN MUEBLES Y EQUIPAMIENTO PROYECTO NORMALIZACIÓN CESFAM CONSULTORIO GENERAL TROVOLHUE CONVENIO GORE Código BIP N°30084551-0",
+        "organismo": "I MUNICIPALIDAD DE CARAHUE",
+        "monto": 141662000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-09T16:21:00"
+      },
+      {
         "codigo": "4642-103-LP26",
         "titulo": "CONTRATACIÓN DEL SERVICIO DE MANTENCIÓN CORRECTIVA Y PREVENTIVA DE VENTILADOR MECÁNICO ECÓGRAFO Y CENTRAL DE MONITOREO DE DISTINTAS UNIDADES DEL HOSPITAL DE CARABINEROS POR UN PERIODO DE 24 MESES CON SUMINISTRO DE REPUESTOS.",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -540,15 +540,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-12-04T10:00:00"
-      },
-      {
-        "codigo": "1375753-37-LP26",
-        "titulo": "ADQUISICIÓN DE NOTEBOOKS PARA ESTABLECIMIENTOS EDU",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS ANDES",
-        "monto": 119020354,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-21T15:00:00"
       },
       {
         "codigo": "2933-52-LP26",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-09T15:00:00"
+      },
+      {
+        "codigo": "620045-3-LP26",
+        "titulo": "SERVICIOS DE GUARDIA DE SEGURIDAD PARA LAS OFICINAS DE LA DIRECCIÓN REGIONAL DE ARICA Y PARINACOTA",
+        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
+        "monto": 100800000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-03T15:00:00"
       }
     ],
     "modificados": [
@@ -748,16 +748,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2258-163-LE26",
-        "titulo": "ADQUISICIÓN REFRIGERADOR PARA DISTINTAS UNIDADES DEL HRA",
-        "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL L",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2667-90-LE26",
         "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
         "organismo": "I MUNICIPALIDAD DE VITACURA",
@@ -768,10 +758,10 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2080-283-LE26",
-        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
-        "estadoAnterior": "Publicada",
+        "codigo": "2258-163-LE26",
+        "titulo": "ADQUISICIÓN REFRIGERADOR PARA DISTINTAS UNIDADES DEL HRA",
+        "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL L",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -783,6 +773,16 @@
         "organismo": "I MUNICIPALIDAD DE PENALOLEN",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2428-62-LE26",
+        "titulo": "EQUIPAMIENTO DEPORTIVO - DEPTO DE DEPORTE",
+        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -813,16 +813,6 @@
         "organismo": "I MUNICIPALIDAD DE PELARCO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2428-62-LE26",
-        "titulo": "EQUIPAMIENTO DEPORTIVO - DEPTO DE DEPORTE",
-        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1311,7 +1301,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 436.8,
+  "tiempoEjecucionSegundos": 639.9,
   "errores": [],
   "advertencias": []
 }
