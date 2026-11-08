@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-07T21:07:32.388760+00:00",
-  "ultimoIntentoRealizado": "2026-11-07T21:07:32.388760+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-08T00:56:37.851941+00:00",
+  "ultimoIntentoRealizado": "2026-11-08T00:56:37.851941+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1534,
-  "registrosConfirmados": 1534,
+  "registrosEnPlataforma": 1630,
+  "registrosConfirmados": 1630,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1234,
-  "excluidosPrefiltroIrrelevante": 7921,
-  "excluidosSinDatosReales": 26,
+  "registrosConMontoReal": 1290,
+  "excluidosPrefiltroIrrelevante": 8722,
+  "excluidosSinDatosReales": 8,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 801,
@@ -26,34 +26,34 @@
     "montoRecuperadoSum": 1034304258
   },
   "categorias": {
-    "licitaciones": 729,
+    "licitaciones": 824,
     "comprasAgiles": 801,
     "convenioMarco": 0,
-    "ordenes_compra": 4,
+    "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 414,
-    "LP": 131,
+    "LE": 470,
+    "LP": 144,
     "CO": 8,
-    "LR": 50,
-    "L1": 124,
-    "B2": 1,
+    "LR": 52,
+    "L1": 147,
+    "B2": 2,
     "LS": 3,
-    "O1": 4,
+    "O1": 5,
     "I2": 1,
     "E2": 5,
     "COT": 793
   },
   "matchPorEmpresa": {
-    "Aminorte": 1294,
-    "V-MOCCS": 240
+    "Aminorte": 1370,
+    "V-MOCCS": 260
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1500,
-    "modificadosCount": 30,
-    "cerradosCount": 1308,
+    "nuevosCount": 1594,
+    "modificadosCount": 32,
+    "cerradosCount": 1306,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -162,6 +162,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-19T15:30:00"
+      },
+      {
+        "codigo": "1057509-303-LR26",
+        "titulo": "CONVENIO PROVEEDURÍA DE AUDÍFONOS Y EQUIPAMIENTO ASOCIADO EN COMODATO fgh",
+        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
+        "monto": 611374400,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-06T09:00:00"
       },
       {
         "codigo": "621-1000-LR26",
@@ -297,6 +306,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-10T16:00:00"
+      },
+      {
+        "codigo": "1351-7-LP26",
+        "titulo": "SERVICIOS EXTERNOS DE GUARDIAS DE SEGURIDAD PARA OFICINAS REGIÓN DE VALPARAISO ",
+        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
+        "monto": 273600000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-06T15:01:00"
       },
       {
         "codigo": "1447790-13-LP26",
@@ -551,6 +569,15 @@
         "fechaCierre": "2026-11-12T16:00:00"
       },
       {
+        "codigo": "1057898-108-LP26",
+        "titulo": "ADQUISICIÓN DE EQUIPAMIENTO MOBILIARIO CLINICO 3 PARA EL NUEVO HOSPITAL REGIONAL ÑUBLE",
+        "organismo": "SERVICIO DE SALUD NUBLE",
+        "monto": 129202000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-09T17:00:00"
+      },
+      {
         "codigo": "2308-98-LP26",
         "titulo": "CONSTRUCCIÓN INSTALACIÓN E IMPLEMENTACIÓN DE CÁMARAS DE TELEVIGILANCIA EN PARQUES PÚBLICOS",
         "organismo": "I MUNICIPALIDAD DE OSORNO",
@@ -567,33 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-04T18:00:00"
-      },
-      {
-        "codigo": "1375753-37-LP26",
-        "titulo": "ADQUISICIÓN DE NOTEBOOKS PARA ESTABLECIMIENTOS EDU",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS ANDES",
-        "monto": 119020354,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-21T15:00:00"
-      },
-      {
-        "codigo": "2933-52-LP26",
-        "titulo": "ADQ DE NOTEBOOK PARA ESTUDIANTES 2026 - Readjudicada en Id 2933-52-R126",
-        "organismo": "I MUNICIPALIDAD DE ALHUE",
-        "monto": 118438654,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-07-30T14:01:00"
-      },
-      {
-        "codigo": "1233615-68-LP26",
-        "titulo": "Tablets estudiantes beneficiarios Pro-Retención",
-        "organismo": "Servicio Local de Educación Pública Aysén",
-        "monto": 112371800,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-09T17:30:00"
       }
     ],
     "modificados": [
@@ -655,6 +655,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 80000000,
         "montoNuevo": 80000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5556-1-LE26",
+        "titulo": "Servicio de Aseo en Oficinas Talca y Constitución",
+        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 51600000,
+        "montoNuevo": 51600000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -748,6 +758,16 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "2101-150-L126",
+        "titulo": "“ADQUISICIÓN DE MATERIAL DIDÁCTICO-TERAPÉUTICO Y ÚTILES DE ESCRITORIO PARA LA UNIDAD COSAM”",
+        "organismo": "HOSPITAL INTERCULTURAL KALLVU LLANKA.-",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "2258-163-LE26",
         "titulo": "ADQUISICIÓN REFRIGERADOR PARA DISTINTAS UNIDADES DEL HRA",
         "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL L",
@@ -788,26 +808,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1080303-3-LP26",
-        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1079967-24-LE26",
-        "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2439-31-LP26",
         "titulo": "ADQUISICIÓN DE  SILLAS ERGONOMICAS PARA DIFERENTES DEPENDENCIAS DE LA I. MUNICIPALIDAD DE CURICÓ",
         "organismo": "I MUNICIPALIDAD DE CURICO",
@@ -828,10 +828,20 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "608-138-LP26",
-        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
-        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
-        "estadoAnterior": "Cerrada",
+        "codigo": "1080303-3-LP26",
+        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1079967-24-LE26",
+        "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -848,31 +858,21 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2403-65-LP26",
-        "titulo": "Instalación de nuevos puntos de cámara",
-        "organismo": "I MUNICIPALIDAD DE PENALOLEN",
-        "estadoAnterior": "Publicada",
+        "codigo": "608-138-LP26",
+        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
+        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2428-62-LE26",
-        "titulo": "EQUIPAMIENTO DEPORTIVO - DEPTO DE DEPORTE",
-        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "29-63-LP26",
-        "titulo": "GTM  57-2026 SISTEMAS DE CLIMATIZACIÓN.",
-        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
+        "codigo": "2403-65-LP26",
+        "titulo": "Instalación de nuevos puntos de cámara",
+        "organismo": "I MUNICIPALIDAD DE PENALOLEN",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -893,6 +893,26 @@
         "organismo": "I MUNICIPALIDAD DE PELARCO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "29-63-LP26",
+        "titulo": "GTM  57-2026 SISTEMAS DE CLIMATIZACIÓN.",
+        "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2428-62-LE26",
+        "titulo": "EQUIPAMIENTO DEPORTIVO - DEPTO DE DEPORTE",
+        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1381,7 +1401,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 439.4,
+  "tiempoEjecucionSegundos": 440.1,
   "errores": [],
   "advertencias": []
 }
