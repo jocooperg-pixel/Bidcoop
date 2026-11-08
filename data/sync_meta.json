@@ -1,58 +1,58 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-08T00:56:37.851941+00:00",
-  "ultimoIntentoRealizado": "2026-11-08T00:56:37.851941+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-08T08:08:19.978724+00:00",
+  "ultimoIntentoRealizado": "2026-11-08T08:08:19.978724+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1630,
-  "registrosConfirmados": 1630,
+  "registrosEnPlataforma": 1603,
+  "registrosConfirmados": 1603,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1290,
+  "registrosConMontoReal": 1273,
   "excluidosPrefiltroIrrelevante": 8722,
-  "excluidosSinDatosReales": 8,
+  "excluidosSinDatosReales": 36,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 801,
+    "total": 802,
     "conMontoValido": 799,
-    "pctValidado": 99.8,
+    "pctValidado": 99.6,
     "stats": {
       "VALIDADO": 799,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 2
+      "MONTO_NO_ENCONTRADO": 3
     },
     "montoOriginalSum": 252487852,
     "montoFinalSum": 1286792110,
     "montoRecuperadoSum": 1034304258
   },
   "categorias": {
-    "licitaciones": 824,
-    "comprasAgiles": 801,
+    "licitaciones": 797,
+    "comprasAgiles": 802,
     "convenioMarco": 0,
-    "ordenes_compra": 5,
+    "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 470,
-    "LP": 144,
-    "CO": 8,
-    "LR": 52,
-    "L1": 147,
+    "LE": 453,
+    "LP": 139,
+    "CO": 9,
+    "LR": 51,
+    "L1": 144,
     "B2": 2,
-    "LS": 3,
-    "O1": 5,
+    "LS": 2,
+    "O1": 4,
     "I2": 1,
     "E2": 5,
     "COT": 793
   },
   "matchPorEmpresa": {
-    "Aminorte": 1370,
-    "V-MOCCS": 260
+    "Aminorte": 1344,
+    "V-MOCCS": 259
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1594,
-    "modificadosCount": 32,
+    "nuevosCount": 1567,
+    "modificadosCount": 33,
     "cerradosCount": 1306,
     "nuevos": [
       {
@@ -398,24 +398,6 @@
         "fechaCierre": "2026-11-24T15:00:00"
       },
       {
-        "codigo": "883-38-LP26",
-        "titulo": "SERVICIO DE CONTROL DE AVIFAUNA A TRAVES DE VUELOS DISUASIVOS CON AVES RAPACES ADIESTRADAS Y MONITOREO DE FOCOS DE ATRACCIÓN DE AVES MEDIANTE EL USO DE RPA EN EL AEROPUERTO ARTURO MERINO BENITEZ",
-        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
-        "monto": 202424361,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-25T10:00:00"
-      },
-      {
-        "codigo": "1057491-203-LP26",
-        "titulo": "SERVICIO DE ASEO EDIFICIO AMICAM TROI Y NUEVA UPC",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
-        "monto": 200000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-24T15:00:00"
-      },
-      {
         "codigo": "1469-294-LP26",
         "titulo": "FOTOCOPIADO IMPRESIÓN Y SERVICIOS COMPLEMENTARIOS",
         "organismo": "UNIVERSIDAD DE TALCA",
@@ -594,6 +576,24 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-04T18:00:00"
+      },
+      {
+        "codigo": "1375753-37-LP26",
+        "titulo": "ADQUISICIÓN DE NOTEBOOKS PARA ESTABLECIMIENTOS EDU",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS ANDES",
+        "monto": 119020354,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-21T15:00:00"
+      },
+      {
+        "codigo": "2933-52-LP26",
+        "titulo": "ADQ DE NOTEBOOK PARA ESTUDIANTES 2026 - Readjudicada en Id 2933-52-R126",
+        "organismo": "I MUNICIPALIDAD DE ALHUE",
+        "monto": 118438654,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-07-30T14:01:00"
       }
     ],
     "modificados": [
@@ -665,6 +665,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 51600000,
         "montoNuevo": 51600000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1028897-38-LE26",
+        "titulo": "ADQUISICIÓN DE EQUIPAMIENTO TECNOLÓGICO EE SLEPCA.",
+        "organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 35154857,
+        "montoNuevo": 35154857,
         "empresaMatch": "Aminorte"
       },
       {
@@ -768,16 +778,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2258-163-LE26",
-        "titulo": "ADQUISICIÓN REFRIGERADOR PARA DISTINTAS UNIDADES DEL HRA",
-        "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL L",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2667-90-LE26",
         "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
         "organismo": "I MUNICIPALIDAD DE VITACURA",
@@ -798,9 +798,39 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2258-163-LE26",
+        "titulo": "ADQUISICIÓN REFRIGERADOR PARA DISTINTAS UNIDADES DEL HRA",
+        "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL L",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1080303-3-LP26",
+        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1655-7-LP26",
         "titulo": "ARRIENDO DE IMPRESORAS",
         "organismo": "SERVICIO DE SALUD METROPOLI CENTRAL DIRECCION DE ATENCION PRIMARIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1079967-24-LE26",
+        "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -828,20 +858,10 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1080303-3-LP26",
-        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1079967-24-LE26",
-        "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
+        "codigo": "608-138-LP26",
+        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
+        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -852,16 +872,6 @@
         "titulo": "ARRIENDO SERVIDOR DE ALMACENAMIENTO RISPACS DSSCH",
         "organismo": "SERVICIO DE SALUD CHILOE",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "608-138-LP26",
-        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
-        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
-        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -888,6 +898,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2428-62-LE26",
+        "titulo": "EQUIPAMIENTO DEPORTIVO - DEPTO DE DEPORTE",
+        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "3756-46-LE26",
         "titulo": "PROYECTO DE INSTALACIÓN DE PÓRTICOS LECTURAS DE PATENTE Y CÁMARAS DE VIGILANCIA Y EQUIPAMIENTOS DEPARTAMENTO DE SEGURIDAD PÚBLICA 2026",
         "organismo": "I MUNICIPALIDAD DE PELARCO",
@@ -903,16 +923,6 @@
         "organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2428-62-LE26",
-        "titulo": "EQUIPAMIENTO DEPORTIVO - DEPTO DE DEPORTE",
-        "organismo": "I. MUNICIPALIDAD DE QUILPUE",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1401,7 +1411,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 440.1,
+  "tiempoEjecucionSegundos": 619.4,
   "errores": [],
   "advertencias": []
 }
