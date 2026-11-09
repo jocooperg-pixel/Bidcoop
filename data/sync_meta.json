@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-09T01:15:19.533901+00:00",
-  "ultimoIntentoRealizado": "2026-11-09T01:15:19.533901+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-09T08:45:24.243055+00:00",
+  "ultimoIntentoRealizado": "2026-11-09T08:45:24.243055+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1526,
-  "registrosConfirmados": 1526,
+  "registrosEnPlataforma": 1512,
+  "registrosConfirmados": 1512,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1229,
-  "excluidosPrefiltroIrrelevante": 7790,
-  "excluidosSinDatosReales": 0,
+  "registrosConMontoReal": 1220,
+  "excluidosPrefiltroIrrelevante": 7788,
+  "excluidosSinDatosReales": 14,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 800,
@@ -26,18 +26,18 @@
     "montoRecuperadoSum": 1034304258
   },
   "categorias": {
-    "licitaciones": 721,
+    "licitaciones": 707,
     "comprasAgiles": 800,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 410,
-    "LP": 129,
+    "LE": 399,
+    "LP": 127,
     "CO": 7,
     "LR": 46,
-    "L1": 126,
+    "L1": 125,
     "B2": 2,
     "LS": 3,
     "O1": 5,
@@ -46,12 +46,12 @@
     "COT": 793
   },
   "matchPorEmpresa": {
-    "Aminorte": 1282,
-    "V-MOCCS": 244
+    "Aminorte": 1273,
+    "V-MOCCS": 239
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1498,
+    "nuevosCount": 1484,
     "modificadosCount": 24,
     "cerradosCount": 1314,
     "nuevos": [
@@ -297,15 +297,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-23T16:00:00"
-      },
-      {
-        "codigo": "885-98-LP26",
-        "titulo": "Adquisición de servidores destinados a la actualización de plataforma de búsqueda e indexación para la Contraloría General de la República",
-        "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
-        "monto": 220000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-11T16:00:00"
       },
       {
         "codigo": "885-108-LP26",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-23T15:01:00"
+      },
+      {
+        "codigo": "1095439-29-LP26",
+        "titulo": "1 ESCÁNER LÁSER CON CÁMARAS 3D PARA PDI AYSÉN",
+        "organismo": "GOBIERNO REGIONAL DE AYSEN",
+        "monto": 101388000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-11-04T15:01:00"
       }
     ],
     "modificados": [
@@ -728,9 +728,9 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2080-283-LE26",
-        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "codigo": "2667-90-LE26",
+        "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
+        "organismo": "I MUNICIPALIDAD DE VITACURA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -738,9 +738,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2667-90-LE26",
-        "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
-        "organismo": "I MUNICIPALIDAD DE VITACURA",
+        "codigo": "2080-283-LE26",
+        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -758,9 +758,29 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1080303-3-LP26",
-        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "codigo": "1079967-24-LE26",
+        "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "608-138-LP26",
+        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
+        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1655-7-LP26",
+        "titulo": "ARRIENDO DE IMPRESORAS",
+        "organismo": "SERVICIO DE SALUD METROPOLI CENTRAL DIRECCION DE ATENCION PRIMARIA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -788,16 +808,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1079967-24-LE26",
-        "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "507428-108-LP26",
         "titulo": "ARRIENDO SERVIDOR DE ALMACENAMIENTO RISPACS DSSCH",
         "organismo": "SERVICIO DE SALUD CHILOE",
@@ -808,20 +818,10 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1655-7-LP26",
-        "titulo": "ARRIENDO DE IMPRESORAS",
-        "organismo": "SERVICIO DE SALUD METROPOLI CENTRAL DIRECCION DE ATENCION PRIMARIA",
+        "codigo": "1080303-3-LP26",
+        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "608-138-LP26",
-        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
-        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
-        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1321,7 +1321,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 469.4,
+  "tiempoEjecucionSegundos": 400.2,
   "errores": [],
   "advertencias": []
 }
