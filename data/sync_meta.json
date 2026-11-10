@@ -1,14 +1,14 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-10T03:51:23.565832+00:00",
-  "ultimoIntentoRealizado": "2026-11-10T03:51:23.565832+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-10T11:53:45.153507+00:00",
+  "ultimoIntentoRealizado": "2026-11-10T11:53:45.153507+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1511,
-  "registrosConfirmados": 1511,
+  "registrosEnPlataforma": 1499,
+  "registrosConfirmados": 1499,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1232,
-  "excluidosPrefiltroIrrelevante": 7913,
-  "excluidosSinDatosReales": 18,
+  "registrosConMontoReal": 1220,
+  "excluidosPrefiltroIrrelevante": 7931,
+  "excluidosSinDatosReales": 31,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 801,
@@ -26,19 +26,19 @@
     "montoRecuperadoSum": 1034304258
   },
   "categorias": {
-    "licitaciones": 705,
+    "licitaciones": 693,
     "comprasAgiles": 801,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 399,
-    "LP": 125,
+    "LE": 390,
+    "LP": 126,
     "CO": 8,
-    "LR": 45,
-    "L1": 127,
-    "B2": 2,
+    "LR": 41,
+    "L1": 128,
+    "B2": 1,
     "LS": 3,
     "O1": 5,
     "I2": 1,
@@ -46,14 +46,14 @@
     "COT": 793
   },
   "matchPorEmpresa": {
-    "Aminorte": 1276,
-    "V-MOCCS": 235
+    "Aminorte": 1260,
+    "V-MOCCS": 239
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1489,
-    "modificadosCount": 18,
-    "cerradosCount": 1320,
+    "nuevosCount": 1474,
+    "modificadosCount": 21,
+    "cerradosCount": 1317,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -63,15 +63,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-09T16:00:00"
-      },
-      {
-        "codigo": "621-1018-LR26",
-        "titulo": "CEFADROXILO 500 MG CPCMCM REC 1000023200",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "monto": 2501944361,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-30T16:00:00"
       },
       {
         "codigo": "621-970-I226",
@@ -128,15 +119,6 @@
         "fechaCierre": "2026-11-27T16:00:00"
       },
       {
-        "codigo": "520149-48-LR26",
-        "titulo": "CEA-PC 6740 - Transporte de visitas oficiales",
-        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
-        "monto": 650000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-24T11:00:00"
-      },
-      {
         "codigo": "1175-98-LR26",
         "titulo": "Lic.111.26 Suministro integral de audífonos",
         "organismo": "SERVICIO DE SALUD ARAUCANIA SUR",
@@ -153,15 +135,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-06T09:00:00"
-      },
-      {
-        "codigo": "621-1000-LR26",
-        "titulo": "CETIRIZINA 10 MG CPCMCM REC. 1000022982",
-        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
-        "monto": 597435135,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-26T16:00:00"
       },
       {
         "codigo": "3738-27-LR26",
@@ -497,15 +470,6 @@
         "fechaCierre": "2026-11-09T16:21:00"
       },
       {
-        "codigo": "4642-103-LP26",
-        "titulo": "CONTRATACIÓN DEL SERVICIO DE MANTENCIÓN CORRECTIVA Y PREVENTIVA DE VENTILADOR MECÁNICO ECÓGRAFO Y CENTRAL DE MONITOREO DE DISTINTAS UNIDADES DEL HOSPITAL DE CARABINEROS POR UN PERIODO DE 24 MESES CON SUMINISTRO DE REPUESTOS.",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
-        "monto": 140000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-11-25T16:00:00"
-      },
-      {
         "codigo": "1436733-29-LP26",
         "titulo": "CONTRATO DE SUMINISTRO DE ARTÍCULOS DEPORTIVOS PARA LOS ESTABLECIMIENTOS EDUCACIONALES DEL SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE LOS LIBERTADORES",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS LIBERTADORES",
@@ -594,6 +558,42 @@
         "empresaMatch": "Aminorte",
         "matchScore": 90,
         "fechaCierre": "2026-10-23T15:00:00"
+      },
+      {
+        "codigo": "619-13-LP26",
+        "titulo": "Suscripción de licencias IA generativa Claude.",
+        "organismo": "SUBSECRETARIA DEL MINISTERIO DE HACIENDA",
+        "monto": 105000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-09T15:00:00"
+      },
+      {
+        "codigo": "2345-179-LP26",
+        "titulo": "Arriendo de 2 Oficinas Móviles con Conductor para Período de Renovación de PCI 20272028 y 2029",
+        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
+        "monto": 104700000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-23T15:01:00"
+      },
+      {
+        "codigo": "1095439-29-LP26",
+        "titulo": "1 ESCÁNER LÁSER CON CÁMARAS 3D PARA PDI AYSÉN",
+        "organismo": "GOBIERNO REGIONAL DE AYSEN",
+        "monto": 101388000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-11-04T15:01:00"
+      },
+      {
+        "codigo": "620045-3-LP26",
+        "titulo": "SERVICIOS DE GUARDIA DE SEGURIDAD PARA LAS OFICINAS DE LA DIRECCIÓN REGIONAL DE ARICA Y PARINACOTA",
+        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
+        "monto": 100800000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-03T15:00:00"
       }
     ],
     "modificados": [
@@ -768,10 +768,40 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "2490-83-LP26",
+        "titulo": "PROVISIÓN E INSTALACION DE MOBILIARIO Y ELEMENTOS URBANOS PARA BNUP Y AREAS VERDES",
+        "organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1079967-24-LE26",
         "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "507428-108-LP26",
+        "titulo": "ARRIENDO SERVIDOR DE ALMACENAMIENTO RISPACS DSSCH",
+        "organismo": "SERVICIO DE SALUD CHILOE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "608-138-LP26",
+        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
+        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1261,7 +1291,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 996.4,
+  "tiempoEjecucionSegundos": 451.1,
   "errores": [],
   "advertencias": []
 }
