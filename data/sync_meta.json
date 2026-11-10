@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-10T11:53:45.153507+00:00",
-  "ultimoIntentoRealizado": "2026-11-10T11:53:45.153507+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-10T18:57:04.024355+00:00",
+  "ultimoIntentoRealizado": "2026-11-10T18:57:04.024355+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1499,
-  "registrosConfirmados": 1499,
+  "registrosEnPlataforma": 1545,
+  "registrosConfirmados": 1545,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1220,
-  "excluidosPrefiltroIrrelevante": 7931,
-  "excluidosSinDatosReales": 31,
+  "registrosConMontoReal": 1237,
+  "excluidosPrefiltroIrrelevante": 8439,
+  "excluidosSinDatosReales": 24,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 801,
-    "conMontoValido": 798,
+    "total": 796,
+    "conMontoValido": 793,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 798,
+      "VALIDADO": 793,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 204290852,
-    "montoFinalSum": 1238595110,
-    "montoRecuperadoSum": 1034304258
+    "montoOriginalSum": 274684345,
+    "montoFinalSum": 1232228843,
+    "montoRecuperadoSum": 957544498
   },
   "categorias": {
-    "licitaciones": 693,
-    "comprasAgiles": 801,
+    "licitaciones": 744,
+    "comprasAgiles": 796,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 390,
-    "LP": 126,
-    "CO": 8,
-    "LR": 41,
-    "L1": 128,
-    "B2": 1,
+    "LE": 419,
+    "LP": 133,
+    "CO": 9,
+    "LR": 46,
+    "L1": 137,
+    "B2": 2,
     "LS": 3,
     "O1": 5,
     "I2": 1,
     "E2": 3,
-    "COT": 793
+    "COT": 787
   },
   "matchPorEmpresa": {
-    "Aminorte": 1260,
-    "V-MOCCS": 239
+    "Aminorte": 1299,
+    "V-MOCCS": 246
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1474,
-    "modificadosCount": 21,
-    "cerradosCount": 1317,
+    "nuevosCount": 1518,
+    "modificadosCount": 23,
+    "cerradosCount": 1315,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -63,6 +63,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-09T16:00:00"
+      },
+      {
+        "codigo": "621-1018-LR26",
+        "titulo": "CEFADROXILO 500 MG CPCMCM REC 1000023200",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 2501944361,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-30T16:00:00"
       },
       {
         "codigo": "621-970-I226",
@@ -119,6 +128,15 @@
         "fechaCierre": "2026-11-27T16:00:00"
       },
       {
+        "codigo": "520149-48-LR26",
+        "titulo": "CEA-PC 6740 - Transporte de visitas oficiales",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "monto": 650000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T11:00:00"
+      },
+      {
         "codigo": "1175-98-LR26",
         "titulo": "Lic.111.26 Suministro integral de audífonos",
         "organismo": "SERVICIO DE SALUD ARAUCANIA SUR",
@@ -135,6 +153,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-06T09:00:00"
+      },
+      {
+        "codigo": "621-1000-LR26",
+        "titulo": "CETIRIZINA 10 MG CPCMCM REC. 1000022982",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 597435135,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-26T16:00:00"
       },
       {
         "codigo": "3738-27-LR26",
@@ -333,15 +360,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-25T10:00:00"
-      },
-      {
-        "codigo": "1057491-203-LP26",
-        "titulo": "SERVICIO DE ASEO EDIFICIO AMICAM TROI Y NUEVA UPC",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
-        "monto": 200000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-24T15:00:00"
       },
       {
         "codigo": "1469-294-LP26",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-23T15:01:00"
-      },
-      {
-        "codigo": "1095439-29-LP26",
-        "titulo": "1 ESCÁNER LÁSER CON CÁMARAS 3D PARA PDI AYSÉN",
-        "organismo": "GOBIERNO REGIONAL DE AYSEN",
-        "monto": 101388000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-11-04T15:01:00"
-      },
-      {
-        "codigo": "620045-3-LP26",
-        "titulo": "SERVICIOS DE GUARDIA DE SEGURIDAD PARA LAS OFICINAS DE LA DIRECCIÓN REGIONAL DE ARICA Y PARINACOTA",
-        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
-        "monto": 100800000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-03T15:00:00"
       }
     ],
     "modificados": [
@@ -615,6 +615,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 400000000,
         "montoNuevo": 400000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "777304-58-LP26",
+        "titulo": "AUDÍFONO PEDIÁTRICO HIPOACUSIA PARA EL HLF",
+        "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 176700720,
+        "montoNuevo": 176700720,
         "empresaMatch": "Aminorte"
       },
       {
@@ -728,6 +738,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2080-283-LE26",
+        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2667-90-LE26",
         "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
         "organismo": "I MUNICIPALIDAD DE VITACURA",
@@ -738,9 +758,9 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1655-7-LP26",
-        "titulo": "ARRIENDO DE IMPRESORAS",
-        "organismo": "SERVICIO DE SALUD METROPOLI CENTRAL DIRECCION DE ATENCION PRIMARIA",
+        "codigo": "507428-108-LP26",
+        "titulo": "ARRIENDO SERVIDOR DE ALMACENAMIENTO RISPACS DSSCH",
+        "organismo": "SERVICIO DE SALUD CHILOE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -748,9 +768,29 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1080303-3-LP26",
-        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
-        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
+        "codigo": "1079967-24-LE26",
+        "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "608-138-LP26",
+        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
+        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1655-7-LP26",
+        "titulo": "ARRIENDO DE IMPRESORAS",
+        "organismo": "SERVICIO DE SALUD METROPOLI CENTRAL DIRECCION DE ATENCION PRIMARIA",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -778,30 +818,10 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1079967-24-LE26",
-        "titulo": "ADQUISICIÓN DE TÓNER PARA LA ZONA TARAPACA",
-        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "codigo": "1080303-3-LP26",
+        "titulo": "Implementación Deportiva Prog.Fortalecimiento del",
+        "organismo": "INSTITUTO NACIONAL DE DEPORTES DE CHILE",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "507428-108-LP26",
-        "titulo": "ARRIENDO SERVIDOR DE ALMACENAMIENTO RISPACS DSSCH",
-        "organismo": "SERVICIO DE SALUD CHILOE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "608-138-LP26",
-        "titulo": "MSP CONVENIO DE MANTENIMIENTO CORRECTIVO DE INSTRUMENTAL MÉDICO QUIRÚGICO CABEZALES DE CÁMARAS Y EQUIPOS FLEXIBLES",
-        "organismo": "HOSPITAL DR GUSTAVO FRICKE DE VINA DEL MAR",
-        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1146,14 +1166,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "777304-58-LP26",
-        "titulo": "AUDÍFONO PEDIÁTRICO HIPOACUSIA PARA EL HLF",
-        "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
-        "estadoAnterior": "Publicada",
-        "monto": 176700720,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "809-54-LP26",
         "titulo": "Constitución e Inscripción de Derechos Reales de Uso Segundo Llamado Región de La Araucanía año 2026",
         "organismo": "CORP NACIONAL DE DESARROLLO INDIGENA",
@@ -1288,10 +1300,18 @@
         "estadoAnterior": "Publicada",
         "monto": 133000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3833-59-LP26",
+        "titulo": "SEGUROS BIENES MUEBLES E INMUEBLES Y OTROS",
+        "organismo": "I MUNICIPALIDAD DE RIO BUENO",
+        "estadoAnterior": "Publicada",
+        "monto": 130000000,
+        "empresaMatch": "V-MOCCS"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 451.1,
+  "tiempoEjecucionSegundos": 1504.8,
   "errores": [],
   "advertencias": []
 }
