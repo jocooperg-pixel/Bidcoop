@@ -1,58 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-11T08:29:48.724489+00:00",
-  "ultimoIntentoRealizado": "2026-11-11T08:29:48.724489+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-11T17:29:55.363876+00:00",
+  "ultimoIntentoRealizado": "2026-11-11T17:29:55.363876+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1534,
-  "registrosConfirmados": 1534,
+  "registrosEnPlataforma": 1605,
+  "registrosConfirmados": 1605,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1259,
-  "excluidosPrefiltroIrrelevante": 8050,
-  "excluidosSinDatosReales": 47,
+  "registrosConMontoReal": 1297,
+  "excluidosPrefiltroIrrelevante": 8397,
+  "excluidosSinDatosReales": 6,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 854,
-    "conMontoValido": 851,
+    "total": 845,
+    "conMontoValido": 842,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 851,
+      "VALIDADO": 842,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 380589530,
-    "montoFinalSum": 1372309307,
-    "montoRecuperadoSum": 991719777
+    "montoOriginalSum": 453458120,
+    "montoFinalSum": 1489384085,
+    "montoRecuperadoSum": 1035925965
   },
   "categorias": {
-    "licitaciones": 675,
-    "comprasAgiles": 854,
+    "licitaciones": 755,
+    "comprasAgiles": 845,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 380,
-    "LP": 129,
+    "LE": 420,
+    "LP": 144,
     "CO": 11,
-    "LR": 42,
-    "L1": 117,
+    "LR": 48,
+    "L1": 135,
     "B2": 3,
     "LS": 3,
     "O1": 5,
     "I2": 1,
-    "COT": 843
+    "E2": 1,
+    "COT": 834
   },
   "matchPorEmpresa": {
-    "Aminorte": 1308,
-    "V-MOCCS": 226
+    "Aminorte": 1358,
+    "V-MOCCS": 247
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1516,
-    "modificadosCount": 14,
-    "cerradosCount": 1324,
+    "nuevosCount": 1580,
+    "modificadosCount": 21,
+    "cerradosCount": 1317,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -280,6 +281,15 @@
         "fechaCierre": "2026-11-24T15:01:00"
       },
       {
+        "codigo": "558869-71-LP26",
+        "titulo": "ADQUISICIÓN IMPRESORA-ESCANER-PLOTTER-IMPRESORA 3D",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
+        "monto": 248001705,
+        "empresaMatch": "Aminorte",
+        "matchScore": 98,
+        "fechaCierre": "2026-11-23T15:00:00"
+      },
+      {
         "codigo": "1641-459-LP26",
         "titulo": "CCV - ADQUISICIÓN DE CRIOSTATO IMPRESORA DE CASSETTES MICROTOMO Y CENTRO DE INCLUSIÓN CON PLACA FRÍA",
         "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
@@ -478,6 +488,15 @@
         "fechaCierre": "2026-11-27T15:00:00"
       },
       {
+        "codigo": "1057544-388-LP26",
+        "titulo": "CONTRATACIÓN DE SERVICIOS DE MANTENCIÓN PREVENTIVA Y CORRECTIVA DE MONITORES DE SIGNOS VITALES Y MULTIPARÁMETROS CON Y SIN SISTEMA GASES",
+        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
+        "monto": 150000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-23T15:01:00"
+      },
+      {
         "codigo": "3920-29-LP26",
         "titulo": "Reposición reparación mobiliario urbano Villarrica",
         "organismo": "I MUNICIPALIDAD DE VILLARRICA",
@@ -559,6 +578,15 @@
         "fechaCierre": "2026-12-10T16:30:00"
       },
       {
+        "codigo": "520149-54-LP26",
+        "titulo": "Transporte de pasajeros-PC 6831-DESERVI-mvg",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "monto": 125000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-01T11:00:00"
+      },
+      {
         "codigo": "1350296-98-LP26",
         "titulo": "ADQUISICIÓN DE BATERÍAS PARA MONITORES DESFIBRILADORES Y DEAS PARA EL HOSPITAL DE ALTO HOSPICIO",
         "organismo": "HOSPITAL DE ALTO HOSPICIO",
@@ -566,33 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-30T15:00:00"
-      },
-      {
-        "codigo": "1375753-37-LP26",
-        "titulo": "ADQUISICIÓN DE NOTEBOOKS PARA ESTABLECIMIENTOS EDU",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS ANDES",
-        "monto": 119020354,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-10-21T15:00:00"
-      },
-      {
-        "codigo": "2933-52-LP26",
-        "titulo": "ADQ DE NOTEBOOK PARA ESTUDIANTES 2026 - Readjudicada en Id 2933-52-R126",
-        "organismo": "I MUNICIPALIDAD DE ALHUE",
-        "monto": 118438654,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-07-30T14:01:00"
-      },
-      {
-        "codigo": "2981-302-LP26",
-        "titulo": "JENAMTE-ADQUISICIÓN A LO MENOS 50 NOTEBOOK",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "monto": 114898443,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-16T15:00:00"
       }
     ],
     "modificados": [
@@ -617,6 +618,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2282-109-LP26",
+        "titulo": "Contratación de seguros para inmuebles vehículos municipales equipamiento y de responsabilidad civil",
+        "organismo": "I MUNICIPALIDAD VALDIVIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 231033309,
+        "montoNuevo": 231033309,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "777304-58-LP26",
         "titulo": "AUDÍFONO PEDIÁTRICO HIPOACUSIA PARA EL HLF",
         "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
@@ -624,6 +635,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 176700720,
         "montoNuevo": 176700720,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057489-285-LP26",
+        "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 160000000,
+        "montoNuevo": 160000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -637,6 +658,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "5053-100-LP26",
+        "titulo": "Provisión e instalación de vidrios termopaneles laminas de seguridad reparación mamparas",
+        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE TALCA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 69752000,
+        "montoNuevo": 69752000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "5556-1-LE26",
         "titulo": "Servicio de Aseo en Oficinas Talca y Constitución",
         "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
@@ -644,6 +675,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 51600000,
         "montoNuevo": 51600000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "777304-61-LE26",
+        "titulo": "UPS CON BANCOS DE BATERÍAS PARA EL HLF",
+        "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 9000000,
+        "montoNuevo": 9000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -677,6 +718,36 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "548874-77-LR26",
+        "titulo": "MANTENCIÓN Y MEJORA SISTEMA CIBERSEGURIDAD NCH ISO",
+        "organismo": "INSTITUTO DE PREVISION SOCIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 11000,
+        "montoNuevo": 11000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4113-52-LP26",
+        "titulo": "CONSTR. SEÑALETICA-MOBILIARIO GEOPARQUE KUTRALCURA",
+        "organismo": "ILUSTRE MUNICIPALIDAD MELIPEUCO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2785-62-LR26",
+        "titulo": "Servicio de demarcación en pintura termoplástica y acrílica comuna de San Pedro de la Paz.",
+        "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE LA PAZ",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1063538-216-LE26",
         "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
         "organismo": "HOSPITAL BASE OSORNO",
@@ -707,6 +778,16 @@
         "empresaMatch": "V-MOCCS"
       },
       {
+        "codigo": "2080-283-LE26",
+        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "2667-90-LE26",
         "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
         "organismo": "I MUNICIPALIDAD DE VITACURA",
@@ -721,16 +802,6 @@
         "titulo": "ADQUISICIÓN REFRIGERADOR PARA DISTINTAS UNIDADES DEL HRA",
         "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL L",
         "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2080-283-LE26",
-        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
-        "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1011,14 +1082,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2282-109-LP26",
-        "titulo": "Contratación de seguros para inmuebles vehículos municipales equipamiento y de responsabilidad civil",
-        "organismo": "I MUNICIPALIDAD VALDIVIA",
-        "estadoAnterior": "Publicada",
-        "monto": 231033309,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "2409-53-LP26",
         "titulo": "MEJORAMIENTO DE SISTEMA DE CLIMATIZACIÓN PARA ESTABLECIMIENTOS EDUCACIONALES",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -1104,14 +1167,6 @@
         "organismo": "UNIVERSIDAD DEL BIO BIO",
         "estadoAnterior": "Cerrada",
         "monto": 168000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057489-285-LP26",
-        "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "estadoAnterior": "Publicada",
-        "monto": 160000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1217,10 +1272,26 @@
         "estadoAnterior": "Publicada",
         "monto": 130000000,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1549-87-LP26",
+        "titulo": "INSUMOS DENTALES ADITAMENTOS DE SOBREDENTADURA",
+        "organismo": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
+        "estadoAnterior": "Publicada",
+        "monto": 127731093,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "539119-80-LP26",
+        "titulo": "CONTRATACIÓN DE SERVICIOS DE EMERGENCIAS SANITARIAS REPARACIÓN YO REPOSICIÓN DE REDES DE ALCANTARILLADO AGUA POTABLE Y REDES DE GAS EN INMUEBLES UBICADOS EN LA REGIÓN METROPOLITANA DEPENDIENTE DE LA DIRECCIÓN DE BIENESTAR DE CARABINEROS",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "estadoAnterior": "Publicada",
+        "monto": 120000000,
+        "empresaMatch": "V-MOCCS"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1504.2,
+  "tiempoEjecucionSegundos": 1514.9,
   "errores": [],
   "advertencias": []
 }
