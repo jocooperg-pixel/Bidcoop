@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-11T17:29:55.363876+00:00",
-  "ultimoIntentoRealizado": "2026-11-11T17:29:55.363876+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-11T23:44:56.894557+00:00",
+  "ultimoIntentoRealizado": "2026-11-11T23:44:56.894557+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1605,
-  "registrosConfirmados": 1605,
+  "registrosEnPlataforma": 1635,
+  "registrosConfirmados": 1635,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1297,
-  "excluidosPrefiltroIrrelevante": 8397,
-  "excluidosSinDatosReales": 6,
+  "registrosConMontoReal": 1310,
+  "excluidosPrefiltroIrrelevante": 8809,
+  "excluidosSinDatosReales": 3,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 845,
-    "conMontoValido": 842,
+    "total": 834,
+    "conMontoValido": 831,
     "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 842,
+      "VALIDADO": 831,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 453458120,
-    "montoFinalSum": 1489384085,
-    "montoRecuperadoSum": 1035925965
+    "montoOriginalSum": 892910894,
+    "montoFinalSum": 1504840233,
+    "montoRecuperadoSum": 611929339
   },
   "categorias": {
-    "licitaciones": 755,
-    "comprasAgiles": 845,
+    "licitaciones": 796,
+    "comprasAgiles": 834,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 420,
-    "LP": 144,
+    "LE": 448,
+    "LP": 147,
     "CO": 11,
     "LR": 48,
-    "L1": 135,
+    "L1": 144,
     "B2": 3,
+    "E2": 2,
     "LS": 3,
     "O1": 5,
     "I2": 1,
-    "E2": 1,
-    "COT": 834
+    "COT": 823
   },
   "matchPorEmpresa": {
-    "Aminorte": 1358,
-    "V-MOCCS": 247
+    "Aminorte": 1392,
+    "V-MOCCS": 243
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1580,
-    "modificadosCount": 21,
-    "cerradosCount": 1317,
+    "nuevosCount": 1609,
+    "modificadosCount": 22,
+    "cerradosCount": 1316,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -728,6 +728,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "4113-52-LP26",
         "titulo": "CONSTR. SEÑALETICA-MOBILIARIO GEOPARQUE KUTRALCURA",
         "organismo": "ILUSTRE MUNICIPALIDAD MELIPEUCO",
@@ -778,16 +788,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2080-283-LE26",
-        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2667-90-LE26",
         "titulo": "ADQUISICIÓN INSTALACIÓN Y PUESTA EN MARCHA DE PUNTOS DE CÁMARAS EN RECINTOS MUNICIPALES DE LA COMUNA DE VITACURA",
         "organismo": "I MUNICIPALIDAD DE VITACURA",
@@ -802,6 +802,16 @@
         "titulo": "ADQUISICIÓN REFRIGERADOR PARA DISTINTAS UNIDADES DEL HRA",
         "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL L",
         "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2080-283-LE26",
+        "titulo": "SERV. MTTO CAMARAS DE REFRIGERACIÓN DEL HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1291,7 +1301,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1514.9,
+  "tiempoEjecucionSegundos": 1524.2,
   "errores": [],
   "advertencias": []
 }
