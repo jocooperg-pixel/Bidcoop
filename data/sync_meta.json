@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-12T14:03:35.838856+00:00",
-  "ultimoIntentoRealizado": "2026-11-12T14:03:35.838856+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-12T21:56:29.964531+00:00",
+  "ultimoIntentoRealizado": "2026-11-12T21:56:29.964531+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1495,
-  "registrosConfirmados": 1495,
+  "registrosEnPlataforma": 1611,
+  "registrosConfirmados": 1611,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1213,
-  "excluidosPrefiltroIrrelevante": 8251,
-  "excluidosSinDatosReales": 39,
+  "registrosConMontoReal": 1297,
+  "excluidosPrefiltroIrrelevante": 8852,
+  "excluidosSinDatosReales": 11,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 797,
-    "conMontoValido": 794,
-    "pctValidado": 99.6,
+    "total": 835,
+    "conMontoValido": 831,
+    "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 794,
+      "VALIDADO": 831,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 3
+      "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1064681219,
-    "montoFinalSum": 1399622903,
-    "montoRecuperadoSum": 334941684
+    "montoOriginalSum": 406852968,
+    "montoFinalSum": 1328516656,
+    "montoRecuperadoSum": 921663688
   },
   "categorias": {
-    "licitaciones": 693,
-    "comprasAgiles": 797,
+    "licitaciones": 771,
+    "comprasAgiles": 835,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 401,
-    "LP": 122,
-    "CO": 9,
-    "LR": 45,
-    "L1": 116,
+    "LE": 444,
+    "LP": 137,
+    "CO": 10,
+    "LR": 46,
+    "L1": 135,
     "B2": 3,
     "E2": 2,
     "LS": 3,
     "O1": 5,
     "I2": 1,
-    "COT": 788
+    "COT": 825
   },
   "matchPorEmpresa": {
-    "Aminorte": 1275,
-    "V-MOCCS": 220
+    "Aminorte": 1349,
+    "V-MOCCS": 262
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1476,
-    "modificadosCount": 15,
-    "cerradosCount": 1323,
+    "nuevosCount": 1589,
+    "modificadosCount": 18,
+    "cerradosCount": 1320,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -173,6 +173,15 @@
         "fechaCierre": "2026-12-11T15:00:00"
       },
       {
+        "codigo": "1456837-4-LR26",
+        "titulo": "SUMINISTRO DE MATERIALES DE OFICINA A TRAVÉS DE PLATAFORMA CLOUDE-COMMERCE",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LA QUEBRADA",
+        "monto": 420000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-23T15:01:00"
+      },
+      {
         "codigo": "621-993-LR26",
         "titulo": "ACIDO ZOLEDRONICO 5 MG100 ML FAMBOL.1000022880",
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
@@ -200,6 +209,15 @@
         "fechaCierre": "2026-11-09T15:00:00"
       },
       {
+        "codigo": "2307-47-LP26",
+        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "I MUNICIPALIDAD DE OSORNO",
+        "monto": 356274415,
+        "empresaMatch": "Aminorte",
+        "matchScore": 90,
+        "fechaCierre": "2026-11-16T15:15:00"
+      },
+      {
         "codigo": "1436733-28-LP26",
         "titulo": "CONTRATO DE SUMINISTRO DE ARTÍCULOS DE ESCRITORIO",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS LIBERTADORES",
@@ -218,6 +236,15 @@
         "fechaCierre": "2026-11-10T16:00:00"
       },
       {
+        "codigo": "1351-7-LP26",
+        "titulo": "SERVICIOS EXTERNOS DE GUARDIAS DE SEGURIDAD PARA OFICINAS REGIÓN DE VALPARAISO ",
+        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
+        "monto": 273600000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-06T15:01:00"
+      },
+      {
         "codigo": "1017312-20-LP26",
         "titulo": "SERVICIO DE PRESTACIONES DE LABORATORIO CLÍNICO PARA EL SISTEMA DE SALUD NAVAL EN LA PROVINCIA DE CONCEPCIÓN",
         "organismo": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
@@ -225,6 +252,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-23T16:00:00"
+      },
+      {
+        "codigo": "1641-396-LP26",
+        "titulo": "RPH - SENSOR NEONATAL Y ADULTO OXIMETRIA CON MONITORES ASOCIADOS",
+        "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
+        "monto": 267000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-10-19T16:00:00"
       },
       {
         "codigo": "1057539-170-LP26",
@@ -252,6 +288,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 98,
         "fechaCierre": "2026-11-23T15:00:00"
+      },
+      {
+        "codigo": "1641-459-LP26",
+        "titulo": "CCV - ADQUISICIÓN DE CRIOSTATO IMPRESORA DE CASSETTES MICROTOMO Y CENTRO DE INCLUSIÓN CON PLACA FRÍA",
+        "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
+        "monto": 233549000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-10-19T17:00:00"
       },
       {
         "codigo": "2109-15-LP26",
@@ -288,6 +333,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-17T16:00:00"
+      },
+      {
+        "codigo": "1431841-70-LP26",
+        "titulo": "CONTRATACIÓN DE SEGUROS SOBRE BIENES MUNICIPALES",
+        "organismo": "I MUNICIPALIDAD DE RECOLETA",
+        "monto": 216000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-01T15:01:00"
       },
       {
         "codigo": "1658-237-LP26",
@@ -540,60 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-01T11:00:00"
-      },
-      {
-        "codigo": "1350296-98-LP26",
-        "titulo": "ADQUISICIÓN DE BATERÍAS PARA MONITORES DESFIBRILADORES Y DEAS PARA EL HOSPITAL DE ALTO HOSPICIO",
-        "organismo": "HOSPITAL DE ALTO HOSPICIO",
-        "monto": 120468460,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-30T15:00:00"
-      },
-      {
-        "codigo": "2981-302-LP26",
-        "titulo": "JENAMTE-ADQUISICIÓN A LO MENOS 50 NOTEBOOK",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "monto": 114898443,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-16T15:00:00"
-      },
-      {
-        "codigo": "2122-35-LP26",
-        "titulo": "Convenio de suministro arriendo de impresoras",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "monto": 108000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 90,
-        "fechaCierre": "2026-10-23T15:00:00"
-      },
-      {
-        "codigo": "5358-17-LP26",
-        "titulo": "Servicio de Reparación y Mejora de Inmuebles UTA Iquique",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "monto": 105000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-10T15:01:00"
-      },
-      {
-        "codigo": "619-13-LP26",
-        "titulo": "Suscripción de licencias IA generativa Claude.",
-        "organismo": "SUBSECRETARIA DEL MINISTERIO DE HACIENDA",
-        "monto": 105000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-09T15:00:00"
-      },
-      {
-        "codigo": "2345-179-LP26",
-        "titulo": "Arriendo de 2 Oficinas Móviles con Conductor para Período de Renovación de PCI 20272028 y 2029",
-        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
-        "monto": 104700000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-23T15:01:00"
       }
     ],
     "modificados": [
@@ -628,13 +628,23 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057489-285-LP26",
-        "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "codigo": "1736-104-LP26",
+        "titulo": "ADQUISICIÓN DE EQUIPOS COMPUTACIONALES ALL IN ONE",
+        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 160000000,
-        "montoNuevo": 160000000,
+        "montoAnterior": 129640000,
+        "montoNuevo": 129640000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3775-30-LP26",
+        "titulo": "MEJORAMIENTO E INST ALUMBRADO PUBLICO LED HIJUELAS",
+        "organismo": "I MUNICIPALIDAD DE HIJUELAS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 74362445,
+        "montoNuevo": 74362445,
         "empresaMatch": "Aminorte"
       },
       {
@@ -656,6 +666,16 @@
         "montoAnterior": 51600000,
         "montoNuevo": 51600000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1552-79-LE26",
+        "titulo": "CONSTRUCCIÓN CES HUASCO BAJO - MOBILIARIO CLINICO",
+        "organismo": "SERVICIO DE SALUD ATACAMA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 14500000,
+        "montoNuevo": 14500000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "777304-61-LE26",
@@ -685,6 +705,16 @@
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 11000,
         "montoNuevo": 11000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1641-353-LP26",
+        "titulo": "MMD - INSUMOS DE PAPELERÍA PARA EL HOSPITAL SAN JUAN DE DIOS - CDT",
+        "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
@@ -718,21 +748,21 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4988-29-LE26",
-        "titulo": "SEGUNDO LLAMDO MEJORAMIENTO PLATABANDAS JJVV BARRIO ORIENTE CONCEPCIÓN.",
-        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1063538-216-LE26",
         "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
         "organismo": "HOSPITAL BASE OSORNO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4988-29-LE26",
+        "titulo": "SEGUNDO LLAMDO MEJORAMIENTO PLATABANDAS JJVV BARRIO ORIENTE CONCEPCIÓN.",
+        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1118,6 +1148,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "1057489-285-LP26",
+        "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+        "estadoAnterior": "Publicada",
+        "monto": 160000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1330174-1-LP26",
         "titulo": "Servicios de Seguridad y Monitoreo de Cámaras.",
         "organismo": "CORPORACION MUNICIPAL CULTURAL DE MUSEO DE BELLAS ARTES DE VALPARAISO",
@@ -1220,18 +1258,10 @@
         "estadoAnterior": "Publicada",
         "monto": 130000000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1736-104-LP26",
-        "titulo": "ADQUISICIÓN DE EQUIPOS COMPUTACIONALES ALL IN ONE",
-        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
-        "estadoAnterior": "Publicada",
-        "monto": 129640000,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1585.3,
+  "tiempoEjecucionSegundos": 1506.6,
   "errores": [],
   "advertencias": []
 }
