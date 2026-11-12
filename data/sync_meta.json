@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-12T04:29:44.496080+00:00",
-  "ultimoIntentoRealizado": "2026-11-12T04:29:44.496080+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-12T14:03:35.838856+00:00",
+  "ultimoIntentoRealizado": "2026-11-12T14:03:35.838856+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1450,
-  "registrosConfirmados": 1450,
+  "registrosEnPlataforma": 1495,
+  "registrosConfirmados": 1495,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1203,
-  "excluidosPrefiltroIrrelevante": 7398,
-  "excluidosSinDatosReales": 28,
+  "registrosConMontoReal": 1213,
+  "excluidosPrefiltroIrrelevante": 8251,
+  "excluidosSinDatosReales": 39,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 833,
-    "conMontoValido": 831,
-    "pctValidado": 99.8,
+    "total": 797,
+    "conMontoValido": 794,
+    "pctValidado": 99.6,
     "stats": {
-      "VALIDADO": 831,
+      "VALIDADO": 794,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 2
+      "MONTO_NO_ENCONTRADO": 3
     },
-    "montoOriginalSum": 1434454494,
-    "montoFinalSum": 1506653000,
-    "montoRecuperadoSum": 72198506
+    "montoOriginalSum": 1064681219,
+    "montoFinalSum": 1399622903,
+    "montoRecuperadoSum": 334941684
   },
   "categorias": {
-    "licitaciones": 612,
-    "comprasAgiles": 833,
+    "licitaciones": 693,
+    "comprasAgiles": 797,
     "convenioMarco": 0,
     "ordenes_compra": 5,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 345,
-    "LP": 115,
-    "CO": 8,
-    "LR": 43,
-    "L1": 101,
+    "LE": 401,
+    "LP": 122,
+    "CO": 9,
+    "LR": 45,
+    "L1": 116,
+    "B2": 3,
     "E2": 2,
     "LS": 3,
     "O1": 5,
-    "B2": 2,
     "I2": 1,
-    "COT": 825
+    "COT": 788
   },
   "matchPorEmpresa": {
-    "Aminorte": 1235,
-    "V-MOCCS": 215
+    "Aminorte": 1275,
+    "V-MOCCS": 220
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1437,
-    "modificadosCount": 9,
-    "cerradosCount": 1329,
+    "nuevosCount": 1476,
+    "modificadosCount": 15,
+    "cerradosCount": 1323,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -200,15 +200,6 @@
         "fechaCierre": "2026-11-09T15:00:00"
       },
       {
-        "codigo": "2307-47-LP26",
-        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
-        "organismo": "I MUNICIPALIDAD DE OSORNO",
-        "monto": 356274415,
-        "empresaMatch": "Aminorte",
-        "matchScore": 90,
-        "fechaCierre": "2026-11-12T15:15:00"
-      },
-      {
         "codigo": "1436733-28-LP26",
         "titulo": "CONTRATO DE SUMINISTRO DE ARTÍCULOS DE ESCRITORIO",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS LIBERTADORES",
@@ -225,15 +216,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-10T16:00:00"
-      },
-      {
-        "codigo": "1351-7-LP26",
-        "titulo": "SERVICIOS EXTERNOS DE GUARDIAS DE SEGURIDAD PARA OFICINAS REGIÓN DE VALPARAISO ",
-        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
-        "monto": 273600000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-06T15:01:00"
       },
       {
         "codigo": "1017312-20-LP26",
@@ -288,6 +270,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-23T16:00:00"
+      },
+      {
+        "codigo": "885-98-LP26",
+        "titulo": "Adquisición de servidores destinados a la actualización de plataforma de búsqueda e indexación para la Contraloría General de la República",
+        "organismo": "CONTRALORIA GENERAL DE LA REPUBLICA",
+        "monto": 220000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-11T16:00:00"
       },
       {
         "codigo": "885-108-LP26",
@@ -569,15 +560,6 @@
         "fechaCierre": "2026-11-16T15:00:00"
       },
       {
-        "codigo": "1233615-68-LP26",
-        "titulo": "Tablets estudiantes beneficiarios Pro-Retención",
-        "organismo": "Servicio Local de Educación Pública Aysén",
-        "monto": 112371800,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-09T17:30:00"
-      },
-      {
         "codigo": "2122-35-LP26",
         "titulo": "Convenio de suministro arriendo de impresoras",
         "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
@@ -594,6 +576,24 @@
         "empresaMatch": "V-MOCCS",
         "matchScore": 60,
         "fechaCierre": "2026-12-10T15:01:00"
+      },
+      {
+        "codigo": "619-13-LP26",
+        "titulo": "Suscripción de licencias IA generativa Claude.",
+        "organismo": "SUBSECRETARIA DEL MINISTERIO DE HACIENDA",
+        "monto": 105000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-09T15:00:00"
+      },
+      {
+        "codigo": "2345-179-LP26",
+        "titulo": "Arriendo de 2 Oficinas Móviles con Conductor para Período de Renovación de PCI 20272028 y 2029",
+        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
+        "monto": 104700000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-23T15:01:00"
       }
     ],
     "modificados": [
@@ -608,6 +608,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2282-109-LP26",
+        "titulo": "Contratación de seguros para inmuebles vehículos municipales equipamiento y de responsabilidad civil",
+        "organismo": "I MUNICIPALIDAD VALDIVIA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 231033309,
+        "montoNuevo": 231033309,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "777304-58-LP26",
         "titulo": "AUDÍFONO PEDIÁTRICO HIPOACUSIA PARA EL HLF",
         "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
@@ -618,13 +628,23 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1736-104-LP26",
-        "titulo": "ADQUISICIÓN DE EQUIPOS COMPUTACIONALES ALL IN ONE",
-        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "codigo": "1057489-285-LP26",
+        "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 129640000,
-        "montoNuevo": 129640000,
+        "montoAnterior": 160000000,
+        "montoNuevo": 160000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "5053-100-LP26",
+        "titulo": "Provisión e instalación de vidrios termopaneles laminas de seguridad reparación mamparas",
+        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE TALCA",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 69752000,
+        "montoNuevo": 69752000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -638,6 +658,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "777304-61-LE26",
+        "titulo": "UPS CON BANCOS DE BATERÍAS PARA EL HLF",
+        "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 9000000,
+        "montoNuevo": 9000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1075963-403-L126",
         "titulo": "ARRIENDO SISTEMA MONITOREO EN LINEA PARA REFRIGERADORES DE FARMACOS ONCOLOGICOS",
         "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
@@ -645,6 +675,36 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 4000000,
         "montoNuevo": 4000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "548874-77-LR26",
+        "titulo": "MANTENCIÓN Y MEJORA SISTEMA CIBERSEGURIDAD NCH ISO",
+        "organismo": "INSTITUTO DE PREVISION SOCIAL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 11000,
+        "montoNuevo": 11000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4113-52-LP26",
+        "titulo": "CONSTR. SEÑALETICA-MOBILIARIO GEOPARQUE KUTRALCURA",
+        "organismo": "ILUSTRE MUNICIPALIDAD MELIPEUCO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
@@ -658,21 +718,21 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1063538-216-LE26",
-        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
-        "organismo": "HOSPITAL BASE OSORNO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "4988-29-LE26",
         "titulo": "SEGUNDO LLAMDO MEJORAMIENTO PLATABANDAS JJVV BARRIO ORIENTE CONCEPCIÓN.",
         "organismo": "I MUNICIPALIDAD DE CONCEPCION",
         "estadoAnterior": "Cerrada",
         "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1063538-216-LE26",
+        "titulo": "SERVICIO DE ARRIENDO DE IMPRESORAS",
+        "organismo": "HOSPITAL BASE OSORNO",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -970,14 +1030,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2282-109-LP26",
-        "titulo": "Contratación de seguros para inmuebles vehículos municipales equipamiento y de responsabilidad civil",
-        "organismo": "I MUNICIPALIDAD VALDIVIA",
-        "estadoAnterior": "Publicada",
-        "monto": 231033309,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "2409-53-LP26",
         "titulo": "MEJORAMIENTO DE SISTEMA DE CLIMATIZACIÓN PARA ESTABLECIMIENTOS EDUCACIONALES",
         "organismo": "I MUNICIPALIDAD DE LOS ANGELES",
@@ -1063,14 +1115,6 @@
         "organismo": "UNIVERSIDAD DEL BIO BIO",
         "estadoAnterior": "Cerrada",
         "monto": 168000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1057489-285-LP26",
-        "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
-        "estadoAnterior": "Publicada",
-        "monto": 160000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1168,10 +1212,26 @@
         "estadoAnterior": "Publicada",
         "monto": 133000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3833-59-LP26",
+        "titulo": "SEGUROS BIENES MUEBLES E INMUEBLES Y OTROS",
+        "organismo": "I MUNICIPALIDAD DE RIO BUENO",
+        "estadoAnterior": "Publicada",
+        "monto": 130000000,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1736-104-LP26",
+        "titulo": "ADQUISICIÓN DE EQUIPOS COMPUTACIONALES ALL IN ONE",
+        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "estadoAnterior": "Publicada",
+        "monto": 129640000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1503.8,
+  "tiempoEjecucionSegundos": 1585.3,
   "errores": [],
   "advertencias": []
 }
