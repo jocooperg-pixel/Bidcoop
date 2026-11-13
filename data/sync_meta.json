@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-13T11:38:58.278090+00:00",
-  "ultimoIntentoRealizado": "2026-11-13T11:38:58.278090+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-13T18:50:17.927967+00:00",
+  "ultimoIntentoRealizado": "2026-11-13T18:50:17.927967+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1546,
-  "registrosConfirmados": 1546,
+  "registrosEnPlataforma": 1478,
+  "registrosConfirmados": 1478,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1256,
-  "excluidosPrefiltroIrrelevante": 8151,
-  "excluidosSinDatosReales": 7,
+  "registrosConMontoReal": 1176,
+  "excluidosPrefiltroIrrelevante": 8685,
+  "excluidosSinDatosReales": 29,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 835,
-    "conMontoValido": 831,
+    "total": 732,
+    "conMontoValido": 728,
     "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 831,
+      "VALIDADO": 728,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1068472383,
-    "montoFinalSum": 1346990054,
-    "montoRecuperadoSum": 278517671
+    "montoOriginalSum": 801196248,
+    "montoFinalSum": 1347427692,
+    "montoRecuperadoSum": 546231444
   },
   "categorias": {
-    "licitaciones": 707,
-    "comprasAgiles": 835,
+    "licitaciones": 742,
+    "comprasAgiles": 732,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 404,
-    "LP": 134,
+    "LE": 426,
+    "LP": 136,
     "CO": 10,
-    "LR": 45,
-    "L1": 116,
-    "B2": 2,
-    "E2": 2,
+    "LR": 47,
+    "L1": 123,
+    "B2": 3,
+    "E2": 3,
     "LS": 3,
     "O1": 4,
     "I2": 1,
-    "COT": 825
+    "COT": 722
   },
   "matchPorEmpresa": {
-    "Aminorte": 1313,
-    "V-MOCCS": 233
+    "Aminorte": 1253,
+    "V-MOCCS": 225
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1525,
-    "modificadosCount": 17,
-    "cerradosCount": 1321,
+    "nuevosCount": 1455,
+    "modificadosCount": 19,
+    "cerradosCount": 1319,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -182,6 +182,15 @@
         "fechaCierre": "2026-11-26T16:00:00"
       },
       {
+        "codigo": "5184-117-LR26",
+        "titulo": "RENOVACIÓN INFRAESTRUCTURA TECNOLÓGICA-SERVIDORES",
+        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE LINARES",
+        "monto": 400000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-23T15:30:00"
+      },
+      {
         "codigo": "1110404-227-LR26",
         "titulo": "ARRIENDO DE EQUIPOS DE IMPRESIÓN Y FOTOCOPIADO CON SERVICIOS ASOCIADOS PARA ESTABLECIMIENTOS EDUCACIONALES DEL SLEP CHINCHORRO SUBVENCIÓN SEP Y GENERAL",
         "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
@@ -243,15 +252,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 90,
         "fechaCierre": "2026-12-01T15:00:00"
-      },
-      {
-        "codigo": "1447790-13-LP26",
-        "titulo": "ADQ. CAMPANAS Y GABINETES PROYECTO HPC",
-        "organismo": "SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
-        "monto": 257070000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-24T15:01:00"
       },
       {
         "codigo": "558869-71-LP26",
@@ -425,15 +425,6 @@
         "fechaCierre": "2026-10-06T15:00:00"
       },
       {
-        "codigo": "1049-88-LP26",
-        "titulo": "Arriendo de Embarcacion Monitoreo Proceso de Reclutamiento Sardina Comun y Anchoveta entre region de Valparaiso y Los Rios 2027",
-        "organismo": "INSTITUTO DE FOMENTO PESQUERO",
-        "monto": 179116000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-24T16:00:00"
-      },
-      {
         "codigo": "1461054-52-LP26",
         "titulo": "ADQUISICIÓN COMPUTADORES ALL-IN-ONE SLEP ELQUI",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DEL ELQUI",
@@ -488,6 +479,15 @@
         "fechaCierre": "2026-11-30T15:10:00"
       },
       {
+        "codigo": "1657-20-LP26",
+        "titulo": "SERVICIO DE DISEÑO CONFECCIÓN RESTAURACION YO REPARACIÓN DE INFRAESTRUCTURA EN OFICINA CENTRAL Y OFICINAS COMUNALES DE LA PROVINCIA DE ELQUI LIMARI Y CHOAPA DE LA SEREMI DE SALUD REGION DE COQUIMBO",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+        "monto": 144300000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-16T15:00:00"
+      },
+      {
         "codigo": "1657-22-LP26",
         "titulo": "SERVICIO DE MANTENCION REPARACION Y REPOSICION DEL SISTEMA ELECTRICO ELECTRÓNICO Y DIGITAL DE LA OFICINA CENTRAL Y OFICINAS COMUNALES DE LA PROVINCIA DE ELQUI LIMARI Y CHOAPA DE LA SEREMI DE SALUD REGION DE COQUIMBO",
         "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
@@ -522,6 +522,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-12T16:00:00"
+      },
+      {
+        "codigo": "800-16-LP26",
+        "titulo": "SENSORES DE MONITOREO DE PROFUNDIDAD ANESTESICA",
+        "organismo": "UNIVERSIDAD DE CHILE",
+        "monto": 130783237,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-12-14T17:00:00"
       },
       {
         "codigo": "1057898-108-LP26",
@@ -569,6 +578,15 @@
         "fechaCierre": "2026-11-30T15:00:00"
       },
       {
+        "codigo": "4291-73-LP26",
+        "titulo": "Servidores Unidad de Formación Virtual ANT21991",
+        "organismo": "UNIVERSIDAD DE ANTOFAGASTA",
+        "monto": 120000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-03T15:01:00"
+      },
+      {
         "codigo": "2981-302-LP26",
         "titulo": "JENAMTE-ADQUISICIÓN A LO MENOS 50 NOTEBOOK",
         "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
@@ -576,24 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-16T15:00:00"
-      },
-      {
-        "codigo": "1233615-68-LP26",
-        "titulo": "Tablets estudiantes beneficiarios Pro-Retención",
-        "organismo": "Servicio Local de Educación Pública Aysén",
-        "monto": 112371800,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-09T17:30:00"
-      },
-      {
-        "codigo": "5358-17-LP26",
-        "titulo": "Servicio de Reparación y Mejora de Inmuebles UTA Iquique",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "monto": 105000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-10T15:01:00"
       }
     ],
     "modificados": [
@@ -708,9 +708,39 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2421-21-LR26",
+        "titulo": "SERVICIO ASEO DAS CONCEPCIÓN",
+        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4375-116-LE26",
+        "titulo": "Adquisicion Biombos",
+        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
+      },
+      {
         "codigo": "1641-353-LP26",
         "titulo": "MMD - INSUMOS DE PAPELERÍA PARA EL HOSPITAL SAN JUAN DE DIOS - CDT",
         "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -726,16 +756,6 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2981-266-LE26",
-        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2785-62-LR26",
@@ -1251,7 +1271,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1505.8,
+  "tiempoEjecucionSegundos": 1541.7,
   "errores": [],
   "advertencias": []
 }
