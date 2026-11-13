@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-13T02:17:11.332771+00:00",
-  "ultimoIntentoRealizado": "2026-11-13T02:17:11.332771+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-13T11:38:58.278090+00:00",
+  "ultimoIntentoRealizado": "2026-11-13T11:38:58.278090+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1547,
-  "registrosConfirmados": 1547,
+  "registrosEnPlataforma": 1546,
+  "registrosConfirmados": 1546,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1258,
-  "excluidosPrefiltroIrrelevante": 8129,
-  "excluidosSinDatosReales": 4,
+  "registrosConMontoReal": 1256,
+  "excluidosPrefiltroIrrelevante": 8151,
+  "excluidosSinDatosReales": 7,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 834,
-    "conMontoValido": 830,
+    "total": 835,
+    "conMontoValido": 831,
     "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 830,
+      "VALIDADO": 831,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 942036670,
-    "montoFinalSum": 1329365067,
-    "montoRecuperadoSum": 387328397
+    "montoOriginalSum": 1068472383,
+    "montoFinalSum": 1346990054,
+    "montoRecuperadoSum": 278517671
   },
   "categorias": {
-    "licitaciones": 709,
-    "comprasAgiles": 834,
+    "licitaciones": 707,
+    "comprasAgiles": 835,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 405,
+    "LE": 404,
     "LP": 134,
     "CO": 10,
-    "LR": 46,
+    "LR": 45,
     "L1": 116,
     "B2": 2,
     "E2": 2,
     "LS": 3,
     "O1": 4,
     "I2": 1,
-    "COT": 824
+    "COT": 825
   },
   "matchPorEmpresa": {
-    "Aminorte": 1309,
-    "V-MOCCS": 238
+    "Aminorte": 1313,
+    "V-MOCCS": 233
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1527,
-    "modificadosCount": 16,
-    "cerradosCount": 1322,
+    "nuevosCount": 1525,
+    "modificadosCount": 17,
+    "cerradosCount": 1321,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -180,15 +180,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-26T16:00:00"
-      },
-      {
-        "codigo": "5184-117-LR26",
-        "titulo": "RENOVACIÓN INFRAESTRUCTURA TECNOLÓGICA-SERVIDORES",
-        "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE LINARES",
-        "monto": 400000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-23T15:30:00"
       },
       {
         "codigo": "1110404-227-LR26",
@@ -362,6 +353,15 @@
         "fechaCierre": "2026-11-25T10:00:00"
       },
       {
+        "codigo": "1057491-203-LP26",
+        "titulo": "SERVICIO DE ASEO EDIFICIO AMICAM TROI Y NUEVA UPC",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
+        "monto": 200000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T15:00:00"
+      },
+      {
         "codigo": "1469-294-LP26",
         "titulo": "FOTOCOPIADO IMPRESIÓN Y SERVICIOS COMPLEMENTARIOS",
         "organismo": "UNIVERSIDAD DE TALCA",
@@ -488,15 +488,6 @@
         "fechaCierre": "2026-11-30T15:10:00"
       },
       {
-        "codigo": "1657-20-LP26",
-        "titulo": "SERVICIO DE DISEÑO CONFECCIÓN RESTAURACION YO REPARACIÓN DE INFRAESTRUCTURA EN OFICINA CENTRAL Y OFICINAS COMUNALES DE LA PROVINCIA DE ELQUI LIMARI Y CHOAPA DE LA SEREMI DE SALUD REGION DE COQUIMBO",
-        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
-        "monto": 144300000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-16T15:00:00"
-      },
-      {
         "codigo": "1657-22-LP26",
         "titulo": "SERVICIO DE MANTENCION REPARACION Y REPOSICION DEL SISTEMA ELECTRICO ELECTRÓNICO Y DIGITAL DE LA OFICINA CENTRAL Y OFICINAS COMUNALES DE LA PROVINCIA DE ELQUI LIMARI Y CHOAPA DE LA SEREMI DE SALUD REGION DE COQUIMBO",
         "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-09T17:30:00"
+      },
+      {
+        "codigo": "5358-17-LP26",
+        "titulo": "Servicio de Reparación y Mejora de Inmuebles UTA Iquique",
+        "organismo": "UNIVERSIDAD DE TARAPACA",
+        "monto": 105000000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-10T15:01:00"
       }
     ],
     "modificados": [
@@ -726,6 +726,16 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2785-62-LR26",
@@ -1241,7 +1251,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1508.9,
+  "tiempoEjecucionSegundos": 1505.8,
   "errores": [],
   "advertencias": []
 }
