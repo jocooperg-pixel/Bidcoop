@@ -1,57 +1,57 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-14T16:11:24.024370+00:00",
-  "ultimoIntentoRealizado": "2026-11-14T16:11:24.024370+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-14T21:42:48.949110+00:00",
+  "ultimoIntentoRealizado": "2026-11-14T21:42:48.949110+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1615,
-  "registrosConfirmados": 1615,
+  "registrosEnPlataforma": 1623,
+  "registrosConfirmados": 1623,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1299,
-  "excluidosPrefiltroIrrelevante": 8897,
-  "excluidosSinDatosReales": 21,
+  "registrosConMontoReal": 1304,
+  "excluidosPrefiltroIrrelevante": 8901,
+  "excluidosSinDatosReales": 12,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 844,
-    "conMontoValido": 839,
+    "total": 841,
+    "conMontoValido": 836,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 839,
+      "VALIDADO": 836,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 1450623157,
-    "montoFinalSum": 1453747597,
-    "montoRecuperadoSum": 3124440
+    "montoOriginalSum": 1439614492,
+    "montoFinalSum": 1442588932,
+    "montoRecuperadoSum": 2974440
   },
   "categorias": {
-    "licitaciones": 767,
-    "comprasAgiles": 844,
+    "licitaciones": 778,
+    "comprasAgiles": 841,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 440,
-    "LP": 141,
-    "LR": 48,
-    "CO": 11,
-    "L1": 129,
+    "LE": 446,
+    "LP": 146,
+    "LR": 49,
+    "CO": 10,
+    "L1": 128,
     "B2": 3,
     "E2": 2,
     "LS": 3,
     "O1": 4,
     "I2": 1,
-    "COT": 833
+    "COT": 831
   },
   "matchPorEmpresa": {
-    "Aminorte": 1359,
+    "Aminorte": 1367,
     "V-MOCCS": 256
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1591,
+    "nuevosCount": 1599,
     "modificadosCount": 20,
     "cerradosCount": 1318,
     "nuevos": [
@@ -479,6 +479,15 @@
         "fechaCierre": "2026-11-24T16:00:00"
       },
       {
+        "codigo": "2201-41-LP26",
+        "titulo": "ADQUISICIÓN DE AYUDAS TÉCNICAS DE DESPLAZAMIENTO TIPO SILLAS DE RUEDAS",
+        "organismo": "INSTITUTO NACIONAL DE REHABILITACION PEDRO AGUIRRE CERDA",
+        "monto": 155000000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-27T15:00:00"
+      },
+      {
         "codigo": "1057544-388-LP26",
         "titulo": "CONTRATACIÓN DE SERVICIOS DE MANTENCIÓN PREVENTIVA Y CORRECTIVA DE MONITORES DE SIGNOS VITALES Y MULTIPARÁMETROS CON Y SIN SISTEMA GASES",
         "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-01T11:00:00"
-      },
-      {
-        "codigo": "1350296-98-LP26",
-        "titulo": "ADQUISICIÓN DE BATERÍAS PARA MONITORES DESFIBRILADORES Y DEAS PARA EL HOSPITAL DE ALTO HOSPICIO",
-        "organismo": "HOSPITAL DE ALTO HOSPICIO",
-        "monto": 120468460,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-30T15:00:00"
       }
     ],
     "modificados": [
@@ -718,16 +718,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2421-21-LR26",
-        "titulo": "SERVICIO ASEO DAS CONCEPCIÓN",
-        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "4375-116-LE26",
         "titulo": "Adquisicion Biombos",
         "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
@@ -738,19 +728,19 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1641-353-LP26",
-        "titulo": "MMD - INSUMOS DE PAPELERÍA PARA EL HOSPITAL SAN JUAN DE DIOS - CDT",
-        "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
+        "codigo": "2421-21-LR26",
+        "titulo": "SERVICIO ASEO DAS CONCEPCIÓN",
+        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
+        "estadoNuevo": "Revocada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2981-266-LE26",
-        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "codigo": "1641-353-LP26",
+        "titulo": "MMD - INSUMOS DE PAPELERÍA PARA EL HOSPITAL SAN JUAN DE DIOS - CDT",
+        "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -766,6 +756,16 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "2981-266-LE26",
+        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "2785-62-LR26",
@@ -1281,7 +1281,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1071.4,
+  "tiempoEjecucionSegundos": 961.0,
   "errores": [],
   "advertencias": []
 }
