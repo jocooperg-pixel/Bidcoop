@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-15T01:22:34.642237+00:00",
-  "ultimoIntentoRealizado": "2026-11-15T01:22:34.642237+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-15T08:29:59.165001+00:00",
+  "ultimoIntentoRealizado": "2026-11-15T08:29:59.165001+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1621,
-  "registrosConfirmados": 1621,
+  "registrosEnPlataforma": 1631,
+  "registrosConfirmados": 1631,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1304,
+  "registrosConMontoReal": 1308,
   "excluidosPrefiltroIrrelevante": 8900,
-  "excluidosSinDatosReales": 16,
+  "excluidosSinDatosReales": 8,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 844,
-    "conMontoValido": 839,
+    "total": 846,
+    "conMontoValido": 841,
     "pctValidado": 99.4,
     "stats": {
-      "VALIDADO": 839,
+      "VALIDADO": 841,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 5
     },
-    "montoOriginalSum": 1449609927,
-    "montoFinalSum": 1457938932,
-    "montoRecuperadoSum": 8329005
+    "montoOriginalSum": 1452744492,
+    "montoFinalSum": 1460218932,
+    "montoRecuperadoSum": 7474440
   },
   "categorias": {
-    "licitaciones": 773,
-    "comprasAgiles": 844,
+    "licitaciones": 781,
+    "comprasAgiles": 846,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 445,
-    "LP": 144,
+    "LE": 452,
+    "LP": 143,
     "LR": 48,
     "CO": 11,
-    "L1": 127,
+    "L1": 129,
     "B2": 3,
     "E2": 2,
     "LS": 3,
     "O1": 4,
     "I2": 1,
-    "COT": 833
+    "COT": 835
   },
   "matchPorEmpresa": {
-    "Aminorte": 1365,
+    "Aminorte": 1375,
     "V-MOCCS": 256
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1598,
-    "modificadosCount": 19,
-    "cerradosCount": 1319,
+    "nuevosCount": 1607,
+    "modificadosCount": 20,
+    "cerradosCount": 1318,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -117,15 +117,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-19T16:00:00"
-      },
-      {
-        "codigo": "1084156-49-LR26",
-        "titulo": "SERVICIO ARRIENDO DE IMPRESORAS",
-        "organismo": "SERVICIO LOCAL DE EDUCACION PUBLICA ANDALIEN SUR",
-        "monto": 650000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-27T16:00:00"
       },
       {
         "codigo": "520149-48-LR26",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-01T11:00:00"
+      },
+      {
+        "codigo": "1350296-98-LP26",
+        "titulo": "ADQUISICIÓN DE BATERÍAS PARA MONITORES DESFIBRILADORES Y DEAS PARA EL HOSPITAL DE ALTO HOSPICIO",
+        "organismo": "HOSPITAL DE ALTO HOSPICIO",
+        "monto": 120468460,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-30T15:00:00"
       }
     ],
     "modificados": [
@@ -635,6 +635,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 160000000,
         "montoNuevo": 160000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1736-104-LP26",
+        "titulo": "ADQUISICIÓN DE EQUIPOS COMPUTACIONALES ALL IN ONE",
+        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 129640000,
+        "montoNuevo": 129640000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1262,16 +1272,16 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "1736-104-LP26",
-        "titulo": "ADQUISICIÓN DE EQUIPOS COMPUTACIONALES ALL IN ONE",
-        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "codigo": "1549-87-LP26",
+        "titulo": "INSUMOS DENTALES ADITAMENTOS DE SOBREDENTADURA",
+        "organismo": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
         "estadoAnterior": "Publicada",
-        "monto": 129640000,
+        "monto": 127731093,
         "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1260.1,
+  "tiempoEjecucionSegundos": 833.6,
   "errores": [],
   "advertencias": []
 }
