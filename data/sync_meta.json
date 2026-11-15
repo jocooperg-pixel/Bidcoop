@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-15T08:29:59.165001+00:00",
-  "ultimoIntentoRealizado": "2026-11-15T08:29:59.165001+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-15T16:39:42.407288+00:00",
+  "ultimoIntentoRealizado": "2026-11-15T16:39:42.407288+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1631,
-  "registrosConfirmados": 1631,
+  "registrosEnPlataforma": 1595,
+  "registrosConfirmados": 1595,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1308,
-  "excluidosPrefiltroIrrelevante": 8900,
-  "excluidosSinDatosReales": 8,
+  "registrosConMontoReal": 1287,
+  "excluidosPrefiltroIrrelevante": 8902,
+  "excluidosSinDatosReales": 41,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 846,
-    "conMontoValido": 841,
-    "pctValidado": 99.4,
+    "total": 842,
+    "conMontoValido": 838,
+    "pctValidado": 99.5,
     "stats": {
-      "VALIDADO": 841,
+      "VALIDADO": 838,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 5
+      "MONTO_NO_ENCONTRADO": 4
     },
-    "montoOriginalSum": 1452744492,
-    "montoFinalSum": 1460218932,
-    "montoRecuperadoSum": 7474440
+    "montoOriginalSum": 1453896870,
+    "montoFinalSum": 1456871310,
+    "montoRecuperadoSum": 2974440
   },
   "categorias": {
-    "licitaciones": 781,
-    "comprasAgiles": 846,
+    "licitaciones": 750,
+    "comprasAgiles": 842,
     "convenioMarco": 0,
-    "ordenes_compra": 4,
+    "ordenes_compra": 3,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LE": 452,
-    "LP": 143,
-    "LR": 48,
-    "CO": 11,
-    "L1": 129,
+    "LE": 436,
+    "LP": 139,
+    "L1": 121,
+    "LR": 45,
     "B2": 3,
+    "CO": 10,
     "E2": 2,
     "LS": 3,
-    "O1": 4,
+    "O1": 3,
     "I2": 1,
-    "COT": 835
+    "COT": 832
   },
   "matchPorEmpresa": {
-    "Aminorte": 1375,
-    "V-MOCCS": 256
+    "Aminorte": 1341,
+    "V-MOCCS": 254
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1607,
-    "modificadosCount": 20,
-    "cerradosCount": 1318,
+    "nuevosCount": 1577,
+    "modificadosCount": 14,
+    "cerradosCount": 1324,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -182,15 +182,6 @@
         "fechaCierre": "2026-11-23T15:30:00"
       },
       {
-        "codigo": "1110404-227-LR26",
-        "titulo": "ARRIENDO DE EQUIPOS DE IMPRESIÓN Y FOTOCOPIADO CON SERVICIOS ASOCIADOS PARA ESTABLECIMIENTOS EDUCACIONALES DEL SLEP CHINCHORRO SUBVENCIÓN SEP Y GENERAL",
-        "organismo": "SERVICIO LOCAL DE EDUCACION DE CHINCHORRO",
-        "monto": 361926262,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-09T15:00:00"
-      },
-      {
         "codigo": "2307-47-LP26",
         "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
         "organismo": "I MUNICIPALIDAD DE OSORNO",
@@ -198,15 +189,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 90,
         "fechaCierre": "2026-11-16T15:15:00"
-      },
-      {
-        "codigo": "1436733-28-LP26",
-        "titulo": "CONTRATO DE SUMINISTRO DE ARTÍCULOS DE ESCRITORIO",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS LIBERTADORES",
-        "monto": 300000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-12T16:00:00"
       },
       {
         "codigo": "5525-2-LP26",
@@ -353,15 +335,6 @@
         "fechaCierre": "2026-11-25T10:00:00"
       },
       {
-        "codigo": "1057491-203-LP26",
-        "titulo": "SERVICIO DE ASEO EDIFICIO AMICAM TROI Y NUEVA UPC",
-        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
-        "monto": 200000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-24T15:00:00"
-      },
-      {
         "codigo": "1469-294-LP26",
         "titulo": "FOTOCOPIADO IMPRESIÓN Y SERVICIOS COMPLEMENTARIOS",
         "organismo": "UNIVERSIDAD DE TALCA",
@@ -377,7 +350,7 @@
         "monto": 192000000,
         "empresaMatch": "Aminorte",
         "matchScore": 80,
-        "fechaCierre": "2026-11-16T15:01:00"
+        "fechaCierre": "2026-11-23T15:01:00"
       },
       {
         "codigo": "1013353-43-LP26",
@@ -414,15 +387,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 80,
         "fechaCierre": "2026-11-16T15:00:00"
-      },
-      {
-        "codigo": "2263-72-LP26",
-        "titulo": "SERVICIO DE VIGILANCIA OFICINA PROVINCIAL DE LA DIRECCIÓN DE VIALIDAD PROVINCIA DE MALLECO",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "monto": 180000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-10-06T15:00:00"
       },
       {
         "codigo": "1049-88-LP26",
@@ -594,6 +558,42 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-30T15:00:00"
+      },
+      {
+        "codigo": "4291-73-LP26",
+        "titulo": "Servidores Unidad de Formación Virtual ANT21991",
+        "organismo": "UNIVERSIDAD DE ANTOFAGASTA",
+        "monto": 120000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-03T15:01:00"
+      },
+      {
+        "codigo": "2981-302-LP26",
+        "titulo": "JENAMTE-ADQUISICIÓN A LO MENOS 50 NOTEBOOK",
+        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+        "monto": 114898443,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-16T15:00:00"
+      },
+      {
+        "codigo": "1233615-68-LP26",
+        "titulo": "Tablets estudiantes beneficiarios Pro-Retención",
+        "organismo": "Servicio Local de Educación Pública Aysén",
+        "monto": 112371800,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-09T17:30:00"
+      },
+      {
+        "codigo": "619-13-LP26",
+        "titulo": "Suscripción de licencias IA generativa Claude.",
+        "organismo": "SUBSECRETARIA DEL MINISTERIO DE HACIENDA",
+        "monto": 105000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-09T15:00:00"
       }
     ],
     "modificados": [
@@ -618,16 +618,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "777304-58-LP26",
-        "titulo": "AUDÍFONO PEDIÁTRICO HIPOACUSIA PARA EL HLF",
-        "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 176700720,
-        "montoNuevo": 176700720,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1057489-285-LP26",
         "titulo": "Arriendo de Huelleros digitales y Pistola Escáner",
         "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
@@ -645,16 +635,6 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 129640000,
         "montoNuevo": 129640000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3775-30-LP26",
-        "titulo": "MEJORAMIENTO E INST ALUMBRADO PUBLICO LED HIJUELAS",
-        "organismo": "I MUNICIPALIDAD DE HIJUELAS",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Revocada",
-        "montoAnterior": 74362445,
-        "montoNuevo": 74362445,
         "empresaMatch": "Aminorte"
       },
       {
@@ -698,16 +678,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1075963-403-L126",
-        "titulo": "ARRIENDO SISTEMA MONITOREO EN LINEA PARA REFRIGERADORES DE FARMACOS ONCOLOGICOS",
-        "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 4000000,
-        "montoNuevo": 4000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "548874-77-LR26",
         "titulo": "MANTENCIÓN Y MEJORA SISTEMA CIBERSEGURIDAD NCH ISO",
         "organismo": "INSTITUTO DE PREVISION SOCIAL",
@@ -748,26 +718,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4113-52-LP26",
-        "titulo": "CONSTR. SEÑALETICA-MOBILIARIO GEOPARQUE KUTRALCURA",
-        "organismo": "ILUSTRE MUNICIPALIDAD MELIPEUCO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "2981-266-LE26",
-        "titulo": "ADQUISICION DE TABLETS SEMIRROBUSTAS - PLAN FRONTERA",
-        "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2785-62-LR26",
         "titulo": "Servicio de demarcación en pintura termoplástica y acrílica comuna de San Pedro de la Paz.",
         "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE LA PAZ",
@@ -783,16 +733,6 @@
         "organismo": "HOSPITAL BASE OSORNO",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "4988-29-LE26",
-        "titulo": "SEGUNDO LLAMDO MEJORAMIENTO PLATABANDAS JJVV BARRIO ORIENTE CONCEPCIÓN.",
-        "organismo": "I MUNICIPALIDAD DE CONCEPCION",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1136,6 +1076,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "777304-58-LP26",
+        "titulo": "AUDÍFONO PEDIÁTRICO HIPOACUSIA PARA EL HLF",
+        "organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
+        "estadoAnterior": "Publicada",
+        "monto": 176700720,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "809-54-LP26",
         "titulo": "Constitución e Inscripción de Derechos Reales de Uso Segundo Llamado Región de La Araucanía año 2026",
         "organismo": "CORP NACIONAL DE DESARROLLO INDIGENA",
@@ -1270,18 +1218,10 @@
         "estadoAnterior": "Publicada",
         "monto": 130000000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1549-87-LP26",
-        "titulo": "INSUMOS DENTALES ADITAMENTOS DE SOBREDENTADURA",
-        "organismo": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
-        "estadoAnterior": "Publicada",
-        "monto": 127731093,
-        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 833.6,
+  "tiempoEjecucionSegundos": 851.7,
   "errores": [],
   "advertencias": []
 }
