@@ -1,60 +1,69 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-18T14:39:07.261409+00:00",
-  "ultimoIntentoRealizado": "2026-11-18T14:39:07.261409+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-18T22:43:45.232115+00:00",
+  "ultimoIntentoRealizado": "2026-11-18T22:43:45.232115+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1558,
-  "registrosConfirmados": 1558,
+  "registrosEnPlataforma": 1667,
+  "registrosConfirmados": 1667,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1255,
-  "excluidosPrefiltroIrrelevante": 8293,
-  "excluidosSinDatosReales": 55,
+  "registrosConMontoReal": 1340,
+  "excluidosPrefiltroIrrelevante": 8842,
+  "excluidosSinDatosReales": 52,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 856,
-    "conMontoValido": 849,
-    "pctValidado": 99.2,
+    "total": 912,
+    "conMontoValido": 904,
+    "pctValidado": 99.1,
     "stats": {
-      "VALIDADO": 849,
+      "VALIDADO": 904,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 7
+      "MONTO_NO_ENCONTRADO": 8
     },
-    "montoOriginalSum": 838069881,
-    "montoFinalSum": 1353132593,
-    "montoRecuperadoSum": 515062712
+    "montoOriginalSum": 378372024,
+    "montoFinalSum": 1495067240,
+    "montoRecuperadoSum": 1116695216
   },
   "categorias": {
-    "licitaciones": 698,
-    "comprasAgiles": 856,
+    "licitaciones": 751,
+    "comprasAgiles": 912,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 134,
-    "LE": 400,
-    "LR": 42,
-    "CO": 9,
-    "L1": 113,
+    "LP": 145,
+    "LE": 432,
+    "LR": 44,
+    "CO": 12,
+    "L1": 121,
     "B2": 3,
     "O1": 4,
     "I2": 1,
     "LS": 3,
     "E2": 2,
-    "COT": 847
+    "COT": 900
   },
   "matchPorEmpresa": {
-    "Aminorte": 1332,
-    "V-MOCCS": 226
+    "Aminorte": 1406,
+    "V-MOCCS": 261
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1539,
-    "modificadosCount": 15,
-    "cerradosCount": 1323,
+    "nuevosCount": 1646,
+    "modificadosCount": 17,
+    "cerradosCount": 1321,
     "nuevos": [
+      {
+        "codigo": "621-1055-LR26",
+        "titulo": "ACIDO VALPROICO 200 MG CPCM REC ENT 1000023413",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 4840329266,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-09T16:00:00"
+      },
       {
         "codigo": "621-1018-LR26",
         "titulo": "CEFADROXILO 500 MG CPCMCM REC 1000023200",
@@ -180,6 +189,33 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2027-02-09T16:00:00"
+      },
+      {
+        "codigo": "2307-47-LP26",
+        "titulo": "SERV. ARRIENDO DE IMPRESORAS MULTIFUNCIONALES",
+        "organismo": "I MUNICIPALIDAD DE OSORNO",
+        "monto": 356274415,
+        "empresaMatch": "Aminorte",
+        "matchScore": 90,
+        "fechaCierre": "2026-11-16T15:15:00"
+      },
+      {
+        "codigo": "1436733-28-LP26",
+        "titulo": "CONTRATO DE SUMINISTRO DE ARTÍCULOS DE ESCRITORIO",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS LIBERTADORES",
+        "monto": 300000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-12T16:00:00"
+      },
+      {
+        "codigo": "1351-7-LP26",
+        "titulo": "SERVICIOS EXTERNOS DE GUARDIAS DE SEGURIDAD PARA OFICINAS REGIÓN DE VALPARAISO ",
+        "organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
+        "monto": 273600000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-06T15:01:00"
       },
       {
         "codigo": "1017312-20-LP26",
@@ -470,6 +506,15 @@
         "fechaCierre": "2026-11-18T15:00:00"
       },
       {
+        "codigo": "1657-20-LP26",
+        "titulo": "SERVICIO DE DISEÑO CONFECCIÓN RESTAURACION YO REPARACIÓN DE INFRAESTRUCTURA EN OFICINA CENTRAL Y OFICINAS COMUNALES DE LA PROVINCIA DE ELQUI LIMARI Y CHOAPA DE LA SEREMI DE SALUD REGION DE COQUIMBO",
+        "organismo": "SUBSECRETARIA DE SALUD PUBLICA",
+        "monto": 144300000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-16T15:00:00"
+      },
+      {
         "codigo": "4642-103-LP26",
         "titulo": "CONTRATACIÓN DEL SERVICIO DE MANTENCIÓN CORRECTIVA Y PREVENTIVA DE VENTILADOR MECÁNICO ECÓGRAFO Y CENTRAL DE MONITOREO DE DISTINTAS UNIDADES DEL HOSPITAL DE CARABINEROS POR UN PERIODO DE 24 MESES CON SUMINISTRO DE REPUESTOS.",
         "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
@@ -477,6 +522,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 80,
         "fechaCierre": "2026-11-25T16:00:00"
+      },
+      {
+        "codigo": "1436733-29-LP26",
+        "titulo": "CONTRATO DE SUMINISTRO DE ARTÍCULOS DEPORTIVOS PARA LOS ESTABLECIMIENTOS EDUCACIONALES DEL SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE LOS LIBERTADORES",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LOS LIBERTADORES",
+        "monto": 135000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-12T16:00:00"
       },
       {
         "codigo": "800-16-LP26",
@@ -540,60 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-16T15:00:00"
-      },
-      {
-        "codigo": "548874-97-LP26",
-        "titulo": "Servicio de Suministro de Pinturas para los inmuebles edificios y oficinas del Instituto de Previsión Social en la Región Metropolitana",
-        "organismo": "INSTITUTO DE PREVISION SOCIAL",
-        "monto": 114620000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-12-11T15:30:00"
-      },
-      {
-        "codigo": "5358-17-LP26",
-        "titulo": "Servicio de Reparación y Mejora de Inmuebles UTA Iquique",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "monto": 105000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-10T15:01:00"
-      },
-      {
-        "codigo": "2345-179-LP26",
-        "titulo": "Arriendo de 2 Oficinas Móviles con Conductor para Período de Renovación de PCI 20272028 y 2029",
-        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
-        "monto": 104700000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-23T15:01:00"
-      },
-      {
-        "codigo": "1095439-29-LP26",
-        "titulo": "1 ESCÁNER LÁSER CON CÁMARAS 3D PARA PDI AYSÉN",
-        "organismo": "GOBIERNO REGIONAL DE AYSEN",
-        "monto": 101388000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 80,
-        "fechaCierre": "2026-11-04T15:01:00"
-      },
-      {
-        "codigo": "620045-3-LP26",
-        "titulo": "SERVICIOS DE GUARDIA DE SEGURIDAD PARA LAS OFICINAS DE LA DIRECCIÓN REGIONAL DE ARICA Y PARINACOTA",
-        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
-        "monto": 100800000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-03T15:00:00"
-      },
-      {
-        "codigo": "2345-183-LP26",
-        "titulo": "ADQUISICIÓN E IMPLEMENTACIÓN DE SERVIDORES Y SOLUCION DE RESPALDO",
-        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
-        "monto": 100000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-26T15:01:00"
       }
     ],
     "modificados": [
@@ -605,6 +605,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 697170000,
         "montoNuevo": 697170000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2345-138-LP26",
+        "titulo": "SERVICIO DE DESARROLLO E IMPLEMENTACIÓN DE LA SEGUNDA ENCUESTA DE VICTIMIZACIÓN Y PERCEPCIÓN DE SEGURIDAD PARA VECINOS DE LA COMUNA DE LAS CONDES",
+        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 200000000,
+        "montoNuevo": 200000000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -626,16 +636,6 @@
         "montoAnterior": 57587000,
         "montoNuevo": 57587000,
         "empresaMatch": "V-MOCCS"
-      },
-      {
-        "codigo": "1048-68-LE26",
-        "titulo": "MEJORAMIENTO CARPETAS DE PASTO SINTETICO CANCHAS FUTBOL EL TABO",
-        "organismo": "I MUNICIPALIDAD DE EL TABO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
-        "montoAnterior": 34065684,
-        "montoNuevo": 34065684,
-        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1607-14-LE26",
@@ -675,6 +675,16 @@
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 3780000,
         "montoNuevo": 3780000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057049-325-LP26",
+        "titulo": "PCV - Suministro Ropa Clínica e Insumos Textiles",
+        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
         "empresaMatch": "Aminorte"
       },
       {
@@ -743,6 +753,16 @@
         "organismo": "I MUNICIPALIDAD DE CONCEPCION",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Revocada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1641-353-LP26",
+        "titulo": "MMD - INSUMOS DE PAPELERÍA PARA EL HOSPITAL SAN JUAN DE DIOS - CDT",
+        "organismo": "SERVICIO DE SALUD OCCIDENTE HOSPITAL SAN JUAN DE DIOS",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1070,14 +1090,6 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "2345-138-LP26",
-        "titulo": "SERVICIO DE DESARROLLO E IMPLEMENTACIÓN DE LA SEGUNDA ENCUESTA DE VICTIMIZACIÓN Y PERCEPCIÓN DE SEGURIDAD PARA VECINOS DE LA COMUNA DE LAS CONDES",
-        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
-        "estadoAnterior": "Cerrada",
-        "monto": 200000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1540667-8-B226",
         "titulo": "Serv Mant PC Maq de Anest Incub. Lámparas y Cunas",
         "organismo": "UNIVERSIDAD DE CHILE",
@@ -1228,10 +1240,18 @@
         "estadoAnterior": "Publicada",
         "monto": 138881000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "528208-43-LP26",
+        "titulo": "SERVICIO DE ARRIENDO Y MANTENCIÓN DE IMPRESORAS Y MULTIFUNCIONALES CON PROVISIÓN DE INSUMOS",
+        "organismo": "I.MUNICIPALIDAD DE CERRO NAVIA",
+        "estadoAnterior": "Publicada",
+        "monto": 133000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1588.1,
+  "tiempoEjecucionSegundos": 1512.5,
   "errores": [],
   "advertencias": []
 }
