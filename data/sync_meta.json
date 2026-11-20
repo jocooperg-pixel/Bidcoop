@@ -1,57 +1,57 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-20T04:30:53.652398+00:00",
-  "ultimoIntentoRealizado": "2026-11-20T04:30:53.652398+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-20T14:26:58.687048+00:00",
+  "ultimoIntentoRealizado": "2026-11-20T14:26:58.687048+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1525,
-  "registrosConfirmados": 1525,
+  "registrosEnPlataforma": 1521,
+  "registrosConfirmados": 1521,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1197,
-  "excluidosPrefiltroIrrelevante": 8201,
-  "excluidosSinDatosReales": 39,
+  "registrosConMontoReal": 1202,
+  "excluidosPrefiltroIrrelevante": 8408,
+  "excluidosSinDatosReales": 72,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 810,
-    "conMontoValido": 798,
-    "pctValidado": 98.5,
+    "total": 815,
+    "conMontoValido": 804,
+    "pctValidado": 98.7,
     "stats": {
-      "VALIDADO": 798,
+      "VALIDADO": 804,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 12
+      "MONTO_NO_ENCONTRADO": 11
     },
-    "montoOriginalSum": 709920366,
-    "montoFinalSum": 1285348727,
-    "montoRecuperadoSum": 575428361
+    "montoOriginalSum": 740478623,
+    "montoFinalSum": 1280881720,
+    "montoRecuperadoSum": 540403097
   },
   "categorias": {
-    "licitaciones": 711,
-    "comprasAgiles": 810,
+    "licitaciones": 702,
+    "comprasAgiles": 815,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 144,
+    "LP": 138,
     "LE": 405,
-    "LR": 40,
-    "CO": 13,
-    "L1": 116,
-    "B2": 2,
+    "LR": 41,
+    "CO": 14,
+    "L1": 109,
+    "B2": 3,
     "O1": 4,
     "I2": 1,
-    "LS": 2,
-    "E2": 1,
-    "COT": 797
+    "LS": 3,
+    "E2": 2,
+    "COT": 801
   },
   "matchPorEmpresa": {
-    "Aminorte": 1309,
-    "V-MOCCS": 216
+    "Aminorte": 1300,
+    "V-MOCCS": 221
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1503,
+    "nuevosCount": 1499,
     "modificadosCount": 19,
     "cerradosCount": 1320,
     "nuevos": [
@@ -92,15 +92,6 @@
         "fechaCierre": "2026-11-18T16:00:00"
       },
       {
-        "codigo": "2080-254-LR26",
-        "titulo": "SUMINISTRO DE AUDIFONOS DE PATOLOGIA GES",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
-        "monto": 882551600,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-19T16:00:00"
-      },
-      {
         "codigo": "1560571-3-LR26",
         "titulo": "SERVICIO DE ARRIENDO DE EQUIPOS DE IMPRESIÓN FOTOCOPIADO Y DIGITALIZACIÓN SLEP LA QUEBRADA",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LA QUEBRADA",
@@ -135,6 +126,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-19T15:30:00"
+      },
+      {
+        "codigo": "621-1000-LR26",
+        "titulo": "CETIRIZINA 10 MG CPCMCM REC. 1000022982",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 597435135,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-26T16:00:00"
       },
       {
         "codigo": "3738-27-LR26",
@@ -200,15 +200,6 @@
         "fechaCierre": "2026-12-23T16:00:00"
       },
       {
-        "codigo": "1057539-170-LP26",
-        "titulo": "ARRIENDO IMPRESORAS HOSPITAL DE PUERTO MONTT",
-        "organismo": "HOSPITAL PUERTO MONTT SERVICIO DE SALUD DEL RELONCAVI",
-        "monto": 261450078,
-        "empresaMatch": "Aminorte",
-        "matchScore": 90,
-        "fechaCierre": "2026-12-01T15:00:00"
-      },
-      {
         "codigo": "1447790-13-LP26",
         "titulo": "ADQ. CAMPANAS Y GABINETES PROYECTO HPC",
         "organismo": "SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
@@ -216,6 +207,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-11-24T15:01:00"
+      },
+      {
+        "codigo": "558869-71-LP26",
+        "titulo": "ADQUISICIÓN IMPRESORA-ESCANER-PLOTTER-IMPRESORA 3D",
+        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
+        "monto": 248001705,
+        "empresaMatch": "Aminorte",
+        "matchScore": 98,
+        "fechaCierre": "2026-11-23T15:00:00"
       },
       {
         "codigo": "2109-15-LP26",
@@ -497,15 +497,6 @@
         "fechaCierre": "2026-12-04T10:00:00"
       },
       {
-        "codigo": "2827-107-LP26",
-        "titulo": "MEJORAMIENTO MOBILIARIO E ILUMINACION PLAZA ARMAS",
-        "organismo": "I MUNICIPALIDAD DE CONSTITUCION",
-        "monto": 128745103,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-10T16:30:00"
-      },
-      {
         "codigo": "520149-54-LP26",
         "titulo": "Transporte de pasajeros-PC 6831-DESERVI-mvg",
         "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
@@ -594,6 +585,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-03T15:00:00"
+      },
+      {
+        "codigo": "2345-183-LP26",
+        "titulo": "ADQUISICIÓN E IMPLEMENTACIÓN DE SERVIDORES Y SOLUCION DE RESPALDO",
+        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
+        "monto": 100000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-07T15:01:00"
       }
     ],
     "modificados": [
@@ -618,16 +618,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "941739-11-LP26",
-        "titulo": "SUMINISTRO DE MUEBLES Y MOBILIARIO A MEDIDA - UTA.",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 200000000,
-        "montoNuevo": 200000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "2345-138-LP26",
         "titulo": "SERVICIO DE DESARROLLO E IMPLEMENTACIÓN DE LA SEGUNDA ENCUESTA DE VICTIMIZACIÓN Y PERCEPCIÓN DE SEGURIDAD PARA VECINOS DE LA COMUNA DE LAS CONDES",
         "organismo": "I MUNICIPALIDAD DE LAS CONDES",
@@ -636,6 +626,16 @@
         "montoAnterior": 200000000,
         "montoNuevo": 200000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "941739-11-LP26",
+        "titulo": "SUMINISTRO DE MUEBLES Y MOBILIARIO A MEDIDA - UTA.",
+        "organismo": "UNIVERSIDAD DE TARAPACA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 200000000,
+        "montoNuevo": 200000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "4295-67-LP26",
@@ -688,16 +688,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2188-14-L126",
-        "titulo": "ADQUISICIÓN DE SERVICIO DE MONITOREO AMBULATORIO DE PRESIÓN ARTERIAL - HOSPITAL COINCO AÑO 2026",
-        "organismo": "SERVICIO DE SALUD HOSPITAL COINCO",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 3780000,
-        "montoNuevo": 3780000,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "619284-8-LE26",
         "titulo": "Adquisición de suscripción de licencias Aimsun Nex",
         "organismo": "SUBSECRETARIA DE TRANSPORTES",
@@ -722,6 +712,16 @@
         "titulo": "CONTRATACIÓN SERVICIO DE DIAGRAMACIÓN DE PIEZAS GRÁFICAS Y WEB DEL PROYECTO “FORTALECIMIENTO DE LAS CAPACIDADES DE LATINOAMÉRICA Y EL CARIBE EN MATERIA DE CIBERSEGURIDAD” FINANCIADO POR LA UNIÓN EUROPEA.",
         "organismo": "AGENCIA CHILENA DE COOPERACION INTERNACIONAL PARA EL DESARROLLO",
         "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "4309-204-LE26",
+        "titulo": "CONVENIO POVIDONAS DISTINTAS PRESENTACIONES",
+        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -758,16 +758,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "4309-204-LE26",
-        "titulo": "CONVENIO POVIDONAS DISTINTAS PRESENTACIONES",
-        "organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1175-69-LP26",
         "titulo": "59.26 “ARRIENDO DE 1 SERVIDOR PARA EL SSAS” ",
         "organismo": "SERVICIO DE SALUD ARAUCANIA SUR",
@@ -782,6 +772,16 @@
         "titulo": "SUMINISTROS PARA IMPRESORAS Y OTROS ARTICULOS COMPUTACIONALES",
         "organismo": "SERVICIO DE SALUD DEL MAULE HOSPITAL DE TALCA",
         "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "425-49-LR26",
+        "titulo": "Equipos de Almacenamiento y Switches SAN del PJ",
+        "organismo": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+        "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -1271,7 +1271,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1516.0,
+  "tiempoEjecucionSegundos": 1560.1,
   "errores": [],
   "advertencias": []
 }
