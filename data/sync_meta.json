@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-21T04:25:07.977748+00:00",
-  "ultimoIntentoRealizado": "2026-11-21T04:25:07.977748+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-21T13:46:19.294787+00:00",
+  "ultimoIntentoRealizado": "2026-11-21T13:46:19.294787+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1709,
-  "registrosConfirmados": 1709,
+  "registrosEnPlataforma": 1713,
+  "registrosConfirmados": 1713,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1349,
-  "excluidosPrefiltroIrrelevante": 8994,
-  "excluidosSinDatosReales": 16,
+  "registrosConMontoReal": 1352,
+  "excluidosPrefiltroIrrelevante": 8997,
+  "excluidosSinDatosReales": 17,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 894,
-    "conMontoValido": 884,
-    "pctValidado": 98.9,
+    "total": 900,
+    "conMontoValido": 889,
+    "pctValidado": 98.8,
     "stats": {
-      "VALIDADO": 884,
+      "VALIDADO": 889,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 10
+      "MONTO_NO_ENCONTRADO": 11
     },
-    "montoOriginalSum": 1058433650,
-    "montoFinalSum": 1345433787,
-    "montoRecuperadoSum": 287000137
+    "montoOriginalSum": 1333468878,
+    "montoFinalSum": 1342084621,
+    "montoRecuperadoSum": 8615743
   },
   "categorias": {
-    "licitaciones": 811,
-    "comprasAgiles": 894,
+    "licitaciones": 809,
+    "comprasAgiles": 900,
     "convenioMarco": 0,
     "ordenes_compra": 4,
     "grandesCompras": 0
   },
   "tiposOficiales": {
-    "LP": 157,
-    "LE": 471,
-    "LR": 45,
+    "LP": 155,
+    "LE": 473,
+    "LR": 44,
     "L1": 129,
     "B2": 3,
-    "CO": 15,
+    "CO": 16,
     "O1": 4,
     "I2": 1,
-    "LS": 3,
+    "LS": 2,
     "E2": 2,
-    "COT": 879
+    "COT": 884
   },
   "matchPorEmpresa": {
-    "Aminorte": 1452,
-    "V-MOCCS": 257
+    "Aminorte": 1458,
+    "V-MOCCS": 255
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1685,
+    "nuevosCount": 1691,
     "modificadosCount": 21,
-    "cerradosCount": 1318,
+    "cerradosCount": 1320,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -443,6 +443,15 @@
         "fechaCierre": "2026-12-02T09:05:00"
       },
       {
+        "codigo": "837-78-LP26",
+        "titulo": "CDP 372 SERVICIO MANTENIMIENTO PREVENTIVO Y CORRECTIVO CONVENIO DE SUMINISTROS DE SISTEMA DE RENOVACIÓN DE AIRE SALA DE AUTOPSIAS Y CLIMATIZACION DE SERVICIO MEDICO LEGAL DE CAÑETE.",
+        "organismo": "SERVICIO MEDICO LEGAL",
+        "monto": 172797234,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-28T15:30:00"
+      },
+      {
         "codigo": "1057780-8-LP26",
         "titulo": "ADQ. COMPUTADORES ALL IN ONE H. CURACAUTÍN",
         "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
@@ -468,15 +477,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-07T15:30:00"
-      },
-      {
-        "codigo": "2201-41-LP26",
-        "titulo": "ADQUISICIÓN DE AYUDAS TÉCNICAS DE DESPLAZAMIENTO TIPO SILLAS DE RUEDAS",
-        "organismo": "INSTITUTO NACIONAL DE REHABILITACION PEDRO AGUIRRE CERDA",
-        "monto": 155000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-27T15:00:00"
       },
       {
         "codigo": "1057544-388-LP26",
@@ -618,16 +618,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "941739-11-LP26",
-        "titulo": "SUMINISTRO DE MUEBLES Y MOBILIARIO A MEDIDA - UTA.",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Cerrada",
-        "montoAnterior": 200000000,
-        "montoNuevo": 200000000,
-        "empresaMatch": "V-MOCCS"
-      },
-      {
         "codigo": "2345-138-LP26",
         "titulo": "SERVICIO DE DESARROLLO E IMPLEMENTACIÓN DE LA SEGUNDA ENCUESTA DE VICTIMIZACIÓN Y PERCEPCIÓN DE SEGURIDAD PARA VECINOS DE LA COMUNA DE LAS CONDES",
         "organismo": "I MUNICIPALIDAD DE LAS CONDES",
@@ -636,6 +626,16 @@
         "montoAnterior": 200000000,
         "montoNuevo": 200000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "941739-11-LP26",
+        "titulo": "SUMINISTRO DE MUEBLES Y MOBILIARIO A MEDIDA - UTA.",
+        "organismo": "UNIVERSIDAD DE TARAPACA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 200000000,
+        "montoNuevo": 200000000,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "4295-67-LP26",
@@ -718,16 +718,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1134384-10-LR26",
-        "titulo": "Recepción de Rescon y limpieza de micro basurales en la comuna de San Pedro de Atacama",
-        "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE ATACAMA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "1606-32-LE26",
         "titulo": "CONTRATACIÓN SERVICIO DE DIAGRAMACIÓN DE PIEZAS GRÁFICAS Y WEB DEL PROYECTO “FORTALECIMIENTO DE LAS CAPACIDADES DE LATINOAMÉRICA Y EL CARIBE EN MATERIA DE CIBERSEGURIDAD” FINANCIADO POR LA UNIÓN EUROPEA.",
         "organismo": "AGENCIA CHILENA DE COOPERACION INTERNACIONAL PARA EL DESARROLLO",
@@ -738,20 +728,10 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "1057049-325-LP26",
-        "titulo": "PCV - Suministro Ropa Clínica e Insumos Textiles",
-        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
+        "codigo": "1134384-10-LR26",
+        "titulo": "Recepción de Rescon y limpieza de micro basurales en la comuna de San Pedro de Atacama",
+        "organismo": "I MUNICIPALIDAD DE SAN PEDRO DE ATACAMA",
         "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2448-125-LE26",
-        "titulo": "MONITOR DESFIBRILADOR BIFASICO PROFESIONAL",
-        "organismo": "I MUNICIPALIDAD DE COQUIMBO",
-        "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
@@ -771,6 +751,26 @@
         "codigo": "976-10-O126",
         "titulo": "Ampliación y Mejoramiento Ad. Carriel Sur, Concepción",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+        "estadoAnterior": "Cerrada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1057049-325-LP26",
+        "titulo": "PCV - Suministro Ropa Clínica e Insumos Textiles",
+        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2448-125-LE26",
+        "titulo": "MONITOR DESFIBRILADOR BIFASICO PROFESIONAL",
+        "organismo": "I MUNICIPALIDAD DE COQUIMBO",
         "estadoAnterior": "Cerrada",
         "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
@@ -887,6 +887,14 @@
         "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
         "estadoAnterior": "Publicada",
         "monto": 615600000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2591-106-LR26",
+        "titulo": "REPOSICION OFICINA SRCEI POZO ALMONTE",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE POZO ALMONTE",
+        "estadoAnterior": "Publicada",
+        "monto": 540454000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1130,6 +1138,14 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "520663-35-LS10",
+        "titulo": "ACTUALIZACIÓN DEL PLAN DE TRANSPORTE DEL GRAN CONCEPCIÓN",
+        "organismo": "SUBSECRETARIA DE SERVICIOS SOCIALES",
+        "estadoAnterior": "Publicada",
+        "monto": 180000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "979-45-LP26",
         "titulo": "Adquisición de Equipos – Escritorio con Pantalla- Desktop GAMA 3 Intensivo",
         "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
@@ -1272,26 +1288,10 @@
         "estadoAnterior": "Publicada",
         "monto": 138881000,
         "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "528208-43-LP26",
-        "titulo": "SERVICIO DE ARRIENDO Y MANTENCIÓN DE IMPRESORAS Y MULTIFUNCIONALES CON PROVISIÓN DE INSUMOS",
-        "organismo": "I.MUNICIPALIDAD DE CERRO NAVIA",
-        "estadoAnterior": "Publicada",
-        "monto": 133000000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "3833-59-LP26",
-        "titulo": "SEGUROS BIENES MUEBLES E INMUEBLES Y OTROS",
-        "organismo": "I MUNICIPALIDAD DE RIO BUENO",
-        "estadoAnterior": "Publicada",
-        "monto": 130000000,
-        "empresaMatch": "V-MOCCS"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1525.1,
+  "tiempoEjecucionSegundos": 1446.8,
   "errores": [],
   "advertencias": []
 }
