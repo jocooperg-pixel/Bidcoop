@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-26T13:16:07.629660+00:00",
-  "ultimoIntentoRealizado": "2026-11-26T13:16:07.629660+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-26T22:39:03.772690+00:00",
+  "ultimoIntentoRealizado": "2026-11-26T22:39:03.772690+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1633,
-  "registrosConfirmados": 1633,
+  "registrosEnPlataforma": 1717,
+  "registrosConfirmados": 1717,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1311,
-  "excluidosPrefiltroIrrelevante": 8048,
-  "excluidosSinDatosReales": 23,
+  "registrosConMontoReal": 1363,
+  "excluidosPrefiltroIrrelevante": 8697,
+  "excluidosSinDatosReales": 30,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 878,
-    "conMontoValido": 864,
-    "pctValidado": 98.4,
+    "total": 895,
+    "conMontoValido": 879,
+    "pctValidado": 98.2,
     "stats": {
-      "VALIDADO": 864,
+      "VALIDADO": 879,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 14
+      "MONTO_NO_ENCONTRADO": 16
     },
-    "montoOriginalSum": 503715557,
-    "montoFinalSum": 1562113359,
-    "montoRecuperadoSum": 1058397802
+    "montoOriginalSum": 479800302,
+    "montoFinalSum": 1592979981,
+    "montoRecuperadoSum": 1113179679
   },
   "categorias": {
-    "licitaciones": 754,
-    "comprasAgiles": 878,
+    "licitaciones": 821,
+    "comprasAgiles": 895,
     "convenioMarco": 0,
     "ordenes_compra": 1,
     "grandesCompras": 0
   },
   "tiposOficiales": {
     "B2": 5,
-    "LP": 137,
-    "LE": 443,
-    "LR": 37,
-    "L1": 125,
-    "O1": 1,
-    "I2": 1,
+    "LE": 487,
+    "LP": 149,
+    "LR": 40,
+    "L1": 131,
     "CO": 19,
+    "O1": 1,
+    "I2": 2,
     "LS": 3,
-    "E2": 3,
-    "COT": 859
+    "E2": 4,
+    "COT": 876
   },
   "matchPorEmpresa": {
-    "Aminorte": 1380,
-    "V-MOCCS": 253
+    "Aminorte": 1469,
+    "V-MOCCS": 248
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1621,
-    "modificadosCount": 10,
-    "cerradosCount": 1330,
+    "nuevosCount": 1701,
+    "modificadosCount": 14,
+    "cerradosCount": 1326,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -146,6 +146,15 @@
         "fechaCierre": "2026-12-29T15:01:00"
       },
       {
+        "codigo": "1057509-303-LR26",
+        "titulo": "CONVENIO PROVEEDURÍA DE AUDÍFONOS Y EQUIPAMIENTO ASOCIADO EN COMODATO fgh",
+        "organismo": "HOSPITAL CLINICO HERMINDA MARTIN",
+        "monto": 611374400,
+        "empresaMatch": "Aminorte",
+        "matchScore": 70,
+        "fechaCierre": "2026-11-06T09:00:00"
+      },
+      {
         "codigo": "621-1000-LR26",
         "titulo": "CETIRIZINA 10 MG CPCMCM REC. 1000022982",
         "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
@@ -171,6 +180,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-23T15:01:00"
+      },
+      {
+        "codigo": "621-993-LR26",
+        "titulo": "ACIDO ZOLEDRONICO 5 MG100 ML FAMBOL.1000022880",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 411356173,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-26T16:00:00"
       },
       {
         "codigo": "4988-57-LR26",
@@ -236,6 +254,15 @@
         "fechaCierre": "2026-12-01T15:00:00"
       },
       {
+        "codigo": "1447790-13-LP26",
+        "titulo": "ADQ. CAMPANAS Y GABINETES PROYECTO HPC",
+        "organismo": "SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
+        "monto": 257070000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T15:01:00"
+      },
+      {
         "codigo": "558869-71-LP26",
         "titulo": "ADQUISICIÓN IMPRESORA-ESCANER-PLOTTER-IMPRESORA 3D",
         "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
@@ -261,15 +288,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-02T16:00:00"
-      },
-      {
-        "codigo": "1234560-1-LP26",
-        "titulo": "ADQ. CÁMARAS DE FISCAL. PARA TP EJE CIENFUEGOS",
-        "organismo": "SUBSECRETARIA DE TRANSPORTES",
-        "monto": 228181000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-26T16:00:00"
       },
       {
         "codigo": "1431841-70-LP26",
@@ -405,6 +423,24 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-02T09:05:00"
+      },
+      {
+        "codigo": "1057544-404-LP26",
+        "titulo": "Contratación de Servicios Médicos para cubrir turnos en UPC Pediátrico de Hospital Las Higueras",
+        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
+        "monto": 173000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-12-07T15:01:00"
+      },
+      {
+        "codigo": "2098-192-LP26",
+        "titulo": "ARRIENDO DE COMPUTADORES POR UN PERIODO DE 36 MESES SOL.COM. N°26 HRAV ",
+        "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE C",
+        "monto": 161935200,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-12-11T11:15:00"
       },
       {
         "codigo": "5403-12-LP26",
@@ -558,42 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-12-04T10:00:00"
-      },
-      {
-        "codigo": "2827-107-LP26",
-        "titulo": "MEJORAMIENTO MOBILIARIO E ILUMINACION PLAZA ARMAS",
-        "organismo": "I MUNICIPALIDAD DE CONSTITUCION",
-        "monto": 128745103,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-10T16:30:00"
-      },
-      {
-        "codigo": "520149-54-LP26",
-        "titulo": "Transporte de pasajeros-PC 6831-DESERVI-mvg",
-        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
-        "monto": 125000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-01T11:00:00"
-      },
-      {
-        "codigo": "558836-7-LP26",
-        "titulo": "CONSTRUCCIÓN CAMARAS DE SEGURIDAD PANGUE Y SARA DE LEBU COMUNA DE LOS ÁLAMOS",
-        "organismo": "I MUNICIPALIDAD DE LOS ALAMOS DEPTO COMUNAL",
-        "monto": 122192784,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-12-21T15:00:00"
-      },
-      {
-        "codigo": "1350296-98-LP26",
-        "titulo": "ADQUISICIÓN DE BATERÍAS PARA MONITORES DESFIBRILADORES Y DEAS PARA EL HOSPITAL DE ALTO HOSPICIO",
-        "organismo": "HOSPITAL DE ALTO HOSPICIO",
-        "monto": 120468460,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-30T15:00:00"
       }
     ],
     "modificados": [
@@ -666,6 +666,46 @@
         "montoAnterior": 360,
         "montoNuevo": 360,
         "empresaMatch": "V-MOCCS"
+      },
+      {
+        "codigo": "1002772-98-LE26",
+        "titulo": "SUMINISTRO CATETER TORACICOS DISTINTAS MEDIDAS",
+        "organismo": "SERVICIO SALUD OCCIDENTE HOSPITAL DR FELIX BULNES CERDA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1173446-1-LE26",
+        "titulo": "Reparación Paredes Pintura Int. y Ext. CET Talita",
+        "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "769-84-LP26",
+        "titulo": "KIT DETECCIÓN VPH POR PCR Y EQUIP. COMODATO PP-88",
+        "organismo": "SERVICIO DE SALUD ANTOFAGASTA DIRECCION",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2080-259-LP26",
+        "titulo": "SERV. MÉDICOS NEUROMONITOREO INTRAOPERATORIO HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
       },
       {
         "codigo": "1978-102-LE26",
@@ -1181,7 +1221,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1648.6,
+  "tiempoEjecucionSegundos": 1514.8,
   "errores": [],
   "advertencias": []
 }
