@@ -1,59 +1,59 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-26T03:49:13.085448+00:00",
-  "ultimoIntentoRealizado": "2026-11-26T03:49:13.085448+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-26T13:16:07.629660+00:00",
+  "ultimoIntentoRealizado": "2026-11-26T13:16:07.629660+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1423,
-  "registrosConfirmados": 1423,
+  "registrosEnPlataforma": 1633,
+  "registrosConfirmados": 1633,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1166,
-  "excluidosPrefiltroIrrelevante": 6391,
-  "excluidosSinDatosReales": 33,
+  "registrosConMontoReal": 1311,
+  "excluidosPrefiltroIrrelevante": 8048,
+  "excluidosSinDatosReales": 23,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
-    "total": 845,
-    "conMontoValido": 831,
-    "pctValidado": 98.3,
+    "total": 878,
+    "conMontoValido": 864,
+    "pctValidado": 98.4,
     "stats": {
-      "VALIDADO": 831,
+      "VALIDADO": 864,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
       "MONTO_NO_ENCONTRADO": 14
     },
-    "montoOriginalSum": 473715557,
-    "montoFinalSum": 1425679049,
-    "montoRecuperadoSum": 951963492
+    "montoOriginalSum": 503715557,
+    "montoFinalSum": 1562113359,
+    "montoRecuperadoSum": 1058397802
   },
   "categorias": {
-    "licitaciones": 577,
-    "comprasAgiles": 845,
+    "licitaciones": 754,
+    "comprasAgiles": 878,
     "convenioMarco": 0,
     "ordenes_compra": 1,
     "grandesCompras": 0
   },
   "tiposOficiales": {
     "B2": 5,
-    "LP": 114,
-    "LE": 339,
-    "LR": 30,
-    "L1": 83,
+    "LP": 137,
+    "LE": 443,
+    "LR": 37,
+    "L1": 125,
     "O1": 1,
     "I2": 1,
-    "CO": 18,
+    "CO": 19,
     "LS": 3,
-    "E2": 2,
-    "COT": 827
+    "E2": 3,
+    "COT": 859
   },
   "matchPorEmpresa": {
-    "Aminorte": 1200,
-    "V-MOCCS": 223
+    "Aminorte": 1380,
+    "V-MOCCS": 253
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1418,
-    "modificadosCount": 3,
-    "cerradosCount": 1337,
+    "nuevosCount": 1621,
+    "modificadosCount": 10,
+    "cerradosCount": 1330,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -74,6 +74,15 @@
         "fechaCierre": "2026-11-30T16:00:00"
       },
       {
+        "codigo": "2403-73-LR26",
+        "titulo": "Servicios de conectividad telecomunicaciones operación de infraestructura y gestión de ciberseguridad.",
+        "organismo": "I MUNICIPALIDAD DE PENALOLEN",
+        "monto": 1910656000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-30T12:00:00"
+      },
+      {
         "codigo": "1561228-3-LR26",
         "titulo": "SUMINISTRO ARTÍCULOS ESCOLARES Y DE OFICINA SLEP",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA ANTOFAGASTA",
@@ -92,6 +101,15 @@
         "fechaCierre": "2026-12-21T15:01:00"
       },
       {
+        "codigo": "621-596-LR26",
+        "titulo": "AEROCAMARA PEDIA BIVAL PINH 18M A 9AÑOS 1000022777",
+        "organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+        "monto": 1068749448,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-07-24T16:00:00"
+      },
+      {
         "codigo": "1560571-3-LR26",
         "titulo": "SERVICIO DE ARRIENDO DE EQUIPOS DE IMPRESIÓN FOTOCOPIADO Y DIGITALIZACIÓN SLEP LA QUEBRADA",
         "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA LA QUEBRADA",
@@ -108,6 +126,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-27T16:00:00"
+      },
+      {
+        "codigo": "520149-48-LR26",
+        "titulo": "CEA-PC 6740 - Transporte de visitas oficiales",
+        "organismo": "SUBSECRETARIA DE RELACIONES EXTERIORES",
+        "monto": 650000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T11:00:00"
       },
       {
         "codigo": "1057539-178-LR26",
@@ -254,6 +281,24 @@
         "fechaCierre": "2026-12-01T15:01:00"
       },
       {
+        "codigo": "622847-17-LP26",
+        "titulo": "Provisión e instalación mobiliario acero Magallane",
+        "organismo": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
+        "monto": 206572900,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T15:00:00"
+      },
+      {
+        "codigo": "883-38-LP26",
+        "titulo": "SERVICIO DE CONTROL DE AVIFAUNA A TRAVES DE VUELOS DISUASIVOS CON AVES RAPACES ADIESTRADAS Y MONITOREO DE FOCOS DE ATRACCIÓN DE AVES MEDIANTE EL USO DE RPA EN EL AEROPUERTO ARTURO MERINO BENITEZ",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "monto": 202424361,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-25T10:00:00"
+      },
+      {
         "codigo": "4624-9-LP26",
         "titulo": "SERVICIO DE ASEO OFICINAS DRT ARAUCANIA",
         "organismo": "DIRECCION DEL TRABAJO",
@@ -281,6 +326,24 @@
         "fechaCierre": "2026-12-07T15:00:00"
       },
       {
+        "codigo": "1028897-45-LP26",
+        "titulo": "COMPRA DE PARKAS POLERAS Y MOCHILAS EE SLEPCA",
+        "organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
+        "monto": 200000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-02T15:01:00"
+      },
+      {
+        "codigo": "1057491-203-LP26",
+        "titulo": "SERVICIO DE ASEO EDIFICIO AMICAM TROI Y NUEVA UPC",
+        "organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
+        "monto": 200000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T15:00:00"
+      },
+      {
         "codigo": "2563-43-LP26",
         "titulo": "Adquisición de cámaras IA y radares de seguridad",
         "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
@@ -297,6 +360,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-30T15:00:00"
+      },
+      {
+        "codigo": "1389183-57-LP26",
+        "titulo": "SEGUROS INMUEBLES",
+        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA DE ANDALIÉN COSTA",
+        "monto": 181125000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T17:00:00"
       },
       {
         "codigo": "893-15-LP26",
@@ -317,6 +389,15 @@
         "fechaCierre": "2026-11-03T15:30:00"
       },
       {
+        "codigo": "1049-88-LP26",
+        "titulo": "Arriendo de Embarcacion Monitoreo Proceso de Reclutamiento Sardina Comun y Anchoveta entre region de Valparaiso y Los Rios 2027",
+        "organismo": "INSTITUTO DE FOMENTO PESQUERO",
+        "monto": 179116000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T16:00:00"
+      },
+      {
         "codigo": "3847-47-LP26",
         "titulo": "Huellas de oro un viaje a nuestras memorias",
         "organismo": "I MUNICIPALIDAD DE SIERRA GORDA",
@@ -324,6 +405,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-12-02T09:05:00"
+      },
+      {
+        "codigo": "5403-12-LP26",
+        "titulo": "Gestión del Cambio y Adopción paraTransformación",
+        "organismo": "COMISION NACIONAL DE ACREDITACION",
+        "monto": 160000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-24T16:00:00"
       },
       {
         "codigo": "1950-69-LP26",
@@ -371,6 +461,15 @@
         "fechaCierre": "2026-11-23T15:01:00"
       },
       {
+        "codigo": "1191688-75-LP26",
+        "titulo": "Adquisición de Mobiliario Urbano",
+        "organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+        "monto": 149610000,
+        "empresaMatch": "V-MOCCS",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-21T15:00:00"
+      },
+      {
         "codigo": "4291-72-LP26",
         "titulo": "AMPLIACIÓN DE OFICINAS DE LA UEI",
         "organismo": "UNIVERSIDAD DE ANTOFAGASTA",
@@ -407,6 +506,24 @@
         "fechaCierre": "2026-12-14T16:00:00"
       },
       {
+        "codigo": "4642-103-LP26",
+        "titulo": "CONTRATACIÓN DEL SERVICIO DE MANTENCIÓN CORRECTIVA Y PREVENTIVA DE VENTILADOR MECÁNICO ECÓGRAFO Y CENTRAL DE MONITOREO DE DISTINTAS UNIDADES DEL HOSPITAL DE CARABINEROS POR UN PERIODO DE 24 MESES CON SUMINISTRO DE REPUESTOS.",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+        "monto": 140000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 80,
+        "fechaCierre": "2026-11-25T16:00:00"
+      },
+      {
+        "codigo": "1075963-295-LP26",
+        "titulo": "CONVENIO DE MANTENCIÓN PREVENTIVA Y CORRECTIVA EQUIPOS UPS POR 36 MESES HJNC",
+        "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
+        "monto": 140000000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-09-09T17:30:00"
+      },
+      {
         "codigo": "2332-135-LP26",
         "titulo": "MEJORAMIENTO DE INTERIOR PARA HABILITACION DE OFICINAS ADMINISTRATIVAS EN COMODATO PARA USO DE SALUD MUNICIPAL EN DEPENDENCIAS DEL EX HOSPITAL DE PUERTO MONTT",
         "organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
@@ -423,6 +540,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-12-14T17:00:00"
+      },
+      {
+        "codigo": "1028897-42-LP26",
+        "titulo": "COMPRA DE EQUIPAMIENTO Y EQUIPOS EE SLEPCA",
+        "organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
+        "monto": 129641000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-10-29T15:01:00"
       },
       {
         "codigo": "2308-98-LP26",
@@ -468,143 +594,77 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-30T15:00:00"
-      },
-      {
-        "codigo": "4291-73-LP26",
-        "titulo": "Servidores Unidad de Formación Virtual ANT21991",
-        "organismo": "UNIVERSIDAD DE ANTOFAGASTA",
-        "monto": 120000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-03T15:01:00"
-      },
-      {
-        "codigo": "548874-97-LP26",
-        "titulo": "Servicio de Suministro de Pinturas para los inmuebles edificios y oficinas del Instituto de Previsión Social en la Región Metropolitana",
-        "organismo": "INSTITUTO DE PREVISION SOCIAL",
-        "monto": 114620000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-12-11T15:30:00"
-      },
-      {
-        "codigo": "1233615-68-LP26",
-        "titulo": "Tablets estudiantes beneficiarios Pro-Retención",
-        "organismo": "Servicio Local de Educación Pública Aysén",
-        "monto": 112371800,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-09T17:30:00"
-      },
-      {
-        "codigo": "1057049-443-LP26",
-        "titulo": "JCD SENSOR NEUROMONITOREO DESECH. CON COMODATO",
-        "organismo": "SERV SALUD METROPOLITANO CENTRAL HOSPITAL CLINICO SAN BORJA ARRIARAN",
-        "monto": 110000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-09T15:30:00"
-      },
-      {
-        "codigo": "5358-17-LP26",
-        "titulo": "Servicio de Reparación y Mejora de Inmuebles UTA Iquique",
-        "organismo": "UNIVERSIDAD DE TARAPACA",
-        "monto": 105000000,
-        "empresaMatch": "V-MOCCS",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-10T15:01:00"
-      },
-      {
-        "codigo": "2345-179-LP26",
-        "titulo": "Arriendo de 2 Oficinas Móviles con Conductor para Período de Renovación de PCI 20272028 y 2029",
-        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
-        "monto": 104700000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-11-23T15:01:00"
-      },
-      {
-        "codigo": "620045-3-LP26",
-        "titulo": "SERVICIOS DE GUARDIA DE SEGURIDAD PARA LAS OFICINAS DE LA DIRECCIÓN REGIONAL DE ARICA Y PARINACOTA",
-        "organismo": "INSTITUTO DE SEGURIDAD LABORAL",
-        "monto": 100800000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-03T15:00:00"
-      },
-      {
-        "codigo": "558869-73-LP26",
-        "titulo": "Adquisición de Proyectores para UE de la CDMS",
-        "organismo": "CORP MUNICIPAL DE DESARROLLO SOCIAL DE A",
-        "monto": 98400000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-26T15:00:00"
-      },
-      {
-        "codigo": "2413-27-LP26",
-        "titulo": "ADQUISICIÓN OFICINAS Y CAMARINES MODULARES CANCHA GENERAL BONILLA",
-        "organismo": "I MUNICIPALIDAD DE LO PRADO",
-        "monto": 96996351,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-11T15:00:00"
-      },
-      {
-        "codigo": "1506-47-LP26",
-        "titulo": "“SERVICIO AMBIENTAL DE MONITOREO DE VARIABLES LIMNOLÓGICAS EMBALSE EMPEDRADO PERIODO 2027-2028”",
-        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
-        "monto": 96620000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-01T15:00:00"
-      },
-      {
-        "codigo": "1506668-31-LP26",
-        "titulo": "ADQUISICIÓN DE COMPUTADORES",
-        "organismo": "SERVICIO LOCAL DE EDUCACIÓN PÚBLICA PETORCA",
-        "monto": 95816227,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-12-04T17:30:00"
-      },
-      {
-        "codigo": "1057544-393-LP26",
-        "titulo": "Compra por Suministro de Papelería General Rollos Térmicos Insumos de Etiquetado y Materiales de Embalaje Técnico",
-        "organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
-        "monto": 95000000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 90,
-        "fechaCierre": "2026-11-27T15:00:00"
-      },
-      {
-        "codigo": "752-44-LP26",
-        "titulo": "Monitoreo Evaluación y Sistematización para el Fortalecimiento de la Gestión Municipal",
-        "organismo": "GOBIERNO REGIONAL DECIMA REGION LOS LAGOS",
-        "monto": 93600000,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-11-30T15:30:00"
-      },
-      {
-        "codigo": "1057536-164-LP26",
-        "titulo": "SERVICIO MANT. PREVENTIVO GRUPO ELECTROGENO SSDR",
-        "organismo": "SERVICIO SALUD DEL RELONCAVI",
-        "monto": 93248400,
-        "empresaMatch": "Aminorte",
-        "matchScore": 60,
-        "fechaCierre": "2026-12-09T17:00:00"
       }
     ],
     "modificados": [
       {
-        "codigo": "2345-157-LE26",
-        "titulo": "MOBILIARIO DEPORTIVO PARA CENTROS SPA",
-        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
+        "codigo": "2591-106-LR26",
+        "titulo": "REPOSICION OFICINA SRCEI POZO ALMONTE",
+        "organismo": "ILUSTRE MUNICIPALIDAD DE POZO ALMONTE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Cerrada",
+        "montoAnterior": 540454000,
+        "montoNuevo": 540454000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1019-106-LE26",
+        "titulo": "REGLAS LIMNIMÉTRICAS Y FICHAS DE FIERRO",
+        "organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 40000000,
+        "montoNuevo": 40000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "3453-81-LE26",
+        "titulo": "CONTRATACIÓN DEL SERVICIO CAMARAS DE SEGURIDAD",
+        "organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
         "estadoAnterior": "Publicada",
         "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
+        "montoAnterior": 35000000,
+        "montoNuevo": 35000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "591-28-LE26",
+        "titulo": "“ENCUESTA TELEFÓNICA SOBRE ELSISTEMA DE SALUD.",
+        "organismo": "FONDO NACIONAL DE SALUD",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Revocada",
+        "montoAnterior": 17000000,
+        "montoNuevo": 17000000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "1075963-370-LE26",
+        "titulo": "ARRIENDO CON OPCION DE COMPRA SECADOR KAESER REFRIGERATIVO KYOSEC POR 3 MESES",
+        "organismo": "SERVICIO DE SALUD ARICA HOSP DR JUAN NOE CREVANI",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 9500000,
+        "montoNuevo": 9500000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2562-18-LR26",
+        "titulo": "Adquisición de tres sistemas de respaldo de energía",
+        "organismo": "DIRECCION GENERAL DE AERONAUTICA CIVIL",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Desierta (o art. 3 ó 9 Ley 19.886)",
+        "montoAnterior": 1800000,
+        "montoNuevo": 1800000,
+        "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2494-85-LE26",
+        "titulo": "Concesión espacio públ. mobiliario publicitario",
+        "organismo": "I MUNICIPALIDAD DE COYHAIQUE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 360,
+        "montoNuevo": 360,
         "empresaMatch": "V-MOCCS"
       },
       {
@@ -616,6 +676,16 @@
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2345-157-LE26",
+        "titulo": "MOBILIARIO DEPORTIVO PARA CENTROS SPA",
+        "organismo": "I MUNICIPALIDAD DE LAS CONDES",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "V-MOCCS"
       },
       {
         "codigo": "857-5-LE26",
@@ -715,14 +785,6 @@
         "organismo": "I MUNICIPALIDAD DE VILLA ALEMANA",
         "estadoAnterior": "Publicada",
         "monto": 615600000,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "2591-106-LR26",
-        "titulo": "REPOSICION OFICINA SRCEI POZO ALMONTE",
-        "organismo": "ILUSTRE MUNICIPALIDAD DE POZO ALMONTE",
-        "estadoAnterior": "Publicada",
-        "monto": 540454000,
         "empresaMatch": "Aminorte"
       },
       {
@@ -1108,10 +1170,18 @@
         "estadoAnterior": "Publicada",
         "monto": 145000000,
         "empresaMatch": "Aminorte"
+      },
+      {
+        "codigo": "2109-10-LP26",
+        "titulo": "CONTRATACIÓN DEL SERVICIO DE FOTOCOPIADO IMPRESIÓN Y ESCANEO CON EQUIPOS EN COMODATO",
+        "organismo": "SERVICIO DE SALUD OCCIDENTE INSTITUTO TRAUMATOLOGICO DE SANTIAGO",
+        "estadoAnterior": "Cerrada",
+        "monto": 140000000,
+        "empresaMatch": "Aminorte"
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1503.4,
+  "tiempoEjecucionSegundos": 1648.6,
   "errores": [],
   "advertencias": []
 }
