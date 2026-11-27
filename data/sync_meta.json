@@ -1,32 +1,32 @@
 {
   "syncVersion": "7.6",
-  "ultimaSincronizacionExitosa": "2026-11-26T22:39:03.772690+00:00",
-  "ultimoIntentoRealizado": "2026-11-26T22:39:03.772690+00:00",
+  "ultimaSincronizacionExitosa": "2026-11-27T05:30:36.606380+00:00",
+  "ultimoIntentoRealizado": "2026-11-27T05:30:36.606380+00:00",
   "exitosa": true,
-  "registrosEnPlataforma": 1717,
-  "registrosConfirmados": 1717,
+  "registrosEnPlataforma": 1648,
+  "registrosConfirmados": 1648,
   "registrosPendientesVerificacion": 0,
-  "registrosConMontoReal": 1363,
-  "excluidosPrefiltroIrrelevante": 8697,
-  "excluidosSinDatosReales": 30,
+  "registrosConMontoReal": 1323,
+  "excluidosPrefiltroIrrelevante": 7946,
+  "excluidosSinDatosReales": 14,
   "excluidosSinMatchEmpresa": 0,
   "comprasAgilesAudit": {
     "total": 895,
-    "conMontoValido": 879,
-    "pctValidado": 98.2,
+    "conMontoValido": 880,
+    "pctValidado": 98.3,
     "stats": {
-      "VALIDADO": 879,
+      "VALIDADO": 880,
       "RECUPERADO_DESDE_OC": 0,
       "RECUPERADO_DESDE_ADJUDICACION": 0,
       "RECUPERADO_DESDE_COTIZACION": 0,
-      "MONTO_NO_ENCONTRADO": 16
+      "MONTO_NO_ENCONTRADO": 15
     },
-    "montoOriginalSum": 479800302,
-    "montoFinalSum": 1592979981,
-    "montoRecuperadoSum": 1113179679
+    "montoOriginalSum": 1144678287,
+    "montoFinalSum": 1592731951,
+    "montoRecuperadoSum": 448053664
   },
   "categorias": {
-    "licitaciones": 821,
+    "licitaciones": 752,
     "comprasAgiles": 895,
     "convenioMarco": 0,
     "ordenes_compra": 1,
@@ -34,26 +34,26 @@
   },
   "tiposOficiales": {
     "B2": 5,
-    "LE": 487,
-    "LP": 149,
-    "LR": 40,
-    "L1": 131,
-    "CO": 19,
+    "LE": 436,
+    "LP": 143,
+    "LR": 41,
+    "L1": 118,
+    "CO": 20,
     "O1": 1,
     "I2": 2,
     "LS": 3,
     "E2": 4,
-    "COT": 876
+    "COT": 875
   },
   "matchPorEmpresa": {
-    "Aminorte": 1469,
-    "V-MOCCS": 248
+    "Aminorte": 1418,
+    "V-MOCCS": 230
   },
   "cambios": {
     "comparadoContra": "2026-09-20T22:36:00.059287+00:00",
-    "nuevosCount": 1701,
-    "modificadosCount": 14,
-    "cerradosCount": 1326,
+    "nuevosCount": 1633,
+    "modificadosCount": 13,
+    "cerradosCount": 1327,
     "nuevos": [
       {
         "codigo": "621-1055-LR26",
@@ -288,6 +288,15 @@
         "empresaMatch": "Aminorte",
         "matchScore": 70,
         "fechaCierre": "2026-11-02T16:00:00"
+      },
+      {
+        "codigo": "1234560-1-LP26",
+        "titulo": "ADQ. CÁMARAS DE FISCAL. PARA TP EJE CIENFUEGOS",
+        "organismo": "SUBSECRETARIA DE TRANSPORTES",
+        "monto": 228181000,
+        "empresaMatch": "Aminorte",
+        "matchScore": 60,
+        "fechaCierre": "2026-11-26T16:00:00"
       },
       {
         "codigo": "1431841-70-LP26",
@@ -585,15 +594,6 @@
         "empresaMatch": "Aminorte",
         "matchScore": 60,
         "fechaCierre": "2026-10-29T15:01:00"
-      },
-      {
-        "codigo": "2308-98-LP26",
-        "titulo": "CONSTRUCCIÓN INSTALACIÓN E IMPLEMENTACIÓN DE CÁMARAS DE TELEVIGILANCIA EN PARQUES PÚBLICOS",
-        "organismo": "I MUNICIPALIDAD DE OSORNO",
-        "monto": 129063735,
-        "empresaMatch": "Aminorte",
-        "matchScore": 70,
-        "fechaCierre": "2026-12-04T10:00:00"
       }
     ],
     "modificados": [
@@ -678,6 +678,16 @@
         "empresaMatch": "Aminorte"
       },
       {
+        "codigo": "2080-259-LP26",
+        "titulo": "SERV. MÉDICOS NEUROMONITOREO INTRAOPERATORIO HDFRZ",
+        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
+        "montoAnterior": 0,
+        "montoNuevo": 0,
+        "empresaMatch": "Aminorte"
+      },
+      {
         "codigo": "1173446-1-LE26",
         "titulo": "Reparación Paredes Pintura Int. y Ext. CET Talita",
         "organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
@@ -698,26 +708,6 @@
         "empresaMatch": "Aminorte"
       },
       {
-        "codigo": "2080-259-LP26",
-        "titulo": "SERV. MÉDICOS NEUROMONITOREO INTRAOPERATORIO HDFRZ",
-        "organismo": "SERVICIO DE SALUD DEL LIBERTADOR B O'HIGGINS HOSPITAL REG RANCAGUA",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
-        "codigo": "1978-102-LE26",
-        "titulo": "ADQUISICIÓN DE SILLAS ERGONÓMICAS",
-        "organismo": "SERVICIO DE SALUD DEL MAULE",
-        "estadoAnterior": "Publicada",
-        "estadoNuevo": "Adjudicada",
-        "montoAnterior": 0,
-        "montoNuevo": 0,
-        "empresaMatch": "Aminorte"
-      },
-      {
         "codigo": "2345-157-LE26",
         "titulo": "MOBILIARIO DEPORTIVO PARA CENTROS SPA",
         "organismo": "I MUNICIPALIDAD DE LAS CONDES",
@@ -728,11 +718,11 @@
         "empresaMatch": "V-MOCCS"
       },
       {
-        "codigo": "857-5-LE26",
-        "titulo": "SERVICIO SISTEMA INTEGRAL DE MONITOREO DE ALARMAS",
-        "organismo": "SERVICIO NACIONAL DE LA DISCAPACIDAD",
-        "estadoAnterior": "Cerrada",
-        "estadoNuevo": "Revocada",
+        "codigo": "1978-102-LE26",
+        "titulo": "ADQUISICIÓN DE SILLAS ERGONÓMICAS",
+        "organismo": "SERVICIO DE SALUD DEL MAULE",
+        "estadoAnterior": "Publicada",
+        "estadoNuevo": "Adjudicada",
         "montoAnterior": 0,
         "montoNuevo": 0,
         "empresaMatch": "Aminorte"
@@ -1221,7 +1211,7 @@
       }
     ]
   },
-  "tiempoEjecucionSegundos": 1514.8,
+  "tiempoEjecucionSegundos": 1509.6,
   "errores": [],
   "advertencias": []
 }
